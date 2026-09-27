@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.13</title>
+<title>POLY · Interface multi-chaînes v0.14</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -79,7 +79,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}.animSteps,.phaseStoryboard{grid-template-columns:1fr}.animArrow,.phaseArrow{display:none}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.13</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.14</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -313,7 +313,7 @@ function intervalBySelection(){
  const A=currentIntervalActions();
  if(intervalManualId&&intervalManualChain===STATE.chainId)return A.find(x=>x.id===intervalManualId)||null;
  const key=STATE.type+":"+STATE.id;
- return A.find(x=>(x.targets||[]).includes(key))||A[0]||null;
+ return A.find(x=>(x.targets||[]).includes(key))||null;
 }
 function intervalTimeHTML(a){
  if(!a?.time_value_id)return '<span class="animTime">Chronométrie commune : non définie</span>';
@@ -412,24 +412,41 @@ function importComments(file){if(!file)return;const r=new FileReader();r.onload=
 
 function wait(ms){return new Promise(res=>setTimeout(res,ms/Number(document.getElementById("speed").value)))}
 function animateEdge(id){const e=ED[id];if(!e)return Promise.resolve();const a=N[e.from].xyz,b=N[e.to].xyz,start=performance.now(),dur=650/Number(document.getElementById("speed").value);STATE.type="EDGE";STATE.id=id;STATE.activeEdge=id;STATE.activeNodes=[e.from,e.to];STATE.activeAnchors=anchorsForSelection("EDGE",id,STATE.activeNodes);renderPanel();drawBrain();return new Promise(resolve=>{function f(now){if(!playing){resolve();return}const q=Math.min(1,(now-start)/dur),p=[a[0]+(b[0]-a[0])*q,a[1]+(b[1]-a[1])*q,a[2]+(b[2]-a[2])*q];renderChain(p);if(q<1)raf=requestAnimationFrame(f);else resolve()}raf=requestAnimationFrame(f)})}
+function playbackPanelTab(){return learningMode==="OBSERVE"?"ANIMATION":"DETAIL"}
+async function observerStepPhases(ms){
+ if(learningMode!=="OBSERVE"||STATE.tab!=="ANIMATION"){await wait(ms);return}
+ const a=intervalBySelection();
+ if(!a){renderPanel();await wait(ms);return}
+ intervalManualId=a.id;intervalManualChain=STATE.chainId;
+ const part=Math.max(120,ms/3);
+ for(let i=0;i<3&&playing;i++){
+  intervalPhase=i;
+  renderPanel();
+  await wait(part);
+ }
+ intervalManualId=null;intervalManualChain=null
+}
 async function runPlayback(){
  if(playing)return;
  if(playIndex>=D.playback.length)playIndex=0;
  playing=true;pausedForInspection=false;updateLearningControls();
  while(playing){
-  while(playing&&playIndex<D.playback.length){const s=D.playback[playIndex];
-   if(s.type==="NODE"){select("NODE",s.id,"DETAIL",{fromPlayback:true});await wait(850)}
-   else if(s.type==="EDGE"){await animateEdge(s.id);await wait(130)}
-   else if(s.type==="VALUE"){select("VALUE",s.value_id,"DETAIL",{fromPlayback:true});await wait(1000)}
-   else if(s.type==="SECTION"){document.getElementById("rightPanel").innerHTML='<h2>'+esc(s.label)+'</h2><p class="tiny">'+esc(D.metadata.representation_note||"")+'</p>';await wait(950)}
-   else if(s.type==="GAP"){select("VALUE",s.value_id,"DETAIL",{fromPlayback:true});await wait(2200)}
+  while(playing&&playIndex<D.playback.length){const s=D.playback[playIndex],tab=playbackPanelTab();
+   if(s.type==="NODE"){select("NODE",s.id,tab,{fromPlayback:true});await observerStepPhases(850)}
+   else if(s.type==="EDGE"){await animateEdge(s.id);await observerStepPhases(520)}
+   else if(s.type==="VALUE"){select("VALUE",s.value_id,tab,{fromPlayback:true});await observerStepPhases(1000)}
+   else if(s.type==="SECTION"){
+    if(learningMode==="OBSERVE"){await wait(260)}
+    else {document.getElementById("rightPanel").innerHTML='<h2>'+esc(s.label)+'</h2><p class="tiny">'+esc(D.metadata.representation_note||"")+'</p>';await wait(950)}
+   }
+   else if(s.type==="GAP"){select("VALUE",s.value_id,tab,{fromPlayback:true});await observerStepPhases(2200)}
    if(playing)playIndex++
   }
   if(!playing)break;
   if(loopEnabled&&learningMode==="OBSERVE"){playIndex=0;await wait(650);continue}
   break
  }
- playing=false;updateLearningControls()
+ playing=false;intervalManualId=null;intervalManualChain=null;updateLearningControls()
 }
 function step(d){pausePlayback("step");learningMode="STUDY";updateLearningControls();playIndex=Math.max(0,Math.min(D.playback.length-1,playIndex+d));const s=D.playback[playIndex];if(s.type==="NODE")select("NODE",s.id,"DETAIL");else if(s.type==="EDGE")select("EDGE",s.id,"DETAIL");else if(["GAP","VALUE"].includes(s.type))select("VALUE",s.value_id,"DETAIL");else document.getElementById("rightPanel").innerHTML='<h2>'+esc(s.label)+'</h2>'}
 function updateLearningControls(){
@@ -441,7 +458,10 @@ function updateLearningControls(){
 }
 function setLearningMode(mode){
  learningMode=mode;
- if(mode==="OBSERVE"){loopEnabled=true;updateLearningControls();runPlayback()}
+ if(mode==="OBSERVE"){
+  loopEnabled=true;intervalManualId=null;intervalManualChain=null;intervalPhase=0;
+  STATE.tab="ANIMATION";renderPanel();updateLearningControls();runPlayback()
+ }
  else {pausePlayback("study");pausedForInspection=false;updateLearningControls()}
 }
 function toggleLoop(){loopEnabled=!loopEnabled;updateLearningControls()}
