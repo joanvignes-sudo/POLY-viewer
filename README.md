@@ -1,25 +1,43 @@
-# POLY Viewer v0.7
+# POLY Viewer v0.8
 
 Version publique expérimentale du viewer POLY.
 
-Cette version contient les 12 chaînes C01–C12 et ajoute une première couche figurative pédagogique complète pour **C08 — énergie / homéostasie**.
+## Nouveau : glossaire figuratif C08
+La v0.8 ajoute une bibliothèque de personnages pédagogiques réutilisables et un glossaire indexé.
+
+Le glossaire contient actuellement :
+- Na⁺
+- K⁺
+- Ca²⁺
+- ATP
+- Pompe Na⁺/K⁺
+- Membrane cellulaire
+- Mitochondrie
+- Vésicule synaptique
+- Réticulum endoplasmique
+- Dendrite
+- Soma
+
+Chaque entrée possède :
+- un identifiant stable ;
+- un visuel SVG léger ;
+- une famille ;
+- un rôle pédagogique ;
+- des actions typiques ;
+- les scènes C08 où le personnage apparaît ;
+- les objets POLY liés lorsque disponibles ;
+- un garde-fou lorsqu’un personnage est prêt mais pas encore lié au registre empirique.
+
+Le glossaire propose :
+- recherche texte ;
+- index alphabétique ;
+- index par familles ;
+- tri ;
+- tableau de présence F01–F07.
+
+Les SVG sont conçus pour être réutilisés dans les futures mini-animations pédagogiques sans recréer les personnages.
 
 ## C08 — Illustration
-Un quatrième onglet `Illustration` est disponible :
-- 7 scènes F01–F07 ;
-- image automatiquement liée au nœud, à la valeur ou au raccord scientifique sélectionné ;
-- navigation manuelle F01–F07 ;
-- bouton `Suivre la sélection scientifique` ;
-- garde-fous visibles sur les limites expérimentales.
-
-La couche figurative ne remplace pas les données scientifiques :
-- les valeurs restent dans le dataset scientifique ;
-- la durée d’affichage d’une image n’est pas une durée biologique ;
-- Na⁺ et ATP restent séparés lorsqu’ils proviennent de séries expérimentales distinctes ;
-- le coefficient de diffusion n’est pas présenté comme une durée ;
-- E49 reste explicitement fondé sur un modèle cellulaire HeLa non neuronal.
-
-Les autres fonctions restent disponibles :
-Observer, Étudier, Reprendre, Boucle, navigation étape par étape, vitesse, mode lecture, plein écran, cerveau, sources et commentaires.
+L’onglet Illustration reste disponible avec les 7 scènes F01–F07 reliées aux objets scientifiques C08.
 
 Les commentaires restent stockés localement dans le navigateur de chaque visiteur.
