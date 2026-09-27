@@ -1,5 +1,5 @@
 window.POLY_INTERVAL_ACTIONS={
-  "version": "0.3",
+  "version": "0.4",
   "chain_id": "C08",
   "note": "Chaque intervalle explicite maintenant Entrée → Changement → Sortie, avec statut de preuve. Les temps et garde-fous restent attachés au dataset scientifique.",
   "actions": [
@@ -58,6 +58,20 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "ATP local disponible",
           "mark": "sortie"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "MEASURED_SAME_STUDY",
+          "to": "I02",
+          "label": "Raccord fonctionnel mesuré",
+          "detail": "La branche ATP disponible → cycle vésiculaire est documentée dans la même étude, mais sans délai élémentaire unique."
+        },
+        {
+          "kind": "RECONSTRUCTED",
+          "to": "I13",
+          "label": "Autre branche reconstruite",
+          "detail": "ATP → entretien des gradients est conservé comme raccord reconstruit, sans horloge commune."
         }
       ]
     },
@@ -122,6 +136,14 @@ window.POLY_INTERVAL_ACTIONS={
           "cue": "cycle opérationnel",
           "mark": "sortie"
         }
+      ],
+      "continuations": [
+        {
+          "kind": "STOP",
+          "to": null,
+          "label": "Fin de branche documentée",
+          "detail": "C08 n’enregistre pas ici d’étape suivante mesurée dans la même trajectoire vésiculaire."
+        }
       ]
     },
     {
@@ -183,6 +205,14 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "signal Na⁺ dendritique au pic",
           "mark": "après"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "SAME_SERIES_CLOCK",
+          "to": "I08",
+          "label": "Suite dans la même série Na⁺ dendritique",
+          "detail": "Pic puis retour vers la ligne de base : même série de mesure et horloge expérimentale."
         }
       ]
     },
@@ -246,6 +276,14 @@ window.POLY_INTERVAL_ACTIONS={
           "cue": "signal Na⁺ somatique au pic",
           "mark": "après"
         }
+      ],
+      "continuations": [
+        {
+          "kind": "SAME_SERIES_CLOCK",
+          "to": "I09",
+          "label": "Suite dans la même série Na⁺ somatique",
+          "detail": "Pic puis retour vers la ligne de base : même série de mesure et horloge expérimentale."
+        }
       ]
     },
     {
@@ -304,6 +342,14 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "minimum ATP dendritique observé",
           "mark": "après"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "PARTIAL_SERIES",
+          "to": "I10",
+          "label": "Récupération ATP associée",
+          "detail": "Le retour ATP est publié dans la série ATP, mais le registre actuel ne le sépare pas ici comme un retour dendritique individuel."
         }
       ]
     },
@@ -364,6 +410,14 @@ window.POLY_INTERVAL_ACTIONS={
           "cue": "minimum ATP somatique observé",
           "mark": "après"
         }
+      ],
+      "continuations": [
+        {
+          "kind": "PARTIAL_SERIES",
+          "to": "I10",
+          "label": "Récupération ATP associée",
+          "detail": "Le retour ATP est publié dans la série ATP, mais le registre actuel ne le sépare pas ici comme un retour somatique individuel."
+        }
       ]
     },
     {
@@ -418,6 +472,14 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "série ATP : baisse mesurée séparément",
           "mark": "mesuré"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "STOP_ND",
+          "to": null,
+          "label": "Arrêt causal obligatoire",
+          "detail": "Les séries Na⁺ et ATP sont distinctes : aucun délai causal Na⁺→ATP ne peut être déduit par soustraction."
         }
       ]
     },
@@ -477,6 +539,14 @@ window.POLY_INTERVAL_ACTIONS={
           "cue": "retour vers la ligne de base",
           "mark": "sortie"
         }
+      ],
+      "continuations": [
+        {
+          "kind": "STOP",
+          "to": null,
+          "label": "Fin de la série temporelle enregistrée",
+          "detail": "Aucune étape élémentaire suivante n’est chronométrée dans cette série Na⁺ dendritique."
+        }
       ]
     },
     {
@@ -535,6 +605,14 @@ window.POLY_INTERVAL_ACTIONS={
           "cue": "retour vers la ligne de base",
           "mark": "sortie"
         }
+      ],
+      "continuations": [
+        {
+          "kind": "STOP",
+          "to": null,
+          "label": "Fin de la série temporelle enregistrée",
+          "detail": "Aucune étape élémentaire suivante n’est chronométrée dans cette série Na⁺ somatique."
+        }
       ]
     },
     {
@@ -589,6 +667,14 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "retour vers la ligne de base",
           "mark": "sortie"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "STOP",
+          "to": null,
+          "label": "Fin de la récupération ATP enregistrée",
+          "detail": "La mesure décrit le retour du signal ATP ; elle n’identifie pas une étape élémentaire suivante."
         }
       ]
     },
@@ -651,6 +737,14 @@ window.POLY_INTERVAL_ACTIONS={
           "cue": "distribution spatiale plus large",
           "mark": "sortie"
         }
+      ],
+      "continuations": [
+        {
+          "kind": "SEPARATE_OBSERVATION",
+          "to": null,
+          "label": "Observation spatiale séparée",
+          "detail": "Le coefficient de diffusion décrit un étalement spatial. Il ne constitue pas une durée à insérer après I08 ou I09."
+        }
       ]
     },
     {
@@ -712,6 +806,14 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "mitochondrie exposée au Ca²⁺ local",
           "mark": "sortie · HeLa"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "CONCEPTUAL_ONLY",
+          "to": "I01",
+          "label": "Raccord conceptuel seulement",
+          "detail": "Le transfert Ca²⁺ ER→mitochondrie est mesuré en HeLa ; le passage vers une chronologie neuronale de production d’ATP reste ND."
         }
       ]
     },
@@ -776,6 +878,14 @@ window.POLY_INTERVAL_ACTIONS={
           ],
           "cue": "gradients ioniques entretenus",
           "mark": "raccord C08 reconstruit"
+        }
+      ],
+      "continuations": [
+        {
+          "kind": "STOP_RECONSTRUCTED",
+          "to": null,
+          "label": "Raccord reconstruit sans suite temporelle",
+          "detail": "Le rôle des transports actifs dans les gradients est établi, mais C08 ne mesure pas ici une horloge commune vers les pics Na⁺ I03/I04."
         }
       ]
     }
