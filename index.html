@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.19</title>
+<title>POLY · Interface multi-chaînes v0.20</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -85,7 +85,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}.animSteps,.phaseStoryboard{grid-template-columns:1fr}.animArrow,.phaseArrow{display:none}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.19</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.20</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -149,7 +149,7 @@ let c01IllustrationId=null;
 
 let D,N,V,E,A,ED;
 const STATE={chainId:"C02",type:"NODE",id:null,tab:"DETAIL",view:"SPLIT",activeNodes:[],activeAnchors:[],activeEdge:null};
-let playIndex=0,playing=false,raf=0,yaw=.68,pitch=.27,drag=null,brainHits=[],loopEnabled=true,learningMode="STUDY",pausedForInspection=false;
+let playIndex=0,intervalPlayIndex=0,playing=false,raf=0,yaw=.68,pitch=.27,drag=null,brainHits=[],loopEnabled=true,learningMode="STUDY",pausedForInspection=false;
 const canvas=document.getElementById("brainCanvas");
 D=ALL.chains.C02; indexChain();
 
@@ -195,7 +195,7 @@ function select(type,id,tab,opts={}){
  figurativeManualScene=null;c01IllustrationId=null;intervalManualId=null;STATE.type=type;STATE.id=id;STATE.activeNodes=nodesForSelection(type,id);STATE.activeAnchors=anchorsForSelection(type,id,STATE.activeNodes);STATE.activeEdge=type==="EDGE"?id:null;if(tab)STATE.tab=tab;renderAll()
 }
 function activateChain(cid){
- pausePlayback("chain");pausedForInspection=false;figurativeManualScene=null;c01IllustrationId=null;intervalManualId=null;STATE.chainId=cid;D=ALL.chains[cid];indexChain();playIndex=0;STATE.type="NODE";STATE.id=D.nodes[0]?.id||null;STATE.tab="DETAIL";STATE.activeNodes=STATE.id?[STATE.id]:[];STATE.activeAnchors=anchorsForSelection("NODE",STATE.id,STATE.activeNodes);STATE.activeEdge=null;
+ pausePlayback("chain");pausedForInspection=false;figurativeManualScene=null;c01IllustrationId=null;intervalManualId=null;STATE.chainId=cid;D=ALL.chains[cid];indexChain();playIndex=0;intervalPlayIndex=0;STATE.type="NODE";STATE.id=D.nodes[0]?.id||null;STATE.tab="DETAIL";STATE.activeNodes=STATE.id?[STATE.id]:[];STATE.activeAnchors=anchorsForSelection("NODE",STATE.id,STATE.activeNodes);STATE.activeEdge=null;
  document.getElementById("pageTitle").textContent=D.metadata.title||("POLY · "+cid);
  document.getElementById("chainTag").textContent=cid;
  document.getElementById("chainHead").textContent=(D.metadata.representation_type==="REGULATION_MAP"?"Carte de régulation ":"Chaîne ")+cid+" · espace abstrait";
@@ -394,7 +394,13 @@ function stageFor(a){
  if(a.template==="NEURON_DECISION")return '<div class="animStage">'+A("CHAR-DEND","10%","82px")+A("CHAR-SOMA","40%","82px")+A("CHAR-DECISION","68%","82px","","animation:choosePulse 2s infinite")+A("CHAR-AP","82%","30px","","animation:fadeUp 2.7s infinite alternate")+'<div style="position:absolute;left:67%;bottom:10px;font-size:10px;color:#17384c;font-weight:900">déclenchement possible / sinon silence</div></div>';
  return '<div class="animStage"><div class="genericTemplate">'+esc(a.template||"TRANSFORM")+'</div><div class="genericStage"><div class="genericObj">'+esc(a.input_label||"entrée")+'</div><div class="genericArrow">→</div><div class="genericObj">'+esc(a.output_label||"sortie")+'</div></div></div>';
 }
-function selectInterval(id){intervalManualId=id;intervalManualChain=STATE.chainId;intervalPhase=1;STATE.tab="ANIMATION";renderPanel()}
+function selectInterval(id){
+ const A=currentIntervalActions(),idx=A.findIndex(x=>x.id===id);
+ if(idx>=0)intervalPlayIndex=idx;
+ intervalManualId=id;intervalManualChain=STATE.chainId;intervalPhase=1;STATE.tab="ANIMATION";
+ const a=A[idx];if(a)applyIntervalMapFocus(a);
+ renderPanel()
+}
 function animationHTML(){
  const all=currentIntervalActions(),a=intervalBySelection();
  if(!all.length)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle générable pour cette chaîne.</div>';
@@ -464,6 +470,81 @@ function intervalsForSelection(){
  const A=currentIntervalActions(),key=STATE.type+":"+STATE.id;
  return A.filter(x=>(x.targets||[]).includes(key));
 }
+function intervalPrimaryNode(a){
+ const targets=a?.targets||[];
+ const nt=targets.find(t=>t.startsWith("NODE:"));
+ if(nt&&N[nt.slice(5)])return nt.slice(5);
+ for(const t of targets){
+  if(t.startsWith("VALUE:")){
+   const ids=nodesForSelection("VALUE",t.slice(6));
+   if(ids.length)return ids[0];
+  }
+ }
+ const et=targets.find(t=>t.startsWith("EDGE:"));
+ if(et&&ED[et.slice(5)])return ED[et.slice(5)].to;
+ return null;
+}
+function directEdgeBetween(fromNode,toNode){
+ if(!fromNode||!toNode||fromNode===toNode)return null;
+ return D.edges.find(e=>(e.from===fromNode&&e.to===toNode)||(e.from===toNode&&e.to===fromNode))||null;
+}
+function applyIntervalMapFocus(a){
+ const nodeId=intervalPrimaryNode(a);
+ const explicitEdge=(a?.targets||[]).find(t=>t.startsWith("EDGE:"))?.slice(5);
+ if(nodeId&&N[nodeId]){
+  STATE.type="NODE";STATE.id=nodeId;STATE.activeNodes=[nodeId];STATE.activeEdge=null;
+  STATE.activeAnchors=anchorsForSelection("NODE",nodeId,[nodeId]);
+ }else if(explicitEdge&&ED[explicitEdge]){
+  const e=ED[explicitEdge];STATE.type="EDGE";STATE.id=explicitEdge;STATE.activeEdge=explicitEdge;STATE.activeNodes=[e.from,e.to];
+  STATE.activeAnchors=anchorsForSelection("EDGE",explicitEdge,STATE.activeNodes);
+ }
+ renderChain();drawBrain();renderTimeline()
+}
+function animateMapTransition(fromA,toA){
+ const fromNode=intervalPrimaryNode(fromA),toNode=intervalPrimaryNode(toA),edge=directEdgeBetween(fromNode,toNode);
+ if(!edge){
+  return wait(Math.min(500,speedProfile().edgeMs)).then(()=>{if(playing)applyIntervalMapFocus(toA)})
+ }
+ const a=N[edge.from]?.xyz,b=N[edge.to]?.xyz;
+ if(!a||!b){applyIntervalMapFocus(toA);return Promise.resolve()}
+ const start=performance.now(),dur=speedProfile().edgeMs;
+ STATE.activeEdge=edge.id;STATE.activeNodes=[edge.from,edge.to];
+ STATE.activeAnchors=anchorsForSelection("EDGE",edge.id,STATE.activeNodes);drawBrain();
+ return new Promise(resolve=>{function frame(now){
+  if(!playing){resolve();return}
+  const q=Math.min(1,(now-start)/dur),p=[a[0]+(b[0]-a[0])*q,a[1]+(b[1]-a[1])*q,a[2]+(b[2]-a[2])*q];
+  renderChain(p);
+  if(q<1)raf=requestAnimationFrame(frame);
+  else {applyIntervalMapFocus(toA);resolve()}
+ }raf=requestAnimationFrame(frame)})
+}
+async function runIntervalPlayback(){
+ const A=currentIntervalActions();
+ if(!A.length){playing=false;updateLearningControls();return}
+ if(intervalPlayIndex>=A.length)intervalPlayIndex=0;
+ playing=true;pausedForInspection=false;updateLearningControls();
+ while(playing){
+  while(playing&&intervalPlayIndex<A.length){
+   const a=A[intervalPlayIndex];
+   intervalManualId=a.id;intervalManualChain=STATE.chainId;applyIntervalMapFocus(a);
+   for(let phase=0;phase<3&&playing;phase++){
+    intervalPhase=phase;renderPanel();await wait(speedProfile().phaseMs);
+   }
+   if(!playing)break;
+   const atEnd=intervalPlayIndex===A.length-1;
+   const nextIndex=atEnd?(loopEnabled&&learningMode==="OBSERVE"?0:null):intervalPlayIndex+1;
+   if(nextIndex===null){intervalPlayIndex=A.length;break}
+   await animateMapTransition(a,A[nextIndex]);
+   if(!playing)break;
+   intervalPlayIndex=nextIndex;
+   if(atEnd&&nextIndex===0)continue;
+  }
+  if(!playing)break;
+  if(intervalPlayIndex>=A.length&&loopEnabled&&learningMode==="OBSERVE"){intervalPlayIndex=0;continue}
+  break
+ }
+ playing=false;updateLearningControls()
+}
 async function observerStepPhases(){
  const p=speedProfile();
  if(learningMode!=="OBSERVE"||STATE.tab!=="ANIMATION"){await wait(p.plainMs);return}
@@ -480,6 +561,7 @@ async function observerStepPhases(){
 }
 async function runPlayback(){
  if(playing)return;
+ if(STATE.tab==="ANIMATION"){return runIntervalPlayback()}
  if(playIndex>=D.playback.length)playIndex=0;
  playing=true;pausedForInspection=false;updateLearningControls();
  while(playing){
@@ -500,7 +582,16 @@ async function runPlayback(){
  }
  playing=false;intervalManualId=null;intervalManualChain=null;updateLearningControls()
 }
-function step(d){pausePlayback("step");learningMode="STUDY";updateLearningControls();playIndex=Math.max(0,Math.min(D.playback.length-1,playIndex+d));const s=D.playback[playIndex];if(s.type==="NODE")select("NODE",s.id,"DETAIL");else if(s.type==="EDGE")select("EDGE",s.id,"DETAIL");else if(["GAP","VALUE"].includes(s.type))select("VALUE",s.value_id,"DETAIL");else document.getElementById("rightPanel").innerHTML='<h2>'+esc(s.label)+'</h2>'}
+function step(d){
+ pausePlayback("step");learningMode="STUDY";updateLearningControls();
+ if(STATE.tab==="ANIMATION"){
+  const A=currentIntervalActions();if(!A.length)return;
+  intervalPlayIndex=Math.max(0,Math.min(A.length-1,intervalPlayIndex+d));
+  const a=A[intervalPlayIndex];intervalManualId=a.id;intervalManualChain=STATE.chainId;intervalPhase=1;applyIntervalMapFocus(a);renderPanel();return
+ }
+ playIndex=Math.max(0,Math.min(D.playback.length-1,playIndex+d));const s=D.playback[playIndex];
+ if(s.type==="NODE")select("NODE",s.id,"DETAIL");else if(s.type==="EDGE")select("EDGE",s.id,"DETAIL");else if(["GAP","VALUE"].includes(s.type))select("VALUE",s.value_id,"DETAIL");else document.getElementById("rightPanel").innerHTML='<h2>'+esc(s.label)+'</h2>'
+}
 function updateLearningControls(){
  document.getElementById("observeMode").classList.toggle("active",learningMode==="OBSERVE");
  document.getElementById("studyMode").classList.toggle("active",learningMode==="STUDY");
@@ -532,7 +623,7 @@ document.getElementById("fullscreen").onclick=toggleFullscreen;
 document.getElementById("readingMode").onclick=toggleReadingMode;
 document.getElementById("speed").addEventListener("change",applyAnimationSpeed);
 document.addEventListener("fullscreenchange",updateFullscreenButton);
-document.getElementById("prev").onclick=()=>step(-1);document.getElementById("next").onclick=()=>step(1);document.getElementById("reset").onclick=()=>activateChain(STATE.chainId);
+document.getElementById("prev").onclick=()=>step(-1);document.getElementById("next").onclick=()=>step(1);document.getElementById("reset").onclick=()=>{const tab=STATE.tab;activateChain(STATE.chainId);STATE.tab=tab;if(tab==="ANIMATION"){intervalPlayIndex=0;const a=currentIntervalActions()[0];if(a){intervalManualId=a.id;intervalManualChain=STATE.chainId;applyIntervalMapFocus(a)}renderPanel()}};
 
 const sel=document.getElementById("chainSelect");
 Object.entries(ALL.chains).forEach(([cid,d])=>{const o=document.createElement("option");o.value=cid;o.textContent=d.metadata.short_title||cid;sel.appendChild(o)});
