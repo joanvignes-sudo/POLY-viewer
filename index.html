@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.12</title>
+<title>POLY · Interface multi-chaînes v0.13</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -59,6 +59,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 .contBlock{margin:10px 0;border-top:1px solid #34424e;padding-top:9px}.contTitle{font-size:11px;font-weight:800;margin-bottom:6px}
 .contRow{border:1px solid #44545f;border-radius:7px;padding:7px;margin:5px 0;background:#141b20;font-size:10px;line-height:1.4}.contRow button{float:right;margin-left:7px;padding:3px 6px;font-size:9px}
 .contKind{display:inline-block;border:1px solid #607480;border-radius:999px;padding:1px 5px;font-size:8px;font-weight:800;margin-right:4px}.contRow.stop{border-style:dashed}.contRow.nd{border-color:#9a6670}.contRow.measured{border-color:#628b75}
+.genericStage{display:flex;align-items:center;justify-content:center;gap:12px;padding:34px 16px;height:100%;color:#10202d}.genericObj{max-width:38%;padding:10px;border:2px solid #5f7b8d;border-radius:14px;background:white;text-align:center;font-size:11px;font-weight:800}.genericArrow{font-size:30px;font-weight:900}.genericTemplate{position:absolute;top:10px;left:10px;font-size:9px;font-weight:800;color:#45606f;border:1px solid #8aa0ad;border-radius:999px;padding:2px 6px;background:#fff}.genericToken{display:inline-flex;align-items:center;justify-content:center;min-height:34px;max-width:110px;padding:4px 7px;border:1px solid #6f8999;border-radius:10px;background:#fff;font-size:9px;font-weight:800;text-align:center}
 .animMembrane{position:absolute;left:48%;top:20px;width:14px;height:210px;background:#e98c72;border-radius:10px;opacity:.8}
 .animTube{position:absolute;left:12%;right:12%;top:92px;height:66px;border:8px solid #e88a35;border-radius:35px;background:#ffe0bf}
 .animSplit{position:absolute;left:50%;top:12px;bottom:12px;border-left:3px dashed #b51f2e}.animUnknown{position:absolute;left:50%;top:95px;transform:translateX(-50%);font-size:46px;font-weight:900;color:#b51f2e}
@@ -78,7 +79,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}.animSteps,.phaseStoryboard{grid-template-columns:1fr}.animArrow,.phaseArrow{display:none}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.12</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.13</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -263,18 +264,56 @@ function selectFigurativeScene(id){
 }
 
 let intervalManualId=null;
+let intervalManualChain=null;
 let intervalPhase=1;
+const AUTO_ACTOR_PATTERNS=[
+ ["na+","CHAR-NA"],["na⁺","CHAR-NA"],["sodium","CHAR-NA"],
+ ["k+","CHAR-K"],["k⁺","CHAR-K"],["potassium","CHAR-K"],
+ ["ca2+","CHAR-CA"],["ca²⁺","CHAR-CA"],["calcium","CHAR-CA"],
+ ["atp","CHAR-ATP"],["mitochond","CHAR-MITO"],["membrane","CHAR-MEM"],
+ ["vésicul","CHAR-VES"],["vesicul","CHAR-VES"],["dendrit","CHAR-DEND"],
+ ["soma","CHAR-SOMA"],["réticulum","CHAR-ER"],["reticulum","CHAR-ER"]
+];
+function autoCompact(x,n=90){x=String(x||"").replace(/\s+/g," ").trim();return x.length<=n?x:x.slice(0,n-1)+"…"}
+function autoSplitTitle(t){const p=String(t||"").split(/\s*(?:→|->)\s*/,2);return p.length===2?[autoCompact(p[0]),autoCompact(p[1])]:[autoCompact(t||"État initial"),"État résultant à préciser"]}
+function autoActors(text){const low=String(text||"").toLowerCase(),out=[];AUTO_ACTOR_PATTERNS.forEach(([k,id])=>{if(low.includes(k)&&!out.includes(id))out.push(id)});return out}
+function autoTemplate(title){const t=String(title||"").toLowerCase(),rules=[
+ [["diffusion","diffuse"],"DIFFUSION"],[["fusion","exocyt","endocyt","vésicul","vesicul"],"VESICLE"],
+ [["membrane","canal","courant","potentiel","conductance"],"MEMBRANE"],[["liaison","lié","récepteur","recepteur","gpcr"],"BINDING"],
+ [["transport","pore","flux","déplacement","deplacement"],"TRANSPORT"],[["arn","transcri","épiss","episs","chromatine","gène","gene"],"GENE"],
+ [["ribosome","traduction","polypept"],"TRANSLATION"],[["kinase","phosph","signal","activation","calmoduline"],"SIGNALING"],
+ [["dégradation","degradation","protéoly","proteoly","lysosome","protéasome","proteasome"],"DEGRADATION"]];
+ for(const [ws,name] of rules)if(ws.some(w=>t.includes(w)))return name;return "GENERIC_TRANSFORM"}
+function autoEvidenceLabel(n,vs){let b=n.status==="MEASURED"?"NŒUD MESURÉ":String(n.status||"ND").includes("RECONSTRUCT")?"NŒUD RECONSTRUIT":n.status==="ND"?"NŒUD ND":String(n.status||"ND");const m=vs.filter(v=>/^(MEASURED|OBSERVATION)/.test(String(v.status||""))).length,nd=vs.filter(v=>String(v.status||"").includes("NO_MEASUREMENT")||v.display_value==="ND").length;if(m)b+=" · "+m+" VALEUR(S) MESURÉE(S)";if(nd)b+=" · "+nd+" TEMPS/VALEUR(S) ND";return b}
+function autoTimeValue(vs){const t=vs.filter(v=>v.clock_scope!=="NOT_DURATION"&&v.display_value!=null),m=t.filter(v=>v.display_value!=="ND"),p=m.length?m:t;return p.length?p[0].value_id:null}
+function autoContKind(s){s=String(s||"");if(s.includes("MEASURED")||s==="DETAIL_BRANCH")return "DOCUMENTED_LINK";if(s.includes("RECONSTRUCT"))return "RECONSTRUCTED";if(s.includes("CONCEPTUAL"))return "CONCEPTUAL_ONLY";return s||"UNCLASSIFIED"}
+function generateIntervalsForCurrentChain(){
+ const nodes=D.nodes||[],vals=D.values||[],edges=D.edges||[],iid=Object.fromEntries(nodes.map((n,i)=>[n.id,"I"+String(i+1).padStart(2,"0")])),by={},out={};
+ nodes.forEach(n=>{by[n.id]=[];out[n.id]=[]});vals.forEach(v=>(v.applies_to||[]).forEach(id=>{if(by[id])by[id].push(v)}));edges.forEach(e=>{if(out[e.from])out[e.from].push(e)});
+ return nodes.map(n=>{const vs=by[n.id]||[],[inp,res]=autoSplitTitle(n.title),actors=autoActors(n.title),mid=autoCompact(n.pedagogy||n.title||"Transformation documentée",120);
+ const continuations=(out[n.id]||[]).map(e=>({kind:autoContKind(e.status),to:iid[e.to]||null,label:n.id+" → "+e.to,detail:autoCompact(e.warning||("Raccord "+(e.status||"non classé")+" du registre."),150)}));
+ if(!continuations.length)continuations.push({kind:"STOP",to:null,label:"Fin de branche enregistrée",detail:"Aucun raccord sortant supplémentaire n’est enregistré dans cette chaîne."});
+ const targets=["NODE:"+n.id,...vs.map(v=>"VALUE:"+v.value_id),...(out[n.id]||[]).map(e=>"EDGE:"+e.id)];
+ const gp=[n.limit,...vs.slice(0,2).map(v=>v.caveat)].filter(Boolean).map(x=>autoCompact(x,140)).join(" ")||"Conserver le statut de preuve et la préparation de la donnée source.";
+ return {id:iid[n.id],source_node_id:n.id,title:n.title||n.id,targets,actors,actor_tokens:[inp,res],template:autoTemplate(n.title),input_label:inp,output_label:res,action:mid,guard:gp,time_value_id:autoTimeValue(vs),evidence_label:autoEvidenceLabel(n,vs),steps:[
+ {label:"Entrée",text:inp,status:n.status||"ND"},{label:"Changement",text:mid,status:n.status||"ND"},{label:"Sortie",text:res,status:n.status||"ND"}],
+ phase_visuals:[{actors:autoActors(inp),tokens:[inp],cue:inp,mark:"entrée"},{actors,tokens:[autoCompact(n.title,55)],cue:mid,mark:"interaction"},{actors:autoActors(res),tokens:[res],cue:res,mark:"sortie"}],
+ continuations,needs_visual_review:actors.length===0,generation_status:"AUTO_BASELINE"}});
+}
+function currentIntervalActions(){
+ if(STATE.chainId==="C08"&&window.POLY_INTERVAL_ACTIONS?.actions?.length)return window.POLY_INTERVAL_ACTIONS.actions;
+ return generateIntervalsForCurrentChain();
+}
 function actorHTML(charId,x,y,extraClass="",style=""){
  const lib=window.POLY_CHARACTER_LIBRARY?.characters||[],ch=lib.find(c=>c.id===charId),svg=(window.POLY_CHARACTER_SVGS||{})[charId]||"";
  const name=ch?.symbol||ch?.name||charId;
  return '<div class="animActor '+extraClass+'" style="left:'+x+';top:'+y+';'+style+'">'+svg+'<div class="animLabel">'+esc(name)+'</div></div>';
 }
 function intervalBySelection(){
- if(STATE.chainId!=="C08")return null;
- const A=window.POLY_INTERVAL_ACTIONS?.actions||[];
- if(intervalManualId)return A.find(x=>x.id===intervalManualId)||null;
+ const A=currentIntervalActions();
+ if(intervalManualId&&intervalManualChain===STATE.chainId)return A.find(x=>x.id===intervalManualId)||null;
  const key=STATE.type+":"+STATE.id;
- return A.find(x=>(x.targets||[]).includes(key))||A.find(x=>x.id==="I07")||null;
+ return A.find(x=>(x.targets||[]).includes(key))||A[0]||null;
 }
 function intervalTimeHTML(a){
  if(!a?.time_value_id)return '<span class="animTime">Chronométrie commune : non définie</span>';
@@ -293,7 +332,7 @@ function miniActorHTML(charId){
 function phaseStoryboardHTML(a){
  const frames=a?.phase_visuals||[];
  if(!frames.length)return "";
- return '<div class="phaseStoryboard">'+frames.map((f,i)=>'<div class="phaseFrame '+(i===intervalPhase?'active':'')+'" onclick="setIntervalPhase('+i+')"><div class="phaseActors">'+((f.actors||[]).length?(f.actors||[]).map(miniActorHTML).join(""):'<span class="phaseUnknown">?</span>')+'</div><div class="phaseCue">'+esc(f.cue)+'</div><div class="phaseMark">'+esc(f.mark||"")+'</div></div>'+(i<frames.length-1?'<div class="phaseArrow">→</div>':'')).join("")+'</div>';
+ return '<div class="phaseStoryboard">'+frames.map((f,i)=>{const vis=(f.actors||[]).length?(f.actors||[]).map(miniActorHTML).join(""):(f.tokens||[]).map(t=>'<span class="genericToken">'+esc(t)+'</span>').join("")||'<span class="phaseUnknown">?</span>';return '<div class="phaseFrame '+(i===intervalPhase?'active':'')+'" onclick="setIntervalPhase('+i+')"><div class="phaseActors">'+vis+'</div><div class="phaseCue">'+esc(f.cue)+'</div><div class="phaseMark">'+esc(f.mark||"")+'</div></div>'+(i<frames.length-1?'<div class="phaseArrow">→</div>':'')}).join("")+'</div>';
 }
 function phaseFocusHTML(a){
  const s=(a?.steps||[])[intervalPhase],f=(a?.phase_visuals||[])[intervalPhase];
@@ -334,16 +373,16 @@ function stageFor(a){
  if(a.template==="NA_DIFFUSION")return '<div class="animStage"><div class="animTube"></div>'+A("CHAR-NA","46%","95px","","animation:spread1 3s infinite alternate")+A("CHAR-NA","46%","95px","","animation:spread2 3s infinite alternate")+A("CHAR-NA","46%","95px","","animation:pulse 1.4s infinite")+'<div style="position:absolute;left:50%;bottom:14px;transform:translateX(-50%);font-size:11px;color:#17384c;font-weight:700">étalement spatial le long de la dendrite</div></div>';
  if(a.template==="CA_ER_MITO")return '<div class="animStage">'+A("CHAR-ER","12%","84px")+A("CHAR-MITO","72%","84px")+A("CHAR-CA","32%","58px","","animation:moveRight 2.7s infinite")+A("CHAR-CA","34%","125px","","animation:moveRight 2.7s .8s infinite")+'<div style="position:absolute;left:50%;bottom:12px;transform:translateX(-50%);background:#f0b95a;color:#171717;padding:4px 7px;border-radius:5px;font-size:10px">modèle cellulaire HeLa — non neuronal</div></div>';
  if(a.template==="GRADIENT_SUPPORT")return '<div class="animStage"><div class="animMembrane"></div>'+A("CHAR-PUMP","43%","82px","","animation:pulse 1.8s infinite")+A("CHAR-ATP","13%","82px","","animation:moveRight 2.4s infinite")+A("CHAR-NA","72%","38px","","animation:moveLeft 2.8s infinite")+A("CHAR-K","72%","132px","","animation:moveLeft 2.8s .7s infinite")+'<div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);font-size:10px;color:#17384c;font-weight:700">RELATION RECONSTRUITE — pas de chronométrie commune</div></div>';
- return '<div class="animStage"></div>';
+ return '<div class="animStage"><div class="genericTemplate">'+esc(a.template||"TRANSFORM")+'</div><div class="genericStage"><div class="genericObj">'+esc(a.input_label||"entrée")+'</div><div class="genericArrow">→</div><div class="genericObj">'+esc(a.output_label||"sortie")+'</div></div></div>';
 }
-function selectInterval(id){intervalManualId=id;intervalPhase=1;STATE.tab="ANIMATION";renderPanel()}
+function selectInterval(id){intervalManualId=id;intervalManualChain=STATE.chainId;intervalPhase=1;STATE.tab="ANIMATION";renderPanel()}
 function animationHTML(){
- if(STATE.chainId!=="C08")return '<h2>Animation</h2><div class="figEmpty">Les animations d’intervalles sont actuellement disponibles pour <b>C08</b>.</div>';
- const all=window.POLY_INTERVAL_ACTIONS?.actions||[],a=intervalBySelection();
+ const all=currentIntervalActions(),a=intervalBySelection();
+ if(!all.length)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle générable pour cette chaîne.</div>';
  if(!a)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle correspondant.</div>';
  const nav=all.map(x=>'<button class="'+(x.id===a.id?'active':'')+'" onclick="selectInterval(\''+x.id+'\')">'+x.id+'</button>').join("");
  const actors=(a.actors||[]).map(id=>{const ch=(window.POLY_CHARACTER_LIBRARY?.characters||[]).find(c=>c.id===id);return ch?(ch.symbol||ch.name):id}).join(" · ");
- return '<h2>Animation de l’intervalle</h2><div class="animHint">La grande scène donne le mouvement. Le storyboard dessous permet d’inspecter précisément Avant → Changement → Après.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
+ return '<h2>Animation de l’intervalle</h2><div class="animHint">La grande scène donne le mouvement. Le storyboard dessous permet d’inspecter précisément Avant → Changement → Après.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+(a.generation_status==="AUTO_BASELINE"?" · GÉNÉRÉ AUTOMATIQUEMENT":"")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalManualChain=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
 }
 function illustrationHTML(){
  if(STATE.chainId!=="C08")return '<h2>Illustration</h2><div class="figEmpty">La couche figurative est actuellement disponible pour <b>C08 — énergie / homéostasie</b>. Les autres chaînes seront ajoutées progressivement.</div>';
