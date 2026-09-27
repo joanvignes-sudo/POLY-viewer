@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.6</title>
+<title>POLY · Interface multi-chaînes v0.6.1</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -33,12 +33,12 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.6</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.6.1</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
-<label>Chaîne <select id="chainSelect"></select></label><button id="loadChain" class="primaryCtl">Charger</button>
+<label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
 <button id="studyMode" class="modeBtn active" title="Arrêter le mouvement et examiner les étapes une par une">🔎 Étudier</button>
-<button id="play" class="primaryCtl">▶ Reprendre</button><button id="pause">⏸ Pause</button>
+<button id="play" class="primaryCtl">▶ Reprendre</button>
 <button id="loop" class="toggleOn" title="Relancer automatiquement la séquence à la fin">↻ Boucle : oui</button>
 <button id="prev">← Étape</button><button id="next">Étape →</button><button id="reset">↺ Début</button>
 <label>Vitesse <select id="speed"><option value=".5">×0,5</option><option value="1" selected>×1</option><option value="2">×2</option><option value="4">×4</option></select></label>
@@ -188,7 +188,7 @@ document.getElementById("readMode").onchange=renderPanel;document.getElementById
 function addComment(){const text=document.getElementById("cText")?.value.trim();if(!text)return;const a=comments();a.push({comment_id:"CMT-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),chain_id:STATE.chainId,target_type:STATE.type,target_id:STATE.id,author:document.getElementById("cAuthor").value.trim(),type:document.getElementById("cType").value,text,created_at:new Date().toISOString(),status:"OPEN"});saveComments(a)}
 function editComment(id){const a=comments(),c=a.find(x=>x.comment_id===id);if(!c)return;const t=prompt("Modifier le commentaire :",c.text);if(t===null||!t.trim())return;c.text=t.trim();c.updated_at=new Date().toISOString();saveComments(a)}
 function deleteComment(id){if(!confirm("Supprimer ce commentaire ?"))return;saveComments(comments().filter(c=>c.comment_id!==id))}
-function exportComments(){const blob=new Blob([JSON.stringify({schema:"POLY_COMMENTS_v0.6",exported_at:new Date().toISOString(),comments:comments()},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="POLY_comments_"+new Date().toISOString().slice(0,10)+".json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
+function exportComments(){const blob=new Blob([JSON.stringify({schema:"POLY_COMMENTS_v0.6.1",exported_at:new Date().toISOString(),comments:comments()},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="POLY_comments_"+new Date().toISOString().slice(0,10)+".json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 function importComments(file){if(!file)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result),incoming=Array.isArray(x)?x:(x.comments||[]),cur=comments(),by=Object.fromEntries(cur.map(c=>[c.comment_id,c]));incoming.forEach(c=>{if(c.comment_id&&c.text)by[c.comment_id]=c});saveComments(Object.values(by))}catch(e){alert("Fichier invalide.")}};r.readAsText(file)}
 
 function wait(ms){return new Promise(res=>setTimeout(res,ms/Number(document.getElementById("speed").value)))}
@@ -235,7 +235,6 @@ function toggleReadingMode(){document.body.classList.toggle("readingMode");docum
 document.getElementById("observeMode").onclick=()=>setLearningMode("OBSERVE");
 document.getElementById("studyMode").onclick=()=>setLearningMode("STUDY");
 document.getElementById("play").onclick=()=>{if(learningMode!=="OBSERVE")learningMode="STUDY";runPlayback()};
-document.getElementById("pause").onclick=()=>{pausePlayback("manual");updateLearningControls()};
 document.getElementById("loop").onclick=toggleLoop;
 document.getElementById("fullscreen").onclick=toggleFullscreen;
 document.getElementById("readingMode").onclick=toggleReadingMode;
@@ -256,7 +255,6 @@ function loadSelectedChain(){
 }
 sel.addEventListener("input",loadSelectedChain);
 sel.addEventListener("change",loadSelectedChain);
-document.getElementById("loadChain").onclick=loadSelectedChain;
 migrateComments();updateLearningControls();updateFullscreenButton();const requested=new URLSearchParams(location.search).get("chain");const startChain=ALL.chains[requested]?requested:"C02";sel.value=startChain;activateChain(startChain);
 addEventListener("resize",()=>{drawBrain();try{Plotly.Plots.resize(document.getElementById("chainPlot"))}catch(e){}});
 </script></body></html>
