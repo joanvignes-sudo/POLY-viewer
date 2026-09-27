@@ -35,7 +35,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 </style></head><body>
 <header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.6</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
-<label>Chaîne <select id="chainSelect"></select></label>
+<label>Chaîne <select id="chainSelect"></select></label><button id="loadChain" class="primaryCtl">Charger</button>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
 <button id="studyMode" class="modeBtn active" title="Arrêter le mouvement et examiner les étapes une par une">🔎 Étudier</button>
 <button id="play" class="primaryCtl">▶ Reprendre</button><button id="pause">⏸ Pause</button>
@@ -242,7 +242,21 @@ document.getElementById("readingMode").onclick=toggleReadingMode;
 document.addEventListener("fullscreenchange",updateFullscreenButton);
 document.getElementById("prev").onclick=()=>step(-1);document.getElementById("next").onclick=()=>step(1);document.getElementById("reset").onclick=()=>activateChain(STATE.chainId);
 
-const sel=document.getElementById("chainSelect");Object.entries(ALL.chains).forEach(([cid,d])=>{const o=document.createElement("option");o.value=cid;o.textContent=d.metadata.short_title||cid;sel.appendChild(o)});sel.onchange=()=>activateChain(sel.value);
+const sel=document.getElementById("chainSelect");
+Object.entries(ALL.chains).forEach(([cid,d])=>{const o=document.createElement("option");o.value=cid;o.textContent=d.metadata.short_title||cid;sel.appendChild(o)});
+function loadSelectedChain(){
+ const cid=sel.value;
+ if(!ALL.chains[cid])return;
+ activateChain(cid);
+ try{
+   const u=new URL(location.href);
+   u.searchParams.set("chain",cid);
+   history.replaceState({chain:cid},"",u);
+ }catch(e){}
+}
+sel.addEventListener("input",loadSelectedChain);
+sel.addEventListener("change",loadSelectedChain);
+document.getElementById("loadChain").onclick=loadSelectedChain;
 migrateComments();updateLearningControls();updateFullscreenButton();const requested=new URLSearchParams(location.search).get("chain");const startChain=ALL.chains[requested]?requested:"C02";sel.value=startChain;activateChain(startChain);
 addEventListener("resize",()=>{drawBrain();try{Plotly.Plots.resize(document.getElementById("chainPlot"))}catch(e){}});
 </script></body></html>
