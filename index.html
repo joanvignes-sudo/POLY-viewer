@@ -395,6 +395,7 @@ function stageFor(a){
  return '<div class="animStage"><div class="genericTemplate">'+esc(a.template||"TRANSFORM")+'</div><div class="genericStage"><div class="genericObj">'+esc(a.input_label||"entrée")+'</div><div class="genericArrow">→</div><div class="genericObj">'+esc(a.output_label||"sortie")+'</div></div></div>';
 }
 function selectInterval(id){
+ if(playing)pausePlayback("inspection");
  const A=currentIntervalActions(),idx=A.findIndex(x=>x.id===id);
  if(idx>=0)intervalPlayIndex=idx;
  intervalManualId=id;intervalManualChain=STATE.chainId;intervalPhase=1;STATE.tab="ANIMATION";
@@ -407,7 +408,7 @@ function animationHTML(){
  if(!a)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle correspondant.</div>';
  const nav=all.map(x=>'<button class="'+(x.id===a.id?'active':'')+'" onclick="selectInterval(\''+x.id+'\')">'+x.id+'</button>').join("");
  const actors=(a.actors||[]).map(id=>{const ch=(window.POLY_CHARACTER_LIBRARY?.characters||[]).find(c=>c.id===id);return ch?(ch.symbol||ch.name):id}).join(" · ");
- return '<h2>Animation de l’intervalle</h2><div class="animHint"><b>MODE PÉDAGOGIQUE / WIKI :</b> la scène montre l’ordre et le type d’interaction. Sa vitesse est volontairement illustrative et n’est jamais proportionnelle au temps biologique. Le temps réel, lorsqu’il est connu, est écrit séparément.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><span class="figBadge">PÉDAGOGIQUE · TEMPS NON À L’ÉCHELLE</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+(a.generation_status==="AUTO_BASELINE"?" · GÉNÉRÉ AUTOMATIQUEMENT":"")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalManualChain=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
+ return '<h2>Animation de l’intervalle</h2><div class="animHint"><b>MODE PÉDAGOGIQUE / WIKI :</b> la scène montre l’ordre et le type d’interaction. Sa vitesse est volontairement illustrative et n’est jamais proportionnelle au temps biologique. Le temps réel, lorsqu’il est connu, est écrit séparément.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><span class="figBadge">PÉDAGOGIQUE · TEMPS NON À L’ÉCHELLE</span><span class="figBadge">CARTE SYNCHRONISÉE</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+(a.generation_status==="AUTO_BASELINE"?" · GÉNÉRÉ AUTOMATIQUEMENT":"")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalManualChain=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
 }
 function resolvedC01Illustration(){
  const A=window.POLY_C01_INTERVAL_ACTIONS?.actions||[];
