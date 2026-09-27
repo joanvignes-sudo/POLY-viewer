@@ -39,7 +39,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.7</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.8</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -50,7 +50,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 <label>Vitesse <select id="speed"><option value=".5">×0,5</option><option value="1" selected>×1</option><option value="2">×2</option><option value="4">×4</option></select></label>
 <label>Contenu <select id="readMode"><option value="pedagogy">Pédagogique</option><option value="science">Scientifique</option></select></label>
 <label>Vue <select id="viewMode"><option value="SPLIT">Chaîne + cerveau</option><option value="CHAIN">Chaîne</option><option value="BRAIN">Cerveau</option></select></label>
-<button id="readingMode" class="primaryCtl" title="Agrandir les textes, cartes et panneaux">🔎 Mode lecture</button>
+<button id="readingMode" class="primaryCtl" title="Agrandir les textes, cartes et panneaux">🔎 Mode lecture</button><button id="glossaryBtn" class="primaryCtl" onclick="location.href=&quot;glossaire.html&quot;" title="Ouvrir la bibliothèque des personnages POLY">📚 Glossaire</button>
 <button id="fullscreen" class="primaryCtl" title="Afficher POLY sur tout l’écran">⛶ Plein écran</button>
 </div>
 <div class="chainNote" id="chainNote"></div>
