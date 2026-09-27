@@ -1,7 +1,7 @@
 window.POLY_INTERVAL_ACTIONS={
-  "version": "0.1",
+  "version": "0.2",
   "chain_id": "C08",
-  "note": "Chaque animation décrit une transformation ou interaction. Les valeurs restent lues dans le dataset scientifique du viewer.",
+  "note": "Chaque intervalle explicite maintenant Entrée → Changement → Sortie, avec statut de preuve. Les temps et garde-fous restent attachés au dataset scientifique.",
   "actions": [
     {
       "id": "I01",
@@ -17,7 +17,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "ATP_SUPPLY",
       "action": "La mitochondrie soutient une disponibilité locale d’ATP ; production et consommation peuvent se chevaucher.",
       "guard": "Temps élémentaire production → disponibilité : ND. Ne pas faire croire à un stock immobile.",
-      "time_value_id": "GAP-E47-DYNAMIC-TIME"
+      "time_value_id": "GAP-E47-DYNAMIC-TIME",
+      "evidence_label": "MESURÉ · TEMPS ÉLÉMENTAIRE ND",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "Substrats et O₂ sont disponibles pour la mitochondrie.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "La production mitochondriale rend de l’ATP localement disponible.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Sortie",
+          "text": "Un pool local d’ATP peut alimenter des processus consommateurs.",
+          "status": "MESURÉ / dynamique locale"
+        }
+      ]
     },
     {
       "id": "I02",
@@ -35,7 +53,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "VESICLE_CYCLE",
       "action": "Le cycle vésiculaire avance tandis que de l’énergie est utilisée localement.",
       "guard": "Même étude pour le lien fonctionnel, mais pas de délai élémentaire unique ATP → cycle.",
-      "time_value_id": "GAP-E50-CYCLE-ATP-TIME"
+      "time_value_id": "GAP-E50-CYCLE-ATP-TIME",
+      "evidence_label": "MÊME ÉTUDE · DÉLAI ÉLÉMENTAIRE ND",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "ATP présynaptique disponible et machinerie vésiculaire présente.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Des étapes du cycle vésiculaire utilisent de l’énergie pendant que le cycle avance.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Sortie",
+          "text": "Le cycle vésiculaire reste opérationnel dans les conditions étudiées.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I03",
@@ -51,7 +87,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "NA_INFLUX_DEND",
       "action": "Des Na⁺ franchissent la membrane et la concentration intracellulaire dendritique monte jusqu’au pic observé.",
       "guard": "Animation pédagogique non à l’échelle ; temps mesuré attaché à la série Na⁺ dendritique.",
-      "time_value_id": "O48_NA_DEND_PEAK"
+      "time_value_id": "O48_NA_DEND_PEAK",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Avant",
+          "text": "Le signal Na⁺ dendritique est proche de sa ligne de base.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Après stimulation, la concentration intracellulaire dendritique de Na⁺ augmente.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Après",
+          "text": "Le signal atteint le pic dendritique observé.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I04",
@@ -67,7 +121,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "NA_INFLUX_SOMA",
       "action": "La concentration intracellulaire de Na⁺ somatique monte jusqu’au pic observé.",
       "guard": "Série Na⁺ ; ne pas la synchroniser avec la série ATP.",
-      "time_value_id": "O48_NA_SOMA_PEAK"
+      "time_value_id": "O48_NA_SOMA_PEAK",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Avant",
+          "text": "Le signal Na⁺ somatique est proche de sa ligne de base.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Après stimulation, la concentration intracellulaire somatique de Na⁺ augmente.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Après",
+          "text": "Le signal atteint le pic somatique observé.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I05",
@@ -82,7 +154,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "ATP_DROP_DEND",
       "action": "Le signal ATP mesuré diminue après la stimulation jusqu’à son minimum dendritique.",
       "guard": "Cette série ATP est distincte de la série Na⁺ ; l’animation ne montre pas un mécanisme causal Na⁺ → ATP.",
-      "time_value_id": "O48_ATP_DEND_NADIR"
+      "time_value_id": "O48_ATP_DEND_NADIR",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Avant",
+          "text": "Le signal ATP dendritique est proche de sa ligne de base.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Après stimulation, le signal ATP dendritique diminue.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Après",
+          "text": "Le signal atteint le minimum dendritique observé.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I06",
@@ -97,7 +187,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "ATP_DROP_SOMA",
       "action": "Le signal ATP somatique diminue après la stimulation jusqu’à son minimum observé.",
       "guard": "Série ATP distincte des mesures Na⁺.",
-      "time_value_id": "O48_ATP_SOMA_NADIR"
+      "time_value_id": "O48_ATP_SOMA_NADIR",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Avant",
+          "text": "Le signal ATP somatique est proche de sa ligne de base.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Après stimulation, le signal ATP somatique diminue.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Après",
+          "text": "Le signal atteint le minimum somatique observé.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I07",
@@ -113,7 +221,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "SPLIT_UNKNOWN",
       "action": "On peut montrer séparément l’augmentation du Na⁺ et la baisse d’ATP, mais pas les relier par un délai causal mesuré.",
       "guard": "Na⁺ et ATP viennent de séries cellulaires distinctes. Aucun calcul de soustraction entre leurs temps.",
-      "time_value_id": "GAP-E48-NA-ATP-CAUSAL-DELAY"
+      "time_value_id": "GAP-E48-NA-ATP-CAUSAL-DELAY",
+      "evidence_label": "RELATION CAUSALE INCONNUE",
+      "steps": [
+        {
+          "label": "Série Na⁺",
+          "text": "Une augmentation de Na⁺ est observée dans sa propre série temporelle.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Entre les deux",
+          "text": "Aucun délai causal Na⁺ → ATP n’est mesuré avec une horloge commune.",
+          "status": "ND"
+        },
+        {
+          "label": "Série ATP",
+          "text": "Une diminution d’ATP est observée dans une série distincte.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I08",
@@ -128,7 +254,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "NA_RECOVERY_DEND",
       "action": "La concentration Na⁺ dendritique redescend progressivement vers la ligne de base.",
       "guard": "Le temps publié est un retour global observé, pas une latence spécifique de la pompe.",
-      "time_value_id": "O48_NA_DEND_RETURN"
+      "time_value_id": "O48_NA_DEND_RETURN",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "Le Na⁺ dendritique vient d’atteindre son pic observé.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "La concentration intracellulaire dendritique de Na⁺ redescend.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Sortie",
+          "text": "Le signal revient vers sa ligne de base.",
+          "status": "MESURÉ · mécanisme élémentaire non isolé"
+        }
+      ]
     },
     {
       "id": "I09",
@@ -143,7 +287,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "NA_RECOVERY_SOMA",
       "action": "La concentration Na⁺ somatique redescend progressivement vers la ligne de base.",
       "guard": "Ne pas attribuer toute la récupération à un seul mécanisme sans mesure dédiée.",
-      "time_value_id": "O48_NA_SOMA_RETURN"
+      "time_value_id": "O48_NA_SOMA_RETURN",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "Le Na⁺ somatique vient d’atteindre son pic observé.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "La concentration intracellulaire somatique de Na⁺ redescend.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Sortie",
+          "text": "Le signal revient vers sa ligne de base.",
+          "status": "MESURÉ · mécanisme élémentaire non isolé"
+        }
+      ]
     },
     {
       "id": "I10",
@@ -157,7 +319,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "ATP_RECOVERY",
       "action": "Le signal ATP remonte progressivement vers sa ligne de base.",
       "guard": "La mesure décrit la dynamique de récupération ATP ; elle ne donne pas le mécanisme élémentaire de recharge.",
-      "time_value_id": "O48_ATP_RETURN"
+      "time_value_id": "O48_ATP_RETURN",
+      "evidence_label": "OBSERVATION MESURÉE",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "Le signal ATP est au voisinage de son minimum observé.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Le signal ATP remonte progressivement.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Sortie",
+          "text": "Le signal revient vers sa ligne de base.",
+          "status": "MESURÉ · mécanisme de recharge non isolé"
+        }
+      ]
     },
     {
       "id": "I11",
@@ -174,7 +354,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "NA_DIFFUSION",
       "action": "Un groupe local de Na⁺ s’étale le long de la dendrite : la charge locale se redistribue spatialement.",
       "guard": "D ≈ 330 µm²/s est un coefficient de diffusion, pas une durée.",
-      "time_value_id": "O48_DIFFUSION"
+      "time_value_id": "O48_DIFFUSION",
+      "evidence_label": "MESURÉ · COEFFICIENT, PAS DURÉE",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "Une élévation locale de Na⁺ est présente dans la dendrite.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Changement",
+          "text": "Le profil de Na⁺ s’étale spatialement le long de la dendrite.",
+          "status": "MESURÉ"
+        },
+        {
+          "label": "Sortie",
+          "text": "La charge locale est redistribuée sur une plus grande distance.",
+          "status": "MESURÉ"
+        }
+      ]
     },
     {
       "id": "I12",
@@ -192,7 +390,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "CA_ER_MITO",
       "action": "Du Ca²⁺ libéré par l’ER forme un microdomaine local atteignant la proximité mitochondriale.",
       "guard": "Source HeLa non neuronale ; temps neuronal et ancrage cérébral : ND.",
-      "time_value_id": "GAP-E49-NEURONAL-TIMING"
+      "time_value_id": "GAP-E49-NEURONAL-TIMING",
+      "evidence_label": "MESURÉ EN HeLa · TEMPS NEURONAL ND",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "Du Ca²⁺ est libéré depuis l’ER vers le cytosol local.",
+          "status": "MESURÉ · HeLa"
+        },
+        {
+          "label": "Changement",
+          "text": "Un microdomaine local de Ca²⁺ atteint la proximité mitochondriale.",
+          "status": "MESURÉ · HeLa"
+        },
+        {
+          "label": "Sortie",
+          "text": "La mitochondrie est exposée à cette élévation locale de Ca²⁺.",
+          "status": "MESURÉ · HeLa, extrapolation neuronale interdite"
+        }
+      ]
     },
     {
       "id": "I13",
@@ -210,7 +426,25 @@ window.POLY_INTERVAL_ACTIONS={
       "template": "GRADIENT_SUPPORT",
       "action": "Animation conceptuelle : de l’ATP alimente un transport actif qui contribue à maintenir les gradients ioniques.",
       "guard": "Relation reconstruite dans C08 : pas de chronométrie commune démontrée ici.",
-      "time_value_id": null
+      "time_value_id": null,
+      "evidence_label": "RELATION RECONSTRUITE",
+      "steps": [
+        {
+          "label": "Entrée",
+          "text": "De l’ATP est disponible à proximité d’un transport actif.",
+          "status": "CONCEPTUEL"
+        },
+        {
+          "label": "Changement",
+          "text": "Le transport actif utilise de l’ATP et déplace des ions contre leurs gradients.",
+          "status": "MÉCANISME ÉTABLI · raccord C08 reconstruit"
+        },
+        {
+          "label": "Sortie",
+          "text": "Cette activité contribue à entretenir les gradients ioniques.",
+          "status": "RECONSTRUIT dans C08"
+        }
+      ]
     }
   ]
 };
