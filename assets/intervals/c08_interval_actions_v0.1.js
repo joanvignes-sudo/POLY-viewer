@@ -1,5 +1,5 @@
 window.POLY_INTERVAL_ACTIONS={
-  "version": "0.2",
+  "version": "0.3",
   "chain_id": "C08",
   "note": "Chaque intervalle explicite maintenant Entrée → Changement → Sortie, avec statut de preuve. Les temps et garde-fous restent attachés au dataset scientifique.",
   "actions": [
@@ -34,6 +34,30 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Sortie",
           "text": "Un pool local d’ATP peut alimenter des processus consommateurs.",
           "status": "MESURÉ / dynamique locale"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-MITO"
+          ],
+          "cue": "substrats + O₂ disponibles",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-MITO",
+            "CHAR-ATP"
+          ],
+          "cue": "production locale d’ATP",
+          "mark": "transformation"
+        },
+        {
+          "actors": [
+            "CHAR-ATP"
+          ],
+          "cue": "ATP local disponible",
+          "mark": "sortie"
         }
       ]
     },
@@ -71,6 +95,33 @@ window.POLY_INTERVAL_ACTIONS={
           "text": "Le cycle vésiculaire reste opérationnel dans les conditions étudiées.",
           "status": "MESURÉ"
         }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-VES"
+          ],
+          "cue": "ATP + machinerie vésiculaire",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-VES",
+            "CHAR-MEM"
+          ],
+          "cue": "cycle vésiculaire consommateur d’énergie",
+          "mark": "interaction"
+        },
+        {
+          "actors": [
+            "CHAR-VES",
+            "CHAR-MEM"
+          ],
+          "cue": "cycle opérationnel",
+          "mark": "sortie"
+        }
       ]
     },
     {
@@ -104,6 +155,34 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Après",
           "text": "Le signal atteint le pic dendritique observé.",
           "status": "MESURÉ"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-MEM",
+            "CHAR-DEND"
+          ],
+          "cue": "Na⁺ majoritairement hors du compartiment",
+          "mark": "avant"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-MEM",
+            "CHAR-DEND"
+          ],
+          "cue": "entrée de Na⁺ après stimulation",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-DEND"
+          ],
+          "cue": "signal Na⁺ dendritique au pic",
+          "mark": "après"
         }
       ]
     },
@@ -139,6 +218,34 @@ window.POLY_INTERVAL_ACTIONS={
           "text": "Le signal atteint le pic somatique observé.",
           "status": "MESURÉ"
         }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-MEM",
+            "CHAR-SOMA"
+          ],
+          "cue": "Na⁺ avant élévation somatique",
+          "mark": "avant"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-MEM",
+            "CHAR-SOMA"
+          ],
+          "cue": "augmentation intracellulaire de Na⁺",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-SOMA"
+          ],
+          "cue": "signal Na⁺ somatique au pic",
+          "mark": "après"
+        }
       ]
     },
     {
@@ -172,6 +279,32 @@ window.POLY_INTERVAL_ACTIONS={
           "text": "Le signal atteint le minimum dendritique observé.",
           "status": "MESURÉ"
         }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-DEND"
+          ],
+          "cue": "ATP dendritique proche de la ligne de base",
+          "mark": "avant"
+        },
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-DEND"
+          ],
+          "cue": "signal ATP diminue après stimulation",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-DEND"
+          ],
+          "cue": "minimum ATP dendritique observé",
+          "mark": "après"
+        }
       ]
     },
     {
@@ -204,6 +337,32 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Après",
           "text": "Le signal atteint le minimum somatique observé.",
           "status": "MESURÉ"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-SOMA"
+          ],
+          "cue": "ATP somatique proche de la ligne de base",
+          "mark": "avant"
+        },
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-SOMA"
+          ],
+          "cue": "signal ATP diminue après stimulation",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-SOMA"
+          ],
+          "cue": "minimum ATP somatique observé",
+          "mark": "après"
         }
       ]
     },
@@ -239,6 +398,27 @@ window.POLY_INTERVAL_ACTIONS={
           "text": "Une diminution d’ATP est observée dans une série distincte.",
           "status": "MESURÉ"
         }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-NA"
+          ],
+          "cue": "série Na⁺ : hausse mesurée",
+          "mark": "mesuré"
+        },
+        {
+          "actors": [],
+          "cue": "AUCUN raccord temporel causal mesuré",
+          "mark": "ND"
+        },
+        {
+          "actors": [
+            "CHAR-ATP"
+          ],
+          "cue": "série ATP : baisse mesurée séparément",
+          "mark": "mesuré"
+        }
       ]
     },
     {
@@ -271,6 +451,31 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Sortie",
           "text": "Le signal revient vers sa ligne de base.",
           "status": "MESURÉ · mécanisme élémentaire non isolé"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-DEND"
+          ],
+          "cue": "pic Na⁺ dendritique",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-DEND"
+          ],
+          "cue": "le signal Na⁺ redescend",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-DEND"
+          ],
+          "cue": "retour vers la ligne de base",
+          "mark": "sortie"
         }
       ]
     },
@@ -305,6 +510,31 @@ window.POLY_INTERVAL_ACTIONS={
           "text": "Le signal revient vers sa ligne de base.",
           "status": "MESURÉ · mécanisme élémentaire non isolé"
         }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-SOMA"
+          ],
+          "cue": "pic Na⁺ somatique",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-SOMA"
+          ],
+          "cue": "le signal Na⁺ redescend",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-SOMA"
+          ],
+          "cue": "retour vers la ligne de base",
+          "mark": "sortie"
+        }
       ]
     },
     {
@@ -336,6 +566,29 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Sortie",
           "text": "Le signal revient vers sa ligne de base.",
           "status": "MESURÉ · mécanisme de recharge non isolé"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-ATP"
+          ],
+          "cue": "ATP au voisinage du minimum",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-ATP"
+          ],
+          "cue": "le signal ATP remonte",
+          "mark": "changement"
+        },
+        {
+          "actors": [
+            "CHAR-ATP"
+          ],
+          "cue": "retour vers la ligne de base",
+          "mark": "sortie"
         }
       ]
     },
@@ -371,6 +624,32 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Sortie",
           "text": "La charge locale est redistribuée sur une plus grande distance.",
           "status": "MESURÉ"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-DEND"
+          ],
+          "cue": "charge Na⁺ localisée",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-DEND"
+          ],
+          "cue": "étalement longitudinal",
+          "mark": "diffusion"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-DEND"
+          ],
+          "cue": "distribution spatiale plus large",
+          "mark": "sortie"
         }
       ]
     },
@@ -408,6 +687,32 @@ window.POLY_INTERVAL_ACTIONS={
           "text": "La mitochondrie est exposée à cette élévation locale de Ca²⁺.",
           "status": "MESURÉ · HeLa, extrapolation neuronale interdite"
         }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-ER",
+            "CHAR-CA"
+          ],
+          "cue": "libération locale de Ca²⁺ depuis l’ER",
+          "mark": "entrée · HeLa"
+        },
+        {
+          "actors": [
+            "CHAR-CA",
+            "CHAR-MITO"
+          ],
+          "cue": "microdomaine Ca²⁺ vers la mitochondrie",
+          "mark": "interaction · HeLa"
+        },
+        {
+          "actors": [
+            "CHAR-MITO",
+            "CHAR-CA"
+          ],
+          "cue": "mitochondrie exposée au Ca²⁺ local",
+          "mark": "sortie · HeLa"
+        }
       ]
     },
     {
@@ -443,6 +748,34 @@ window.POLY_INTERVAL_ACTIONS={
           "label": "Sortie",
           "text": "Cette activité contribue à entretenir les gradients ioniques.",
           "status": "RECONSTRUIT dans C08"
+        }
+      ],
+      "phase_visuals": [
+        {
+          "actors": [
+            "CHAR-ATP",
+            "CHAR-PUMP"
+          ],
+          "cue": "ATP disponible près d’un transport actif",
+          "mark": "entrée"
+        },
+        {
+          "actors": [
+            "CHAR-PUMP",
+            "CHAR-NA",
+            "CHAR-K"
+          ],
+          "cue": "transport actif d’ions",
+          "mark": "mécanisme établi"
+        },
+        {
+          "actors": [
+            "CHAR-NA",
+            "CHAR-K",
+            "CHAR-MEM"
+          ],
+          "cue": "gradients ioniques entretenus",
+          "mark": "raccord C08 reconstruit"
         }
       ]
     }
