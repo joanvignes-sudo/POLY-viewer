@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.20</title>
+<title>POLY · Interface multi-chaînes v0.21</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -85,7 +85,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}.animSteps,.phaseStoryboard{grid-template-columns:1fr}.animArrow,.phaseArrow{display:none}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.20</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.21</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -330,6 +330,41 @@ function intervalTimeHTML(a){
  const v=V?.[a.time_value_id];
  return '<span class="animTime">Temps biologique : '+esc(v?.display_value||"ND")+' · '+esc(v?.label||a.time_value_id)+' · animation non proportionnelle</span>';
 }
+function evidenceForInterval(a){
+ const ids=new Set(),out=[];
+ function addEvidenceId(id){if(id)ids.add(id)}
+ function addNode(nid){
+  const n=N[nid];if(!n)return;
+  for(const s of (n.sources||[]))for(const e of (D.evidence||[]))if(e.evidence_id===s||e.source_id===s)addEvidenceId(e.evidence_id)
+  for(const vid of (n.value_ids||[]))for(const eid of (V[vid]?.evidence_ids||[]))addEvidenceId(eid)
+ }
+ for(const t of (a?.targets||[])){
+  if(t.startsWith("NODE:"))addNode(t.slice(5));
+  else if(t.startsWith("VALUE:"))for(const eid of (V[t.slice(6)]?.evidence_ids||[]))addEvidenceId(eid);
+  else if(t.startsWith("EDGE:")){const e=ED[t.slice(5)];if(e){addNode(e.from);addNode(e.to)}}
+ }
+ for(const id of ids){const e=E[id]||(D.evidence||[]).find(x=>x.evidence_id===id);if(e)out.push(e)}
+ return out
+}
+function preparationTags(prep){
+ const s=String(prep||"").toLowerCase(),tags=[];
+ if(/humain|human|participant|patient/.test(s))tags.push("HUMAIN");
+ if(/macaque|primate|monkey/.test(s))tags.push("PRIMATE NON HUMAIN");
+ if(/souris|mouse|mice|murin/.test(s))tags.push("SOURIS");
+ if(/\brat\b|rats|rat /.test(s))tags.push("RAT");
+ if(/calmar|squid/.test(s))tags.push("CALMAR");
+ if(/crapaud|toad/.test(s))tags.push("CRAPAUD");
+ if(/hela|u2os|cellules|culture|cultiv/.test(s))tags.push("CELLULES / CULTURE");
+ return tags
+}
+function provenanceHTML(a){
+ const ev=evidenceForInterval(a),preps=uniq(ev.map(e=>e.preparation).filter(Boolean)),tags=uniq(preps.flatMap(preparationTags));
+ const hasHuman=tags.includes("HUMAIN");
+ const scope=hasHuman?"DONNÉE HUMAINE DIRECTE PRÉSENTE":(preps.length?"MODÈLE NON HUMAIN / EXTRAPOLATION HUMAINE NON ÉTABLIE ICI":"PRÉPARATION NON RENSEIGNÉE DANS LE REGISTRE");
+ const badges=tags.length?tags.map(t=>'<span class="figBadge">'+esc(t)+'</span>').join(""):'<span class="figBadge">PRÉPARATION ND</span>';
+ const rows=preps.length?preps.map(p=>'<div>'+esc(p)+'</div>').join(""):'<div>Aucune préparation explicite enregistrée pour cet intervalle.</div>';
+ return '<div class="animGuard"><b>Provenance expérimentale :</b> '+badges+'<div class="tiny" style="margin-top:5px">'+rows+'</div><div class="tiny" style="margin-top:5px"><b>Portée :</b> '+esc(scope)+'</div></div>'
+}
 function intervalStepsHTML(a){
  const s=a?.steps||[];
  if(!s.length)return "";
@@ -408,7 +443,7 @@ function animationHTML(){
  if(!a)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle correspondant.</div>';
  const nav=all.map(x=>'<button class="'+(x.id===a.id?'active':'')+'" onclick="selectInterval(\''+x.id+'\')">'+x.id+'</button>').join("");
  const actors=(a.actors||[]).map(id=>{const ch=(window.POLY_CHARACTER_LIBRARY?.characters||[]).find(c=>c.id===id);return ch?(ch.symbol||ch.name):id}).join(" · ");
- return '<h2>Animation de l’intervalle</h2><div class="animHint"><b>MODE PÉDAGOGIQUE / WIKI :</b> la scène montre l’ordre et le type d’interaction. Sa vitesse est volontairement illustrative et n’est jamais proportionnelle au temps biologique. Le temps réel, lorsqu’il est connu, est écrit séparément.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><span class="figBadge">PÉDAGOGIQUE · TEMPS NON À L’ÉCHELLE</span><span class="figBadge">CARTE SYNCHRONISÉE</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+(a.generation_status==="AUTO_BASELINE"?" · GÉNÉRÉ AUTOMATIQUEMENT":"")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalManualChain=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
+ return '<h2>Animation de l’intervalle</h2><div class="animHint"><b>MODE PÉDAGOGIQUE / WIKI :</b> la scène montre l’ordre et le type d’interaction. Sa vitesse est volontairement illustrative et n’est jamais proportionnelle au temps biologique. Le temps réel, lorsqu’il est connu, est écrit séparément.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><span class="figBadge">PÉDAGOGIQUE · TEMPS NON À L’ÉCHELLE</span><span class="figBadge">CARTE SYNCHRONISÉE</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+(a.generation_status==="AUTO_BASELINE"?" · GÉNÉRÉ AUTOMATIQUEMENT":"")+'</div>'+intervalTimeHTML(a)+provenanceHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalManualChain=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
 }
 function resolvedC01Illustration(){
  const A=window.POLY_C01_INTERVAL_ACTIONS?.actions||[];
@@ -424,7 +459,7 @@ function c01IllustrationHTML(){
  if(!a)return '<h2>Illustration</h2><div class="figEmpty">Aucune illustration C01 disponible.</div>';
  const nav=all.map(x=>'<button class="'+(x.id===a.id?'active':'')+'" onclick="selectC01Illustration(\''+x.id+'\')">'+x.id+'</button>').join("");
  const actors=(a.actors||[]).map(id=>{const ch=(window.POLY_CHARACTER_LIBRARY?.characters||[]).find(c=>c.id===id);return ch?(ch.symbol||ch.name):id}).join(" · ");
- return '<h2>Illustration C01</h2><div class="animHint"><b>MODE PÉDAGOGIQUE / WIKI :</b> lecture fixe en trois images Avant → Changement → Après. Les durées biologiques sont écrites mais jamais dessinées à l’échelle.</div><div class="figNav">'+nav+'</div><article class="animCard"><div class="animMeta"><span class="figBadge">C01 · '+esc(a.id)+'</span><span class="figBadge">ILLUSTRATION PÉDAGOGIQUE</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div>'+continuationsHTML(a)+'</div></article><button onclick="c01IllustrationId=null;renderPanel()">↻ Suivre la sélection scientifique</button>';
+ return '<h2>Illustration C01</h2><div class="animHint"><b>MODE PÉDAGOGIQUE / WIKI :</b> lecture fixe en trois images Avant → Changement → Après. Les durées biologiques sont écrites mais jamais dessinées à l’échelle.</div><div class="figNav">'+nav+'</div><article class="animCard"><div class="animMeta"><span class="figBadge">C01 · '+esc(a.id)+'</span><span class="figBadge">ILLUSTRATION PÉDAGOGIQUE</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+'</div>'+intervalTimeHTML(a)+provenanceHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div>'+continuationsHTML(a)+'</div></article><button onclick="c01IllustrationId=null;renderPanel()">↻ Suivre la sélection scientifique</button>';
 }
 function illustrationHTML(){
  if(STATE.chainId==="C01")return c01IllustrationHTML();
