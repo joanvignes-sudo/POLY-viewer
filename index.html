@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.11</title>
+<title>POLY · Interface multi-chaînes v0.12</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -56,6 +56,9 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 .phaseCue{font-size:10px;line-height:1.25;text-align:center;font-weight:700}.phaseMark{font-size:8px;text-transform:uppercase;text-align:center;opacity:.72;margin-top:3px}
 .phaseArrow{align-self:center;color:#9ed7f5;font-size:20px;font-weight:900}.phaseInspect{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin:7px 0}.phaseInspect button{font-size:10px;padding:4px 7px}
 .phaseFocus{border:1px solid #52616d;border-radius:7px;background:#151d23;padding:8px;font-size:11px;line-height:1.4}
+.contBlock{margin:10px 0;border-top:1px solid #34424e;padding-top:9px}.contTitle{font-size:11px;font-weight:800;margin-bottom:6px}
+.contRow{border:1px solid #44545f;border-radius:7px;padding:7px;margin:5px 0;background:#141b20;font-size:10px;line-height:1.4}.contRow button{float:right;margin-left:7px;padding:3px 6px;font-size:9px}
+.contKind{display:inline-block;border:1px solid #607480;border-radius:999px;padding:1px 5px;font-size:8px;font-weight:800;margin-right:4px}.contRow.stop{border-style:dashed}.contRow.nd{border-color:#9a6670}.contRow.measured{border-color:#628b75}
 .animMembrane{position:absolute;left:48%;top:20px;width:14px;height:210px;background:#e98c72;border-radius:10px;opacity:.8}
 .animTube{position:absolute;left:12%;right:12%;top:92px;height:66px;border:8px solid #e88a35;border-radius:35px;background:#ffe0bf}
 .animSplit{position:absolute;left:50%;top:12px;bottom:12px;border-left:3px dashed #b51f2e}.animUnknown{position:absolute;left:50%;top:95px;transform:translateX(-50%);font-size:46px;font-weight:900;color:#b51f2e}
@@ -75,7 +78,7 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}.animSteps,.phaseStoryboard{grid-template-columns:1fr}.animArrow,.phaseArrow{display:none}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.11</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.12</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -298,6 +301,17 @@ function phaseFocusHTML(a){
  return '<div class="phaseInspect"><button onclick="setIntervalPhase(Math.max(0,intervalPhase-1))">← phase</button><span class="tiny">Phase '+(intervalPhase+1)+'/3</span><button onclick="setIntervalPhase(Math.min(2,intervalPhase+1))">phase →</button></div><div class="phaseFocus"><b>'+esc(s?.label||"Phase")+' :</b> '+esc(s?.text||f?.cue||"")+'<br><span class="tiny">'+esc(s?.status||f?.mark||"")+'</span></div>';
 }
 function setIntervalPhase(i){intervalPhase=Math.max(0,Math.min(2,Number(i)||0));renderPanel()}
+function continuationClass(k){
+ if(String(k).includes("ND"))return "nd";
+ if(["MEASURED_SAME_STUDY","SAME_SERIES_CLOCK"].includes(k))return "measured";
+ if(String(k).startsWith("STOP"))return "stop";
+ return "";
+}
+function continuationsHTML(a){
+ const cs=a?.continuations||[];
+ if(!cs.length)return "";
+ return '<div class="contBlock"><div class="contTitle">Raccord après cet intervalle</div>'+cs.map(c=>'<div class="contRow '+continuationClass(c.kind)+'">'+(c.to?'<button onclick="selectInterval(\''+esc(c.to)+'\')">voir '+esc(c.to)+' →</button>':'')+'<span class="contKind">'+esc(c.kind)+'</span><b>'+esc(c.label)+'</b><br>'+esc(c.detail)+'</div>').join("")+'</div>';
+}
 function stageFor(a){
  if(!a)return "";
  const A=actorHTML;
@@ -329,7 +343,7 @@ function animationHTML(){
  if(!a)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle correspondant.</div>';
  const nav=all.map(x=>'<button class="'+(x.id===a.id?'active':'')+'" onclick="selectInterval(\''+x.id+'\')">'+x.id+'</button>').join("");
  const actors=(a.actors||[]).map(id=>{const ch=(window.POLY_CHARACTER_LIBRARY?.characters||[]).find(c=>c.id===id);return ch?(ch.symbol||ch.name):id}).join(" · ");
- return '<h2>Animation de l’intervalle</h2><div class="animHint">La grande scène donne le mouvement. Le storyboard dessous permet d’inspecter précisément Avant → Changement → Après.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
+ return '<h2>Animation de l’intervalle</h2><div class="animHint">La grande scène donne le mouvement. Le storyboard dessous permet d’inspecter précisément Avant → Changement → Après.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+phaseStoryboardHTML(a)+phaseFocusHTML(a)+intervalStepsHTML(a)+continuationsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;intervalPhase=1;renderPanel()">↻ Suivre la sélection scientifique</button>';
 }
 function illustrationHTML(){
  if(STATE.chainId!=="C08")return '<h2>Illustration</h2><div class="figEmpty">La couche figurative est actuellement disponible pour <b>C08 — énergie / homéostasie</b>. Les autres chaînes seront ajoutées progressivement.</div>';
