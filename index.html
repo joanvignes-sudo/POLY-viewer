@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>POLY · Interface multi-chaînes v0.7</title>
+<title>POLY · Interface multi-chaînes v0.10</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#0d1014;--panel:#141a20;--panel2:#19222a;--line:#34424e;--text:#eef3f6;--muted:#aebbc5;--accent:#9ed7f5;--warn:#d5aa63;--nd:#a98bd0}
@@ -44,6 +44,11 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 .animGuard{border-left:3px solid var(--warn);padding:8px;background:#191d20;font-size:11px;color:#d8e0e5;margin-top:8px}
 .animNav{display:flex;gap:4px;flex-wrap:wrap;margin:8px 0}.animNav button{padding:4px 7px;font-size:10px}.animNav button.active{border-color:var(--accent);background:#263a46}
 .animMeta{padding:10px}.animMeta h2{margin:0 0 5px;font-size:15px}.animHint{font-size:10px;color:var(--muted)}
+.animStatus{display:inline-block;border:1px solid #6f8798;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:750;margin:4px 0 8px;color:#d7ebf6}
+.animSteps{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:6px;align-items:stretch;margin:10px 0}
+.animStep{border:1px solid #425462;border-radius:8px;padding:8px;background:#151d23;min-width:0}
+.animStep b{display:block;font-size:11px;margin-bottom:4px}.animStep p{font-size:11px;margin:0 0 5px;line-height:1.35}.stepStatus{font-size:9px;color:#aebbc5;text-transform:uppercase;letter-spacing:.03em}
+.animArrow{align-self:center;color:#9ed7f5;font-size:18px;font-weight:800}
 .animMembrane{position:absolute;left:48%;top:20px;width:14px;height:210px;background:#e98c72;border-radius:10px;opacity:.8}
 .animTube{position:absolute;left:12%;right:12%;top:92px;height:66px;border:8px solid #e88a35;border-radius:35px;background:#ffe0bf}
 .animSplit{position:absolute;left:50%;top:12px;bottom:12px;border-left:3px dashed #b51f2e}.animUnknown{position:absolute;left:50%;top:95px;transform:translateX(-50%);font-size:46px;font-weight:900;color:#b51f2e}
@@ -61,9 +66,9 @@ html:fullscreen header{padding-top:10px}html:fullscreen #chainPlot,html:fullscre
 @keyframes driftOut{0%{opacity:1;transform:translateX(0)}100%{opacity:.15;transform:translateX(80px)}}
 .hidden{display:none!important}
 @media(max-width:1150px){.workspace{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--line)}.panel{max-height:none}.visuals{grid-template-columns:1fr 1fr}}
-@media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}}
+@media(max-width:760px){.visuals{grid-template-columns:1fr}#chainPlot,#brainCanvas{height:430px;min-height:430px}.animSteps{grid-template-columns:1fr}.animArrow{display:none}}
 </style></head><body>
-<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.9</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
+<header><div><h1 id="pageTitle">POLY · multi-chaînes</h1><div class="sub">Version publique expérimentale · 12 chaînes · Une même grammaire pour suivre les relations, leurs valeurs, leurs sources, leurs lacunes et leurs ancrages cérébraux sans transformer plusieurs expériences en un seul film biologique.</div></div><div><span class="tag" id="chainTag">—</span><span class="tag">v0.10</span><span class="tag">hors canon</span></div><div class="sub" style="max-width:none;margin-top:6px">Les commentaires sont enregistrés localement dans le navigateur de chaque visiteur et ne sont pas encore partagés entre utilisateurs.</div></header>
 <div class="controls">
 <label>Chaîne <select id="chainSelect"></select></label>
 <button id="observeMode" class="modeBtn" title="Regarder la séquence se dérouler automatiquement en boucle">▶ Observer</button>
@@ -265,6 +270,11 @@ function intervalTimeHTML(a){
  const v=V?.[a.time_value_id];
  return '<span class="animTime">'+esc(v?.display_value||"ND")+' · '+esc(v?.label||a.time_value_id)+'</span>';
 }
+function intervalStepsHTML(a){
+ const s=a?.steps||[];
+ if(!s.length)return "";
+ return '<div class="animSteps">'+s.map((x,i)=>'<div class="animStep"><b>'+esc(x.label)+'</b><p>'+esc(x.text)+'</p><div class="stepStatus">'+esc(x.status||"")+'</div></div>'+(i<s.length-1?'<div class="animArrow">→</div>':'')).join("")+'</div>';
+}
 function stageFor(a){
  if(!a)return "";
  const A=actorHTML;
@@ -296,7 +306,7 @@ function animationHTML(){
  if(!a)return '<h2>Animation</h2><div class="figEmpty">Aucun intervalle correspondant.</div>';
  const nav=all.map(x=>'<button class="'+(x.id===a.id?'active':'')+'" onclick="selectInterval(\''+x.id+'\')">'+x.id+'</button>').join("");
  const actors=(a.actors||[]).map(id=>{const ch=(window.POLY_CHARACTER_LIBRARY?.characters||[]).find(c=>c.id===id);return ch?(ch.symbol||ch.name):id}).join(" · ");
- return '<h2>Animation de l’intervalle</h2><div class="animHint">Boucle visuelle courte : elle montre le changement, pas la durée biologique réelle.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><h2>'+esc(a.title)+'</h2>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p><div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;renderPanel()">↻ Suivre la sélection scientifique</button>';
+ return '<h2>Animation de l’intervalle</h2><div class="animHint">Boucle visuelle courte : elle montre le changement, pas la durée biologique réelle.</div><div class="animNav">'+nav+'</div><article class="animCard">'+stageFor(a)+'<div class="animMeta"><span class="figBadge">INTERVALLE '+esc(a.id)+'</span><h2>'+esc(a.title)+'</h2><div class="animStatus">'+esc(a.evidence_label||"STATUT À PRÉCISER")+'</div>'+intervalTimeHTML(a)+'<p>'+esc(a.action)+'</p>'+intervalStepsHTML(a)+'<div class="tiny"><b>Acteurs :</b> '+esc(actors)+'</div><div class="animGuard">'+esc(a.guard)+'</div></div></article><button onclick="intervalManualId=null;renderPanel()">↻ Suivre la sélection scientifique</button>';
 }
 function illustrationHTML(){
  if(STATE.chainId!=="C08")return '<h2>Illustration</h2><div class="figEmpty">La couche figurative est actuellement disponible pour <b>C08 — énergie / homéostasie</b>. Les autres chaînes seront ajoutées progressivement.</div>';
