@@ -359,8 +359,8 @@ function preparationTags(prep){
 }
 function provenanceHTML(a){
  const ev=evidenceForInterval(a),preps=uniq(ev.map(e=>e.preparation).filter(Boolean)),tags=uniq(preps.flatMap(preparationTags));
- const hasHuman=tags.includes("HUMAIN");
- const scope=hasHuman?"DONNÉE HUMAINE DIRECTE PRÉSENTE":(preps.length?"MODÈLE NON HUMAIN / EXTRAPOLATION HUMAINE NON ÉTABLIE ICI":"PRÉPARATION NON RENSEIGNÉE DANS LE REGISTRE");
+ const hasHuman=tags.includes("HUMAIN"),explicitNonHuman=tags.some(t=>["PRIMATE NON HUMAIN","SOURIS","RAT","CALMAR","CRAPAUD"].includes(t));
+ const scope=hasHuman&&explicitNonHuman?"PREUVES MIXTES HUMAINES ET NON HUMAINES":hasHuman?"DONNÉE HUMAINE DIRECTE PRÉSENTE":explicitNonHuman?"MODÈLE NON HUMAIN · PORTÉE HUMAINE À VALIDER SÉPARÉMENT":preps.length?"ESPÈCE HUMAINE NON IDENTIFIÉE DANS LA PRÉPARATION ENREGISTRÉE":"PRÉPARATION NON RENSEIGNÉE DANS LE REGISTRE";
  const badges=tags.length?tags.map(t=>'<span class="figBadge">'+esc(t)+'</span>').join(""):'<span class="figBadge">PRÉPARATION ND</span>';
  const rows=preps.length?preps.map(p=>'<div>'+esc(p)+'</div>').join(""):'<div>Aucune préparation explicite enregistrée pour cet intervalle.</div>';
  return '<div class="animGuard"><b>Provenance expérimentale :</b> '+badges+'<div class="tiny" style="margin-top:5px">'+rows+'</div><div class="tiny" style="margin-top:5px"><b>Portée :</b> '+esc(scope)+'</div></div>'
