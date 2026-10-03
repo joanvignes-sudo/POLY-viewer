@@ -1,48 +1,26 @@
-# POLY Viewer v0.9
+﻿# POLY Viewer v0.22
 
-Version publique expérimentale du viewer POLY.
+Bundle public expérimental du viewer POLY, préparé le 4 octobre 2026.
 
-## Nouveau : animations des intervalles C08
+## Contenu
+- 12 chaînes C01–C12 ;
+- 99 scènes visuelles d’animation ;
+- navigation nœuds, valeurs et arêtes vers une scène résolue ;
+- lecture Observer / Étudier avec carte synchronisée ;
+- illustrations fixes sur les 12 chaînes (C08 conserve ses 7 images figuratives dédiées) ;
+- provenance expérimentale et garde-fous temporels ;
+- glossaire visuel multi-chaînes v0.22 (109 entrées au moment du build) ;
+- interface desktop et mobile.
 
-La v0.9 ajoute un onglet **Animation** qui représente l'interaction ou le changement ayant lieu dans chaque intervalle scientifique de C08.
+## Garde-fous
+Les vitesses d’animation sont pédagogiques et ne représentent jamais les durées biologiques. Les temps mesurés restent attachés à leur préparation, leur horloge et leur portée expérimentale. Les raccords reconstruits restent explicitement signalés.
 
-### Principe
-Le personnage est un acteur visuel.  
-L'unité pédagogique devient :
+## Validation locale
+- 12 chaînes / 99 scènes : PASS ;
+- 261 sélections scientifiques (nœuds, valeurs, arêtes) vers Animation : PASS ;
+- 261 sélections vers Illustration : PASS ;
+- Observer sur les 12 chaînes : PASS ;
+- mobile 390 × 844 : PASS ;
+- erreurs JavaScript pendant les tests navigateur : 0.
 
-`état A → transformation / interaction → état B`
-
-Les animations sont réalisées avec des SVG réutilisables et du CSS, donc elles restent très légères même affichées en grand.
-
-### 13 actions / intervalles couverts
-- production locale → ATP disponible ;
-- ATP disponible → cycle vésiculaire opérationnel ;
-- stimulation → pic Na⁺ dendritique ;
-- stimulation → pic Na⁺ somatique ;
-- stimulation → creux ATP dendritique ;
-- stimulation → creux ATP somatique ;
-- relation temporelle Na⁺ ↔ ATP inconnue ;
-- retour Na⁺ dendritique vers la ligne de base ;
-- retour Na⁺ somatique vers la ligne de base ;
-- retour ATP vers la ligne de base ;
-- diffusion longitudinale du Na⁺ ;
-- ER / Ca²⁺ → proximité mitochondriale ;
-- ATP disponible → entretien des gradients (relation reconstruite).
-
-### Garde-fous
-- durée visuelle de la boucle ≠ durée biologique ;
-- les temps réels sont lus dans le dataset scientifique ;
-- les mécanismes non mesurés ne sont pas inventés ;
-- Na⁺ et ATP restent séparés quand les séries expérimentales sont distinctes ;
-- un ND reste explicitement ND ;
-- le retour du Na⁺ n'est pas attribué automatiquement à la pompe ;
-- le coefficient de diffusion n'est pas transformé en durée ;
-- E49 reste identifié comme preuve HeLa non neuronale.
-
-## Glossaire
-Le glossaire figuratif reste accessible depuis le bouton **📚 Glossaire** et contient 11 personnages SVG réutilisables.
-
-## Illustration
-Les 7 scènes figuratives F01–F07 restent disponibles dans l'onglet **Illustration**.
-
-Les commentaires restent stockés localement dans le navigateur de chaque visiteur.
+Les commentaires restent stockés localement dans le navigateur et ne sont pas synchronisés entre utilisateurs.
