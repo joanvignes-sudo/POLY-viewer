@@ -1,0 +1,122 @@
+<!doctype html><html lang="fr"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>POLY · Anatomie et chaînes biologiques</title><meta name="description" content="Explorer les chaînes biologiques en 3D, consulter leurs protocoles, leurs preuves et leurs limites."><style>body{margin:0;background:#161d21;color:#e5e9e7;font:15px/1.6 system-ui;color-scheme:dark}.public-head{display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding:18px 4vw;border-bottom:1px solid #39464a}.public-head nav{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto}a{color:#b5d9cf}.wordmark{letter-spacing:.18em;font-size:25px;text-decoration:none}.public-intro{max-width:1100px;margin:30px auto 20px;padding:0 20px}.public-intro h1{font-size:clamp(25px,4vw,42px);font-weight:500}.public-intro p{max-width:850px}.public-intro select{display:block;font:inherit;max-width:100%;padding:9px;color:inherit;background:#243135;border:1px solid #8ca6a0;border-radius:5px}.public-intro .small{font-size:13px;color:#b0bdbb}#poly-visions{max-width:1200px;margin:auto}#poly-visions .pv-app{min-height:0!important;margin-bottom:30px}.public-footer{padding:24px 4vw;border-top:1px solid #39464a;color:#b0bdbb;font-size:13px}button,a,select,input{touch-action:manipulation}</style></head><body><header class="public-head"><a class="wordmark" href="index.html">POLY</a><span>Cartographie des chaînes biologiques · référence v0.92</span><nav><a href="atlas/index.html">Données et preuves</a><a href="canon.html">Canon</a><a href="archives/v0.22/index.html">Viewer historique</a></nav></header><div class="public-intro"><h1>Voir les chaînes. Examiner ce qui les relie.</h1><p>Une anatomie partagée pour explorer le corps, le cerveau et les expériences humaines. Cette première représentation reste schématique : les sources et les incertitudes accompagnent chaque lecture.</p><label>Mode de représentation <select id="mode-choice" aria-label="Mode de représentation"></select></label><p class="small">Glisser pour tourner · sélectionner une structure pour zoomer · ouvrir le dossier scientifique pour les protocoles et preuves. Les parcours 3D sont des repères illustratifs ; la lecture simultanée ne calcule pas leurs effets combinés.</p></div><div id="poly-visions" class="poly-modes" aria-label="Cinq propositions pour POLY" data-previous-label="Précédent" data-next-label="Suivant">
+  <section data-variant="Anatomie en brume" aria-label="Anatomie en brume"></section>
+  <section data-variant="Anatomie déployée" aria-label="Anatomie déployée" hidden></section>
+  <section data-variant="Voyage dans une chaîne" aria-label="Voyage dans une chaîne" hidden></section>
+  <section data-variant="Observatoire des échelles" aria-label="Observatoire des échelles" hidden></section>
+  <section data-variant="Quatre chaînes" aria-label="Quatre chaînes" hidden></section>
+</div>
+<style>
+#poly-visions {color-scheme:light dark;--p-bg:light-dark(#f4f3ef,#161d21);--p-text:light-dark(#263335,#e5e9e7);--p-soft:light-dark(#d9dfda,#303c40);--p-muted:light-dark(#536364,#b0bdbb);--p-accent:light-dark(#437f79,#87bdb0);--p-blue:light-dark(#537ba1,#a0bbd2);--p-gold:light-dark(#927344,#d0b58c);--p-rose:light-dark(#966975,#c2a0ab);color:var(--p-text)}
+#poly-visions .pv-app {background:var(--p-bg);min-height:900px;padding:20px;box-sizing:border-box;font:14px/1.5 system-ui,sans-serif}
+#poly-visions .pv-layout > *,#poly-visions .pv-panel > * {min-width:0}
+#poly-visions .pv-select {display:block;width:100%}
+#poly-visions .pv-top {display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;padding-right:90px}
+#poly-visions .pv-brand {font-size:25px;letter-spacing:.15em;font-weight:500}
+#poly-visions h3 {font-size:19px;font-weight:500;margin:0}
+#poly-visions .pv-meta {color:var(--p-muted);font-size:12px;margin:7px 0 15px}
+#poly-visions .pv-layout {display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:20px}
+#poly-visions .pv-stage {position:relative;height:420px;min-width:0;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,var(--p-soft),var(--p-bg) 72%)}
+#poly-visions canvas {display:block;width:100%!important;height:100%!important;touch-action:none;cursor:grab}
+#poly-visions .pv-tag {position:absolute;left:12px;top:10px;pointer-events:none;color:var(--p-muted);font-size:12px}
+#poly-visions .pv-help {position:absolute;bottom:10px;left:12px;right:12px;pointer-events:none;color:var(--p-muted);font-size:12px}
+#poly-visions .pv-panel {display:flex;flex-direction:column;gap:10px;min-width:0}
+#poly-visions .pv-label {color:var(--p-muted);font-size:12px;letter-spacing:.05em}
+#poly-visions .pv-controls {display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+#poly-visions button,#poly-visions select {font:inherit;color:var(--p-text);background:var(--p-bg);border:1px solid var(--p-muted);border-radius:5px;padding:7px 10px;max-width:100%}
+#poly-visions button[aria-pressed=true] {background:var(--p-soft)}
+#poly-visions input[type=range] {accent-color:var(--p-accent);width:100%;min-width:0}
+#poly-visions .pv-layer {display:grid;grid-template-columns:70px 1fr;align-items:center;gap:8px}
+#poly-visions .pv-fact {border-top:1px solid var(--p-soft);padding-top:10px;font-size:13px;overflow-wrap:anywhere}
+#poly-visions a {color:var(--p-text);text-decoration:underline}
+#poly-visions .pv-steps {display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+#poly-visions .pv-steps button {font-size:12px}
+#poly-visions .pv-lanes {display:grid;gap:7px;margin-top:12px}
+#poly-visions .pv-lane {display:grid;grid-template-columns:130px 1fr;align-items:center;gap:10px;font-size:12px}
+#poly-visions .pv-track {height:5px;background:var(--p-soft)}
+#poly-visions .pv-fill {height:5px;width:0;background:var(--p-accent)}
+#poly-visions .pv-status {min-height:42px;margin:12px 0;font-size:13px}
+#poly-visions .pv-footer {display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;color:var(--p-muted);font-size:12px;border-top:1px solid var(--p-soft);padding-top:10px}
+#poly-visions .pv-micro {display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#poly-visions .pv-micro .pv-stage {height:420px}
+#poly-visions .pv-legend {display:flex;gap:10px;flex-wrap:wrap;font-size:12px}
+#poly-visions .pv-legend span {display:flex;align-items:center;gap:5px}
+#poly-visions .pv-dot {width:9px;height:9px;border-radius:50%;background:var(--p-accent)}
+@media(max-width:650px){#poly-visions .pv-app{padding:12px;min-height:1050px}#poly-visions .pv-layout{grid-template-columns:1fr}#poly-visions .pv-stage{height:350px}#poly-visions .pv-panel{display:grid;grid-template-columns:1fr 1fr;gap:10px}#poly-visions .pv-fact{grid-column:1/-1}#poly-visions .pv-micro{grid-template-columns:1fr}#poly-visions .pv-micro .pv-stage{height:245px}#poly-visions .pv-top{padding-right:65px}#poly-visions .pv-lane{grid-template-columns:105px 1fr}}
+</style>
+<script src="assets/vendor/three-0.158.0.min.js"></script>
+<script>
+(()=>{
+const root=document.getElementById('poly-visions');
+const names=['Anatomie en brume','Anatomie déployée','Voyage dans une chaîne','Observatoire des échelles','Quatre chaînes'];
+const subtitles=['Traverser les enveloppes, garder le corps comme repère','Écarter les enveloppes pour comprendre les rapports spatiaux','Une scène anatomique, un maillon à la fois','Du corps à la cellule, avec un changement de référence visible','Superposer quatre lectures et repérer les territoires partagés'];
+function dossier(r){const id=r.name.startsWith('B')?'HUMAIN:NEZ-IEEG':r.name.startsWith('C')?'HUMAIN:COEUR-JUGEMENT-IRM':r.name.startsWith('D')?'HUMAIN:FACIAL-RESSENTI':null;return id?'atlas/index.html?path='+encodeURIComponent(id):'canon.html#vague';}
+const routes=[
+ {name:'A · Oreille / vague',nodes:['Oreille','Ganglion vagal','Tronc cérébral','Thalamus','Insula'],pts:[[1.08,2.04,0],[.63,1.1,-.15],[0,1.43,-.25],[.14,2.12,0],[.64,2.15,.14]],source:'https://pubmed.ncbi.nlm.nih.gov/11835542/',text:'Branche auriculaire du vague : territoire et trajet illustratifs. Les relais centraux de cette maquette ne constituent pas une chaîne validée.'},
+ {name:'B · Respiration',nodes:['Nez','Région olfactive','Cortex piriforme','Amygdale','Hippocampe'],pts:[[0,2,1.02],[0,2.12,.65],[.36,1.88,.35],[.44,1.83,.08],[.46,1.95,-.2]],source:'https://pmc.ncbi.nlm.nih.gov/articles/PMC5148230/',text:'Zelano et al. : synchronisations et comportements humains documentés dans des préparations distinctes. Le trait n’est pas une trajectoire axonale mesurée.'},
+ {name:'C · Cœur',nodes:['Cœur','Afférences corporelles','Tronc cérébral','Régions profondes','Amygdale'],pts:[[.24,-.55,.4],[.55,.3,.04],[0,1.43,-.25],[.18,2.02,0],[.44,1.83,.08]],source:'https://pmc.ncbi.nlm.nih.gov/articles/PMC4012313/',text:'Garfinkel et al. : effets de phase cardiaque sur certaines tâches de perception. Les relais entre cœur et cerveau ne sont pas enregistrés de bout en bout dans cette étude.'},
+ {name:'D · Film / expression',nodes:['Film / perception','Cortex sensoriel','Réseaux moteurs','Visage','Rapport de valence'],pts:[[0,2.12,1.02],[-.6,2.18,-.25],[-.52,2.53,.22],[-.45,1.9,.86],[-.26,2.6,-.32]],source:'https://www.nature.com/articles/s42003-025-09361-5',text:'Sato et al. : IRMf et vidéo pendant le film, valence recueillie après par rappel. Le modèle de réseau ne démontre pas à lui seul une causalité expérimentale.'}
+];
+let instances=[];
+root.querySelectorAll(':scope > section').forEach((section,idx)=>{
+ section.innerHTML=`<div class="pv-app"><div class="pv-top"><span class="pv-brand">POLY</span><h3>${names[idx]}</h3></div><div class="pv-meta">${subtitles[idx]} · Canon d’interface v0.92 · anatomie schématique</div><div class="pv-layout"><div><div class="${idx===3?'pv-micro':''}"><div class="pv-stage"><div class="pv-tag">${idx===1?'Enveloppes déployées · proportions illustratives':'Référence humaine illustrative · positions non mesurées'}</div><div class="pv-help">Glisser pour tourner · molette pour zoomer · cliquer une structure</div></div>${idx===3?'<div class="pv-stage pv-neuron"><div class="pv-tag">Échantillon distinct · neurones schématiques</div><div class="pv-help">Aucun raccord cellule–cerveau mesuré dans cette maquette</div></div>':''}</div><div class="pv-controls"><button type="button" class="pv-play">Lire ${idx===4?'les quatre chaînes':'la chaîne'}</button><button type="button" class="pv-next">Maillon suivant</button><button type="button" class="pv-home">Vue d’ensemble</button></div><div class="pv-steps"></div><div class="pv-status" aria-live="polite"></div>${idx===4?'<div class="pv-lanes"></div>':''}</div><aside class="pv-panel"><div class="pv-label">ENVELOPPES · OPACITÉ</div><div></div>${['Peau','Chair','Os','Cortex'].map((n,k)=>`<label class="pv-layer">${n}<input aria-label="Opacité ${n}" type="range" min="0" max="100" value="${[12,0,10,24][k]}" data-layer="${k}"></label>`).join('')}<label class="pv-label">SÉLECTION / ZOOM<select class="pv-select" aria-label="Structure à explorer"><option value="all">Tête et thorax</option value="brain">Cerveau</option><option value="ear">Oreille</option><option value="stem">Tronc cérébral</option><option value="heart">Cœur</option><option value="insula">Insula (repère)</option></select></label><div class="pv-fact"><div class="pv-label">DOSSIER DU MAILLON</div><div class="pv-detail"></div><a class="pv-source" target="_blank" rel="noreferrer">Ouvrir la source</a><p><a class="pv-dossier">Étudier · protocoles et preuves ↗</a></p></div><div class="pv-fact">${idx===3?'Échelle locale : une future coupe BigBrain ou un extrait H01 remplacerait ce schéma cellulaire.':'Géométrie : modèle procédural de démonstration. Aucun atlas anatomique mesuré chargé.'}</div></aside></div><div class="pv-footer"><span>Trait pointillé = raccord illustratif / non établi dans cette scène</span><span>${idx===4?'Lecture simultanée ≠ prédiction de l’effet combiné':'Lecture pédagogique · durée biologique non connue'}</span></div></div>`;
+ const stage=section.querySelector('.pv-stage');
+ const status=section.querySelector('.pv-status');
+ if(!globalThis.THREE){status.textContent='Le moteur 3D n’a pas pu se charger. Les propositions restent décrites dans le dossier.';return;}
+ const T=THREE,scene=new T.Scene(),camera=new T.PerspectiveCamera(35,1,.01,100);
+ let renderer;try{renderer=new T.WebGLRenderer({antialias:true,alpha:true});}catch(e){status.textContent='WebGL indisponible sur cet appareil.';return;}
+ renderer.setPixelRatio(Math.min(devicePixelRatio,2));stage.prepend(renderer.domElement);
+ scene.add(new T.HemisphereLight(0xffffff,0x586568,2));const light=new T.DirectionalLight(0xffffff,2.2);light.position.set(3,5,6);scene.add(light);
+ const world=new T.Group();scene.add(world);const layers=[new T.Group(),new T.Group(),new T.Group(),new T.Group()];layers.forEach(g=>world.add(g));
+ const pickable=[],objects={},materials=[];let palette=[];
+ const cv=v=>new T.Vector3(...v);
+ function mat(alpha=.5,color=0xa6b0aa){let m=new T.MeshStandardMaterial({color,roughness:.8,metalness:0,transparent:alpha<1,opacity:alpha,depthWrite:alpha>=1,side:T.DoubleSide});materials.push(m);return m;}
+ function ell(group,pos,scale,m,key){const o=new T.Mesh(new T.SphereGeometry(1,40,28),m);o.position.set(...pos);o.scale.set(...scale);group.add(o);if(key){o.userData.key=key;pickable.push(o);objects[key]=o;}return o;}
+ const skin=mat(.12),chair=mat(0),bone=mat(.10),cortex=mat(.24),solid=mat(.85);
+ const shells=[skin,chair,bone,cortex];
+ // These procedural envelopes are explicitly schematic and not segmented anatomy.
+ ell(layers[0],[0,2.1,0],[1.04,1.3,.98],skin);ell(layers[0],[0,1.55,.48],[.66,.73,.58],skin);
+ ell(layers[0],[0,1.94,1.01],[.17,.25,.23],skin);ell(layers[0],[0,.65,0],[.4,.65,.4],skin);
+ for(let s of [-1,1]){ell(layers[0],[s*1.04,2.03,0],[.15,.3,.2],skin);ell(layers[1],[s*.47,1.65,.42],[.27,.55,.36],chair);}
+ ell(layers[0],[0,-.75,0],[1.6,1.35,.64],skin);ell(layers[1],[0,.65,0],[.35,.6,.35],chair);
+ ell(layers[2],[0,2.25,-.06],[.96,1.06,.87],bone);ell(layers[2],[0,1.34,.5],[.62,.22,.39],bone);
+ ell(layers[3],[-.43,2.37,-.08],[.45,.71,.73],cortex,'brain');ell(layers[3],[.43,2.37,-.08],[.45,.71,.73],cortex);
+ // Decorative sulci: visibility cues, not an anatomical parcellation.
+ const sulci=new T.Group();layers[3].add(sulci);
+ for(let s of [-1,1]) for(let j=0;j<9;j++){const pts=[];for(let k=0;k<46;k++){let a=k/45*Math.PI*1.65-.8;pts.push(new T.Vector3(s*(.43+.36*Math.cos(a)),2.37+.62*Math.sin(a),-.65+j*.145+Math.sin(a*5+j)*.035));}let l=new T.Line(new T.BufferGeometry().setFromPoints(pts),new T.LineBasicMaterial({color:0x88968f,transparent:true,opacity:.3}));sulci.add(l);}
+ ell(world,[0,1.47,-.28],[.15,.42,.17],solid,'stem');ell(world,[0,1.82,-.63],[.48,.29,.24],solid);
+ ell(world,[.24,-.55,.35],[.29,.42,.25],solid,'heart');ell(world,[-.64,-.58,.04],[.46,.8,.39],mat(.12));ell(world,[.64,-.58,.04],[.46,.8,.39],mat(.12));
+ ell(world,[1.08,2.04,.04],[.08,.14,.07],solid,'ear');ell(world,[.64,2.15,.14],[.07,.2,.16],solid,'insula');
+ const leftIns=ell(world,[-.64,2.15,.14],[.07,.2,.16],solid);
+ for(let k=0;k<8;k++)ell(world,[0,.98-k*.25,-.28],[.11,.08,.12],bone);
+ if(idx===1){layers[0].position.x=-2.3;layers[1].position.x=-1.3;layers[2].position.x=1.4;layers[3].position.x=0;}
+ const activeRoutes=idx===4?routes:[routes[idx===3?1:0]],routeGroups=[],beads=[],nodeMarkers=[];
+ activeRoutes.forEach((r,ri)=>{const group=new T.Group();world.add(group);let curve=new T.CatmullRomCurve3(r.pts.map(cv));let lm=new T.LineDashedMaterial({color:0x7ab3a3,dashSize:.065,gapSize:.045,transparent:true,opacity:.6});let path=new T.Line(new T.BufferGeometry().setFromPoints(curve.getPoints(160)),lm);path.computeLineDistances();group.add(path);let ball=ell(group,r.pts[0],[.07,.07,.07],mat(1));beads.push({ball,curve});r.pts.forEach((p,j)=>{let marker=ell(group,p,[.045,.045,.045],mat(.8));marker.userData={route:ri,step:j};pickable.push(marker);nodeMarkers.push(marker);});routeGroups.push(group);});
+ let yaw=.52,pitch=.12,distance=idx===1?12:8.8,target=new T.Vector3(0,1,0),playing=false,progress=0,last=0,step=0,inspectedRoute=0;
+ const select=section.querySelector('.pv-select');
+ function focus(key){let p=key==='all'?new T.Vector3(0,1,0):objects[key].getWorldPosition(new T.Vector3());target.copy(p);distance=key==='all'?(idx===1?12:8.8):key==='brain'?3.7:2.5;select.value=key;draw();}
+ function theme(){const style=getComputedStyle(root),css=['--p-accent','--p-blue','--p-gold','--p-rose'];let temp=document.createElement('span');root.append(temp);palette=css.map(c=>{temp.style.color=`var(${c})`;return new T.Color(getComputedStyle(temp).color)});temp.remove();routeGroups.forEach((g,i)=>g.traverse(o=>{if(o.material)o.material.color.copy(palette[i])}));solid.color.copy(palette[0]).lerp(new T.Color(.5,.5,.5),.5);draw();}
+ function update(){const r=activeRoutes[inspectedRoute];section.querySelector('.pv-detail').textContent=r.text;section.querySelector('.pv-source').href=r.source;section.querySelector('.pv-dossier').href=dossier(r);const all=idx===4;status.textContent=all?`Quatre lectures au maillon ${step+1}/5 · recouvrement visuel, effet combiné indéterminé`:`${step+1}/5 · ${r.nodes[step]} · trajectoire illustrative, délai non mesuré`;section.querySelectorAll('.pv-steps button').forEach((b,i)=>{b.setAttribute('aria-pressed',String(i===step));b.textContent=r.nodes[i]});beads.forEach((b,i)=>{b.ball.position.copy(b.curve.getPointAt(progress));});nodeMarkers.forEach(m=>{const active=m.userData.step===step;m.scale.setScalar(active?.085:.045);m.material.emissive.copy(palette[m.userData.route]||palette[0]);m.material.emissiveIntensity=active?.8:0;});section.querySelectorAll('.pv-fill').forEach(f=>f.style.width=`${progress*100}%`);section.querySelector('.pv-play').textContent=playing?'Pause':`Lire ${all?'les quatre chaînes':'la chaîne'}`;}
+ activeRoutes[0].nodes.forEach((n,i)=>{let b=document.createElement('button');b.type='button';b.textContent=n;b.onclick=()=>{playing=false;step=i;progress=i/4;update();draw();};section.querySelector('.pv-steps').append(b);});
+ if(idx===4)activeRoutes.forEach((r,i)=>{const line=document.createElement('div');line.className='pv-lane';line.innerHTML=`<button type="button" aria-pressed="true">${r.name}</button><div class="pv-track"><div class="pv-fill" style="background:var(${['--p-accent','--p-blue','--p-gold','--p-rose'][i]})"></div></div>`;line.querySelector('button').onclick=e=>{inspectedRoute=i;const v=!routeGroups[i].visible;routeGroups[i].visible=v;e.currentTarget.setAttribute('aria-pressed',v);section.querySelector('.pv-detail').textContent=r.text;section.querySelector('.pv-source').href=r.source;section.querySelector('.pv-dossier').href=dossier(r);update();draw();};section.querySelector('.pv-lanes').append(line);});
+ function draw(){if(!stage.clientWidth)return;camera.position.set(target.x+distance*Math.sin(yaw)*Math.cos(pitch),target.y+distance*Math.sin(pitch),target.z+distance*Math.cos(yaw)*Math.cos(pitch));camera.lookAt(target);renderer.render(scene,camera);}
+ function size(){const w=stage.clientWidth,h=stage.clientHeight;if(!w)return;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();draw();}
+ new ResizeObserver(size).observe(stage);
+ select.onchange=()=>focus(select.value);
+ section.querySelectorAll('[data-layer]').forEach(input=>input.oninput=()=>{const m=shells[+input.dataset.layer];m.opacity=input.value/100;m.transparent=m.opacity<1;m.depthWrite=m.opacity>=1;m.needsUpdate=true;draw();});
+ section.querySelector('.pv-home').onclick=()=>focus('all');
+ section.querySelector('.pv-next').onclick=()=>{playing=false;step=(step+1)%5;progress=step/4;update();if(idx===2){target.copy(cv(activeRoutes[0].pts[step]));distance=3.5;}draw();};
+ section.querySelector('.pv-play').onclick=()=>{playing=!playing;if(progress>=1){progress=0;step=0;}last=performance.now();update();};
+ let pointer=null;renderer.domElement.onpointerdown=e=>{pointer={x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY};renderer.domElement.setPointerCapture(e.pointerId);};
+ renderer.domElement.onpointermove=e=>{if(!pointer)return;yaw-=(e.clientX-pointer.x)*.007;pitch=Math.max(-1.3,Math.min(1.3,pitch+(e.clientY-pointer.y)*.006));pointer.x=e.clientX;pointer.y=e.clientY;draw();};
+ renderer.domElement.onpointerup=e=>{if(!pointer)return;if(Math.hypot(e.clientX-pointer.startX,e.clientY-pointer.startY)<5){let rect=renderer.domElement.getBoundingClientRect(),ray=new T.Raycaster();ray.setFromCamera(new T.Vector2((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1),camera);const hit=ray.intersectObjects(pickable).find(h=>h.object.visible);if(hit){let d=hit.object.userData;if(d.key)focus(d.key);else if(d.step!==undefined){step=d.step;progress=step/4;playing=false;update();}}}pointer=null;draw();};
+ renderer.domElement.onpointercancel=()=>pointer=null;
+ renderer.domElement.addEventListener('wheel',e=>{e.preventDefault();distance=Math.max(.6,Math.min(18,distance*Math.exp(e.deltaY*.001)));draw();},{passive:false});
+ if(globalThis.Tweak){const design={brume:12};const tweak=new Tweak({container:section.querySelector('.pv-app'),onChange:()=>{skin.opacity=design.brume/100;section.querySelector('[data-layer="0"]').value=design.brume;draw();}});tweak.addSlider(design,'brume',{label:'Brume de peau',min:0,max:50,unit:'%'});}
+ function tick(t){requestAnimationFrame(tick);if(section.hidden){last=t;return;}if(playing){progress=Math.min(1,progress+(t-last)/14000);let prev=step;step=Math.min(4,Math.floor(progress*4));if(idx===2){target.lerp(cv(activeRoutes[0].pts[step]),.07);distance+=(3.5-distance)*.025;}beads.forEach(b=>b.ball.position.copy(b.curve.getPointAt(progress)));section.querySelectorAll('.pv-fill').forEach(f=>f.style.width=`${progress*100}%`);if(step!==prev||progress>=1){if(progress>=1)playing=false;update();}draw();}last=t;}
+ instances.push({theme,size});theme();size();update();requestAnimationFrame(tick);
+ if(idx===3){const micro=section.querySelector('.pv-neuron'),ns=new T.Scene(),nc=new T.PerspectiveCamera(42,1,.01,100),nr=new T.WebGLRenderer({antialias:true,alpha:true});nr.setPixelRatio(Math.min(devicePixelRatio,2));micro.prepend(nr.domElement);ns.add(new T.HemisphereLight(0xffffff,0x667777,3));const ng=new T.Group();ns.add(ng);function branch(origin,angle,len,depth){let end=origin.clone().add(new T.Vector3(Math.cos(angle)*len,Math.sin(angle)*len,.15*Math.sin(angle*3)));const tube=new T.Mesh(new T.TubeGeometry(new T.LineCurve3(origin,end),2,.018*(depth+1),6,false),new T.MeshStandardMaterial({color:0x82aa9c}));ng.add(tube);if(depth>0){branch(end,angle-.45,len*.65,depth-1);branch(end,angle+.5,len*.65,depth-1);}}for(let j=0;j<3;j++){const origin=new T.Vector3((j-1)*1.35,(j%2)*.6-.3,0);const soma=new T.Mesh(new T.SphereGeometry(.17,20,15),new T.MeshStandardMaterial({color:0x8caaa2}));soma.position.copy(origin);ng.add(soma);for(let k=0;k<5;k++)branch(origin,k*Math.PI*2/5+j,.65,3);}nc.position.set(0,0,6);function nm(){let w=micro.clientWidth;if(!w)return;nr.setSize(w,micro.clientHeight);nc.aspect=w/micro.clientHeight;nc.updateProjectionMatrix();nr.render(ns,nc);}new ResizeObserver(nm).observe(micro);let drag=null;nr.domElement.onpointerdown=e=>{drag=e.clientX;nr.domElement.setPointerCapture(e.pointerId)};nr.domElement.onpointermove=e=>{if(drag!==null){ng.rotation.y+=(e.clientX-drag)*.01;drag=e.clientX;nm()}};nr.domElement.onpointerup=()=>drag=null;nr.domElement.addEventListener('wheel',e=>{e.preventDefault();nc.position.z=Math.max(1.5,Math.min(12,nc.position.z*Math.exp(e.deltaY*.001)));nm()},{passive:false});nm();}
+});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>instances.forEach(i=>i.theme()));
+})();
+</script>
+<script>(()=>{const root=document.getElementById('poly-visions'),sel=document.getElementById('mode-choice'),sections=[...root.querySelectorAll(':scope > section')];sections.forEach((s,i)=>{const o=document.createElement('option');o.value=i;o.textContent=s.dataset.variant;sel.append(o)});function show(i){sections.forEach((s,j)=>s.hidden=i!==j);sel.value=i;history.replaceState(null,'','#mode='+i);}sel.onchange=()=>show(+sel.value);const m=location.hash.match(/mode=(\d)/);if(m&&+m[1]<5)show(+m[1]);})();</script><footer class="public-footer">Canon v0.92 · géométrie illustrative, sans nouvelles coordonnées anatomiques mesurées. <a href="canon.html">Portée et feuille de route</a> · <a href="atlas/index.html">Atlas scientifique</a></footer></body></html>

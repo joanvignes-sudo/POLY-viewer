@@ -1,10 +1,7 @@
-# POLY — référence publique v0.92
+# POLY v0.93 — L’atelier des chaînes
 
-Canon de représentation adopté le 11 octobre 2026.
+Une sélection commune aux vues anatomiques et au dossier scientifique : C01–C14, 50 parcours documentés dont 22 humains, sources, observations temporelles et annotations.
 
-- index.html : cinq modes 3D, rotation, transparence, sélection, lecture et quatre chaînes.
-- atlas/index.html : 50 parcours documentaires dont 22 humains, 314 maillons, 240 liens, 128 fiches primaires et 15 protocoles humains.
-- canon.html / CANON_POLY_v0.92.md : règles, précision, portée et suite.
-- archives/v0.22/index.html : ancien viewer conservé.
+L’anatomie reste schématique. La lecture à l’écran n’est pas une simulation physiologique ; les préparations, horloges et quantités sont distinguées. Les annotations sont privées dans le navigateur, exportables et importables. La discussion publique utilise un ticket GitHub préparé puis publié manuellement par son auteur.
 
-Géométrie illustrative, sans nouvelles coordonnées anatomiques mesurées ; durée pédagogique et effets combinés non simulés. Les échanges privés et les acquisitions locales ne sont pas redistribués. Les sources scientifiques originales et leurs modalités d’accès restent liées depuis les parcours.
+Le canon v0.92 reste accessible dans canon.html. L’évaluation et les limites de cette refonte sont dans AUDIT_PRESENTATION_v0.93.md. La maquette précédente est conservée dans archives/v0.92/index.html ; l’atlas scientifique complet reste dans atlas/index.html.

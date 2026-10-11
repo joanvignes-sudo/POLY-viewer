@@ -1,7 +1,9 @@
 {
-  "version": "0.92",
-  "canonical_direction_approved": "2026-10-11 par Joan Vignes",
-  "source_version": "0.91",
+  "version": "0.93",
+  "canonical_direction": "Canon v0.92 conservé ; refonte de présentation et des parcours",
+  "chains": 14,
+  "canonical_nodes": 172,
+  "canonical_edges": 165,
   "paths": 50,
   "human_paths": 22,
   "public_documents": 215,
@@ -9,6 +11,6 @@
   "correspondence_published": false,
   "new_measured_geometry": false,
   "four_chain_combined_prediction": false,
-  "baseline_public_commit": "49ee071dcef2e4eaa9f3748272235fae4fb100aa",
-  "public_scope": "Scientific syntheses, protocol/evidence metadata and source links; no local raw originals or private mail."
+  "comments": "Privés sur le navigateur, import/export ; discussion GitHub à publication manuelle.",
+  "public_github_issues_available": true
 }
