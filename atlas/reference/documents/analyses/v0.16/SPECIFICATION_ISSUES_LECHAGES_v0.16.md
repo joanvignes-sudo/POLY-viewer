@@ -1,0 +1,3 @@
+# Diagnostic issues–léchages, avant calcul
+
+Après le modèle de participation, vérifier les limites de son marqueur : sur les sessions d'apprentissage et test fixées v0.14, comparer la présence d'une issue finie gauche/droite et les timestamps de léchages de chaque côté dans [CSon ; trialEnd]. Conserver les deux côtés, les intervalles invalides et les timestamps non finis ; aucune décision motrice exclusive n'est déduite d'un simple léchage dans cette fenêtre. Rapporter notamment les essais sans issue finie mais avec au moins un léchage dans cette fenêtre. Ce diagnostic est descriptif, non causal ; aucune réestimation du modèle ni exclusion tardive des sessions n'en découle.

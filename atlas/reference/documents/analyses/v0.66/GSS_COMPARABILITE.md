@@ -1,0 +1,13 @@
+# GSS — effectifs, pondérations et comparabilité, v0.66
+
+Les quatre méthodes ABS archivées en v0.64 ont été examinées sur des passages non encore extraits. Pas de nouvelle collecte ni recalcul des moyennes nationales.
+
+En 2025, **10 368 réponses en ligne et 2 934 par téléphone** totalisent 13 302 ménages entièrement répondants : parts calculées POLY 77.9432 % et 22.0568 %. v0.64 conservait seulement environ 78 % et disait les comptes exacts non extraits : cette limite est maintenant levée. La source emploie aussi 13 302 personnes pour l’échantillon atteint ; le questionnaire individuel sélectionne une personne de 15 ans ou plus par ménage, le formulaire ménage peut être rempli par un autre adulte de 18 ans ou plus. Aucun n valide de satisfaction par item n’est déduit.
+
+27 129 logements approchés ne sont pas le dénominateur éligible connu : des logements hors champ peuvent y figurer, dont le nombre exact est inconnu sans suivi face-à-face. Le rapport brut 13 302/27 129 vaut 49.0324 %, **pas un taux de réponse officiel**. La collecte s’étend du 1er mai au 28 juin 2025 ; pas une mesure annuelle continue ni une trajectoire individuelle.
+
+La calibration varie : 2014 ajoute SEIFA aux marges démographiques/ménages ; 2019 utilise IRSAD 2016 puis ERP de juin 2019 ; 2020 calibre sur le nombre de personnes locataires puis ERP de juin 2020. En 2025 le poids initial est décrit par sélection **et réponse**, puis calibration ERP de juin 2025 ; les classifications de sélection incluent propension online, handicap, langue et stress financier. Cette différence de description ne prouve pas absence de traitement de non-réponse dans les autres vagues. La règle exacte en 2025 n’est pas reconstruite.
+
+Personnes et ménages restent séparés : tables ménage : 15 (2014), 13–14 (2019), 16–17 (2020), 18–19 (2025), la majorité des autres estimations utilisant les poids personne. Les moyennes et erreurs publiées héritées sont conservées. La pondération ne démontre pas suppression de biais non observé ; le statut d’imputation en 2025 reste non établi, sans transfert automatique des années antérieures.
+
+Sources : [ABS2014](https://www.abs.gov.au/methodologies/general-social-survey-summary-results-australia-methodology/2014), [ABS2019](https://www.abs.gov.au/methodologies/general-social-survey-summary-results-australia-methodology/2019), [ABS2020](https://www.abs.gov.au/methodologies/general-social-survey-summary-results-australia-methodology/2020), [ABS2025](https://www.abs.gov.au/methodologies/general-social-survey-summary-results-australia-methodology/2025). Passages indexés et empreintes dans les fichiers joints. Indices désignent le découpage HTML du script conservé, pas des lignes originales.

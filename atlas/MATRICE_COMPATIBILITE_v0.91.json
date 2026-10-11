@@ -1,0 +1,190 @@
+[
+  {
+    "id": "COMP-01",
+    "title": "Pacing cardiaque : préparation et carte de marquage",
+    "a": "TRAJET:P01:0",
+    "b": "MESURE:COEUR-TRAP2",
+    "status": "Préparations et mesures à distinguer",
+    "shared": "Pacing cardiaque via ChRmine dans le dossier S15",
+    "difference": "589 nm en calibration anesthésiée, 591 nm dans le gilet libre, 585 nm en culture ; TRAP2 est une mesure d’activité intégrée.",
+    "decision": "Ne pas transférer irradiance, effet ni précision entre préparations ; les comptages TRAP2 ne démontrent pas une chaîne nerveuse.",
+    "needed": "Correspondance explicite dispositif→expérience→essais et calibration physique.",
+    "evidence": [
+      "COEUR-CULTURE",
+      "COEUR-ANESTHESIE",
+      "COEUR-GILET",
+      "COEUR-TRAP"
+    ]
+  },
+  {
+    "id": "COMP-02",
+    "title": "LC marqué après pacing et LC→cortex en tâche",
+    "a": "TRAJET:P01:1",
+    "b": "TRAJET:P02-LC:1",
+    "status": "Voisinage documentaire",
+    "shared": "Territoire LC et identité noradrénergique",
+    "difference": "Fos/Slc6a2 après stimulation cardiaque versus activité axonale/calcium pendant choix ; expériences et cellules non jointes.",
+    "decision": "Aucun trajet cœur→LC→cortex PL ajouté.",
+    "needed": "Identification des populations, projections et réponses dans une préparation compatible.",
+    "evidence": [
+      "COEUR-LC",
+      "LC-PROJECTION",
+      "LC-AXONES"
+    ]
+  },
+  {
+    "id": "COMP-03",
+    "title": "Dopamine : décharge VTA et estimation striatale",
+    "a": "TRAJET:P02-VTA:0",
+    "b": "TRAJET:BANG-S24:0",
+    "status": "Grandeurs différentes",
+    "shared": "Notion de dopamine",
+    "difference": "Spikes de neurones VTA chez souris versus signal électrochimique traité chez humain ; origine axonale non identifiée dans les matrices Bang.",
+    "decision": "Ne pas convertir fréquence de spikes en concentration, ni réunir les latences.",
+    "needed": "Mesure synchronisée activité/libération et calibration, avec identité de préparation.",
+    "evidence": [
+      "VTA-PIC"
+    ]
+  },
+  {
+    "id": "COMP-04",
+    "title": "CO₂ et isoprotérénol : ressentis et mêmes patientes",
+    "a": "TRAJET:P03-RAPPORT:0",
+    "b": "TRAJET:P03-ISO-PANIC:0",
+    "status": "Cohortes partiellement partagées",
+    "shared": "BG/AM et lésions amygdaliennes bilatérales dans le dossier",
+    "difference": "Gaz inhalé versus agoniste périphérique IV ; critères de panique et témoins différents.",
+    "decision": "Pas deux échantillons indépendants des mêmes jumelles ; pas de fusion des taux de panique.",
+    "needed": "Correspondance personnes/visites/essais et définition harmonisée des sorties.",
+    "evidence": [
+      "CO2-PANIQUE",
+      "ISO-PERSONNES",
+      "ISO-PANIQUE-ORDRE"
+    ]
+  },
+  {
+    "id": "COMP-05",
+    "title": "Souffle d’air : cellules DA et force",
+    "a": "EXTRAIT:AIR-DA",
+    "b": "EXTRAIT:AIR-FORCE",
+    "status": "Jointure d’essais manquante",
+    "shared": "Même étude et type de stimulus",
+    "difference": "76 cellules versus 24 paires de sessions de force ; regroupement par souris et essais communs non établi.",
+    "decision": "Ne pas présenter les deux pics comme des étapes causales suivies dans un même essai.",
+    "needed": "Tables cellule→session→animal et essais synchronisés.",
+    "evidence": []
+  },
+  {
+    "id": "COMP-06",
+    "title": "ChR2 et ArchT dans VTA",
+    "a": "PROTOCOLE:VTA-CHR2",
+    "b": "PROTOCOLE:VTA-ARCHT",
+    "status": "Interventions complémentaires",
+    "shared": "Population GABA de VTA et réponses de décharge DA",
+    "difference": "Activation et inhibition, constructions, sous-groupes et profils lumineux distincts.",
+    "decision": "Examiner la convergence sous perturbations opposées ; ne pas concaténer les deux protocoles en succession biologique.",
+    "needed": "Détails synaptiques, récepteurs et calibration des délais propres à chaque protocole.",
+    "evidence": [
+      "VTA-CHRT",
+      "VTA-CHR2-EFFET",
+      "VTA-ARCHT",
+      "VTA-ARCHT-EFFET"
+    ]
+  },
+  {
+    "id": "COMP-07",
+    "title": "Isoprotérénol : panique et dial continu",
+    "a": "TRAJET:P03-ISO-PANIC:0",
+    "b": "MESURE:ISO-DIAL",
+    "status": "Deux protocoles distincts",
+    "shared": "Même agoniste et mêmes jumelles",
+    "difference": "Ordre fixe/simple aveugle/n=15 témoins versus 14 bolus randomisés/double aveugle/n=16 témoins ; sorties différentes.",
+    "decision": "Garder les essais, témoins, questionnaires et corrélations dans leur protocole.",
+    "needed": "Correspondance visites/essais/capteurs si analyse conjointe souhaitée.",
+    "evidence": [
+      "ISO-PANIQUE-ORDRE",
+      "ISO-INTERO-ORDRE",
+      "ISO-DIAL",
+      "ISO-CORRELATION"
+    ]
+  },
+  {
+    "id": "COMP-H01",
+    "title": "Pacing chez la souris et visages chez l’humain",
+    "a": "TRAJET:P01:0",
+    "b": "HUMAIN:CFS-CARDIAQUE",
+    "status": "Préparations et sorties différentes",
+    "shared": "Question du rôle des signaux cardiaques",
+    "difference": "Tachycardie imposée, insula et comportement chez souris ; phase cardiaque naturelle, visages et détection chez humain.",
+    "decision": "Ce résultat humain ne démontre pas la route cœur→insula du dossier souris.",
+    "needed": "Mesures et interventions compatibles reliant activité cérébrale, afférences et ressenti chez humain.",
+    "evidence": [
+      "H03-ECG",
+      "H03-SORTIES",
+      "H03-LIMITES"
+    ]
+  },
+  {
+    "id": "COMP-H02",
+    "title": "Panique sous bolus et détection de visages",
+    "a": "TRAJET:P03-ISO-PANIC:0",
+    "b": "HUMAIN:CFS-CARDIAQUE",
+    "status": "Questions humaines distinctes",
+    "shared": "Mesure cardiaque et réponses de personnes",
+    "difference": "Provocation pharmacologique et symptômes rapportés versus présentation visuelle synchronisée au cœur et temps d’appui.",
+    "decision": "Ne pas assimiler identification d’un visage de peur et peur ressentie ou panique.",
+    "needed": "Protocole mesurant ces sorties séparément chez les mêmes personnes.",
+    "evidence": [
+      "H03-TACHE",
+      "H03-SORTIES",
+      "H-S21-CAPTEURS"
+    ]
+  },
+  {
+    "id": "COMP-H03",
+    "title": "Respiration nasale et cohérence de ceinture",
+    "a": "HUMAIN:NEZ-IEEG",
+    "b": "HUMAIN:RESP-MESURE",
+    "shared": "Respiration et enregistrements intracrâniens humains",
+    "difference": "H01 : nez/bouche, canule/ceinture, pics inspiratoires et mesures multiples ; S18 : ceinture, conditions ventilatoires et cohérence DBT.",
+    "decision": "Aucune réplication terme à terme : capteurs, conditions, régions et calculs diffèrent.",
+    "needed": "Signaux, phases, régions et traitements rendus compatibles avant comparaison.",
+    "evidence": [
+      "H01-CAPTEURS",
+      "H01-FENETRE",
+      "H-S18-COHERENCE"
+    ],
+    "status": "Comparaison documentaire ciblée"
+  },
+  {
+    "id": "COMP-H04",
+    "title": "Masquage interoculaire et clignement attentionnel",
+    "a": "HUMAIN:COEUR-BLINK",
+    "b": "HUMAIN:CFS-CARDIAQUE",
+    "shared": "Visages et phase cardiaque chez des personnes",
+    "difference": "H02 : identification après RSVP, quatre expressions ; H03 : détection sous CFS, neutre/peur, RT et confiance.",
+    "decision": "Des tâches et critères différents ; un effet dans l’une ne reproduit pas automatiquement l’autre.",
+    "needed": "Données et estimand communs, calibration et règles d’exclusion comparables.",
+    "evidence": [
+      "H02-BLINK",
+      "H03-TACHE",
+      "H03-EXCLUSIONS"
+    ],
+    "status": "Comparaison documentaire ciblée"
+  },
+  {
+    "id": "COMP-H05",
+    "title": "Intensité du visage et ressenti rappelé",
+    "a": "HUMAIN:COEUR-JUGEMENT-IRM",
+    "b": "HUMAIN:FACIAL-RESSENTI",
+    "shared": "Rapports et IRMf humains",
+    "difference": "H02 : intensité émotionnelle du visage après attente ; JP_RIKEN : valence de sa propre expérience rappelée après séance.",
+    "decision": "L’objet du jugement diffère ; ne pas renommer les deux sorties peur ressentie.",
+    "needed": "Consignes, objet du rapport et temps de recueil explicitement compatibles.",
+    "evidence": [
+      "H02-JUGEMENT",
+      "JP-RAPPORT"
+    ],
+    "status": "Comparaison documentaire ciblée"
+  }
+]

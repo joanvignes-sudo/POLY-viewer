@@ -1,0 +1,9 @@
+# POLY — provenance des séries ONS v0.37
+
+Les quatre séries britanniques v0.24 sont reliées à l’Annual Population Survey (APS), jeu local-authority, édition time-series, version 4 publiée le 28 novembre 2023. La sélection du script original porte sur Geography=United Kingdom et Estimate=Average (mean), périodes 2011–12 à 2022–23. Elle utilise des moyennes de scores sur 10. Le libellé général « Percentage » des métadonnées ne doit pas être appliqué à ces lignes : les proportions des catégories et les scores moyens ont des unités différentes. Les métadonnées originales sont conservées avec empreinte. [Jeu officiel version 4](https://www.ons.gov.uk/datasets/wellbeing-local-authority/editions/time-series/versions/4).
+
+Le QMI confirme l’APS comme source, l’exclusion des établissements collectifs et des réponses proxy, et les poids spécifiques de bien-être. Les effectifs peuvent différer entre items. La documentation décrit des révisions historiques des poids et, depuis octobre 2024, des difficultés de réponse/pondération motivant le statut de statistiques en développement. Ce statut plus récent ne change pas les valeurs figées en 2023. [QMI officiel, révision janvier 2025](https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/methodologies/personalwellbeingintheukqmi).
+
+La documentation générale de 2025 est distinguée de la version de données 2023. Elle ne prouve pas le mode de chaque répondant ou vague historique. Ce détail reste à vérifier, notamment autour des changements de collecte de 2020. Le rattachement à l’APS est établi ; une continuité parfaite de mesure n’est pas déclarée.
+
+Les moyennes arithmétiques annuelles v0.24 restent des descriptifs temporels séparés par question, sans IC fabriqué par moyenne des bornes et sans causalité. Aucun calcul conclu n’est répété. Faits : provenance et unités ; modèles : aucun nouveau ; hypothèses : aucune nouvelle. Quatre axes ouverts, analyses hors canon, baseline v0.22 non éditée.

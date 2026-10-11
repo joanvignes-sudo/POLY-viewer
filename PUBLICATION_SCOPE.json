@@ -1,0 +1,14 @@
+{
+  "version": "0.92",
+  "canonical_direction_approved": "2026-10-11 par Joan Vignes",
+  "source_version": "0.91",
+  "paths": 50,
+  "human_paths": 22,
+  "public_documents": 215,
+  "catalogue_files": 1631,
+  "correspondence_published": false,
+  "new_measured_geometry": false,
+  "four_chain_combined_prediction": false,
+  "baseline_public_commit": "49ee071dcef2e4eaa9f3748272235fae4fb100aa",
+  "public_scope": "Scientific syntheses, protocol/evidence metadata and source links; no local raw originals or private mail."
+}

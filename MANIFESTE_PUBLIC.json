@@ -1,0 +1,1430 @@
+{
+  "version": "0.92",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "archives/pre-v0.22/.nojekyll",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F01.js",
+      "bytes": 13530,
+      "sha256": "ce8e59efb1a69249c340acc87a87de73ff9e28cf2b2375efacc60e00dcc8785d"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F02.js",
+      "bytes": 20133,
+      "sha256": "7e771bb3260d07091a6271ad6088d40dfed555a5e562ff52ceef1a62c11a1f21"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F03.js",
+      "bytes": 16723,
+      "sha256": "635fd2f21fdcee6dd8883c329a4bf8775e8d690bbbb73c9274ee81ffa7ab41bf"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F04.js",
+      "bytes": 18495,
+      "sha256": "e5e4dfe7ea5632c42eaaf4a4f2ee320bcef6e35d7022eccd003ab0c0bbd1fe5f"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F05.js",
+      "bytes": 19187,
+      "sha256": "6e060404af242cff1d98c0f7acb75454995fd29392e95cb7f7468b8302b64110"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F06.js",
+      "bytes": 12867,
+      "sha256": "d0db9e228d65695d286ed8e8ed398f979cdcebd369dd8d6631c42100af68c6b6"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/c08/C08_F07.js",
+      "bytes": 18075,
+      "sha256": "445e2d73e147b61916aae8c3bb5298de00d3f286c3b573cd4142f5c123d4f365"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/characters/c01_characters_v0.1.js",
+      "bytes": 8354,
+      "sha256": "454d725f86bf562f9ba62f2b5d12c67b530ae9f05864eda392731bae6740e05d"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/characters/poly_characters_v0.1.js",
+      "bytes": 11768,
+      "sha256": "f18d9b16ae2bfdce5ef0b54db025c30077866239202bf8268e8aaf6724a26eb3"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/characters/poly_characters_v0.1.json",
+      "bytes": 5529,
+      "sha256": "2bbdb5322e9c8a46340e149676e0b1080410bcccc1dc43486bc9658dfe72ca43"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/intervals/c01_interval_actions_v0.1.js",
+      "bytes": 14165,
+      "sha256": "53beb157a56f7a0c9d6cfcd74ba2ae3853d6215c735f688265872cd882e1a0d8"
+    },
+    {
+      "path": "archives/pre-v0.22/assets/intervals/c08_interval_actions_v0.1.js",
+      "bytes": 26735,
+      "sha256": "5c48e914dbdf6fdab8bbe6d3b16f394dcb4008eec975d21477d0d9a5f725d264"
+    },
+    {
+      "path": "archives/pre-v0.22/docs/GENERATOR_RULES_v0.1.md",
+      "bytes": 1834,
+      "sha256": "29f8104e8497587c20c1e4a14738be1333da6c6f2a4f34e6be312f5c4a611788"
+    },
+    {
+      "path": "archives/pre-v0.22/docs/MULTICHAIN_UI_v0.13_CHANGELOG_HANDOFF.md",
+      "bytes": 1017,
+      "sha256": "0c9d9ae5f9b560e456ce34fdfe6f2091e2c8a1a17d5b07bd96169be6bd6abbff"
+    },
+    {
+      "path": "archives/pre-v0.22/glossaire.html",
+      "bytes": 11367,
+      "sha256": "5f1dd2e4e61635892a3564420e3426659e7807f819310a925b26b91841d42849"
+    },
+    {
+      "path": "archives/pre-v0.22/index.html",
+      "bytes": 310817,
+      "sha256": "111fffbd213b0632faced9804cf94f982dd1e298108e3529b4d970b47a8d014f"
+    },
+    {
+      "path": "archives/pre-v0.22/README.md",
+      "bytes": 1988,
+      "sha256": "3387f09dd085a79c7870754a28665885507dc4011c74d8ee0a130ee6d54e7f0c"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F01.js",
+      "bytes": 13530,
+      "sha256": "ce8e59efb1a69249c340acc87a87de73ff9e28cf2b2375efacc60e00dcc8785d"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F02.js",
+      "bytes": 20133,
+      "sha256": "7e771bb3260d07091a6271ad6088d40dfed555a5e562ff52ceef1a62c11a1f21"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F03.js",
+      "bytes": 16723,
+      "sha256": "635fd2f21fdcee6dd8883c329a4bf8775e8d690bbbb73c9274ee81ffa7ab41bf"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F04.js",
+      "bytes": 18495,
+      "sha256": "e5e4dfe7ea5632c42eaaf4a4f2ee320bcef6e35d7022eccd003ab0c0bbd1fe5f"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F05.js",
+      "bytes": 19187,
+      "sha256": "6e060404af242cff1d98c0f7acb75454995fd29392e95cb7f7468b8302b64110"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F06.js",
+      "bytes": 12867,
+      "sha256": "d0db9e228d65695d286ed8e8ed398f979cdcebd369dd8d6631c42100af68c6b6"
+    },
+    {
+      "path": "archives/v0.22/assets/c08/C08_F07.js",
+      "bytes": 18075,
+      "sha256": "445e2d73e147b61916aae8c3bb5298de00d3f286c3b573cd4142f5c123d4f365"
+    },
+    {
+      "path": "archives/v0.22/assets/characters/c01_characters_v0.1.js",
+      "bytes": 8354,
+      "sha256": "454d725f86bf562f9ba62f2b5d12c67b530ae9f05864eda392731bae6740e05d"
+    },
+    {
+      "path": "archives/v0.22/assets/characters/c02_characters_v0.1.js",
+      "bytes": 6805,
+      "sha256": "03d59bf22485efca432b3d9e53372af5a9b2558436655022d6e5cbf25049a4b4"
+    },
+    {
+      "path": "archives/v0.22/assets/characters/poly_characters_extended_v0.22.js",
+      "bytes": 5678,
+      "sha256": "123d22752bc668f1e08db1455b3ea09b2a618eeb0b5a33f67202ab57bac020c5"
+    },
+    {
+      "path": "archives/v0.22/assets/characters/poly_characters_v0.1.js",
+      "bytes": 11768,
+      "sha256": "f18d9b16ae2bfdce5ef0b54db025c30077866239202bf8268e8aaf6724a26eb3"
+    },
+    {
+      "path": "archives/v0.22/assets/characters/poly_characters_v0.1.json",
+      "bytes": 5529,
+      "sha256": "2bbdb5322e9c8a46340e149676e0b1080410bcccc1dc43486bc9658dfe72ca43"
+    },
+    {
+      "path": "archives/v0.22/assets/intervals/c01_interval_actions_v0.1.js",
+      "bytes": 14165,
+      "sha256": "53beb157a56f7a0c9d6cfcd74ba2ae3853d6215c735f688265872cd882e1a0d8"
+    },
+    {
+      "path": "archives/v0.22/assets/intervals/c02_interval_actions_v0.1.js",
+      "bytes": 18744,
+      "sha256": "0b08f724c1fdc3435b0131e915221b8d417b9a0b1bde57edf6824aacfafb5f8e"
+    },
+    {
+      "path": "archives/v0.22/assets/intervals/c08_interval_actions_v0.1.js",
+      "bytes": 22560,
+      "sha256": "1b505849415ad5b1db72935abe32f7909dd403f7540dc6ede4a9edbb612934c2"
+    },
+    {
+      "path": "archives/v0.22/assets/intervals/poly_animation_renderers_v0.22.js",
+      "bytes": 7237,
+      "sha256": "e899dfa9e1d78eec8b8adc48ecdb908fcd6e6980ae9c4851079e9c232f9746b5"
+    },
+    {
+      "path": "archives/v0.22/assets/intervals/poly_visual_overrides_v0.22.js",
+      "bytes": 5031,
+      "sha256": "c5abec1ac03f653737dc651d1fdacdef5be5ab4fe4261b1d966404c42752cf9b"
+    },
+    {
+      "path": "archives/v0.22/glossaire.html",
+      "bytes": 8571,
+      "sha256": "0f3de106cd4236882423c273bcdcf95878e7d6d01ed40a05e72c6a5d1d1c5ff8"
+    },
+    {
+      "path": "archives/v0.22/index.html",
+      "bytes": 322855,
+      "sha256": "d9e589c7898e00640c63fd1f5b849d5364171270b42b2d8a88fdc7d7a1bd9f88"
+    },
+    {
+      "path": "archives/v0.22/README.md",
+      "bytes": 1253,
+      "sha256": "d80f03d2bdd19f70aca8f98c0297fde916ef233276028912a8ff75c833f437f8"
+    },
+    {
+      "path": "archives/v0.6/.nojekyll",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "archives/v0.6/index.html",
+      "bytes": 268639,
+      "sha256": "b419b479072e75b7af3463136dcf26c5d338700cb03807a9e0ba41b7600f441b"
+    },
+    {
+      "path": "archives/v0.6/README.md",
+      "bytes": 443,
+      "sha256": "15a6f166696bbb347376ecc0b6b7802a64e5550637620cd09fc1f18e83cb1135"
+    },
+    {
+      "path": "assets/vendor/three-0.158.0.min.js",
+      "bytes": 651651,
+      "sha256": "3b3a1c97de3ce65ec5b28c28d9f2805a738e9651622691ba771aa95c79d41d51"
+    },
+    {
+      "path": "assets/vendor/THREE_LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "atlas/ATLAS_EXPLORATION.json",
+      "bytes": 3860076,
+      "sha256": "2d33b77ecbebc75a94038eb4b1f20084b793f24676a76363189f8af7bcc4f0e5"
+    },
+    {
+      "path": "atlas/AUDIT_DONNEES_H03.json",
+      "bytes": 10279,
+      "sha256": "6bc2492e6b83d1bc7d25fd7394b55084553d151a5ade8afa9b3e3d695679cb66"
+    },
+    {
+      "path": "atlas/AUDIT_FR_VALUE_v0.90.json",
+      "bytes": 550,
+      "sha256": "7243426839c0ccf043e57bbaa88d769be742822d6ab57512e9bffff2eb085558"
+    },
+    {
+      "path": "atlas/AUDIT_JP_RIKEN_v0.90.json",
+      "bytes": 1032,
+      "sha256": "1318e2ca6696ccbe9a43487952283407c997e2d3bcb1dc57a4fc37f18a50c3c3"
+    },
+    {
+      "path": "atlas/AUDIT_LECTURE_HUMAINE_v0.91.json",
+      "bytes": 1845,
+      "sha256": "01cc7dd131eb4ba931e139ee495c0c52e57bd72a8cf3c5df0e78dc3930b10996"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/07/07cce3f98a0e6e6c7ca8167be8eebf6b723b945d38cf43c7e5b09016651150ed.md",
+      "bytes": 1912,
+      "sha256": "ce55e1d0707c829c562f8036e27c21186383cead538b5e3fe57f13f0c9c2a57a"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/0e/0e01ca871674337560f2206f4f0530161bc689c40735b491fcb22d14ce0f3b02.md",
+      "bytes": 7105,
+      "sha256": "e3f91894f50ef52dbb82ce9b34a3a9914cdd0d7a868fceb7b8a0648c056e952c"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/11/1139eae7aeb15e7d7a8bf3bb8c9974cfa86769acd27175cd94a34fd3c05d2e47.md",
+      "bytes": 2296,
+      "sha256": "ac5ba3741787cf525f94195a637146d1fb1b4247b035178486bbbdfd17e500c4"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/44/443f9d2b50774ed44a3271f1675ab9fcc6dd21f966c13fa31a786278048c69e0.md",
+      "bytes": 5407,
+      "sha256": "443f9d2b50774ed44a3271f1675ab9fcc6dd21f966c13fa31a786278048c69e0"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/45/45f0a6d0c0bf743a806b713249dc00ffc810c05c2df76e443b51731817c69aef.md",
+      "bytes": 3836,
+      "sha256": "45f0a6d0c0bf743a806b713249dc00ffc810c05c2df76e443b51731817c69aef"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/76/76fbb13831302bbdf989b089ca4ba73fc0a4f3aef365f9c3f2598662cbf77404.md",
+      "bytes": 4904,
+      "sha256": "76fbb13831302bbdf989b089ca4ba73fc0a4f3aef365f9c3f2598662cbf77404"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/78/78844d38e41dcc5b141411430e07058546b9ccf2dd2739bb3d1ad1baeeb7c137.md",
+      "bytes": 4340,
+      "sha256": "78844d38e41dcc5b141411430e07058546b9ccf2dd2739bb3d1ad1baeeb7c137"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/87/872000a0c6d070be0f2a36816478044ba45ccc2c6fd52b229ac96226b22dc0b8.md",
+      "bytes": 1135,
+      "sha256": "9cc72461fc3202de3292f5c11c447aecc88b067a47cd8a334453f98ed652d01d"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/a8/a83b36a8bc5294815e74f53089c02e5362a7eee5707163e131548b364e3d8fca.md",
+      "bytes": 46941,
+      "sha256": "180a1c6ada243fb02c3b4734e7dad554d9acf5cf8d8af598214bc34757c3fc69"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/d7/d77982b190a0a8627bc58b5cdb916bde67d04838796182ebeee952168ac8d656.md",
+      "bytes": 3307,
+      "sha256": "dff0624054caa7d82510285905e45cb28b1a9383cdf02e27f086c698702ee078"
+    },
+    {
+      "path": "atlas/bibliotheque/fichiers/f1/f183b4df29466cf118da8127af6cb327515bc0d89409fff759632e090e4c8984.md",
+      "bytes": 2883,
+      "sha256": "f183b4df29466cf118da8127af6cb327515bc0d89409fff759632e090e4c8984"
+    },
+    {
+      "path": "atlas/BIBLIOTHEQUE_DONNEES_v0.91.json",
+      "bytes": 1885176,
+      "sha256": "cf6eeefe01ae25e33ad036ee93bf972b9144471392a36c8ce7b6cddbc0f803e9"
+    },
+    {
+      "path": "atlas/BILAN_HUMAIN_v0.89.md",
+      "bytes": 5407,
+      "sha256": "443f9d2b50774ed44a3271f1675ab9fcc6dd21f966c13fa31a786278048c69e0"
+    },
+    {
+      "path": "atlas/BILAN_HUMAIN_v0.91.md",
+      "bytes": 5384,
+      "sha256": "73c3dc1459de54261db2aaf34e2822250dc5743d7892511f8bc980b00d484cdc"
+    },
+    {
+      "path": "atlas/BILAN_INTEGRATION_v0.90.md",
+      "bytes": 4846,
+      "sha256": "d21c0f4f7d5b9c26beb716eff39e9fa6e615def01beddc79c60cb5b2a374d784"
+    },
+    {
+      "path": "atlas/EXTRACTIONS_HUMAINES_v0.91.json",
+      "bytes": 45656,
+      "sha256": "81a1fc0d77bf6c2dc54d44951946bcde9816dead92025eb2acddef4c6ba8a47e"
+    },
+    {
+      "path": "atlas/EXTRACTIONS_PRIMAIRES_CONSOLIDEES_v0.91.json",
+      "bytes": 145706,
+      "sha256": "4186e94ce60393643e1206529d60c17edf9a32f2e95501fcd12540968fce6e09"
+    },
+    {
+      "path": "atlas/index.html",
+      "bytes": 3106975,
+      "sha256": "970b47d1b5a4e27cadd56118bc69afd16f8b76f743b40248f04b67babf79efb4"
+    },
+    {
+      "path": "atlas/MATRICE_COMPATIBILITE_v0.91.json",
+      "bytes": 8293,
+      "sha256": "a51dbd47abc98bfeee00aa0bb272ccddcd1a9d5e467ea90218be069ce6a19362"
+    },
+    {
+      "path": "atlas/pieces/FR_VALUE_README.md",
+      "bytes": 2849,
+      "sha256": "4fd9c0944a70af874c3df7f47d3dd38bbbcf67a209cdc5d8dced9f08d278e0c6"
+    },
+    {
+      "path": "atlas/PLAN_SUITE_HUMAIN.md",
+      "bytes": 4340,
+      "sha256": "78844d38e41dcc5b141411430e07058546b9ccf2dd2739bb3d1ad1baeeb7c137"
+    },
+    {
+      "path": "atlas/publication.html",
+      "bytes": 1158,
+      "sha256": "608888ae4fcf1169a345bd769010327bdcc82b030e88a64e41a70195d841894a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/COMPARAISONS_COLLECTE_MONDIALE_2026-10-04.md",
+      "bytes": 1503,
+      "sha256": "0864613970465a8df09830dceed9d0559e9ce46ffb1786c4112c2528c8ffc9b5"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.11/ARCHIVAGE_ET_REPRODUCTION.md",
+      "bytes": 980,
+      "sha256": "0b6e888e6a8b1891d857084e2a870d3073fe4cd1419cc0ed6d817ef2b0361810"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.11/BILAN_EMOTIONNEL_v0.11.md",
+      "bytes": 11523,
+      "sha256": "1162b28d6cc5b36bfd2ba0c7c3541cfeac91ccccb1d7341f0aab59d8e1a0d9d6"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.11/code_auteur/README.md",
+      "bytes": 2765,
+      "sha256": "faabb6f6038cc03d09221b6b43932971e8812d9b3fcff3327f3964c5d685092b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.11/MATRICE_PERTURBATIONS_EMOTIONNEL_v0.11.md",
+      "bytes": 8920,
+      "sha256": "78499552a4d3b5b9721b917da5696680625c3ac3eb6c06eeedf24f5f8cf7d474"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.11/SPECIFICATION_ANALYSES_EMOTIONNEL_v0.11.md",
+      "bytes": 4500,
+      "sha256": "70666a41933b57674206b5d586475d1802da54eb01532a91f08c76d12fb078f9"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.11/SPECIFICATION_EXTENSIONS_EMOTIONNEL_v0.11.md",
+      "bytes": 3563,
+      "sha256": "1847a030711a92b4578fe72a8bd4c007338f6f0e9cbe4be81d01452a4cae614c"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.12/BILAN_EMOTIONNEL_v0.12.md",
+      "bytes": 3197,
+      "sha256": "73ad51b865f674a1dda2df95edfcafc4a36d203bd63fb351b1445a307d02acba"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.12/SPECIFICATION_SENSIBILITE_EMOTIONNEL_v0.12.md",
+      "bytes": 1426,
+      "sha256": "e9c26a748d10298b82973d0b453a935c49a9d94676a9c21e6f82f1aec457975c"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.13/ARCHIVAGE_ET_REPRODUCTION.md",
+      "bytes": 2037,
+      "sha256": "c88351972487f159b6066bcf3154582bded47783360b380b5217d7c4d2d61156"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.13/BILAN_EMOTIONNEL_v0.13.md",
+      "bytes": 14705,
+      "sha256": "27c0b71ea599d9d5c18074ba9212295f7c93695bb3562071749439fd6dfb8241"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.13/ELIMINATIONS_EMOTIONNEL_v0.13.md",
+      "bytes": 4214,
+      "sha256": "521ca1e7bc5995578d46600618ab41087810a74af02b0c5f3db2a867d1f143e1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.13/SPECIFICATION_EMOTIONNEL_v0.13.md",
+      "bytes": 6407,
+      "sha256": "223101f9219c70c5261a156ce312a152af47f2e3b59eb43f89f1d8807253e85b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.13/SPECIFICATION_FORAGING_EMOTIONNEL_v0.13.md",
+      "bytes": 5822,
+      "sha256": "e622b0252171ed5a1f6005c149cb9bb447bfe0eccdd5f9d4149ae78f5de94b19"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.13/SPECIFICATION_TRANSFERT_EMOTIONNEL_v0.13.md",
+      "bytes": 3402,
+      "sha256": "df23fb0be69c91d781115637f05c59b6f5ed7aa93ed7becf19161fdb6a352d17"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/BILAN_EMOTIONNEL_v0.14.md",
+      "bytes": 10390,
+      "sha256": "8162e54e188b57c157b8724981711097700b8f2c1733a2fc3b2847423259c0cc"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/ELIMINATIONS_EMOTIONNEL_v0.14.md",
+      "bytes": 1974,
+      "sha256": "f638375e8e6fa8ef3b011dde34290beee9a32be918e301076d1da3ed2edb1966"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/REPRODUCTION.md",
+      "bytes": 1300,
+      "sha256": "75c9bd7d71c2b22183a60c66248ba05419e048f6b941b82ac187f37cc9565eb1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/SPECIFICATION_DONNEES_HUMAINES_EMOTIONNEL_v0.14.md",
+      "bytes": 3859,
+      "sha256": "38e2600ca215403ce3ea1f86bbbaaab5b9c24b6d6e06bef46307d0e3ff3b5f5f"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/SPECIFICATION_EMOTIONNEL_v0.14.md",
+      "bytes": 4019,
+      "sha256": "ef48d73ab135bb6f328ac37d2adfccaad1341f497a0f867afb1a5c6ba55f9334"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/SPECIFICATION_PERTURBATION_MODELE_EMOTIONNEL_v0.14.md",
+      "bytes": 2557,
+      "sha256": "213348ed1557ad71b034ece6cc083a6bc487ecac25dab475d65116140fe679ae"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.14/SPECIFICATION_SENSIBILITE_APPRENTISSAGE_EMOTIONNEL_v0.14.md",
+      "bytes": 686,
+      "sha256": "122ccae9563128eab609c7079c160b684790b46f6ca6e8a2b93fe919bfb4464b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.15/BILAN_EMOTIONNEL_v0.15.md",
+      "bytes": 7025,
+      "sha256": "d023698ef087a1efaff00f6f51fe66a0dbf46b69eada9d6c0403558015c43eb2"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.15/REPRODUCTION.md",
+      "bytes": 1162,
+      "sha256": "8857b2dac3c04457ad3c096308516574bd63604fac94c9cdae4648da6f10a3db"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.15/SPECIFICATION_EMOTIONNEL_v0.15.md",
+      "bytes": 2188,
+      "sha256": "f8bc03539976299a69569530048dc6805a2ee2a5ab1f42f7b173ee2109a9b062"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.15/SPECIFICATION_SENSIBILITE_SIMULATION_v0.15.md",
+      "bytes": 514,
+      "sha256": "7c4db7917619e914d83b36c9ab8bd6d7937e6cded7126dd368326a0b8a3e0203"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.15/SPECIFICATION_SIMULATION_EMOTIONNEL_v0.15.md",
+      "bytes": 2114,
+      "sha256": "1d1d79fbb9dc253431fca9e4ade95f0a0835e4c9676226c98bc27a183e68c4a1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.16/BILAN_EMOTIONNEL_v0.16.md",
+      "bytes": 9186,
+      "sha256": "31067ab2c49b154264391a5e18c82d68559eaccf97f57afda19f866090578172"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.16/REPRODUCTION.md",
+      "bytes": 1164,
+      "sha256": "e6c858e2517fedfe19b4b08f011d8f6b9d0ebf1951dbe5d3b4994c7da1e34287"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.16/SPECIFICATION_EMOTIONNEL_v0.16.md",
+      "bytes": 2262,
+      "sha256": "10513a8e38b78874a7a1d5f341af41e23d324e61714c218329149cfeb420f8bd"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.16/SPECIFICATION_ISSUES_LECHAGES_v0.16.md",
+      "bytes": 705,
+      "sha256": "14cbd8557a008abc8b00da690609284ecfc753ecb7abd07aab65e97b0efd5dce"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.17/BILAN_EMOTIONNEL_v0.17.md",
+      "bytes": 7411,
+      "sha256": "daeaf6d6a29636ff29716a4616f4497b37003c39f733d655922a34c56c82495b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.17/REPRODUCTION.md",
+      "bytes": 1089,
+      "sha256": "9ad9ed5b657e3316d0698f9a78af2767a30030ba2a8db6669874a75505783ca9"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.17/SPECIFICATION_EMOTIONNEL_v0.17.md",
+      "bytes": 2222,
+      "sha256": "8a6156298a9b4f0ecc1685d44e8098ac09ffb0e30400d9114491560728c631c4"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.18/BILAN_EMOTIONNEL_v0.18.md",
+      "bytes": 8242,
+      "sha256": "4bf385eb9db4d66cd80833eb271a1f2485d9126d3f621470b1c73073494b0547"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.18/REPRODUCTION.md",
+      "bytes": 1047,
+      "sha256": "66c90109a7adcc4fbca855788b82bd1b7f42c2a4c2bb563c6afbb87834abf12a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.18/SPECIFICATION_EMOTIONNEL_v0.18.md",
+      "bytes": 1794,
+      "sha256": "5febc463ebfc254cd598a11efc9ecd4422bb03866814c6491770ee21d1e2e7c0"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.18/SPECIFICATION_PROBABILITES_v0.18.md",
+      "bytes": 594,
+      "sha256": "458c021090e35b90624502206bb951549d8b977ca3f20b5e6eaa4dd8f99a6ba1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.19/BILAN_EMOTIONNEL_v0.19.md",
+      "bytes": 4913,
+      "sha256": "09e46ca8442e1e682f216f9e81a2cb019bb76456094974294d24e1e746138239"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.19/REPRODUCTION.md",
+      "bytes": 550,
+      "sha256": "8bd839d03a8b3fa2e3ceb75af8c49bce916897af2cd8e8001951beeb536a7a19"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.19/SPECIFICATION_EMOTIONNEL_v0.19.md",
+      "bytes": 1233,
+      "sha256": "442a495c9b9b4d476a11fbe862b6dcd4d30ca3d7ae9f2a1b222452d993f7f5c7"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.20/BILAN_EMOTIONNEL_v0.20.md",
+      "bytes": 5615,
+      "sha256": "d87b620b95c72d5e47bcb5239cdcc2961dfdee84e8bb540f33a5eb9140fa31a0"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.20/REPRODUCTION.md",
+      "bytes": 674,
+      "sha256": "bed27f2b3a65a18a1fca099525246b0072c2fcfdda707c1407fb349093de826b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.20/SPECIFICATION_EMOTIONNEL_v0.20.md",
+      "bytes": 1455,
+      "sha256": "8877fbec34875796cb2d6a7e93eb6f870862a477f40849961ddc8096a16399f8"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/BILAN_EMOTIONNEL_v0.21.md",
+      "bytes": 6291,
+      "sha256": "de093e64fbb6e9b46bcb6686ef6d90770fcab36e6a8fa0d08628c127aeb9c577"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/locus_coeruleus_norepinephrine_neurons_README.md",
+      "bytes": 4840,
+      "sha256": "cad614a4fc5069b3d841fa823c75c847cccf12ec00f6d68929ed320abe750a2a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/NeuralBreathing_README.md",
+      "bytes": 1244,
+      "sha256": "9b24c33d75b7830a8358d22a16acd185d56ed0f97c83092cf05b4fe60cf5eb34"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/NeuralBreathing_README_coherence_plots.md",
+      "bytes": 7546,
+      "sha256": "6a1bbabfa0ff3e197da63a6c05078d05b641eee458e8d9bd23213136d8dc6923"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/REPRODUCTION.md",
+      "bytes": 592,
+      "sha256": "a5bd1161b8b12c540c15cda4f1982007d888126abc3dc21873b9ae75d4f9e5b0"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/SPECIFICATION_EMOTIONNEL_v0.21.md",
+      "bytes": 1101,
+      "sha256": "4605b5e3af8949f68a795e86aa69ff80df10dd5c5e34b855e27a4b4d90045674"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.21/SPECIFICATION_SEUILS_RESPIRATOIRES_v0.21.md",
+      "bytes": 679,
+      "sha256": "10316c0db7f6fdd6cf773f36342b86eb29736eaa9cbebb5847de99b7ec11e6a1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.24/AMENDEMENT_NHANES_COMPARAISONS_2026-10-04.md",
+      "bytes": 1976,
+      "sha256": "5fce6b66973e4e3e46d0a8f77221e029be51d035f0d572c3df378d55e284dac4"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.24/PROTOCOLE_COMPARAISONS_POLY_2026-10-04.md",
+      "bytes": 3559,
+      "sha256": "caced18d84107d10cc20033949b83bbf13c528f50e55b2d9e6b3a65edb94ae18"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.24/reproduction/README.md",
+      "bytes": 539,
+      "sha256": "0e03f305ae50f56aa23c6ed640bb3b10c3063e7bb6bf5e8c7a7ecd8ea3cc721c"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.24/SYNTHESE_QUANTITATIVE_POLY_2026-10-04.md",
+      "bytes": 10553,
+      "sha256": "f2a4a03258f98eea7594ace1ffc25a0801460ff44b973acf86ed6e00f54a3fd2"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.25/BILAN_REPLICATION_POLY_v0.25.md",
+      "bytes": 4562,
+      "sha256": "700c58ff2255862fd10e39840f02086533d96289089022501225e7e38d1be3b3"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.26/BILAN_REACIDIFICATION_POLY_v0.26.md",
+      "bytes": 3778,
+      "sha256": "39ed68d71ced8944376da24883d9cf0fafa198ba55ba74e1696d2bae3e98243b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.27/BILAN_CALIBRATION_POLY_v0.27.md",
+      "bytes": 3143,
+      "sha256": "ae2a4ba7fc2c7459a1eb0bec05c3319b41a7e4086b9b7e9f99bdbc57e09d47c9"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.28/BILAN_COURANTS_POLY_v0.28.md",
+      "bytes": 3442,
+      "sha256": "9b435b36f800b0faf8a9defb3ea82ee59187ae94622576af9d8a877675b2cacb"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.29/BILAN_REPLICATION_EPSC_v0.29.md",
+      "bytes": 1284,
+      "sha256": "0c94ed651037631f822037335fd9e5e3776b2de46eee1798dc71b170658d62f8"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.3/BILAN_EMOTIONNEL_v0.3.md",
+      "bytes": 5264,
+      "sha256": "270a127aef190d66c0beda758caa883e95933fc49f6f2105e252c816db1e6dbf"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.3/SPECIFICATION_PILOTE_COMPORTEMENT_v0.3.md",
+      "bytes": 2837,
+      "sha256": "334bf0b74db7810a2abac128fac5f2b05b09450c7a50bbb175495af90ca54ab3"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "bytes": 3428,
+      "sha256": "1305c7b63291ec899fab1d10f1ab39c6bcf6d9bf85cd646d967605c113e904a3"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.31/BILAN_THERMIQUE_v0.31.md",
+      "bytes": 1923,
+      "sha256": "146dc8536255c4d9acc7c9e9cc945d50ed234347028d64429ba0ba80e5754b4b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.32/BILAN_VARIATIONS_v0.32.md",
+      "bytes": 2109,
+      "sha256": "233fd318596856d9442334a7988e86b4e179f6398345cc02c6838076fc6be8bd"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.33/BILAN_APPARIEMENT_v0.33.md",
+      "bytes": 1611,
+      "sha256": "e226345d459ac43ee3a0d34b166e522a127783de49ce1f6c711ad4f49a96015b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.34/BILAN_ET_RESTE_v0.34.md",
+      "bytes": 3754,
+      "sha256": "04865601149b92fe84012c00574045b06267dbc470de1c06021b30df5151c303"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.35/BILAN_QUESTIONNAIRES_v0.35.md",
+      "bytes": 2491,
+      "sha256": "eb6f08fb845dd189036c366e196447f3da816fffe0af20527b02edb854a998ff"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.36/BILAN_ONS4_v0.36.md",
+      "bytes": 2171,
+      "sha256": "83bc146a23c8ebca4cb9d085911879e5b443707ca63cd8427926f37b4e9773aa"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.37/BILAN_PROVENANCE_v0.37.md",
+      "bytes": 2047,
+      "sha256": "5f7f3d6ea74e3beb8a2566e73a073a4880dc2abac92579aa2b3492b7bbe96451"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.38/BILAN_RUPTURE_v0.38.md",
+      "bytes": 1912,
+      "sha256": "0793802bae8b8fb346604122cc19a62a6c562441a974e5a5feac6c05398193ec"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.39/BILAN_LOT_v0.39.md",
+      "bytes": 3964,
+      "sha256": "f1261ff875e5987418553b798adfc67b9ef4cb274020a510215080e186900d4b"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.4/BILAN_EMOTIONNEL_v0.4.md",
+      "bytes": 6246,
+      "sha256": "fcf88fb172f4a88c726f7fa7a2fea412f10adba9f39984e944403cf2f986c254"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.4/SPECIFICATION_HORLOGES_EMOTIONNEL_v0.4.md",
+      "bytes": 1929,
+      "sha256": "cb867cc085f14f9e689602eaaad446b0e1b0c1d6f0327a71af30c7ea0457f57d"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.4/SPECIFICATION_MESURES_EMOTIONNEL_v0.4.md",
+      "bytes": 1847,
+      "sha256": "a3b2b16bda1b9724f6dbbedc1250f3b0c04f5bfdc95d30d848c87214bd610b69"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.40/BILAN_LOT_v0.40.md",
+      "bytes": 3674,
+      "sha256": "9f6e717eab7b1d34b26f8edfa137385bbd6339f0ec199f93f3212cd866aa0927"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.41/01_JAPON.md",
+      "bytes": 1034,
+      "sha256": "b16aea9f52150fe633ef444ee6df0f324946b9fa5e52e9fb45791a6374e5a60d"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.41/02_AUSTRALIE.md",
+      "bytes": 1260,
+      "sha256": "a2a7bca38695d266032c5ebef4a6421ba599039599dd43391d67a53f81ae30b5"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.41/03_EUROSTAT.md",
+      "bytes": 978,
+      "sha256": "0410868a24682b59fbfa542210bd97d379e766d36833a2670e9a4e28927050d6"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.41/04_WHR_AFROBAROMETER.md",
+      "bytes": 1743,
+      "sha256": "438fbbc18788fe1445e7d6b8ce2da2d5908bb5fca03b646464ab7d56717ee874"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.41/05_SYNTHESE_COMPARABILITE.md",
+      "bytes": 1935,
+      "sha256": "cd9e3712b6ce103f2ec7cf73a222c97abf528d685376abb41153d51ec048b00d"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.42/MATRICE_PREPARATION_MODELISATION.md",
+      "bytes": 6318,
+      "sha256": "13092d69a6dbbb746bfcfd5ae2ab10ed7597714caff1b8b725b4ce51b034670c"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.43/LECTURE_ET_PREALABLE.md",
+      "bytes": 1858,
+      "sha256": "74f21afcda2ae20c4e3961c19d690b6f8c5682b419eb8a54a69394c9fe58906c"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.44/REGLES_CARTE.md",
+      "bytes": 1648,
+      "sha256": "a39cee3ec1b4d9a95e5a57c3864e81518831c591f4e9b78595620af95a096f78"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.45/BILAN_BORNES_ET_TROUS.md",
+      "bytes": 1921,
+      "sha256": "14a8413f3c6797453b77ca7ef2e2fc5165e8779f2dfb164cf1ba619e296bc4bc"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.46/BILAN_P02.md",
+      "bytes": 1752,
+      "sha256": "c5e0a11a486db0cecd00cdc4c8571f9aee16f9a2d778439d0d3b785dcc5c81ff"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.47/BILAN_P01.md",
+      "bytes": 1634,
+      "sha256": "7288950ad2ad453ac5faf365b0d02d91550041d2f763e35f81ca11d9de5e9519"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.48/BILAN_P03.md",
+      "bytes": 1955,
+      "sha256": "7a32b2e78997d37aa90d41e2d9229d0d57689d64237e16261a5caf609d3d5be2"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.49/BILAN_QUESTIONNAIRES_P03.md",
+      "bytes": 1473,
+      "sha256": "03c328856e7753cf9f2bb25e28c18dc6bbbc838d08ad04426f7788a6aaa634b5"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.5/BILAN_EMOTIONNEL_v0.5.md",
+      "bytes": 5147,
+      "sha256": "37ba269fee13d0ca8770466560d9f5f194709d3c8f1c30cd12d862432567934e"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.5/SPECIFICATION_COUPLAGE_CANDIDAT_v0.5.md",
+      "bytes": 2467,
+      "sha256": "df6dc79c562284c68cbe0d5f087486a233a3ccd4d7101fffbf84ad9533e4db01"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.50/BILAN_LATENCE_PIC.md",
+      "bytes": 1870,
+      "sha256": "4cfbb282039f11bc44c91d2e2afea034ac51ecad98ce3e1fc9d27e7ff056557a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.51/BILAN_ETUDE_INDEPENDANTE.md",
+      "bytes": 1727,
+      "sha256": "58e32020849f588b5afabcb439ab9a71453f36d653285de533d3c2696365cad5"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.52/BILAN_DONNEES_VTA.md",
+      "bytes": 1386,
+      "sha256": "e999a3a75d1a2207c9c85d70d515b72e95f5bdb3c420a80b877e47ca4a07365d"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.53/BILAN_PASSE_ETENDUE.md",
+      "bytes": 2754,
+      "sha256": "2814be07b140b70c47b9fea0c8d818913ae1a64744a9ba1fc930952f35154a4a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.54/BILAN_MAPPING_ET_PASSE.md",
+      "bytes": 2776,
+      "sha256": "029d3eceaf84dc1e07afb17feef1af3c5e355fe42200141dc71f80db347ca49a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.55/BILAN_CONDITIONS_VTA.md",
+      "bytes": 2748,
+      "sha256": "a64e716913052a99a8fc226cf66586073017271efbfcd572428286e6adbfe612"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.56/BILAN_SIX_LOTS.md",
+      "bytes": 4223,
+      "sha256": "93e3fc13bb872f25abb5a7db0f6809e6b355966af3d723bdf6e4d600c8191aa8"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.57/BILAN_PICS_AIRPUFF.md",
+      "bytes": 2309,
+      "sha256": "dfcba461d6aad9cfe8f26f982ec48d45a8020bfbadbaae0279e86946c5fd8b80"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.58/BILAN_REPERES_ET_PASSE_LONGUE.md",
+      "bytes": 3730,
+      "sha256": "cdd5764d1a911abca3825890dff57e84476e1b3018513223d5e6eb2add6ab4ff"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.59/BILAN_MESURE.md",
+      "bytes": 2747,
+      "sha256": "13be6d297ec83a4c911e32059dc4467b9c2471862cb0eaeb217e68ad49f24988"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.6/BILAN_EMOTIONNEL_v0.6.md",
+      "bytes": 6437,
+      "sha256": "c7c90f2250e2a2c393508459c544a6cff31901607f6adc19dcfd187b8e51e224"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.6/SPECIFICATION_EXTENSION_EMOTIONNEL_v0.6.md",
+      "bytes": 3067,
+      "sha256": "28a54783b76375d38ea1278041d150d9f34f862f26825bf3e85962931e6bac8d"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.60/BILAN_DEFINITIONS_ET_RESULTATS_NEGATIFS.md",
+      "bytes": 5483,
+      "sha256": "8acfbf1c91b6fad2f0bed42543b1f02356c39536d5f242ae298b2777ea627f26"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.61/BILAN_P01_MAPPING_ET_MESURE.md",
+      "bytes": 2130,
+      "sha256": "e639ef0baeb025501ae861c142a1164801535b7b6b24ecd90656d9609a38e724"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.62/BILAN_P03_DEFINITIONS_ET_LIMITES.md",
+      "bytes": 3480,
+      "sha256": "7ecfda08ea9da2ecaa78120b5c9faae338dd1b37f5d9495772ba979a7f134e57"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.63/BILAN_P03_ET_MODES_ONS.md",
+      "bytes": 3934,
+      "sha256": "ceab08af3ff20089c5833455255541c262fd790235ca17b9de3e8848b87abcab"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.64/BILAN_CARTE_ET_MODES_GSS.md",
+      "bytes": 3045,
+      "sha256": "ecaca0cd5e96086b03bae92a1a903f28307a7dbd25a3c2c9aacffbf337d7c2bd"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.65/BILAN_PROMOTION.md",
+      "bytes": 2210,
+      "sha256": "af9cdcd7cfde22f34d68cc34ce9358d3799b78e2245b70f5a44aedfdb751fcfe"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.65/CRITERES_PROMOTION.md",
+      "bytes": 2134,
+      "sha256": "1b80b497094e6b9ab9172e76a9ed182404bd47e4ad2f14893a8f8da7d1c0db59"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.65/LOT_1_FORMULATIONS_ADMISSIBLES.md",
+      "bytes": 4519,
+      "sha256": "2bfdeff8888f9d8e2d7ab496104a17ce1b0670a787ee8fc91a211831198ee347"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.66/BILAN_REPRISE.md",
+      "bytes": 1597,
+      "sha256": "1995054487bfaabdff157261af29d4cb8d3af812e970ac1142c8aa3204d623eb"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.66/GSS_COMPARABILITE.md",
+      "bytes": 2786,
+      "sha256": "98480971e381385bc6f885fe62787fb9744b285a1a56d7051ec5d7ab9fae7854"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.66/P01_LIMITES_MECANISTIQUES.md",
+      "bytes": 1907,
+      "sha256": "c11b1fd562fff437f903812f8fffd01e1379595f0170b212793ddd0c872e2615"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.67/BILAN_REPRISE.md",
+      "bytes": 1733,
+      "sha256": "3fe87c7d977d3b017ca5259850207a9e3f91876154ffbce3e35d2fdfd6453d4e"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.67/LOT_2_FORMULATIONS_PROPOSEES.md",
+      "bytes": 2441,
+      "sha256": "c5ce2249a4fe254dd619e339f5459f641db0535cd44a339d50ad8f7535728882"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.67/P03_COMPLEMENT_ISOPRO.md",
+      "bytes": 2408,
+      "sha256": "6af989caa85f67ba56edf432699e6e21d4350fdc8fa2c2f40fe9a87e001d8cd1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.67/TRAITEMENT_S10_ET_PORTEE.md",
+      "bytes": 1612,
+      "sha256": "9f64763a96d61b036dfb6f574ed6fecca268f44f2ae9b1afa9df031c9eebd572"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.68/BILAN_REPRISE.md",
+      "bytes": 2083,
+      "sha256": "dd34325029831878b75c135ad2d0a049582766bcb3427a1f86a5945319360865"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.69/BILAN_REPRISE.md",
+      "bytes": 2118,
+      "sha256": "4b86c32c3f4b86bf207b3484fea94cc06a787f8abf8dd0414a321c67e0863303"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.7/BILAN_EMOTIONNEL_v0.7.md",
+      "bytes": 4315,
+      "sha256": "6aae194e7d35d786655e8fbf2646feef8c864b82abd5e87044f16c694f98db53"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.7/SPECIFICATION_CONTACTS_BRUTS_EMOTIONNEL_v0.7.md",
+      "bytes": 2561,
+      "sha256": "cb576dd3ab87b0a85c5169788016f74a7cd26b7de77eb277ed0e7120d53ea2a9"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.70/BILAN_REPRISE.md",
+      "bytes": 1556,
+      "sha256": "45212cfc34038552910e73ddd0dc3c6afd19b91f46dbb4968e8b0b935a8d33c1"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.70/CSS_CLOTURE_DOCUMENTAIRE.md",
+      "bytes": 1407,
+      "sha256": "7b22f93c9b1a0cadb32ae2be0ffef13a0cc4daa9c361ceb5eed18b987c069378"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.70/DOSSIER_CLOTURE_PREPARATOIRE.md",
+      "bytes": 7848,
+      "sha256": "d387b722357b9afb136e8074f7c5f49831761e96a46720e33f5ee10f74101050"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.71/BILAN_METHODES_HISTORIQUES.md",
+      "bytes": 6554,
+      "sha256": "a3bdea72e326ee9ef2d6907d22bb6977344db2a15ffa9b9f20e78b0a7e2e40fa"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.71/BILAN_REPRISE.md",
+      "bytes": 1087,
+      "sha256": "af11c0dec8585a4f37bb6cb6dc316b492304633cb588fcabd1e30e7e47717458"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.71/DOSSIER_CLOTURE_PREPARATOIRE_ACTUALISE.md",
+      "bytes": 8433,
+      "sha256": "bf05623002b60497f7a216fdbb0ba250a5fec1e1ae8885e23be732a46a279c59"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.72/BILAN_FICHIERS_ET_ESTIMATION.md",
+      "bytes": 4525,
+      "sha256": "bd4dcad222d2cf5e68d5abe9ba5a99798707b0a9e5e49ffa092fea431d5c07b4"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.72/BILAN_REPRISE.md",
+      "bytes": 891,
+      "sha256": "90b89ace08864aea70178573668e79b3b92f95dd8156203facd82bc05b87b019"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.72/DOSSIER_PREPARATOIRE_FINAL_v0.72.md",
+      "bytes": 9393,
+      "sha256": "0b53a04151bb56ef9866da3ee1885667597f5e924da85955c274bad7fbb28aaf"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.73/BILAN_REPRISE.md",
+      "bytes": 1089,
+      "sha256": "9efd25169bcd47bceee6060058265ed0f7530d191c1aff1a19da1fc3f82b7c0e"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.73/DOSSIER_HUIT_FORMULATIONS_ADMISSIBLES.md",
+      "bytes": 9398,
+      "sha256": "da72eb6bcf985b3fddf2e1eec49f15b47c25ff115fa6f14e4d53c17947de7857"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.73/LOT_2_FORMULATIONS_ADMISSIBLES.md",
+      "bytes": 3176,
+      "sha256": "8ea5a8eb32bf0ff6ce324f0f2ff5fb57688643bc1cf11f49fc8f16f977b966bf"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.74/BILAN_REPRISE.md",
+      "bytes": 906,
+      "sha256": "88d051b9cf6665e469222a075a4facd8e04cb2d2518a9894e375a5502d567160"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.74/BILAN_SIX_ETAPES.md",
+      "bytes": 3939,
+      "sha256": "f9106c71ddd2689ede0a0c71e2097d6875c0f350972b09c75afcd80a13511689"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.75/BILAN_REPRISE.md",
+      "bytes": 2708,
+      "sha256": "1ae3552372660dae3c078a01502d06cd7145a271b5e9a4968a6ef22bf258ad0a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.75/cloture_phase_autonome/COMPLEMENT_P01.md",
+      "bytes": 2708,
+      "sha256": "1ae3552372660dae3c078a01502d06cd7145a271b5e9a4968a6ef22bf258ad0a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.75/cloture_phase_autonome/CRITERES_PROMOTION.md",
+      "bytes": 2134,
+      "sha256": "1b80b497094e6b9ab9172e76a9ed182404bd47e4ad2f14893a8f8da7d1c0db59"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.75/cloture_phase_autonome/FORMULATIONS_AVEC_RESERVES.md",
+      "bytes": 9398,
+      "sha256": "da72eb6bcf985b3fddf2e1eec49f15b47c25ff115fa6f14e4d53c17947de7857"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.75/cloture_phase_autonome/LIRE_EN_PREMIER.md",
+      "bytes": 3813,
+      "sha256": "c87f61cc633cb0ade8e7d218a0ffe3a97f3be120113a9fa166667effdcec8e03"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.76/BILAN_REPRISE.md",
+      "bytes": 4960,
+      "sha256": "d3e89ac64428aca9e8cf0d17a2a9e613e7ac1814637b818232eb432bf2046097"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.77/BILAN_REPONSES.md",
+      "bytes": 2508,
+      "sha256": "a76b3a167129dceaf4047c9db94ee8fdfc5dbeae7a56deb5429b3c12f9ce626f"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.78/BILAN_CORRECTIONS.md",
+      "bytes": 5587,
+      "sha256": "3c52147d0b3782c4c7063fff2ac894dbf16979d367af6644b4e2e22384b5d292"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.78/REJOUER.md",
+      "bytes": 1108,
+      "sha256": "4bda9f5fd3e098aadf05b77e4e90805a4b838608937fe8b6c431083647281573"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.79/BILAN_TESTS_COMPLETS.md",
+      "bytes": 8338,
+      "sha256": "be743ff77d03e72a37f61249c7772a088680547601cf3808a359cc84f90f283a"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.79/REJOUER.md",
+      "bytes": 984,
+      "sha256": "1a7ae1041988ed8241d10976b9144ea8d1861788708c269556f0e8a36edae6bd"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.8/BILAN_EMOTIONNEL_v0.8.md",
+      "bytes": 4952,
+      "sha256": "c2f7d2623b1f693c0614a2ab43da640cf216af6fcbf866a9a9a6802c96dc2268"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.8/CAHIER_DONNEES_COEUR_INSULA_v0.8.md",
+      "bytes": 3433,
+      "sha256": "53ede1a0024c00ca425001a93f7bfbd9e4d43e94b8121f5ea5f51053f804d473"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+      "bytes": 5544,
+      "sha256": "4a7f1dd74687b3763c70ee7584b319e33f9fb0cb1dfc32a2e34a04c43e4381af"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.80/LIRE_AVANT_EXECUTION.md",
+      "bytes": 1573,
+      "sha256": "2ae5b7aa122b8f2e2281a374bebb52b8a1aecf2af6ebfc80c057183675d1682c"
+    },
+    {
+      "path": "atlas/reference/documents/analyses/v0.80/package/LIRE_AVANT_EXECUTION.md",
+      "bytes": 1573,
+      "sha256": "2ae5b7aa122b8f2e2281a374bebb52b8a1aecf2af6ebfc80c057183675d1682c"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_COLLECTE_MONDIALE_2026-10-04.md",
+      "bytes": 8853,
+      "sha256": "9dc05730a8438f9fa6ebdfa9c48931321fa554b4a3b4d20fb5765b1df2fd99bc"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_EMOTIONNEL_v0.3.md",
+      "bytes": 5264,
+      "sha256": "270a127aef190d66c0beda758caa883e95933fc49f6f2105e252c816db1e6dbf"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_EMOTIONNEL_v0.4.md",
+      "bytes": 6246,
+      "sha256": "fcf88fb172f4a88c726f7fa7a2fea412f10adba9f39984e944403cf2f986c254"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_EMOTIONNEL_v0.5.md",
+      "bytes": 5147,
+      "sha256": "37ba269fee13d0ca8770466560d9f5f194709d3c8f1c30cd12d862432567934e"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_EMOTIONNEL_v0.6.md",
+      "bytes": 6437,
+      "sha256": "c7c90f2250e2a2c393508459c544a6cff31901607f6adc19dcfd187b8e51e224"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_EMOTIONNEL_v0.7.md",
+      "bytes": 4315,
+      "sha256": "6aae194e7d35d786655e8fbf2646feef8c864b82abd5e87044f16c694f98db53"
+    },
+    {
+      "path": "atlas/reference/documents/BILAN_EMOTIONNEL_v0.8.md",
+      "bytes": 4952,
+      "sha256": "c2f7d2623b1f693c0614a2ab43da640cf216af6fcbf866a9a9a6802c96dc2268"
+    },
+    {
+      "path": "atlas/reference/documents/collecte/v0.10/COLLECTE_EMOTIONNEL_v0.10.md",
+      "bytes": 3559,
+      "sha256": "09a733b2a2e1bdc0dffbfea748c4ea1da945d01dcd6002978f46b68d12d7183f"
+    },
+    {
+      "path": "atlas/reference/documents/donnees/collecte_mondiale_2026-10-04/WORLD_RECEPTORS/LICENSE.md",
+      "bytes": 20849,
+      "sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1"
+    },
+    {
+      "path": "atlas/reference/documents/donnees/collecte_mondiale_2026-10-04/WORLD_RECEPTORS/README.md",
+      "bytes": 7657,
+      "sha256": "80bd67831926ef6fb20ccd199787cd7b67b124a2b391e9b984642ee60d91fe4a"
+    },
+    {
+      "path": "atlas/reference/documents/EXTRACTION_EMOTIONNEL_v0.2.md",
+      "bytes": 9185,
+      "sha256": "414a6a76b8a19e0412149eb9bf1c3cd54b0a5deda500e1fe716e3c05f163c5c7"
+    },
+    {
+      "path": "atlas/reference/documents/POINT_AVANCEMENT_EMOTIONNEL.md",
+      "bytes": 38017,
+      "sha256": "1c7fe6449d52864860310cf271c054d6836f7e66b667cdbaf4666b33799547a2"
+    },
+    {
+      "path": "atlas/reference/documents/PROSPECTION_COREE_JAPON_FRANCE_EMOTIONS_2026-10-04.md",
+      "bytes": 18888,
+      "sha256": "ab6d74dd638ab4b0a0bc0e01a05636a5a04e76c621b738d59a455c6506aab45d"
+    },
+    {
+      "path": "atlas/reference/documents/PROSPECTION_PAYSAGE_EMOTIONNEL_2026-10-04.md",
+      "bytes": 18995,
+      "sha256": "535bf84ee302cf5dc2e7a23ff1d96eea02f5b1b53189f9f5009416ec6143a818"
+    },
+    {
+      "path": "atlas/reference/documents/PROSPECTIVE_EMOTIONNEL_POLY_v0.1.md",
+      "bytes": 13108,
+      "sha256": "adf76943260ee1014e80869c481e3c80dff92dd0591aca2d565e88ff0df95c70"
+    },
+    {
+      "path": "atlas/reference/documents/PROTOCOLE_ANALYSE_EMOTIONNEL_v0.2.md",
+      "bytes": 5663,
+      "sha256": "a0972fb200c6876cbd1a5d11ff43bb215f8171580674f7648ff84a07250ba9d0"
+    },
+    {
+      "path": "atlas/reference/documents/README.md",
+      "bytes": 4694,
+      "sha256": "8e9d2dcb266e0ce1913d7f402b00e877d85ba1e4668da30895fa3a569cf175bd"
+    },
+    {
+      "path": "atlas/reference/documents/REFERENCES_COLLECTE_MONDIALE_2026-10-04.md",
+      "bytes": 6779,
+      "sha256": "3f8b1b479e098e1bae8d8979f5245a15817a57fc23475f130b1b310e1665d570"
+    },
+    {
+      "path": "atlas/reference/documents/REVUE_MODELES_EMOTIONNEL_v0.1.md",
+      "bytes": 15686,
+      "sha256": "d20030fe35df054d426850ed8118ed5d2942c6b4e483ca2b75563a35101b6261"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_AF_AFRO.md",
+      "bytes": 2237,
+      "sha256": "671bb4bee3c0949e10a7a5d66022476533ea072510a030f5fb9c4022f19a5f13"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_AU_ABS.md",
+      "bytes": 2236,
+      "sha256": "254a07104d2ed641509e9dc7177c666ed024198c446c8efa97a8ccc530f0ddf5"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_BR_IBGE.md",
+      "bytes": 1105,
+      "sha256": "a6257ca2fe45a2f3b9aac1b43c6887e4c8b67912e7b6255cbd73eb6c6d0954c5"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_BT_GNH.md",
+      "bytes": 1529,
+      "sha256": "048b1e89bca1089fe979a265a4533fecd7c1555162b1d95ecfd1c3e35cacc91c"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_CA_STATCAN.md",
+      "bytes": 1686,
+      "sha256": "dbf3d9d79536f0a77b6dcf57b435df554c3056b80a4308c4e7a1ff76440cb6e2"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_CN_SEED.md",
+      "bytes": 1498,
+      "sha256": "9011900c0022bc4fd9c74e72a04642daf3e1e7f567537125fb401e3c8993c110"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_DE_CASE.md",
+      "bytes": 2153,
+      "sha256": "53c19769aa21d7d8d67183577984dc8e25a3bd794e2f6690dc3efd6b40944635"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_EU_EUROSTAT.md",
+      "bytes": 1752,
+      "sha256": "8d5d86e73751275be8a64dd0e4d3a81ae04fd2b7c2a8a8fdfcc3f2cb3dd8932e"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_INSEE.md",
+      "bytes": 3312,
+      "sha256": "395ff0d02c8a0182a9e1891546eeb61a93a2cc48c1f2c48b963df04f0b840610"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_TOURS.md",
+      "bytes": 1101,
+      "sha256": "8129804d10d4417dbb61d165b068d11daedc47edeaca73a6ef4b4fd1c69b44c8"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_VALUE.md",
+      "bytes": 1906,
+      "sha256": "edd36400b01e7811e897facb4410f591c92d37198d8b8ca35b6290f8d9b9ffdd"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_VOICE.md",
+      "bytes": 1117,
+      "sha256": "6e3fa3d29045eea0dead9b330fb4aed03818a547a7d3fcfe6724a4e2aac59594"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_IN_DENS.md",
+      "bytes": 1056,
+      "sha256": "2b622d4edaa81a8f0bfb2dd4d43ea04eb47229035f641400adad75b19a26dd7b"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_IN_NMHS.md",
+      "bytes": 1520,
+      "sha256": "747f4e53d1921436242e0a940972ad8ad08e655a68378fd712f717898359f255"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_JP_CAO.md",
+      "bytes": 3149,
+      "sha256": "35342dcfd3edc6f07ee35457448faedd169eb9c9cb821353075142f9e532e1f6"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_JP_RIKEN.md",
+      "bytes": 3165,
+      "sha256": "715d8368d54ff14672df0b2225ad0d5a9a6164595b0c59e1d217c16d940a8e5c"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_KR_DATA.md",
+      "bytes": 1185,
+      "sha256": "d3eb1747afb36b75865eeb8820ab61b8f540c74c862814387e4a30d8817726e2"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_KR_KEMDY.md",
+      "bytes": 1068,
+      "sha256": "5233a899b619e15d2c050da54bd6e9a82497951d5d4c2c654e4181d1b14151da"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_KR_KEMOCON.md",
+      "bytes": 1406,
+      "sha256": "4f94a0486074afc01bb24e43b9b0c189d504e00d951b54cb7d03c0234a66011b"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_LAT_LATINO.md",
+      "bytes": 1369,
+      "sha256": "fb4e80b681856dc96690cdc46540e9923c318c0aa39410bea8195ecf416a7180"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_MENA_ARAB.md",
+      "bytes": 1904,
+      "sha256": "8f07324e2cd0589a3848f0b616897a7e2c0836215cf7a0680de059ec3f6d47c3"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_MX_INEGI.md",
+      "bytes": 1404,
+      "sha256": "f5140f6ca361116ea206b445fa3b1fbe6857589570bdcd55ac04aa71f7ab6d5c"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_NO_SSB.md",
+      "bytes": 2192,
+      "sha256": "5e8edc8513fc92199241331bc1331f53e8dca6382ff2c4c7ebd61e089c657909"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_NZ_STATS.md",
+      "bytes": 1854,
+      "sha256": "20d83c663259edf92688bb0f3ff81965a203df988d55389e29a39cc70a330772"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_UK_ONS.md",
+      "bytes": 2276,
+      "sha256": "b144c309d9f7b50a180397d9204056deb5d2a220c00f83b9bad17c1272a463f7"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_US_NHANES.md",
+      "bytes": 3156,
+      "sha256": "34b9f04b6281c95d9d23853d9a26ed622563a895cec6053fc1faa4493e022393"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_OECD.md",
+      "bytes": 1116,
+      "sha256": "b4db555dc708170152a6220adbc221d39570d7e807695ade92ae3d61c341b315"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_RECEPTORS.md",
+      "bytes": 20681,
+      "sha256": "d84afc38f113bda790f2bf43cdb650eadfb10d5262a0ac91e5491bc672ccec1c"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_WHO.md",
+      "bytes": 1577,
+      "sha256": "9f29e531ab4998d8d73c797f82be71819e956ab901dacc5450c54e18319007d6"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_WHR.md",
+      "bytes": 1783,
+      "sha256": "04dac9cce6238499accb0fa1edd3484b1e92c0eebc3c7f27f170f33cdfaf351b"
+    },
+    {
+      "path": "atlas/reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_WVS.md",
+      "bytes": 1112,
+      "sha256": "13195b428aadab5c5129afa2ab841dd1ceb91ffe0b3d1ceb5d97a6f7c0b567c4"
+    },
+    {
+      "path": "atlas/reference/documents/sources/v0.77/OSF_WIKI_CONTENU.md",
+      "bytes": 1055,
+      "sha256": "ebaeda31da38bc2fd4585c091b5364506b548950376e32726b4425f09e478781"
+    },
+    {
+      "path": "atlas/reference/index.html",
+      "bytes": 244,
+      "sha256": "03caf852375f6a6355c82685d9924a6cf6f042eeb933d55f2442db95ea90010a"
+    },
+    {
+      "path": "atlas/REGISTRE_HUMAIN_v0.91.json",
+      "bytes": 26533,
+      "sha256": "d4da061e069c47aa8ac50e68ce556d541fef610772dc88b07ef92ae85cab31eb"
+    },
+    {
+      "path": "atlas/REGISTRE_MAILLONS_ENRICHI.json",
+      "bytes": 209874,
+      "sha256": "b1b95847e0419b8d05e2aa24bd91c95e8cd3ae855e73b4221ae850a454b35172"
+    },
+    {
+      "path": "atlas/REPERES_TEMPORELS.json",
+      "bytes": 70138,
+      "sha256": "6141a787e0f4a3ddf44a8b9fcd9eb99aea806a73f5b3667eed4c4f7747b99d3c"
+    },
+    {
+      "path": "canon.html",
+      "bytes": 16045,
+      "sha256": "988947819690cfbdc92844e0aac24d366ad131275b5dbfcd213cbf6d3fcf74e2"
+    },
+    {
+      "path": "CANON_POLY_v0.92.json",
+      "bytes": 1680,
+      "sha256": "a79fbcad1ad29e2a891556c6ec14952e2ca035e8f3cffe6301146bdd6d5fe240"
+    },
+    {
+      "path": "CANON_POLY_v0.92.md",
+      "bytes": 13536,
+      "sha256": "516f3b0f0174b46d0ac848cec47811eab13efdc4f6c632bfd158c2a804610e5c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 24523,
+      "sha256": "f0e1f9d75dd628b9ab3d8524aee52d1c6b3aaf64ee552b0ca7f3b6860bdc78c2"
+    },
+    {
+      "path": "PUBLICATION_SCOPE.json",
+      "bytes": 519,
+      "sha256": "0712fd12e2a0eae6348ba90d6a460eee2c391d46f204c246e598bbcfe275ed3d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 768,
+      "sha256": "b3de0ddb824c0da84c085ba84fb0a128681af5f53567f2c213509df6de47a4ea"
+    },
+    {
+      "path": "VERIFICATION_v0.92.json",
+      "bytes": 474,
+      "sha256": "c24eab12bafb192daa324d7e2f418fa33b24d7ef9dfd48db02948fec9d5c88fd"
+    }
+  ]
+}

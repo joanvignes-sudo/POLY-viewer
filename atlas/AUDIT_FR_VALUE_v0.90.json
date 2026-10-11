@@ -1,0 +1,11 @@
+{
+  "version": "0.90",
+  "archive": "donnees/collecte_mondiale_2026-10-04/FR_VALUE/repository_b43e4179a288ba0198eb3ef4ea0fc9a7697c1ee8.zip",
+  "member": "djercog-WinkeEtAl-value-2025-b43e417/README.md",
+  "sha256": "140762b84a17a8cb4a713ef51c788af2c7316b12bee74fb1a95fbed4de9c0ec5",
+  "species": "mouse",
+  "document": "pieces/FR_VALUE_README.md",
+  "anchor": "Individual mice (n=10)",
+  "line": 10,
+  "scope": "Espèce identifiée dans le README auteur ; effectifs propres aux préparations, modèles non reproduits. Le DOI du README reste XXXX."
+}
