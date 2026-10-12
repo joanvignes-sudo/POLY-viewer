@@ -1,5 +1,5 @@
 {
-  "version": "0.96",
+  "version": "0.96.1",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -32,5 +32,6 @@
     "native_grid_matches_labels": true,
     "functional_registration": null,
     "neurons_or_synapses": false
-  }
+  },
+  "navigation_audit": "CONTROLES_v0.96.1.json"
 }

@@ -1,4 +1,7 @@
-# POLY v0.96
+# POLY v0.96.1
+
+[Contrôles de navigation](BILAN_TESTS_v0.96.1.md).
+
 
 Atelier de chaînes biologiques, atlas humain et exploration BigBrain. Nouvelle étape : [coupe histologique documentée](histologie.html), image à 20 µm et annotations corticales. [Bilan et limites](BILAN_HISTOLOGIE_v0.96.md).
 

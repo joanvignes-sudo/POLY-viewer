@@ -1,0 +1,54 @@
+{
+  "version": "0.96.1",
+  "checked_at": "2026-10-12T08:46:14.575195+00:00",
+  "status": "passed",
+  "fixes": [
+    "Histology commands disabled until data loads; safe zoom before metadata",
+    "ROI-only links frame the selected annotated region"
+  ],
+  "canonical_chains": 14,
+  "documented_paths": 50,
+  "anatomy_regions": 17,
+  "cortical_patches": 3,
+  "boundaries_per_patch": 7,
+  "histology_regions": 6,
+  "atlas_menus": 11,
+  "catalogue_detail_renderings": 1631,
+  "internal_paths": 139,
+  "static_html_pages": 17,
+  "static_links": 96,
+  "external_addresses": 252,
+  "external_accessible": 208,
+  "external_unverified": 44,
+  "external_confirmed_404_or_410": 0,
+  "extended_checks": [
+    "histology early loading controls",
+    "histology ROI-only link",
+    "all histological controls and clipboard",
+    "all 17 atlas structures and source context",
+    "main controls, filters, automatic reader and all detail links",
+    "support menus and feedback export"
+  ],
+  "atlas_checks": [
+    "11 atlas menus",
+    "50 atlas route selections, reader and filters",
+    "17 cross-reference cards",
+    "both comparison selectors, every route",
+    "time, evidence and archive search filters",
+    "1631 catalogue detail renderings and links; pagination and all filters",
+    "human entry shortcuts"
+  ],
+  "mobile_checks": [
+    "seven current pages and eleven atlas tabs at 390px",
+    "main share and removal of comparison reader",
+    "24 repeated region/zoom/overlay cycles and clipboard refusal fallback",
+    "metadata failure keeps controls disabled and sources accessible"
+  ],
+  "javascript_errors_after_fixes": [],
+  "limitations": [
+    "Chrome headless; software WebGL; simulated mobile viewport, not a physical device",
+    "External 403/502/timeouts cannot establish broken links",
+    "Not a new long-duration endurance test"
+  ],
+  "scientific_values_modified": false
+}
