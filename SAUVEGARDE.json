@@ -1,0 +1,12 @@
+{
+  "version": "0.96.1",
+  "public_url": "https://joanvignes-sudo.github.io/POLY-viewer/",
+  "public_commit": "0ea2872a7af4efe308f837c3510bdd790d303856",
+  "research_commit": "a624571b410968c5fca6ecefecf44856fdcbb4a3",
+  "manifest_files": 972,
+  "public_git_blob_hashes_verified": 972,
+  "publication_status": "verified_online",
+  "online_browser_status": "passed",
+  "public_clean": true,
+  "research_clean": true
+}

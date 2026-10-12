@@ -1,4 +1,6 @@
-# POLY v0.98
+# POLY v0.99
+
+[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.99.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
 
 [Preuves au maillon et identités des sources](AUDIT_SOURCES_v0.98.md) · [Dossiers réunis](dossiers.html).
 
@@ -12,3 +14,5 @@
 Atelier de chaînes biologiques, atlas humain et exploration BigBrain. Nouvelle étape : [coupe histologique documentée](histologie.html), image à 20 µm et annotations corticales. [Bilan et limites](BILAN_HISTOLOGIE_v0.96.md).
 
 Les données BigBrain et leurs adaptations conservent la licence CC BY-NC-SA 4.0 et les crédits dans assets/bigbrain et assets/histology. Aucun recalage fonctionnel vers P8 ni synapse représentée.
+
+Les données Allen restent soumises aux conditions Allen Institute (recherche et usages non commerciaux, attribution). Le squelette H01 est sous CC BY 4.0. Les sources et dérivés conservent leurs conditions propres. La version 0.99 étend l’exploration entre échelles ; le registre scientifique des chaînes demeure EXPLORATION_v0.98.json.

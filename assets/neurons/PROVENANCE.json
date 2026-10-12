@@ -1,0 +1,269 @@
+{
+  "version": "0.99",
+  "created": "2026-10-12",
+  "samples": [
+    {
+      "id": "allen-637034000",
+      "file": "assets/neurons/allen-637034000.json",
+      "sha256": "9326f66a10460b3b42816915d2459541a4d26e3216a98049332df93f25838356",
+      "vertices": 8891,
+      "edges": 8890,
+      "components": 1,
+      "sum_edge_lengths_um": 10288.012781995323,
+      "bounds_um": [
+        [
+          253.5699,
+          188.3241,
+          6.902
+        ],
+        [
+          1008.5515,
+          1728.1264,
+          138.04
+        ]
+      ],
+      "radius_used_for_display": false,
+      "title": "Allen · cellule humaine 637034000",
+      "specimen": "H17.03.013.11.08.03",
+      "source": "https://celltypes.brain-map.org/human/experiment/morphology/637034000",
+      "description": "Gyrus frontal supérieur gauche · couche 2 · dendrites spiny. Tissu chirurgical ; donneuse de 41 ans, épilepsie. Reconstruction dans une préparation : les prolongements peuvent être coupés.",
+      "license": "Conditions Allen Institute : recherche et usages non commerciaux, avec attribution. Pas de licence CC générique.",
+      "license_url": "https://alleninstitute.org/legal/terms-of-use",
+      "citation": "Allen Institute for Brain Science (2015). Allen Cell Types Database [dataset]. Cellule 637034000. Consulté le 12 octobre 2026.",
+      "coordinates": "Coordonnées locales de reconstruction SWC, en µm ; aucun recalage vers MNI, BigBrain ou H01.",
+      "type_labels": {
+        "1": "Soma",
+        "2": "Axone",
+        "3": "Dendrite basale",
+        "4": "Dendrite apicale"
+      },
+      "trace": "assets/neurons/allen-sweep-62.json",
+      "trace_sha256": "42b87092ac3df34162617e8b43d8ec278a5f98157be21dcab711e10c2fe584c0",
+      "features": {
+        "adaptation": null,
+        "avg_isi": null,
+        "electrode_0_pa": 28.7399982284997,
+        "f_i_curve_slope": 0.0249999918256505,
+        "fast_trough_t_long_square": 1.11024,
+        "fast_trough_t_ramp": 10.9163466666667,
+        "fast_trough_t_short_square": 1.025496,
+        "fast_trough_v_long_square": -54.9375038146973,
+        "fast_trough_v_ramp": -57.1666704813639,
+        "fast_trough_v_short_square": -58.6937515258789,
+        "has_burst": false,
+        "has_delay": false,
+        "has_pause": false,
+        "id": 637056550,
+        "input_resistance_mohm": 88.4942,
+        "latency": 0.05758,
+        "peak_t_long_square": 1.1077,
+        "peak_t_ramp": 10.9142266666667,
+        "peak_t_short_square": 1.023428,
+        "peak_v_long_square": 43.3437538146973,
+        "peak_v_ramp": 51.0520846048991,
+        "peak_v_short_square": 46.1000022888184,
+        "rheobase_sweep_id": 637053492,
+        "rheobase_sweep_number": 62,
+        "ri": 61.7186725139618,
+        "sag": 0.0404780507087708,
+        "seal_gohm": 2.723503616,
+        "slow_trough_t_long_square": null,
+        "slow_trough_t_ramp": null,
+        "slow_trough_t_short_square": null,
+        "slow_trough_v_long_square": null,
+        "slow_trough_v_ramp": null,
+        "slow_trough_v_short_square": null,
+        "specimen_id": 637034000,
+        "tau": 12.75384148338,
+        "threshold_i_long_square": 470.0,
+        "threshold_i_ramp": 247.333338419596,
+        "threshold_i_short_square": 1700.0,
+        "threshold_t_long_square": 1.10714,
+        "threshold_t_ramp": 10.9137466666667,
+        "threshold_t_short_square": 1.02294,
+        "threshold_v_long_square": -40.2500038146973,
+        "threshold_v_ramp": -40.9270858764648,
+        "threshold_v_short_square": -49.8500030517578,
+        "thumbnail_sweep_id": 637053281,
+        "trough_t_long_square": 1.11052,
+        "trough_t_ramp": 10.9357666666667,
+        "trough_t_short_square": 1.253336,
+        "trough_v_long_square": -55.1562538146973,
+        "trough_v_ramp": -57.4791692097982,
+        "trough_v_short_square": -77.8000045776367,
+        "upstroke_downstroke_ratio_long_square": 3.33849793707664,
+        "upstroke_downstroke_ratio_ramp": 3.64352823454771,
+        "upstroke_downstroke_ratio_short_square": 3.43372790328671,
+        "vm_for_sag": -86.1562576293945,
+        "vrest": -78.1834945678711
+      },
+      "reconstruction": {
+        "average_bifurcation_angle_local": 76.9516534204621,
+        "average_bifurcation_angle_remote": null,
+        "average_contraction": 0.882233919878524,
+        "average_diameter": 0.488085748162377,
+        "average_fragmentation": 55.875,
+        "average_parent_daughter_ratio": 0.964472631992055,
+        "hausdorff_dimension": null,
+        "id": 689594739,
+        "max_branch_order": 10.0,
+        "max_euclidean_distance": 334.802776345657,
+        "max_path_distance": 367.726711509372,
+        "neuron_reconstruction_type": "full",
+        "number_bifurcations": 24,
+        "number_branches": 53,
+        "number_nodes": 2795,
+        "number_stems": 5,
+        "number_tips": 29,
+        "overall_depth": 73.4485,
+        "overall_height": 396.851132093926,
+        "overall_width": 329.354162645378,
+        "scale_factor_x": 0.1144,
+        "scale_factor_y": 0.1144,
+        "scale_factor_z": 0.28,
+        "soma_surface": 230.678575387286,
+        "specimen_id": 637034000,
+        "superseded": false,
+        "tags": "3D Neuron Reconstruction morphology",
+        "total_length": 3223.39410332723,
+        "total_surface": 4940.7785176708,
+        "total_volume": 607.897093981671,
+        "well_known_files": [
+          {
+            "attachable_id": 689594739,
+            "attachable_type": "NeuronReconstruction",
+            "download_link": "/api/v2/well_known_file_download/689594780",
+            "id": 689594780,
+            "path": "/external/humancelltypes/prod274/specimen_637034000/H17.03.013.11.08.03_689594739_m.swc",
+            "well_known_file_type_id": 303941301
+          },
+          {
+            "attachable_id": 689594739,
+            "attachable_type": "NeuronReconstruction",
+            "download_link": "/api/v2/well_known_file_download/689620657",
+            "id": 689620657,
+            "path": "/external/humancelltypes/prod274/specimen_637034000/morphology_summary_689594739.png",
+            "well_known_file_type_id": 480715721
+          },
+          {
+            "attachable_id": 689594739,
+            "attachable_type": "NeuronReconstruction",
+            "download_link": "/api/v2/well_known_file_download/689594792",
+            "id": 689594792,
+            "path": "/external/humancelltypes/prod274/specimen_637034000/H17.03.013.11.08.03_689594739_m.marker",
+            "well_known_file_type_id": 486753749
+          }
+        ]
+      }
+    },
+    {
+      "id": "h01-em-1072605926",
+      "file": "assets/neurons/h01-em-1072605926.json",
+      "sha256": "ef28999baea1d7c4cddafc127a0a535950d82c54c2188e9475c495443c2f61a9",
+      "vertices": 25895,
+      "edges": 25850,
+      "components": 45,
+      "sum_edge_lengths_um": 7423.186617507616,
+      "bounds_um": [
+        [
+          2708.544,
+          427.488,
+          0.099
+        ],
+        [
+          2934.112,
+          800.192,
+          174.537
+        ]
+      ],
+      "radius_used_for_display": false,
+      "title": "H01 · segment humain 1072605926",
+      "specimen": "H01 · bibliothèque des 104 cellules relues",
+      "source": "https://h01-release.storage.googleapis.com/data.html",
+      "description": "Squelette d’un segment de cortex humain reconstruit en microscopie électronique. Toutes les composantes publiées de ce squelette sont conservées. Les lignes ne sont ni des membranes ni des synapses.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "citation": "Lichtman laboratory, Harvard University & Connectomics at Google. H01 release, 20210601, proofread_104, segment 1072605926.",
+      "coordinates": "Coordonnées natives du squelette precomputed en nm, transformation source identité ; conversion uniforme × 0,001 vers µm. Aucun recalage vers les autres jeux.",
+      "type_labels": {
+        "0": "Prolongements non typés"
+      },
+      "trace": null,
+      "article": "https://doi.org/10.1126/science.adk4858"
+    }
+  ],
+  "display_transform": "Centre de la boîte englobante soustrait pour l’affichage seulement ; axes x,y,z conservés ; rotation et zoom sans modification des données. Traits de largeur écran constante : rayons non représentés à leur échelle.",
+  "measurements": "Somme euclidienne des arêtes dans les coordonnées sources converties en µm. Longueur de squelette reconstruit, ni longueur totale biologique ni trajet causal.",
+  "registration": "Aucune correspondance individuelle entre CerebrA, BigBrain, Allen et H01. Aucun délai de propagation déduit de la morphologie.",
+  "h01_swc_crosscheck": {
+    "component": "1072605926.0.swc",
+    "vertices_checked": 16120,
+    "exact_native_coordinate_match": true,
+    "swc_to_native_nm_factors": [
+      32,
+      32,
+      33
+    ],
+    "display_uses": "native precomputed skeleton, not SWC export"
+  },
+  "raw_sources": [
+    {
+      "file": "allen-637034000.swc",
+      "bytes": 395455,
+      "sha256": "e15ba38ae0ed48f550104c9b840540c006e8c2d1c8422acc8c1b5df6a7ae3e04"
+    },
+    {
+      "file": "allen-ephys.json",
+      "bytes": 1910,
+      "sha256": "841920b9154efb084cfd11a12a1de95a5fcd1892ab3f28e9399d8bf29f791c90"
+    },
+    {
+      "file": "allen-metadata.json",
+      "bytes": 1816,
+      "sha256": "9fc37af7786e1a3e627c11fe4e73a7c31e6e59211621ed3112e703da7151076e"
+    },
+    {
+      "file": "allen-reconstruction.json",
+      "bytes": 1848,
+      "sha256": "de4a64c464045da01848d1efeb83c00cdb35ad6e0b0a3e7d91171c8122fdbfbe"
+    },
+    {
+      "file": "allen-specimen.json",
+      "bytes": 1088,
+      "sha256": "d2ae74688168d2488c33ad48c81fde85d7875e80b6f05e613e3ad1c1329447fb"
+    },
+    {
+      "file": "h01-1072605926.skeleton",
+      "bytes": 621128,
+      "sha256": "90fd2552213f2e2d78d9c5aede31cc3837a3374cb66e79eb098805b3d0795a5f"
+    },
+    {
+      "file": "h01-native-receipt.json",
+      "bytes": 259,
+      "sha256": "f3df0f3d2f789dcf39985b2637077d990f01911de8796b50743d6989fcd1a9d1"
+    },
+    {
+      "file": "h01-skeleton-info.json",
+      "bytes": 503,
+      "sha256": "3bc2c1c488d4e92b9fb163f7ebcf6d7ca8629ac9150adb774a9b64c6a27405c0"
+    }
+  ],
+  "nwb_source": {
+    "url": "https://api.brain-map.org/api/v2/well_known_file_download/742807097",
+    "bytes": 19005306,
+    "sha256": "53edd3c5738ff2afd7d69e0e67a7c24a88c7916e4662ce6e9d710a1a81f4e711",
+    "kept_locally": true,
+    "public_subset": "allen-sweep-62.json"
+  },
+  "h01_archive": {
+    "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/skeletons/104_proofread_neurons_swc.zip",
+    "bytes": 59832937,
+    "sha256": "3e0534df357ef2e92f6e0199962133cc9bc9733eb3a1fd6d1d315208ad63db47",
+    "kept_locally": true
+  },
+  "formats_documentation": [
+    "https://github.com/google/neuroglancer/blob/master/src/datasource/precomputed/skeletons.md",
+    "https://github.com/google/neuroglancer/blob/master/src/datasource/precomputed/sharded.md",
+    "https://community.brain-map.org/t/cell-types-database-api/3016"
+  ]
+}

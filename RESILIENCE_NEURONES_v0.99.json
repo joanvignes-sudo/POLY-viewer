@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "pointer_selection": true,
+  "sample_switches": 10,
+  "geometry_counts": [
+    2,
+    6,
+    2,
+    6,
+    2,
+    6,
+    2,
+    6,
+    2,
+    6
+  ],
+  "corruption_rejected": true,
+  "invalid_url_fallback": true,
+  "context_links_preserved": true,
+  "webgl_fallback": true,
+  "errors": []
+}

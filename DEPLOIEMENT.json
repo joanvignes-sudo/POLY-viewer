@@ -1,0 +1,130 @@
+{
+  "version": "0.96",
+  "public_url": "https://joanvignes-sudo.github.io/POLY-viewer/",
+  "public_commit": "5883299ab2f7489510d9f32899cbc5f65cc4afcd",
+  "checked_at": "2026-10-12T08:23:56.161598+00:00",
+  "status": "verified_online",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 9669,
+      "matches": true
+    },
+    {
+      "path": "suite.html",
+      "status": 200,
+      "bytes": 6676,
+      "matches": true
+    },
+    {
+      "path": "microstructures.html",
+      "status": 200,
+      "bytes": 6724,
+      "matches": true
+    },
+    {
+      "path": "histologie.html",
+      "status": 200,
+      "bytes": 4936,
+      "matches": true
+    },
+    {
+      "path": "assets/histology-v096.js",
+      "status": 200,
+      "bytes": 8116,
+      "matches": true
+    },
+    {
+      "path": "assets/bigbrain-v095.js",
+      "status": 200,
+      "bytes": 8729,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/PROVENANCE.json",
+      "status": 200,
+      "bytes": 94879,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/intersections.json",
+      "status": 200,
+      "bytes": 998023,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/raw_3863.mnc",
+      "status": 200,
+      "bytes": 13151874,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/pm3863_nl_classifiedsixlayers_aligned.mnc",
+      "status": 200,
+      "bytes": 182388,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/raw/1/2_4.png",
+      "status": 200,
+      "bytes": 161374,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/labels/1/2_4.png",
+      "status": 200,
+      "bytes": 8252,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/raw/16/0_0.png",
+      "status": 200,
+      "bytes": 22883,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/labels/16/0_0.png",
+      "status": 200,
+      "bytes": 2706,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/License.txt",
+      "status": 200,
+      "bytes": 18985,
+      "matches": true
+    },
+    {
+      "path": "assets/histology/Credits.txt",
+      "status": 200,
+      "bytes": 5130,
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_SCOPE.json",
+      "status": 200,
+      "bytes": 1470,
+      "matches": true
+    },
+    {
+      "path": "BILAN_HISTOLOGIE_v0.96.md",
+      "status": 200,
+      "bytes": 2181,
+      "matches": true
+    },
+    {
+      "path": "VERIFICATION_HISTOLOGIE_v0.96.json",
+      "status": 200,
+      "bytes": 567,
+      "matches": true
+    },
+    {
+      "path": "MANIFESTE_PUBLIC.json",
+      "status": 200,
+      "bytes": 170518,
+      "matches": true
+    }
+  ],
+  "private_correspondence_published": false
+}

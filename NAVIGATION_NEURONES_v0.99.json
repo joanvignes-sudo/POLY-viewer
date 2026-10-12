@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "base": "http://127.0.0.1:8899/",
+  "first": {
+    "sample": "allen-637034000",
+    "selected": -1,
+    "vertices": 8891,
+    "edges": 8890,
+    "visibleTypes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "webgl": true,
+    "span": 1924.7528750000001,
+    "playing": false,
+    "geometryCount": 6,
+    "traceSamples": 60000,
+    "windowMode": "full",
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  "h01": {
+    "sample": "h01-em-1072605926",
+    "selected": -1,
+    "vertices": 25895,
+    "edges": 25850,
+    "visibleTypes": [
+      0
+    ],
+    "webgl": true,
+    "span": 465.88,
+    "playing": false,
+    "geometryCount": 2,
+    "windowMode": "detail",
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  "share_restored": true,
+  "mobile_width": 390,
+  "errors": []
+}
