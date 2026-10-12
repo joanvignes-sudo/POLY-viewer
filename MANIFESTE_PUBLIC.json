@@ -413,8 +413,8 @@
     },
     {
       "path": "assets/histology/intersections.json",
-      "bytes": 998022,
-      "sha256": "8229798c8326cd3df1e2d3a38a8cefc1a8aab76d0dde15f1f687541f21ead252"
+      "bytes": 998023,
+      "sha256": "e288ae677a84f687d53733b60d2174ec8bab49b215c707f3494589729d6bc403"
     },
     {
       "path": "assets/histology/labels/1/0_0.png",
