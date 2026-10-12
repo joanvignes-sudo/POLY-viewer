@@ -1,5 +1,5 @@
 {
-  "version": "0.101",
+  "version": "0.102",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -52,6 +52,11 @@
       "sha256": "2b09b49f227bd93fd8e4e9f9b8ed55573db11b65c5ee5e43332f9775a3c02522"
     },
     {
+      "path": "BILAN_IHC_v0.102.md",
+      "bytes": 2458,
+      "sha256": "7bf07c4f56de93f76bc7dab593c95c6b2434fd94472ad388fac7d08c7e5fb41a"
+    },
+    {
       "path": "BILAN_NEURONES_v0.99.md",
       "bytes": 7399,
       "sha256": "3060f47fb6d1b14f03d4357e2fd9a4fe8c4cad7e54df0d8f4b5bfd73d3f142b8"
@@ -90,6 +95,11 @@
       "path": "CONTROLES_ECHELLES_v0.99.json",
       "bytes": 517,
       "sha256": "8c46ca484edc0ea972ab9d40fa6fa2c76cd0236093406878e2b3b6d0ecdad660"
+    },
+    {
+      "path": "CONTROLES_IHC_v0.102.json",
+      "bytes": 436,
+      "sha256": "84fbf48c22dd9284eb4158049710505cedc223f414a35fb0be252d9c4098abcc"
     },
     {
       "path": "CONTROLES_ORGANES_v0.100.json",
@@ -167,6 +177,11 @@
       "sha256": "6eea4224a44de39d3a62a79fff3b262fa77fb302387b4aa9b082922da13dec73"
     },
     {
+      "path": "INVENTAIRE_ECHELLES_v0.102.json",
+      "bytes": 7057,
+      "sha256": "c331752da4f230fd1768125012c8ce6705dd6534923ff380a86ebcff049ead33"
+    },
+    {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
       "bytes": 6410,
       "sha256": "20943a235c3652fb74df5039c1a3165424c36c2bec9eed1ee17472568d21e303"
@@ -185,6 +200,16 @@
       "path": "LIENS_v0.101.json",
       "bytes": 83,
       "sha256": "4449b626a4aa7651aa814e578bb3e56143027a5f0f668f6b1d5de23e0411b088"
+    },
+    {
+      "path": "LIENS_v0.102.json",
+      "bytes": 83,
+      "sha256": "d83fab95e389ff19a0d1e5a33e965d903b570b578c3b3af0ea105c1f2adb2a94"
+    },
+    {
+      "path": "NAVIGATION_IHC_v0.102.json",
+      "bytes": 443,
+      "sha256": "ed9daff5d44b855c59ee17dc74a7a1cef7bb1ea70d2911129faef31552010798"
     },
     {
       "path": "NAVIGATION_NEURONES_v0.99.json",
@@ -228,8 +253,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1744,
-      "sha256": "9d73bc75f012cfc41f2ec681a8cf09fc66d6a0547afa5e507a618dea4048d5c7"
+      "bytes": 1959,
+      "sha256": "3064971197cd3b0756ac1e918d14fed6a6ea29a8ed07e3cebf3084fc5da45da6"
     },
     {
       "path": "RESILIENCE_NEURONES_v0.99.json",
@@ -283,6 +308,11 @@
     },
     {
       "path": "VERIFICATION_v0.101.json",
+      "bytes": 654,
+      "sha256": "4ef588a050bb0191d98991d351824f95bbb0a4ce98727274b878e08c17994d97"
+    },
+    {
+      "path": "VERIFICATION_v0.102.json",
       "bytes": 654,
       "sha256": "4ef588a050bb0191d98991d351824f95bbb0a4ce98727274b878e08c17994d97"
     },
@@ -3772,6 +3802,126 @@
       "sha256": "56228e050551c2679074a7e0565d03f4c30d334da320461d805735d5154f3f44"
     },
     {
+      "path": "assets/ihc-v0102.css",
+      "bytes": 1038,
+      "sha256": "818657261d4a6e36b00b6fd752a897d6a648ab9f850d157537f9823e0ed63624"
+    },
+    {
+      "path": "assets/ihc-v0102.js",
+      "bytes": 11208,
+      "sha256": "a8b7e8e1ed2da7a1792a2f3de3baba7d8fda0a8979ae9127ca17c29b2a402a93"
+    },
+    {
+      "path": "assets/ihc/CREDITS.md",
+      "bytes": 1660,
+      "sha256": "743f73313e78d2c5bf62cb820eb34f9fc7b75bb64941eb700c2b69f9ac402873"
+    },
+    {
+      "path": "assets/ihc/PROVENANCE.json",
+      "bytes": 32857,
+      "sha256": "40f7b045ec6217287694f15590738546b50dcabd9295fa460496e1bb91a1e95c"
+    },
+    {
+      "path": "assets/ihc/originals/2305_C1L_A_Level_2_part1.gci",
+      "bytes": 1157830,
+      "sha256": "3150bb6fe04200dd391e3a834c599747a3c66370c05a8bb0b59b4f2620c3efc0"
+    },
+    {
+      "path": "assets/ihc/originals/2305_C1L_A_Level_2_part2.gci",
+      "bytes": 469457,
+      "sha256": "6819d0fcccec1e2af035f7fe73fe0cdc56df283fd28aa5f5b2b4d34b6b7db0c0"
+    },
+    {
+      "path": "assets/ihc/originals/ACQUISITION.json",
+      "bytes": 27944,
+      "sha256": "2af6a17b502e38a28795ab7555074c3d6b8d70641835ab24bb005af906560333"
+    },
+    {
+      "path": "assets/ihc/originals/ktf1-ranges.json",
+      "bytes": 2901,
+      "sha256": "101b9a5b4532042800ec280c38acd62d9d8765332c45d365d3c1fca776ab3ec5"
+    },
+    {
+      "path": "assets/ihc/originals/ktf2-ranges.json",
+      "bytes": 3188,
+      "sha256": "9295c69d8473ca5c807531177f146ea077557bd7ab56621594f03b3c1052e273"
+    },
+    {
+      "path": "assets/ihc/originals/manifest.xlsx",
+      "bytes": 57130,
+      "sha256": "74ccb6ddd471db92b701adaed031e19f93474cf3c9641c3ff0800ec4f60fa294"
+    },
+    {
+      "path": "assets/ihc/originals/part1-metadata.xml",
+      "bytes": 11162,
+      "sha256": "c2205b1cf8aee6e5f4bc9849680bc03e386dde138c1bbac6327ebd1996108926"
+    },
+    {
+      "path": "assets/ihc/originals/part2-metadata.xml",
+      "bytes": 11161,
+      "sha256": "aaf867e4141e7275a53ff9a13d8e5a6f54e759a232f69a7114c16d8ec91166d1"
+    },
+    {
+      "path": "assets/ihc/originals/readme.md",
+      "bytes": 5586,
+      "sha256": "4ae7a89a5f5d9de220c422281ac2bae7f66655375f368829873f0d3ad7116ca9"
+    },
+    {
+      "path": "assets/ihc/originals/samples.xlsx",
+      "bytes": 14628,
+      "sha256": "13dcf795b8303f5f5e593606d84816a28d82a35f61347fcfc8cf323ac0aa1756"
+    },
+    {
+      "path": "assets/ihc/originals/selection.json",
+      "bytes": 4456,
+      "sha256": "5c735e13f267d569b70afd4ced03be4f5a0ad14d4c0f60070c6e271e326b4ac6"
+    },
+    {
+      "path": "assets/ihc/originals/sites.xlsx",
+      "bytes": 6829,
+      "sha256": "4225024e90ca20b454b6ba4eb0ad7d71bc4684211ad9bbc354317edcb24f987f"
+    },
+    {
+      "path": "assets/ihc/part1-bord.png",
+      "bytes": 5795844,
+      "sha256": "9ccdaa0130d00e5a04622936306f533737870dc697d24658b13af5a6c4a244d0"
+    },
+    {
+      "path": "assets/ihc/part1-centre.png",
+      "bytes": 6182247,
+      "sha256": "57af2a540727a926193d4312c1acb5f46509a5da25f7bf5e9b091d9bd47f45e1"
+    },
+    {
+      "path": "assets/ihc/part1-preview.jpg",
+      "bytes": 825638,
+      "sha256": "21de21cbe94db7f62d7377e87badaac1a6845a7943b602a0d63386ae5369a121"
+    },
+    {
+      "path": "assets/ihc/part1-superieur.png",
+      "bytes": 6319133,
+      "sha256": "985a06ac3deb38ed27c4e56884b30a54d5279776d8cbc66c76240f1b105421e2"
+    },
+    {
+      "path": "assets/ihc/part2-bord.png",
+      "bytes": 6272558,
+      "sha256": "1db365d24d56a95fc9751f479a98640b83d1bd3f77e0607d5d59ce3159a221e3"
+    },
+    {
+      "path": "assets/ihc/part2-centre.png",
+      "bytes": 6339809,
+      "sha256": "100b6d22dd446369a649b89d8f8be2746b8f2da2b704ca89a9cb8d99bb3deef1"
+    },
+    {
+      "path": "assets/ihc/part2-inferieur.png",
+      "bytes": 6170304,
+      "sha256": "650cb3c471c721df444e1c5bbf032f7befff1b1115b8e390b42a35f79cc70bad"
+    },
+    {
+      "path": "assets/ihc/part2-preview.jpg",
+      "bytes": 998417,
+      "sha256": "2248b7b9d2ac235ffbc46ef9d5e78fa50f2116f70146b1f37fc7f51560940794"
+    },
+    {
       "path": "assets/intervals/c01_interval_actions_v0.1.js",
       "bytes": 14165,
       "sha256": "53beb157a56f7a0c9d6cfcd74ba2ae3853d6215c735f688265872cd882e1a0d8"
@@ -5427,9 +5577,14 @@
       "sha256": "bd32cdc7eb22b1b1d46311788cd26782d1e0cb79149216610f89b9e430aaf913"
     },
     {
+      "path": "immunohistochimie.html",
+      "bytes": 6610,
+      "sha256": "dedddc5bd7a8ed42325dc3044da485a23febbd8484f1bbd46da534b7e10ff418"
+    },
+    {
       "path": "index.html",
-      "bytes": 9831,
-      "sha256": "999ffa9f10bc28292c34fa95149d1839beb759a1cffcde0a49252ee3a5fe32a1"
+      "bytes": 9885,
+      "sha256": "0ab09dc830ee21bbceaa2b1f9050c93f462c96bf3262ad2a24379d4dd6a8d661"
     },
     {
       "path": "microstructures.html",
@@ -5443,18 +5598,18 @@
     },
     {
       "path": "organes.html",
-      "bytes": 8575,
-      "sha256": "e68b1663091ad6d52848d0ebdc1ea603a7872b87e107e388beb2994abbc8cde3"
+      "bytes": 8834,
+      "sha256": "b9f17c64c4b7defb4b467cfc2bc42a4ba1a4c12026c8f56ff728fe61023d2136"
     },
     {
       "path": "suite.html",
-      "bytes": 8879,
-      "sha256": "0b1aefc3984dc26fd26fcddb0378148182173c87124a18e82d8a503df3ef6bd2"
+      "bytes": 9061,
+      "sha256": "1e2658fc77174775d249549b4f040d11b645ec2e480e9da8bf7e6b7d1153a2be"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 9083,
-      "sha256": "99334fbbdef449e7041e8735a8840effe8dc32333053d00775257e45c667c8f7"
+      "bytes": 9728,
+      "sha256": "5e95deca0a92c1e097c81ef98d0bf05c9dedb27d16a1088413122e3a59e76722"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "native_windows_exact": 6,
+  "native_rgb_pixels_verified": 25165824,
+  "source_tiles_verified": 96,
+  "gci_hashes_match_source_manifest": 2,
+  "source_previews_exact": 2,
+  "channel_labels_and_source_pseudocolors_verified": true,
+  "physical_calibration_claimed": false,
+  "section_thickness_not_xy_resolution": true,
+  "prior_assets_unchanged": 694,
+  "cross_segment_registration_claimed": false
+}
