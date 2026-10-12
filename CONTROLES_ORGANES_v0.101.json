@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_n5_blocks_exact": 13,
+  "new_volumes_exact": 4,
+  "original_hashes_verified": 40,
+  "prior_science_assets_unchanged": 641,
+  "heart_transform_unit_ratio_and_inverse_verified": true,
+  "xml_exf_points_exact": 7594,
+  "c10_max_export_difference_um": 0.004050908924824928,
+  "accuracy_scope": "File conversion consistency; no independent biological registration accuracy claimed",
+  "different_people_registered": false
+}

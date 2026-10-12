@@ -1,0 +1,135 @@
+{
+  "base": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-28/heart/6.51um_VOI-01_bm18/",
+  "files": [
+    {
+      "path": "s4/0/0/0",
+      "bytes": 2629563,
+      "sha256": "2917d1b6e076be37199a1e4ad2474590f1b85767192dd3f0b0dcb3fbf2106765",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/0/0/1",
+      "bytes": 2406414,
+      "sha256": "c525390e96929232b0c4742de3d2bb488f386832ffa8f3f01332ba3be1008892",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/0/0/2",
+      "bytes": 2551871,
+      "sha256": "6b5b1db9f9eb302bdb6295884638cad46cd13e5908f4290db5bf5c8deca49b2f",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/0/1/0",
+      "bytes": 2270439,
+      "sha256": "44dc743f2144d71126781a06506685faeb5ad9ccdb02f7640490150e41869399",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/0/1/1",
+      "bytes": 2176757,
+      "sha256": "05c1e812a4ab4aebd2f32c63f07146ef2652659adfbee3a07df3733e7d048690",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/0/1/2",
+      "bytes": 2028102,
+      "sha256": "cd706c31ed419e6db56cd9a2c0f2da4a810aa3ae1491cce8c01613bbf44610d3",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/1/0/0",
+      "bytes": 2248644,
+      "sha256": "4ba9d4ad8c7298f27832643c077cda8e6e9ebb6b940de8cd550e1a98f63d46db",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/1/0/1",
+      "bytes": 2098480,
+      "sha256": "0bec6cfde75348d9bd9596b9064a72e9ad021392188c04c75779de5a6c462c6d",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/1/0/2",
+      "bytes": 2171037,
+      "sha256": "f9546c9b8dd2b826b953b523942d99177b8ec014b5abe4ff9ab6d244247ce5f4",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/1/1/0",
+      "bytes": 1884246,
+      "sha256": "4379207f01f10b575f83aec963ce3e95c42c4767f29e3411e7f7a7efa2797574",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/1/1/1",
+      "bytes": 1792125,
+      "sha256": "6723ec1e4e6820f3ff2db490815596d85adaaa4818182c3667c37e621647825b",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s4/1/1/2",
+      "bytes": 1736483,
+      "sha256": "8c47234e8a971aac6567d24741214f0f8166ccc431d9952c76bff2117515bcdb",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "path": "s0/15/27/23",
+      "bytes": 3545725,
+      "sha256": "d6dc5081a6dfb064731a60ac8e7bdc469242a22682203518bd7f2b2b557c5a9d",
+      "dimensions": [
+        128,
+        128,
+        128
+      ]
+    }
+  ]
+}

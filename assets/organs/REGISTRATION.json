@@ -1,0 +1,129 @@
+{
+  "heart": {
+    "source": "assets/organs/originals/next/hoa-6.51-state.json",
+    "source_layer": 0,
+    "source_dataset": "S-20-28/heart/19.85um_complete-organ_bm18",
+    "target_dataset": "S-20-28/heart/6.51um_VOI-01_bm18",
+    "published_matrix": [
+      [
+        -0.9987997441912847,
+        -0.049134551954172975,
+        0.0,
+        12649.936907094789
+      ],
+      [
+        0.049134551954172975,
+        -0.9987997441912847,
+        0.0,
+        12627.649068656612
+      ],
+      [
+        0.0,
+        0.0,
+        1.00000756656753,
+        179.0976306594594
+      ]
+    ],
+    "input_scale_um": [
+      19.85,
+      19.85,
+      19.85
+    ],
+    "output_scale_um": [
+      6.51,
+      6.51,
+      6.51
+    ],
+    "effective_overview_to_region_voxel_matrix": [
+      [
+        -3.0454953797537643,
+        -0.14981887193399904,
+        0.0,
+        12649.936907094789
+      ],
+      [
+        0.14981887193399904,
+        -3.0454953797537643,
+        0.0,
+        12627.649068656612
+      ],
+      [
+        0.0,
+        0.0,
+        3.0491782175676616,
+        179.0976306594594
+      ]
+    ],
+    "effective_region_to_overview_voxel_matrix": [
+      [
+        -0.32756110515557024,
+        0.016113908952253737,
+        -0.0,
+        3940.1465260628606
+      ],
+      [
+        -0.016113908952253737,
+        -0.3275611051555703,
+        -0.0,
+        4340.166616018547
+      ],
+      [
+        0.0,
+        0.0,
+        0.3279572162225739,
+        -58.73636038313501
+      ]
+    ],
+    "convention": "Neuroglancer transformBoundingBox: output_i = sum(matrix_ij * input_j * inputScale_j/outputScale_i) + matrix_i3. Matrix is not applied directly to voxel indices without unit ratios.",
+    "implementation_reference": "https://github.com/google/neuroglancer/blob/master/src/coordinate_transform.ts",
+    "accuracy": "Published alignment reused as-is. Numerical inverse checked; no independent anatomical registration error available."
+  },
+  "vagus_c10": {
+    "source_dataset": 674,
+    "source_version": 1,
+    "scaffold_dataset": 426,
+    "scaffold_version": 7,
+    "segment": "sam-l-seg-c10",
+    "scaffold_sample": "sam-f002-l-seg-c10",
+    "nominal_voxel_spacing_um": [
+      9,
+      9,
+      9
+    ],
+    "calibration_basis": "Original study README: microCT 9 microns; MBF XML image scale x=9,y=9,zspacing=-9; imported EXF values and resolution=9 preserved; samples.xlsx stitching scale=1.",
+    "nifti_header_units": "unknown; header zooms are (1,1,1), not used as a physical calibration",
+    "image_axes": "Display U = original NIfTI axis 1; V = original NIfTI axis 0; Z = original NIfTI axis 2. MBF coordinates = (9*U,-9*V,-9*Z).",
+    "image_to_xml_verification": "Derived from acquisition scale, matching dimensions and visually checked at annotated plane Z=84. Independent image registration uncertainty not available.",
+    "stitched_transform": [
+      [
+        0.8112431157200405,
+        0.4814878810018113,
+        0.33174391877655646,
+        20982.8911802461
+      ],
+      [
+        -0.5837452879120508,
+        0.6343686741803685,
+        0.5067719645551817,
+        29068.5983612932
+      ],
+      [
+        0.033556609443115504,
+        -0.6047692168646045,
+        0.795693501478839,
+        104811.740777555
+      ]
+    ],
+    "stitching_angles_xyz_degrees": [
+      -37.2367580723773,
+      -1.92301311128557,
+      -35.7376153407225
+    ],
+    "scale": 1,
+    "source_perineurial_points_verified": 2739,
+    "max_nearest_source_export_distance_um": 0.004050908924824928,
+    "median_nearest_source_export_distance_um": 0.002114060661376079,
+    "exf_import_points_exact": 7594,
+    "limits": "Numerical correspondence is export consistency, not anatomical measurement precision. Stitched segments and finite element fitting may deform lengths."
+  }
+}

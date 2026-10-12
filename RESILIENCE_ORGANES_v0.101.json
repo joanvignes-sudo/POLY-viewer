@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "corrupted_binary_rejected": true,
+  "invalid_url_clamped": true,
+  "invalid_structure_reset": true
+}
