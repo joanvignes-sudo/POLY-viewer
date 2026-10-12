@@ -8,7 +8,8 @@
     "source hashes, mesh indices, common topology and geometric distances verified",
     "three cortical patches, seven boundaries, isolation, exploded view, rotation and context link",
     "mobile layouts and return to exact chain step",
-    "corrupted mesh rejected before render"
+    "corrupted mesh rejected before render",
+    "P8 step changed inside anatomy is preserved through BigBrain and return"
   ],
   "javascript_errors": [],
   "url": "http://127.0.0.1:8895/",

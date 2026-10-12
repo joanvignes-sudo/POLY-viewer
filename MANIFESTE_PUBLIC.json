@@ -13,8 +13,8 @@
     },
     {
       "path": "anatomie.html",
-      "bytes": 6020,
-      "sha256": "59324043296e9d6a8e2fd8180c18b9df361d95d7e77a4ac0085ff1cbdf4297bc"
+      "bytes": 6046,
+      "sha256": "8fdf7ac1d54bc95e4c5e07ec29be81860f2965d9b3631c108e87343a527fe1a8"
     },
     {
       "path": "ANCRAGE_HUMAIN_v0.94.json",
@@ -1748,8 +1748,8 @@
     },
     {
       "path": "VERIFICATION_BIGBRAIN_v0.95.json",
-      "bytes": 589,
-      "sha256": "2f617a43f4a43ffd169d05af182a4973c9cb0495f804c7ce48a2fc9b5a6eb9c4"
+      "bytes": 669,
+      "sha256": "4c9316e49d63405ec3a1ba6a758742e70fa06cdb74970f9655bc582855cb787e"
     },
     {
       "path": "VERIFICATION_v0.92.json",
