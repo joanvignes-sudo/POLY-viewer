@@ -15,6 +15,8 @@ const regions=new Set(meta.regions.map(r=>r.id));
 for(const r of bindings.routes){const route=D.paths.find(p=>p.id===r.path);if(!route)report.errors.push({path:r.path,message:'Parcours anatomique inconnu.'});for(const s of r.steps){if(!route?.steps.some((n,i)=>n.id===s.id&&i===s.index)||s.atlas_regions.some(id=>!regions.has(id)))report.errors.push({path:s.id,message:'Ancrage inconnu.'});}}
 const bb=path.join(root,'assets/bigbrain/PROVENANCE.json');
 if(fs.existsSync(bb)){const m=JSON.parse(fs.readFileSync(bb));for(const s of [...m.sources,{file:m.mesh_file,sha256:m.mesh_sha256}]){const f=path.resolve(root,'assets/bigbrain',s.file);if(!f.startsWith(path.resolve(root,'assets/bigbrain')+path.sep)||!fs.existsSync(f)||crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')!==s.sha256)report.errors.push({path:s.file,message:'Source BigBrain absente ou empreinte incorrecte.'});}}
-report.ok=report.errors.length===0;report.version='0.95';report.scope='Structural and local-source integrity; not scientific validation';
+const hist=path.join(root,'assets/histology/PROVENANCE.json');
+if(fs.existsSync(hist)){const m=JSON.parse(fs.readFileSync(hist));for(const r of [...m.sources.map(r=>({path:r.file,sha256:r.sha256})),...m.derived_files]){const f=path.resolve(root,'assets/histology',r.path);if(!f.startsWith(path.resolve(root,'assets/histology')+path.sep)||!fs.existsSync(f)||crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')!==r.sha256)report.errors.push({path:r.path,message:'Source histologique absente ou empreinte incorrecte.'});}}
+report.ok=report.errors.length===0;report.version='0.96';report.scope='Structural and local-source integrity; not scientific validation';
 console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;
 

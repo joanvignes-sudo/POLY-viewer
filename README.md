@@ -1,12 +1,5 @@
-# POLY v0.95
+# POLY v0.96
 
-Première exploration BigBrain : microstructures.html. Bilan et limites : BILAN_BIGBRAIN_v0.95.md.
-# POLY v0.94
-Atelier public des chaînes biologiques et première référence anatomique humaine.
-- index.html : 14 chaînes et 50 parcours, étapes, relations, mesures et annotations.
-- anatomie.html : 17 structures CerebrA/MNI2009cSym, transparence et éclatement.
-- suite.html : état du programme, essais lecteurs et contribution volontaire.
-- AUDIT_PRESENTATION_v0.94.md : bilan et limites.
-- CONTRAT_DONNEES_v0.94.md : admission et versionnement.
-- tools/validate.cjs : contrôle d’intégrité.
-L’atlas moyen n’est pas un participant. Les délais ND restent inconnus. La comparaison de quatre chaînes ne prédit pas leurs effets combinés. Les annotations restent privées jusqu’à un partage manuel.
+Atelier de chaînes biologiques, atlas humain et exploration BigBrain. Nouvelle étape : [coupe histologique documentée](histologie.html), image à 20 µm et annotations corticales. [Bilan et limites](BILAN_HISTOLOGIE_v0.96.md).
+
+Les données BigBrain et leurs adaptations conservent la licence CC BY-NC-SA 4.0 et les crédits dans assets/bigbrain et assets/histology. Aucun recalage fonctionnel vers P8 ni synapse représentée.

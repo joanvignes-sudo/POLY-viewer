@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source_files": 2,
+  "derived_hashes": 603,
+  "native_pixel_samples": 376,
+  "grid_and_affine_identical": true,
+  "independent_surface_intersections": "all seven layers, tolerance 0.002 source pixel",
+  "section_y_mm": 7.24,
+  "sampling_um": 20,
+  "scientific_chains_unchanged": true
+}

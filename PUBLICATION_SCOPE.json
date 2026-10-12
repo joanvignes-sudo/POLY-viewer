@@ -1,5 +1,5 @@
 {
-  "version": "0.95",
+  "version": "0.96",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -23,5 +23,14 @@
     "registration_to_current_atlas": null,
     "neurons_or_synapses": false,
     "functional_propagation": false
+  },
+  "histology": {
+    "section": "3863",
+    "sampling_um": 20,
+    "manual_rois": 6,
+    "plane_native_y_mm": 7.24,
+    "native_grid_matches_labels": true,
+    "functional_registration": null,
+    "neurons_or_synapses": false
   }
 }
