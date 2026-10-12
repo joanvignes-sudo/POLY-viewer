@@ -38,8 +38,8 @@
     },
     {
       "path": "AUDIT_SOURCES_v0.98.md",
-      "bytes": 6380,
-      "sha256": "f4c31c92ab01ccf1e5bfeebf75bb4b9a99dcee9094e11661d6447ab7675c7680"
+      "bytes": 6770,
+      "sha256": "e6ce7336b1ed3f15de8c549eff997d381549ef5a7feefb0005bd30f4aab05f02"
     },
     {
       "path": "BILAN_BIGBRAIN_v0.95.md",
@@ -125,6 +125,11 @@
       "path": "INTEGRITE_v0.94.json",
       "bytes": 559,
       "sha256": "e4585cab6a9a8e329d059cc5499acc5ff268f1a242f8960af4f0bf5cd6a28235"
+    },
+    {
+      "path": "LIENS_STATIQUES_v0.98.json",
+      "bytes": 95,
+      "sha256": "4c6ac901962abaef4b207993ee32e824167b925a06426606f892aa2bd3a172a8"
     },
     {
       "path": "NAVIGATION_ORGANISATION_v0.97.json",
@@ -4934,7 +4939,7 @@
     {
       "path": "dossiers.html",
       "bytes": 3280,
-      "sha256": "ecd106a2b45eeff3425751c125748fbbf97a23c36a02ddfc455a8cab36f0393c"
+      "sha256": "4977405bc58077273803a5a197d7ba542a6edc7e8f7141a4d0e9ff0e9623721a"
     },
     {
       "path": "glossaire.html",
@@ -4943,8 +4948,8 @@
     },
     {
       "path": "histologie.html",
-      "bytes": 4996,
-      "sha256": "4362917d051c37ad83ad6fae5d7f64abacbd6570611979c5a5e4daa52415c1f2"
+      "bytes": 4994,
+      "sha256": "f98d987455d90d9b223665c753be8134e59a8860e7e43080f6b6652e164c6e32"
     },
     {
       "path": "index.html",
