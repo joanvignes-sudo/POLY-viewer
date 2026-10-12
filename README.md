@@ -1,4 +1,7 @@
-# POLY v0.97
+# POLY v0.98
+
+[Preuves au maillon et identités des sources](AUDIT_SOURCES_v0.98.md) · [Dossiers réunis](dossiers.html).
+
 
 [Dossiers et sources réunis](dossiers.html) · [Audit de l’organisation](AUDIT_ORGANISATION_v0.97.md).
 

@@ -1,5 +1,5 @@
 {
-  "version": "0.97",
+  "version": "0.98",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -37,6 +37,11 @@
       "sha256": "dfd445f4ed5cef2066c0f14bf9eba7458c2b251de4d15491efde616136a301ea"
     },
     {
+      "path": "AUDIT_SOURCES_v0.98.md",
+      "bytes": 6380,
+      "sha256": "f4c31c92ab01ccf1e5bfeebf75bb4b9a99dcee9094e11661d6447ab7675c7680"
+    },
+    {
       "path": "BILAN_BIGBRAIN_v0.95.md",
       "bytes": 3736,
       "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
@@ -72,6 +77,11 @@
       "sha256": "73477a736339f1fb6457f7ba80d7435906aad81b57b858401c785b40effc9cde"
     },
     {
+      "path": "CONTROLES_SOURCES_v0.98.json",
+      "bytes": 923,
+      "sha256": "afead501d1eb315acfc4fbac2a88e525ba795dec80c28ebbf6c15533b1e6323d"
+    },
+    {
       "path": "CONTROLES_v0.96.1.json",
       "bytes": 1890,
       "sha256": "5fad67ef648c4a4b712c79d992d585cda128a05a09a516c8f79a9fe39ba57b74"
@@ -102,6 +112,16 @@
       "sha256": "ac812537da928c5af60f6d6f5b398efb50f96476d798b2fd425a56771eaa4da5"
     },
     {
+      "path": "EXPLORATION_v0.98.json",
+      "bytes": 1130959,
+      "sha256": "6006a8d4a44f3435ef7cbba17cdd456e6a3a2aa932623d0037f37a9e79ee1d28"
+    },
+    {
+      "path": "IDENTITES_SOURCES_v0.98.json",
+      "bytes": 1989,
+      "sha256": "32dfff8a55965d7f7730a13da895e16f687093e52e0219d69965e2065b76f6dd"
+    },
+    {
       "path": "INTEGRITE_v0.94.json",
       "bytes": 559,
       "sha256": "e4585cab6a9a8e329d059cc5499acc5ff268f1a242f8960af4f0bf5cd6a28235"
@@ -112,19 +132,29 @@
       "sha256": "7a8533475df55212da59275205f972eccfb91099fa9626bbe50caf2dacc70c43"
     },
     {
+      "path": "NAVIGATION_SOURCES_v0.98.json",
+      "bytes": 441,
+      "sha256": "7de26410977cf3667282be7342b10d346bf1ba86c25cf098abed5b3db82a5c31"
+    },
+    {
       "path": "ORGANISATION_v0.97.json",
       "bytes": 569136,
       "sha256": "a14978b4815693bdc853be71cecd0263d4d1e757beacf45fd4c692328a4d7f64"
     },
     {
+      "path": "ORGANISATION_v0.98.json",
+      "bytes": 644459,
+      "sha256": "0db2ec393ecdae526434951175579ad7b18158d6236c92bb17353fbfb0843ab9"
+    },
+    {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 1670,
-      "sha256": "8d4a826fc056f5ae16677cc5f25229d16c92ba0199ae3e697192940a3f4c60f4"
+      "bytes": 1723,
+      "sha256": "7927de6194e30deaf0800e2de7237a1415f9e8a1135422107551ceebe543bf95"
     },
     {
       "path": "README.md",
-      "bytes": 607,
-      "sha256": "c07fa2f7687c74f853f115188296fa61bf15cf27ab2983b9d526a0ceabef44c0"
+      "bytes": 718,
+      "sha256": "1c5d343171fc80ed7aa825b69593807fd6a929a8d079f1b76761edb5fc5082ce"
     },
     {
       "path": "ROBUSTESSE_v0.94.json",
@@ -185,6 +215,11 @@
       "path": "VERIFICATION_v0.97.json",
       "bytes": 654,
       "sha256": "73d3a230ff69bca74bbd4c8ef192d7e5aaffacd9d8495c0dad77d9cfbf395b26"
+    },
+    {
+      "path": "VERIFICATION_v0.98.json",
+      "bytes": 654,
+      "sha256": "107de0ac0f87fcb3208080942c09636c0110af533189a9e1d57c0d1fc6f15911"
     },
     {
       "path": "anatomie.html",
@@ -580,6 +615,11 @@
       "path": "assets/dossiers-v097.js",
       "bytes": 7391,
       "sha256": "7b34b27007d982afedc1d56baf9f8906bd0941962e2dddfee978e870eb052b77"
+    },
+    {
+      "path": "assets/dossiers-v098.js",
+      "bytes": 9088,
+      "sha256": "9b8045b6d7b5e19d2b35114fa15284acc0d73db82a8be9de140b923f85a46677"
     },
     {
       "path": "assets/histology-v096.js",
@@ -3662,6 +3702,11 @@
       "sha256": "41ed9ce85383e6ba3efa36882c7edc26287c84202c164562a91c87a9ec4813aa"
     },
     {
+      "path": "assets/poly-integrity-v098.js",
+      "bytes": 7098,
+      "sha256": "5cf9f534434cae48f5a34b6a3416812cdbd26f9ecff8a948a00b9b7a806146af"
+    },
+    {
       "path": "assets/poly-v093.css",
       "bytes": 13394,
       "sha256": "a3776ab2d27a096686ec282308a34de2fcb3e0a0d00c1e2c08fdee5e8301cd53"
@@ -3687,6 +3732,11 @@
       "sha256": "2b154762757261f6bd09c004d52eac435632cf9a9a73721c7e7d3da9b29d19e9"
     },
     {
+      "path": "assets/poly-v098.js",
+      "bytes": 45531,
+      "sha256": "2fdc486d35836a4f7b5bf45f98c22aa347c9930d74756fb91f911041870df441"
+    },
+    {
       "path": "assets/vendor/THREE_LICENSE.txt",
       "bytes": 1081,
       "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
@@ -3698,8 +3748,8 @@
     },
     {
       "path": "atlas/ATLAS_EXPLORATION.json",
-      "bytes": 3867327,
-      "sha256": "7105dcda73f1e62f6bff4e578c4d04fb2d38b0ff399b8efd9962eeea765d3ad8"
+      "bytes": 3875023,
+      "sha256": "0890d041ac72dea075f7de6fe95a204102a155ea33061c31095aaf6d71cdcd28"
     },
     {
       "path": "atlas/AUDIT_DONNEES_H03.json",
@@ -3833,8 +3883,8 @@
     },
     {
       "path": "atlas/index.html",
-      "bytes": 3115085,
-      "sha256": "af18239b7951d96fc15b81d75ee8ae402610d6a5ab4dd940666474922a9d4403"
+      "bytes": 3121597,
+      "sha256": "13f97c195f381ed63d5004dbb931719b7ec2f64cb94a777556824c90c29bad15"
     },
     {
       "path": "atlas/pieces/FR_VALUE_README.md",
@@ -4883,8 +4933,8 @@
     },
     {
       "path": "dossiers.html",
-      "bytes": 3239,
-      "sha256": "b854065a21b9d4e3698d568562555e201a882edc70f7d4b141356b9f97883523"
+      "bytes": 3280,
+      "sha256": "ecd106a2b45eeff3425751c125748fbbf97a23c36a02ddfc455a8cab36f0393c"
     },
     {
       "path": "glossaire.html",
@@ -4899,7 +4949,7 @@
     {
       "path": "index.html",
       "bytes": 9716,
-      "sha256": "f917c94f8098f0332594b0231cb77e4023d2b895f338950bbe91c9b71bbca131"
+      "sha256": "a708efcb9f23615e8efab5bbfd5ccafd26d133ef5715c958e0220fb4e95c72e1"
     },
     {
       "path": "microstructures.html",
@@ -4913,8 +4963,8 @@
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 5052,
-      "sha256": "57290df577b09542cc80ab1ab4f742b2d39864740631fe3fbedbe7e51cd08f18"
+      "bytes": 5820,
+      "sha256": "85aa6f441010a0d0ee3cbd45e1cafd5537d959f91ce613b29bc8c8e177d7338c"
     }
   ]
 }

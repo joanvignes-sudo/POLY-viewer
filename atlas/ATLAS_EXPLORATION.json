@@ -646,12 +646,9 @@
       "gaps": "attente apprise : Route du signal sensoriel à détailler. ; entrées à identifier : L’étude teste le circuit local, pas toutes ses afférences. ; sorties non mesurées : Spikes et dopamine extracellulaire sont deux variables distinctes. ; raccord affectif ouvert : Ne pas assimiler signal dopamine et plaisir.",
       "sources": [
         {
-          "label": "Source primaire",
-          "url": "https://www.nature.com/articles/s41467-025-64132-4"
-        },
-        {
-          "label": "S10 · Eshel",
-          "url": "https://www.nature.com/articles/nature14855"
+          "label": "Eshel et al. · 2015 · expérience GABA/dopamine",
+          "url": "https://www.nature.com/articles/nature14855",
+          "source_identity": "S10-ESHEL-2015"
         }
       ],
       "steps": [
@@ -833,10 +830,27 @@
         "VTA-ARCHT-EFFET",
         "VTA-BINS",
         "VTA-PIC",
-        "VTA-AXES-ERRATUM"
+        "VTA-AXES-ERRATUM",
+        "VTA-VALVE"
       ],
       "species": "animal",
-      "species_basis": "Espèce animale explicitement indiquée dans le contexte."
+      "species_basis": "Espèce animale explicitement indiquée dans le contexte.",
+      "previous_sources": [
+        {
+          "label": "Source primaire",
+          "url": "https://www.nature.com/articles/s41467-025-64132-4"
+        },
+        {
+          "label": "S10 · Eshel",
+          "url": "https://www.nature.com/articles/nature14855"
+        }
+      ],
+      "record_bindings": {
+        "VTA-VALVE": {
+          "scope": "protocol_context",
+          "note": "Paramètres de récompense de la tâche d’identification DA ; ne mesure pas un délai de transmission entre les maillons."
+        }
+      }
     },
     {
       "id": "TRAJET:P02-VTA:1",
@@ -851,12 +865,9 @@
       "gaps": "Vérifier chaque flèche : causalité, anatomie, mesure, association et condition restent distinctes.",
       "sources": [
         {
-          "label": "Source primaire",
-          "url": "https://www.nature.com/articles/s41467-025-64132-4"
-        },
-        {
-          "label": "S10 · Eshel",
-          "url": "https://www.nature.com/articles/nature14855"
+          "label": "Eshel et al. · 2015 · expérience GABA/dopamine",
+          "url": "https://www.nature.com/articles/nature14855",
+          "source_identity": "S10-ESHEL-2015"
         }
       ],
       "steps": [
@@ -974,7 +985,17 @@
         "VTA-AXES-ERRATUM"
       ],
       "species": "animal",
-      "species_basis": "Espèce animale explicitement indiquée dans le contexte."
+      "species_basis": "Espèce animale explicitement indiquée dans le contexte.",
+      "previous_sources": [
+        {
+          "label": "Source primaire",
+          "url": "https://www.nature.com/articles/s41467-025-64132-4"
+        },
+        {
+          "label": "S10 · Eshel",
+          "url": "https://www.nature.com/articles/nature14855"
+        }
+      ]
     },
     {
       "id": "TRAJET:P02-VTA:2",
@@ -989,12 +1010,9 @@
       "gaps": "Vérifier chaque flèche : causalité, anatomie, mesure, association et condition restent distinctes.",
       "sources": [
         {
-          "label": "Source primaire",
-          "url": "https://www.nature.com/articles/s41467-025-64132-4"
-        },
-        {
-          "label": "S10 · Eshel",
-          "url": "https://www.nature.com/articles/nature14855"
+          "label": "Eshel et al. · 2015 · expérience GABA/dopamine",
+          "url": "https://www.nature.com/articles/nature14855",
+          "source_identity": "S10-ESHEL-2015"
         }
       ],
       "steps": [
@@ -1085,7 +1103,17 @@
         "VTA-AXES-ERRATUM"
       ],
       "species": "animal",
-      "species_basis": "Espèce animale explicitement indiquée dans le contexte."
+      "species_basis": "Espèce animale explicitement indiquée dans le contexte.",
+      "previous_sources": [
+        {
+          "label": "Source primaire",
+          "url": "https://www.nature.com/articles/s41467-025-64132-4"
+        },
+        {
+          "label": "S10 · Eshel",
+          "url": "https://www.nature.com/articles/nature14855"
+        }
+      ]
     },
     {
       "id": "TRAJET:P02-LC:0",
@@ -5224,9 +5252,42 @@
         "complete_causal_route": null,
         "completion_note": "Champs fins non extraits laissés vides ; aucune route globale validée automatiquement."
       },
-      "evidence_records": [],
+      "evidence_records": [
+        "S22-CIBLE",
+        "S22-DOSE",
+        "S22-VOIE",
+        "S22-CONTROLE",
+        "S22-EXCLUSION",
+        "S22-HISTO"
+      ],
       "species": "animal",
-      "species_basis": "Espèce animale explicitement indiquée dans le contexte."
+      "species_basis": "Espèce animale explicitement indiquée dans le contexte.",
+      "record_bindings": {
+        "S22-CIBLE": {
+          "scope": "node_protocol",
+          "note": "Protocole et contrôles de la préparation publiée ; pas de mesure du trajet chimique en aval."
+        },
+        "S22-DOSE": {
+          "scope": "node_protocol",
+          "note": "Protocole et contrôles de la préparation publiée ; pas de mesure du trajet chimique en aval."
+        },
+        "S22-VOIE": {
+          "scope": "node_protocol",
+          "note": "Protocole et contrôles de la préparation publiée ; pas de mesure du trajet chimique en aval."
+        },
+        "S22-CONTROLE": {
+          "scope": "protocol_context",
+          "note": "Protocole et contrôles de la préparation publiée ; pas de mesure du trajet chimique en aval."
+        },
+        "S22-EXCLUSION": {
+          "scope": "protocol_context",
+          "note": "Protocole et contrôles de la préparation publiée ; pas de mesure du trajet chimique en aval."
+        },
+        "S22-HISTO": {
+          "scope": "protocol_context",
+          "note": "Protocole et contrôles de la préparation publiée ; pas de mesure du trajet chimique en aval."
+        }
+      }
     },
     {
       "id": "EXTRAIT:DA-MOTEUR",
@@ -6178,9 +6239,9 @@
       "gaps": "Récepteur postsynaptique, trajet synaptique individuel, délai manipulation→effet et correspondances des unités restent ouverts.",
       "sources": [
         {
-          "label": "S10 · texte primaire archivé",
-          "url": "https://www.nature.com/articles/s41467-025-64132-4",
-          "document": "sources_cartographie/S10.txt"
+          "label": "Eshel et al. · 2015 · expérience GABA/dopamine",
+          "url": "https://www.nature.com/articles/nature14855",
+          "source_identity": "S10-ESHEL-2015"
         }
       ],
       "steps": [
@@ -6278,7 +6339,14 @@
         "complete_causal_route": null
       },
       "species": "animal",
-      "species_basis": "Espèce animale explicitement indiquée dans le contexte."
+      "species_basis": "Espèce animale explicitement indiquée dans le contexte.",
+      "previous_sources": [
+        {
+          "label": "S10 · texte primaire archivé",
+          "url": "https://www.nature.com/articles/s41467-025-64132-4",
+          "document": "sources_cartographie/S10.txt"
+        }
+      ]
     },
     {
       "id": "PROTOCOLE:VTA-ARCHT",
@@ -6293,9 +6361,9 @@
       "gaps": "Repères exacts onset/offset du laser à vérifier ; récepteurs, délais synaptiques individuels et chimie extracellulaire restent ouverts.",
       "sources": [
         {
-          "label": "S10 · texte primaire archivé",
-          "url": "https://www.nature.com/articles/s41467-025-64132-4",
-          "document": "sources_cartographie/S10.txt"
+          "label": "Eshel et al. · 2015 · expérience GABA/dopamine",
+          "url": "https://www.nature.com/articles/nature14855",
+          "source_identity": "S10-ESHEL-2015"
         }
       ],
       "steps": [
@@ -6393,7 +6461,14 @@
         "complete_causal_route": null
       },
       "species": "animal",
-      "species_basis": "Espèce animale explicitement indiquée dans le contexte."
+      "species_basis": "Espèce animale explicitement indiquée dans le contexte.",
+      "previous_sources": [
+        {
+          "label": "S10 · texte primaire archivé",
+          "url": "https://www.nature.com/articles/s41467-025-64132-4",
+          "document": "sources_cartographie/S10.txt"
+        }
+      ]
     },
     {
       "id": "MESURE:LC-PHOTOMETRIE",
@@ -18066,7 +18141,12 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
       "scope": "Extraction ciblée du texte primaire déjà archivé ; pas de nouvelle expérience.",
       "species": "animal",
-      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées."
+      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
+      "source_identity": "S22-GROSSMAN-2022",
+      "targets": [
+        "SEROTONINE:0"
+      ],
+      "target_scope": "node_protocol"
     },
     {
       "id": "S22-DOSE",
@@ -18079,7 +18159,12 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
       "scope": "Extraction ciblée du texte primaire déjà archivé ; pas de nouvelle expérience.",
       "species": "animal",
-      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées."
+      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
+      "source_identity": "S22-GROSSMAN-2022",
+      "targets": [
+        "SEROTONINE:DRUG"
+      ],
+      "target_scope": "node_protocol"
     },
     {
       "id": "S22-VOIE",
@@ -18092,7 +18177,12 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
       "scope": "Extraction ciblée du texte primaire déjà archivé ; pas de nouvelle expérience.",
       "species": "animal",
-      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées."
+      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
+      "source_identity": "S22-GROSSMAN-2022",
+      "targets": [
+        "SEROTONINE:DRUG"
+      ],
+      "target_scope": "node_protocol"
     },
     {
       "id": "S22-CONTROLE",
@@ -18105,7 +18195,10 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
       "scope": "Extraction ciblée du texte primaire déjà archivé ; pas de nouvelle expérience.",
       "species": "animal",
-      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées."
+      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
+      "source_identity": "S22-GROSSMAN-2022",
+      "targets": [],
+      "target_scope": "protocol_context"
     },
     {
       "id": "S22-EXCLUSION",
@@ -18118,7 +18211,10 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
       "scope": "Extraction ciblée du texte primaire déjà archivé ; pas de nouvelle expérience.",
       "species": "animal",
-      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées."
+      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
+      "source_identity": "S22-GROSSMAN-2022",
+      "targets": [],
+      "target_scope": "protocol_context"
     },
     {
       "id": "S22-HISTO",
@@ -18131,7 +18227,10 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
       "scope": "Extraction ciblée du texte primaire déjà archivé ; pas de nouvelle expérience.",
       "species": "animal",
-      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées."
+      "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
+      "source_identity": "S22-GROSSMAN-2022",
+      "targets": [],
+      "target_scope": "protocol_context"
     }
   ],
   "timings": [
@@ -19022,16 +19121,20 @@
         "emotionnel/P02-VTA-DA"
       ],
       "limit": "Aucun transfert des effectifs d’une expérience à une autre.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1206,
       "end_line": 1206,
       "anchor": "Vgat-ires-Cre",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-GROUPES",
@@ -19044,16 +19147,20 @@
         "emotionnel/P02-VTA-DA"
       ],
       "limit": "Les totaux méthodes incluent les contrôles ; lire séparément les sous-groupes du texte principal.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1206,
       "end_line": 1206,
       "anchor": "Five animals were used",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-CHRT",
@@ -19066,16 +19173,20 @@
         "v088/VTA-CHR2"
       ],
       "limit": "",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1211,
       "end_line": 1211,
       "anchor": "GABA stimulation experiment",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-CHR2-CANAL",
@@ -19087,16 +19198,20 @@
         "v088/VTA-CHR2"
       ],
       "limit": "",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1150,
       "end_line": 1150,
       "anchor": "light-gated ion channel",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-CHR2-EFFET",
@@ -19108,16 +19223,20 @@
         "emotionnel/P02-VTA-DA"
       ],
       "limit": "Perturbation locale ; ne mesure pas chaque interface synaptique ni la libération extracellulaire de dopamine.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1176,
       "end_line": 1176,
       "anchor": "suppressed dopamine reward responses",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-ARCHT",
@@ -19130,16 +19249,20 @@
         "v088/VTA-ARCHT"
       ],
       "limit": "",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1211,
       "end_line": 1211,
       "anchor": "AAV (serotype 1 or 8)",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-ARCHT-POMPE",
@@ -19151,16 +19274,20 @@
         "v088/VTA-ARCHT"
       ],
       "limit": "",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1180,
       "end_line": 1180,
       "anchor": "inhibitory proton pump",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-ARCHT-EFFET",
@@ -19172,16 +19299,20 @@
         "emotionnel/P02-VTA-DA"
       ],
       "limit": "Effet expérimental propre à cette préparation ; pas un délai de décharge→mouvement.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1189,
       "end_line": 1189,
       "anchor": "partially reversed",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-BLEU",
@@ -19194,16 +19325,20 @@
         "v088/VTA-CHR2"
       ],
       "limit": "",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1234,
       "end_line": 1234,
       "anchor": "40 pulses (5 ms duration, 40 Hz)",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-VERT",
@@ -19216,16 +19351,20 @@
         "v088/VTA-ARCHT"
       ],
       "limit": "Ne pas fusionner les deux profils lumineux.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1234,
       "end_line": 1234,
       "anchor": "continuous green laser (532 nm",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-COMP",
@@ -19236,16 +19375,20 @@
         "emotionnel/P02-VTA-LEARN"
       ],
       "limit": "Ce n’est ni la durée de transmission GABA→DA ni celle de l’apprentissage.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1224,
       "end_line": 1224,
       "anchor": "Laser was delivered for 2.5 s",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-BINS",
@@ -19256,16 +19399,20 @@
         "emotionnel/P02-VTA-DA"
       ],
       "limit": "La taille de bin ne certifie pas une précision physique de 1 ms et ne définit pas seule la règle du pic.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1237,
       "end_line": 1237,
       "anchor": "1 ms bins",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-VALVE",
@@ -19276,16 +19423,20 @@
         "emotionnel/P02-VTA-REWARD"
       ],
       "limit": "Commande de valve distincte de l’arrivée physique du liquide.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1218,
       "end_line": 1218,
       "anchor": "4, 12, 25, 45, 75, 140, or 250 ms",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-PIC",
@@ -19296,16 +19447,20 @@
         "emotionnel/P02-VTA-DA"
       ],
       "limit": "Pas onset, pas concentration de dopamine ; mapping des latences aux souris et règle du pic restent ouverts.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1285,
       "end_line": 1285,
       "anchor": "67.6 ms to 95.4 ms",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-FENETRE-DISCORDANTE",
@@ -19317,16 +19472,20 @@
         "v088/VTA-GREEN"
       ],
       "limit": "Ces repères textuels ne sont pas harmonisés ; vérifier diagrammes/code avant de fixer onset/offset.",
-      "document": "https://www.nature.com/articles/s41467-025-64132-4",
+      "document": "https://www.nature.com/articles/nature14855",
       "line": 1222,
       "end_line": 1222,
       "anchor": "beginning at odour onset",
       "excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "display_excerpt": "Passage intégral à consulter dans la source originale ; localisation et formulation POLY conservées.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
-      "url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "url": "https://www.nature.com/articles/nature14855",
       "scope": "Dépouillement ciblé du texte primaire déjà acquis ; portée propre au protocole.",
-      "species": "animal"
+      "species": "animal",
+      "previous_public_url": "https://www.nature.com/articles/s41467-025-64132-4",
+      "doi": "10.1038/nature14855",
+      "source_identity": "S10-ESHEL-2015",
+      "identity_check": "Archived document SHA256 and all stored anchors checked; article identity verified with Nature and PMC."
     },
     {
       "id": "VTA-AXES-ERRATUM",
@@ -86560,5 +86719,5 @@
     "private_correspondence_published": false,
     "source_version": "0.91"
   },
-  "organisation_version": "0.97"
+  "organisation_version": "0.98"
 }

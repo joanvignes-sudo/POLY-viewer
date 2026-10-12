@@ -1,0 +1,59 @@
+{
+  "version": "0.98",
+  "policy": "Identity verified by DOI/title plus hash of the already archived document and stored passage anchors. Contextual citations are not automatically localized proof.",
+  "sources": [
+    {
+      "id": "S10-ESHEL-2015",
+      "doi": "10.1038/nature14855",
+      "title": "Arithmetic and local circuitry underlying dopamine prediction errors",
+      "url": "https://www.nature.com/articles/nature14855",
+      "alternate_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4567485/",
+      "archive_sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
+      "corrected_records": [
+        "VTA-GENETIQUE",
+        "VTA-GROUPES",
+        "VTA-CHRT",
+        "VTA-CHR2-CANAL",
+        "VTA-CHR2-EFFET",
+        "VTA-ARCHT",
+        "VTA-ARCHT-POMPE",
+        "VTA-ARCHT-EFFET",
+        "VTA-BLEU",
+        "VTA-VERT",
+        "VTA-COMP",
+        "VTA-BINS",
+        "VTA-VALVE",
+        "VTA-PIC",
+        "VTA-FENETRE-DISCORDANTE"
+      ],
+      "routes": [
+        "TRAJET:P02-VTA:0",
+        "TRAJET:P02-VTA:1",
+        "TRAJET:P02-VTA:2",
+        "PROTOCOLE:VTA-CHR2",
+        "PROTOCOLE:VTA-ARCHT"
+      ],
+      "anchor_checks": 15,
+      "previous_wrong_url": "https://www.nature.com/articles/s41467-025-64132-4"
+    },
+    {
+      "id": "S22-GROSSMAN-2022",
+      "doi": "10.1016/j.cub.2021.12.006",
+      "title": "Serotonin neurons modulate learning rate through uncertainty",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
+      "archive_sha256": "b680928dd8f9c0ced2044452174281398f7209455ebcee2036f67084710d97d5",
+      "records": [
+        "S22-CIBLE",
+        "S22-DOSE",
+        "S22-VOIE",
+        "S22-CONTROLE",
+        "S22-EXCLUSION",
+        "S22-HISTO"
+      ],
+      "routes": [
+        "EXTRAIT:SEROTONINE"
+      ],
+      "limits": "One excluded animal; file-level identity remains unresolved. Methods say alternating days while results say consecutive days; preserve the distinction."
+    }
+  ]
+}

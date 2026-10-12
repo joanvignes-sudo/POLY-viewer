@@ -1,5 +1,5 @@
 {
-  "version": "0.97",
+  "version": "0.98",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -35,6 +35,7 @@
   },
   "navigation_audit": "CONTROLES_v0.96.1.json",
   "organisation_audit": "AUDIT_ORGANISATION_v0.97.md",
-  "active_registry": "EXPLORATION_v0.97.json",
-  "derived_directory": "ORGANISATION_v0.97.json"
+  "active_registry": "EXPLORATION_v0.98.json",
+  "derived_directory": "ORGANISATION_v0.98.json",
+  "source_identity_audit": "AUDIT_SOURCES_v0.98.md"
 }
