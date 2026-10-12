@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "dossiers": 64,
+  "sources": 142,
+  "extractions": 128,
+  "document_groups": 205,
+  "timings": 45,
+  "anatomy_provenance": 3,
+  "internal_links_checked": 816,
+  "mobile_views": 6,
+  "context_reference_separation": true,
+  "p8_no_face_timing": true,
+  "atlas_timing_fallback_removed": true,
+  "javascript_errors": []
+}

@@ -2844,7 +2844,8 @@
       "sources": [
         {
           "label": "Bilan de vérification native v0.80",
-          "url": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md"
+          "url": "reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+          "original_locator": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md"
         }
       ],
       "steps": [
@@ -3055,7 +3056,8 @@
       "sources": [
         {
           "label": "Bilan de vérification native v0.80",
-          "url": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md"
+          "url": "reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+          "original_locator": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md"
         }
       ],
       "steps": [
@@ -3266,7 +3268,8 @@
       "sources": [
         {
           "label": "Bilan de vérification native v0.80",
-          "url": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md"
+          "url": "reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+          "original_locator": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md"
         }
       ],
       "steps": [
@@ -18147,7 +18150,9 @@
       "excerpt": "Le texte S10 donne deux moyennes de latence au pic : 67,6 ms pour la récompense inattendue et 95,4 ms quand elle est attendue ; différence descriptive +27,8 ms. Les auteurs rapportent p=0,001 et une augmentation chez 37 des 40 neurones. [Texte primaire archivé](https://pmc.ncbi.nlm.nih.gov/articles/PMC4567485/), passage de méthodes/analyse, emplacement joint.",
       "sha256": "2cdc556626e364672216bce271bc77fa4749bad05c1912ea683bd2b7807aebc9",
       "limit": "Ni onset, ni libération chimique, ni délai de manipulation GABA. Incertitudes et règle du pic ouvertes.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.50/BILAN_LATENCE_PIC.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "VTA-E",
@@ -18164,7 +18169,9 @@
       "excerpt": "Le texte S10 donne deux moyennes de latence au pic : 67,6 ms pour la récompense inattendue et 95,4 ms quand elle est attendue ; différence descriptive +27,8 ms. Les auteurs rapportent p=0,001 et une augmentation chez 37 des 40 neurones. [Texte primaire archivé](https://pmc.ncbi.nlm.nih.gov/articles/PMC4567485/), passage de méthodes/analyse, emplacement joint.",
       "sha256": "2cdc556626e364672216bce271bc77fa4749bad05c1912ea683bd2b7807aebc9",
       "limit": "Ni onset, ni libération chimique, ni délai de manipulation GABA. Incertitudes et règle du pic ouvertes.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.50/BILAN_LATENCE_PIC.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "AIR-F",
@@ -18181,7 +18188,9 @@
       "excerpt": "| Forward DA | 41 | 93,41 ms | 67,51 ms | 70 ms |",
       "sha256": "ba8223497aa540271aeea241280d0e0464e882083e94edb9fe1ce3545774f0fd",
       "limit": "Arrivée physique au visage et fenêtre de sélection non extraites. Pas de concentration de dopamine.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.57/BILAN_PICS_AIRPUFF.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "AIR-B",
@@ -18198,7 +18207,9 @@
       "excerpt": "| Backward DA | 35 | 62,86 ms | 34,60 ms | 60 ms |",
       "sha256": "ba8223497aa540271aeea241280d0e0464e882083e94edb9fe1ce3545774f0fd",
       "limit": "Arrivée physique au visage et fenêtre de sélection non extraites. Pas de concentration de dopamine.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.57/BILAN_PICS_AIRPUFF.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "FORCE-R",
@@ -18215,7 +18226,9 @@
       "excerpt": "Vingt-quatre paires de sessions, quatre souris selon la légende : pic de variation de force de réponse 77,92 ms, rebond 147,92 ms, différence moyenne 70 ms. Le test apparié de sessions donne t(23)=11,57156, p=4,55×10⁻¹¹, concordant avec le seuil publié <0,0001. L’attribution des sessions aux souris manque; ce calcul ne transforme pas 24 sessions en 24 animaux. Les cellules neuronales et sessions de force ne sont pas assemblées en une chaîne causale suivie.",
       "sha256": "ba8223497aa540271aeea241280d0e0464e882083e94edb9fe1ce3545774f0fd",
       "limit": "Séries de force et cellules neuronales non assemblées en chaîne causale suivie.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.57/BILAN_PICS_AIRPUFF.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "FORCE-B",
@@ -18232,7 +18245,9 @@
       "excerpt": "Vingt-quatre paires de sessions, quatre souris selon la légende : pic de variation de force de réponse 77,92 ms, rebond 147,92 ms, différence moyenne 70 ms. Le test apparié de sessions donne t(23)=11,57156, p=4,55×10⁻¹¹, concordant avec le seuil publié <0,0001. L’attribution des sessions aux souris manque; ce calcul ne transforme pas 24 sessions en 24 animaux. Les cellules neuronales et sessions de force ne sont pas assemblées en une chaîne causale suivie.",
       "sha256": "ba8223497aa540271aeea241280d0e0464e882083e94edb9fe1ce3545774f0fd",
       "limit": "Séries de force et cellules neuronales non assemblées en chaîne causale suivie.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.57/BILAN_PICS_AIRPUFF.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "4AP-BASE",
@@ -18249,7 +18264,9 @@
       "excerpt": "Boudkkazi, Fronzaroli-Molinieres et Debanne (Marseille, 2011) : enregistrements à 34 °C ; latence du PA somatique→début EPSC, donc avec contribution de conduction. À amplitude EPSC comparable : 4-AP, L5→L5, 1,3 ± 0,3→3,1 ± 0,4 ms (n=6) ; TTX, 1,3 ± 0,1→0,8 ± 0,1 (n=12). Contrastes ponctuels +1,8 et −0,5 ms ; la covariance appariée n'est pas fournie ici, donc pas d'IC reconstruit. Nature des erreurs à confirmer. Ces perturbations ne sont pas des répétitions indépendantes du 150 µs cérébelleux. [Article primaire](https://doi.org/10.1113/jphysiol.2010.199653).",
       "sha256": "fac2dbd365dcc6d0d9f126e153b84b29b65f2658736bc99f5324277d2b0cb328",
       "limit": "Conduction incluse ; pas de prise orale ; covariance et nature des erreurs à confirmer.",
-      "species": "unspecified"
+      "species": "unspecified",
+      "public_href": "reference/documents/analyses/v0.28/BILAN_COURANTS_POLY_v0.28.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "4AP",
@@ -18266,7 +18283,9 @@
       "excerpt": "Boudkkazi, Fronzaroli-Molinieres et Debanne (Marseille, 2011) : enregistrements à 34 °C ; latence du PA somatique→début EPSC, donc avec contribution de conduction. À amplitude EPSC comparable : 4-AP, L5→L5, 1,3 ± 0,3→3,1 ± 0,4 ms (n=6) ; TTX, 1,3 ± 0,1→0,8 ± 0,1 (n=12). Contrastes ponctuels +1,8 et −0,5 ms ; la covariance appariée n'est pas fournie ici, donc pas d'IC reconstruit. Nature des erreurs à confirmer. Ces perturbations ne sont pas des répétitions indépendantes du 150 µs cérébelleux. [Article primaire](https://doi.org/10.1113/jphysiol.2010.199653).",
       "sha256": "fac2dbd365dcc6d0d9f126e153b84b29b65f2658736bc99f5324277d2b0cb328",
       "limit": "Conduction incluse ; pas de prise orale ; covariance et nature des erreurs à confirmer.",
-      "species": "unspecified"
+      "species": "unspecified",
+      "public_href": "reference/documents/analyses/v0.28/BILAN_COURANTS_POLY_v0.28.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TTX-BASE",
@@ -18283,7 +18302,9 @@
       "excerpt": "Boudkkazi, Fronzaroli-Molinieres et Debanne (Marseille, 2011) : enregistrements à 34 °C ; latence du PA somatique→début EPSC, donc avec contribution de conduction. À amplitude EPSC comparable : 4-AP, L5→L5, 1,3 ± 0,3→3,1 ± 0,4 ms (n=6) ; TTX, 1,3 ± 0,1→0,8 ± 0,1 (n=12). Contrastes ponctuels +1,8 et −0,5 ms ; la covariance appariée n'est pas fournie ici, donc pas d'IC reconstruit. Nature des erreurs à confirmer. Ces perturbations ne sont pas des répétitions indépendantes du 150 µs cérébelleux. [Article primaire](https://doi.org/10.1113/jphysiol.2010.199653).",
       "sha256": "fac2dbd365dcc6d0d9f126e153b84b29b65f2658736bc99f5324277d2b0cb328",
       "limit": "Conduction incluse ; pas de prise orale ; covariance et nature des erreurs à confirmer.",
-      "species": "unspecified"
+      "species": "unspecified",
+      "public_href": "reference/documents/analyses/v0.28/BILAN_COURANTS_POLY_v0.28.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TTX",
@@ -18300,7 +18321,9 @@
       "excerpt": "Boudkkazi, Fronzaroli-Molinieres et Debanne (Marseille, 2011) : enregistrements à 34 °C ; latence du PA somatique→début EPSC, donc avec contribution de conduction. À amplitude EPSC comparable : 4-AP, L5→L5, 1,3 ± 0,3→3,1 ± 0,4 ms (n=6) ; TTX, 1,3 ± 0,1→0,8 ± 0,1 (n=12). Contrastes ponctuels +1,8 et −0,5 ms ; la covariance appariée n'est pas fournie ici, donc pas d'IC reconstruit. Nature des erreurs à confirmer. Ces perturbations ne sont pas des répétitions indépendantes du 150 µs cérébelleux. [Article primaire](https://doi.org/10.1113/jphysiol.2010.199653).",
       "sha256": "fac2dbd365dcc6d0d9f126e153b84b29b65f2658736bc99f5324277d2b0cb328",
       "limit": "Conduction incluse ; pas de prise orale ; covariance et nature des erreurs à confirmer.",
-      "species": "unspecified"
+      "species": "unspecified",
+      "public_href": "reference/documents/analyses/v0.28/BILAN_COURANTS_POLY_v0.28.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TH25-FAST",
@@ -18317,7 +18340,9 @@
       "excerpt": "Postlethwaite et al. (2007), rat, calyx de Held, −60 mV : de 25 à 35 °C, τ rapide 0,75 ± 0,09→0,56 ± 0,08 ms ; τ lent 6,39 ± 0,85→4,85 ± 0,71 ; latence artefact de stimulation→EPSC 1,20 ± 0,21→0,73 ± 0,07. Les différences de moyennes sont −0,19, −1,54 et −0,47 ms. Les rapports de constantes, assimilables ici à des Q10 de vitesse ponctuels, sont 1,3393, 1,3175 et 1,6438. Ils ne sont pas le Q10=2,4 du modèle de réactions AMPA des auteurs. Les tailles/cohortes et erreurs doivent être consolidées ; le texte indexé n=6 et la légende de figure n=7 ne sont pas harmonisés arbitrairement. [Source primaire](https://pmc.ncbi.nlm.nih.gov/articles/PMC2075387/).",
       "sha256": "01a9e899d8c80c8da9fa5a01308948b412c029611bddb61d0ac0ea5be4dce487",
       "limit": "Paramètres composites ; ni durée moléculaire isolée ni constante AMPA du modèle. Erreurs et cohortes à consolider.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TH35-FAST",
@@ -18334,7 +18359,9 @@
       "excerpt": "Postlethwaite et al. (2007), rat, calyx de Held, −60 mV : de 25 à 35 °C, τ rapide 0,75 ± 0,09→0,56 ± 0,08 ms ; τ lent 6,39 ± 0,85→4,85 ± 0,71 ; latence artefact de stimulation→EPSC 1,20 ± 0,21→0,73 ± 0,07. Les différences de moyennes sont −0,19, −1,54 et −0,47 ms. Les rapports de constantes, assimilables ici à des Q10 de vitesse ponctuels, sont 1,3393, 1,3175 et 1,6438. Ils ne sont pas le Q10=2,4 du modèle de réactions AMPA des auteurs. Les tailles/cohortes et erreurs doivent être consolidées ; le texte indexé n=6 et la légende de figure n=7 ne sont pas harmonisés arbitrairement. [Source primaire](https://pmc.ncbi.nlm.nih.gov/articles/PMC2075387/).",
       "sha256": "01a9e899d8c80c8da9fa5a01308948b412c029611bddb61d0ac0ea5be4dce487",
       "limit": "Paramètres composites ; ni durée moléculaire isolée ni constante AMPA du modèle. Erreurs et cohortes à consolider.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TH25-SLOW",
@@ -18351,7 +18378,9 @@
       "excerpt": "Postlethwaite et al. (2007), rat, calyx de Held, −60 mV : de 25 à 35 °C, τ rapide 0,75 ± 0,09→0,56 ± 0,08 ms ; τ lent 6,39 ± 0,85→4,85 ± 0,71 ; latence artefact de stimulation→EPSC 1,20 ± 0,21→0,73 ± 0,07. Les différences de moyennes sont −0,19, −1,54 et −0,47 ms. Les rapports de constantes, assimilables ici à des Q10 de vitesse ponctuels, sont 1,3393, 1,3175 et 1,6438. Ils ne sont pas le Q10=2,4 du modèle de réactions AMPA des auteurs. Les tailles/cohortes et erreurs doivent être consolidées ; le texte indexé n=6 et la légende de figure n=7 ne sont pas harmonisés arbitrairement. [Source primaire](https://pmc.ncbi.nlm.nih.gov/articles/PMC2075387/).",
       "sha256": "01a9e899d8c80c8da9fa5a01308948b412c029611bddb61d0ac0ea5be4dce487",
       "limit": "Paramètres composites ; ni durée moléculaire isolée ni constante AMPA du modèle. Erreurs et cohortes à consolider.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TH35-SLOW",
@@ -18368,7 +18397,9 @@
       "excerpt": "Postlethwaite et al. (2007), rat, calyx de Held, −60 mV : de 25 à 35 °C, τ rapide 0,75 ± 0,09→0,56 ± 0,08 ms ; τ lent 6,39 ± 0,85→4,85 ± 0,71 ; latence artefact de stimulation→EPSC 1,20 ± 0,21→0,73 ± 0,07. Les différences de moyennes sont −0,19, −1,54 et −0,47 ms. Les rapports de constantes, assimilables ici à des Q10 de vitesse ponctuels, sont 1,3393, 1,3175 et 1,6438. Ils ne sont pas le Q10=2,4 du modèle de réactions AMPA des auteurs. Les tailles/cohortes et erreurs doivent être consolidées ; le texte indexé n=6 et la légende de figure n=7 ne sont pas harmonisés arbitrairement. [Source primaire](https://pmc.ncbi.nlm.nih.gov/articles/PMC2075387/).",
       "sha256": "01a9e899d8c80c8da9fa5a01308948b412c029611bddb61d0ac0ea5be4dce487",
       "limit": "Paramètres composites ; ni durée moléculaire isolée ni constante AMPA du modèle. Erreurs et cohortes à consolider.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TH25-ON",
@@ -18385,7 +18416,9 @@
       "excerpt": "Postlethwaite et al. (2007), rat, calyx de Held, −60 mV : de 25 à 35 °C, τ rapide 0,75 ± 0,09→0,56 ± 0,08 ms ; τ lent 6,39 ± 0,85→4,85 ± 0,71 ; latence artefact de stimulation→EPSC 1,20 ± 0,21→0,73 ± 0,07. Les différences de moyennes sont −0,19, −1,54 et −0,47 ms. Les rapports de constantes, assimilables ici à des Q10 de vitesse ponctuels, sont 1,3393, 1,3175 et 1,6438. Ils ne sont pas le Q10=2,4 du modèle de réactions AMPA des auteurs. Les tailles/cohortes et erreurs doivent être consolidées ; le texte indexé n=6 et la légende de figure n=7 ne sont pas harmonisés arbitrairement. [Source primaire](https://pmc.ncbi.nlm.nih.gov/articles/PMC2075387/).",
       "sha256": "01a9e899d8c80c8da9fa5a01308948b412c029611bddb61d0ac0ea5be4dce487",
       "limit": "Paramètres composites ; ni durée moléculaire isolée ni constante AMPA du modèle. Erreurs et cohortes à consolider.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "TH35-ON",
@@ -18402,7 +18435,9 @@
       "excerpt": "Postlethwaite et al. (2007), rat, calyx de Held, −60 mV : de 25 à 35 °C, τ rapide 0,75 ± 0,09→0,56 ± 0,08 ms ; τ lent 6,39 ± 0,85→4,85 ± 0,71 ; latence artefact de stimulation→EPSC 1,20 ± 0,21→0,73 ± 0,07. Les différences de moyennes sont −0,19, −1,54 et −0,47 ms. Les rapports de constantes, assimilables ici à des Q10 de vitesse ponctuels, sont 1,3393, 1,3175 et 1,6438. Ils ne sont pas le Q10=2,4 du modèle de réactions AMPA des auteurs. Les tailles/cohortes et erreurs doivent être consolidées ; le texte indexé n=6 et la légende de figure n=7 ne sont pas harmonisés arbitrairement. [Source primaire](https://pmc.ncbi.nlm.nih.gov/articles/PMC2075387/).",
       "sha256": "01a9e899d8c80c8da9fa5a01308948b412c029611bddb61d0ac0ea5be4dce487",
       "limit": "Paramètres composites ; ni durée moléculaire isolée ni constante AMPA du modèle. Erreurs et cohortes à consolider.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "REACID-50",
@@ -18419,7 +18454,9 @@
       "excerpt": "**Röther et al. 2014**, cultures hippocampiques de rat, température ambiante non chiffrée, synapto-pHluorin et alternance pH 7,5/5,5 : les tableaux 1–2 donnent τ ± SEM et n. À 20 Hz : 50 AP 23,32 ± 2,56 s (6), 100 AP 13,19 ± 1,84 (6), 200 AP 10,81 ± 1,12 (11), 400 AP 9,31 ± 0,51 (5). Pour 200 AP : 10 Hz 8,98 ± 2,03 (5), 40 Hz 12,28 ± 1,83 (5), 80 Hz 17,91 ± 3,04 (5). Les contrastes ponctuels sont −14,01 s entre 50 et 400 AP et +8,93 s entre 10 et 80 Hz. Ne pas traiter les boutons comme des expériences indépendantes ni inventer la covariance entre conditions. Source : [article et tableaux originaux](https://doi.org/10.1371/journal.pone.0102723).",
       "sha256": "03dc0a44ad4aad4c9c57fc98a881b4bcac55df44e20422ab5fda9c2a963ee4f8",
       "limit": "Ce τ dépend du protocole et du capteur ; il ne mesure pas le retour de tout le neurone à son état initial.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.26/BILAN_REACIDIFICATION_POLY_v0.26.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "REACID-100",
@@ -18436,7 +18473,9 @@
       "excerpt": "**Röther et al. 2014**, cultures hippocampiques de rat, température ambiante non chiffrée, synapto-pHluorin et alternance pH 7,5/5,5 : les tableaux 1–2 donnent τ ± SEM et n. À 20 Hz : 50 AP 23,32 ± 2,56 s (6), 100 AP 13,19 ± 1,84 (6), 200 AP 10,81 ± 1,12 (11), 400 AP 9,31 ± 0,51 (5). Pour 200 AP : 10 Hz 8,98 ± 2,03 (5), 40 Hz 12,28 ± 1,83 (5), 80 Hz 17,91 ± 3,04 (5). Les contrastes ponctuels sont −14,01 s entre 50 et 400 AP et +8,93 s entre 10 et 80 Hz. Ne pas traiter les boutons comme des expériences indépendantes ni inventer la covariance entre conditions. Source : [article et tableaux originaux](https://doi.org/10.1371/journal.pone.0102723).",
       "sha256": "03dc0a44ad4aad4c9c57fc98a881b4bcac55df44e20422ab5fda9c2a963ee4f8",
       "limit": "Ce τ dépend du protocole et du capteur ; il ne mesure pas le retour de tout le neurone à son état initial.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.26/BILAN_REACIDIFICATION_POLY_v0.26.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "REACID-200",
@@ -18453,7 +18492,9 @@
       "excerpt": "**Röther et al. 2014**, cultures hippocampiques de rat, température ambiante non chiffrée, synapto-pHluorin et alternance pH 7,5/5,5 : les tableaux 1–2 donnent τ ± SEM et n. À 20 Hz : 50 AP 23,32 ± 2,56 s (6), 100 AP 13,19 ± 1,84 (6), 200 AP 10,81 ± 1,12 (11), 400 AP 9,31 ± 0,51 (5). Pour 200 AP : 10 Hz 8,98 ± 2,03 (5), 40 Hz 12,28 ± 1,83 (5), 80 Hz 17,91 ± 3,04 (5). Les contrastes ponctuels sont −14,01 s entre 50 et 400 AP et +8,93 s entre 10 et 80 Hz. Ne pas traiter les boutons comme des expériences indépendantes ni inventer la covariance entre conditions. Source : [article et tableaux originaux](https://doi.org/10.1371/journal.pone.0102723).",
       "sha256": "03dc0a44ad4aad4c9c57fc98a881b4bcac55df44e20422ab5fda9c2a963ee4f8",
       "limit": "Ce τ dépend du protocole et du capteur ; il ne mesure pas le retour de tout le neurone à son état initial.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.26/BILAN_REACIDIFICATION_POLY_v0.26.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "REACID-400",
@@ -18470,7 +18511,9 @@
       "excerpt": "**Röther et al. 2014**, cultures hippocampiques de rat, température ambiante non chiffrée, synapto-pHluorin et alternance pH 7,5/5,5 : les tableaux 1–2 donnent τ ± SEM et n. À 20 Hz : 50 AP 23,32 ± 2,56 s (6), 100 AP 13,19 ± 1,84 (6), 200 AP 10,81 ± 1,12 (11), 400 AP 9,31 ± 0,51 (5). Pour 200 AP : 10 Hz 8,98 ± 2,03 (5), 40 Hz 12,28 ± 1,83 (5), 80 Hz 17,91 ± 3,04 (5). Les contrastes ponctuels sont −14,01 s entre 50 et 400 AP et +8,93 s entre 10 et 80 Hz. Ne pas traiter les boutons comme des expériences indépendantes ni inventer la covariance entre conditions. Source : [article et tableaux originaux](https://doi.org/10.1371/journal.pone.0102723).",
       "sha256": "03dc0a44ad4aad4c9c57fc98a881b4bcac55df44e20422ab5fda9c2a963ee4f8",
       "limit": "Ce τ dépend du protocole et du capteur ; il ne mesure pas le retour de tout le neurone à son état initial.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "reference/documents/analyses/v0.26/BILAN_REACIDIFICATION_POLY_v0.26.md",
+      "public_access": "POLY synthesis"
     },
     {
       "id": "BIN-S10",
@@ -18487,7 +18530,9 @@
       "excerpt": "1237: Peristimulus time histograms (PSTHs) were constructed using 1 ms bins and then convolved with a function resembling a postsynaptic potential, (1-exp(−t))*(exp(−t/20), for time t in ms. Average firing rates in response to reward were calculated using a 600 ms window after reward onset for the dopamine identification and GABA stimulation experiments, and a 500 ms window after reward onset for the GABA inhibition experiment. These windows were chosen to reflect the full duration of the neural response to reward. Window sizes ranging from 300–1000 ms were attempted and gave qualitatively similar results. To calculate reward response, we subtracted baseline firing (averaged over 1 second before trial onset). Calculating the baseline using different windows (e.g., 600 ms before reward onset) did not change the results. To ensure reliability, analyses of particular trial types only included neurons that were recorded during at least five presentations of that trial type.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
       "limit": "Ne définit pas la précision d’horloge physique ni la règle du pic.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/nature14855",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "WINDOW-S10-600",
@@ -18504,7 +18549,9 @@
       "excerpt": "1237: Peristimulus time histograms (PSTHs) were constructed using 1 ms bins and then convolved with a function resembling a postsynaptic potential, (1-exp(−t))*(exp(−t/20), for time t in ms. Average firing rates in response to reward were calculated using a 600 ms window after reward onset for the dopamine identification and GABA stimulation experiments, and a 500 ms window after reward onset for the GABA inhibition experiment. These windows were chosen to reflect the full duration of the neural response to reward. Window sizes ranging from 300–1000 ms were attempted and gave qualitatively similar results. To calculate reward response, we subtracted baseline firing (averaged over 1 second before trial onset). Calculating the baseline using different windows (e.g., 600 ms before reward onset) did not change the results. To ensure reliability, analyses of particular trial types only included neurons that were recorded during at least five presentations of that trial type.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
       "limit": "Fenêtre d’analyse, pas durée de la réponse de chaque neurone.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/nature14855",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "WINDOW-S10-500",
@@ -18521,7 +18568,9 @@
       "excerpt": "1237: Peristimulus time histograms (PSTHs) were constructed using 1 ms bins and then convolved with a function resembling a postsynaptic potential, (1-exp(−t))*(exp(−t/20), for time t in ms. Average firing rates in response to reward were calculated using a 600 ms window after reward onset for the dopamine identification and GABA stimulation experiments, and a 500 ms window after reward onset for the GABA inhibition experiment. These windows were chosen to reflect the full duration of the neural response to reward. Window sizes ranging from 300–1000 ms were attempted and gave qualitatively similar results. To calculate reward response, we subtracted baseline firing (averaged over 1 second before trial onset). Calculating the baseline using different windows (e.g., 600 ms before reward onset) did not change the results. To ensure reliability, analyses of particular trial types only included neurons that were recorded during at least five presentations of that trial type.",
       "sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
       "limit": "Pas le même protocole que la fenêtre de 600 ms.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/nature14855",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "LC-SAMPLE",
@@ -18538,7 +18587,9 @@
       "excerpt": "465: We implanted 200-μm-diameter optic fibres (0.39 NA) above prelimbic cortex (2.0 mm anterior to bregma, 0.5 mm lateral, 1.5 mm ventral from the pial surface) as described in detail123. We measured GCaMP6s and GCaMP8s fluorescence using 60 μW irradiance of 488-nm (to excite GCaMP6s and GCaMP8s) and 40 μW 405-nm (as an isosbestic control) light using a custom photometry system124. Signals were sampled at 60 Hz, alternative sampling from 405 nm, 488 nm and 560 nm (0 irradiance from 560 nm in these experiments) channels, resulting in 20 Hz for each channel. Example raw traces are in Extended Data Fig. 14c.",
       "sha256": "15f9a7571147b1eb2ba3144b336b5f596f0fda9c26b148f2eb67e93b86394131",
       "limit": "60 Hz total, 20 Hz par canal ; pas une latence nerveuse.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/s41586-026-11026-0",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "HEART-PULSE",
@@ -18555,7 +18606,9 @@
       "excerpt": "107: All mice were habituated to the experimenter and handled for at least three days, and in addition allowed to acclimatize to wearing optical pacemaker hardware for at least five days, before behavioural experiments. Fur over the chest was removed (Nair) at least five days before behavioural experiments. Mice were briefly anaesthetized with isoflurane before the placement of the optical pacing vest and allowed to fully recover in the home cage (at least 1 h) before experiments. We used a stimulation protocol consisting of a 10-ms pulse width at 15 Hz (900 bpm) with 500 ms ON time and 1,500 ms OFF time to introduce intermittent tachycardia or 10-ms pulse width at 11 Hz (660 bpm) with a Poisson distribution to introduce increased heart rate variability. Mice received optical stimulation during the ON periods of the behavioural assay from the wearable micro-LED device in both control and ChRmine cohorts. No statistical difference in behaviour was observed between virally transduced and control groups at baseline, suggesting that there were no side effects from transgene delivery. No statistical difference in behaviour was observed in control groups before, during and after optical stimulation, suggesting that there were no effects from light delivery alone.",
       "sha256": "f3fb1d38f34b09db2bb542e14905de04688e65e230ad65d0c25581ba90498bc3",
       "limit": "Durée de lumière, pas délai contraction→cerveau.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/s41586-023-05748-8",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "HEART-ON",
@@ -18572,7 +18625,9 @@
       "excerpt": "107: All mice were habituated to the experimenter and handled for at least three days, and in addition allowed to acclimatize to wearing optical pacemaker hardware for at least five days, before behavioural experiments. Fur over the chest was removed (Nair) at least five days before behavioural experiments. Mice were briefly anaesthetized with isoflurane before the placement of the optical pacing vest and allowed to fully recover in the home cage (at least 1 h) before experiments. We used a stimulation protocol consisting of a 10-ms pulse width at 15 Hz (900 bpm) with 500 ms ON time and 1,500 ms OFF time to introduce intermittent tachycardia or 10-ms pulse width at 11 Hz (660 bpm) with a Poisson distribution to introduce increased heart rate variability. Mice received optical stimulation during the ON periods of the behavioural assay from the wearable micro-LED device in both control and ChRmine cohorts. No statistical difference in behaviour was observed between virally transduced and control groups at baseline, suggesting that there were no side effects from transgene delivery. No statistical difference in behaviour was observed in control groups before, during and after optical stimulation, suggesting that there were no effects from light delivery alone.",
       "sha256": "f3fb1d38f34b09db2bb542e14905de04688e65e230ad65d0c25581ba90498bc3",
       "limit": "Paramètre de stimulation, pas durée d’émotion.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/s41586-023-05748-8",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "HEART-OFF",
@@ -18589,7 +18644,9 @@
       "excerpt": "107: All mice were habituated to the experimenter and handled for at least three days, and in addition allowed to acclimatize to wearing optical pacemaker hardware for at least five days, before behavioural experiments. Fur over the chest was removed (Nair) at least five days before behavioural experiments. Mice were briefly anaesthetized with isoflurane before the placement of the optical pacing vest and allowed to fully recover in the home cage (at least 1 h) before experiments. We used a stimulation protocol consisting of a 10-ms pulse width at 15 Hz (900 bpm) with 500 ms ON time and 1,500 ms OFF time to introduce intermittent tachycardia or 10-ms pulse width at 11 Hz (660 bpm) with a Poisson distribution to introduce increased heart rate variability. Mice received optical stimulation during the ON periods of the behavioural assay from the wearable micro-LED device in both control and ChRmine cohorts. No statistical difference in behaviour was observed between virally transduced and control groups at baseline, suggesting that there were no side effects from transgene delivery. No statistical difference in behaviour was observed in control groups before, during and after optical stimulation, suggesting that there were no effects from light delivery alone.",
       "sha256": "f3fb1d38f34b09db2bb542e14905de04688e65e230ad65d0c25581ba90498bc3",
       "limit": "Pause programmée, pas temps de récupération biologique certifié.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/s41586-023-05748-8",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "CO2-PRE",
@@ -18606,7 +18663,9 @@
       "excerpt": "323: Before the procedures, all subjects completed the Beck Anxiety Inventory as a measure of baseline anxiety, and both groups reported experiencing low levels of anxiety that were not significantly different (amygdala lesion mean raw score = 4, s.d. = 2; comparison group mean raw score = 3.4, s.d. = 3.8; p = 0.365). During each inhalation challenge, subjects were in a supine position while seated in a reclining chair. A plastic inhalation mask was comfortably placed over their nose and mouth and then strapped to the reclining chair to ensure that it would remain in place during the inhalation. Respiratory rate, heart rate, and skin conductance were recorded throughout each trial using a BIOPAC MP150 data acquisition system (BioPac Systems, Inc). Baseline recordings were taken during a two minute rest period before each inhalation and recordings continued for two minutes after each inhalation. The volume of each inhalation was recorded using an RSS 100 Research Pneumotach System (KORR Medical Technologies). Forced inspiratory vital capacity (FIVC) was calculated from height and weight as described previously",
       "sha256": "70ac6715447dacc1e8a3231b16feb5277427e29ad2a270622074cb4fa3c53692",
       "limit": "Les baselines de calcul restent spécifiques à chaque capteur.",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://www.nature.com/articles/nn.3323",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "CO2-POST",
@@ -18623,7 +18682,9 @@
       "excerpt": "323: Before the procedures, all subjects completed the Beck Anxiety Inventory as a measure of baseline anxiety, and both groups reported experiencing low levels of anxiety that were not significantly different (amygdala lesion mean raw score = 4, s.d. = 2; comparison group mean raw score = 3.4, s.d. = 3.8; p = 0.365). During each inhalation challenge, subjects were in a supine position while seated in a reclining chair. A plastic inhalation mask was comfortably placed over their nose and mouth and then strapped to the reclining chair to ensure that it would remain in place during the inhalation. Respiratory rate, heart rate, and skin conductance were recorded throughout each trial using a BIOPAC MP150 data acquisition system (BioPac Systems, Inc). Baseline recordings were taken during a two minute rest period before each inhalation and recordings continued for two minutes after each inhalation. The volume of each inhalation was recorded using an RSS 100 Research Pneumotach System (KORR Medical Technologies). Forced inspiratory vital capacity (FIVC) was calculated from height and weight as described previously",
       "sha256": "70ac6715447dacc1e8a3231b16feb5277427e29ad2a270622074cb4fa3c53692",
       "limit": "Ne fournit pas l’onset subjectif ni la latence de chaque réponse.",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://www.nature.com/articles/nn.3323",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "ISO-POST",
@@ -18640,7 +18701,9 @@
       "excerpt": "269: This experiment tested patients B.G. and A.M., along with 16 sex-matched neurologically and psychiatrically healthy female participants (mean age ± SD = 38.2 ± 12.2 years). Each participant received a total of 14 bolus intravenous infusions, double-blinded, in random order: seven isoproterenol infusions (0.1, 0.25, 0.5, 0.75, 1, 2, and 4 μg) and seven saline infusions. Participants were instructed to rotate a dial to rate their moment-to-moment experience of the overall intensity of heartbeat and breathing sensations during each 2 min period following infusion administration. Dial ratings could range from 0 (“none or normal”) to 10 (“most intense ever”). Participants were told to turn the dial >0 only if they noticed an increase in sensation due to the infusion; any dial turn above zero was considered a detection of isoproterenol-induced cardiorespiratory sensation. After each infusion period, participants retrospectively rated their experience of heartbeat and breathing sensations. This approach is identical to our previous studies of cardiorespiratory interoception in healthy individuals (",
       "sha256": "1fbb6f6010faeb88c1fb0aae0a279e58b398033fe15901661f7e403c41f7702e",
       "limit": "Ce n’est pas le protocole de provocation de panique à ordre fixe.",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4804013/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "TRAP-GATE",
@@ -18657,7 +18720,9 @@
       "excerpt": "117: Fos 2A-iCreER  (TRAP2; JAX 030323) mice were backcrossed onto a C57BL6/J background and bred with  B6;129S6-Gt(ROSA)26Sor tm14(CAG-tdTomato)/Hze /J  (Ai14; JAX 007908) mice, as previously described 38 . Both male and female mice were used for TRAP2 labelling experiments. Mice were injected retro-orbitally with rAAV9-mTNT-ChRmine-oScarlet or a vehicle control at three to four weeks of age. Four weeks later, mice were handled and acclimatized to fresh clean cages and optical pacing equipment for at least seven days before labelling. On the day of labelling, mice were allowed to acclimatize to optical pacing equipment for at least 2 h in a fresh clean cage with food and water, stimulated for 15 min (10-ms pulse width at 15 Hz for 500 ms every 1,500 ms) and left undisturbed for 2 h, at which time they were injected intraperitoneally with 5 mg kg −1  4-hydroxytamoxifen (Sigma) dissolved in normal saline containing 1% Tween-80 and 2.5% DMSO (as described previously 37 , 39 ). Mice were then returned to their home cage and were euthanized at least two weeks later to allow for full expression of the fluorophore.",
       "sha256": "f3fb1d38f34b09db2bb542e14905de04688e65e230ad65d0c25581ba90498bc3",
       "limit": "Délai expérimental de marquage, pas latence de transmission nerveuse.",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/s41586-023-05748-8",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "TRAP-EXPRESSION",
@@ -18675,7 +18740,9 @@
       "sha256": "f3fb1d38f34b09db2bb542e14905de04688e65e230ad65d0c25581ba90498bc3",
       "limit": "Au moins deux semaines ; pas une estimation de durée d’activité cérébrale.",
       "value_prefix": "≥",
-      "species": "animal"
+      "species": "animal",
+      "public_href": "https://www.nature.com/articles/s41586-023-05748-8",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H03-OFFSET",
@@ -18692,7 +18759,9 @@
       "line": 29,
       "excerpt": "ECG electrodes were attached to the participants' upper chest and lower back in a modified Lead‐II position. The ECG signal was recorded with a BIOPAC MP150 hardware and Acknowledge 3.5 software ( https://www.biopac.com/ ) with a sampling rate of 1000 Hz. Real‐time heartbeat detection was achieved with the DTU hardware module ( https://www.biopac.com/product/digital‐trigger‐unit‐for‐mri‐gating/ ), which uses an individually tailored threshold method to detect the ECG's R‐peak (i.e., when the ECG trace exceeds the threshold value) and deliver TTL pulses with negligible delay. Custom‐built code in Matlab was used to receive these TTL pulses and present face stimuli either 300 ms after the ECG's R‐peak (ec‐systole) or when the heartbeats were detected (i.e., R + 0 ms; ec‐diastole; cf. Garfinkel et al. 2014 ; Li et al. 2020 ).",
       "sha256": "c818e965d33d130e4e9261c7dc848c47e7c5b4dc5e9a29aaa25da43d34023ad9",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12541679/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H03-ZERO",
@@ -18709,7 +18778,9 @@
       "line": 29,
       "excerpt": "ECG electrodes were attached to the participants' upper chest and lower back in a modified Lead‐II position. The ECG signal was recorded with a BIOPAC MP150 hardware and Acknowledge 3.5 software ( https://www.biopac.com/ ) with a sampling rate of 1000 Hz. Real‐time heartbeat detection was achieved with the DTU hardware module ( https://www.biopac.com/product/digital‐trigger‐unit‐for‐mri‐gating/ ), which uses an individually tailored threshold method to detect the ECG's R‐peak (i.e., when the ECG trace exceeds the threshold value) and deliver TTL pulses with negligible delay. Custom‐built code in Matlab was used to receive these TTL pulses and present face stimuli either 300 ms after the ECG's R‐peak (ec‐systole) or when the heartbeats were detected (i.e., R + 0 ms; ec‐diastole; cf. Garfinkel et al. 2014 ; Li et al. 2020 ).",
       "sha256": "c818e965d33d130e4e9261c7dc848c47e7c5b4dc5e9a29aaa25da43d34023ad9",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12541679/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H03-SAMPLE",
@@ -18726,7 +18797,9 @@
       "line": 29,
       "excerpt": "ECG electrodes were attached to the participants' upper chest and lower back in a modified Lead‐II position. The ECG signal was recorded with a BIOPAC MP150 hardware and Acknowledge 3.5 software ( https://www.biopac.com/ ) with a sampling rate of 1000 Hz. Real‐time heartbeat detection was achieved with the DTU hardware module ( https://www.biopac.com/product/digital‐trigger‐unit‐for‐mri‐gating/ ), which uses an individually tailored threshold method to detect the ECG's R‐peak (i.e., when the ECG trace exceeds the threshold value) and deliver TTL pulses with negligible delay. Custom‐built code in Matlab was used to receive these TTL pulses and present face stimuli either 300 ms after the ECG's R‐peak (ec‐systole) or when the heartbeats were detected (i.e., R + 0 ms; ec‐diastole; cf. Garfinkel et al. 2014 ; Li et al. 2020 ).",
       "sha256": "c818e965d33d130e4e9261c7dc848c47e7c5b4dc5e9a29aaa25da43d34023ad9",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12541679/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H03-FLASH",
@@ -18743,7 +18816,9 @@
       "line": 23,
       "excerpt": "Illustration of a single trial in this experiment. (A) Different Mondrian images are presented to the dominant eye each 100 ms without break. A face, either neutral or fearful, is shown to the non‐dominant eye in synchrony with the participant's cardiac cycle, either during ec‐systole or ec‐diastole, in one of four possible quadrants of the designated screen area, for 100 ms. Stimuli presentation ends when the participant presses the “spacebar” to indicate they have perceived a face or after 10s. (B) Then, participants answer with key presses: (i) in which quadrant they think the face was presented, (ii) whether it had neutral or fearful expression, (iii) and how confident are they in their facial discrimination decision (on a scale 0–6).",
       "sha256": "c818e965d33d130e4e9261c7dc848c47e7c5b4dc5e9a29aaa25da43d34023ad9",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12541679/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "S18-SAMPLE",
@@ -18760,7 +18835,9 @@
       "line": 1307,
       "excerpt": "All signal processing and analyses were conducted using MATLAB (2023b, MathWorks Inc., Natick, MA). Both LFPs and respiratory signals were recorded at a sampling rate of 2 kHz, denoised using the demodulated band transform (DBT)\n95\n, and subsequently downsampled to 500 Hz. The DBT offers high temporal resolution, minimal spectral leakage, and computational efficiency, making it well-suited for capturing neural-respiratory interactions. The respiratory signals were low-pass filtered using the “lowpass” function in MATLAB with a cutoff frequency of 2 Hz to remove high-frequency noise.",
       "sha256": "96347c52bbcaff4a779e245ae9a57d920e02cb6da565f6be2fa32e1dbc1522fd",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://www.nature.com/articles/s41467-026-73828-0",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "S18-WELCH",
@@ -18777,7 +18854,9 @@
       "line": 1314,
       "excerpt": ", producing localized signals that are referred to as brain sites throughout this manuscript.\nSpectral and coherence analysis\nPower spectral density (PSD) estimates for respiratory and re-referenced LFPs were computed using Welch’s method (“pwelch” function in MATLAB), employing 60-s windows with 25% overlap. The LFPs were normalized using z-score transformation prior to PSD analysis.\nTo quantify the coherence between breathing and LFPs, DBT was used to decompose signals into overlapping frequency bands (range: 0–1.2 Hz) with a bandwidth of 0.1 Hz. For each frequency band, coherence was calculated as:",
       "sha256": "96347c52bbcaff4a779e245ae9a57d920e02cb6da565f6be2fa32e1dbc1522fd",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://www.nature.com/articles/s41467-026-73828-0",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H01-FACE",
@@ -18794,7 +18873,9 @@
       "line": 80,
       "excerpt": "The emotion task consisted of viewing a set of faces with either a fearful or surprised expression (see Fig. 8 ). The task was presented on a Macbook Pro using PsychToolbox ( Brainard, 1997 ; Pelli, 1997 ) through MATLAB. On each trial, a stimulus was presented for 100 ms, with an intertrial interval (ITI) randomly jittered between 2 and 5 s (mean ITI, 3.5 s) to ensure that stimuli fully “tiled” all phases of the respiratory cycle. Upon viewing a face, subjects had to indicate by pushbutton as quickly and accurately as possible whether an expression of fear or surprise was present, using the buttons (buttons “1” and “2”) on a computer keyboard. In total, 18 different faces were presented in each task, with each face repeated 10 times. There was a total of 180 emotion recognition trials occurring within a single session of 11 min. The intertrial interval reported (average, 3.5 s) was programmed to include the response time (RT). Thus, to record a response, participants were forced to respond within the ITI. This was because we aimed to have control over the time between when each stimulus was presented so as to minimize any systematic lag that could be generated if reaction times varied systematically with respiration. In addition to the emotion task, subjects also took part in a control gender discrimination task. In this instance, subjects viewed faces with either a happy or neutral expression. Task parameters were otherwise identical. The order of the emotion and gender tasks was counterbalanced across subjects. All stimuli came from the Ekman (1975) face set.",
       "sha256": "deb3490ef41791136748b32fb0198e90c4ec0685b371e96906bcc356325c1162",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5148230/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H01-WINDOW",
@@ -18811,7 +18892,9 @@
       "line": 49,
       "excerpt": "Filtering of the low-frequency signal was performed across the entire 15 min raw LFP time series, which was then divided into separate 6 s trials aligned to peak inspiratory flow for each respiratory trial ( Figs. 2 , 3 ). These 6 s windows were simply used as the time windows within which trials were binned, where peak flow was set to 0 s. As such, the −2 s time-point did not necessarily denote the onset of inspiration, nor did the +4 s time-point denote the end of the breath. Basically, the 6 s windows ensured that each breath trial was fully captured in that period of time; because patients often initiated a second breath within 6 s, we included only every other respiratory peak in the spectral analysis to eliminate data overlap across trials.",
       "sha256": "deb3490ef41791136748b32fb0198e90c4ec0685b371e96906bcc356325c1162",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5148230/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H01-MEM-PAUSE",
@@ -18828,7 +18911,9 @@
       "line": 91,
       "excerpt": "Before the encoding session, subjects were told they would view images that they would later be asked to recall. During the encoding session (15 min duration), 180 stimuli were presented for 500 ms. The ITI was randomly jittered between 3 and 6 s (mean ITI, 4.5 s) to ensure that stimuli fully spanned all phases of the respiratory cycle. Following a 20 min break (during which time subjects performed the emotion and gender tasks), subjects took part in a memory retrieval session, consisting of the 180 “old” stimuli and 180 “new” stimuli. During memory retrieval, subjects were asked to indicate whether each image had been previously seen during initial encoding (“old) or had not been seen before (“new”). All stimulus presentation times in both sessions were recorded on-line using PowerLab (ADInstruments), in synchrony with recording of the respiratory signals. Data analysis was performed in MATLAB.",
       "sha256": "deb3490ef41791136748b32fb0198e90c4ec0685b371e96906bcc356325c1162",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5148230/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H02-OFFSET",
@@ -18845,7 +18930,9 @@
       "line": 29,
       "excerpt": "Physiological waveforms were recorded on PC (power 1401, Spike2 v7 software; CED). For Experiment 1, cardiac cycle was ascertained using electrocardiography (ECG) and, for Experiment 2, which took place in the MRI scanner, heartbeats were monitored using MRI-compatible finger pulse oximetry (8600Fo; Nonin Medical). Following calibrations made in previous studies, using similar methods and recruiting from the same population, an estimated mean pulse transit time of ∼200 ms was used ( Gray et al., 2012 ). Physiological waveforms were recorded on PC (power 1401, Spike2 v7 software; CED). Timing of stimulus presentation was controlled by a real-time script running on the CED-power1401 unit, identifying the QRS complex with millisecond temporal accuracy. Stimulus presentation was time locked to either the R-wave (end of cardiac diastole) or delayed ∼300 ms from the R-wave peak to coincide with the T-wave at systole, when baroreceptor impulses are processed centrally ( Edwards et al., 2007 ; Edwards et al., 2009 ; Gray et al., 2009 ). See Figure 1 A for a histogram detailing the precision of face stimulus presentation in relation to cardiac cycle in the MRI scanner.",
       "sha256": "b0a261b6b4d939fb1efdff1e0fcec271ab08059cf4c698c9fc139d0f83edded2",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4012313/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H02-TRANSIT",
@@ -18862,7 +18949,9 @@
       "line": 29,
       "excerpt": "Physiological waveforms were recorded on PC (power 1401, Spike2 v7 software; CED). For Experiment 1, cardiac cycle was ascertained using electrocardiography (ECG) and, for Experiment 2, which took place in the MRI scanner, heartbeats were monitored using MRI-compatible finger pulse oximetry (8600Fo; Nonin Medical). Following calibrations made in previous studies, using similar methods and recruiting from the same population, an estimated mean pulse transit time of ∼200 ms was used ( Gray et al., 2012 ). Physiological waveforms were recorded on PC (power 1401, Spike2 v7 software; CED). Timing of stimulus presentation was controlled by a real-time script running on the CED-power1401 unit, identifying the QRS complex with millisecond temporal accuracy. Stimulus presentation was time locked to either the R-wave (end of cardiac diastole) or delayed ∼300 ms from the R-wave peak to coincide with the T-wave at systole, when baroreceptor impulses are processed centrally ( Edwards et al., 2007 ; Edwards et al., 2009 ; Gray et al., 2009 ). See Figure 1 A for a histogram detailing the precision of face stimulus presentation in relation to cardiac cycle in the MRI scanner.",
       "sha256": "b0a261b6b4d939fb1efdff1e0fcec271ab08059cf4c698c9fc139d0f83edded2",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4012313/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H02-FACE",
@@ -18879,7 +18968,9 @@
       "line": 37,
       "excerpt": "For Experiment 2, which took place in the MRI scanner, presentation of all emotional face stimuli was kept brief (100 ms) to ensure that they occurred at specific points in the cardiac cycle. Face stimuli were timed to coincide with the end of cardiac diastole (indexed by the ECG R-wave) and with the end of cardiac systole (approximately at the ECG T-wave), when baroreceptor impulses are processed centrally. Emotion intensity judgments were obtained using a modified forewarned reaction time task ( Gray et al., 2012 ) in which the face cue provided an emotional context for the delayed intensity judgment decision. Each face was kept on the screen for a brief 100 ms period, followed by a 150 ms fixation cross and a “Ready…” preparation signal lasting between 3 and 4 s which was followed by the “GO” command and simultaneous appearance of a visual analog scale (VAS) that subjects used to signal their perceived emotional intensity of the face depicted previously ( Fig. 1 C ). The VAS ran from 0 to 50; all values were multiplied by two for display and analysis purposes within the results section. The experiment was separated into two functional runs and each participant had 80 trials (40 fear and 40 neutral faces), half of which were randomized to coincide with systole and the other half diastole.",
       "sha256": "b0a261b6b4d939fb1efdff1e0fcec271ab08059cf4c698c9fc139d0f83edded2",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4012313/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     },
     {
       "id": "H02-TR",
@@ -18896,7 +18987,9 @@
       "line": 41,
       "excerpt": "Participants underwent structural MRI imaging using a Siemens Avanto 1.5 tesla MRI scanner. Functional echoplanar datasets sensitive to BOLD contrast were acquired with axial slices (anterioposterior phase encode direction) tilted 30 degrees from intercommissural plane to minimize T2* signal dropout from orbitofrontal and anterior temporal regions. Thirty-five 3 mm slices with a 0.75 mm interslice gap were acquired, providing full brain coverage with an in-plane resolution of 3 × 3 mm (TE = 42 ms, TR = 2620 ms). Because stimulus presentation was contingent on heart timing, the experiment was variable in duration depending on the individual participant's heart rate. On average, 411 volumes were collected and task duration was 18 min in total, divided into 2 functional runs of ∼9 min each (range 8.08–10 min). After acquisition of the functional dataset, full brain T1-weighted structural scans were also acquired from each participant (MPRAGE, 0.9 mm 3 voxels, 192 slices, 1160/4.24 ms TR/TE, 300 ms inversion time, 230 × 230 mm 2 FOV). Images were preprocessed using SPM8 ( http://www.fil.ion.ucl.ac.uk/spm/ ). The initial four functional volumes were discarded to allow for equilibration of net magnetization. Images were then spatially realigned, unwarped, spatially normalized to standard MNI space, and movement regressors were added. Normalized functional scans were smoothed with an 8 mm Gaussian smoothing kernel ( Friston et al., 2000 ).",
       "sha256": "b0a261b6b4d939fb1efdff1e0fcec271ab08059cf4c698c9fc139d0f83edded2",
-      "species": "human"
+      "species": "human",
+      "public_href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4012313/",
+      "public_access": "Original publication; line locator refers to the local archived extraction"
     }
   ],
   "counts": {
@@ -86466,5 +86559,6 @@
     "combined_chain_prediction": false,
     "private_correspondence_published": false,
     "source_version": "0.91"
-  }
+  },
+  "organisation_version": "0.97"
 }

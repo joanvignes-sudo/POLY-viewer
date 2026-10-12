@@ -1,4 +1,7 @@
-# POLY v0.96.1
+# POLY v0.97
+
+[Dossiers et sources réunis](dossiers.html) · [Audit de l’organisation](AUDIT_ORGANISATION_v0.97.md).
+
 
 [Contrôles de navigation](BILAN_TESTS_v0.96.1.md).
 
