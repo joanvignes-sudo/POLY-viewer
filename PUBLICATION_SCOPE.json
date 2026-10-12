@@ -1,6 +1,6 @@
 {
-  "version": "0.93",
-  "canonical_direction": "Canon v0.92 conservé ; refonte de présentation et des parcours",
+  "version": "0.94",
+  "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
   "canonical_edges": 165,
@@ -9,8 +9,12 @@
   "public_documents": 215,
   "catalogue_files": 1631,
   "correspondence_published": false,
-  "new_measured_geometry": false,
+  "new_measured_geometry": true,
   "four_chain_combined_prediction": false,
-  "comments": "Privés sur le navigateur, import/export ; discussion GitHub à publication manuelle.",
-  "public_github_issues_available": true
+  "comments": "Annotations privées exportables/importables ; observations partagées sur GitHub par envoi manuel. Aucun forum intégré.",
+  "public_github_issues_available": true,
+  "geometry_scope": "Atlas CerebrA/MNI2009cSym dérivé de données IRM ; ni géométrie individuelle P8 ni recalage au corps schématique",
+  "anatomical_components": 17,
+  "human_anatomical_binding": "P8 · contexte amygdalien uniquement",
+  "usability": "Protocoles préparés, études auprès de lecteurs non réalisées"
 }

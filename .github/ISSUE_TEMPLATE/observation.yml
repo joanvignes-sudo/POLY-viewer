@@ -1,0 +1,33 @@
+name: Observation sur POLY
+description: Signaler une difficulté, une source ou une correction vérifiable.
+title: "[Observation] "
+body:
+  - type: markdown
+    attributes:
+      value: "Ce dépôt est public. Ne joindre ni données personnelles ni données de participants."
+  - type: input
+    id: context
+    attributes:
+      label: Lien POLY, chaîne et maillon ou relation
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Nature de l’observation
+      options:
+        - Compréhension ou navigation
+        - Donnée ou source scientifique
+        - Anatomie ou représentation
+        - Stabilité ou annotation
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observation et résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source, précision et proposition de correction
+      description: "Pour une mesure : espèce, préparation, unité, horloge et portée."

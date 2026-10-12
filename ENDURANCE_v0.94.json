@@ -1,0 +1,390 @@
+{
+  "status": "passed",
+  "actual_duration_s": 903.764,
+  "requested_duration_s": 900,
+  "cycles": 311,
+  "actions": 1928,
+  "browser": "Chrome headless, software WebGL",
+  "heap_growth_bytes": 903292,
+  "heap_growth_ratio": 1.160699405301971,
+  "samples": [
+    {
+      "elapsed_s": 0.031,
+      "js_heap_bytes": 5621004,
+      "dom_nodes": 1135,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": false,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 38,
+        "textures": 0,
+        "programs": 4,
+        "calls": 58,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 46.888,
+      "js_heap_bytes": 6122044,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 91.532,
+      "js_heap_bytes": 6220024,
+      "dom_nodes": 745,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 135.594,
+      "js_heap_bytes": 6246420,
+      "dom_nodes": 978,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 181.759,
+      "js_heap_bytes": 6283332,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 224.427,
+      "js_heap_bytes": 6312760,
+      "dom_nodes": 755,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 266.143,
+      "js_heap_bytes": 6289996,
+      "dom_nodes": 978,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 307.223,
+      "js_heap_bytes": 6425552,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 350.249,
+      "js_heap_bytes": 6468452,
+      "dom_nodes": 761,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 394.519,
+      "js_heap_bytes": 6429252,
+      "dom_nodes": 978,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 435.512,
+      "js_heap_bytes": 6445732,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 477.601,
+      "js_heap_bytes": 6485320,
+      "dom_nodes": 745,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 523.513,
+      "js_heap_bytes": 6471928,
+      "dom_nodes": 978,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 566.127,
+      "js_heap_bytes": 6489096,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 611.872,
+      "js_heap_bytes": 6546872,
+      "dom_nodes": 749,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 654.064,
+      "js_heap_bytes": 6496320,
+      "dom_nodes": 978,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 698.646,
+      "js_heap_bytes": 6518724,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 742.932,
+      "js_heap_bytes": 6556256,
+      "dom_nodes": 755,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 783.671,
+      "js_heap_bytes": 6535600,
+      "dom_nodes": 978,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 828.371,
+      "js_heap_bytes": 6551916,
+      "dom_nodes": 721,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 871.491,
+      "js_heap_bytes": 6579180,
+      "dom_nodes": 749,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": true,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 61,
+        "textures": 0,
+        "programs": 4,
+        "calls": 61,
+        "triangles": 48640
+      }
+    },
+    {
+      "elapsed_s": 903.763,
+      "js_heap_bytes": 6524296,
+      "dom_nodes": 1378,
+      "documents": 1,
+      "reading": false,
+      "comparisonReading": false,
+      "notesBlocked": false,
+      "notes": 0,
+      "anatomy": {
+        "geometries": 58,
+        "textures": 0,
+        "programs": 4,
+        "calls": 58,
+        "triangles": 48640
+      }
+    }
+  ],
+  "errors": [],
+  "interpretation": "Same browser, GC before samples. Different dossiers have different DOM sizes; bounded growth is evaluated with final return to C02. This run is 15 minutes, not a one-hour certification.",
+  "original_progress_action_estimate": 2177,
+  "action_counter_basis": "Six controls each cycle plus one comparison playback control each fifth cycle; progress estimate corrected from seven per cycle."
+}
