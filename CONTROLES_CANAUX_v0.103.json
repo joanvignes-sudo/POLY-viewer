@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source_exact_images": 136,
+  "native_rgb_pixels_verified": 94003200,
+  "focal_planes": 34,
+  "archive_version_pinned_ranges_verified": 12,
+  "full_archive_hash_claimed": false,
+  "gci_channel_and_stack_metadata_verified": true,
+  "source_overlay_differences_retained": true,
+  "prior_science_files_unchanged": 716,
+  "physical_calibration_or_spatial_registration_claimed": false
+}

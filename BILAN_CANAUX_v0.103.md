@@ -1,0 +1,11 @@
+# POLY v0.103 · Exports séparés et plans de mise au point
+
+SPARC 674 v1, même donneuse et acquisition C1-A-Level 2 part1 que les montages. Archive source 55 065 163 848 octets ; seuls les 384 premiers MiB ont été lus, par 12 plages versionnées de 32 MiB, sans prétendre vérifier l’empreinte du fichier entier. Les plages et fichiers extraits ont leurs empreintes. Deux champs accessibles, indices 00009 et 00001, 17 plans chacun, exports CH1 (NF vert), CH2 (ChAT bleu), CH4 (MBP rouge) et Overlay. 136 images 960×720 RGB uint8, valeurs conservées dans les PNG. TIFF originaux et XML embarqués du plan 9 publiés ; tous les TIFF des deux champs et plages acquis sont archivés dans la recherche privée.
+
+Ces TIFF sont des exports séparés déjà colorisés, pas des comptes bruts du détecteur. Les plans ne sont ni une série temporelle, ni une activité, ni des coupes sériées. Le champ 00001 présente un signal faible ; aucun statut de contrôle négatif biologique ne lui est attribué. Aucun type de fibre n’est inféré des formes ou des couleurs. Le champ 00009 a été retenu parmi les champs accessibles, sans représentativité anatomique revendiquée.
+
+Les Overlay diffèrent de l’assemblage numérique simple (R=CH4.R, G=CH1.G, B=CH2.B) : ils restent des images indépendantes de la source. L’écart est mesuré et conservé sans en inventer la cause. Une coordonnée identique dans deux exports ne prouve pas une colocalisation biologique.
+
+Le GCI déclare 17 plans et Pitch=10. Les TIFF portent un champ Calibration identique à celui du montage, décodé à 150.97671666666668. Unités et conventions encore non vérifiées : pas de conversion physique XY/Z, de profondeur attribuée ou de règle en µm. Les 96 dpi des TIFF sources sont une métadonnée d’impression. La section de 5 µm reste une préparation documentée, pas une résolution ou une étendue focale déduite.
+
+Les positions de platine et les indices de champ sont conservés. Le repérage pixel à pixel dans le montage reste à vérifier ; aucun placement dans C10 ou le scaffold n’est ajouté. Suite : convention Keyence de calibration, réglages de fusion/correction du composite, correspondances des champs au montage, régions sources supplémentaires et retours spécialistes.

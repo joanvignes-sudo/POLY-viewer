@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8899/",
+  "native_windows": 6,
+  "rgb_masks_and_reset": true,
+  "original_pixel_values_after_display_changes": true,
+  "measurement_pixels_only": true,
+  "shared_view": true,
+  "navigator_window": true,
+  "bounded_cache": 3,
+  "source_preview_distinguished": true,
+  "mobile": true,
+  "corrupted_image_rejected_and_recovery": true,
+  "invalid_query_clamped": true,
+  "javascript_errors": []
+}
