@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8899/",
+  "four_verified_images": true,
+  "source_pixel_values_unchanged_by_gain": true,
+  "blend_endpoints_distinct": true,
+  "synchronized_pan_zoom_and_share": true,
+  "field9_round_trip": true,
+  "unconfirmed_field1_link_hidden": true,
+  "mobile": true,
+  "corrupted_image_rejected_and_retry": true,
+  "invalid_query_clamped": true,
+  "javascript_errors": []
+}

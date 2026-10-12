@@ -22,3 +22,7 @@ Atelier de chaînes biologiques, atlas humain et exploration BigBrain. Nouvelle 
 Les données BigBrain et leurs adaptations conservent la licence CC BY-NC-SA 4.0 et les crédits dans assets/bigbrain et assets/histology. Aucun recalage fonctionnel vers P8 ni synapse représentée.
 
 Les données Allen restent soumises aux conditions Allen Institute (recherche et usages non commerciaux, attribution). Le squelette H01 est sous CC BY 4.0. Les sources et dérivés conservent leurs conditions propres. La version 0.99 étend l’exploration entre échelles ; le registre scientifique des chaînes demeure EXPLORATION_v0.98.json.
+
+## v0.104 · Champ et montage
+
+`raccord.html` compare le champ 00009 Z009 à sa zone native du montage. Translation locale (5370,8) pixels, dispersion observée de 1 pixel sur huit comparaisons. Champ 00001 non confirmé ; calibration physique et raccord 3D toujours ouverts.

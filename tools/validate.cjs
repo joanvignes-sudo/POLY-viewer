@@ -42,7 +42,7 @@ for(const sample of neurons.samples){
  if(data.unit!=='µm'||data.points.length!==sample.vertices||data.edges.length!==sample.edges||data.edges.some(e=>e.some(i=>!Number.isInteger(i)||i<0||i>=data.points.length))||data.points.some(p=>p.length!==3||p.some(v=>!Number.isFinite(v))))fail(sample.id,'Géométrie neuronale incohérente.');
 }
 for(const source of neurons.raw_sources){const f=path.resolve(root,'assets/neurons',source.file);if(!f.startsWith(path.resolve(root,'assets/neurons')+path.sep)||!fs.existsSync(f)||crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')!==source.sha256)fail(source.file,'Source neuronale originale non conforme.');}
-const scales=JSON.parse(fs.readFileSync(path.join(root,'INVENTAIRE_ECHELLES_v0.103.json'),'utf8'));
+const scales=JSON.parse(fs.readFileSync(path.join(root,'INVENTAIRE_ECHELLES_v0.104.json'),'utf8'));
 if(new Set(scales.sources.map(s=>s.id)).size!==5)fail('inventaire','Les cinq sources doivent être distinctes.');
 for(const f of scales.metadata_files)if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex')!==f.sha256)fail(f.path,'Métadonnée entre échelles non conforme.');
 
@@ -61,6 +61,9 @@ for(const p of ihc.parts)for(const r of p.regions){if(r.dimensions.some(n=>n!==2
 const focal=JSON.parse(fs.readFileSync(path.join(root,'assets/focal/PROVENANCE.json')));
 if(focal.fields.length!==2||focal.fields.some(f=>f.planes.length!==17))fail('focal','Série de mise au point incomplète.');
 for(const f of [...focal.files,...focal.fields.flatMap(f=>f.planes.flatMap(p=>Object.values(p.images)))]){const b=fs.readFileSync(path.join(root,f.path));if(crypto.createHash('sha256').update(b).digest('hex')!==f.sha256)fail(f.path,'Empreinte export focal incorrecte.');}
-report.ok=report.errors.length===0;report.version='0.103';report.scope='Structural and local-source integrity; not scientific validation';
+const raccord=JSON.parse(fs.readFileSync(path.join(root,'assets/registration/PROVENANCE.json')));
+for(const f of raccord.files){if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex')!==f.sha256)fail(f.path,'Empreinte raccord incorrecte.');}
+if(raccord.checks.length!==8||raccord.montage_origin.join(',')!=='5370,8'||raccord.checks.some(t=>t.ncc<.88||t.origin.some((v,i)=>Math.abs(v-raccord.montage_origin[i])>1)))fail('raccord','Correspondance locale non conforme.');
+report.ok=report.errors.length===0;report.version='0.104';report.scope='Structural and local-source integrity; not scientific validation';
 console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;
 

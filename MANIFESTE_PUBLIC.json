@@ -1,5 +1,5 @@
 {
-  "version": "0.103",
+  "version": "0.104",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -77,6 +77,11 @@
       "sha256": "0a944071251618d0f286cc4f75f082cb02901048cacb2098c345d885124d17f5"
     },
     {
+      "path": "BILAN_RACCORD_v0.104.md",
+      "bytes": 1407,
+      "sha256": "a642455a8add772fc4bc583361a96b942f4b2d0ab5d896def2aeb90ac6aab412"
+    },
+    {
       "path": "BILAN_TESTS_v0.96.1.md",
       "bytes": 1710,
       "sha256": "4aa17d01e5205aef72f93526ea7f45117590bfc30cc77119fa41f9b204709881"
@@ -125,6 +130,11 @@
       "path": "CONTROLES_ORGANISATION_v0.97.json",
       "bytes": 1008,
       "sha256": "73477a736339f1fb6457f7ba80d7435906aad81b57b858401c785b40effc9cde"
+    },
+    {
+      "path": "CONTROLES_RACCORD_v0.104.json",
+      "bytes": 438,
+      "sha256": "f4ecd6394b4805a3b224bba4f55f99becb62960bcee51c28ac1b34a1ad0f4909"
     },
     {
       "path": "CONTROLES_SOURCES_v0.98.json",
@@ -197,6 +207,11 @@
       "sha256": "5ac88e38926265a686ca4a0f78e890747de6f5b1e4478427b8c4df3e15a4497a"
     },
     {
+      "path": "INVENTAIRE_ECHELLES_v0.104.json",
+      "bytes": 7595,
+      "sha256": "25a6601f1d316bb67e0b8a54e51978e7d5490af2632c1c0a0c7719d1ad321ee1"
+    },
+    {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
       "bytes": 6410,
       "sha256": "20943a235c3652fb74df5039c1a3165424c36c2bec9eed1ee17472568d21e303"
@@ -225,6 +240,11 @@
       "path": "LIENS_v0.103.json",
       "bytes": 83,
       "sha256": "c27c44e27d1ffff5a9497d467bcabd727d92dbd6b7017cc34921921f5ac79ba5"
+    },
+    {
+      "path": "LIENS_v0.104.json",
+      "bytes": 83,
+      "sha256": "3eddfddaddc7ec2eaaf3e4f80ac23ec6bfd97ca8bfbbf60349b585dee522b63c"
     },
     {
       "path": "NAVIGATION_CANAUX_v0.103.json",
@@ -257,6 +277,11 @@
       "sha256": "7a8533475df55212da59275205f972eccfb91099fa9626bbe50caf2dacc70c43"
     },
     {
+      "path": "NAVIGATION_RACCORD_v0.104.json",
+      "bytes": 414,
+      "sha256": "9bdf8c15274da71da0e2c138bbfce5a161022e7cc21c8fb394137418f6bab99d"
+    },
+    {
       "path": "NAVIGATION_SOURCES_v0.98.json",
       "bytes": 441,
       "sha256": "7de26410977cf3667282be7342b10d346bf1ba86c25cf098abed5b3db82a5c31"
@@ -278,8 +303,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2153,
-      "sha256": "209ba879d202244435602281d46f30d376ab2d87e11ea3a81908992ecb8787ef"
+      "bytes": 2434,
+      "sha256": "07894820712b1a4a1095d40e1cd71c50019d97118ccccf971cc14a12973703c5"
+    },
+    {
+      "path": "REGRESSION_CANAUX_v0.104.json",
+      "bytes": 409,
+      "sha256": "126e56ed69e7ea3ebf9b0bdb0b66f57fe02c982963b835f550530847a2e52ac6"
     },
     {
       "path": "REGRESSION_IHC_v0.103.json",
@@ -793,8 +823,8 @@
     },
     {
       "path": "assets/focal-v0103.js",
-      "bytes": 6867,
-      "sha256": "1fba34b550b28c56f94b8edd33fb9e506f78c1b49e16cfb89d810edda09e43ad"
+      "bytes": 7083,
+      "sha256": "40a2d5c3c076c1bd0af574842873be09e87cd826043f92038d6ff430e4a5fcfa"
     },
     {
       "path": "assets/focal/CREDITS.md",
@@ -5182,6 +5212,41 @@
       "sha256": "2fdc486d35836a4f7b5bf45f98c22aa347c9930d74756fb91f911041870df441"
     },
     {
+      "path": "assets/raccord-v0104.css",
+      "bytes": 1191,
+      "sha256": "068409ffec3d1bdcc0e406438543aea910f33235d7b54c424672882966bf5644"
+    },
+    {
+      "path": "assets/raccord-v0104.js",
+      "bytes": 6273,
+      "sha256": "03562c1a17e3570901db93c3e0eeeba42b38b608838c1de1d8f2a7878a2d6bb9"
+    },
+    {
+      "path": "assets/registration/CREDITS.md",
+      "bytes": 2171,
+      "sha256": "243ad29ff09a892adabf6b5042ff1de896f79874c817ef14c1aa833d7d3fa88a"
+    },
+    {
+      "path": "assets/registration/PROVENANCE.json",
+      "bytes": 10086,
+      "sha256": "a4ebc17c3ed4fd13898ed70acac2b36adfa93993c15dcc2cd2203a1c55906df5"
+    },
+    {
+      "path": "assets/registration/VALIDATION.json",
+      "bytes": 12491,
+      "sha256": "3660ff751a1e98c63a8b6ca4669a627985b5a398d45d2ae98b93b2f1a40181cb"
+    },
+    {
+      "path": "assets/registration/context-field9.png",
+      "bytes": 5289017,
+      "sha256": "ea4a0a7cd46b533cbcadbaac088b2a360463ae23742b73a8df591ceec14d6bee"
+    },
+    {
+      "path": "assets/registration/montage-field9.png",
+      "bytes": 962321,
+      "sha256": "fe303eab994900dbbcb187000042fb5cab2e79d5fd3b038186dc75e070db8b7d"
+    },
+    {
       "path": "assets/vendor/THREE_LICENSE.txt",
       "bytes": 1081,
       "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
@@ -6363,8 +6428,8 @@
     },
     {
       "path": "canaux.html",
-      "bytes": 5370,
-      "sha256": "a218dd1075011108b155ac170a115279677a6df0260c61162942c855b920c3c1"
+      "bytes": 5606,
+      "sha256": "9c4003805aefb006707fe4349be51ccf6b9589631bc72bc1cd98d535779b3e22"
     },
     {
       "path": "canon.html",
@@ -6398,13 +6463,13 @@
     },
     {
       "path": "immunohistochimie.html",
-      "bytes": 6836,
-      "sha256": "11cfd5a5f455ed648651e871a2766e3a5483f3cf4421bb08bf92c40b0f6a5532"
+      "bytes": 6884,
+      "sha256": "09dfd009ac15d5e6fc30267335a578f24402bb6dc3de52a22ddc7cb9f18ebaf7"
     },
     {
       "path": "index.html",
       "bytes": 9885,
-      "sha256": "89eaf98775be8ba777f3bf6b9f6ce90353a142c4772b5d84864ee62ba827c977"
+      "sha256": "355d21cf03dd7808b84978c6a15cfa5367e25e6f5601e8b17fb144947c1b3432"
     },
     {
       "path": "microstructures.html",
@@ -6419,17 +6484,22 @@
     {
       "path": "organes.html",
       "bytes": 8834,
-      "sha256": "5238a71641f8a43f1e2a67506dd5a13194efa2ed314941ebceb9d2f66aa02ab3"
+      "sha256": "eea6b2b654b2cfa9b3b998e7d964611b9fd99dad3e2a2047b95e43ee9edf688b"
+    },
+    {
+      "path": "raccord.html",
+      "bytes": 6035,
+      "sha256": "6c9af184c66b2b3f11fef28476c550a9a55b5f61eb1b923511ab4e0e66b07bfb"
     },
     {
       "path": "suite.html",
-      "bytes": 9226,
-      "sha256": "ed1a70b16a6a5523b60f02ee9a79c815fa2130959a23c46199dfceb22434a7ed"
+      "bytes": 9741,
+      "sha256": "de301a5a4acb0c63d6f17a0100501d9daa8c7cecb2045e80c67461b265e48c26"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 10217,
-      "sha256": "2cf774678d51c58da1332e5628b1d0f3bb5951c477788b179114f2eb8013ee4b"
+      "bytes": 10726,
+      "sha256": "9e52ce7fb59e27e6b8bab177a108d89584b53ab8be051a9038adb16b5056206a"
     }
   ]
 }
