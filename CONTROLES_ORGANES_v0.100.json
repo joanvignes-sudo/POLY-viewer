@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "n5_blocks_verified": 65,
+  "volumes_exact": 2,
+  "scaffold_surfaces_exact": 15,
+  "contour_segments_exact": 178049,
+  "prior_assets_unchanged": 641,
+  "original_hashes_verified": 18,
+  "registration_between_people": false,
+  "physical_vagus_calibration": "pending"
+}

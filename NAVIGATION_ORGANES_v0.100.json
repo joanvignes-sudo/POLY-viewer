@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": [
+    "heart 3D and cuts",
+    "axes, positions, contrast and voxel values",
+    "native detail",
+    "share camera and selection",
+    "15 nerve surfaces",
+    "source contours and focus",
+    "four switches, stable 5/16 geometries",
+    "mobile 390px",
+    "no 3D fallback"
+  ],
+  "errors": []
+}

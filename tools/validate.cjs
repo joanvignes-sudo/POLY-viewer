@@ -42,10 +42,15 @@ for(const sample of neurons.samples){
  if(data.unit!=='µm'||data.points.length!==sample.vertices||data.edges.length!==sample.edges||data.edges.some(e=>e.some(i=>!Number.isInteger(i)||i<0||i>=data.points.length))||data.points.some(p=>p.length!==3||p.some(v=>!Number.isFinite(v))))fail(sample.id,'Géométrie neuronale incohérente.');
 }
 for(const source of neurons.raw_sources){const f=path.resolve(root,'assets/neurons',source.file);if(!f.startsWith(path.resolve(root,'assets/neurons')+path.sep)||!fs.existsSync(f)||crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')!==source.sha256)fail(source.file,'Source neuronale originale non conforme.');}
-const scales=JSON.parse(fs.readFileSync(path.join(root,'INVENTAIRE_ECHELLES_v0.99.json'),'utf8'));
+const scales=JSON.parse(fs.readFileSync(path.join(root,'INVENTAIRE_ECHELLES_v0.100.json'),'utf8'));
 if(new Set(scales.sources.map(s=>s.id)).size!==5)fail('inventaire','Les cinq sources doivent être distinctes.');
 for(const f of scales.metadata_files)if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex')!==f.sha256)fail(f.path,'Métadonnée entre échelles non conforme.');
 
-report.ok=report.errors.length===0;report.version='0.99';report.scope='Structural and local-source integrity; not scientific validation';
+const organs=JSON.parse(fs.readFileSync(path.join(root,'assets/organs/PROVENANCE.json'),'utf8'));
+for(const f of [...organs.files,...organs.heart.volumes]){const b=fs.readFileSync(path.join(root,f.path));if(crypto.createHash('sha256').update(b).digest('hex')!==f.sha256)fail(f.path,'Empreinte organe incorrecte.');if(f.bytes_uncompressed&&require('zlib').gunzipSync(b).length!==f.bytes_uncompressed)fail(f.path,'Taille volume incorrecte.');}
+const vagus=JSON.parse(fs.readFileSync(path.join(root,'assets/organs/vagus.json'),'utf8')),cb=fs.readFileSync(path.join(root,vagus.contours.path));
+if(crypto.createHash('sha256').update(cb).digest('hex')!==vagus.contours.sha256||require('zlib').gunzipSync(cb).length!==vagus.contours.segments*24)fail('vagus-contours','Segments non conformes.');
+for(const p of vagus.parts)if(p.vertices.length%3||p.triangles.length%3||p.triangles.some(i=>!Number.isInteger(i)||i<0||i>=p.vertices.length/3))fail(p.name,'Surface non conforme.');
+report.ok=report.errors.length===0;report.version='0.100';report.scope='Structural and local-source integrity; not scientific validation';
 console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;
 

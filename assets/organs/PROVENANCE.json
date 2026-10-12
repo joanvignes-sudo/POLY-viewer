@@ -1,0 +1,216 @@
+{
+  "version": "0.100",
+  "heart": {
+    "subject": "S-20-28",
+    "description": "Human heart, male 84, post mortem; formalin, ethanol and agar preparation",
+    "doi": "https://doi.org/10.15151/ESRF-DC-1966163810",
+    "portal": "https://human-organ-atlas.esrf.fr/",
+    "license": "CC BY 4.0",
+    "native_dimensions": [
+      7613,
+      7613,
+      8128
+    ],
+    "native_spacing_um": [
+      19.85,
+      19.85,
+      19.85
+    ],
+    "axes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "coordinate_system": "local acquisition axes; anatomical orientation not assigned",
+    "volumes": [
+      {
+        "id": "heart-context",
+        "path": "assets/organs/heart-context.u16.gz",
+        "dimensions": [
+          238,
+          238,
+          254
+        ],
+        "native_voxel_origin": [
+          0,
+          0,
+          0
+        ],
+        "native_voxel_step": 32,
+        "spacing_um": 635.2,
+        "dtype": "uint16 little endian, x fastest",
+        "bytes_uncompressed": 28775152,
+        "sha256": "97c9ec0ec45739a5afd930039aefe538269f49ef70a523bb30216120f89d57be",
+        "range": [
+          2653,
+          65502
+        ]
+      },
+      {
+        "id": "heart-detail",
+        "path": "assets/organs/heart-detail.u16.gz",
+        "dimensions": [
+          128,
+          128,
+          128
+        ],
+        "native_voxel_origin": [
+          4736,
+          2304,
+          3968
+        ],
+        "native_voxel_step": 1,
+        "spacing_um": 19.85,
+        "dtype": "uint16 little endian, x fastest",
+        "bytes_uncompressed": 4194304,
+        "sha256": "194d8be24ef3d11f73393f2418112d02c98decc3b6c9f6718e8558e6cfe677c7",
+        "range": [
+          12344,
+          27033
+        ]
+      }
+    ],
+    "processing": "N5 Blosc decoded big endian uint16; context s4 sampled every second voxel without averaging; detail is complete s0 block 37/18/31. Padded edge voxels cropped to declared dimensions. Intensity retained uint16; window affects display only.",
+    "detail_bounds_native_half_open": [
+      [
+        4736,
+        2304,
+        3968
+      ],
+      [
+        4864,
+        2432,
+        4096
+      ]
+    ],
+    "limits": "Voxel spacing is sampling, not guaranteed resolving power. Fixed tissue, no activity or cardiac motion. No segmented organ labels. No registration to other subjects or to separate 6.51 µm acquisitions."
+  },
+  "vagus": {
+    "subject": "sub-f002, female 88, human ex vivo, left nerve",
+    "dataset": 426,
+    "version": 7,
+    "doi": "https://doi.org/10.26275/tjzi-muqm",
+    "original_dataset": "https://doi.org/10.26275/imas-52lf",
+    "portal": "https://sparc.science/datasets/426",
+    "license": "Creative Commons Attribution (exact wording in dataset metadata; version not specified there)",
+    "geometry": "Finite element scaffold fitted to stitched segmentation; named surfaces from portal visualization export. Perineurial contour segments are exported stitched segmentation, separate from fitted envelope. Source float coordinates preserved in JSON, contour buffer uses float32 as original exported precision.",
+    "units": "Source coordinate units, physical calibration not verified; no mm/µm ruler assigned.",
+    "parts": 15,
+    "contour_segments": 178049,
+    "limits": "Non-body configuration: cut segments stitched computationally. Branches show origins and initial directions; no complete organ innervation, electrical propagation or proven cardiac linkage.",
+    "documentation": "https://docs.sparc.science/docs/subject-specific-vagus-ssv-scaffolds",
+    "display_transform": "Uniform centering and scale for display, followed by rigid axis rotation (x,y,z) -> (x,z,-y). Original source axes retained in data. No anatomical registration.",
+    "line_decoding": "ZincJS LineSegments uses sequential vertex pairs; compatibility triangle faces are sequential and padded with the final vertex, not interpreted as contour triangles. Final zero-length padding omitted."
+  },
+  "registration_between_samples": false,
+  "files": [
+    {
+      "path": "assets/organs/originals/hoa-heart-state.json",
+      "bytes": 1323,
+      "sha256": "37124886e7d1271cd6dde20cc70659eb1f1354e1ba9230510dd2f281f1d87945",
+      "url": null
+    },
+    {
+      "path": "assets/organs/originals/hoa-attributes.json.json",
+      "bytes": 165,
+      "sha256": "04cb177962361b9140d2ce2f8f8607bcd30bf89090e54dc3ecdf6292afc51c4d",
+      "url": null
+    },
+    {
+      "path": "assets/organs/originals/hoa-s0-attributes.json.json",
+      "bytes": 217,
+      "sha256": "6e02cfe79ac9ac0345fcb0a0ece6d9dd0c84b65d522fb6c2f8115eaf918e751a",
+      "url": null
+    },
+    {
+      "path": "assets/organs/originals/hoa-s4-attributes.json.json",
+      "bytes": 178,
+      "sha256": "2dc1173d90a80ee8d12641e3da3eb57c8189750dab3a631c205a6a6b09f7a655",
+      "url": null
+    },
+    {
+      "path": "assets/organs/originals/sparc-dataset.json",
+      "bytes": 3250,
+      "sha256": "668356ccbfbd8e99763ae101244d9b52dcb842bf069dd1f320e0f84410aebf41",
+      "url": null
+    },
+    {
+      "path": "assets/organs/originals/sparc-source-dataset.json",
+      "bytes": 5818,
+      "sha256": "a2cf67b3cabbd8d65d334c8c0297a2c9c0f5ed5573bde4a2fabf96b89105685f",
+      "url": null
+    },
+    {
+      "path": "assets/organs/originals/heart-n5/s0/37/18/31",
+      "bytes": 3200392,
+      "sha256": "f0628ef7861381cc4bf585c84b3306b7424483a74dc09db0d6287a82b106028b",
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-28/heart/19.85um_complete-organ_bm18/s0/37/18/31"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/subjects.xlsx",
+      "bytes": 11396,
+      "sha256": "3dd9a35a6785681bcf43168fe3ed563a4fa71d11656d7d5c1dcc86f6fd5899af",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/subjects.xlsx?versionId=WCRcu8vATnx9EkzqkYb2u_z6H2h5hlAl"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/samples.xlsx",
+      "bytes": 109615,
+      "sha256": "0ef476d9a4f435f61692a3551cdfdf528d8171fd561e1d7d571a01f12382c1e2",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/samples.xlsx?versionId=TT2oL285vuTNT.eXshCMAdcndyjlL_MK"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_05.json",
+      "bytes": 839906,
+      "sha256": "60d851b87ca0e2729b42205ff7b307cc00c66fda65d48d0f0f7a5021335f0063",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_05.json?versionId=kRuBSYGyM_ID02S2FXLwFJehX9gw6OZy"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_23.json",
+      "bytes": 17289631,
+      "sha256": "6bb1e9ebc4da0dd3023f755eb7338672b30ce5d72f022aa0ee94f8f14145c968",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_23.json?versionId=zPP41V4iWKU6nRfaSbo8Y_GAxHr.Qrab"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_26_combination_1.json",
+      "bytes": 604354,
+      "sha256": "5da716ff8635ac0527cbc6058ea3f81fc4a6fd82cd73c03711f3d07dbee43746",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_26_combination_1.json?versionId=pCm3Rjz_3kTit5lw0PJdwpEDuHCAgGyz"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_10_combination_2.json",
+      "bytes": 614699,
+      "sha256": "f14fa2f48ecef347aa36f4a23800f77e9791422e8145db472a0ceceb69e6d596",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_10_combination_2.json?versionId=DEDphLoFWYtVE5ACbsI8FKD0QHqKEQpq"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/dataset_description.xlsx",
+      "bytes": 16355,
+      "sha256": "0f78881dc05546120cd9b33761cd8af62969ac859bab557053768806b39c8b82",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/dataset_description.xlsx?versionId=Z2MQ7rNbSQig5mfCkAlIfhecbf3OPLFA"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/primary/sub-f002/L/030-scaffold/vagus_scaffold_marker.csv",
+      "bytes": 912,
+      "sha256": "d55e8f438c3f7381d37f3652af5227766efb56db30b46f348bfc2b8a104a82be",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/primary/sub-f002/L/030-scaffold/vagus_scaffold_marker.csv?versionId=PjZDnaHOh5pJjcq6IHvUZUobFjnc.PW8"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/README.md",
+      "bytes": 8181,
+      "sha256": "cb23ac53deecf8d8283e4ef323589c42c6658fe62d52a38b0a3df22bf51b5ce8",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/README.md?versionId=ql7PvkCQTGfbMmsOc32g6HXtt0EnEZ3n"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_01_combination_3.json",
+      "bytes": 699496,
+      "sha256": "eca073b12d1d1cb970c7a2720e1ab5b350bdcce729463b205043c1c30eb543fe",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_01_combination_3.json?versionId=SiAyvqCB_._nzfGDb5e9l7sXWtm226BE"
+    },
+    {
+      "path": "assets/organs/originals/sparc/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_metadata.json",
+      "bytes": 7540,
+      "sha256": "47f74f9f47acd80a738b446a65f34c359c083f72771687f505afb01382e2be14",
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/426/files/derivative/sub-f002/L/060-visualization/f002_left_human_vagus_metadata.json?versionId=Q9jipDTqePOw2LLs6UZIIxF5JQKoddB9"
+    }
+  ]
+}

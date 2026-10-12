@@ -1,4 +1,6 @@
-# POLY v0.99
+# POLY v0.100
+
+[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.100.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.100.json). Les unités physiques du scaffold restent à vérifier.
 
 [Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.99.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
 

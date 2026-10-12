@@ -1,0 +1,264 @@
+[
+  {
+    "GroupName": "left vagus nerve",
+    "Index": 0,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Lines",
+    "URL": "f002_left_human_vagus_01_combination_3.json"
+  },
+  {
+    "GroupName": "left vagus nerve branches",
+    "Index": 2,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Lines",
+    "URL": "f002_left_human_vagus_10_combination_2.json"
+  },
+  {
+    "GroupName": "orientation anterior",
+    "Index": 10,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Lines",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "vagus centroid",
+    "Index": 13,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Lines",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left thoracic vagus nerve epineurium",
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_05.json"
+  },
+  {
+    "GroupName": "left cervical vagus nerve epineurium",
+    "Index": 1,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_01_combination_3.json"
+  },
+  {
+    "GroupName": "anterior gastric branch of vagus nerve epineurium",
+    "Index": 9,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left branch between cranial nerve bundle and superior cervical ganglion epineurium",
+    "Index": 3,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left branch between vagus nerve and cervical sympathetic trunk epineurium",
+    "Index": 11,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left branch of thoracic vagus nerve to esophagus epineurium",
+    "Index": 0,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_10_combination_2.json"
+  },
+  {
+    "GroupName": "left branch of vagus nerve to ipsilateral internal carotid artery epineurium",
+    "Index": 6,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left cardiovascular branch of cervical vagus nerve epineurium",
+    "Index": 14,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left cardiovascular branch of thoracic vagus nerve epineurium",
+    "Index": 12,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left hypoglossal nerve epineurium",
+    "Index": 5,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left lateral pulmonary branch of vagus nerve epineurium",
+    "Index": 1,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_10_combination_2.json"
+  },
+  {
+    "GroupName": "left recurrent laryngeal nerve epineurium",
+    "Index": 8,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left superior laryngeal nerve epineurium",
+    "Index": 7,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left thoracic cardiopulmonary branch of vagus nerve epineurium",
+    "Index": 15,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "left unknown branch of vagus nerve epineurium",
+    "Index": 4,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "scaffold",
+    "Type": "Surfaces",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GlyphGeometriesURL": "f002_left_human_vagus_21.json",
+    "GroupName": "marker",
+    "Index": 1,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+	"DisplayLabels": true,
+    "RegionPath": "scaffold",
+    "Type": "Glyph",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GroupName": "Epineurium",
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "data",
+    "Type": "Lines",
+    "URL": [
+      "f002_left_human_vagus_22_split_1.json",
+      "f002_left_human_vagus_22_split_2.json"
+    ]
+  },
+  {
+    "GroupName": "perineurium of vagus nerve",
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "data",
+    "Type": "Lines",
+    "URL": "f002_left_human_vagus_23.json"
+  },
+  {
+    "GlyphGeometriesURL": "f002_left_human_vagus_25.json",
+    "GroupName": "orientation anterior",
+    "Index": 2,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "data",
+    "Type": "Glyph",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GlyphGeometriesURL": "f002_left_human_vagus_27.json",
+    "GroupName": "marker",
+    "Index": 0,
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+	"DisplayLabels": true,
+    "RegionPath": "data",
+    "Type": "Glyph",
+    "URL": "f002_left_human_vagus_26_combination_1.json"
+  },
+  {
+    "GlyphGeometriesURL": "f002_left_human_vagus_29.json",
+    "GroupName": "Fascicle",
+    "MorphColours": false,
+    "MorphNormals": false,
+    "MorphVertices": false,
+    "RegionPath": "data",
+    "Type": "Glyph",
+    "URL": [
+      "f002_left_human_vagus_28_split_1.json",
+      "f002_left_human_vagus_28_split_2.json"
+    ]
+  },
+  {
+    "Type": "View",
+    "URL": "f002_left_human_vagus_Layout1_view.json"
+  }
+]
