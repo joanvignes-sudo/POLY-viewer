@@ -30,7 +30,7 @@
       "reference": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
       "scale": "Reconstruction cellulaire ; pas de résolution uniforme attribuée au squelette.",
       "next": "Ajouter d’autres cellules humaines et essais documentés ; distinguer variations entre cellules et effets de préparation.",
-      "url": "https://celltypes.brain-map.org/human/experiment/morphology/637034000",
+      "url": "https://celltypes.brain-map.org/experiment/morphology/637034000",
       "local": "neurones.html?sample=allen-637034000",
       "provenance": "assets/neurons/PROVENANCE.json"
     },
