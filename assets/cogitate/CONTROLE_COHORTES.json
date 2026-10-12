@@ -1,0 +1,20 @@
+[
+  {
+    "file": "2024-01-15_subjects_demographics_msp1_curated.xlsx",
+    "detail_unique_ids": 261,
+    "all_unique_ids": 257,
+    "ids_only_in_all": 0,
+    "ids_only_in_detail": 4,
+    "inclusion_flag_disagreements_for_same_id": 1,
+    "decision": "Use modality sheets separately; do not assume the all sheet is an exact consolidation. Do not join identifiers across releases without an official correspondence."
+  },
+  {
+    "file": "subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+    "detail_unique_ids": 262,
+    "all_unique_ids": 263,
+    "ids_only_in_all": 1,
+    "ids_only_in_detail": 0,
+    "inclusion_flag_disagreements_for_same_id": 1,
+    "decision": "Use modality sheets separately; do not assume the all sheet is an exact consolidation. Do not join identifiers across releases without an official correspondence."
+  }
+]

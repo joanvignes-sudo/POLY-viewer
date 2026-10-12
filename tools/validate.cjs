@@ -64,6 +64,11 @@ for(const f of [...focal.files,...focal.fields.flatMap(f=>f.planes.flatMap(p=>Ob
 const raccord=JSON.parse(fs.readFileSync(path.join(root,'assets/registration/PROVENANCE.json')));
 for(const f of raccord.files){if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex')!==f.sha256)fail(f.path,'Empreinte raccord incorrecte.');}
 if(raccord.checks.length!==8||raccord.montage_origin.join(',')!=='5370,8'||raccord.checks.some(t=>t.ncc<.88||t.origin.some((v,i)=>Math.abs(v-raccord.montage_origin[i])>1)))fail('raccord','Correspondance locale non conforme.');
-report.ok=report.errors.length===0;report.version='0.104';report.scope='Structural and local-source integrity; not scientific validation';
+const cogitate=JSON.parse(fs.readFileSync(path.join(root,'assets/cogitate/PROVENANCE.json')));
+for(const f of cogitate.figures){if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/cogitate',f.file))).digest('hex')!==f.sha256)fail(f.file,'Figure COGITATE différente de la sortie publique des auteurs.');}
+if(cogitate.registration_to_poly_anatomy||cogitate.new_causal_chain||cogitate.individual_clinical_metadata_published_by_poly)fail('cogitate','Portée COGITATE incohérente avec les ressources acquises.');
+const cohorts=JSON.parse(fs.readFileSync(path.join(root,'assets/cogitate/COHORTES.json')));
+for(const c of cohorts){if(c.records!==c.unique_ids||c.included&&Object.values(c.included).reduce((a,b)=>a+b,0)!==c.records||c.qc&&Object.values(c.qc).reduce((a,b)=>a+b,0)!==c.records)fail('cogitate','Décompte de métadonnées incohérent.');}
+report.ok=report.errors.length===0;report.version='0.105';report.scope='Structural and local-source integrity; not scientific validation';
 console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;
 

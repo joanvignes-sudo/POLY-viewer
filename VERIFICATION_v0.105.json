@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "version": "0.105",
+  "public_metadata_files_acquired": 25,
+  "original_source_git_blobs_and_sha256_verified": true,
+  "author_figures_visually_verified": true,
+  "author_notebook_rerun": false,
+  "participant_raw_signals_acquired": false,
+  "local_event_file_inspector_tested": true,
+  "test_fixtures_are_synthetic": true,
+  "unchanged_science_files": [
+    "EXPLORATION_v0.98.json",
+    "CANON_POLY_v0.92.json",
+    "ORGANISATION_v0.98.json",
+    "IDENTITES_SOURCES_v0.98.json"
+  ],
+  "navigation": {
+    "status": "passed",
+    "author_figures_loaded": true,
+    "all_nine_factors_visible": true,
+    "onset_zero_preserved": true,
+    "missing_nonfinite_negative_duration_and_order_checks": true,
+    "invalid_structure_rejected": true,
+    "untrusted_type_labels_safe": true,
+    "export_checked": true,
+    "local_file_not_uploaded": true,
+    "no_storage_writes": true,
+    "mobile_no_page_overflow": true,
+    "synthetic_fixture_only": true,
+    "javascript_errors": []
+  },
+  "local_links_checked": 70,
+  "private_correspondence_published": false
+}

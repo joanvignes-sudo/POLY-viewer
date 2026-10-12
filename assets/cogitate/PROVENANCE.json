@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-12",
+  "scope": "Public metadata aggregates and author-saved notebook outputs; no participant raw signals acquired or author analyses rerun",
+  "sources": [
+    {
+      "repo": "cogitate-msp1",
+      "sha": "e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a"
+    },
+    {
+      "repo": "iEEG-data-release",
+      "sha": "a42cff6f898a9bef29d639b6c1adb6218db2f499"
+    },
+    {
+      "repo": "cogitate-data",
+      "sha": "6eb5d9daa664211ad3573e2a369b340979e9e926"
+    },
+    {
+      "repo": "bayes_factors",
+      "sha": "d7ba20e299ad53e07a6284f270397c6e6973e2f6"
+    }
+  ],
+  "acquired_public_files": [
+    {
+      "file": "sources\\cogitate-msp1\\LICENSE",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/LICENSE",
+      "bytes": 1076,
+      "sha256": "ac8f18d22678defc59f6022873575fa35f4720095fddb35e596745f1fd798ce0",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-msp1\\README.md",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/README.md",
+      "bytes": 1556,
+      "sha256": "e55468c50a67179a51917f19eb05469ab0b06ab176b0fb871a243dd7669e730f",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-msp1\\coglib\\beh_et\\README.md",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/coglib/beh_et/README.md",
+      "bytes": 6759,
+      "sha256": "8c2bf189a0f5de9cb57b7e2ae7de10de9b692d745457a72f89bca778b2de9c21",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-msp1\\coglib\\fmri\\logfiles_and_checks\\events-json_file-templates\\events-json_file-template_ses-V1_task-Dur.json",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/coglib/fmri/logfiles_and_checks/events-json_file-templates/events-json_file-template_ses-V1_task-Dur.json",
+      "bytes": 2825,
+      "sha256": "fad6f48ef8a833f60831afe0624567e1e80236f1a1cfee1eafd8a007a3de77a1",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-msp1\\coglib\\ieeg\\Preprocessing\\README.md",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/coglib/ieeg/Preprocessing/README.md",
+      "bytes": 2620,
+      "sha256": "26d22d48f2ae1e4222e24602889a11b63e7663da0a9bbeaa9267b9da656da18f",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-msp1\\coglib\\ieeg\\README.md",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/coglib/ieeg/README.md",
+      "bytes": 15567,
+      "sha256": "d758159ce96b58ff9ced2c47ccd3e1640174ad58eca3592e5d02a3c476523ef4",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-msp1\\coglib\\ieeg\\general_helper_functions\\bad_channels_annotation.csv",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-msp1/e60764df21ab63d39ffa726a0dd38c2b6f1e3e9a/coglib/ieeg/general_helper_functions/bad_channels_annotation.csv",
+      "bytes": 13824,
+      "sha256": "08d8be35cfbc5ba8e1b819271489c236cef904db39718debb1779b63db3eee35",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\LICENSE",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/LICENSE",
+      "bytes": 1076,
+      "sha256": "ac8f18d22678defc59f6022873575fa35f4720095fddb35e596745f1fd798ce0",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\README.md",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/README.md",
+      "bytes": 9187,
+      "sha256": "364bae47b6a8f05c1213ad5b6856d488744e0d36d20b38c08218cc22f36a2089",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\__init__.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/__init__.py",
+      "bytes": 521,
+      "sha256": "f98746a1f77bb4bd4de561dec820aaf120f32c1d53cfaf93c67f9206d53fd214",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\localization.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/localization.py",
+      "bytes": 19510,
+      "sha256": "b74e5aa3439483e1f275b4eb532c6bd019042f2c10382389fda050fc52581fc7",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\pipelines\\Decoding.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/pipelines/Decoding.py",
+      "bytes": 10527,
+      "sha256": "62de640ea09aa1dd54b7aa492070ee5cace57b612a605cd735cdf72402fe1687",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\pipelines\\OnsetResponsiveness.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/pipelines/OnsetResponsiveness.py",
+      "bytes": 11109,
+      "sha256": "9b5fa2e92083b337884b2ddb607c99d45bc33379758b0f08eca2182b1c09732a",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\pipelines\\Preprocessing.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/pipelines/Preprocessing.py",
+      "bytes": 34873,
+      "sha256": "4af7ca1982f18aadb76b83ed2e191376fa0c3f14906a8e19be39fd9ce8f89149",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\pipelines\\__init__.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/pipelines/__init__.py",
+      "bytes": 138,
+      "sha256": "b5ddbdb67d6d3336ac994c52a0cfd81719cf76aef321e63dbb30247ed24c6965",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\processing.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/processing.py",
+      "bytes": 33679,
+      "sha256": "96f661a15ce1f052dbf49d63ea64eae7af2b3d51875d84c16f0dca199cc53416",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\utils.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/utils.py",
+      "bytes": 10685,
+      "sha256": "1be7fdb65021d8faf8a44da11e69bbbc4166d2c25ef2ad6b3642f97fbf238e77",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\vizualization.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/vizualization.py",
+      "bytes": 18168,
+      "sha256": "60e02409a17c36ceb1ea84b58cacb3cd8c337fedf7fb389ca5d15ba614da243c",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\cog_ieeg\\xnat_utilities.py",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/cog_ieeg/xnat_utilities.py",
+      "bytes": 5114,
+      "sha256": "777a4842bce74c0e0d61a720a226414d1206b24fa8255e8c0a7bfcb829932eea",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\docs\\task-Dur_events_description.json",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/docs/task-Dur_events_description.json",
+      "bytes": 9581,
+      "sha256": "dc1b0ccea65ae92d426f6705f1c76814010e03b5103e8b57115341dca4cf5132",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\iEEG-data-release\\notebooks\\ieeg-data-release.ipynb",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/iEEG-data-release/a42cff6f898a9bef29d639b6c1adb6218db2f499/notebooks/ieeg-data-release.ipynb",
+      "bytes": 2312828,
+      "sha256": "7406663e906283b66c5213ffba0ca17ec874b446c4415533bfc4b0ebaac27ac5",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-data\\assets\\documentation\\linked_files\\2024-01-15_subjects_demographics_msp1_curated.xlsx",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-data/6eb5d9daa664211ad3573e2a369b340979e9e926/assets/documentation/linked_files/2024-01-15_subjects_demographics_msp1_curated.xlsx",
+      "bytes": 51369,
+      "sha256": "0d6dfb06879d2a91e5c3f5e6a8a8501a12bb5655439200c09f6101b1eb7598fb",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-data\\assets\\documentation\\linked_files\\2024-03-18_cog_meeg_exp1_batch1_bids.xlsx",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-data/6eb5d9daa664211ad3573e2a369b340979e9e926/assets/documentation/linked_files/2024-03-18_cog_meeg_exp1_batch1_bids.xlsx",
+      "bytes": 8895,
+      "sha256": "f0b31d23d7206103d1ab43dbb0a8bc71c1b6ece0f6751e3c324b3ba43740320e",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-data\\assets\\documentation\\linked_files\\subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-data/6eb5d9daa664211ad3573e2a369b340979e9e926/assets/documentation/linked_files/subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+      "bytes": 71064,
+      "sha256": "6e9da9fe6f8ae0d3c5d78a4c88118bd5360d02f44b83df577f829f6aae18a4cc",
+      "git_blob_verified": true
+    },
+    {
+      "file": "sources\\cogitate-data\\search\\search_index.json",
+      "url": "https://raw.githubusercontent.com/Cogitate-consortium/cogitate-data/6eb5d9daa664211ad3573e2a369b340979e9e926/search/search_index.json",
+      "bytes": 244963,
+      "sha256": "1c81be80ffc0decaf2b2166226be68ceaf9837e41460ac951888a1486e9e06f6",
+      "git_blob_verified": true
+    }
+  ],
+  "notebook_cells": [
+    39,
+    55,
+    51
+  ],
+  "figures": [
+    {
+      "file": "notebook-cell-39-output-1.png",
+      "sha256": "609f2c4a8be92529c12a69300dadc88624ffe152b180f9e6badaa2702675af76",
+      "modified": false
+    },
+    {
+      "file": "notebook-cell-55-output-1.png",
+      "sha256": "73e30092fd8c8e83cf666d50d1cd6f5cf4cc3aa1baeac9f2f55a781496873453",
+      "modified": false
+    }
+  ],
+  "data_paper": "https://doi.org/10.1038/s41597-025-04833-z",
+  "code_doi": "https://doi.org/10.5281/zenodo.13832169",
+  "code_license": "MIT; see LICENSE_CODE.txt",
+  "individual_clinical_metadata_published_by_poly": false,
+  "registration_to_poly_anatomy": false,
+  "new_causal_chain": false
+}

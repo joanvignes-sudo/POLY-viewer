@@ -37,5 +37,14 @@
   "organisation_audit": "AUDIT_ORGANISATION_v0.97.md",
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
-  "source_identity_audit": "AUDIT_SOURCES_v0.98.md"
+  "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
+  "presentation_version": "0.105",
+  "cogitate": {
+    "scope": "author-saved example outputs and aggregate public metadata",
+    "raw_signals_acquired": false,
+    "author_analysis_rerun": false,
+    "new_affective_chain": false,
+    "individual_registration": false,
+    "local_event_file_inspector": true
+  }
 }

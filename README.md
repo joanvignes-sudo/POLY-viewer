@@ -1,4 +1,4 @@
-# POLY v0.103
+# POLY v0.105
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -26,3 +26,8 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.104 · Champ et montage
 
 `raccord.html` compare le champ 00009 Z009 à sa zone native du montage. Translation locale (5370,8) pixels, dispersion observée de 1 pixel sur huit comparaisons. Champ 00001 non confirmé ; calibration physique et raccord 3D toujours ouverts.
+
+
+## v0.105 · COGITATE
+
+[Événements et réponses cérébrales](cogitate.html) : figures et résultats sauvegardés du tutoriel des auteurs, métadonnées publiques contrôlées, lecteur local de fichiers BIDS events.tsv. Aucune acquisition de signaux bruts ni réplication revendiquée. Volet conscience distinct du registre affectif. [Méthodes et limites](BILAN_COGITATE_v0.105.md).

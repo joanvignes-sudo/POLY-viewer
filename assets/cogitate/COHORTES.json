@@ -1,0 +1,136 @@
+[
+  {
+    "file": "2024-01-15_subjects_demographics_msp1_curated.xlsx",
+    "sheet": "ECOG",
+    "records": 39,
+    "unique_ids": 39,
+    "included": {
+      "yes": 31,
+      "no": 8
+    },
+    "qc": {
+      "passed": 28,
+      "not": 5,
+      "pending": 6
+    }
+  },
+  {
+    "file": "2024-01-15_subjects_demographics_msp1_curated.xlsx",
+    "sheet": "MEEG",
+    "records": 102,
+    "unique_ids": 102,
+    "included": {
+      "no": 5,
+      "yes": 97
+    },
+    "qc": {
+      "not": 4,
+      "passed": 97,
+      "missing": 1
+    }
+  },
+  {
+    "file": "2024-01-15_subjects_demographics_msp1_curated.xlsx",
+    "sheet": "fMRI",
+    "records": 120,
+    "unique_ids": 120,
+    "included": {
+      "no": 10,
+      "yes": 110
+    },
+    "qc": {
+      "not": 10,
+      "passed": 110
+    }
+  },
+  {
+    "file": "2024-01-15_subjects_demographics_msp1_curated.xlsx",
+    "sheet": "all",
+    "records": 257,
+    "unique_ids": 257,
+    "included": {
+      "yes": 238,
+      "no": 18,
+      "missing": 1
+    },
+    "qc": {
+      "passed": 235,
+      "not": 19,
+      "pending": 2,
+      "missing": 1
+    }
+  },
+  {
+    "file": "2024-03-18_cog_meeg_exp1_batch1_bids.xlsx",
+    "sheet": "MEEG",
+    "records": 48,
+    "unique_ids": 48,
+    "included": null,
+    "qc": null
+  },
+  {
+    "file": "subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+    "sheet": "ECOG",
+    "records": 38,
+    "unique_ids": 38,
+    "included": {
+      "yes": 31,
+      "missing": 1,
+      "no": 6
+    },
+    "qc": {
+      "passed": 28,
+      "not": 3,
+      "missing": 1,
+      "pending": 6
+    }
+  },
+  {
+    "file": "subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+    "sheet": "MEEG",
+    "records": 102,
+    "unique_ids": 102,
+    "included": {
+      "no": 5,
+      "yes": 97
+    },
+    "qc": {
+      "not": 4,
+      "passed": 97,
+      "missing": 1
+    }
+  },
+  {
+    "file": "subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+    "sheet": "fMRI",
+    "records": 122,
+    "unique_ids": 122,
+    "included": {
+      "no": 10,
+      "yes": 110,
+      "missing": 2
+    },
+    "qc": {
+      "not": 10,
+      "passed": 110,
+      "missing": 2
+    }
+  },
+  {
+    "file": "subjects_demography-EXP1-released-data_2024-04-026_v1.1.xlsx",
+    "sheet": "all",
+    "records": 263,
+    "unique_ids": 263,
+    "included": {
+      "yes": 238,
+      "missing": 4,
+      "no": 21
+    },
+    "qc": {
+      "passed": 235,
+      "not": 18,
+      "missing": 4,
+      "pending": 6
+    }
+  }
+]
