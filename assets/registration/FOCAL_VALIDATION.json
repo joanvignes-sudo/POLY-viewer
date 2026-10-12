@@ -1,0 +1,2270 @@
+{
+  "method": "Local normalized cross correlation; four disjoint patches, green and blue components, +/-12 pixels around Z009 global anchor. No new global uniqueness search. No physical or 3D calibration.",
+  "reference_origin": [
+    5370,
+    8
+  ],
+  "planes": [
+    {
+      "plane": 1,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8652225560270487,
+          "best_ncc": 0.8652225560270487,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.834114474201217,
+          "best_ncc": 0.834114474201217,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8399736782844307,
+          "best_ncc": 0.8399736782844307,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7374310384728213,
+          "best_ncc": 0.7374310384728213,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9224952096800583,
+          "best_ncc": 0.9238971814747696,
+          "best_delta": [
+            3,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8515522112936003,
+          "best_ncc": 0.8605859096797017,
+          "best_delta": [
+            5,
+            -4
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8079817866886497,
+          "best_ncc": 0.8079817866886497,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7061195748118,
+          "best_ncc": 0.7061195748118,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 2,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8958367680555323,
+          "best_ncc": 0.8958367680555323,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8661753638698357,
+          "best_ncc": 0.8661753638698357,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8693478499325186,
+          "best_ncc": 0.8693478499325186,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.776286363246484,
+          "best_ncc": 0.776286363246484,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9377623235200795,
+          "best_ncc": 0.9388444208702419,
+          "best_delta": [
+            1,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8816666058295637,
+          "best_ncc": 0.8880273208816658,
+          "best_delta": [
+            4,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.84532720518499,
+          "best_ncc": 0.84532720518499,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7520612406398747,
+          "best_ncc": 0.7525550395761013,
+          "best_delta": [
+            -1,
+            -1
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 3,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9352241050446883,
+          "best_ncc": 0.9352241050446883,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9076375658946519,
+          "best_ncc": 0.9076375658946519,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9068553535933427,
+          "best_ncc": 0.9068553535933427,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8158200965229917,
+          "best_ncc": 0.8158200965229917,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9593407390195173,
+          "best_ncc": 0.9599244762728744,
+          "best_delta": [
+            1,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9211453542961829,
+          "best_ncc": 0.9244976267853068,
+          "best_delta": [
+            3,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8980350745156781,
+          "best_ncc": 0.8980350745156781,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8098945866476839,
+          "best_ncc": 0.8153461171679041,
+          "best_delta": [
+            5,
+            2
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 4,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.960913073094087,
+          "best_ncc": 0.960913073094087,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9421224516870547,
+          "best_ncc": 0.9421224516870547,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.936377464724848,
+          "best_ncc": 0.936377464724848,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8547901206641405,
+          "best_ncc": 0.8547901206641405,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.973541762629342,
+          "best_ncc": 0.9737649627431504,
+          "best_delta": [
+            0,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9509218277602978,
+          "best_ncc": 0.952686218133817,
+          "best_delta": [
+            1,
+            -1
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9390038940734701,
+          "best_ncc": 0.9390038940734701,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8631386308161533,
+          "best_ncc": 0.8677210686179808,
+          "best_delta": [
+            2,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 5,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9699818891537615,
+          "best_ncc": 0.9699818891537615,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9641939975508522,
+          "best_ncc": 0.9641939975508522,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9510969944779654,
+          "best_ncc": 0.9510969944779654,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8866361661003934,
+          "best_ncc": 0.8866361661003934,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9792533865106862,
+          "best_ncc": 0.9792533865106862,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9679657600577016,
+          "best_ncc": 0.9679657600577016,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9592675903232691,
+          "best_ncc": 0.9592675903232691,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9174264329709129,
+          "best_ncc": 0.9174264329709129,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 6,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9716723960646508,
+          "best_ncc": 0.9716723960646508,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9657278394036688,
+          "best_ncc": 0.9657278394036688,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9572900681452218,
+          "best_ncc": 0.9572900681452218,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9133108619048236,
+          "best_ncc": 0.9133108619048236,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9815610290497043,
+          "best_ncc": 0.9815610290497043,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9721912081649356,
+          "best_ncc": 0.9721912081649356,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9684194926628535,
+          "best_ncc": 0.9684194926628535,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9373706279289838,
+          "best_ncc": 0.9373706279289838,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 7,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9689415968464407,
+          "best_ncc": 0.9689415968464407,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9603073700022519,
+          "best_ncc": 0.9603073700022519,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9556050341758348,
+          "best_ncc": 0.9556050341758348,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9235313607778649,
+          "best_ncc": 0.9235313607778649,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9807429776756533,
+          "best_ncc": 0.9807429776756533,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9694645303998958,
+          "best_ncc": 0.9694645303998958,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9678583614377472,
+          "best_ncc": 0.9678583614377472,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9366470572411253,
+          "best_ncc": 0.9366470572411253,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 8,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9619841785419225,
+          "best_ncc": 0.9619841785419225,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9474952318834032,
+          "best_ncc": 0.9474952318834032,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9473973215659591,
+          "best_ncc": 0.9473973215659591,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9223191638513681,
+          "best_ncc": 0.9223191638513681,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9791882147941089,
+          "best_ncc": 0.9791882147941089,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9624553449983028,
+          "best_ncc": 0.9624553449983028,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.957806714463893,
+          "best_ncc": 0.957806714463893,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9131483826637065,
+          "best_ncc": 0.9131483826637065,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 9,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9483640241470775,
+          "best_ncc": 0.9483640241470775,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9290943705135178,
+          "best_ncc": 0.9290943705135178,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9358576554533004,
+          "best_ncc": 0.9358576554533004,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9019454242672909,
+          "best_ncc": 0.9019454242672909,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9747449924817444,
+          "best_ncc": 0.9747449924817444,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9523488989995575,
+          "best_ncc": 0.9523488989995575,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9427665689816426,
+          "best_ncc": 0.9442040075517509,
+          "best_delta": [
+            -1,
+            -1
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.886274083167709,
+          "best_ncc": 0.886274083167709,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 10,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9260991733477141,
+          "best_ncc": 0.9260991733477141,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9003895486135193,
+          "best_ncc": 0.9003895486135193,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.918376222158022,
+          "best_ncc": 0.918376222158022,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.862836392922371,
+          "best_ncc": 0.862836392922371,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9658969650185173,
+          "best_ncc": 0.9658969650185173,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9322253692131135,
+          "best_ncc": 0.9322253692131135,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9292680167779762,
+          "best_ncc": 0.9320684238473527,
+          "best_delta": [
+            -1,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8620093785959582,
+          "best_ncc": 0.8624945872349206,
+          "best_delta": [
+            1,
+            -1
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 11,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8940906712495377,
+          "best_ncc": 0.8940906712495377,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8682289514680994,
+          "best_ncc": 0.8693075053329181,
+          "best_delta": [
+            2,
+            -1
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8932422079927389,
+          "best_ncc": 0.8932422079927389,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8133992873363819,
+          "best_ncc": 0.8133992873363819,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9502438473614322,
+          "best_ncc": 0.9502438473614322,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.9071980384621638,
+          "best_ncc": 0.9081543676099456,
+          "best_delta": [
+            1,
+            -1
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9095524289911958,
+          "best_ncc": 0.9125603684861024,
+          "best_delta": [
+            -1,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8302587198776593,
+          "best_ncc": 0.8331403743643195,
+          "best_delta": [
+            1,
+            -1
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 12,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8579556146956999,
+          "best_ncc": 0.8585252965645545,
+          "best_delta": [
+            3,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8351077639503016,
+          "best_ncc": 0.8384109570439988,
+          "best_delta": [
+            5,
+            -1
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8557225133154336,
+          "best_ncc": 0.8557225133154336,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7641082284736391,
+          "best_ncc": 0.7641082284736391,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9295886797957116,
+          "best_ncc": 0.9300176304330823,
+          "best_delta": [
+            1,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8753690271859977,
+          "best_ncc": 0.8777774904893616,
+          "best_delta": [
+            3,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8772529671012677,
+          "best_ncc": 0.8798306632788747,
+          "best_delta": [
+            -1,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7813437109851015,
+          "best_ncc": 0.7862270638501222,
+          "best_delta": [
+            2,
+            -2
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 13,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8248969984999889,
+          "best_ncc": 0.8282412214268152,
+          "best_delta": [
+            4,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8065901574397312,
+          "best_ncc": 0.8126361163132306,
+          "best_delta": [
+            5,
+            -1
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8167442346811715,
+          "best_ncc": 0.8168685680624841,
+          "best_delta": [
+            -2,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7190020863611009,
+          "best_ncc": 0.7190020863611009,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.9085151989697341,
+          "best_ncc": 0.9097787934584762,
+          "best_delta": [
+            2,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.8423229768170288,
+          "best_ncc": 0.846589996428245,
+          "best_delta": [
+            4,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8357585955673158,
+          "best_ncc": 0.8375582077992313,
+          "best_delta": [
+            -1,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7261821839723616,
+          "best_ncc": 0.733520408585893,
+          "best_delta": [
+            2,
+            -3
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 14,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.7864723171105557,
+          "best_ncc": 0.7925657413160537,
+          "best_delta": [
+            5,
+            -4
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7788901798474008,
+          "best_ncc": 0.7878668406987894,
+          "best_delta": [
+            6,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.772569579948553,
+          "best_ncc": 0.7731868066940526,
+          "best_delta": [
+            -3,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.6778315124569106,
+          "best_ncc": 0.6778315124569106,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8841627047135812,
+          "best_ncc": 0.8870912581709894,
+          "best_delta": [
+            4,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.811620192547185,
+          "best_ncc": 0.8179713389938436,
+          "best_delta": [
+            6,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.7860722738250612,
+          "best_ncc": 0.7878396654104868,
+          "best_delta": [
+            0,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.6640381004583191,
+          "best_ncc": 0.6730550897346027,
+          "best_delta": [
+            3,
+            -4
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 15,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.7546310689781064,
+          "best_ncc": 0.7639139472571751,
+          "best_delta": [
+            6,
+            -6
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7530049345367065,
+          "best_ncc": 0.7658209443407511,
+          "best_delta": [
+            7,
+            -5
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.726868679294652,
+          "best_ncc": 0.7297372947645975,
+          "best_delta": [
+            -5,
+            -4
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.6426612582921496,
+          "best_ncc": 0.6426612582921496,
+          "best_delta": [
+            0,
+            0
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8583877462725343,
+          "best_ncc": 0.8623363236617393,
+          "best_delta": [
+            6,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.784091528506152,
+          "best_ncc": 0.7930343508316384,
+          "best_delta": [
+            6,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.7347389952400506,
+          "best_ncc": 0.7351912612762711,
+          "best_delta": [
+            1,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.6079045194885326,
+          "best_ncc": 0.6171279876970583,
+          "best_delta": [
+            4,
+            -4
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 16,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.717664111991005,
+          "best_ncc": 0.7327812012483372,
+          "best_delta": [
+            6,
+            -9
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7265595121126605,
+          "best_ncc": 0.7443958282191043,
+          "best_delta": [
+            8,
+            -6
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.6919090394050427,
+          "best_ncc": 0.6936899932417822,
+          "best_delta": [
+            -6,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.6149053586652027,
+          "best_ncc": 0.6171605779307437,
+          "best_delta": [
+            -4,
+            2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8393098972961851,
+          "best_ncc": 0.8437334846351964,
+          "best_delta": [
+            5,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7656671279144756,
+          "best_ncc": 0.7750318002708121,
+          "best_delta": [
+            9,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.6841313550769337,
+          "best_ncc": 0.6864455824088969,
+          "best_delta": [
+            1,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.5604340807016059,
+          "best_ncc": 0.5724638735835691,
+          "best_delta": [
+            5,
+            -5
+          ],
+          "search_boundary": false
+        }
+      ]
+    },
+    {
+      "plane": 17,
+      "checks": [
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.6825292864470552,
+          "best_ncc": 0.7019948986562212,
+          "best_delta": [
+            4,
+            -11
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7005645502372875,
+          "best_ncc": 0.7195051509258008,
+          "best_delta": [
+            8,
+            -9
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.6540967363978109,
+          "best_ncc": 0.6578457130881686,
+          "best_delta": [
+            -8,
+            -4
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            60,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.5954249638278963,
+          "best_ncc": 0.5998023257212161,
+          "best_delta": [
+            -5,
+            2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.8179324928016637,
+          "best_ncc": 0.8228492034301128,
+          "best_delta": [
+            10,
+            -3
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            80,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.7465767364002308,
+          "best_ncc": 0.7582961438208221,
+          "best_delta": [
+            11,
+            -2
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 1,
+          "ncc_at_reference": 0.6384492885020707,
+          "best_ncc": 0.6411714170782788,
+          "best_delta": [
+            3,
+            -4
+          ],
+          "search_boundary": false
+        },
+        {
+          "patch": [
+            500,
+            400,
+            280,
+            240
+          ],
+          "component": 2,
+          "ncc_at_reference": 0.51949074928738,
+          "best_ncc": 0.5326355132641813,
+          "best_delta": [
+            5,
+            -7
+          ],
+          "search_boundary": false
+        }
+      ]
+    }
+  ]
+}

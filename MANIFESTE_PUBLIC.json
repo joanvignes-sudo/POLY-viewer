@@ -1,5 +1,5 @@
 {
-  "version": "0.105",
+  "version": "0.106",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -1235,6 +1235,11 @@
       "path": "assets/focal-v0103.js",
       "bytes": 7083,
       "sha256": "40a2d5c3c076c1bd0af574842873be09e87cd826043f92038d6ff430e4a5fcfa"
+    },
+    {
+      "path": "assets/focal-v0106.js",
+      "bytes": 7132,
+      "sha256": "5d973178b0798014901e6b9ed98de55cf824ccf7f636c3ec98ab80b7d9cb08c5"
     },
     {
       "path": "assets/histology/Credits.txt",
@@ -4857,6 +4862,11 @@
       "sha256": "03562c1a17e3570901db93c3e0eeeba42b38b608838c1de1d8f2a7878a2d6bb9"
     },
     {
+      "path": "assets/raccord-v0106.js",
+      "bytes": 7168,
+      "sha256": "07a4bcf0f8a37390fd2b5d9f97c6a588b591dd899a804e8973a51a0e460b5cd3"
+    },
+    {
       "path": "assets/registration/context-field9.png",
       "bytes": 5289017,
       "sha256": "ea4a0a7cd46b533cbcadbaac088b2a360463ae23742b73a8df591ceec14d6bee"
@@ -4865,6 +4875,11 @@
       "path": "assets/registration/CREDITS.md",
       "bytes": 2171,
       "sha256": "243ad29ff09a892adabf6b5042ff1de896f79874c817ef14c1aa833d7d3fa88a"
+    },
+    {
+      "path": "assets/registration/FOCAL_VALIDATION.json",
+      "bytes": 50049,
+      "sha256": "5a582c0a71b7f1f479b51cdab9f91352e27095a65b0bb8c58311cbe91bed98cd"
     },
     {
       "path": "assets/registration/montage-field9.png",
@@ -6132,6 +6147,11 @@
       "sha256": "a642455a8add772fc4bc583361a96b942f4b2d0ab5d896def2aeb90ac6aab412"
     },
     {
+      "path": "BILAN_RACCORD_v0.106.md",
+      "bytes": 1171,
+      "sha256": "baab4fb36c57515f8120d5467bf35cf1b8c440e375d26246c324c3a43130caf3"
+    },
+    {
       "path": "BILAN_TESTS_v0.96.1.md",
       "bytes": 1710,
       "sha256": "4aa17d01e5205aef72f93526ea7f45117590bfc30cc77119fa41f9b204709881"
@@ -6139,7 +6159,7 @@
     {
       "path": "canaux.html",
       "bytes": 5606,
-      "sha256": "9c4003805aefb006707fe4349be51ccf6b9589631bc72bc1cd98d535779b3e22"
+      "sha256": "41437cd0be1e038e2cba27fdeea89f9db9e0ad8d5aa8399ef8fe58fe9b6bbef9"
     },
     {
       "path": "canon.html",
@@ -6414,12 +6434,12 @@
     {
       "path": "PUBLICATION_SCOPE.json",
       "bytes": 2086,
-      "sha256": "c98fadd3749c3aa16c4e04e954cd276b89dae0ee7a3041d78259f9be158161dc"
+      "sha256": "74126563fac4429b2c77da59946c3727f9204cdb8b0123e7a0dcdf8e5c63583c"
     },
     {
       "path": "raccord.html",
-      "bytes": 6035,
-      "sha256": "6c9af184c66b2b3f11fef28476c550a9a55b5f61eb1b923511ab4e0e66b07bfb"
+      "bytes": 6667,
+      "sha256": "bce2d251cf0b8c6a16e35e7e768783cef24dc7b3d0772686e2aaadae24a4b1b5"
     },
     {
       "path": "README.md",
@@ -6510,6 +6530,11 @@
       "path": "VERIFICATION_v0.105.json",
       "bytes": 1117,
       "sha256": "477c63794feb83e3c46b5d72467b0c67e7b003f88666ea5c3e082e13645307e7"
+    },
+    {
+      "path": "VERIFICATION_v0.106.json",
+      "bytes": 326,
+      "sha256": "5399a49427e39f1b970a9c7b40aad2773f45705a8ded37455bd576a82c9db7d5"
     },
     {
       "path": "VERIFICATION_v0.92.json",

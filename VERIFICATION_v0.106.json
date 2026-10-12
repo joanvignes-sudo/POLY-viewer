@@ -1,0 +1,12 @@
+{
+  "version": "0.106",
+  "status": "passed",
+  "local_patch_checks": 136,
+  "planes_browser_tested": 17,
+  "share_plane_restored": true,
+  "channel_return_preserves_plane": true,
+  "mobile_visual_checked": true,
+  "javascript_errors": 0,
+  "physical_calibration": false,
+  "new_global_uniqueness_search": false
+}
