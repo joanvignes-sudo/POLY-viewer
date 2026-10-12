@@ -3862,6 +3862,11 @@
       "sha256": "e0f21d38020f54e0870af048f075329c18f930d0d88b9d95df03953a5de8c1de"
     },
     {
+      "path": "assets/organs/CREDITS.md",
+      "bytes": 2330,
+      "sha256": "0e6fb8b35a9131a6ed79fb8ccef7ac383c9dba53afa33a01c083efdc2f4a123d"
+    },
+    {
       "path": "assets/organs/N5_ACQUISITION.json",
       "bytes": 9166,
       "sha256": "88222276efb59f93c616ba5783e041da1877b5ece5e605dfc21f5093b54b0309"
@@ -5253,8 +5258,8 @@
     },
     {
       "path": "organes.html",
-      "bytes": 7244,
-      "sha256": "95e389a442944a1d2310d87849a4617a4698c2f408cb7a3b31999f3ca0e8c329"
+      "bytes": 7330,
+      "sha256": "807b2b06748b7f37d76b1cb0bb7c4e37cb48926cc3a788971d1fac103618456e"
     },
     {
       "path": "suite.html",
