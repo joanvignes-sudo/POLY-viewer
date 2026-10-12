@@ -1,5 +1,5 @@
 {
-  "version": "0.94",
+  "version": "0.95",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -13,8 +13,8 @@
     },
     {
       "path": "anatomie.html",
-      "bytes": 5835,
-      "sha256": "31093672cbfb5728855723791b867f85c67ff2c1c780e03e19796e3920b3c8be"
+      "bytes": 6020,
+      "sha256": "59324043296e9d6a8e2fd8180c18b9df361d95d7e77a4ac0085ff1cbdf4297bc"
     },
     {
       "path": "ANCRAGE_HUMAIN_v0.94.json",
@@ -270,6 +270,81 @@
       "path": "assets/anatomy-viewer-v094.js",
       "bytes": 8511,
       "sha256": "c50e02fa0a7b227b6b87b0ceab2af3cbd3746bad7db78072d4aa9443c64c934f"
+    },
+    {
+      "path": "assets/bigbrain/Credits.txt",
+      "bytes": 5130,
+      "sha256": "48f3ae98980c107cd9281e84dc6fd5aca55c885b821ce6585ac24c98ed479854"
+    },
+    {
+      "path": "assets/bigbrain/layer0_left_327680.gii.gz",
+      "bytes": 3599307,
+      "sha256": "c5dcc391a4968ec2024d1bab6d2ef0a8c9d588abe23592137608114b544119ce"
+    },
+    {
+      "path": "assets/bigbrain/layer0_right_327680.gii.gz",
+      "bytes": 3625737,
+      "sha256": "a92a37cdc7aedf2a4a5c4e367f0d6aa7b7d9cd15ae7d8ce53b839d8bd55391ee"
+    },
+    {
+      "path": "assets/bigbrain/layer1_left_327680.gii.gz",
+      "bytes": 3599925,
+      "sha256": "94c0c96004cadc2eb4461e667180975ff9bd71a6d24107cc09b8f99e7535f41f"
+    },
+    {
+      "path": "assets/bigbrain/layer2_left_327680.gii.gz",
+      "bytes": 3599806,
+      "sha256": "d21a667422e2878435b4b42fdeb61dad86b6876ac2ed2dc681f4f008a760d657"
+    },
+    {
+      "path": "assets/bigbrain/layer3_left_327680.gii.gz",
+      "bytes": 3599409,
+      "sha256": "fcfb1bd16c3754d551f24e39cff03060dc5e406aff26c2c908f3dcfc1810a1b1"
+    },
+    {
+      "path": "assets/bigbrain/layer4_left_327680.gii.gz",
+      "bytes": 3599161,
+      "sha256": "174e3806d483ecf32a5a87827b7054ea33b9d06fe3d294ed6d3f524ba40bcbc1"
+    },
+    {
+      "path": "assets/bigbrain/layer5_left_327680.gii.gz",
+      "bytes": 3598197,
+      "sha256": "6126cc8aee4796c87ea610220d8af8558bac80ccfa5fe1eed8b982f59ff56df4"
+    },
+    {
+      "path": "assets/bigbrain/layer6_left_327680.gii.gz",
+      "bytes": 3596340,
+      "sha256": "fdc6c297e924de8108a331daa3bb1155323ce42c99a8a8f04539be9065820763"
+    },
+    {
+      "path": "assets/bigbrain/lh.BigBrain.mask.label.txt",
+      "bytes": 327684,
+      "sha256": "da5f4165658bcef38968e991a732a3ba09e972b38ec651c2cd5c6a5399294ec7"
+    },
+    {
+      "path": "assets/bigbrain/License.txt",
+      "bytes": 18985,
+      "sha256": "c50c4a486b7ea8b36046490427598fb7cf2aa8483f4b41f27f6756480d19db37"
+    },
+    {
+      "path": "assets/bigbrain/PROVENANCE.json",
+      "bytes": 21846,
+      "sha256": "7544e77e16bac371ad6d65db21bd9b9dbf78b49373870080b3394bd990909567"
+    },
+    {
+      "path": "assets/bigbrain/README.md",
+      "bytes": 267,
+      "sha256": "4aaabac11b11a849f9000e4eeacf7fc225d878d644cc4a0fda5b938e0414c002"
+    },
+    {
+      "path": "assets/bigbrain/surfaces.bin",
+      "bytes": 12505656,
+      "sha256": "39bf153516c33bd6f7dab2d0771e79ec36ec743f8dbc5e326436069634fdc518"
+    },
+    {
+      "path": "assets/bigbrain-v095.js",
+      "bytes": 7553,
+      "sha256": "93bf144ca957b466e76db3aaffffe9a806806052f7f8332f2a37293cccfcc65d"
     },
     {
       "path": "assets/c08/C08_F01.js",
@@ -1577,6 +1652,11 @@
       "sha256": "dfd445f4ed5cef2066c0f14bf9eba7458c2b251de4d15491efde616136a301ea"
     },
     {
+      "path": "BILAN_BIGBRAIN_v0.95.md",
+      "bytes": 3736,
+      "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
+    },
+    {
       "path": "canon.html",
       "bytes": 16045,
       "sha256": "988947819690cfbdc92844e0aac24d366ad131275b5dbfcd213cbf6d3fcf74e2"
@@ -1628,8 +1708,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 9320,
-      "sha256": "2f59175464668b11ee4827b1ce6ca0cd44bcb5136c88284b87707103c8dee1db"
+      "bytes": 9600,
+      "sha256": "4f7e4e51cce0ace9af738ceba48247f8b6df67e431b058227f1c8d1e54cfa30c"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -1637,14 +1717,19 @@
       "sha256": "e4585cab6a9a8e329d059cc5499acc5ff268f1a242f8960af4f0bf5cd6a28235"
     },
     {
+      "path": "microstructures.html",
+      "bytes": 6488,
+      "sha256": "6062b9580e727dc1b566e620a17ea340b4cfcbf7e6f1133f2104c5236d0d44a5"
+    },
+    {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 911,
-      "sha256": "8afb34b95bfbcf8aba58c659329a99f94554b95801853b8b790006a6d323e9ed"
+      "bytes": 1239,
+      "sha256": "ec42daba30f14d46a8db917f627e605dbca0e544d1fba8cae807a39888423680"
     },
     {
       "path": "README.md",
-      "bytes": 716,
-      "sha256": "fa03beda691ba428002a71c5ae4f83ae42198a5e44292b165790363cf9a576f1"
+      "bytes": 829,
+      "sha256": "2bdd680c8ad250ddb09a334ddb45a717c144441ab3ebfb7fc9814312fac90d60"
     },
     {
       "path": "ROBUSTESSE_v0.94.json",
@@ -1653,13 +1738,18 @@
     },
     {
       "path": "suite.html",
-      "bytes": 5824,
-      "sha256": "bbff79ffefdc2f18a93bee64f66a7608cecc32a89721701800dcaca670245643"
+      "bytes": 6290,
+      "sha256": "2189a6ef0a9f964ff7ce7f99cf2774f676d385394d4b1325789b4c2a9a60b73e"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 1888,
-      "sha256": "a73c8ddab153f453b667d4560ed948f7bdbcb30bf0a32a0bec0035c3f5415fd2"
+      "bytes": 2393,
+      "sha256": "886a4c7f4b7a8056320fdc202c4aef8c18cb419e369eec7b24d49b631a1c92d2"
+    },
+    {
+      "path": "VERIFICATION_BIGBRAIN_v0.95.json",
+      "bytes": 589,
+      "sha256": "2f617a43f4a43ffd169d05af182a4973c9cb0495f804c7ce48a2fc9b5a6eb9c4"
     },
     {
       "path": "VERIFICATION_v0.92.json",
@@ -1675,6 +1765,11 @@
       "path": "VERIFICATION_v0.94.json",
       "bytes": 654,
       "sha256": "4797f8c4972c6533e72be723e300a6d3cde537fe1a70121b8f63a21bfc942ac7"
+    },
+    {
+      "path": "VERIFICATION_v0.95.json",
+      "bytes": 654,
+      "sha256": "0ce94be2b758c009dcc46472398b8aa23b5ac4ffffd510cc9f800a21b9528ea5"
     }
   ]
 }

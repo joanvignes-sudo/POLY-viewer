@@ -1,5 +1,5 @@
 {
-  "version": "0.94",
+  "version": "0.95",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -16,5 +16,12 @@
   "geometry_scope": "Atlas CerebrA/MNI2009cSym dérivé de données IRM ; ni géométrie individuelle P8 ni recalage au corps schématique",
   "anatomical_components": 17,
   "human_anatomical_binding": "P8 · contexte amygdalien uniquement",
-  "usability": "Protocoles préparés, études auprès de lecteurs non réalisées"
+  "usability": "Protocoles préparés, études auprès de lecteurs non réalisées",
+  "bigbrain": {
+    "integration": "Two context pial surfaces; three left cortical patches, each seven reconstructed boundary surfaces",
+    "reference": "BigBrain native histological surface coordinates, mm",
+    "registration_to_current_atlas": null,
+    "neurons_or_synapses": false,
+    "functional_propagation": false
+  }
 }

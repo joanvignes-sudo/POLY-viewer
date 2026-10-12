@@ -1,3 +1,6 @@
+# POLY v0.95
+
+Première exploration BigBrain : microstructures.html. Bilan et limites : BILAN_BIGBRAIN_v0.95.md.
 # POLY v0.94
 Atelier public des chaînes biologiques et première référence anatomique humaine.
 - index.html : 14 chaînes et 50 parcours, étapes, relations, mesures et annotations.
