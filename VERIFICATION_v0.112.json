@@ -118,6 +118,11 @@
     "mobile_no_overflow": true,
     "page_errors": []
   },
+  "detail_catalog_link": {
+    "status": "passed",
+    "direct_url_selects_matching_source_row": true,
+    "detail_to_catalog_link_selects_matching_row": true
+  },
   "links_checked": 123,
   "canonical_unchanged": [
     "EXPLORATION_v0.98.json",

@@ -1373,8 +1373,8 @@
     },
     {
       "path": "assets/h01-catalog-v0112.js",
-      "bytes": 8340,
-      "sha256": "5f4f735f04f110f0ec5771de4ffbffef9a628de71962b106f694fff2e2f21977"
+      "bytes": 8513,
+      "sha256": "c083b49afffa6e0ba4577d8cd5831ed4dd06dd8899c646e94d806edb666ac44f"
     },
     {
       "path": "assets/h01-details/ACQUISITION.json",
@@ -2828,8 +2828,8 @@
     },
     {
       "path": "assets/h01-em-v0112.js",
-      "bytes": 22567,
-      "sha256": "4e0630c0c88fb2d2f29e8aef4c505955cae3bab1bb3f26127e9322a019e7da6c"
+      "bytes": 22732,
+      "sha256": "a50d9c464cd01e8f2a2e026af0e30236fecb51046f34909e01982db2277e9a49"
     },
     {
       "path": "assets/h01-evidence/111306169-excitatory.u8.gz",
@@ -11788,8 +11788,8 @@
     },
     {
       "path": "microscopie.html",
-      "bytes": 16639,
-      "sha256": "79694ba64a16f934d4bff54dd991ee270a4f0b2d0a1cb19a526d3201a203be8b"
+      "bytes": 16664,
+      "sha256": "7e6677a9ebcede92ef0d125cae258b1432980fc30f2765d34898b337705cde1c"
     },
     {
       "path": "microstructures.html",
@@ -11988,8 +11988,8 @@
     },
     {
       "path": "VERIFICATION_v0.112.json",
-      "bytes": 3816,
-      "sha256": "48def5ed50b65040a6d01a4ea8297708c6e925d8d6cfe7d3a52be2ca94646eb3"
+      "bytes": 3985,
+      "sha256": "ce0cdc91e357e2ce88e60ca1d38e3c8f04785f506271e6b728a19d59c60a2e74"
     },
     {
       "path": "VERIFICATION_v0.92.json",
