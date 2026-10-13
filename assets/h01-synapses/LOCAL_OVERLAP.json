@@ -1,0 +1,11 @@
+{
+  "proofread_target": "1072605926",
+  "comparison": "local voxel overlap only; not a global identity mapping",
+  "target_voxels": 4066809,
+  "c3_labels_overlapping_target": [
+    {
+      "id": "1072605926",
+      "voxels": 4066809
+    }
+  ]
+}

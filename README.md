@@ -1,4 +1,4 @@
-# POLY v0.109
+# POLY v0.110
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -43,3 +43,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.109 · Images H01 et squelette dans un repère commun
 
 [Microscopie électronique H01](microscopie.html) : trois fenêtres image + masque source, du voisinage au pas natif 4 × 4 × 33 nm. Même segment 1072605926 que le squelette existant. Vérification indépendante des valeurs avec TensorStore ; aucune synapse ni activité inférée. [Bilan](BILAN_H01_EM_v0.109.md) · [Inventaire actuel](INVENTAIRE_ECHELLES_v0.109.json).
+
+## v0.110 · Annotations synaptiques H01
+
+[Explorer l’annotation 95480769](microscopie.html?level=synapse4&synapse=95480769&v=0.110) : six annotations associées au neurone dans un voisinage de 180 annotations source, affichage 2D/3D et nouveau détail natif. Relations pré/post publiées, sans activité ni délai inféré. [Bilan](BILAN_H01_SYNAPSES_v0.110.md) · [Inventaire actuel](INVENTAIRE_ECHELLES_v0.110.json).

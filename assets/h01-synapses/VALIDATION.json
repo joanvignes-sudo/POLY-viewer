@@ -1,0 +1,235 @@
+{
+  "status": "passed",
+  "volume_decoder": "TensorStore 0.1.85 independent of the image range decoder",
+  "volume_checks": [
+    {
+      "layer": "4nm_raw",
+      "values": 2097152,
+      "differing_values": 0,
+      "independent_decoder_comparison": true
+    },
+    {
+      "layer": "proofread_104",
+      "values": 524288,
+      "differing_values": 0,
+      "independent_decoder_comparison": false,
+      "scope": "Repeated TensorStore read; consistency only, not an independent decoder check."
+    }
+  ],
+  "annotation_records_checked": 180,
+  "annotation_check": "Spatial multi-record decoder and by-id single-record decoder agree exactly; uint64 retained as decimal strings; independent NumPy re-read of original by-id payloads.",
+  "target_annotation_count": 6,
+  "all_target_relations": "postsynaptic",
+  "ground_truth": [
+    {
+      "file": "ei_gt_from_2367_verified_connections.csv",
+      "rows": 2367,
+      "labels": {
+        "E": 1267,
+        "I": 1100
+      },
+      "scope": "Site-pair IDs only; no validated mapping to the C3 annotation IDs used in this viewer."
+    },
+    {
+      "file": "ei_gt_from_2945_synapses_from_104_proofread_neurons.csv",
+      "rows": 2945,
+      "labels": {
+        "E": 1708,
+        "I": 1237
+      },
+      "scope": "Site-pair IDs only; no validated mapping to the C3 annotation IDs used in this viewer."
+    }
+  ],
+  "limits": [
+    "By-id/spatial agreement is a format consistency check, not biological validation.",
+    "C3 type codes have no enum labels in source metadata; no excitatory/inhibitory interpretation applied."
+  ],
+  "endpoint_checks": [
+    {
+      "annotation": "95480769",
+      "endpoint": 0,
+      "source_relation": "pre_synaptic_cell",
+      "voxel": [
+        346251,
+        78298,
+        1237
+      ],
+      "c3_label": "10403564222",
+      "expected_ids": [
+        "10403564222"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "95480769",
+      "endpoint": 1,
+      "source_relation": "post_synaptic_cell",
+      "voxel": [
+        346249,
+        78280,
+        1238
+      ],
+      "c3_label": "1072605926",
+      "expected_ids": [
+        "1072605926"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "111306169",
+      "endpoint": 0,
+      "source_relation": "pre_synaptic_cell",
+      "voxel": [
+        346410,
+        77795,
+        1259
+      ],
+      "c3_label": "0",
+      "expected_ids": [
+        "19166967430"
+      ],
+      "matches": false
+    },
+    {
+      "annotation": "111306169",
+      "endpoint": 1,
+      "source_relation": "post_synaptic_cell",
+      "voxel": [
+        346402,
+        77793,
+        1259
+      ],
+      "c3_label": "1072605926",
+      "expected_ids": [
+        "1072605926"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "54213720",
+      "endpoint": 0,
+      "source_relation": "pre_synaptic_cell",
+      "voxel": [
+        346663,
+        78676,
+        910
+      ],
+      "c3_label": "10374449841",
+      "expected_ids": [
+        "10374449841"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "54213720",
+      "endpoint": 1,
+      "source_relation": "post_synaptic_cell",
+      "voxel": [
+        346657,
+        78667,
+        910
+      ],
+      "c3_label": "0",
+      "expected_ids": [
+        "1072605926"
+      ],
+      "matches": false
+    },
+    {
+      "annotation": "143278591",
+      "endpoint": 0,
+      "source_relation": "pre_synaptic_cell",
+      "voxel": [
+        346063,
+        77436,
+        1240
+      ],
+      "c3_label": "19152453951",
+      "expected_ids": [
+        "19152453951"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "143278591",
+      "endpoint": 1,
+      "source_relation": "post_synaptic_cell",
+      "voxel": [
+        346072,
+        77439,
+        1240
+      ],
+      "c3_label": "0",
+      "expected_ids": [
+        "1072605926"
+      ],
+      "matches": false
+    },
+    {
+      "annotation": "145894292",
+      "endpoint": 0,
+      "source_relation": "pre_synaptic_cell",
+      "voxel": [
+        345809,
+        78704,
+        1184
+      ],
+      "c3_label": "19181495300",
+      "expected_ids": [
+        "19181495300"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "145894292",
+      "endpoint": 1,
+      "source_relation": "post_synaptic_cell",
+      "voxel": [
+        345813,
+        78693,
+        1184
+      ],
+      "c3_label": "1072605926",
+      "expected_ids": [
+        "1072605926"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "87751454",
+      "endpoint": 0,
+      "source_relation": "pre_synaptic_cell",
+      "voxel": [
+        345596,
+        77837,
+        917
+      ],
+      "c3_label": "10301663798",
+      "expected_ids": [
+        "10301663798"
+      ],
+      "matches": true
+    },
+    {
+      "annotation": "87751454",
+      "endpoint": 1,
+      "source_relation": "post_synaptic_cell",
+      "voxel": [
+        345610,
+        77836,
+        917
+      ],
+      "c3_label": "1072605926",
+      "expected_ids": [
+        "1072605926"
+      ],
+      "matches": true
+    }
+  ],
+  "endpoint_summary": {
+    "checked": 12,
+    "matching": 9,
+    "unlabeled": 3,
+    "scope": "A zero label is retained as unavailable segmentation at that exact voxel; no identity is substituted or spatial correction applied."
+  }
+}

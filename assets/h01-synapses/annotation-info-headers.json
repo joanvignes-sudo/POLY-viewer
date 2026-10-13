@@ -1,0 +1,20 @@
+{
+  "Content-Type": "application/json",
+  "X-GUploader-UploadID": "AP6rU81lNmf7yiSzO3y8LmhvQMhQee1rCZ2mWjkJtnC14Qi6wIDRUIowleHlshdcBbkujMlwb0GDrtI",
+  "Expires": "Tue, 13 Oct 2026 16:02:10 GMT",
+  "Date": "Tue, 13 Oct 2026 15:02:10 GMT",
+  "Cache-Control": "public, max-age=3600",
+  "Last-Modified": "Thu, 29 Jul 2021 20:11:53 GMT",
+  "ETag": "\"098190bb2bdfb65ae882a276ba7ce697\"",
+  "x-goog-generation": "1627589513043327",
+  "x-goog-metageneration": "1",
+  "x-goog-stored-content-encoding": "identity",
+  "x-goog-stored-content-length": "5955",
+  "x-goog-hash": "crc32c=j6NTRA==",
+  "x-goog-storage-class": "NEARLINE",
+  "Accept-Ranges": "bytes",
+  "Content-Length": "5955",
+  "Server": "UploadServer",
+  "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+  "Connection": "close"
+}

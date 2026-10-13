@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.109",
+  "presentation_version": "0.110",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -90,5 +90,21 @@
     "synapse_annotations": false,
     "new_activity": false,
     "registration_to_other_specimen": null
+  },
+  "h01_synapses": {
+    "source_release": "20210729/c3",
+    "local_annotation_count": 180,
+    "target_annotation_count": 6,
+    "detail_annotation": "95480769",
+    "target_relations": "postsynaptic",
+    "local_overlap_voxels": 4066809,
+    "endpoint_checks": {
+      "matching": 9,
+      "unlabeled": 3
+    },
+    "excitatory_inhibitory_mapping": null,
+    "activity": null,
+    "transmission_delays": null,
+    "whole_neuron_exhaustiveness": false
   }
 }
