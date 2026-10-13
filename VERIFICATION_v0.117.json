@@ -1,0 +1,56 @@
+{
+  "version": "0.117",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "selected_sweeps": 9,
+    "api_records_total": 196,
+    "by_specimen_and_by_id_records_exact": 9,
+    "spike_counts_matching": 6,
+    "spike_counts_not_reported": 3,
+    "api_nwb_onsets_exact": 9,
+    "api_duration_matches_first_to_last_sample": 9,
+    "source_stimulus_support_boundary_checks": 9,
+    "api_units_label_ambiguities": 3,
+    "scope": "Exact metadata join and arithmetic/sample correspondence. No new QC verdict or re-execution of the Allen curation process.",
+    "raw_signal_quality_metrics_reestimated": false
+  },
+  "browser": {
+    "status": "passed",
+    "cells_checked": 3,
+    "sweeps_checked": 9,
+    "published_fields_and_nulls_exact": true,
+    "exports_preserve_source_records": true,
+    "source_units_ambiguity_disclosed": true,
+    "sampling_conventions_visible": true,
+    "overview_links_same_sweep": true,
+    "share_open_quality": true,
+    "mobile_no_overflow": true,
+    "no_webgl_quality": true,
+    "quality_corruption_isolated_from_signals": true,
+    "retry_quality": true,
+    "page_errors": [],
+    "url": "http://127.0.0.1:8890/"
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 361,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/allen-comparison/PROVENANCE.json",
+    "assets/neurons/PROVENANCE.json",
+    "assets/allen-comparison/637034000-sweep-36.json",
+    "assets/neurons/allen-sweep-62.json",
+    "assets/allen-comparison/637034000-sweep-64.json",
+    "assets/allen-comparison/637038252-sweep-17.json",
+    "assets/allen-comparison/637038252-sweep-20.json",
+    "assets/allen-comparison/637038252-sweep-22.json",
+    "assets/allen-comparison/508279351-sweep-48.json",
+    "assets/allen-comparison/508279351-sweep-72.json",
+    "assets/allen-comparison/508279351-sweep-66.json"
+  ],
+  "scope": "Published experimental metrics, exact source joins, temporal sample conventions and interface. Not a re-execution of experimental QC or spatial propagation validation."
+}

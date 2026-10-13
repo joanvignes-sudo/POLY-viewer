@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.116",
+  "presentation_version": "0.117",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -169,5 +169,14 @@
       }
     ],
     "evidence": "assets/licenses/SPARC_RIGHTS_v0.116.json"
+  },
+  "allen_published_quality": {
+    "sweeps": 9,
+    "api_records_acquired": 196,
+    "source_concordance_only": true,
+    "experimental_qc_reexecuted": false,
+    "individual_api_verdict_field_available": false,
+    "missing_spike_counts_preserved": 3,
+    "curation_policy_source": "https://brain-map.org/support/documentation/documentation-cell-types-database"
   }
 }

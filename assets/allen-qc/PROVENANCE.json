@@ -1,0 +1,117 @@
+{
+  "version": "0.117",
+  "source_meta": {
+    "path": "assets/allen-comparison/PROVENANCE.json",
+    "bytes": 47680,
+    "sha256": "063f7131f6e596daaf60f07b733069376503bc98e2515ffe91c7880190bbb9a8"
+  },
+  "selected": {
+    "path": "assets/allen-qc/SELECTED.json",
+    "bytes": 20461,
+    "sha256": "1ab382df6bba07f24c7a77635064b27aadc22f51af2d7da3892bddba44e9c86f"
+  },
+  "files": [
+    {
+      "path": "assets/allen-qc/637034000-sweeps.json",
+      "bytes": 52585,
+      "sha256": "7fbbe276d8ef8031d1ccad1f56ae323cca7a621aec191d13374a90ad2dc4a963"
+    },
+    {
+      "path": "assets/allen-qc/637034000-receipt.json",
+      "bytes": 1176,
+      "sha256": "bdf275005fe491aea74076314e490950ffcbfc90269b3d61e6725f1bbdb59f77"
+    },
+    {
+      "path": "assets/allen-qc/637038252-sweeps.json",
+      "bytes": 17644,
+      "sha256": "9ae94fd587d54c4b92464189386dea482ef81ce242ab83a8a6766d85caa5051e"
+    },
+    {
+      "path": "assets/allen-qc/637038252-receipt.json",
+      "bytes": 1176,
+      "sha256": "20a61d9006e6afea56798d33a6837c7d109c693ec8ac1d9b1d899e3608945dcc"
+    },
+    {
+      "path": "assets/allen-qc/508279351-sweeps.json",
+      "bytes": 57832,
+      "sha256": "631924061e1d512b015351795e2d1d8add0419589f79a549cf28818f2a3c59a6"
+    },
+    {
+      "path": "assets/allen-qc/508279351-receipt.json",
+      "bytes": 1176,
+      "sha256": "13073ef374e5e6ffcea75db4f931208a4a3969935e12638f20d30d412cbcc466"
+    },
+    {
+      "path": "assets/allen-qc/by-id.json",
+      "bytes": 6088,
+      "sha256": "d482073b327f7e0ee198e62c05275643e9f510c97c3ed25a26668e9c6453d4b0"
+    },
+    {
+      "path": "assets/allen-qc/by-id-receipt.json",
+      "bytes": 1265,
+      "sha256": "1eb3f7802026b2a3eb68f85e6d30c5c510976465dac12ea94f2c7836553f8366"
+    },
+    {
+      "path": "assets/allen-qc/SELECTED.json",
+      "bytes": 20461,
+      "sha256": "1ab382df6bba07f24c7a77635064b27aadc22f51af2d7da3892bddba44e9c86f"
+    },
+    {
+      "path": "assets/allen-qc/VALIDATION.json",
+      "bytes": 550,
+      "sha256": "aa279263e39717eedec77643f34c96c7c512823526307f6a0a40667a0378a074"
+    }
+  ],
+  "sources": [
+    {
+      "specimen_id": 637034000,
+      "api_records": 80,
+      "file": {
+        "path": "assets/allen-qc/637034000-sweeps.json",
+        "bytes": 52585,
+        "sha256": "7fbbe276d8ef8031d1ccad1f56ae323cca7a621aec191d13374a90ad2dc4a963"
+      }
+    },
+    {
+      "specimen_id": 637038252,
+      "api_records": 28,
+      "file": {
+        "path": "assets/allen-qc/637038252-sweeps.json",
+        "bytes": 17644,
+        "sha256": "9ae94fd587d54c4b92464189386dea482ef81ce242ab83a8a6766d85caa5051e"
+      }
+    },
+    {
+      "specimen_id": 508279351,
+      "api_records": 88,
+      "file": {
+        "path": "assets/allen-qc/508279351-sweeps.json",
+        "bytes": 57832,
+        "sha256": "631924061e1d512b015351795e2d1d8add0419589f79a549cf28818f2a3c59a6"
+      }
+    }
+  ],
+  "official_policy": {
+    "url": "https://brain-map.org/support/documentation/documentation-cell-types-database",
+    "quote": "Stimulus sweeps that pass quality control standards are available for download as Neurodata Without Borders (NWB) files.",
+    "retrieved_date": "2026-10-13",
+    "private_snapshot_sha256": "54e4d74bbabb904014d9dbe7bb676c86c85965fd07f86dfe27ea534f34fe914b",
+    "scope": "General published Allen curation policy; no separate individual pass/fail field returned in the nine API records. POLY does not re-execute these QC tests."
+  },
+  "sdk_query_reference": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/master/allensdk/api/queries/cell_types_api.py",
+  "validation": {
+    "status": "passed",
+    "selected_sweeps": 9,
+    "api_records_total": 196,
+    "by_specimen_and_by_id_records_exact": 9,
+    "spike_counts_matching": 6,
+    "spike_counts_not_reported": 3,
+    "api_nwb_onsets_exact": 9,
+    "api_duration_matches_first_to_last_sample": 9,
+    "source_stimulus_support_boundary_checks": 9,
+    "api_units_label_ambiguities": 3,
+    "scope": "Exact metadata join and arithmetic/sample correspondence. No new QC verdict or re-execution of the Allen curation process.",
+    "raw_signal_quality_metrics_reestimated": false
+  },
+  "scope": "Published per-sweep metrics and numeric source concordance. No quality score invented, no missing value replaced with zero, no change to traces or source spike times."
+}
