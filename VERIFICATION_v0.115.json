@@ -1,0 +1,137 @@
+{
+  "version": "0.115",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "checks": [
+      {
+        "id": "class-0",
+        "png_image_values": 2097152,
+        "png_differences": 0,
+        "mask_source_values": 524288,
+        "upsampling": "nearest neighbour factor 2 in XY only, no added resolution",
+        "source_point_mask_id": "1072605926"
+      },
+      {
+        "id": "class-5",
+        "png_image_values": 2097152,
+        "png_differences": 0,
+        "mask_source_values": 524288,
+        "upsampling": "nearest neighbour factor 2 in XY only, no added resolution",
+        "source_point_mask_id": "1072605926"
+      },
+      {
+        "id": "class-1001",
+        "png_image_values": 2097152,
+        "png_differences": 0,
+        "mask_source_values": 524288,
+        "upsampling": "nearest neighbour factor 2 in XY only, no added resolution",
+        "source_point_mask_id": "1072605926"
+      },
+      {
+        "id": "class-1",
+        "png_image_values": 2097152,
+        "png_differences": 0,
+        "mask_source_values": 524288,
+        "upsampling": "nearest neighbour factor 2 in XY only, no added resolution",
+        "source_point_mask_id": "1072605926"
+      },
+      {
+        "id": "class-3",
+        "png_image_values": 2097152,
+        "png_differences": 0,
+        "mask_source_values": 524288,
+        "upsampling": "nearest neighbour factor 2 in XY only, no added resolution",
+        "source_point_mask_id": "1072605926"
+      },
+      {
+        "id": "class-2",
+        "png_image_values": 2097152,
+        "png_differences": 0,
+        "mask_source_values": 524288,
+        "upsampling": "nearest neighbour factor 2 in XY only, no added resolution",
+        "source_point_mask_id": "1072605926"
+      }
+    ],
+    "source_checks": {
+      "status": "passed",
+      "checks": [
+        {
+          "id": "class-0",
+          "image_values": 2097152,
+          "independent_image_differences": 0,
+          "mask_values": 524288,
+          "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+          "source_point_mask_id": "1072605926"
+        },
+        {
+          "id": "class-5",
+          "image_values": 2097152,
+          "independent_image_differences": 0,
+          "mask_values": 524288,
+          "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+          "source_point_mask_id": "1072605926"
+        },
+        {
+          "id": "class-1001",
+          "image_values": 2097152,
+          "independent_image_differences": 0,
+          "mask_values": 524288,
+          "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+          "source_point_mask_id": "1072605926"
+        },
+        {
+          "id": "class-1",
+          "image_values": 2097152,
+          "independent_image_differences": 0,
+          "mask_values": 524288,
+          "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+          "source_point_mask_id": "1072605926"
+        },
+        {
+          "id": "class-3",
+          "image_values": 2097152,
+          "independent_image_differences": 0,
+          "mask_values": 524288,
+          "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+          "source_point_mask_id": "1072605926"
+        },
+        {
+          "id": "class-2",
+          "image_values": 2097152,
+          "independent_image_differences": 0,
+          "mask_values": 524288,
+          "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+          "source_point_mask_id": "1072605926"
+        }
+      ]
+    },
+    "all_source_points_in_target": true
+  },
+  "browser": {
+    "status": "passed",
+    "canvas_planes_compared_to_source": 192,
+    "source_point_return": true,
+    "shared_state": true,
+    "export": true,
+    "rapid_switch": true,
+    "mobile_no_document_overflow": true,
+    "corrupt_image_blocked_and_retry": true,
+    "route_length_unchanged": true,
+    "page_errors": [],
+    "url": "http://127.0.0.1:8890/"
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 348,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/neurons/h01-em-1072605926.json",
+    "assets/neurons/h01-1072605926.skeleton",
+    "assets/h01-compartments/JOIN.json"
+  ],
+  "scope": "Source pixels, coordinates, interface and local paths; not anatomical class validation or physiological activity."
+}
