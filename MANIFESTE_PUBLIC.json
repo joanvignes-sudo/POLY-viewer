@@ -1,5 +1,5 @@
 {
-  "version": "0.106",
+  "version": "0.107",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -1240,6 +1240,11 @@
       "path": "assets/focal-v0106.js",
       "bytes": 7132,
       "sha256": "5d973178b0798014901e6b9ed98de55cf824ccf7f636c3ec98ab80b7d9cb08c5"
+    },
+    {
+      "path": "assets/focal-v0107.js",
+      "bytes": 7147,
+      "sha256": "3327f8bcff69b42e0b0e794449a2bcb689174019a268fdb9d988be22990c5d62"
     },
     {
       "path": "assets/histology/Credits.txt",
@@ -4867,6 +4872,21 @@
       "sha256": "07a4bcf0f8a37390fd2b5d9f97c6a588b591dd899a804e8973a51a0e460b5cd3"
     },
     {
+      "path": "assets/raccord-v0107.css",
+      "bytes": 1576,
+      "sha256": "4b23f2440915657b3ea5a51bc17ebb1999407122e2b748a3b9c3916b1b667548"
+    },
+    {
+      "path": "assets/raccord-v0107.js",
+      "bytes": 12692,
+      "sha256": "50ecdf61d63e8eb6cd21d7582524d981ba7c2779f802fed07adb345f8ab252b7"
+    },
+    {
+      "path": "assets/registration/CALIBRATION.json",
+      "bytes": 105570,
+      "sha256": "da916bbddc51ca73b30cbb4847b801b0272c3ad4a46a14fda341db0165a1d796"
+    },
+    {
       "path": "assets/registration/context-field9.png",
       "bytes": 5289017,
       "sha256": "ea4a0a7cd46b533cbcadbaac088b2a360463ae23742b73a8df591ceec14d6bee"
@@ -6107,6 +6127,11 @@
       "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
     },
     {
+      "path": "BILAN_CALIBRATION_v0.107.md",
+      "bytes": 2524,
+      "sha256": "c45ffb91f6b5ae9d7c5b4aaeb7dd598ad1928662fc0c7360d06342ae27269138"
+    },
+    {
       "path": "BILAN_CANAUX_v0.103.md",
       "bytes": 2306,
       "sha256": "42424f7e9de5ccf8891f98434057c9036aab6f3b84c359dddd9348d1347bc59f"
@@ -6157,9 +6182,14 @@
       "sha256": "4aa17d01e5205aef72f93526ea7f45117590bfc30cc77119fa41f9b204709881"
     },
     {
+      "path": "calibration.html",
+      "bytes": 7482,
+      "sha256": "9cc0a7b64ed64431e899d2f72f337eb3a06f0d3b6000ceb4a7ee428c5c5f68c5"
+    },
+    {
       "path": "canaux.html",
-      "bytes": 5606,
-      "sha256": "41437cd0be1e038e2cba27fdeea89f9db9e0ad8d5aa8399ef8fe58fe9b6bbef9"
+      "bytes": 5657,
+      "sha256": "4dcf924c88a51fd6933bcd7ab45f9d94a0914e9e65da321459f03343749ef234"
     },
     {
       "path": "canon.html",
@@ -6293,13 +6323,13 @@
     },
     {
       "path": "immunohistochimie.html",
-      "bytes": 6884,
-      "sha256": "09dfd009ac15d5e6fc30267335a578f24402bb6dc3de52a22ddc7cb9f18ebaf7"
+      "bytes": 6935,
+      "sha256": "427066522d028427bc7dbf218da96c66978d6034c175482da85f5b4b6fe5ec73"
     },
     {
       "path": "index.html",
-      "bytes": 9935,
-      "sha256": "f64f33ab18f676e42c2ddd3df6ef68427ab58d43324898cabad5dbfd3bc8fa5c"
+      "bytes": 10000,
+      "sha256": "7b517addeef082fbe42185611aacd40b9e13c6c810c97d3b20fc9f99f03b059e"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -6433,18 +6463,18 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 2086,
-      "sha256": "74126563fac4429b2c77da59946c3727f9204cdb8b0123e7a0dcdf8e5c63583c"
+      "bytes": 2537,
+      "sha256": "ea7255eac4e42e395cacf52e0f4c71d0029398094b4e5289dacd9750a8d0f48b"
     },
     {
       "path": "raccord.html",
-      "bytes": 6667,
-      "sha256": "bce2d251cf0b8c6a16e35e7e768783cef24dc7b3d0772686e2aaadae24a4b1b5"
+      "bytes": 8351,
+      "sha256": "61500262e4afd403c6222d5c8235e20408b91659e02d4da52c62ed4d458d39e5"
     },
     {
       "path": "README.md",
-      "bytes": 2827,
-      "sha256": "522d0ba46354a59d402515830da2d4bf133d90114514c893554f111d587eb75e"
+      "bytes": 3220,
+      "sha256": "524d8c0421ddf8204d1c3c997ff2d433844796b55cb584e13d22165ed1e9efd4"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -6478,13 +6508,13 @@
     },
     {
       "path": "suite.html",
-      "bytes": 10388,
-      "sha256": "47f2414cdf41965f6ffa188a853aeb8458264320ee8837e9bc9c1bfc7c3b264f"
+      "bytes": 11050,
+      "sha256": "e585ab40c31d405b77c91925d14760b902a354ad676766947516e4f99cdc2f1d"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 11603,
-      "sha256": "4c438f9e94e5068117c435412dc1360967f2203874192c3d6aa8b3ec362def2a"
+      "bytes": 12925,
+      "sha256": "63647541c60276c44dd08f9f3a8de55072e20761923dc0b1980b41e02c758724"
     },
     {
       "path": "VERIFICATION_BIGBRAIN_EN_LIGNE.json",
@@ -6535,6 +6565,11 @@
       "path": "VERIFICATION_v0.106.json",
       "bytes": 326,
       "sha256": "5399a49427e39f1b970a9c7b40aad2773f45705a8ded37455bd576a82c9db7d5"
+    },
+    {
+      "path": "VERIFICATION_v0.107.json",
+      "bytes": 1104,
+      "sha256": "0f8ccdc56716e82ba05c6d656105470b6dedf3719da98b109a0112448f5ecad6"
     },
     {
       "path": "VERIFICATION_v0.92.json",

@@ -1,0 +1,31 @@
+{
+  "version": "0.107",
+  "status": "passed",
+  "source_tiff_hashes_verified": 136,
+  "montage_metadata_checked": 2,
+  "physical_conversion_enabled": false,
+  "browser": {
+    "status": "passed",
+    "planes_tested": 17,
+    "distance_3_4_5_pixels": 500,
+    "measurement_invariant_to_gain_zoom_pan_plane": true,
+    "share_restores_points": true,
+    "export_sources_verified": true,
+    "invalid_coordinates_rejected": true,
+    "keyboard_and_click_measurement": true,
+    "static_images_reused": true,
+    "tampered_image_rejected_and_retry_passed": true,
+    "tampered_metadata_rejected_and_retry_passed": true,
+    "stale_load_does_not_replace_current_plane": true,
+    "mobile_no_horizontal_overflow": true,
+    "javascript_errors": []
+  },
+  "local_links_checked": 126,
+  "canonical_science_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "DOCUMENTS_CANONIQUES_v0.97.json",
+    "ANCRAGE_HUMAIN_v0.94.json"
+  ],
+  "scope": "Technical checks and source-metadata consistency; no certified physical calibration or biological validation"
+}

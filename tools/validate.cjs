@@ -69,6 +69,12 @@ for(const f of cogitate.figures){if(crypto.createHash('sha256').update(fs.readFi
 if(cogitate.registration_to_poly_anatomy||cogitate.new_causal_chain||cogitate.individual_clinical_metadata_published_by_poly)fail('cogitate','Portée COGITATE incohérente avec les ressources acquises.');
 const cohorts=JSON.parse(fs.readFileSync(path.join(root,'assets/cogitate/COHORTES.json')));
 for(const c of cohorts){if(c.records!==c.unique_ids||c.included&&Object.values(c.included).reduce((a,b)=>a+b,0)!==c.records||c.qc&&Object.values(c.qc).reduce((a,b)=>a+b,0)!==c.records)fail('cogitate','Décompte de métadonnées incohérent.');}
-report.ok=report.errors.length===0;report.version='0.105';report.scope='Structural and local-source integrity; not scientific validation';
+const calibration=JSON.parse(fs.readFileSync(path.join(root,'assets/registration/CALIBRATION.json')));
+if(calibration.records.length!==136||calibration.physical_conversion_enabled!==false||calibration.physical_pixel_size_um!==null)fail('calibration','Portée de calibration incohérente.');
+for(const r of calibration.records){const image=focal.fields.find(f=>f.id===r.field)?.planes.find(p=>p.index===r.plane)?.images[r.channel];if(!image||image.source_sha256!==r.source_sha256||image.original!==r.original||r.dimensions.some((n,i)=>Math.abs(n*r.calibration_decoded-r.xy_stage_extent[i])>=1))fail(r.original,'Audit de calibration divergent des sources.');}
+for(const r of [...calibration.montage_metadata,calibration.gci])if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,r.path))).digest('hex')!==r.sha256)fail(r.path,'Métadonnée de calibration non conforme.');
+const focalValidation=JSON.parse(fs.readFileSync(path.join(root,'assets/registration/FOCAL_VALIDATION.json')));
+if(focalValidation.planes.length!==17||focalValidation.planes.some((p,i)=>p.plane!==i+1||p.checks.length!==8||p.checks.some(c=>!Number.isFinite(c.ncc_at_reference)||Math.abs(c.ncc_at_reference)>1||c.best_delta.some(v=>!Number.isInteger(v)||Math.abs(v)>12))))fail('raccord','Série de contrôles focaux incohérente.');
+report.ok=report.errors.length===0;report.version='0.107';report.scope='Structural and local-source integrity; not scientific validation';
 console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;
 

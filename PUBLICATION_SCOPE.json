@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.106",
+  "presentation_version": "0.107",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -46,5 +46,18 @@
     "new_affective_chain": false,
     "individual_registration": false,
     "local_event_file_inspector": true
+  },
+  "vagus_ihc_measurement": {
+    "field": "field9",
+    "focal_planes_compared": 17,
+    "local_patch_checks": 136,
+    "distance_unit": "native pixels",
+    "measurement_export_includes_sources": true,
+    "calibration_files_checked": 136,
+    "source_units_per_pixel": 150.97671666666668,
+    "physical_conversion_enabled": false,
+    "physical_z_step": null,
+    "registration_to_microct": null,
+    "dossier": "calibration.html"
   }
 }

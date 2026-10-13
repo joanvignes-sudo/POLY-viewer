@@ -1,4 +1,4 @@
-# POLY v0.105
+# POLY v0.107
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -31,3 +31,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.105 · COGITATE
 
 [Événements et réponses cérébrales](cogitate.html) : figures et résultats sauvegardés du tutoriel des auteurs, métadonnées publiques contrôlées, lecteur local de fichiers BIDS events.tsv. Aucune acquisition de signaux bruts ni réplication revendiquée. Volet conscience distinct du registre affectif. [Méthodes et limites](BILAN_COGITATE_v0.105.md).
+
+## v0.107 · Échelles et mesures
+
+[Calibration documentée](calibration.html) : 136 TIFF et deux métadonnées de montage contrôlés ; unités source cohérentes, hypothèse nominale en µm non appliquée. [Mesurer dans le raccord](raccord.html) : 17 plans, repères XY synchronisés, distance en pixels, partage et export avec sources. [Bilan et limites](BILAN_CALIBRATION_v0.107.md).
