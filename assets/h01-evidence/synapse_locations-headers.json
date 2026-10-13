@@ -1,0 +1,20 @@
+{
+  "Content-Type": "text/csv",
+  "X-GUploader-UploadID": "AP6rU80e6qI2sUaezxX3IlijgOfNOJJEUbAsSuNWwX4UEWRPF-AUFKWeO7NCO9dvoeQJjMXVQzA8ONM",
+  "Expires": "Tue, 13 Oct 2026 16:40:15 GMT",
+  "Date": "Tue, 13 Oct 2026 15:40:15 GMT",
+  "Cache-Control": "public, max-age=3600",
+  "Last-Modified": "Tue, 24 May 2022 23:45:40 GMT",
+  "ETag": "\"cf4f99033724a66bc6c9e9504752ec3c\"",
+  "x-goog-generation": "1653435940724799",
+  "x-goog-metageneration": "1",
+  "x-goog-stored-content-encoding": "identity",
+  "x-goog-stored-content-length": "18917333",
+  "x-goog-hash": "crc32c=dN6yRQ==",
+  "x-goog-storage-class": "NEARLINE",
+  "Accept-Ranges": "bytes",
+  "Content-Length": "18917333",
+  "Server": "UploadServer",
+  "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+  "Connection": "close"
+}

@@ -1,0 +1,131 @@
+{
+  "version": "0.112",
+  "status": "passed",
+  "source_annotation_count": 180,
+  "target_annotation_count": 6,
+  "independent_site_checks": {
+    "status": "passed",
+    "checks": [
+      {
+        "annotation_id": "95480769",
+        "layer": "incoming_inhibitory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 442
+      },
+      {
+        "annotation_id": "111306169",
+        "layer": "incoming_inhibitory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 405
+      },
+      {
+        "annotation_id": "54213720",
+        "layer": "incoming_inhibitory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 373
+      },
+      {
+        "annotation_id": "143278591",
+        "layer": "incoming_inhibitory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 2567
+      },
+      {
+        "annotation_id": "145894292",
+        "layer": "incoming_inhibitory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 3776
+      },
+      {
+        "annotation_id": "87751454",
+        "layer": "incoming_inhibitory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 3656
+      },
+      {
+        "annotation_id": "95480769",
+        "layer": "incoming_excitatory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 0
+      },
+      {
+        "annotation_id": "111306169",
+        "layer": "incoming_excitatory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 0
+      },
+      {
+        "annotation_id": "54213720",
+        "layer": "incoming_excitatory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 0
+      },
+      {
+        "annotation_id": "143278591",
+        "layer": "incoming_excitatory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 0
+      },
+      {
+        "annotation_id": "145894292",
+        "layer": "incoming_excitatory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 0
+      },
+      {
+        "annotation_id": "87751454",
+        "layer": "incoming_excitatory",
+        "values": 524288,
+        "independent_differences": 0,
+        "target_voxels": 0
+      }
+    ]
+  },
+  "catalog_positions": 1571,
+  "catalog_pre": 64,
+  "catalog_post": 1507,
+  "exact_csv_matches": 6,
+  "native_details": 6,
+  "total_windows": 9,
+  "browser": {
+    "status": "passed",
+    "six_site_masks_three_axes_exact": true,
+    "source_intensity_preserved": true,
+    "unconfirmed_site_disclosed": true,
+    "catalog_1571_rows_filters_1507_64": true,
+    "six_catalog_native_links": true,
+    "unmapped_position_has_no_native_link": true,
+    "point_pick_source_coordinates": true,
+    "catalog_share_roundtrip": true,
+    "site_plane_share": true,
+    "mesh_geometries_max": 9,
+    "catalog_geometries_max": 5,
+    "cache_max": 2,
+    "context_has_no_site_mask": true,
+    "corrupt_site_retry": true,
+    "no_3d_catalog_and_image_fallback": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  },
+  "links_checked": 123,
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/h01-em/PROVENANCE.json",
+    "assets/h01-synapses/PROVENANCE.json",
+    "assets/h01-details/PROVENANCE.json",
+    "assets/neurons/h01-em-1072605926.json"
+  ],
+  "scope": "Source consistency, local coordinate/label checks and UI behavior; not biological validation, activity measurement or causal-chain evidence."
+}

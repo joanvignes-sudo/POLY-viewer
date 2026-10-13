@@ -1,4 +1,4 @@
-# POLY v0.111
+# POLY v0.112
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -51,3 +51,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.111 · Six détails synaptiques natifs
 
 [Parcourir les six annotations](microscopie.html?level=synapse4&v=0.111), chacune avec sa fenêtre 4 × 4 × 33 nm. Navigation précédente/suivante conserve le niveau natif. Images nouvelles relues indépendamment avec TensorStore ; masques source à 8 × 8 × 33 nm. [Bilan](BILAN_H01_DETAILS_v0.111.md).
+
+## v0.112 · Du neurone entier aux volumes synaptiques
+
+[1 571 positions source](microscopie.html?v=0.112#catalogue-cellule), filtres entrées/sorties, coordonnées et liens vers six détails correspondants. Masques synaptiques locaux et surfaces exactes de leurs faces de voxels ; cinq points post retrouvés dans le volume classé inhibiteur, un non étiqueté. Aucun statut de validation humaine individuelle ajouté. [Bilan](BILAN_H01_EVIDENCE_v0.112.md).

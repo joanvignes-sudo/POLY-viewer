@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.111",
+  "presentation_version": "0.112",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -107,6 +107,15 @@
     "transmission_delays": null,
     "whole_neuron_exhaustiveness": false,
     "native_details": 6,
-    "total_image_windows": 9
+    "total_image_windows": 9,
+    "source_csv_positions": 1571,
+    "source_csv_incoming": 1507,
+    "source_csv_outgoing": 64,
+    "exact_csv_endpoint_matches": 6,
+    "source_inhibitory_post_point_matches": 5,
+    "source_inhibitory_post_point_unlabeled": 1,
+    "source_site_masks": true,
+    "site_surfaces": "Exact exposed voxel faces, no smoothing",
+    "human_individual_synapse_validation": false
   }
 }

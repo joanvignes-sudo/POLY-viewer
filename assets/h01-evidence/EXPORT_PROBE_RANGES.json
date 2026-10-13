@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/exported/export000000000001.json",
+    "range": [
+      0,
+      2047
+    ],
+    "generation": "1691593310136635",
+    "etag": "\"0e8604ba909940530748e7570a4a81ab\"",
+    "sha256": "085752482c1956c0a6066cf707a173a4dea376768ea39032b54e44ace8c71f70",
+    "file": "ranges/6b21d4167f312173a513.bin",
+    "path": "assets/h01-evidence/probe-ranges/6b21d4167f312173a513.bin"
+  },
+  {
+    "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/exported/export000000000010.json",
+    "range": [
+      0,
+      2047
+    ],
+    "generation": "1691593269873483",
+    "etag": "\"b39b9e7d063a1cd8cd68e4303ca96d18\"",
+    "sha256": "aaf467e72a55952af132493724dcb151f44224a87658ac74bea2b0db53539ff6",
+    "file": "ranges/3fb638ee52ab49f0ec47.bin",
+    "path": "assets/h01-evidence/probe-ranges/3fb638ee52ab49f0ec47.bin"
+  },
+  {
+    "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/exported/export000000000050.json",
+    "range": [
+      0,
+      2047
+    ],
+    "generation": "1691593277774855",
+    "etag": "\"81e40909a6bc341846c2feb0786de23a\"",
+    "sha256": "f59a4f1232929d998f3188b4a83caaecf17e285ec1f1be2f303b7dcf005f9506",
+    "file": "ranges/6f04cc946d979756183c.bin",
+    "path": "assets/h01-evidence/probe-ranges/6f04cc946d979756183c.bin"
+  },
+  {
+    "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/exported/export000000000100.json",
+    "range": [
+      0,
+      2047
+    ],
+    "generation": "1691593293646939",
+    "etag": "\"3b3e91bac8581d88692714bdeb5412cd\"",
+    "sha256": "f261375453607bfd8a140e5bc97226dab8d6d91f30dd5fa304a5f36e720c9f14",
+    "file": "ranges/2e80838dc3aa24ffb2e3.bin",
+    "path": "assets/h01-evidence/probe-ranges/2e80838dc3aa24ffb2e3.bin"
+  }
+]
