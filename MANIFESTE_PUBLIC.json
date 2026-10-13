@@ -10962,6 +10962,21 @@
       "sha256": "c5abec1ac03f653737dc651d1fdacdef5be5ab4fe4261b1d966404c42752cf9b"
     },
     {
+      "path": "assets/licenses/datacite-426-v7.json",
+      "bytes": 14483,
+      "sha256": "ad8f87caee963c1a1eed5146b08de7da856b9d2124ebfcd5ce19666be6c7203d"
+    },
+    {
+      "path": "assets/licenses/datacite-674-v1.json",
+      "bytes": 20506,
+      "sha256": "a9af12a6e7906c818cca5da9efaec4e965c22206a462eaab4d61b296d7e27ac7"
+    },
+    {
+      "path": "assets/licenses/SPARC_RIGHTS_v0.116.json",
+      "bytes": 2819,
+      "sha256": "82f94eb42ea63a98245314aeab04b3cfbee491d5064aa0db5047f6186d6c45d0"
+    },
+    {
       "path": "assets/multiscale/hoa-heart-selection.json",
       "bytes": 10787,
       "sha256": "79f153b8c376511fa4305d5240451a5fe33ee0073c5498910c4119218bb5027c"
@@ -12658,8 +12673,8 @@
     },
     {
       "path": "BILAN_ALLEN_v0.116.md",
-      "bytes": 4088,
-      "sha256": "6827b8bc47e5be1df1f2944e53fcfe01efefa35646e70d2c5b0a3149af9fd010"
+      "bytes": 4431,
+      "sha256": "8a1aabb643008cfb41f8e979b24ef7721454e31add2f3b0fd86bdfb5b88dc4f7"
     },
     {
       "path": "BILAN_BIGBRAIN_v0.95.md",
@@ -12993,8 +13008,8 @@
     },
     {
       "path": "INVENTAIRE_ECHELLES_v0.116.json",
-      "bytes": 11976,
-      "sha256": "db9c0208011913814b862e4707563d5999b086a8402625930628b02f41a9be11"
+      "bytes": 12210,
+      "sha256": "ee3dbcfd903b434a177e4864dc8fdcd38aa0580a68361374b976825d6c383a1d"
     },
     {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
@@ -13103,8 +13118,8 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 5431,
-      "sha256": "3ec5d3b2d28a9fe3adbe8c6e3214721e2062827b373858cf8a231b3388f2c5d5"
+      "bytes": 5723,
+      "sha256": "aaa32ec63146a12903b7d27d2bc7303d71b95a0cb191e3851d633770ae51e728"
     },
     {
       "path": "raccord.html",
@@ -13113,8 +13128,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6631,
-      "sha256": "6ff7de34c0a04d1192817a392997ef9326fa98f207b8125e4f3015efa205650f"
+      "bytes": 6707,
+      "sha256": "8462f3cbfe8ab712bee7bd4e8a3ebc43a5ff86a145e9d2cfc22b2302be627953"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -13148,13 +13163,13 @@
     },
     {
       "path": "suite.html",
-      "bytes": 18737,
-      "sha256": "cb1d13a57e2f474b654628ebdae53f1229fd7407af4c37aa344b59f33e72d658"
+      "bytes": 18824,
+      "sha256": "17d1bde1ab5a7410b001a1b1ee5053253c3aaab09bd4e45787aeb64589606983"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 30623,
-      "sha256": "9f8e5c43cc1b7241a06f1ecaa14bfc22a7f184325a3b1a8685846f8abfac86bd"
+      "bytes": 31498,
+      "sha256": "bca971e6af65ec5d3cf509ae1802cb8144bf75c2f8c36c2a8584573421ef6a48"
     },
     {
       "path": "trajets.html",
@@ -13259,7 +13274,7 @@
     {
       "path": "VERIFICATION_v0.116.json",
       "bytes": 6426,
-      "sha256": "c02a32a479eede5a10dbf72ace77fc486b26f9d40c3acc3b47933e7b77fb67a6"
+      "sha256": "21b0a5b49dd91e579aed3a25aa38a2887aa4da4fdba3d1aaa8fa8bb6e1a7f7c4"
     },
     {
       "path": "VERIFICATION_v0.92.json",

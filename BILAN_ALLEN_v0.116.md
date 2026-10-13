@@ -17,3 +17,5 @@ Incohérence de métadonnées conservée : description générique « Mus muscul
 Interface : sélection de cellule et d’essai, axes physiques ajustés et légendés sans normalisation des amplitudes, lecture temporelle, accès aux détections, tableau des intervalles, export avec provenance, lien partageable conservant essai, instant et vue. Repli sans WebGL, erreur d’empreinte bloquante et nouvelle tentative contrôlés.
 
 [Provenance, sources et empreintes](assets/allen-comparison/PROVENANCE.json) · [Comparaison indépendante](assets/allen-comparison/INDEPENDENT_VALIDATION.json) · [Crédits Allen et conditions distinctes de H01](assets/neurons/CREDITS.txt). Aucun soutien institutionnel revendiqué. NWB complets conservés dans l’archive de recherche ; liens vers les originaux proposés dans l’interface.
+
+Consolidation documentaire associée : notices DataCite des deux jeux SPARC conservées, identités DOI et versions comparées aux métadonnées déjà acquises. [Déclarations CC BY 4.0 et pièces justificatives](assets/licenses/SPARC_RIGHTS_v0.116.json). Cette précision ne change pas les données ni les anciens fichiers de provenance.

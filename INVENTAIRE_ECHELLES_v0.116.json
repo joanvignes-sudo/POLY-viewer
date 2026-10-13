@@ -80,7 +80,7 @@
       "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
       "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
       "access": "Micro-CT C1 primaire complet de 738 652 116 octets acquis et SHA-256 vérifié ; contexte, quatre fenêtres et quatre plans natifs diffusés. C10 et modèle conservés.",
-      "license": "Creative Commons Attribution, libellé exact de la métadonnée ; version de licence à confirmer sur les fichiers retenus.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
       "format": "EXF, surfaces JSON, XML MBF, NIfTI uint8 ; volumes gzip.",
       "reference": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "scale": "Micro-CT nominal 9 µm ; contexte sous-échantillonné 36 µm. 15 surfaces et 178 049 segments ; modèle ex vivo. IHC C1 : six fenêtres 2048² RGB natifs, épaisseur de section 5 µm ; échelle XY physique non vérifiée. Deux champs sources 960×720, 17 plans focaux chacun, exports colorisés 8 bits et Overlay indépendant.",
@@ -93,7 +93,8 @@
       "ihc_focal_local": "canaux.html",
       "ihc_focal_provenance": "assets/focal/PROVENANCE.json",
       "c1_local": "c1.html",
-      "c1_provenance": "assets/c1/PROVENANCE.json"
+      "c1_provenance": "assets/c1/PROVENANCE.json",
+      "license_evidence": "assets/licenses/SPARC_RIGHTS_v0.116.json"
     }
   ],
   "metadata_files": [
@@ -172,6 +173,10 @@
     {
       "path": "assets/allen-comparison/PROVENANCE.json",
       "sha256": "063f7131f6e596daaf60f07b733069376503bc98e2515ffe91c7880190bbb9a8"
+    },
+    {
+      "path": "assets/licenses/SPARC_RIGHTS_v0.116.json",
+      "sha256": "82f94eb42ea63a98245314aeab04b3cfbee491d5064aa0db5047f6186d6c45d0"
     }
   ],
   "within_donor_registration": {

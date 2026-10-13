@@ -155,5 +155,19 @@
     "source_qc_reanalysed": false,
     "spatial_activity_in_branches": false,
     "matched_cohort": false
+  },
+  "sparc_license_confirmation": {
+    "license": "CC BY 4.0 International",
+    "datasets": [
+      {
+        "id": 674,
+        "version": 1
+      },
+      {
+        "id": 426,
+        "version": 7
+      }
+    ],
+    "evidence": "assets/licenses/SPARC_RIGHTS_v0.116.json"
   }
 }
