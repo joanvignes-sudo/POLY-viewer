@@ -1,5 +1,5 @@
 {
-  "version": "0.112",
+  "version": "0.113",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -1375,6 +1375,11 @@
       "path": "assets/h01-catalog-v0112.js",
       "bytes": 8513,
       "sha256": "c083b49afffa6e0ba4577d8cd5831ed4dd06dd8899c646e94d806edb666ac44f"
+    },
+    {
+      "path": "assets/h01-catalog-v0113.js",
+      "bytes": 8571,
+      "sha256": "6e402d96f00b442f8b3270ee89e87e0c5f022270f99c56f9893b8cbdcbbebfb1"
     },
     {
       "path": "assets/h01-details/ACQUISITION.json",
@@ -3380,6 +3385,26 @@
       "path": "assets/h01-evidence/VALIDATION.json",
       "bytes": 2203,
       "sha256": "d8163215747232f993ffbde7342bcdab58003b4cb9b98248c394a2f53dc5e74e"
+    },
+    {
+      "path": "assets/h01-paths/INDEPENDENT_VALIDATION.json",
+      "bytes": 4662,
+      "sha256": "99763bad0ebfd334de7d5edc3eb3f9d8f7ea5308ee8f7e7f4d43ce06c6ff152f"
+    },
+    {
+      "path": "assets/h01-paths/PROJECTIONS.json",
+      "bytes": 1095172,
+      "sha256": "c4f08dc7957bee27c442223686cf8a156a2904c478fc25452ef1059c821689ca"
+    },
+    {
+      "path": "assets/h01-paths/PROVENANCE.json",
+      "bytes": 3573,
+      "sha256": "03b24e17057bf6f9481be02c589b7e0018206a826309e74a6b38bcf9b3b9a62d"
+    },
+    {
+      "path": "assets/h01-paths-v0113.js",
+      "bytes": 13639,
+      "sha256": "8b427fb35b615ef31c601fb0cb155640cd1d574dc0e82bfb8d2af299a489c2ec"
     },
     {
       "path": "assets/h01-synapses/ACQUISITION.json",
@@ -11497,6 +11522,11 @@
       "sha256": "d4cdb2b66ed7946ea70b18841f89b37fbe6ca3edcba6945c6060973f087fba65"
     },
     {
+      "path": "BILAN_H01_PATHS_v0.113.md",
+      "bytes": 4225,
+      "sha256": "61c75ed114642214618b5611c0737113527bf7a675463f2784d66dedf8bf7a19"
+    },
+    {
       "path": "BILAN_H01_SYNAPSES_v0.110.md",
       "bytes": 3772,
       "sha256": "87de725cbdd768ca82d68658b8bc2199e750ffe4a8b166b1e139fff882fadb2d"
@@ -11694,7 +11724,7 @@
     {
       "path": "index.html",
       "bytes": 10105,
-      "sha256": "78c7547869d689e5986f747a6046ab37791199504dd49cc75133c47ef00304a3"
+      "sha256": "d9310161aa4ac577a5c0aeacfa6383840aef67323ad5dd30f7390a27428727db"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -11752,6 +11782,11 @@
       "sha256": "74bafb1c822318a3173b85206cccd2227470fad464f18a80f7b149da47e59ae6"
     },
     {
+      "path": "INVENTAIRE_ECHELLES_v0.113.json",
+      "bytes": 10210,
+      "sha256": "fc55fc858740ed28b1ca467150c66d155cf4e2557a56e9500ff952e7de2a172e"
+    },
+    {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
       "bytes": 6410,
       "sha256": "20943a235c3652fb74df5039c1a3165424c36c2bec9eed1ee17472568d21e303"
@@ -11788,8 +11823,8 @@
     },
     {
       "path": "microscopie.html",
-      "bytes": 16664,
-      "sha256": "7e6677a9ebcede92ef0d125cae258b1432980fc30f2765d34898b337705cde1c"
+      "bytes": 16799,
+      "sha256": "957e0b839000f3c7b98d0bb8b90986488ec7dd4e42e96e9b34a59bd62759f163"
     },
     {
       "path": "microstructures.html",
@@ -11858,8 +11893,8 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 4227,
-      "sha256": "7c27f0fb9018df82c3ffc66fd2a30694993f782f4942a3a7e3e6731010b14040"
+      "bytes": 4584,
+      "sha256": "bf22eed5b5f14b6de02cd97fd025ab000a9ef30f6d5b7e5e7ff9917a749f4a1f"
     },
     {
       "path": "raccord.html",
@@ -11868,8 +11903,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5305,
-      "sha256": "1039a7f89cd794bc387cd6ae3a3887aad6ecf1f9202e775219e26c2ddb14555e"
+      "bytes": 5691,
+      "sha256": "51f207dd64138c6800a4b5c1e1b4f9d6b570d17f6d45bb53b46a6e92f0b5a993"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -11903,13 +11938,18 @@
     },
     {
       "path": "suite.html",
-      "bytes": 14244,
-      "sha256": "80c1787c0f3d3a42c313492e99aaa201ab49a6056b8ae2f1044253a774d7a7cd"
+      "bytes": 14863,
+      "sha256": "d2849a827466b6715d61ca2d13d5642c08e2b79b17bd693e59ccc6ce3d54ce03"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 22766,
-      "sha256": "8d41d644f1efb8e0d0085e5d3fa9af13fcee00b7ee057fdf11f2d983da915900"
+      "bytes": 24830,
+      "sha256": "73acca9a69b0e900e53d7eb3c0db2908fb8d51496a42bae1c2a88a9b750f181c"
+    },
+    {
+      "path": "trajets.html",
+      "bytes": 5442,
+      "sha256": "84636838fc982a79deaab05de7841745cc0a6e8045642daf3aa3871b7d72dae2"
     },
     {
       "path": "VERIFICATION_BIGBRAIN_EN_LIGNE.json",
@@ -11990,6 +12030,11 @@
       "path": "VERIFICATION_v0.112.json",
       "bytes": 3985,
       "sha256": "ce0cdc91e357e2ce88e60ca1d38e3c8f04785f506271e6b728a19d59c60a2e74"
+    },
+    {
+      "path": "VERIFICATION_v0.113.json",
+      "bytes": 6460,
+      "sha256": "37e7f82068f630fc73aeb7c14a18085a15d53beb60d14080d463e9569e30e735"
     },
     {
       "path": "VERIFICATION_v0.92.json",

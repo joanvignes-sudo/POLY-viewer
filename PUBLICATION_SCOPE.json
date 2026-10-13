@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.112",
+  "presentation_version": "0.113",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -117,5 +117,16 @@
     "source_site_masks": true,
     "site_surfaces": "Exact exposed voxel faces, no smoothing",
     "human_individual_synapse_validation": false
+  },
+  "h01_geometric_routes": {
+    "projected_source_positions": 1571,
+    "skeleton_components": 45,
+    "cycles": 0,
+    "nearest_segment_projection": true,
+    "anatomical_attachment_confirmed": false,
+    "biological_time": null,
+    "inter_component_bridges_added": 0,
+    "source_graph_modified": false,
+    "independent_route_cases": 37
   }
 }

@@ -1,0 +1,203 @@
+{
+  "status": "passed",
+  "software_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "projections_checked": 1571,
+  "independent_projection_method": "cKDTree vertex bound plus scalar segment search; all potentially closest edges included using global maximum edge length",
+  "maximum_gap_difference_um": 2.2315482794965646e-14,
+  "routing_method": "SciPy sparse Dijkstra after splitting source edges with virtual projection vertices",
+  "routing_cases": [
+    {
+      "a": "csv-row-238375",
+      "b": "csv-row-250386",
+      "length_um": 175.50575881343326
+    },
+    {
+      "a": "csv-row-238375",
+      "b": "csv-row-238375",
+      "length_um": 0.0
+    },
+    {
+      "a": "csv-row-6931",
+      "b": "csv-row-95939",
+      "length_um": 11.46405116606429
+    },
+    {
+      "a": "csv-row-6931",
+      "b": "csv-row-164578",
+      "length_um": 13.518996226428431
+    },
+    {
+      "a": "csv-row-6931",
+      "b": "csv-row-178572",
+      "length_um": 13.70568074976354
+    },
+    {
+      "a": "csv-row-6931",
+      "b": "csv-row-238375",
+      "length_um": 14.198498080762707
+    },
+    {
+      "a": "csv-row-6931",
+      "b": "csv-row-247501",
+      "length_um": 20.085477653656223
+    },
+    {
+      "a": "csv-row-95939",
+      "b": "csv-row-164578",
+      "length_um": 10.48424406751684
+    },
+    {
+      "a": "csv-row-95939",
+      "b": "csv-row-178572",
+      "length_um": 10.670928590851949
+    },
+    {
+      "a": "csv-row-95939",
+      "b": "csv-row-238375",
+      "length_um": 2.734446914698419
+    },
+    {
+      "a": "csv-row-95939",
+      "b": "csv-row-247501",
+      "length_um": 17.050725494744636
+    },
+    {
+      "a": "csv-row-164578",
+      "b": "csv-row-178572",
+      "length_um": 0.18668452333510924
+    },
+    {
+      "a": "csv-row-164578",
+      "b": "csv-row-238375",
+      "length_um": 13.218690982215257
+    },
+    {
+      "a": "csv-row-164578",
+      "b": "csv-row-247501",
+      "length_um": 18.209527709352265
+    },
+    {
+      "a": "csv-row-178572",
+      "b": "csv-row-238375",
+      "length_um": 13.405375505550367
+    },
+    {
+      "a": "csv-row-178572",
+      "b": "csv-row-247501",
+      "length_um": 18.396212232687375
+    },
+    {
+      "a": "csv-row-238375",
+      "b": "csv-row-247501",
+      "length_um": 19.785172409443057
+    },
+    {
+      "a": "csv-row-9697",
+      "b": "csv-row-225634",
+      "length_um": 338.8683266384945
+    },
+    {
+      "a": "csv-row-247148",
+      "b": "csv-row-91920",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-5892",
+      "b": "csv-row-164510",
+      "length_um": 299.5771026498851
+    },
+    {
+      "a": "csv-row-188375",
+      "b": "csv-row-118677",
+      "length_um": 26.499221203281465
+    },
+    {
+      "a": "csv-row-78878",
+      "b": "csv-row-150355",
+      "length_um": 293.40099612094684
+    },
+    {
+      "a": "csv-row-9705",
+      "b": "csv-row-21831",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-102030",
+      "b": "csv-row-41343",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-207575",
+      "b": "csv-row-101158",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-170751",
+      "b": "csv-row-95321",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-102184",
+      "b": "csv-row-149284",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-114917",
+      "b": "csv-row-134821",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-63643",
+      "b": "csv-row-160969",
+      "length_um": 396.3239374518217
+    },
+    {
+      "a": "csv-row-131986",
+      "b": "csv-row-106383",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-250149",
+      "b": "csv-row-13435",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-179131",
+      "b": "csv-row-120140",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-56279",
+      "b": "csv-row-213998",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-260852",
+      "b": "csv-row-72551",
+      "length_um": 221.8407421250384
+    },
+    {
+      "a": "csv-row-210546",
+      "b": "csv-row-89698",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-223945",
+      "b": "csv-row-170149",
+      "length_um": null
+    },
+    {
+      "a": "csv-row-233660",
+      "b": "csv-row-159337",
+      "length_um": 244.87414169774544
+    }
+  ],
+  "defaults": [
+    "csv-row-238375",
+    "csv-row-250386"
+  ],
+  "scope": "Numeric geometry verification only; no anatomical attachment, synaptic propagation or timing is established."
+}

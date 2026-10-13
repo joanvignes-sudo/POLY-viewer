@@ -1,0 +1,147 @@
+{
+  "version": "0.113",
+  "date": "2026-10-13",
+  "source": "https://h01-release.storage.googleapis.com/data.html",
+  "license": "CC BY 4.0",
+  "skeleton": {
+    "path": "assets/neurons/h01-em-1072605926.json",
+    "sha256": "ef28999baea1d7c4cddafc127a0a535950d82c54c2188e9475c495443c2f61a9",
+    "unit": "µm",
+    "to_nm": 1000,
+    "vertices": 25895,
+    "edges": 25850,
+    "components": 45,
+    "bounds_um": [
+      [
+        2708.544,
+        427.488,
+        0.099
+      ],
+      [
+        2934.112,
+        800.192,
+        174.537
+      ]
+    ]
+  },
+  "catalog": {
+    "path": "assets/h01-evidence/CATALOG.json",
+    "sha256": "f111320d80c2c204452ca807eb054063215104f2e548ccb369b304992d44b41c",
+    "bytes": 589369
+  },
+  "files": [
+    {
+      "path": "assets/h01-paths/PROJECTIONS.json",
+      "sha256": "c4f08dc7957bee27c442223686cf8a156a2904c478fc25452ef1059c821689ca",
+      "bytes": 1095172
+    },
+    {
+      "path": "assets/h01-paths/INDEPENDENT_VALIDATION.json",
+      "sha256": "99763bad0ebfd334de7d5edc3eb3f9d8f7ea5308ee8f7e7f4d43ce06c6ff152f",
+      "bytes": 4662
+    }
+  ],
+  "geometry_summary": {
+    "vertices": 25895,
+    "edges": 25850,
+    "components": 45,
+    "cycles": 0,
+    "zero_length_edges": 0,
+    "gap_quantiles_um": {
+      "0": 0.020787240709597813,
+      "0.5": 0.16148357819569167,
+      "0.9": 0.3909446845036944,
+      "0.95": 0.5618319391565503,
+      "0.99": 1.8579152057092154,
+      "1": 5.658726947939945
+    },
+    "catalog_by_component": {
+      "0": 1020,
+      "1": 404,
+      "2": 68,
+      "3": 21,
+      "4": 21,
+      "5": 11,
+      "6": 1,
+      "8": 1,
+      "11": 1,
+      "12": 1,
+      "13": 2,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "27": 1,
+      "29": 1,
+      "30": 1,
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "38": 1,
+      "44": 1
+    },
+    "component_vertices": {
+      "0": 16120,
+      "1": 6957,
+      "2": 1273,
+      "3": 604,
+      "4": 293,
+      "5": 233,
+      "6": 86,
+      "7": 56,
+      "8": 35,
+      "9": 16,
+      "10": 11,
+      "11": 11,
+      "12": 10,
+      "13": 9,
+      "14": 9,
+      "15": 9,
+      "16": 9,
+      "17": 8,
+      "18": 8,
+      "19": 8,
+      "20": 8,
+      "21": 7,
+      "22": 7,
+      "23": 7,
+      "24": 7,
+      "25": 7,
+      "26": 7,
+      "27": 6,
+      "28": 6,
+      "29": 6,
+      "30": 5,
+      "31": 5,
+      "32": 5,
+      "33": 5,
+      "34": 5,
+      "35": 4,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 4,
+      "42": 4,
+      "43": 3,
+      "44": 2
+    }
+  },
+  "scope": "New geometric analysis of the source skeleton, not a new biological chain. Nearest-edge projections do not establish anatomical attachment. Unique graph routes stay within connected components. No distance-to-time conversion.",
+  "limits": [
+    "Skeleton is a 45-component forest; no missing connection is added.",
+    "Source points can be on a cell surface while the skeleton is an axis; gap is not an anatomical error bound.",
+    "No source-supported axon/dendrite label is assigned from input/output role.",
+    "Path length is a polyline measurement of the source skeleton, not a true axonal cable length or conduction delay.",
+    "Order A to B is an exploration order, not an observed physiological direction."
+  ]
+}
