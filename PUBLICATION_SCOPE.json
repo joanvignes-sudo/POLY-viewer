@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.115",
+  "presentation_version": "0.116",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -145,5 +145,15 @@
     "image_values_independently_compared": 12582912,
     "class_validation": false,
     "biological_time": null
+  },
+  "allen_comparison": {
+    "cells": 3,
+    "donors": 2,
+    "sweeps": 9,
+    "source_spike_detections": 41,
+    "independent_sdk_signal_values": 1080000,
+    "source_qc_reanalysed": false,
+    "spatial_activity_in_branches": false,
+    "matched_cohort": false
   }
 }

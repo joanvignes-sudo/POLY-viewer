@@ -1,0 +1,25 @@
+{
+  "file": "637038252-specimen.json",
+  "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3ASpecimen%2Crma%3A%3Acriteria%2C%5Bid%24eq637038252%5D%2Crma%3A%3Ainclude%2Cephys_result%28well_known_files%28well_known_file_type%5Bname%24eqNWBDownload%5D%29%29%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+  "bytes": 1088,
+  "sha256": "2fcc6eabb633a19d44962fac19acd2332ec269bc4d6408c4363e6e0dc033000a",
+  "headers": {
+    "Date": "Tue, 13 Oct 2026 18:20:52 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "AWSALB=GYlaWANQj8TGC9eCFu7120jiH4n0lUv7uHWz5HsPz45lDZemRfGTnwfQ16QGi/XeqVh2rMGnpvnNYB1sOX373Lf+g+iBOK3KwDiSb6nE5DTGSLJTiGZhqumh8bmo; Expires=Tue, 20 Oct 2026 18:20:52 GMT; Path=/",
+    "Server": "Apache",
+    "Cache-Control": "max-age=0, private, must-revalidate",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Max-Age": "1728000",
+    "X-Request-Id": "25a82be6b6b06bb6830cddfaa54f19e1",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "X-UA-Compatible": "IE=Edge,chrome=1",
+    "X-Runtime": "0.016792",
+    "X-Rack-Cache": "miss",
+    "X-Powered-By": "Phusion Passenger 5.0.21",
+    "ETag": "\"8fbbebf60985db262062d30e235ad777\"",
+    "Status": "200 OK"
+  }
+}

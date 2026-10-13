@@ -1,0 +1,19 @@
+# Trois cellules humaines Allen, neuf essais · v0.116
+
+637034000 et 637038252 viennent du même donneur H17.03.013 (gyrus frontal supérieur gauche, couches 2 et 3). 508279351 vient du donneur H16.06.004 (gyrus temporal moyen droit, couche 3). Sélection de convenance explicitée dans la provenance : aucune cohorte appariée ni représentativité de population. Différences de donneur, région, couche, dendrites et préparation conservées.
+
+Deux nouveaux SWC complets sont conservés sans simplification : 6 827 sommets / 6 826 arêtes pour 637038252 ; le nombre exact de sommets et d’arêtes de 508279351 est conservé dans la provenance. Toutes les positions, types, rayons et relations parentales sont comparés à une seconde lecture textuelle. La référence 637034000 et les données H01 précédentes restent inchangées.
+
+Trois essais Long Square par cellule : amplitude la plus proche de −50 pA, essai rhéobase publié par Allen, plus faible amplitude disponible au moins 40 pA au-dessus du seuil publié (tolérance d’arrondi de 0,5 pA). Ce choix ne rend pas les stimulations équivalentes entre cellules. Chaque fenêtre conserve 60 000 paires à 50 kHz : impulsion principale de 1 s, marge de 0,1 s de chaque côté. Aucune réanalyse de la qualité individuelle des essais n’est revendiquée.
+
+1 080 000 valeurs de tension et de courant comparées au lecteur officiel AllenSDK : zéro différence. Les fenêtres restent à l’intérieur de l’intervalle expérimental valide déclaré dans le NWB. Un seul ajustement de compatibilité du lecteur de référence : décodage des chaînes d’octets de version ; ses méthodes de lecture des signaux et des instants détectés restent inchangées. [Source officielle du lecteur](https://raw.githubusercontent.com/AllenInstitute/AllenSDK/master/allensdk/core/nwb_data_set.py).
+
+Les fichiers de pipeline 1.0 conservent directement les valeurs SI ; leurs anciens attributs conversion ne doivent pas être appliqués une seconde fois. La règle est documentée dans [AllenSDK](https://alleninstitute.github.io/AllenSDK/_modules/allensdk/core/nwb_data_set.html). Pour la référence déjà intégrée, les facteurs valent 1 : ses valeurs et son fichier ne changent pas. Pour le prélèvement plus ancien 508279351, appliquer aveuglément les attributs aurait faussé les échelles ; la convention source est appliquée explicitement.
+
+41 instants détectés sont lus dans analysis/spike_times/Sweep_N et comparés au lecteur Allen. POLY ne redétecte pas les pics. Les intervalles affichés sont les différences entre instants source en secondes, converties en ms ; la première latence est calculée depuis le début de l’impulsion principale. Aucune direction ou vitesse de propagation spatiale n’est déduite. Le point de lecture parcourt un signal d’électrode ; la reconstruction n’est pas animée comme si chaque branche avait été enregistrée.
+
+Incohérence de métadonnées conservée : description générique « Mus musculus In Vitro », malgré l’espèce explicite Homo Sapiens. Espèce, numéro et nom du spécimen sont recoupés entre NWB et API ; les deux nouvelles chaînes d’accès spécimen → résultat électrique → fichier NWB sont vérifiées. L’incohérence n’est pas corrigée dans les fichiers originaux.
+
+Interface : sélection de cellule et d’essai, axes physiques ajustés et légendés sans normalisation des amplitudes, lecture temporelle, accès aux détections, tableau des intervalles, export avec provenance, lien partageable conservant essai, instant et vue. Repli sans WebGL, erreur d’empreinte bloquante et nouvelle tentative contrôlés.
+
+[Provenance, sources et empreintes](assets/allen-comparison/PROVENANCE.json) · [Comparaison indépendante](assets/allen-comparison/INDEPENDENT_VALIDATION.json) · [Crédits Allen et conditions distinctes de H01](assets/neurons/CREDITS.txt). Aucun soutien institutionnel revendiqué. NWB complets conservés dans l’archive de recherche ; liens vers les originaux proposés dans l’interface.

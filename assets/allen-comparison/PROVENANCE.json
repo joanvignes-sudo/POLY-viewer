@@ -1,0 +1,1258 @@
+{
+  "version": "0.116",
+  "created": "2026-10-12",
+  "samples": [
+    {
+      "id": "allen-637034000",
+      "file": "assets/neurons/allen-637034000.json",
+      "sha256": "9326f66a10460b3b42816915d2459541a4d26e3216a98049332df93f25838356",
+      "vertices": 8891,
+      "edges": 8890,
+      "components": 1,
+      "sum_edge_lengths_um": 10288.012781995323,
+      "bounds_um": [
+        [
+          253.5699,
+          188.3241,
+          6.902
+        ],
+        [
+          1008.5515,
+          1728.1264,
+          138.04
+        ]
+      ],
+      "radius_used_for_display": false,
+      "title": "Allen · cellule humaine 637034000",
+      "specimen": "H17.03.013.11.08.03",
+      "source": "https://celltypes.brain-map.org/experiment/morphology/637034000",
+      "description": "Gyrus frontal supérieur gauche · couche 2 · dendrites spiny. Tissu chirurgical ; donneuse de 41 ans, épilepsie. Reconstruction dans une préparation : les prolongements peuvent être coupés.",
+      "license": "Conditions Allen Institute : recherche et usages non commerciaux, avec attribution. Pas de licence CC générique.",
+      "license_url": "https://alleninstitute.org/legal/terms-of-use",
+      "citation": "Allen Institute for Brain Science (2015). Allen Cell Types Database [dataset]. Cellule 637034000. Consulté le 12 octobre 2026.",
+      "coordinates": "Coordonnées locales de reconstruction SWC, en µm ; aucun recalage vers MNI, BigBrain ou H01.",
+      "type_labels": {
+        "1": "Soma",
+        "2": "Axone",
+        "3": "Dendrite basale",
+        "4": "Dendrite apicale"
+      },
+      "trace": "assets/neurons/allen-sweep-62.json",
+      "trace_sha256": "42b87092ac3df34162617e8b43d8ec278a5f98157be21dcab711e10c2fe584c0",
+      "features": {
+        "adaptation": null,
+        "avg_isi": null,
+        "electrode_0_pa": 28.7399982284997,
+        "f_i_curve_slope": 0.0249999918256505,
+        "fast_trough_t_long_square": 1.11024,
+        "fast_trough_t_ramp": 10.9163466666667,
+        "fast_trough_t_short_square": 1.025496,
+        "fast_trough_v_long_square": -54.9375038146973,
+        "fast_trough_v_ramp": -57.1666704813639,
+        "fast_trough_v_short_square": -58.6937515258789,
+        "has_burst": false,
+        "has_delay": false,
+        "has_pause": false,
+        "id": 637056550,
+        "input_resistance_mohm": 88.4942,
+        "latency": 0.05758,
+        "peak_t_long_square": 1.1077,
+        "peak_t_ramp": 10.9142266666667,
+        "peak_t_short_square": 1.023428,
+        "peak_v_long_square": 43.3437538146973,
+        "peak_v_ramp": 51.0520846048991,
+        "peak_v_short_square": 46.1000022888184,
+        "rheobase_sweep_id": 637053492,
+        "rheobase_sweep_number": 62,
+        "ri": 61.7186725139618,
+        "sag": 0.0404780507087708,
+        "seal_gohm": 2.723503616,
+        "slow_trough_t_long_square": null,
+        "slow_trough_t_ramp": null,
+        "slow_trough_t_short_square": null,
+        "slow_trough_v_long_square": null,
+        "slow_trough_v_ramp": null,
+        "slow_trough_v_short_square": null,
+        "specimen_id": 637034000,
+        "tau": 12.75384148338,
+        "threshold_i_long_square": 470.0,
+        "threshold_i_ramp": 247.333338419596,
+        "threshold_i_short_square": 1700.0,
+        "threshold_t_long_square": 1.10714,
+        "threshold_t_ramp": 10.9137466666667,
+        "threshold_t_short_square": 1.02294,
+        "threshold_v_long_square": -40.2500038146973,
+        "threshold_v_ramp": -40.9270858764648,
+        "threshold_v_short_square": -49.8500030517578,
+        "thumbnail_sweep_id": 637053281,
+        "trough_t_long_square": 1.11052,
+        "trough_t_ramp": 10.9357666666667,
+        "trough_t_short_square": 1.253336,
+        "trough_v_long_square": -55.1562538146973,
+        "trough_v_ramp": -57.4791692097982,
+        "trough_v_short_square": -77.8000045776367,
+        "upstroke_downstroke_ratio_long_square": 3.33849793707664,
+        "upstroke_downstroke_ratio_ramp": 3.64352823454771,
+        "upstroke_downstroke_ratio_short_square": 3.43372790328671,
+        "vm_for_sag": -86.1562576293945,
+        "vrest": -78.1834945678711
+      },
+      "reconstruction": {
+        "average_bifurcation_angle_local": 76.9516534204621,
+        "average_bifurcation_angle_remote": null,
+        "average_contraction": 0.882233919878524,
+        "average_diameter": 0.488085748162377,
+        "average_fragmentation": 55.875,
+        "average_parent_daughter_ratio": 0.964472631992055,
+        "hausdorff_dimension": null,
+        "id": 689594739,
+        "max_branch_order": 10.0,
+        "max_euclidean_distance": 334.802776345657,
+        "max_path_distance": 367.726711509372,
+        "neuron_reconstruction_type": "full",
+        "number_bifurcations": 24,
+        "number_branches": 53,
+        "number_nodes": 2795,
+        "number_stems": 5,
+        "number_tips": 29,
+        "overall_depth": 73.4485,
+        "overall_height": 396.851132093926,
+        "overall_width": 329.354162645378,
+        "scale_factor_x": 0.1144,
+        "scale_factor_y": 0.1144,
+        "scale_factor_z": 0.28,
+        "soma_surface": 230.678575387286,
+        "specimen_id": 637034000,
+        "superseded": false,
+        "tags": "3D Neuron Reconstruction morphology",
+        "total_length": 3223.39410332723,
+        "total_surface": 4940.7785176708,
+        "total_volume": 607.897093981671,
+        "well_known_files": [
+          {
+            "attachable_id": 689594739,
+            "attachable_type": "NeuronReconstruction",
+            "download_link": "/api/v2/well_known_file_download/689594780",
+            "id": 689594780,
+            "path": "/external/humancelltypes/prod274/specimen_637034000/H17.03.013.11.08.03_689594739_m.swc",
+            "well_known_file_type_id": 303941301
+          },
+          {
+            "attachable_id": 689594739,
+            "attachable_type": "NeuronReconstruction",
+            "download_link": "/api/v2/well_known_file_download/689620657",
+            "id": 689620657,
+            "path": "/external/humancelltypes/prod274/specimen_637034000/morphology_summary_689594739.png",
+            "well_known_file_type_id": 480715721
+          },
+          {
+            "attachable_id": 689594739,
+            "attachable_type": "NeuronReconstruction",
+            "download_link": "/api/v2/well_known_file_download/689594792",
+            "id": 689594792,
+            "path": "/external/humancelltypes/prod274/specimen_637034000/H17.03.013.11.08.03_689594739_m.marker",
+            "well_known_file_type_id": 486753749
+          }
+        ]
+      },
+      "donor_id": 636948822,
+      "donor_name": "H17.03.013",
+      "region": "SFG",
+      "layer": "2",
+      "dendrite_type": "spiny",
+      "nwb_url": "https://api.brain-map.org/api/v2/well_known_file_download/742807097",
+      "nwb_bytes": 19005306,
+      "nwb_sha256": "53edd3c5738ff2afd7d69e0e67a7c24a88c7916e4662ce6e9d710a1a81f4e711",
+      "ephys_file": "assets/neurons/allen-ephys.json",
+      "traces": [
+        {
+          "path": "assets/allen-comparison/637034000-sweep-36.json",
+          "bytes": 2798014,
+          "sha256": "5b1404d883f73567956e5f5a7d25afd8014afbe0f981fdfa3d151df75fe56ea9",
+          "specimen_id": 637034000,
+          "sweep_number": 36,
+          "stimulus_amplitude_pa": -50.0000006675716,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Nearest Long Square amplitude to -50 pA",
+          "source_spike_times_s": [],
+          "source_spike_path": "analysis/spike_times/Sweep_36",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        },
+        {
+          "path": "assets/neurons/allen-sweep-62.json",
+          "bytes": 2851451,
+          "sha256": "42b87092ac3df34162617e8b43d8ec278a5f98157be21dcab711e10c2fe584c0",
+          "specimen_id": 637034000,
+          "sweep_number": 62,
+          "stimulus_amplitude_pa": 469.999983376823,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Published Allen rheobase sweep",
+          "source_spike_times_s": [
+            1.10714
+          ],
+          "source_spike_path": "analysis/spike_times/Sweep_62",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        },
+        {
+          "path": "assets/allen-comparison/637034000-sweep-64.json",
+          "bytes": 2760462,
+          "sha256": "8c19b7b69516f308bf56b7da0442db42a3072a2a7b6a7517dba8da848c140705",
+          "specimen_id": 637034000,
+          "sweep_number": 64,
+          "stimulus_amplitude_pa": 509.999986686438,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Lowest available Long Square amplitude at least 40 pA above published threshold, 0.5 pA rounding tolerance",
+          "source_spike_times_s": [
+            1.07758
+          ],
+          "source_spike_path": "analysis/spike_times/Sweep_64",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        }
+      ]
+    },
+    {
+      "id": "h01-em-1072605926",
+      "file": "assets/neurons/h01-em-1072605926.json",
+      "sha256": "ef28999baea1d7c4cddafc127a0a535950d82c54c2188e9475c495443c2f61a9",
+      "vertices": 25895,
+      "edges": 25850,
+      "components": 45,
+      "sum_edge_lengths_um": 7423.186617507616,
+      "bounds_um": [
+        [
+          2708.544,
+          427.488,
+          0.099
+        ],
+        [
+          2934.112,
+          800.192,
+          174.537
+        ]
+      ],
+      "radius_used_for_display": false,
+      "title": "H01 · segment humain 1072605926",
+      "specimen": "H01 · bibliothèque des 104 cellules relues",
+      "source": "https://h01-release.storage.googleapis.com/data.html",
+      "description": "Squelette d’un segment de cortex humain reconstruit en microscopie électronique. Toutes les composantes publiées de ce squelette sont conservées. Les lignes ne sont ni des membranes ni des synapses.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "citation": "Lichtman laboratory, Harvard University & Connectomics at Google. H01 release, 20210601, proofread_104, segment 1072605926.",
+      "coordinates": "Coordonnées natives du squelette precomputed en nm, transformation source identité ; conversion uniforme × 0,001 vers µm. Aucun recalage vers les autres jeux.",
+      "type_labels": {
+        "0": "Prolongements non typés"
+      },
+      "trace": null,
+      "article": "https://doi.org/10.1126/science.adk4858"
+    },
+    {
+      "id": "allen-637038252",
+      "file": "assets/allen-comparison/637038252-shape.json",
+      "sha256": "b06a72a06850ec2ef121c55d53966f44422230d4f55131372f2b896070ce3de4",
+      "vertices": 6827,
+      "edges": 6826,
+      "components": 1,
+      "sum_edge_lengths_um": 8044.717428431214,
+      "bounds_um": [
+        [
+          808.7485,
+          296.868,
+          9.2028
+        ],
+        [
+          1110.2554,
+          809.8856,
+          106.055
+        ]
+      ],
+      "radius_used_for_display": false,
+      "title": "Allen · cellule humaine 637038252",
+      "specimen": "H17.03.013.11.08.04",
+      "source": "https://celltypes.brain-map.org/experiment/morphology/637038252",
+      "description": "Gyrus frontal supérieur gauche · couche 3 · dendrites sans épines (aspiny). Tissu chirurgical ; donneuse de 41 ans, épilepsie. Même donneur que 637034000. Les prolongements peuvent être coupés dans la préparation.",
+      "license": "Conditions Allen Institute : recherche et usages non commerciaux, avec attribution. Pas de licence CC générique.",
+      "license_url": "https://alleninstitute.org/legal/terms-of-use",
+      "citation": "Allen Institute for Brain Science (2015). Allen Cell Types Database [dataset]. Cellule 637038252. Consulté le 13 octobre 2026.",
+      "coordinates": "Coordonnées locales de reconstruction SWC, en µm ; aucun recalage vers MNI, BigBrain ou H01.",
+      "type_labels": {
+        "1": "Soma",
+        "2": "Axone",
+        "3": "Dendrite basale",
+        "4": "Dendrite apicale"
+      },
+      "features": {
+        "adaptation": 0.0176593464242711,
+        "avg_isi": 32.6933333333333,
+        "electrode_0_pa": -38.6424989229361,
+        "f_i_curve_slope": 0.665873015873016,
+        "fast_trough_t_long_square": 1.16256,
+        "fast_trough_t_ramp": 1.38912,
+        "fast_trough_t_short_square": 1.046328,
+        "fast_trough_v_long_square": -54.46875,
+        "fast_trough_v_ramp": -53.4375025431315,
+        "fast_trough_v_short_square": -52.9312515258789,
+        "has_burst": false,
+        "has_delay": false,
+        "has_pause": false,
+        "id": 637193049,
+        "input_resistance_mohm": 735.866752,
+        "latency": 0.01556,
+        "peak_t_long_square": 1.16078,
+        "peak_t_ramp": 1.38712,
+        "peak_t_short_square": 1.044452,
+        "peak_v_long_square": 39.25,
+        "peak_v_ramp": 40.4479179382324,
+        "peak_v_short_square": 39.3687507629395,
+        "rheobase_sweep_id": 637169332,
+        "rheobase_sweep_number": 20,
+        "ri": 269.53125,
+        "sag": 0.0466119982302189,
+        "seal_gohm": 3.60796288,
+        "slow_trough_t_long_square": 1.19556,
+        "slow_trough_t_ramp": 1.41008,
+        "slow_trough_t_short_square": null,
+        "slow_trough_v_long_square": -56.875,
+        "slow_trough_v_ramp": -55.0833371480306,
+        "slow_trough_v_short_square": null,
+        "specimen_id": 637038252,
+        "tau": 17.9747425392192,
+        "threshold_i_long_square": 10.0,
+        "threshold_i_ramp": 9.125,
+        "threshold_i_short_square": 200.0,
+        "threshold_t_long_square": 1.16026,
+        "threshold_t_ramp": 1.38658666666667,
+        "threshold_t_short_square": 1.043972,
+        "threshold_v_long_square": -44.34375,
+        "threshold_v_ramp": -42.8541692097982,
+        "threshold_v_short_square": -41.0562530517578,
+        "thumbnail_sweep_id": 637169336,
+        "trough_t_long_square": 1.19556,
+        "trough_t_ramp": 1.41008,
+        "trough_t_short_square": 1.701144,
+        "trough_v_long_square": -56.875,
+        "trough_v_ramp": -55.0833371480306,
+        "trough_v_short_square": -63.0625022888184,
+        "upstroke_downstroke_ratio_long_square": 2.91710414874518,
+        "upstroke_downstroke_ratio_ramp": 2.98841303503736,
+        "upstroke_downstroke_ratio_short_square": 2.93927341927963,
+        "vm_for_sag": -97.8750076293945,
+        "vrest": -64.3611221313477
+      },
+      "donor_id": 636948822,
+      "donor_name": "H17.03.013",
+      "region": "SFG",
+      "layer": "3",
+      "dendrite_type": "aspiny",
+      "nwb_url": "https://api.brain-map.org/api/v2/well_known_file_download/742807027",
+      "nwb_bytes": 7519088,
+      "nwb_sha256": "f694401908ca0576ad8b6e12b12e5d7e9d1a1e88940a9591fc9bac04f5a2238e",
+      "ephys_file": "assets/allen-comparison/637038252-ephys.json",
+      "traces": [
+        {
+          "path": "assets/allen-comparison/637038252-sweep-17.json",
+          "bytes": 2786870,
+          "sha256": "d072bef564631df1dfff1335104937e7d329b7d2e56a4fa1a2d1449230bd4fe0",
+          "specimen_id": 637038252,
+          "sweep_number": 17,
+          "stimulus_amplitude_pa": -50.0000006675716,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Nearest Long Square amplitude to -50 pA",
+          "source_spike_times_s": [],
+          "source_spike_path": "analysis/spike_times/Sweep_17",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        },
+        {
+          "path": "assets/allen-comparison/637038252-sweep-20.json",
+          "bytes": 2811374,
+          "sha256": "36153f0acd213377f1307ada619822c6ff27aa2f288b4f6879eba3b17e4d243d",
+          "specimen_id": 637038252,
+          "sweep_number": 20,
+          "stimulus_amplitude_pa": 9.99999996004197,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Published Allen rheobase sweep",
+          "source_spike_times_s": [
+            1.16026,
+            1.3025200000000001,
+            1.52414
+          ],
+          "source_spike_path": "analysis/spike_times/Sweep_20",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        },
+        {
+          "path": "assets/allen-comparison/637038252-sweep-22.json",
+          "bytes": 2760077,
+          "sha256": "c16b20a15347c66fa5c61f8ceca807c97ac5989d50aabd330a0ddcc2560be808",
+          "specimen_id": 637038252,
+          "sweep_number": 22,
+          "stimulus_amplitude_pa": 50.0000006675716,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Lowest available Long Square amplitude at least 40 pA above published threshold, 0.5 pA rounding tolerance",
+          "source_spike_times_s": [
+            1.03556,
+            1.05108,
+            1.0721,
+            1.09542,
+            1.1230600000000002,
+            1.15022,
+            1.1788,
+            1.20646,
+            1.2364400000000002,
+            1.26756,
+            1.2989600000000001,
+            1.3307200000000001,
+            1.3606600000000002,
+            1.3905,
+            1.42056,
+            1.4530800000000001,
+            1.4841600000000001,
+            1.5166000000000002,
+            1.5518,
+            1.5887000000000002,
+            1.6243200000000002,
+            1.65812,
+            1.6946200000000002,
+            1.7324800000000002,
+            1.77028,
+            1.80746,
+            1.8424000000000003,
+            1.88186,
+            1.92548,
+            1.973,
+            2.01636
+          ],
+          "source_spike_path": "analysis/spike_times/Sweep_22",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        }
+      ],
+      "trace": "assets/allen-comparison/637038252-sweep-20.json",
+      "trace_sha256": "36153f0acd213377f1307ada619822c6ff27aa2f288b4f6879eba3b17e4d243d"
+    },
+    {
+      "id": "allen-508279351",
+      "file": "assets/allen-comparison/508279351-shape.json",
+      "sha256": "3ed150feb3c31de5af761625e5d212ce08fc1c6c60ac007070b0d5bed58bdfe8",
+      "vertices": 10529,
+      "edges": 10528,
+      "components": 1,
+      "sum_edge_lengths_um": 12489.671169122628,
+      "bounds_um": [
+        [
+          257.5167,
+          58.0777,
+          28.2554
+        ],
+        [
+          925.5223,
+          1173.6982,
+          154.84
+        ]
+      ],
+      "radius_used_for_display": false,
+      "title": "Allen · cellule humaine 508279351",
+      "specimen": "H16.06.004.01.04.01",
+      "source": "https://celltypes.brain-map.org/experiment/morphology/508279351",
+      "description": "Gyrus temporal moyen droit · couche 3 · dendrites avec épines (spiny). Tissu chirurgical ; donneur de 37 ans. État clinique conservé dans les métadonnées source. Les prolongements peuvent être coupés dans la préparation.",
+      "license": "Conditions Allen Institute : recherche et usages non commerciaux, avec attribution. Pas de licence CC générique.",
+      "license_url": "https://alleninstitute.org/legal/terms-of-use",
+      "citation": "Allen Institute for Brain Science (2015). Allen Cell Types Database [dataset]. Cellule 508279351. Consulté le 13 octobre 2026.",
+      "coordinates": "Coordonnées locales de reconstruction SWC, en µm ; aucun recalage vers MNI, BigBrain ou H01.",
+      "type_labels": {
+        "1": "Soma",
+        "2": "Axone",
+        "3": "Dendrite basale",
+        "4": "Dendrite apicale"
+      },
+      "features": {
+        "adaptation": 0.322543352601162,
+        "avg_isi": 8.65000000000005,
+        "electrode_0_pa": 15.2999991148706,
+        "f_i_curve_slope": 0.03214586846543,
+        "fast_trough_t_long_square": 1.17316,
+        "fast_trough_t_ramp": 14.21782,
+        "fast_trough_t_short_square": 1.02518666666667,
+        "fast_trough_v_long_square": -49.7500038146973,
+        "fast_trough_v_ramp": -52.6875025431315,
+        "fast_trough_v_short_square": -50.1354185740153,
+        "has_burst": false,
+        "has_delay": false,
+        "has_pause": false,
+        "id": 508279814,
+        "input_resistance_mohm": 79.530488,
+        "latency": 0.0879000000000001,
+        "peak_t_long_square": 1.17146,
+        "peak_t_ramp": 14.2160133333333,
+        "peak_t_short_square": 1.02371,
+        "peak_v_long_square": 37.90625,
+        "peak_v_ramp": 40.8437512715658,
+        "peak_v_short_square": 41.0989589691162,
+        "rheobase_sweep_id": 508279600,
+        "rheobase_sweep_number": 72,
+        "ri": 77.9687911272049,
+        "sag": 0.0782083496451378,
+        "seal_gohm": 1.150497536,
+        "slow_trough_t_long_square": null,
+        "slow_trough_t_ramp": null,
+        "slow_trough_t_short_square": null,
+        "slow_trough_v_long_square": null,
+        "slow_trough_v_ramp": null,
+        "slow_trough_v_short_square": null,
+        "specimen_id": 508279351,
+        "tau": 27.2643327261422,
+        "threshold_i_long_square": 260.0,
+        "threshold_i_ramp": 329.875,
+        "threshold_i_short_square": 2650.0,
+        "threshold_t_long_square": 1.17088,
+        "threshold_t_ramp": 14.2154133333333,
+        "threshold_t_short_square": 1.02312,
+        "threshold_v_long_square": -39.5,
+        "threshold_v_ramp": -37.5729179382324,
+        "threshold_v_short_square": -54.2343781789144,
+        "thumbnail_sweep_id": 508279588,
+        "trough_t_long_square": 1.17318,
+        "trough_t_ramp": 14.2179333333333,
+        "trough_t_short_square": 1.02520333333333,
+        "trough_v_long_square": -49.8125038146973,
+        "trough_v_ramp": -52.8020858764648,
+        "trough_v_short_square": -50.1718769073486,
+        "upstroke_downstroke_ratio_long_square": 2.50746225724583,
+        "upstroke_downstroke_ratio_ramp": 2.51739783929708,
+        "upstroke_downstroke_ratio_short_square": 2.63579786362174,
+        "vm_for_sag": -88.5625,
+        "vrest": -80.5055160522461
+      },
+      "donor_id": 504921484,
+      "donor_name": "H16.06.004",
+      "region": "MTG",
+      "layer": "3",
+      "dendrite_type": "spiny",
+      "nwb_url": "https://api.brain-map.org/api/v2/well_known_file_download/616978710",
+      "nwb_bytes": 20503241,
+      "nwb_sha256": "862cd93696fbfd36a81a5cba14afa8615e133150699f2191e8c78bb8d2408000",
+      "ephys_file": "assets/allen-comparison/508279351-ephys.json",
+      "traces": [
+        {
+          "path": "assets/allen-comparison/508279351-sweep-48.json",
+          "bytes": 2799837,
+          "sha256": "261e4e04336719a2bca527d0a2983be011756e2f264014d62bf400e0a10ae18d",
+          "specimen_id": 508279351,
+          "sweep_number": 48,
+          "stimulus_amplitude_pa": -50.0000006675716,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Nearest Long Square amplitude to -50 pA",
+          "source_spike_times_s": [],
+          "source_spike_path": "analysis/spike_times/Sweep_48",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        },
+        {
+          "path": "assets/allen-comparison/508279351-sweep-72.json",
+          "bytes": 2859111,
+          "sha256": "981f4271de3fbe0717e0500cf92a32b2fb848e7f71bd08bce21a2f33985ea3c8",
+          "specimen_id": 508279351,
+          "sweep_number": 72,
+          "stimulus_amplitude_pa": 259.999993756921,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Published Allen rheobase sweep",
+          "source_spike_times_s": [
+            1.1708800000000001,
+            1.1816000000000002
+          ],
+          "source_spike_path": "analysis/spike_times/Sweep_72",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        },
+        {
+          "path": "assets/allen-comparison/508279351-sweep-66.json",
+          "bytes": 2810072,
+          "sha256": "56c3071057675f7a340c1ce880da9cd97b7edf2221efe2e69ad6f53cb84c972f",
+          "specimen_id": 508279351,
+          "sweep_number": 66,
+          "stimulus_amplitude_pa": 309.999997893939,
+          "sample_rate_hz": 50000.0,
+          "samples": 60000,
+          "stimulus_relative_interval_s": [
+            1.02,
+            2.02
+          ],
+          "selection": "Lowest available Long Square amplitude at least 40 pA above published threshold, 0.5 pA rounding tolerance",
+          "source_spike_times_s": [
+            1.1079,
+            1.11376,
+            1.1252000000000002
+          ],
+          "source_spike_path": "analysis/spike_times/Sweep_66",
+          "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+        }
+      ],
+      "trace": "assets/allen-comparison/508279351-sweep-72.json",
+      "trace_sha256": "981f4271de3fbe0717e0500cf92a32b2fb848e7f71bd08bce21a2f33985ea3c8"
+    }
+  ],
+  "display_transform": "Centre de la boîte englobante soustrait pour l’affichage seulement ; axes x,y,z conservés ; rotation et zoom sans modification des données. Traits de largeur écran constante : rayons non représentés à leur échelle.",
+  "measurements": "Somme euclidienne des arêtes dans les coordonnées sources converties en µm. Longueur de squelette reconstruit, ni longueur totale biologique ni trajet causal.",
+  "registration": "Aucune correspondance individuelle entre CerebrA, BigBrain, Allen et H01. Aucun délai de propagation déduit de la morphologie.",
+  "h01_swc_crosscheck": {
+    "component": "1072605926.0.swc",
+    "vertices_checked": 16120,
+    "exact_native_coordinate_match": true,
+    "swc_to_native_nm_factors": [
+      32,
+      32,
+      33
+    ],
+    "display_uses": "native precomputed skeleton, not SWC export"
+  },
+  "raw_sources": [
+    {
+      "file": "allen-637034000.swc",
+      "bytes": 395455,
+      "sha256": "e15ba38ae0ed48f550104c9b840540c006e8c2d1c8422acc8c1b5df6a7ae3e04"
+    },
+    {
+      "file": "allen-ephys.json",
+      "bytes": 1910,
+      "sha256": "841920b9154efb084cfd11a12a1de95a5fcd1892ab3f28e9399d8bf29f791c90"
+    },
+    {
+      "file": "allen-metadata.json",
+      "bytes": 1816,
+      "sha256": "9fc37af7786e1a3e627c11fe4e73a7c31e6e59211621ed3112e703da7151076e"
+    },
+    {
+      "file": "allen-reconstruction.json",
+      "bytes": 1848,
+      "sha256": "de4a64c464045da01848d1efeb83c00cdb35ad6e0b0a3e7d91171c8122fdbfbe"
+    },
+    {
+      "file": "allen-specimen.json",
+      "bytes": 1088,
+      "sha256": "d2ae74688168d2488c33ad48c81fde85d7875e80b6f05e613e3ad1c1329447fb"
+    },
+    {
+      "file": "h01-1072605926.skeleton",
+      "bytes": 621128,
+      "sha256": "90fd2552213f2e2d78d9c5aede31cc3837a3374cb66e79eb098805b3d0795a5f"
+    },
+    {
+      "file": "h01-native-receipt.json",
+      "bytes": 259,
+      "sha256": "f3df0f3d2f789dcf39985b2637077d990f01911de8796b50743d6989fcd1a9d1"
+    },
+    {
+      "file": "h01-skeleton-info.json",
+      "bytes": 503,
+      "sha256": "3bc2c1c488d4e92b9fb163f7ebcf6d7ca8629ac9150adb774a9b64c6a27405c0"
+    }
+  ],
+  "nwb_source": {
+    "url": "https://api.brain-map.org/api/v2/well_known_file_download/742807097",
+    "bytes": 19005306,
+    "sha256": "53edd3c5738ff2afd7d69e0e67a7c24a88c7916e4662ce6e9d710a1a81f4e711",
+    "kept_locally": true,
+    "public_subset": "allen-sweep-62.json"
+  },
+  "h01_archive": {
+    "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/skeletons/104_proofread_neurons_swc.zip",
+    "bytes": 59832937,
+    "sha256": "3e0534df357ef2e92f6e0199962133cc9bc9733eb3a1fd6d1d315208ad63db47",
+    "kept_locally": true
+  },
+  "formats_documentation": [
+    "https://github.com/google/neuroglancer/blob/master/src/datasource/precomputed/skeletons.md",
+    "https://github.com/google/neuroglancer/blob/master/src/datasource/precomputed/sharded.md",
+    "https://community.brain-map.org/t/cell-types-database-api/3016"
+  ],
+  "comparison_scope": "Three convenience-selected cells from two donors. Same-donor pair differs in layer and morphology; other donor differs in region. No matched comparison, population estimate or causal inference. Every morphology and trace share a verified specimen ID; recording does not spatially localize activity along branches.",
+  "comparison_samples": [
+    "allen-637034000",
+    "allen-637038252",
+    "allen-508279351"
+  ],
+  "additional_files": [
+    {
+      "path": "assets/allen-comparison/637038252.swc",
+      "bytes": 304892,
+      "sha256": "a307bdc56ef94661bf8eecab5529c23fdcbc5fc2674b2a59a95e019dd7248a9a"
+    },
+    {
+      "path": "assets/allen-comparison/508279351.swc",
+      "bytes": 471275,
+      "sha256": "706251623b0d9e6101b67ad49a5d41711a9cace88efd0c6239496632bfe43084"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-ephys.json",
+      "bytes": 1918,
+      "sha256": "499fa7bb6d34d46e918e13874681b2be5af6ac616676951ab9a394bb40892a85"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-ephys.json.receipt.json",
+      "bytes": 1231,
+      "sha256": "9b459e2ac60b41916df523d1ce687fdb75ef61a25249cae72a4f98efd7d411d8"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-metadata.json",
+      "bytes": 2046,
+      "sha256": "4d91aaf64e69f8ff7511c005d9e673474974f561f1b7161f53039de5e90a42a7"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-specimen.json",
+      "bytes": 1088,
+      "sha256": "860438a9d5e5747c11945e47c3c2e48580771d61680f3df9b6017152b0527723"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-specimen.json.receipt.json",
+      "bytes": 1329,
+      "sha256": "2e752dc67dc84b9a687e5c22cdbd055c593c63e403b8ceb50ac48ace1166fb84"
+    },
+    {
+      "path": "assets/allen-comparison/508279351.nwb.receipt.json",
+      "bytes": 1238,
+      "sha256": "f24007d92bbb3dca3c40057ece71b3073685f40c12ba5ba4f3b702583da32d54"
+    },
+    {
+      "path": "assets/allen-comparison/508279351.swc.receipt.json",
+      "bytes": 1250,
+      "sha256": "bde528226aba3acd005cad7df0af8d5eb0fc9f26c57562f9eb9e7c4144a9129a"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-ephys.json",
+      "bytes": 1880,
+      "sha256": "e690e5510528ad4b9e2bb8dc471fde357ef1f095180743702cbb7e9e6cd6d1c9"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-ephys.json.receipt.json",
+      "bytes": 1231,
+      "sha256": "5b39f5198037f9572b5f8654326de5069da6af4d8659cd9b6964c94194d96a69"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-metadata.json",
+      "bytes": 2014,
+      "sha256": "d0391b107ba80870c798522c5c9e758b35ca51dab87ea2223b6af14e012e7c51"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-specimen.json",
+      "bytes": 1088,
+      "sha256": "2fcc6eabb633a19d44962fac19acd2332ec269bc4d6408c4363e6e0dc033000a"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-specimen.json.receipt.json",
+      "bytes": 1329,
+      "sha256": "09dede67c2ce4c4041cc7c10a3c4671c0a59b1e63008e08cfac3ccca8c9c3457"
+    },
+    {
+      "path": "assets/allen-comparison/637038252.nwb.receipt.json",
+      "bytes": 1236,
+      "sha256": "09bef6241d96307ca3f380507c050427b2c87aa49073bd079dd34a5784986c6c"
+    },
+    {
+      "path": "assets/allen-comparison/637038252.swc.receipt.json",
+      "bytes": 1250,
+      "sha256": "fd78969e249e7f77ccb6cfafe56eaeab05c1c2dcf8e5828b8b171e54f9d8e4d8"
+    },
+    {
+      "path": "assets/allen-comparison/allen_sdk_receipt.json",
+      "bytes": 1343,
+      "sha256": "b5cf6c4d933b66f07e953d311a58143eaf9ef9a5c4718d541c44ab5bca28b92a"
+    },
+    {
+      "path": "assets/allen-comparison/human-cells-receipt.json",
+      "bytes": 1123,
+      "sha256": "cb1d85b58584af205fa50ca29d6bc8848078df2b8aa37a3d030ab0d0ae77e84b"
+    },
+    {
+      "path": "assets/allen-comparison/human-cells.json",
+      "bytes": 681520,
+      "sha256": "206cff4f044240ce449c53f64483f75ae49533b0dae115dd2c2dd91c36a536a1"
+    },
+    {
+      "path": "assets/allen-comparison/SELECTION.json",
+      "bytes": 324,
+      "sha256": "431139c165b972b46cb4fc0cc89ee85024079010f4648ea1ef05a3a1435ca96b"
+    },
+    {
+      "path": "assets/allen-comparison/allen_sdk_nwb_data_set.py",
+      "sha256": "5b1eb5ecb3d99c7778c097a2677ef02c80fc2146ef62209770d628db4b1ee31c",
+      "bytes": 16140
+    }
+  ],
+  "selection": {
+    "specimen_ids": [
+      637034000,
+      637038252,
+      508279351
+    ],
+    "selection": "Existing reference 637034000; the other full SWC+NWB specimen from the same donor H17.03.013; lowest specimen ID full SWC+NWB spiny MTG layer 3 from donor H16.06.004. Convenience selection, not representative or matched cohort."
+  },
+  "source_quirks": [
+    {
+      "specimen_id": 637034000,
+      "nwb_subject_description": "Mus musculus In Vitro",
+      "nwb_species": "Homo Sapiens",
+      "scope": "Description is inconsistent generic text; identity and species cross-checked using explicit NWB specimen fields and API. No claim to have corrected source."
+    },
+    {
+      "specimen_id": 637038252,
+      "nwb_subject_description": "Mus musculus In Vitro",
+      "nwb_species": "Homo Sapiens",
+      "scope": "Description is inconsistent generic text; identity and species cross-checked using explicit NWB specimen fields and API. No claim to have corrected source."
+    },
+    {
+      "specimen_id": 508279351,
+      "nwb_subject_description": "Mus musculus In Vitro",
+      "nwb_species": "Homo Sapiens",
+      "scope": "Description is inconsistent generic text; identity and species cross-checked using explicit NWB specimen fields and API. No claim to have corrected source."
+    }
+  ],
+  "traces": [
+    {
+      "path": "assets/allen-comparison/637034000-sweep-36.json",
+      "bytes": 2798014,
+      "sha256": "5b1404d883f73567956e5f5a7d25afd8014afbe0f981fdfa3d151df75fe56ea9",
+      "specimen_id": 637034000,
+      "sweep_number": 36,
+      "stimulus_amplitude_pa": -50.0000006675716,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Nearest Long Square amplitude to -50 pA",
+      "source_spike_times_s": [],
+      "source_spike_path": "analysis/spike_times/Sweep_36",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/neurons/allen-sweep-62.json",
+      "bytes": 2851451,
+      "sha256": "42b87092ac3df34162617e8b43d8ec278a5f98157be21dcab711e10c2fe584c0",
+      "specimen_id": 637034000,
+      "sweep_number": 62,
+      "stimulus_amplitude_pa": 469.999983376823,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Published Allen rheobase sweep",
+      "source_spike_times_s": [
+        1.10714
+      ],
+      "source_spike_path": "analysis/spike_times/Sweep_62",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/637034000-sweep-64.json",
+      "bytes": 2760462,
+      "sha256": "8c19b7b69516f308bf56b7da0442db42a3072a2a7b6a7517dba8da848c140705",
+      "specimen_id": 637034000,
+      "sweep_number": 64,
+      "stimulus_amplitude_pa": 509.999986686438,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Lowest available Long Square amplitude at least 40 pA above published threshold, 0.5 pA rounding tolerance",
+      "source_spike_times_s": [
+        1.07758
+      ],
+      "source_spike_path": "analysis/spike_times/Sweep_64",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-sweep-17.json",
+      "bytes": 2786870,
+      "sha256": "d072bef564631df1dfff1335104937e7d329b7d2e56a4fa1a2d1449230bd4fe0",
+      "specimen_id": 637038252,
+      "sweep_number": 17,
+      "stimulus_amplitude_pa": -50.0000006675716,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Nearest Long Square amplitude to -50 pA",
+      "source_spike_times_s": [],
+      "source_spike_path": "analysis/spike_times/Sweep_17",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-sweep-20.json",
+      "bytes": 2811374,
+      "sha256": "36153f0acd213377f1307ada619822c6ff27aa2f288b4f6879eba3b17e4d243d",
+      "specimen_id": 637038252,
+      "sweep_number": 20,
+      "stimulus_amplitude_pa": 9.99999996004197,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Published Allen rheobase sweep",
+      "source_spike_times_s": [
+        1.16026,
+        1.3025200000000001,
+        1.52414
+      ],
+      "source_spike_path": "analysis/spike_times/Sweep_20",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/637038252-sweep-22.json",
+      "bytes": 2760077,
+      "sha256": "c16b20a15347c66fa5c61f8ceca807c97ac5989d50aabd330a0ddcc2560be808",
+      "specimen_id": 637038252,
+      "sweep_number": 22,
+      "stimulus_amplitude_pa": 50.0000006675716,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Lowest available Long Square amplitude at least 40 pA above published threshold, 0.5 pA rounding tolerance",
+      "source_spike_times_s": [
+        1.03556,
+        1.05108,
+        1.0721,
+        1.09542,
+        1.1230600000000002,
+        1.15022,
+        1.1788,
+        1.20646,
+        1.2364400000000002,
+        1.26756,
+        1.2989600000000001,
+        1.3307200000000001,
+        1.3606600000000002,
+        1.3905,
+        1.42056,
+        1.4530800000000001,
+        1.4841600000000001,
+        1.5166000000000002,
+        1.5518,
+        1.5887000000000002,
+        1.6243200000000002,
+        1.65812,
+        1.6946200000000002,
+        1.7324800000000002,
+        1.77028,
+        1.80746,
+        1.8424000000000003,
+        1.88186,
+        1.92548,
+        1.973,
+        2.01636
+      ],
+      "source_spike_path": "analysis/spike_times/Sweep_22",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-sweep-48.json",
+      "bytes": 2799837,
+      "sha256": "261e4e04336719a2bca527d0a2983be011756e2f264014d62bf400e0a10ae18d",
+      "specimen_id": 508279351,
+      "sweep_number": 48,
+      "stimulus_amplitude_pa": -50.0000006675716,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Nearest Long Square amplitude to -50 pA",
+      "source_spike_times_s": [],
+      "source_spike_path": "analysis/spike_times/Sweep_48",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-sweep-72.json",
+      "bytes": 2859111,
+      "sha256": "981f4271de3fbe0717e0500cf92a32b2fb848e7f71bd08bce21a2f33985ea3c8",
+      "specimen_id": 508279351,
+      "sweep_number": 72,
+      "stimulus_amplitude_pa": 259.999993756921,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Published Allen rheobase sweep",
+      "source_spike_times_s": [
+        1.1708800000000001,
+        1.1816000000000002
+      ],
+      "source_spike_path": "analysis/spike_times/Sweep_72",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    },
+    {
+      "path": "assets/allen-comparison/508279351-sweep-66.json",
+      "bytes": 2810072,
+      "sha256": "56c3071057675f7a340c1ce880da9cd97b7edf2221efe2e69ad6f53cb84c972f",
+      "specimen_id": 508279351,
+      "sweep_number": 66,
+      "stimulus_amplitude_pa": 309.999997893939,
+      "sample_rate_hz": 50000.0,
+      "samples": 60000,
+      "stimulus_relative_interval_s": [
+        1.02,
+        2.02
+      ],
+      "selection": "Lowest available Long Square amplitude at least 40 pA above published threshold, 0.5 pA rounding tolerance",
+      "source_spike_times_s": [
+        1.1079,
+        1.11376,
+        1.1252000000000002
+      ],
+      "source_spike_path": "analysis/spike_times/Sweep_66",
+      "spike_scope": "Allen-provided detected threshold times relative to sweep start, not independently re-detected by POLY"
+    }
+  ],
+  "conversion_reference": "https://alleninstitute.github.io/AllenSDK/_modules/allensdk/core/nwb_data_set.html",
+  "individual_sweep_qc_reanalysed": false,
+  "nwb_identity_checks": [
+    {
+      "specimen_id": 637034000,
+      "sweep_number": 36,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "V",
+        "A"
+      ],
+      "source_conversions": [
+        1.0,
+        1.0
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 637034000,
+      "sweep_number": 62,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "V",
+        "A"
+      ],
+      "source_conversions": [
+        1.0,
+        1.0
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 637034000,
+      "sweep_number": 64,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "V",
+        "A"
+      ],
+      "source_conversions": [
+        1.0,
+        1.0
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 637038252,
+      "sweep_number": 17,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "V",
+        "A"
+      ],
+      "source_conversions": [
+        1.0,
+        1.0
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 637038252,
+      "sweep_number": 20,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "V",
+        "A"
+      ],
+      "source_conversions": [
+        1.0,
+        1.0
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 637038252,
+      "sweep_number": 22,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "V",
+        "A"
+      ],
+      "source_conversions": [
+        1.0,
+        1.0
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 508279351,
+      "sweep_number": 48,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "Volts",
+        "Amps"
+      ],
+      "source_conversions": [
+        0.001,
+        1e-12
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 508279351,
+      "sweep_number": 72,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "Volts",
+        "Amps"
+      ],
+      "source_conversions": [
+        0.001,
+        1e-12
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    },
+    {
+      "specimen_id": 508279351,
+      "sweep_number": 66,
+      "samples": 60000,
+      "main_pulse_s": 1.0,
+      "nwb_identity_confirmed": true,
+      "source_units": [
+        "Volts",
+        "Amps"
+      ],
+      "source_conversions": [
+        0.001,
+        1e-12
+      ],
+      "effective_conversions": [
+        1.0,
+        1.0
+      ],
+      "pipeline_version": "1.0",
+      "rate_hz": 50000.0
+    }
+  ],
+  "independent_validation": {
+    "path": "assets/allen-comparison/INDEPENDENT_VALIDATION.json",
+    "sha256": "be4a5529d7b0ba45ab59f177b21d23d83dcb34d1b4c87a656e3650105c0a63da",
+    "bytes": 4934
+  },
+  "official_reader_snapshot": {
+    "path": "assets/allen-comparison/allen_sdk_nwb_data_set.py",
+    "license": "Allen Institute Software License preserved in full in original file; distinct from dataset terms.",
+    "sha256": "5b1eb5ecb3d99c7778c097a2677ef02c80fc2146ef62209770d628db4b1ee31c"
+  }
+}

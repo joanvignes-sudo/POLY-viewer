@@ -1,0 +1,25 @@
+{
+  "file": "637038252-ephys.json",
+  "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AEphysFeature%2Crma%3A%3Acriteria%2C%5Bspecimen_id%24eq637038252%5D%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+  "bytes": 1880,
+  "sha256": "e690e5510528ad4b9e2bb8dc471fde357ef1f095180743702cbb7e9e6cd6d1c9",
+  "headers": {
+    "Date": "Tue, 13 Oct 2026 18:20:52 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "AWSALB=rQ+FfjsheNUio2FxiBr1rzUTMxkzUDKrwTjzr1keXsd6MgyAuEMrIVKoDRj0Op2ceD8tpdijyl5z9Q9oNsIh7GeSx1a4gjvoOWJGvbc2o496aGVHm/8StALkLRWF; Expires=Tue, 20 Oct 2026 18:20:52 GMT; Path=/",
+    "Server": "Apache",
+    "Cache-Control": "max-age=0, private, must-revalidate",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Max-Age": "1728000",
+    "X-Request-Id": "e383558d57a25b710308531fd3a8fab2",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "X-UA-Compatible": "IE=Edge,chrome=1",
+    "X-Runtime": "0.009980",
+    "X-Rack-Cache": "miss",
+    "X-Powered-By": "Phusion Passenger 5.0.21",
+    "ETag": "\"4e6808432f0b3a45e992e40873d2916f\"",
+    "Status": "200 OK"
+  }
+}
