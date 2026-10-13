@@ -1,5 +1,5 @@
 {
-  "version": "0.120",
+  "version": "0.121",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -14,7 +14,7 @@
     {
       "path": "anatomie.html",
       "bytes": 7455,
-      "sha256": "e653fa5ea285b278af7492191aa67e1120834fdfc864fafd9ca29e564698440a"
+      "sha256": "7250f698396cd20b33d98dca0c430a8cd0da176a696118cf1defcea6a6f903cd"
     },
     {
       "path": "ANCRAGE_HUMAIN_v0.94.json",
@@ -602,9 +602,29 @@
       "sha256": "ad0ef56e8ebef3e11ffce2eb9e19d4a96d8d24055c9793bd0b21c7e8ca6971a4"
     },
     {
+      "path": "assets/bigbrain-v0121.js",
+      "bytes": 15357,
+      "sha256": "515ba126172ad3664175edcd321740b7c994bddfd6550cdd3bb62b4e88ffdc8d"
+    },
+    {
       "path": "assets/bigbrain-v095.js",
       "bytes": 8729,
       "sha256": "2389125bad1ab5248c6817b707f63a6f22e92b7c1d663a5b9d270464c9913abf"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/positions.bin",
+      "bytes": 4186140,
+      "sha256": "182d75e14eecc2726c0c436f1dd31eaa39afeadce3c815c342e5237e900c98bf"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/PROVENANCE.json",
+      "bytes": 12177,
+      "sha256": "b6020bb727153e71de43f9cd7922f848b6099a3fff6813f686c454ea5c441a31"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/VALIDATION.json",
+      "bytes": 2527,
+      "sha256": "301413e3b757e68e6bd4c2c04c50018dc182f3e7e2722b244d0a392f63f6f67a"
     },
     {
       "path": "assets/c08/C08_F01.js",
@@ -11107,6 +11127,21 @@
       "sha256": "619b68bc30223ad90a92c08a904b070fbf9cf256d0b65bdce299fb679a7aa6ff"
     },
     {
+      "path": "assets/navigation-v0121/MAP.json",
+      "bytes": 13286,
+      "sha256": "8be9b3c0c3935c209a862913a583aa2e4794b5f7fc7b5f6a726f684e83de9d63"
+    },
+    {
+      "path": "assets/navigation-v0121/PROVENANCE.json",
+      "bytes": 2858,
+      "sha256": "4b868091131c5038a2abe8e862b11a4702a5acb79c62fe34a48178502a1fc075"
+    },
+    {
+      "path": "assets/navigation-v0121.js",
+      "bytes": 6239,
+      "sha256": "c69d8aaebb922ff906a6a1849d2c23dbe5d7e4355fc3f36d15db6ffefc099e71"
+    },
+    {
       "path": "assets/neurons/allen-637034000.json",
       "bytes": 1106666,
       "sha256": "9326f66a10460b3b42816915d2459541a4d26e3216a98049332df93f25838356"
@@ -12822,6 +12857,11 @@
       "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
     },
     {
+      "path": "BILAN_BIGBRAIN_WARP_v0.121.md",
+      "bytes": 6038,
+      "sha256": "481e60fc50ed501a707749045608d2046e4b639cdfb21b75a915c4a629d745a1"
+    },
+    {
       "path": "BILAN_C1_v0.108.md",
       "bytes": 2796,
       "sha256": "68c9bb5e67b954e610f1d6bcd29752cbdf222c0ecf7a28af8b7d7d90fdb9a024"
@@ -12924,22 +12964,22 @@
     {
       "path": "c1.html",
       "bytes": 10320,
-      "sha256": "1733985e995a1da9fee4ee582a4b06f7458f08a30a59a124b000a05115c01321"
+      "sha256": "6f28564b5773dd0022c0adeb49ba02f808879e06e2094d63478443b42e12983d"
     },
     {
       "path": "calibration.html",
       "bytes": 8872,
-      "sha256": "4260161215c0a07635da326bb1a5812bade31ce3ad66ba7a50df130c62ed520e"
+      "sha256": "98c5d280f02424fdb6d91293d6397509d4dbcf0c051e976f2f0f4bffb97c4a88"
     },
     {
       "path": "canaux.html",
       "bytes": 6970,
-      "sha256": "05725e11b20a1ac7d529f3ec1c342aedae4e59405206f97c59fd44dc4936b49c"
+      "sha256": "8a8f01dae54359832148e8d46b68fc9fee16e0ab3561d24b749912a36c581f51"
     },
     {
       "path": "canon.html",
       "bytes": 17306,
-      "sha256": "63a7be9e5882e7c0e90c92f68b762c25f2a3f7dbb13d5da7df1958f598337708"
+      "sha256": "01e05e5c19c586944bfaa4c0a98750d49a0e59c055cc03a32270adfab04a4f55"
     },
     {
       "path": "CANON_POLY_v0.92.json",
@@ -12954,12 +12994,12 @@
     {
       "path": "cogitate.html",
       "bytes": 12689,
-      "sha256": "c7099b80f7518fe2a41bf1c64946a3f100096b01f8470791e390ce45233ee20b"
+      "sha256": "92f07e1bcc29bcb2fec8ce3b5fb970890b7f3286616468adb260d1fe52887755"
     },
     {
       "path": "compartiments.html",
       "bytes": 6036,
-      "sha256": "81d6424ba5fb2247fde43006b28075b7b1ceda345b075a86cc1762016039c84f"
+      "sha256": "dd75f6d16c13e307e6c28ebf286f0da65a36828a1413a8c49e355147ec4a0740"
     },
     {
       "path": "CONTRAT_DONNEES_v0.94.md",
@@ -13029,7 +13069,7 @@
     {
       "path": "dossiers.html",
       "bytes": 4692,
-      "sha256": "5480cc2dd0fb13a0ad1a20c0a6cbbd0e3f390085ca5f4f736341b91c1bf3025b"
+      "sha256": "1faf68b587681fba31e6cf25f48b0e0fad1a53e5c7ac96518f7a47f9163c822d"
     },
     {
       "path": "ENDURANCE_v0.94.json",
@@ -13059,12 +13099,12 @@
     {
       "path": "glossaire.html",
       "bytes": 9928,
-      "sha256": "0ade3d748e7d5ba753db78d52fa4aad341a3aa237767debab4322904cf0a6f57"
+      "sha256": "d5af8f65d6d994acffab5d767cd66a5ba282d4fe3d17c8d7dbd28330d4aa3e4e"
     },
     {
       "path": "histologie.html",
       "bytes": 6789,
-      "sha256": "7b7ad86762fb759c168c0ad0ce393a224468d8ea0b7d25bd9e92d158fc2c9fde"
+      "sha256": "6386f3ceec31ebff8b7de87d6c0541c84f73ba5d4d18ee83f5d70d1a1c1a183d"
     },
     {
       "path": "IDENTITES_SOURCES_v0.98.json",
@@ -13074,12 +13114,12 @@
     {
       "path": "immunohistochimie.html",
       "bytes": 8426,
-      "sha256": "b3298edf67567330fbead56e1e7eb8ec2137bdad3f7c1cc23c6e41f88a5544ca"
+      "sha256": "5dc5990d0fa19c7ab7fc22652a1377665c84326956ea32e098e5692cb3876345"
     },
     {
       "path": "index.html",
       "bytes": 12963,
-      "sha256": "707f669a4ab554cc6777debec7f5b5119f530896fb437452047666c52f008d61"
+      "sha256": "57e533c776d11cf30958f9c57cbacea71ff662eb4696da2f17472ea24bbeb9ca"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -13177,6 +13217,11 @@
       "sha256": "d58b25bbbe82ae9ef3e52958e66f835437dbeb8efa518c15debddd8c8aa6ea5a"
     },
     {
+      "path": "INVENTAIRE_ECHELLES_v0.121.json",
+      "bytes": 14410,
+      "sha256": "54f5c85bb5b80aee5b2cedc1e729a5189630b6a7e10a46a7b542b03874d6c40c"
+    },
+    {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
       "bytes": 6410,
       "sha256": "20943a235c3652fb74df5039c1a3165424c36c2bec9eed1ee17472568d21e303"
@@ -13214,12 +13259,12 @@
     {
       "path": "microscopie.html",
       "bytes": 18127,
-      "sha256": "8f0f70b8e47396c3055c292a30be336bb4d2922fee242626bdf397f7513f2e63"
+      "sha256": "4d709bf78dbcc6c31f4fb5b254b71d30d0cd0aa2e7428accb5557bfba19aab34"
     },
     {
       "path": "microstructures.html",
-      "bytes": 8568,
-      "sha256": "073962dbbf9f315a46e5aacb7b0fd03736ed632f7d77521d64b30e4d66f06ece"
+      "bytes": 10058,
+      "sha256": "b23aac7b676d9ac829fa3de1a84371c18524f48e9a130b9f707dd8c0b27bc5df"
     },
     {
       "path": "NAVIGATION_CANAUX_v0.103.json",
@@ -13264,12 +13309,12 @@
     {
       "path": "neurones.html",
       "bytes": 15817,
-      "sha256": "ff180865bd8b2e0ccebfb6aaab4d8eefb96808135590299c02d9a5813d3aafb1"
+      "sha256": "9587496abfd1755c53a5c98508cead459b6093c0de9cd1d9bdd0e22fd4359264"
     },
     {
       "path": "organes.html",
       "bytes": 10147,
-      "sha256": "e68ecd836db5a496111f8b8e77fe4d0c45ee57e6a4fc842e156f39c6d3e9bedf"
+      "sha256": "0b94ae4bd4c1380626f9d20395f2ec6310816bcfcaad2a6bc8a216ff9e8a045b"
     },
     {
       "path": "ORGANISATION_v0.97.json",
@@ -13283,18 +13328,18 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 6845,
-      "sha256": "683bc9494cfbfe9e1b4d70058d139d750f38f3b1a9f81534820dee8b08ed6c97"
+      "bytes": 7078,
+      "sha256": "252342eeed27d7c5e876baafb1477dd7d7f5ab4230e4bc052347b140a1316c25"
     },
     {
       "path": "raccord.html",
       "bytes": 9664,
-      "sha256": "720f8fbce29edac3e243dd0d7b70eadcdd437884706467f2433a781d068efe9d"
+      "sha256": "8a939327f95b5c8250c8a150eeeba041f4468c43e69523ab3bc432b828526315"
     },
     {
       "path": "README.md",
-      "bytes": 7798,
-      "sha256": "d403f09b3512084c50ca03e3072a52cc8f396c70bd9f4efd912110abd37b0a37"
+      "bytes": 8048,
+      "sha256": "37f0f3c31a551f5cfaab0519bb75eff5259a0b7bd6662974ed427e04c2fb370d"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -13328,18 +13373,18 @@
     },
     {
       "path": "suite.html",
-      "bytes": 24102,
-      "sha256": "c31d3ae85ecc1c3007dd0c345d0f7c572625daeba97e1a187bbb202562d37ac2"
+      "bytes": 24215,
+      "sha256": "13836ace0b90a47f3ab1ee1499c66a81cabc9faaa20a2c40d2be9cc2c319d38f"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 36033,
-      "sha256": "73767cdef99711b0bd0221ed3574093488e5f341d54066d58ec2ef3e0eba176b"
+      "bytes": 37102,
+      "sha256": "b2681eb1f1c0ba1cf1d5d7c164bd8ba82b770cb2ab386bfaf44c132adf52b1df"
     },
     {
       "path": "trajets.html",
       "bytes": 9332,
-      "sha256": "9ebd230cd8d6b64fb7eccd3e12ef6a4a48c4d7dc8d234ca3c8e02c8bdd911651"
+      "sha256": "2a74c31263727fbcafcac156975b2e6975807ae746dc32e77003cdb5903de19b"
     },
     {
       "path": "VERIFICATION_BIGBRAIN_EN_LIGNE.json",
@@ -13460,6 +13505,11 @@
       "path": "VERIFICATION_v0.120.json",
       "bytes": 1340,
       "sha256": "3b5a65ee9c48cfde8a03162f4160d6a2128f803e5d2b9795c31eeb9810abbfcf"
+    },
+    {
+      "path": "VERIFICATION_v0.121.json",
+      "bytes": 2974,
+      "sha256": "70dcfbacc1c52b8959ec7ef1ecb6811d9b3a23d04caecf9da995a07cb7d7aed8"
     },
     {
       "path": "VERIFICATION_v0.92.json",

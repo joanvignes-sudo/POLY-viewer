@@ -1,0 +1,449 @@
+{
+  "version": "0.121",
+  "status": "published_transform_preview",
+  "units": "mm",
+  "source_frame": "BigBrain histological native; supported by whole-surface comparison with the author's native and registered references",
+  "output_frame": "ICBM152 2009b symmetric, displayed with CerebrA MNI2009cSym world coordinates; NIST describes the same anatomy with different sampling",
+  "specimen_relationship": "BigBrain individual versus CerebrA population average; no individual participant match",
+  "independent_anatomical_validation": false,
+  "temporal_activity_available": false,
+  "display_interpolation": false,
+  "source_geometry": {
+    "path": "assets/bigbrain/surfaces.bin",
+    "sha256": "39bf153516c33bd6f7dab2d0771e79ec36ec743f8dbc5e326436069634fdc518"
+  },
+  "source_metadata": {
+    "path": "assets/bigbrain/PROVENANCE.json",
+    "sha256": "7544e77e16bac371ad6d65db21bd9b9dbf78b49373870080b3394bd990909567"
+  },
+  "registered_positions": {
+    "path": "assets/bigbrain-warp-v0121/positions.bin",
+    "sha256": "182d75e14eecc2726c0c436f1dd31eaa39afeadce3c815c342e5237e900c98bf",
+    "bytes": 4186140,
+    "vertices": 348845,
+    "dtype": "little-endian float32",
+    "indices_changed": false
+  },
+  "meshes": [
+    {
+      "id": "context-left",
+      "vertices": 163842,
+      "position_offset": 0
+    },
+    {
+      "id": "context-right",
+      "vertices": 163842,
+      "position_offset": 1966104
+    },
+    {
+      "id": "lateral-0",
+      "vertices": 923,
+      "position_offset": 3932208
+    },
+    {
+      "id": "lateral-1",
+      "vertices": 923,
+      "position_offset": 3943284
+    },
+    {
+      "id": "lateral-2",
+      "vertices": 923,
+      "position_offset": 3954360
+    },
+    {
+      "id": "lateral-3",
+      "vertices": 923,
+      "position_offset": 3965436
+    },
+    {
+      "id": "lateral-4",
+      "vertices": 923,
+      "position_offset": 3976512
+    },
+    {
+      "id": "lateral-5",
+      "vertices": 923,
+      "position_offset": 3987588
+    },
+    {
+      "id": "lateral-6",
+      "vertices": 923,
+      "position_offset": 3998664
+    },
+    {
+      "id": "posterior-0",
+      "vertices": 1041,
+      "position_offset": 4009740
+    },
+    {
+      "id": "posterior-1",
+      "vertices": 1041,
+      "position_offset": 4022232
+    },
+    {
+      "id": "posterior-2",
+      "vertices": 1041,
+      "position_offset": 4034724
+    },
+    {
+      "id": "posterior-3",
+      "vertices": 1041,
+      "position_offset": 4047216
+    },
+    {
+      "id": "posterior-4",
+      "vertices": 1041,
+      "position_offset": 4059708
+    },
+    {
+      "id": "posterior-5",
+      "vertices": 1041,
+      "position_offset": 4072200
+    },
+    {
+      "id": "posterior-6",
+      "vertices": 1041,
+      "position_offset": 4084692
+    },
+    {
+      "id": "superior-0",
+      "vertices": 1059,
+      "position_offset": 4097184
+    },
+    {
+      "id": "superior-1",
+      "vertices": 1059,
+      "position_offset": 4109892
+    },
+    {
+      "id": "superior-2",
+      "vertices": 1059,
+      "position_offset": 4122600
+    },
+    {
+      "id": "superior-3",
+      "vertices": 1059,
+      "position_offset": 4135308
+    },
+    {
+      "id": "superior-4",
+      "vertices": 1059,
+      "position_offset": 4148016
+    },
+    {
+      "id": "superior-5",
+      "vertices": 1059,
+      "position_offset": 4160724
+    },
+    {
+      "id": "superior-6",
+      "vertices": 1059,
+      "position_offset": 4173432
+    }
+  ],
+  "patches": [
+    {
+      "id": "lateral",
+      "center_mm": [
+        -50.93751466015835,
+        -23.510066769425194,
+        36.50956363723294
+      ],
+      "boundary_points_mm": [
+        [
+          -50.93751466015835,
+          -23.510066769425194,
+          36.50956363723294
+        ],
+        [
+          -50.82012130117644,
+          -23.138695412125426,
+          36.1771786373127
+        ],
+        [
+          -50.792719673506184,
+          -22.918227218967544,
+          35.885188215526696
+        ],
+        [
+          -50.743042822496164,
+          -22.365210613066505,
+          35.14805827040992
+        ],
+        [
+          -50.726475081159364,
+          -22.19199728402744,
+          34.854995161541694
+        ],
+        [
+          -50.70925477769864,
+          -21.940419838698094,
+          34.524606924825136
+        ],
+        [
+          -50.68463221041861,
+          -21.696620850038418,
+          34.17245694183232
+        ]
+      ],
+      "local_jacobian_determinant": 2.2110581637586915
+    },
+    {
+      "id": "posterior",
+      "center_mm": [
+        -27.58007004190093,
+        -95.18169615276335,
+        13.178221857932904
+      ],
+      "boundary_points_mm": [
+        [
+          -27.58007004190093,
+          -95.18169615276335,
+          13.178221857932904
+        ],
+        [
+          -27.565753877977023,
+          -95.22816216637285,
+          13.020730663351255
+        ],
+        [
+          -27.554685765793764,
+          -95.26598759013295,
+          12.883313527329637
+        ],
+        [
+          -27.52293033625638,
+          -95.39017772841676,
+          12.41895004494461
+        ],
+        [
+          -27.517200211086802,
+          -95.43491485647571,
+          12.256636425725493
+        ],
+        [
+          -27.506296185356216,
+          -95.5371456061613,
+          11.891986741834394
+        ],
+        [
+          -27.491942525819077,
+          -95.65816107243178,
+          11.47291671519467
+        ]
+      ],
+      "local_jacobian_determinant": 1.3171506099138184
+    },
+    {
+      "id": "superior",
+      "center_mm": [
+        -7.756678993321252,
+        -25.83821239356374,
+        74.79435860356438
+      ],
+      "boundary_points_mm": [
+        [
+          -7.756678993321252,
+          -25.83821239356374,
+          74.79435860356438
+        ],
+        [
+          -7.816028158252635,
+          -26.0770010817574,
+          74.69634246127964
+        ],
+        [
+          -7.852275467436053,
+          -26.2211712738648,
+          74.63422555791644
+        ],
+        [
+          -8.009360259880264,
+          -26.874575897619692,
+          74.33351086846201
+        ],
+        [
+          -8.047114544035825,
+          -27.046927275802318,
+          74.25250026050571
+        ],
+        [
+          -8.206044357999616,
+          -27.80536878964356,
+          73.88356342897409
+        ],
+        [
+          -8.318697377834782,
+          -28.42931145577744,
+          73.57186989502505
+        ]
+      ],
+      "local_jacobian_determinant": 2.1631426868439063
+    }
+  ],
+  "transform_order": [
+    "2015 affine",
+    "2015 nonlinear grid",
+    "2019 improved nonlinear grid 0",
+    "2019 improved nonlinear grid 1",
+    "2019 improved nonlinear grid 2"
+  ],
+  "interpolation": "Interior tricubic Catmull-Rom matching libminc coefficients; evaluate in physical coordinates and add XYZ displacement. All points have full interior support; no extrapolation or boundary fallback.",
+  "native_field": {
+    "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/3D_Volumes/MNI-ICBM152_Space/transformation/bigbrain_to_icbm2009b_nl_grid_0.mnc",
+    "bytes": 817658202,
+    "sha256": "03ba5b1c91d77f66f72ccbbee5044874fc45b1da6cdaffd4b2ac2111dec8f9df"
+  },
+  "improved_fields": [
+    {
+      "member": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc",
+      "bytes": 170069796,
+      "sha256": "160fc827ead4fd577d7d4b430b6c6dc5e0feb10afb8ee37875b00a201108bdf1",
+      "crc32": 3754193427,
+      "zip_crc_verified": true,
+      "shape": [
+        3,
+        189,
+        233,
+        197
+      ],
+      "dtype": "float64",
+      "dimorder": "vector_dimension,zspace,yspace,xspace",
+      "dimensions": {
+        "xspace": {
+          "start": -97.75,
+          "step": 1.0,
+          "length": 197
+        },
+        "yspace": {
+          "start": -133.75,
+          "step": 1.0,
+          "length": 233
+        },
+        "zspace": {
+          "start": -71.75,
+          "step": 1.0,
+          "length": 189
+        }
+      },
+      "finite_components_checked": [
+        0,
+        1,
+        2
+      ],
+      "all_stored_components_finite": true,
+      "file_present_locally": true
+    },
+    {
+      "member": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc",
+      "bytes": 165239321,
+      "sha256": "6fba1380def387a2ba140bfb5372f2b34f8ad8730dc234ff03d717666ccf4eec",
+      "crc32": 2854710703,
+      "zip_crc_verified": true,
+      "shape": [
+        3,
+        189,
+        233,
+        197
+      ],
+      "dtype": "float64",
+      "dimorder": "vector_dimension,zspace,yspace,xspace",
+      "dimensions": {
+        "xspace": {
+          "start": -97.75,
+          "step": 1.0,
+          "length": 197
+        },
+        "yspace": {
+          "start": -133.75,
+          "step": 1.0,
+          "length": 233
+        },
+        "zspace": {
+          "start": -71.75,
+          "step": 1.0,
+          "length": 189
+        }
+      },
+      "finite_components_checked": [
+        0,
+        1,
+        2
+      ],
+      "all_stored_components_finite": true,
+      "file_present_locally": true
+    },
+    {
+      "member": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc",
+      "bytes": 170996407,
+      "sha256": "c919b4e786373895aa8dae8ba219d01db59ed7a52790f0269af6c38dc3c89666",
+      "crc32": 2002858584,
+      "zip_crc_verified": true,
+      "shape": [
+        3,
+        189,
+        233,
+        197
+      ],
+      "dtype": "float64",
+      "dimorder": "vector_dimension,zspace,yspace,xspace",
+      "dimensions": {
+        "xspace": {
+          "start": -97.75,
+          "step": 1.0,
+          "length": 197
+        },
+        "yspace": {
+          "start": -133.75,
+          "step": 1.0,
+          "length": 233
+        },
+        "zspace": {
+          "start": -71.75,
+          "step": 1.0,
+          "length": 189
+        }
+      },
+      "finite_components_checked": [
+        0,
+        1,
+        2
+      ],
+      "all_stored_components_finite": true,
+      "file_present_locally": true
+    }
+  ],
+  "validation": {
+    "path": "assets/bigbrain-warp-v0121/VALIDATION.json",
+    "sha256": "301413e3b757e68e6bd4c2c04c50018dc182f3e7e2722b244d0a392f63f6f67a"
+  },
+  "atlas_metadata": {
+    "path": "assets/anatomy/ATLAS_ANATOMIQUE.json",
+    "sha256": "fbf9c0d44bbc7aa84d62e7c5d57d13655e46e9be17f1f662622acc057b1470f9"
+  },
+  "citations": [
+    "https://doi.org/10.1038/s41597-019-0217-0",
+    "https://doi.org/10.1371/journal.pbio.3000678",
+    "https://doi.org/10.1126/science.1235381",
+    "https://nist.mni.mcgill.ca/icbm-152-nonlinear-atlases-2009/"
+  ],
+  "numerical_method_sources": [
+    {
+      "url": "https://github.com/BIC-MNI/libminc/blob/e71e590bc98b3fc3f05b2615dd80151a62e2fcc4/volume_io/MNI_formats/grid_transforms.c",
+      "sha256": "357c8a05d1e023952154ee39ef991aa40b4c676d2983ffece2cb87a1c38e2975"
+    },
+    {
+      "url": "https://github.com/BIC-MNI/libminc/blob/e71e590bc98b3fc3f05b2615dd80151a62e2fcc4/volume_io/Geometry/splines.c",
+      "sha256": "7175f301e16cf56aeb622b6ff3b36bc3a5e25b611e7b3e1d0dbee4a60f4424be"
+    }
+  ],
+  "license": "BigBrain derivatives: CC BY-NC-SA 4.0; original Xiao 2019 license retained at assets/bigbrain-registration-v0120/XIAO2019_LICENSE",
+  "limits": [
+    "Numerical reproduction of the 2015 mesh is not anatomical registration error",
+    "The complete 2019 composition has no independent reference mesh comparison here",
+    "Jacobian checked only at three patch centres, not globally",
+    "Original source distances remain in native space; transformed geometry must not be used as native cortical thickness",
+    "Histological plane 3863 is not displayed as an undeformed plane in atlas space",
+    "No mapping to H01, Allen, P8, peripheral nerve or functional activity is established"
+  ]
+}

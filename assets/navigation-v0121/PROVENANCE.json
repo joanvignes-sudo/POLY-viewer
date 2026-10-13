@@ -1,0 +1,79 @@
+{
+  "version": "0.121",
+  "map": {
+    "path": "assets/navigation-v0121/MAP.json",
+    "sha256": "8be9b3c0c3935c209a862913a583aa2e4794b5f7fc7b5f6a726f684e83de9d63"
+  },
+  "evidence": [
+    {
+      "path": "assets/allen-comparison/PROVENANCE.json",
+      "sha256": "063f7131f6e596daaf60f07b733069376503bc98e2515ffe91c7880190bbb9a8"
+    },
+    {
+      "path": "assets/allen-pairs/PROVENANCE.json",
+      "sha256": "ac9b804d2a789dbb30b0003ae4630446fe67c7cc549e608a6a3782f3de16b3a2"
+    },
+    {
+      "path": "assets/anatomy/ATLAS_ANATOMIQUE.json",
+      "sha256": "fbf9c0d44bbc7aa84d62e7c5d57d13655e46e9be17f1f662622acc057b1470f9"
+    },
+    {
+      "path": "assets/bigbrain/PROVENANCE.json",
+      "sha256": "7544e77e16bac371ad6d65db21bd9b9dbf78b49373870080b3394bd990909567"
+    },
+    {
+      "path": "assets/c1/PROVENANCE.json",
+      "sha256": "d1666cc81c8d9db7fe96cdcc289d8536d83fc901e379d4c8213cb7ac0d99895a"
+    },
+    {
+      "path": "assets/focal/PROVENANCE.json",
+      "sha256": "c9aeffc9a23d159f4a28556fad6006b3e5a5f702ee614696487062c52d628255"
+    },
+    {
+      "path": "assets/h01-class-images/PROVENANCE.json",
+      "sha256": "eb16cbc2b5301be196b6f3f6d5b42d1dd1e00c26b631a66d5f062a501b315723"
+    },
+    {
+      "path": "assets/h01-evidence/PROVENANCE.json",
+      "sha256": "92daa8bc790476d4d2fba7b7ff58fb4b3c142ed6e0e7e3081b997eb7e4f1e07c"
+    },
+    {
+      "path": "assets/h01-paths/PROVENANCE.json",
+      "sha256": "03b24e17057bf6f9481be02c589b7e0018206a826309e74a6b38bcf9b3b9a62d"
+    },
+    {
+      "path": "assets/histology/PROVENANCE.json",
+      "sha256": "7541141c93e0a23f1c14c9bf7cbd106ad377006d118aadf3edc29b1e34b4328a"
+    },
+    {
+      "path": "assets/ihc/PROVENANCE.json",
+      "sha256": "40f7b045ec6217287694f15590738546b50dcabd9295fa460496e1bb91a1e95c"
+    },
+    {
+      "path": "assets/neurons/PROVENANCE.json",
+      "sha256": "c7a048faed1d5008d3778c768af5637c36e0e980e07eaac2e3fd6730b905df68"
+    },
+    {
+      "path": "assets/organs/PROVENANCE.json",
+      "sha256": "048fa887bcfa534ad8f2fa909a6f74c59a8f2424dd612062941649644df5d7c0"
+    },
+    {
+      "path": "assets/organs/REGISTRATION.json",
+      "sha256": "27b08adf9615e7a64f4b526e4e19533226f509fd1e22de7a8cddb787180f065b"
+    },
+    {
+      "path": "assets/registration/CALIBRATION.json",
+      "sha256": "da916bbddc51ca73b30cbb4847b801b0272c3ad4a46a14fda341db0165a1d796"
+    },
+    {
+      "path": "assets/registration/PROVENANCE.json",
+      "sha256": "a4ebc17c3ed4fd13898ed70acac2b36adfa93993c15dcc2cd2203a1c55906df5"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/PROVENANCE.json",
+      "sha256": "b6020bb727153e71de43f9cd7922f848b6099a3fff6813f686c454ea5c441a31"
+    }
+  ],
+  "within_specimen_does_not_imply_registration": true,
+  "reader_trials_completed": false
+}
