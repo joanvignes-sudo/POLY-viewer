@@ -1,0 +1,55 @@
+{
+  "version": "0.119",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "views": 19,
+    "relations": 18,
+    "referenced_evidence": 16,
+    "missing_evidence": 0,
+    "continuous_anatomical_path_claimed": false
+  },
+  "browser": {
+    "status": "passed",
+    "pages_checked": 19,
+    "reference_views_checked": 19,
+    "relation_labels_checked": true,
+    "neuron_sample_changes": true,
+    "comparison_panel_state": true,
+    "organ_sample_changes": true,
+    "histology_to_other_specimen_disclosed": true,
+    "destination_parameters_not_mixed": true,
+    "index_grid_preserved": true,
+    "mobile_no_overflow": true,
+    "no_javascript_five_entries": true,
+    "corrupt_map_fallback_preserves_neuron_view": true,
+    "navigation_page_errors": [],
+    "url": "http://127.0.0.1:8890/"
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 538,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/allen-comparison/PROVENANCE.json",
+    "assets/allen-pairs/PROVENANCE.json",
+    "assets/anatomy/ATLAS_ANATOMIQUE.json",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/c1/PROVENANCE.json",
+    "assets/focal/PROVENANCE.json",
+    "assets/h01-class-images/PROVENANCE.json",
+    "assets/h01-evidence/PROVENANCE.json",
+    "assets/h01-paths/PROVENANCE.json",
+    "assets/histology/PROVENANCE.json",
+    "assets/ihc/PROVENANCE.json",
+    "assets/neurons/PROVENANCE.json",
+    "assets/organs/PROVENANCE.json",
+    "assets/organs/REGISTRATION.json",
+    "assets/registration/CALIBRATION.json",
+    "assets/registration/PROVENANCE.json"
+  ],
+  "scope": "Shared navigation, declared source boundaries, interface and local links. No new registration or reader-study results."
+}
