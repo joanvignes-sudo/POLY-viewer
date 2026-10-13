@@ -1,5 +1,5 @@
 {
-  "version": "0.117",
+  "version": "0.118",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -400,6 +400,16 @@
       "path": "assets/allen-comparison/SELECTION.json",
       "bytes": 324,
       "sha256": "431139c165b972b46cb4fc0cc89ee85024079010f4648ea1ef05a3a1435ca96b"
+    },
+    {
+      "path": "assets/allen-pairs/PROVENANCE.json",
+      "bytes": 746,
+      "sha256": "ac9b804d2a789dbb30b0003ae4630446fe67c7cc549e608a6a3782f3de16b3a2"
+    },
+    {
+      "path": "assets/allen-pairs-v0118.js",
+      "bytes": 13447,
+      "sha256": "ff4b52ed1195c071a77a50a31897889afe72f886b0c70e780dd2d848e608daeb"
     },
     {
       "path": "assets/allen-qc/508279351-receipt.json",
@@ -11127,6 +11137,11 @@
       "sha256": "99d4ec8490d02f945868331f787df215f9c2035655c878012f8ddec3dfa2b226"
     },
     {
+      "path": "assets/neurons-v0118.js",
+      "bytes": 26578,
+      "sha256": "86dd2d37660c7f418d4f284aa9250a76435b68a17dd251a5840a643ef4b34282"
+    },
+    {
       "path": "assets/neurons-v099.css",
       "bytes": 2978,
       "sha256": "568d54e20fb65aeee413520bdbf34cf3f4643ecddd0724f0ce9d1174e8827cf3"
@@ -12732,6 +12747,11 @@
       "sha256": "e6ce7336b1ed3f15de8c549eff997d381549ef5a7feefb0005bd30f4aab05f02"
     },
     {
+      "path": "BILAN_ALLEN_PAIRS_v0.118.md",
+      "bytes": 3254,
+      "sha256": "6e0542dc55e6e79e809dd154161de2de9bdd18a9bd8b4c6956f26850a059fc7a"
+    },
+    {
       "path": "BILAN_ALLEN_QC_v0.117.md",
       "bytes": 3551,
       "sha256": "8571446e53c286cf53a1384291fb3876e3c314a8be779920f27d031ccee6e52a"
@@ -12998,8 +13018,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 11273,
-      "sha256": "681b73a8d47c12ba8acabf536bcb29f3932081a5d200e310b781e9020aa17a3c"
+      "bytes": 11702,
+      "sha256": "4df4b06f986028f41dfbdacdd884d031936c32eb8f89df2bfd934ecd6cbedf56"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -13080,6 +13100,11 @@
       "path": "INVENTAIRE_ECHELLES_v0.117.json",
       "bytes": 12781,
       "sha256": "f12be183f156fbbb934a7617fedc302fdf3b54dc33ba7999935cf28a9d22b3d4"
+    },
+    {
+      "path": "INVENTAIRE_ECHELLES_v0.118.json",
+      "bytes": 13296,
+      "sha256": "7eb7df5dea0a69722ff1555b0caa6c29cb05b30bd760bb1c2cf869f70ebe98f6"
     },
     {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
@@ -13168,8 +13193,8 @@
     },
     {
       "path": "neurones.html",
-      "bytes": 10560,
-      "sha256": "badf265831a2df8418c4df621e226af2a068fc2d04938fe1f9a4384df163c17d"
+      "bytes": 14556,
+      "sha256": "ebada844e63c8b10848dc3b7e4eafd3e6668cfef52825ddce2dd61709b33eabb"
     },
     {
       "path": "organes.html",
@@ -13188,8 +13213,8 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 6100,
-      "sha256": "9bf302ee49ac654ade675a4b0c29e011842cd09c653aaa99e7e011a54bb5211b"
+      "bytes": 6400,
+      "sha256": "0e8e8e28a7afb389e4b4e5fe73b561d4707cba48a4eba42fdabad08c653122de"
     },
     {
       "path": "raccord.html",
@@ -13198,8 +13223,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6985,
-      "sha256": "2bc167afdd7f212f149e00ca80089c243a9d91e612d72acccc32fc81bf03693f"
+      "bytes": 7297,
+      "sha256": "81166462717222a2ef14ab73518e69fc87a7bf896606a55e538d5aaeeb445ff4"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -13233,13 +13258,13 @@
     },
     {
       "path": "suite.html",
-      "bytes": 19718,
-      "sha256": "467faaee8dac27931ada5cccb49c6c93ae3dd49dec130d9c6a5d69cc0b751fc6"
+      "bytes": 20652,
+      "sha256": "5e909595bcbdd3ee1ad026bfd02a44c4405f7eaa364bde5db32b740a5ac0da39"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 33404,
-      "sha256": "8d5dadca3cf1258d74e589e56a52601397c5c1f05684ebb3197c99372ad7a5e6"
+      "bytes": 33860,
+      "sha256": "d68dde67894435a85464061b2634854924813a4cec11230c00e7a4a5c0298a4e"
     },
     {
       "path": "trajets.html",
@@ -13350,6 +13375,11 @@
       "path": "VERIFICATION_v0.117.json",
       "bytes": 2143,
       "sha256": "61b941f5112d0e149af10aa1598b2d282836bb38fd9dca3b92186c552dd042ff"
+    },
+    {
+      "path": "VERIFICATION_v0.118.json",
+      "bytes": 1948,
+      "sha256": "a34cdfedcc82b73a3f59cac6ff7d37006d03642e1caed0cb5481ee8fca18d51e"
     },
     {
       "path": "VERIFICATION_v0.92.json",
