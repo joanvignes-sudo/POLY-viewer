@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.110",
+  "presentation_version": "0.111",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -105,6 +105,8 @@
     "excitatory_inhibitory_mapping": null,
     "activity": null,
     "transmission_delays": null,
-    "whole_neuron_exhaustiveness": false
+    "whole_neuron_exhaustiveness": false,
+    "native_details": 6,
+    "total_image_windows": 9
   }
 }

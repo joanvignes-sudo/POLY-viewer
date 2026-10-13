@@ -1,4 +1,4 @@
-# POLY v0.110
+# POLY v0.111
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -47,3 +47,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.110 · Annotations synaptiques H01
 
 [Explorer l’annotation 95480769](microscopie.html?level=synapse4&synapse=95480769&v=0.110) : six annotations associées au neurone dans un voisinage de 180 annotations source, affichage 2D/3D et nouveau détail natif. Relations pré/post publiées, sans activité ni délai inféré. [Bilan](BILAN_H01_SYNAPSES_v0.110.md) · [Inventaire actuel](INVENTAIRE_ECHELLES_v0.110.json).
+
+## v0.111 · Six détails synaptiques natifs
+
+[Parcourir les six annotations](microscopie.html?level=synapse4&v=0.111), chacune avec sa fenêtre 4 × 4 × 33 nm. Navigation précédente/suivante conserve le niveau natif. Images nouvelles relues indépendamment avec TensorStore ; masques source à 8 × 8 × 33 nm. [Bilan](BILAN_H01_DETAILS_v0.111.md).

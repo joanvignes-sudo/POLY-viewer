@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "annotation_id": "111306169",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+    },
+    {
+      "annotation_id": "54213720",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+    },
+    {
+      "annotation_id": "143278591",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+    },
+    {
+      "annotation_id": "145894292",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+    },
+    {
+      "annotation_id": "87751454",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+    }
+  ]
+}
