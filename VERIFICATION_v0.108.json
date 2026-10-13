@@ -1,0 +1,75 @@
+{
+  "version": "0.108",
+  "status": "passed",
+  "date": "2026-10-13",
+  "primary_original_bytes": 738652116,
+  "primary_original_sha256_verified_against_versioned_manifest": true,
+  "data": {
+    "status": "passed",
+    "all_displayed_voxels_equal_primary_source": true,
+    "voxels_checked": 34809524,
+    "by_volume": {
+      "context": 3754100,
+      "hypoglossal": 7077888,
+      "laryngeal": 7077888,
+      "carotid": 7077888,
+      "jugular": 7077888,
+      "slice-z884": 685968,
+      "slice-z1524": 685968,
+      "slice-z1764": 685968,
+      "slice-z2404": 685968
+    },
+    "marker_matrix_roundtrip_max_mm": 1.7763568394002505e-15,
+    "primary_units_ignored": true,
+    "derived_units_mm": true
+  },
+  "browser": {
+    "status": "passed",
+    "volumes_tested": 9,
+    "axes_each": 3,
+    "landmark_buttons": 4,
+    "source_pixel_reads_exact": true,
+    "display_contrast_preserves_pixel_value": true,
+    "zoom_2d_scroll_tested": true,
+    "share_restores_view": true,
+    "cache_max_entries": 2,
+    "geometry_max": 10,
+    "corrupt_volume_refused_and_retry_passed": true,
+    "stale_load_refused": true,
+    "invalid_url_values_clamped": true,
+    "no_webgl_2d_fallback": true,
+    "full_primary_not_loaded_by_browser": true,
+    "mobile_no_page_overflow": true,
+    "javascript_errors": []
+  },
+  "navigation": {
+    "status": "passed",
+    "mobile_entrypoints": [
+      "index.html",
+      "organes.html",
+      "immunohistochimie.html",
+      "raccord.html",
+      "calibration.html",
+      "suite.html"
+    ],
+    "return_to_ihc": true,
+    "tampered_metadata_refused_and_retry_passed": true
+  },
+  "visual_source_planes_checked": [
+    884,
+    1524,
+    1764,
+    2404
+  ],
+  "mobile_visual_checked": true,
+  "local_links_checked": 173,
+  "canonical_files_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "ANCRAGE_HUMAIN_v0.94.json",
+    "assets/focal/PROVENANCE.json",
+    "assets/registration/CALIBRATION.json"
+  ],
+  "ihc_to_ct_registration_available": false,
+  "scope": "Technical checks, source preservation and limited coordinate/visual consistency; not independent anatomical validation"
+}

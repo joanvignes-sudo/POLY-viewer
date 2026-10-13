@@ -1,0 +1,1212 @@
+{
+  "version": "0.108",
+  "date": "2026-10-13",
+  "dataset": 674,
+  "source_version": 1,
+  "doi": "https://doi.org/10.26275/imas-52lf",
+  "subject": "sub-f002 / 2305, female 88, left nerve, ex vivo",
+  "segment": "sam-l-seg-c1",
+  "histology_sample": "sam-l-seg-c1-A-L2",
+  "native_dimensions": [
+    496,
+    1383,
+    2800
+  ],
+  "native_sampling_um": 9,
+  "primary": {
+    "source": {
+      "name": "2305_C1L_9um_0000.nii.gz",
+      "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_9um_0000.nii.gz",
+      "size": 738652116,
+      "fileType": "NIFTI",
+      "sourcePackageId": "N:package:305347e9-139e-4570-afce-5063d634e646",
+      "s3VersionId": "Vg8FIxSn16pwDH4o0VJH5bngKdAUyOCt",
+      "sha256": "ge6Pn2DGZm1ihHr1hW+Rk6hQWcqlZRbiT6Gxj03/pfc="
+    },
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_9um_0000.nii.gz?versionId=Vg8FIxSn16pwDH4o0VJH5bngKdAUyOCt",
+    "sha256": "81ee8f9f60c6666d62847af5856f9193a85059caa56516e24fa1b18f4dffa5f7"
+  },
+  "primary_header_units": "unknown; pixdim=(1,1,1), no valid sform; not used as physical calibration",
+  "derived_header": {
+    "units_code": 2,
+    "units": "mm",
+    "sform_code": 1,
+    "voxel_to_ras_mm": [
+      [
+        -0.008999999612569809,
+        0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.008999999612569809,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.008999999612569809,
+        0.0
+      ]
+    ],
+    "voxel_to_lps_mm": [
+      [
+        0.008999999612569809,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.008999999612569809,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.008999999612569809,
+        0.0
+      ]
+    ],
+    "label_values": [
+      0,
+      1,
+      2
+    ],
+    "scope": "Author-derived segmentation; not grayscale microCT intensity"
+  },
+  "volumes": [
+    {
+      "id": "context",
+      "path": "assets/c1/context.u8.gz",
+      "sha256": "1e274427cb2b79eef482b74af129e24499759a8661d8331daf18463a593b257d",
+      "dimensions": [
+        62,
+        173,
+        350
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "step": 8,
+      "spacing_um": 72,
+      "bytes_uncompressed": 3754100,
+      "pixel_sha256": "0bd5ed17fca0d0b0cfdaee660908c7d0a4e833c4dfd38d712aa178dd3eb2621c",
+      "range": [
+        0,
+        255
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "hypoglossal",
+      "path": "assets/c1/hypoglossal.u8.gz",
+      "sha256": "16fdc7fe237f0536f9af78819bf57ecea8993801cd89eb88ab91818a0c0151c9",
+      "dimensions": [
+        192,
+        192,
+        192
+      ],
+      "origin": [
+        178,
+        398,
+        1688
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 7077888,
+      "pixel_sha256": "3350b517dd085f46fdd7fbd77c1f7395494ac994cc493820390129de3746808f",
+      "range": [
+        0,
+        194
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "laryngeal",
+      "path": "assets/c1/laryngeal.u8.gz",
+      "sha256": "9531e1a8eef0f53e3d723e194689b9b1f888c1795da2c45e343b02541783843f",
+      "dimensions": [
+        192,
+        192,
+        192
+      ],
+      "origin": [
+        193,
+        819,
+        1404
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 7077888,
+      "pixel_sha256": "3251d394147135f61750c94b6d77dd76a281cfb5ffa2f0e9eb86881a24a40d08",
+      "range": [
+        0,
+        142
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "carotid",
+      "path": "assets/c1/carotid.u8.gz",
+      "sha256": "ba2a40a7667197f203e87779cde648d4661def7a4be918dacf08a38d4cba9fff",
+      "dimensions": [
+        192,
+        192,
+        192
+      ],
+      "origin": [
+        112,
+        754,
+        803
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 7077888,
+      "pixel_sha256": "8125a82ccbc4f293904fd0e152fdc5be22de21437d66b447d5835cea776b9b45",
+      "range": [
+        0,
+        187
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "jugular",
+      "path": "assets/c1/jugular.u8.gz",
+      "sha256": "144bf0341e814d2301a31f406d19804be785700ae29bfc4e9897106c2dcd4105",
+      "dimensions": [
+        192,
+        192,
+        192
+      ],
+      "origin": [
+        40,
+        577,
+        2355
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 7077888,
+      "pixel_sha256": "558d26b58029bcb41c1723cbd733c9fc381a86ebaddcc6537dc4bc5157d3f8de",
+      "range": [
+        0,
+        172
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "slice-z884",
+      "path": "assets/c1/slice-z884.u8.gz",
+      "sha256": "ccff31bf029af17917de2c982b41a06dada4a187bc98070843389ccaf94e0fbf",
+      "dimensions": [
+        496,
+        1383,
+        1
+      ],
+      "origin": [
+        0,
+        0,
+        884
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 685968,
+      "pixel_sha256": "f2e7973763cf586e768ac5c850a246387c224ec88b96ca3833eadaf3594d0c3b",
+      "range": [
+        0,
+        198
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "slice-z1524",
+      "path": "assets/c1/slice-z1524.u8.gz",
+      "sha256": "3456d3aa6fbb07bc860eaf5b2f0e1e5834b317e29b1bcbbff4950a14dea0fd82",
+      "dimensions": [
+        496,
+        1383,
+        1
+      ],
+      "origin": [
+        0,
+        0,
+        1524
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 685968,
+      "pixel_sha256": "c0297c99afedca7085c0244b78cd2ee1d8cddb64b47bc2476c3aee821d3c2034",
+      "range": [
+        0,
+        175
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "slice-z1764",
+      "path": "assets/c1/slice-z1764.u8.gz",
+      "sha256": "7f044b8a7e2b88f3dd06e102d052d4749dc2556b2d1d17b8b4f11ed3f2bb78c5",
+      "dimensions": [
+        496,
+        1383,
+        1
+      ],
+      "origin": [
+        0,
+        0,
+        1764
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 685968,
+      "pixel_sha256": "c78a3cdc29488cc19aaab58c9b67f88d5fc2cde65423c633d595201314e7ed0e",
+      "range": [
+        0,
+        200
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    },
+    {
+      "id": "slice-z2404",
+      "path": "assets/c1/slice-z2404.u8.gz",
+      "sha256": "53b2c4b4b1fe19957b1bcf6b61720ae51f6a49bad9b75aa1ab4569c24cbee511",
+      "dimensions": [
+        496,
+        1383,
+        1
+      ],
+      "origin": [
+        0,
+        0,
+        2404
+      ],
+      "step": 1,
+      "spacing_um": 9,
+      "bytes_uncompressed": 685968,
+      "pixel_sha256": "98bbe09f613f9d6f85af1dbf0e74c39f8c584f221eb821e9d0831fe2a0fb8675",
+      "range": [
+        0,
+        159
+      ],
+      "dtype": "uint8; i fastest; axes i,j,k preserved from primary NIfTI"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "hypoglossal",
+      "title": "Repère du nerf hypoglosse",
+      "label": "2305_C1L_Left hypoglossal nerve-1",
+      "lps_mm": [
+        2.4636001586914062,
+        4.447141647338867,
+        16.04322624206543
+      ],
+      "voxel_ijk": [
+        273.7333627493306,
+        494.1268709753928,
+        1782.5807702990041
+      ],
+      "source": "assets/c1/originals/2305_C1L_Left_hypoglossal_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "id": "laryngeal",
+      "title": "Repère du nerf laryngé supérieur",
+      "label": "2305_C1L_Left superior laryngeal nerve-1",
+      "lps_mm": [
+        2.603987693786621,
+        8.23460578918457,
+        13.499669075012207
+      ],
+      "voxel_ijk": [
+        289.33197843139607,
+        914.9562381851379,
+        1499.9632951270303
+      ],
+      "source": "assets/c1/originals/2305_C1L_Left_superior_laryngeal_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "id": "carotid",
+      "title": "Repère de branche vers la carotide interne",
+      "label": "2305_C1L_left A branch of vagus nerve to ipsilateral internal carotid artery-1",
+      "lps_mm": [
+        1.8756754398345947,
+        7.648709297180176,
+        8.0931396484375
+      ],
+      "voxel_ijk": [
+        208.4083911753664,
+        849.8566251600323,
+        899.2377774254849
+      ],
+      "source": "assets/c1/originals/2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "id": "jugular",
+      "title": "Repère au niveau du foramen jugulaire",
+      "label": "left level of inferior border of jugular foramen on the vagus nerve",
+      "lps_mm": [
+        1.219906,
+        6.052842,
+        22.059834
+      ],
+      "voxel_ijk": [
+        135.54511694603005,
+        672.538028951282,
+        2451.0927721808157
+      ],
+      "source": "assets/c1/originals/2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    }
+  ],
+  "source_points": [
+    {
+      "label": "2305_C1L_Left hypoglossal nerve-1",
+      "lps_mm": [
+        2.4636001586914062,
+        4.447141647338867,
+        16.04322624206543
+      ],
+      "voxel_ijk": [
+        273.7333627493306,
+        494.1268709753928,
+        1782.5807702990041
+      ],
+      "source": "assets/c1/originals/2305_C1L_Left_hypoglossal_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_Left superior laryngeal nerve-1",
+      "lps_mm": [
+        2.603987693786621,
+        8.23460578918457,
+        13.499669075012207
+      ],
+      "voxel_ijk": [
+        289.33197843139607,
+        914.9562381851379,
+        1499.9632951270303
+      ],
+      "source": "assets/c1/originals/2305_C1L_Left_superior_laryngeal_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-1",
+      "lps_mm": [
+        1.9264551401138306,
+        4.383573532104492,
+        23.381980895996094
+      ],
+      "voxel_ijk": [
+        214.0505803381653,
+        487.0637467564103,
+        2597.9979891709945
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-2",
+      "lps_mm": [
+        0.673904538154602,
+        4.001583576202393,
+        22.61691665649414
+      ],
+      "voxel_ijk": [
+        74.87828524052338,
+        444.6204164957517,
+        2512.990847789185
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-3",
+      "lps_mm": [
+        1.0927804708480835,
+        4.509410381317139,
+        22.883529663085938
+      ],
+      "voxel_ijk": [
+        121.42005754331996,
+        501.04561949303763,
+        2542.6145164635072
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-4",
+      "lps_mm": [
+        1.5526468753814697,
+        5.210536003112793,
+        23.132837295532227
+      ],
+      "voxel_ijk": [
+        172.51632691327814,
+        578.9484697127677,
+        2570.3153657055555
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-5",
+      "lps_mm": [
+        1.7617417573928833,
+        5.547972679138184,
+        23.145357131958008
+      ],
+      "voxel_ijk": [
+        195.7490925813324,
+        616.4414353295786,
+        2571.706458701637
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-6",
+      "lps_mm": [
+        2.23978853225708,
+        6.634764194488525,
+        23.369491577148438
+      ],
+      "voxel_ijk": [
+        248.86540318611677,
+        737.1960533445038,
+        2596.610287017073
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-7",
+      "lps_mm": [
+        0.7170723676681519,
+        6.760770797729492,
+        21.626060485839844
+      ],
+      "voxel_ijk": [
+        79.67471094850448,
+        751.1967876406452,
+        2402.895712977132
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "F_1-8",
+      "lps_mm": [
+        0.9261859655380249,
+        5.984098434448242,
+        22.108596801757812
+      ],
+      "voxel_ijk": [
+        102.90955615647711,
+        664.89985467228,
+        2456.5108614982537
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-1",
+      "lps_mm": [
+        3.3429346084594727,
+        4.893284320831299,
+        17.0662784576416
+      ],
+      "voxel_ijk": [
+        371.4371947072729,
+        543.6982812751587,
+        1896.2532435897065
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-2",
+      "lps_mm": [
+        2.7758147716522217,
+        8.493356704711914,
+        19.166568756103516
+      ],
+      "voxel_ijk": [
+        308.4238767938826,
+        943.7063411480269,
+        2129.6188423535723
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-3",
+      "lps_mm": [
+        2.2765400409698486,
+        6.756282329559326,
+        1.6778483390808105
+      ],
+      "voxel_ijk": [
+        252.9489043299879,
+        750.6980689336025,
+        186.4276012564991
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-4",
+      "lps_mm": [
+        2.054727554321289,
+        6.141711235046387,
+        1.4346165657043457
+      ],
+      "voxel_ijk": [
+        228.30307141919909,
+        682.4123888259498,
+        159.4018474957149
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-5",
+      "lps_mm": [
+        2.8021652698516846,
+        7.179434299468994,
+        5.334400177001953
+      ],
+      "voxel_ijk": [
+        311.351710053193,
+        797.7149565030946,
+        592.7111562929056
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-6",
+      "lps_mm": [
+        3.1776604652404785,
+        9.868874549865723,
+        2.5508899688720703
+      ],
+      "voxel_ijk": [
+        353.0734002257526,
+        1096.541663855452,
+        283.43223096469706
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-7",
+      "lps_mm": [
+        3.6231298446655273,
+        10.313116073608398,
+        2.544341802597046
+      ],
+      "voxel_ijk": [
+        402.57000007036663,
+        1145.9018352850405,
+        282.70465690281833
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-8",
+      "lps_mm": [
+        3.4138777256011963,
+        10.768486022949219,
+        3.2103774547576904
+      ],
+      "voxel_ijk": [
+        379.31976361790277,
+        1196.4984985009846,
+        356.70862143970885
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-9",
+      "lps_mm": [
+        2.9546494483947754,
+        10.164389610290527,
+        2.8617799282073975
+      ],
+      "voxel_ijk": [
+        328.29439728732626,
+        1129.376671982794,
+        317.9755612667478
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-10",
+      "lps_mm": [
+        2.8901121616363525,
+        10.530580520629883,
+        3.1779208183288574
+      ],
+      "voxel_ijk": [
+        321.12358733881393,
+        1170.0645526609128,
+        353.1023283479289
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-11",
+      "lps_mm": [
+        3.1334786415100098,
+        11.40967082977295,
+        3.710364818572998
+      ],
+      "voxel_ijk": [
+        348.16430848881936,
+        1267.7412578815763,
+        412.2627753662271
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-12",
+      "lps_mm": [
+        3.7820653915405273,
+        11.725297927856445,
+        3.7261879444122314
+      ],
+      "voxel_ijk": [
+        420.2295060389028,
+        1302.8109369560818,
+        414.02090053515866
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-13",
+      "lps_mm": [
+        4.081236839294434,
+        12.065765380859375,
+        4.249818325042725
+      ],
+      "voxel_ijk": [
+        453.4707794425227,
+        1340.6406555848935,
+        472.2020564431175
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-14",
+      "lps_mm": [
+        3.7726309299468994,
+        12.1717529296875,
+        4.792422294616699
+      ],
+      "voxel_ijk": [
+        419.18123248337383,
+        1352.4170504060774,
+        532.4913889911044
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-15",
+      "lps_mm": [
+        3.46217679977417,
+        12.2526273727417,
+        4.5108232498168945
+      ],
+      "voxel_ijk": [
+        384.6863276459186,
+        1361.4031000211514,
+        501.2026048886573
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-16",
+      "lps_mm": [
+        3.4512252807617188,
+        12.054834365844727,
+        4.425225734710693
+      ],
+      "voxel_ijk": [
+        383.4694921477086,
+        1339.4260983087595,
+        491.69176946743664
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-17",
+      "lps_mm": [
+        2.950291872024536,
+        11.470100402832031,
+        4.080006122589111
+      ],
+      "voxel_ijk": [
+        327.8102221142348,
+        1274.4556551771811,
+        453.3340331360447
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-18",
+      "lps_mm": [
+        3.981844186782837,
+        8.62173080444336,
+        9.978447914123535
+      ],
+      "voxel_ijk": [
+        442.42715091027475,
+        957.9701306211011,
+        1108.7164826304193
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_endpoints2-19",
+      "lps_mm": [
+        4.1351399421691895,
+        8.91992473602295,
+        8.433570861816406
+      ],
+      "voxel_ijk": [
+        459.4600133530967,
+        991.1027911117881,
+        937.0634694292318
+      ],
+      "source": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_left A branch of vagus nerve to ipsilateral internal carotid artery-1",
+      "lps_mm": [
+        1.8756754398345947,
+        7.648709297180176,
+        8.0931396484375
+      ],
+      "voxel_ijk": [
+        208.4083911753664,
+        849.8566251600323,
+        899.2377774254849
+      ],
+      "source": "assets/c1/originals/2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "left level of inferior border of jugular foramen on the vagus nerve",
+      "lps_mm": [
+        1.219906,
+        6.052842,
+        22.059834
+      ],
+      "voxel_ijk": [
+        135.54511694603005,
+        672.538028951282,
+        2451.0927721808157
+      ],
+      "source": "assets/c1/originals/2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_microfil-1",
+      "lps_mm": [
+        0.6928642988204956,
+        7.6772847175598145,
+        18.774398803710938
+      ],
+      "voxel_ijk": [
+        76.98492540519777,
+        853.0316720055598,
+        2086.0444013230576
+      ],
+      "source": "assets/c1/originals/2305_C1L_microfil.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-1",
+      "lps_mm": [
+        1.200951649728676,
+        6.054925096099613,
+        22.15799904614687
+      ],
+      "voxel_ijk": [
+        133.43907793633372,
+        672.7694840834247,
+        2462.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-2",
+      "lps_mm": [
+        1.8230679786010642,
+        5.9865606643553955,
+        18.935999184846878
+      ],
+      "voxel_ijk": [
+        202.56311745334796,
+        665.1734357848519,
+        2104.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-3",
+      "lps_mm": [
+        2.1238714782756256,
+        6.389910811646285,
+        16.793999277055264
+      ],
+      "voxel_ijk": [
+        235.98572996706912,
+        709.9901207464326,
+        1866.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-4",
+      "lps_mm": [
+        2.6571140458805305,
+        7.189774663053639,
+        12.509999461472034
+      ],
+      "voxel_ijk": [
+        295.23490669593855,
+        798.8638858397363,
+        1390.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-5",
+      "lps_mm": [
+        2.9647539887295133,
+        7.969129184937731,
+        9.701999582350254
+      ],
+      "voxel_ijk": [
+        329.417124039517,
+        885.4588364434685,
+        1078.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-6",
+      "lps_mm": [
+        3.1971930566598563,
+        8.570736184286854,
+        7.07399969547987
+      ],
+      "voxel_ijk": [
+        355.24368825466513,
+        952.3040614709109,
+        786.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-7",
+      "lps_mm": [
+        3.299739704276184,
+        9.466310240136117,
+        4.769999794661999
+      ],
+      "voxel_ijk": [
+        366.6377607025246,
+        1051.8122941822173,
+        530.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    },
+    {
+      "label": "2305_C1L_nerve-8",
+      "lps_mm": [
+        3.354431249671559,
+        10.081590125834083,
+        3.1319998651742935
+      ],
+      "voxel_ijk": [
+        372.71459934138306,
+        1120.176728869374,
+        348.0
+      ],
+      "source": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "position_status": "defined",
+      "inside_primary_grid": true
+    }
+  ],
+  "contours": {
+    "path": "assets/c1/CONTOURS.json",
+    "sha256": "5c0215d243ba718049cb7390dab21947084afa3366e8f2fd24a930ea901b5d78",
+    "count": 466,
+    "points": 47010,
+    "xml_to_voxel": "i=-y/9; j=x/9; k=-z/9",
+    "orientation_curve_excluded_from_overlay": true,
+    "overlay_closed_contours_only": true
+  },
+  "files": [
+    {
+      "path": "assets/c1/originals/2305_C1L.xml",
+      "sha256": "b77247437791f85168af3a9dd108f13c635533cb09b48e7dac27af1b2d72da8f",
+      "bytes": 3463003,
+      "source": {
+        "name": "2305_C1L.xml",
+        "path": "files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L.xml",
+        "size": 3463003,
+        "fileType": "XML",
+        "sourcePackageId": "N:package:59bdb60f-eb17-427f-9949-4381cbe850f3",
+        "s3VersionId": "8qJffGmRlB6TZyCTljOQr.o0l55XY9yQ",
+        "sha256": "t3JHQ3eR+FForzqd0QjxPGNVM8sJtI59rCevGy1y2o8="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L.xml?versionId=8qJffGmRlB6TZyCTljOQr.o0l55XY9yQ"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_Left_hypoglossal_nerve.mrk.json",
+      "sha256": "4d15cc89b44a0306f226a3143dad5be2ae97a0f5965959e30f0090378deaf258",
+      "bytes": 2436,
+      "source": {
+        "name": "2305_C1L_Left_hypoglossal_nerve.mrk.json",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_Left_hypoglossal_nerve.mrk.json",
+        "size": 2436,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:aab2c857-22cc-4f4b-89c9-f78b1e437e54",
+        "s3VersionId": "Tj45rVzbBhYWxGRhxaPBhs9WOGRNJSKa",
+        "sha256": "TRXMibRKAwbyJqMUPa1b4q6XoPWWWVnjDwCQN43q8lg="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_Left_hypoglossal_nerve.mrk.json?versionId=Tj45rVzbBhYWxGRhxaPBhs9WOGRNJSKa"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_Left_superior_laryngeal_nerve.mrk.json",
+      "sha256": "54c291de7caba817a7aad120aec46736821c892c3157e95d3b672c615a035bba",
+      "bytes": 2442,
+      "source": {
+        "name": "2305_C1L_Left_superior_laryngeal_nerve.mrk.json",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_Left_superior_laryngeal_nerve.mrk.json",
+        "size": 2442,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:7e25047e-8d61-416f-965c-65981c730167",
+        "s3VersionId": "IkBWWfdDqjMoYS6611Ngnfe.fA8.MbyX",
+        "sha256": "VMKR3nyrqBenqtEgrsRnNoIciSwxV+ldO2csYVoDW7o="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_Left_superior_laryngeal_nerve.mrk.json?versionId=IkBWWfdDqjMoYS6611Ngnfe.fA8.MbyX"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_affine.nii.gz",
+      "sha256": "aac76719f13e2b968c00ae72a4ee6faf539ecb3a449889de4c8936d47a6e9bd6",
+      "bytes": 13619929,
+      "source": {
+        "name": "2305_C1L_affine.nii.gz",
+        "path": "files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_affine.nii.gz",
+        "size": 13619929,
+        "fileType": "NIFTI",
+        "sourcePackageId": "N:package:d7d3905d-e963-4ffa-b933-cada669d6b48",
+        "s3VersionId": "Abjh1udLKl4blZR8yo2uAFEO92TnSg8m",
+        "sha256": "qsdnGfE+K5aMAK5ypO5vr1OeyzpEmIneTIk21Hpum9Y="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_affine.nii.gz?versionId=Abjh1udLKl4blZR8yo2uAFEO92TnSg8m"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "sha256": "852dca37e28242ad5b1f202f4365c226860aa3e518fc884b1f58662b13aa3027",
+      "bytes": 6136,
+      "source": {
+        "name": "2305_C1L_endpoints1.mrk.json",
+        "path": "files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_endpoints1.mrk.json",
+        "size": 6136,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:db34b912-9d31-4db8-aaf8-95dbb292c33f",
+        "s3VersionId": "j8bSowTuYEH3ESAn4PsrjFrbmEfSczYJ",
+        "sha256": "hS3KN+KCQq1bHyAvQ2XCJoYKo+UY/IhLH1hmKxOqMCc="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_endpoints1.mrk.json?versionId=j8bSowTuYEH3ESAn4PsrjFrbmEfSczYJ"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "sha256": "e43fad2e823e14c7ef39cb64c21f62624e70152ec965df748862834af9cdda1b",
+      "bytes": 12240,
+      "source": {
+        "name": "2305_C1L_endpoints2.mrk.json",
+        "path": "files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_endpoints2.mrk.json",
+        "size": 12240,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:d684b2ee-0bdd-4975-b84c-54b0e0f78939",
+        "s3VersionId": "uHce3dwiQ6p6dtaQKcRaDhtIFfpjUF7A",
+        "sha256": "5D+tLoI+FMfvOctkwh9iYk5wFS7JZd90iGKDSvnN2hs="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/derivative/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_endpoints2.mrk.json?versionId=uHce3dwiQ6p6dtaQKcRaDhtIFfpjUF7A"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json",
+      "sha256": "23f119a806be40ac042ec92098e0ce840fc8a0d8b60a0e6f95898a9af3f039aa",
+      "bytes": 2479,
+      "source": {
+        "name": "2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json",
+        "size": 2479,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:516c1d68-a05a-4771-863a-ce35463c4a1e",
+        "s3VersionId": "waDFUn7MFirLa7gW_PpFbEWAeiJ901oe",
+        "sha256": "I/EZqAa+QKwELskgmODOhA/IoNi2Cg5vlYmKmvPwOao="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json?versionId=waDFUn7MFirLa7gW_PpFbEWAeiJ901oe"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json",
+      "sha256": "ff426dddf085c53fb6cf0d6ba41e2fcd4fd8e8ca7bb083a618df4e53d64f4e56",
+      "bytes": 2444,
+      "source": {
+        "name": "2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json",
+        "size": 2444,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:cdd097e7-2d22-4b6c-9684-98a1377ad9cf",
+        "s3VersionId": "WuM_ewVmiOMSAPEIge.qbEdQsTh73Rfn",
+        "sha256": "/0Jt3fCFxT+2zw1rpB4vzU/Y6Mp7sIOmGN9OU9ZPTlY="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json?versionId=WuM_ewVmiOMSAPEIge.qbEdQsTh73Rfn"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_microfil.mrk.json",
+      "sha256": "55ae76095220365aa450a44cc08eedb8030c895d2943ba93d3c0821e609e2488",
+      "bytes": 2424,
+      "source": {
+        "name": "2305_C1L_microfil.mrk.json",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_microfil.mrk.json",
+        "size": 2424,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:7e47bb92-b13c-47a6-b2c0-80ad2dfdd8a8",
+        "s3VersionId": "2vErooAJGLXckooQQeO5h_LOJoQUVz9L",
+        "sha256": "Va52CVIgNlqkUKRMwI7tuAMMiV0pQ7qT08CCHmCeJIg="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_microfil.mrk.json?versionId=2vErooAJGLXckooQQeO5h_LOJoQUVz9L"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "sha256": "8a7e38b7d67c2dbf1169783b3c94859fdd186ea25e01738d2e63567cb0380c2e",
+      "bytes": 7280,
+      "source": {
+        "name": "2305_C1L_nerve.mrk.json",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_nerve.mrk.json",
+        "size": 7280,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:6862e329-4edd-41f5-abde-a4fdda992f8e",
+        "s3VersionId": "Y3JvXB0OKjC76nvcTIZaECNwAqRtWAo3",
+        "sha256": "in44t9Z8Lb8RaXg7PJSFn90YbqJeAXONLmNWfLA4DC4="
+      },
+      "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1/2305_C1L_nerve.mrk.json?versionId=Y3JvXB0OKjC76nvcTIZaECNwAqRtWAo3"
+    },
+    {
+      "path": "assets/c1/primary-header.bin",
+      "sha256": "d8f8e5b9bd80c2dd72ed352b7b8e8c5c88a96b75f63ae65262143c6b50c302e8",
+      "bytes": 352,
+      "scope": "First 352 uncompressed bytes of complete verified primary NIfTI; not the complete intensity volume"
+    },
+    {
+      "path": "assets/c1/CONTOURS.json",
+      "sha256": "5c0215d243ba718049cb7390dab21947084afa3366e8f2fd24a930ea901b5d78",
+      "bytes": 3481338,
+      "scope": "All source contour points and names extracted from XML; no interpolation"
+    },
+    {
+      "path": "assets/c1/GRID_CHECK.json",
+      "sha256": "f100a840da5afe662ccdab410a400435578ac29d5bdc7fa2973a90e9a0bfbb86",
+      "bytes": 1540
+    }
+  ],
+  "registration_scope": "Primary and derivative dimensions agree. Source XML-to-grid convention checked against author label boundaries and visually against primary intensities at Z=884,1524,1764,2404. Marker LPS coordinates projected through inverse derived sform. This is source-export consistency and limited visual checking, not a certified anatomical error or whole-body registration.",
+  "visual_checks_native_planes": [
+    884,
+    1524,
+    1764,
+    2404
+  ],
+  "ihc_transform": null,
+  "registration_to_c10": null,
+  "registration_to_whole_body": null,
+  "license": "Creative Commons Attribution; exact version not specified in inspected source metadata",
+  "limits": [
+    "9 µm is nominal sampling, not independently measured optical/CT resolution.",
+    "Source-derived labels 0/1/2 are not assigned a biological name by POLY.",
+    "Contours remain disjoint on annotated planes; no interpolated fiber or axon trajectories.",
+    "An anatomical landmark is a source point, not a segmented organ or a functional connection.",
+    "C1 parentage of IHC sample is documentary; exact section position, orientation and deformation in CT remain unknown.",
+    "No activity, propagation or individual full-body mapping inferred."
+  ]
+}

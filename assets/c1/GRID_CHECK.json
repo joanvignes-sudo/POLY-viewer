@@ -1,0 +1,65 @@
+{
+  "method": "Rounded source contour coordinates tested against any value transition in author-derived 0/1/2 label volume; Euclidean nearest-boundary distance; four axis sign variants. Does not establish primary-intensity registration or independent anatomical precision.",
+  "xml_to_voxel": "i=-y_xml/9; j=x_xml/9; k=-z_xml/9",
+  "annotated_planes": [
+    164,
+    244,
+    324,
+    404,
+    484,
+    564,
+    644,
+    724,
+    804,
+    884,
+    964,
+    1044,
+    1124,
+    1204,
+    1284,
+    1364,
+    1444,
+    1524,
+    1604,
+    1684,
+    1764,
+    1844,
+    1924,
+    2004,
+    2084,
+    2164,
+    2244,
+    2324,
+    2404,
+    2484,
+    2564,
+    2644,
+    2724
+  ],
+  "candidates": {
+    "direct": {
+      "points": 47009,
+      "median_distance_to_label_boundary_px": 1.0,
+      "p95_distance_px": 4.0,
+      "fraction_within_2px": 0.731115318343296
+    },
+    "flip_u": {
+      "points": 47009,
+      "median_distance_to_label_boundary_px": 24.0,
+      "p95_distance_px": 175.3385295071796,
+      "fraction_within_2px": 0.08679189091450573
+    },
+    "flip_v": {
+      "points": 47009,
+      "median_distance_to_label_boundary_px": 30.805843601498726,
+      "p95_distance_px": 323.202413207154,
+      "fraction_within_2px": 0.06847624922887106
+    },
+    "flip_both": {
+      "points": 47009,
+      "median_distance_to_label_boundary_px": 30.083217912982647,
+      "p95_distance_px": 312.72991480917614,
+      "fraction_within_2px": 0.0533302133633985
+    }
+  }
+}

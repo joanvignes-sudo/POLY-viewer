@@ -42,7 +42,7 @@ for(const sample of neurons.samples){
  if(data.unit!=='µm'||data.points.length!==sample.vertices||data.edges.length!==sample.edges||data.edges.some(e=>e.some(i=>!Number.isInteger(i)||i<0||i>=data.points.length))||data.points.some(p=>p.length!==3||p.some(v=>!Number.isFinite(v))))fail(sample.id,'Géométrie neuronale incohérente.');
 }
 for(const source of neurons.raw_sources){const f=path.resolve(root,'assets/neurons',source.file);if(!f.startsWith(path.resolve(root,'assets/neurons')+path.sep)||!fs.existsSync(f)||crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')!==source.sha256)fail(source.file,'Source neuronale originale non conforme.');}
-const scales=JSON.parse(fs.readFileSync(path.join(root,'INVENTAIRE_ECHELLES_v0.104.json'),'utf8'));
+const scales=JSON.parse(fs.readFileSync(path.join(root,'INVENTAIRE_ECHELLES_v0.108.json'),'utf8'));
 if(new Set(scales.sources.map(s=>s.id)).size!==5)fail('inventaire','Les cinq sources doivent être distinctes.');
 for(const f of scales.metadata_files)if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex')!==f.sha256)fail(f.path,'Métadonnée entre échelles non conforme.');
 
@@ -75,6 +75,10 @@ for(const r of calibration.records){const image=focal.fields.find(f=>f.id===r.fi
 for(const r of [...calibration.montage_metadata,calibration.gci])if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,r.path))).digest('hex')!==r.sha256)fail(r.path,'Métadonnée de calibration non conforme.');
 const focalValidation=JSON.parse(fs.readFileSync(path.join(root,'assets/registration/FOCAL_VALIDATION.json')));
 if(focalValidation.planes.length!==17||focalValidation.planes.some((p,i)=>p.plane!==i+1||p.checks.length!==8||p.checks.some(c=>!Number.isFinite(c.ncc_at_reference)||Math.abs(c.ncc_at_reference)>1||c.best_delta.some(v=>!Number.isInteger(v)||Math.abs(v)>12))))fail('raccord','Série de contrôles focaux incohérente.');
-report.ok=report.errors.length===0;report.version='0.107';report.scope='Structural and local-source integrity; not scientific validation';
+const c1=JSON.parse(fs.readFileSync(path.join(root,'assets/c1/PROVENANCE.json')));
+for(const f of [...c1.files,...c1.volumes]){const b=fs.readFileSync(path.join(root,f.path));if(crypto.createHash('sha256').update(b).digest('hex')!==f.sha256)fail(f.path,'Source C1 non conforme.');if(f.bytes_uncompressed){const raw=require('zlib').gunzipSync(b);if(raw.length!==f.bytes_uncompressed||raw.length!==f.dimensions.reduce((a,b)=>a*b,1)||crypto.createHash('sha256').update(raw).digest('hex')!==f.pixel_sha256)fail(f.path,'Pixels C1 non conformes.');}}
+if(c1.volumes.length!==9||c1.landmarks.length!==4||c1.ihc_transform!==null||c1.registration_to_whole_body!==null||c1.volumes.some(v=>v.origin.some((x,i)=>x<0||x+(v.dimensions[i]-1)*v.step>=c1.native_dimensions[i])))fail('C1','Portée ou dimensions C1 incohérentes.');
+const c1Contours=JSON.parse(fs.readFileSync(path.join(root,c1.contours.path)));if(c1Contours.length!==c1.contours.count||c1Contours.reduce((n,c)=>n+c.points.length,0)!==c1.contours.points)fail('C1 contours','Nombre de contours ou points incohérent.');
+report.ok=report.errors.length===0;report.version='0.108';report.scope='Structural and local-source integrity; not scientific validation';
 console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;
 

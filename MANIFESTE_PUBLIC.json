@@ -1,5 +1,5 @@
 {
-  "version": "0.107",
+  "version": "0.108",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -380,6 +380,131 @@
       "path": "assets/c08/C08_F07.js",
       "bytes": 18075,
       "sha256": "445e2d73e147b61916aae8c3bb5298de00d3f286c3b573cd4142f5c123d4f365"
+    },
+    {
+      "path": "assets/c1/carotid.u8.gz",
+      "bytes": 4671577,
+      "sha256": "ba2a40a7667197f203e87779cde648d4661def7a4be918dacf08a38d4cba9fff"
+    },
+    {
+      "path": "assets/c1/context.u8.gz",
+      "bytes": 2049687,
+      "sha256": "1e274427cb2b79eef482b74af129e24499759a8661d8331daf18463a593b257d"
+    },
+    {
+      "path": "assets/c1/CONTOURS.json",
+      "bytes": 3481338,
+      "sha256": "5c0215d243ba718049cb7390dab21947084afa3366e8f2fd24a930ea901b5d78"
+    },
+    {
+      "path": "assets/c1/CREDITS.md",
+      "bytes": 1323,
+      "sha256": "ebb6b2d1afbf95d8331dabb8ff3dc0f4f8dce795e5c22da2b71bdadecf028645"
+    },
+    {
+      "path": "assets/c1/GRID_CHECK.json",
+      "bytes": 1540,
+      "sha256": "f100a840da5afe662ccdab410a400435578ac29d5bdc7fa2973a90e9a0bfbb86"
+    },
+    {
+      "path": "assets/c1/hypoglossal.u8.gz",
+      "bytes": 4156031,
+      "sha256": "16fdc7fe237f0536f9af78819bf57ecea8993801cd89eb88ab91818a0c0151c9"
+    },
+    {
+      "path": "assets/c1/jugular.u8.gz",
+      "bytes": 3552369,
+      "sha256": "144bf0341e814d2301a31f406d19804be785700ae29bfc4e9897106c2dcd4105"
+    },
+    {
+      "path": "assets/c1/laryngeal.u8.gz",
+      "bytes": 3745663,
+      "sha256": "9531e1a8eef0f53e3d723e194689b9b1f888c1795da2c45e343b02541783843f"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L.xml",
+      "bytes": 3463003,
+      "sha256": "b77247437791f85168af3a9dd108f13c635533cb09b48e7dac27af1b2d72da8f"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_affine.nii.gz",
+      "bytes": 13619929,
+      "sha256": "aac76719f13e2b968c00ae72a4ee6faf539ecb3a449889de4c8936d47a6e9bd6"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_endpoints1.mrk.json",
+      "bytes": 6136,
+      "sha256": "852dca37e28242ad5b1f202f4365c226860aa3e518fc884b1f58662b13aa3027"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_endpoints2.mrk.json",
+      "bytes": 12240,
+      "sha256": "e43fad2e823e14c7ef39cb64c21f62624e70152ec965df748862834af9cdda1b"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_left_A_branch_of_vagus_nerve_to_ipsilateral_internal_carotid_artery.mrk.json",
+      "bytes": 2479,
+      "sha256": "23f119a806be40ac042ec92098e0ce840fc8a0d8b60a0e6f95898a9af3f039aa"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_Left_hypoglossal_nerve.mrk.json",
+      "bytes": 2436,
+      "sha256": "4d15cc89b44a0306f226a3143dad5be2ae97a0f5965959e30f0090378deaf258"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_left_level_of_inferior_border_of_jugular_foramen_on_the_vagus_nerve.mrk.json",
+      "bytes": 2444,
+      "sha256": "ff426dddf085c53fb6cf0d6ba41e2fcd4fd8e8ca7bb083a618df4e53d64f4e56"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_Left_superior_laryngeal_nerve.mrk.json",
+      "bytes": 2442,
+      "sha256": "54c291de7caba817a7aad120aec46736821c892c3157e95d3b672c615a035bba"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_microfil.mrk.json",
+      "bytes": 2424,
+      "sha256": "55ae76095220365aa450a44cc08eedb8030c895d2943ba93d3c0821e609e2488"
+    },
+    {
+      "path": "assets/c1/originals/2305_C1L_nerve.mrk.json",
+      "bytes": 7280,
+      "sha256": "8a7e38b7d67c2dbf1169783b3c94859fdd186ea25e01738d2e63567cb0380c2e"
+    },
+    {
+      "path": "assets/c1/primary-header.bin",
+      "bytes": 352,
+      "sha256": "d8f8e5b9bd80c2dd72ed352b7b8e8c5c88a96b75f63ae65262143c6b50c302e8"
+    },
+    {
+      "path": "assets/c1/PROVENANCE.json",
+      "bytes": 37815,
+      "sha256": "d1666cc81c8d9db7fe96cdcc289d8536d83fc901e379d4c8213cb7ac0d99895a"
+    },
+    {
+      "path": "assets/c1/slice-z1524.u8.gz",
+      "bytes": 273653,
+      "sha256": "3456d3aa6fbb07bc860eaf5b2f0e1e5834b317e29b1bcbbff4950a14dea0fd82"
+    },
+    {
+      "path": "assets/c1/slice-z1764.u8.gz",
+      "bytes": 282570,
+      "sha256": "7f044b8a7e2b88f3dd06e102d052d4749dc2556b2d1d17b8b4f11ed3f2bb78c5"
+    },
+    {
+      "path": "assets/c1/slice-z2404.u8.gz",
+      "bytes": 246278,
+      "sha256": "53b2c4b4b1fe19957b1bcf6b61720ae51f6a49bad9b75aa1ab4569c24cbee511"
+    },
+    {
+      "path": "assets/c1/slice-z884.u8.gz",
+      "bytes": 300054,
+      "sha256": "ccff31bf029af17917de2c982b41a06dada4a187bc98070843389ccaf94e0fbf"
+    },
+    {
+      "path": "assets/c1-v0108.js",
+      "bytes": 15198,
+      "sha256": "b70ed96f88e20a4b145062052ead1ede8781dda2c54bd918821c00836d3320b4"
     },
     {
       "path": "assets/characters/c01_characters_v0.1.js",
@@ -6127,6 +6252,11 @@
       "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
     },
     {
+      "path": "BILAN_C1_v0.108.md",
+      "bytes": 2796,
+      "sha256": "68c9bb5e67b954e610f1d6bcd29752cbdf222c0ecf7a28af8b7d7d90fdb9a024"
+    },
+    {
       "path": "BILAN_CALIBRATION_v0.107.md",
       "bytes": 2524,
       "sha256": "c45ffb91f6b5ae9d7c5b4aaeb7dd598ad1928662fc0c7360d06342ae27269138"
@@ -6182,14 +6312,19 @@
       "sha256": "4aa17d01e5205aef72f93526ea7f45117590bfc30cc77119fa41f9b204709881"
     },
     {
+      "path": "c1.html",
+      "bytes": 9059,
+      "sha256": "80ba8fda201d90729db204ce4553d9c03fdf36b2792cfa39ee36a86cd439e485"
+    },
+    {
       "path": "calibration.html",
-      "bytes": 7482,
-      "sha256": "9cc0a7b64ed64431e899d2f72f337eb3a06f0d3b6000ceb4a7ee428c5c5f68c5"
+      "bytes": 7611,
+      "sha256": "e2ee1918c713911d0874ae19b9b01ae4a3535773f2ceb1f6b345c03050064854"
     },
     {
       "path": "canaux.html",
-      "bytes": 5657,
-      "sha256": "4dcf924c88a51fd6933bcd7ab45f9d94a0914e9e65da321459f03343749ef234"
+      "bytes": 5709,
+      "sha256": "53ae99cd25d096265a1075f220d641937d260ecfc8ca1dc458f69fb06a3dd01c"
     },
     {
       "path": "canon.html",
@@ -6323,13 +6458,13 @@
     },
     {
       "path": "immunohistochimie.html",
-      "bytes": 6935,
-      "sha256": "427066522d028427bc7dbf218da96c66978d6034c175482da85f5b4b6fe5ec73"
+      "bytes": 7165,
+      "sha256": "4075c5f8e383d37fff21988f6cc1a960a88e75217a0228944b72d412b1bd4320"
     },
     {
       "path": "index.html",
-      "bytes": 10000,
-      "sha256": "7b517addeef082fbe42185611aacd40b9e13c6c810c97d3b20fc9f99f03b059e"
+      "bytes": 10049,
+      "sha256": "17fdfa4a7e25b46704e2ba59ccdf2c3af565a4380e75fd1cd60a111829ccb055"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -6360,6 +6495,11 @@
       "path": "INVENTAIRE_ECHELLES_v0.104.json",
       "bytes": 7595,
       "sha256": "25a6601f1d316bb67e0b8a54e51978e7d5490af2632c1c0a0c7719d1ad321ee1"
+    },
+    {
+      "path": "INVENTAIRE_ECHELLES_v0.108.json",
+      "bytes": 8641,
+      "sha256": "d2eeb0134ae61f9313e703ced51b23e5af5c1e0039a080e3ab7dee1c087f8449"
     },
     {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
@@ -6448,8 +6588,8 @@
     },
     {
       "path": "organes.html",
-      "bytes": 8834,
-      "sha256": "eea6b2b654b2cfa9b3b998e7d964611b9fd99dad3e2a2047b95e43ee9edf688b"
+      "bytes": 8886,
+      "sha256": "0b95a38901dcdb553c10183eab11d65c92dcee452d784811e6894722eaa7c841"
     },
     {
       "path": "ORGANISATION_v0.97.json",
@@ -6463,18 +6603,18 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 2537,
-      "sha256": "ea7255eac4e42e395cacf52e0f4c71d0029398094b4e5289dacd9750a8d0f48b"
+      "bytes": 2868,
+      "sha256": "f2837e85ab2fe6897dfe7b7b26205247fbc9984e46b0f90bd4b523ba836f983f"
     },
     {
       "path": "raccord.html",
-      "bytes": 8351,
-      "sha256": "61500262e4afd403c6222d5c8235e20408b91659e02d4da52c62ed4d458d39e5"
+      "bytes": 8403,
+      "sha256": "4db56d1a188ad879d72b51b9fb37e784f6b09a880d9e0e35a2995e7a6044897a"
     },
     {
       "path": "README.md",
-      "bytes": 3220,
-      "sha256": "524d8c0421ddf8204d1c3c997ff2d433844796b55cb584e13d22165ed1e9efd4"
+      "bytes": 3615,
+      "sha256": "bf87c84525b5cecc1a4b7630108370f4b3be47d9eaa072a2f0f1e0f1310256e8"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -6508,13 +6648,13 @@
     },
     {
       "path": "suite.html",
-      "bytes": 11050,
-      "sha256": "e585ab40c31d405b77c91925d14760b902a354ad676766947516e4f99cdc2f1d"
+      "bytes": 11631,
+      "sha256": "9ab3837cf624580508470dc989fd7419ff4db52c025f8d1e02a390c98c8074a0"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 12925,
-      "sha256": "63647541c60276c44dd08f9f3a8de55072e20761923dc0b1980b41e02c758724"
+      "bytes": 13996,
+      "sha256": "b5069b07fac7fe48e76c7844c0f71b4c18c61603be915278536257851aed5d4d"
     },
     {
       "path": "VERIFICATION_BIGBRAIN_EN_LIGNE.json",
@@ -6570,6 +6710,11 @@
       "path": "VERIFICATION_v0.107.json",
       "bytes": 1104,
       "sha256": "0f8ccdc56716e82ba05c6d656105470b6dedf3719da98b109a0112448f5ecad6"
+    },
+    {
+      "path": "VERIFICATION_v0.108.json",
+      "bytes": 2220,
+      "sha256": "7e32c6374827e5b9832cada93acc3eb8f8962fa675da124d8a689dc7a9c1c1a9"
     },
     {
       "path": "VERIFICATION_v0.92.json",

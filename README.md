@@ -1,4 +1,4 @@
-# POLY v0.107
+# POLY v0.108
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -35,3 +35,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.107 · Échelles et mesures
 
 [Calibration documentée](calibration.html) : 136 TIFF et deux métadonnées de montage contrôlés ; unités source cohérentes, hypothèse nominale en µm non appliquée. [Mesurer dans le raccord](raccord.html) : 17 plans, repères XY synchronisés, distance en pixels, partage et export avec sources. [Bilan et limites](BILAN_CALIBRATION_v0.107.md).
+
+## v0.108 · Segment C1 et microscopie
+
+[Explorer C1](c1.html) : acquisition primaire complète vérifiée, contexte, quatre fenêtres natives, quatre coupes annotées, contours et repères source. Même segment parent que les images IHC C1-A-L2 ; transform histologie/CT encore inconnu. [Inventaire actuel des cinq sources](INVENTAIRE_ECHELLES_v0.108.json) · [Bilan](BILAN_C1_v0.108.md).
