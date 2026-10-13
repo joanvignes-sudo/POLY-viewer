@@ -1,0 +1,199 @@
+{
+  "annotation_source": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/",
+  "skeleton_id": "1072605926",
+  "ranges": [
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/skeleton_id/0.shard",
+      "range": [
+        0,
+        15
+      ],
+      "generation": "1622439958310697",
+      "etag": "\"fb8aa0e3af0f10541f5fa5f1d1d19e76\"",
+      "sha256": "ade42563b42da7742ce874ed540f8175599568a69d78011bc9aa08fbe549c2bc",
+      "file": "ranges/85feb40dd0f791077e85.bin",
+      "path": "assets/h01-compartments/ranges/85feb40dd0f791077e85.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/skeleton_id/0.shard",
+      "range": [
+        6952491,
+        6953403
+      ],
+      "generation": "1622439958310697",
+      "etag": "\"fb8aa0e3af0f10541f5fa5f1d1d19e76\"",
+      "sha256": "19c6d62e470e61441bb35d765f8f290ea380f90a98840379441a14f00f238ea9",
+      "file": "ranges/b2e11d97105e01c7d302.bin",
+      "path": "assets/h01-compartments/ranges/b2e11d97105e01c7d302.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/skeleton_id/0.shard",
+      "range": [
+        533354,
+        581346
+      ],
+      "generation": "1622439958310697",
+      "etag": "\"fb8aa0e3af0f10541f5fa5f1d1d19e76\"",
+      "sha256": "e2db975c6d89d5cf7dc4cc15f439828564643fad1a844d65c61c31f2a8a729c3",
+      "file": "ranges/df22a28c9fd1bdbf7d49.bin",
+      "path": "assets/h01-compartments/ranges/df22a28c9fd1bdbf7d49.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        0,
+        16383
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "546d027c0a65497041d8eff73f3c77a3657d6972b9dc3bb960b8db63edb0ed64",
+      "file": "ranges/453932a315f8cd4da45f.bin",
+      "path": "assets/h01-compartments/ranges/453932a315f8cd4da45f.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        32380032,
+        32380329
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "4936de8f22551b89d95d571b69e63cdec5ac10a4c17495545043a0de3cae86f7",
+      "file": "ranges/283bc56fef2f3447ebb0.bin",
+      "path": "assets/h01-compartments/ranges/283bc56fef2f3447ebb0.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        32343399,
+        32380031
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "7fec65353b67c2695db829e9ea729e09c43d84b0b4ae1dc9d58ceb02088d60e4",
+      "file": "ranges/fdefb5330286d3e1dcab.bin",
+      "path": "assets/h01-compartments/ranges/fdefb5330286d3e1dcab.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        26464408,
+        26464748
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "62eea0e1b0a60bb00aec590ea2f0e869498bcc80d132cbcf598d13ce97a6024f",
+      "file": "ranges/fa27daadbe8f22121fcf.bin",
+      "path": "assets/h01-compartments/ranges/fa27daadbe8f22121fcf.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        26419109,
+        26464407
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "092ffad182090d155e7b77c8ee02b13b493f33ae7313a6245dcb5b2d739751f3",
+      "file": "ranges/0d8e943fe022f1e13ec4.bin",
+      "path": "assets/h01-compartments/ranges/0d8e943fe022f1e13ec4.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        20512635,
+        20513189
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "05cb1aa321a47a4454eff08011a9683ba80aef6f553e48dba1196ca5fecbfd6d",
+      "file": "ranges/34709cc0dc3a1f682979.bin",
+      "path": "assets/h01-compartments/ranges/34709cc0dc3a1f682979.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        20423088,
+        20468356
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "b27321cd7d784a1a2369ae9cd74d9b13c747ad079efb29538b2c5ea27934ea71",
+      "file": "ranges/e60d8d6c3090f6452822.bin",
+      "path": "assets/h01-compartments/ranges/e60d8d6c3090f6452822.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        29807636,
+        29808020
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "72f26113654e298c426c420d04c12d75e1bb3fe58513b0fb16bf6832e252554c",
+      "file": "ranges/0bec852f6d17e1eec8f7.bin",
+      "path": "assets/h01-compartments/ranges/0bec852f6d17e1eec8f7.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        29762158,
+        29807635
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "c3d1d66653c47d5c50bb92bc1570465c2514e50e0bbb09c4083e48aa2bfb3d96",
+      "file": "ranges/368a3d38ea85d2e3159f.bin",
+      "path": "assets/h01-compartments/ranges/368a3d38ea85d2e3159f.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        12571873,
+        12572391
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "e78f51fa483342e5943d81d571cdaa011e1bc30896bc2a6cb241d83880dc894c",
+      "file": "ranges/e8e558a81616c7976a10.bin",
+      "path": "assets/h01-compartments/ranges/e8e558a81616c7976a10.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        12526523,
+        12571872
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "3aa612a7ba211df4a6be6671eb86b5e50a67e606b950e0377deea749c027e764",
+      "file": "ranges/88c86fd3be96a8acfe4c.bin",
+      "path": "assets/h01-compartments/ranges/88c86fd3be96a8acfe4c.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        13251487,
+        13251813
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "1979584c74d2cbb2aae5133674b2a81996db7d24eb99f477808970d4ea700156",
+      "file": "ranges/7a1ead657e6f4823cfa4.bin",
+      "path": "assets/h01-compartments/ranges/7a1ead657e6f4823cfa4.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/subcompartments/annotations/by_id/0.shard",
+      "range": [
+        13206709,
+        13212213
+      ],
+      "generation": "1622439958201236",
+      "etag": "\"3d8e45cb7ba283ae6a1d20da658c3061\"",
+      "sha256": "21e52e7d63dd358edd78d690ff68bb11ae937e8b3f7702c6d03c7567dea9f919",
+      "file": "ranges/8d445336d66ed66635b9.bin",
+      "path": "assets/h01-compartments/ranges/8d445336d66ed66635b9.bin"
+    }
+  ],
+  "scope": "Source relationship list and all 5050 by-id records; version-pinned range reads and per-range hashes, not whole-shard hashes."
+}

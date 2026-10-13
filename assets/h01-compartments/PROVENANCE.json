@@ -1,0 +1,374 @@
+{
+  "version": "0.114",
+  "date": "2026-10-13",
+  "source": "https://h01-release.storage.googleapis.com/data.html",
+  "license": "CC BY 4.0",
+  "skeleton": {
+    "path": "assets/neurons/h01-em-1072605926.json",
+    "sha256": "ef28999baea1d7c4cddafc127a0a535950d82c54c2188e9475c495443c2f61a9",
+    "unit": "µm",
+    "to_nm": 1000,
+    "vertices": 25895,
+    "edges": 25850,
+    "components": 45,
+    "bounds_um": [
+      [
+        2708.544,
+        427.488,
+        0.099
+      ],
+      [
+        2934.112,
+        800.192,
+        174.537
+      ]
+    ]
+  },
+  "catalog": {
+    "path": "assets/h01-evidence/CATALOG.json",
+    "sha256": "f111320d80c2c204452ca807eb054063215104f2e548ccb369b304992d44b41c",
+    "bytes": 589369
+  },
+  "files": [
+    {
+      "path": "assets/h01-paths/PROJECTIONS.json",
+      "sha256": "c4f08dc7957bee27c442223686cf8a156a2904c478fc25452ef1059c821689ca",
+      "bytes": 1095172
+    },
+    {
+      "path": "assets/h01-paths/INDEPENDENT_VALIDATION.json",
+      "sha256": "99763bad0ebfd334de7d5edc3eb3f9d8f7ea5308ee8f7e7f4d43ce06c6ff152f",
+      "bytes": 4662
+    },
+    {
+      "path": "assets/h01-compartments/JOIN.json",
+      "sha256": "17dcb2f5edb6541eb08f7c075891a1706e23252451c1d8cbc7c05dc10a9f77b4",
+      "bytes": 1409642
+    },
+    {
+      "path": "assets/h01-compartments/JOIN_VALIDATION.json",
+      "sha256": "7184bb3f0a82181ce3d0842f52c89b82948fb718c77eb826af0b855cba4cd29b",
+      "bytes": 807
+    },
+    {
+      "path": "assets/h01-compartments/SOURCE_VALIDATION.json",
+      "sha256": "487602160be2b0436262e420a3d09e4b0377f91e11863bdbd7f2f866eb9a9e69",
+      "bytes": 681
+    },
+    {
+      "path": "assets/h01-compartments/RELATED_OBJECT.bin",
+      "sha256": "9648538b958a0f323508191539974a4fee2b1161c195539076cc15d502b1e525",
+      "bytes": 121208
+    },
+    {
+      "path": "assets/h01-compartments/BY_ID_RECORDS.bin",
+      "sha256": "08945e4130091e44aa2f72b3e865f17a3a546961af274576b1a0de7159fd5e3e",
+      "bytes": 141400
+    },
+    {
+      "path": "assets/h01-compartments/BY_ID_RECORDS.json",
+      "sha256": "75f746f8e5f82d0b0d7bcd55c8e6c667ec2320fcc841e70a2fe8f4fae5d7f4cb",
+      "bytes": 834332
+    },
+    {
+      "path": "assets/h01-compartments/proofread-annotations.json",
+      "sha256": "153329d28a962b23f61fddedeb8428482144a8cfbbd6f589a02830a9bac64d28",
+      "bytes": 3997
+    },
+    {
+      "path": "assets/h01-compartments/proofread-annotations-response.bin",
+      "sha256": "2f5ad0dc7b33fd597323dfe57982541f93c91ba6ec6c3c8e59174c120a380694",
+      "bytes": 731
+    },
+    {
+      "path": "assets/h01-compartments/proofread-annotations-headers.json",
+      "sha256": "0effa7a1d21ef1f1a6345fc35aec37fb4ba6ddb56c16824c9e08a2a4cb57c363",
+      "bytes": 880
+    },
+    {
+      "path": "assets/h01-compartments/ranges/85feb40dd0f791077e85.bin",
+      "sha256": "ade42563b42da7742ce874ed540f8175599568a69d78011bc9aa08fbe549c2bc",
+      "bytes": 16
+    },
+    {
+      "path": "assets/h01-compartments/ranges/b2e11d97105e01c7d302.bin",
+      "sha256": "19c6d62e470e61441bb35d765f8f290ea380f90a98840379441a14f00f238ea9",
+      "bytes": 913
+    },
+    {
+      "path": "assets/h01-compartments/ranges/df22a28c9fd1bdbf7d49.bin",
+      "sha256": "e2db975c6d89d5cf7dc4cc15f439828564643fad1a844d65c61c31f2a8a729c3",
+      "bytes": 47993
+    },
+    {
+      "path": "assets/h01-compartments/ranges/453932a315f8cd4da45f.bin",
+      "sha256": "546d027c0a65497041d8eff73f3c77a3657d6972b9dc3bb960b8db63edb0ed64",
+      "bytes": 16384
+    },
+    {
+      "path": "assets/h01-compartments/ranges/283bc56fef2f3447ebb0.bin",
+      "sha256": "4936de8f22551b89d95d571b69e63cdec5ac10a4c17495545043a0de3cae86f7",
+      "bytes": 298
+    },
+    {
+      "path": "assets/h01-compartments/ranges/fdefb5330286d3e1dcab.bin",
+      "sha256": "7fec65353b67c2695db829e9ea729e09c43d84b0b4ae1dc9d58ceb02088d60e4",
+      "bytes": 36633
+    },
+    {
+      "path": "assets/h01-compartments/ranges/fa27daadbe8f22121fcf.bin",
+      "sha256": "62eea0e1b0a60bb00aec590ea2f0e869498bcc80d132cbcf598d13ce97a6024f",
+      "bytes": 341
+    },
+    {
+      "path": "assets/h01-compartments/ranges/0d8e943fe022f1e13ec4.bin",
+      "sha256": "092ffad182090d155e7b77c8ee02b13b493f33ae7313a6245dcb5b2d739751f3",
+      "bytes": 45299
+    },
+    {
+      "path": "assets/h01-compartments/ranges/34709cc0dc3a1f682979.bin",
+      "sha256": "05cb1aa321a47a4454eff08011a9683ba80aef6f553e48dba1196ca5fecbfd6d",
+      "bytes": 555
+    },
+    {
+      "path": "assets/h01-compartments/ranges/e60d8d6c3090f6452822.bin",
+      "sha256": "b27321cd7d784a1a2369ae9cd74d9b13c747ad079efb29538b2c5ea27934ea71",
+      "bytes": 45269
+    },
+    {
+      "path": "assets/h01-compartments/ranges/0bec852f6d17e1eec8f7.bin",
+      "sha256": "72f26113654e298c426c420d04c12d75e1bb3fe58513b0fb16bf6832e252554c",
+      "bytes": 385
+    },
+    {
+      "path": "assets/h01-compartments/ranges/368a3d38ea85d2e3159f.bin",
+      "sha256": "c3d1d66653c47d5c50bb92bc1570465c2514e50e0bbb09c4083e48aa2bfb3d96",
+      "bytes": 45478
+    },
+    {
+      "path": "assets/h01-compartments/ranges/e8e558a81616c7976a10.bin",
+      "sha256": "e78f51fa483342e5943d81d571cdaa011e1bc30896bc2a6cb241d83880dc894c",
+      "bytes": 519
+    },
+    {
+      "path": "assets/h01-compartments/ranges/88c86fd3be96a8acfe4c.bin",
+      "sha256": "3aa612a7ba211df4a6be6671eb86b5e50a67e606b950e0377deea749c027e764",
+      "bytes": 45350
+    },
+    {
+      "path": "assets/h01-compartments/ranges/7a1ead657e6f4823cfa4.bin",
+      "sha256": "1979584c74d2cbb2aae5133674b2a81996db7d24eb99f477808970d4ea700156",
+      "bytes": 327
+    },
+    {
+      "path": "assets/h01-compartments/ranges/8d445336d66ed66635b9.bin",
+      "sha256": "21e52e7d63dd358edd78d690ff68bb11ae937e8b3f7702c6d03c7567dea9f919",
+      "bytes": 5505
+    },
+    {
+      "path": "assets/h01-compartments/ACQUISITION.json",
+      "sha256": "6fcbd30ab27af8f8efae8a523c6326086afca0cb47f93ba3d29446c29d409415",
+      "bytes": 8538
+    }
+  ],
+  "geometry_summary": {
+    "vertices": 25895,
+    "edges": 25850,
+    "components": 45,
+    "cycles": 0,
+    "zero_length_edges": 0,
+    "gap_quantiles_um": {
+      "0": 0.020787240709597813,
+      "0.5": 0.16148357819569167,
+      "0.9": 0.3909446845036944,
+      "0.95": 0.5618319391565503,
+      "0.99": 1.8579152057092154,
+      "1": 5.658726947939945
+    },
+    "catalog_by_component": {
+      "0": 1020,
+      "1": 404,
+      "2": 68,
+      "3": 21,
+      "4": 21,
+      "5": 11,
+      "6": 1,
+      "8": 1,
+      "11": 1,
+      "12": 1,
+      "13": 2,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "27": 1,
+      "29": 1,
+      "30": 1,
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "38": 1,
+      "44": 1
+    },
+    "component_vertices": {
+      "0": 16120,
+      "1": 6957,
+      "2": 1273,
+      "3": 604,
+      "4": 293,
+      "5": 233,
+      "6": 86,
+      "7": 56,
+      "8": 35,
+      "9": 16,
+      "10": 11,
+      "11": 11,
+      "12": 10,
+      "13": 9,
+      "14": 9,
+      "15": 9,
+      "16": 9,
+      "17": 8,
+      "18": 8,
+      "19": 8,
+      "20": 8,
+      "21": 7,
+      "22": 7,
+      "23": 7,
+      "24": 7,
+      "25": 7,
+      "26": 7,
+      "27": 6,
+      "28": 6,
+      "29": 6,
+      "30": 5,
+      "31": 5,
+      "32": 5,
+      "33": 5,
+      "34": 5,
+      "35": 4,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 4,
+      "42": 4,
+      "43": 3,
+      "44": 2
+    }
+  },
+  "scope": "New geometric analysis of the source skeleton, not a new biological chain. Nearest-edge projections do not establish anatomical attachment. Unique graph routes stay within connected components. No distance-to-time conversion.",
+  "limits": [
+    "Skeleton is a 45-component forest; no missing connection is added.",
+    "Source points can be on a cell surface while the skeleton is an axis; gap is not an anatomical error bound.",
+    "No source-supported axon/dendrite label is assigned from input/output role.",
+    "Path length is a polyline measurement of the source skeleton, not a true axonal cable length or conduction delay.",
+    "Order A to B is an exploration order, not an observed physiological direction."
+  ],
+  "compartments": {
+    "path": "assets/h01-compartments/JOIN.json",
+    "sha256": "17dcb2f5edb6541eb08f7c075891a1706e23252451c1d8cbc7c05dc10a9f77b4",
+    "bytes": 1409642
+  },
+  "compartment_legend": [
+    {
+      "code": 0,
+      "label": "Axone",
+      "source": "axon",
+      "color": 10467288
+    },
+    {
+      "code": 1,
+      "label": "Dendrite",
+      "source": "dendrite",
+      "color": 9548958
+    },
+    {
+      "code": 3,
+      "label": "Soma",
+      "source": "soma",
+      "color": 13678997
+    },
+    {
+      "code": 5,
+      "label": "Segment initial de l’axone (AIS)",
+      "source": "AIS",
+      "color": 11116740
+    },
+    {
+      "code": 1001,
+      "label": "Axone myélinisé",
+      "source": "myelinated axon",
+      "color": 12699081
+    },
+    {
+      "code": 2,
+      "label": "Astrocyte · étiquette à examiner",
+      "source": "astrocyte",
+      "color": 13279655
+    }
+  ],
+  "compartment_native_skeleton": {
+    "path": "assets/neurons/h01-1072605926.skeleton",
+    "sha256": "90fd2552213f2e2d78d9c5aede31cc3837a3374cb66e79eb098805b3d0795a5f",
+    "bytes": 621128
+  },
+  "compartment_validation": {
+    "status": "passed",
+    "native_coordinate_byte_matches": 5050,
+    "unique_annotated_vertices": 5050,
+    "skeleton_vertices": 25895,
+    "unannotated_vertices": 20845,
+    "by_id_annotation_count": 5050,
+    "related_object_count": 5050,
+    "raw_skeleton_sha256": "90fd2552213f2e2d78d9c5aede31cc3837a3374cb66e79eb098805b3d0795a5f",
+    "coordinate_matching": "Original float32 nanometre bytes equal, not a spatial tolerance or nearest-neighbour transfer.",
+    "source_json_max_roundtrip_nm": 4.656612873077393e-10,
+    "class_counts": {
+      "dendrite": 4791,
+      "axon": 148,
+      "AIS": 21,
+      "soma": 43,
+      "astrocyte": 40,
+      "myelinated axon": 7
+    },
+    "labels_not_manually_validated_by_poly": true,
+    "astrocyte_labels_retained_for_review": 40,
+    "unannotated_labels_interpolated": false
+  },
+  "compartment_source_validation": {
+    "status": "passed",
+    "related_object_records": 5050,
+    "by_id_records_verified": 5050,
+    "all_positions_classes_and_relationships_agree": true,
+    "source_classes": {
+      "0": "axon",
+      "1": "dendrite",
+      "2": "astrocyte",
+      "3": "soma",
+      "4": "cilium",
+      "5": "AIS",
+      "1000": "myelinated axon",
+      "1001": "myelinated axon",
+      "1002": "myelinated fragment",
+      "1003": "myelinated fragment",
+      "1004": "myelinated fragment",
+      "1005": "myelinated fragment"
+    },
+    "relationship_multiplicity": [
+      1
+    ],
+    "scope": "Consistency of source encodings and source association; not independent biological validation of class labels."
+  },
+  "class_interpolation": false,
+  "compartment_label_scope": "Point labels from the source associated with the same skeleton ID. Exact native coordinate-byte join to source vertices. Labels are not individual manual anatomical validation; 40 astrocyte labels are retained for review. Unannotated vertices stay unclassified."
+}

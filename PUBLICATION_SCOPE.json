@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.113",
+  "presentation_version": "0.114",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -128,5 +128,15 @@
     "inter_component_bridges_added": 0,
     "source_graph_modified": false,
     "independent_route_cases": 37
+  },
+  "h01_source_compartment_points": {
+    "source_annotations": 5050,
+    "unique_exact_vertex_matches": 5050,
+    "unannotated_vertices": 20845,
+    "nearest_neighbour_class_assignment": false,
+    "classes_interpolated": false,
+    "astrocyte_labels_for_review": 40,
+    "manual_biological_validation_claimed": false,
+    "biological_time": null
   }
 }

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "native_coordinate_byte_matches": 5050,
+  "unique_annotated_vertices": 5050,
+  "skeleton_vertices": 25895,
+  "unannotated_vertices": 20845,
+  "by_id_annotation_count": 5050,
+  "related_object_count": 5050,
+  "raw_skeleton_sha256": "90fd2552213f2e2d78d9c5aede31cc3837a3374cb66e79eb098805b3d0795a5f",
+  "coordinate_matching": "Original float32 nanometre bytes equal, not a spatial tolerance or nearest-neighbour transfer.",
+  "source_json_max_roundtrip_nm": 4.656612873077393e-10,
+  "class_counts": {
+    "dendrite": 4791,
+    "axon": 148,
+    "AIS": 21,
+    "soma": 43,
+    "astrocyte": 40,
+    "myelinated axon": 7
+  },
+  "labels_not_manually_validated_by_poly": true,
+  "astrocyte_labels_retained_for_review": 40,
+  "unannotated_labels_interpolated": false
+}

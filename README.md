@@ -1,4 +1,4 @@
-# POLY v0.113
+# POLY v0.114
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -59,3 +59,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.113 · Parcours dans le squelette H01
 
 [Choisir deux repères](trajets.html?v=0.113) : projections vers les arêtes source, longueur dans le même morceau, lecture en micromètres, partage et export. Aucun pont ajouté entre les 45 morceaux, aucune durée de transmission inférée, aucun rattachement anatomique certifié par proximité. [Bilan](BILAN_H01_PATHS_v0.113.md).
+
+## v0.114 · Étiquettes anatomiques ponctuelles H01
+
+[Parcourir les points annotés](trajets.html?v=0.114) : 5 050 correspondances exactes sur les coordonnées natives, six classes source observées, repères précédent/suivant. Aucun remplissage des 20 845 sommets non annotés ni interpolation des classes. 40 étiquettes astrocyte conservées pour examen. [Bilan](BILAN_H01_COMPARTMENTS_v0.114.md).
