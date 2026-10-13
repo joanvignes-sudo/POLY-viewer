@@ -1,4 +1,4 @@
-# POLY v0.108
+# POLY v0.109
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
@@ -39,3 +39,7 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 ## v0.108 · Segment C1 et microscopie
 
 [Explorer C1](c1.html) : acquisition primaire complète vérifiée, contexte, quatre fenêtres natives, quatre coupes annotées, contours et repères source. Même segment parent que les images IHC C1-A-L2 ; transform histologie/CT encore inconnu. [Inventaire actuel des cinq sources](INVENTAIRE_ECHELLES_v0.108.json) · [Bilan](BILAN_C1_v0.108.md).
+
+## v0.109 · Images H01 et squelette dans un repère commun
+
+[Microscopie électronique H01](microscopie.html) : trois fenêtres image + masque source, du voisinage au pas natif 4 × 4 × 33 nm. Même segment 1072605926 que le squelette existant. Vérification indépendante des valeurs avec TensorStore ; aucune synapse ni activité inférée. [Bilan](BILAN_H01_EM_v0.109.md) · [Inventaire actuel](INVENTAIRE_ECHELLES_v0.109.json).

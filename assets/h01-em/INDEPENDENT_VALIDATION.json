@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "reader": "TensorStore neuroglancer_precomputed via HTTP; independent shard, JPEG and segmentation readers",
+  "results": [
+    {
+      "level": "context64",
+      "layer": "4nm_raw",
+      "voxels": 7077888,
+      "differing_values": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "level": "context64",
+      "layer": "proofread_104",
+      "voxels": 7077888,
+      "differing_values": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "level": "middle16",
+      "layer": "4nm_raw",
+      "voxels": 1048576,
+      "differing_values": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "level": "middle16",
+      "layer": "proofread_104",
+      "voxels": 1048576,
+      "differing_values": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "level": "native4",
+      "layer": "4nm_raw",
+      "voxels": 2097152,
+      "differing_values": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "level": "native4",
+      "layer": "proofread_104",
+      "voxels": 524288,
+      "differing_values": 0,
+      "max_absolute_difference": 0
+    }
+  ],
+  "jpeg_scope": "POLY uses Pillow-decoded JPEG samples; any decoder rounding differences reported; no original detector intensity precision claimed",
+  "reader_version": "0.1.85"
+}

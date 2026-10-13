@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.108",
+  "presentation_version": "0.109",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -70,5 +70,25 @@
     "source_contours": 466,
     "ihc_transform": null,
     "whole_body_transform": null
+  },
+  "h01_em": {
+    "release": "20210601",
+    "segment": "1072605926",
+    "image_windows": 3,
+    "native_sampling_nm": [
+      4,
+      4,
+      33
+    ],
+    "native_mask_sampling_nm": [
+      8,
+      8,
+      33
+    ],
+    "same_frame_as_existing_skeleton": true,
+    "independent_decoder_values_equal": true,
+    "synapse_annotations": false,
+    "new_activity": false,
+    "registration_to_other_specimen": null
   }
 }
