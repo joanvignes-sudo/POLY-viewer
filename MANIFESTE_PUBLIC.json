@@ -1,5 +1,5 @@
 {
-  "version": "0.119",
+  "version": "0.120",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -570,6 +570,36 @@
       "path": "assets/bigbrain/surfaces.bin",
       "bytes": 12505656,
       "sha256": "39bf153516c33bd6f7dab2d0771e79ec36ec743f8dbc5e326436069634fdc518"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/bigbrain_to_icbm2009b_lin.xfm",
+      "bytes": 725,
+      "sha256": "d2b9980b1212ed40dbe45693b548854fbf52eacd418926d31cbfb87786a56944"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/bigbrain_to_icbm2009b_nl.xfm",
+      "bytes": 726,
+      "sha256": "43ed6cff8ad7f0349981a463c97789a0fdb02f8bd5491a0e14ee3a52d0dc6a75"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/PROVENANCE.json",
+      "bytes": 9670,
+      "sha256": "27a543fbd2efb6b9a5fdd9af9726b313461ca8f2e171b72ec1e497f1e81bb808"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/XIAO2019_BigBrain-to-ICBM2009sym-nonlin.xfm",
+      "bytes": 465,
+      "sha256": "818768fa0ee39c3ba0baf036df9f3c645f6d08825c69121cb9f7a07288cc17f3"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/XIAO2019_LICENSE",
+      "bytes": 19645,
+      "sha256": "a09063cbccceb6aeb66fce0de345178dc435cb59051eba945dfac3bbbc4efb7e"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/XIAO2019_README",
+      "bytes": 2572,
+      "sha256": "ad0ef56e8ebef3e11ffce2eb9e19d4a96d8d24055c9793bd0b21c7e8ca6971a4"
     },
     {
       "path": "assets/bigbrain-v095.js",
@@ -12782,6 +12812,11 @@
       "sha256": "8a1aabb643008cfb41f8e979b24ef7721454e31add2f3b0fd86bdfb5b88dc4f7"
     },
     {
+      "path": "BILAN_BIGBRAIN_REGISTRATION_v0.120.md",
+      "bytes": 4551,
+      "sha256": "30c77e378895932f4ad18c81f73b9b61063c955390076a3031bd3a844188d1ae"
+    },
+    {
       "path": "BILAN_BIGBRAIN_v0.95.md",
       "bytes": 3736,
       "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
@@ -13137,6 +13172,11 @@
       "sha256": "659ff92da1fb194722635555db7a8ff79202cc2ab14e58928848adfd7b3badc3"
     },
     {
+      "path": "INVENTAIRE_ECHELLES_v0.120.json",
+      "bytes": 14695,
+      "sha256": "d58b25bbbe82ae9ef3e52958e66f835437dbeb8efa518c15debddd8c8aa6ea5a"
+    },
+    {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
       "bytes": 6410,
       "sha256": "20943a235c3652fb74df5039c1a3165424c36c2bec9eed1ee17472568d21e303"
@@ -13243,8 +13283,8 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 6665,
-      "sha256": "4c907c03a0e13dad076c64014e20f2f3c9014578262230d92034c8f7fa5eb058"
+      "bytes": 6845,
+      "sha256": "683bc9494cfbfe9e1b4d70058d139d750f38f3b1a9f81534820dee8b08ed6c97"
     },
     {
       "path": "raccord.html",
@@ -13253,8 +13293,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7614,
-      "sha256": "220af39cdea4492ce760449ad12d9bf879c1b2f671b1cf490dd1e9e934bed6ca"
+      "bytes": 7798,
+      "sha256": "d403f09b3512084c50ca03e3072a52cc8f396c70bd9f4efd912110abd37b0a37"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -13288,13 +13328,13 @@
     },
     {
       "path": "suite.html",
-      "bytes": 23231,
-      "sha256": "c8f9bf0fc775221ae7d8042ca7b2c8719320836fe210def9ff349762f9a80c24"
+      "bytes": 24102,
+      "sha256": "c31d3ae85ecc1c3007dd0c345d0f7c572625daeba97e1a187bbb202562d37ac2"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 35301,
-      "sha256": "a291b698ebf70fa72d9c0d1266661793bf1b8d5c5caaa08214402549d3810bbe"
+      "bytes": 36033,
+      "sha256": "73767cdef99711b0bd0221ed3574093488e5f341d54066d58ec2ef3e0eba176b"
     },
     {
       "path": "trajets.html",
@@ -13415,6 +13455,11 @@
       "path": "VERIFICATION_v0.119.json",
       "bytes": 1814,
       "sha256": "7c35025a365f17d545c95d7c020ec79d1b3f90a8fa408212831735b0b74b8783"
+    },
+    {
+      "path": "VERIFICATION_v0.120.json",
+      "bytes": 1340,
+      "sha256": "3b5a65ee9c48cfde8a03162f4160d6a2128f803e5d2b9795c31eeb9810abbfcf"
     },
     {
       "path": "VERIFICATION_v0.92.json",

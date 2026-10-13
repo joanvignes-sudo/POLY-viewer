@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.119",
+  "presentation_version": "0.120",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -195,5 +195,10 @@
     "continuous_anatomical_path_established": false,
     "reader_trials_completed": false,
     "evidence": "assets/navigation/PROVENANCE.json"
+  },
+  "bigbrain_registration_preparation": {
+    "provenance": "assets/bigbrain-registration-v0120/PROVENANCE.json",
+    "fields_acquired": 3,
+    "applied_to_viewer": false
   }
 }

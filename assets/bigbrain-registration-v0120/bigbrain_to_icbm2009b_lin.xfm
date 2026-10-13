@@ -1,0 +1,9 @@
+MNI Transform File
+%Mon May 11 13:31:30 2015>>> minctracc -clobber -nmi -lsq12 -step 2 2 2 -simplex 4 -tol 0.0005 -transformation /tmp/bestlinreg.pl-xtnu604G/Ssource_neg_3.xfm /tmp/bestlinreg.pl-xtnu604G/Ssource_neg_2_blur.mnc /tmp/bestlinreg.pl-xtnu604G/Ttemplate_masked_2_blur.mnc /tmp/bestlinreg.pl-xtnu604G/Ssource_neg_4.xfm
+%(Package mni_autoreg 0.99.7, compiled by @zealous.cbrain.mcgill.ca (x86_64-unknown-linux-gnu) on Wed Apr 16 16:32:30 EDT 2014)
+
+Transform_Type = Linear;
+Linear_Transform =
+ 1.11953556537628 0.000689052627421916 0.243142768740654 0.26196813583374
+ -0.00482605583965778 1.23097217082977 -0.125631436705589 -21.42431640625
+ -0.0819356441497803 0.0534097105264664 1.43528985977173 1.33586645126343;

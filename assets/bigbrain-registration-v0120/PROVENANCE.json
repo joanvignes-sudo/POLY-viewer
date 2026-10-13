@@ -1,0 +1,287 @@
+{
+  "version": "0.120",
+  "status": "acquired_not_applied",
+  "date": "2026-10-13",
+  "scientific_registration_validated": false,
+  "applied_to_viewer": false,
+  "target": {
+    "atlas": "CerebrA",
+    "space": "MNI152NLin2009cSym",
+    "sampling_mm": 1,
+    "relation_to_2009b": "NIST describes the same anatomy with different sampling/preprocessing; voxel-index identity is not assumed",
+    "source": "https://nist.mni.mcgill.ca/icbm-152-nonlinear-atlases-2009/"
+  },
+  "upstream": {
+    "archive_url": "https://packages.bic.mni.mcgill.ca/mni-models/PD25/mni_PD25_Bigbrain_2019release_minc2.zip",
+    "archive_bytes": 2343946256,
+    "selected_members_only": true,
+    "readme": "assets/bigbrain-registration-v0120/XIAO2019_README",
+    "license": "assets/bigbrain-registration-v0120/XIAO2019_LICENSE",
+    "citation": "https://doi.org/10.1038/s41597-019-0217-0",
+    "input_space": "BigBrain already coarsely registered to ICBM in the 2015 release",
+    "output_space": "ICBM152 2009b symmetric",
+    "ordered_grid_members": [
+      "BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc",
+      "BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc",
+      "BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc"
+    ],
+    "grids": [
+      {
+        "member": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc",
+        "bytes": 170069796,
+        "sha256": "160fc827ead4fd577d7d4b430b6c6dc5e0feb10afb8ee37875b00a201108bdf1",
+        "crc32": 3754193427,
+        "zip_crc_verified": true,
+        "shape": [
+          3,
+          189,
+          233,
+          197
+        ],
+        "dtype": "float64",
+        "dimorder": "vector_dimension,zspace,yspace,xspace",
+        "dimensions": {
+          "xspace": {
+            "start": -97.75,
+            "step": 1.0,
+            "length": 197
+          },
+          "yspace": {
+            "start": -133.75,
+            "step": 1.0,
+            "length": 233
+          },
+          "zspace": {
+            "start": -71.75,
+            "step": 1.0,
+            "length": 189
+          }
+        },
+        "finite_components_checked": [
+          0,
+          1,
+          2
+        ],
+        "all_stored_components_finite": true,
+        "file_present_locally": true
+      },
+      {
+        "member": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc",
+        "bytes": 165239321,
+        "sha256": "6fba1380def387a2ba140bfb5372f2b34f8ad8730dc234ff03d717666ccf4eec",
+        "crc32": 2854710703,
+        "zip_crc_verified": true,
+        "shape": [
+          3,
+          189,
+          233,
+          197
+        ],
+        "dtype": "float64",
+        "dimorder": "vector_dimension,zspace,yspace,xspace",
+        "dimensions": {
+          "xspace": {
+            "start": -97.75,
+            "step": 1.0,
+            "length": 197
+          },
+          "yspace": {
+            "start": -133.75,
+            "step": 1.0,
+            "length": 233
+          },
+          "zspace": {
+            "start": -71.75,
+            "step": 1.0,
+            "length": 189
+          }
+        },
+        "finite_components_checked": [
+          0,
+          1,
+          2
+        ],
+        "all_stored_components_finite": true,
+        "file_present_locally": true
+      },
+      {
+        "member": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc",
+        "bytes": 170996407,
+        "sha256": "c919b4e786373895aa8dae8ba219d01db59ed7a52790f0269af6c38dc3c89666",
+        "crc32": 2002858584,
+        "zip_crc_verified": true,
+        "shape": [
+          3,
+          189,
+          233,
+          197
+        ],
+        "dtype": "float64",
+        "dimorder": "vector_dimension,zspace,yspace,xspace",
+        "dimensions": {
+          "xspace": {
+            "start": -97.75,
+            "step": 1.0,
+            "length": 197
+          },
+          "yspace": {
+            "start": -133.75,
+            "step": 1.0,
+            "length": 233
+          },
+          "zspace": {
+            "start": -71.75,
+            "step": 1.0,
+            "length": 189
+          }
+        },
+        "finite_components_checked": [
+          0,
+          1,
+          2
+        ],
+        "all_stored_components_finite": true,
+        "file_present_locally": true
+      }
+    ]
+  },
+  "original_2015": {
+    "affine_matrix": [
+      [
+        1.11953556537628,
+        0.000689052627421916,
+        0.243142768740654,
+        0.26196813583374
+      ],
+      [
+        -0.00482605583965778,
+        1.23097217082977,
+        -0.125631436705589,
+        -21.42431640625
+      ],
+      [
+        -0.0819356441497803,
+        0.0534097105264664,
+        1.43528985977173,
+        1.33586645126343
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "nonlinear_grid": "bigbrain_to_icbm2009b_nl_grid_0.mnc",
+    "nonlinear_grid_acquired": false,
+    "complete_native_chain_available": false,
+    "affine_only_not_anatomical_registration": true
+  },
+  "surface_header": {
+    "source_sha256": "c5dcc391a4968ec2024d1bab6d2ef0a8c9d588abe23592137608114b544119ce",
+    "dataspace": 0,
+    "xformspace": 0,
+    "xform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "conclusion": "Unknown-to-unknown GIFTI header does not independently establish histological versus BigBrainSym coordinates",
+    "existing_declared_frame": "BigBrain native histological surface coordinates",
+    "changed": false
+  },
+  "methods": {
+    "bbw_commit": "68b068fbb93df49eb1339bf7a038876b4412577c",
+    "references": [
+      {
+        "url": "https://raw.githubusercontent.com/caseypaquola/BigBrainWarp/68b068fbb93df49eb1339bf7a038876b4412577c/docs/pages/FAQs.rst",
+        "sha256": "cb32a96edbad756e0e6eeec0ff068021cef6505ddb001011af96eb1446fd5c45"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/caseypaquola/BigBrainWarp/68b068fbb93df49eb1339bf7a038876b4412577c/docs/pages/toolbox_contents.rst",
+        "sha256": "d75a92257aa3baccb0d302aa0e3224d898282d27655e76cea492fa047f7fcec8"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/caseypaquola/BigBrainWarp/68b068fbb93df49eb1339bf7a038876b4412577c/scripts/bigbrain_to_icbm.sh",
+        "sha256": "b2d194f77b385159f50b5c812fb373fecec5cb30c712189756ab70accd7fcd46"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/caseypaquola/BigBrainWarp/68b068fbb93df49eb1339bf7a038876b4412577c/scripts/bigbrainsurf_to_icbm.sh",
+        "sha256": "bcfbc6640baf6c0f5490554658f5962818a16090d9b8386f811f318aebbcd56a"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/caseypaquola/BigBrainWarp/68b068fbb93df49eb1339bf7a038876b4412577c/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "volume_code_distinguishes_histological_and_sym": true,
+    "surface_code_uses_sym_geometry": true
+  },
+  "public_files": [
+    {
+      "path": "assets/bigbrain-registration-v0120/bigbrain_to_icbm2009b_lin.xfm",
+      "file": "bigbrain_to_icbm2009b_lin.xfm",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/3D_Volumes/MNI-ICBM152_Space/transformation/bigbrain_to_icbm2009b_lin.xfm",
+      "bytes": 725,
+      "sha256": "d2b9980b1212ed40dbe45693b548854fbf52eacd418926d31cbfb87786a56944"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/bigbrain_to_icbm2009b_nl.xfm",
+      "file": "bigbrain_to_icbm2009b_nl.xfm",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/3D_Volumes/MNI-ICBM152_Space/transformation/bigbrain_to_icbm2009b_nl.xfm",
+      "bytes": 726,
+      "sha256": "43ed6cff8ad7f0349981a463c97789a0fdb02f8bd5491a0e14ee3a52d0dc6a75"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/XIAO2019_README",
+      "sha256": "ad0ef56e8ebef3e11ffce2eb9e19d4a96d8d24055c9793bd0b21c7e8ca6971a4",
+      "bytes": 2572,
+      "archive_member": "README"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/XIAO2019_LICENSE",
+      "sha256": "a09063cbccceb6aeb66fce0de345178dc435cb59051eba945dfac3bbbc4efb7e",
+      "bytes": 19645,
+      "archive_member": "LICENSE"
+    },
+    {
+      "path": "assets/bigbrain-registration-v0120/XIAO2019_BigBrain-to-ICBM2009sym-nonlin.xfm",
+      "sha256": "818768fa0ee39c3ba0baf036df9f3c645f6d08825c69121cb9f7a07288cc17f3",
+      "bytes": 465,
+      "archive_member": "transformation/BigBrain-to-ICBM2009sym-nonlin.xfm"
+    }
+  ],
+  "remaining": [
+    "Confirm exact PLoSBiology2020 surface coordinate frame against the corresponding native and registered reference geometries",
+    "Acquire and check the 2015 nonlinear grid if starting in histological coordinates",
+    "Apply the correct complete composition to a bounded sample and verify transform direction and world-coordinate conventions",
+    "Evaluate landmarks, regional overlap and deformation regularity; report uncertainty before atlas placement"
+  ],
+  "limits": [
+    "Published deformation fields are not individual participant anatomy",
+    "No transformation to H01, Allen cells or P8 is established",
+    "No neural activity or biological delay is inferred",
+    "CRC and SHA confirm acquired bytes; finite stored-value checks are not anatomical validation"
+  ]
+}

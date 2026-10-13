@@ -1,12 +1,12 @@
-# POLY v0.119
+# POLY v0.120
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
 [Immunohistochimie du nerf vague](immunohistochimie.html) : deux parties C1-A-Level 2, six fenêtres natives RGB ; marqueurs et couleurs documentés, mesures en pixels. [Sources et limites](BILAN_IHC_v0.102.md).
 
-[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.119.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
+[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.120.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
 
-[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.119.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
+[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.120.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
 
 [Preuves au maillon et identités des sources](AUDIT_SOURCES_v0.98.md) · [Dossiers réunis](dossiers.html).
 
@@ -73,3 +73,5 @@ Les données Allen restent soumises aux conditions Allen Institute (recherche et
 [Comparer deux essais Allen](neurones.html?sample=allen-637038252&sweep=22&pairA=637038252%3A22&pairB=637038252%3A20&compare=1&v=0.118#compare-recordings) : axes physiques communs, lecture et détections source ; comparaison descriptive sans couplage biologique simulé. [Bilan](BILAN_ALLEN_PAIRS_v0.118.md).
 
 Repère commun « Se repérer entre les échelles » sur les 19 pages : vues de référence, provenance et limites des passages. [Carte des vues](assets/navigation/MAP.json) · [Bilan](BILAN_NAVIGATION_v0.119.md). Les tâches de lecture entre échelles sont ajoutées au programme ; essais humains non réalisés.
+
+[Raccord BigBrain : préparation et sources](BILAN_BIGBRAIN_REGISTRATION_v0.120.md). Trois champs de déformation acquis ; composition et validation anatomique encore à effectuer.

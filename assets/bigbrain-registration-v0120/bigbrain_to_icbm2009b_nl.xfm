@@ -1,0 +1,11 @@
+MNI Transform File
+%Mon May 11 15:11:23 2015>>> minctracc -clobber -nonlinear xcorr -stiffness 0.962962 -iterations 5 -step 1 1 1 -similarity 0.9 -weight 0.4 -sub_lattice 6 -lattice_diam 3 3 3 -transformation /tmp/best1stepnlreg.pl-ZDPz9j6c/Sbigbrain_to_icbm2009b_lin_6.xfm /tmp/best1stepnlreg.pl-ZDPz9j6c/Sbigbrain_to_icbm2009b_lin_1_blur.mnc /tmp/best1stepnlreg.pl-ZDPz9j6c/Ttemplate_masked_1_blur.mnc bigbrain_to_icbm2009b_nl.xfm
+%(Package mni_autoreg 0.99.7, compiled by @zealous.cbrain.mcgill.ca (x86_64-unknown-linux-gnu) on Wed Apr 16 16:32:30 EDT 2014)
+
+Transform_Type = Linear;
+Linear_Transform =
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0;
+Transform_Type = Grid_Transform;
+Displacement_Volume = bigbrain_to_icbm2009b_nl_grid_0.mnc;
