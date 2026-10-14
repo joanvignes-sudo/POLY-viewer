@@ -296,5 +296,19 @@
     "source_geometry_modified": false,
     "global_replacement": false,
     "provenance": "assets/bigbrain-expanded-v0127/PROVENANCE.json"
+  },
+  "bigbrain_contact_checked_previews": {
+    "patches": 86,
+    "initial_contact_pairs": 693,
+    "initial_contact_patches": 31,
+    "remaining_contact_pairs": 631,
+    "remaining_contact_patches": 25,
+    "orientation_alerts": 0,
+    "triangles": 7486,
+    "maximum_vertices": 2166,
+    "maximum_triangles": 4318,
+    "source_vertices_changed": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-conform-v0128/PROVENANCE.json"
   }
 }

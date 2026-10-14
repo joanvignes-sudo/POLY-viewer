@@ -1,0 +1,46 @@
+{
+  "version": "0.128",
+  "scope": "Numerical audits and prepared external review, not completed anatomical validation. Negative findings and unresolved contacts are preserved.",
+  "license": "BigBrain derivatives CC BY-NC-SA 4.0; transform notices and original citations retained via referenced provenance.",
+  "attribution": "BigBrain: Amunts et al. (2013), McGill / Forschungszentrum Jülich. Surfaces: Wagstyl et al. (2020). Original credits and transform conditions retained through referenced provenance.",
+  "files": [
+    {
+      "path": "assets/bigbrain-audits-v0128/INTERSECTIONS.json",
+      "sha256": "c9c0d0ec1124c874dba9ffa6e8bf890edb4b0ffbdf6c1551a00b2bde5fb30069"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/CONTACT_ORACLE.json",
+      "sha256": "133a36ca71e26e3cb9da21b5fc1dd5b077150c5c4b72bb9170377c3acbf55f62"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/SOURCE_CONTACT_COMPARISON.json",
+      "sha256": "b5deac2b066e5e4a6d402464d3538aa265301a002be009a2503af6a4fa12c428"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/PRECISION_COMPARISON.json",
+      "sha256": "0b238d1c6d1ec864729b8981d63d00e0d22d59c6422eb0e38c87a62a03adee38"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/FINAL_INTERSECTIONS.json",
+      "sha256": "99f334c1573fb453215eecebc2d3d402aa33d190cb2f747fdc81d4e8ee8a033a"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/FINAL_CONTACT_ORACLE.json",
+      "sha256": "f4e9c6128a67b006a202e81fdb5d3d8d011918ee399462f961f2b1f958c9e448"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/INDEPENDENT_ARITHMETIC.json",
+      "sha256": "fcffb3a7fc1a15a3b56186d5f831fb06368f6ad9c7cecbc7e8c611504a06fbf6"
+    },
+    {
+      "path": "assets/bigbrain-audits-v0128/FINAL_INDEPENDENT_ARITHMETIC.json",
+      "sha256": "6cc0f2c4a04aedc7a18085adb8c086aa8b5c5ade855eadbca61f9e481bf5bd43"
+    }
+  ],
+  "references": [
+    {
+      "path": "assets/bigbrain-conform-v0128/PROVENANCE.json",
+      "sha256": "d3b545e92eba7d0743036e4f08154fd178c5ed4bc00059fbdcfa0941cbc095cf"
+    }
+  ]
+}

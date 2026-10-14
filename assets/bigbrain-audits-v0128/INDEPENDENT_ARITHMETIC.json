@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "patches": 86,
+  "triangles": 7256,
+  "all_old_local_vertices_bit_identical": true,
+  "source_face_areas_and_planes_preserved": true,
+  "oriented_topology_and_shared_seams_checked": true,
+  "finite_difference_epsilon_mm": 1e-05,
+  "independent_orientation_count": 0,
+  "maximum_minimum_cosine_difference": 7.765145887406177e-10,
+  "independent_gap_agreement_mm": 1e-09,
+  "chosen_round_is_best_tested": true,
+  "source_and_derivative_file_hashes_checked": true,
+  "expanded_boundary_checked": true,
+  "core_and_outer_alert_counts_reproduced": true
+}

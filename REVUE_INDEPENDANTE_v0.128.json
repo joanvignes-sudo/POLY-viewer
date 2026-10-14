@@ -1,0 +1,418 @@
+{
+  "version": "0.128",
+  "review_completed": false,
+  "source_geometry_modified": false,
+  "scope": "Prepared independent review, not expert approval. Numerical contacts are not anatomical diagnoses.",
+  "cases": [
+    {
+      "key": "context-left:11342",
+      "contact_pairs": 5,
+      "example": {
+        "triangles": [
+          8,
+          0
+        ],
+        "source_faces": [
+          11341,
+          11342
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A11342&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:120660",
+      "contact_pairs": 8,
+      "example": {
+        "triangles": [
+          2,
+          9
+        ],
+        "source_faces": [
+          120660,
+          120662
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A120660&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:126296",
+      "contact_pairs": 33,
+      "example": {
+        "triangles": [
+          27,
+          15
+        ],
+        "source_faces": [
+          126298,
+          126296
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A126296&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:221730",
+      "contact_pairs": 6,
+      "example": {
+        "triangles": [
+          20,
+          9
+        ],
+        "source_faces": [
+          221736,
+          221729
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A221730&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:253794",
+      "contact_pairs": 5,
+      "example": {
+        "triangles": [
+          4,
+          9
+        ],
+        "source_faces": [
+          253792,
+          253793
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A253794&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:280961",
+      "contact_pairs": 13,
+      "example": {
+        "triangles": [
+          18,
+          1
+        ],
+        "source_faces": [
+          280891,
+          280961
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A280961&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:280969",
+      "contact_pairs": 8,
+      "example": {
+        "triangles": [
+          36,
+          0
+        ],
+        "source_faces": [
+          280893,
+          280969
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A280969&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-left:290647",
+      "contact_pairs": 9,
+      "example": {
+        "triangles": [
+          12,
+          2
+        ],
+        "source_faces": [
+          290651,
+          290647
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A290647&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:5535",
+      "contact_pairs": 209,
+      "example": {
+        "triangles": [
+          4305,
+          4118
+        ],
+        "source_faces": [
+          5551,
+          5455
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A5535&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:40617",
+      "contact_pairs": 4,
+      "example": {
+        "triangles": [
+          12,
+          17
+        ],
+        "source_faces": [
+          40609,
+          40583
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A40617&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:42142",
+      "contact_pairs": 3,
+      "example": {
+        "triangles": [
+          57,
+          30
+        ],
+        "source_faces": [
+          42136,
+          42141
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A42142&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:78777",
+      "contact_pairs": 4,
+      "example": {
+        "triangles": [
+          13,
+          9
+        ],
+        "source_faces": [
+          78778,
+          78769
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A78777&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:104293",
+      "contact_pairs": 8,
+      "example": {
+        "triangles": [
+          12,
+          4
+        ],
+        "source_faces": [
+          104261,
+          104272
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A104293&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:107130",
+      "contact_pairs": 29,
+      "example": {
+        "triangles": [
+          33,
+          19
+        ],
+        "source_faces": [
+          107131,
+          107129
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A107130&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:127113",
+      "contact_pairs": 9,
+      "example": {
+        "triangles": [
+          8,
+          13
+        ],
+        "source_faces": [
+          127105,
+          127114
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A127113&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:144903",
+      "contact_pairs": 8,
+      "example": {
+        "triangles": [
+          5,
+          8
+        ],
+        "source_faces": [
+          144932,
+          144902
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A144903&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:175226",
+      "contact_pairs": 6,
+      "example": {
+        "triangles": [
+          6,
+          9
+        ],
+        "source_faces": [
+          175225,
+          175224
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A175226&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:183351",
+      "contact_pairs": 29,
+      "example": {
+        "triangles": [
+          38,
+          22
+        ],
+        "source_faces": [
+          183357,
+          183350
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A183351&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:187239",
+      "contact_pairs": 8,
+      "example": {
+        "triangles": [
+          12,
+          5
+        ],
+        "source_faces": [
+          187243,
+          187219
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A187239&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:195325",
+      "contact_pairs": 7,
+      "example": {
+        "triangles": [
+          3,
+          13
+        ],
+        "source_faces": [
+          195325,
+          195326
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A195325&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:214958",
+      "contact_pairs": 10,
+      "example": {
+        "triangles": [
+          19,
+          22
+        ],
+        "source_faces": [
+          214952,
+          214964
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A214958&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:226398",
+      "contact_pairs": 26,
+      "example": {
+        "triangles": [
+          28,
+          27
+        ],
+        "source_faces": [
+          226415,
+          226413
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A226398&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:228967",
+      "contact_pairs": 11,
+      "example": {
+        "triangles": [
+          23,
+          21
+        ],
+        "source_faces": [
+          228973,
+          228970
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A228967&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:279627",
+      "contact_pairs": 152,
+      "example": {
+        "triangles": [
+          101,
+          15
+        ],
+        "source_faces": [
+          279630,
+          279627
+        ]
+      },
+      "native_source_contact_for_example": true,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A279627&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    },
+    {
+      "key": "context-right:283465",
+      "contact_pairs": 21,
+      "example": {
+        "triangles": [
+          52,
+          35
+        ],
+        "source_faces": [
+          283466,
+          283460
+        ]
+      },
+      "native_source_contact_for_example": false,
+      "url": "microstructures.html?bbframe=mni&meshcheck=1&facet=context-right%3A283465&refine=1&neighbors=1&adaptive=1&wide=1&conform=1&contact=0&v=0.128"
+    }
+  ],
+  "questions": [
+    "Are non-indexed contacts in the original pial surface expected, duplicated vertices, or regions that should be excluded?",
+    "Which surface handling and registration quality criteria should precede quantitative anatomical use?",
+    "Can the AFID residual protocol and reference-frame interpretation be independently reviewed?"
+  ],
+  "additional_data_confirmations": [
+    "SPARC montage XY physical units and CT/IHC transformation are unconfirmed",
+    "COGITATE participant data access remains unavailable; only public material is integrated"
+  ],
+  "provenance": "assets/bigbrain-conform-v0128/PROVENANCE.json"
+}
