@@ -24,7 +24,7 @@ Une comparaison en float64, avec et sans contrainte des coins aux coordonnées r
 
 ## Vue et export
 
-Le mode **Comparer le dernier raccord testé** conserve le centre initial en bleu et ses couronnes en gris. Choisir une paire dans **Examiner un contact** affiche les deux triangles en corail. La sélection est partageable par le lien. Les coordonnées, indices, étapes et contacts sont exportables avec leur provenance. Les autres modes restent disponibles pour la comparaison.
+Le mode **Comparer le candidat retenu** conserve le centre initial en bleu et ses couronnes en gris. Choisir une paire dans **Examiner un contact** affiche les deux triangles en corail. La sélection est partageable par le lien. Les coordonnées, indices, étapes et contacts sont exportables avec leur provenance. Les autres modes restent disponibles pour la comparaison.
 
 ## Limites
 
@@ -35,3 +35,5 @@ La prochaine validation scientifique nécessite une interprétation indépendant
 ## Sources
 
 [Provenance et essais](assets/bigbrain-conform-v0128/PROVENANCE.json) · [Pièces de contrôle](assets/bigbrain-audits-v0128/PROVENANCE.json). BigBrain : Amunts et al., [Science 2013](https://doi.org/10.1126/science.1235381). Surfaces : Wagstyl et al., [PLoS Biology 2020](https://doi.org/10.1371/journal.pbio.3000678). Recalage : Xiao et al., [Scientific Data 2019](https://doi.org/10.1038/s41597-019-0217-0). Crédits McGill / Forschungszentrum Jülich conservés. Dérivés BigBrain CC BY-NC-SA 4.0 ; conditions des transformations dans les provenances référencées.
+
+Contrelecture technique v0.128.1 : le libellé désigne désormais explicitement le candidat retenu. Les nouveaux exports comprennent le repère, les unités, l’attribution, les DOI, la licence et une URL absolue de provenance. Les données et résultats géométriques ne changent pas. Cette contrelecture par agents ne constitue pas une validation anatomique humaine.

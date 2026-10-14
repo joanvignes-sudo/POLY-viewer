@@ -99,3 +99,5 @@ Les 22 centres encore signalés passent le contrôle ponctuel après ajout d’u
 ### v0.128 · Orientation et contacts
 
 Aucune opposition aux centres testés des 86 aperçus retenus. Les contacts entre triangles sont contrôlés séparément et restent signalés ; aucun remplacement global. [Méthode](BILAN_BIGBRAIN_CONFORM_v0.128.md) · [Relecture indépendante](REVUE_INDEPENDANTE_v0.128.md).
+
+Contrelecture technique v0.128.1 : [calculs et corrections](CONTRE_REVUE_v0.128.1.md). Les résultats géométriques sont conservés ; la validation anatomique humaine reste ouverte.

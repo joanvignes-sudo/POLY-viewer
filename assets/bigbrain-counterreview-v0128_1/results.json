@@ -1,0 +1,1731 @@
+{
+  "method": "Independent rational plane sections and convex polygon half-space clipping; exhaustive vectorized pair bounding boxes (no sweep), all candidate pairs checked",
+  "synthetic_cases": 5620,
+  "closure": [
+    {
+      "key": "context-left:11342",
+      "candidates": 84,
+      "contacts": 5,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:20140",
+      "candidates": 283,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 118
+      }
+    },
+    {
+      "key": "context-left:25581",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:25590",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:27561",
+      "candidates": 298,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 133
+      }
+    },
+    {
+      "key": "context-left:30421",
+      "candidates": 1355,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 138,
+        "shared_1": 417,
+        "shared_0": 800
+      }
+    },
+    {
+      "key": "context-left:44075",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:46194",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-left:46270",
+      "candidates": 84,
+      "contacts": 6,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:46296",
+      "candidates": 80,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 20
+      }
+    },
+    {
+      "key": "context-left:46597",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-left:46602",
+      "candidates": 13657,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 612,
+        "shared_1": 2304,
+        "shared_0": 10741,
+        "coplanar": 1
+      }
+    },
+    {
+      "key": "context-left:46604",
+      "candidates": 282,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 117
+      }
+    },
+    {
+      "key": "context-left:46859",
+      "candidates": 86,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 26
+      }
+    },
+    {
+      "key": "context-left:64527",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:120660",
+      "candidates": 83,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 23
+      }
+    },
+    {
+      "key": "context-left:126296",
+      "candidates": 500,
+      "contacts": 33,
+      "categories": {
+        "shared_2": 63,
+        "shared_1": 174,
+        "shared_0": 263
+      }
+    },
+    {
+      "key": "context-left:188954",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:203377",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-left:204702",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-left:209512",
+      "candidates": 302,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 137
+      }
+    },
+    {
+      "key": "context-left:213104",
+      "candidates": 87,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 27
+      }
+    },
+    {
+      "key": "context-left:221730",
+      "candidates": 174,
+      "contacts": 6,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 64
+      }
+    },
+    {
+      "key": "context-left:221740",
+      "candidates": 223,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 36,
+        "shared_1": 95,
+        "shared_0": 92
+      }
+    },
+    {
+      "key": "context-left:253794",
+      "candidates": 74,
+      "contacts": 5,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 14
+      }
+    },
+    {
+      "key": "context-left:259754",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:270108",
+      "candidates": 1434,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 138,
+        "shared_1": 417,
+        "shared_0": 879
+      }
+    },
+    {
+      "key": "context-left:274842",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:280961",
+      "candidates": 171,
+      "contacts": 13,
+      "categories": {
+        "shared_2": 33,
+        "shared_1": 87,
+        "shared_0": 51
+      }
+    },
+    {
+      "key": "context-left:280969",
+      "candidates": 380,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 163
+      }
+    },
+    {
+      "key": "context-left:287256",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:287262",
+      "candidates": 3088,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 216,
+        "shared_1": 696,
+        "shared_0": 2176
+      }
+    },
+    {
+      "key": "context-left:287277",
+      "candidates": 79,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 19
+      }
+    },
+    {
+      "key": "context-left:287279",
+      "candidates": 2395,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 171,
+        "shared_1": 544,
+        "shared_0": 1680
+      }
+    },
+    {
+      "key": "context-left:287286",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:287536",
+      "candidates": 76,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 16
+      }
+    },
+    {
+      "key": "context-left:287545",
+      "candidates": 81,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 21
+      }
+    },
+    {
+      "key": "context-left:287547",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:290647",
+      "candidates": 79,
+      "contacts": 9,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 19
+      }
+    },
+    {
+      "key": "context-left:312495",
+      "candidates": 306,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 141
+      }
+    },
+    {
+      "key": "context-left:315171",
+      "candidates": 75,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 15
+      }
+    },
+    {
+      "key": "context-right:2470",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:2473",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:5535",
+      "candidates": 471295,
+      "contacts": 209,
+      "categories": {
+        "shared_2": 6471,
+        "shared_1": 24892,
+        "shared_0": 439932
+      }
+    },
+    {
+      "key": "context-right:12272",
+      "candidates": 496,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 60,
+        "shared_1": 167,
+        "shared_0": 269
+      }
+    },
+    {
+      "key": "context-right:16099",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:17446",
+      "candidates": 82,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:18184",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:26225",
+      "candidates": 87,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 27
+      }
+    },
+    {
+      "key": "context-right:28988",
+      "candidates": 2386,
+      "contacts": 3,
+      "categories": {
+        "shared_2": 159,
+        "shared_1": 494,
+        "shared_0": 1733
+      }
+    },
+    {
+      "key": "context-right:40617",
+      "candidates": 163,
+      "contacts": 4,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 53
+      }
+    },
+    {
+      "key": "context-right:41230",
+      "candidates": 315,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 150
+      }
+    },
+    {
+      "key": "context-right:42142",
+      "candidates": 406,
+      "contacts": 13,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 189
+      }
+    },
+    {
+      "key": "context-right:42186",
+      "candidates": 345,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 51,
+        "shared_1": 124,
+        "shared_0": 170
+      }
+    },
+    {
+      "key": "context-right:42188",
+      "candidates": 666,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 78,
+        "shared_1": 227,
+        "shared_0": 361
+      }
+    },
+    {
+      "key": "context-right:43393",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:45371",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:78777",
+      "candidates": 85,
+      "contacts": 4,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:94101",
+      "candidates": 281,
+      "contacts": 14,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 116
+      }
+    },
+    {
+      "key": "context-right:104187",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:104293",
+      "candidates": 164,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 54
+      }
+    },
+    {
+      "key": "context-right:107130",
+      "candidates": 382,
+      "contacts": 29,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 165
+      }
+    },
+    {
+      "key": "context-right:127113",
+      "candidates": 86,
+      "contacts": 9,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 26
+      }
+    },
+    {
+      "key": "context-right:144903",
+      "candidates": 85,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:149772",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:175226",
+      "candidates": 82,
+      "contacts": 6,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:177661",
+      "candidates": 164,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 54
+      }
+    },
+    {
+      "key": "context-right:183340",
+      "candidates": 1570,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 138,
+        "shared_1": 417,
+        "shared_0": 1015
+      }
+    },
+    {
+      "key": "context-right:183351",
+      "candidates": 400,
+      "contacts": 29,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 183
+      }
+    },
+    {
+      "key": "context-right:187233",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:187239",
+      "candidates": 84,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:195325",
+      "candidates": 78,
+      "contacts": 7,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:195589",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:207563",
+      "candidates": 310,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 145
+      }
+    },
+    {
+      "key": "context-right:214958",
+      "candidates": 170,
+      "contacts": 10,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 60
+      }
+    },
+    {
+      "key": "context-right:226398",
+      "candidates": 331,
+      "contacts": 26,
+      "categories": {
+        "shared_2": 45,
+        "shared_1": 125,
+        "shared_0": 161
+      }
+    },
+    {
+      "key": "context-right:228967",
+      "candidates": 166,
+      "contacts": 11,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 56
+      }
+    },
+    {
+      "key": "context-right:230192",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:264720",
+      "candidates": 262,
+      "contacts": 9,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 97
+      }
+    },
+    {
+      "key": "context-right:270099",
+      "candidates": 324,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 51,
+        "shared_1": 124,
+        "shared_0": 149
+      }
+    },
+    {
+      "key": "context-right:279627",
+      "candidates": 1998,
+      "contacts": 152,
+      "categories": {
+        "shared_2": 150,
+        "shared_1": 467,
+        "shared_0": 1381
+      }
+    },
+    {
+      "key": "context-right:283465",
+      "candidates": 314,
+      "contacts": 23,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 149
+      }
+    },
+    {
+      "key": "context-right:285906",
+      "candidates": 82,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:300910",
+      "candidates": 82,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:301565",
+      "candidates": 85,
+      "contacts": 10,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:323820",
+      "candidates": 307,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 142
+      }
+    }
+  ],
+  "conform": [
+    {
+      "key": "context-left:11342",
+      "candidates": 84,
+      "contacts": 5,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:20140",
+      "candidates": 283,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 118
+      }
+    },
+    {
+      "key": "context-left:25581",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:25590",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:27561",
+      "candidates": 298,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 133
+      }
+    },
+    {
+      "key": "context-left:30421",
+      "candidates": 1355,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 138,
+        "shared_1": 417,
+        "shared_0": 800
+      }
+    },
+    {
+      "key": "context-left:44075",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:46194",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-left:46270",
+      "candidates": 175,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 36,
+        "shared_1": 81,
+        "shared_0": 58
+      }
+    },
+    {
+      "key": "context-left:46296",
+      "candidates": 80,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 20
+      }
+    },
+    {
+      "key": "context-left:46597",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-left:46602",
+      "candidates": 13657,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 612,
+        "shared_1": 2304,
+        "shared_0": 10741,
+        "coplanar": 1
+      }
+    },
+    {
+      "key": "context-left:46604",
+      "candidates": 282,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 117
+      }
+    },
+    {
+      "key": "context-left:46859",
+      "candidates": 86,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 26
+      }
+    },
+    {
+      "key": "context-left:64527",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:120660",
+      "candidates": 83,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 23
+      }
+    },
+    {
+      "key": "context-left:126296",
+      "candidates": 500,
+      "contacts": 33,
+      "categories": {
+        "shared_2": 63,
+        "shared_1": 174,
+        "shared_0": 263
+      }
+    },
+    {
+      "key": "context-left:188954",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:203377",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-left:204702",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-left:209512",
+      "candidates": 302,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 137
+      }
+    },
+    {
+      "key": "context-left:213104",
+      "candidates": 831,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 102,
+        "shared_1": 302,
+        "shared_0": 427
+      }
+    },
+    {
+      "key": "context-left:221730",
+      "candidates": 174,
+      "contacts": 6,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 64
+      }
+    },
+    {
+      "key": "context-left:221740",
+      "candidates": 223,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 36,
+        "shared_1": 95,
+        "shared_0": 92
+      }
+    },
+    {
+      "key": "context-left:253794",
+      "candidates": 74,
+      "contacts": 5,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 14
+      }
+    },
+    {
+      "key": "context-left:259754",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:270108",
+      "candidates": 1434,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 138,
+        "shared_1": 417,
+        "shared_0": 879
+      }
+    },
+    {
+      "key": "context-left:274842",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:280961",
+      "candidates": 171,
+      "contacts": 13,
+      "categories": {
+        "shared_2": 33,
+        "shared_1": 87,
+        "shared_0": 51
+      }
+    },
+    {
+      "key": "context-left:280969",
+      "candidates": 380,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 163
+      }
+    },
+    {
+      "key": "context-left:287256",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:287262",
+      "candidates": 3088,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 216,
+        "shared_1": 696,
+        "shared_0": 2176
+      }
+    },
+    {
+      "key": "context-left:287277",
+      "candidates": 79,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 19
+      }
+    },
+    {
+      "key": "context-left:287279",
+      "candidates": 2395,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 171,
+        "shared_1": 544,
+        "shared_0": 1680
+      }
+    },
+    {
+      "key": "context-left:287286",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:287536",
+      "candidates": 76,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 16
+      }
+    },
+    {
+      "key": "context-left:287545",
+      "candidates": 81,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 21
+      }
+    },
+    {
+      "key": "context-left:287547",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-left:290647",
+      "candidates": 79,
+      "contacts": 9,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 19
+      }
+    },
+    {
+      "key": "context-left:312495",
+      "candidates": 306,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 141
+      }
+    },
+    {
+      "key": "context-left:315171",
+      "candidates": 75,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 15
+      }
+    },
+    {
+      "key": "context-right:2470",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:2473",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:5535",
+      "candidates": 471295,
+      "contacts": 209,
+      "categories": {
+        "shared_2": 6471,
+        "shared_1": 24892,
+        "shared_0": 439932
+      }
+    },
+    {
+      "key": "context-right:12272",
+      "candidates": 496,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 60,
+        "shared_1": 167,
+        "shared_0": 269
+      }
+    },
+    {
+      "key": "context-right:16099",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:17446",
+      "candidates": 82,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:18184",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:26225",
+      "candidates": 87,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 27
+      }
+    },
+    {
+      "key": "context-right:28988",
+      "candidates": 3148,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 186,
+        "shared_1": 598,
+        "shared_0": 2364
+      }
+    },
+    {
+      "key": "context-right:40617",
+      "candidates": 163,
+      "contacts": 4,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 53
+      }
+    },
+    {
+      "key": "context-right:41230",
+      "candidates": 315,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 150
+      }
+    },
+    {
+      "key": "context-right:42142",
+      "candidates": 710,
+      "contacts": 3,
+      "categories": {
+        "shared_2": 87,
+        "shared_1": 267,
+        "shared_0": 356
+      }
+    },
+    {
+      "key": "context-right:42186",
+      "candidates": 345,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 51,
+        "shared_1": 124,
+        "shared_0": 170
+      }
+    },
+    {
+      "key": "context-right:42188",
+      "candidates": 666,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 78,
+        "shared_1": 227,
+        "shared_0": 361
+      }
+    },
+    {
+      "key": "context-right:43393",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:45371",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:78777",
+      "candidates": 85,
+      "contacts": 4,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:94101",
+      "candidates": 1059,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 120,
+        "shared_1": 386,
+        "shared_0": 553
+      }
+    },
+    {
+      "key": "context-right:104187",
+      "candidates": 78,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:104293",
+      "candidates": 164,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 54
+      }
+    },
+    {
+      "key": "context-right:107130",
+      "candidates": 382,
+      "contacts": 29,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 165
+      }
+    },
+    {
+      "key": "context-right:127113",
+      "candidates": 86,
+      "contacts": 9,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 26
+      }
+    },
+    {
+      "key": "context-right:144903",
+      "candidates": 85,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:149772",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:175226",
+      "candidates": 82,
+      "contacts": 6,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:177661",
+      "candidates": 164,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 54
+      }
+    },
+    {
+      "key": "context-right:183340",
+      "candidates": 1570,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 138,
+        "shared_1": 417,
+        "shared_0": 1015
+      }
+    },
+    {
+      "key": "context-right:183351",
+      "candidates": 400,
+      "contacts": 29,
+      "categories": {
+        "shared_2": 57,
+        "shared_1": 160,
+        "shared_0": 183
+      }
+    },
+    {
+      "key": "context-right:187233",
+      "candidates": 85,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 25
+      }
+    },
+    {
+      "key": "context-right:187239",
+      "candidates": 84,
+      "contacts": 8,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:195325",
+      "candidates": 78,
+      "contacts": 7,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 18
+      }
+    },
+    {
+      "key": "context-right:195589",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:207563",
+      "candidates": 310,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 145
+      }
+    },
+    {
+      "key": "context-right:214958",
+      "candidates": 170,
+      "contacts": 10,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 60
+      }
+    },
+    {
+      "key": "context-right:226398",
+      "candidates": 331,
+      "contacts": 26,
+      "categories": {
+        "shared_2": 45,
+        "shared_1": 125,
+        "shared_0": 161
+      }
+    },
+    {
+      "key": "context-right:228967",
+      "candidates": 166,
+      "contacts": 11,
+      "categories": {
+        "shared_2": 30,
+        "shared_1": 80,
+        "shared_0": 56
+      }
+    },
+    {
+      "key": "context-right:230192",
+      "candidates": 84,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 24
+      }
+    },
+    {
+      "key": "context-right:264720",
+      "candidates": 848,
+      "contacts": 0,
+      "categories": {
+        "shared_1": 302,
+        "shared_2": 102,
+        "shared_0": 444
+      }
+    },
+    {
+      "key": "context-right:270099",
+      "candidates": 324,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 51,
+        "shared_1": 124,
+        "shared_0": 149
+      }
+    },
+    {
+      "key": "context-right:279627",
+      "candidates": 1998,
+      "contacts": 152,
+      "categories": {
+        "shared_2": 150,
+        "shared_1": 467,
+        "shared_0": 1381
+      }
+    },
+    {
+      "key": "context-right:283465",
+      "candidates": 783,
+      "contacts": 21,
+      "categories": {
+        "shared_1": 258,
+        "shared_2": 90,
+        "shared_0": 435
+      }
+    },
+    {
+      "key": "context-right:285906",
+      "candidates": 82,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:300910",
+      "candidates": 82,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 21,
+        "shared_1": 39,
+        "shared_0": 22
+      }
+    },
+    {
+      "key": "context-right:301565",
+      "candidates": 264,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 45,
+        "shared_1": 110,
+        "shared_0": 109
+      }
+    },
+    {
+      "key": "context-right:323820",
+      "candidates": 307,
+      "contacts": 0,
+      "categories": {
+        "shared_2": 48,
+        "shared_1": 117,
+        "shared_0": 142
+      }
+    }
+  ],
+  "elapsed_seconds": 89.17199999999139
+}

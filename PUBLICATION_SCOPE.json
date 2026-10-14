@@ -310,5 +310,11 @@
     "source_vertices_changed": false,
     "global_replacement": false,
     "provenance": "assets/bigbrain-conform-v0128/PROVENANCE.json"
+  },
+  "technical_counter_review": {
+    "version": "0.128.1",
+    "kind": "AI-agent technical counter-review",
+    "human_anatomical_validation": false,
+    "provenance": "assets/bigbrain-counterreview-v0128_1/PROVENANCE.json"
   }
 }

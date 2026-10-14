@@ -1,0 +1,1895 @@
+{
+  "source_counts": {
+    "native_source": 46,
+    "native_source_segment_or_area": 46,
+    "registered_coarse": 22,
+    "registered_coarse_segment_or_area": 22
+  },
+  "source_pairs": 119,
+  "source_detail": [
+    {
+      "mesh": "context-left",
+      "faces": [
+        11341,
+        11342
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        11340,
+        11341
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        46268,
+        46270
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        46268,
+        46269
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        46269,
+        46270
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        120660,
+        120662
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        120662,
+        120665
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        120660,
+        120665
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126296,
+        126298
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126291,
+        126298
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126290,
+        126299
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126290,
+        126298
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126290,
+        126296
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126296,
+        126299
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126290,
+        126291
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        126290,
+        126300
+      ],
+      "shared": 0,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        213104,
+        213173
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        213106,
+        213173
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        213104,
+        213106
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        213088,
+        213104
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        213088,
+        213106
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        221729,
+        221736
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        221730,
+        221736
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        221729,
+        221731
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        221709,
+        221731
+      ],
+      "shared": 0,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        253792,
+        253793
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        253792,
+        253794
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        280891,
+        280961
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        280893,
+        280969
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        280891,
+        280969
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        280893,
+        280970
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        280891,
+        280970
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        290647,
+        290651
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        286467,
+        290651
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        286467,
+        290647
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        290646,
+        290647
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-left",
+      "faces": [
+        286467,
+        290646
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        5455,
+        5551
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        5455,
+        5550
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        5472,
+        5550
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        5550,
+        5551
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        5455,
+        5535
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        5472,
+        5551
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        28989,
+        28990
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        40583,
+        40609
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        40583,
+        40610
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        42136,
+        42141
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        42140,
+        42142
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        42140,
+        42143
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        42142,
+        42143
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        78769,
+        78778
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        93973,
+        94102
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        93973,
+        94101
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        94016,
+        94101
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        104261,
+        104272
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        104262,
+        104272
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        104272,
+        104293
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        104272,
+        104294
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107129,
+        107131
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107129,
+        107133
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107128,
+        107132
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107128,
+        107130
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107130,
+        107132
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107129,
+        107130
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107129,
+        107132
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        107128,
+        107129
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        127105,
+        127114
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        127113,
+        127114
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        144902,
+        144932
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        144902,
+        144903
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        175224,
+        175225
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        175224,
+        175226
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        175226,
+        175227
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        183350,
+        183357
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        183350,
+        183355
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        183351,
+        183428
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        183350,
+        183433
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        183351,
+        183433
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        183350,
+        183428
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        187219,
+        187243
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        187219,
+        187239
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        187219,
+        187238
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        187238,
+        187239
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        195325,
+        195326
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        195068,
+        195326
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        214952,
+        214964
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        214955,
+        214964
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        214956,
+        214957
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        214955,
+        214956
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        214956,
+        214964
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        226413,
+        226415
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        226399,
+        226896
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        226398,
+        226413
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        226398,
+        226896
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        226396,
+        226896
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        226399,
+        226413
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228970,
+        228973
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228952,
+        228970
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228947,
+        228970
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228967,
+        228970
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228946,
+        228964
+      ],
+      "shared": 0,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228946,
+        228966
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        228946,
+        228965
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        264720,
+        264741
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        264722,
+        264741
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279627,
+        279630
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279623,
+        279630
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279623,
+        279627
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279623,
+        279626
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279626,
+        279627
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279624,
+        279627
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        279623,
+        279624
+      ],
+      "shared": 0,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        283460,
+        283466
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        283460,
+        283465
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        283457,
+        283460
+      ],
+      "shared": 1,
+      "native_source": true,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        301563,
+        301566
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": true
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        301563,
+        301565
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        300284,
+        301565
+      ],
+      "shared": 2,
+      "native_source": false,
+      "registered_coarse": false
+    },
+    {
+      "mesh": "context-right",
+      "faces": [
+        300284,
+        301563
+      ],
+      "shared": 1,
+      "native_source": false,
+      "registered_coarse": false
+    }
+  ],
+  "selection": [
+    {
+      "key": "context-left:11342",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 5,
+      "final": 5,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:20140",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:25581",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:25590",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:27561",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:30421",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:44075",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46194",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46270",
+      "chosen": 1,
+      "attempted": 1,
+      "initial": 6,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46296",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46597",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46602",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46604",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:46859",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:64527",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:120660",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 8,
+      "final": 8,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:126296",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 33,
+      "final": 33,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:188954",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:203377",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:204702",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:209512",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:213104",
+      "chosen": 5,
+      "attempted": 5,
+      "initial": 8,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:221730",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 6,
+      "final": 6,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:221740",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:253794",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 5,
+      "final": 5,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:259754",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:270108",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:274842",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:280961",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 13,
+      "final": 13,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:280969",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 8,
+      "final": 8,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:287256",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287262",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287277",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287279",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287286",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287536",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287545",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:287547",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:290647",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 9,
+      "final": 9,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-left:312495",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-left:315171",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:2470",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:2473",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:5535",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 209,
+      "final": 209,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:12272",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:16099",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:17446",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:18184",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:26225",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:28988",
+      "chosen": 3,
+      "attempted": 3,
+      "initial": 3,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:40617",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 4,
+      "final": 4,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:41230",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:42142",
+      "chosen": 1,
+      "attempted": 6,
+      "initial": 13,
+      "final": 3,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:42186",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:42188",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:43393",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:45371",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:78777",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 4,
+      "final": 4,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:94101",
+      "chosen": 3,
+      "attempted": 3,
+      "initial": 14,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:104187",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:104293",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 8,
+      "final": 8,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:107130",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 29,
+      "final": 29,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:127113",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 9,
+      "final": 9,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:144903",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 8,
+      "final": 8,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:149772",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:175226",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 6,
+      "final": 6,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:177661",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:183340",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:183351",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 29,
+      "final": 29,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:187233",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:187239",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 8,
+      "final": 8,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:195325",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 7,
+      "final": 7,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:195589",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:207563",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:214958",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 10,
+      "final": 10,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:226398",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 26,
+      "final": 26,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:228967",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 11,
+      "final": 11,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:230192",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:264720",
+      "chosen": 2,
+      "attempted": 2,
+      "initial": 9,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:270099",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:279627",
+      "chosen": 0,
+      "attempted": 5,
+      "initial": 152,
+      "final": 152,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:283465",
+      "chosen": 1,
+      "attempted": 6,
+      "initial": 23,
+      "final": 21,
+      "stop": "five_rounds_without_improvement"
+    },
+    {
+      "key": "context-right:285906",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:300910",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:301565",
+      "chosen": 2,
+      "attempted": 2,
+      "initial": 10,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    },
+    {
+      "key": "context-right:323820",
+      "chosen": 0,
+      "attempted": 0,
+      "initial": 0,
+      "final": 0,
+      "stop": "orientation_and_contacts_passed"
+    }
+  ],
+  "all_selected_lexicographic_best": true,
+  "all_old_vertices_bit_identical": true,
+  "all_vertex_links_manifold": true,
+  "source_pairs_exactly_owner_pairs_of_initial_contacts": true
+}
