@@ -1,12 +1,12 @@
-# POLY v0.126
+# POLY v0.127
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
 [Immunohistochimie du nerf vague](immunohistochimie.html) : deux parties C1-A-Level 2, six fenêtres natives RGB ; marqueurs et couleurs documentés, mesures en pixels. [Sources et limites](BILAN_IHC_v0.102.md).
 
-[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.126.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
+[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.127.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
 
-[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.126.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
+[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.127.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
 
 [Preuves au maillon et identités des sources](AUDIT_SOURCES_v0.98.md) · [Dossiers réunis](dossiers.html).
 
@@ -91,3 +91,7 @@ Le diagnostic BigBrain propose 86 aperçus indépendants de quatre faces. Les ar
 ### v0.126 · Raffinement progressif du raccord
 
 86 propositions testées avec conservation du contour et des anciens sommets. 26 oppositions ponctuelles restent dans 22 voisinages ; les données sources sont conservées et aucun remplacement global n’est appliqué. [Méthode, essais et limites](BILAN_BIGBRAIN_ADAPTIVE_v0.126.md).
+
+### v0.127 · Zone de raccord élargie
+
+Les 22 centres encore signalés passent le contrôle ponctuel après ajout d’une couronne. Huit oppositions restent dans les bordures de quatre aperçus. Les anciens sommets restent identiques ; le cortex source est conservé. [Méthode et limites](BILAN_BIGBRAIN_EXPANDED_v0.127.md).

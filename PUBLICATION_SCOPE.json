@@ -273,5 +273,28 @@
     "source_geometry_modified": false,
     "global_replacement": false,
     "provenance": "assets/bigbrain-adaptive-v0126/PROVENANCE.json"
+  },
+  "bigbrain_expanded_previews": {
+    "patches": 86,
+    "expansion_requested": 22,
+    "expanded_patches": 22,
+    "rejected_expansions": 0,
+    "previous_core_alerts": 26,
+    "remaining_core_alerts": 0,
+    "remaining_core_alert_patches": 0,
+    "remaining_outer_alerts": 8,
+    "remaining_total_alert_patches": 4,
+    "root_alerts": 0,
+    "triangles": 7152,
+    "maximum_triangles": 4318,
+    "maximum_vertices": 2166,
+    "maximum_source_faces": 10,
+    "nonpositive_sampled_determinants": 0,
+    "maximum_sampled_gap_mm": 0.3877473794973773,
+    "maximum_boundary_storage_rounding_mm": 2.2164924775697018e-07,
+    "old_vertices_changed": false,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-expanded-v0127/PROVENANCE.json"
   }
 }
