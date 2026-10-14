@@ -1,5 +1,5 @@
 {
-  "version": "0.122",
+  "version": "0.123",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/observation.yml",
@@ -14,7 +14,7 @@
     {
       "path": "anatomie.html",
       "bytes": 7455,
-      "sha256": "77f218014a7c0071ca97e00d165d29a85e1ec53319f38f2308f4c592a4761f94"
+      "sha256": "9ba33ba57ecc9998b1260b4c0fb2b3927913805f93ff14ddfce698ad16511de6"
     },
     {
       "path": "ANCRAGE_HUMAIN_v0.94.json",
@@ -602,6 +602,36 @@
       "sha256": "ad0ef56e8ebef3e11ffce2eb9e19d4a96d8d24055c9793bd0b21c7e8ca6971a4"
     },
     {
+      "path": "assets/bigbrain-triangles-v0123/FLAGGED.json",
+      "bytes": 141349,
+      "sha256": "54df67d065af4ec054423b7279c8da7e23cc9045c7b6ed1770f614201c5f1f2c"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/lh.BigBrain.mask.label.txt",
+      "bytes": 327684,
+      "sha256": "da5f4165658bcef38968e991a732a3ba09e972b38ec651c2cd5c6a5399294ec7"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/metrics.bin",
+      "bytes": 8319516,
+      "sha256": "58b5c9f9794a81be957c3ee947863cff54d6e709bfe66c3766cbfb8273586ce5"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/PROVENANCE.json",
+      "bytes": 29943,
+      "sha256": "96048dbd8f62359e8c639e379affc20bb17a3438f061ef8789a7f856915cfde5"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/rh.BigBrain.mask.label.txt",
+      "bytes": 327684,
+      "sha256": "3834bf8b107b3ea8a28049bbf8457b610fc8455e73eb44b5d3631a674a50fc90"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123.js",
+      "bytes": 5055,
+      "sha256": "c3245cd503bfa6ba015c516824d4f1eeb42b1da46612463555decadd137c6559"
+    },
+    {
       "path": "assets/bigbrain-v0121.js",
       "bytes": 15357,
       "sha256": "515ba126172ad3664175edcd321740b7c994bddfd6550cdd3bb62b4e88ffdc8d"
@@ -610,6 +640,11 @@
       "path": "assets/bigbrain-v0122.js",
       "bytes": 18605,
       "sha256": "c4755dad96c7a5713c524844620495f8a6cecdd36c81e4f46528ac09ef110776"
+    },
+    {
+      "path": "assets/bigbrain-v0123.js",
+      "bytes": 21728,
+      "sha256": "7d34162d61d265512644ff196ac0a5f6624c3e86d1fe1087d902434836e37baf"
     },
     {
       "path": "assets/bigbrain-v095.js",
@@ -12912,6 +12947,11 @@
       "sha256": "30c77e378895932f4ad18c81f73b9b61063c955390076a3031bd3a844188d1ae"
     },
     {
+      "path": "BILAN_BIGBRAIN_TRIANGLES_v0.123.md",
+      "bytes": 4753,
+      "sha256": "6518a6330767c38ea2be6a0918dba27ca232c173a27ba4696874de8857c04d3d"
+    },
+    {
       "path": "BILAN_BIGBRAIN_v0.95.md",
       "bytes": 3736,
       "sha256": "1b6e929b6695d604326e9f248f202974046bd5204dfd3c651b24ed77030ffedb"
@@ -13029,22 +13069,22 @@
     {
       "path": "c1.html",
       "bytes": 10320,
-      "sha256": "bfc4fab57d3155f55f0bc006550b853e8a1df06355e7c86e564d93a84dac1c79"
+      "sha256": "7d1c377bcf5d97df7ce6c73c78ef9baf302fa842d3a76a3752f15ac1d347d67b"
     },
     {
       "path": "calibration.html",
       "bytes": 8872,
-      "sha256": "3081753f91a7cdce27109ff250607a6f8bc50fe30938e81db78e35a3ed08bbb5"
+      "sha256": "b5c5024fe763467bb921f0fba945e386b5988aa7749dee708f28a44f0144c7fb"
     },
     {
       "path": "canaux.html",
       "bytes": 6970,
-      "sha256": "9d13b9546e42a5dd2d540baac3dfa28d90dd6ac5ef62c101fb7db7b17b03e86e"
+      "sha256": "ae94505d8b8b4d827cf652a7489fffafaddc8c6c05cbfe00fb305831b64e8f3e"
     },
     {
       "path": "canon.html",
       "bytes": 17306,
-      "sha256": "a2c3b48166633ebca5bd387391319286f281574808c3f2a625ee47e909e2fc9c"
+      "sha256": "a6c93d97ba3f2744d236cb1466f080d09004cb9cbaee4e598ef4e8d42a7305aa"
     },
     {
       "path": "CANON_POLY_v0.92.json",
@@ -13059,12 +13099,12 @@
     {
       "path": "cogitate.html",
       "bytes": 12689,
-      "sha256": "ac8c1d624873942f9b368017999bc27908959b6e322289fcb14fb547ca78cc5f"
+      "sha256": "320f30543ed77f7438fbe24a9eaad059cbbc435f9b029d87529d0e1986f0d963"
     },
     {
       "path": "compartiments.html",
       "bytes": 6036,
-      "sha256": "ee827dce5afeebb0fc3ab74e2e938f56e7bc1902af504e0c5b56b9e8fc8c9e7d"
+      "sha256": "db772a76132ed3fd08f56ec24e23aa73993d7dfaef654f8b545dc63094d3f11a"
     },
     {
       "path": "CONTRAT_DONNEES_v0.94.md",
@@ -13134,7 +13174,7 @@
     {
       "path": "dossiers.html",
       "bytes": 4692,
-      "sha256": "c77bb693d8310653a4b8543221c15e6d79379f86f2b937b08af8592251e44211"
+      "sha256": "c5996072be454ee6233392ea3e0dcf4e787a4de2e98e445a380d7797a70029d2"
     },
     {
       "path": "ENDURANCE_v0.94.json",
@@ -13164,12 +13204,12 @@
     {
       "path": "glossaire.html",
       "bytes": 9928,
-      "sha256": "470f1501ed071b40aa92638162344e14b67c3c9c44d73ac69727a2495b4063af"
+      "sha256": "0c4b4241619f6935cafd4700164720599330081449d4b6f7bf87571f945a09e9"
     },
     {
       "path": "histologie.html",
       "bytes": 6789,
-      "sha256": "c8dcf88c2475616d646b057c9e567495093e1aead9af5720c3dd691c2ba1d8e2"
+      "sha256": "268352ddc534a8e68148cb49d240facd041fbc19e5a60593b593a51ccfe5830c"
     },
     {
       "path": "IDENTITES_SOURCES_v0.98.json",
@@ -13179,12 +13219,12 @@
     {
       "path": "immunohistochimie.html",
       "bytes": 8426,
-      "sha256": "0eef9d51faf6baab646dd66125a705fd28ebf1063a268ac134d16135d396cf8b"
+      "sha256": "29fa7fc613704b7c8fcbb91e6e97198ea82f57f482ac8aaa50c890fb3e2f97d0"
     },
     {
       "path": "index.html",
       "bytes": 12963,
-      "sha256": "69b3228e6036a6f7b2f5d7a66f01bf0c0716444255120e9336a6baa1686909c8"
+      "sha256": "cba98f8cd00abe0acbc07004314dee5f490f8e89e011d8dcad49b29e98b57004"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -13292,6 +13332,11 @@
       "sha256": "f72e1fbe861e10b40c3f7b7537e766ea2c4f8763f637e2e905bb98f62282795f"
     },
     {
+      "path": "INVENTAIRE_ECHELLES_v0.123.json",
+      "bytes": 15352,
+      "sha256": "07584e1f4b8c5adabffe6ed666a2d8c2040b930160f681df9d65607d427a914f"
+    },
+    {
       "path": "INVENTAIRE_ECHELLES_v0.99.json",
       "bytes": 6410,
       "sha256": "20943a235c3652fb74df5039c1a3165424c36c2bec9eed1ee17472568d21e303"
@@ -13329,12 +13374,12 @@
     {
       "path": "microscopie.html",
       "bytes": 18127,
-      "sha256": "9d22b30bda3ac6b92e3f612feeeba9081068db95a6246282fe7dbb8efc9788a2"
+      "sha256": "f4cf458567d762b9876613e26a883227b3aa4e32cc10fd1089795d6b9f31f1e2"
     },
     {
       "path": "microstructures.html",
-      "bytes": 11816,
-      "sha256": "8cbec87c3672e5e4cab4b6baeb9c5dd1a33898bd3807502222fd08810ae0ed19"
+      "bytes": 13083,
+      "sha256": "1c0d5be885cbc5b6f4ec8697fb01ec984f3da6787284ecaddf7a5cfd0cbb9ce2"
     },
     {
       "path": "NAVIGATION_CANAUX_v0.103.json",
@@ -13379,12 +13424,12 @@
     {
       "path": "neurones.html",
       "bytes": 15817,
-      "sha256": "5f18cb0f4a00a57b0c2019f70e8aac36116dad70685b24ca26594bfc06d5d437"
+      "sha256": "5238b7cba3e1a3fcd303688dcd038b03c7a499e632a29c70657ef8c4f63d5f2f"
     },
     {
       "path": "organes.html",
       "bytes": 10147,
-      "sha256": "a6e99862cfd5043c49dd5229dac0154b56388abc13b4adfdc7921a23b3e91fb7"
+      "sha256": "832cac172271c0a0f34eb01b18c7f5850df3ea4b5a613219d5b3b65f21b820ab"
     },
     {
       "path": "ORGANISATION_v0.97.json",
@@ -13398,18 +13443,18 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 7467,
-      "sha256": "0b4f09ecde759967a397c8ae611a8a77620c747e0ce80d77ce1331d27131187f"
+      "bytes": 7835,
+      "sha256": "a3e4670edccd3d0cc8d1750693f0f781c58a803f4f562162a910833ebc8e5634"
     },
     {
       "path": "raccord.html",
       "bytes": 9664,
-      "sha256": "740ddf3add0aaf7140db6cf75770a1464299f25a4de6e2bd8c59eb126da098f2"
+      "sha256": "dd4ae076e03a1c66e3a034ae9396272a62a80eb5b4529404c17eaff59cc823f8"
     },
     {
       "path": "README.md",
-      "bytes": 8314,
-      "sha256": "d9f3e472a2c77396aead7bbc5c6889a2dd187851873ef9485e783e92fae252c8"
+      "bytes": 8554,
+      "sha256": "862843319fce422fe44c78cd7b6701911536a9827caa2ce92323b1f352708e88"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -13443,18 +13488,18 @@
     },
     {
       "path": "suite.html",
-      "bytes": 25195,
-      "sha256": "77b3147534c606ddc511c472fbb2d55ecb779c068b7a05f63d3e03c88abaf579"
+      "bytes": 26059,
+      "sha256": "9b856b749165563fc0cde3bf97ac2fb6fd4eb72e92ceb487ac812db029a9bb84"
     },
     {
       "path": "tools/validate.cjs",
-      "bytes": 38020,
-      "sha256": "3d1eff8ab543829b678788f9b9fba9361df7d986e0f8f880fcbd1599e3e7c319"
+      "bytes": 38816,
+      "sha256": "12b987162419ce2aebc25e727b4211ad32e4a885b12b3a33bcb44ea12a0c7fd9"
     },
     {
       "path": "trajets.html",
       "bytes": 9332,
-      "sha256": "b4bc6dc059a48f1698021276af1355c052c0fe58699fc80e8d03129da60920e2"
+      "sha256": "faea3d8c36621f8304e3296a4a8c29f6dcaf6b74ee9c77ae410dc941f2f11082"
     },
     {
       "path": "VERIFICATION_BIGBRAIN_EN_LIGNE.json",
@@ -13585,6 +13630,11 @@
       "path": "VERIFICATION_v0.122.json",
       "bytes": 6698,
       "sha256": "0587b96db0b89ad9db71ab745b2639ed6928f8a25a65b52332caecc05bb1a660"
+    },
+    {
+      "path": "VERIFICATION_v0.123.json",
+      "bytes": 2681,
+      "sha256": "0338f46443b5196c1addc590eef67a39e4ca86541cb24ad8d2406d8a9271376a"
     },
     {
       "path": "VERIFICATION_v0.92.json",

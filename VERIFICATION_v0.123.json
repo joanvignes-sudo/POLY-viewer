@@ -1,0 +1,78 @@
+{
+  "version": "0.123",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "triangles": 693293,
+    "mesh_count": 23,
+    "finite_difference_error": 1.7260435580812583e-09,
+    "nonpositive_determinants": 0,
+    "opposed_normal_count": 86,
+    "interpolation_gap_mm": {
+      "n": 693293,
+      "minimum": 9.462906910103874e-05,
+      "median": 0.015736567865312672,
+      "mean": 0.021915024625336493,
+      "p95": 0.060518097625316514,
+      "p99": 0.1028879623862143,
+      "maximum": 0.5922528984720712
+    },
+    "geometry_modified": false
+  },
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "flagged_records_checked": 86,
+    "positions_checked_per_mode": 258,
+    "native_and_registered_faces_match_source": true,
+    "shared_selection": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometry_memory": 45,
+    "export_preserves_all_records": true,
+    "afid_and_mesh_overlays_exclusive": true,
+    "mobile_no_overflow": true,
+    "corrupt_supplement_preserves_brain_and_retry": true,
+    "page_errors": []
+  },
+  "afid_regression": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "primary_records_checked": 59,
+    "all_3d_positions_match_source": true,
+    "export_preserves_all_63_records": true,
+    "shared_selection": true,
+    "native_hides_registered_landmarks": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometries": 46,
+    "corrupt_supplement_preserves_brain_and_retry": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  },
+  "independent_arithmetic": {
+    "status": "passed",
+    "triangles_decoded": 693293,
+    "flagged_face_indices_and_native_registered_vertices_checked": 86,
+    "scalar_centre_and_distance_checks": 86,
+    "nonpositive": 0,
+    "opposed": 86,
+    "source_hashes_checked": true
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 554,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/bigbrain/surfaces.bin",
+    "assets/bigbrain-warp-v0121/PROVENANCE.json",
+    "assets/bigbrain-warp-v0121/positions.bin",
+    "assets/bigbrain-validation-v0122/PROVENANCE.json",
+    "assets/bigbrain-validation-v0122/LANDMARKS.json",
+    "assets/bigbrain-validation-v0122/REGULARITY.json",
+    "assets/bigbrain-validation-v0122/jacobians.bin"
+  ],
+  "scope": "One barycentric sample per displayed triangle, numerical planar-mesh diagnostics and source-face overlay. No source geometry changes or certification of entire interiors, volume, anatomical accuracy or activity."
+}

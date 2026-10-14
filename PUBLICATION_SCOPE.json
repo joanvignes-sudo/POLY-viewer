@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.122",
+  "presentation_version": "0.123",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -216,5 +216,16 @@
     "new_annotations": false,
     "original_study_group_average_reproduced": false,
     "provenance": "assets/bigbrain-validation-v0122/PROVENANCE.json"
+  },
+  "bigbrain_triangle_checks": {
+    "triangles": 693293,
+    "sample_points_per_triangle": 1,
+    "nonpositive_at_centres": 0,
+    "orientation_discrepancies": 86,
+    "flagged_left": 41,
+    "flagged_right": 45,
+    "whole_triangle_certified": false,
+    "geometry_modified": false,
+    "provenance": "assets/bigbrain-triangles-v0123/PROVENANCE.json"
   }
 }

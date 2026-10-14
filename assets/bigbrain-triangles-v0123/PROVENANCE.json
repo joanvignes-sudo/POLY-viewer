@@ -1,0 +1,973 @@
+{
+  "version": "0.123",
+  "date": "2026-10-14",
+  "scope": "One barycentric centre per triangle of the 23 displayed meshes. No certification of entire triangle interiors, edges, volume or global injectivity.",
+  "triangles": 693293,
+  "mesh_count": 23,
+  "determinant": {
+    "n": 693293,
+    "minimum": 0.1911836155806294,
+    "median": 2.012737927533355,
+    "mean": 2.176883931892319,
+    "p95": 3.7857276208687276,
+    "p99": 5.250905709316593,
+    "maximum": 13.011112325442312
+  },
+  "nonpositive_determinants": 0,
+  "interpolation_gap_mm": {
+    "n": 693293,
+    "minimum": 9.462906910103874e-05,
+    "median": 0.015736567865312672,
+    "mean": 0.021915024625336493,
+    "p95": 0.060518097625316514,
+    "p99": 0.1028879623862143,
+    "maximum": 0.5922528984720712
+  },
+  "degenerate_triangle_normals": 0,
+  "opposed_normal_count": 86,
+  "normal_cosine": {
+    "n": 693293,
+    "minimum": -0.9994384929550028,
+    "median": 0.9998586383473925,
+    "mean": 0.9983252583970202,
+    "p95": 0.9999945028560465,
+    "p99": 0.9999989875729508,
+    "maximum": 0.9999999998520042
+  },
+  "meshes": [
+    {
+      "id": "context-left",
+      "triangles": 327680,
+      "offset": 0,
+      "determinant": {
+        "n": 327680,
+        "minimum": 0.3155077244506921,
+        "median": 2.0145075332039633,
+        "mean": 2.1714825886459814,
+        "p95": 3.7389716688577423,
+        "p99": 5.170383980611274,
+        "maximum": 9.820358811500292
+      },
+      "interpolation_gap_mm": {
+        "n": 327680,
+        "minimum": 9.462906910103874e-05,
+        "median": 0.01598533445422371,
+        "mean": 0.02229451885693636,
+        "p95": 0.061680338928500014,
+        "p99": 0.10559045644572984,
+        "maximum": 0.5922528984720712
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 41
+    },
+    {
+      "id": "context-right",
+      "triangles": 327680,
+      "offset": 327680,
+      "determinant": {
+        "n": 327680,
+        "minimum": 0.1911836155806294,
+        "median": 2.044789626364252,
+        "mean": 2.2216818296581877,
+        "p95": 3.904966451404168,
+        "p99": 5.424207876905125,
+        "maximum": 13.011112325442312
+      },
+      "interpolation_gap_mm": {
+        "n": 327680,
+        "minimum": 0.00011520945855080714,
+        "median": 0.016272887660687782,
+        "mean": 0.02238387445432729,
+        "p95": 0.0612866649445421,
+        "p99": 0.10252369263863459,
+        "maximum": 0.5408450221305141
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 45
+    },
+    {
+      "id": "lateral-0",
+      "triangles": 1603,
+      "offset": 655360,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.3017982606958631,
+        "median": 2.1682011644828463,
+        "mean": 2.1804605689116094,
+        "p95": 2.847037131087183,
+        "p99": 3.30063639069613,
+        "maximum": 3.5384050075610856
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.0011429784592165457,
+        "median": 0.012221436617696486,
+        "mean": 0.014356932274134315,
+        "p95": 0.03191565808453127,
+        "p99": 0.050726887355714394,
+        "maximum": 0.0635090071009464
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "lateral-1",
+      "triangles": 1603,
+      "offset": 656963,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.3547913912301808,
+        "median": 2.144169029114503,
+        "mean": 2.165886857302298,
+        "p95": 2.873849290431978,
+        "p99": 3.32413764896948,
+        "maximum": 3.5686784148740283
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.0008892444717912099,
+        "median": 0.01269541021941164,
+        "mean": 0.014432109965982947,
+        "p95": 0.029913818945176897,
+        "p99": 0.044144400847724544,
+        "maximum": 0.053566407899784924
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "lateral-2",
+      "triangles": 1603,
+      "offset": 658566,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.396604710881147,
+        "median": 2.127905859721638,
+        "mean": 2.1576189951042215,
+        "p95": 2.8715425443058877,
+        "p99": 3.326836867492201,
+        "maximum": 3.629086672327222
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.0010906241505876666,
+        "median": 0.012986317682030894,
+        "mean": 0.014549324932319026,
+        "p95": 0.029649816931850433,
+        "p99": 0.040405080502885146,
+        "maximum": 0.04905398352060049
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "lateral-3",
+      "triangles": 1603,
+      "offset": 660169,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.3411342383427787,
+        "median": 2.081045378391568,
+        "mean": 2.146234068887152,
+        "p95": 2.9237510738843464,
+        "p99": 3.266522512938147,
+        "maximum": 3.5441494226372723
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.002078192179091502,
+        "median": 0.013420631758167297,
+        "mean": 0.015261262542886024,
+        "p95": 0.030205448706510245,
+        "p99": 0.03722937033572117,
+        "maximum": 0.04910993307994346
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "lateral-4",
+      "triangles": 1603,
+      "offset": 661772,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.3232166438281259,
+        "median": 2.072209451056737,
+        "mean": 2.1469667327856876,
+        "p95": 2.9230722442943162,
+        "p99": 3.309838001591187,
+        "maximum": 3.517175364992742
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.001853265181677054,
+        "median": 0.013690405108637768,
+        "mean": 0.01572847715787201,
+        "p95": 0.03185371217923707,
+        "p99": 0.04102473414035068,
+        "maximum": 0.05408064337714863
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "lateral-5",
+      "triangles": 1603,
+      "offset": 663375,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.2967367040233087,
+        "median": 2.075146245652877,
+        "mean": 2.143833012259557,
+        "p95": 2.893617173317982,
+        "p99": 3.3113951467716793,
+        "maximum": 3.449922065962592
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.0008600585575953246,
+        "median": 0.013922291327159645,
+        "mean": 0.016175790561457792,
+        "p95": 0.0362568866561863,
+        "p99": 0.05034179362523504,
+        "maximum": 0.059133991049509324
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "lateral-6",
+      "triangles": 1603,
+      "offset": 664978,
+      "determinant": {
+        "n": 1603,
+        "minimum": 1.3203037120684022,
+        "median": 2.0793941530445803,
+        "mean": 2.1339288027196055,
+        "p95": 2.8430271296534846,
+        "p99": 3.2149219187152642,
+        "maximum": 3.4621931700346025
+      },
+      "interpolation_gap_mm": {
+        "n": 1603,
+        "minimum": 0.0009153214415833248,
+        "median": 0.013926972953239854,
+        "mean": 0.017252968135307942,
+        "p95": 0.04277905360893068,
+        "p99": 0.06011314750132081,
+        "maximum": 0.07482011025272024
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-0",
+      "triangles": 1874,
+      "offset": 666581,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.6417207469236568,
+        "median": 1.2710320974262754,
+        "mean": 1.3029401869395594,
+        "p95": 1.8320894847686904,
+        "p99": 2.0122366592548957,
+        "maximum": 2.1279674168537364
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.0003001097304834679,
+        "median": 0.010966916564707135,
+        "mean": 0.014071364756498407,
+        "p95": 0.03608413316023171,
+        "p99": 0.046844102800179074,
+        "maximum": 0.06624779904240785
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-1",
+      "triangles": 1874,
+      "offset": 668455,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.6637252709745157,
+        "median": 1.2720878475401538,
+        "mean": 1.3018884040382812,
+        "p95": 1.8237975768094108,
+        "p99": 1.980768341334298,
+        "maximum": 2.1164039103066026
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.0003010299171150425,
+        "median": 0.010344325520314168,
+        "mean": 0.012813607227154081,
+        "p95": 0.031192974791936355,
+        "p99": 0.04069215696923109,
+        "maximum": 0.04992871034819273
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-2",
+      "triangles": 1874,
+      "offset": 670329,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.68061086416028,
+        "median": 1.273224867337115,
+        "mean": 1.299534186719895,
+        "p95": 1.8094325545307979,
+        "p99": 1.959656975510151,
+        "maximum": 2.129212941072319
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.0002424339959496743,
+        "median": 0.009683752854474934,
+        "mean": 0.011874339442009009,
+        "p95": 0.027355308946744206,
+        "p99": 0.03562990420515871,
+        "maximum": 0.047215668769947
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-3",
+      "triangles": 1874,
+      "offset": 672203,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.7355140068696229,
+        "median": 1.2531187081026391,
+        "mean": 1.2881866811611669,
+        "p95": 1.791210961272105,
+        "p99": 1.974960121117963,
+        "maximum": 2.110777320356077
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.000271600629093921,
+        "median": 0.008397704789710166,
+        "mean": 0.009664200892030309,
+        "p95": 0.02101912761167342,
+        "p99": 0.028203570879390478,
+        "maximum": 0.03742708928600271
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-4",
+      "triangles": 1874,
+      "offset": 674077,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.7529555420027425,
+        "median": 1.249790359804373,
+        "mean": 1.282999159334205,
+        "p95": 1.7854242148266075,
+        "p99": 1.999288029496692,
+        "maximum": 2.0897095088722315
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.00042511053658945145,
+        "median": 0.007886090297028006,
+        "mean": 0.009098648189201777,
+        "p95": 0.019803583067104273,
+        "p99": 0.02823930608144285,
+        "maximum": 0.034964912433157115
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-5",
+      "triangles": 1874,
+      "offset": 675951,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.8209607531120132,
+        "median": 1.2426425408060726,
+        "mean": 1.2707213406806532,
+        "p95": 1.7993068142678554,
+        "p99": 1.9768576981323587,
+        "maximum": 2.050721425935563
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.00016011158500104985,
+        "median": 0.006633476788484447,
+        "mean": 0.007889656726418863,
+        "p95": 0.018005752810022996,
+        "p99": 0.02636426839275205,
+        "maximum": 0.03645393748213544
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "posterior-6",
+      "triangles": 1874,
+      "offset": 677825,
+      "determinant": {
+        "n": 1874,
+        "minimum": 0.8318942924948427,
+        "median": 1.229262146900238,
+        "mean": 1.2588787240699713,
+        "p95": 1.7991022724411148,
+        "p99": 1.9188231513693392,
+        "maximum": 2.077728468046902
+      },
+      "interpolation_gap_mm": {
+        "n": 1874,
+        "minimum": 0.0005196580742237527,
+        "median": 0.005759309509306453,
+        "mean": 0.007388121209744701,
+        "p95": 0.01817297984798467,
+        "p99": 0.026908535720877046,
+        "maximum": 0.04322361167275638
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-0",
+      "triangles": 1942,
+      "offset": 679699,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.1485120184108721,
+        "median": 2.012284961184216,
+        "mean": 2.2097151602326455,
+        "p95": 3.945045372388441,
+        "p99": 4.500636629751426,
+        "maximum": 5.190290096829947
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.0009157422873508773,
+        "median": 0.015280161309240075,
+        "mean": 0.02268168116251788,
+        "p95": 0.0654328594577194,
+        "p99": 0.1253393294639807,
+        "maximum": 0.20501876631357213
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-1",
+      "triangles": 1942,
+      "offset": 681641,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.2183756447832907,
+        "median": 2.0033483854273997,
+        "mean": 2.188018458946817,
+        "p95": 3.848825376598163,
+        "p99": 4.546374800397817,
+        "maximum": 4.974585241676507
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.00010033149418911756,
+        "median": 0.014267166896243764,
+        "mean": 0.02109410097110408,
+        "p95": 0.0599317665125031,
+        "p99": 0.12134528223508384,
+        "maximum": 0.18634569715236937
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-2",
+      "triangles": 1942,
+      "offset": 683583,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.211171357024279,
+        "median": 1.9900953822880565,
+        "mean": 2.168493657164189,
+        "p95": 3.7360047340333193,
+        "p99": 4.651385463919501,
+        "maximum": 5.152204762660691
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.0007577021350962823,
+        "median": 0.013930046563350906,
+        "mean": 0.019847973613147385,
+        "p95": 0.055436793796962903,
+        "p99": 0.11646052330962076,
+        "maximum": 0.1697951761113376
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-3",
+      "triangles": 1942,
+      "offset": 685525,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.204288632413537,
+        "median": 1.945104904031508,
+        "mean": 2.093535563279742,
+        "p95": 3.492167766419029,
+        "p99": 4.7862190227235315,
+        "maximum": 5.617118631671205
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.0007543641413441007,
+        "median": 0.01257560073652392,
+        "mean": 0.01674955745796665,
+        "p95": 0.04334363118733184,
+        "p99": 0.09371707712649574,
+        "maximum": 0.1490217984547953
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-4",
+      "triangles": 1942,
+      "offset": 687467,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.2017172625795924,
+        "median": 1.9254710655629022,
+        "mean": 2.0756217238158685,
+        "p95": 3.3678038444117493,
+        "p99": 4.635504928654312,
+        "maximum": 5.721959745837878
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.0006088382052126082,
+        "median": 0.012470167376933246,
+        "mean": 0.01632016767123151,
+        "p95": 0.04066490664675851,
+        "p99": 0.0897893703710165,
+        "maximum": 0.1412932056485181
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-5",
+      "triangles": 1942,
+      "offset": 689409,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.1928079533686025,
+        "median": 1.8874626607409057,
+        "mean": 2.0261840780356195,
+        "p95": 3.121950318835104,
+        "p99": 4.4771367433423315,
+        "maximum": 5.707884877427224
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.0005835921581611894,
+        "median": 0.010923251262853765,
+        "mean": 0.014842537444052499,
+        "p95": 0.03627502090729591,
+        "p99": 0.08237859163581536,
+        "maximum": 0.12435909432114715
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    },
+    {
+      "id": "superior-6",
+      "triangles": 1942,
+      "offset": 691351,
+      "determinant": {
+        "n": 1942,
+        "minimum": 1.1841918411074137,
+        "median": 1.8643227355256498,
+        "mean": 1.9786555211455021,
+        "p95": 2.898469194810335,
+        "p99": 4.1881082965938266,
+        "maximum": 5.526166666456444
+      },
+      "interpolation_gap_mm": {
+        "n": 1942,
+        "minimum": 0.00031735360709724756,
+        "median": 0.010121834511583813,
+        "mean": 0.0141879297683459,
+        "p95": 0.03986935088884761,
+        "p99": 0.06923060333806798,
+        "maximum": 0.09399037798427386
+      },
+      "nonpositive_determinants": 0,
+      "degenerate_triangle_normals": 0,
+      "opposed_normal_count": 0
+    }
+  ],
+  "worst_interpolation_centres": [
+    {
+      "mesh_id": "context-left",
+      "triangle_index": 320028,
+      "native_centroid_mm": [
+        -16.632033348083496,
+        -13.67823346455892,
+        -1.9741599559783936
+      ],
+      "transformed_centroid_mm": [
+        -12.13710216403519,
+        -36.74495951536077,
+        -0.3608047347338774
+      ],
+      "rendered_centroid_mm": [
+        -12.701742172241211,
+        -36.9042599995931,
+        -0.27975837389628094
+      ],
+      "interpolation_gap_mm": 0.5922528984720712,
+      "determinant": 2.596898216840182,
+      "normal_cosine": 0.21013526148205278
+    },
+    {
+      "mesh_id": "context-left",
+      "triangle_index": 320045,
+      "native_centroid_mm": [
+        -16.968600273132324,
+        -13.677333196004232,
+        -1.7065766255060832
+      ],
+      "transformed_centroid_mm": [
+        -12.814738130066601,
+        -36.821106794089495,
+        0.3345665881815956
+      ],
+      "rendered_centroid_mm": [
+        -13.377792676289877,
+        -36.966505686442055,
+        0.40435560544331867
+      ],
+      "interpolation_gap_mm": 0.5856976752987904,
+      "determinant": 2.958994277020594,
+      "normal_cosine": 0.8118409515445578
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159502,
+      "native_centroid_mm": [
+        11.16670004526774,
+        -19.5047664642334,
+        49.606866200764976
+      ],
+      "transformed_centroid_mm": [
+        28.12225752878032,
+        -55.5104521430094,
+        70.02800804174731
+      ],
+      "rendered_centroid_mm": [
+        28.071407318115234,
+        -55.264801025390625,
+        70.50715637207031
+      ],
+      "interpolation_gap_mm": 0.5408450221305141,
+      "determinant": 6.2271260070206775,
+      "normal_cosine": 0.7412036050786343
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159501,
+      "native_centroid_mm": [
+        11.570366541544596,
+        -19.671300252278645,
+        49.538132985432945
+      ],
+      "transformed_centroid_mm": [
+        28.800847843132253,
+        -56.36232953844566,
+        69.69427578699023
+      ],
+      "rendered_centroid_mm": [
+        28.740794499715168,
+        -56.123772939046226,
+        70.14450073242188
+      ],
+      "interpolation_gap_mm": 0.5130479087390537,
+      "determinant": 5.746300777924642,
+      "normal_cosine": 0.8537730021584526
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159368,
+      "native_centroid_mm": [
+        14.377333641052246,
+        -20.0711669921875,
+        46.69090143839518
+      ],
+      "transformed_centroid_mm": [
+        31.143771334216733,
+        -58.88491070457461,
+        63.760031219276485
+      ],
+      "rendered_centroid_mm": [
+        31.07272720336914,
+        -58.588583628336586,
+        64.17211786905925
+      ],
+      "interpolation_gap_mm": 0.5125157671417021,
+      "determinant": 6.8309486526259535,
+      "normal_cosine": 0.6390553887506455
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159499,
+      "native_centroid_mm": [
+        11.30716641743978,
+        -19.01299985249837,
+        49.58833312988281
+      ],
+      "transformed_centroid_mm": [
+        27.993510191047896,
+        -54.13806924487613,
+        70.52694724593206
+      ],
+      "rendered_centroid_mm": [
+        27.99880854288737,
+        -53.9205691019694,
+        70.9873046875
+      ],
+      "interpolation_gap_mm": 0.5091791027758683,
+      "determinant": 6.7357422540885254,
+      "normal_cosine": 0.8916967484311321
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159495,
+      "native_centroid_mm": [
+        11.684833208719889,
+        -19.14193344116211,
+        49.54910024007162
+      ],
+      "transformed_centroid_mm": [
+        28.61663833122317,
+        -54.983355338785614,
+        70.05156307445633
+      ],
+      "rendered_centroid_mm": [
+        28.61221440633138,
+        -54.76031366984049,
+        70.50036875406902
+      ],
+      "interpolation_gap_mm": 0.501192273733227,
+      "determinant": 5.931196761180486,
+      "normal_cosine": 0.6719358094760878
+    },
+    {
+      "mesh_id": "context-left",
+      "triangle_index": 320043,
+      "native_centroid_mm": [
+        -16.000666618347168,
+        -13.773966471354166,
+        -2.0327999194463096
+      ],
+      "transformed_centroid_mm": [
+        -11.389912705859123,
+        -36.89268399206235,
+        -0.9080809599283808
+      ],
+      "rendered_centroid_mm": [
+        -11.847469011942545,
+        -37.03315353393555,
+        -0.7620957692464193
+      ],
+      "interpolation_gap_mm": 0.5004009805438235,
+      "determinant": 2.0463007685864363,
+      "normal_cosine": 0.48866528697347794
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159372,
+      "native_centroid_mm": [
+        14.369566917419434,
+        -19.8289000193278,
+        46.104634602864586
+      ],
+      "transformed_centroid_mm": [
+        30.701641498682545,
+        -57.722572524088264,
+        62.442401491795124
+      ],
+      "rendered_centroid_mm": [
+        30.632659276326496,
+        -57.480674743652344,
+        62.86900202433268
+      ],
+      "interpolation_gap_mm": 0.49523842494532894,
+      "determinant": 5.899650057874421,
+      "normal_cosine": 0.9990178313144848
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159374,
+      "native_centroid_mm": [
+        14.584033330281576,
+        -20.163466771443684,
+        46.73186747233073
+      ],
+      "transformed_centroid_mm": [
+        31.413797443119737,
+        -59.277521290636265,
+        63.86075524003119
+      ],
+      "rendered_centroid_mm": [
+        31.341397603352863,
+        -58.95333480834961,
+        64.2136967976888
+      ],
+      "interpolation_gap_mm": 0.4846713888991636,
+      "determinant": 6.982113453142708,
+      "normal_cosine": 0.9992339980651088
+    },
+    {
+      "mesh_id": "context-left",
+      "triangle_index": 320042,
+      "native_centroid_mm": [
+        -16.250233332316082,
+        -13.789833068847656,
+        -1.8246833086013794
+      ],
+      "transformed_centroid_mm": [
+        -11.656390318995514,
+        -36.90137285846078,
+        -0.4814905772260022
+      ],
+      "rendered_centroid_mm": [
+        -12.098766644795736,
+        -37.026266733805336,
+        -0.3325687249501546
+      ],
+      "interpolation_gap_mm": 0.48319045087041446,
+      "determinant": 2.230018921869257,
+      "normal_cosine": 0.10150632842173285
+    },
+    {
+      "mesh_id": "context-right",
+      "triangle_index": 159375,
+      "native_centroid_mm": [
+        14.553400039672852,
+        -19.977166493733723,
+        46.093133290608726
+      ],
+      "transformed_centroid_mm": [
+        30.931247915606022,
+        -58.21323381204187,
+        62.29469542477724
+      ],
+      "rendered_centroid_mm": [
+        30.874988555908203,
+        -57.9797477722168,
+        62.68103535970052
+      ],
+      "interpolation_gap_mm": 0.45490591517733936,
+      "determinant": 6.1867538762981535,
+      "normal_cosine": 0.9992242343585426
+    }
+  ],
+  "finite_difference_check": {
+    "points": 64,
+    "epsilon_mm": 1e-05,
+    "maximum_matrix_element_difference": 1.7260435580812583e-09
+  },
+  "metrics": {
+    "path": "assets/bigbrain-triangles-v0123/metrics.bin",
+    "bytes": 8319516,
+    "sha256": "58b5c9f9794a81be957c3ee947863cff54d6e709bfe66c3766cbfb8273586ce5",
+    "dtype": "little-endian float32",
+    "components": [
+      "full_mapping_jacobian_determinant",
+      "interpolation_gap_mm",
+      "normal_cosine"
+    ],
+    "ordering": "Mesh list order then original source triangle index",
+    "record_stride_bytes": 12
+  },
+  "flagged": {
+    "path": "assets/bigbrain-triangles-v0123/FLAGGED.json",
+    "sha256": "54df67d065af4ec054423b7279c8da7e23cc9045c7b6ed1770f614201c5f1f2c"
+  },
+  "geometry_modified": false,
+  "anatomical_accuracy_estimated": false,
+  "triangle_interior_fully_certified": false,
+  "whole_volume_validated": false,
+  "method": "Evaluate full five-step published transform and analytic physical Jacobian at original triangle barycentres. Compare transformed barycentre with the arithmetic mean of stored transformed vertices, which is the rendered planar triangle centre. Compare rendered face normal with the source normal transformed by the Jacobian cofactor.",
+  "limits": [
+    "Positive determinants at vertices and barycentres do not exclude inversions elsewhere",
+    "This discretization gap is a numerical rendering approximation measure, not anatomical registration error",
+    "Cosine comparisons check local face orientation, not mesh self-intersections",
+    "Patch triangles may duplicate parts of context surfaces; statistics are unweighted over records",
+    "Stored transformed vertices are float32; the gap includes their rounding as well as piecewise-linear rendering"
+  ],
+  "references": [
+    {
+      "path": "assets/bigbrain/PROVENANCE.json",
+      "sha256": "7544e77e16bac371ad6d65db21bd9b9dbf78b49373870080b3394bd990909567"
+    },
+    {
+      "path": "assets/bigbrain/surfaces.bin",
+      "sha256": "39bf153516c33bd6f7dab2d0771e79ec36ec743f8dbc5e326436069634fdc518"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/PROVENANCE.json",
+      "sha256": "b6020bb727153e71de43f9cd7922f848b6099a3fff6813f686c454ea5c441a31"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/positions.bin",
+      "sha256": "182d75e14eecc2726c0c436f1dd31eaa39afeadce3c815c342e5237e900c98bf"
+    }
+  ],
+  "license": "BigBrain derivatives retain CC BY-NC-SA 4.0 and existing transform source conditions; see linked provenance and credits.",
+  "source_masks": [
+    {
+      "path": "assets/bigbrain-triangles-v0123/lh.BigBrain.mask.label.txt",
+      "file": "lh.BigBrain.mask.label.txt",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/lh.BigBrain.mask.label.txt",
+      "bytes": 327684,
+      "sha256": "da5f4165658bcef38968e991a732a3ba09e972b38ec651c2cd5c6a5399294ec7"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/rh.BigBrain.mask.label.txt",
+      "file": "rh.BigBrain.mask.label.txt",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/rh.BigBrain.mask.label.txt",
+      "bytes": 327684,
+      "sha256": "3834bf8b107b3ea8a28049bbf8457b610fc8455e73eb44b5d3631a674a50fc90"
+    }
+  ],
+  "flagged_touching_source_mask_zero": 5
+}
