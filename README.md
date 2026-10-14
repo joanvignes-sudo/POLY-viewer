@@ -1,12 +1,12 @@
-# POLY v0.125
+# POLY v0.126
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
 [Immunohistochimie du nerf vague](immunohistochimie.html) : deux parties C1-A-Level 2, six fenêtres natives RGB ; marqueurs et couleurs documentés, mesures en pixels. [Sources et limites](BILAN_IHC_v0.102.md).
 
-[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.125.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
+[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.126.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
 
-[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.125.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
+[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.126.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
 
 [Preuves au maillon et identités des sources](AUDIT_SOURCES_v0.98.md) · [Dossiers réunis](dossiers.html).
 
@@ -87,3 +87,7 @@ Repère commun « Se repérer entre les échelles » sur les 19 pages : vues de 
 ### v0.125 · Aperçus du raccord local
 
 Le diagnostic BigBrain propose 86 aperçus indépendants de quatre faces. Les arêtes internes réutilisent les mêmes indices ; 24 aperçus gardent des alertes d’orientation chez les voisines. Aucun remplacement du cortex source. Voir [méthode et limites](BILAN_BIGBRAIN_NEIGHBORS_v0.125.md).
+
+### v0.126 · Raffinement progressif du raccord
+
+86 propositions testées avec conservation du contour et des anciens sommets. 26 oppositions ponctuelles restent dans 22 voisinages ; les données sources sont conservées et aucun remplacement global n’est appliqué. [Méthode, essais et limites](BILAN_BIGBRAIN_ADAPTIVE_v0.126.md).

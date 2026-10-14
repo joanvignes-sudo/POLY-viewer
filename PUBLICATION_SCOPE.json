@@ -254,5 +254,24 @@
     "source_geometry_modified": false,
     "global_replacement": false,
     "provenance": "assets/bigbrain-neighbors-v0125/PROVENANCE.json"
+  },
+  "bigbrain_adaptive_previews": {
+    "patches": 86,
+    "initial_patches_with_alerts": 24,
+    "initial_opposed_normals": 42,
+    "remaining_patches_with_alerts": 22,
+    "remaining_opposed_normals": 26,
+    "root_opposed_normals": 0,
+    "triangles": 6908,
+    "maximum_triangles": 4310,
+    "maximum_vertices": 2159,
+    "nonpositive_sampled_determinants": 0,
+    "maximum_sampled_gap_mm": 0.27928755074295214,
+    "boundary_changed": false,
+    "max_tested_rounds": 16,
+    "patches_with_selected_refinement": 10,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-adaptive-v0126/PROVENANCE.json"
   }
 }

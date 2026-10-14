@@ -1,0 +1,102 @@
+{
+  "version": "0.126",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "summary": {
+      "patches": 86,
+      "initial_patches_with_alerts": 24,
+      "initial_opposed_normals": 42,
+      "remaining_patches_with_alerts": 22,
+      "remaining_opposed_normals": 26,
+      "root_opposed_normals": 0,
+      "triangles": 6908,
+      "maximum_triangles": 4310,
+      "maximum_vertices": 2159,
+      "nonpositive_sampled_determinants": 0,
+      "maximum_sampled_gap_mm": 0.27928755074295214,
+      "boundary_changed": false,
+      "max_tested_rounds": 16,
+      "patches_with_selected_refinement": 10
+    }
+  },
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "patches_checked": 86,
+    "buffers_indices_anchors_exact": true,
+    "neighbor_alerts_displayed": true,
+    "initial_and_adaptive_modes_compared": true,
+    "native_hides_preview": true,
+    "shared_mode_and_visibility": true,
+    "density_switch_preserves_adaptive_choice": true,
+    "export_preserves_scope_and_record": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometry_memory": 46,
+    "mobile_no_overflow": true,
+    "corrupt_data_preserves_source_and_retry": true,
+    "page_errors": []
+  },
+  "triangle_regression": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "flagged_records_checked": 86,
+    "positions_checked_per_mode": 258,
+    "native_and_registered_faces_match_source": true,
+    "shared_selection": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometry_memory": 45,
+    "export_preserves_all_records": true,
+    "afid_and_mesh_overlays_exclusive": true,
+    "mobile_no_overflow": true,
+    "corrupt_supplement_preserves_brain_and_retry": true,
+    "page_errors": []
+  },
+  "independent_arithmetic": {
+    "status": "passed",
+    "patches": 86,
+    "triangles": 6908,
+    "all_old_local_vertices_bit_identical": true,
+    "source_face_areas_and_planes_preserved": true,
+    "oriented_topology_and_shared_seams_checked": true,
+    "finite_difference_epsilon_mm": 1e-05,
+    "independent_orientation_count": 26,
+    "maximum_minimum_cosine_difference": 7.556682224407751e-10,
+    "independent_gap_agreement_mm": 1e-09,
+    "chosen_round_is_best_tested": true,
+    "source_and_derivative_file_hashes_checked": true
+  },
+  "subdivision_regression": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "adaptive_faces_checked": 86,
+    "all_selected_vertex_buffers_indices_and_anchors_exact": true,
+    "extended_case_levels_checked": 7,
+    "native_hides_preview": true,
+    "shared_level_and_visibility": true,
+    "export_preserves_synthetic_status": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometry_memory": 46,
+    "maximum_cached_groups": 2,
+    "mobile_no_overflow": true,
+    "corrupt_preview_preserves_source_diagnostic_and_retry": true,
+    "page_errors": []
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 567,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/bigbrain/surfaces.bin",
+    "assets/bigbrain-warp-v0121/positions.bin",
+    "assets/bigbrain-neighbors-v0125/PROVENANCE.json",
+    "assets/bigbrain-neighbors-v0125/positions.bin",
+    "assets/bigbrain-neighbors-v0125/indices.bin",
+    "assets/bigbrain-registration-v0120/PROVENANCE.json"
+  ],
+  "scope": "Bounded adaptive previews preserve old vertices and outer boundary; 22 patches retain 26 orientation alerts. All chosen synthetic centres checked by independent finite differences. No new anatomical observations or global mesh replacement, full-interior/volume validation or activity."
+}
