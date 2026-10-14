@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.121",
+  "presentation_version": "0.122",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -206,5 +206,15 @@
     "complete_published_composition": true,
     "independent_anatomical_validation": false,
     "native_lengths_unchanged": true
+  },
+  "bigbrain_quantitative_checks": {
+    "rendered_vertices": 348845,
+    "nonpositive_jacobians_at_vertices": 0,
+    "published_landmark_correspondences": 63,
+    "primary_correspondences": 59,
+    "published_raters": 2,
+    "new_annotations": false,
+    "original_study_group_average_reproduced": false,
+    "provenance": "assets/bigbrain-validation-v0122/PROVENANCE.json"
   }
 }
