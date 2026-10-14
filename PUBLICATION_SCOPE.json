@@ -38,7 +38,7 @@
   "active_registry": "EXPLORATION_v0.98.json",
   "derived_directory": "ORGANISATION_v0.98.json",
   "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
-  "presentation_version": "0.123",
+  "presentation_version": "0.124",
   "cogitate": {
     "scope": "author-saved example outputs and aggregate public metadata",
     "raw_signals_acquired": false,
@@ -227,5 +227,14 @@
     "whole_triangle_certified": false,
     "geometry_modified": false,
     "provenance": "assets/bigbrain-triangles-v0123/PROVENANCE.json"
+  },
+  "bigbrain_subdivision_previews": {
+    "source_facets": 86,
+    "preview_subtriangles": 5348,
+    "synthetic_points": true,
+    "new_anatomical_observations": false,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-refinement-v0124/PROVENANCE.json"
   }
 }
