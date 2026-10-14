@@ -1,12 +1,12 @@
-# POLY v0.124
+# POLY v0.125
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).
 
 [Immunohistochimie du nerf vague](immunohistochimie.html) : deux parties C1-A-Level 2, six fenêtres natives RGB ; marqueurs et couleurs documentés, mesures en pixels. [Sources et limites](BILAN_IHC_v0.102.md).
 
-[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.124.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
+[Cœur humain et nerf vague](organes.html) : premières données HiP-CT et SPARC. [Provenance](assets/organs/PROVENANCE.json), [bilan et travaux ouverts](BILAN_ORGANES_v0.101.md), [inventaire actualisé](INVENTAIRE_ECHELLES_v0.125.json). Région cardiaque à 6,51 µm reliée par la transformation publiée ; micro-CT C10 et contours originaux intégrés. Unités retracées sur C10 ; CC BY 4.0 confirmé par les notices DOI pour 674 v1 et 426 v7 ; [preuve documentaire](assets/licenses/SPARC_RIGHTS_v0.116.json).
 
-[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.124.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
+[Neurones humains : Allen et H01](neurones.html) · [Programme entre échelles](suite.html#programme) · [Inventaire des cinq sources](INVENTAIRE_ECHELLES_v0.125.json) · [Méthodes et limites](BILAN_NEURONES_v0.99.md).
 
 [Preuves au maillon et identités des sources](AUDIT_SOURCES_v0.98.md) · [Dossiers réunis](dossiers.html).
 
@@ -83,3 +83,7 @@ Repère commun « Se repérer entre les échelles » sur les 19 pages : vues de 
 [Contrôle du maillage](microstructures.html?bbframe=mni&meshcheck=1&v=0.123) : 693 293 centres de triangles examinés, 86 écarts d’orientation localisés, source conservée. [Méthode et limites](BILAN_BIGBRAIN_TRIANGLES_v0.123.md).
 
 [Aperçus de subdivision calculée](microstructures.html?bbframe=mni&meshcheck=1&facet=context-left%3A221730&refine=1&v=0.124) : comparer localement les 86 facettes signalées à des triangles plus fins, sans modifier les données anatomiques originales. [Méthode et portée](BILAN_BIGBRAIN_REFINEMENT_v0.124.md).
+
+### v0.125 · Aperçus du raccord local
+
+Le diagnostic BigBrain propose 86 aperçus indépendants de quatre faces. Les arêtes internes réutilisent les mêmes indices ; 24 aperçus gardent des alertes d’orientation chez les voisines. Aucun remplacement du cortex source. Voir [méthode et limites](BILAN_BIGBRAIN_NEIGHBORS_v0.125.md).

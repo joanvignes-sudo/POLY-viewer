@@ -236,5 +236,23 @@
     "source_geometry_modified": false,
     "global_replacement": false,
     "provenance": "assets/bigbrain-refinement-v0124/PROVENANCE.json"
+  },
+  "bigbrain_neighbor_previews": {
+    "patches": 86,
+    "source_faces_per_patch": 4,
+    "vertices": 3771,
+    "triangles": 6854,
+    "maximum_vertices": 2151,
+    "maximum_triangles": 4294,
+    "shared_edge_index_mismatches": 0,
+    "patches_with_neighbor_orientation_alerts": 24,
+    "opposed_normals_neighbors": 42,
+    "opposed_normals_root": 0,
+    "nonpositive_sampled_determinants": 0,
+    "maximum_unmatched_coarse_edge_gap_mm": 0.5108374174437044,
+    "maximum_boundary_storage_rounding_mm": 2.0635721753394354e-07,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-neighbors-v0125/PROVENANCE.json"
   }
 }
