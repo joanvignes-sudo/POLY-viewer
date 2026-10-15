@@ -1,0 +1,43 @@
+{
+  "source_unique_TIFFs": 799,
+  "complete_17x4_fields": 11,
+  "partial_fields": [
+    47,
+    48,
+    49
+  ],
+  "source_catalogue_references": 70448,
+  "archive_target_probe_budget": 6,
+  "archive_target_probe_budget_used": 6,
+  "night_remote_archive_probe_bytes": 58720256,
+  "spatial_loops_evaluated": 2,
+  "biologically_independent_replicates": 0,
+  "second_loop_NCC_closure_px": {
+    "0": 1.4142135623730951,
+    "2": 1.0
+  },
+  "second_loop_phase_closure_px": {
+    "0": 29.614185789921695,
+    "2": 9.219544457292887
+  },
+  "ASHLAR_first_loop_runs": 12,
+  "ASHLAR_second_loop_runs": 4,
+  "ASHLAR_total_spatial_executions": 16,
+  "ASHLAR_connected_graphs": 9,
+  "ASHLAR_fallback_or_disconnected_graphs": 7,
+  "threshold_counterfactuals": 12,
+  "threshold_changed_runs": 1,
+  "Allen_QC_sweeps": 78,
+  "Allen_QC_values": 312,
+  "Allen_source_slopes_reproduced": 3,
+  "previous_supplements_checked": 21,
+  "original_hash_checks": 1598,
+  "new_scientific_evaluations": 0,
+  "new_acquisitions": 0,
+  "unit_SI_confirmed": false,
+  "anatomical_validation": false,
+  "adopted_transform": null,
+  "overall_completion_percent": null,
+  "night_cutoff_utc": "2026-10-15T06:00:00Z",
+  "report_is_prepared_before_cutoff": true
+}

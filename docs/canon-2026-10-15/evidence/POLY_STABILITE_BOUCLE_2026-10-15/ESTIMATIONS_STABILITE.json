@@ -1,0 +1,1747 @@
+{
+  "rows": [
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          683,
+          0
+        ],
+        "fit_ncc": 0.9703487544842406,
+        "rival_ncc_outside5": 0.9348796405807223,
+        "fit_peak_gap": 0.03546911390351837,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          683,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          11.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999996714,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          683,
+          0
+        ],
+        "fit_ncc": 0.975591972364402,
+        "rival_ncc_outside5": 0.9081673017547713,
+        "fit_peak_gap": 0.06742467060963064,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          683,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          11.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.999999999999714,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          683,
+          0
+        ],
+        "fit_ncc": 0.9959128891432755,
+        "rival_ncc_outside5": 0.9670018485280041,
+        "fit_peak_gap": 0.02891104061527139,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          683,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          11.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999993752,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          683,
+          0
+        ],
+        "fit_ncc": 0.9934519305894217,
+        "rival_ncc_outside5": 0.9529759604627975,
+        "fit_peak_gap": 0.04047597012662418,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          683,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          11.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999994522,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          510
+        ],
+        "fit_ncc": 0.9826597754174738,
+        "rival_ncc_outside5": 0.9713831963791357,
+        "fit_peak_gap": 0.01127657903833812,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          15,
+          501
+        ],
+        "correction_yx": [
+          -3.0,
+          15.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999997826,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          510
+        ],
+        "fit_ncc": 0.9785071256847113,
+        "rival_ncc_outside5": 0.9503410616108288,
+        "fit_peak_gap": 0.028166064073882557,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          15,
+          510
+        ],
+        "correction_yx": [
+          6.0,
+          15.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999999034,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          510
+        ],
+        "fit_ncc": 0.9983285857306778,
+        "rival_ncc_outside5": 0.9894396905747717,
+        "fit_peak_gap": 0.008888895155906185,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          0,
+          504
+        ],
+        "correction_yx": [
+          0.0,
+          0.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.999999999999683,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          15,
+          510
+        ],
+        "fit_ncc": 0.9957293794317725,
+        "rival_ncc_outside5": 0.9732540170211619,
+        "fit_peak_gap": 0.022475362410610655,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          16,
+          511
+        ],
+        "correction_yx": [
+          7.0,
+          16.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.999999999999932,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          1
+        ],
+        "fit_ncc": 0.975282196809026,
+        "rival_ncc_outside5": 0.9441990434108044,
+        "fit_peak_gap": 0.03108315339822154,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          683,
+          1
+        ],
+        "correction_yx": [
+          1.0,
+          11.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999998546,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          1
+        ],
+        "fit_ncc": 0.9898365253243496,
+        "rival_ncc_outside5": 0.9395398749235604,
+        "fit_peak_gap": 0.05029665040078923,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          684,
+          1
+        ],
+        "correction_yx": [
+          1.0,
+          12.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999998301,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          1
+        ],
+        "fit_ncc": 0.9950704318537663,
+        "rival_ncc_outside5": 0.9704309084322429,
+        "fit_peak_gap": 0.024639523421523424,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          683,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          11.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999997273,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          1
+        ],
+        "fit_ncc": 0.9979489924629256,
+        "rival_ncc_outside5": 0.974156485053822,
+        "fit_peak_gap": 0.023792507409103547,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          684,
+          1
+        ],
+        "correction_yx": [
+          1.0,
+          12.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999998492,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          509
+        ],
+        "fit_ncc": 0.9814983258154802,
+        "rival_ncc_outside5": 0.9226436539366848,
+        "fit_peak_gap": 0.05885467187879545,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          16,
+          509
+        ],
+        "correction_yx": [
+          5.0,
+          16.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999995998,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          15,
+          509
+        ],
+        "fit_ncc": 0.978028620567925,
+        "rival_ncc_outside5": 0.8989996601269638,
+        "fit_peak_gap": 0.0790289604409612,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          15,
+          508
+        ],
+        "correction_yx": [
+          4.0,
+          15.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.999999999999819,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          509
+        ],
+        "fit_ncc": 0.9975063120271939,
+        "rival_ncc_outside5": 0.9509196029021889,
+        "fit_peak_gap": 0.046586709125004955,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          17,
+          507
+        ],
+        "correction_yx": [
+          3.0,
+          17.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999993374,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 8,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          15,
+          509
+        ],
+        "fit_ncc": 0.995011436312369,
+        "rival_ncc_outside5": 0.941828466981269,
+        "fit_peak_gap": 0.053182969331100005,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          15,
+          509
+        ],
+        "correction_yx": [
+          5.0,
+          15.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999997579,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          683,
+          0
+        ],
+        "fit_ncc": 0.9457429721553148,
+        "rival_ncc_outside5": 0.9332399213801387,
+        "fit_peak_gap": 0.012503050775176106,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          655,
+          2
+        ],
+        "correction_yx": [
+          2.0,
+          -17.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999993229,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          683,
+          0
+        ],
+        "fit_ncc": 0.9517816721332976,
+        "rival_ncc_outside5": 0.9105856088083244,
+        "fit_peak_gap": 0.041196063324973164,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          649,
+          -19
+        ],
+        "correction_yx": [
+          -19.0,
+          -23.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999992243,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          682,
+          -1
+        ],
+        "fit_ncc": 0.9919007515793101,
+        "rival_ncc_outside5": 0.9787402490994024,
+        "fit_peak_gap": 0.013160502479907743,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          682,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          10.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999991525,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        9
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          0
+        ],
+        "fit_ncc": 0.9876372468360732,
+        "rival_ncc_outside5": 0.9681598280142301,
+        "fit_peak_gap": 0.019477418821843173,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          649,
+          -19
+        ],
+        "correction_yx": [
+          -19.0,
+          -23.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999990876,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          17,
+          511
+        ],
+        "fit_ncc": 0.9690710869220807,
+        "rival_ncc_outside5": 0.962555748416043,
+        "fit_peak_gap": 0.006515338506037693,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          22,
+          509
+        ],
+        "correction_yx": [
+          5.0,
+          22.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999994101,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          15,
+          510
+        ],
+        "fit_ncc": 0.9708379346860057,
+        "rival_ncc_outside5": 0.9612605341363526,
+        "fit_peak_gap": 0.009577400549653059,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          15,
+          510
+        ],
+        "correction_yx": [
+          6.0,
+          15.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999998905,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          17,
+          511
+        ],
+        "fit_ncc": 0.9978102759424822,
+        "rival_ncc_outside5": 0.9919681089206486,
+        "fit_peak_gap": 0.0058421670218336,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          -2,
+          504
+        ],
+        "correction_yx": [
+          0.0,
+          -2.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999991492,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        9,
+        48
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          14,
+          510
+        ],
+        "fit_ncc": 0.9954799580730808,
+        "rival_ncc_outside5": 0.9861349828924346,
+        "fit_peak_gap": 0.009344975180646142,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          3,
+          504
+        ],
+        "correction_yx": [
+          0.0,
+          3.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999998594,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          2
+        ],
+        "fit_ncc": 0.9611771957977271,
+        "rival_ncc_outside5": 0.9472803791260357,
+        "fit_peak_gap": 0.013896816671691403,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          658,
+          -25
+        ],
+        "correction_yx": [
+          -25.0,
+          -14.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999996878,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          1
+        ],
+        "fit_ncc": 0.9880232955307479,
+        "rival_ncc_outside5": 0.9764943600904717,
+        "fit_peak_gap": 0.011528935440276111,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          682,
+          2
+        ],
+        "correction_yx": [
+          2.0,
+          10.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999999793,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          2
+        ],
+        "fit_ncc": 0.9919891815563162,
+        "rival_ncc_outside5": 0.9832656888942182,
+        "fit_peak_gap": 0.008723492662098042,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          684,
+          0
+        ],
+        "correction_yx": [
+          0.0,
+          12.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.999999999999118,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        49,
+        48
+      ],
+      "direction": "horizontal",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        672,
+        0
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          684,
+          1
+        ],
+        "fit_ncc": 0.9974249241190777,
+        "rival_ncc_outside5": 0.9898971057197568,
+        "fit_peak_gap": 0.007527818399320929,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            616,
+            808
+          ],
+          [
+            0,
+            192
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          672,
+          33
+        ],
+        "correction_yx": [
+          33.0,
+          0.0
+        ],
+        "periodic_halfwidth_xy": [
+          50.0,
+          80.0
+        ],
+        "phase_error": 0.9999999999998574,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "competing_peak_gap_below0.02",
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          509
+        ],
+        "fit_ncc": 0.9713168200734279,
+        "rival_ncc_outside5": 0.9346906930165748,
+        "fit_peak_gap": 0.036626127056853086,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          16,
+          509
+        ],
+        "correction_yx": [
+          5.0,
+          16.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999973513,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 0,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          15,
+          509
+        ],
+        "fit_ncc": 0.9770309712085277,
+        "rival_ncc_outside5": 0.9428831791303908,
+        "fit_peak_gap": 0.034147792078136896,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          2,
+          522
+        ],
+        "correction_yx": [
+          18.0,
+          2.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999998208,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "phase_discrepancy_above3px"
+      ]
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH1",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          16,
+          509
+        ],
+        "fit_ncc": 0.9962283869188551,
+        "rival_ncc_outside5": 0.9688624281886541,
+        "fit_peak_gap": 0.02736595873020098,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          16,
+          509
+        ],
+        "correction_yx": [
+          5.0,
+          16.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.9999999999962123,
+        "global_uniqueness": false
+      },
+      "flags": []
+    },
+    {
+      "plane": 10,
+      "edge_AfromB": [
+        8,
+        49
+      ],
+      "direction": "vertical",
+      "channel": "CH2",
+      "sigma_px": 2,
+      "nominal_xy": [
+        0,
+        504
+      ],
+      "NCC": {
+        "valid": true,
+        "tile_origin_xy": [
+          15,
+          509
+        ],
+        "fit_ncc": 0.9954359473277078,
+        "rival_ncc_outside5": 0.9666689379035331,
+        "fit_peak_gap": 0.02876700942417465,
+        "boundary": false,
+        "search_target_placement_bounds_global_xy": [
+          [
+            0,
+            192
+          ],
+          [
+            440,
+            624
+          ]
+        ]
+      },
+      "phase": {
+        "valid": true,
+        "shift": [
+          -3,
+          505
+        ],
+        "correction_yx": [
+          1.0,
+          -3.0
+        ],
+        "periodic_halfwidth_xy": [
+          80.0,
+          48.0
+        ],
+        "phase_error": 0.999999999999449,
+        "global_uniqueness": false
+      },
+      "flags": [
+        "phase_discrepancy_above3px"
+      ]
+    }
+  ],
+  "count": 32,
+  "planes_new": [
+    8,
+    10
+  ],
+  "CH4_used_to_fit": false
+}

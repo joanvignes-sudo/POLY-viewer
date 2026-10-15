@@ -20,8 +20,8 @@ table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1
 footer{padding:18px;color:var(--muted);font-size:11px;text-align:center}
 @media(max-width:760px){.index{grid-template-columns:1fr}.wrap{padding:10px}.visual{height:130px}}
 </style>
-<link rel="stylesheet" href="assets/navigation-v0119.css"></head>
-<body>
+<link rel="stylesheet" href="assets/navigation-v0119.css"><link rel="stylesheet" href="assets/ergonomie/navigation.css"></head>
+<body class="ergo-site"><a class="ergo-skip" href="#ergo-main">Aller au contenu</a><div class="ergo-top"><div class="ergo-top-inner"><a class="ergo-brand" href="index.html">POLY</a><nav class="ergo-global" aria-label="Catégories de POLY"><a href="index.html#corps">Corps et cortex</a><a href="index.html#neurones">Neurones et signaux</a><a href="index.html#microscopie">Microscopie cellulaire</a><a href="index.html#organes">Organes et nerf vague</a><a href="index.html#perception">Perception et conscience</a><a href="index.html#chaines">Chaînes et mécanismes</a><a href="index.html#sources">Sources et méthode</a></nav></div></div>
 <header>
   <h1>Glossaire POLY — bibliothèque de personnages</h1>
   <div class="sub">v0.22 · bibliothèque visuelle multi-chaînes C01–C12 · symboles pédagogiques réutilisables</div>
@@ -31,7 +31,7 @@ footer{padding:18px;color:var(--muted);font-size:11px;text-align:center}
     <select id="sort"><option value="alpha">A → Z</option><option value="family">Par famille</option></select>
   </div>
 </header>
-<main class="wrap"><details class="poly-orientation" id="poly-orientation"><summary>Se repérer entre les échelles · <span id="orientation-current">les cinq sources</span></summary><p id="orientation-status" role="status">Les entrées principales restent accessibles ci-dessous.</p><nav class="nav-fallback" aria-label="Entrées principales des cinq sources"><a href="microstructures.html?v=0.119">BigBrain · cortex</a><a href="neurones.html?sample=allen-637038252&amp;sweep=22&amp;v=0.119">Allen · mesures</a><a href="microscopie.html?v=0.119#catalogue-cellule">H01 · microscopie</a><a href="organes.html?sample=heart&amp;v=0.119">HiP-CT · cœur</a><a href="organes.html?sample=vagus&amp;v=0.119">SPARC · nerf vague</a></nav><div id="orientation-detail" hidden><p id="orientation-context" class="nav-context"></p><h2 id="orientation-next-title">Vues voisines et nature du passage</h2><ul id="orientation-nearby" class="nav-nearby"></ul><div id="orientation-groups" class="nav-groups"></div></div><p class="nav-bottom"><a href="suite.html#programme">État du programme</a> · <a href="INVENTAIRE_ECHELLES_v0.128.json">Inventaire courant et sources</a></p></details>
+<aside class="ergo-local" data-ergo-local aria-label="Sommaire et autres vues"><p class="ergo-current"><a href="index.html">Tous les parcours</a><span aria-hidden="true"> / </span><strong>Glossaire bibliothèque visuelle v0.22</strong></p><div><h2>Dans cette page</h2><div class="ergo-links" data-ergo-sections></div><p data-ergo-fallback>Les sections se précisent au chargement. Les autres vues sont disponibles à côté.</p></div><div><h2>Toutes les vues de cette catégorie</h2><nav class="ergo-links" aria-label="Autres vues disponibles"><a href="dossiers.html">Dossiers et sources réunis</a><a href="glossaire.html">Glossaire et familles</a><a href="suite.html#programme">Programme et conditions restantes</a><a href="canon.html">Méthode et conventions de représentation</a></nav></div><div class="ergo-choices" data-ergo-choices hidden><h2>Vues et sélections disponibles</h2><div data-ergo-controls></div></div></aside><main class="wrap"><span id="ergo-main" tabindex="-1"></span><details class="poly-orientation" id="poly-orientation"><summary>Se repérer entre les échelles · <span id="orientation-current">les cinq sources</span></summary><p id="orientation-status" role="status">Les entrées principales restent accessibles ci-dessous.</p><nav class="nav-fallback" aria-label="Entrées principales des cinq sources"><a href="cortex.html?v=0.119">BigBrain · cortex</a><a href="neurones.html?sample=allen-637038252&amp;sweep=22&amp;v=0.119">Allen · mesures</a><a href="microscopie.html?v=0.119#catalogue-cellule">H01 · microscopie</a><a href="organes.html?sample=heart&amp;v=0.119">HiP-CT · cœur</a><a href="organes.html?sample=vagus&amp;v=0.119">SPARC · nerf vague</a></nav><div id="orientation-detail" hidden><p id="orientation-context" class="nav-context"></p><h2 id="orientation-next-title">Vues voisines et nature du passage</h2><ul id="orientation-nearby" class="nav-nearby"></ul><div id="orientation-groups" class="nav-groups"></div></div><p class="nav-bottom"><a href="suite.html#programme">État du programme</a> · <a href="INVENTAIRE_ECHELLES_v0.128.json">Inventaire courant et sources</a></p></details>
   <div class="note"><b>Convention :</b> les personnages servent uniquement de repères visuels. Les yeux, expressions et comportements ne signifient aucune intention biologique ; les affirmations scientifiques restent dans les données, sources et limites du viewer.</div>
 
   <section class="index">
@@ -53,7 +53,7 @@ footer{padding:18px;color:var(--muted);font-size:11px;text-align:center}
     <table id="sceneTable"></table>
   </section>
 </main>
-<footer>POLY · glossaire figuratif expérimental · les symboles visuels sont des outils pédagogiques, pas des mécanismes démontrés.</footer>
+<footer>POLY · glossaire figuratif expérimental · les symboles visuels sont des outils pédagogiques, pas des mécanismes démontrés.<p class="ergo-release"><a href="etat-scientifique.html">État canonique et limites · v0.129.0</a></p></footer>
 <script src="assets/characters/poly_characters_v0.1.js"></script>
 <script src="assets/characters/c01_characters_v0.1.js"></script>
 <script src="assets/characters/c02_characters_v0.1.js"></script>
@@ -94,4 +94,4 @@ document.getElementById("sort").addEventListener("change",render);
 const returnChain=new URLSearchParams(location.search).get("chain")||"C02";const back=document.getElementById("backViewer");if(back)back.href="./?chain="+encodeURIComponent(returnChain);
 render();
 </script>
-<script src="assets/navigation-v0121.js"></script></body></html>
+<script src="assets/ergonomie/orientation-v0129.js"></script><script src="assets/ergonomie/navigation.js" defer></script></body></html>

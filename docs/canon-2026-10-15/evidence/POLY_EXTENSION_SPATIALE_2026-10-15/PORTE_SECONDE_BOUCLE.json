@@ -1,0 +1,29 @@
+{
+  "fields": [
+    9,
+    10,
+    47,
+    48
+  ],
+  "candidate_planes_in_priority_order": [
+    9,
+    8,
+    10
+  ],
+  "availability": {
+    "9": false,
+    "8": false,
+    "10": true
+  },
+  "first_available_plane": 10,
+  "criterion": "Source availability and metadata only, no image score",
+  "target_field_TIFFs": 9,
+  "cumulative_unique_TIFFs": 799,
+  "complete_17x4_fields": 11,
+  "source_archive_bytes_cumulative": 58720256,
+  "additional_range_bytes": 8388608,
+  "scientific_evaluation_executed": false,
+  "adopted_transform": null,
+  "physical_unit_confirmed": false,
+  "anatomical_validation": false
+}

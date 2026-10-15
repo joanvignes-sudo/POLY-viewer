@@ -1,0 +1,70 @@
+{
+  "runs": 12,
+  "valid_threshold_populations": 12,
+  "invalid_runs": 0,
+  "negative_pairs": 384,
+  "shared_pixels_in_each_pair": 0,
+  "baseline_reconstructions": 12,
+  "statuses": {
+    "no_accepted_edges_stage_fallback": 4,
+    "connected_image_based_positions": 7,
+    "disconnected_with_stage_model_repositioning": 1
+  },
+  "changed_runs": [
+    {
+      "run": "Z10_CH2_LoG0",
+      "baseline_accepted": 0,
+      "accepted": 1,
+      "changed_edges": [
+        [
+          8,
+          49
+        ]
+      ],
+      "maximum_pose_difference_px": 14.600000381469727
+    }
+  ],
+  "changed_run_count": 1,
+  "leave_one_out_decision_sensitive_runs": [
+    "Z9_CH2_LoG0"
+  ],
+  "control_ncc_differences": {
+    "LoG0_CH1": {
+      "n": 24,
+      "min": -0.08648834465665478,
+      "max": 0.21417117999823732
+    },
+    "LoG0_CH2": {
+      "n": 24,
+      "min": -0.1366232262449536,
+      "max": 0.25622898480071665
+    },
+    "LoG0_CH4": {
+      "n": 24,
+      "min": -0.03163304569690678,
+      "max": 0.17439577839826376
+    },
+    "LoG2_CH1": {
+      "n": 24,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "LoG2_CH2": {
+      "n": 24,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "LoG2_CH4": {
+      "n": 24,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "score_count": 288,
+  "undefined_scores": 0,
+  "network_bytes": 0,
+  "new_pair_registrations": 0,
+  "adopted_transform": null,
+  "physical_units_confirmed": false,
+  "anatomical_validation": false
+}

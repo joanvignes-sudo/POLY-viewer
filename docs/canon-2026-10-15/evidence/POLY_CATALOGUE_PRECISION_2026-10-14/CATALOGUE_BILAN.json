@@ -1,0 +1,52 @@
+{
+  "source_count": 70448,
+  "source_grid_labels": {
+    "Row": 37,
+    "Column": 28
+  },
+  "field_count": 1036,
+  "planes": 17,
+  "exports": [
+    "CH1",
+    "CH2",
+    "CH4",
+    "Overlay"
+  ],
+  "unknown_double_range": [
+    0.0001211050711830292,
+    6.120554305133667
+  ],
+  "binary_bytes": 5600620,
+  "binary_sha256": "a4152f2a460a78bb29968d9a2401564abefc34cb73565b090bf6f91019d3616b",
+  "exact_roundtrip": true,
+  "all_combinations_present_in_catalogue": true,
+  "canonical_local_images": 748,
+  "canonical_fields": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "canonical_fraction": 0.010617760617760617,
+  "not_acquired_in_canonical_sample": 69700,
+  "other_local_scan_domains": [
+    "local-input://ihc_source",
+    "localocal-input://ihc_recovered_part1"
+  ],
+  "other_local_unique_names": 748,
+  "local_duplicates": 471,
+  "extra_local_names": [],
+  "conflicting_duplicates": {},
+  "archive_full_bytes": 55065163848,
+  "archive_url": "httplocal-input://2305_C1L_A_NODOSE_HYPOGLOSSAL_SL_CAROTID_Level_2_part1.tar.gz?versionId=jppetjSH4PUlvfeV278r.e1Fxoss687s",
+  "payload_not_verified_beyond_local": true,
+  "physical_unit_confirmed": false,
+  "ct_transform": null
+}

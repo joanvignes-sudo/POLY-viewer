@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "three_source_slopes_match": true,
+  "slope_match_tolerance_hz_per_pa": 1e-08,
+  "source_linear_function_only": true,
+  "source_total_spikes_match_API_when_known": true,
+  "independent_zone_median_checks": 17,
+  "local_links": [
+    [
+      "BILAN_CONTEXTE.md",
+      "ALLEN_FI_COARSE_FINE.json"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "ALLEN_CHRONOLOGIE.json"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "ALLEN_TEMPS_ET_REPONSES.json"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "ALLEN_SPIKE_APRES_STIMULUS.png"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "SPARC_ZONES.json"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "SPARC_PLANS.json"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "ALLEN_CONTEXTE.png"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "CH4_ZONES.png"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "CONTROLES.json"
+    ],
+    [
+      "BILAN_CONTEXTE.md",
+      "REPRODUIRE.md"
+    ],
+    [
+      "FEUILLE_DE_ROUTE.md",
+      "BILAN_CONTEXTE.md"
+    ],
+    [
+      "FEUILLE_DE_ROUTE.md",
+      "REPRODUCTION_CONTROLEE.json"
+    ]
+  ],
+  "manual_validation": false
+}

@@ -1,0 +1,19 @@
+{
+  "runs": 12,
+  "scores": 576,
+  "undefined_scores": 3,
+  "statuses": {
+    "no_accepted_edges_stage_fallback": 5,
+    "connected_image_based_positions": 7
+  },
+  "LoG2_all4edges_accepted": 6,
+  "negative_nominally_overlapping_per_run": 12,
+  "negative_samples_per_run": 30,
+  "raw_cycle_LoG2_range": [
+    0.09999942779545012,
+    0.5830950065088155
+  ],
+  "physical_units_confirmed": false,
+  "anatomical_validation": false,
+  "adopted_transform": null
+}

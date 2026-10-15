@@ -1,3 +1,11 @@
+# POLY v0.129.0
+
+[Sommaire général](index.html) · [État canonique et limites](etat-scientifique.html) · [Notes de version](RELEASE_v0.129.0.md)
+
+La navigation revue et la synthèse des résultats locaux constituent la version courante. Les notices scientifiques et bilans versionnés ci-dessous restent historiques. Les scripts et données des explorateurs, ainsi que la page et la notice de revue BigBrain v0.128.1, sont conservés.
+
+## Historique et conditions des sources
+
 # POLY v0.128
 
 [Canaux séparés et mise au point](canaux.html) : deux champs, 17 plans focaux et trois exports de canal chacun, composite source indépendant. [Sources et limites](BILAN_CANAUX_v0.103.md).

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "previous_deliverable_files_unchanged": 451,
+  "verified_tiff_png_pairs": 748,
+  "source_ledger_records_checked": 748,
+  "complete_fields": 11,
+  "new_source_bytes": 33554432,
+  "offline_recovered_additions": 392,
+  "total_added_exports": 403,
+  "independent_additional_pearson_recomputations": 2928,
+  "global_integer_targets": 204,
+  "additional_neighbor_targets": 816,
+  "middle_targets": 102,
+  "external_tool": "ASHLAR1.20.0",
+  "unmodified_external_package_files_verified": 16,
+  "external_rejections_preserved": true,
+  "annotations_invented": 0,
+  "known_failures": [
+    "ASHLAR exact-identity numerical error retained; noisy known-shift test passes",
+    "Two full-pipeline edges rejected; original stage fallback is not a registration"
+  ],
+  "scope": "Software/data audit; no independent anatomy, optical calibration or physiological validation.",
+  "scientific_files_identical_after_replay": 8,
+  "local_links_checked": 28,
+  "broken_local_links": []
+}
