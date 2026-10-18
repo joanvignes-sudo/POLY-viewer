@@ -1,0 +1,29 @@
+{
+  "id": "poly:view:c862e3ace993dde5bb34",
+  "kind": "view",
+  "title": "Ouvrir le dossier COGITATE",
+  "category": "perception",
+  "provenance": {
+    "file": "ETAT_CANONIQUE.json",
+    "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7",
+    "selector": [
+      "categories",
+      4,
+      "links",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "href": "cogitate.html",
+    "source_label": "COGITATE · documents et métadonnées",
+    "scientific_identity": {
+      "value": null,
+      "reason": "Une destination de navigation ne définit pas un spécimen."
+    }
+  }
+}

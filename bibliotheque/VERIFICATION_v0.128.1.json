@@ -1,0 +1,56 @@
+{
+  "version": "0.128.1",
+  "status": "passed",
+  "review": {
+    "version": "0.128.1",
+    "kind": "Independent technical counter-review by two AI agents",
+    "human_anatomical_validation": false,
+    "independent_candidate_pairs": 1027935,
+    "synthetic_cases": 5620,
+    "initial_contacts": 693,
+    "selected_contacts": 631,
+    "current_data_bug_found": false,
+    "corrections": [
+      "Retained candidate label clarified",
+      "Portable export includes coordinate frame, units, license, attribution, DOI and absolute provenance URL",
+      "Future geometric predicate rejects degenerate triangles; no current triangle is degenerate"
+    ],
+    "limits": [
+      "No expert anatomical review completed",
+      "No continuous-field or global cortex certification",
+      "Orientation positivity does not imply small angular error",
+      "Rejected intermediate meshes are not all retained; trace scores alone do not reproduce their contacts"
+    ],
+    "files": [
+      {
+        "path": "assets/bigbrain-counterreview-v0128_1/results.json",
+        "sha256": "b47d4ff56b2b052349e7938d9c3e1980b3189f7e5db28fa025983ecd1c3a88f5"
+      },
+      {
+        "path": "assets/bigbrain-counterreview-v0128_1/source_selection.json",
+        "sha256": "218bf3fb06eaae07e67f2dde1b04052982b261029baccc0d9bcf4a2909019b34"
+      }
+    ]
+  },
+  "export_check": {
+    "status": "passed",
+    "retained_candidate_label_correct": true,
+    "frame_and_units_explicit": true,
+    "source_license_attribution_citations_included": true,
+    "absolute_provenance_url": true,
+    "native_view_does_not_relabel_registered_data": true,
+    "exported_geometry_unchanged": true,
+    "selected_pair_preserved": true,
+    "page_errors": []
+  },
+  "geometry_and_canonical_hashes_unchanged": {
+    "assets/bigbrain-conform-v0128/PROVENANCE.json": "d3b545e92eba7d0743036e4f08154fd178c5ed4bc00059fbdcfa0941cbc095cf",
+    "assets/bigbrain-conform-v0128/positions.bin": "eef82c6caf534d40d5eb0911c79b58e62c6f93a03d4c898ecd9689112e15286b",
+    "assets/bigbrain-conform-v0128/indices.bin": "c4a78b1c82d81eb8f8ea50ed607005c31d82b356f9284dc4663061a918a9cd15",
+    "assets/bigbrain-conform-v0128/native.bin": "cb4c2698a5794edb7574e435a2cffc1c49ae65571be6c10335b882b120c7373d",
+    "assets/bigbrain-conform-v0128/owners.bin": "69aae1db15892cb090e643b1c6e51f275c671243b00ee41dfe4ed47a8f18cafd",
+    "EXPLORATION_v0.98.json": "6006a8d4a44f3435ef7cbba17cdd456e6a3a2aa932623d0037f37a9e79ee1d28",
+    "ORGANISATION_v0.98.json": "0db2ec393ecdae526434951175579ad7b18158d6236c92bb17353fbfb0843ab9"
+  },
+  "human_anatomical_validation": false
+}

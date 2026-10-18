@@ -1,0 +1,912 @@
+{
+  "dataset": 674,
+  "version": 1,
+  "sample": "sam-l-seg-c1-A-L2",
+  "parts": [
+    {
+      "id": "part1",
+      "image_dimensions": [
+        19133,
+        18909
+      ],
+      "source_tiff": {
+        "name": "2305_C1L_A_Level_2_part1.tif",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.tif",
+        "size": 1105746279,
+        "fileType": "TIFF",
+        "sourcePackageId": "N:package:d5858c68-406d-4351-9e26-0ba07ec57cfb",
+        "s3VersionId": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "sha256": "JLQotHoSX/dGMtc1v/keG9v81CDeV3iV4JceM8vCPRU="
+      },
+      "source_url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+      "tiff_header_ranges": [
+        {
+          "offset": 0,
+          "length": 65536,
+          "sha256": "0d44a595293ab26777f3ac56c2160a96f405b23e3e8faa67b94049fab3f0c6a5"
+        },
+        {
+          "offset": 1105723392,
+          "length": 22887,
+          "sha256": "1e5c261dd9db9aa20b99d63a5225c9147fb5f65c5d6accf6a449a80276440433"
+        }
+      ],
+      "tiles": [
+        {
+          "offset": 613416976,
+          "bytes": 786432,
+          "sha256": "86f388f4e791b8cab547b7851af99e7fe344a34ec27d9969afa5e4baf8ec898e",
+          "file": "tiff1-tiles/780.bin"
+        },
+        {
+          "offset": 614203408,
+          "bytes": 786432,
+          "sha256": "7f1a63066d02f7add1d2339fb8d963896f235ce5f439e06f5d4a89b456231b2c",
+          "file": "tiff1-tiles/781.bin"
+        },
+        {
+          "offset": 614989840,
+          "bytes": 786432,
+          "sha256": "55717d264f4fe3c484e38ad58bd7d4681402e4a6ac6684e900b6f0d826fe45db",
+          "file": "tiff1-tiles/782.bin"
+        },
+        {
+          "offset": 615776272,
+          "bytes": 786432,
+          "sha256": "c87bffc2dd05a68de475ee120c17a1ca129b9fe88baab8d605040544ef54a834",
+          "file": "tiff1-tiles/783.bin"
+        },
+        {
+          "offset": 643301392,
+          "bytes": 786432,
+          "sha256": "ae49fefc5d32530146e2384aa682ae8406fcb0e773cdd758868a6e57bbd6e284",
+          "file": "tiff1-tiles/818.bin"
+        },
+        {
+          "offset": 644087824,
+          "bytes": 786432,
+          "sha256": "ca89091464b1bbcf151f2543a62fabeeb0264551005d1fb80c9696d51179df78",
+          "file": "tiff1-tiles/819.bin"
+        },
+        {
+          "offset": 644874256,
+          "bytes": 786432,
+          "sha256": "91b79e5471feccca6828b04224062e07e61e37e0ba0fb0a9f8e3d5c22b44b0a2",
+          "file": "tiff1-tiles/820.bin"
+        },
+        {
+          "offset": 645660688,
+          "bytes": 786432,
+          "sha256": "b14aa6e2693a7562087599a572fe7d1b62453b2abc024719c4643363fd2d8d1e",
+          "file": "tiff1-tiles/821.bin"
+        },
+        {
+          "offset": 673185808,
+          "bytes": 786432,
+          "sha256": "c33a06c80865d2902468353251e3e599a576eaa90d7530465a04df9427e69a42",
+          "file": "tiff1-tiles/856.bin"
+        },
+        {
+          "offset": 673972240,
+          "bytes": 786432,
+          "sha256": "c8b3896f7609cd0638f554c2a2975d9c661e07e09c8d6339d327305e368b2787",
+          "file": "tiff1-tiles/857.bin"
+        },
+        {
+          "offset": 674758672,
+          "bytes": 786432,
+          "sha256": "94a8357ad263a3cc3feee0449c74fc8ae92838d72bd620c84229ab71691a58a1",
+          "file": "tiff1-tiles/858.bin"
+        },
+        {
+          "offset": 675545104,
+          "bytes": 786432,
+          "sha256": "77be4e8dc1952eeb3ac0dbd6763c7af910711e18a6fb6e925e7d47c9a2985aa4",
+          "file": "tiff1-tiles/859.bin"
+        },
+        {
+          "offset": 703070224,
+          "bytes": 786432,
+          "sha256": "352271875875afa51b4a68227ccee8af9f982872cf298f1063c86a691eb193f7",
+          "file": "tiff1-tiles/894.bin"
+        },
+        {
+          "offset": 703856656,
+          "bytes": 786432,
+          "sha256": "714b7996b3d73435995be9226e7514fe73d9a3942356d4a64c34233668d5f6e3",
+          "file": "tiff1-tiles/895.bin"
+        },
+        {
+          "offset": 704643088,
+          "bytes": 786432,
+          "sha256": "bfac6b763a6335f4cc746a390b913ca195adaed0b6eabf785c8d14f16aaed7e8",
+          "file": "tiff1-tiles/896.bin"
+        },
+        {
+          "offset": 705429520,
+          "bytes": 786432,
+          "sha256": "be4a0822d6a95d942bbc4608e0c206441f0483849e7d6236c5dfd1ca784864e8",
+          "file": "tiff1-tiles/897.bin"
+        },
+        {
+          "offset": 725090320,
+          "bytes": 786432,
+          "sha256": "cef6adb70272d914a856257b72c33a5c42d4f9bc458d7efec7bb55366502985c",
+          "file": "tiff1-tiles/922.bin"
+        },
+        {
+          "offset": 725876752,
+          "bytes": 786432,
+          "sha256": "37a66631d3781881c029898bcdcf59bdd351076f4023df663867f3a2cba806af",
+          "file": "tiff1-tiles/923.bin"
+        },
+        {
+          "offset": 726663184,
+          "bytes": 786432,
+          "sha256": "48dace6d716fd6c7600e89558bab90a2f58ed92b451cb0a745b62b35e199f8d2",
+          "file": "tiff1-tiles/924.bin"
+        },
+        {
+          "offset": 727449616,
+          "bytes": 786432,
+          "sha256": "a34cdc8d2d11ae6ca6fbaefa35d7d4c00e674f1bbd3a3c761f93c78a4ba0753f",
+          "file": "tiff1-tiles/925.bin"
+        },
+        {
+          "offset": 754974736,
+          "bytes": 786432,
+          "sha256": "1773a236f8ef8b9364d2ccc2e967129db0aae9624f06edb0cba76a340d0cde06",
+          "file": "tiff1-tiles/960.bin"
+        },
+        {
+          "offset": 755761168,
+          "bytes": 786432,
+          "sha256": "54c338b3f89f2bdc25fb1cb199abfaf747889a37f655a81a24ae481b1b29c5e6",
+          "file": "tiff1-tiles/961.bin"
+        },
+        {
+          "offset": 756547600,
+          "bytes": 786432,
+          "sha256": "4127653cc77f84ecb7fbf9a2f804dea2550035d6ebdcd6dcecd10648e7a868a1",
+          "file": "tiff1-tiles/962.bin"
+        },
+        {
+          "offset": 757334032,
+          "bytes": 786432,
+          "sha256": "4d5dd6cb9c94f4798c18884786bdc696dde22f8cadf28fc4a47c779ab9f5091d",
+          "file": "tiff1-tiles/963.bin"
+        },
+        {
+          "offset": 784859152,
+          "bytes": 786432,
+          "sha256": "a87e32c7d23a0b72e57d4913d92adae33982d30370fe17e842d5b6c8a94968e2",
+          "file": "tiff1-tiles/998.bin"
+        },
+        {
+          "offset": 785645584,
+          "bytes": 786432,
+          "sha256": "df7ba13012b32ab8f67bf452edcf7b3c787329e6bca0a9c9df9748c29657e390",
+          "file": "tiff1-tiles/999.bin"
+        },
+        {
+          "offset": 786432016,
+          "bytes": 786432,
+          "sha256": "fb61ddf3785319bd411609b76787ed0559d4006475da3a03449ef9a7e4c286d5",
+          "file": "tiff1-tiles/1000.bin"
+        },
+        {
+          "offset": 787218448,
+          "bytes": 786432,
+          "sha256": "c5a446886733b6d1427a9d3ee8e3f0ec3d7f840bd961655eb9a0e71a3819ca19",
+          "file": "tiff1-tiles/1001.bin"
+        },
+        {
+          "offset": 814743568,
+          "bytes": 786432,
+          "sha256": "5a4b4c2c2412894495172d908eaa26c124a00b6073abace6c650c88b73d8de86",
+          "file": "tiff1-tiles/1036.bin"
+        },
+        {
+          "offset": 815530000,
+          "bytes": 786432,
+          "sha256": "e1cd395fed37c7a4102bd7ede6739e4b531edb68a395c6c6d69318a0f3c44128",
+          "file": "tiff1-tiles/1037.bin"
+        },
+        {
+          "offset": 816316432,
+          "bytes": 786432,
+          "sha256": "cfa2eb808e4fb40344dc75ad74f0c12326d6b6dda7612261fd9964f4836f98db",
+          "file": "tiff1-tiles/1038.bin"
+        },
+        {
+          "offset": 817102864,
+          "bytes": 786432,
+          "sha256": "b1a35dec202bb3027e3c9a495d8b968f322e10d325943d64b2cd855fa7ee137f",
+          "file": "tiff1-tiles/1039.bin"
+        },
+        {
+          "offset": 132120592,
+          "bytes": 786432,
+          "sha256": "bd114c63de986d393cea2959fef6afd3bb07de28c5acd006598b9d73584f1dfb",
+          "file": "tiff1-tiles/168.bin"
+        },
+        {
+          "offset": 132907024,
+          "bytes": 786432,
+          "sha256": "8b762791a75be10f2d878e236b7f58e914df2e7d466fd64ba7b7ee626252c15d",
+          "file": "tiff1-tiles/169.bin"
+        },
+        {
+          "offset": 133693456,
+          "bytes": 786432,
+          "sha256": "39e62b5b63731f4919d96a921445938ae1acb199d0459f1886f27fcf613c3e38",
+          "file": "tiff1-tiles/170.bin"
+        },
+        {
+          "offset": 134479888,
+          "bytes": 786432,
+          "sha256": "a4e1f74f7a4f7dfea9c4653e71f8c231d741bef9b1751c11834bc3437d5dcea9",
+          "file": "tiff1-tiles/171.bin"
+        },
+        {
+          "offset": 162005008,
+          "bytes": 786432,
+          "sha256": "2600914f019ee9b1e97802dce479ff5cfc5122b0925f191b8f634e13fc7d43cd",
+          "file": "tiff1-tiles/206.bin"
+        },
+        {
+          "offset": 162791440,
+          "bytes": 786432,
+          "sha256": "782560da9518b28cc16df311dc108c5adfffc2fcf2c3fceb7106378b77a04c94",
+          "file": "tiff1-tiles/207.bin"
+        },
+        {
+          "offset": 163577872,
+          "bytes": 786432,
+          "sha256": "5c075fc76a42ea06fb937d671dfb78438f850a75ff9514a8194a688d84fb4b87",
+          "file": "tiff1-tiles/208.bin"
+        },
+        {
+          "offset": 164364304,
+          "bytes": 786432,
+          "sha256": "3aa891bf47519875f8cd8e7decb48ce7e1f96b3c49a7a44868de5289adc9bacd",
+          "file": "tiff1-tiles/209.bin"
+        },
+        {
+          "offset": 191889424,
+          "bytes": 786432,
+          "sha256": "4954b215fe1dc139fa5e32d669a6b685ce6e1e60df4e7501ceeb1bf050c103dc",
+          "file": "tiff1-tiles/244.bin"
+        },
+        {
+          "offset": 192675856,
+          "bytes": 786432,
+          "sha256": "50e66cdcb2a330272cd9bcdc459f26b7efadb7cf02fe4ffbb78f9476311c1f2f",
+          "file": "tiff1-tiles/245.bin"
+        },
+        {
+          "offset": 193462288,
+          "bytes": 786432,
+          "sha256": "e8b967487b32624775ddca95e74e090273a71fd992171bfcdb96088bd1496bd2",
+          "file": "tiff1-tiles/246.bin"
+        },
+        {
+          "offset": 194248720,
+          "bytes": 786432,
+          "sha256": "36759cd8eb3209a9a08e71dd1fea277f040a793905976cc425f7e41cc85496a8",
+          "file": "tiff1-tiles/247.bin"
+        },
+        {
+          "offset": 221773840,
+          "bytes": 786432,
+          "sha256": "e43bcf648e76069ae5cc5b88df78a666766df4ebea0ab459e3ad25e560d42c0b",
+          "file": "tiff1-tiles/282.bin"
+        },
+        {
+          "offset": 222560272,
+          "bytes": 786432,
+          "sha256": "f31636d4cfba933e0b4b110d03b857372e03bbce3580e8cec294e554227fe1c7",
+          "file": "tiff1-tiles/283.bin"
+        },
+        {
+          "offset": 223346704,
+          "bytes": 786432,
+          "sha256": "ffea2f2767bf4b480815891d8843f32c21b638b035ab664635e5130f7eb71cbb",
+          "file": "tiff1-tiles/284.bin"
+        },
+        {
+          "offset": 224133136,
+          "bytes": 786432,
+          "sha256": "8a4714b7afad13b8d4477050f15d378620f7168037d74f754e3c5e9ca162fb37",
+          "file": "tiff1-tiles/285.bin"
+        }
+      ],
+      "regions": [
+        {
+          "id": "part1-centre",
+          "name": "centre",
+          "file": "part1-centre.png",
+          "origin": [
+            10240,
+            10240
+          ],
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "57af2a540727a926193d4312c1acb5f46509a5da25f7bf5e9b091d9bd47f45e1",
+          "pixel_sha256": "97a8280ef94043dbf72b049331d30f39139f84d5cb62b9c7be048eaf2a220c1d",
+          "path": "assets/ihc/part1-centre.png"
+        },
+        {
+          "id": "part1-bord",
+          "name": "bord",
+          "file": "part1-bord.png",
+          "origin": [
+            5120,
+            12288
+          ],
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "9ccdaa0130d00e5a04622936306f533737870dc697d24658b13af5a6c4a244d0",
+          "pixel_sha256": "f1c0f2cd3eebcba608072191b778e106b8e855be176b9b731506f9057c328e79",
+          "path": "assets/ihc/part1-bord.png"
+        },
+        {
+          "id": "part1-superieur",
+          "name": "superieur",
+          "file": "part1-superieur.png",
+          "origin": [
+            8192,
+            2048
+          ],
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "985a06ac3deb38ed27c4e56884b30a54d5279776d8cbc66c76240f1b105421e2",
+          "pixel_sha256": "8cfe414785edf795080c434a1de8aeb9b6d37f267937da7b2ff145902b22bf9f",
+          "path": "assets/ihc/part1-superieur.png"
+        }
+      ],
+      "source_ktf": {
+        "name": "2305_C1L_A_Level_2_part1.ktf",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.ktf",
+        "size": 1499806803,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:ae08f592-95cb-4e1f-95fa-34f195adb381",
+        "s3VersionId": "5ZRPT6mZHcOm_B7rX1fJmKrf6.ISlwim",
+        "sha256": "txo0/IW1/9WlCjHtpMFLpFASxNPAkVmgmYOznTBuWEc="
+      },
+      "preview_dimensions": [
+        971,
+        960
+      ],
+      "calibration": {
+        "encoded_int64": "4639516037540190548",
+        "decoded_float64": 150.97671666666668,
+        "units": "not explicit in inspected metadata; no physical ruler assigned",
+        "measurement_status": "pixels only; physical unit conversion unverified"
+      },
+      "section_thickness_um": 5,
+      "channels": [
+        {
+          "index": 0,
+          "label": "GFP-NF",
+          "display_color": "Green"
+        },
+        {
+          "index": 1,
+          "label": "CY3-ChAT",
+          "display_color": "Blue"
+        },
+        {
+          "index": 3,
+          "label": "CY5-MBP",
+          "display_color": "Red"
+        }
+      ],
+      "preview": {
+        "path": "assets/ihc/part1-preview.jpg",
+        "sha256": "21de21cbe94db7f62d7377e87badaac1a6845a7943b602a0d63386ae5369a121",
+        "dimensions": [
+          971,
+          960
+        ],
+        "scope": "Original embedded KTF JPEG preview; lossy and downsampled by source software"
+      }
+    },
+    {
+      "id": "part2",
+      "image_dimensions": [
+        12403,
+        10323
+      ],
+      "source_tiff": {
+        "name": "2305_C1L_A_Level_2_part2.tif",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.tif",
+        "size": 412885591,
+        "fileType": "TIFF",
+        "sourcePackageId": "N:package:1bbc872c-5543-4cef-a5fa-caeae17867b5",
+        "s3VersionId": "R0.7CAVrVmr6S4ZTYnVqbLFFDxRwPnrg",
+        "sha256": "fnkpRz208ICKJ7A2wyMN6JU1HsH10DgP/cJOqQhlqCA="
+      },
+      "source_url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.tif?versionId=R0.7CAVrVmr6S4ZTYnVqbLFFDxRwPnrg",
+      "tiff_header_ranges": [
+        {
+          "offset": 0,
+          "length": 65536,
+          "sha256": "1e24be896b858e60f7b2f10712aad39dad6ea25b6c0383f9dcf8ae9d8aef0a15"
+        },
+        {
+          "offset": 412876800,
+          "length": 8791,
+          "sha256": "c346185effcc85fbfcac8215f97e4fafc724643a371d45fd872f44de7d5358ca"
+        }
+      ],
+      "tiles": [
+        {
+          "offset": 166723600,
+          "bytes": 786432,
+          "sha256": "de38057ed66a113b2c6078b6b0029d7234d25ceeeca29ca7f2ef8622e05a3a0f",
+          "file": "tiff2-tiles/212.bin"
+        },
+        {
+          "offset": 167510032,
+          "bytes": 786432,
+          "sha256": "baaff94f1f3c17a132d1ecfd633c3116c518c9722ebce2e55075a9e4aed73447",
+          "file": "tiff2-tiles/213.bin"
+        },
+        {
+          "offset": 168296464,
+          "bytes": 786432,
+          "sha256": "7276f3c67797bbec738ce17674011d3a3530df089a9f4df818f7695a12ea98f0",
+          "file": "tiff2-tiles/214.bin"
+        },
+        {
+          "offset": 169082896,
+          "bytes": 786432,
+          "sha256": "4eaebbcc2c2d009acf05f1df9d436e031481356c024b55b4c2e4b837800721c2",
+          "file": "tiff2-tiles/215.bin"
+        },
+        {
+          "offset": 186384400,
+          "bytes": 786432,
+          "sha256": "a3bc0f11c400bce517b41c5ddb5ec50a9e93fba719f6a9cc718b95471d38d6b9",
+          "file": "tiff2-tiles/237.bin"
+        },
+        {
+          "offset": 187170832,
+          "bytes": 786432,
+          "sha256": "8b7ff36faf47d5388037819fe07c253519661c148dbcc19069056b8fa9a1bf62",
+          "file": "tiff2-tiles/238.bin"
+        },
+        {
+          "offset": 187957264,
+          "bytes": 786432,
+          "sha256": "683e5a7ca3dd2d256e19a0eebb92d8f66558dfad8d0995456232292166ede2b5",
+          "file": "tiff2-tiles/239.bin"
+        },
+        {
+          "offset": 188743696,
+          "bytes": 786432,
+          "sha256": "c48ab7cdfcdd97a1e1fc6a514223e714fb8cc89204616eade61eb1aa1b1594e4",
+          "file": "tiff2-tiles/240.bin"
+        },
+        {
+          "offset": 206045200,
+          "bytes": 786432,
+          "sha256": "7667a966b17cd6c13c55769bc5ae24656ffa44435c7cfa9bdb0b28669707a292",
+          "file": "tiff2-tiles/262.bin"
+        },
+        {
+          "offset": 206831632,
+          "bytes": 786432,
+          "sha256": "a57e08050de5e2f1ae4183b78ddf25ba23c81e0e3f0ab8ada33c3592b843f1ae",
+          "file": "tiff2-tiles/263.bin"
+        },
+        {
+          "offset": 207618064,
+          "bytes": 786432,
+          "sha256": "28852121d3596d1445d6b99907ae3d274e1818f60ba0e2d4c8737fe362af60e5",
+          "file": "tiff2-tiles/264.bin"
+        },
+        {
+          "offset": 208404496,
+          "bytes": 786432,
+          "sha256": "e364c6bcb582688f6e0e238aa95f98b5022ccbf351c7b048959e614a44e020b7",
+          "file": "tiff2-tiles/265.bin"
+        },
+        {
+          "offset": 225706000,
+          "bytes": 786432,
+          "sha256": "1754d88c28f5edd29616772032d8617cc1c48636097efab78996ce9cc7f726bc",
+          "file": "tiff2-tiles/287.bin"
+        },
+        {
+          "offset": 226492432,
+          "bytes": 786432,
+          "sha256": "0935e6112d56c5f3139839678b9761bac3fc32a0a9030c144f6adb2d55a3c61c",
+          "file": "tiff2-tiles/288.bin"
+        },
+        {
+          "offset": 227278864,
+          "bytes": 786432,
+          "sha256": "dda6b6060f601f5c6eaadbfad61f120dd04a7f55894b5fa8e8f5e183efeea7ff",
+          "file": "tiff2-tiles/289.bin"
+        },
+        {
+          "offset": 228065296,
+          "bytes": 786432,
+          "sha256": "93c081698ee0fe383508d070f2ffd223f695e09a2b390342ef1255d0c2468beb",
+          "file": "tiff2-tiles/290.bin"
+        },
+        {
+          "offset": 132120592,
+          "bytes": 786432,
+          "sha256": "88492d24467bdf9c4f3026f34373d0470171bd49974c95f778c19658cfae4ba5",
+          "file": "tiff2-tiles/168.bin"
+        },
+        {
+          "offset": 132907024,
+          "bytes": 786432,
+          "sha256": "7db66f8ecbfab9a5904980f41908e395c63840e8ff68901205c8b0df0d0e26b2",
+          "file": "tiff2-tiles/169.bin"
+        },
+        {
+          "offset": 133693456,
+          "bytes": 786432,
+          "sha256": "7a212209f96b854299b239fe4c5e13ab03bb7d6351bc071125ebf8572100b958",
+          "file": "tiff2-tiles/170.bin"
+        },
+        {
+          "offset": 134479888,
+          "bytes": 786432,
+          "sha256": "84adf27d3093bfbeec50f1a95917d9ae693bfad10d34c65da906d5d40425b966",
+          "file": "tiff2-tiles/171.bin"
+        },
+        {
+          "offset": 151781392,
+          "bytes": 786432,
+          "sha256": "def1bb27e5efba323cb662028c8abe571b86c078ee64ba2e432ba255f4cb0067",
+          "file": "tiff2-tiles/193.bin"
+        },
+        {
+          "offset": 152567824,
+          "bytes": 786432,
+          "sha256": "bb2c1ad48bd65dda6416b13fad6edf0868b10dc3609f59c9cb7a081c24d1453d",
+          "file": "tiff2-tiles/194.bin"
+        },
+        {
+          "offset": 153354256,
+          "bytes": 786432,
+          "sha256": "6179f9e0de8da76323cdbbd3bc231300ec2375a52bb7963593eae8b93f5d7bb4",
+          "file": "tiff2-tiles/195.bin"
+        },
+        {
+          "offset": 154140688,
+          "bytes": 786432,
+          "sha256": "a350502d274c475c8917b7226d4082b1541166455df9b0e0d8e7831665826ea7",
+          "file": "tiff2-tiles/196.bin"
+        },
+        {
+          "offset": 171442192,
+          "bytes": 786432,
+          "sha256": "52400595242622a37ff65037685027de4414fb43ede7fac1bc0df011971f49fe",
+          "file": "tiff2-tiles/218.bin"
+        },
+        {
+          "offset": 172228624,
+          "bytes": 786432,
+          "sha256": "0c8b7b50dc5e776ebda59330dd95a58c26dcf9aa3ac3a5cb1d873cad6da3072a",
+          "file": "tiff2-tiles/219.bin"
+        },
+        {
+          "offset": 173015056,
+          "bytes": 786432,
+          "sha256": "eda0a235029457f415d759adcfc414036b5aa2dc0fe5f2b9a55ab513b4f97d4b",
+          "file": "tiff2-tiles/220.bin"
+        },
+        {
+          "offset": 173801488,
+          "bytes": 786432,
+          "sha256": "d99b3a8e9ffbe8cbd1fdbbcb30552c023d4adb56cc61866fba12b4feed283101",
+          "file": "tiff2-tiles/221.bin"
+        },
+        {
+          "offset": 191102992,
+          "bytes": 786432,
+          "sha256": "1d24e8716b28ede21352ed88672e950ac82b84fa6d51118ccfaa2e4d7c5c0bba",
+          "file": "tiff2-tiles/243.bin"
+        },
+        {
+          "offset": 191889424,
+          "bytes": 786432,
+          "sha256": "03b08313ace7e5c69a2f3627f202639a18eb310ff9278bf6c482c6e5b73c11ff",
+          "file": "tiff2-tiles/244.bin"
+        },
+        {
+          "offset": 192675856,
+          "bytes": 786432,
+          "sha256": "0cb2fa891c7811861a980d9735f61e33a70e7e78916a408585ec6e63687dba97",
+          "file": "tiff2-tiles/245.bin"
+        },
+        {
+          "offset": 193462288,
+          "bytes": 786432,
+          "sha256": "e1bdf779c39f528cfdf500b65bc4216540291ad723748de475d356573ae0efb7",
+          "file": "tiff2-tiles/246.bin"
+        },
+        {
+          "offset": 276824080,
+          "bytes": 786432,
+          "sha256": "dbd4729960b02784ef6f1b74e4f4ea94dbb027ee324116113de11ca9b8edff53",
+          "file": "tiff2-tiles/352.bin"
+        },
+        {
+          "offset": 277610512,
+          "bytes": 786432,
+          "sha256": "449e7399c7ebd970627187619d459bb330ebdd80001a9245ee9af76b45c3bde7",
+          "file": "tiff2-tiles/353.bin"
+        },
+        {
+          "offset": 278396944,
+          "bytes": 786432,
+          "sha256": "91f3256007ba3fcfaa0919824c07b4ef01e343703cc7a459cd948ad15d2c8983",
+          "file": "tiff2-tiles/354.bin"
+        },
+        {
+          "offset": 279183376,
+          "bytes": 786432,
+          "sha256": "e13e35a770255280a3247e4125b7d9292e8ad4ab40cc7087e98cf48e64fb364d",
+          "file": "tiff2-tiles/355.bin"
+        },
+        {
+          "offset": 296484880,
+          "bytes": 786432,
+          "sha256": "14767af41e8975752fb731d51f48819412b1e8f6865a94b07f31a4a8bb195d8c",
+          "file": "tiff2-tiles/377.bin"
+        },
+        {
+          "offset": 297271312,
+          "bytes": 786432,
+          "sha256": "b41c13386158d221ec3e55782f177e362f8e724d79187ed06105dc32189d6258",
+          "file": "tiff2-tiles/378.bin"
+        },
+        {
+          "offset": 298057744,
+          "bytes": 786432,
+          "sha256": "57f1f111b5c0b556f943378699aa541b490c07204f580444b9c6d650b5c68fea",
+          "file": "tiff2-tiles/379.bin"
+        },
+        {
+          "offset": 298844176,
+          "bytes": 786432,
+          "sha256": "132edb498e142ab7bf1105a6e9a2969910a3144ed934902445f042ac00130dc8",
+          "file": "tiff2-tiles/380.bin"
+        },
+        {
+          "offset": 316145680,
+          "bytes": 786432,
+          "sha256": "b029f19ae019afd4f45b80a3fa7cb62218f4db96372d90ec8856c6db7c0fb442",
+          "file": "tiff2-tiles/402.bin"
+        },
+        {
+          "offset": 316932112,
+          "bytes": 786432,
+          "sha256": "77330447cfe058f4d8f9d920420489e2adf886b8ef6e10333e2fcfffc82ae4f6",
+          "file": "tiff2-tiles/403.bin"
+        },
+        {
+          "offset": 317718544,
+          "bytes": 786432,
+          "sha256": "e97d3bb2da913be5c005ad15eefb8256b2848a060dc248e56c1ee882f9621916",
+          "file": "tiff2-tiles/404.bin"
+        },
+        {
+          "offset": 318504976,
+          "bytes": 786432,
+          "sha256": "665bffa888d828b8d5ed67545b56b8f60e2bd265a106a5d20853f8dbac34f46f",
+          "file": "tiff2-tiles/405.bin"
+        },
+        {
+          "offset": 335806480,
+          "bytes": 786432,
+          "sha256": "97e10b6dfd24e989bb98a80ecc544f6d427f3aa03ff3ae4d497b5be8c343c52a",
+          "file": "tiff2-tiles/427.bin"
+        },
+        {
+          "offset": 336592912,
+          "bytes": 786432,
+          "sha256": "df31717dedca2205e5cd1fb979f0a6fe3234f5e7cd54ec23cc00f46279534db1",
+          "file": "tiff2-tiles/428.bin"
+        },
+        {
+          "offset": 337379344,
+          "bytes": 786432,
+          "sha256": "e84a7de1794a752dccb64dce0918ae8eda83b2a7621f08c09b50e3701bbe4cb0",
+          "file": "tiff2-tiles/429.bin"
+        },
+        {
+          "offset": 338165776,
+          "bytes": 786432,
+          "sha256": "386eca526f4e1b29579ae4908d097c4b137cf7bdce5349c03cd8af84724a6f25",
+          "file": "tiff2-tiles/430.bin"
+        }
+      ],
+      "regions": [
+        {
+          "id": "part2-centre",
+          "name": "centre",
+          "file": "part2-centre.png",
+          "origin": [
+            6144,
+            4096
+          ],
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "100b6d22dd446369a649b89d8f8be2746b8f2da2b704ca89a9cb8d99bb3deef1",
+          "pixel_sha256": "e135355d2c350375b7d4c1bd2c4c7889b8611d999b735cd4a6822098e4261613",
+          "path": "assets/ihc/part2-centre.png"
+        },
+        {
+          "id": "part2-bord",
+          "name": "bord",
+          "file": "part2-bord.png",
+          "origin": [
+            9216,
+            3072
+          ],
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "1db365d24d56a95fc9751f479a98640b83d1bd3f77e0607d5d59ce3159a221e3",
+          "pixel_sha256": "a0bee8280072f1b696a25c5af444113c0a70c915326afc92f68a551e2beecfd9",
+          "path": "assets/ihc/part2-bord.png"
+        },
+        {
+          "id": "part2-inferieur",
+          "name": "inferieur",
+          "file": "part2-inferieur.png",
+          "origin": [
+            1024,
+            7168
+          ],
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "650cb3c471c721df444e1c5bbf032f7befff1b1115b8e390b42a35f79cc70bad",
+          "pixel_sha256": "e8fec6222894d3837c7b43db115797ca13cee714d6a0217ac581d61ec14be57c",
+          "path": "assets/ihc/part2-inferieur.png"
+        }
+      ],
+      "source_ktf": {
+        "name": "2305_C1L_A_Level_2_part2.ktf",
+        "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.ktf",
+        "size": 573543837,
+        "fileType": "GenericData",
+        "sourcePackageId": "N:package:f452b2db-e926-4c41-9e5d-b92c93a1593f",
+        "s3VersionId": "zYc0PyJqd.dTO1K37_T4thOkXBKXL8p3",
+        "sha256": "vrcWDme1ZHHZvDYtueb2C67S2ZOJ5r1P+RUT7uLlLNQ="
+      },
+      "preview_dimensions": [
+        1153,
+        960
+      ],
+      "calibration": {
+        "encoded_int64": "4639516037540190548",
+        "decoded_float64": 150.97671666666668,
+        "units": "not explicit in inspected metadata; no physical ruler assigned",
+        "measurement_status": "pixels only; physical unit conversion unverified"
+      },
+      "section_thickness_um": 5,
+      "channels": [
+        {
+          "index": 0,
+          "label": "GFP-NF",
+          "display_color": "Green"
+        },
+        {
+          "index": 1,
+          "label": "CY3-ChAT",
+          "display_color": "Blue"
+        },
+        {
+          "index": 3,
+          "label": "CY5-MBP",
+          "display_color": "Red"
+        }
+      ],
+      "preview": {
+        "path": "assets/ihc/part2-preview.jpg",
+        "sha256": "2248b7b9d2ac235ffbc46ef9d5e78fa50f2116f70146b1f37fc7f51560940794",
+        "dimensions": [
+          1153,
+          960
+        ],
+        "scope": "Original embedded KTF JPEG preview; lossy and downsampled by source software"
+      }
+    }
+  ],
+  "version_poly": "0.102",
+  "doi": "https://doi.org/10.26275/imas-52lf",
+  "subject": "sub-f002 / 2305, female 88, left nerve",
+  "site_ids": [
+    "site-l-seg-c1-A-L2-1",
+    "site-l-seg-c1-A-L2-2"
+  ],
+  "license": "Creative Commons Attribution, exact version not specified by source metadata",
+  "registration": "Same donor as microCT C10, different segment C1. No spatial transform between this section, C10 or scaffold verified; no 3D placement assigned.",
+  "channel_scope": "GCI acquisition comments and pseudocolors: NF green, ChAT blue, MBP red. Viewer masks RGB components of the exported composite, not independent raw fluorescence channels. No fiber classification, positivity threshold or functional interpretation.",
+  "calibration_scope": "TIFF 72 dpi is print resolution. KTF/GCI Calibration float64=150.97671666666668 and stage extents recorded without explicit units in inspected fields; conversion to µm/pixel remains unverified. Physical ruler not assigned. Section thickness 5 µm comes from sample/protocol and is not in-plane resolution.",
+  "position_scope": "Level 2 is retained as a source label. Sample table distance from top=1 cm is not reconciled with protocol 1000 µm level spacing and 0.5 cm subsegments; no longitudinal coordinate inferred.",
+  "processing": "Exact RGB uint8 TIFF pixels extracted by version-pinned byte ranges; no resizing, smoothing or intensity change in six PNG regions. Whole-part JPEG previews embedded in KTF are low-resolution source previews, not native images. Native PNGs use lossless storage. Display gain and RGB masks affect only rendering.",
+  "files": [
+    {
+      "path": "assets/ihc/originals/selection.json",
+      "bytes": 4456,
+      "sha256": "5c735e13f267d569b70afd4ced03be4f5a0ad14d4c0f60070c6e271e326b4ac6"
+    },
+    {
+      "path": "assets/ihc/originals/ACQUISITION.json",
+      "bytes": 27944,
+      "sha256": "2af6a17b502e38a28795ab7555074c3d6b8d70641835ab24bb005af906560333"
+    },
+    {
+      "path": "assets/ihc/originals/samples.xlsx",
+      "bytes": 14628,
+      "sha256": "13dcf795b8303f5f5e593606d84816a28d82a35f61347fcfc8cf323ac0aa1756"
+    },
+    {
+      "path": "assets/ihc/originals/sites.xlsx",
+      "bytes": 6829,
+      "sha256": "4225024e90ca20b454b6ba4eb0ad7d71bc4684211ad9bbc354317edcb24f987f"
+    },
+    {
+      "path": "assets/ihc/originals/manifest.xlsx",
+      "bytes": 57130,
+      "sha256": "74ccb6ddd471db92b701adaed031e19f93474cf3c9641c3ff0800ec4f60fa294"
+    },
+    {
+      "path": "assets/ihc/originals/readme.md",
+      "bytes": 5586,
+      "sha256": "4ae7a89a5f5d9de220c422281ac2bae7f66655375f368829873f0d3ad7116ca9"
+    },
+    {
+      "path": "assets/ihc/originals/2305_C1L_A_Level_2_part1.gci",
+      "bytes": 1157830,
+      "sha256": "3150bb6fe04200dd391e3a834c599747a3c66370c05a8bb0b59b4f2620c3efc0"
+    },
+    {
+      "path": "assets/ihc/originals/part1-metadata.xml",
+      "bytes": 11162,
+      "sha256": "c2205b1cf8aee6e5f4bc9849680bc03e386dde138c1bbac6327ebd1996108926"
+    },
+    {
+      "path": "assets/ihc/originals/ktf1-ranges.json",
+      "bytes": 2901,
+      "sha256": "101b9a5b4532042800ec280c38acd62d9d8765332c45d365d3c1fca776ab3ec5"
+    },
+    {
+      "path": "assets/ihc/originals/2305_C1L_A_Level_2_part2.gci",
+      "bytes": 469457,
+      "sha256": "6819d0fcccec1e2af035f7fe73fe0cdc56df283fd28aa5f5b2b4d34b6b7db0c0"
+    },
+    {
+      "path": "assets/ihc/originals/part2-metadata.xml",
+      "bytes": 11161,
+      "sha256": "aaf867e4141e7275a53ff9a13d8e5a6f54e759a232f69a7114c16d8ec91166d1"
+    },
+    {
+      "path": "assets/ihc/originals/ktf2-ranges.json",
+      "bytes": 3188,
+      "sha256": "9295c69d8473ca5c807531177f146ea077557bd7ab56621594f03b3c1052e273"
+    }
+  ]
+}

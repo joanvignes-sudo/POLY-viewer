@@ -1,0 +1,67 @@
+{
+  "id": "poly:claim:ashlar_disjoint_threshold_sensitivity",
+  "kind": "claim",
+  "title": "Sensibilité du rejet ASHLAR à une population de bandes disjointes en pixels",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      12
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "ashlar_disjoint_threshold_sensitivity",
+      "claim": "Sensibilité du rejet ASHLAR à une population de bandes disjointes en pixels",
+      "status": "exécuté et contrôlé dans ce périmètre",
+      "evidence_level": "programme et robustesse descriptive",
+      "scope": "12 seuils ; 1 essai(s) avec décision/position modifiée ; aucune indépendance biologique ou adoption",
+      "next_acceptance_gate": "Extension spatiale/plan/canal avec protocole préalable, et validation scientifique par données homologuées.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "runs"
+          ],
+          "value": 12,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "changed_run_count"
+          ],
+          "value": 1,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "shared_pixels_in_each_pair"
+          ],
+          "value": 0,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        }
+      ]
+    }
+  }
+}

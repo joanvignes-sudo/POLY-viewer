@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "human_publications": 18,
+  "complementary_to_C13_FILMS": 13,
+  "already_represented": 5,
+  "local_catalogue_articles": 18,
+  "local_catalogue_links": 3,
+  "external_link_check": "Sources consultées par recherche Web ; ce script ne teste pas leur disponibilité réseau.",
+  "previous_deliveries": {
+    "POLY_LOT07_2026-10-17": {
+      "files_checked": 62,
+      "failures": [],
+      "manifest_sha256": "58728cdc4f273b2cd865d109495828afd7490b65411d7b4ce45d7a4545c36df2"
+    },
+    "POLY_C13_SUITE_2026-10-17": {
+      "files_checked": 101,
+      "failures": [],
+      "manifest_sha256": "d66da57cf0e7468115382853c5c20f8521e1390498c9a95d851da62464d4b069"
+    }
+  },
+  "protected_originals": {
+    "public_v0.129.0": {
+      "files_checked": 2840,
+      "failures": [],
+      "head": "ff2f1b249a2f70e78b74d488659840bdb2aed555",
+      "git_clean": true
+    },
+    "Konrad_v0.128.1": {
+      "files_checked": 2810,
+      "failures": [],
+      "head": "3be8c5d17ddbedf2436cd11d7a432f9aa096b30d",
+      "git_clean": true
+    },
+    "prototype": {
+      "files_checked": 2937,
+      "failures": []
+    }
+  },
+  "relay_status": "pause_demandee_par_proprietaire",
+  "scientific_reanalysis": false,
+  "scientific_validation": false,
+  "limitations": [
+    "Catalogue contrôlé structurellement ; pas de test navigateur rendu, zoom ou lecteur écran dans ce supplément.",
+    "Présence locale par correspondances documentées ; pas audit de tout l’historique.",
+    "Méthodes/suppléments, corrections, licences et fichiers de données à compléter avant intégration."
+  ]
+}

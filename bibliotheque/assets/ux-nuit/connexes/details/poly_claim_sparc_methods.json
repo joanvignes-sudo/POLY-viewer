@@ -1,0 +1,110 @@
+{
+  "id": "poly:claim:sparc_methods",
+  "kind": "claim",
+  "title": "Les méthodes ont été comparées",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      3
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "sparc_methods",
+      "claim": "Les méthodes ont été comparées",
+      "status": "exécuté avec résultats faibles conservés",
+      "evidence_level": "robustesse de méthode",
+      "scope": "NCC et phase sur deux boucles adjacentes, ASHLAR16exécutions spatiales (9graphes reliés,7replis/déconnexions), plus12contre-factuels de seuil sans réestimer les arêtes. Même spécimen et données réutilisées.",
+      "next_acceptance_gate": "Une question nouvelle ou des repères homologués ; ne pas répéter les calculs clos ni confondre graphe relié et justesse anatomique.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AUDIT_CORRIGE_2026-10-14/AUDIT_FINAL_TESTS.json",
+          "selector": [
+            "known_failures"
+          ],
+          "value": [
+            "ASHLAR exact-identity numerical error retained; noisy known-shift test passes",
+            "Two full-pipeline edges rejected; original stage fallback is not a registration"
+          ],
+          "original_sha256": "c44c73ba87a1f2e9b1df9a32fd6e620193de0b51b20b2230d63c657d10382bcb",
+          "sha256": "c44c73ba87a1f2e9b1df9a32fd6e620193de0b51b20b2230d63c657d10382bcb"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/PRECISION_BILAN.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface",
+          "sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/ESTIMATIONS_STABILITE.json",
+          "selector": [
+            "count"
+          ],
+          "value": 32,
+          "original_sha256": "55644be9b5e7fa681aa5efa55e0f45e9a3349528b49eeee9befceeb9745f168d",
+          "sha256": "55644be9b5e7fa681aa5efa55e0f45e9a3349528b49eeee9befceeb9745f168d"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/SCORES_STABILITE.json",
+          "selector": [
+            "count"
+          ],
+          "value": 768,
+          "original_sha256": "e47a3cebfceced4e855461d8b841622694ea4f8e5ca62b1a3619f196e305f194",
+          "sha256": "e47a3cebfceced4e855461d8b841622694ea4f8e5ca62b1a3619f196e305f194"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "runs"
+          ],
+          "value": 12,
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "statuses"
+          ],
+          "value": {
+            "no_accepted_edges_stage_fallback": 5,
+            "connected_image_based_positions": 7
+          },
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "LoG2_all4edges_accepted"
+          ],
+          "value": 6,
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "negative_nominally_overlapping_per_run"
+          ],
+          "value": 12,
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        }
+      ],
+      "previous_scope": "NCC, phase, ASHLAR, régions/plans/échelles/précision ; mêmes données réutilisées ; premièreboucle2D sur3plans et transfertfixeZ9 évalués, phase instable conservée ; ASHLAR1.20 sur grille2D,12essais,7graphes reliés et5replis, domaines du seuil audités"
+    }
+  }
+}

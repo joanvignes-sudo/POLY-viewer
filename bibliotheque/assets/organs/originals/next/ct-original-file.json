@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "name": "2305_C10L_9um_0000.nii.gz",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c10/2305_C10L_9um_0000.nii.gz",
+    "size": 117010793,
+    "fileType": "NIFTI",
+    "sourcePackageId": "N:package:f19beaf7-d272-42d9-b009-977919b54b8c",
+    "s3VersionId": "SwK2VI00ZAalZed1V65pqcS.AhkK9QRD",
+    "sha256": "GB7IgvQ4GWGG+erGy56aJHzSsxIpOZmeUFrQF+KsBXU="
+  },
+  "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c10/2305_C10L_9um_0000.nii.gz?versionId=SwK2VI00ZAalZed1V65pqcS.AhkK9QRD"
+}

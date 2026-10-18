@@ -1,0 +1,101 @@
+[
+  {
+    "name": "2305_C1L_A_Level_2_part1.gci",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.gci",
+    "size": 1157830,
+    "fileType": "GenericData",
+    "sourcePackageId": "N:package:c9c41d01-ad2a-4ba6-9046-2781385d0150",
+    "s3VersionId": "QNYppf4IRWnCDehEoLsFABY7d5rTbSdA",
+    "sha256": "MVC7b+BCAN05HjqDTFmXR6PGY3DAWouwtZtPJiDD78A="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part1.ktf",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.ktf",
+    "size": 1499806803,
+    "fileType": "GenericData",
+    "sourcePackageId": "N:package:ae08f592-95cb-4e1f-95fa-34f195adb381",
+    "s3VersionId": "5ZRPT6mZHcOm_B7rX1fJmKrf6.ISlwim",
+    "sha256": "txo0/IW1/9WlCjHtpMFLpFASxNPAkVmgmYOznTBuWEc="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part1.tif",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.tif",
+    "size": 1105746279,
+    "fileType": "TIFF",
+    "sourcePackageId": "N:package:d5858c68-406d-4351-9e26-0ba07ec57cfb",
+    "s3VersionId": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+    "sha256": "JLQotHoSX/dGMtc1v/keG9v81CDeV3iV4JceM8vCPRU="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part1.tiff",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.tiff",
+    "size": 1105746279,
+    "fileType": "TIFF",
+    "sourcePackageId": "N:package:43e729f8-8dde-4b67-9a1d-50b3ac603f7e",
+    "s3VersionId": "xzorI_5OpPNVipDozCoKuBbZ2zO0lumz",
+    "sha256": "JLQotHoSX/dGMtc1v/keG9v81CDeV3iV4JceM8vCPRU="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part1_key.tif",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1_key.tif",
+    "size": 1004262,
+    "fileType": "TIFF",
+    "sourcePackageId": "N:package:0b01301f-0832-43d2-a1c4-45e17f30b42a",
+    "s3VersionId": "9F8NPlO8G.XDXYzJSc4TmjpjcJmuUq2m",
+    "sha256": "xipZdXEd5ACbhe3PohlcvtPYU0nrrEj59wRp2OWQY28="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part2.gci",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.gci",
+    "size": 469457,
+    "fileType": "GenericData",
+    "sourcePackageId": "N:package:38be587b-055c-4749-98e9-69aeeff4d027",
+    "s3VersionId": "dtY6oo18SwdaT4k7ed9YLQmWJelFxgck",
+    "sha256": "aBnQ/MzsHirwNff+c/4M3FbfKD/SiqX1srTTS2t9sMA="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part2.ktf",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.ktf",
+    "size": 573543837,
+    "fileType": "GenericData",
+    "sourcePackageId": "N:package:f452b2db-e926-4c41-9e5d-b92c93a1593f",
+    "s3VersionId": "zYc0PyJqd.dTO1K37_T4thOkXBKXL8p3",
+    "sha256": "vrcWDme1ZHHZvDYtueb2C67S2ZOJ5r1P+RUT7uLlLNQ="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part2.tif",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.tif",
+    "size": 412885591,
+    "fileType": "TIFF",
+    "sourcePackageId": "N:package:1bbc872c-5543-4cef-a5fa-caeae17867b5",
+    "s3VersionId": "R0.7CAVrVmr6S4ZTYnVqbLFFDxRwPnrg",
+    "sha256": "fnkpRz208ICKJ7A2wyMN6JU1HsH10DgP/cJOqQhlqCA="
+  },
+  {
+    "name": "2305_C1L_A_Level_2_part2.tiff",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part2.tiff",
+    "size": 412885591,
+    "fileType": "TIFF",
+    "sourcePackageId": "N:package:1b6ca1f8-09dd-4343-b181-d323167d711a",
+    "s3VersionId": "RIaMzvANUrklSXnbH4ubqZ8_kN5HPRfK",
+    "sha256": "fnkpRz208ICKJ7A2wyMN6JU1HsH10DgP/cJOqQhlqCA="
+  },
+  {
+    "name": "2305_C1L_A_NODOSE_HYPOGLOSSAL_SL_CAROTID_Level_2_part1.tar.gz",
+    "path": "files/source/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_NODOSE_HYPOGLOSSAL_SL_CAROTID_Level_2_part1.tar.gz",
+    "size": 55065163848,
+    "fileType": "ZIP",
+    "sourcePackageId": "N:package:183ab4be-5215-4400-aef8-1c47620ab125",
+    "s3VersionId": "jppetjSH4PUlvfeV278r.e1Fxoss687s",
+    "sha256": "5lElODuHbdr7Adtra5bLj47AhLjE+mA/Q7anV4YLW5o=-52"
+  },
+  {
+    "name": "2305_C1L_A_NODOSE_HYPOGLOSSAL_SL_CAROTID_Level_2_part2.tar.gz",
+    "path": "files/source/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_NODOSE_HYPOGLOSSAL_SL_CAROTID_Level_2_part2.tar.gz",
+    "size": 19569380094,
+    "fileType": "ZIP",
+    "sourcePackageId": "N:package:ecf7422f-603d-4a9e-92fa-0526d7508bf2",
+    "s3VersionId": "lgLsYTko7yPnkdGSOhg2Ks_Ngvrt2zqF",
+    "sha256": "91XW8XKBWMM6ELb581ag7Oy0Mq8TSIOBb+qDsbVZ78Q=-19"
+  }
+]

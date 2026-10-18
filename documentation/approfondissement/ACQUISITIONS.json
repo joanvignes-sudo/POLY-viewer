@@ -1,0 +1,39 @@
+[
+  {
+    "id": "emofilm",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12019557/fullTextXML",
+    "status": 200,
+    "bytes": 124159,
+    "sha256": "0990c0507619a6e8cd95d342647258364b85ff731b9080043d81bde58463edca",
+    "path": "Chemin de travail local non publié ; URL source et empreinte conservées."
+  },
+  {
+    "id": "hassanpour",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5729563/fullTextXML",
+    "status": 200,
+    "bytes": 82991,
+    "sha256": "2d7283d8795b44fa770a843a5698aa03563f64ce697a5a6b4214d5eee549743c",
+    "path": "Chemin de travail local non publié ; URL source et empreinte conservées."
+  },
+  {
+    "id": "inman",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6139084/fullTextXML",
+    "error": "HTTP Error 500: "
+  },
+  {
+    "id": "emofilm_repo",
+    "url": "https://api.github.com/repos/OpenNeuroDatasets/ds004892/contents",
+    "status": 200,
+    "bytes": 28191,
+    "sha256": "a449f612e8ca78492d1299d74ff38353489ef6977561559b86dd0fd409b2d1b4",
+    "path": "Chemin de travail local non publié ; URL source et empreinte conservées."
+  },
+  {
+    "id": "annotations_repo",
+    "url": "https://api.github.com/repos/OpenNeuroDatasets/ds004872/contents",
+    "status": 200,
+    "bytes": 36822,
+    "sha256": "98ad11ff288f133ac8e7da82730fb8735d6039af79f91dd55c755d7fd464f483",
+    "path": "Chemin de travail local non publié ; URL source et empreinte conservées."
+  }
+]

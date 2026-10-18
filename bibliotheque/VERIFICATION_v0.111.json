@@ -1,0 +1,73 @@
+{
+  "version": "0.111",
+  "status": "passed",
+  "source_annotation_count": 180,
+  "target_annotation_count": 6,
+  "independent_new_detail_checks": {
+    "status": "passed",
+    "checks": [
+      {
+        "annotation_id": "111306169",
+        "image_values": 2097152,
+        "independent_image_differences": 0,
+        "mask_values": 524288,
+        "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+      },
+      {
+        "annotation_id": "54213720",
+        "image_values": 2097152,
+        "independent_image_differences": 0,
+        "mask_values": 524288,
+        "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+      },
+      {
+        "annotation_id": "143278591",
+        "image_values": 2097152,
+        "independent_image_differences": 0,
+        "mask_values": 524288,
+        "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+      },
+      {
+        "annotation_id": "145894292",
+        "image_values": 2097152,
+        "independent_image_differences": 0,
+        "mask_values": 524288,
+        "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+      },
+      {
+        "annotation_id": "87751454",
+        "image_values": 2097152,
+        "independent_image_differences": 0,
+        "mask_values": 524288,
+        "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed"
+      }
+    ]
+  },
+  "native_details": 6,
+  "total_windows": 9,
+  "browser": {
+    "status": "passed",
+    "six_native_details_three_axes": true,
+    "source_pixel_mask_mapping_exact": true,
+    "anisotropic_aspect": true,
+    "share_six_roundtrips": true,
+    "next_previous_preserve_native_level": true,
+    "seed_returns_context": true,
+    "unlabeled_endpoints_disclosed": true,
+    "cache_max": 2,
+    "geometries_max": 8,
+    "corrupt_source_retry": true,
+    "no_3d_fallback": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  },
+  "links_checked": 113,
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/h01-em/PROVENANCE.json",
+    "assets/h01-synapses/PROVENANCE.json",
+    "assets/neurons/h01-em-1072605926.json"
+  ],
+  "scope": "Source consistency, local coordinate/label checks and UI behavior; not biological validation, activity measurement or causal-chain evidence."
+}

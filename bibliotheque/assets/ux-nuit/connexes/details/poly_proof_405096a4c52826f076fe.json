@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:405096a4c52826f076fe",
+  "kind": "proof",
+  "title": "SCORES_STABILITE.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      3,
+      "proofs",
+      3
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/SCORES_STABILITE.json",
+    "sha256": "e47a3cebfceced4e855461d8b841622694ea4f8e5ca62b1a3619f196e305f194",
+    "bytes": 432410,
+    "content_loaded": false
+  }
+}

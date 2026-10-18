@@ -1,0 +1,201 @@
+{
+  "version": "0.124",
+  "date": "2026-10-14",
+  "scope": "Extended subdivision of context-right:5535 only, the face still flagged at 32 divisions per edge in the first analysis",
+  "source_faces": 1,
+  "divisions": [
+    64,
+    128,
+    256
+  ],
+  "records": [
+    {
+      "key": "context-right:5535",
+      "mesh_id": "context-right",
+      "source_triangle_index": 5535,
+      "divisions": 64,
+      "vertex_start": 0,
+      "vertices": 2145,
+      "centre_start": 0,
+      "triangles": 4096,
+      "anchor_mm": [
+        58.744957430046334,
+        -9.720326130382412,
+        -30.936847582999206
+      ],
+      "local_position_offset": 0,
+      "index_offset": 0,
+      "float64": {
+        "opposed_normals": 0,
+        "minimum_cosine": 0.5162346724580497,
+        "maximum_gap_mm": 2.4574722415716226e-05,
+        "median_gap_mm": 1.2160885381287388e-05
+      },
+      "local_float32": {
+        "opposed_normals": 0,
+        "minimum_cosine": 0.5163099384752473,
+        "maximum_gap_mm": 2.4576122294920945e-05,
+        "median_gap_mm": 1.2161379039949089e-05
+      },
+      "nonpositive_determinants": 0,
+      "minimum_determinant": 1.8933983003968498,
+      "maximum_local_storage_error_mm": 5.478621173438218e-08
+    },
+    {
+      "key": "context-right:5535",
+      "mesh_id": "context-right",
+      "source_triangle_index": 5535,
+      "divisions": 128,
+      "vertex_start": 2145,
+      "vertices": 8385,
+      "centre_start": 4096,
+      "triangles": 16384,
+      "anchor_mm": [
+        58.7448800912989,
+        -9.720596201657107,
+        -30.937019630470576
+      ],
+      "local_position_offset": 25740,
+      "index_offset": 49152,
+      "float64": {
+        "opposed_normals": 0,
+        "minimum_cosine": 0.978692551801643,
+        "maximum_gap_mm": 6.174488359223456e-06,
+        "median_gap_mm": 3.0462638731333565e-06
+      },
+      "local_float32": {
+        "opposed_normals": 0,
+        "minimum_cosine": 0.9785367653854435,
+        "maximum_gap_mm": 6.181679253862101e-06,
+        "median_gap_mm": 3.0464254434946006e-06
+      },
+      "nonpositive_determinants": 0,
+      "minimum_determinant": 1.891334734345516,
+      "maximum_local_storage_error_mm": 5.913952180793568e-08
+    },
+    {
+      "key": "context-right:5535",
+      "mesh_id": "context-right",
+      "source_triangle_index": 5535,
+      "divisions": 256,
+      "vertex_start": 10530,
+      "vertices": 33153,
+      "centre_start": 20480,
+      "triangles": 65536,
+      "anchor_mm": [
+        58.74484152042783,
+        -9.720731141534799,
+        -30.937105650377273
+      ],
+      "local_position_offset": 126360,
+      "index_offset": 245760,
+      "float64": {
+        "opposed_normals": 0,
+        "minimum_cosine": 0.9966061036022896,
+        "maximum_gap_mm": 1.5464584857707805e-06,
+        "median_gap_mm": 7.622891606043446e-07
+      },
+      "local_float32": {
+        "opposed_normals": 0,
+        "minimum_cosine": 0.9964978221219287,
+        "maximum_gap_mm": 1.5581481385996636e-06,
+        "median_gap_mm": 7.621709968958929e-07
+      },
+      "nonpositive_determinants": 0,
+      "minimum_determinant": 1.8902969623527202,
+      "maximum_local_storage_error_mm": 5.958078480155338e-08
+    }
+  ],
+  "summary": [
+    {
+      "divisions": 64,
+      "facets": 1,
+      "subtriangles": 4096,
+      "opposed_normals_float64": 0,
+      "opposed_normals_local_float32": 0,
+      "facets_with_opposed_normals": 0,
+      "nonpositive_centres": 0,
+      "maximum_gap_mm": 2.4576122294920945e-05
+    },
+    {
+      "divisions": 128,
+      "facets": 1,
+      "subtriangles": 16384,
+      "opposed_normals_float64": 0,
+      "opposed_normals_local_float32": 0,
+      "facets_with_opposed_normals": 0,
+      "nonpositive_centres": 0,
+      "maximum_gap_mm": 6.181679253862101e-06
+    },
+    {
+      "divisions": 256,
+      "facets": 1,
+      "subtriangles": 65536,
+      "opposed_normals_float64": 0,
+      "opposed_normals_local_float32": 0,
+      "facets_with_opposed_normals": 0,
+      "nonpositive_centres": 0,
+      "maximum_gap_mm": 1.5581481385996636e-06
+    }
+  ],
+  "source_geometry_modified": false,
+  "new_measured_anatomical_points": false,
+  "whole_volume_validated": false,
+  "crack_free_global_replacement": false,
+  "coordinates": "Synthetic barycentric points in the original planar triangle; mapped with the same 2015+2019 fields. Local float32 coordinates plus float64 anchor reduce storage rounding.",
+  "files": [
+    {
+      "path": "assets/bigbrain-refinement-tail-v0124/positions-f64.bin",
+      "bytes": 1048392,
+      "sha256": "36c8d7e9916785199a14807544cbe088f6bc484c0996803125d94c9830737a0d"
+    },
+    {
+      "path": "assets/bigbrain-refinement-tail-v0124/positions-local.bin",
+      "bytes": 524196,
+      "sha256": "f23c7a66a2c400dd4f3ccfadb801c1fd972630029dd17d9142ad9868eac92662"
+    },
+    {
+      "path": "assets/bigbrain-refinement-tail-v0124/indices.bin",
+      "bytes": 1032192,
+      "sha256": "428da3fcf19c33f253174a4e17f6443ab48829af85fcede790e827f273fb631c"
+    }
+  ],
+  "references": [
+    {
+      "path": "assets/bigbrain/surfaces.bin",
+      "sha256": "39bf153516c33bd6f7dab2d0771e79ec36ec743f8dbc5e326436069634fdc518"
+    },
+    {
+      "path": "assets/bigbrain/PROVENANCE.json",
+      "sha256": "7544e77e16bac371ad6d65db21bd9b9dbf78b49373870080b3394bd990909567"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/positions.bin",
+      "sha256": "182d75e14eecc2726c0c436f1dd31eaa39afeadce3c815c342e5237e900c98bf"
+    },
+    {
+      "path": "assets/bigbrain-warp-v0121/PROVENANCE.json",
+      "sha256": "b6020bb727153e71de43f9cd7922f848b6099a3fff6813f686c454ea5c441a31"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/PROVENANCE.json",
+      "sha256": "96048dbd8f62359e8c639e379affc20bb17a3438f061ef8789a7f856915cfde5"
+    },
+    {
+      "path": "assets/bigbrain-triangles-v0123/FLAGGED.json",
+      "sha256": "54df67d065af4ec054423b7279c8da7e23cc9045c7b6ed1770f614201c5f1f2c"
+    },
+    {
+      "path": "assets/bigbrain-validation-v0122/PROVENANCE.json",
+      "sha256": "189fa0a5b54137859bb741b6e40165c2cbf6252a2338795ad4bd52330df18ca3"
+    }
+  ],
+  "limits": [
+    "Positive derivatives at sampled centres do not certify full subtriangle interiors or global injectivity",
+    "Subdividing a source planar face is not new histological data or higher anatomical resolution",
+    "Preview patches can have boundaries inconsistent with neighbouring coarse faces; no global watertight mesh is claimed",
+    "Numerical rendering gaps are distinct from anatomical AFID residuals",
+    "Original source geometry and previously published measurements remain unchanged"
+  ],
+  "license": "BigBrain derivatives CC BY-NC-SA 4.0; original transform licenses and attribution retained via source provenance."
+}

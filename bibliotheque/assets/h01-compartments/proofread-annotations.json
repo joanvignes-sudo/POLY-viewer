@@ -1,0 +1,194 @@
+{
+  "@type": "neuroglancer_annotations_v1",
+  "annotation_type": "POINT",
+  "dimensions": {
+    "x": [
+      1.0,
+      "nm"
+    ],
+    "y": [
+      1.0,
+      "nm"
+    ],
+    "z": [
+      1.0,
+      "nm"
+    ]
+  },
+  "lower_bound": [
+    552992.0,
+    346880.0,
+    2145.0
+  ],
+  "upper_bound": [
+    3680289.0,
+    2287809.0,
+    172525.0
+  ],
+  "by_id": {
+    "key": "by_id",
+    "sharding": {
+      "@type": "neuroglancer_uint64_sharded_v1",
+      "data_encoding": "gzip",
+      "hash": "murmurhash3_x86_128",
+      "minishard_bits": 10,
+      "minishard_index_encoding": "gzip",
+      "preshift_bits": 10,
+      "shard_bits": 0
+    }
+  },
+  "relationships": [
+    {
+      "key": "skeleton_id",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "murmurhash3_x86_128",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "id": "skeleton_id"
+    }
+  ],
+  "properties": [
+    {
+      "id": "class_label",
+      "type": "int32",
+      "enum_values": [0, 1, 2, 3, 4, 5, 1000, 1001, 1002, 1003, 1004, 1005],
+      "enum_labels": ["axon", "dendrite", "astrocyte", "soma", "cilium", "AIS", "myelinated axon", "myelinated axon", "myelinated fragment", "myelinated fragment", "myelinated fragment", "myelinated fragment"]
+    }
+  ],
+  "spatial": [
+    {
+      "chunk_size": [
+        3127297.0,
+        1940929.0,
+        170380.0
+      ],
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "key": "spatial0",
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        1563648.5,
+        1940929.0,
+        170380.0
+      ],
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "key": "spatial1",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        781824.25,
+        970464.5,
+        170380.0
+      ],
+      "grid_shape": [
+        4,
+        2,
+        1
+      ],
+      "key": "spatial2",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        390912.125,
+        485232.25,
+        170380.0
+      ],
+      "grid_shape": [
+        8,
+        4,
+        1
+      ],
+      "key": "spatial3",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        195456.0625,
+        242616.125,
+        170380.0
+      ],
+      "grid_shape": [
+        16,
+        8,
+        1
+      ],
+      "key": "spatial4",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        97728.03125,
+        121308.0625,
+        85190.0
+      ],
+      "grid_shape": [
+        32,
+        16,
+        2
+      ],
+      "key": "spatial5",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 1,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 5322
+    }
+  ]
+}

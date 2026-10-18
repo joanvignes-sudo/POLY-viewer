@@ -1,0 +1,29 @@
+{
+  "id": "poly:view:17524f0eb3d8d4d4d64f",
+  "kind": "view",
+  "title": "Parcours dans les branches",
+  "category": "microscopie",
+  "provenance": {
+    "file": "ETAT_CANONIQUE.json",
+    "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7",
+    "selector": [
+      "categories",
+      2,
+      "links",
+      3
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "href": "trajets.html",
+    "source_label": "H01 · tissu humain",
+    "scientific_identity": {
+      "value": null,
+      "reason": "Une destination de navigation ne définit pas un spécimen."
+    }
+  }
+}

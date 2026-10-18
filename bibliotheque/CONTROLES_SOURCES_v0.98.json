@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "version": "0.98",
+  "source_identity_corrections": 15,
+  "corrected_route_bibliographies": 5,
+  "newly_assigned_records": 7,
+  "all_128_records_assigned_to_explicit_route_or_protocol_context": true,
+  "c13_reachable_existing_target_records": 57,
+  "cortical_atlas_navigation_limited_to_cortical_targets": true,
+  "registered_values_unchanged": 127,
+  "timings_unchanged": 45,
+  "nodes_and_edges_unchanged": true,
+  "bakhurin_routes_unchanged": 3,
+  "c14_wave_methodologies_added": 3,
+  "c14_existing_audits_connected": 3,
+  "immutable_anatomical_files": 628,
+  "limits": [
+    "Explicit record targets are inherited; their experimental interpretation is not globally revalidated.",
+    "Contextual grouping is not evidence of a continuous biological route.",
+    "C14 wave-specific claims and fine C13 claims beyond the corrected Eshel identity still require review."
+  ]
+}

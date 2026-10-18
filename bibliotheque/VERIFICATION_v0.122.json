@@ -1,0 +1,173 @@
+{
+  "version": "0.122",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "vertices": 348845,
+    "all_existing_registered_positions_identical": true,
+    "finite_difference_error": 1.0781100931445131e-07,
+    "nonpositive": 0,
+    "afid_records": 63,
+    "primary_records": 59,
+    "summaries": [
+      {
+        "rater": "Rater03",
+        "n": 30,
+        "before_mm": {
+          "n": 30,
+          "mean": 2.088341072791062,
+          "median": 1.6729317825272547,
+          "sd": 1.4561818865031515,
+          "minimum": 0.5308163524233213,
+          "maximum": 6.440247433134849,
+          "p05": 0.6061630732609232,
+          "p95": 5.4966114802077515
+        },
+        "after_mm": {
+          "n": 30,
+          "mean": 2.0902358637296374,
+          "median": 1.7845140585567638,
+          "sd": 1.1776464003431641,
+          "minimum": 0.38498565061701273,
+          "maximum": 5.385390264211467,
+          "p05": 0.4973334928098756,
+          "p95": 3.8084507643755066
+        },
+        "smaller_error": 15,
+        "larger_error": 15
+      },
+      {
+        "rater": "Rater07",
+        "n": 29,
+        "before_mm": {
+          "n": 29,
+          "mean": 2.01630739859383,
+          "median": 1.2773492161503848,
+          "sd": 1.587837690945229,
+          "minimum": 0.36425751791967165,
+          "maximum": 6.306332395838645,
+          "p05": 0.5976038526934376,
+          "p95": 5.380620157982908
+        },
+        "after_mm": {
+          "n": 29,
+          "mean": 1.8936435191663767,
+          "median": 1.7515921659158447,
+          "sd": 1.1293122765756083,
+          "minimum": 0.6247587798546864,
+          "maximum": 5.415006554476187,
+          "p05": 0.7621135638942848,
+          "p95": 4.223174010529473
+        },
+        "smaller_error": 14,
+        "larger_error": 15
+      }
+    ],
+    "source_files": [
+      {
+        "path": "assets/bigbrain-validation-v0122/BigBrain_T1_Rater03_1_20180918.fcsv",
+        "file": "BigBrain_T1_Rater03_1_20180918.fcsv",
+        "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/BigBrain_T1_Rater03_1_20180918.fcsv",
+        "bytes": 4183,
+        "sha256": "d6fbfead45a35a3d02ead74e8cce26f883ca878d1cb639432ad972112ee022f3"
+      },
+      {
+        "path": "assets/bigbrain-validation-v0122/BigBrain_T1_Rater07_1_20180918.fcsv",
+        "file": "BigBrain_T1_Rater07_1_20180918.fcsv",
+        "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/BigBrain_T1_Rater07_1_20180918.fcsv",
+        "bytes": 3655,
+        "sha256": "ca5083192d69256334964f43374984bccd9e3d078ac139efaee0cb67ea784f4f"
+      },
+      {
+        "path": "assets/bigbrain-validation-v0122/MNI152NLin2009bSym_T1_Rater03_1_20180914.fcsv",
+        "file": "MNI152NLin2009bSym_T1_Rater03_1_20180914.fcsv",
+        "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/MNI152NLin2009bSym_T1_Rater03_1_20180914.fcsv",
+        "bytes": 4190,
+        "sha256": "b83712f9161ca87ebbca6b9b2789104991cabd1ab0d8abff27f2315f4a2ed562"
+      },
+      {
+        "path": "assets/bigbrain-validation-v0122/MNI152NLin2009bSym_T1_Rater07_1_20180917.fcsv",
+        "file": "MNI152NLin2009bSym_T1_Rater07_1_20180917.fcsv",
+        "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/MNI152NLin2009bSym_T1_Rater07_1_20180917.fcsv",
+        "bytes": 3417,
+        "sha256": "45569c0c507026c6473c5eebb8d30753b0483f85dcb74e39e97ce531d045e098"
+      },
+      {
+        "path": "assets/bigbrain-validation-v0122/README.md",
+        "file": "README.md",
+        "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/README.md",
+        "bytes": 4699,
+        "sha256": "25c0462881c41e681c8188e2cd7fe7bc60f0381e8506bae3fbf2333821ca034f"
+      },
+      {
+        "path": "assets/bigbrain-validation-v0122/LICENSE",
+        "file": "LICENSE",
+        "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/LICENSE",
+        "bytes": 1063,
+        "sha256": "30052b52d91d56a56831aaeb392f7a26216ef8db86ee92e2eae63707e7043f35"
+      }
+    ]
+  },
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "primary_records_checked": 59,
+    "all_3d_positions_match_source": true,
+    "export_preserves_all_63_records": true,
+    "shared_selection": true,
+    "native_hides_registered_landmarks": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometries": 46,
+    "corrupt_supplement_preserves_brain_and_retry": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  },
+  "warp_regression": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "source_meshes": 23,
+    "geometry_points_checked_per_mode": 69,
+    "roundtrips": 6,
+    "bounded_geometry_memory": 43,
+    "native_lengths_preserved": true,
+    "three_patches_and_explosion": true,
+    "atlas_toggle": true,
+    "shared_state": true,
+    "histological_plane_native_return": true,
+    "histology_link_cleans_frame": true,
+    "mobile_no_overflow": true,
+    "corrupt_geometry_preserves_native_view_and_retry": true,
+    "corrupt_atlas_preserves_registered_view_and_retry": true,
+    "page_errors": []
+  },
+  "independent_arithmetic": {
+    "status": "passed",
+    "raw_csv_records_checked": 126,
+    "landmark_distances_checked": 126,
+    "jacobians_decoded": 348845,
+    "nonpositive": 0,
+    "minimum": 0.18132543563842773,
+    "maximum": 13.378409385681152,
+    "ambiguous_label_not_joined": true,
+    "source_hashes_checked": true
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 549,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/bigbrain/surfaces.bin",
+    "assets/bigbrain-warp-v0121/PROVENANCE.json",
+    "assets/bigbrain-warp-v0121/positions.bin",
+    "assets/bigbrain-warp-v0121/VALIDATION.json",
+    "assets/anatomy/ATLAS_ANATOMIQUE.json",
+    "assets/anatomy/cerebra-surfaces.bin",
+    "assets/navigation-v0121/MAP.json",
+    "assets/navigation-v0121/PROVENANCE.json"
+  ],
+  "scope": "Published AFIDs reassessment and analytic derivative checks at all displayed vertices. No geometry changes, new manual annotations, temporal activity or whole-volume accuracy claim."
+}

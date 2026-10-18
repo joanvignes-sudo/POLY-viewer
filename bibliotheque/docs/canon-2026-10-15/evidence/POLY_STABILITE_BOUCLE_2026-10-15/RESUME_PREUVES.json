@@ -1,0 +1,21 @@
+{
+  "local_original_TIFFs": 790,
+  "complete_fields17x4": 11,
+  "partial_target_TIFFs": 42,
+  "original_2D_loops": 1,
+  "focus_planes": [
+    8,
+    9,
+    10
+  ],
+  "NCC_consensus_closure_raw_px": {
+    "8": 1.0,
+    "9": 0.0,
+    "10": 1.4142135623730951
+  },
+  "max_component_shift_delta_from_Z9": 1,
+  "CH4_cause_identified": false,
+  "anatomical_alignment_validated": false,
+  "physical_unit_confirmed": false,
+  "source_archive_CRC_verified": false
+}

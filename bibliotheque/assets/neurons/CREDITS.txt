@@ -1,0 +1,14 @@
+Allen Institute for Brain Science (2015). Allen Cell Types Database [dataset]. Cellule 637034000. Consulté le 12 octobre 2026.
+Conditions Allen Institute : recherche et usages non commerciaux, avec attribution. Pas de licence CC générique.
+https://alleninstitute.org/legal/terms-of-use
+https://alleninstitute.org/legal/citation-policy
+
+Lichtman laboratory, Harvard University & Connectomics at Google. H01 release, 20210601, proofread_104, segment 1072605926.
+CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+https://h01-release.storage.googleapis.com/landing.html
+
+POLY : extraction, conversion des unités et représentation interactive. Aucun soutien des institutions citées n’est revendiqué. Les données Allen ne sont pas placées sous la licence CC BY des données H01.
+
+Formats : https://github.com/google/neuroglancer/blob/master/src/datasource/precomputed/skeletons.md
+API Allen : https://community.brain-map.org/t/cell-types-database-api/3016

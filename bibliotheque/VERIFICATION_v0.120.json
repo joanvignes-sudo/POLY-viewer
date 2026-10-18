@@ -1,0 +1,45 @@
+{
+  "version": "0.120",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "grid_files": 3,
+    "grid_bytes": 506305524,
+    "zip_crc_all": true,
+    "sha_all": true,
+    "ordered_xfm_dependencies": [
+      "BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc",
+      "BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc",
+      "BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc"
+    ],
+    "all_stored_components_finite": true,
+    "affine_inverse_test_max_error": 3.552713678800501e-15,
+    "applied_to_viewer": false
+  },
+  "browser": {
+    "status": "passed",
+    "base": "http://127.0.0.1:8890/",
+    "checks": [
+      "one closed disclosure",
+      "open dossier and source links",
+      "mobile overflow",
+      "explicit unapplied scope"
+    ],
+    "page_errors": []
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 540,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/histology/PROVENANCE.json",
+    "assets/anatomy/ATLAS_ANATOMIQUE.json",
+    "assets/navigation/PROVENANCE.json",
+    "assets/navigation/MAP.json"
+  ],
+  "scope": "Acquired BigBrain deformation fields and source-chain audit; current scientific data unchanged. No registration applied or reader-study results."
+}

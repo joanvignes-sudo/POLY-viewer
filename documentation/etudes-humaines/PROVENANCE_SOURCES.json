@@ -1,0 +1,282 @@
+{
+  "annotation__derivatives__Annot_AfterTheRain_stim.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "fe58b9b2c4e4e9ea8814a6b15d6376ac2e90bc6b9a5dce2cf4e25261ed7f80fa",
+    "bytes": 1019
+  },
+  "annotation__derivatives__Annot_AfterTheRain_stim.tsv.gz": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "beab678b985c6f597f53ddcbbbf9cdc0fc919fe3606b78d0a5a0a611520522b5",
+    "bytes": 205
+  },
+  "annotation_CHANGES": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "452231ee3cb64cab6f185e79d6c57f30f3757d2abef7115563219586a2bcd70b",
+    "bytes": 197
+  },
+  "annotation_commit.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "88905555ab3d5f4419d8fe4db91447f14a340facbc46563792967a8dbf152ae4",
+    "bytes": 2147
+  },
+  "annotation_dataset_description.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "e984c1c8c5240bb972575a254ec2f0c47f8f7cde4b5892671f9c37b217b518a2",
+    "bytes": 1656
+  },
+  "annotation_participants.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "130078b71cd1144921b9c7ceddf183f39004100b977ba929fe74516816449eaa",
+    "bytes": 3956
+  },
+  "annotation_participants.tsv": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "7189733a5861935ff2a30bb8a89ce22fea14fbd2bb33a79b6f867830f38d94ea",
+    "bytes": 3056
+  },
+  "annotation_tree.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "fc5d64fe30d76d0b8e756f15082cc3a2d787c1634b2df2b4ef7a4ef7eecafc91",
+    "bytes": 2148852
+  },
+  "annotations_repo.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "98ad11ff288f133ac8e7da82730fb8735d6039af79f91dd55c755d7fd464f483",
+    "bytes": 36822
+  },
+  "code__AnnotationQC_plots.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "f89d5a1fea163b9fe8b8ab96d832cd33bb072fbb33a144e1d72d19ce937f5dcd",
+    "bytes": 5748
+  },
+  "code__AnnotationVal.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "c6671916df80a8b4e393249667d0c1fe3942b0bcb20f10a4bb2970f82ff2891e",
+    "bytes": 6487
+  },
+  "code__BIDSification__fixtimeunits.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "5007bd6f424dbc179460ed21e108b4fd580c615ec51795b8544c8756725a6bba",
+    "bytes": 378
+  },
+  "code__constants_emo_film.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "bede027c195d3ffa27259b248f8c0b7fd9cc84efaed8939e5a1a20dc1f93af66",
+    "bytes": 2961
+  },
+  "code__helper_annot.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "9cd801905f7eccb8013da446685d5fb647da79e906119e4be7f961ba2d2ca281",
+    "bytes": 1834
+  },
+  "code__Heurist_phys.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "7a33df36079af4c3194f2060db20105a323c1d88c923562aecf7cb2430546033",
+    "bytes": 5536
+  },
+  "code__MakeMasterfile.py": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "cbed7ba8c5ec68b594d12bb8badd597994aaa63cb53d85fdb86d9adaa574d2ec",
+    "bytes": 11587
+  },
+  "code__README.md": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "56ab2d80a266bd35ad6032f3ee82d50e8bec9fe30659187186dd28f06d9181ee",
+    "bytes": 1423
+  },
+  "emofilm.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "cc785476bac58a459b1e3ef908b120bf0947a439b17e22cbea1426a12c660540",
+    "bytes": 48444
+  },
+  "emofilm.xml": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "0990c0507619a6e8cd95d342647258364b85ff731b9080043d81bde58463edca",
+    "bytes": 124159
+  },
+  "emofilm_code_tree.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "bec5b6fb0dce36fd95487529aca91083742cedaaefabfc53f82fa9af8a93f744",
+    "bytes": 12517
+  },
+  "emofilm_repo.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "a449f612e8ca78492d1299d74ff38353489ef6977561559b86dd0fd409b2d1b4",
+    "bytes": 28191
+  },
+  "emofilm_tables.xlsx": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "8f415d0438e7339684190890cb6c631d52e1cc723b61d464a9bc1852910c4d2d",
+    "bytes": 78182
+  },
+  "emofilm_tables_extracted.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "7ad5b56bb0c143b43a2d3e90642eee3975c094d33357e63127a7b5cc0df60fb8",
+    "bytes": 766308
+  },
+  "fmri__sub-S01__ses-2__beh__sub-S01_ses-2_task-AfterTheRain_events.tsv": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "2a36ddbbe6c97ffa6f00d82f34502c51b737c7954974fa72bd128ae755a2c391",
+    "bytes": 636
+  },
+  "fmri__sub-S01__ses-2__func__sub-S01_ses-2_task-AfterTheRain_bold.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "7b23e3067b818700ae1305e165bd17d47f0218958d69cbb880c8e15e218aa2c7",
+    "bytes": 3050
+  },
+  "fmri__sub-S01__ses-2__func__sub-S01_ses-2_task-AfterTheRain_physio.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "85f501be597be36f3bbbc4ca835bffa0b8313522e2e442ebb2a6b01c5f410d51",
+    "bytes": 368
+  },
+  "fmri__sub-S01__ses-2__func__sub-S01_ses-2_task-AfterTheRain_physio.tsv.gz": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "551060be99144c16292662a5be3874c9f46b8c6de853d2bbd048de9fda182966",
+    "bytes": 213
+  },
+  "fmri_CHANGES": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "8fa2742fa1470469e492732cbfbc6f3304f0523346b13168ad3f84fc6dfba140",
+    "bytes": 150
+  },
+  "fmri_commit.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "6218393dc619416eda7d5085297f64b4cf933e5146625895bad670ca0fc774da",
+    "bytes": 2154
+  },
+  "fmri_dataset_description.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "13aed9ca3b8ab87749790d025d45a16bba9620a3372eb72c342ae8070c50230e",
+    "bytes": 1683
+  },
+  "fmri_participants.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "e030733656002cf64b84941672bb196dc0a52893152abc70a20b4c43cd92ddc0",
+    "bytes": 4070
+  },
+  "fmri_participants.tsv": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "1f37851a262dbc6f6c38cfe4fa3353c3c0cd1fef98dac8bdf4e8b636047bf15f",
+    "bytes": 8107
+  },
+  "fmri_tree.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "d874b911d69fd97aceb155373eafe49a8de0b9cef4704ca078395a8953529127",
+    "bytes": 3936093
+  },
+  "hassanpour.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "f68c8ac03e3c147e0f6118cf18b9f6e234806b39b480d623cb959aba572df538",
+    "bytes": 39561
+  },
+  "hassanpour.xml": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "2d7283d8795b44fa770a843a5698aa03563f64ce697a5a6b4214d5eee549743c",
+    "bytes": 82991
+  },
+  "hassanpour_MOESM64.docx": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "301eba4afd35d4e2313392420e8581248e13a34583760fb47ab91a7df3ca174e",
+    "bytes": 609310
+  },
+  "hassanpour_MOESM64.docx.clean.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "dfb4b615571a06bb3c891086e3d46c6799fc90915bd561c5eb51840400efb1b6",
+    "bytes": 15419
+  },
+  "hassanpour_MOESM64.docx.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "631b32f6d2337363fbb0d36aa17bcf72c6f23c111eb384cd8dd0977fe633eee9",
+    "bytes": 107352
+  },
+  "hassanpour_MOESM65.docx": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "7b2be81652ed3322b192119c548b77331e069015e05e2c527341f3fd5826e0bd",
+    "bytes": 18779
+  },
+  "hassanpour_MOESM65.docx.clean.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "907e5ab28d65207fca21e83e4caf9278b42c216c84272f3f3666df5195091e8c",
+    "bytes": 2850
+  },
+  "hassanpour_MOESM65.docx.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "fd6d6e6ee1f4da97b70360da6975dbc0a0306056b7e9fe5308c9b7a565a9dd29",
+    "bytes": 5655
+  },
+  "hassanpour_MOESM66.docx": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "f97703e3ced9c4660a0abd2c4cc4c705d17ba156957f6d2425721b77aaa543e8",
+    "bytes": 36170
+  },
+  "hassanpour_MOESM66.docx.clean.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "13e64bca96404deab41240bce3af821b3a7c6a8aab3e66bc600a92bf5aff2851",
+    "bytes": 3650
+  },
+  "hassanpour_MOESM66.docx.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "13e64bca96404deab41240bce3af821b3a7c6a8aab3e66bc600a92bf5aff2851",
+    "bytes": 3650
+  },
+  "hassanpour_MOESM67.docx": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "fe7771d891c4f70c9e207ed82d4dade375faa96e2824223c62b1743919b90520",
+    "bytes": 28115
+  },
+  "hassanpour_MOESM67.docx.clean.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "65282adc607b90d29c39cf8902a780b3ea56c47fa9849c8a1524f02f7fee4f63",
+    "bytes": 2466
+  },
+  "hassanpour_MOESM67.docx.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "65282adc607b90d29c39cf8902a780b3ea56c47fa9849c8a1524f02f7fee4f63",
+    "bytes": 2466
+  },
+  "hassanpour_publisher.html": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "7a7b5a3c8b0b0436a58852590cf9c0545e1000296112c15abb14e57a9f9f5536",
+    "bytes": 435898
+  },
+  "inman.html": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "02c4e1c2951c505e59e6f8e66a045d34a44d8c816e505899ac9321986deca357",
+    "bytes": 262918
+  },
+  "inman.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "6dfd7c52fec3c9e82a37300a8b1eff20a809ba4bbf74d8949606f099e7012a40",
+    "bytes": 109318
+  },
+  "pilot_consensus.tsv.gz": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "f1bb75a71864f9c1740c129769542fe5dc12435731c1517e82a80d32e5eeeae1",
+    "bytes": 104040
+  },
+  "pilot_physio.tsv.gz": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "cf3bd5c58df47dd2151404df8af2eedc1609b97f234a517589711f08f919bfbb",
+    "bytes": 5909687
+  },
+  "pilot_phys2bids_pointer.txt": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "91ac17d662b8eee98524eea8fb88e855576717af55fbbb455d74c8ad976afa4f",
+    "bytes": 196
+  },
+  "pilot_phys2bids.log": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "fe1e9d1e3a177c2e293799068d4d49ca1a36b21a10d4caadd7d70a9a352cd3b9",
+    "bytes": 304
+  },
+  "pilot_digital_channels.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "35bcbd38ad327461ab2567d04d855a042e078c4c04a944cf9c3b78066536657b",
+    "bytes": 1379
+  },
+  "pilot_trigger_diagnostic.json": {
+    "local_path": "Chemin de travail local non publié ; URL source et empreinte conservées.",
+    "sha256": "eb1d00d193ad9edc1f81dbce163d84d04dbdca20c6e4d89be221d0f809e328bb",
+    "bytes": 357
+  }
+}

@@ -1,0 +1,17 @@
+# Indicateurs expérimentaux publiés Allen · v0.117
+
+Neuf essais déjà intégrés, provenant de trois cellules humaines et deux donneurs. Aucune nouvelle courbe n’est calculée ou substituée. Les neuf séries de tension/courant, les détections source et les métadonnées v0.116 restent inchangées.
+
+196 enregistrements EphysSweep acquis : 80 pour 637034000, 28 pour 637038252, 88 pour 508279351. Jointure par paire specimen_id / sweep_number, puis seconde requête sur les neuf identifiants EphysSweep : chaque enregistrement complet, dont ses valeurs nulles, concorde exactement entre les deux requêtes. [Méthode de requête officielle AllenSDK](https://raw.githubusercontent.com/AllenInstitute/AllenSDK/master/allensdk/api/queries/cell_types_api.py).
+
+Indicateurs reproduits : bruits RMS avant, après et lent, potentiels correspondants, variation absolue du potentiel, bridge balance, courant de fuite, déflexion publiée et compte de réponses. Les noms source restent visibles. Six comptes API renseignés égalent les nombres de détections NWB dans l’impulsion principale. Trois comptes nulls, sur les essais négatifs, restent « non renseignés », bien que les listes NWB contiennent zéro détection. Une absence de renseignement n’est pas transformée en zéro.
+
+Le début API égale le premier échantillon stimulé dans les neuf NWB. La durée API de 0,99998 s égale la distance entre premier et dernier échantillon stimulé ; le support semi-ouvert de 1 s va jusqu’au début de l’échantillon suivant. La présence du courant a été vérifiée sur toute l’impulsion et son absence sur les deux échantillons voisins. À 50 kHz, la différence est un pas de 20 µs. Cette grille temporelle ne donne pas l’incertitude totale d’une mesure biologique et ne détermine pas un délai de transmission dans les branches.
+
+Pour les trois essais 508279351, le libellé API d’unité d’amplitude reste « Amps » alors que la valeur numérique égale les pA obtenus par la lecture NWB documentée. Ce libellé est conservé et signalé ; il n’est pas utilisé pour une nouvelle conversion. Les traces conservent la convention AllenSDK vérifiée en v0.116. La variation absolue de potentiel API est aussi comparée arithmétiquement aux valeurs avant/après publiées, sans recalculer le contrôle à partir du signal.
+
+[La documentation Allen](https://brain-map.org/support/documentation/documentation-cell-types-database) décrit les NWB diffusés comme des essais ayant passé ses contrôles qualité. Cette déclaration de sélection par le producteur est distincte de nos vérifications de cohérence. La réponse API ne fournit pas de champ de verdict individuel pour ces neuf essais. POLY ne réexécute pas les contrôles expérimentaux, n’applique pas de seuil choisi arbitrairement et n’attribue pas de score de qualité.
+
+Interface : panneau par essai, tableau des neuf essais avec liens directs, repères temporels explicités, export contenant l’enregistrement API original et ses empreintes, ouverture du panneau conservée dans le lien partagé. Si les indicateurs ne peuvent pas être vérifiés, ils ne s’affichent pas et le signal déjà contrôlé reste consultable ; une nouvelle tentative est proposée. Repli sans 3D et mobile contrôlés.
+
+[Provenance](assets/allen-qc/PROVENANCE.json) · [Neuf enregistrements retenus](assets/allen-qc/SELECTED.json) · [Concordances](assets/allen-qc/VALIDATION.json) · [Crédits et conditions Allen](assets/neurons/CREDITS.txt).

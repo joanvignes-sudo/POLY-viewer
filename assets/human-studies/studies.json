@@ -1,0 +1,1307 @@
+{
+  "version": "human-local-prototype-2026.10.17",
+  "groups": [
+    {
+      "id": "EMO-FILM",
+      "title": "Emo-FilM · films, corps et ressentis",
+      "question": "Que mesure-t-on pendant un film ?",
+      "species": "human",
+      "scope": "44 annotateurs et un autre groupe de 30 personnes en IRMf. Deux populations distinctes.",
+      "guard": "Les courbes de consensus ne décrivent pas le ressenti instantané du sujet enregistré. Le raccord temporel du pilote reste ouvert.",
+      "evidence": [
+        {
+          "evidence_id": "EMO-PAPER",
+          "source_id": "EMO-PAPER",
+          "title": "Morgenroth et al. · 2025",
+          "url": "https://www.nature.com/articles/s41597-025-04803-5",
+          "support_scope": "Méthodes et validation technique de l’expérience."
+        },
+        {
+          "evidence_id": "EMO-ANNOT",
+          "source_id": "EMO-ANNOT",
+          "title": "Annotations · version 1.0.3",
+          "url": "https://github.com/OpenNeuroDatasets/ds004872/tree/e9b1bf0b05975f7815f2924da16e3ff37111739e",
+          "support_scope": "Instantané des annotations ; consensus standardisé, pas notes absolues."
+        },
+        {
+          "evidence_id": "EMO-FMRI",
+          "source_id": "EMO-FMRI",
+          "title": "IRMf et physiologie · version 1.0.2",
+          "url": "https://github.com/OpenNeuroDatasets/ds004892/tree/cdf68fe448ad180a476fa2371473a1a6ed063774",
+          "support_scope": "Instantané du jeu ; physiologie du pilote acquise et contrôlée, volumes IRM non acquis."
+        }
+      ],
+      "nodes": [
+        {
+          "id": "EMO-START",
+          "title": "Deux groupes pour étudier les films",
+          "label": "Deux groupes pour étudier les films",
+          "text": "Des annotations décrivent l’expérience des films ; d’autres personnes sont enregistrées en IRMf.",
+          "limit": "Les deux groupes ne sont pas les mêmes personnes.",
+          "kind": "event",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FILM",
+          "participantSetId": null,
+          "clockScope": "EMO-FILM-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "EMO-ANNOTATORS",
+          "title": "Les 44 annotateurs",
+          "label": "Les 44 annotateurs",
+          "text": "Ils évaluent continûment des aspects de leur expérience.",
+          "limit": "Chaque personne n’évalue pas chaque item ; les contributions sont sélectionnées selon la méthode.",
+          "kind": "condition",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-ANNOTATORS-44",
+          "participantSetId": "EMO-ANNOTATORS-44",
+          "clockScope": "EMO-ANNOTATION-TIME",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "EMO-CONSENSUS",
+          "title": "Un consensus de 50 items",
+          "label": "Un consensus de 50 items",
+          "text": "14 films restent dans le consensus après retrait de films et d’items peu concordants.",
+          "limit": "Les valeurs ont été standardisées et centrées : aucune note absolue de peur ou de plaisir.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-ANNOTATORS-44",
+          "participantSetId": "EMO-ANNOTATORS-44",
+          "clockScope": "EMO-ANNOTATION-TIME",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER",
+            "EMO-ANNOT"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true,
+          "pilotPanel": "consensus"
+        },
+        {
+          "id": "EMO-BREATHING",
+          "title": "Respiration ressentie : un item retiré",
+          "label": "Respiration ressentie : un item retiré",
+          "text": "L’annotation Breathing a été retirée pour faible accord entre annotations.",
+          "limit": "Le signal respiratoire mesuré chez le groupe IRMf reste une variable différente.",
+          "kind": "gap",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-ANNOTATORS-44",
+          "participantSetId": "EMO-ANNOTATORS-44",
+          "clockScope": "EMO-ANNOTATION-TIME",
+          "evidenceStatus": "unknown",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "EMO-FMRI-GROUP",
+          "title": "Les 30 personnes en IRMf",
+          "label": "Les 30 personnes en IRMf",
+          "text": "30 personnes ont terminé l’expérience d’imagerie après deux exclusions initiales.",
+          "limit": "Aucune de ces personnes ne participait au groupe d’annotation.",
+          "kind": "condition",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-SCANNER-TIME",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "EMO-PPG",
+          "title": "Mesurer le pouls optique",
+          "label": "Mesurer le pouls optique",
+          "text": "Un capteur PPG enregistre un signal périphérique pulsatile.",
+          "limit": "Ce signal n’est ni un ECG, ni une fréquence cardiaque déjà calculée, ni une émotion.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-PHYSIO-UNRESOLVED",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Site du capteur périphérique",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true,
+          "pilotPanel": "physio"
+        },
+        {
+          "id": "EMO-RESP",
+          "title": "Mesurer les mouvements respiratoires",
+          "label": "Mesurer les mouvements respiratoires",
+          "text": "Une ceinture enregistre les variations liées aux mouvements de la respiration.",
+          "limit": "Ce signal ne constitue pas la sensation respiratoire d’un annotateur.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-PHYSIO-UNRESOLVED",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Thorax · ceinture respiratoire",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true,
+          "pilotPanel": "physio"
+        },
+        {
+          "id": "EMO-EDA",
+          "title": "Mesurer la conductance cutanée",
+          "label": "Mesurer la conductance cutanée",
+          "text": "Un enregistrement électrodermal accompagne les mesures d’imagerie.",
+          "limit": "Une réponse cutanée ne signifie pas à elle seule peur ressentie. Unités du pilote non renseignées.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-PHYSIO-UNRESOLVED",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Peau · mesure électrodermale",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true,
+          "pilotPanel": "physio"
+        },
+        {
+          "id": "EMO-IRM",
+          "title": "Observer le signal IRMf",
+          "label": "Observer le signal IRMf",
+          "text": "L’imagerie suit une réponse hémodynamique pendant les films.",
+          "limit": "Le BOLD n’est pas une mesure directe de décharge neuronale. Aucun volume IRM acquis dans ce pilote.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-SCANNER-TIME",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Cerveau · imagerie de groupe",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "EMO-RECALL",
+          "title": "Évaluer après le scanner",
+          "label": "Évaluer après le scanner",
+          "text": "Des évaluations sur extraits sont recueillies après les acquisitions.",
+          "limit": "Ce rappel n’est pas une mesure continue du ressenti pendant le scan. Heartrate et Warm ne figurent pas dans cette validation.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-RECALL-TIME",
+          "evidenceStatus": "data",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "EMO-CLOCK",
+          "title": "Le raccord des horloges reste ouvert",
+          "label": "Le raccord des horloges reste ouvert",
+          "text": "Le fichier descriptif et la colonne de temps du pilote donnent des origines différentes.",
+          "limit": "Un canal candidat comporte 535 fronts ; le début exact du film et le conflit de métadonnée ne sont pas encore résolus. Aucune synchronisation affichée.",
+          "kind": "gap",
+          "species": "human",
+          "studyId": "EMO-FILM",
+          "documentarySetId": "EMO-FMRI-30",
+          "participantSetId": "EMO-FMRI-30",
+          "clockScope": "EMO-PHYSIO-UNRESOLVED",
+          "evidenceStatus": "unknown",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false,
+          "pilotPanel": "timing"
+        }
+      ],
+      "edges": [
+        {
+          "id": "EMO-FILM-R01",
+          "to": "EMO-ANNOTATORS",
+          "label": "Voir le groupe d’annotation",
+          "reference_card": "EMO-FILM",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "condition",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Voir le groupe d’annotation"
+          },
+          "from": "EMO-START"
+        },
+        {
+          "id": "EMO-FILM-R02",
+          "to": "EMO-FMRI-GROUP",
+          "label": "Voir le groupe IRMf",
+          "reference_card": "EMO-FILM",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "condition",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Voir le groupe IRMf"
+          },
+          "from": "EMO-START"
+        },
+        {
+          "id": "EMO-FILM-R03",
+          "to": "EMO-CONSENSUS",
+          "label": "Consulter le consensus",
+          "reference_card": "EMO-ANNOTATORS-44",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Consulter le consensus"
+          },
+          "from": "EMO-ANNOTATORS"
+        },
+        {
+          "id": "EMO-FILM-R04",
+          "to": "EMO-BREATHING",
+          "label": "Comprendre un retrait",
+          "reference_card": "EMO-ANNOTATORS-44",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Comprendre un retrait"
+          },
+          "from": "EMO-CONSENSUS"
+        },
+        {
+          "id": "EMO-FILM-R05",
+          "to": "EMO-FMRI-GROUP",
+          "label": "Comparer les deux groupes",
+          "reference_card": "EMO-ANNOTATORS-44",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "comparison",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Comparer les deux groupes"
+          },
+          "from": "EMO-CONSENSUS"
+        },
+        {
+          "id": "EMO-FILM-R06",
+          "to": "EMO-PPG",
+          "label": "Mesure du pouls",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Mesure du pouls"
+          },
+          "from": "EMO-FMRI-GROUP"
+        },
+        {
+          "id": "EMO-FILM-R07",
+          "to": "EMO-RESP",
+          "label": "Mesure respiratoire",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Mesure respiratoire"
+          },
+          "from": "EMO-FMRI-GROUP"
+        },
+        {
+          "id": "EMO-FILM-R08",
+          "to": "EMO-EDA",
+          "label": "Mesure cutanée",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Mesure cutanée"
+          },
+          "from": "EMO-FMRI-GROUP"
+        },
+        {
+          "id": "EMO-FILM-R09",
+          "to": "EMO-IRM",
+          "label": "Mesure d’imagerie",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Mesure d’imagerie"
+          },
+          "from": "EMO-FMRI-GROUP"
+        },
+        {
+          "id": "EMO-FILM-R10",
+          "to": "EMO-RECALL",
+          "label": "Consulter les rapports ultérieurs",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Consulter les rapports ultérieurs"
+          },
+          "from": "EMO-IRM"
+        },
+        {
+          "id": "EMO-FILM-R11",
+          "to": "EMO-CLOCK",
+          "label": "Lire la limite temporelle",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Lire la limite temporelle"
+          },
+          "from": "EMO-RESP"
+        },
+        {
+          "id": "EMO-FILM-R12",
+          "to": "EMO-CLOCK",
+          "label": "Lire la limite temporelle",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Lire la limite temporelle"
+          },
+          "from": "EMO-PPG"
+        },
+        {
+          "id": "EMO-FILM-R13",
+          "to": "EMO-CLOCK",
+          "label": "Lire la limite temporelle",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Lire la limite temporelle"
+          },
+          "from": "EMO-EDA"
+        },
+        {
+          "id": "EMO-FILM-R14",
+          "to": "EMO-CONSENSUS",
+          "label": "Comparer sans synchroniser",
+          "reference_card": "EMO-FMRI-30",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "comparison",
+            "source": "https://www.nature.com/articles/s41597-025-04803-5",
+            "label": "Comparer sans synchroniser"
+          },
+          "from": "EMO-CLOCK"
+        }
+      ]
+    },
+    {
+      "id": "HASSANPOUR",
+      "title": "Hassanpour · sensations et insula",
+      "question": "Comment le corps et les sensations sont-ils étudiés ?",
+      "species": "human",
+      "scope": "23 volontaires sains et non médicamentés · en ligne 2017, volume 2018.",
+      "guard": "Sensations corporelles, activité hémodynamique et émotions rapportées après le scan restent distinctes.",
+      "evidence": [
+        {
+          "evidence_id": "HASS-PAPER",
+          "source_id": "HASS-PAPER",
+          "title": "Hassanpour et al. · 2017/2018",
+          "url": "https://www.nature.com/articles/npp2017154",
+          "support_scope": "Protocole, résultats et limites de l’étude."
+        },
+        {
+          "evidence_id": "HASS-SUP",
+          "source_id": "HASS-SUP",
+          "title": "Tables supplémentaires 1–4",
+          "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM66_ESM.docx",
+          "support_scope": "Contrastes de groupe et chevauchements d’atlas, pas positions individuelles."
+        }
+      ],
+      "nodes": [
+        {
+          "id": "HASS-START",
+          "title": "Le contexte des 23 volontaires",
+          "label": "Le contexte des 23 volontaires",
+          "text": "Cette étude porte sur des personnes saines, avec familiarisation préalable et début de perfusion annoncé.",
+          "limit": "Elle ne décrit pas une cohorte présentant un trouble panique.",
+          "kind": "condition",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASSANPOUR-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "HASS-PERTURB",
+          "title": "Une perturbation périphérique documentée",
+          "label": "Une perturbation périphérique documentée",
+          "text": "Le protocole compare une perturbation adrénergique et un contrôle salin, avec ordre randomisé et double aveugle déclaré.",
+          "limit": "La consultation décrit l’expérience publiée ; aucun effet pharmacologique n’est calculé.",
+          "kind": "event",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASSANPOUR-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "HASS-BODY",
+          "title": "Enregistrer les réponses corporelles",
+          "label": "Enregistrer les réponses corporelles",
+          "text": "Les signaux cardiaques et respiratoires sont enregistrés pendant l’acquisition.",
+          "limit": "La fréquence des capteurs ne fournit pas la résolution temporelle du signal neuronal.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASS-SCAN",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Cœur et respiration · capteurs périphériques",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "HASS-DIAL",
+          "title": "La molette des sensations",
+          "label": "La molette des sensations",
+          "text": "La personne suit l’intensité globale de ses sensations cardiaques et respiratoires.",
+          "limit": "La molette n’est pas une mesure continue de peur, de plaisir ou de conscience.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASS-SCAN",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "HASS-ASL",
+          "title": "Comparer des fenêtres ASL",
+          "label": "Comparer des fenêtres ASL",
+          "text": "Référence 0–60 s, pic 80–140 s et récupération 160–240 s sont des fenêtres du protocole.",
+          "limit": "Ces fenêtres ne sont pas des instants de propagation. TR fonctionnel de 4 s ; signal hémodynamique indirect.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASS-SCAN",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Cerveau · réponse hémodynamique ASL",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true,
+          "windows": [
+            {
+              "label": "Référence",
+              "start": 0,
+              "end": 60
+            },
+            {
+              "label": "Pic",
+              "start": 80,
+              "end": 140
+            },
+            {
+              "label": "Récupération",
+              "start": 160,
+              "end": 240
+            }
+          ]
+        },
+        {
+          "id": "HASS-INSULA",
+          "title": "Des contrastes dans l’insula",
+          "label": "Des contrastes dans l’insula",
+          "text": "Des amas insulaires diffèrent entre fenêtres et selon le traitement du bruit physiologique.",
+          "limit": "Les maxima MNI sont des repères statistiques de groupe, pas des capteurs ou un trajet observé. Aucune projection individuelle ajoutée.",
+          "kind": "anatomy",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASS-SCAN",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER",
+            "HASS-SUP"
+          ],
+          "location": {
+            "name": "Insula · plusieurs sous-régions selon le contraste",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "HASS-EMOTION",
+          "title": "Les émotions sont rapportées après",
+          "label": "Les émotions sont rapportées après",
+          "text": "Le résultat d’émotion négative est p = 0,053 ; celui d’émotion positive p = 0,95.",
+          "limit": "L’augmentation d’émotion négative ne franchit pas le seuil usuel de 0,05. Ce protocole ne démontre pas une induction significative de panique.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASS-AFTER-SCAN",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "HASS-NULL",
+          "title": "Conserver les résultats absents",
+          "label": "Conserver les résultats absents",
+          "text": "Les analyses exploratoires ne trouvent pas de corrélation significative entre activité insulaire et plusieurs mesures d’anxiété ou d’interoception.",
+          "limit": "L’absence de significativité ne prouve pas un effet nul dans toutes les populations ; les dénominateurs restent propres aux analyses.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASSANPOUR-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "HASS-GAP",
+          "title": "Le trajet afférent n’est pas suivi",
+          "label": "Le trajet afférent n’est pas suivi",
+          "text": "L’expérience ne mesure pas d’un seul tenant cœur, ganglion nodose, NTS et insula.",
+          "limit": "Le raccord ouvert de P01 reste ouvert ; aucune continuité souris–humain n’est ajoutée. Données individuelles et scripts complets non identifiés.",
+          "kind": "gap",
+          "species": "human",
+          "studyId": "HASSANPOUR",
+          "documentarySetId": "HASS-23",
+          "participantSetId": "HASS-23",
+          "clockScope": "HASSANPOUR-DOCUMENT",
+          "evidenceStatus": "unknown",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        }
+      ],
+      "edges": [
+        {
+          "id": "HASSANPOUR-R01",
+          "to": "HASS-PERTURB",
+          "label": "Lire le protocole",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "condition",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Lire le protocole"
+          },
+          "from": "HASS-START"
+        },
+        {
+          "id": "HASSANPOUR-R02",
+          "to": "HASS-BODY",
+          "label": "Consulter les mesures corporelles",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Consulter les mesures corporelles"
+          },
+          "from": "HASS-PERTURB"
+        },
+        {
+          "id": "HASSANPOUR-R03",
+          "to": "HASS-DIAL",
+          "label": "Consulter les sensations",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Consulter les sensations"
+          },
+          "from": "HASS-PERTURB"
+        },
+        {
+          "id": "HASSANPOUR-R04",
+          "to": "HASS-ASL",
+          "label": "Consulter l’imagerie",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Consulter l’imagerie"
+          },
+          "from": "HASS-PERTURB"
+        },
+        {
+          "id": "HASSANPOUR-R05",
+          "to": "HASS-EMOTION",
+          "label": "Consulter le rapport ultérieur",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Consulter le rapport ultérieur"
+          },
+          "from": "HASS-PERTURB"
+        },
+        {
+          "id": "HASSANPOUR-R06",
+          "to": "HASS-INSULA",
+          "label": "Situer le contraste",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "anatomy",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Situer le contraste"
+          },
+          "from": "HASS-ASL"
+        },
+        {
+          "id": "HASSANPOUR-R07",
+          "to": "HASS-NULL",
+          "label": "Lire les résultats exploratoires",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Lire les résultats exploratoires"
+          },
+          "from": "HASS-INSULA"
+        },
+        {
+          "id": "HASSANPOUR-R08",
+          "to": "HASS-GAP",
+          "label": "Voir la limite du trajet",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Voir la limite du trajet"
+          },
+          "from": "HASS-NULL"
+        },
+        {
+          "id": "HASSANPOUR-R09",
+          "to": "HASS-EMOTION",
+          "label": "Comparer sensation et émotion rapportée",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Comparer sensation et émotion rapportée"
+          },
+          "from": "HASS-DIAL"
+        },
+        {
+          "id": "HASSANPOUR-R10",
+          "to": "HASS-GAP",
+          "label": "Lire ce qui reste inconnu",
+          "reference_card": "HASS-23",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://www.nature.com/articles/npp2017154",
+            "label": "Lire ce qui reste inconnu"
+          },
+          "from": "HASS-BODY"
+        }
+      ]
+    },
+    {
+      "id": "INMAN",
+      "title": "Inman · corps et émotion déclarée",
+      "question": "Une réaction corporelle signifie-t-elle une émotion déclarée ?",
+      "species": "human",
+      "scope": "9 patients épileptiques étudiés · 7 dans le modèle principal · deux cas émotionnels séparés.",
+      "guard": "La sélection du modèle et les exclusions restent visibles. Ne pas généraliser le groupe principal aux neuf personnes.",
+      "evidence": [
+        {
+          "evidence_id": "INMAN-PAPER",
+          "source_id": "INMAN-PAPER",
+          "title": "Inman et al. · 2018/2020",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+          "support_scope": "Sections 2.1–2.4, 3.1–3.4, table 2 et limites du manuscrit primaire."
+        }
+      ],
+      "nodes": [
+        {
+          "id": "INMAN-START",
+          "title": "Neuf patients et plusieurs analyses",
+          "label": "Neuf patients et plusieurs analyses",
+          "text": "Les électrodes sont implantées dans le cadre d’une exploration clinique de l’épilepsie.",
+          "limit": "Cette population et ces sites ne représentent pas l’ensemble des personnes.",
+          "kind": "condition",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-9",
+          "participantSetId": "INMAN-9",
+          "clockScope": "INMAN-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "INMAN-MAIN",
+          "title": "Sept patients dans le modèle principal",
+          "label": "Sept patients dans le modèle principal",
+          "text": "S8 est traité séparément en raison de son profil de réponse ; S9 a des enregistrements autonomes insuffisants.",
+          "limit": "La sélection du modèle conditionne sa portée ; les essais répétés ne sont pas des personnes indépendantes.",
+          "kind": "condition",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-MAIN-7",
+          "participantSetId": "INMAN-MAIN-7",
+          "clockScope": "INMAN-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "INMAN-STIM",
+          "title": "Une intervention comparée à des témoins",
+          "label": "Une intervention comparée à des témoins",
+          "text": "La stimulation amygdalienne est comparée à un site temporal et à des essais simulés intercalés.",
+          "limit": "Le participant est aveugle ; les amplitudes augmentent par paliers. Aucun réglage ni stimulation réelle n’est proposé ici.",
+          "kind": "event",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-MAIN-7",
+          "participantSetId": "INMAN-MAIN-7",
+          "clockScope": "INMAN-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "INMAN-AUTON",
+          "title": "Des réponses autonomes observées",
+          "label": "Des réponses autonomes observées",
+          "text": "Le modèle principal décrit des réponses électrodermales et un ralentissement cardiaque.",
+          "limit": "Les amplitudes ne sont pas réutilisées : échelle et transformation EDA demandent clarification.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-MAIN-7",
+          "participantSetId": "INMAN-MAIN-7",
+          "clockScope": "INMAN-DURING",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Peau et cœur · signaux périphériques",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "INMAN-NOREPORT",
+          "title": "Pas d’émotion déclarée chez ces sept personnes",
+          "label": "Pas d’émotion déclarée chez ces sept personnes",
+          "text": "Ces participants ne rapportent pas d’émotion lorsqu’ils sont interrogés après les essais.",
+          "limit": "Ne pas rapporter n’est pas démontrer une absence absolue d’expérience ; sensibilité et moment du recueil comptent.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-MAIN-7",
+          "participantSetId": "INMAN-MAIN-7",
+          "clockScope": "INMAN-AFTER",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "INMAN-EXCEPTIONS",
+          "title": "Deux cas avec réponses subjectives",
+          "label": "Deux cas avec réponses subjectives",
+          "text": "S8 et S9 sont décrits séparément dans le manuscrit.",
+          "limit": "Ces deux cas appartiennent aux neuf personnes ; ils ne sont pas deux nouvelles cohortes.",
+          "kind": "condition",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-CASES-2",
+          "participantSetId": "INMAN-CASES-2",
+          "clockScope": "INMAN-DOCUMENT",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        },
+        {
+          "id": "INMAN-S8",
+          "title": "S8 : peur rapportée et cœur accéléré",
+          "label": "S8 : peur rapportée et cœur accéléré",
+          "text": "Ce cas associe notamment un rapport de peur et une augmentation cardiaque à certaines stimulations.",
+          "limit": "La direction cardiaque diffère du groupe principal ; conserver cette exception. Aucun instant d’apparition subjectif n’est déduit.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-S8",
+          "participantSetId": "INMAN-S8",
+          "clockScope": "INMAN-AFTER",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Amygdale stimulée ; cœur enregistré ; rapport du patient",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "INMAN-S9",
+          "title": "S9 : rapports conservés, signaux insuffisants",
+          "label": "S9 : rapports conservés, signaux insuffisants",
+          "text": "Des expériences subjectives sont rapportées, avec des enregistrements autonomes insuffisants pour la modélisation.",
+          "limit": "Aucune courbe physiologique n’est fabriquée pour compléter ce cas.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-S9",
+          "participantSetId": "INMAN-S9",
+          "clockScope": "INMAN-AFTER",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "INMAN-RESP",
+          "title": "Respiration : distinguer les termes du modèle",
+          "label": "Respiration : distinguer les termes du modèle",
+          "text": "Le terme de tension et le contraste régional ne donnent pas le même résultat statistique. Aucune apnée n’est observée dans les conditions rapportées.",
+          "limit": "Cela ne signifie ni absence universelle d’effet, ni équivalence avec les protocoles d’apnée d’autres articles.",
+          "kind": "measurement",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-MAIN-7",
+          "participantSetId": "INMAN-MAIN-7",
+          "clockScope": "INMAN-DURING",
+          "evidenceStatus": "data",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Thorax · ceinture respiratoire",
+            "status": "documente",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": true
+        },
+        {
+          "id": "INMAN-QUANT",
+          "title": "Des ambiguïtés quantitatives à garder ouvertes",
+          "label": "Des ambiguïtés quantitatives à garder ouvertes",
+          "text": "Le texte et la table n’impriment pas le même p pour le terme de tension EDA ; la retransformation et le traitement respiratoire sont à clarifier.",
+          "limit": "Pas de pente ou d’amplitude simulée à partir de ces seules descriptions. Scripts et données par essai non identifiés.",
+          "kind": "gap",
+          "species": "human",
+          "studyId": "INMAN",
+          "documentarySetId": "INMAN-MAIN-7",
+          "participantSetId": "INMAN-MAIN-7",
+          "clockScope": "INMAN-DOCUMENT",
+          "evidenceStatus": "unknown",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "location": {
+            "name": "Ensemble de l’expérience",
+            "status": "non_applicable",
+            "precision": "Lieu nommé à partir de la source ; aucun point individuel ajouté."
+          },
+          "biologicalTime": null,
+          "autoQualified": false
+        }
+      ],
+      "edges": [
+        {
+          "id": "INMAN-R01",
+          "to": "INMAN-MAIN",
+          "label": "Voir le groupe du modèle",
+          "reference_card": "INMAN-9",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "condition",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Voir le groupe du modèle"
+          },
+          "from": "INMAN-START"
+        },
+        {
+          "id": "INMAN-R02",
+          "to": "INMAN-EXCEPTIONS",
+          "label": "Voir les cas émotionnels",
+          "reference_card": "INMAN-9",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "condition",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Voir les cas émotionnels"
+          },
+          "from": "INMAN-START"
+        },
+        {
+          "id": "INMAN-R03",
+          "to": "INMAN-STIM",
+          "label": "Lire le protocole",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "condition",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Lire le protocole"
+          },
+          "from": "INMAN-MAIN"
+        },
+        {
+          "id": "INMAN-R04",
+          "to": "INMAN-AUTON",
+          "label": "Consulter les réponses autonomes",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Consulter les réponses autonomes"
+          },
+          "from": "INMAN-STIM"
+        },
+        {
+          "id": "INMAN-R05",
+          "to": "INMAN-NOREPORT",
+          "label": "Consulter les rapports après essai",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Consulter les rapports après essai"
+          },
+          "from": "INMAN-STIM"
+        },
+        {
+          "id": "INMAN-R06",
+          "to": "INMAN-RESP",
+          "label": "Consulter la respiration",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Consulter la respiration"
+          },
+          "from": "INMAN-STIM"
+        },
+        {
+          "id": "INMAN-R07",
+          "to": "INMAN-S8",
+          "label": "Lire le cas S8",
+          "reference_card": "INMAN-CASES-2",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Lire le cas S8"
+          },
+          "from": "INMAN-EXCEPTIONS"
+        },
+        {
+          "id": "INMAN-R08",
+          "to": "INMAN-S9",
+          "label": "Lire le cas S9",
+          "reference_card": "INMAN-CASES-2",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "measurement",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Lire le cas S9"
+          },
+          "from": "INMAN-EXCEPTIONS"
+        },
+        {
+          "id": "INMAN-R09",
+          "to": "INMAN-QUANT",
+          "label": "Lire les limites quantitatives",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Lire les limites quantitatives"
+          },
+          "from": "INMAN-AUTON"
+        },
+        {
+          "id": "INMAN-R10",
+          "to": "INMAN-S8",
+          "label": "Comparer avec un autre profil",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "comparison",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Comparer avec un autre profil"
+          },
+          "from": "INMAN-AUTON"
+        },
+        {
+          "id": "INMAN-R11",
+          "to": "INMAN-QUANT",
+          "label": "Lire les réserves de méthode",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "gap",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Lire les réserves de méthode"
+          },
+          "from": "INMAN-RESP"
+        },
+        {
+          "id": "INMAN-R12",
+          "to": "INMAN-EXCEPTIONS",
+          "label": "Comparer avec les cas émotionnels",
+          "reference_card": "INMAN-MAIN-7",
+          "warning": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée.",
+          "mechanism": {
+            "status": "comparison",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+            "label": "Comparer avec les cas émotionnels"
+          },
+          "from": "INMAN-NOREPORT"
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "time_alignment": "blocked",
+    "effect_estimation": false,
+    "biological_simulation": false,
+    "independent_replications_claimed": false
+  }
+}

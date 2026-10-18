@@ -1,0 +1,7 @@
+# v0.20 — sensibilité DR11 et calibration, avant calcul
+
+Les résultats principaux v0.14–v0.19 demeurent inchangés. Diagnostic DR11 : retirer seulement mDR11d20201212 de l'apprentissage, conserver exactement les sessions de test et toutes les autres sessions. Refaire Q statique et méta avec les mêmes bornes, trois départs, objectif et sélection sur apprentissage seul. Refaire la logistique de participation avec les mêmes variables et ridge=1. Rapporter tous les départs, convergences et pertes ; aucun choix de variante sur test. Cette exclusion est motivée après découverte d'anomalies et reste une sensibilité exploratoire, pas le résultat principal.
+
+Calibration : reconstruire les cinq prédictions gelées évaluées v0.17 pour les douze animaux. Vérifier leurs log-pertes/Brier contre v0.17. Rapporter par session puis animal biais moyen p−y, Brier, et tableau descriptif dans les classes de probabilité fixes [0 ; 0,5[, [0,5 ; 0,8[, [0,8 ; 0,9[, [0,9 ; 0,95[, [0,95 ; 1]. Garder les cases vides, sans p sur essais ni fusion en population indépendante. Les cases sont des descriptions rétrospectives, pas une nouvelle calibration entraînée.
+
+Les modèles roulants continuent à utiliser seulement les labels précédents. Ni la logistique réajustée ni l'exclusion DR11 ne sont branchées au simulateur libre. Les gates domaine, horloges, calibration chimique et provenance restent distincts de ces scores prédictifs.

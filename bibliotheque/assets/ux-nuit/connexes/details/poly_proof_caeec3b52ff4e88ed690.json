@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:caeec3b52ff4e88ed690",
+  "kind": "proof",
+  "title": "RESUME_AVANCEMENT.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      14,
+      "proofs",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+    "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+    "bytes": 1266,
+    "content_loaded": false
+  }
+}

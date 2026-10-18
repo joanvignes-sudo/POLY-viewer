@@ -1,0 +1,9 @@
+MNI Transform File
+%Mon Jan 14 12:40:01 2019>>> xfmconcat ../BigBrain-to-PD25-nonlin.xfm ../PD25-to-ICBM2009sym-nonlin.xfm ../BigBrain-to-ICBM2009sym-nonlin.xfm -clobber
+
+Transform_Type = Grid_Transform;
+Displacement_Volume = BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc;
+Transform_Type = Grid_Transform;
+Displacement_Volume = BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc;
+Transform_Type = Grid_Transform;
+Displacement_Volume = BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc;

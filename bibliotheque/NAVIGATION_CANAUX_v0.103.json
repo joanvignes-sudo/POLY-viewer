@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8899/",
+  "fields": 2,
+  "planes_checked": 34,
+  "four_source_exports": true,
+  "source_rgb_unchanged_by_gain": true,
+  "original_reset": true,
+  "synchronized_zoom_pan_and_share": true,
+  "source_tiff_links": true,
+  "cache_bound": 8,
+  "corruption_rejected_and_recovery": true,
+  "invalid_query_clamped": true,
+  "mobile": true,
+  "javascript_errors": []
+}

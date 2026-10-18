@@ -1,0 +1,12 @@
+{
+  "source": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/skeletons/3.shard",
+  "shard": 3,
+  "minishard": 1,
+  "segment_id": 1072605926,
+  "vertices": 25895,
+  "edges": 25850,
+  "range": [
+    1592235,
+    1846335
+  ]
+}

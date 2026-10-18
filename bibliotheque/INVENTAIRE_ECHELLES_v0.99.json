@@ -1,0 +1,97 @@
+{
+  "version": "0.99",
+  "date": "2026-10-12",
+  "scope": "Programme entre échelles : BigBrain, Allen humain, H01 EM, HiP-CT, SPARC humain.",
+  "individual_registration_available": false,
+  "sources": [
+    {
+      "id": "bigbrain",
+      "name": "BigBrain",
+      "status": "Intégré",
+      "sample": "Cortex, trois voisinages et coupe 3863",
+      "access": "Sources acquises localement ; surfaces et tuiles servies par POLY.",
+      "license": "CC BY-NC-SA 4.0",
+      "format": "Surfaces GIFTI ; volume MINC ; dérivés binaires et tuiles d’image.",
+      "reference": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain.",
+      "scale": "Image histologique à 20 µm ; six couches délimitées par sept frontières reconstruites.",
+      "next": "Vérifier un transform publié avant tout raccord spatial vers l’atlas moyen CerebrA.",
+      "url": "https://bigbrain.loris.ca/",
+      "local": "microstructures.html",
+      "provenance": "assets/bigbrain/PROVENANCE.json"
+    },
+    {
+      "id": "allen",
+      "name": "Cellules humaines Allen",
+      "status": "Premier échantillon intégré",
+      "sample": "637034000, H17.03.013.11.08.03 ; essai électrique 62",
+      "access": "API publique ; SWC et NWB téléchargés, fenêtre de 60 000 points conservée à 50 kHz.",
+      "license": "Conditions Allen Institute, recherche et usages non commerciaux, attribution obligatoire.",
+      "format": "SWC ; NWB/HDF5 ; métadonnées JSON.",
+      "reference": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
+      "scale": "Reconstruction cellulaire ; pas de résolution uniforme attribuée au squelette.",
+      "next": "Ajouter d’autres cellules humaines et essais documentés ; distinguer variations entre cellules et effets de préparation.",
+      "url": "https://celltypes.brain-map.org/experiment/morphology/637034000",
+      "local": "neurones.html?sample=allen-637034000",
+      "provenance": "assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "h01-em",
+      "name": "H01 · microscopie électronique",
+      "status": "Premier squelette intégré",
+      "sample": "Segment 1072605926, proofread_104, release 20210601",
+      "access": "Squelette natif acquis par plages d’octets ; archive SWC acquise pour vérification des unités.",
+      "license": "CC BY 4.0",
+      "format": "Neuroglancer precomputed, squelette binaire et stockage shard ; export SWC de contrôle.",
+      "reference": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
+      "scale": "Images EM sources annoncées à 4 × 4 × 33 nm ; ces images ne sont pas intégrées. La vue POLY est un squelette, pas une image à cette résolution.",
+      "next": "Extraire un petit bloc EM et ses annotations vérifiables pour regarder membranes et synapses ; conserver les composantes déconnectées.",
+      "url": "https://h01-release.storage.googleapis.com/data.html",
+      "local": "neurones.html?sample=h01-em-1072605926",
+      "provenance": "assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "hipct",
+      "name": "HiP-CT · Human Organ Atlas",
+      "status": "Sélection documentée · images à extraire",
+      "sample": "Cœur S-20-28 : vue entière 19,85 µm ; VOI-01 6,51 µm ; valve tricuspide annoncée 12,02 µm (champ acquisition arrondi à 12,0).",
+      "access": "Métadonnées officielles capturées. Le téléchargement partiel et le volume d’un échantillon restent à valider ; aucune image locale revendiquée.",
+      "license": "CC BY 4.0 selon le portail Human Organ Atlas.",
+      "format": "Tomographie 3D hiérarchique ; format exact et organisation du petit extrait à confirmer sur les fichiers téléchargeables.",
+      "reference": "Même organe et même donneur pour la sélection. Transformations entre acquisitions à récupérer et vérifier, pas de coordonnées communes supposées.",
+      "scale": "Pas de voxel du jeu entier et de deux régions selon leurs métadonnées, sans prétendre résoudre chaque cellule.",
+      "next": "Récupérer les descriptifs de volumes et leurs transforms ; extraire un petit bloc et une coupe, avec leur position dans l’organe.",
+      "url": "https://human-organ-atlas.esrf.fr/explore/organ/heart",
+      "local": null,
+      "provenance": "assets/multiscale/hoa-heart-selection.json"
+    },
+    {
+      "id": "sparc",
+      "name": "SPARC · nerf vague humain",
+      "status": "Jeu humain sélectionné · géométrie à extraire",
+      "sample": "Dataset 426, version 7, Scaffold map - Human vagus nerve ; DOI 10.26275/tjzi-muqm.",
+      "access": "Métadonnées et notice acquises par accès public. Essai de liste des fichiers non concluant (401/404) : mode public de récupération du fragment encore à établir.",
+      "license": "Creative Commons Attribution, libellé exact de la métadonnée ; version de licence à confirmer sur les fichiers retenus.",
+      "format": "Scaffolds EXF et sorties de visualisation décrits par SPARC ; fichiers de l’échantillon et unités encore à contrôler.",
+      "reference": "Repères de scaffold propres au spécimen, configurations ex vivo et dans le corps à distinguer. Aucun trajet ajouté à notre tête humaine.",
+      "scale": "Reconstruction anatomique du tronc et des branches ; fascicules et niveaux microscopiques à documenter pour chaque échantillon.",
+      "next": "Acquérir un scaffold et les annotations de segmentation associées ; conserver les transformations et distinguer mesuré, assemblé et modélisé.",
+      "url": "https://sparc.science/datasets/426",
+      "local": null,
+      "provenance": "assets/multiscale/sparc-426.json"
+    }
+  ],
+  "metadata_files": [
+    {
+      "path": "assets/multiscale/hoa-heart-selection.json",
+      "sha256": "79f153b8c376511fa4305d5240451a5fe33ee0073c5498910c4119218bb5027c"
+    },
+    {
+      "path": "assets/multiscale/sparc-426.json",
+      "sha256": "668356ccbfbd8e99763ae101244d9b52dcb842bf069dd1f320e0f84410aebf41"
+    },
+    {
+      "path": "assets/multiscale/sparc-readme.md",
+      "sha256": "a77354664bd44f921b7ee70eebdfa67861418550a788da99a2db7f523851a00a"
+    }
+  ]
+}

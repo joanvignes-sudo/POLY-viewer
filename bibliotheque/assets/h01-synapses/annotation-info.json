@@ -1,0 +1,297 @@
+{
+  "@type": "neuroglancer_annotations_v1",
+  "annotation_type": "LINE",
+  "dimensions": {
+    "x": [
+      8e-09,
+      "m"
+    ],
+    "y": [
+      8e-09,
+      "m"
+    ],
+    "z": [
+      3.3e-08,
+      "m"
+    ]
+  },
+  "lower_bound": [
+    64667.0,
+    39426.0,
+    63.0
+  ],
+  "upper_bound": [
+    483997.0,
+    296180.0,
+    5231.0
+  ],
+  "by_id": {
+    "key": "by_id",
+    "sharding": {
+      "@type": "neuroglancer_uint64_sharded_v1",
+      "data_encoding": "gzip",
+      "hash": "murmurhash3_x86_128",
+      "minishard_bits": 14,
+      "minishard_index_encoding": "gzip",
+      "preshift_bits": 10,
+      "shard_bits": 4
+    }
+  },
+  "relationships": [
+    {
+      "key": "pre_synaptic_cell",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "murmurhash3_x86_128",
+        "minishard_bits": 13,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 4
+      },
+      "id": "pre_synaptic_cell"
+    },
+    {
+      "key": "post_synaptic_cell",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "murmurhash3_x86_128",
+        "minishard_bits": 12,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 4
+      },
+      "id": "post_synaptic_cell"
+    }
+  ],
+  "properties": [
+    {
+      "id": "type",
+      "type": "uint32"
+    }
+  ],
+  "spatial": [
+    {
+      "chunk_size": [
+        419330.0,
+        256754.0,
+        5168.0
+      ],
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "key": "spatial0",
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        209665.0,
+        256754.0,
+        5168.0
+      ],
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "key": "spatial1",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        104832.5,
+        128377.0,
+        5168.0
+      ],
+      "grid_shape": [
+        4,
+        2,
+        1
+      ],
+      "key": "spatial2",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        52416.25,
+        64188.5,
+        5168.0
+      ],
+      "grid_shape": [
+        8,
+        4,
+        1
+      ],
+      "key": "spatial3",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        26208.125,
+        32094.25,
+        5168.0
+      ],
+      "grid_shape": [
+        16,
+        8,
+        1
+      ],
+      "key": "spatial4",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        13104.0625,
+        16047.125,
+        5168.0
+      ],
+      "grid_shape": [
+        32,
+        16,
+        1
+      ],
+      "key": "spatial5",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 0,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 0
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        13104.0625,
+        8023.5625,
+        2584.0
+      ],
+      "grid_shape": [
+        32,
+        32,
+        2
+      ],
+      "key": "spatial6",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 1,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 1
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        6552.03125,
+        8023.5625,
+        1292.0
+      ],
+      "grid_shape": [
+        64,
+        32,
+        4
+      ],
+      "key": "spatial7",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 1,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 3
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        3276.015625,
+        4011.78125,
+        1292.0
+      ],
+      "grid_shape": [
+        128,
+        64,
+        4
+      ],
+      "key": "spatial8",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 2,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 4
+      },
+      "limit": 10000
+    },
+    {
+      "chunk_size": [
+        3276.015625,
+        2005.890625,
+        646.0
+      ],
+      "grid_shape": [
+        128,
+        128,
+        8
+      ],
+      "key": "spatial9",
+      "sharding": {
+        "@type": "neuroglancer_uint64_sharded_v1",
+        "data_encoding": "gzip",
+        "hash": "identity",
+        "minishard_bits": 4,
+        "minishard_index_encoding": "gzip",
+        "preshift_bits": 10,
+        "shard_bits": 4
+      },
+      "limit": 1332
+    }
+  ]
+}

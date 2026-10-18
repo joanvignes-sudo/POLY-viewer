@@ -1,0 +1,3 @@
+# Sensibilité descriptive des seuils, avant contraste
+
+Le premier audit retrouve l'égalité des drapeaux exportés et Pvalues<0,05. Avant calcul des contrastes, comparer les fractions de sites sous 0,01, 0,05 et 0,1 pour ventilation standard versus lente/profonde, dans CohVent_matchedHiTV et CohVentHi. Agréger par participant, garder tous les participants communs et seuils annoncés. Ne pas choisir le seuil favorable ; aucun nouveau p ou correction de significativité. Même si les sites sont appariables, une fraction par condition n'explique ni les signaux ni le vécu. Conserver les dénominateurs par condition et la réserve sur le statut brut/corrigé des Pvalues.

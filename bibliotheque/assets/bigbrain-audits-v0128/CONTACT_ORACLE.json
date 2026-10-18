@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "method": "Independent exact rational plane intersection and Gram-matrix barycentric clipping, with shared-simplex comparison. No Moller-Trumbore or 2D projection predicate reused.",
+  "positive_pairs": 693,
+  "additional_pairs": 4634,
+  "patches": 86,
+  "all_initial_contact_pairs_reproduced": true
+}

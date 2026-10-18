@@ -1,0 +1,99 @@
+{
+  "version": "0.109",
+  "status": "passed",
+  "source_chunks": 96,
+  "versioned_byte_ranges": 115,
+  "independent_validation": {
+    "status": "passed",
+    "reader": "TensorStore neuroglancer_precomputed via HTTP; independent shard, JPEG and segmentation readers",
+    "results": [
+      {
+        "level": "context64",
+        "layer": "4nm_raw",
+        "voxels": 7077888,
+        "differing_values": 0,
+        "max_absolute_difference": 0
+      },
+      {
+        "level": "context64",
+        "layer": "proofread_104",
+        "voxels": 7077888,
+        "differing_values": 0,
+        "max_absolute_difference": 0
+      },
+      {
+        "level": "middle16",
+        "layer": "4nm_raw",
+        "voxels": 1048576,
+        "differing_values": 0,
+        "max_absolute_difference": 0
+      },
+      {
+        "level": "middle16",
+        "layer": "proofread_104",
+        "voxels": 1048576,
+        "differing_values": 0,
+        "max_absolute_difference": 0
+      },
+      {
+        "level": "native4",
+        "layer": "4nm_raw",
+        "voxels": 2097152,
+        "differing_values": 0,
+        "max_absolute_difference": 0
+      },
+      {
+        "level": "native4",
+        "layer": "proofread_104",
+        "voxels": 524288,
+        "differing_values": 0,
+        "max_absolute_difference": 0
+      }
+    ],
+    "jpeg_scope": "POLY uses Pillow-decoded JPEG samples; any decoder rounding differences reported; no original detector intensity precision claimed",
+    "reader_version": "0.1.85"
+  },
+  "browser": {
+    "status": "passed",
+    "levels_tested": 3,
+    "axes_each": 3,
+    "decoded_pixel_values_exact": true,
+    "target_mask_mapping_exact": true,
+    "physical_cell_centres_exact": true,
+    "physical_position_preserved_within_sampling": true,
+    "anisotropic_2d_aspect_ratios_verified": true,
+    "mask_detail_keeps_8nm_sampling": true,
+    "contrast_and_mask_do_not_change_source_values": true,
+    "whole_neuron_and_fragment_frames": true,
+    "share_restores_view": true,
+    "window_boundary_return_explicit": true,
+    "invalid_url_values_handled": true,
+    "corrupt_mask_refused_and_retry_passed": true,
+    "stale_load_refused": true,
+    "no_webgl_2d_fallback": true,
+    "cache_entries_max": 2,
+    "geometry_max": 5,
+    "mobile_no_horizontal_overflow": true,
+    "javascript_errors": []
+  },
+  "navigation": {
+    "status": "passed",
+    "h01_roundtrip": true,
+    "allen_trace_preserved": true,
+    "h01_image_link_hidden_for_allen": true,
+    "mobile_index_and_programme_entrypoints": true,
+    "tampered_metadata_refused_and_retry_passed": true,
+    "javascript_errors": []
+  },
+  "desktop_mobile_visual_checked": true,
+  "local_links_checked": 100,
+  "canonical_files_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/neurons/PROVENANCE.json",
+    "assets/neurons/h01-em-1072605926.json",
+    "assets/c1/PROVENANCE.json"
+  ],
+  "synapses_identified": false,
+  "scope": "Source preservation, independent decoder equality, coordinate and interface checks; not biological validation"
+}

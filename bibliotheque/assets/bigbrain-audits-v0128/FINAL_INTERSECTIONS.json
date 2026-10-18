@@ -1,0 +1,7495 @@
+{
+  "status": "completed",
+  "method": "Exact Python integer predicates on a common power-of-two scaling of stored local float32 coordinates; sweep-and-prune exact bounding boxes, then all six segment-triangle tests including coplanar overlaps. Only contact lying entirely on indexed shared vertices or edges is accepted.",
+  "fixtures_passed": 9,
+  "patches": 86,
+  "candidate_pairs": 515924,
+  "unexpected_contact_pairs": 631,
+  "patches_with_unexpected_contacts": 25,
+  "records": [
+    {
+      "key": "context-left:11342",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            8,
+            0
+          ],
+          "source_faces": [
+            11341,
+            11342
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            11,
+            0
+          ],
+          "source_faces": [
+            11341,
+            11342
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            1
+          ],
+          "source_faces": [
+            11341,
+            11342
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            11,
+            5
+          ],
+          "source_faces": [
+            11341,
+            11340
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            11,
+            6
+          ],
+          "source_faces": [
+            11341,
+            11340
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-left:20140",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 283,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:25581",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:25590",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:27561",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 298,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:30421",
+      "triangles": 94,
+      "exact_bbox_candidate_pairs": 1355,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:44075",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46194",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 85,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46270",
+      "triangles": 26,
+      "exact_bbox_candidate_pairs": 175,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46296",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 80,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46597",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46602",
+      "triangles": 413,
+      "exact_bbox_candidate_pairs": 13657,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46604",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 282,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:46859",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 86,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:64527",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:120660",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 83,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            2,
+            9
+          ],
+          "source_faces": [
+            120660,
+            120662
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            13,
+            9
+          ],
+          "source_faces": [
+            120665,
+            120662
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            10,
+            12
+          ],
+          "source_faces": [
+            120662,
+            120665
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            12
+          ],
+          "source_faces": [
+            120662,
+            120665
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            1
+          ],
+          "source_faces": [
+            120665,
+            120660
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            12,
+            1
+          ],
+          "source_faces": [
+            120665,
+            120660
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            13,
+            3
+          ],
+          "source_faces": [
+            120665,
+            120660
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            12,
+            3
+          ],
+          "source_faces": [
+            120665,
+            120660
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-left:126296",
+      "triangles": 46,
+      "exact_bbox_candidate_pairs": 500,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            27,
+            15
+          ],
+          "source_faces": [
+            126298,
+            126296
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            27,
+            17
+          ],
+          "source_faces": [
+            126298,
+            126291
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            28,
+            17
+          ],
+          "source_faces": [
+            126298,
+            126291
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            41,
+            38
+          ],
+          "source_faces": [
+            126299,
+            126290
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            38
+          ],
+          "source_faces": [
+            126298,
+            126290
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            25,
+            38
+          ],
+          "source_faces": [
+            126298,
+            126290
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            26,
+            38
+          ],
+          "source_faces": [
+            126298,
+            126290
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            27,
+            38
+          ],
+          "source_faces": [
+            126298,
+            126290
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            28,
+            38
+          ],
+          "source_faces": [
+            126298,
+            126290
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            15,
+            38
+          ],
+          "source_faces": [
+            126296,
+            126290
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            26,
+            13
+          ],
+          "source_faces": [
+            126298,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            27,
+            13
+          ],
+          "source_faces": [
+            126298,
+            126296
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            38,
+            13
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            26,
+            14
+          ],
+          "source_faces": [
+            126298,
+            126296
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            41,
+            5
+          ],
+          "source_faces": [
+            126299,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            5
+          ],
+          "source_faces": [
+            126298,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            25,
+            5
+          ],
+          "source_faces": [
+            126298,
+            126296
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            41,
+            6
+          ],
+          "source_faces": [
+            126299,
+            126296
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            38,
+            12
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            12
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            38,
+            16
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            16
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            38,
+            18
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            18
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            35
+          ],
+          "source_faces": [
+            126290,
+            126300
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            38,
+            22
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            38,
+            24
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            24
+          ],
+          "source_faces": [
+            126290,
+            126291
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            39,
+            8
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            9
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            3
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            4
+          ],
+          "source_faces": [
+            126290,
+            126296
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            34
+          ],
+          "source_faces": [
+            126290,
+            126300
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-left:188954",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:203377",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 85,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:204702",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:209512",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 302,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:213104",
+      "triangles": 70,
+      "exact_bbox_candidate_pairs": 831,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:221730",
+      "triangles": 24,
+      "exact_bbox_candidate_pairs": 174,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            20,
+            9
+          ],
+          "source_faces": [
+            221736,
+            221729
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            20,
+            2
+          ],
+          "source_faces": [
+            221736,
+            221730
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            11,
+            15
+          ],
+          "source_faces": [
+            221729,
+            221731
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            17,
+            15
+          ],
+          "source_faces": [
+            221709,
+            221731
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            15
+          ],
+          "source_faces": [
+            221729,
+            221731
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            10,
+            15
+          ],
+          "source_faces": [
+            221729,
+            221731
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-left:221740",
+      "triangles": 28,
+      "exact_bbox_candidate_pairs": 223,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:253794",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 74,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            4,
+            9
+          ],
+          "source_faces": [
+            253792,
+            253793
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4,
+            8
+          ],
+          "source_faces": [
+            253792,
+            253793
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            5
+          ],
+          "source_faces": [
+            253793,
+            253792
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            5
+          ],
+          "source_faces": [
+            253794,
+            253792
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            2,
+            5
+          ],
+          "source_faces": [
+            253794,
+            253792
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-left:259754",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:270108",
+      "triangles": 94,
+      "exact_bbox_candidate_pairs": 1434,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:274842",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:280961",
+      "triangles": 26,
+      "exact_bbox_candidate_pairs": 171,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            18,
+            1
+          ],
+          "source_faces": [
+            280891,
+            280961
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            3
+          ],
+          "source_faces": [
+            280891,
+            280961
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            7,
+            8
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            8
+          ],
+          "source_faces": [
+            280891,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4,
+            8
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            7,
+            13
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            13
+          ],
+          "source_faces": [
+            280891,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4,
+            13
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            7,
+            23
+          ],
+          "source_faces": [
+            280893,
+            280970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            23
+          ],
+          "source_faces": [
+            280891,
+            280970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4,
+            23
+          ],
+          "source_faces": [
+            280893,
+            280970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            9
+          ],
+          "source_faces": [
+            280891,
+            280969
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4,
+            9
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-left:280969",
+      "triangles": 42,
+      "exact_bbox_candidate_pairs": 380,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            36,
+            0
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            29
+          ],
+          "source_faces": [
+            280893,
+            280970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            1
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            7
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            8
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            12
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            13
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            15
+          ],
+          "source_faces": [
+            280893,
+            280969
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-left:287256",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287262",
+      "triangles": 149,
+      "exact_bbox_candidate_pairs": 3088,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287277",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 79,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287279",
+      "triangles": 119,
+      "exact_bbox_candidate_pairs": 2395,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287286",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287536",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 76,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287545",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 81,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:287547",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:290647",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 79,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            12,
+            2
+          ],
+          "source_faces": [
+            290651,
+            290647
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            12,
+            8
+          ],
+          "source_faces": [
+            290651,
+            286467
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            0
+          ],
+          "source_faces": [
+            286467,
+            290647
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            1
+          ],
+          "source_faces": [
+            286467,
+            290647
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            5
+          ],
+          "source_faces": [
+            290647,
+            290646
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            3,
+            5
+          ],
+          "source_faces": [
+            290647,
+            290646
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            9,
+            5
+          ],
+          "source_faces": [
+            286467,
+            290646
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            6
+          ],
+          "source_faces": [
+            290647,
+            290646
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            4
+          ],
+          "source_faces": [
+            286467,
+            290646
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-left:312495",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 306,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-left:315171",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 75,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:2470",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:2473",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:5535",
+      "triangles": 4318,
+      "exact_bbox_candidate_pairs": 471295,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            4305,
+            4118
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4308,
+            4118
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4118
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4305,
+            4119
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4119
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4119
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4120
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4120
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4121
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4121
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4122
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4122
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4123
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4123
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4124
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4124
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4125
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4125
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4173
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4174
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4312
+          ],
+          "source_faces": [
+            5550,
+            5472
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4126
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4126
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4127
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4127
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4128
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4128
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4129
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4129
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4130
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4130
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4131
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4131
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4294,
+            4131
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4293,
+            4131
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4292,
+            4131
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4291,
+            4131
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4132
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4132
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4297,
+            4132
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4296,
+            4132
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4295,
+            4132
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4294,
+            4132
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4133
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4133
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4299,
+            4133
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4298,
+            4133
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4297,
+            4133
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4134
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4134
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4301,
+            4134
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4300,
+            4134
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4299,
+            4134
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4135
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4135
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4302,
+            4135
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4301,
+            4135
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4136
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4304,
+            4136
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4136
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4303,
+            4136
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4302,
+            4136
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4137
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4304,
+            4137
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4306,
+            4137
+          ],
+          "source_faces": [
+            5551,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4138
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4139
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4140
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4141
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4142
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4143
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4144
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4145
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4146
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4147
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4148
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4149
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4150
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4151
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4152
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4154
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4156
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4159
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4162
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4165
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4168
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4171
+          ],
+          "source_faces": [
+            5550,
+            5455
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4131,
+            4290
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4131,
+            4289
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4131,
+            4288
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4132,
+            4288
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4132,
+            4287
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4132,
+            4286
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4132,
+            4285
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4133,
+            4285
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4133,
+            4284
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4133,
+            4283
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4134,
+            4283
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4134,
+            4282
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4134,
+            4281
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4135,
+            4281
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4135,
+            4280
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4135,
+            4279
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4136,
+            4279
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4136,
+            4278
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4307
+          ],
+          "source_faces": [
+            5550,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4316,
+            4309
+          ],
+          "source_faces": [
+            5550,
+            5551
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4136,
+            4277
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4137,
+            4277
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4137,
+            4276
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4138,
+            4276
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4138,
+            4275
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4138,
+            4274
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4139,
+            4274
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4139,
+            4273
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4139,
+            4272
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4140,
+            4272
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4140,
+            4271
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4141,
+            4271
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4141,
+            4270
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4142,
+            1888
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4142,
+            1889
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4141,
+            4269
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4142,
+            4269
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4142,
+            1795
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4142,
+            4268
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4143,
+            4268
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4142,
+            1793
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4142,
+            1794
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4143,
+            4267
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4143,
+            4266
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4144,
+            4266
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4144,
+            4265
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4145,
+            4265
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4145,
+            4264
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4145,
+            4263
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4146,
+            4263
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4146,
+            4262
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4147,
+            1393
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4147,
+            1394
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4147,
+            1290
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4146,
+            4261
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4147,
+            4261
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4147,
+            1288
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4148,
+            1288
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4147,
+            1289
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4148,
+            1289
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4147,
+            4260
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4148,
+            4260
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4148,
+            1183
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4148,
+            4259
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4148,
+            1181
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4149,
+            1181
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4148,
+            1182
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4149,
+            1182
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4149,
+            1074
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4148,
+            4258
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4149,
+            4258
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4149,
+            1072
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4150,
+            1072
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4149,
+            1073
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4150,
+            1073
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4149,
+            4257
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4150,
+            4257
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4150,
+            963
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4150,
+            4256
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4150,
+            961
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4151,
+            961
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4150,
+            962
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4151,
+            962
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4151,
+            850
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4150,
+            4255
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4151,
+            4255
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4307,
+            4315
+          ],
+          "source_faces": [
+            5551,
+            5550
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4151,
+            848
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4152,
+            848
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4151,
+            849
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4152,
+            849
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4151,
+            4254
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4152,
+            4254
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4152,
+            735
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4152,
+            4253
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4152,
+            733
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4152,
+            734
+          ],
+          "source_faces": [
+            5455,
+            5535
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4152,
+            4252
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4154,
+            4252
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4153,
+            4252
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4153,
+            4251
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4157,
+            4251
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4157,
+            4250
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4172,
+            4242
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            4167,
+            4243
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4169,
+            4243
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4172,
+            4243
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4169,
+            4244
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4164,
+            4245
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4166,
+            4245
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4169,
+            4245
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4161,
+            4246
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4163,
+            4246
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4166,
+            4246
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4163,
+            4247
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4158,
+            4248
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4160,
+            4248
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4163,
+            4248
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4155,
+            4249
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4157,
+            4249
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4160,
+            4249
+          ],
+          "source_faces": [
+            5455,
+            5551
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4312,
+            4310
+          ],
+          "source_faces": [
+            5472,
+            5551
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:12272",
+      "triangles": 44,
+      "exact_bbox_candidate_pairs": 496,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:16099",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:17446",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 82,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:18184",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:26225",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 87,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:28988",
+      "triangles": 128,
+      "exact_bbox_candidate_pairs": 3148,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:40617",
+      "triangles": 24,
+      "exact_bbox_candidate_pairs": 163,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            12,
+            17
+          ],
+          "source_faces": [
+            40609,
+            40583
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            20,
+            17
+          ],
+          "source_faces": [
+            40610,
+            40583
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            17
+          ],
+          "source_faces": [
+            40609,
+            40583
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            17
+          ],
+          "source_faces": [
+            40609,
+            40583
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:41230",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 315,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:42142",
+      "triangles": 62,
+      "exact_bbox_candidate_pairs": 710,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            57,
+            30
+          ],
+          "source_faces": [
+            42136,
+            42141
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            57,
+            29
+          ],
+          "source_faces": [
+            42136,
+            42141
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            58,
+            29
+          ],
+          "source_faces": [
+            42136,
+            42141
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:42186",
+      "triangles": 36,
+      "exact_bbox_candidate_pairs": 345,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:42188",
+      "triangles": 57,
+      "exact_bbox_candidate_pairs": 666,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:43393",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 85,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:45371",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:78777",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 85,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            13,
+            9
+          ],
+          "source_faces": [
+            78778,
+            78769
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            14,
+            10
+          ],
+          "source_faces": [
+            78778,
+            78769
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            10
+          ],
+          "source_faces": [
+            78778,
+            78769
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            8
+          ],
+          "source_faces": [
+            78778,
+            78769
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:94101",
+      "triangles": 82,
+      "exact_bbox_candidate_pairs": 1059,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:104187",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:104293",
+      "triangles": 24,
+      "exact_bbox_candidate_pairs": 164,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            12,
+            4
+          ],
+          "source_faces": [
+            104261,
+            104272
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            20,
+            4
+          ],
+          "source_faces": [
+            104262,
+            104272
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            4
+          ],
+          "source_faces": [
+            104261,
+            104272
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            4
+          ],
+          "source_faces": [
+            104261,
+            104272
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            5
+          ],
+          "source_faces": [
+            104293,
+            104272
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            2,
+            5
+          ],
+          "source_faces": [
+            104293,
+            104272
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            14,
+            5
+          ],
+          "source_faces": [
+            104294,
+            104272
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            5,
+            13
+          ],
+          "source_faces": [
+            104272,
+            104294
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:107130",
+      "triangles": 42,
+      "exact_bbox_candidate_pairs": 382,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            33,
+            19
+          ],
+          "source_faces": [
+            107131,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            41,
+            19
+          ],
+          "source_faces": [
+            107133,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            29,
+            19
+          ],
+          "source_faces": [
+            107131,
+            107129
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            30,
+            19
+          ],
+          "source_faces": [
+            107131,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            19
+          ],
+          "source_faces": [
+            107131,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            19
+          ],
+          "source_faces": [
+            107131,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            39
+          ],
+          "source_faces": [
+            107128,
+            107132
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            22,
+            10
+          ],
+          "source_faces": [
+            107128,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            11
+          ],
+          "source_faces": [
+            107128,
+            107130
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            39,
+            12
+          ],
+          "source_faces": [
+            107132,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            17
+          ],
+          "source_faces": [
+            107130,
+            107129
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            9,
+            17
+          ],
+          "source_faces": [
+            107130,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            17
+          ],
+          "source_faces": [
+            107132,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            10,
+            17
+          ],
+          "source_faces": [
+            107130,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            16
+          ],
+          "source_faces": [
+            107132,
+            107129
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            23
+          ],
+          "source_faces": [
+            107132,
+            107128
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            10,
+            23
+          ],
+          "source_faces": [
+            107130,
+            107128
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            39,
+            13
+          ],
+          "source_faces": [
+            107132,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            17,
+            13
+          ],
+          "source_faces": [
+            107129,
+            107130
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            16,
+            13
+          ],
+          "source_faces": [
+            107129,
+            107130
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            23,
+            13
+          ],
+          "source_faces": [
+            107128,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            14
+          ],
+          "source_faces": [
+            107132,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            17,
+            14
+          ],
+          "source_faces": [
+            107129,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            16,
+            14
+          ],
+          "source_faces": [
+            107129,
+            107130
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            23,
+            14
+          ],
+          "source_faces": [
+            107128,
+            107130
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            39,
+            24
+          ],
+          "source_faces": [
+            107132,
+            107128
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            16,
+            24
+          ],
+          "source_faces": [
+            107129,
+            107128
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            24
+          ],
+          "source_faces": [
+            107130,
+            107128
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            24,
+            15
+          ],
+          "source_faces": [
+            107128,
+            107130
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:127113",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 86,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            8,
+            13
+          ],
+          "source_faces": [
+            127105,
+            127114
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            10,
+            14
+          ],
+          "source_faces": [
+            127105,
+            127114
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            10,
+            15
+          ],
+          "source_faces": [
+            127105,
+            127114
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            9
+          ],
+          "source_faces": [
+            127114,
+            127105
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            14,
+            9
+          ],
+          "source_faces": [
+            127114,
+            127105
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            15,
+            9
+          ],
+          "source_faces": [
+            127114,
+            127105
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            15,
+            1
+          ],
+          "source_faces": [
+            127114,
+            127113
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            12,
+            1
+          ],
+          "source_faces": [
+            127114,
+            127113
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            15,
+            3
+          ],
+          "source_faces": [
+            127114,
+            127113
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:144903",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 85,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            5,
+            8
+          ],
+          "source_faces": [
+            144932,
+            144902
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            6,
+            8
+          ],
+          "source_faces": [
+            144932,
+            144902
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            8
+          ],
+          "source_faces": [
+            144903,
+            144902
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            5,
+            11
+          ],
+          "source_faces": [
+            144932,
+            144902
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            11
+          ],
+          "source_faces": [
+            144903,
+            144902
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            3
+          ],
+          "source_faces": [
+            144902,
+            144903
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            8,
+            4
+          ],
+          "source_faces": [
+            144902,
+            144932
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            7
+          ],
+          "source_faces": [
+            144902,
+            144932
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:149772",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:175226",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 82,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            6,
+            9
+          ],
+          "source_faces": [
+            175225,
+            175224
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            5,
+            9
+          ],
+          "source_faces": [
+            175225,
+            175224
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            0
+          ],
+          "source_faces": [
+            175224,
+            175226
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            9,
+            1
+          ],
+          "source_faces": [
+            175224,
+            175226
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            12
+          ],
+          "source_faces": [
+            175226,
+            175227
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            15
+          ],
+          "source_faces": [
+            175226,
+            175227
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:177661",
+      "triangles": 24,
+      "exact_bbox_candidate_pairs": 164,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:183340",
+      "triangles": 94,
+      "exact_bbox_candidate_pairs": 1570,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:183351",
+      "triangles": 42,
+      "exact_bbox_candidate_pairs": 400,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            38,
+            22
+          ],
+          "source_faces": [
+            183357,
+            183350
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            34,
+            22
+          ],
+          "source_faces": [
+            183355,
+            183350
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            28,
+            22
+          ],
+          "source_faces": [
+            183355,
+            183350
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            29,
+            22
+          ],
+          "source_faces": [
+            183355,
+            183350
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            30,
+            22
+          ],
+          "source_faces": [
+            183355,
+            183350
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            22
+          ],
+          "source_faces": [
+            183355,
+            183350
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            19
+          ],
+          "source_faces": [
+            183351,
+            183428
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            20
+          ],
+          "source_faces": [
+            183351,
+            183428
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            41
+          ],
+          "source_faces": [
+            183350,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4,
+            41
+          ],
+          "source_faces": [
+            183351,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            5,
+            41
+          ],
+          "source_faces": [
+            183351,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            2,
+            41
+          ],
+          "source_faces": [
+            183351,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            3,
+            41
+          ],
+          "source_faces": [
+            183351,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            41
+          ],
+          "source_faces": [
+            183351,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            11,
+            41
+          ],
+          "source_faces": [
+            183351,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            23,
+            41
+          ],
+          "source_faces": [
+            183350,
+            183433
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            19,
+            7
+          ],
+          "source_faces": [
+            183428,
+            183351
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            19,
+            8
+          ],
+          "source_faces": [
+            183428,
+            183351
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            18
+          ],
+          "source_faces": [
+            183351,
+            183428
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            18,
+            14
+          ],
+          "source_faces": [
+            183428,
+            183351
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            24
+          ],
+          "source_faces": [
+            183428,
+            183350
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            12
+          ],
+          "source_faces": [
+            183428,
+            183351
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            18,
+            13
+          ],
+          "source_faces": [
+            183428,
+            183351
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            14,
+            17
+          ],
+          "source_faces": [
+            183351,
+            183428
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            24,
+            17
+          ],
+          "source_faces": [
+            183350,
+            183428
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            17
+          ],
+          "source_faces": [
+            183351,
+            183428
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            25,
+            17
+          ],
+          "source_faces": [
+            183350,
+            183428
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            17,
+            15
+          ],
+          "source_faces": [
+            183428,
+            183351
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            25,
+            16
+          ],
+          "source_faces": [
+            183350,
+            183428
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:187233",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 85,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:187239",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            12,
+            5
+          ],
+          "source_faces": [
+            187243,
+            187219
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            13,
+            5
+          ],
+          "source_faces": [
+            187243,
+            187219
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            5,
+            1
+          ],
+          "source_faces": [
+            187219,
+            187239
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            5,
+            2
+          ],
+          "source_faces": [
+            187219,
+            187239
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            5,
+            11
+          ],
+          "source_faces": [
+            187219,
+            187238
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            3
+          ],
+          "source_faces": [
+            187238,
+            187239
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            11,
+            3
+          ],
+          "source_faces": [
+            187238,
+            187239
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            11,
+            4
+          ],
+          "source_faces": [
+            187238,
+            187219
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:195325",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 78,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            3,
+            13
+          ],
+          "source_faces": [
+            195325,
+            195326
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            4,
+            13
+          ],
+          "source_faces": [
+            195068,
+            195326
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            13
+          ],
+          "source_faces": [
+            195325,
+            195326
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            3,
+            14
+          ],
+          "source_faces": [
+            195325,
+            195326
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            14
+          ],
+          "source_faces": [
+            195325,
+            195326
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            0
+          ],
+          "source_faces": [
+            195326,
+            195325
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            13,
+            5
+          ],
+          "source_faces": [
+            195326,
+            195068
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:195589",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:207563",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 310,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:214958",
+      "triangles": 24,
+      "exact_bbox_candidate_pairs": 170,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            19,
+            22
+          ],
+          "source_faces": [
+            214952,
+            214964
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            20,
+            22
+          ],
+          "source_faces": [
+            214955,
+            214964
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            7,
+            9
+          ],
+          "source_faces": [
+            214957,
+            214956
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            20,
+            8
+          ],
+          "source_faces": [
+            214955,
+            214956
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            8
+          ],
+          "source_faces": [
+            214964,
+            214956
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            7,
+            8
+          ],
+          "source_faces": [
+            214957,
+            214956
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            20,
+            12
+          ],
+          "source_faces": [
+            214955,
+            214956
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            12
+          ],
+          "source_faces": [
+            214964,
+            214956
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            20,
+            21
+          ],
+          "source_faces": [
+            214955,
+            214964
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            21
+          ],
+          "source_faces": [
+            214956,
+            214964
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:226398",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 331,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            28,
+            27
+          ],
+          "source_faces": [
+            226415,
+            226413
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            22,
+            32
+          ],
+          "source_faces": [
+            226399,
+            226896
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            27,
+            2
+          ],
+          "source_faces": [
+            226413,
+            226398
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            32,
+            2
+          ],
+          "source_faces": [
+            226896,
+            226398
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            8
+          ],
+          "source_faces": [
+            226896,
+            226396
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            27,
+            14
+          ],
+          "source_faces": [
+            226413,
+            226399
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            32,
+            14
+          ],
+          "source_faces": [
+            226896,
+            226399
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            16
+          ],
+          "source_faces": [
+            226896,
+            226399
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            24
+          ],
+          "source_faces": [
+            226896,
+            226399
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            12
+          ],
+          "source_faces": [
+            226896,
+            226399
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            2,
+            31
+          ],
+          "source_faces": [
+            226398,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            8,
+            31
+          ],
+          "source_faces": [
+            226396,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            10
+          ],
+          "source_faces": [
+            226896,
+            226396
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            10
+          ],
+          "source_faces": [
+            226896,
+            226396
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            30
+          ],
+          "source_faces": [
+            226399,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            30
+          ],
+          "source_faces": [
+            226399,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            2,
+            30
+          ],
+          "source_faces": [
+            226398,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            16,
+            30
+          ],
+          "source_faces": [
+            226399,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            19,
+            30
+          ],
+          "source_faces": [
+            226399,
+            226896
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            10,
+            30
+          ],
+          "source_faces": [
+            226396,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            1,
+            30
+          ],
+          "source_faces": [
+            226398,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            30,
+            17
+          ],
+          "source_faces": [
+            226896,
+            226399
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            30,
+            21
+          ],
+          "source_faces": [
+            226896,
+            226399
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            10,
+            29
+          ],
+          "source_faces": [
+            226396,
+            226896
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            0,
+            29
+          ],
+          "source_faces": [
+            226398,
+            226896
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            1,
+            29
+          ],
+          "source_faces": [
+            226398,
+            226896
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:228967",
+      "triangles": 24,
+      "exact_bbox_candidate_pairs": 166,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            23,
+            21
+          ],
+          "source_faces": [
+            228973,
+            228970
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            21,
+            18
+          ],
+          "source_faces": [
+            228970,
+            228952
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            21,
+            6
+          ],
+          "source_faces": [
+            228970,
+            228947
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            0,
+            22
+          ],
+          "source_faces": [
+            228967,
+            228970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            5,
+            22
+          ],
+          "source_faces": [
+            228947,
+            228970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            6,
+            22
+          ],
+          "source_faces": [
+            228947,
+            228970
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            1
+          ],
+          "source_faces": [
+            228970,
+            228967
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            2
+          ],
+          "source_faces": [
+            228970,
+            228967
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            17,
+            19
+          ],
+          "source_faces": [
+            228946,
+            228964
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            17,
+            10
+          ],
+          "source_faces": [
+            228946,
+            228966
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            17,
+            20
+          ],
+          "source_faces": [
+            228946,
+            228965
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:230192",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 84,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:264720",
+      "triangles": 70,
+      "exact_bbox_candidate_pairs": 848,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:270099",
+      "triangles": 36,
+      "exact_bbox_candidate_pairs": 324,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:279627",
+      "triangles": 104,
+      "exact_bbox_candidate_pairs": 1998,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            101,
+            15
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            70
+          ],
+          "source_faces": [
+            279630,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            7
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            8
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            16
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            70,
+            16
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            101,
+            17
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            70,
+            17
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            9
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            10
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            18
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            70,
+            18
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            19
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            70,
+            19
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            11
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            12
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            20
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            21
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            16,
+            69
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            17,
+            69
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            18,
+            69
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            19,
+            69
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            101,
+            13
+          ],
+          "source_faces": [
+            279630,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            22
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            23
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            29
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            69,
+            30
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            75
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            75
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            69,
+            85
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            85
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            11,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            12,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            20,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            21,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            98
+          ],
+          "source_faces": [
+            279623,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            13,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            22,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            23,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            29,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            30,
+            98
+          ],
+          "source_faces": [
+            279627,
+            279624
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            24
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            24
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            98,
+            24
+          ],
+          "source_faces": [
+            279624,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            25
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            25
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            98,
+            25
+          ],
+          "source_faces": [
+            279624,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            31
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            31
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            98,
+            31
+          ],
+          "source_faces": [
+            279624,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            32
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            32
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            98,
+            32
+          ],
+          "source_faces": [
+            279624,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            26
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            26
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            27
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            27
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            69,
+            33
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            33
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            34
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            34
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            39
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            85,
+            39
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            98,
+            39
+          ],
+          "source_faces": [
+            279624,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            29,
+            68
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            30,
+            68
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            68
+          ],
+          "source_faces": [
+            279626,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            85,
+            68
+          ],
+          "source_faces": [
+            279626,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            98,
+            68
+          ],
+          "source_faces": [
+            279624,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            68
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            68
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            33,
+            68
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            74
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            24,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            25,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            26,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            27,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            33,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            34,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            39,
+            74
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            68,
+            74
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            69,
+            76
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            35
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            74,
+            35
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            35
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            36
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            74,
+            36
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            36
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            40
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            68,
+            40
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            74,
+            40
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            75,
+            41
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            68,
+            41
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            74,
+            41
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            37
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            38
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            68,
+            42
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            42
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            68,
+            43
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            43
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            35,
+            77
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            77
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            37,
+            77
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            42,
+            77
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            43,
+            77
+          ],
+          "source_faces": [
+            279627,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            44
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            45
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            48
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            48
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            76,
+            67
+          ],
+          "source_faces": [
+            279626,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            40,
+            67
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            41,
+            67
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            42,
+            67
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            43,
+            67
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            67
+          ],
+          "source_faces": [
+            279626,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            44,
+            67
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            46
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            47
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            77,
+            49
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            67,
+            49
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            77,
+            50
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            67,
+            50
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            49,
+            66
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            50,
+            66
+          ],
+          "source_faces": [
+            279627,
+            279623
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            67,
+            78
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            78
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            51
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            67,
+            51
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            51
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            77,
+            52
+          ],
+          "source_faces": [
+            279626,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            67,
+            52
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            52
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            53
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            79
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            79
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            56
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            66,
+            56
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            65,
+            57
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            57
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            58
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            58
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            59
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            66,
+            59
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            80
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            64,
+            61
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            65,
+            61
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            64,
+            62
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            62
+          ],
+          "source_faces": [
+            279623,
+            279627
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            64,
+            81
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            65,
+            81
+          ],
+          "source_faces": [
+            279623,
+            279626
+          ],
+          "shared_vertices": 0
+        }
+      ]
+    },
+    {
+      "key": "context-right:283465",
+      "triangles": 62,
+      "exact_bbox_candidate_pairs": 783,
+      "unexpected_contacts": [
+        {
+          "triangles": [
+            52,
+            35
+          ],
+          "source_faces": [
+            283466,
+            283460
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            56,
+            35
+          ],
+          "source_faces": [
+            283466,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            35,
+            3
+          ],
+          "source_faces": [
+            283460,
+            283465
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            35,
+            4
+          ],
+          "source_faces": [
+            283460,
+            283465
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            35,
+            1
+          ],
+          "source_faces": [
+            283460,
+            283465
+          ],
+          "shared_vertices": 1
+        },
+        {
+          "triangles": [
+            31,
+            42
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            31,
+            50
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            34,
+            50
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            36,
+            50
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            42,
+            32
+          ],
+          "source_faces": [
+            283457,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            50,
+            32
+          ],
+          "source_faces": [
+            283457,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            40
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            32,
+            45
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            45,
+            30
+          ],
+          "source_faces": [
+            283457,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            45,
+            29
+          ],
+          "source_faces": [
+            283457,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            29,
+            43
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            27,
+            47
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            29,
+            47
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            47,
+            28
+          ],
+          "source_faces": [
+            283457,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            46,
+            28
+          ],
+          "source_faces": [
+            283457,
+            283460
+          ],
+          "shared_vertices": 0
+        },
+        {
+          "triangles": [
+            28,
+            48
+          ],
+          "source_faces": [
+            283460,
+            283457
+          ],
+          "shared_vertices": 1
+        }
+      ]
+    },
+    {
+      "key": "context-right:285906",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 82,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:300910",
+      "triangles": 16,
+      "exact_bbox_candidate_pairs": 82,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:301565",
+      "triangles": 32,
+      "exact_bbox_candidate_pairs": 264,
+      "unexpected_contacts": []
+    },
+    {
+      "key": "context-right:323820",
+      "triangles": 34,
+      "exact_bbox_candidate_pairs": 307,
+      "unexpected_contacts": []
+    }
+  ],
+  "elapsed_seconds": 25.655999999988126,
+  "scope": "Each stored local preview separately. Does not compare previews against each other or the unchanged global cortex. Does not certify continuous nonlinear images, GPU rounding or anatomical validity."
+}

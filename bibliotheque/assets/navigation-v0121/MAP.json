@@ -1,0 +1,338 @@
+{
+  "version": "0.121",
+  "views": [
+    {
+      "id": "atlas",
+      "group": "Anatomie de référence",
+      "title": "Atlas humain",
+      "url": "anatomie.html",
+      "context": "Atlas moyen CerebrA/MNI ; aucune identité individuelle avec les échantillons suivants.",
+      "source": "assets/anatomy/ATLAS_ANATOMIQUE.json"
+    },
+    {
+      "id": "cortex",
+      "group": "BigBrain · cortex et tissu",
+      "title": "Cortex et couches",
+      "url": "microstructures.html",
+      "context": "BigBrain : surfaces natives en mm ; aperçu optionnel du recalage publié vers le repère de l’atlas moyen, à évaluer anatomiquement.",
+      "source": "assets/bigbrain-warp-v0121/PROVENANCE.json"
+    },
+    {
+      "id": "histology",
+      "group": "BigBrain · cortex et tissu",
+      "title": "Coupe histologique",
+      "url": "histologie.html",
+      "context": "Même BigBrain ; coupe alignée à 20 µm. Pas de recalage individuel vers Allen ou H01.",
+      "source": "assets/histology/PROVENANCE.json"
+    },
+    {
+      "id": "h01-shape",
+      "group": "H01 · cellule et microscopie",
+      "title": "Reconstruction cellulaire",
+      "url": "neurones.html?sample=h01-em-1072605926",
+      "context": "H01, segment 1072605926 : squelette en µm, images en nm dans le repère natif ; tissu fixé, sans enregistrement électrique.",
+      "source": "assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "h01-catalog",
+      "group": "H01 · cellule et microscopie",
+      "title": "Positions sur la cellule",
+      "url": "microscopie.html#catalogue-cellule",
+      "context": "H01 : 1 571 positions source associées au segment. Un point source ne prouve pas à lui seul son rattachement à une branche.",
+      "source": "assets/h01-evidence/PROVENANCE.json"
+    },
+    {
+      "id": "h01-images",
+      "group": "H01 · cellule et microscopie",
+      "title": "Images et détails synaptiques",
+      "url": "microscopie.html?level=synapse-145894292&synapse=145894292",
+      "context": "Même acquisition H01, repère natif en nm. Images et masques de résolutions distinctes ; aucune activité temporelle observée.",
+      "source": "assets/h01-evidence/PROVENANCE.json"
+    },
+    {
+      "id": "h01-paths",
+      "group": "H01 · cellule et microscopie",
+      "title": "Parcours dans le squelette",
+      "url": "trajets.html",
+      "context": "H01 : parcours géométriques entre projections, en µm. Les 45 morceaux déconnectés restent séparés ; pas de délai biologique déduit.",
+      "source": "assets/h01-paths/PROVENANCE.json"
+    },
+    {
+      "id": "h01-classes",
+      "group": "H01 · cellule et microscopie",
+      "title": "Repères anatomiques dans les images",
+      "url": "compartiments.html?sample=class-5",
+      "context": "H01 : six fenêtres autour d’annotations source, même repère natif. Les étiquettes anatomiques ne sont pas validées biologiquement par cette concordance.",
+      "source": "assets/h01-class-images/PROVENANCE.json"
+    },
+    {
+      "id": "allen",
+      "group": "Allen humain · cellules et mesures",
+      "title": "Cellule et réponse électrique",
+      "url": "neurones.html?sample=allen-637038252&sweep=22",
+      "context": "Allen : chaque morphologie et sa trace portent le même identifiant de cellule. Trois cellules, deux donneurs ; pas de recalage spatial vers H01 ou BigBrain.",
+      "source": "assets/allen-comparison/PROVENANCE.json"
+    },
+    {
+      "id": "allen-pairs",
+      "group": "Allen humain · cellules et mesures",
+      "title": "Comparer deux essais",
+      "url": "neurones.html?sample=allen-637038252&sweep=22&pairA=637038252%3A22&pairB=637038252%3A20&compare=1#compare-recordings",
+      "context": "Allen : essais enregistrés séparément, alignement temporel d’affichage seulement ; aucun couplage entre cellules mesuré.",
+      "source": "assets/allen-pairs/PROVENANCE.json"
+    },
+    {
+      "id": "heart",
+      "group": "HiP-CT · cœur humain",
+      "title": "Cœur et volume de contexte",
+      "url": "organes.html?sample=heart&level=heart-context",
+      "context": "HiP-CT : cœur humain S-20-28, acquisition du même organe. Aucun raccord individuel vers le nerf vague SPARC.",
+      "source": "assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "heart-detail",
+      "group": "HiP-CT · cœur humain",
+      "title": "Région cardiaque détaillée",
+      "url": "organes.html?sample=heart&level=sinus-detail",
+      "context": "Même cœur S-20-28 : région à 6,51 µm, transformation publiée vers la vue d’ensemble ; erreur anatomique indépendante non fournie.",
+      "source": "assets/organs/REGISTRATION.json"
+    },
+    {
+      "id": "vagus",
+      "group": "SPARC · nerf vague humain",
+      "title": "Modèle du nerf vague",
+      "url": "organes.html?sample=vagus",
+      "context": "SPARC sub-f002, nerf gauche ex vivo : segments assemblés et modèle ajusté. Pas de trajet continu établi vers le cœur HiP-CT.",
+      "source": "assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "c10",
+      "group": "SPARC · nerf vague humain",
+      "title": "Micro-CT du segment C10",
+      "url": "organes.html?sample=nerve-ct&level=vagus-ct-detail",
+      "context": "Même nerf SPARC, segment C10 : unités et assemblage source documentés. Aucun recalage entre les images C10 et C1 n’est affirmé.",
+      "source": "assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "c1",
+      "group": "SPARC · nerf vague humain",
+      "title": "Micro-CT du segment C1",
+      "url": "c1.html",
+      "context": "SPARC sub-f002, segment C1 : image, contours et repères source. Transformation entre le CT et l’IHC C1-A-L2 non établie.",
+      "source": "assets/c1/PROVENANCE.json"
+    },
+    {
+      "id": "ihc",
+      "group": "SPARC · nerf vague humain",
+      "title": "Marquages immunohistochimiques",
+      "url": "immunohistochimie.html",
+      "context": "C1-A-Level 2 : prélèvement histologique et montages. Échelle physique XY non confirmée ; mesures en pixels.",
+      "source": "assets/ihc/PROVENANCE.json"
+    },
+    {
+      "id": "channels",
+      "group": "SPARC · nerf vague humain",
+      "title": "Canaux et plans focaux",
+      "url": "canaux.html?field=field9&z=9",
+      "context": "IHC : exports NF/ChAT/MBP et plans focaux, dans le repère local du champ. Le plan focal n’est pas un temps biologique.",
+      "source": "assets/focal/PROVENANCE.json"
+    },
+    {
+      "id": "registration",
+      "group": "SPARC · nerf vague humain",
+      "title": "Champ situé dans son montage",
+      "url": "raccord.html",
+      "context": "Raccord local vérifié du champ 00009 au plan 9 dans son montage. Ce raccord ne place pas l’IHC dans le CT ou le modèle 3D.",
+      "source": "assets/registration/PROVENANCE.json"
+    },
+    {
+      "id": "calibration",
+      "group": "SPARC · nerf vague humain",
+      "title": "Calibration et unités à confirmer",
+      "url": "calibration.html",
+      "context": "Métadonnées de calibration IHC auditées ; conversion XY physique non appliquée. Les mesures restent en pixels.",
+      "source": "assets/registration/CALIBRATION.json"
+    }
+  ],
+  "relations": [
+    {
+      "a": "atlas",
+      "b": "cortex",
+      "kind": "published_transform",
+      "description": "Aperçu du recalage publié BigBrain→MNI : spécimen individuel et atlas moyen distincts ; validation anatomique indépendante encore ouverte.",
+      "evidence": [
+        "assets/anatomy/ATLAS_ANATOMIQUE.json",
+        "assets/bigbrain/PROVENANCE.json",
+        "assets/bigbrain-warp-v0121/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "cortex",
+      "b": "histology",
+      "kind": "same_source",
+      "description": "Même BigBrain : surfaces et coupe dans leur référence histologique documentée.",
+      "evidence": [
+        "assets/bigbrain/PROVENANCE.json",
+        "assets/histology/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "histology",
+      "b": "h01-shape",
+      "kind": "different_specimen",
+      "description": "Autre personne et autre préparation : aucun raccord anatomique individuel.",
+      "evidence": [
+        "assets/histology/PROVENANCE.json",
+        "assets/neurons/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "histology",
+      "b": "allen",
+      "kind": "different_specimen",
+      "description": "Autres prélèvements humains ; comparaison des échelles, sans recalage.",
+      "evidence": [
+        "assets/histology/PROVENANCE.json",
+        "assets/allen-comparison/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "h01-shape",
+      "b": "h01-catalog",
+      "kind": "same_source",
+      "description": "Même segment H01 ; positions source associées à la cellule.",
+      "evidence": [
+        "assets/neurons/PROVENANCE.json",
+        "assets/h01-evidence/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "h01-catalog",
+      "b": "h01-images",
+      "kind": "same_source",
+      "description": "Même acquisition et mêmes coordonnées natives ; détails disponibles pour six identifiants.",
+      "evidence": [
+        "assets/h01-evidence/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "h01-images",
+      "b": "h01-paths",
+      "kind": "projection",
+      "description": "Parcours entre projections sur un squelette ; rattachement anatomique des points non établi.",
+      "evidence": [
+        "assets/h01-evidence/PROVENANCE.json",
+        "assets/h01-paths/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "h01-paths",
+      "b": "h01-classes",
+      "kind": "same_source",
+      "description": "Annotations et images dans le repère natif ; égalité des coordonnées ne valide pas la classe.",
+      "evidence": [
+        "assets/h01-paths/PROVENANCE.json",
+        "assets/h01-class-images/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "h01-shape",
+      "b": "allen",
+      "kind": "different_specimen",
+      "description": "Autres cellules et autres personnes ; ni recalage, ni enregistrement électrique de H01.",
+      "evidence": [
+        "assets/neurons/PROVENANCE.json",
+        "assets/allen-comparison/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "allen",
+      "b": "allen-pairs",
+      "kind": "separate_trials",
+      "description": "Essais enregistrés séparément ; leur alignement est une convention d’affichage.",
+      "evidence": [
+        "assets/allen-comparison/PROVENANCE.json",
+        "assets/allen-pairs/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "heart",
+      "b": "heart-detail",
+      "kind": "published_transform",
+      "description": "Même cœur : transformation publiée entre acquisition d’ensemble et région à 6,51 µm.",
+      "evidence": [
+        "assets/organs/PROVENANCE.json",
+        "assets/organs/REGISTRATION.json"
+      ]
+    },
+    {
+      "a": "heart",
+      "b": "vagus",
+      "kind": "different_specimen",
+      "description": "Autre personne : aucun trajet nerveux individuel reliant ces deux jeux.",
+      "evidence": [
+        "assets/organs/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "vagus",
+      "b": "c10",
+      "kind": "same_source",
+      "description": "Même reconstruction source du nerf ; segment C10 documenté dans son assemblage.",
+      "evidence": [
+        "assets/organs/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "c10",
+      "b": "c1",
+      "kind": "unregistered",
+      "description": "Même nerf, segments différents ; aucun recalage des images C10/C1 affirmé.",
+      "evidence": [
+        "assets/organs/PROVENANCE.json",
+        "assets/c1/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "c1",
+      "b": "ihc",
+      "kind": "unregistered",
+      "description": "Même nerf C1, préparations distinctes ; transformation CT/IHC non établie.",
+      "evidence": [
+        "assets/c1/PROVENANCE.json",
+        "assets/ihc/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "ihc",
+      "b": "channels",
+      "kind": "same_source",
+      "description": "Même préparation IHC ; exports de champs et montages distincts.",
+      "evidence": [
+        "assets/ihc/PROVENANCE.json",
+        "assets/focal/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "channels",
+      "b": "registration",
+      "kind": "local_mapping",
+      "description": "Raccord local disponible pour le champ 00009 au plan 9 uniquement.",
+      "evidence": [
+        "assets/focal/PROVENANCE.json",
+        "assets/registration/PROVENANCE.json"
+      ]
+    },
+    {
+      "a": "registration",
+      "b": "calibration",
+      "kind": "local_mapping",
+      "description": "Même dossier IHC ; contrôle des unités séparé du raccord spatial local.",
+      "evidence": [
+        "assets/registration/PROVENANCE.json",
+        "assets/registration/CALIBRATION.json"
+      ]
+    }
+  ],
+  "scope": "Navigation among existing views. Relations are evidence boundaries, not a continuous anatomical or causal pathway. Curated destination views do not preserve every current selection."
+}

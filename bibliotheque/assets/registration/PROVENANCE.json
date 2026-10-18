@@ -1,0 +1,352 @@
+{
+  "version": "0.104",
+  "dataset": 674,
+  "source_version": 1,
+  "doi": "https://doi.org/10.26275/imas-52lf",
+  "sample": "C1-A-Level 2 part1",
+  "field": "field9",
+  "reference_plane": 9,
+  "montage_dimensions": [
+    19133,
+    18909
+  ],
+  "montage_origin": [
+    5370,
+    8
+  ],
+  "field_dimensions": [
+    960,
+    720
+  ],
+  "mapping": "x_montage=x_field+5370; y_montage=y_field+8; integer translation, no resampling",
+  "status": "local image correspondence supported by eight disjoint-component patch checks; not a physical or 3D registration",
+  "checks": [
+    {
+      "patch": [
+        80,
+        60,
+        280,
+        240
+      ],
+      "component": 1,
+      "ncc": 0.948364024147077,
+      "best_outside_20px": 0.8022663975821798,
+      "origin": [
+        5370,
+        8
+      ]
+    },
+    {
+      "patch": [
+        80,
+        60,
+        280,
+        240
+      ],
+      "component": 2,
+      "ncc": 0.9290943705135168,
+      "best_outside_20px": 0.7767957492832733,
+      "origin": [
+        5370,
+        8
+      ]
+    },
+    {
+      "patch": [
+        500,
+        60,
+        280,
+        240
+      ],
+      "component": 1,
+      "ncc": 0.9358576554532999,
+      "best_outside_20px": 0.7400119943910368,
+      "origin": [
+        5370,
+        8
+      ]
+    },
+    {
+      "patch": [
+        500,
+        60,
+        280,
+        240
+      ],
+      "component": 2,
+      "ncc": 0.9019454242672906,
+      "best_outside_20px": 0.5802920579624129,
+      "origin": [
+        5370,
+        8
+      ]
+    },
+    {
+      "patch": [
+        80,
+        400,
+        280,
+        240
+      ],
+      "component": 1,
+      "ncc": 0.9747449924817441,
+      "best_outside_20px": 0.8790127682010526,
+      "origin": [
+        5370,
+        8
+      ]
+    },
+    {
+      "patch": [
+        80,
+        400,
+        280,
+        240
+      ],
+      "component": 2,
+      "ncc": 0.952348898999557,
+      "best_outside_20px": 0.8163256269930377,
+      "origin": [
+        5370,
+        8
+      ]
+    },
+    {
+      "patch": [
+        500,
+        400,
+        280,
+        240
+      ],
+      "component": 1,
+      "ncc": 0.9442040075517506,
+      "best_outside_20px": 0.7428903297376914,
+      "origin": [
+        5369,
+        7
+      ]
+    },
+    {
+      "patch": [
+        500,
+        400,
+        280,
+        240
+      ],
+      "component": 2,
+      "ncc": 0.8862740831677085,
+      "best_outside_20px": 0.5622990835127221,
+      "origin": [
+        5370,
+        8
+      ]
+    }
+  ],
+  "observed_origin_spread_pixels": [
+    1,
+    1
+  ],
+  "uncertainty_scope": "One-pixel spread observed among these eight checks; not a metrological error bound or guarantee for every pixel. No subpixel transform fitted.",
+  "rejected_field": {
+    "id": "field1",
+    "reason": "insufficient contrast and inconsistent positions; no confirmed montage placement",
+    "max_patch_ncc": 0.390541238914861
+  },
+  "method": "Stage coordinates and calibration scalar used only to propose candidate windows in source units, with both axis directions tested. Normalized cross-correlation compared original Overlay focal image patches to native montage RGB components. Four non-overlapping 280x240 patches, green and blue components, plane Z009. Same orientation and unit pixel scale supported locally. Best competing match outside 20-pixel neighborhood recorded. No biological identity or channel colocalization inferred.",
+  "montage_source": {
+    "name": "2305_C1L_A_Level_2_part1.tif",
+    "path": "files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.tif",
+    "size": 1105746279,
+    "fileType": "TIFF",
+    "sourcePackageId": "N:package:d5858c68-406d-4351-9e26-0ba07ec57cfb",
+    "s3VersionId": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+    "sha256": "JLQotHoSX/dGMtc1v/keG9v81CDeV3iV4JceM8vCPRU="
+  },
+  "montage_url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/674/files/primary/sub-f002/sam-l/sam-l-seg-c1-A-L2/2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+  "source_tiles": [
+    {
+      "tile": 9,
+      "offset": 7077904,
+      "bytes": 786432,
+      "sha256": "065c6ec3a4ccd5aa3bb5fe602c9505d99e3e74dbd4ae4936fdec9b685a14f849"
+    },
+    {
+      "tile": 10,
+      "offset": 7864336,
+      "bytes": 786432,
+      "sha256": "241781ae1527cfd39336a17e98308013ed63cea3ba0ff51f3561fc24d68e3ad8"
+    },
+    {
+      "tile": 11,
+      "offset": 8650768,
+      "bytes": 786432,
+      "sha256": "2340d9afc6e3d83981b479f7bc71588d6f1648c7fdb59aa4afb6ca433306a886"
+    },
+    {
+      "tile": 12,
+      "offset": 9437200,
+      "bytes": 786432,
+      "sha256": "3c2918276dfc1c2740f585e9a8eed335567ba2af71a2cd36850e0553eafb8bed"
+    },
+    {
+      "tile": 13,
+      "offset": 10223632,
+      "bytes": 786432,
+      "sha256": "c6cb45af2116dcc867aad0f2c3678a052463b7e6cdaaa343337f84fb8248f925"
+    },
+    {
+      "tile": 47,
+      "offset": 36962320,
+      "bytes": 786432,
+      "sha256": "fb5956f678f517b10966e59091306986d4a6bd004fac335cb87ee903fc7e16d3"
+    },
+    {
+      "tile": 48,
+      "offset": 37748752,
+      "bytes": 786432,
+      "sha256": "f8dc85878ae395502c36c7929fd3cfd92bdbd5fa673a4216506c04f66dca1934"
+    },
+    {
+      "tile": 49,
+      "offset": 38535184,
+      "bytes": 786432,
+      "sha256": "fb8665ff39cbbb395b9b9edd3a2f93d6549e6656db3b8ee1d90190ad9fb1876b"
+    },
+    {
+      "tile": 50,
+      "offset": 39321616,
+      "bytes": 786432,
+      "sha256": "6ddc8960dd5e2f1ff8f53497994ed3128c2ea597287d2ccdacf0220e6d361aba"
+    },
+    {
+      "tile": 51,
+      "offset": 40108048,
+      "bytes": 786432,
+      "sha256": "a4e547756b2cc4308de2d10e653c9d141e3e8f8ac55f263c380ef8dfe4e42217"
+    },
+    {
+      "tile": 85,
+      "offset": 66846736,
+      "bytes": 786432,
+      "sha256": "3309ec5666ce341d0259de9d40a5548dcce4dd9495f6e36370d2463dcbb3acbf"
+    },
+    {
+      "tile": 86,
+      "offset": 67633168,
+      "bytes": 786432,
+      "sha256": "54facd04886f4c16dc0c660863b242a08256a34cc4c5ede4d96d81731916e3aa"
+    },
+    {
+      "tile": 87,
+      "offset": 68419600,
+      "bytes": 786432,
+      "sha256": "0953cce5141478fa204601f314476f5237b1ef6fd44492f4b4da86e0fc7b1bc4"
+    },
+    {
+      "tile": 88,
+      "offset": 69206032,
+      "bytes": 786432,
+      "sha256": "76c72252b7ce58dbebe48a1b1c2ea76337da1a44e3ea5e8506d0f5c0bd24beac"
+    },
+    {
+      "tile": 89,
+      "offset": 69992464,
+      "bytes": 786432,
+      "sha256": "f20e4a7056f191ef11453d167c6a997a439c57f872bc9f99031e5c05b38f35a8"
+    },
+    {
+      "tile": 123,
+      "offset": 96731152,
+      "bytes": 786432,
+      "sha256": "0ca13efc75a7006bb1c5558a223b59b8c4668422373deb91807681b6aae49fba"
+    },
+    {
+      "tile": 124,
+      "offset": 97517584,
+      "bytes": 786432,
+      "sha256": "998a84b182148f1b8ca55fb3938b436cb74c4f3dd95c588db51dea3268fcf7f8"
+    },
+    {
+      "tile": 125,
+      "offset": 98304016,
+      "bytes": 786432,
+      "sha256": "aa02e9fabfd0fc755027c4bd016cdb2f215029bb0581a83a39ff56ccdf5049ee"
+    },
+    {
+      "tile": 126,
+      "offset": 99090448,
+      "bytes": 786432,
+      "sha256": "3a5189422f79f805b67a267b3af9b8dfc79e8b522704c36b2ddce1c0f9934cb2"
+    },
+    {
+      "tile": 127,
+      "offset": 99876880,
+      "bytes": 786432,
+      "sha256": "d88d95274f0e463f3eebb791ae5629351c4084775c623335b28f685d1e75625a"
+    }
+  ],
+  "context_origin": [
+    4832,
+    0
+  ],
+  "montage_crop_pixel_sha256": "09e42ba4e107774b504689569767582ddfd9e524db470e0470fe886e9e858248",
+  "focal": {
+    "path": "assets/focal/field9-z09-Overlay.png",
+    "sha256": "53692ee421ca71405ea6b420c0ed99be33775543f899387d63e0748a89a12bc0",
+    "pixel_sha256": "078fbcf7878255fccf5d2ba992547e94c88c1bf700c50176bd2af7857528b5bf",
+    "original": "2.28.2024_part1_xy1_XY01_00009_Z009_Overlay.tif",
+    "source_tar_offset": 361129472,
+    "source_sha256": "4c6eef83899b1488f58b8a2d34cc7dd826e1263390e71f053a4b12cd38353a38",
+    "source_bytes": 1516617,
+    "stage_location": [
+      36519599,
+      59369687,
+      2541710
+    ],
+    "focus_double": 1.2439671859277746,
+    "original_local": "assets/focal/originals/2.28.2024_part1_xy1_XY01_00009_Z009_Overlay.tif"
+  },
+  "preview": {
+    "path": "assets/ihc/part1-preview.jpg",
+    "sha256": "21de21cbe94db7f62d7377e87badaac1a6845a7943b602a0d63386ae5369a121",
+    "dimensions": [
+      971,
+      960
+    ],
+    "scope": "Original embedded KTF JPEG preview; lossy and downsampled by source software"
+  },
+  "context": {
+    "path": "assets/registration/context-field9.png",
+    "bytes": 5289017,
+    "sha256": "ea4a0a7cd46b533cbcadbaac088b2a360463ae23742b73a8df591ceec14d6bee"
+  },
+  "montage": {
+    "path": "assets/registration/montage-field9.png",
+    "bytes": 962321,
+    "sha256": "fe303eab994900dbbcb187000042fb5cab2e79d5fd3b038186dc75e070db8b7d"
+  },
+  "files": [
+    {
+      "path": "assets/registration/context-field9.png",
+      "bytes": 5289017,
+      "sha256": "ea4a0a7cd46b533cbcadbaac088b2a360463ae23742b73a8df591ceec14d6bee"
+    },
+    {
+      "path": "assets/registration/montage-field9.png",
+      "bytes": 962321,
+      "sha256": "fe303eab994900dbbcb187000042fb5cab2e79d5fd3b038186dc75e070db8b7d"
+    },
+    {
+      "path": "assets/registration/VALIDATION.json",
+      "bytes": 12491,
+      "sha256": "3660ff751a1e98c63a8b6ca4669a627985b5a398d45d2ae98b93b2f1a40181cb"
+    }
+  ],
+  "limits": [
+    "Montage and focal export have different intensities and focus; comparison is spatial, not an equality of RGB values.",
+    "Physical units of Calibration and Pitch remain unverified; no µm ruler.",
+    "No placement into C10, scaffold or whole-body 3D.",
+    "Only field 00009 at Z009 directly checked; focal plane index is not time or activity.",
+    "No labeling of cells, fibers or biological positivity."
+  ]
+}

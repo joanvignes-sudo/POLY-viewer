@@ -1,0 +1,19 @@
+# POLY émotionnel v0.14 — extensions fixées avant calcul
+
+Poursuite des audits, modèles et perturbations, sans conception. Toutes les analyses ci-dessous sont exploratoires après v0.13, sans test de population sur essais, unités ou transitions.
+
+## Modèles d'apprentissage des choix
+
+Utiliser les essais de foraging neuronal déjà audités, une copie par session après vérification de l'identité des copies entre unités. Ignorer les CSminus et essais sans choix dans le modèle de choix ; les garder dans l'inventaire. Pour chaque animal, trier les sessions par date et apprendre les paramètres sur les premiers floor(0,7 × nombre de sessions), au moins une session ; évaluer sur les sessions ultérieures. Réinitialiser Qgauche=Qdroite=0,5 à chaque session, et l'incertitude attendue à 0,5 pour la reconstruction méta. Prédire chaque choix avant de mettre à jour les états avec son issue ; sur évaluation, paramètres figés et états mis à jour avec les seuls événements antérieurs.
+
+Comparer : constante droite estimée sur entraînement (lissage Beta(1,1)) ; probabilités droite conditionnées au choix précédent (même lissage, constante au premier choix) ; Q-learning à taux positifs/négatifs distincts et oubli de l'option non choisie ; reconstruction des équations de méta-apprentissage de Grossman. La reconstruction reprend la modulation par (1−epsilon), la mise à jour epsilon par |RPE|−epsilon et la modification du taux négatif sur erreur négative, bornée inférieurement à zéro. Paramètres : taux de base [0,001;0,999], oubli [0,001;1], inverse température [0,01;10], biais [−1;1]. Imposer psi>alpha_v par paramétrisation ; fixer les états initiaux, trois départs numériques annoncés dans le script, sélection par vraisemblance d'entraînement seule. Mise à jour du taux négatif avant celle de Q sur l'essai négatif ; epsilon mis à jour après Q. Consigner les dérives d'états hors [0;1] et les échecs numériques, sans les dissimuler.
+
+Ces conventions, l'estimation ponctuelle par maximum de vraisemblance et l'absence de pooling hiérarchique diffèrent de l'estimation Stan de l'article. **Ce n'est pas une reproduction du modèle original.** Rapporter les log-pertes sur essais évalués et par session, puis moyennes par animal, paramètres, convergence et sensibilité aux départs. Mettre en quarantaine les ajustements sans convergence. Les modèles simples restent de vrais comparateurs ; ne pas choisir un modèle sur le test.
+
+## Dérive neuronale et calibration causale
+
+Réutiliser les paramètres figés des six modèles temporels de v0.13, entraînés sans l'animal évalué. Pour chaque unité du quatrième animal, exclure cinq premiers essais, réserver premiers 20 % à la calibration, derniers 80 % à l'évaluation. Comparer niveau pré-indice fixe de calibration à moyenne des vingt essais précédents, uniquement. Aucun essai courant ou futur ne sert à estimer son niveau prédit. Appliquer la même correction additive du niveau pré-indice à toutes les familles, avec projection des taux négatifs sur zéro explicitement signalée. Ajouter des témoins constants avec les mêmes calibrations.
+
+Cible : PSTH causal par essai, filtre auteur de 500 pas, évalué après indice (0 à 5 secondes selon la convention de pas auteur). Vérifier que le calcul cumulatif reproduit la convolution originale. Rapporter erreur quadratique moyenne, gain par rapport au constant correspondant, fractions projetées et moyennes unités→sessions→animaux. Les bins filtrés ne sont pas indépendants ; aucun p sur leurs milliers de valeurs. Ce contrôle teste une règle de prédiction adaptative, pas une nouvelle voie biologique. Les paramètres d'origine ne sont pas refittés.
+
+Source : [Grossman et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/) et [code/données Harkin/Naud](https://doi.org/10.5281/zenodo.14628985). Les horloges physiques et la provenance complète des paramètres originaux restent ouvertes.

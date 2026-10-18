@@ -1,0 +1,806 @@
+{
+  "id": "P03-RAPPORT",
+  "species": "human",
+  "nodes": [
+    {
+      "id": "P03-RAPPORT-GAS",
+      "title": "Inhalation CO₂",
+      "pedagogy": "Provocation expérimentale.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P03-RAPPORT-GAS",
+      "value_ids": [],
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-GAS",
+        "label": "Inhalation CO₂",
+        "where": "Voies respiratoires",
+        "does": "Provocation expérimentale.",
+        "x": 0,
+        "y": 0,
+        "kind": "intervention",
+        "region": "lungs",
+        "source": "S16"
+      }
+    },
+    {
+      "id": "P03-RAPPORT-BODY",
+      "title": "Réponses corporelles",
+      "pedagogy": "Mesures physiologiques parallèles ; ne prouvent pas qu’elles causent à elles seules le ressenti.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P03-RAPPORT-BODY",
+      "value_ids": [],
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "xyz": [
+        1,
+        0,
+        0
+      ],
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-BODY",
+        "label": "Réponses corporelles",
+        "where": "Cœur, respiration, peau",
+        "does": "Mesures physiologiques parallèles ; ne prouvent pas qu’elles causent à elles seules le ressenti.",
+        "x": 1,
+        "y": 0,
+        "kind": "readout",
+        "region": "heart",
+        "source": "S16 ; v0.62"
+      }
+    },
+    {
+      "id": "P03-RAPPORT-ROUTE",
+      "title": "Réseaux de panique ?",
+      "pedagogy": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+      "status": "ND",
+      "anchor_id": "REGION-P03-RAPPORT-ROUTE",
+      "value_ids": [
+        "TROU-P03-RAPPORT-ROUTE"
+      ],
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "limit": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+      "xyz": [
+        2,
+        0,
+        0
+      ],
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-ROUTE",
+        "label": "Réseaux de panique ?",
+        "where": "Trajet cérébral à identifier",
+        "does": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+        "x": 2,
+        "y": 0,
+        "kind": "gap",
+        "region": null,
+        "source": "S16 ; v0.49"
+      }
+    },
+    {
+      "id": "P03-RAPPORT-REPORT",
+      "title": "Panique rapportée",
+      "pedagogy": "Panique chez trois patientes ; comparaison locale avec témoins. Questionnaire recueilli après épreuve.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P03-RAPPORT-REPORT",
+      "value_ids": [],
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "xyz": [
+        3,
+        0,
+        0
+      ],
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-REPORT",
+        "label": "Panique rapportée",
+        "where": "Rapport subjectif / questionnaire",
+        "does": "Panique chez trois patientes ; comparaison locale avec témoins. Questionnaire recueilli après épreuve.",
+        "x": 3,
+        "y": 0,
+        "kind": "readout",
+        "region": null,
+        "source": "S16 ; PROM-F02"
+      }
+    },
+    {
+      "id": "P03-RAPPORT-AMYG",
+      "title": "Amygdales lésées",
+      "pedagogy": "Condition clinique ; pas un passage obligatoire à placer entre CO₂ et panique.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P03-RAPPORT-AMYG",
+      "value_ids": [],
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "xyz": [
+        2,
+        2,
+        0
+      ],
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-AMYG",
+        "label": "Amygdales lésées",
+        "where": "Amygdales bilatérales",
+        "does": "Condition clinique ; pas un passage obligatoire à placer entre CO₂ et panique.",
+        "x": 2,
+        "y": 2,
+        "kind": "lesion",
+        "region": "amygdala",
+        "source": "S16"
+      }
+    },
+    {
+      "id": "P03-RAPPORT-SYMPTOM",
+      "title": "Symptômes / fuite",
+      "pedagogy": "Symptômes et désir ou comportement de fuite dans le critère auteur ; onset subjectif non établi.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P03-RAPPORT-SYMPTOM",
+      "value_ids": [],
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "xyz": [
+        3,
+        -2,
+        0
+      ],
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-SYMPTOM",
+        "label": "Symptômes / fuite",
+        "where": "Comportement observable",
+        "does": "Symptômes et désir ou comportement de fuite dans le critère auteur ; onset subjectif non établi.",
+        "x": 3,
+        "y": -2,
+        "kind": "readout",
+        "region": null,
+        "source": "v0.49/v0.63"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "P03-RAPPORT-LIEN-1",
+      "from": "P03-RAPPORT-GAS",
+      "to": "P03-RAPPORT-BODY",
+      "status": "OBSERVATION",
+      "warning": "Physiologie et rapports ne sont pas une seule série causale.",
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-LIEN-1",
+        "from": "P03-RAPPORT-GAS",
+        "to": "P03-RAPPORT-BODY",
+        "label": "réponses mesurées",
+        "status": "association",
+        "source": "S16",
+        "detail": "Physiologie et rapports ne sont pas une seule série causale."
+      }
+    },
+    {
+      "id": "P03-RAPPORT-LIEN-2",
+      "from": "P03-RAPPORT-BODY",
+      "to": "P03-RAPPORT-ROUTE",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Aucune voie complète identifiée.",
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-LIEN-2",
+        "from": "P03-RAPPORT-BODY",
+        "to": "P03-RAPPORT-ROUTE",
+        "label": "transmission à établir",
+        "status": "gap",
+        "source": "v0.62",
+        "detail": "Aucune voie complète identifiée."
+      }
+    },
+    {
+      "id": "P03-RAPPORT-LIEN-3",
+      "from": "P03-RAPPORT-ROUTE",
+      "to": "P03-RAPPORT-REPORT",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Réseau générateur du ressenti non localisé.",
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-LIEN-3",
+        "from": "P03-RAPPORT-ROUTE",
+        "to": "P03-RAPPORT-REPORT",
+        "label": "mécanisme ouvert",
+        "status": "gap",
+        "source": "v0.49",
+        "detail": "Réseau générateur du ressenti non localisé."
+      }
+    },
+    {
+      "id": "P03-RAPPORT-LIEN-4",
+      "from": "P03-RAPPORT-GAS",
+      "to": "P03-RAPPORT-REPORT",
+      "status": "OBSERVATION",
+      "warning": "Résultat local de provocation ; pas nécessité universelle d’un mécanisme.",
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-LIEN-4",
+        "from": "P03-RAPPORT-GAS",
+        "to": "P03-RAPPORT-REPORT",
+        "label": "panique rapportée",
+        "status": "intervention",
+        "source": "S16",
+        "detail": "Résultat local de provocation ; pas nécessité universelle d’un mécanisme."
+      }
+    },
+    {
+      "id": "P03-RAPPORT-LIEN-5",
+      "from": "P03-RAPPORT-GAS",
+      "to": "P03-RAPPORT-SYMPTOM",
+      "status": "OBSERVATION",
+      "warning": "Repères observés et rapport subjectif distingués.",
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-LIEN-5",
+        "from": "P03-RAPPORT-GAS",
+        "to": "P03-RAPPORT-SYMPTOM",
+        "label": "manifestations",
+        "status": "association",
+        "source": "v0.63",
+        "detail": "Repères observés et rapport subjectif distingués."
+      }
+    },
+    {
+      "id": "P03-RAPPORT-LIEN-6",
+      "from": "P03-RAPPORT-AMYG",
+      "to": "P03-RAPPORT-REPORT",
+      "status": "OBSERVATION",
+      "warning": "Ce trait décrit la condition clinique, pas un signal qui part de l’amygdale.",
+      "reference_card": "P03-RAPPORT",
+      "mechanism": {
+        "id": "P03-RAPPORT-LIEN-6",
+        "from": "P03-RAPPORT-AMYG",
+        "to": "P03-RAPPORT-REPORT",
+        "label": "présente malgré lésions",
+        "status": "condition",
+        "source": "S16",
+        "detail": "Ce trait décrit la condition clinique, pas un signal qui part de l’amygdale."
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": "P03-RAPPORT-GAS",
+      "group": "P03-RAPPORT",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "location_status": "documente",
+      "location_name": "Voies respiratoires — inhalation CO₂",
+      "justification": "Provocation expérimentale, pas localisation du ressenti.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P03-RAPPORT"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P03-RAPPORT-GAS",
+        "title": "Inhalation CO₂",
+        "pedagogy": "Provocation expérimentale.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P03-RAPPORT-GAS",
+        "value_ids": [],
+        "sources": [
+          "REF-P03-RAPPORT"
+        ],
+        "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "xyz": [
+          0,
+          0,
+          0
+        ],
+        "reference_card": "P03-RAPPORT",
+        "mechanism": {
+          "id": "P03-RAPPORT-GAS",
+          "label": "Inhalation CO₂",
+          "where": "Voies respiratoires",
+          "does": "Provocation expérimentale.",
+          "x": 0,
+          "y": 0,
+          "kind": "intervention",
+          "region": "lungs",
+          "source": "S16"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "intervention"
+    },
+    {
+      "id": "P03-RAPPORT-BODY",
+      "group": "P03-RAPPORT",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "location_status": "documente",
+      "location_name": "Cœur, respiration et peau — mesures distinctes",
+      "justification": "Conserver les trois composantes, même si region ne contient que heart.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P03-RAPPORT"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P03-RAPPORT-BODY",
+        "title": "Réponses corporelles",
+        "pedagogy": "Mesures physiologiques parallèles ; ne prouvent pas qu’elles causent à elles seules le ressenti.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P03-RAPPORT-BODY",
+        "value_ids": [],
+        "sources": [
+          "REF-P03-RAPPORT"
+        ],
+        "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "xyz": [
+          1,
+          0,
+          0
+        ],
+        "reference_card": "P03-RAPPORT",
+        "mechanism": {
+          "id": "P03-RAPPORT-BODY",
+          "label": "Réponses corporelles",
+          "where": "Cœur, respiration, peau",
+          "does": "Mesures physiologiques parallèles ; ne prouvent pas qu’elles causent à elles seules le ressenti.",
+          "x": 1,
+          "y": 0,
+          "kind": "readout",
+          "region": "heart",
+          "source": "S16 ; v0.62"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "readout"
+    },
+    {
+      "id": "P03-RAPPORT-ROUTE",
+      "group": "P03-RAPPORT",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "location_status": "non_determine",
+      "location_name": "Réseaux soutenant la panique malgré les lésions — non identifiés",
+      "justification": "La présence de panique ne localise pas les relais cérébraux compensateurs.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P03-RAPPORT"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P03-RAPPORT-ROUTE",
+        "title": "Réseaux de panique ?",
+        "pedagogy": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+        "status": "ND",
+        "anchor_id": "REGION-P03-RAPPORT-ROUTE",
+        "value_ids": [
+          "TROU-P03-RAPPORT-ROUTE"
+        ],
+        "sources": [
+          "REF-P03-RAPPORT"
+        ],
+        "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "limit": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+        "xyz": [
+          2,
+          0,
+          0
+        ],
+        "reference_card": "P03-RAPPORT",
+        "mechanism": {
+          "id": "P03-RAPPORT-ROUTE",
+          "label": "Réseaux de panique ?",
+          "where": "Trajet cérébral à identifier",
+          "does": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+          "x": 2,
+          "y": 0,
+          "kind": "gap",
+          "region": null,
+          "source": "S16 ; v0.49"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "encart de question et candidats non tracés",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "question"
+    },
+    {
+      "id": "P03-RAPPORT-REPORT",
+      "group": "P03-RAPPORT",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "location_status": "non_applicable",
+      "location_name": "Rapport subjectif — questionnaire",
+      "justification": "Un rapport recueilli après épreuve n'est pas une activation cérébrale localisée.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P03-RAPPORT"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P03-RAPPORT-REPORT",
+        "title": "Panique rapportée",
+        "pedagogy": "Panique chez trois patientes ; comparaison locale avec témoins. Questionnaire recueilli après épreuve.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P03-RAPPORT-REPORT",
+        "value_ids": [],
+        "sources": [
+          "REF-P03-RAPPORT"
+        ],
+        "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "xyz": [
+          3,
+          0,
+          0
+        ],
+        "reference_card": "P03-RAPPORT",
+        "mechanism": {
+          "id": "P03-RAPPORT-REPORT",
+          "label": "Panique rapportée",
+          "where": "Rapport subjectif / questionnaire",
+          "does": "Panique chez trois patientes ; comparaison locale avec témoins. Questionnaire recueilli après épreuve.",
+          "x": 3,
+          "y": 0,
+          "kind": "readout",
+          "region": null,
+          "source": "S16 ; PROM-F02"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "encart de contexte/rapport/analyse",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "contextual"
+    },
+    {
+      "id": "P03-RAPPORT-AMYG",
+      "group": "P03-RAPPORT",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "location_status": "documente",
+      "location_name": "Amygdales bilatérales — lésions",
+      "justification": "Condition clinique lésée, pas activation ni relais obligé entre CO₂ et panique.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P03-RAPPORT"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P03-RAPPORT-AMYG",
+        "title": "Amygdales lésées",
+        "pedagogy": "Condition clinique ; pas un passage obligatoire à placer entre CO₂ et panique.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P03-RAPPORT-AMYG",
+        "value_ids": [],
+        "sources": [
+          "REF-P03-RAPPORT"
+        ],
+        "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "xyz": [
+          2,
+          2,
+          0
+        ],
+        "reference_card": "P03-RAPPORT",
+        "mechanism": {
+          "id": "P03-RAPPORT-AMYG",
+          "label": "Amygdales lésées",
+          "where": "Amygdales bilatérales",
+          "does": "Condition clinique ; pas un passage obligatoire à placer entre CO₂ et panique.",
+          "x": 2,
+          "y": 2,
+          "kind": "lesion",
+          "region": "amygdala",
+          "source": "S16"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "lesion"
+    },
+    {
+      "id": "P03-RAPPORT-SYMPTOM",
+      "group": "P03-RAPPORT",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "location_status": "non_applicable",
+      "location_name": "Symptômes et comportement de fuite",
+      "justification": "Lecture comportementale, sans circuit moteur inventé.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P03-RAPPORT"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P03-RAPPORT-SYMPTOM",
+        "title": "Symptômes / fuite",
+        "pedagogy": "Symptômes et désir ou comportement de fuite dans le critère auteur ; onset subjectif non établi.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P03-RAPPORT-SYMPTOM",
+        "value_ids": [],
+        "sources": [
+          "REF-P03-RAPPORT"
+        ],
+        "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+        "xyz": [
+          3,
+          -2,
+          0
+        ],
+        "reference_card": "P03-RAPPORT",
+        "mechanism": {
+          "id": "P03-RAPPORT-SYMPTOM",
+          "label": "Symptômes / fuite",
+          "where": "Comportement observable",
+          "does": "Symptômes et désir ou comportement de fuite dans le critère auteur ; onset subjectif non établi.",
+          "x": 3,
+          "y": -2,
+          "kind": "readout",
+          "region": null,
+          "source": "v0.49/v0.63"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "encart de contexte/rapport/analyse",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "contextual"
+    }
+  ],
+  "values": [
+    {
+      "value_id": "TROU-P03-RAPPORT-ROUTE",
+      "label": "Réseaux de panique ?",
+      "display_value": "ND",
+      "status": "NO_MEASUREMENT_REGISTERED",
+      "quantity_type": "MECHANISTIC_GAP",
+      "measurement_scope": "P03-RAPPORT",
+      "applies_to": [
+        "P03-RAPPORT-ROUTE"
+      ],
+      "anchor_ids": [],
+      "evidence_ids": [
+        "REF-P03-RAPPORT"
+      ],
+      "research_question": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+      "caveat": "Trou localisé dans le trajet ; aucune durée inventée."
+    }
+  ],
+  "anchors": [
+    {
+      "anchor_id": "REGION-P03-RAPPORT-GAS",
+      "structure_name": "Voies respiratoires",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0.65,
+        0,
+        -2.2
+      ],
+      "applies_to": [
+        "P03-RAPPORT-GAS"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Humain · S16 · trois patientes avec lésions amygdaliennes"
+    },
+    {
+      "anchor_id": "REGION-P03-RAPPORT-BODY",
+      "structure_name": "Cœur, respiration, peau",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0,
+        0,
+        -2.7
+      ],
+      "applies_to": [
+        "P03-RAPPORT-BODY"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Humain · S16 · trois patientes avec lésions amygdaliennes"
+    },
+    {
+      "anchor_id": "REGION-P03-RAPPORT-ROUTE",
+      "structure_name": "Trajet cérébral à identifier",
+      "spatial_status": "UNPLACED",
+      "schematic_xyz": null,
+      "applies_to": [
+        "P03-RAPPORT-ROUTE"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Humain · S16 · trois patientes avec lésions amygdaliennes"
+    },
+    {
+      "anchor_id": "REGION-P03-RAPPORT-REPORT",
+      "structure_name": "Rapport subjectif / questionnaire",
+      "spatial_status": "UNPLACED",
+      "schematic_xyz": null,
+      "applies_to": [
+        "P03-RAPPORT-REPORT"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Humain · S16 · trois patientes avec lésions amygdaliennes"
+    },
+    {
+      "anchor_id": "REGION-P03-RAPPORT-AMYG",
+      "structure_name": "Amygdales bilatérales",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0.55,
+        0.3,
+        0.05
+      ],
+      "applies_to": [
+        "P03-RAPPORT-AMYG"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Humain · S16 · trois patientes avec lésions amygdaliennes"
+    },
+    {
+      "anchor_id": "REGION-P03-RAPPORT-SYMPTOM",
+      "structure_name": "Comportement observable",
+      "spatial_status": "UNPLACED",
+      "schematic_xyz": null,
+      "applies_to": [
+        "P03-RAPPORT-SYMPTOM"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Humain · S16 · trois patientes avec lésions amygdaliennes"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "REF-P03-RAPPORT",
+      "source_id": "REF-P03-RAPPORT",
+      "citation_short": "Source primaire",
+      "title": "CO₂ · rapports",
+      "url": "https://www.nature.com/articles/nn.3323",
+      "preparation": "Humain · mêmes trois patientes répétées",
+      "measurement_method": "Supplément S16 acquis et table inspectée en v0.63 ; aucune nouvelle réplication indépendante.",
+      "measured_quantity": "Six cellules de symptômes dans supplément, trois patientes × deux épisodes. Panic #2 désigne un épisode ultérieur, pas numéro assuré de visite/essai.",
+      "limitations": [
+        "Questionnaire rétrospectif ne fixe pas onset subjectif. Puces documentaires non transformées en score DSM harmonisé.",
+        "Identifiants essai/visite et réponses item par item des témoins non extraits."
+      ],
+      "reference_role": "dossier_context",
+      "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+      "original_supports": [
+        "P03-RAPPORT-ENTREE",
+        "P03-RAPPORT-SORTIE"
+      ],
+      "related_nodes": [
+        "P03-RAPPORT-GAS",
+        "P03-RAPPORT-BODY",
+        "P03-RAPPORT-ROUTE",
+        "P03-RAPPORT-REPORT",
+        "P03-RAPPORT-AMYG",
+        "P03-RAPPORT-SYMPTOM"
+      ]
+    },
+    {
+      "evidence_id": "CHAINE-P03-RAPPORT-S16",
+      "source_id": "REF-P03-RAPPORT",
+      "citation_short": "S16 · texte acquis avec numéros de lignes",
+      "title": "Maillons et liaisons · CO₂ → manifestations et rapport de panique",
+      "url": "https://www.nature.com/articles/nn.3323",
+      "preparation": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "measurement_method": "Lecture des passages acquis ; chaque nœud et liaison porte son localisateur.",
+      "measured_quantity": "Mécanismes, interventions, observations et inconnues distingués.",
+      "limitations": [
+        "Les traits de mesure et association ne représentent pas tous une voie nerveuse.",
+        "Pas de coordonnées anatomiques mesurées ajoutées."
+      ],
+      "original_locator": "sources_cartographie/S16.txt",
+      "reference_role": "dossier_context",
+      "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+      "original_supports": [
+        "P03-RAPPORT-GAS",
+        "P03-RAPPORT-BODY",
+        "P03-RAPPORT-ROUTE",
+        "P03-RAPPORT-REPORT",
+        "P03-RAPPORT-AMYG",
+        "P03-RAPPORT-SYMPTOM"
+      ],
+      "related_nodes": [
+        "P03-RAPPORT-GAS",
+        "P03-RAPPORT-BODY",
+        "P03-RAPPORT-ROUTE",
+        "P03-RAPPORT-REPORT",
+        "P03-RAPPORT-AMYG",
+        "P03-RAPPORT-SYMPTOM"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "X-GUploader-UploadID": "AP6rU83LEY3JWPfIMktHmA4cbeaY0yVGau3bdV8WU-UuZhmCTQlUMcjMR5lGw13_qaQ16pdRCAdnvZ8",
+  "x-goog-generation": "1622156690119951",
+  "x-goog-metageneration": "1",
+  "x-goog-stored-content-encoding": "gzip",
+  "x-goog-stored-content-length": "778",
+  "Content-Encoding": "gzip",
+  "Content-Language": "en",
+  "x-goog-hash": "crc32c=SAYV4Q==",
+  "x-goog-storage-class": "NEARLINE",
+  "Accept-Ranges": "bytes",
+  "Content-Length": "778",
+  "Server": "UploadServer",
+  "Date": "Tue, 13 Oct 2026 15:02:10 GMT",
+  "Expires": "Wed, 13 Oct 2027 15:02:10 GMT",
+  "Cache-Control": "no-cache,no-transform",
+  "Last-Modified": "Thu, 27 May 2021 23:04:50 GMT",
+  "ETag": "\"f0d498799288f2d86751e65bc6a2d0c0\"",
+  "Content-Type": "application/octet-stream",
+  "Age": "0",
+  "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+  "Connection": "close"
+}

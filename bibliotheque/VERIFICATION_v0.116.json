@@ -1,0 +1,196 @@
+{
+  "version": "0.116",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "official_sdk_sha256": "5b1eb5ecb3d99c7778c097a2677ef02c80fc2146ef62209770d628db4b1ee31c",
+    "reader_url": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/master/allensdk/core/nwb_data_set.py",
+    "checks": [
+      {
+        "specimen_id": 637034000,
+        "sweep_number": 36,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 0,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 637034000,
+        "sweep_number": 62,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 1,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 637034000,
+        "sweep_number": 64,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 1,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 637038252,
+        "sweep_number": 17,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 0,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 637038252,
+        "sweep_number": 20,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 3,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 637038252,
+        "sweep_number": 22,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 31,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 508279351,
+        "sweep_number": 48,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 0,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 508279351,
+        "sweep_number": 72,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 2,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      },
+      {
+        "specimen_id": 508279351,
+        "sweep_number": 66,
+        "voltage_values": 60000,
+        "current_values": 60000,
+        "differing_values": 0,
+        "source_detected_spikes": 3,
+        "spike_times_exact": true,
+        "within_source_valid_experiment": true,
+        "pipeline": [
+          1,
+          0
+        ],
+        "sdk_adaptation": "get_pipeline_version byte-string decoding only; get_sweep and get_spike_times unchanged"
+      }
+    ],
+    "shapes": [
+      {
+        "specimen_id": 637038252,
+        "vertices": 6827,
+        "edges": 6826,
+        "all_source_values_exact": true,
+        "length_difference_um": 0.0
+      },
+      {
+        "specimen_id": 508279351,
+        "vertices": 10529,
+        "edges": 10528,
+        "all_source_values_exact": true,
+        "length_difference_um": 0.0
+      }
+    ],
+    "total_signal_values": 1080000,
+    "scope": "Independent extraction against official SDK, signal conversions, source spike annotations and complete SWC. No re-detection of spikes or individual sweep QC reanalysis."
+  },
+  "browser": {
+    "status": "passed",
+    "cells_checked": 3,
+    "traces_checked": 9,
+    "source_spike_cursor_checks": 41,
+    "all_signal_values_browser_hashes_exact": true,
+    "share_sweep_cursor_view": true,
+    "export_signal_source_and_intervals": true,
+    "rapid_trace_switch": true,
+    "playback": true,
+    "physical_current_bounds_no_clipping": true,
+    "shape_selection": true,
+    "no_webgl_recordings": true,
+    "mobile_no_overflow": true,
+    "corrupt_signal_blocked_and_retry": true,
+    "h01_navigation_preserved": true,
+    "page_errors": [],
+    "url": "http://127.0.0.1:8890/"
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 356,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/neurons/PROVENANCE.json",
+    "assets/neurons/allen-sweep-62.json",
+    "assets/neurons/h01-em-1072605926.json"
+  ],
+  "scope": "Source SWC, NWB signals, Allen detected spike times, interface and local paths; not spatial propagation, new spike detection or individual sweep QC validation."
+}

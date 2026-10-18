@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "tests": [
+    "duplicate node",
+    "dangling edge",
+    "unknown value scope",
+    "unknown source protocol",
+    "missing temporal unit",
+    "nonfinite temporal value",
+    "duplicate timing",
+    "wrong values type",
+    "wrong sources type",
+    "null evidence",
+    "wrong path list",
+    "bounded malformed indices",
+    "partly invalid annotation import rejected",
+    "17 meshes index bounds, finite coordinates, declared bounds and hemisphere orientation"
+  ],
+  "anatomical_regions": 17,
+  "anatomy_hash_verified": true
+}

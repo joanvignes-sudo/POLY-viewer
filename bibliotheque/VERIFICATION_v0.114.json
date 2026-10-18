@@ -1,0 +1,96 @@
+{
+  "version": "0.114",
+  "status": "passed",
+  "source_class_points": 5050,
+  "unannotated_vertices": 20845,
+  "skeleton_components": 45,
+  "native_join_checks": {
+    "status": "passed",
+    "native_coordinate_byte_matches": 5050,
+    "unique_annotated_vertices": 5050,
+    "skeleton_vertices": 25895,
+    "unannotated_vertices": 20845,
+    "by_id_annotation_count": 5050,
+    "related_object_count": 5050,
+    "raw_skeleton_sha256": "90fd2552213f2e2d78d9c5aede31cc3837a3374cb66e79eb098805b3d0795a5f",
+    "coordinate_matching": "Original float32 nanometre bytes equal, not a spatial tolerance or nearest-neighbour transfer.",
+    "source_json_max_roundtrip_nm": 4.656612873077393e-10,
+    "class_counts": {
+      "dendrite": 4791,
+      "axon": 148,
+      "AIS": 21,
+      "soma": 43,
+      "astrocyte": 40,
+      "myelinated axon": 7
+    },
+    "labels_not_manually_validated_by_poly": true,
+    "astrocyte_labels_retained_for_review": 40,
+    "unannotated_labels_interpolated": false
+  },
+  "source_encoding_checks": {
+    "status": "passed",
+    "related_object_records": 5050,
+    "by_id_records_verified": 5050,
+    "all_positions_classes_and_relationships_agree": true,
+    "source_classes": {
+      "0": "axon",
+      "1": "dendrite",
+      "2": "astrocyte",
+      "3": "soma",
+      "4": "cilium",
+      "5": "AIS",
+      "1000": "myelinated axon",
+      "1001": "myelinated axon",
+      "1002": "myelinated fragment",
+      "1003": "myelinated fragment",
+      "1004": "myelinated fragment",
+      "1005": "myelinated fragment"
+    },
+    "relationship_multiplicity": [
+      1
+    ],
+    "scope": "Consistency of source encodings and source association; not independent biological validation of class labels."
+  },
+  "classes_interpolated": false,
+  "manual_class_validation_claimed": false,
+  "browser": {
+    "status": "passed",
+    "annotated_vertices": 5050,
+    "unannotated_vertices": 20845,
+    "default_route_exact_source_landmarks_checked": 122,
+    "point_cursor_matches_original_vertex": true,
+    "source_astrocyte_label_disclosed": true,
+    "free_cursor_has_no_interpolated_class": true,
+    "landmark_next_previous": true,
+    "source_class_share_roundtrip": true,
+    "geometry_37_cases_unchanged": true,
+    "disconnected_no_landmarks": true,
+    "classes_toggle_preserves_measurements": true,
+    "export_labels_and_limits": true,
+    "geometry_max": 14,
+    "mobile_no_overflow": true,
+    "no_webgl_class_reader": true,
+    "corrupt_classes_retry": true,
+    "page_errors": []
+  },
+  "navigation": {
+    "status": "passed",
+    "catalog_to_classified_route": true,
+    "class_landmark_readout": true,
+    "native_detail_return_same_annotation": true,
+    "page_errors": []
+  },
+  "links_checked": 145,
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/neurons/h01-em-1072605926.json",
+    "assets/neurons/h01-1072605926.skeleton",
+    "assets/h01-paths/PROVENANCE.json",
+    "assets/h01-paths/PROJECTIONS.json",
+    "assets/h01-evidence/PROVENANCE.json"
+  ],
+  "biological_time": null,
+  "anatomical_attachment_confirmed": false,
+  "scope": "Source label consistency, native coordinate-byte identity and interface checks; not biological validation of labels or physiological propagation."
+}

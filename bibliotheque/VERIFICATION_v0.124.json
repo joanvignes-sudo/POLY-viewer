@@ -1,0 +1,185 @@
+{
+  "version": "0.124",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "source_faces": 86,
+    "synthetic_vertices": 67338,
+    "synthetic_centres": 117390,
+    "summary": [
+      {
+        "divisions": 1,
+        "facets": 86,
+        "subtriangles": 86,
+        "opposed_normals_float64": 86,
+        "opposed_normals_local_float32": 86,
+        "facets_with_opposed_normals": 86,
+        "nonpositive_centres": 0,
+        "maximum_gap_mm": 0.3725928866846463
+      },
+      {
+        "divisions": 2,
+        "facets": 86,
+        "subtriangles": 344,
+        "opposed_normals_float64": 61,
+        "opposed_normals_local_float32": 61,
+        "facets_with_opposed_normals": 29,
+        "nonpositive_centres": 0,
+        "maximum_gap_mm": 0.1309574356817155
+      },
+      {
+        "divisions": 4,
+        "facets": 86,
+        "subtriangles": 1376,
+        "opposed_normals_float64": 58,
+        "opposed_normals_local_float32": 58,
+        "facets_with_opposed_normals": 9,
+        "nonpositive_centres": 0,
+        "maximum_gap_mm": 0.035741705419501245
+      },
+      {
+        "divisions": 8,
+        "facets": 86,
+        "subtriangles": 5504,
+        "opposed_normals_float64": 57,
+        "opposed_normals_local_float32": 57,
+        "facets_with_opposed_normals": 2,
+        "nonpositive_centres": 0,
+        "maximum_gap_mm": 0.00931380694318651
+      },
+      {
+        "divisions": 16,
+        "facets": 86,
+        "subtriangles": 22016,
+        "opposed_normals_float64": 126,
+        "opposed_normals_local_float32": 126,
+        "facets_with_opposed_normals": 1,
+        "nonpositive_centres": 0,
+        "maximum_gap_mm": 0.00236983597191135
+      },
+      {
+        "divisions": 32,
+        "facets": 86,
+        "subtriangles": 88064,
+        "opposed_normals_float64": 184,
+        "opposed_normals_local_float32": 184,
+        "facets_with_opposed_normals": 1,
+        "nonpositive_centres": 0,
+        "maximum_gap_mm": 0.0006002879799277638
+      }
+    ],
+    "source_geometry_modified": false,
+    "extended_single_face_analysis": {
+      "status": "passed",
+      "source_faces": 1,
+      "synthetic_vertices": 43683,
+      "synthetic_centres": 86016,
+      "summary": [
+        {
+          "divisions": 64,
+          "facets": 1,
+          "subtriangles": 4096,
+          "opposed_normals_float64": 0,
+          "opposed_normals_local_float32": 0,
+          "facets_with_opposed_normals": 0,
+          "nonpositive_centres": 0,
+          "maximum_gap_mm": 2.4576122294920945e-05
+        },
+        {
+          "divisions": 128,
+          "facets": 1,
+          "subtriangles": 16384,
+          "opposed_normals_float64": 0,
+          "opposed_normals_local_float32": 0,
+          "facets_with_opposed_normals": 0,
+          "nonpositive_centres": 0,
+          "maximum_gap_mm": 6.181679253862101e-06
+        },
+        {
+          "divisions": 256,
+          "facets": 1,
+          "subtriangles": 65536,
+          "opposed_normals_float64": 0,
+          "opposed_normals_local_float32": 0,
+          "facets_with_opposed_normals": 0,
+          "nonpositive_centres": 0,
+          "maximum_gap_mm": 1.5581481385996636e-06
+        }
+      ],
+      "source_geometry_modified": false
+    },
+    "adaptive_summary": {
+      "faces": 86,
+      "subtriangles": 5348,
+      "division_counts": {
+        "2": 57,
+        "4": 20,
+        "8": 7,
+        "16": 1,
+        "64": 1
+      },
+      "maximum_sampled_gap_mm": 0.1309574356817155,
+      "opposed_normals_at_tested_subcentres": 0,
+      "nonpositive_at_tested_subcentres": 0,
+      "whole_subtriangles_certified": false
+    }
+  },
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "adaptive_faces_checked": 86,
+    "all_selected_vertex_buffers_indices_and_anchors_exact": true,
+    "extended_case_levels_checked": 7,
+    "native_hides_preview": true,
+    "shared_level_and_visibility": true,
+    "export_preserves_synthetic_status": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometry_memory": 46,
+    "maximum_cached_groups": 2,
+    "mobile_no_overflow": true,
+    "corrupt_preview_preserves_source_diagnostic_and_retry": true,
+    "page_errors": []
+  },
+  "triangle_regression": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "flagged_records_checked": 86,
+    "positions_checked_per_mode": 258,
+    "native_and_registered_faces_match_source": true,
+    "shared_selection": true,
+    "close_reopen_cycles": 5,
+    "bounded_geometry_memory": 45,
+    "export_preserves_all_records": true,
+    "afid_and_mesh_overlays_exclusive": true,
+    "mobile_no_overflow": true,
+    "corrupt_supplement_preserves_brain_and_retry": true,
+    "page_errors": []
+  },
+  "independent_arithmetic": {
+    "status": "passed",
+    "subdivision_records_checked": 519,
+    "triangular_topology_and_boundary_counts": true,
+    "all_original_corners_preserved_within_mm": 1e-05,
+    "maximum_corner_difference_mm": 3.710381662358486e-06,
+    "maximum_local_storage_error_mm": 1.4757092908729418e-07,
+    "adaptive_previews": 86,
+    "private_transform_fields_sha_checked": 4
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 559,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/bigbrain/surfaces.bin",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/bigbrain-warp-v0121/positions.bin",
+    "assets/bigbrain-warp-v0121/PROVENANCE.json",
+    "assets/bigbrain-triangles-v0123/PROVENANCE.json",
+    "assets/bigbrain-triangles-v0123/FLAGGED.json",
+    "assets/bigbrain-validation-v0122/PROVENANCE.json"
+  ],
+  "scope": "Local synthetic subdivision previews of flagged faces; exact source-corner and buffer checks. No new anatomical observations or global mesh replacement, full-interior/volume validation or activity."
+}

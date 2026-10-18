@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:9bba9e7bebf03702b0e7",
+  "kind": "proof",
+  "title": "PRECISION_BILAN.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      3,
+      "proofs",
+      1
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/PRECISION_BILAN.json",
+    "sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface",
+    "bytes": 45285,
+    "content_loaded": false
+  }
+}

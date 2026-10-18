@@ -1,0 +1,40 @@
+{
+  "id": "poly:claim:anatomical_alignment",
+  "kind": "claim",
+  "title": "Le raccord SPARC est validé anatomiquement",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      5
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "anatomical_alignment",
+      "claim": "Le raccord SPARC est validé anatomiquement",
+      "status": "non établi",
+      "evidence_level": "validation scientifique",
+      "scope": "Vues séparées conservées ; image assemblée des auteurs non indépendante",
+      "next_acceptance_gate": "Correspondances identifiées et contrôle distinct de l’ajustement, modèle justifié, erreurs/incertitudes conservées ; pas de région déjà recherchée qualifiée de vierge.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/PRECISION_BILAN.json",
+          "selector": [
+            "anatomical_validation"
+          ],
+          "value": false,
+          "original_sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface",
+          "sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1562 @@
+{
+  "id": "P01",
+  "species": "mouse",
+  "nodes": [
+    {
+      "id": "P01-LIGHT",
+      "title": "Lumière thoracique · préparation précisée",
+      "pedagogy": "589 nm dans la calibration anesthésiée ; micro-LED 591 nm dans le gilet pour souris libre. ChRmine ciblée aux cardiomyocytes.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-LIGHT",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIGHT",
+        "label": "Lumière thoracique · préparation précisée",
+        "where": "Thorax, à travers la peau",
+        "does": "589 nm dans la calibration anesthésiée ; micro-LED 591 nm dans le gilet pour souris libre. ChRmine ciblée aux cardiomyocytes.",
+        "x": 0,
+        "y": 0,
+        "kind": "intervention",
+        "region": "heart",
+        "source": "S15:22–29"
+      },
+      "original_presentation": {
+        "title": "Lumière 589 nm",
+        "pedagogy": "Active ChRmine exprimée dans les cardiomyocytes.",
+        "mechanism": {
+          "id": "P01-LIGHT",
+          "label": "Lumière 589 nm",
+          "where": "Thorax, à travers la peau",
+          "does": "Active ChRmine exprimée dans les cardiomyocytes.",
+          "x": 0,
+          "y": 0,
+          "kind": "intervention",
+          "region": "heart",
+          "source": "S15:22–29"
+        }
+      }
+    },
+    {
+      "id": "P01-OPSIN",
+      "title": "ChRmine · cellules cardiaques",
+      "pedagogy": "Permet le contrôle optique du rythme cardiaque ; expression ciblée au cœur.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-OPSIN",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        1,
+        0,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-OPSIN",
+        "label": "ChRmine · cellules cardiaques",
+        "where": "Parois des oreillettes et ventricules",
+        "does": "Permet le contrôle optique du rythme cardiaque ; expression ciblée au cœur.",
+        "x": 1,
+        "y": 0,
+        "kind": "biological",
+        "region": "heart",
+        "source": "S15:22–29"
+      }
+    },
+    {
+      "id": "P01-HEART",
+      "title": "Tachycardie imposée",
+      "pedagogy": "Augmentation du rythme mesurée par ECG ; essais comportementaux distincts des calibrations anesthésiées.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-HEART",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        2,
+        0,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-HEART",
+        "label": "Tachycardie imposée",
+        "where": "Cœur",
+        "does": "Augmentation du rythme mesurée par ECG ; essais comportementaux distincts des calibrations anesthésiées.",
+        "x": 2,
+        "y": 0,
+        "kind": "biological",
+        "region": "heart",
+        "source": "S15:27–29,39–55"
+      }
+    },
+    {
+      "id": "P01-NODOSE",
+      "title": "Ganglion nodose · vague",
+      "pedagogy": "Induction potentielle de Fos rapportée après pacing ; ne trace pas à elle seule le trajet des signaux cardiaques.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-NODOSE",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        0,
+        1.1,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-NODOSE",
+        "label": "Ganglion nodose · vague",
+        "where": "Ganglion sensitif périphérique du nerf vague",
+        "does": "Induction potentielle de Fos rapportée après pacing ; ne trace pas à elle seule le trajet des signaux cardiaques.",
+        "x": 0,
+        "y": 1.1,
+        "kind": "biological",
+        "region": "nodose",
+        "source": "S15:72"
+      }
+    },
+    {
+      "id": "P01-NTS",
+      "title": "NTS · réponse Fos",
+      "pedagogy": "Augmentation du marquage Fos observée après pacing.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-NTS",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        1,
+        1.1,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-NTS",
+        "label": "NTS · réponse Fos",
+        "where": "Bulbe, tronc cérébral",
+        "does": "Augmentation du marquage Fos observée après pacing.",
+        "x": 1,
+        "y": 1.1,
+        "kind": "biological",
+        "region": "NTS",
+        "source": "S15:62,72"
+      }
+    },
+    {
+      "id": "P01-LC",
+      "title": "Locus coeruleus · réponse Fos",
+      "pedagogy": "Marquage Fos dans des neurones Slc6a2+ ; noradrénaline libérée non mesurée dans ce test.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-LC",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        2,
+        1.1,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LC",
+        "label": "Locus coeruleus · réponse Fos",
+        "where": "Pont, tronc cérébral",
+        "does": "Marquage Fos dans des neurones Slc6a2+ ; noradrénaline libérée non mesurée dans ce test.",
+        "x": 2,
+        "y": 1.1,
+        "kind": "biological",
+        "region": "LC",
+        "source": "S15:62,72"
+      }
+    },
+    {
+      "id": "P01-GAP",
+      "title": "Voie cœur → insula ?",
+      "pedagogy": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+      "status": "ND",
+      "anchor_id": "REGION-P01-GAP",
+      "value_ids": [
+        "TROU-P01-GAP"
+      ],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+      "xyz": [
+        0,
+        2.2,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-GAP",
+        "label": "Voie cœur → insula ?",
+        "where": "Nerfs afférents et relais à identifier",
+        "does": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+        "x": 0,
+        "y": 2.2,
+        "kind": "gap",
+        "region": null,
+        "source": "Analyses v0.61/v0.66"
+      }
+    },
+    {
+      "id": "P01-PIC",
+      "title": "Insula postérieure · pIC",
+      "pedagogy": "Fos et réponses électrophysiologiques étudiés ; cible de l’inhibition dans une autre expérience.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-PIC",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        1,
+        2.2,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-PIC",
+        "label": "Insula postérieure · pIC",
+        "where": "Cortex insulaire postérieur",
+        "does": "Fos et réponses électrophysiologiques étudiés ; cible de l’inhibition dans une autre expérience.",
+        "x": 1,
+        "y": 2.2,
+        "kind": "biological",
+        "region": "insula",
+        "source": "S15:62–66,77–82"
+      }
+    },
+    {
+      "id": "P01-CONTEXT",
+      "title": "Contexte à risque",
+      "pedagogy": "Module l’effet comportemental du pacing ; la route sensorielle vers pIC n’est pas identifiée dans cette extraction.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-CONTEXT",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        2,
+        2.2,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-CONTEXT",
+        "label": "Contexte à risque",
+        "where": "Environnement de tâche",
+        "does": "Module l’effet comportemental du pacing ; la route sensorielle vers pIC n’est pas identifiée dans cette extraction.",
+        "x": 2,
+        "y": 2.2,
+        "kind": "context",
+        "region": null,
+        "source": "S15:13–15,39–55"
+      }
+    },
+    {
+      "id": "P01-ICPP",
+      "title": "Lumière bleue + iC++",
+      "pedagogy": "Lumière 473 nm sur canal inhibiteur iC++ exprimé dans pIC.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-ICPP",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        0,
+        3.3,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-ICPP",
+        "label": "Lumière bleue + iC++",
+        "where": "Insula postérieure · intervention bilatérale",
+        "does": "Lumière 473 nm sur canal inhibiteur iC++ exprimé dans pIC.",
+        "x": 0,
+        "y": 3.3,
+        "kind": "intervention",
+        "region": "insula",
+        "source": "S15:77–82"
+      }
+    },
+    {
+      "id": "P01-BEHAV",
+      "title": "Évitement / recherche d’eau",
+      "pedagogy": "Pacing : comportement apparenté à l’anxiété selon contexte. Inhibition pIC : atténuation ; pas un rapport subjectif humain.",
+      "status": "OBSERVATION",
+      "anchor_id": "REGION-P01-BEHAV",
+      "value_ids": [],
+      "sources": [
+        "REF-P01"
+      ],
+      "scope": "Souris · S15 / Hsueh 2023",
+      "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+      "xyz": [
+        2,
+        3.3,
+        0
+      ],
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-BEHAV",
+        "label": "Évitement / recherche d’eau",
+        "where": "Comportement de la souris",
+        "does": "Pacing : comportement apparenté à l’anxiété selon contexte. Inhibition pIC : atténuation ; pas un rapport subjectif humain.",
+        "x": 2,
+        "y": 3.3,
+        "kind": "readout",
+        "region": null,
+        "source": "S15:13,77–82"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "P01-LIEN-1",
+      "from": "P01-LIGHT",
+      "to": "P01-OPSIN",
+      "status": "OBSERVATION",
+      "warning": "Activation optique de ChRmine dans les cardiomyocytes.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-1",
+        "from": "P01-LIGHT",
+        "to": "P01-OPSIN",
+        "label": "active",
+        "status": "intervention",
+        "source": "S15:22–29",
+        "detail": "Activation optique de ChRmine dans les cardiomyocytes."
+      }
+    },
+    {
+      "id": "P01-LIEN-2",
+      "from": "P01-OPSIN",
+      "to": "P01-HEART",
+      "status": "OBSERVATION",
+      "warning": "Pacing ciblé au cœur ; ECG dans la calibration.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-2",
+        "from": "P01-OPSIN",
+        "to": "P01-HEART",
+        "label": "impose le rythme",
+        "status": "intervention",
+        "source": "S15:27–29",
+        "detail": "Pacing ciblé au cœur ; ECG dans la calibration."
+      }
+    },
+    {
+      "id": "P01-LIEN-3",
+      "from": "P01-HEART",
+      "to": "P01-NODOSE",
+      "status": "OBSERVATION",
+      "warning": "Réponse moléculaire après pacing ; pas traçage du signal fibre par fibre.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-3",
+        "from": "P01-HEART",
+        "to": "P01-NODOSE",
+        "label": "Fos ↑",
+        "status": "association",
+        "source": "S15:72",
+        "detail": "Réponse moléculaire après pacing ; pas traçage du signal fibre par fibre."
+      }
+    },
+    {
+      "id": "P01-LIEN-4",
+      "from": "P01-HEART",
+      "to": "P01-NTS",
+      "status": "OBSERVATION",
+      "warning": "Réponse de région après intervention ; ne prouve pas cœur→NTS direct.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-4",
+        "from": "P01-HEART",
+        "to": "P01-NTS",
+        "label": "Fos ↑",
+        "status": "association",
+        "source": "S15:62,72",
+        "detail": "Réponse de région après intervention ; ne prouve pas cœur→NTS direct."
+      }
+    },
+    {
+      "id": "P01-LIEN-5",
+      "from": "P01-HEART",
+      "to": "P01-LC",
+      "status": "OBSERVATION",
+      "warning": "Réponse de neurones Slc6a2+ ; ne mesure pas la noradrénaline libérée.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-5",
+        "from": "P01-HEART",
+        "to": "P01-LC",
+        "label": "Fos ↑",
+        "status": "association",
+        "source": "S15:62,72",
+        "detail": "Réponse de neurones Slc6a2+ ; ne mesure pas la noradrénaline libérée."
+      }
+    },
+    {
+      "id": "P01-LIEN-6",
+      "from": "P01-NODOSE",
+      "to": "P01-NTS",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Ces deux territoires répondent, mais la connexion fonctionnelle dans cette expérience n’est pas tracée.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-6",
+        "from": "P01-NODOSE",
+        "to": "P01-NTS",
+        "label": "route à vérifier",
+        "status": "gap",
+        "source": "S15:72 ; v0.61",
+        "detail": "Ces deux territoires répondent, mais la connexion fonctionnelle dans cette expérience n’est pas tracée."
+      }
+    },
+    {
+      "id": "P01-LIEN-7",
+      "from": "P01-NTS",
+      "to": "P01-LC",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Présence de deux réponses ne démontre pas une propagation NTS→LC.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-7",
+        "from": "P01-NTS",
+        "to": "P01-LC",
+        "label": "raccord non testé",
+        "status": "gap",
+        "source": "S15:62,72",
+        "detail": "Présence de deux réponses ne démontre pas une propagation NTS→LC."
+      }
+    },
+    {
+      "id": "P01-LIEN-8",
+      "from": "P01-HEART",
+      "to": "P01-GAP",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Route anatomique nécessaire pour expliquer le passage cœur→cerveau.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-8",
+        "from": "P01-HEART",
+        "to": "P01-GAP",
+        "label": "afférences inconnues",
+        "status": "gap",
+        "source": "v0.61/v0.66",
+        "detail": "Route anatomique nécessaire pour expliquer le passage cœur→cerveau."
+      }
+    },
+    {
+      "id": "P01-LIEN-9",
+      "from": "P01-GAP",
+      "to": "P01-PIC",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Les réponses insulaires ne suffisent pas à identifier le trajet.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-9",
+        "from": "P01-GAP",
+        "to": "P01-PIC",
+        "label": "relais inconnus",
+        "status": "gap",
+        "source": "v0.61/v0.66",
+        "detail": "Les réponses insulaires ne suffisent pas à identifier le trajet."
+      }
+    },
+    {
+      "id": "P01-LIEN-10",
+      "from": "P01-HEART",
+      "to": "P01-PIC",
+      "status": "OBSERVATION",
+      "warning": "Cartographie Fos et enregistrements ; préparations différentes conservées dans le détail.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-10",
+        "from": "P01-HEART",
+        "to": "P01-PIC",
+        "label": "réponse insulaire",
+        "status": "association",
+        "source": "S15:62–66",
+        "detail": "Cartographie Fos et enregistrements ; préparations différentes conservées dans le détail."
+      }
+    },
+    {
+      "id": "P01-LIEN-11",
+      "from": "P01-CONTEXT",
+      "to": "P01-BEHAV",
+      "status": "OBSERVATION",
+      "warning": "L’effet du pacing dépend du risque dans les tâches examinées.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-11",
+        "from": "P01-CONTEXT",
+        "to": "P01-BEHAV",
+        "label": "conditionne l’effet",
+        "status": "intervention",
+        "source": "S15:13–15,39–55",
+        "detail": "L’effet du pacing dépend du risque dans les tâches examinées."
+      }
+    },
+    {
+      "id": "P01-LIEN-12",
+      "from": "P01-CONTEXT",
+      "to": "P01-PIC",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Modèle d’intégration contexte/interoception ; route complète non identifiée.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-12",
+        "from": "P01-CONTEXT",
+        "to": "P01-PIC",
+        "label": "intégration proposée",
+        "status": "hypothesis",
+        "source": "S15:15,89",
+        "detail": "Modèle d’intégration contexte/interoception ; route complète non identifiée."
+      }
+    },
+    {
+      "id": "P01-LIEN-13",
+      "from": "P01-ICPP",
+      "to": "P01-PIC",
+      "status": "OBSERVATION",
+      "warning": "Cible pIC, iC++ activée par lumière bleue.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-13",
+        "from": "P01-ICPP",
+        "to": "P01-PIC",
+        "label": "inhibe",
+        "status": "intervention",
+        "source": "S15:77",
+        "detail": "Cible pIC, iC++ activée par lumière bleue."
+      }
+    },
+    {
+      "id": "P01-LIEN-14",
+      "from": "P01-ICPP",
+      "to": "P01-BEHAV",
+      "status": "OBSERVATION",
+      "warning": "Test de contribution de pIC : l’effet dépend de la condition de pacing. Pas médiation exclusive.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-14",
+        "from": "P01-ICPP",
+        "to": "P01-BEHAV",
+        "label": "atténue sous pacing",
+        "status": "intervention",
+        "source": "S15:77–82",
+        "detail": "Test de contribution de pIC : l’effet dépend de la condition de pacing. Pas médiation exclusive."
+      }
+    },
+    {
+      "id": "P01-LIEN-15",
+      "from": "P01-PIC",
+      "to": "P01-BEHAV",
+      "status": "CONCEPTUAL_ONLY",
+      "warning": "Inférence à partir de l’inhibition ; sorties cellulaires vers le comportement non tracées.",
+      "reference_card": "P01",
+      "mechanism": {
+        "id": "P01-LIEN-15",
+        "from": "P01-PIC",
+        "to": "P01-BEHAV",
+        "label": "contribution impliquée",
+        "status": "hypothesis",
+        "source": "S15:77–82",
+        "detail": "Inférence à partir de l’inhibition ; sorties cellulaires vers le comportement non tracées."
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": "P01-LIGHT",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Thorax, à travers la peau",
+      "justification": "Lieu de stimulation, distinct des cellules cardiaques ciblées.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-LIGHT",
+        "title": "Lumière thoracique · préparation précisée",
+        "pedagogy": "589 nm dans la calibration anesthésiée ; micro-LED 591 nm dans le gilet pour souris libre. ChRmine ciblée aux cardiomyocytes.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-LIGHT",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          0,
+          0,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-LIGHT",
+          "label": "Lumière thoracique · préparation précisée",
+          "where": "Thorax, à travers la peau",
+          "does": "589 nm dans la calibration anesthésiée ; micro-LED 591 nm dans le gilet pour souris libre. ChRmine ciblée aux cardiomyocytes.",
+          "x": 0,
+          "y": 0,
+          "kind": "intervention",
+          "region": "heart",
+          "source": "S15:22–29"
+        },
+        "original_presentation": {
+          "title": "Lumière 589 nm",
+          "pedagogy": "Active ChRmine exprimée dans les cardiomyocytes.",
+          "mechanism": {
+            "id": "P01-LIGHT",
+            "label": "Lumière 589 nm",
+            "where": "Thorax, à travers la peau",
+            "does": "Active ChRmine exprimée dans les cardiomyocytes.",
+            "x": 0,
+            "y": 0,
+            "kind": "intervention",
+            "region": "heart",
+            "source": "S15:22–29"
+          }
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "intervention"
+    },
+    {
+      "id": "P01-OPSIN",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Cardiomyocytes des parois auriculaires et ventriculaires",
+      "justification": "Expression décrite au cœur, pas localisation cellulaire individuelle.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-OPSIN",
+        "title": "ChRmine · cellules cardiaques",
+        "pedagogy": "Permet le contrôle optique du rythme cardiaque ; expression ciblée au cœur.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-OPSIN",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          1,
+          0,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-OPSIN",
+          "label": "ChRmine · cellules cardiaques",
+          "where": "Parois des oreillettes et ventricules",
+          "does": "Permet le contrôle optique du rythme cardiaque ; expression ciblée au cœur.",
+          "x": 1,
+          "y": 0,
+          "kind": "biological",
+          "region": "heart",
+          "source": "S15:22–29"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "biological"
+    },
+    {
+      "id": "P01-HEART",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Cœur — rythme mesuré par ECG",
+      "justification": "Calibration et essais comportementaux conservent leurs préparations distinctes.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-HEART",
+        "title": "Tachycardie imposée",
+        "pedagogy": "Augmentation du rythme mesurée par ECG ; essais comportementaux distincts des calibrations anesthésiées.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-HEART",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          2,
+          0,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-HEART",
+          "label": "Tachycardie imposée",
+          "where": "Cœur",
+          "does": "Augmentation du rythme mesurée par ECG ; essais comportementaux distincts des calibrations anesthésiées.",
+          "x": 2,
+          "y": 0,
+          "kind": "biological",
+          "region": "heart",
+          "source": "S15:27–29,39–55"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "biological"
+    },
+    {
+      "id": "P01-NODOSE",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Ganglion nodose du nerf vague",
+      "justification": "Lieu mentionné pour Fos potentiel, pas route cardiaque tracée.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-NODOSE",
+        "title": "Ganglion nodose · vague",
+        "pedagogy": "Induction potentielle de Fos rapportée après pacing ; ne trace pas à elle seule le trajet des signaux cardiaques.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-NODOSE",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          0,
+          1.1,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-NODOSE",
+          "label": "Ganglion nodose · vague",
+          "where": "Ganglion sensitif périphérique du nerf vague",
+          "does": "Induction potentielle de Fos rapportée après pacing ; ne trace pas à elle seule le trajet des signaux cardiaques.",
+          "x": 0,
+          "y": 1.1,
+          "kind": "biological",
+          "region": "nodose",
+          "source": "S15:72"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "biological"
+    },
+    {
+      "id": "P01-NTS",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Noyau du tractus solitaire — bulbe",
+      "justification": "Lieu nommé pour marquage Fos, pas délai de transmission.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-NTS",
+        "title": "NTS · réponse Fos",
+        "pedagogy": "Augmentation du marquage Fos observée après pacing.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-NTS",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          1,
+          1.1,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-NTS",
+          "label": "NTS · réponse Fos",
+          "where": "Bulbe, tronc cérébral",
+          "does": "Augmentation du marquage Fos observée après pacing.",
+          "x": 1,
+          "y": 1.1,
+          "kind": "biological",
+          "region": "NTS",
+          "source": "S15:62,72"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "biological"
+    },
+    {
+      "id": "P01-LC",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Locus coeruleus — pont",
+      "justification": "Marquage Fos dans Slc6a2+, pas noradrénaline libérée mesurée.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-LC",
+        "title": "Locus coeruleus · réponse Fos",
+        "pedagogy": "Marquage Fos dans des neurones Slc6a2+ ; noradrénaline libérée non mesurée dans ce test.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-LC",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          2,
+          1.1,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-LC",
+          "label": "Locus coeruleus · réponse Fos",
+          "where": "Pont, tronc cérébral",
+          "does": "Marquage Fos dans des neurones Slc6a2+ ; noradrénaline libérée non mesurée dans ce test.",
+          "x": 2,
+          "y": 1.1,
+          "kind": "biological",
+          "region": "LC",
+          "source": "S15:62,72"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "biological"
+    },
+    {
+      "id": "P01-GAP",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "non_determine",
+      "location_name": "Voie cœur → insula — relais non identifiés",
+      "justification": "Les extrémités nommées ne localisent pas les nerfs et relais intermédiaires.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-GAP",
+        "title": "Voie cœur → insula ?",
+        "pedagogy": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+        "status": "ND",
+        "anchor_id": "REGION-P01-GAP",
+        "value_ids": [
+          "TROU-P01-GAP"
+        ],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+        "xyz": [
+          0,
+          2.2,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-GAP",
+          "label": "Voie cœur → insula ?",
+          "where": "Nerfs afférents et relais à identifier",
+          "does": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+          "x": 0,
+          "y": 2.2,
+          "kind": "gap",
+          "region": null,
+          "source": "Analyses v0.61/v0.66"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "encart de question et candidats non tracés",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "question"
+    },
+    {
+      "id": "P01-PIC",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Cortex insulaire postérieur",
+      "justification": "Fos, électrophysiologie et inhibition appartiennent aux expériences précisées.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-PIC",
+        "title": "Insula postérieure · pIC",
+        "pedagogy": "Fos et réponses électrophysiologiques étudiés ; cible de l’inhibition dans une autre expérience.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-PIC",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          1,
+          2.2,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-PIC",
+          "label": "Insula postérieure · pIC",
+          "where": "Cortex insulaire postérieur",
+          "does": "Fos et réponses électrophysiologiques étudiés ; cible de l’inhibition dans une autre expérience.",
+          "x": 1,
+          "y": 2.2,
+          "kind": "biological",
+          "region": "insula",
+          "source": "S15:62–66,77–82"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "biological"
+    },
+    {
+      "id": "P01-CONTEXT",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "non_applicable",
+      "location_name": "Environnement de tâche",
+      "justification": "Condition extérieure, pas événement à placer dans un organe.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-CONTEXT",
+        "title": "Contexte à risque",
+        "pedagogy": "Module l’effet comportemental du pacing ; la route sensorielle vers pIC n’est pas identifiée dans cette extraction.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-CONTEXT",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          2,
+          2.2,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-CONTEXT",
+          "label": "Contexte à risque",
+          "where": "Environnement de tâche",
+          "does": "Module l’effet comportemental du pacing ; la route sensorielle vers pIC n’est pas identifiée dans cette extraction.",
+          "x": 2,
+          "y": 2.2,
+          "kind": "context",
+          "region": null,
+          "source": "S15:13–15,39–55"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "encart de contexte/rapport/analyse",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "contextual"
+    },
+    {
+      "id": "P01-ICPP",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "documente",
+      "location_name": "Insula postérieure bilatérale",
+      "justification": "Cible d'inhibition, pas activation cérébrale générique.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-ICPP",
+        "title": "Lumière bleue + iC++",
+        "pedagogy": "Lumière 473 nm sur canal inhibiteur iC++ exprimé dans pIC.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-ICPP",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          0,
+          3.3,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-ICPP",
+          "label": "Lumière bleue + iC++",
+          "where": "Insula postérieure · intervention bilatérale",
+          "does": "Lumière 473 nm sur canal inhibiteur iC++ exprimé dans pIC.",
+          "x": 0,
+          "y": 3.3,
+          "kind": "intervention",
+          "region": "insula",
+          "source": "S15:77–82"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "région ou site nommé, support à choisir au lot 04",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "intervention"
+    },
+    {
+      "id": "P01-BEHAV",
+      "group": "P01",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "location_status": "non_applicable",
+      "location_name": "Comportement de la souris",
+      "justification": "Évitement et recherche d'eau ne localisent pas un ressenti humain.",
+      "status_scope": "Décision éditoriale sur le registre local ; documenté = nommé dans ce registre, sans nouvelle validation primaire.",
+      "source_refs": [
+        "REF-P01"
+      ],
+      "source_fields": [
+        "mechanism.where",
+        "mechanism.does",
+        "mechanism.region",
+        "scope",
+        "limit"
+      ],
+      "source_node": {
+        "id": "P01-BEHAV",
+        "title": "Évitement / recherche d’eau",
+        "pedagogy": "Pacing : comportement apparenté à l’anxiété selon contexte. Inhibition pIC : atténuation ; pas un rapport subjectif humain.",
+        "status": "OBSERVATION",
+        "anchor_id": "REGION-P01-BEHAV",
+        "value_ids": [],
+        "sources": [
+          "REF-P01"
+        ],
+        "scope": "Souris · S15 / Hsueh 2023",
+        "limit": "Portée de préparation : Souris · S15 / Hsueh 2023",
+        "xyz": [
+          2,
+          3.3,
+          0
+        ],
+        "reference_card": "P01",
+        "mechanism": {
+          "id": "P01-BEHAV",
+          "label": "Évitement / recherche d’eau",
+          "where": "Comportement de la souris",
+          "does": "Pacing : comportement apparenté à l’anxiété selon contexte. Inhibition pIC : atténuation ; pas un rapport subjectif humain.",
+          "x": 2,
+          "y": 3.3,
+          "kind": "readout",
+          "region": null,
+          "source": "S15:13,77–82"
+        }
+      },
+      "alternatives": [],
+      "verification_expected": null,
+      "placement": {
+        "status": "non_place",
+        "coordinates_added": false,
+        "species_transfer_allowed": false,
+        "intended_representation": "encart de contexte/rapport/analyse",
+        "warning": "Aucune intégration 3D réalisée par ce lot. Anciennes ancres schématiques conservées dans la source, pas réutilisées comme coordonnées anatomiques."
+      },
+      "render_role": "contextual"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "REF-P01",
+      "source_id": "REF-P01",
+      "citation_short": "S15 · publication",
+      "title": "Corps × contexte",
+      "url": "https://www.nature.com/articles/s41586-023-05748-8",
+      "preparation": "🐁 Souris · stimulation cardiaque et inhibition insulaire",
+      "measurement_method": "Définitions ECG et dénominateurs admissibles dans le dossier local v0.65. Clarifications Fig4 g, contrôles et intensité lumineuse v0.66 : contribution locale pIC, pas médiation exclusive. Complément officiel v0.75 : affectation aléatoire, exclusions préétablies, contrebalancement et aveugle histologique déclarés ; modalités précises et nombres exclus encore manquants.",
+      "measured_quantity": "🐁 Fig3 : 5 souris (3 ChRmine, 2 contrôles), 60 sessions au total ; pIC391/228, SS368/77, STR800/70 unités. Fig4 g : 30/17/30/30 pressions, six souris par groupe ; les pressions ne sont pas des souris.",
+      "limitations": [
+        "Rétraction du levier5 s après chaque pression ; maximum50 récompenses ou30 min. Censures et non-retours non précisés. FidélitéQRS/RR ne donnent pas délai impulsion→QRS. Contrôles sans pacing à30% risque versus10%principal : conditions distinctes.",
+        "Jointure unité→session→souris et pression→souris, logs synchronisés, non-retours/censures et route afférente manquent. Une fréquence acquisition ne prouve pas calibration temporelle."
+      ],
+      "reference_role": "dossier_context",
+      "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+      "original_supports": [
+        "P01-ENTREE",
+        "P01-SORTIE"
+      ],
+      "related_nodes": [
+        "P01-LIGHT",
+        "P01-OPSIN",
+        "P01-HEART",
+        "P01-NODOSE",
+        "P01-NTS",
+        "P01-LC",
+        "P01-GAP",
+        "P01-PIC",
+        "P01-CONTEXT",
+        "P01-ICPP",
+        "P01-BEHAV"
+      ]
+    },
+    {
+      "evidence_id": "REF-P01-1",
+      "source_id": "REF-P01",
+      "citation_short": "Repère anatomique Harvard–Oxford",
+      "title": "Corps × contexte",
+      "url": "https://git.fmrib.ox.ac.uk/fsl/data_atlases/-/blob/fsl-5_0_8/HarvardOxford-Cortical.xml",
+      "preparation": "🐁 Souris · stimulation cardiaque et inhibition insulaire",
+      "measurement_method": "Définitions ECG et dénominateurs admissibles dans le dossier local v0.65. Clarifications Fig4 g, contrôles et intensité lumineuse v0.66 : contribution locale pIC, pas médiation exclusive. Complément officiel v0.75 : affectation aléatoire, exclusions préétablies, contrebalancement et aveugle histologique déclarés ; modalités précises et nombres exclus encore manquants.",
+      "measured_quantity": "🐁 Fig3 : 5 souris (3 ChRmine, 2 contrôles), 60 sessions au total ; pIC391/228, SS368/77, STR800/70 unités. Fig4 g : 30/17/30/30 pressions, six souris par groupe ; les pressions ne sont pas des souris.",
+      "limitations": [
+        "Rétraction du levier5 s après chaque pression ; maximum50 récompenses ou30 min. Censures et non-retours non précisés. FidélitéQRS/RR ne donnent pas délai impulsion→QRS. Contrôles sans pacing à30% risque versus10%principal : conditions distinctes.",
+        "Jointure unité→session→souris et pression→souris, logs synchronisés, non-retours/censures et route afférente manquent. Une fréquence acquisition ne prouve pas calibration temporelle."
+      ],
+      "reference_role": "anatomical_reference",
+      "support_scope": "Repère de libellé cortical insulaire ; pas de repère pour le cœur, le ganglion nodose ou le tronc cérébral, ni de preuve expérimentale.",
+      "original_supports": [
+        "P01-ENTREE",
+        "P01-SORTIE"
+      ],
+      "related_nodes": [
+        "P01-PIC",
+        "P01-ICPP"
+      ],
+      "previous_related_nodes": [
+        "P01-LIGHT",
+        "P01-OPSIN",
+        "P01-HEART",
+        "P01-NODOSE",
+        "P01-NTS",
+        "P01-LC",
+        "P01-GAP",
+        "P01-PIC",
+        "P01-CONTEXT",
+        "P01-ICPP",
+        "P01-BEHAV"
+      ]
+    },
+    {
+      "evidence_id": "CHAINE-P01-S15",
+      "source_id": "REF-P01",
+      "citation_short": "S15 · texte acquis avec numéros de lignes",
+      "title": "Maillons et liaisons · Cœur → signaux cérébraux → comportement",
+      "url": "https://www.nature.com/articles/s41586-023-05748-8",
+      "preparation": "Souris · S15 / Hsueh 2023",
+      "measurement_method": "Lecture des passages acquis ; chaque nœud et liaison porte son localisateur.",
+      "measured_quantity": "Mécanismes, interventions, observations et inconnues distingués.",
+      "limitations": [
+        "Les traits de mesure et association ne représentent pas tous une voie nerveuse.",
+        "Pas de coordonnées anatomiques mesurées ajoutées."
+      ],
+      "original_locator": "sources_cartographie/S15.txt",
+      "reference_role": "dossier_context",
+      "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+      "original_supports": [
+        "P01-LIGHT",
+        "P01-OPSIN",
+        "P01-HEART",
+        "P01-NODOSE",
+        "P01-NTS",
+        "P01-LC",
+        "P01-GAP",
+        "P01-PIC",
+        "P01-CONTEXT",
+        "P01-ICPP",
+        "P01-BEHAV"
+      ],
+      "related_nodes": [
+        "P01-LIGHT",
+        "P01-OPSIN",
+        "P01-HEART",
+        "P01-NODOSE",
+        "P01-NTS",
+        "P01-LC",
+        "P01-GAP",
+        "P01-PIC",
+        "P01-CONTEXT",
+        "P01-ICPP",
+        "P01-BEHAV"
+      ]
+    }
+  ],
+  "presentation": {
+    "precision": "illustrative",
+    "layout_units": "arbitrary graphic units",
+    "anatomical_registration": false,
+    "physiological_clock": false
+  },
+  "values": [
+    {
+      "value_id": "TROU-P01-GAP",
+      "label": "Voie cœur → insula ?",
+      "display_value": "ND",
+      "status": "NO_MEASUREMENT_REGISTERED",
+      "quantity_type": "MECHANISTIC_GAP",
+      "measurement_scope": "P01",
+      "applies_to": [
+        "P01-GAP"
+      ],
+      "anchor_ids": [],
+      "evidence_ids": [
+        "REF-P01"
+      ],
+      "research_question": "Quel nerf, quels récepteurs et quels relais transmettent le signal ? Les sources examinées ne démontrent pas toute la route.",
+      "caveat": "Trou localisé dans le trajet ; aucune durée inventée."
+    }
+  ],
+  "anchors": [
+    {
+      "anchor_id": "REGION-P01-LIGHT",
+      "structure_name": "Thorax, à travers la peau",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0,
+        0,
+        -2.7
+      ],
+      "applies_to": [
+        "P01-LIGHT"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-OPSIN",
+      "structure_name": "Parois des oreillettes et ventricules",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0,
+        0,
+        -2.7
+      ],
+      "applies_to": [
+        "P01-OPSIN"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-HEART",
+      "structure_name": "Cœur",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0,
+        0,
+        -2.7
+      ],
+      "applies_to": [
+        "P01-HEART"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-NODOSE",
+      "structure_name": "Ganglion sensitif périphérique du nerf vague",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0.55,
+        0,
+        -1.25
+      ],
+      "applies_to": [
+        "P01-NODOSE"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-NTS",
+      "structure_name": "Bulbe, tronc cérébral",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0,
+        -0.25,
+        -0.7
+      ],
+      "applies_to": [
+        "P01-NTS"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-LC",
+      "structure_name": "Pont, tronc cérébral",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0,
+        -0.25,
+        -0.35
+      ],
+      "applies_to": [
+        "P01-LC"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-GAP",
+      "structure_name": "Nerfs afférents et relais à identifier",
+      "spatial_status": "UNPLACED",
+      "schematic_xyz": null,
+      "applies_to": [
+        "P01-GAP"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-PIC",
+      "structure_name": "Cortex insulaire postérieur",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0.85,
+        0.05,
+        0.55
+      ],
+      "applies_to": [
+        "P01-PIC"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-CONTEXT",
+      "structure_name": "Environnement de tâche",
+      "spatial_status": "UNPLACED",
+      "schematic_xyz": null,
+      "applies_to": [
+        "P01-CONTEXT"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-ICPP",
+      "structure_name": "Insula postérieure · intervention bilatérale",
+      "spatial_status": "STRUCTURE_ONLY",
+      "schematic_xyz": [
+        0.85,
+        0.05,
+        0.55
+      ],
+      "applies_to": [
+        "P01-ICPP"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    },
+    {
+      "anchor_id": "REGION-P01-BEHAV",
+      "structure_name": "Comportement de la souris",
+      "spatial_status": "UNPLACED",
+      "schematic_xyz": null,
+      "applies_to": [
+        "P01-BEHAV"
+      ],
+      "warning": "Position schématique, pas coordonnée d’atlas ; préparation : Souris · S15 / Hsueh 2023"
+    }
+  ]
+}

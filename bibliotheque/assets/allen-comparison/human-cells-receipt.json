@@ -1,0 +1,22 @@
+{
+  "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AApiCellTypesSpecimenDetail%2Crma%3A%3Acriteria%2C%5Bdonor__species%24eq%27Homo+Sapiens%27%5D%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+  "headers": {
+    "Date": "Tue, 13 Oct 2026 18:19:53 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "AWSALB=Foce94XPjefpUv2IqyANq4lcSqlQ0y+ax7ZpezoWmCaK8lnZIquLTR1X0nyZfkkIigAL2Bq6xcbZF/mukiniYFgiYVd7ZTbqtWo/FPiISWtS9rpiQz4ksiY3udF+; Expires=Tue, 20 Oct 2026 18:19:53 GMT; Path=/",
+    "Server": "Apache",
+    "Cache-Control": "max-age=0, private, must-revalidate",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Max-Age": "1728000",
+    "X-Request-Id": "fce8e8bab38ffc2b890430bf40922698",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "X-UA-Compatible": "IE=Edge,chrome=1",
+    "X-Runtime": "0.417756",
+    "X-Rack-Cache": "miss",
+    "X-Powered-By": "Phusion Passenger 5.0.21",
+    "ETag": "\"eb8cdf6f6c04d277a72565d967f288f9\"",
+    "Status": "200 OK"
+  }
+}

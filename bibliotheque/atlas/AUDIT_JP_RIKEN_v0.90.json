@@ -1,0 +1,42 @@
+{
+  "version": "0.90",
+  "source": "https://www.nature.com/articles/s42003-025-09361-5",
+  "workbook_sha256": "352cd5df54708e4975ae5892c9cfa79c68d7ae94fa0e537693e5cce371f09079",
+  "participants": 33,
+  "sex_counts": {
+    "Male": 22,
+    "Female": 11
+  },
+  "age_mean": 22.272727272727273,
+  "age_range": [
+    20,
+    36
+  ],
+  "film_seconds": {
+    "Negative": 156,
+    "Neutral": 150,
+    "Positive": 196
+  },
+  "time_rows_per_signal": 502,
+  "subject_second_cells_per_signal": 16566,
+  "missing": {
+    "valence": 0,
+    "au12": 0
+  },
+  "unique_film_second_keys": true,
+  "subject_ids_match_all_sheets": true,
+  "au12_values": [
+    0,
+    1
+  ],
+  "valence_range": [
+    -4,
+    4
+  ],
+  "unit": "33 personnes répétées sur 502 secondes de films ; 16 566 cellules par mesure ne sont pas des personnes.",
+  "limits": [
+    "Valence recueillie après acquisition par rappel indicé.",
+    "Tableau de sources de figure, pas données IRMf brutes.",
+    "Pas de nouvelle estimation d’effet, corrélation ou causalité."
+  ]
+}

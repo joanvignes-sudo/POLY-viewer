@@ -1,0 +1,26 @@
+[
+  {
+    "file": "pilot_consensus.tsv.gz",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds004872/derivatives/Annot_AfterTheRain_stim.tsv.gz",
+    "bytes": 104040,
+    "sha256": "f1bb75a71864f9c1740c129769542fe5dc12435731c1517e82a80d32e5eeeae1",
+    "status_observed": 200,
+    "note": "Entrée de provenance consignée après acquisition ; pas une nouvelle requête."
+  },
+  {
+    "file": "pilot_physio.tsv.gz",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds004892/sub-S01/ses-2/func/sub-S01_ses-2_task-AfterTheRain_physio.tsv.gz",
+    "bytes": 5909687,
+    "sha256": "cf3bd5c58df47dd2151404df8af2eedc1609b97f234a517589711f08f919bfbb",
+    "status_observed": 200,
+    "note": "Entrée de provenance consignée après acquisition ; pas une nouvelle requête."
+  },
+  {
+    "file": "inman.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+    "bytes": 262918,
+    "sha256": "02c4e1c2951c505e59e6f8e66a045d34a44d8c816e505899ac9321986deca357",
+    "status_observed": 200,
+    "note": "Entrée de provenance consignée après acquisition ; pas une nouvelle requête."
+  }
+]

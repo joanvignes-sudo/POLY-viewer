@@ -1,0 +1,1883 @@
+{
+  "metadata": [
+    {
+      "layer": "incoming_inhibitory",
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/info",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "X-GUploader-UploadID": "AP6rU82df6ExzJB4SVYVTziXtAceYtPxwZBd_iqH7vR5075bdXmPhkW4-DbUvYoEjKzWgknalw1N8OA",
+        "Expires": "Tue, 13 Oct 2026 16:42:32 GMT",
+        "Date": "Tue, 13 Oct 2026 15:42:32 GMT",
+        "Cache-Control": "public, max-age=3600",
+        "Last-Modified": "Mon, 02 Aug 2021 21:35:14 GMT",
+        "ETag": "\"ae49c24ab517ca730a2814e15bbbdf96\"",
+        "x-goog-generation": "1627940114963601",
+        "x-goog-metageneration": "1",
+        "x-goog-stored-content-encoding": "identity",
+        "x-goog-stored-content-length": "8167",
+        "x-goog-hash": "crc32c=0pyURw==",
+        "x-goog-storage-class": "NEARLINE",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "8167",
+        "Server": "UploadServer",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Connection": "close"
+      },
+      "sha256": "3af1f318baa3dccd7b16313cb9e65edabbfd2d8e5a30bc071e2dba35446f0e8a"
+    },
+    {
+      "layer": "incoming_excitatory",
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/info",
+      "headers": {
+        "X-GUploader-UploadID": "AP6rU81h2teEWJ8FoKCa3eFKwM-fN5Y4I_bDAYmY9e6-hluy3iU5Wsf937VKAT6EKqZm4jKg7LNxKlIuXHPRYg",
+        "x-goog-generation": "1627940583448582",
+        "x-goog-metageneration": "1",
+        "x-goog-stored-content-encoding": "identity",
+        "x-goog-stored-content-length": "8167",
+        "x-goog-hash": "crc32c=0pyURw==",
+        "x-goog-storage-class": "NEARLINE",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "8167",
+        "Server": "UploadServer",
+        "Date": "Tue, 13 Oct 2026 15:38:53 GMT",
+        "Expires": "Tue, 13 Oct 2026 16:38:53 GMT",
+        "Cache-Control": "public, max-age=3600",
+        "Last-Modified": "Mon, 02 Aug 2021 21:43:03 GMT",
+        "ETag": "\"ae49c24ab517ca730a2814e15bbbdf96\"",
+        "Content-Type": "application/octet-stream",
+        "Age": "236",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Connection": "close"
+      },
+      "sha256": "3af1f318baa3dccd7b16313cb9e65edabbfd2d8e5a30bc071e2dba35446f0e8a"
+    }
+  ],
+  "chunks": [
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        611,
+        38
+      ],
+      "chunk_id": "1277890866",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        611,
+        39
+      ],
+      "chunk_id": "1277890870",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        612,
+        38
+      ],
+      "chunk_id": "1277890976",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        612,
+        39
+      ],
+      "chunk_id": "1277890980",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        611,
+        38
+      ],
+      "chunk_id": "1277890867",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        611,
+        39
+      ],
+      "chunk_id": "1277890871",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        612,
+        38
+      ],
+      "chunk_id": "1277890977",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        612,
+        39
+      ],
+      "chunk_id": "1277890981",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        607,
+        38
+      ],
+      "chunk_id": "1277834675",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        607,
+        39
+      ],
+      "chunk_id": "1277834679",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        608,
+        38
+      ],
+      "chunk_id": "1277890849",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        608,
+        39
+      ],
+      "chunk_id": "1277890853",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        607,
+        38
+      ],
+      "chunk_id": "1277834682",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        607,
+        39
+      ],
+      "chunk_id": "1277834686",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        608,
+        38
+      ],
+      "chunk_id": "1277890856",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        608,
+        39
+      ],
+      "chunk_id": "1277890860",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        614,
+        27
+      ],
+      "chunk_id": "1277778109",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        614,
+        28
+      ],
+      "chunk_id": "1277778329",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        615,
+        27
+      ],
+      "chunk_id": "1277778111",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        615,
+        28
+      ],
+      "chunk_id": "1277778331",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        614,
+        27
+      ],
+      "chunk_id": "1277778164",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        614,
+        28
+      ],
+      "chunk_id": "1277778384",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        615,
+        27
+      ],
+      "chunk_id": "1277778166",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        615,
+        28
+      ],
+      "chunk_id": "1277778386",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        604,
+        38
+      ],
+      "chunk_id": "1277831145",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        604,
+        39
+      ],
+      "chunk_id": "1277831149",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        605,
+        38
+      ],
+      "chunk_id": "1277831147",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        605,
+        39
+      ],
+      "chunk_id": "1277831151",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        604,
+        38
+      ],
+      "chunk_id": "1277834656",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        604,
+        39
+      ],
+      "chunk_id": "1277834660",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        605,
+        38
+      ],
+      "chunk_id": "1277834658",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        605,
+        39
+      ],
+      "chunk_id": "1277834662",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        614,
+        36
+      ],
+      "chunk_id": "1277887441",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        614,
+        37
+      ],
+      "chunk_id": "1277887445",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        615,
+        36
+      ],
+      "chunk_id": "1277887443",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        615,
+        37
+      ],
+      "chunk_id": "1277887447",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        614,
+        36
+      ],
+      "chunk_id": "1277887448",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        614,
+        37
+      ],
+      "chunk_id": "1277887452",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        615,
+        36
+      ],
+      "chunk_id": "1277887450",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        615,
+        37
+      ],
+      "chunk_id": "1277887454",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        607,
+        28
+      ],
+      "chunk_id": "1277718427",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        607,
+        29
+      ],
+      "chunk_id": "1277718431",
+      "present": false
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        608,
+        28
+      ],
+      "chunk_id": "1277774601",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        608,
+        29
+      ],
+      "chunk_id": "1277774605",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        607,
+        28
+      ],
+      "chunk_id": "1277718482",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        607,
+        29
+      ],
+      "chunk_id": "1277718486",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        608,
+        28
+      ],
+      "chunk_id": "1277774656",
+      "present": true
+    },
+    {
+      "layer": "incoming_inhibitory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        608,
+        29
+      ],
+      "chunk_id": "1277774660",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        611,
+        38
+      ],
+      "chunk_id": "1277890866",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        611,
+        39
+      ],
+      "chunk_id": "1277890870",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        612,
+        38
+      ],
+      "chunk_id": "1277890976",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2704,
+        612,
+        39
+      ],
+      "chunk_id": "1277890980",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        611,
+        38
+      ],
+      "chunk_id": "1277890867",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        611,
+        39
+      ],
+      "chunk_id": "1277890871",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        612,
+        38
+      ],
+      "chunk_id": "1277890977",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "95480769",
+      "grid": [
+        2705,
+        612,
+        39
+      ],
+      "chunk_id": "1277890981",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        607,
+        38
+      ],
+      "chunk_id": "1277834675",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        607,
+        39
+      ],
+      "chunk_id": "1277834679",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        608,
+        38
+      ],
+      "chunk_id": "1277890849",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2705,
+        608,
+        39
+      ],
+      "chunk_id": "1277890853",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        607,
+        38
+      ],
+      "chunk_id": "1277834682",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        607,
+        39
+      ],
+      "chunk_id": "1277834686",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        608,
+        38
+      ],
+      "chunk_id": "1277890856",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "111306169",
+      "grid": [
+        2706,
+        608,
+        39
+      ],
+      "chunk_id": "1277890860",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        614,
+        27
+      ],
+      "chunk_id": "1277778109",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        614,
+        28
+      ],
+      "chunk_id": "1277778329",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        615,
+        27
+      ],
+      "chunk_id": "1277778111",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2707,
+        615,
+        28
+      ],
+      "chunk_id": "1277778331",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        614,
+        27
+      ],
+      "chunk_id": "1277778164",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        614,
+        28
+      ],
+      "chunk_id": "1277778384",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        615,
+        27
+      ],
+      "chunk_id": "1277778166",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "54213720",
+      "grid": [
+        2708,
+        615,
+        28
+      ],
+      "chunk_id": "1277778386",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        604,
+        38
+      ],
+      "chunk_id": "1277831145",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        604,
+        39
+      ],
+      "chunk_id": "1277831149",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        605,
+        38
+      ],
+      "chunk_id": "1277831147",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2703,
+        605,
+        39
+      ],
+      "chunk_id": "1277831151",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        604,
+        38
+      ],
+      "chunk_id": "1277834656",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        604,
+        39
+      ],
+      "chunk_id": "1277834660",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        605,
+        38
+      ],
+      "chunk_id": "1277834658",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "143278591",
+      "grid": [
+        2704,
+        605,
+        39
+      ],
+      "chunk_id": "1277834662",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        614,
+        36
+      ],
+      "chunk_id": "1277887441",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        614,
+        37
+      ],
+      "chunk_id": "1277887445",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        615,
+        36
+      ],
+      "chunk_id": "1277887443",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2701,
+        615,
+        37
+      ],
+      "chunk_id": "1277887447",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        614,
+        36
+      ],
+      "chunk_id": "1277887448",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        614,
+        37
+      ],
+      "chunk_id": "1277887452",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        615,
+        36
+      ],
+      "chunk_id": "1277887450",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "145894292",
+      "grid": [
+        2702,
+        615,
+        37
+      ],
+      "chunk_id": "1277887454",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        607,
+        28
+      ],
+      "chunk_id": "1277718427",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        607,
+        29
+      ],
+      "chunk_id": "1277718431",
+      "present": true
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        608,
+        28
+      ],
+      "chunk_id": "1277774601",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2699,
+        608,
+        29
+      ],
+      "chunk_id": "1277774605",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        607,
+        28
+      ],
+      "chunk_id": "1277718482",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        607,
+        29
+      ],
+      "chunk_id": "1277718486",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        608,
+        28
+      ],
+      "chunk_id": "1277774656",
+      "present": false
+    },
+    {
+      "layer": "incoming_excitatory",
+      "annotation_id": "87751454",
+      "grid": [
+        2700,
+        608,
+        29
+      ],
+      "chunk_id": "1277774660",
+      "present": false
+    }
+  ],
+  "ranges": [
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "aac5d699754c1564cd14c013602d5e9758a5d4aa084d4340cf366736bfe6f07a",
+      "file": "ranges/f188c1108dcd822a3d22.bin",
+      "path": "assets/h01-evidence/ranges/f188c1108dcd822a3d22.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        223709,
+        223923
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "0c4510cf9ccdc12f44788b96190a84fe95c5c91423b24b2134197a5c02f9d2ae",
+      "file": "ranges/9a60361d0e32d2a57341.bin",
+      "path": "assets/h01-evidence/ranges/9a60361d0e32d2a57341.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        213667,
+        213771
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "4b1614ff3bf01d0b66f7c9ee5a0ce7b1b3f142cef3328772ba9b92200cc93f33",
+      "file": "ranges/ac7e8e169b4b8125f9e4.bin",
+      "path": "assets/h01-evidence/ranges/ac7e8e169b4b8125f9e4.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        213916,
+        213965
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/3fcf5835c824e097e8e1.bin",
+      "path": "assets/h01-evidence/ranges/3fcf5835c824e097e8e1.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        213772,
+        213915
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "eb007d969fb63bb782f55b28af5cc3756a82c88e56c527ceef5917805deb65b5",
+      "file": "ranges/1563db5b1814c23654d8.bin",
+      "path": "assets/h01-evidence/ranges/1563db5b1814c23654d8.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        213966,
+        214015
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/3395a699c87eed4b148c.bin",
+      "path": "assets/h01-evidence/ranges/3395a699c87eed4b148c.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "d40f0dc89b5049f091aa7ddea11de73a4a3657a254832d1a71a7ea372de0c160",
+      "file": "ranges/0ba4351561406f3b6e5d.bin",
+      "path": "assets/h01-evidence/ranges/0ba4351561406f3b6e5d.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        665093,
+        665255
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "b02ff3c55310fd071afba3dddeca1aa6caa2347aa804246202a6a42f00353350",
+      "file": "ranges/68ea317855a5d18a2810.bin",
+      "path": "assets/h01-evidence/ranges/68ea317855a5d18a2810.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        663723,
+        663772
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/15f0bf69efd8a93137dd.bin",
+      "path": "assets/h01-evidence/ranges/15f0bf69efd8a93137dd.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        664133,
+        664318
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "bb362975712e2baed91cbc438869e70820232038c993efe2623fe937b0607116",
+      "file": "ranges/6f36438f1b91256c8166.bin",
+      "path": "assets/h01-evidence/ranges/6f36438f1b91256c8166.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "27cb398c2d57871040a56dfb5beb96ab65f024eefd4497faac975d93373d92c0",
+      "file": "ranges/fcac958b83bbcce64efb.bin",
+      "path": "assets/h01-evidence/ranges/fcac958b83bbcce64efb.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        1149106,
+        1149275
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "d8c873d7316adf72f1d37025c388bf50e4e48166710c6f83e130182f580126f9",
+      "file": "ranges/9617b5c1f46781bda75e.bin",
+      "path": "assets/h01-evidence/ranges/9617b5c1f46781bda75e.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        1147409,
+        1147570
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "35dd136b3e6a89a72275f5635acf7330b6b84a31237025cc2a14945a89a5b4fe",
+      "file": "ranges/a5b020213e5c295722cf.bin",
+      "path": "assets/h01-evidence/ranges/a5b020213e5c295722cf.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        1145883,
+        1146268
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "14d3eef47ae9f2cf2ed3db7c8e4a7d694b292b37f85198d9d6780e4009fd1267",
+      "file": "ranges/cf481b80f7fe21330419.bin",
+      "path": "assets/h01-evidence/ranges/cf481b80f7fe21330419.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        1147571,
+        1147731
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "8481b856a0fbd8e9655b741a42ac8972cdc48af13f99d5a9efa09ca39a048d2a",
+      "file": "ranges/b03a16b1da01f570220b.bin",
+      "path": "assets/h01-evidence/ranges/b03a16b1da01f570220b.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        497779,
+        498199
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "b803f2273cc10aa3c0727ca557472f978099540b4cfc5168cebb5cfe8dbb78a9",
+      "file": "ranges/2806517ec8a42d5e441d.bin",
+      "path": "assets/h01-evidence/ranges/2806517ec8a42d5e441d.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        494451,
+        494752
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "3902e37c62e12059d53ffd9b73d77a6c5cf1ff6ae3e5c398f6e9c3251aa8d676",
+      "file": "ranges/ed24f4bac6d7cc3f0d9f.bin",
+      "path": "assets/h01-evidence/ranges/ed24f4bac6d7cc3f0d9f.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        495233,
+        495282
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/550b05061b2b93cc01ca.bin",
+      "path": "assets/h01-evidence/ranges/550b05061b2b93cc01ca.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        494753,
+        495050
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "95f8c431d58422e6c816a7622c0e15038c6f8997536581cd90e4a76ca048891f",
+      "file": "ranges/ea400946893d6c9881c3.bin",
+      "path": "assets/h01-evidence/ranges/ea400946893d6c9881c3.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        495283,
+        495438
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "f7502a2e2032430f51fe0a2e62bad0849e8b8ba53811e3d5ee91854e5e3884f3",
+      "file": "ranges/bb6d391e273e93c1e3f4.bin",
+      "path": "assets/h01-evidence/ranges/bb6d391e273e93c1e3f4.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        663423,
+        663472
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/3a7468cd90458c6ed955.bin",
+      "path": "assets/h01-evidence/ranges/3a7468cd90458c6ed955.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09854.shard",
+      "range": [
+        663473,
+        663622
+      ],
+      "generation": "1627939328801774",
+      "etag": "\"e5676e73452218e8ca97a7fc61063d6e\"",
+      "sha256": "d3a457d22663a4bb322fa09b0b4a218f3009d2d9f8cf8a0d60dbc4427a4f1b3f",
+      "file": "ranges/c5b4a45de6490047971a.bin",
+      "path": "assets/h01-evidence/ranges/c5b4a45de6490047971a.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        36281,
+        36594
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "ca99657d9725abb78adee9e653519a172852fa6dd4efca2f480d3b3c0926e8c7",
+      "file": "ranges/d759345d68122c3c48b4.bin",
+      "path": "assets/h01-evidence/ranges/d759345d68122c3c48b4.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        32780,
+        33140
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "cab79a33b40b5b6eadb63372590256112100c5bc84bdc84dd869c14d3bf167bf",
+      "file": "ranges/9b0f0c8b504a79ebf14a.bin",
+      "path": "assets/h01-evidence/ranges/9b0f0c8b504a79ebf14a.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        33141,
+        33445
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "074da39e750f53f1f82850005d4f1f6f90c03224cf39355c0d67cb0c0e35bf62",
+      "file": "ranges/cb2511dd715bc00c5dca.bin",
+      "path": "assets/h01-evidence/ranges/cb2511dd715bc00c5dca.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        33446,
+        33495
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/920da5958d7887f429bc.bin",
+      "path": "assets/h01-evidence/ranges/920da5958d7887f429bc.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        33546,
+        33761
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "16b49f20f767454e5d4acc47bac51271ecd56841d46ae3f713fecc9fce1013ee",
+      "file": "ranges/fa181fc8cd563746c7f9.bin",
+      "path": "assets/h01-evidence/ranges/fa181fc8cd563746c7f9.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        33496,
+        33545
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/a6ae33d7666b968e8d2d.bin",
+      "path": "assets/h01-evidence/ranges/a6ae33d7666b968e8d2d.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09856.shard",
+      "range": [
+        33762,
+        33913
+      ],
+      "generation": "1627939328804527",
+      "etag": "\"ccae362d02fde70693cf3ce55bc6b099\"",
+      "sha256": "d97d9ba3d2daface54ddfa0f3fcd7cd1d5b605f19747e96b09ec94824f03e558",
+      "file": "ranges/f6ee3e097b25179ae82e.bin",
+      "path": "assets/h01-evidence/ranges/f6ee3e097b25179ae82e.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09850.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939328837767",
+      "etag": "\"1dc2bd5d63a740aea7161f95125a96df\"",
+      "sha256": "5ecaa645bcd7e6387b7f3e82c38b1f5a710056ad2a4c2d38de3440bb6938eb1e",
+      "file": "ranges/9a2da14fdea11222c210.bin",
+      "path": "assets/h01-evidence/ranges/9a2da14fdea11222c210.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09850.shard",
+      "range": [
+        1642863,
+        1643233
+      ],
+      "generation": "1627939328837767",
+      "etag": "\"1dc2bd5d63a740aea7161f95125a96df\"",
+      "sha256": "1fbe5dc96f842ad5b6dd6672ebf93079b186adad0c8cd2b2aafd64efa252ab00",
+      "file": "ranges/e5445c63f00c13b4849a.bin",
+      "path": "assets/h01-evidence/ranges/e5445c63f00c13b4849a.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        978867,
+        979129
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "4eef632d1f494393c4ce6ffa83c5ff101824b4aa18e400c539dc4a7a01ecdc60",
+      "file": "ranges/b847ec70ec39204f7083.bin",
+      "path": "assets/h01-evidence/ranges/b847ec70ec39204f7083.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        974661,
+        974756
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "3e15fd08ecfa89377742e70d07a49f07e5ba96fdd484a650996459daa47cc659",
+      "file": "ranges/d8812c5a23a9a771c579.bin",
+      "path": "assets/h01-evidence/ranges/d8812c5a23a9a771c579.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        974757,
+        974806
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/59da08a3732f2eaf64d1.bin",
+      "path": "assets/h01-evidence/ranges/59da08a3732f2eaf64d1.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09850.shard",
+      "range": [
+        1642589,
+        1642812
+      ],
+      "generation": "1627939328837767",
+      "etag": "\"1dc2bd5d63a740aea7161f95125a96df\"",
+      "sha256": "5fbeb6d31a019f307cbebd9effc8b088f33160c356514aa9282597b50f678d2a",
+      "file": "ranges/181e2be7523d06d1c792.bin",
+      "path": "assets/h01-evidence/ranges/181e2be7523d06d1c792.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09850.shard",
+      "range": [
+        1642813,
+        1642862
+      ],
+      "generation": "1627939328837767",
+      "etag": "\"1dc2bd5d63a740aea7161f95125a96df\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/725a5334635de39946fc.bin",
+      "path": "assets/h01-evidence/ranges/725a5334635de39946fc.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        976422,
+        976858
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "60b1a895f56074d43df7054f2909af06c36e4a591473fe56dc7e34a93efc7fe6",
+      "file": "ranges/a79891fd6fe2966da8a3.bin",
+      "path": "assets/h01-evidence/ranges/a79891fd6fe2966da8a3.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_inhibitory/8x8x33/09852.shard",
+      "range": [
+        976859,
+        976908
+      ],
+      "generation": "1627939328785447",
+      "etag": "\"5fa07688e7a6035fbe79ad30ecc7b9a3\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/0e0a230daf30ad5f4944.bin",
+      "path": "assets/h01-evidence/ranges/0e0a230daf30ad5f4944.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "de8f89837025a1318e483d4638bd9f43f54eb06ee6002e1834a3005a47052b50",
+      "file": "ranges/6cde4b9116a4a3529292.bin",
+      "path": "assets/h01-evidence/ranges/6cde4b9116a4a3529292.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        842549,
+        842971
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "f39a5a13dd99300d8c947a696a5a6e15a42f1166b77458f9aada3a78bf204414",
+      "file": "ranges/ca3d2a143aa550019580.bin",
+      "path": "assets/h01-evidence/ranges/ca3d2a143aa550019580.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        827061,
+        827110
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/476b9bd048e77ba75363.bin",
+      "path": "assets/h01-evidence/ranges/476b9bd048e77ba75363.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        827261,
+        828019
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "b8671b45d5c58dc143f27addfaf076eb151fc052c32ac79cd4f560a1ae208a60",
+      "file": "ranges/8e5f59668e99862a0a84.bin",
+      "path": "assets/h01-evidence/ranges/8e5f59668e99862a0a84.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        812646,
+        812695
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/a766d8cc7abb0adae2fb.bin",
+      "path": "assets/h01-evidence/ranges/a766d8cc7abb0adae2fb.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        812822,
+        813175
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "517258ef0ba42945f06755087abc8017558b6af41f7160549e88462a26df6eae",
+      "file": "ranges/07795ec9714ac0963c66.bin",
+      "path": "assets/h01-evidence/ranges/07795ec9714ac0963c66.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        827111,
+        827160
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/39bab7e34bd7c42712ab.bin",
+      "path": "assets/h01-evidence/ranges/39bab7e34bd7c42712ab.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        828020,
+        828451
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "12a55d435d3cfef1ae12bc3855ecbd4b64050999380cb3735c609f92c34e22f8",
+      "file": "ranges/74979740b9f1ec439a12.bin",
+      "path": "assets/h01-evidence/ranges/74979740b9f1ec439a12.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09854.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939095021472",
+      "etag": "\"dc48a21f81049871a0f1fe5970f5dbdf\"",
+      "sha256": "6aa056ea5a4ce76ee658fdbe719dfcc89f57481b6e2e7872fed804d8dec61380",
+      "file": "ranges/6bff4980d6bc2f4bda56.bin",
+      "path": "assets/h01-evidence/ranges/6bff4980d6bc2f4bda56.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09854.shard",
+      "range": [
+        2523042,
+        2523294
+      ],
+      "generation": "1627939095021472",
+      "etag": "\"dc48a21f81049871a0f1fe5970f5dbdf\"",
+      "sha256": "887aee86f7e0231ed6d77bdbb10ea8917520efa32e5e68f747f887fec34474e2",
+      "file": "ranges/413bf1087f1f0c1c9b62.bin",
+      "path": "assets/h01-evidence/ranges/413bf1087f1f0c1c9b62.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09852.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939094993012",
+      "etag": "\"025a38260ec53816f96e9333a531cfb7\"",
+      "sha256": "dd4ca4331917d65e127807d05188cccf1baa1a9522d155eb09eba213eef356c1",
+      "file": "ranges/a3c4c8a87cdb4e8e285c.bin",
+      "path": "assets/h01-evidence/ranges/a3c4c8a87cdb4e8e285c.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09852.shard",
+      "range": [
+        4729466,
+        4729815
+      ],
+      "generation": "1627939094993012",
+      "etag": "\"025a38260ec53816f96e9333a531cfb7\"",
+      "sha256": "400cb169a4886c3d1cd39c8cfc15b984f4e8bd38edd9cba219d8e7de3e0f4d81",
+      "file": "ranges/9740caf97af6e711f92a.bin",
+      "path": "assets/h01-evidence/ranges/9740caf97af6e711f92a.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09852.shard",
+      "range": [
+        4719961,
+        4720010
+      ],
+      "generation": "1627939094993012",
+      "etag": "\"025a38260ec53816f96e9333a531cfb7\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/84783c4d0bdafebcc2b6.bin",
+      "path": "assets/h01-evidence/ranges/84783c4d0bdafebcc2b6.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09854.shard",
+      "range": [
+        1852168,
+        1852857
+      ],
+      "generation": "1627939095021472",
+      "etag": "\"dc48a21f81049871a0f1fe5970f5dbdf\"",
+      "sha256": "f3555cc72f7ecabfbcc4052018d3684bd7325acdc9cf800a7cd214ab47c4beec",
+      "file": "ranges/ab8e2baece831311c69a.bin",
+      "path": "assets/h01-evidence/ranges/ab8e2baece831311c69a.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09854.shard",
+      "range": [
+        1847826,
+        1847875
+      ],
+      "generation": "1627939095021472",
+      "etag": "\"dc48a21f81049871a0f1fe5970f5dbdf\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/6c9968bbbe80bb1e3785.bin",
+      "path": "assets/h01-evidence/ranges/6c9968bbbe80bb1e3785.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09854.shard",
+      "range": [
+        1848398,
+        1849251
+      ],
+      "generation": "1627939095021472",
+      "etag": "\"dc48a21f81049871a0f1fe5970f5dbdf\"",
+      "sha256": "12028cf442a9afe869f0d9d6e9f7d7d9af297f575838ce759334d671dcd66cb9",
+      "file": "ranges/41724ea9678eb5f929f2.bin",
+      "path": "assets/h01-evidence/ranges/41724ea9678eb5f929f2.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        211559,
+        212197
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "0d23accb73b5f02645b1143b3d0003656fa8b7516ade6a7d81d7334b903f2daf",
+      "file": "ranges/f9aaf43744c96a07ee07.bin",
+      "path": "assets/h01-evidence/ranges/f9aaf43744c96a07ee07.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        199114,
+        200038
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "35634204a035efd7b81373267c22a24e600ac1986f7a25f1a1656e8ccf71921a",
+      "file": "ranges/2e4db36f8961fbaa0280.bin",
+      "path": "assets/h01-evidence/ranges/2e4db36f8961fbaa0280.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        200089,
+        200138
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "6ef465399e0726e239c31a9775afb1334ba1e6849c993e5fb3c6d0d5bb1c6ea8",
+      "file": "ranges/0b0f919b5e1f621b9f48.bin",
+      "path": "assets/h01-evidence/ranges/0b0f919b5e1f621b9f48.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        200139,
+        200480
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "3e5b9e333737973781452b88f9cd171d874a7bfd6b0e2d162c6815a1e9b34699",
+      "file": "ranges/589b455964d0dd34f075.bin",
+      "path": "assets/h01-evidence/ranges/589b455964d0dd34f075.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09856.shard",
+      "range": [
+        200531,
+        201068
+      ],
+      "generation": "1627939095021549",
+      "etag": "\"ef5e7c6fe33a267027d650c76f8e1f42\"",
+      "sha256": "ff80330f32f3e9a4d859b4aa340a02015e0d539cdcc85728483141cd68d28ff8",
+      "file": "ranges/ede8e53a640a9f50ce35.bin",
+      "path": "assets/h01-evidence/ranges/ede8e53a640a9f50ce35.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09850.shard",
+      "range": [
+        0,
+        1023
+      ],
+      "generation": "1627939094990016",
+      "etag": "\"5871a89326c002816fd308ebfc9d6742\"",
+      "sha256": "28e72971f4c46a7088473cd611f577cf972b945526bac78c06f971380b1bcdad",
+      "file": "ranges/5ebb629c567765795f44.bin",
+      "path": "assets/h01-evidence/ranges/5ebb629c567765795f44.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09850.shard",
+      "range": [
+        5578039,
+        5578761
+      ],
+      "generation": "1627939094990016",
+      "etag": "\"5871a89326c002816fd308ebfc9d6742\"",
+      "sha256": "2ed2dbc4bdbca261e667e4bc5e3cb2c51483be4a76c98fd3869f2c2fdcec45f2",
+      "file": "ranges/a706d65cd80c81698211.bin",
+      "path": "assets/h01-evidence/ranges/a706d65cd80c81698211.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09850.shard",
+      "range": [
+        5571563,
+        5571934
+      ],
+      "generation": "1627939094990016",
+      "etag": "\"5871a89326c002816fd308ebfc9d6742\"",
+      "sha256": "fbc310acd429c7717331a6ef8b1bb875f54da683c0ff87c2115ca05a0c4fdfd3",
+      "file": "ranges/b796e049d5e75cadcc3f.bin",
+      "path": "assets/h01-evidence/ranges/b796e049d5e75cadcc3f.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09850.shard",
+      "range": [
+        5572758,
+        5573040
+      ],
+      "generation": "1627939094990016",
+      "etag": "\"5871a89326c002816fd308ebfc9d6742\"",
+      "sha256": "126bf1068708f708988d39ebcf66c2e98f52c1ac800c4b9ffb4a4a9e038641ec",
+      "file": "ranges/a07b03871f91e8f3fb61.bin",
+      "path": "assets/h01-evidence/ranges/a07b03871f91e8f3fb61.bin"
+    },
+    {
+      "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/incoming_excitatory/8x8x33/09852.shard",
+      "range": [
+        4035766,
+        4036372
+      ],
+      "generation": "1627939094993012",
+      "etag": "\"025a38260ec53816f96e9333a531cfb7\"",
+      "sha256": "4c8ce73f753b364a733ae9dcaf347a743a3ddbecb46ece95c65035e745e70819",
+      "file": "ranges/056675e41830da180f65.bin",
+      "path": "assets/h01-evidence/ranges/056675e41830da180f65.bin"
+    }
+  ]
+}

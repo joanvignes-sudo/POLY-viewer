@@ -1,0 +1,29 @@
+{
+  "id": "poly:view:69d1a04a9b61f6c99921",
+  "kind": "view",
+  "title": "Cœur : vue d’ensemble",
+  "category": "organes",
+  "provenance": {
+    "file": "ETAT_CANONIQUE.json",
+    "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7",
+    "selector": [
+      "categories",
+      3,
+      "links",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "href": "organes.html?sample=heart&level=heart-context",
+    "source_label": "HiP-CT · SPARC",
+    "scientific_identity": {
+      "value": null,
+      "reason": "Une destination de navigation ne définit pas un spécimen."
+    }
+  }
+}

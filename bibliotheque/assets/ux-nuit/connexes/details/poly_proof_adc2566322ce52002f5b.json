@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:adc2566322ce52002f5b",
+  "kind": "proof",
+  "title": "ALLEN_QC_RECALCULE.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      9,
+      "proofs",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_2026-10-14/ALLEN_QC_RECALCULE.json",
+    "sha256": "f815fb018965a54387253b48745f0dda5f34387221a0c11f00c69fc7be7ab039",
+    "bytes": 140970,
+    "content_loaded": false
+  }
+}

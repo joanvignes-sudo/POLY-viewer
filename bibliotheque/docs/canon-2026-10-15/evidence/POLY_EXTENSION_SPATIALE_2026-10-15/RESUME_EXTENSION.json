@@ -1,0 +1,25 @@
+{
+  "new_unique_TIFFs": 9,
+  "cumulative_unique_TIFFs": 799,
+  "source_field": 47,
+  "planes_and_counts": {
+    "9": 3,
+    "10": 4,
+    "11": 2
+  },
+  "next_loop_fields": [
+    9,
+    10,
+    47,
+    48
+  ],
+  "next_loop_first_available_plane": 10,
+  "loop_evaluated": false,
+  "archive_additional_bytes": 8388608,
+  "archive_total_probe_bytes": 58720256,
+  "global_target_probe_count": 6,
+  "global_target_probe_budget_exhausted": true,
+  "physical_unit_confirmed": false,
+  "adopted_transform": null,
+  "anatomical_validation": false
+}

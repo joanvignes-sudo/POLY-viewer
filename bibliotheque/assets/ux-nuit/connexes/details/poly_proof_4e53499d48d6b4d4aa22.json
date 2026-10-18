@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:4e53499d48d6b4d4aa22",
+  "kind": "proof",
+  "title": "RESUME_EXTENSION.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      1,
+      "proofs",
+      3
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_EXTENSION_SPATIALE_2026-10-15/RESUME_EXTENSION.json",
+    "sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf",
+    "bytes": 564,
+    "content_loaded": false
+  }
+}

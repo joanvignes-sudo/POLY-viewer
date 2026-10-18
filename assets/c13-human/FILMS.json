@@ -1,0 +1,577 @@
+{
+  "id": "FILMS",
+  "species": "human",
+  "nodes": [
+    {
+      "id": "v090/JP-FILM",
+      "title": "Films émotionnels",
+      "pedagogy": "Trois films ; mêmes 33 personnes.",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "limit": "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+      "reference_card": "FILMS",
+      "sources": [
+        "JP_RIKEN"
+      ],
+      "value_ids": [],
+      "mechanism": {
+        "id": "v090/JP-FILM",
+        "kind": "context",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Trois films ; mêmes 33 personnes.",
+        "source": "JP_RIKEN"
+      },
+      "original_step": {
+        "id": "v090/JP-FILM",
+        "label": "Films émotionnels",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Trois films ; mêmes 33 personnes."
+      }
+    },
+    {
+      "id": "v090/JP-IRM",
+      "title": "Signal IRMf",
+      "pedagogy": "Acquisition hémodynamique, TR 2 s.",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "limit": "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+      "reference_card": "FILMS",
+      "sources": [
+        "JP_RIKEN"
+      ],
+      "value_ids": [],
+      "mechanism": {
+        "id": "v090/JP-IRM",
+        "kind": "readout",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Acquisition hémodynamique, TR 2 s.",
+        "source": "JP_RIKEN"
+      },
+      "original_step": {
+        "id": "v090/JP-IRM",
+        "label": "Signal IRMf",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Acquisition hémodynamique, TR 2 s."
+      }
+    },
+    {
+      "id": "v090/JP-FACE",
+      "title": "Action faciale AU12",
+      "pedagogy": "Vidéo simultanée à l’IRM ; codage AU12.",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "limit": "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+      "reference_card": "FILMS",
+      "sources": [
+        "JP_RIKEN"
+      ],
+      "value_ids": [],
+      "mechanism": {
+        "id": "v090/JP-FACE",
+        "kind": "readout",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Vidéo simultanée à l’IRM ; codage AU12.",
+        "source": "JP_RIKEN"
+      },
+      "original_step": {
+        "id": "v090/JP-FACE",
+        "label": "Action faciale AU12",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Vidéo simultanée à l’IRM ; codage AU12."
+      }
+    },
+    {
+      "id": "v090/JP-RAPPEL",
+      "title": "Valence rappelée après l’IRM",
+      "pedagogy": "Rappel indicé, souris 10 Hz puis scores par seconde.",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "limit": "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+      "reference_card": "FILMS",
+      "sources": [
+        "JP_RIKEN"
+      ],
+      "value_ids": [],
+      "mechanism": {
+        "id": "v090/JP-RAPPEL",
+        "kind": "readout",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Rappel indicé, souris 10 Hz puis scores par seconde.",
+        "source": "JP_RIKEN"
+      },
+      "original_step": {
+        "id": "v090/JP-RAPPEL",
+        "label": "Valence rappelée après l’IRM",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Rappel indicé, souris 10 Hz puis scores par seconde."
+      }
+    },
+    {
+      "id": "v090/JP-MODELE",
+      "title": "Modèles des réseaux associés",
+      "pedagogy": "GLM / ICA / DCM ; direction conditionnelle au modèle.",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "limit": "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+      "reference_card": "FILMS",
+      "sources": [
+        "JP_RIKEN"
+      ],
+      "value_ids": [],
+      "mechanism": {
+        "id": "v090/JP-MODELE",
+        "kind": "analysis",
+        "where": "Humain · expérience films / IRMf",
+        "does": "GLM / ICA / DCM ; direction conditionnelle au modèle.",
+        "source": "JP_RIKEN"
+      },
+      "original_step": {
+        "id": "v090/JP-MODELE",
+        "label": "Modèles des réseaux associés",
+        "where": "Humain · expérience films / IRMf",
+        "does": "GLM / ICA / DCM ; direction conditionnelle au modèle."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "HUMAIN:FACIAL-RESSENTI:L0",
+      "from": "v090/JP-FILM",
+      "to": "v090/JP-IRM",
+      "status": "SOURCE_MEASUREMENT",
+      "warning": "Acquisition, pas tracé d’une voie synaptique.",
+      "reference_card": "FILMS",
+      "mechanism": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L0",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-IRM",
+        "label": "IRMf pendant les films",
+        "status": "measurement",
+        "detail": "Acquisition, pas tracé d’une voie synaptique.",
+        "source": "JP_RIKEN"
+      },
+      "original_link": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L0",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-IRM",
+        "label": "IRMf pendant les films",
+        "status": "measurement",
+        "detail": "Acquisition, pas tracé d’une voie synaptique.",
+        "source": "JP_RIKEN"
+      }
+    },
+    {
+      "id": "HUMAIN:FACIAL-RESSENTI:L1",
+      "from": "v090/JP-FILM",
+      "to": "v090/JP-FACE",
+      "status": "SOURCE_MEASUREMENT",
+      "warning": "Enregistrement simultané du visage et de l’IRM.",
+      "reference_card": "FILMS",
+      "mechanism": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L1",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-FACE",
+        "label": "Vidéo pendant les films",
+        "status": "measurement",
+        "detail": "Enregistrement simultané du visage et de l’IRM.",
+        "source": "JP_RIKEN"
+      },
+      "original_link": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L1",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-FACE",
+        "label": "Vidéo pendant les films",
+        "status": "measurement",
+        "detail": "Enregistrement simultané du visage et de l’IRM.",
+        "source": "JP_RIKEN"
+      }
+    },
+    {
+      "id": "HUMAIN:FACIAL-RESSENTI:L2",
+      "from": "v090/JP-FILM",
+      "to": "v090/JP-RAPPEL",
+      "status": "SOURCE_MEASUREMENT",
+      "warning": "Représentation des films ; évaluation rétrospective.",
+      "reference_card": "FILMS",
+      "mechanism": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L2",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-RAPPEL",
+        "label": "Rappel après la séance",
+        "status": "measurement",
+        "detail": "Représentation des films ; évaluation rétrospective.",
+        "source": "JP_RIKEN"
+      },
+      "original_link": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L2",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-RAPPEL",
+        "label": "Rappel après la séance",
+        "status": "measurement",
+        "detail": "Représentation des films ; évaluation rétrospective.",
+        "source": "JP_RIKEN"
+      }
+    },
+    {
+      "id": "HUMAIN:FACIAL-RESSENTI:L3",
+      "from": "v090/JP-IRM",
+      "to": "v090/JP-MODELE",
+      "status": "SOURCE_MEASUREMENT",
+      "warning": "Entrée de modèles ; temporalité limitée par acquisition et hémodynamique.",
+      "reference_card": "FILMS",
+      "mechanism": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L3",
+        "from": "v090/JP-IRM",
+        "to": "v090/JP-MODELE",
+        "label": "Signal hémodynamique",
+        "status": "measurement",
+        "detail": "Entrée de modèles ; temporalité limitée par acquisition et hémodynamique.",
+        "source": "JP_RIKEN"
+      },
+      "original_link": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L3",
+        "from": "v090/JP-IRM",
+        "to": "v090/JP-MODELE",
+        "label": "Signal hémodynamique",
+        "status": "measurement",
+        "detail": "Entrée de modèles ; temporalité limitée par acquisition et hémodynamique.",
+        "source": "JP_RIKEN"
+      }
+    },
+    {
+      "id": "HUMAIN:FACIAL-RESSENTI:L4",
+      "from": "v090/JP-FACE",
+      "to": "v090/JP-MODELE",
+      "status": "SOURCE_MEASUREMENT",
+      "warning": "AU12, sans équivalence automatique avec un ressenti.",
+      "reference_card": "FILMS",
+      "mechanism": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L4",
+        "from": "v090/JP-FACE",
+        "to": "v090/JP-MODELE",
+        "label": "Régressseur facial",
+        "status": "measurement",
+        "detail": "AU12, sans équivalence automatique avec un ressenti.",
+        "source": "JP_RIKEN"
+      },
+      "original_link": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L4",
+        "from": "v090/JP-FACE",
+        "to": "v090/JP-MODELE",
+        "label": "Régressseur facial",
+        "status": "measurement",
+        "detail": "AU12, sans équivalence automatique avec un ressenti.",
+        "source": "JP_RIKEN"
+      }
+    },
+    {
+      "id": "HUMAIN:FACIAL-RESSENTI:L5",
+      "from": "v090/JP-RAPPEL",
+      "to": "v090/JP-MODELE",
+      "status": "SOURCE_MEASUREMENT",
+      "warning": "Scores rappelés ; non simultanés à l’IRM.",
+      "reference_card": "FILMS",
+      "mechanism": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L5",
+        "from": "v090/JP-RAPPEL",
+        "to": "v090/JP-MODELE",
+        "label": "Régressseur subjectif",
+        "status": "measurement",
+        "detail": "Scores rappelés ; non simultanés à l’IRM.",
+        "source": "JP_RIKEN"
+      },
+      "original_link": {
+        "id": "HUMAIN:FACIAL-RESSENTI:L5",
+        "from": "v090/JP-RAPPEL",
+        "to": "v090/JP-MODELE",
+        "label": "Régressseur subjectif",
+        "status": "measurement",
+        "detail": "Scores rappelés ; non simultanés à l’IRM.",
+        "source": "JP_RIKEN"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": "v090/JP-FILM",
+      "group": "FILMS",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "location_status": "non_applicable",
+      "location_name": "Présentation des films — contexte expérimental",
+      "justification": "Stimulus de tâche, aucune route visuelle complète fournie.",
+      "source_refs": [
+        "JP_RIKEN"
+      ],
+      "source_step": {
+        "id": "v090/JP-FILM",
+        "label": "Films émotionnels",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Trois films ; mêmes 33 personnes."
+      },
+      "render_role": "context",
+      "alternatives": [],
+      "verification_expected": null
+    },
+    {
+      "id": "v090/JP-IRM",
+      "group": "FILMS",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "location_status": "presume",
+      "location_name": "Cerveau — acquisition IRMf, régions individuelles non attribuées",
+      "justification": "Repère cérébral de contexte pour les modèles de réseaux ; aucune carte individuelle acquise ni région fine ajoutée.",
+      "source_refs": [
+        "JP_RIKEN"
+      ],
+      "source_step": {
+        "id": "v090/JP-IRM",
+        "label": "Signal IRMf",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Acquisition hémodynamique, TR 2 s."
+      },
+      "render_role": "readout",
+      "alternatives": [
+        "Régions cérébrales de l’étude non importées",
+        "Localisation fine non déterminée dans ce lecteur"
+      ],
+      "verification_expected": "Vérifier les cartes et régions de l’article avant toute attribution plus fine."
+    },
+    {
+      "id": "v090/JP-FACE",
+      "group": "FILMS",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "location_status": "documente",
+      "location_name": "Visage — action faciale AU12",
+      "justification": "Codage des commissures selon la fiche JP-AU12 ; ne mesure pas à lui seul le plaisir.",
+      "source_refs": [
+        "JP_RIKEN"
+      ],
+      "source_step": {
+        "id": "v090/JP-FACE",
+        "label": "Action faciale AU12",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Vidéo simultanée à l’IRM ; codage AU12."
+      },
+      "render_role": "readout",
+      "alternatives": [],
+      "verification_expected": null
+    },
+    {
+      "id": "v090/JP-RAPPEL",
+      "group": "FILMS",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "location_status": "non_applicable",
+      "location_name": "Valence rappelée après la séance — rapport subjectif",
+      "justification": "Mesure rétrospective, pas activation cérébrale localisée ni mesure simultanée à l’IRM.",
+      "source_refs": [
+        "JP_RIKEN"
+      ],
+      "source_step": {
+        "id": "v090/JP-RAPPEL",
+        "label": "Valence rappelée après l’IRM",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Rappel indicé, souris 10 Hz puis scores par seconde."
+      },
+      "render_role": "readout",
+      "alternatives": [],
+      "verification_expected": null
+    },
+    {
+      "id": "v090/JP-MODELE",
+      "group": "FILMS",
+      "scope": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+      "location_status": "non_applicable",
+      "location_name": "Analyse GLM / ICA / DCM — réseaux associés",
+      "justification": "Direction conditionnelle au modèle ; modèles non reproduits ici.",
+      "source_refs": [
+        "JP_RIKEN"
+      ],
+      "source_step": {
+        "id": "v090/JP-MODELE",
+        "label": "Modèles des réseaux associés",
+        "where": "Humain · expérience films / IRMf",
+        "does": "GLM / ICA / DCM ; direction conditionnelle au modèle."
+      },
+      "render_role": "analysis",
+      "alternatives": [],
+      "verification_expected": null
+    }
+  ],
+  "values": [],
+  "anchors": [],
+  "original_path": {
+    "id": "HUMAIN:FACIAL-RESSENTI",
+    "title": "Films → expression faciale, IRMf et ressenti rappelé",
+    "kind": "Parcours de mesure humaine",
+    "family": "Humain · expression et ressenti",
+    "species": "human",
+    "species_reason": "Participants humains décrits dans l’article primaire.",
+    "context": "33 volontaires sains ; réponses faciales et IRMf pendant les films, valence rappelée après.",
+    "status": "Protocole et tableau acquis ; modèles non reproduits",
+    "entry": "Films émotionnels",
+    "outcome": "Modèles des réseaux associés",
+    "detail": "Mesures parallèles et modèle documentaire ; aucune chaîne causale complète revendiquée.",
+    "gaps": "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+    "sources": [
+      {
+        "label": "Sato et al. · article primaire",
+        "url": "https://www.nature.com/articles/s42003-025-09361-5"
+      }
+    ],
+    "steps": [
+      {
+        "id": "v090/JP-FILM",
+        "label": "Films émotionnels",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Trois films ; mêmes 33 personnes."
+      },
+      {
+        "id": "v090/JP-IRM",
+        "label": "Signal IRMf",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Acquisition hémodynamique, TR 2 s."
+      },
+      {
+        "id": "v090/JP-FACE",
+        "label": "Action faciale AU12",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Vidéo simultanée à l’IRM ; codage AU12."
+      },
+      {
+        "id": "v090/JP-RAPPEL",
+        "label": "Valence rappelée après l’IRM",
+        "where": "Humain · expérience films / IRMf",
+        "does": "Rappel indicé, souris 10 Hz puis scores par seconde."
+      },
+      {
+        "id": "v090/JP-MODELE",
+        "label": "Modèles des réseaux associés",
+        "where": "Humain · expérience films / IRMf",
+        "does": "GLM / ICA / DCM ; direction conditionnelle au modèle."
+      }
+    ],
+    "links": [
+      {
+        "id": "HUMAIN:FACIAL-RESSENTI:L0",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-IRM",
+        "label": "IRMf pendant les films",
+        "status": "measurement",
+        "detail": "Acquisition, pas tracé d’une voie synaptique.",
+        "source": "JP_RIKEN"
+      },
+      {
+        "id": "HUMAIN:FACIAL-RESSENTI:L1",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-FACE",
+        "label": "Vidéo pendant les films",
+        "status": "measurement",
+        "detail": "Enregistrement simultané du visage et de l’IRM.",
+        "source": "JP_RIKEN"
+      },
+      {
+        "id": "HUMAIN:FACIAL-RESSENTI:L2",
+        "from": "v090/JP-FILM",
+        "to": "v090/JP-RAPPEL",
+        "label": "Rappel après la séance",
+        "status": "measurement",
+        "detail": "Représentation des films ; évaluation rétrospective.",
+        "source": "JP_RIKEN"
+      },
+      {
+        "id": "HUMAIN:FACIAL-RESSENTI:L3",
+        "from": "v090/JP-IRM",
+        "to": "v090/JP-MODELE",
+        "label": "Signal hémodynamique",
+        "status": "measurement",
+        "detail": "Entrée de modèles ; temporalité limitée par acquisition et hémodynamique.",
+        "source": "JP_RIKEN"
+      },
+      {
+        "id": "HUMAIN:FACIAL-RESSENTI:L4",
+        "from": "v090/JP-FACE",
+        "to": "v090/JP-MODELE",
+        "label": "Régressseur facial",
+        "status": "measurement",
+        "detail": "AU12, sans équivalence automatique avec un ressenti.",
+        "source": "JP_RIKEN"
+      },
+      {
+        "id": "HUMAIN:FACIAL-RESSENTI:L5",
+        "from": "v090/JP-RAPPEL",
+        "to": "v090/JP-MODELE",
+        "label": "Régressseur subjectif",
+        "status": "measurement",
+        "detail": "Scores rappelés ; non simultanés à l’IRM.",
+        "source": "JP_RIKEN"
+      }
+    ],
+    "node_keys": [
+      "v090/JP-FILM",
+      "v090/JP-IRM",
+      "v090/JP-FACE",
+      "v090/JP-RAPPEL",
+      "v090/JP-MODELE"
+    ],
+    "link_keys": [
+      "HUMAIN:FACIAL-RESSENTI:L0",
+      "HUMAIN:FACIAL-RESSENTI:L1",
+      "HUMAIN:FACIAL-RESSENTI:L2",
+      "HUMAIN:FACIAL-RESSENTI:L3",
+      "HUMAIN:FACIAL-RESSENTI:L4",
+      "HUMAIN:FACIAL-RESSENTI:L5"
+    ],
+    "proof_keys": [
+      "PREUVE:4f94f3ad928953"
+    ],
+    "evidence_records": [
+      "JP-POP",
+      "JP-FILMS",
+      "JP-RAPPORT",
+      "JP-CADENCE",
+      "JP-IRM",
+      "JP-AU12",
+      "JP-MODELE",
+      "JP-LIMITE",
+      "JP-DATA"
+    ],
+    "origin": "EXTRACTIONS_HUMAINES_v0.90.json",
+    "origin_id": "HUMAIN:FACIAL-RESSENTI",
+    "open": null,
+    "structure": {
+      "node_keys": [
+        "v090/JP-FILM",
+        "v090/JP-IRM",
+        "v090/JP-FACE",
+        "v090/JP-RAPPEL",
+        "v090/JP-MODELE"
+      ],
+      "link_keys": [
+        "HUMAIN:FACIAL-RESSENTI:L0",
+        "HUMAIN:FACIAL-RESSENTI:L1",
+        "HUMAIN:FACIAL-RESSENTI:L2",
+        "HUMAIN:FACIAL-RESSENTI:L3",
+        "HUMAIN:FACIAL-RESSENTI:L4",
+        "HUMAIN:FACIAL-RESSENTI:L5"
+      ],
+      "proof_keys": [
+        "PREUVE:4f94f3ad928953"
+      ],
+      "complete_causal_route": null
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "JP_RIKEN",
+      "url": "https://www.nature.com/articles/s42003-025-09361-5",
+      "citation_short": "Sato et al. · article primaire",
+      "measurement_method": "Mesures parallèles et modèle documentaire ; aucune chaîne causale complète revendiquée.",
+      "limitations": [
+        "Rapport rétrospectif, AU4 inaccessible, images individuelles non acquises ; direction conditionnelle au modèle.",
+        "33 volontaires sains droitiers, 11 femmes et 22 hommes ; âge moyen annoncé 22,3 ± 2,9 ans.",
+        "Films négatif, neutre et positif de 156, 150 et 196 secondes ; plan intra-individuel.",
+        "Valence évaluée par rappel indicé après l’IRM : les participants revoient les films et rapportent leur expérience rappelée.",
+        "Coordonnées de souris à 10 Hz, converties en scores de valence seconde par seconde.",
+        "IRMf 3 T, TR 2 000 ms, TE 41,2 ms, voxels de 2 mm ; vidéos faciales pendant l’acquisition.",
+        "Codage FACS de l’AU12 (traction des commissures) ; AU4 non exploitable à cause de la bobine.",
+        "GLM, composantes indépendantes et comparaison de modèles DCM pour distinguer réseaux associés aux réponses faciales et subjectives.",
+        "Les auteurs reconnaissent une estimation incomplète de l’expérience en ligne par les évaluations rappelées.",
+        "Le supplément fournit les données de la figure 2 ; cartes statistiques non seuillées annoncées dans NeuroVault collection 4178."
+      ]
+    }
+  ]
+}

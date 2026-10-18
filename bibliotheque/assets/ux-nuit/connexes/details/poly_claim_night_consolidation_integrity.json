@@ -1,0 +1,76 @@
+{
+  "id": "poly:claim:night_consolidation_integrity",
+  "kind": "claim",
+  "title": "État local consolidé et contrôlé sans répétition des calculs scientifiques",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      14
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "night_consolidation_integrity",
+      "claim": "État local consolidé et contrôlé sans répétition des calculs scientifiques",
+      "status": "exécuté et contrôlé",
+      "evidence_level": "provenance et programme",
+      "scope": "21suppléments préservés et799TIFF/PNG vérifiés parempreinte ; aucun verdictscientifique ajouté",
+      "next_acceptance_gate": "Clôturer le relais à06:00UTC, puis toute reprise exige une instruction et une opération utile nouvelle.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "source_unique_TIFFs"
+          ],
+          "value": 799,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "spatial_loops_evaluated"
+          ],
+          "value": 2,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "ASHLAR_total_spatial_executions"
+          ],
+          "value": 16,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "new_scientific_evaluations"
+          ],
+          "value": 0,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        }
+      ]
+    }
+  }
+}

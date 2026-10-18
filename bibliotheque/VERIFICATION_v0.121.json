@@ -1,0 +1,88 @@
+{
+  "version": "0.121",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "vertices": 348845,
+    "position_bytes": 4186140,
+    "reference_vertices": 163842,
+    "reference_max_difference_mm": 0.0010169308282961661,
+    "all_cubic_stencils_interior": true,
+    "local_jacobian_centres_only": [
+      2.2110581637586915,
+      1.3171506099138184,
+      2.1631426868439063
+    ],
+    "nibabel_grid_node_checks": [
+      {
+        "field": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc",
+        "points_compared": 3,
+        "maximum_stored_value_difference": 0.0
+      },
+      {
+        "field": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc",
+        "points_compared": 3,
+        "maximum_stored_value_difference": 0.0
+      },
+      {
+        "field": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc",
+        "points_compared": 3,
+        "maximum_stored_value_difference": 0.0
+      }
+    ],
+    "independent_anatomical_validation": false
+  },
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8890/",
+    "source_meshes": 23,
+    "geometry_points_checked_per_mode": 69,
+    "roundtrips": 6,
+    "bounded_geometry_memory": 43,
+    "native_lengths_preserved": true,
+    "three_patches_and_explosion": true,
+    "atlas_toggle": true,
+    "shared_state": true,
+    "histological_plane_native_return": true,
+    "histology_link_cleans_frame": true,
+    "mobile_no_overflow": true,
+    "corrupt_geometry_preserves_native_view_and_retry": true,
+    "corrupt_atlas_preserves_registered_view_and_retry": true,
+    "page_errors": []
+  },
+  "navigation_browser": {
+    "status": "passed",
+    "pages_checked": 19,
+    "reference_views_checked": 19,
+    "relation_labels_checked": true,
+    "neuron_sample_changes": true,
+    "comparison_panel_state": true,
+    "organ_sample_changes": true,
+    "histology_to_other_specimen_disclosed": true,
+    "destination_parameters_not_mixed": true,
+    "index_grid_preserved": true,
+    "mobile_no_overflow": true,
+    "no_javascript_five_entries": true,
+    "corrupt_map_fallback_preserves_neuron_view": true,
+    "navigation_page_errors": [],
+    "url": "http://127.0.0.1:8890/"
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 544,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/bigbrain/PROVENANCE.json",
+    "assets/bigbrain/surfaces.bin",
+    "assets/histology/PROVENANCE.json",
+    "assets/anatomy/ATLAS_ANATOMIQUE.json",
+    "assets/anatomy/cerebra-surfaces.bin",
+    "assets/navigation/PROVENANCE.json",
+    "assets/navigation/MAP.json",
+    "assets/bigbrain-registration-v0120/PROVENANCE.json"
+  ],
+  "scope": "Published BigBrain transformation preview with preserved native source data. Numerical reference comparison and browser navigation checks; not independent anatomical validation."
+}

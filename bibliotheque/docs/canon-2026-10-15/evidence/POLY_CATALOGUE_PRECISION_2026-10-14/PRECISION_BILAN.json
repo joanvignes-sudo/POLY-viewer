@@ -1,0 +1,1665 @@
+{
+  "summary": [
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8720553693080136,
+      "median_paired_gap": 0.19717920823202623
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9065134029325088,
+      "median_paired_gap": 0.20151321029422037
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8720553693080136,
+      "median_paired_gap": 0.19717920823202623
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8957302606437496,
+      "median_paired_gap": 0.19988236452663305
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8720553693080136,
+      "median_paired_gap": 0.19717920823202623
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8956560627665067,
+      "median_paired_gap": 0.19985847058316886
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8713555498812615,
+      "median_paired_gap": 0.19570564419486286
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8713555498812615,
+      "median_paired_gap": 0.19570564419486286
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8713555498812615,
+      "median_paired_gap": 0.19570564419486286
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.020612272903354538,
+      "median_paired_gap": 0.01791714325198734
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.0296805047354193,
+      "median_paired_gap": 0.026106370395725255
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.020612272903354538,
+      "median_paired_gap": 0.01791714325198734
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.02320724834011855,
+      "median_paired_gap": 0.023224655099297276
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.020612272903354538,
+      "median_paired_gap": 0.01791714325198734
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.023682617638086274,
+      "median_paired_gap": 0.023613970994750995
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.02064817385805044,
+      "median_paired_gap": 0.01808452096467419
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.02064817385805044,
+      "median_paired_gap": 0.01808452096467419
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.02064817385805044,
+      "median_paired_gap": 0.01808452096467419
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9100585874479836,
+      "median_paired_gap": 0.45909615918806757
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9382144224500514,
+      "median_paired_gap": 0.4781315457931816
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9100585874479836,
+      "median_paired_gap": 0.45909615918806757
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9308863015555496,
+      "median_paired_gap": 0.47050575544980194
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9100585874479836,
+      "median_paired_gap": 0.45909615918806757
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9316093390623985,
+      "median_paired_gap": 0.4739103456482576
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9127606850849077,
+      "median_paired_gap": 0.4696980450662565
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9127606850849077,
+      "median_paired_gap": 0.4696980450662565
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9127606850849077,
+      "median_paired_gap": 0.4696980450662565
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.05958486789751348,
+      "median_paired_gap": 0.04899033667245421
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.10231478684071081,
+      "median_paired_gap": 0.08756976616149409
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.05958486789751348,
+      "median_paired_gap": 0.04899033667245421
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.08612255047523493,
+      "median_paired_gap": 0.06983200152123621
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.05958486789751348,
+      "median_paired_gap": 0.04899033667245421
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.08488367741309945,
+      "median_paired_gap": 0.06925986791978936
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.056083302826285944,
+      "median_paired_gap": 0.048963699785600626
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.056083302826285944,
+      "median_paired_gap": 0.048963699785600626
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.056083302826285944,
+      "median_paired_gap": 0.048963699785600626
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.11479282923265485,
+      "median_paired_gap": 0.045679556009592254
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.15527066630813835,
+      "median_paired_gap": 0.05859466841428495
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.11479282923265485,
+      "median_paired_gap": 0.045679556009592254
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.13765680479343212,
+      "median_paired_gap": 0.050677107539741015
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.11479282923265485,
+      "median_paired_gap": 0.045679556009592254
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.14255620235360536,
+      "median_paired_gap": 0.05606079548243463
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.11263670878954224,
+      "median_paired_gap": 0.0482546376225388
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.11263670878954224,
+      "median_paired_gap": 0.0482546376225388
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.11263670878954224,
+      "median_paired_gap": 0.0482546376225388
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.008707884361302404,
+      "median_paired_gap": 0.006867876393307886
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.012102654944594143,
+      "median_paired_gap": 0.013390646078265993
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.008707884361302404,
+      "median_paired_gap": 0.006867876393307886
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.010765211830139159,
+      "median_paired_gap": 0.013556755200800515
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.008707884361302404,
+      "median_paired_gap": 0.006867876393307886
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.013149719877697464,
+      "median_paired_gap": 0.015619662231027131
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.011056753553909098,
+      "median_paired_gap": 0.014093835849704134
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.011056753553909098,
+      "median_paired_gap": 0.014093835849704134
+    },
+    {
+      "pair": "8-9",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.011056753553909098,
+      "median_paired_gap": 0.014093835849704134
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.884094301927125,
+      "median_paired_gap": 0.5423543509421876
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8959084639835426,
+      "median_paired_gap": 0.5553266812594566
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.884094301927125,
+      "median_paired_gap": 0.5423543509421876
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.884094301927125,
+      "median_paired_gap": 0.5423543509421876
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.884094301927125,
+      "median_paired_gap": 0.5423543509421876
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9128327006917083,
+      "median_paired_gap": 0.5706537867946477
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8953505762853722,
+      "median_paired_gap": 0.5524119299750722
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8953505762853722,
+      "median_paired_gap": 0.5524119299750722
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8953505762853722,
+      "median_paired_gap": 0.5524119299750722
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.015726474465226657,
+      "median_paired_gap": 0.019370253254883354
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.019415847939417658,
+      "median_paired_gap": 0.023409166411349967
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.015726474465226657,
+      "median_paired_gap": 0.019370253254883354
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.015726474465226657,
+      "median_paired_gap": 0.019370253254883354
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.015726474465226657,
+      "median_paired_gap": 0.019370253254883354
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.028095781148135185,
+      "median_paired_gap": 0.028135406852260052
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.018536622213091318,
+      "median_paired_gap": 0.022860171650938548
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.018536622213091318,
+      "median_paired_gap": 0.022860171650938548
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.018536622213091318,
+      "median_paired_gap": 0.022860171650938548
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8763435058644258,
+      "median_paired_gap": 0.6841806123793546
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8835819172042539,
+      "median_paired_gap": 0.6892461008677575
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8763435058644258,
+      "median_paired_gap": 0.6841806123793546
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8763435058644258,
+      "median_paired_gap": 0.6841806123793546
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8763435058644258,
+      "median_paired_gap": 0.6841806123793546
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.9028206006286043,
+      "median_paired_gap": 0.7025595521384812
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8904329434799829,
+      "median_paired_gap": 0.7006984581697654
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8904329434799829,
+      "median_paired_gap": 0.7006984581697654
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.8904329434799829,
+      "median_paired_gap": 0.7006984581697654
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.022921063269507158,
+      "median_paired_gap": 0.025498789902231665
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.024387126458779475,
+      "median_paired_gap": 0.03235117857855642
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.022921063269507158,
+      "median_paired_gap": 0.025498789902231665
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.022921063269507158,
+      "median_paired_gap": 0.025498789902231665
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.022921063269507158,
+      "median_paired_gap": 0.025498789902231665
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.05155244224230321,
+      "median_paired_gap": 0.05314803450965628
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.03997121407086023,
+      "median_paired_gap": 0.044233835947801545
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.03997121407086023,
+      "median_paired_gap": 0.044233835947801545
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.03997121407086023,
+      "median_paired_gap": 0.044233835947801545
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3607718656776061,
+      "median_paired_gap": 0.15435688233018482
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.39471128688478463,
+      "median_paired_gap": 0.1675762586537357
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3607718656776061,
+      "median_paired_gap": 0.15435688233018482
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3607718656776061,
+      "median_paired_gap": 0.15435688233018482
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3607718656776061,
+      "median_paired_gap": 0.15435688233018482
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.4306235042528791,
+      "median_paired_gap": 0.1801666467799073
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3741467423928644,
+      "median_paired_gap": 0.1520451378301449
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3741467423928644,
+      "median_paired_gap": 0.1520451378301449
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "raw",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.3741467423928644,
+      "median_paired_gap": 0.1520451378301449
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "fixed_consensus",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006045105086374807,
+      "median_paired_gap": 0.005249962204986082
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.005709643601547548,
+      "median_paired_gap": 0.005344307653236228
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006045105086374807,
+      "median_paired_gap": 0.005249962204986082
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006045105086374807,
+      "median_paired_gap": 0.005249962204986082
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "phase_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006045105086374807,
+      "median_paired_gap": 0.005249962204986082
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.007266532525418812,
+      "median_paired_gap": 0.008900365119109053
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample10_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006784341995867096,
+      "median_paired_gap": 0.007641084249934146
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_fractional",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006784341995867096,
+      "median_paired_gap": 0.007641084249934146
+    },
+    {
+      "pair": "9-10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "method": "unnormalized_upsample1_rounded",
+      "n": 170,
+      "valid": 170,
+      "median_ncc": 0.006784341995867096,
+      "median_paired_gap": 0.007641084249934146
+    }
+  ],
+  "fractional_vs_rounded": [
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample1",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.022410666193016293,
+      "range_fractional_minus_rounded": [
+        0.0022342140130253707,
+        0.09176808713265411
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample1",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.012111854358310577,
+      "range_fractional_minus_rounded": [
+        -0.025514085275930694,
+        0.09802456480341498
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample1",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.016363844176373543,
+      "range_fractional_minus_rounded": [
+        0.0015534151164501298,
+        0.0888864564457088
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample1",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.02507753968568228,
+      "range_fractional_minus_rounded": [
+        -0.013537944809616821,
+        0.12762911312776115
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample1",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.019986101319251336,
+      "range_fractional_minus_rounded": [
+        -0.029603831629867853,
+        0.07074875380423712
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample1",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.006133393859517345,
+      "range_fractional_minus_rounded": [
+        -0.017364985059393823,
+        0.052058402435707696
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample10",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.03256097975730288,
+      "range_fractional_minus_rounded": [
+        0.003509574963692419,
+        0.15534999824677354
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.017213149008482295,
+      "range_fractional_minus_rounded": [
+        -0.017144723020401924,
+        0.14393893559209425
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample10",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.02453724415717079,
+      "range_fractional_minus_rounded": [
+        0.0025311070572536787,
+        0.14120719362695122
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.04584658266828249,
+      "range_fractional_minus_rounded": [
+        -0.009707133744278687,
+        0.1829430159758616
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample10",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.036654419896815185,
+      "range_fractional_minus_rounded": [
+        -0.04739157638956556,
+        0.1234668457739061
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "phase_upsample10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.006785037601155239,
+      "range_fractional_minus_rounded": [
+        -0.01884838266432954,
+        0.10522169589651781
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.021873882572794823,
+      "range_fractional_minus_rounded": [
+        0.002669553506038924,
+        0.08813712306717253
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.009762943581878562,
+      "range_fractional_minus_rounded": [
+        -0.012326124866518648,
+        0.0894277028845708
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.015386189663357142,
+      "range_fractional_minus_rounded": [
+        0.0007234902623373118,
+        0.08606606282994633
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0201324676345082,
+      "range_fractional_minus_rounded": [
+        -0.010737149691417203,
+        0.12129655935334971
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.020339951568473208,
+      "range_fractional_minus_rounded": [
+        -0.02719705073612648,
+        0.07111048129858688
+      ]
+    },
+    {
+      "pair": "8-9",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0049877036647504504,
+      "range_fractional_minus_rounded": [
+        -0.012373873710332595,
+        0.0606285015553073
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample1",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample1",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample1",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample1",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample1",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample1",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample10",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.011542702244186465,
+      "range_fractional_minus_rounded": [
+        0.000521280254545009,
+        0.07014068889856362
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0032959132082705563,
+      "range_fractional_minus_rounded": [
+        -0.006550725066398438,
+        0.030377700526172446
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample10",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0070434299953794355,
+      "range_fractional_minus_rounded": [
+        -0.0034455688492769365,
+        0.04779163302263312
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0023199302692998663,
+      "range_fractional_minus_rounded": [
+        -0.02108803490727644,
+        0.02479960274644198
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample10",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.030122625440408397,
+      "range_fractional_minus_rounded": [
+        -0.012514584166104861,
+        0.07954069885088522
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "phase_upsample10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.00020221795306198145,
+      "range_fractional_minus_rounded": [
+        -0.009001454278734496,
+        0.009905969223379767
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample1",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.0,
+      "range_fractional_minus_rounded": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH1",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.015731562970022595,
+      "range_fractional_minus_rounded": [
+        2.1622865196468943e-05,
+        0.09433188745216925
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH1",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.008799604351618208,
+      "range_fractional_minus_rounded": [
+        -0.008376603311280923,
+        0.06066607817419023
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH2",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.009250339703597343,
+      "range_fractional_minus_rounded": [
+        -0.01339822967833082,
+        0.06834438573592538
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH2",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.004237738780182514,
+      "range_fractional_minus_rounded": [
+        -0.05131007095067994,
+        0.038957979557139755
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH4",
+      "representation": "raw",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.041553630167344875,
+      "range_fractional_minus_rounded": [
+        -0.014458322202486149,
+        0.11527493898306174
+      ]
+    },
+    {
+      "pair": "9-10",
+      "fit_name": "unnormalized_upsample10",
+      "channel": "CH4",
+      "representation": "highpass4px",
+      "n": 170,
+      "median_paired_fractional_minus_rounded": 0.00216395552549677,
+      "range_fractional_minus_rounded": [
+        -0.015945859306748716,
+        0.019400800526558758
+      ]
+    }
+  ],
+  "adopted_transform": null,
+  "anatomical_validation": false,
+  "previous_fixed_scores_identical": 4080
+}

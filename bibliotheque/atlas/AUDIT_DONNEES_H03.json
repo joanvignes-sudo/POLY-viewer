@@ -1,0 +1,407 @@
+{
+  "scope": "Inventaire et dénominateurs du dépôt public ; aucune reproduction des modèles mixtes ni nouveau test statistique.",
+  "workbook_sha256": "6b52d81246a68d47083ac7c3ead7d815127f8960031f17f4178ad688ba8fee91",
+  "sheets": [
+    {
+      "name": "data",
+      "rows": 9600,
+      "columns": [
+        {
+          "column": 1,
+          "header": "part",
+          "nonmissing": 9600,
+          "distinct": 60,
+          "values": null
+        },
+        {
+          "column": 2,
+          "header": "emo",
+          "nonmissing": 9600,
+          "distinct": 2,
+          "values": {
+            "1": 4800,
+            "2": 4800
+          }
+        },
+        {
+          "column": 3,
+          "header": "cc",
+          "nonmissing": 9600,
+          "distinct": 2,
+          "values": {
+            "1": 4800,
+            "2": 4800
+          }
+        },
+        {
+          "column": 4,
+          "header": "loc",
+          "nonmissing": 9600,
+          "distinct": 4,
+          "values": {
+            "3": 2400,
+            "2": 2400,
+            "4": 2400,
+            "1": 2400
+          }
+        },
+        {
+          "column": 5,
+          "header": "rt",
+          "nonmissing": 8642,
+          "distinct": 4795,
+          "values": null
+        },
+        {
+          "column": 6,
+          "header": "LocAcc",
+          "nonmissing": 9600,
+          "distinct": 2,
+          "values": {
+            "1": 8034,
+            "0": 1566
+          }
+        },
+        {
+          "column": 7,
+          "header": "EmoAcc",
+          "nonmissing": 9589,
+          "distinct": 2,
+          "values": {
+            "0": 2157,
+            "1": 7432
+          }
+        },
+        {
+          "column": 8,
+          "header": "conf",
+          "nonmissing": 9589,
+          "distinct": 6,
+          "values": {
+            "3": 1870,
+            "0": 877,
+            "2": 957,
+            "5": 2975,
+            "4": 2316,
+            "1": 594
+          }
+        },
+        {
+          "column": 9,
+          "header": "nHB",
+          "nonmissing": 9538,
+          "distinct": 23,
+          "values": null
+        },
+        {
+          "column": 10,
+          "header": "T_error",
+          "nonmissing": 9600,
+          "distinct": 2,
+          "values": {
+            "0": 9435,
+            "1": 165
+          }
+        },
+        {
+          "column": 11,
+          "header": "trial",
+          "nonmissing": 9600,
+          "distinct": 160,
+          "values": null
+        },
+        {
+          "column": 12,
+          "header": "EmoAns",
+          "nonmissing": 9600,
+          "distinct": 2,
+          "values": {
+            "1": 3979,
+            "0": 5621
+          }
+        },
+        {
+          "column": 13,
+          "header": "pic",
+          "nonmissing": 9600,
+          "distinct": 46,
+          "values": null
+        }
+      ],
+      "formula_cells": 0,
+      "participants": 60,
+      "rows_per_participant": {
+        "9": 160,
+        "10": 160,
+        "11": 160,
+        "12": 160,
+        "13": 160,
+        "14": 160,
+        "15": 160,
+        "16": 160,
+        "17": 160,
+        "18": 160,
+        "19": 160,
+        "20": 160,
+        "21": 160,
+        "22": 160,
+        "23": 160,
+        "24": 160,
+        "25": 160,
+        "26": 160,
+        "27": 160,
+        "28": 160,
+        "30": 160,
+        "31": 160,
+        "32": 160,
+        "33": 160,
+        "34": 160,
+        "35": 160,
+        "36": 160,
+        "37": 160,
+        "38": 160,
+        "39": 160,
+        "40": 160,
+        "41": 160,
+        "42": 160,
+        "43": 160,
+        "44": 160,
+        "45": 160,
+        "46": 160,
+        "47": 160,
+        "48": 160,
+        "49": 160,
+        "50": 160,
+        "51": 160,
+        "52": 160,
+        "53": 160,
+        "54": 160,
+        "55": 160,
+        "56": 160,
+        "57": 160,
+        "58": 160,
+        "59": 160,
+        "60": 160,
+        "61": 160,
+        "62": 160,
+        "63": 160,
+        "64": 160,
+        "65": 160,
+        "101": 160,
+        "102": 160,
+        "103": 160,
+        "104": 160
+      },
+      "participant_labels": [
+        "10",
+        "101",
+        "102",
+        "103",
+        "104",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "9"
+      ]
+    },
+    {
+      "name": "labels and notes",
+      "rows": 13,
+      "columns": [
+        {
+          "column": 1,
+          "header": "Label code",
+          "nonmissing": 13,
+          "distinct": 13,
+          "values": null
+        },
+        {
+          "column": 2,
+          "header": "Meaning",
+          "nonmissing": 13,
+          "distinct": 13,
+          "values": null
+        },
+        {
+          "column": 3,
+          "header": "notes",
+          "nonmissing": 2,
+          "distinct": 2,
+          "values": {
+            "The first 7 participants took part on a pilot study after which we changed the heart-synchronization parameters (i.e. Diastole from R+550ms to R+0ms) due to technical problems in synchronization. Participants with codes 8, 29 and 66 had difficulties following task instructions": 1,
+            "Identified by trial with: any interbeat interval> 1300ms or <400ms; Or any interbeat interval greater or smaller than 5 deviations from the mean of all interbeat intervals (across trials) for that participant": 1
+          }
+        }
+      ],
+      "formula_cells": 0
+    }
+  ],
+  "total_rows": 9600,
+  "participant_count": 60,
+  "participant_trial_unique": true,
+  "all_participants_160_trials": true,
+  "all_four_cells_40_trials_per_participant": true,
+  "trigger_error_rows": 165,
+  "rows_after_author_trigger_filter": 9435,
+  "rows_after_author_positive_rt_filter": 8505,
+  "positive_rt_all_nHB_present": true,
+  "rt_missing_rows": 958,
+  "author_filters": {
+    "source": "pieces/humain/H03_donnees/CFS_Analysis_script.R",
+    "trigger": "T_error < 1",
+    "rt": "rt > 0"
+  },
+  "discrepancies": [
+    {
+      "id": "H03-E01",
+      "published": 207,
+      "deposited": 165,
+      "measure": "Essais marqués comme erreur de détection cardiaque",
+      "primary_line": 32,
+      "status": "Écart non résolu ; périmètre/version à vérifier, aucune correction supposée."
+    },
+    {
+      "id": "H03-E02",
+      "published": "16 % en moyenne, sd 17,6 %, essais sans appui",
+      "deposited": "958 rt manquants / 9600 avant filtre ; 930 / 9435 après filtre",
+      "measure": "Absence de réponse et dénominateurs",
+      "primary_line": 32,
+      "status": "La correspondance entre rt manquant et absence d’appui reste à établir ; aucun taux harmonisé."
+    },
+    {
+      "id": "H03-E03",
+      "published": "Synchronisation ec-diastole R+0 ms",
+      "deposited": "La note du classeur mentionne un pilote R+550 ms, changé ensuite à R+0 ms.",
+      "measure": "Paramètres pilote versus analyse principale",
+      "cell": "labels and notes!C2",
+      "status": "Codes 1 à 7 absents du tableau. La note distingue le pilote ; sa correspondance au périmètre publié reste à confirmer."
+    },
+    {
+      "id": "H03-E04",
+      "published": "Confiance 0–6",
+      "deposited": "Valeurs observées 0–5, 11 manquantes",
+      "measure": "Domaine observé versus échelle annoncée",
+      "cell": "data!H2:H9601",
+      "status": "Absence observée de la modalité 6 ; ne prouve pas une erreur de codage."
+    }
+  ],
+  "codebook": [
+    {
+      "label": "part",
+      "meaning": "Participant code",
+      "notes": "The first 7 participants took part on a pilot study after which we changed the heart-synchronization parameters (i.e. Diastole from R+550ms to R+0ms) due to technical problems in synchronization. Participants with codes 8, 29 and 66 had difficulties following task instructions"
+    },
+    {
+      "label": "emo",
+      "meaning": "Facial expression. Neutral =1 ; Fearful= 2",
+      "notes": null
+    },
+    {
+      "label": "cc",
+      "meaning": "Cardiac Cycle: ce-Systole=1 ; ce-Diastole =2",
+      "notes": null
+    },
+    {
+      "label": "loc",
+      "meaning": "Location where stimulus was presented: Up-Left= 1; Up-right=2; Down-left=3; Down-right=4",
+      "notes": null
+    },
+    {
+      "label": "rt",
+      "meaning": "Reaction time (in ms)",
+      "notes": null
+    },
+    {
+      "label": "LocAcc",
+      "meaning": "Accuracy in the identification of Location where stimulus was presented",
+      "notes": null
+    },
+    {
+      "label": "EmoAcc",
+      "meaning": "Accuracy in the discrimination of facial expression",
+      "notes": null
+    },
+    {
+      "label": "conf",
+      "meaning": "Confidence in the discrimination of facial expression (0= complete guess; 6= extremely confident)",
+      "notes": null
+    },
+    {
+      "label": "nHB",
+      "meaning": "Number of heartbeats necessary for stimulus to breakthrough to awareness",
+      "notes": null
+    },
+    {
+      "label": "T_error",
+      "meaning": "Ttrial error due to misindentification of heartbeat leading to fewer or additional face presentations: Error=1 ; No error=0",
+      "notes": "Identified by trial with: any interbeat interval> 1300ms or <400ms; Or any interbeat interval greater or smaller than 5 deviations from the mean of all interbeat intervals (across trials) for that participant"
+    },
+    {
+      "label": "trial",
+      "meaning": "Trial number",
+      "notes": null
+    },
+    {
+      "label": "EmoAns",
+      "meaning": "Answer: Neutral=0; Fearful = 1",
+      "notes": null
+    },
+    {
+      "label": "pic",
+      "meaning": "Picture code",
+      "notes": null
+    }
+  ],
+  "pilot_codes_present": []
+}

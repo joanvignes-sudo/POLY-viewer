@@ -1,0 +1,65 @@
+{
+  "version": "0.91",
+  "issues": [
+    {
+      "id": "H01-DENOMINATEURS",
+      "source": "H01",
+      "documents": [
+        "pieces/humain/v091/H01_html.txt"
+      ],
+      "lines": [
+        26,
+        78,
+        87
+      ],
+      "observations": [
+        "Section participants : 107 volontaires sains au total.",
+        "Tâche expressions : 70 recrutés, 62 retenus.",
+        "Tâche mémoire : 42 recrutés, 33 retenus."
+      ],
+      "decision": "Recouvrement et définition du total général non établis ; ne pas déduire cinq personnes partagées ni calculer un total indépendant.",
+      "status": "Ouvert"
+    },
+    {
+      "id": "H01-HIPPO-P",
+      "source": "H01",
+      "lines": [
+        97,
+        98
+      ],
+      "observations": [
+        "P1 hippocampe, même r=0,77 : p=0,005 puis p=0,0001 dans deux paragraphes."
+      ],
+      "decision": "Écart conservé ; données ou correction nécessaires, pas de choix arbitraire.",
+      "status": "Ouvert"
+    },
+    {
+      "id": "H02-SYNC",
+      "source": "H02",
+      "lines": [
+        27,
+        29
+      ],
+      "observations": [
+        "Trois personnes exclues pour synchronisation ; ECG exp.1, oxymétrie exp.2 ; transit moyen 200 ms."
+      ],
+      "decision": "Instrument et exclusions explicites ; aucun alignement physique individuel indépendant revendiqué.",
+      "status": "Limite documentée"
+    },
+    {
+      "id": "H02-ROI",
+      "source": "H02",
+      "lines": [
+        79,
+        83
+      ],
+      "observations": [
+        "Correction amygdale droite atteinte ; gauche non atteinte ; autres ROI interaction non significative."
+      ],
+      "decision": "Afficher les analyses corrigées et valeurs extraites séparément.",
+      "status": "Limite documentée"
+    }
+  ],
+  "raw_data_acquired": false,
+  "models_reproduced": false
+}

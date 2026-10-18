@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "selected_sweeps": 9,
+  "api_records_total": 196,
+  "by_specimen_and_by_id_records_exact": 9,
+  "spike_counts_matching": 6,
+  "spike_counts_not_reported": 3,
+  "api_nwb_onsets_exact": 9,
+  "api_duration_matches_first_to_last_sample": 9,
+  "source_stimulus_support_boundary_checks": 9,
+  "api_units_label_ambiguities": 3,
+  "scope": "Exact metadata join and arithmetic/sample correspondence. No new QC verdict or re-execution of the Allen curation process.",
+  "raw_signal_quality_metrics_reestimated": false
+}

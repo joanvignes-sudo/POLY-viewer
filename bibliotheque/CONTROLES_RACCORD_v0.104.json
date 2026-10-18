@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "context_source_exact_pixels": 4194304,
+  "montage_crop_source_exact_pixels": 691200,
+  "source_tiles_verified": 20,
+  "independent_patches": 4,
+  "component_checks": 8,
+  "observed_position_spread_pixels": [
+    1,
+    1
+  ],
+  "not_metrological_error_bound": true,
+  "field1_not_registered": true,
+  "physical_calibration_or_3d_placement_claimed": false,
+  "prior_science_files_unchanged": 871
+}

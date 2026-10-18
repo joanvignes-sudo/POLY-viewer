@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:e69193c706f2651dc389",
+  "kind": "proof",
+  "title": "ESSAIS_LECTEURS.md",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      11,
+      "proofs",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_AUDIT_CORRIGE_2026-10-14/ESSAIS_LECTEURS.md",
+    "sha256": "25747fd0b0f6aed346fa879b57e33532f0227827993e2569ddc2583259b61c08",
+    "bytes": 2196,
+    "content_loaded": false
+  }
+}

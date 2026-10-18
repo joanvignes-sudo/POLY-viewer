@@ -1,0 +1,28 @@
+{
+  "file": "637038252.swc",
+  "url": "https://api.brain-map.org/api/v2/well_known_file_download/692297222",
+  "bytes": 304892,
+  "sha256": "a307bdc56ef94661bf8eecab5529c23fdcbc5fc2674b2a59a95e019dd7248a9a",
+  "headers": {
+    "Date": "Tue, 13 Oct 2026 18:20:57 GMT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "304892",
+    "Connection": "close",
+    "Set-Cookie": "AWSALB=JwYoOm5zyQoRyo+7Fath8FYSKbeVJaHfGQO+xLfel5k2HxweU9YCoaluy+OuygD5CGb/Em6Sq7xGo/Kq4YTez+cohgsHwop3sq+7+Lzke5cOhSO034ET1FRxk6wx; Expires=Tue, 20 Oct 2026 18:20:52 GMT; Path=/",
+    "Server": "Apache",
+    "Cache-Control": "private",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Max-Age": "1728000",
+    "X-Request-Id": "7cd2fa1fbe57ba2b559409a51c381174",
+    "Content-Disposition": "attachment; filename=\"H17.03.013.11.08.04_692297214_m.swc\"",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "Content-Transfer-Encoding": "binary",
+    "X-UA-Compatible": "IE=Edge,chrome=1",
+    "X-Runtime": "5.003766",
+    "X-Rack-Cache": "miss",
+    "X-Powered-By": "Phusion Passenger 5.0.21",
+    "Status": "200 OK",
+    "Last-Modified": "Mon, 30 Apr 2018 21:30:48 GMT",
+    "ETag": "\"56b179139a763\""
+  }
+}

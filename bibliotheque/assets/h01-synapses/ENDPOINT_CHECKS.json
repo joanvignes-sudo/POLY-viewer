@@ -1,0 +1,182 @@
+[
+  {
+    "annotation": "95480769",
+    "endpoint": 0,
+    "source_relation": "pre_synaptic_cell",
+    "voxel": [
+      346251,
+      78298,
+      1237
+    ],
+    "c3_label": "10403564222",
+    "expected_ids": [
+      "10403564222"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "95480769",
+    "endpoint": 1,
+    "source_relation": "post_synaptic_cell",
+    "voxel": [
+      346249,
+      78280,
+      1238
+    ],
+    "c3_label": "1072605926",
+    "expected_ids": [
+      "1072605926"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "111306169",
+    "endpoint": 0,
+    "source_relation": "pre_synaptic_cell",
+    "voxel": [
+      346410,
+      77795,
+      1259
+    ],
+    "c3_label": "0",
+    "expected_ids": [
+      "19166967430"
+    ],
+    "matches": false
+  },
+  {
+    "annotation": "111306169",
+    "endpoint": 1,
+    "source_relation": "post_synaptic_cell",
+    "voxel": [
+      346402,
+      77793,
+      1259
+    ],
+    "c3_label": "1072605926",
+    "expected_ids": [
+      "1072605926"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "54213720",
+    "endpoint": 0,
+    "source_relation": "pre_synaptic_cell",
+    "voxel": [
+      346663,
+      78676,
+      910
+    ],
+    "c3_label": "10374449841",
+    "expected_ids": [
+      "10374449841"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "54213720",
+    "endpoint": 1,
+    "source_relation": "post_synaptic_cell",
+    "voxel": [
+      346657,
+      78667,
+      910
+    ],
+    "c3_label": "0",
+    "expected_ids": [
+      "1072605926"
+    ],
+    "matches": false
+  },
+  {
+    "annotation": "143278591",
+    "endpoint": 0,
+    "source_relation": "pre_synaptic_cell",
+    "voxel": [
+      346063,
+      77436,
+      1240
+    ],
+    "c3_label": "19152453951",
+    "expected_ids": [
+      "19152453951"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "143278591",
+    "endpoint": 1,
+    "source_relation": "post_synaptic_cell",
+    "voxel": [
+      346072,
+      77439,
+      1240
+    ],
+    "c3_label": "0",
+    "expected_ids": [
+      "1072605926"
+    ],
+    "matches": false
+  },
+  {
+    "annotation": "145894292",
+    "endpoint": 0,
+    "source_relation": "pre_synaptic_cell",
+    "voxel": [
+      345809,
+      78704,
+      1184
+    ],
+    "c3_label": "19181495300",
+    "expected_ids": [
+      "19181495300"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "145894292",
+    "endpoint": 1,
+    "source_relation": "post_synaptic_cell",
+    "voxel": [
+      345813,
+      78693,
+      1184
+    ],
+    "c3_label": "1072605926",
+    "expected_ids": [
+      "1072605926"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "87751454",
+    "endpoint": 0,
+    "source_relation": "pre_synaptic_cell",
+    "voxel": [
+      345596,
+      77837,
+      917
+    ],
+    "c3_label": "10301663798",
+    "expected_ids": [
+      "10301663798"
+    ],
+    "matches": true
+  },
+  {
+    "annotation": "87751454",
+    "endpoint": 1,
+    "source_relation": "post_synaptic_cell",
+    "voxel": [
+      345610,
+      77836,
+      917
+    ],
+    "c3_label": "1072605926",
+    "expected_ids": [
+      "1072605926"
+    ],
+    "matches": true
+  }
+]

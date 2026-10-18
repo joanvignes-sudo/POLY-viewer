@@ -1,0 +1,29 @@
+{
+  "audited_url": "https://joanvignes-sudo.github.io/POLY-viewer/?audit=v093",
+  "checked_at": "2026-10-11T19:07:46.601Z",
+  "version": "0.92",
+  "modes": [
+    "Anatomie en brume",
+    "Anatomie déployée",
+    "Voyage dans une chaîne",
+    "Observatoire des échelles",
+    "Quatre chaînes"
+  ],
+  "first_scene_steps": [
+    "Oreille",
+    "Ganglion vagal",
+    "Tronc cérébral",
+    "Thalamus",
+    "Insula"
+  ],
+  "canonical_chain_controls": 0,
+  "source_dossier": "canon.html#vague",
+  "four_chain_labels": [
+    "A · Oreille / vague",
+    "B · Respiration",
+    "C · Cœur",
+    "D · Film / expression"
+  ],
+  "annotation_controls": 0,
+  "result": "Scene examples and scientific catalogue use different selections"
+}

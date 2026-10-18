@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "samples": 2,
+  "allen_species_verified": "Homo Sapiens",
+  "allen_swc_coordinates_exact": true,
+  "h01_native_vertices_and_edges_exact": true,
+  "h01_components_preserved": 45,
+  "trace_samples_exactly_match_nwb": 60000,
+  "raw_source_hashes": 8,
+  "immutable_anatomical_files": 628,
+  "established_chains_and_evidence_unchanged": true,
+  "five_source_inventory": true,
+  "same_organ_same_donor_hoa_metadata": 3,
+  "pages": 19,
+  "static_links": 206,
+  "missing_links": []
+}

@@ -1,0 +1,682 @@
+{
+  "schema_version": 1,
+  "baseline_version": "0.129.0",
+  "categories": [
+    {
+      "id": "corps",
+      "title": "Corps et cortex"
+    },
+    {
+      "id": "neurones",
+      "title": "Neurones et signaux"
+    },
+    {
+      "id": "microscopie",
+      "title": "Microscopie cellulaire"
+    },
+    {
+      "id": "organes",
+      "title": "Organes et nerf vague"
+    },
+    {
+      "id": "perception",
+      "title": "Perception et conscience"
+    },
+    {
+      "id": "chaines",
+      "title": "Chaînes et mécanismes"
+    },
+    {
+      "id": "sources",
+      "title": "Sources et méthode"
+    },
+    {
+      "id": "studies",
+      "title": "Études identifiées"
+    },
+    {
+      "id": "claims",
+      "title": "Résultats et limites locaux"
+    },
+    {
+      "id": "proofs",
+      "title": "Fichiers de preuves"
+    }
+  ],
+  "entries": [
+    {
+      "id": "poly:view:ac738ea039f71e169e4f",
+      "kind": "view",
+      "title": "Anatomie humaine en 3D",
+      "category": "corps",
+      "detail": "details/poly_view_ac738ea039f71e169e4f.json",
+      "bytes": 781,
+      "sha256": "a0dc6b82558150990cd9988dacd66cc15b51c8d7d0ee0b028a6dbbd5dba5210a"
+    },
+    {
+      "id": "poly:view:498f5a924ce559089c86",
+      "kind": "view",
+      "title": "Cortex et couches corticales",
+      "category": "corps",
+      "detail": "details/poly_view_498f5a924ce559089c86.json",
+      "bytes": 785,
+      "sha256": "27d2e2fea337e8f2ce70b320db613f0b55c0c47203b6cb386e54ce4166172caa"
+    },
+    {
+      "id": "poly:view:1c4cc4d66e1d9e2ac3c4",
+      "kind": "view",
+      "title": "Coupe histologique à 20 µm",
+      "category": "corps",
+      "detail": "details/poly_view_1c4cc4d66e1d9e2ac3c4.json",
+      "bytes": 789,
+      "sha256": "450896000d691dd017e3f78b39485257c4035cab41f3b1cf6f2107ca9af37781"
+    },
+    {
+      "id": "poly:view:0f57bf7043294729abe9",
+      "kind": "view",
+      "title": "Morphologie et réponse électrique",
+      "category": "neurones",
+      "detail": "details/poly_view_0f57bf7043294729abe9.json",
+      "bytes": 831,
+      "sha256": "4a7f3dc92d0ad2b9d841ad83cc8060bd0b52d1756df171060b2e2d4137bf31c1"
+    },
+    {
+      "id": "poly:view:45cf3d3e78f302847ecf",
+      "kind": "view",
+      "title": "Lire un enregistrement",
+      "category": "neurones",
+      "detail": "details/poly_view_45cf3d3e78f302847ecf.json",
+      "bytes": 828,
+      "sha256": "4dd2bd54d15e4c8b7f93ce8b0c0bb3ca8b0b8aa34c1bb26679170a965c6aac71"
+    },
+    {
+      "id": "poly:view:d68c39935d7bb3de48f1",
+      "kind": "view",
+      "title": "Examiner les indicateurs de qualité",
+      "category": "neurones",
+      "detail": "details/poly_view_d68c39935d7bb3de48f1.json",
+      "bytes": 856,
+      "sha256": "b0949494e2ac61e21e068f45df78f5de7e54b0ac056113273a29b887d813246d"
+    },
+    {
+      "id": "poly:view:99d9b2cde5beb1de3f32",
+      "kind": "view",
+      "title": "Comparer deux essais",
+      "category": "neurones",
+      "detail": "details/poly_view_99d9b2cde5beb1de3f32.json",
+      "bytes": 887,
+      "sha256": "1eb73b0e7b6cd3699722372a23ad48105f827a873fb535ec7c01b364ef9248f3"
+    },
+    {
+      "id": "poly:view:08e83fd05bf1cf390573",
+      "kind": "view",
+      "title": "Reconstruction de la cellule H01",
+      "category": "microscopie",
+      "detail": "details/poly_view_08e83fd05bf1cf390573.json",
+      "bytes": 817,
+      "sha256": "b22d836dee8993da12b26ce7693789186eb4aea1aaa4f18bb0dffb096db6baec"
+    },
+    {
+      "id": "poly:view:6e2ffc65a4ac6a65d04a",
+      "kind": "view",
+      "title": "Images et détails synaptiques",
+      "category": "microscopie",
+      "detail": "details/poly_view_6e2ffc65a4ac6a65d04a.json",
+      "bytes": 793,
+      "sha256": "fee3884fb88b1fe5ab1353d390db929fba44442ff0229d3ec43c310b0e3c6d46"
+    },
+    {
+      "id": "poly:view:c87f9c7253970f6a0996",
+      "kind": "view",
+      "title": "Catalogue des positions sur la cellule",
+      "category": "microscopie",
+      "detail": "details/poly_view_c87f9c7253970f6a0996.json",
+      "bytes": 819,
+      "sha256": "26fe82894fbd2b6bf8c79e1a69086e3f7ae7f09a98108624b74fa1cc1d3013e3"
+    },
+    {
+      "id": "poly:view:17524f0eb3d8d4d4d64f",
+      "kind": "view",
+      "title": "Parcours dans les branches",
+      "category": "microscopie",
+      "detail": "details/poly_view_17524f0eb3d8d4d4d64f.json",
+      "bytes": 785,
+      "sha256": "5c4b0e4c5fa47460939d0ede213e06b67294cb2e7d8ab3cff2594efe82d4af31"
+    },
+    {
+      "id": "poly:view:65d659b204c01b5974a0",
+      "kind": "view",
+      "title": "Repères anatomiques dans les images",
+      "category": "microscopie",
+      "detail": "details/poly_view_65d659b204c01b5974a0.json",
+      "bytes": 801,
+      "sha256": "a7ebab52b8ee0af0378979b823e730a5cbec8a23717f5cde0357c3fd18306729"
+    },
+    {
+      "id": "poly:view:69d1a04a9b61f6c99921",
+      "kind": "view",
+      "title": "Cœur : vue d’ensemble",
+      "category": "organes",
+      "detail": "details/poly_view_69d1a04a9b61f6c99921.json",
+      "bytes": 808,
+      "sha256": "f02a7178cec87b34e3fa0ffc18b1476394fdf209d93d5111c75e7debd0db0caf"
+    },
+    {
+      "id": "poly:view:831a3605c62957441fa9",
+      "kind": "view",
+      "title": "Cœur : région détaillée",
+      "category": "organes",
+      "detail": "details/poly_view_831a3605c62957441fa9.json",
+      "bytes": 810,
+      "sha256": "56e17d689fa0a2a1a6d1efd43e661632af03285c8edb378d9386924e9e6ca657"
+    },
+    {
+      "id": "poly:view:0a098483b53297b85174",
+      "kind": "view",
+      "title": "Nerf vague : modèle 3D",
+      "category": "organes",
+      "detail": "details/poly_view_0a098483b53297b85174.json",
+      "bytes": 787,
+      "sha256": "fb538cc42f687b2558920a75aaae4896ca1902474e9b9d14b8a45c0ca3794c69"
+    },
+    {
+      "id": "poly:view:3b976cc758ffb46bd7d0",
+      "kind": "view",
+      "title": "Nerf vague : microCT C10",
+      "category": "organes",
+      "detail": "details/poly_view_3b976cc758ffb46bd7d0.json",
+      "bytes": 813,
+      "sha256": "cda3231d2e9bef152ccdda449a3ac6bb3e40d12dd1e892cf2aef4396af867b6f"
+    },
+    {
+      "id": "poly:view:e44eae0aae0d307b29c9",
+      "kind": "view",
+      "title": "Segment C1 et coupes microCT",
+      "category": "organes",
+      "detail": "details/poly_view_e44eae0aae0d307b29c9.json",
+      "bytes": 774,
+      "sha256": "f4147d7319d145d4c0199362ad6b86545f5d597fadf472db6dec450fd2b15964"
+    },
+    {
+      "id": "poly:view:ce04f1d51a9d5002c2a5",
+      "kind": "view",
+      "title": "Marquages immunohistochimiques",
+      "category": "organes",
+      "detail": "details/poly_view_ce04f1d51a9d5002c2a5.json",
+      "bytes": 791,
+      "sha256": "ded0985404463872566962787e7fee5b017283edcda7799c1580f384e35709de"
+    },
+    {
+      "id": "poly:view:32884698e02a767bb8bf",
+      "kind": "view",
+      "title": "Canaux et plans focaux",
+      "category": "organes",
+      "detail": "details/poly_view_32884698e02a767bb8bf.json",
+      "bytes": 789,
+      "sha256": "983f8218cd650186e3955774d7b6e618c4329106053b5357dc90975baed4b875"
+    },
+    {
+      "id": "poly:view:9b809232e5e0b4846241",
+      "kind": "view",
+      "title": "Champ et montage : raccord local",
+      "category": "organes",
+      "detail": "details/poly_view_9b809232e5e0b4846241.json",
+      "bytes": 783,
+      "sha256": "73b0eab7c3edb618b1a93011e6909ff26220d70dfb3dee2498e0fc6aa0f68229"
+    },
+    {
+      "id": "poly:view:be52b6583775a9299d43",
+      "kind": "view",
+      "title": "Calibration, pixels et unités",
+      "category": "organes",
+      "detail": "details/poly_view_be52b6583775a9299d43.json",
+      "bytes": 785,
+      "sha256": "371580da253564519f0bc8c85718f23cd4ea42217c5105920cd77ef03b4535ba"
+    },
+    {
+      "id": "poly:view:c862e3ace993dde5bb34",
+      "kind": "view",
+      "title": "Ouvrir le dossier COGITATE",
+      "category": "perception",
+      "detail": "details/poly_view_c862e3ace993dde5bb34.json",
+      "bytes": 804,
+      "sha256": "d5844d14de265f2cf3f458449091603cdf2cbbb19734a95e1847ebe16abe9cb0"
+    },
+    {
+      "id": "poly:view:c35cf72ba592dcebb48b",
+      "kind": "view",
+      "title": "Ouvrir l’atelier des chaînes",
+      "category": "chaines",
+      "detail": "details/poly_view_c35cf72ba592dcebb48b.json",
+      "bytes": 810,
+      "sha256": "9836ee24c8210adcb157793831b34d3d5fb00dfb54d16e55d132e1ec8d11263a"
+    },
+    {
+      "id": "poly:view:f8d532ec52d664b6b71d",
+      "kind": "view",
+      "title": "Carte des étapes et des branches",
+      "category": "chaines",
+      "detail": "details/poly_view_f8d532ec52d664b6b71d.json",
+      "bytes": 816,
+      "sha256": "2fc2a6f852eda9f15fddf6c0d0b74d9c530077546a57cd07f1b173c115e678f5"
+    },
+    {
+      "id": "poly:view:07cda322790b8ef672d5",
+      "kind": "view",
+      "title": "Sources, temps et données d’une chaîne",
+      "category": "chaines",
+      "detail": "details/poly_view_07cda322790b8ef672d5.json",
+      "bytes": 819,
+      "sha256": "df6b99d13050e3bfd10556d8ddadb341ff631410e16b2d4dd444f71093f8bcd6"
+    },
+    {
+      "id": "poly:view:770c3d3091c20a91badc",
+      "kind": "view",
+      "title": "Annoter une lecture",
+      "category": "chaines",
+      "detail": "details/poly_view_770c3d3091c20a91badc.json",
+      "bytes": 800,
+      "sha256": "5e6e61ce696f3cd2c3f0f47863bbb8ff89df8d26239bfa0d064cc656fa6bb737"
+    },
+    {
+      "id": "poly:view:0d7a89d85e96b58deb41",
+      "kind": "view",
+      "title": "Atlas complet des parcours",
+      "category": "chaines",
+      "detail": "details/poly_view_0d7a89d85e96b58deb41.json",
+      "bytes": 799,
+      "sha256": "571a6df6223ea6a21f702ad2d7cd37437e97ade9c9eec7410f2534b4ee1349a2"
+    },
+    {
+      "id": "poly:view:d80ac2660bbc61a7c65c",
+      "kind": "view",
+      "title": "Dossiers et sources réunis",
+      "category": "sources",
+      "detail": "details/poly_view_d80ac2660bbc61a7c65c.json",
+      "bytes": 800,
+      "sha256": "3b90a01b536c23308de1ed993797469cd24f49c300a63490182f7647e21e602d"
+    },
+    {
+      "id": "poly:view:3f0d6833c32e76b4334f",
+      "kind": "view",
+      "title": "Glossaire et familles",
+      "category": "sources",
+      "detail": "details/poly_view_3f0d6833c32e76b4334f.json",
+      "bytes": 795,
+      "sha256": "06063548e05f5f749607dbfbb709d66702d0eead6fb51f4f9073d378ee1f85cf"
+    },
+    {
+      "id": "poly:view:5b1e9f4dfa534655dfc1",
+      "kind": "view",
+      "title": "Programme et conditions restantes",
+      "category": "sources",
+      "detail": "details/poly_view_5b1e9f4dfa534655dfc1.json",
+      "bytes": 813,
+      "sha256": "3a0ff0a0fc603cbbc33983a722810361053e1477488f39ec42fee7ea74f9fd1d"
+    },
+    {
+      "id": "poly:view:3534a281bda6c7a268c6",
+      "kind": "view",
+      "title": "Méthode et conventions de représentation",
+      "category": "sources",
+      "detail": "details/poly_view_3534a281bda6c7a268c6.json",
+      "bytes": 812,
+      "sha256": "8624cc3df852cbfb8860d1cf5629eed1e0425d2d4543643214331267904ef51d"
+    },
+    {
+      "id": "poly:study:S10-ESHEL-2015",
+      "kind": "study",
+      "title": "Arithmetic and local circuitry underlying dopamine prediction errors",
+      "category": "studies",
+      "detail": "details/poly_study_S10-ESHEL-2015.json",
+      "bytes": 2179,
+      "sha256": "7236fff7c1869a3a4b7da1da704cc3b297669de688e648f5aebcab6c25848241"
+    },
+    {
+      "id": "poly:study:S22-GROSSMAN-2022",
+      "kind": "study",
+      "title": "Serotonin neurons modulate learning rate through uncertainty",
+      "category": "studies",
+      "detail": "details/poly_study_S22-GROSSMAN-2022.json",
+      "bytes": 1823,
+      "sha256": "fe0ef03bc28c7d30ba1f20367843fca20fbeacb1d51b536ef4806ec70be5feaa"
+    },
+    {
+      "id": "poly:claim:source_catalogue",
+      "kind": "claim",
+      "title": "Le catalogue décrit l’acquisition",
+      "category": "claims",
+      "detail": "details/poly_claim_source_catalogue.json",
+      "bytes": 1411,
+      "sha256": "3c792a5400745ebd43c9cbd16a7d759078ae29ab8edc57682c3ce93022a393cc",
+      "status": "contrôlé"
+    },
+    {
+      "id": "poly:proof:3e8d0c515655a85e1f2c",
+      "kind": "proof",
+      "title": "CATALOGUE_BILAN.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_3e8d0c515655a85e1f2c.json",
+      "bytes": 820,
+      "sha256": "8635fdd9a8786074e7240cdab7a3a6b06ea8a05344bd8f7445c573684078231d"
+    },
+    {
+      "id": "poly:claim:local_raw_coverage",
+      "kind": "claim",
+      "title": "Onze champs complets et trois champs partiels sont acquis localement",
+      "category": "claims",
+      "detail": "details/poly_claim_local_raw_coverage.json",
+      "bytes": 2967,
+      "sha256": "c9374fbe3387ab56fc99287e7d5abd1f34a6323c85006bba3fc08dd3d14425f5",
+      "status": "contrôlé dans ce périmètre"
+    },
+    {
+      "id": "poly:proof:ca8872c7ad28286a0652",
+      "kind": "proof",
+      "title": "RESUME_PREUVES.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_ca8872c7ad28286a0652.json",
+      "bytes": 814,
+      "sha256": "fc4351365947a71c30c0d0bf55c32534d79f10ce965e780c3e100ac2f33d8104"
+    },
+    {
+      "id": "poly:proof:4e53499d48d6b4d4aa22",
+      "kind": "proof",
+      "title": "RESUME_EXTENSION.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_4e53499d48d6b4d4aa22.json",
+      "bytes": 820,
+      "sha256": "03d396fc3c24af4cd19707e0175a5513d7c50cce16648f40e2dec34e56858d64"
+    },
+    {
+      "id": "poly:claim:regional_reader",
+      "kind": "claim",
+      "title": "Lecture régionale du TIFF assemblé",
+      "category": "claims",
+      "detail": "details/poly_claim_regional_reader.json",
+      "bytes": 2970,
+      "sha256": "4c23ddba8c9e3ded047cc1f3c5a1b4a5aa7093e2e2a1b6ce92e2c3680ef0057f",
+      "status": "exécuté et testé"
+    },
+    {
+      "id": "poly:proof:459fc18b91d5ad71789c",
+      "kind": "proof",
+      "title": "TESTS_REGIONS.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_459fc18b91d5ad71789c.json",
+      "bytes": 805,
+      "sha256": "8dca7c654e760f7cf48e32f6c5fef366b4366c3952744c52201f1b2e88321ac2"
+    },
+    {
+      "id": "poly:proof:d2d1c13f5839743aceb9",
+      "kind": "proof",
+      "title": "REGIONS_SOURCE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_d2d1c13f5839743aceb9.json",
+      "bytes": 807,
+      "sha256": "ab6d469babba47655492335b663d213fc389ae938fc5735bbdd1a7a155afd27a"
+    },
+    {
+      "id": "poly:claim:sparc_methods",
+      "kind": "claim",
+      "title": "Les méthodes ont été comparées",
+      "category": "claims",
+      "detail": "details/poly_claim_sparc_methods.json",
+      "bytes": 5097,
+      "sha256": "da73302f8c235a551d12136a8657949ef0416211a9808d3121007acda41675c5",
+      "status": "exécuté avec résultats faibles conservés"
+    },
+    {
+      "id": "poly:proof:f6329c0e2cb76c8a8295",
+      "kind": "proof",
+      "title": "AUDIT_FINAL_TESTS.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_f6329c0e2cb76c8a8295.json",
+      "bytes": 818,
+      "sha256": "6ead562a89c066f56bfab6f9b7108030b4e2efcb2e0cf554db3c680a0f731128"
+    },
+    {
+      "id": "poly:proof:9bba9e7bebf03702b0e7",
+      "kind": "proof",
+      "title": "PRECISION_BILAN.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_9bba9e7bebf03702b0e7.json",
+      "bytes": 821,
+      "sha256": "dbbcad2da849538358604588261fb918f70e3e2174dad5a08c431574da5212d5"
+    },
+    {
+      "id": "poly:proof:a478a5577c1285b3ef8a",
+      "kind": "proof",
+      "title": "ESTIMATIONS_STABILITE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_a478a5577c1285b3ef8a.json",
+      "bytes": 830,
+      "sha256": "4b1d76d8fe2da9faa66851e9cae1719d3c1048302538d9b97b9fe332c084bbcb"
+    },
+    {
+      "id": "poly:proof:405096a4c52826f076fe",
+      "kind": "proof",
+      "title": "SCORES_STABILITE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_405096a4c52826f076fe.json",
+      "bytes": 821,
+      "sha256": "bea8def8f3843bcf288d88ddcde002e7f442918961f34d79d8173a2cadfca15c"
+    },
+    {
+      "id": "poly:proof:de698b3395058847e60e",
+      "kind": "proof",
+      "title": "RESUME_ASHLAR_2D.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_de698b3395058847e60e.json",
+      "bytes": 811,
+      "sha256": "87fb94c0f9018f0109f112a978b196aa76c28e04fa1de19d97a5aa64449bf74e"
+    },
+    {
+      "id": "poly:claim:ch4_cause",
+      "kind": "claim",
+      "title": "La cause des écarts CH4 est identifiée",
+      "category": "claims",
+      "detail": "details/poly_claim_ch4_cause.json",
+      "bytes": 9077,
+      "sha256": "bb2cf6fa7fca4866af6991aacb5ee2e7f33bc03a0b4dfaa0ede599a58d6f69ae",
+      "status": "non établi"
+    },
+    {
+      "id": "poly:proof:e4e995ee445b759e6e9f",
+      "kind": "proof",
+      "title": "SPARC_TEXTURE_BILAN.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_e4e995ee445b759e6e9f.json",
+      "bytes": 820,
+      "sha256": "d889271a03b9e04b91f0b4df74bf2adcd8249be92339736c7e771b6c062a09ea"
+    },
+    {
+      "id": "poly:proof:ce5f37d9e2a20714c5c7",
+      "kind": "proof",
+      "title": "RESUME_SECONDE_BOUCLE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_ce5f37d9e2a20714c5c7.json",
+      "bytes": 827,
+      "sha256": "8729f13a31cae4e2e4373ac32ebf135ef298fe24cca9ba7d63bccf8ce9ec9ce5"
+    },
+    {
+      "id": "poly:proof:c4f5bf0afc331a18458b",
+      "kind": "proof",
+      "title": "RESUME_TEXTURE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_c4f5bf0afc331a18458b.json",
+      "bytes": 814,
+      "sha256": "c36e815aec36a6f033ab12ce9cc531f677ea7392ad0bf0184ddd03156fdd7f4f"
+    },
+    {
+      "id": "poly:claim:anatomical_alignment",
+      "kind": "claim",
+      "title": "Le raccord SPARC est validé anatomiquement",
+      "category": "claims",
+      "detail": "details/poly_claim_anatomical_alignment.json",
+      "bytes": 1554,
+      "sha256": "cdee61fc1633b46b59be9107937e7d4998c07121ca8c2defdcd9ec56477b8849",
+      "status": "non établi"
+    },
+    {
+      "id": "poly:claim:closed_loop",
+      "kind": "claim",
+      "title": "Une boucle 2D est contrôlée sur les originaux",
+      "category": "claims",
+      "detail": "details/poly_claim_closed_loop.json",
+      "bytes": 4180,
+      "sha256": "7e0bf0eec19f45a96faf8cb461620c7f3ccbd11deb0902c1b99f1dc8e3d2b2aa",
+      "status": "exécuté et contrôlé sur une boucle et trois plans focaux"
+    },
+    {
+      "id": "poly:claim:ihc_units",
+      "kind": "claim",
+      "title": "L’unité physique GCI est confirmée",
+      "category": "claims",
+      "detail": "details/poly_claim_ihc_units.json",
+      "bytes": 1499,
+      "sha256": "ba79cd8b9ba94e46ee3660accb9ebeba64e816373464f41dd2b58dbe85c039b7",
+      "status": "bloqué : définition d’unité absente"
+    },
+    {
+      "id": "poly:claim:ihc_ct",
+      "kind": "claim",
+      "title": "La transformation IHC vers CT est établie",
+      "category": "claims",
+      "detail": "details/poly_claim_ihc_ct.json",
+      "bytes": 1420,
+      "sha256": "bce13e83728d97b6ef2c947725375df01b2ddd480176f892aa0f4c296775803d",
+      "status": "bloqué : repères et plan absents"
+    },
+    {
+      "id": "poly:claim:allen_numerics",
+      "kind": "claim",
+      "title": "Les mesures et pentes Allen ciblées sont reproduites",
+      "category": "claims",
+      "detail": "details/poly_claim_allen_numerics.json",
+      "bytes": 1915,
+      "sha256": "95f10361177e623d6c565aa00c4664ee877c00f8d80174ac7c1b22a34de025c6",
+      "status": "contrôlé dans ce périmètre"
+    },
+    {
+      "id": "poly:proof:adc2566322ce52002f5b",
+      "kind": "proof",
+      "title": "ALLEN_QC_RECALCULE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_adc2566322ce52002f5b.json",
+      "bytes": 818,
+      "sha256": "6a59c08aa52098e4c9bbf9a73ba51398ca2a04533c9fb9a67ecffa3ebbcd2693"
+    },
+    {
+      "id": "poly:proof:434a4a67ef976e1dc5cc",
+      "kind": "proof",
+      "title": "VERIFICATION_FINALE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_434a4a67ef976e1dc5cc.json",
+      "bytes": 817,
+      "sha256": "3c54be6df4a9907c4e8518e8cbd52718152979866681e94b13d5ff58f69efe06"
+    },
+    {
+      "id": "poly:claim:allen_original_qc",
+      "kind": "claim",
+      "title": "Le QC historique complet Allen est reconstitué",
+      "category": "claims",
+      "detail": "details/poly_claim_allen_original_qc.json",
+      "bytes": 1546,
+      "sha256": "69f1e96ced2b8a0741d72d0ad67b6f692054f7ab5653acd78369cfc6bf8f3f41",
+      "status": "bloqué : traces techniques et revue manquantes"
+    },
+    {
+      "id": "poly:proof:bf3ce708d2eb7e2f2af8",
+      "kind": "proof",
+      "title": "ALLEN_CRIBLAGE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_bf3ce708d2eb7e2f2af8.json",
+      "bytes": 813,
+      "sha256": "e7ea140911e9aded2182880b7bcb4d29156e9886f8a1a8bdcccf7426993ae7f2"
+    },
+    {
+      "id": "poly:claim:readers",
+      "kind": "claim",
+      "title": "Les parcours sont compris par de vrais lecteurs",
+      "category": "claims",
+      "detail": "details/poly_claim_readers.json",
+      "bytes": 1353,
+      "sha256": "b7d138f54e3afe3ef4257555409f0986ac139945cc4d1b8abeded4a663e0b9b8",
+      "status": "non mesuré"
+    },
+    {
+      "id": "poly:proof:e69193c706f2651dc389",
+      "kind": "proof",
+      "title": "ESSAIS_LECTEURS.md",
+      "category": "proofs",
+      "detail": "details/poly_proof_e69193c706f2651dc389.json",
+      "bytes": 811,
+      "sha256": "5b81c308b57b005badc161979ef974d4f7d4f273dd6dc20d11a63d664ea2fa50"
+    },
+    {
+      "id": "poly:claim:ashlar_disjoint_threshold_sensitivity",
+      "kind": "claim",
+      "title": "Sensibilité du rejet ASHLAR à une population de bandes disjointes en pixels",
+      "category": "claims",
+      "detail": "details/poly_claim_ashlar_disjoint_threshold_sensitivity.json",
+      "bytes": 2852,
+      "sha256": "e4071d6f0fc649393adfc643bffbad0ca0ac18db8183182f117efaa4faf1223c",
+      "status": "exécuté et contrôlé dans ce périmètre"
+    },
+    {
+      "id": "poly:proof:a3a75316e984911b59a2",
+      "kind": "proof",
+      "title": "RESUME_SEUIL.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_a3a75316e984911b59a2.json",
+      "bytes": 808,
+      "sha256": "0015fe041e8c5dcbe5cbc883c95c61c914fce02427cd981f93692c7861fb6597"
+    },
+    {
+      "id": "poly:claim:second_loop_source_available",
+      "kind": "claim",
+      "title": "Les trois canaux originaux de la seconde boucle sont disponibles au plan10",
+      "category": "claims",
+      "detail": "details/poly_claim_second_loop_source_available.json",
+      "bytes": 4456,
+      "sha256": "12565464483263be01237169ec78d1f3c28feb1a76be8386191685af1401689f",
+      "status": "source contrôlée et seconde boucle évaluée auplan10"
+    },
+    {
+      "id": "poly:proof:2f1dae2c9a0e2ab19517",
+      "kind": "proof",
+      "title": "PORTE_SECONDE_BOUCLE.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_2f1dae2c9a0e2ab19517.json",
+      "bytes": 829,
+      "sha256": "8c4868b8bfe96aebec00195511b1f091af515c21271e3dd44831ea9fd0ec05c6"
+    },
+    {
+      "id": "poly:claim:night_consolidation_integrity",
+      "kind": "claim",
+      "title": "État local consolidé et contrôlé sans répétition des calculs scientifiques",
+      "category": "claims",
+      "detail": "details/poly_claim_night_consolidation_integrity.json",
+      "bytes": 3320,
+      "sha256": "71553272cced865d22363465ab3bca95df4e6af2f88c58ef11f5a30ad45f243b",
+      "status": "exécuté et contrôlé"
+    },
+    {
+      "id": "poly:proof:caeec3b52ff4e88ed690",
+      "kind": "proof",
+      "title": "RESUME_AVANCEMENT.json",
+      "category": "proofs",
+      "detail": "details/poly_proof_caeec3b52ff4e88ed690.json",
+      "bytes": 828,
+      "sha256": "c8d79ba4b925452badfd955fbdde4ffcc18fdb760c69baa9478e6bfd01265ff3"
+    }
+  ],
+  "links_file": "links.json",
+  "loading": {
+    "initial": "index.json",
+    "on_selection": "one detail file",
+    "relations": "links.json only on demand",
+    "raw_files": "never automatically loaded"
+  }
+}

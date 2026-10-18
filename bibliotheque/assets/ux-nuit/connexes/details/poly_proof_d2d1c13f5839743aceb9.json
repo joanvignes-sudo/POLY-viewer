@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:d2d1c13f5839743aceb9",
+  "kind": "proof",
+  "title": "REGIONS_SOURCE.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      2,
+      "proofs",
+      1
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_AFFINAGE_2026-10-14/REGIONS_SOURCE.json",
+    "sha256": "2a482e538c11107becd0cb0f2477caa0828dca24334de6e121bf8ceec20efb51",
+    "bytes": 5407,
+    "content_loaded": false
+  }
+}

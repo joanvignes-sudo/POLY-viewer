@@ -1,0 +1,45 @@
+{
+  "version": "0.92",
+  "approved_on": "2026-10-11",
+  "status": "adopted",
+  "views": [
+    "Anatomie en brume",
+    "Anatomie déployée",
+    "Voyage dans une chaîne",
+    "Observatoire des échelles",
+    "Quatre chaînes"
+  ],
+  "primary_view": "Anatomie en brume",
+  "shared_evidence_for_all_reading_depths": true,
+  "spatial_rules": [
+    "Provenance, unité, repère, résolution et recalage explicites",
+    "Géométrie illustrative étiquetée",
+    "Changement de préparation visible entre échelles",
+    "Épaisseur amplifiée signalée"
+  ],
+  "temporal_rules": [
+    "Horloge expérimentale distincte de durée pédagogique",
+    "Délai inconnu non remplacé par une valeur physiologique",
+    "Cohortes et préparations distinctes préservées"
+  ],
+  "four_chain_rules": [
+    "Recouvrement visuel distinct d’une interaction mesurée",
+    "Effet combiné seulement avec modèle nommé et validé",
+    "Horloges incompatibles conservées séparées"
+  ],
+  "source_publication": {
+    "version": "0.92",
+    "canonical_direction_approved": "2026-10-11 par Joan Vignes",
+    "source_version": "0.91",
+    "paths": 50,
+    "human_paths": 22,
+    "public_documents": 215,
+    "catalogue_files": 1631,
+    "correspondence_published": false,
+    "new_measured_geometry": false,
+    "four_chain_combined_prediction": false,
+    "baseline_public_commit": "49ee071dcef2e4eaa9f3748272235fae4fb100aa",
+    "public_scope": "Scientific syntheses, protocol/evidence metadata and source links; no local raw originals or private mail."
+  },
+  "next_gate": "Intégrer un premier ensemble anatomique humain mesuré, après contrôle des licences et des transformations."
+}

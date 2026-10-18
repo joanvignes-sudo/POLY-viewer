@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "canonical_modes": 5,
+  "rotation_zoom_layers_and_steps": true,
+  "four_chain_toggle": true,
+  "documented_paths": 50,
+  "human_paths": 22,
+  "review_records": 122,
+  "all_reading_steps": true,
+  "specialist_deep_link": true,
+  "table_schema": true,
+  "public_documents": 215,
+  "public_catalogue": 1631,
+  "local_links": 21,
+  "mobile_3d_modes": 5,
+  "mobile_atlas_views": 11,
+  "private_correspondence_excluded": true,
+  "javascript_errors": []
+}

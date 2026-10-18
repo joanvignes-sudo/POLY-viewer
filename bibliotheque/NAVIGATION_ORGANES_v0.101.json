@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8899/",
+  "checks": [
+    "published heart registration round trip",
+    "four heart levels",
+    "source voxel values",
+    "share level, position and camera",
+    "15 vagus structures and C10 focus",
+    "C10 native planes and noninterpolated annotations",
+    "8-bit source image contrast",
+    "shared image position and annotation mask",
+    "three cycles, stable 7/16/5 geometries",
+    "mobile all three explorers",
+    "no WebGL fallback"
+  ],
+  "javascript_errors": []
+}

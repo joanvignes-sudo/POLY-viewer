@@ -1,0 +1,13 @@
+{
+  "status": "POST_OBSERVATION_STRUCTURAL_DIAGNOSTIC",
+  "candidate_scanner_channel_zero_based": 11,
+  "rising_edges": 535,
+  "first_rising_time_column": 0.0,
+  "edge_interval_min_median_max": [
+    1.2989999999999782,
+    1.3000000000000114,
+    1.3010003000000054
+  ],
+  "inferred_film_start": null,
+  "automatic_metadata_correction": false
+}

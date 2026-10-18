@@ -1,0 +1,3 @@
+# Sensibilité à l'état initial d'incertitude — v0.14
+
+Extension exploratoire après la comparaison initiale des choix, fixée avant ses propres calculs. Refaire uniquement MetaReconstruction pour la cohorte neuronale avec epsilon initial 0 et 1, en complément du 0,5 initial. Garder les mêmes sessions d'entraînement/évaluation, bornes, trois départs et sélection sur entraînement. Aucun choix de l'état initial sur résultat de test : conserver les trois variantes. Comparer les pertes à StaticQ et PreviousChoice, et exposer convergence et dérives d'état. Ce contrôle porte sur une convention de notre reconstruction, sans reproduire le modèle hiérarchique auteur.

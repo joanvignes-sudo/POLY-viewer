@@ -1,0 +1,76 @@
+# POLY — première prospection des modèles émotionnels
+
+Date : 4 octobre 2026. Statut : revue exploratoire hors canon ; aucune modification de la baseline publique v0.22. Cette passe compare des familles de modèles et repère des expériences discriminantes. Ce n'est ni une revue systématique exhaustive ni une réanalyse des données brutes.
+
+## Question et vocabulaire de travail
+
+Qu'est-ce qui varie, qu'est-ce qui transporte cette variation, qu'est-ce qui la détecte, et qu'est-ce que sa perturbation modifie ? On distingue l'état corporel mesuré, la dynamique neurale, l'action observable, l'évaluation de la situation et le vécu rapporté. Leur covariation ne suffit pas à les identifier les uns aux autres.
+
+« Affect » désigne ici un ensemble de phénomènes à opérationnaliser ; « émotion » un épisode défini par un protocole et ses composantes ; « humeur » un état plus durable dont la fenêtre doit être précisée. Valence rapportée, activation physiologique et saillance sont des variables différentes. L'interoception concerne les signaux internes et leur traitement : signal disponible, performance de détection, confiance et questionnaire ne sont pas interchangeables. La neuromodulation désigne une modification mesurable des propriétés d'une cellule ou d'un circuit, sans lui attribuer par défaut un nom d'émotion.
+
+**Émotion et conscience restent séparées.** Un comportement défensif animal, un signal autonome ou une réponse neurale ne prouvent pas un vécu humain équivalent. Un rapport de vécu constitue une donnée propre, avec les limites du langage, de la mémoire et de la tâche.
+
+## Comparaison contradictoire
+
+| Famille | Proposition du modèle | Apport pour POLY | Discrimination à rechercher | Limite / controverse |
+|---|---|---|---|---|
+| Émotions discrètes, Ekman [S01] | Certaines familles émotionnelles présentent des régularités évolutives d'expression et de réponse. | Catalogue de contrastes ; conserver expression, action et rapport séparés. | Une signature conserve-t-elle sa spécificité hors de la culture, tâche et modalité d'apprentissage ? | Une reconnaissance de visages contraints ne démontre ni programme biologique exclusif ni universalité de toutes les composantes. |
+| Systèmes affectifs sous-corticaux, Panksepp [S02] | Des systèmes d'action et de valeur conservés participent aux affects primaires. | Examiner hypothalamus, tronc, PAG, récompense et réponses d'approche/évitement. | Perturbation sélective d'un circuit, réponse et récupération ; dissociation des sorties motrices et autonomes. | L'homologie de circuit n'établit pas l'identité d'expérience subjective entre espèces ; les catégories proposées ne sont pas des faits de POLY. |
+| Dimensions, Russell [S03] | Les relations entre descripteurs affectifs peuvent être représentées par valence et activation. | Décrire des états continus et comparer même entrée / état différent. | Les axes prédisent-ils un résultat indépendant des mots servant à les construire ? | Un espace descriptif n'est pas un mécanisme. Deux épisodes de même valence/activation peuvent différer par contexte, action et apprentissage. |
+| Appraisal et processus composants, Scherer [S04] | L'évaluation de pertinence, buts, contrôle et normes contribue à une dynamique multicomposante. | Introduire contexte et histoire comme variables observables, avec branches parallèles. | Manipuler contrôle ou attente à entrée sensorielle comparable ; mesurer les composantes sur une horloge commune. | Les séquences d'évaluation et leur nécessité restent des propositions testables ; des corrélations ne fixent pas leur ordre causal. |
+| Corps, interoception et régulation, Craig / Damasio [S05–S06] | Le traitement des états corporels contribue aux sentiments et à la régulation. | Boucles corps → détection → réseau → commande → corps, avec récepteurs et afférences identifiés. | Manipuler une variable corporelle, contrôler le contexte et perturber un relais candidat. | L'état périphérique ne spécifie pas à lui seul l'émotion ; insula et corps ne sont pas des générateurs uniques démontrés. |
+| Construction affective, Barrett [S07] | Les épisodes dépendent d'interoception, d'allostasie, de connaissances et de catégorisation. | Séparer mesures, concepts et étiquettes ; tester variation contextuelle. | Changer attente ou catégorisation en contrôlant entrées et sorties ; comparaison hors échantillon. | Risque de modèle trop flexible si ses prédictions et résultats qui le réfutent ne sont pas fixés à l'avance. Une observation contextuelle seule ne le distingue pas de tous les autres modèles. |
+| Prédiction interoceptive / inférence active, EPIC [S08] | Prédictions, erreurs et précision organisent échanges viscéraux et corticaux. | Formuler un modèle nul et un modèle prédictif sur les mêmes signaux. | Distinguer erreur attendue, surprise, commande autonome et afférence par manipulations indépendantes. | Une connectivité compatible ne démontre pas le calcul proposé ; les variables latentes doivent être identifiables. |
+| Défense, récompense et apprentissage [S09–S10] | Circuits de protection, valeur attendue et réponses apprises peuvent être analysés sans les confondre avec le vécu. | Comparer action, attente, réponse autonome, apprentissage et rapport. | Dissocier réponse défensive et rapport ; contrôler mouvement et anticipation. | Le cadre « deux systèmes » est un modèle, pas une frontière biologique définitivement établie. Dopamine ne signifie pas automatiquement plaisir. |
+| Neuromodulation et reconfiguration [S11–S14] | Transmetteur, récepteur, cellule cible et état du réseau déterminent les effets de modulation. | Point d'appui C04, puis C02/C05/C09/C11 ; co-transmission et retour restent explicites. | Perturber une projection ou un récepteur avec contrôle d'éveil et de mouvement. | Une concentration moyenne ou la pupille ne suffit pas à identifier une émotion ni une population neuromodulatrice. |
+
+Les familles ne sont pas toutes au même niveau : les dimensions décrivent, les circuits proposent des mécanismes et les théories de construction proposent une architecture générale. Il faut comparer leurs prédictions sur une tâche commune, plutôt que choisir un vainqueur à partir de vocabulaires différents.
+
+## Première passe empirique et contre-exemples
+
+**F01 — corps × contexte, souris.** Hsueh et al. [S15] imposent une tachycardie par stimulation optogénétique cardiaque. Des conduites de type anxieux augmentent dans des contextes risqués ; inhiber l'insula postérieure atténue cet effet. C'est un appui causal local pour une interaction corps–cerveau dépendante du contexte. Ce résultat ne montre ni une tachycardie suffisante dans toute situation, ni un vécu de peur humaine, ni toute la voie afférente intermédiaire. Priorité d'extraction : figure, contrôles optiques, locomotion, conditions de risque, synchronisation et incertitudes.
+
+**F02 — calcul de valeur, souris.** Eshel et al. [S10] associent enregistrement et manipulation optogénétique de neurones VTA dans une tâche de conditionnement. Leur résultat soutient une contribution de neurones GABA locaux à un calcul d'erreur de prédiction dopaminergique. Il justifie une chaîne « attente → signal → apprentissage » dans cette préparation ; il ne donne pas un marqueur universel de plaisir ou d'émotion.
+
+**F03 — sérotonine, temporalités et alternatives.** Cohen et al. [S12] décrivent des réponses de neurones sérotoninergiques à récompense et punition sur plusieurs échelles de temps. Le travail de 2025 [S13] propose un codage prospectif de valeur dans sa tâche. Conserver les observations comme faits circonscrits et les interprétations computationnelles comme modèles concurrents ; éviter « sérotonine = bonheur ».
+
+**F04 — noradrénaline, hétérogénéité des projections.** Le travail du 16 septembre 2026 [S14] rapporte une organisation topographique et fonctionnelle du LC chez la souris, avec des contrastes entre projections. Il motive une extraction projection par projection avant de traiter C04/E22 comme un signal global. La présente passe est fondée sur le résumé et les passages accessibles ; les paramètres et contrôles complets restent à auditer.
+
+**F05 — contre-exemple humain au générateur unique.** Feinstein et al. [S16] rapportent peur et panique déclenchées par CO₂ chez des personnes avec lésions amygdaliennes bilatérales. L'effectif lésionnel est limité. Le résultat fragilise la règle « pas d'amygdale, pas de peur dans toute condition », sans démontrer que l'amygdale ne participe jamais à la peur ni que le trajet alternatif est entièrement connu.
+
+**F06 — anatomie fonctionnelle et allostasie.** Kleckner et al. [S17] combinent données anatomiques de macaque et connectivité intrinsèque humaine pour examiner un système allostatique/interoceptif. Appui de compatibilité d'architecture ; ne pas transformer une connectivité de repos en chaîne causale d'émotion ni raccorder les horloges de cohortes différentes.
+
+**F07 — respiration humaine, extension récente.** Le travail de 2026 [S18] étudie synchronisation et entraînement de signaux cérébraux avec la respiration dans plusieurs conditions. Il fournit une piste vers C11/E66, sans établir dans cette passe une variation émotionnelle ni une horloge générale. Extraire les sites, conditions, limites et données avant tout raccord à l'affect.
+
+## Ce qui résiste à cette prospection
+
+On peut conserver comme exigences de représentation : contexte, état corporel, population et projection, récepteur, histoire, sorties multiples et distinction de temporalités. Ce sont des exigences méthodologiques et des résultats locaux documentés, **pas une architecture affective universelle déjà établie**. La controverse sur catégories, construction et vécu animal reste ouverte. Aucun résultat de cette passe n'autorise une fusion avec les variables de conscience de C12.
+
+## Sources et profondeur de lecture
+
+Consultation web : 4 octobre 2026. Les pages éditeur et notices bibliographiques ont été recherchées ; plusieurs ouvertures sont limitées par redirection ou protection automatique. Les synthèses ci-dessus restent limitées aux résumés et passages accessibles, sauf indication. Pas d'audit des suppléments ni de calcul sur données brutes. Les références historiques servent à identifier le modèle, non à certifier toutes ses propositions. Les revues S19–S20 orientent la prospection et ne remplacent pas une preuve expérimentale individuelle.
+
+| ID | Référence et lien | Nature / accès dans cette passe |
+|---|---|---|
+| S01 | Ekman, 1992, *An argument for basic emotions*. [Article](https://gruberpeplab.com/3131/1.2_Ekman1992_Basic%20Emotions.pdf) ; [bibliographie de l'auteur](https://www.paulekman.com/resources/journal-articles/) | Texte théorique ; bibliographie ouverte et extraits indexés. |
+| S02 | Panksepp, 2011, *Cross-Species Affective Neuroscience…*. [PLOS ONE](https://doi.org/10.1371/journal.pone.0021236) | Synthèse/position du proposant ; résumé accessible. |
+| S03 | Russell, 1980, *A circumplex model of affect*. DOI 10.1037/h0077714. [Texte original](https://pdodds.w3.uvm.edu/research/papers/others/1980/russell1980a.pdf) | Article original ; PDF ouvert, description dimensionnelle. |
+| S04 | Scherer, 2009, *The dynamic architecture of emotion*. [Éditeur](https://doi.org/10.1080/02699930902928969) | Modèle et synthèse ; résumé accessible. |
+| S05 | Craig, 2002, *How do you feel?*. [Nature Reviews Neuroscience](https://www.nature.com/articles/nrn894) | Opinion anatomofonctionnelle ; résumé. |
+| S06 | Damasio & Carvalho, 2013, *The nature of feelings*. [Nature Reviews Neuroscience](https://www.nature.com/articles/nrn3403) | Opinion ; résumé. |
+| S07 | *The Theory of Constructed Emotion: More Than a Feeling*, 2025. [Texte](https://pmc.ncbi.nlm.nih.gov/articles/PMC12164598/) | Exposé théorique ; passages indexés, ouverture bloquée. |
+| S08 | Barrett & Simmons, 2015, *Interoceptive predictions in the brain*. [Éditeur](https://www.nature.com/articles/nrn3950) ; [manuscrit des auteurs](https://affective-science.org/pubs/2015/barrett-simmons-nature-neuroscience-2015.pdf) | Modèle EPIC ; propositions et passages indexés. |
+| S09 | LeDoux & Pine, 2016, *Using Neuroscience to Help Understand Fear and Anxiety: A Two-System Framework*. [Manuscrit des auteurs](https://www.cns.nyu.edu/ledoux/pdf/LeDoux%20Pine%20Two%20Systsem.pdf) | Cadre théorique ; passages accessibles. |
+| S10 | Eshel et al., 2015, *Arithmetic and local circuitry underlying dopamine prediction errors*. [Nature](https://www.nature.com/articles/nature14855) | Expérience originale ; résumé et descriptions de figures. Erratum signalé par l'éditeur : à consulter avant extraction numérique. |
+| S11 | Marder, 2012, *Neuromodulation of neuronal circuits: back to the future*. [Texte](https://pmc.ncbi.nlm.nih.gov/articles/PMC3482119/) | Revue mécanistique ; passages accessibles. |
+| S12 | Cohen, Amoroso & Uchida, 2015, *Serotonergic neurons signal reward and punishment on multiple timescales*. [eLife](https://elifesciences.org/articles/06346) | Expérience originale ; passages indexés, ouverture éditeur limitée. |
+| S13 | *A prospective code for value in the serotonin system*, 2025. [Nature](https://www.nature.com/articles/s41586-025-08731-7) | Expérience et modèle computationnel ; résumé indexé. |
+| S14 | *Topographic structure and function of locus coeruleus noradrenaline neurons*, 16 septembre 2026. [Nature](https://www.nature.com/articles/s41586-026-11026-0) | Expérience originale récente ; résumé/passages indexés. |
+| S15 | Hsueh et al., 2023, *Cardiogenic control of affective behavioural state*. [Nature](https://www.nature.com/articles/s41586-023-05748-8) | Expérience originale ; résumé et passage sur inhibition insulaire. |
+| S16 | Feinstein et al., 2013, *Fear and panic in humans with bilateral amygdala damage*. [Nature Neuroscience](https://www.nature.com/articles/nn.3323) | Expérience humaine ; notice et résultat indexés ; détails à extraire. |
+| S17 | Kleckner et al., 2017, *Evidence for a large-scale brain system supporting allostasis and interoception in humans*. [Nature Human Behaviour](https://www.nature.com/articles/s41562-017-0069) | Anatomie/connectivité ; résumé. |
+| S18 | *Human forebrain neural synchronization and entrainment to breathing during wakefulness, sleep, and external mechanical ventilation*, 2026. [Nature Communications](https://www.nature.com/articles/s41467-026-73828-0) | Expérience originale ; résumé/passages indexés, piste non promue à preuve affective. |
+| S19 | Greenwood & Garfinkel, 2025, *Interoceptive Mechanisms and Emotional Processing*. [Notice](https://pubmed.ncbi.nlm.nih.gov/39423429/) | Revue, DOI 10.1146/annurev-psych-020924-125202 ; résumé indexé. |
+| S20 | *Associations between cognitive appraisals and emotions: A meta-analytic review*, 2024. [Notice](https://pubmed.ncbi.nlm.nih.gov/39404856/) | Méta-analyse ; résumé indexé ; association distincte de causalité. |
+
+Étape suivante : extraire S15, S10 et S14 en premier, avec figures, suppléments, données, contrôles et limites. Étendre ensuite aux expériences humaines d'interoception, aux peptides et à la régulation affective. Une nouvelle référence améliore POLY seulement si elle remplit une case expérimentale ou élimine une explication concurrente.

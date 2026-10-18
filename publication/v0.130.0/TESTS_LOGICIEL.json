@@ -1,0 +1,81 @@
+{
+  "test-journey.cjs": {
+    "clock": "pause,seek,6–120 s checked",
+    "groups": 78,
+    "intervals": 544,
+    "links": 524,
+    "boundaries": 514,
+    "C01": "I01→I02; explicit reconstruction toward I05; no automatic I02→I03"
+  },
+  "test-catalogue.cjs": {
+    "passed": true,
+    "groups": 78,
+    "canonicalChains": 14,
+    "nodes": 531,
+    "edges": 511,
+    "intervals": 544,
+    "rendered": 544,
+    "values": 146,
+    "sources": 282,
+    "manualActionsPreserved": true,
+    "canonicalRawValuesPreserved": true,
+    "timingRecords": 45,
+    "decisions": {
+      "VISIBLE": 14,
+      "BOUNDARY": 84,
+      "UNPLACED": 413
+    },
+    "origins": {
+      "ACTION_HISTORIQUE": 39,
+      "CURATED_VISUAL_MAP": 60,
+      "AUTO_BASELINE": 445
+    },
+    "unresolvedTimes": [],
+    "documentaryOccurrencesNotIndependentStudies": true
+  },
+  "test-engine.cjs": {
+    "passed": true,
+    "groups": 10,
+    "nodes": 82,
+    "edges": 97,
+    "decisions": {
+      "VISIBLE": 10,
+      "BOUNDARY": 55,
+      "UNPLACED": 32
+    },
+    "branch_choice": true,
+    "pause_resume": true,
+    "gap_stop": true,
+    "back": true,
+    "clinical_boundaries": true,
+    "species_isolation": true,
+    "invalid_inputs_rejected": true
+  },
+  "test-brain.cjs": {
+    "passed": true,
+    "regions": 17,
+    "vertices": 148177,
+    "triangles": 299550,
+    "mesh_sha256": "4630d8682ddf780aaccfadb52876f94e903ae07b5cb294a773c5f6c0538c96b1",
+    "transform": {
+      "center": [
+        0,
+        -16,
+        2.5
+      ],
+      "scale": 0.002197802197802198,
+      "translation": [
+        0,
+        3.3,
+        0
+      ],
+      "axes": "(-x,z,y)",
+      "units": "source mm; destination unités graphiques"
+    },
+    "roundtrip_max_error": 9.947598300641403e-14,
+    "axes_signs": true,
+    "indices_bounds": true,
+    "constant_invalid_cases": true,
+    "anatomical_subject_registration": false
+  }
+}

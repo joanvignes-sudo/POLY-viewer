@@ -1,0 +1,830 @@
+{
+  "version": "0.95",
+  "dataset": "BigBrain1, Release 2015; PLoSBiology2020 cortical boundary surfaces",
+  "space": "BigBrain native histological surface coordinates",
+  "units": "mm",
+  "display_transform": "(x,z,-y), no scale change; display axes permuted only",
+  "registration_to_CerebrA_MNI2009cSym": null,
+  "subject_scope": "One post-mortem human brain; distinct from CerebrA average and P8",
+  "license": "CC BY-NC-SA 4.0; derivatives in this directory under the same license",
+  "attribution": "BigBrain: Amunts et al. (2013), McGill / Forschungszentrum Jülich. Cortical layers: Wagstyl et al. (2020). See Credits.txt.",
+  "citations": [
+    "https://doi.org/10.1126/science.1235381",
+    "https://doi.org/10.1371/journal.pbio.3000678"
+  ],
+  "sources": [
+    {
+      "file": "License.txt",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/License.txt",
+      "bytes": 18985,
+      "sha256": "c50c4a486b7ea8b36046490427598fb7cf2aa8483f4b41f27f6756480d19db37"
+    },
+    {
+      "file": "Credits.txt",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/Credits.txt",
+      "bytes": 5130,
+      "sha256": "48f3ae98980c107cd9281e84dc6fd5aca55c885b821ce6585ac24c98ed479854"
+    },
+    {
+      "file": "layer0_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer0_left_327680.gii.gz",
+      "bytes": 3599307,
+      "sha256": "c5dcc391a4968ec2024d1bab6d2ef0a8c9d588abe23592137608114b544119ce"
+    },
+    {
+      "file": "layer1_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer1_left_327680.gii.gz",
+      "bytes": 3599925,
+      "sha256": "94c0c96004cadc2eb4461e667180975ff9bd71a6d24107cc09b8f99e7535f41f"
+    },
+    {
+      "file": "layer2_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer2_left_327680.gii.gz",
+      "bytes": 3599806,
+      "sha256": "d21a667422e2878435b4b42fdeb61dad86b6876ac2ed2dc681f4f008a760d657"
+    },
+    {
+      "file": "layer3_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer3_left_327680.gii.gz",
+      "bytes": 3599409,
+      "sha256": "fcfb1bd16c3754d551f24e39cff03060dc5e406aff26c2c908f3dcfc1810a1b1"
+    },
+    {
+      "file": "layer4_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer4_left_327680.gii.gz",
+      "bytes": 3599161,
+      "sha256": "174e3806d483ecf32a5a87827b7054ea33b9d06fe3d294ed6d3f524ba40bcbc1"
+    },
+    {
+      "file": "layer5_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer5_left_327680.gii.gz",
+      "bytes": 3598197,
+      "sha256": "6126cc8aee4796c87ea610220d8af8558bac80ccfa5fe1eed8b982f59ff56df4"
+    },
+    {
+      "file": "layer6_left_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer6_left_327680.gii.gz",
+      "bytes": 3596340,
+      "sha256": "fdc6c297e924de8108a331daa3bb1155323ce42c99a8a8f04539be9065820763"
+    },
+    {
+      "file": "layer0_right_327680.gii.gz",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/gii/layer0_right_327680.gii.gz",
+      "bytes": 3625737,
+      "sha256": "a92a37cdc7aedf2a4a5c4e367f0d6aa7b7d9cd15ae7d8ce53b839d8bd55391ee"
+    },
+    {
+      "file": "lh.BigBrain.mask.label.txt",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/Layer_Segmentation/3D_Surfaces/PLoSBiology2020/lh.BigBrain.mask.label.txt",
+      "bytes": 327684,
+      "sha256": "da5f4165658bcef38968e991a732a3ba09e972b38ec651c2cd5c6a5399294ec7"
+    }
+  ],
+  "mesh_sha256": "39bf153516c33bd6f7dab2d0771e79ec36ec743f8dbc5e326436069634fdc518",
+  "mesh_bytes": 12505656,
+  "mesh_file": "surfaces.bin",
+  "source_histology_voxel_um": 20,
+  "boundary_names": [
+    "Surface piale",
+    "Frontière I / II",
+    "Frontière II / III",
+    "Frontière III / IV",
+    "Frontière IV / V",
+    "Frontière V / VI",
+    "Frontière VI / substance blanche"
+  ],
+  "meshes": [
+    {
+      "id": "context-left",
+      "label": "Cortex gauche",
+      "kind": "context",
+      "vertices": 163842,
+      "triangles": 327680,
+      "position_offset": 0,
+      "index_offset": 1966104,
+      "bounds_mm": [
+        [
+          -64.01119995117188,
+          -70.15399932861328,
+          -36.13090133666992
+        ],
+        [
+          5.363810062408447,
+          78.14510345458984,
+          54.77119827270508
+        ]
+      ]
+    },
+    {
+      "id": "context-right",
+      "label": "Cortex droit",
+      "kind": "context",
+      "vertices": 163842,
+      "triangles": 327680,
+      "position_offset": 5898264,
+      "index_offset": 7864368,
+      "bounds_mm": [
+        [
+          -13.712599754333496,
+          -68.82479858398438,
+          -36.03559875488281
+        ],
+        [
+          65.75640106201172,
+          77.6852035522461,
+          53.48780059814453
+        ]
+      ]
+    },
+    {
+      "id": "lateral-0",
+      "label": "Surface piale",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11796528,
+      "index_offset": 11807604,
+      "bounds_mm": [
+        [
+          -59.21419906616211,
+          -6.847360134124756,
+          13.70930004119873
+        ],
+        [
+          -43.680301666259766,
+          6.696730136871338,
+          29.425100326538086
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 0
+    },
+    {
+      "id": "lateral-1",
+      "label": "Frontière I / II",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11826840,
+      "index_offset": 11837916,
+      "bounds_mm": [
+        [
+          -59.21730041503906,
+          -6.995719909667969,
+          13.84850025177002
+        ],
+        [
+          -43.4900016784668,
+          6.682030200958252,
+          29.247900009155273
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 1
+    },
+    {
+      "id": "lateral-2",
+      "label": "Frontière II / III",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11857152,
+      "index_offset": 11868228,
+      "bounds_mm": [
+        [
+          -59.22140121459961,
+          -7.125909805297852,
+          14.017800331115723
+        ],
+        [
+          -43.33319854736328,
+          6.672389984130859,
+          29.433500289916992
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 2
+    },
+    {
+      "id": "lateral-3",
+      "label": "Frontière III / IV",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11887464,
+      "index_offset": 11898540,
+      "bounds_mm": [
+        [
+          -59.229400634765625,
+          -7.580999851226807,
+          13.851900100708008
+        ],
+        [
+          -43.03160095214844,
+          6.676499843597412,
+          29.986900329589844
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 3
+    },
+    {
+      "id": "lateral-4",
+      "label": "Frontière IV / V",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11917776,
+      "index_offset": 11928852,
+      "bounds_mm": [
+        [
+          -59.22959899902344,
+          -7.8552398681640625,
+          13.787599563598633
+        ],
+        [
+          -42.95429992675781,
+          6.703350067138672,
+          30.166000366210938
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 4
+    },
+    {
+      "id": "lateral-5",
+      "label": "Frontière V / VI",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11948088,
+      "index_offset": 11959164,
+      "bounds_mm": [
+        [
+          -59.23270034790039,
+          -8.245389938354492,
+          13.53689956665039
+        ],
+        [
+          -42.81669998168945,
+          6.758470058441162,
+          30.586299896240234
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 5
+    },
+    {
+      "id": "lateral-6",
+      "label": "Frontière VI / substance blanche",
+      "kind": "boundary",
+      "vertices": 923,
+      "triangles": 1603,
+      "position_offset": 11978400,
+      "index_offset": 11989476,
+      "bounds_mm": [
+        [
+          -59.249000549316406,
+          -8.653579711914062,
+          13.301600456237793
+        ],
+        [
+          -42.6609001159668,
+          6.823699951171875,
+          30.978200912475586
+        ]
+      ],
+      "patch": "lateral",
+      "boundary": 6
+    },
+    {
+      "id": "posterior-0",
+      "label": "Surface piale",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12008712,
+      "index_offset": 12021204,
+      "bounds_mm": [
+        [
+          -32.726200103759766,
+          -66.56420135498047,
+          3.3906800746917725
+        ],
+        [
+          -17.882400512695312,
+          -52.17319869995117,
+          18.247699737548828
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 0
+    },
+    {
+      "id": "posterior-1",
+      "label": "Frontière I / II",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12043692,
+      "index_offset": 12056184,
+      "bounds_mm": [
+        [
+          -32.51689910888672,
+          -66.41179656982422,
+          3.1887199878692627
+        ],
+        [
+          -17.70050048828125,
+          -52.39970016479492,
+          18.190399169921875
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 1
+    },
+    {
+      "id": "posterior-2",
+      "label": "Frontière II / III",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12078672,
+      "index_offset": 12091164,
+      "bounds_mm": [
+        [
+          -32.516300201416016,
+          -66.26349639892578,
+          3.018399953842163
+        ],
+        [
+          -17.556299209594727,
+          -52.6338996887207,
+          18.150699615478516
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 2
+    },
+    {
+      "id": "posterior-3",
+      "label": "Frontière III / IV",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12113652,
+      "index_offset": 12126144,
+      "bounds_mm": [
+        [
+          -32.848899841308594,
+          -65.8218002319336,
+          2.622580051422119
+        ],
+        [
+          -17.131399154663086,
+          -52.29359817504883,
+          18.021900177001953
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 3
+    },
+    {
+      "id": "posterior-4",
+      "label": "Frontière IV / V",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12148632,
+      "index_offset": 12161124,
+      "bounds_mm": [
+        [
+          -33.01580047607422,
+          -65.7874984741211,
+          2.4507899284362793
+        ],
+        [
+          -16.94930076599121,
+          -52.141300201416016,
+          18.100900650024414
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 4
+    },
+    {
+      "id": "posterior-5",
+      "label": "Frontière V / VI",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12183612,
+      "index_offset": 12196104,
+      "bounds_mm": [
+        [
+          -33.41510009765625,
+          -65.56109619140625,
+          2.296060085296631
+        ],
+        [
+          -16.719900131225586,
+          -51.85490036010742,
+          18.287099838256836
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 5
+    },
+    {
+      "id": "posterior-6",
+      "label": "Frontière VI / substance blanche",
+      "kind": "boundary",
+      "vertices": 1041,
+      "triangles": 1874,
+      "position_offset": 12218592,
+      "index_offset": 12231084,
+      "bounds_mm": [
+        [
+          -33.87070083618164,
+          -65.18820190429688,
+          2.146049976348877
+        ],
+        [
+          -16.52400016784668,
+          -51.56380081176758,
+          18.493499755859375
+        ]
+      ],
+      "patch": "posterior",
+      "boundary": 6
+    },
+    {
+      "id": "superior-0",
+      "label": "Surface piale",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12253572,
+      "index_offset": 12266280,
+      "bounds_mm": [
+        [
+          -27.710800170898438,
+          -6.314529895782471,
+          42.297698974609375
+        ],
+        [
+          -12.723600387573242,
+          8.409799575805664,
+          54.33940124511719
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 0
+    },
+    {
+      "id": "superior-1",
+      "label": "Frontière I / II",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12289584,
+      "index_offset": 12302292,
+      "bounds_mm": [
+        [
+          -27.58169937133789,
+          -6.501760005950928,
+          42.1598014831543
+        ],
+        [
+          -12.847000122070312,
+          8.562589645385742,
+          54.153499603271484
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 1
+    },
+    {
+      "id": "superior-2",
+      "label": "Frontière II / III",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12325596,
+      "index_offset": 12338304,
+      "bounds_mm": [
+        [
+          -27.604900360107422,
+          -6.6805901527404785,
+          42.06370162963867
+        ],
+        [
+          -13.010499954223633,
+          8.700480461120605,
+          53.981998443603516
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 2
+    },
+    {
+      "id": "superior-3",
+      "label": "Frontière III / IV",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12361608,
+      "index_offset": 12374316,
+      "bounds_mm": [
+        [
+          -27.854000091552734,
+          -7.187079906463623,
+          41.825199127197266
+        ],
+        [
+          -13.529500007629395,
+          9.21615982055664,
+          53.63819885253906
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 3
+    },
+    {
+      "id": "superior-4",
+      "label": "Frontière IV / V",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12397620,
+      "index_offset": 12410328,
+      "bounds_mm": [
+        [
+          -27.95240020751953,
+          -7.321539878845215,
+          41.783599853515625
+        ],
+        [
+          -13.648699760437012,
+          9.41821002960205,
+          53.564300537109375
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 4
+    },
+    {
+      "id": "superior-5",
+      "label": "Frontière V / VI",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12433632,
+      "index_offset": 12446340,
+      "bounds_mm": [
+        [
+          -28.135299682617188,
+          -7.605460166931152,
+          41.67829895019531
+        ],
+        [
+          -14.176600456237793,
+          9.990900039672852,
+          53.30120086669922
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 5
+    },
+    {
+      "id": "superior-6",
+      "label": "Frontière VI / substance blanche",
+      "kind": "boundary",
+      "vertices": 1059,
+      "triangles": 1942,
+      "position_offset": 12469644,
+      "index_offset": 12482352,
+      "bounds_mm": [
+        [
+          -28.337900161743164,
+          -7.852920055389404,
+          41.585201263427734
+        ],
+        [
+          -14.60669994354248,
+          10.585700035095215,
+          52.94070053100586
+        ]
+      ],
+      "patch": "superior",
+      "boundary": 6
+    }
+  ],
+  "patches": [
+    {
+      "id": "lateral",
+      "label": "Échantillon latéral",
+      "selection": "Nearest unmasked pial vertex to requested native-space coordinate; Euclidean 8 mm neighbourhood; not an anatomical parcellation",
+      "query_mm": [
+        -50,
+        0,
+        20
+      ],
+      "source_vertex": 87384,
+      "center_mm": [
+        -51.39070129394531,
+        -1.0197900533676147,
+        21.52790069580078
+      ],
+      "radius_mm": 8,
+      "source_vertices": 923,
+      "triangles": 1603,
+      "boundary_points_mm": [
+        [
+          -51.39070129394531,
+          -1.0197900533676147,
+          21.52790069580078
+        ],
+        [
+          -51.29600143432617,
+          -0.7090129852294922,
+          21.306900024414062
+        ],
+        [
+          -51.24470138549805,
+          -0.5446929931640625,
+          21.109100341796875
+        ],
+        [
+          -51.11399841308594,
+          -0.13986800611019135,
+          20.60890007019043
+        ],
+        [
+          -51.0536003112793,
+          -0.02002039924263954,
+          20.412599563598633
+        ],
+        [
+          -50.9922981262207,
+          0.166470006108284,
+          20.186399459838867
+        ],
+        [
+          -50.917301177978516,
+          0.34719398617744446,
+          19.94580078125
+        ]
+      ],
+      "interboundary_distances_mm": [
+        0.3929271697998047,
+        0.2622164785861969,
+        0.6566329598426819,
+        0.2377924919128418,
+        0.2995047867298126,
+        0.3101184070110321
+      ]
+    },
+    {
+      "id": "posterior",
+      "label": "Échantillon postérieur",
+      "selection": "Nearest unmasked pial vertex to requested native-space coordinate; Euclidean 8 mm neighbourhood; not an anatomical parcellation",
+      "query_mm": [
+        -25,
+        -60,
+        10
+      ],
+      "source_vertex": 131786,
+      "center_mm": [
+        -25.283100128173828,
+        -59.540401458740234,
+        10.661299705505371
+      ],
+      "radius_mm": 8,
+      "source_vertices": 1041,
+      "triangles": 1874,
+      "boundary_points_mm": [
+        [
+          -25.283100128173828,
+          -59.540401458740234,
+          10.661299705505371
+        ],
+        [
+          -25.26799964904785,
+          -59.64849853515625,
+          10.556099891662598
+        ],
+        [
+          -25.254600524902344,
+          -59.74020004272461,
+          10.465700149536133
+        ],
+        [
+          -25.2101993560791,
+          -60.043800354003906,
+          10.168800354003906
+        ],
+        [
+          -25.19969940185547,
+          -60.14910125732422,
+          10.067299842834473
+        ],
+        [
+          -25.173999786376953,
+          -60.38019943237305,
+          9.8435697555542
+        ],
+        [
+          -25.13719940185547,
+          -60.637699127197266,
+          9.592949867248535
+        ]
+      ],
+      "interboundary_distances_mm": [
+        0.15159156918525696,
+        0.1294635683298111,
+        0.4269591271877289,
+        0.14663179218769073,
+        0.32267940044403076,
+        0.3612072765827179
+      ]
+    },
+    {
+      "id": "superior",
+      "label": "Échantillon supérieur",
+      "selection": "Nearest unmasked pial vertex to requested native-space coordinate; Euclidean 8 mm neighbourhood; not an anatomical parcellation",
+      "query_mm": [
+        -20,
+        0,
+        50
+      ],
+      "source_vertex": 101464,
+      "center_mm": [
+        -19.827199935913086,
+        0.7875210046768188,
+        50.17850112915039
+      ],
+      "radius_mm": 8,
+      "source_vertices": 1059,
+      "triangles": 1942,
+      "boundary_points_mm": [
+        [
+          -19.827199935913086,
+          0.7875210046768188,
+          50.17850112915039
+        ],
+        [
+          -19.899799346923828,
+          0.6257789731025696,
+          50.1411018371582
+        ],
+        [
+          -19.945100784301758,
+          0.5272989869117737,
+          50.117801666259766
+        ],
+        [
+          -20.151500701904297,
+          0.07258869707584381,
+          50.0088005065918
+        ],
+        [
+          -20.205699920654297,
+          -0.04952650144696236,
+          49.9807014465332
+        ],
+        [
+          -20.453899383544922,
+          -0.591575026512146,
+          49.85350036621094
+        ],
+        [
+          -20.653400421142578,
+          -1.0413899421691895,
+          49.74589920043945
+        ]
+      ],
+      "interboundary_distances_mm": [
+        0.1811901330947876,
+        0.11087572574615479,
+        0.5111199617385864,
+        0.13652557134628296,
+        0.6095897555351257,
+        0.503698468208313
+      ]
+    }
+  ],
+  "processing": [
+    "GIFTI vertex positions and triangle topology retained for context surfaces",
+    "Same vertex indices extracted across seven boundary surfaces for each patch; source mask==1 required",
+    "No new geometric smoothing, no coordinate registration, no boundary interpolation",
+    "Interboundary distances are Euclidean lengths between corresponding source vertices; not physiological delays or independently validated thickness measurements",
+    "Exploded view displaces surfaces only for reading; source coordinates and distances retained"
+  ],
+  "limits": [
+    "Boundary segmentation derived algorithmically from histology, not seven directly imaged membranes",
+    "The 20 micrometre histology sampling does not imply 20 micrometre accuracy of every surface point",
+    "No neurons, synapses, axonal routes or functional propagation represented",
+    "Patches are selected for exploration, without assignment to a functional cortical area"
+  ]
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "field": 9,
+    "source": "2.28.2024_part1_xy1_XY01_00009_Z009_Overlay.tif",
+    "source_sha256": "4c6eef83899b1488f58b8a2d34cc7dd826e1263390e71f053a4b12cd38353a38",
+    "region": {
+      "field": 9,
+      "flip": true,
+      "origin": [
+        4832,
+        0
+      ],
+      "predicted_center": [
+        5855.999120283779,
+        375.0030912051225
+      ],
+      "file": "field9-flip1.png",
+      "tiles": [
+        {
+          "tile": 9,
+          "offset": 7077904,
+          "bytes": 786432,
+          "sha256": "065c6ec3a4ccd5aa3bb5fe602c9505d99e3e74dbd4ae4936fdec9b685a14f849"
+        },
+        {
+          "tile": 10,
+          "offset": 7864336,
+          "bytes": 786432,
+          "sha256": "241781ae1527cfd39336a17e98308013ed63cea3ba0ff51f3561fc24d68e3ad8"
+        },
+        {
+          "tile": 11,
+          "offset": 8650768,
+          "bytes": 786432,
+          "sha256": "2340d9afc6e3d83981b479f7bc71588d6f1648c7fdb59aa4afb6ca433306a886"
+        },
+        {
+          "tile": 12,
+          "offset": 9437200,
+          "bytes": 786432,
+          "sha256": "3c2918276dfc1c2740f585e9a8eed335567ba2af71a2cd36850e0553eafb8bed"
+        },
+        {
+          "tile": 13,
+          "offset": 10223632,
+          "bytes": 786432,
+          "sha256": "c6cb45af2116dcc867aad0f2c3678a052463b7e6cdaaa343337f84fb8248f925"
+        },
+        {
+          "tile": 47,
+          "offset": 36962320,
+          "bytes": 786432,
+          "sha256": "fb5956f678f517b10966e59091306986d4a6bd004fac335cb87ee903fc7e16d3"
+        },
+        {
+          "tile": 48,
+          "offset": 37748752,
+          "bytes": 786432,
+          "sha256": "f8dc85878ae395502c36c7929fd3cfd92bdbd5fa673a4216506c04f66dca1934"
+        },
+        {
+          "tile": 49,
+          "offset": 38535184,
+          "bytes": 786432,
+          "sha256": "fb8665ff39cbbb395b9b9edd3a2f93d6549e6656db3b8ee1d90190ad9fb1876b"
+        },
+        {
+          "tile": 50,
+          "offset": 39321616,
+          "bytes": 786432,
+          "sha256": "6ddc8960dd5e2f1ff8f53497994ed3128c2ea597287d2ccdacf0220e6d361aba"
+        },
+        {
+          "tile": 51,
+          "offset": 40108048,
+          "bytes": 786432,
+          "sha256": "a4e547756b2cc4308de2d10e653c9d141e3e8f8ac55f263c380ef8dfe4e42217"
+        },
+        {
+          "tile": 85,
+          "offset": 66846736,
+          "bytes": 786432,
+          "sha256": "3309ec5666ce341d0259de9d40a5548dcce4dd9495f6e36370d2463dcbb3acbf"
+        },
+        {
+          "tile": 86,
+          "offset": 67633168,
+          "bytes": 786432,
+          "sha256": "54facd04886f4c16dc0c660863b242a08256a34cc4c5ede4d96d81731916e3aa"
+        },
+        {
+          "tile": 87,
+          "offset": 68419600,
+          "bytes": 786432,
+          "sha256": "0953cce5141478fa204601f314476f5237b1ef6fd44492f4b4da86e0fc7b1bc4"
+        },
+        {
+          "tile": 88,
+          "offset": 69206032,
+          "bytes": 786432,
+          "sha256": "76c72252b7ce58dbebe48a1b1c2ea76337da1a44e3ea5e8506d0f5c0bd24beac"
+        },
+        {
+          "tile": 89,
+          "offset": 69992464,
+          "bytes": 786432,
+          "sha256": "f20e4a7056f191ef11453d167c6a997a439c57f872bc9f99031e5c05b38f35a8"
+        },
+        {
+          "tile": 123,
+          "offset": 96731152,
+          "bytes": 786432,
+          "sha256": "0ca13efc75a7006bb1c5558a223b59b8c4668422373deb91807681b6aae49fba"
+        },
+        {
+          "tile": 124,
+          "offset": 97517584,
+          "bytes": 786432,
+          "sha256": "998a84b182148f1b8ca55fb3938b436cb74c4f3dd95c588db51dea3268fcf7f8"
+        },
+        {
+          "tile": 125,
+          "offset": 98304016,
+          "bytes": 786432,
+          "sha256": "aa02e9fabfd0fc755027c4bd016cdb2f215029bb0581a83a39ff56ccdf5049ee"
+        },
+        {
+          "tile": 126,
+          "offset": 99090448,
+          "bytes": 786432,
+          "sha256": "3a5189422f79f805b67a267b3af9b8dfc79e8b522704c36b2ddce1c0f9934cb2"
+        },
+        {
+          "tile": 127,
+          "offset": 99876880,
+          "bytes": 786432,
+          "sha256": "d88d95274f0e463f3eebb791ae5629351c4084775c623335b28f685d1e75625a"
+        }
+      ]
+    },
+    "tests": [
+      {
+        "patch": [
+          80,
+          60,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.948364024147077,
+        "best_outside_20px": 0.8022663975821798,
+        "origin": [
+          5370,
+          8
+        ]
+      },
+      {
+        "patch": [
+          80,
+          60,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.9290943705135168,
+        "best_outside_20px": 0.7767957492832733,
+        "origin": [
+          5370,
+          8
+        ]
+      },
+      {
+        "patch": [
+          500,
+          60,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.9358576554532999,
+        "best_outside_20px": 0.7400119943910368,
+        "origin": [
+          5370,
+          8
+        ]
+      },
+      {
+        "patch": [
+          500,
+          60,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.9019454242672906,
+        "best_outside_20px": 0.5802920579624129,
+        "origin": [
+          5370,
+          8
+        ]
+      },
+      {
+        "patch": [
+          80,
+          400,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.9747449924817441,
+        "best_outside_20px": 0.8790127682010526,
+        "origin": [
+          5370,
+          8
+        ]
+      },
+      {
+        "patch": [
+          80,
+          400,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.952348898999557,
+        "best_outside_20px": 0.8163256269930377,
+        "origin": [
+          5370,
+          8
+        ]
+      },
+      {
+        "patch": [
+          500,
+          400,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.9442040075517506,
+        "best_outside_20px": 0.7428903297376914,
+        "origin": [
+          5369,
+          7
+        ]
+      },
+      {
+        "patch": [
+          500,
+          400,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.8862740831677085,
+        "best_outside_20px": 0.5622990835127221,
+        "origin": [
+          5370,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "field": 1,
+    "source": "2.28.2024_part1_xy1_XY01_00001_Z009_Overlay.tif",
+    "source_sha256": "29c8b5fac2bbba84f61ea960302679ba3d2847a3c868550797df0b6d12db12ed",
+    "region": {
+      "field": 1,
+      "flip": true,
+      "origin": [
+        0,
+        0
+      ],
+      "predicted_center": [
+        479.9979863340959,
+        375.0030912051225
+      ],
+      "file": "field1-flip1.png",
+      "tiles": [
+        {
+          "tile": 0,
+          "offset": 16,
+          "bytes": 786432,
+          "sha256": "43e3e7bd538a5756e8ba0d367bb1757331d19472d800dd828011f6963a7afb1e"
+        },
+        {
+          "tile": 1,
+          "offset": 786448,
+          "bytes": 786432,
+          "sha256": "65aae3d2e4456ebc81db7da115065ef94061f3fcca7a62d4dab8329d1e9c815c"
+        },
+        {
+          "tile": 2,
+          "offset": 1572880,
+          "bytes": 786432,
+          "sha256": "2e9efe0d807414efffc1e97e9e8f536cffb568aba13a744732b22c62088cff70"
+        },
+        {
+          "tile": 3,
+          "offset": 2359312,
+          "bytes": 786432,
+          "sha256": "e28d6ac38af2f1cd2b52872022ac410db973d7c7a1b88c2bd12d46aebdb5c43e"
+        },
+        {
+          "tile": 38,
+          "offset": 29884432,
+          "bytes": 786432,
+          "sha256": "92b53f8c985e38107f769bb3b0df702d428801f430004b07c793c2a49b5574b2"
+        },
+        {
+          "tile": 39,
+          "offset": 30670864,
+          "bytes": 786432,
+          "sha256": "1d12578cfe5406dd6668aa2d4292a894f61809d8d409f7a9a23e7d695bb80977"
+        },
+        {
+          "tile": 40,
+          "offset": 31457296,
+          "bytes": 786432,
+          "sha256": "9e45a9a619ca131e1fcff5e3993d96857c8850ea290319c726b164fcfe7d338a"
+        },
+        {
+          "tile": 41,
+          "offset": 32243728,
+          "bytes": 786432,
+          "sha256": "50cec2113f8ef52050e67fdd3447db04136fc192c6c4a13b0e2c1810d7cedc2c"
+        },
+        {
+          "tile": 76,
+          "offset": 59768848,
+          "bytes": 786432,
+          "sha256": "475ce9ce45d33187a13835e5341112c63528d1a9d15c127ce6657a57d81d9682"
+        },
+        {
+          "tile": 77,
+          "offset": 60555280,
+          "bytes": 786432,
+          "sha256": "82f14c114d1a2f8a7ced7625871a4d50238ee4edef814993882717c205bf27e1"
+        },
+        {
+          "tile": 78,
+          "offset": 61341712,
+          "bytes": 786432,
+          "sha256": "b28c8abaa7a3b1ea95a9dc675c727f6df7cf5307513ba4d7aee782065fc79f35"
+        },
+        {
+          "tile": 79,
+          "offset": 62128144,
+          "bytes": 786432,
+          "sha256": "aa7312ad5c61f88c997ffd3dfd90fbcaab9f4d859139718400f9e09a588d2208"
+        },
+        {
+          "tile": 114,
+          "offset": 89653264,
+          "bytes": 786432,
+          "sha256": "404be87ffb50759c9712c9a6641e117815c9ee72df621a2a7f1cae0d9828e45e"
+        },
+        {
+          "tile": 115,
+          "offset": 90439696,
+          "bytes": 786432,
+          "sha256": "bdd399aeb7e4ae5f674a6c7c2d46b630455a108282e57f09af35034658426f34"
+        },
+        {
+          "tile": 116,
+          "offset": 91226128,
+          "bytes": 786432,
+          "sha256": "7a3a01dd6e3dd4d2e1dfda9137f287b584c72ddff95b52737e671931838f523a"
+        },
+        {
+          "tile": 117,
+          "offset": 92012560,
+          "bytes": 786432,
+          "sha256": "627b2f406ab6942fba134048647659cfdeb0bca3ccea548a19822d9121ffae3a"
+        }
+      ]
+    },
+    "tests": [
+      {
+        "patch": [
+          80,
+          60,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.1411931815014223,
+        "best_outside_20px": 0.1410262376672701,
+        "origin": [
+          1017,
+          1484
+        ]
+      },
+      {
+        "patch": [
+          80,
+          60,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.22650436528660037,
+        "best_outside_20px": 0.2003940055692486,
+        "origin": [
+          1202,
+          675
+        ]
+      },
+      {
+        "patch": [
+          500,
+          60,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.11281478378894765,
+        "best_outside_20px": 0.10837917072256945,
+        "origin": [
+          502,
+          475
+        ]
+      },
+      {
+        "patch": [
+          500,
+          60,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.390541238914861,
+        "best_outside_20px": 0.24940837865794135,
+        "origin": [
+          0,
+          15
+        ]
+      },
+      {
+        "patch": [
+          80,
+          400,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.1731383977349433,
+        "best_outside_20px": 0.17099480312820037,
+        "origin": [
+          222,
+          1111
+        ]
+      },
+      {
+        "patch": [
+          80,
+          400,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.21699057570624639,
+        "best_outside_20px": 0.18934082864427246,
+        "origin": [
+          702,
+          1125
+        ]
+      },
+      {
+        "patch": [
+          500,
+          400,
+          280,
+          240
+        ],
+        "component": 1,
+        "ncc": 0.058246911438891616,
+        "best_outside_20px": 0.054576842918481465,
+        "origin": [
+          0,
+          15
+        ]
+      },
+      {
+        "patch": [
+          500,
+          400,
+          280,
+          240
+        ],
+        "component": 2,
+        "ncc": 0.25139709798940096,
+        "best_outside_20px": 0.1483182551906515,
+        "origin": [
+          0,
+          15
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "version": "0.118",
+  "recordings": {
+    "path": "assets/allen-comparison/PROVENANCE.json",
+    "sha256": "063f7131f6e596daaf60f07b733069376503bc98e2515ffe91c7880190bbb9a8",
+    "bytes": 47680
+  },
+  "published_indicators": {
+    "path": "assets/allen-qc/SELECTED.json",
+    "sha256": "1ab382df6bba07f24c7a77635064b27aadc22f51af2d7da3892bddba44e9c86f",
+    "bytes": 20461
+  },
+  "scope": "Descriptive paired views of existing independently recorded electrode signals. Shared physical axes; optional display-only subtraction of each stimulus onset. No resampling, amplitude normalization, new trial, synchronized acquisition or combined biological prediction.",
+  "maximum_active_recordings": 2,
+  "signals_modified": false
+}

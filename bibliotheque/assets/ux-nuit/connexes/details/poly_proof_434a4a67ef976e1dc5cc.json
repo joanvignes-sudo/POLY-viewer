@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:434a4a67ef976e1dc5cc",
+  "kind": "proof",
+  "title": "VERIFICATION_FINALE.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      9,
+      "proofs",
+      1
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_CONTEXTE_2026-10-14/VERIFICATION_FINALE.json",
+    "sha256": "e1480f5b78fe083d47f48ad88405755635ad3d39a9d2a3e45da91cc473d5d88c",
+    "bytes": 1176,
+    "content_loaded": false
+  }
+}

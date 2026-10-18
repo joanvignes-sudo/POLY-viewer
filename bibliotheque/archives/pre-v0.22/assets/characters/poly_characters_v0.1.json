@@ -1,0 +1,231 @@
+{
+  "version": "0.1",
+  "chain_scope": "C08",
+  "characters": [
+    {
+      "id": "CHAR-NA",
+      "symbol": "Na⁺",
+      "name": "Sodium",
+      "family": "Ion",
+      "role": "Ion impliqué dans les gradients et les variations électriques.",
+      "actions": [
+        "entre",
+        "s’accumule",
+        "diffuse"
+      ],
+      "scenes": [
+        "F03",
+        "F04",
+        "F05",
+        "F06"
+      ],
+      "objects": [
+        "E48",
+        "E48.1"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#20c7e8"
+    },
+    {
+      "id": "CHAR-K",
+      "symbol": "K⁺",
+      "name": "Potassium",
+      "family": "Ion",
+      "role": "Ion majeur des gradients membranaires et partenaire du sodium dans de nombreux mécanismes.",
+      "actions": [
+        "se déplace selon les gradients",
+        "participe au rééquilibrage"
+      ],
+      "scenes": [],
+      "objects": [],
+      "status": "GLOSSARY_READY_NOT_BOUND_C08",
+      "accent": "#8b67d8"
+    },
+    {
+      "id": "CHAR-CA",
+      "symbol": "Ca²⁺",
+      "name": "Calcium",
+      "family": "Ion",
+      "role": "Ion de signalisation locale ; ici utilisé pour le couplage ER–mitochondrie.",
+      "actions": [
+        "est libéré localement",
+        "forme un microdomaine"
+      ],
+      "scenes": [
+        "F07"
+      ],
+      "objects": [
+        "E49"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#ef5b4c"
+    },
+    {
+      "id": "CHAR-ATP",
+      "symbol": "ATP",
+      "name": "ATP",
+      "family": "Ressource / énergie",
+      "role": "Ressource énergétique utilisée par de nombreux mécanismes cellulaires.",
+      "actions": [
+        "est disponible",
+        "est consommé",
+        "se rétablit"
+      ],
+      "scenes": [
+        "F01",
+        "F02",
+        "F04",
+        "F05"
+      ],
+      "objects": [
+        "E47",
+        "E48",
+        "E50"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#f2b632"
+    },
+    {
+      "id": "CHAR-PUMP",
+      "symbol": "Pompe",
+      "name": "Pompe Na⁺/K⁺",
+      "family": "Mécanisme",
+      "role": "Mécanisme membranaire de transport actif Na⁺/K⁺.",
+      "actions": [
+        "transporte des ions",
+        "consomme de l’ATP"
+      ],
+      "scenes": [],
+      "objects": [],
+      "status": "GLOSSARY_READY_NOT_BOUND_C08",
+      "accent": "#59a95a",
+      "caveat": "Personnage prêt, mais pas encore lié à une relation empirique C08 du registre actuel."
+    },
+    {
+      "id": "CHAR-MEM",
+      "symbol": "Membrane",
+      "name": "Membrane cellulaire",
+      "family": "Structure cellulaire",
+      "role": "Frontière dynamique qui sépare les compartiments et porte de nombreux mécanismes.",
+      "actions": [
+        "sépare",
+        "porte des canaux et protéines",
+        "définit un gradient"
+      ],
+      "scenes": [
+        "F02",
+        "F03"
+      ],
+      "objects": [
+        "E48",
+        "E50"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#e98c72"
+    },
+    {
+      "id": "CHAR-MITO",
+      "symbol": "Mito",
+      "name": "Mitochondrie",
+      "family": "Organite",
+      "role": "Organite impliqué dans la production et la gestion énergétique cellulaire.",
+      "actions": [
+        "soutient la disponibilité énergétique",
+        "reçoit des signaux locaux"
+      ],
+      "scenes": [
+        "F01",
+        "F07"
+      ],
+      "objects": [
+        "E47",
+        "E49"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#8c57c7"
+    },
+    {
+      "id": "CHAR-VES",
+      "symbol": "Vésicule",
+      "name": "Vésicule synaptique",
+      "family": "Transport / compartiment",
+      "role": "Petit compartiment membranaire impliqué dans le cycle synaptique.",
+      "actions": [
+        "fusionne",
+        "est récupérée",
+        "est recyclée"
+      ],
+      "scenes": [
+        "F02"
+      ],
+      "objects": [
+        "E50"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#59aee6"
+    },
+    {
+      "id": "CHAR-ER",
+      "symbol": "ER",
+      "name": "Réticulum endoplasmique",
+      "family": "Organite",
+      "role": "Réseau membranaire intracellulaire ; certaines zones servent de réserve et source de Ca²⁺.",
+      "actions": [
+        "stocke du Ca²⁺",
+        "libère localement du Ca²⁺"
+      ],
+      "scenes": [
+        "F07"
+      ],
+      "objects": [
+        "E49"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#6fb9ee",
+      "caveat": "F07 repose ici sur une source HeLa non neuronale."
+    },
+    {
+      "id": "CHAR-DEND",
+      "symbol": "Dendrite",
+      "name": "Dendrite",
+      "family": "Structure cellulaire",
+      "role": "Compartiment neuronal ramifié recevant et intégrant de nombreux signaux.",
+      "actions": [
+        "reçoit",
+        "conduit localement",
+        "permet la diffusion intracellulaire"
+      ],
+      "scenes": [
+        "F03",
+        "F05",
+        "F06"
+      ],
+      "objects": [
+        "E48",
+        "E48.1"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#e88a35"
+    },
+    {
+      "id": "CHAR-SOMA",
+      "symbol": "Soma",
+      "name": "Soma",
+      "family": "Structure cellulaire",
+      "role": "Corps cellulaire du neurone.",
+      "actions": [
+        "intègre de nombreux processus cellulaires",
+        "présente ses propres dynamiques ioniques et énergétiques"
+      ],
+      "scenes": [
+        "F03",
+        "F05"
+      ],
+      "objects": [
+        "E48"
+      ],
+      "status": "ACTIVE_C08",
+      "accent": "#e5a53f"
+    }
+  ]
+}

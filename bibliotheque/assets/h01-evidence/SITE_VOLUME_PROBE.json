@@ -1,0 +1,146 @@
+[
+  {
+    "layer": "whole_ei_onlyvol",
+    "annotation_id": "95480769",
+    "values": [
+      "1",
+      "1"
+    ]
+  },
+  {
+    "layer": "whole_ei_onlyvol",
+    "annotation_id": "111306169",
+    "values": [
+      "1",
+      "1"
+    ]
+  },
+  {
+    "layer": "whole_ei_onlyvol",
+    "annotation_id": "54213720",
+    "values": [
+      "1",
+      "1"
+    ]
+  },
+  {
+    "layer": "whole_ei_onlyvol",
+    "annotation_id": "143278591",
+    "values": [
+      "1",
+      "0"
+    ]
+  },
+  {
+    "layer": "whole_ei_onlyvol",
+    "annotation_id": "145894292",
+    "values": [
+      "1",
+      "1"
+    ]
+  },
+  {
+    "layer": "whole_ei_onlyvol",
+    "annotation_id": "87751454",
+    "values": [
+      "0",
+      "1"
+    ]
+  },
+  {
+    "layer": "incoming_inhibitory",
+    "annotation_id": "95480769",
+    "values": [
+      "0",
+      "1072605926"
+    ]
+  },
+  {
+    "layer": "incoming_inhibitory",
+    "annotation_id": "111306169",
+    "values": [
+      "0",
+      "1072605926"
+    ]
+  },
+  {
+    "layer": "incoming_inhibitory",
+    "annotation_id": "54213720",
+    "values": [
+      "0",
+      "1072605926"
+    ]
+  },
+  {
+    "layer": "incoming_inhibitory",
+    "annotation_id": "143278591",
+    "values": [
+      "0",
+      "0"
+    ]
+  },
+  {
+    "layer": "incoming_inhibitory",
+    "annotation_id": "145894292",
+    "values": [
+      "0",
+      "1072605926"
+    ]
+  },
+  {
+    "layer": "incoming_inhibitory",
+    "annotation_id": "87751454",
+    "values": [
+      "0",
+      "1072605926"
+    ]
+  },
+  {
+    "layer": "incoming_excitatory",
+    "annotation_id": "95480769",
+    "values": [
+      "0",
+      "0"
+    ]
+  },
+  {
+    "layer": "incoming_excitatory",
+    "annotation_id": "111306169",
+    "values": [
+      "0",
+      "0"
+    ]
+  },
+  {
+    "layer": "incoming_excitatory",
+    "annotation_id": "54213720",
+    "values": [
+      "0",
+      "0"
+    ]
+  },
+  {
+    "layer": "incoming_excitatory",
+    "annotation_id": "143278591",
+    "values": [
+      "0",
+      "0"
+    ]
+  },
+  {
+    "layer": "incoming_excitatory",
+    "annotation_id": "145894292",
+    "values": [
+      "0",
+      "0"
+    ]
+  },
+  {
+    "layer": "incoming_excitatory",
+    "annotation_id": "87751454",
+    "values": [
+      "0",
+      "0"
+    ]
+  }
+]

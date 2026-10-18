@@ -1,8 +1,24 @@
 {
-  "version": "0.129.0",
-  "date": "2026-10-15",
-  "status": "Version canonique de navigation et état des preuves locales ; validations scientifiques encore ouvertes",
+  "version": "0.130.0",
+  "date": "2026-10-18",
+  "status": "Corps animé et lecteur visuel canoniques ; schémas documentaires, validations scientifiques ouvertes.",
   "categories": [
+    {
+      "id": "corps-en-mouvement",
+      "title": "Le corps en mouvement",
+      "source": "Chaînes documentaires, atlas CerebrA et animations collectées",
+      "description": "Suivre les intervalles, ralentir la lecture et consulter mécanismes et preuves.",
+      "links": [
+        [
+          "Suivre une chaîne",
+          "corps.html"
+        ],
+        [
+          "Ancien accueil v0.129.0",
+          "accueil-v0.129.0.html"
+        ]
+      ]
+    },
     {
       "id": "corps",
       "title": "Corps et cortex",
@@ -386,5 +402,27 @@
     "Images et domaines déjà consultés ; aucun jeu de validation anatomique indépendant ajouté.",
     "Les explorateurs Allen affichent leur sous-ensemble historique de neuf essais ; les 78 essais contrôlés localement ne sont pas tous ajoutés au visualiseur."
   ],
-  "source_licenses": "Les conditions distinctes des sources décrites dans README.md et leurs dossiers de provenance restent applicables."
+  "source_licenses": "Les conditions distinctes des sources décrites dans README.md et leurs dossiers de provenance restent applicables.",
+  "canonical_state": "ETAT_CANONIQUE.json",
+  "review_version_preserved": "0.128.1",
+  "previous_public_version": "0.129.0",
+  "previous_public_commit": "ff2f1b249a2f70e78b74d488659840bdb2aed555",
+  "entry": "corps.html",
+  "release": "RELEASE_v0.130.0.md",
+  "visual_reader": {
+    "chains": "C01–C14",
+    "groups": 78,
+    "intervals": 544,
+    "visual_seconds_per_interval": [
+      6,
+      12,
+      24,
+      60,
+      120
+    ],
+    "measured_time_conversion": false,
+    "continuous_human_anatomical_path_established": false,
+    "scientific_or_human_validation": false,
+    "documentation": "publication/v0.130.0/GUIDE.md"
+  }
 }

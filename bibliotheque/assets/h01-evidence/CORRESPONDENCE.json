@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "csv_matches": {
+    "54213720": "csv-row-6931",
+    "95480769": "csv-row-95939",
+    "143278591": "csv-row-164578",
+    "111306169": "csv-row-178572",
+    "145894292": "csv-row-238375",
+    "87751454": "csv-row-247501"
+  },
+  "source_rows": 264090,
+  "target_rows": 1571,
+  "unique_target_role_endpoint_pairs": 1571,
+  "site_checks": [
+    {
+      "annotation_id": "95480769",
+      "target_inhibitory_voxels": 442,
+      "target_excitatory_voxels": 0,
+      "post_voxel_inhibitory_label": "1072605926",
+      "post_point_classification": "source inhibitory volume matches target ID",
+      "components_26": 1,
+      "touches_crop_boundary": false,
+      "surface_vertices": 5844,
+      "catalog_row": "csv-row-95939"
+    },
+    {
+      "annotation_id": "111306169",
+      "target_inhibitory_voxels": 405,
+      "target_excitatory_voxels": 0,
+      "post_voxel_inhibitory_label": "1072605926",
+      "post_point_classification": "source inhibitory volume matches target ID",
+      "components_26": 1,
+      "touches_crop_boundary": false,
+      "surface_vertices": 5688,
+      "catalog_row": "csv-row-178572"
+    },
+    {
+      "annotation_id": "54213720",
+      "target_inhibitory_voxels": 373,
+      "target_excitatory_voxels": 0,
+      "post_voxel_inhibitory_label": "1072605926",
+      "post_point_classification": "source inhibitory volume matches target ID",
+      "components_26": 1,
+      "touches_crop_boundary": false,
+      "surface_vertices": 3516,
+      "catalog_row": "csv-row-6931"
+    },
+    {
+      "annotation_id": "143278591",
+      "target_inhibitory_voxels": 2567,
+      "target_excitatory_voxels": 0,
+      "post_voxel_inhibitory_label": "0",
+      "post_point_classification": "not confirmed at exact post point",
+      "components_26": 1,
+      "touches_crop_boundary": false,
+      "surface_vertices": 19272,
+      "catalog_row": "csv-row-164578"
+    },
+    {
+      "annotation_id": "145894292",
+      "target_inhibitory_voxels": 3776,
+      "target_excitatory_voxels": 0,
+      "post_voxel_inhibitory_label": "1072605926",
+      "post_point_classification": "source inhibitory volume matches target ID",
+      "components_26": 1,
+      "touches_crop_boundary": false,
+      "surface_vertices": 14496,
+      "catalog_row": "csv-row-238375"
+    },
+    {
+      "annotation_id": "87751454",
+      "target_inhibitory_voxels": 3656,
+      "target_excitatory_voxels": 0,
+      "post_voxel_inhibitory_label": "1072605926",
+      "post_point_classification": "source inhibitory volume matches target ID",
+      "components_26": 1,
+      "touches_crop_boundary": false,
+      "surface_vertices": 21804,
+      "catalog_row": "csv-row-247501"
+    }
+  ],
+  "human_ground_truth_mapping_established": false,
+  "ground_truth_scope": "CSV site-pair IDs in Zenodo have no correspondence established to these six C3 annotation IDs. Export schema samples contain site IDs and coordinates; the complete 166-part export has not been searched. Source CSV coordinate matches are a separate result, not individual human synapse validation."
+}

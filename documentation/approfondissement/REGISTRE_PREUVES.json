@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-17",
+  "sources": {
+    "EMO-ARTICLE": {
+      "url": "https://www.nature.com/articles/s41597-025-04803-5",
+      "scope": "Méthodes ; Data Records ; Technical Validation",
+      "role": "primary_article"
+    },
+    "EMO-SUP": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41597-025-04803-5/MediaObjects/41597_2025_4803_MOESM1_ESM.xlsx",
+      "scope": "Tables 1–4 extraites ; pas réexécution des statistiques",
+      "role": "primary_supplement"
+    },
+    "HASS-ARTICLE": {
+      "url": "https://www.nature.com/articles/npp2017154",
+      "scope": "Méthodes ; Results ; Discussion/limitations",
+      "role": "primary_article"
+    },
+    "HASS-SUP": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM66_ESM.docx",
+      "scope": "Tables 1–4 ; autres suppléments 64/65/67 consignés dans acquisitions",
+      "role": "primary_supplement"
+    },
+    "INMAN-ARTICLE": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+      "scope": "Sections 2.1–2.4 ; 3.1–3.4 ; table 2 ; Discussion",
+      "role": "primary_manuscript"
+    },
+    "BIDS": {
+      "url": "https://bids-specification.readthedocs.io/en/v1.7.0/04-modality-specific-files/06-physiological-and-other-continuous-recordings.html",
+      "scope": "StartTime / SamplingFrequency / Columns ; version correspondant à la version déclarée du jeu",
+      "role": "primary_standard"
+    },
+    "EMO-CODE": {
+      "url": "https://github.com/EllieMo/Emo-FilM/tree/8a358f820bb0782cbef2ea4bb9820f7fe1413325",
+      "scope": "Inspection statique MakeMasterfile, helper, constantes, README ; pas exécution auteur",
+      "role": "primary_code"
+    },
+    "LOCAL-PILOT": {
+      "url": null,
+      "scope": "PILOTE_RESULTATS.json ; plan fixé avant acquisition ; source numérique CC0",
+      "role": "local_structural_check"
+    }
+  },
+  "claims": [
+    {
+      "id": "E01",
+      "source": "EMO-SUP",
+      "claim": "Breathing retiré ; Heartrate/Warm absents de validation IRMf",
+      "status": "reported_documentary"
+    },
+    {
+      "id": "E02",
+      "source": "LOCAL-PILOT",
+      "claim": "Deux matrices acquises, identités Git-annex concordantes",
+      "status": "executed_verified"
+    },
+    {
+      "id": "E03",
+      "source": "LOCAL-PILOT",
+      "claim": "Origines temporelles à réconcilier ; aucune jointure effectuée",
+      "status": "executed_open_issue"
+    },
+    {
+      "id": "E04",
+      "source": "EMO-CODE",
+      "claim": "Consensus standardisé/centré ; ne pas présenter en note absolue",
+      "status": "static_inspection"
+    },
+    {
+      "id": "H01",
+      "source": "HASS-ARTICLE",
+      "claim": "Émotion négative p=0.053 ; positive p=0.95",
+      "status": "reported_not_reproduced"
+    },
+    {
+      "id": "H02",
+      "source": "HASS-ARTICLE",
+      "claim": "Molette de sensations et notes émotionnelles différées distinctes",
+      "status": "reported_documentary"
+    },
+    {
+      "id": "H03",
+      "source": "HASS-SUP",
+      "claim": "Maxima MNI de contrastes et chevauchements probabilistes, pas capteurs",
+      "status": "reported_documentary"
+    },
+    {
+      "id": "H04",
+      "source": "HASS-ARTICLE",
+      "claim": "Trajet afférent intégral non établi par cette expérience",
+      "status": "critical_scope_inference"
+    },
+    {
+      "id": "I01",
+      "source": "INMAN-ARTICLE",
+      "claim": "9 sujets, 7 dans modèle principal ; S8/S9 décrits séparément",
+      "status": "reported_documentary"
+    },
+    {
+      "id": "I02",
+      "source": "INMAN-ARTICLE",
+      "claim": "EDA p tension divergent texte/table ; échelle à clarifier",
+      "status": "post_observation_critical_reading"
+    },
+    {
+      "id": "I03",
+      "source": "INMAN-ARTICLE",
+      "claim": "Rapports après essai et mesures autonomes ne fixent pas mêmes instants",
+      "status": "critical_scope_inference"
+    },
+    {
+      "id": "I04",
+      "source": "INMAN-ARTICLE",
+      "claim": "Non-significativité régionale respiratoire ne résume pas tous les termes du modèle",
+      "status": "post_observation_critical_reading"
+    }
+  ],
+  "corrections_audit": "Recherches ciblées DOI + correction/corrigendum ; pas de résolution établie ni certification d’absence.",
+  "scientific_effects_recomputed": false,
+  "biological_latency_inferred": false,
+  "site_modified": false
+}

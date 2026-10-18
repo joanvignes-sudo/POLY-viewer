@@ -1,0 +1,20 @@
+{
+   "@type" : "neuroglancer_skeletons",
+   "sharding" : {
+      "@type" : "neuroglancer_uint64_sharded_v1",
+      "data_encoding" : "gzip",
+      "hash" : "murmurhash3_x86_128",
+      "minishard_bits" : 3,
+      "minishard_index_encoding" : "gzip",
+      "preshift_bits" : 1,
+      "shard_bits" : 2
+   },
+   "transform" : [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0 ],
+   "vertex_attributes" : [
+      {
+         "data_type" : "float32",
+         "id" : "radius",
+         "num_components" : 1
+      }
+   ]
+}

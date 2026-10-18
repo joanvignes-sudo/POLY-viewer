@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests": [
+    "five human steps remain accessible, timed presentation highlights only documented territory",
+    "real anatomy: 17 structures, rotation, selection, isolation, explode, mobile and P8 round trip",
+    "usability feedback export without transmission",
+    "four comparison positions and visibility survive reload",
+    "mixed valid/invalid annotation import is atomic",
+    "corrupt storage preserved byte-for-byte and recoverable",
+    "storage quota failure retains in-memory annotation",
+    "failed registry load has explicit fallback and retry",
+    "invalid register rejected before render",
+    "without WebGL the chain graph remains accessible",
+    "context loss pauses playback; restore keeps selection (synthetic event)"
+  ],
+  "javascript_errors": [],
+  "browser": "Chrome, software WebGL"
+}

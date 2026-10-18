@@ -1,0 +1,67 @@
+[
+  {
+    "id": "hassanpour_sup4.docx",
+    "failed_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5729563/bin/npp2017154x4.docx",
+        "error": "Not an Office ZIP"
+      },
+      {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x4.docx",
+        "error": "404 Client Error: Not Found for url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x4.docx"
+      }
+    ]
+  },
+  {
+    "id": "hassanpour_sup5.docx",
+    "failed_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5729563/bin/npp2017154x5.docx",
+        "error": "Not an Office ZIP"
+      },
+      {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x5.docx",
+        "error": "404 Client Error: Not Found for url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x5.docx"
+      }
+    ]
+  },
+  {
+    "id": "hassanpour_sup6.docx",
+    "failed_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5729563/bin/npp2017154x6.docx",
+        "error": "Not an Office ZIP"
+      },
+      {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x6.docx",
+        "error": "404 Client Error: Not Found for url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x6.docx"
+      }
+    ]
+  },
+  {
+    "id": "hassanpour_sup7.docx",
+    "failed_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5729563/bin/npp2017154x7.docx",
+        "error": "Not an Office ZIP"
+      },
+      {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x7.docx",
+        "error": "404 Client Error: Not Found for url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/npp2017154x7.docx"
+      }
+    ]
+  },
+  {
+    "id": "emofilm_tables.xlsx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41597-025-04803-5/MediaObjects/41597_2025_4803_MOESM1_ESM.xlsx",
+    "status": 200,
+    "bytes": 78182,
+    "sha256": "8f415d0438e7339684190890cb6c631d52e1cc723b61d464a9bc1852910c4d2d",
+    "failed_attempts": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12019557/bin/41597_2025_4803_MOESM1_ESM.xlsx",
+        "error": "Not an Office ZIP"
+      }
+    ]
+  }
+]

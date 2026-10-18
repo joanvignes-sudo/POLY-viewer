@@ -1,0 +1,31 @@
+{
+  "version": "0.128.1",
+  "kind": "Independent technical counter-review by two AI agents",
+  "human_anatomical_validation": false,
+  "independent_candidate_pairs": 1027935,
+  "synthetic_cases": 5620,
+  "initial_contacts": 693,
+  "selected_contacts": 631,
+  "current_data_bug_found": false,
+  "corrections": [
+    "Retained candidate label clarified",
+    "Portable export includes coordinate frame, units, license, attribution, DOI and absolute provenance URL",
+    "Future geometric predicate rejects degenerate triangles; no current triangle is degenerate"
+  ],
+  "limits": [
+    "No expert anatomical review completed",
+    "No continuous-field or global cortex certification",
+    "Orientation positivity does not imply small angular error",
+    "Rejected intermediate meshes are not all retained; trace scores alone do not reproduce their contacts"
+  ],
+  "files": [
+    {
+      "path": "assets/bigbrain-counterreview-v0128_1/results.json",
+      "sha256": "b47d4ff56b2b052349e7938d9c3e1980b3189f7e5db28fa025983ecd1c3a88f5"
+    },
+    {
+      "path": "assets/bigbrain-counterreview-v0128_1/source_selection.json",
+      "sha256": "218bf3fb06eaae07e67f2dde1b04052982b261029baccc0d9bcf4a2909019b34"
+    }
+  ]
+}

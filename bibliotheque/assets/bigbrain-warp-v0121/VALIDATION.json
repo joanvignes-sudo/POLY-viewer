@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "reference_vertices": 163842,
+  "same_topology": true,
+  "reference_sources": [
+    {
+      "file": "gray_left_327680.surf.gii",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/gii/gray_left_327680.surf.gii",
+      "bytes": 7865553,
+      "sha256": "d2b538582d838a13aeb80ec2cd7fe1f8ea1098f24c322b209950c895f3ed79fc"
+    },
+    {
+      "file": "gray_left_327680_2009b_sym.surf.gii",
+      "url": "https://ftp.bigbrainproject.org/bigbrain-ftp/BigBrainRelease.2015/3D_Surfaces/Apr7_2016/gii/gray_left_327680_2009b_sym.surf.gii",
+      "bytes": 7865553,
+      "sha256": "2d40d3ee593a0238122c45d4f3d6b33c6fd812d3850fedc6fbf85be66e4e2076"
+    }
+  ],
+  "numerical_difference_mm": {
+    "median": 5.9131219333453364e-05,
+    "p95": 0.00010708088979821292,
+    "maximum": 0.0010169308282961661
+  },
+  "meaning": "Reproduction of the authors' 2015 registered mesh, not anatomical accuracy or resolution",
+  "full_2019_reference_mesh_available": false,
+  "frame_comparison": [
+    {
+      "reference": "gray_left_327680.surf.gii",
+      "nearest_vertex_distance_mm": {
+        "median": 0.3212388835110781,
+        "p95": 0.6754392514864616,
+        "maximum": 1.5453011983074167
+      },
+      "not_a_vertex_correspondence": true
+    },
+    {
+      "reference": "gray_left_327680_2009b_sym.surf.gii",
+      "nearest_vertex_distance_mm": {
+        "median": 2.1257299430401764,
+        "p95": 7.293798360721659,
+        "maximum": 13.925326631065001
+      },
+      "not_a_vertex_correspondence": true
+    }
+  ],
+  "interpretation": "Surface extent and whole-surface nearest-vertex distances support native histological coordinates. Proximity is not an anatomical vertex correspondence. The older pial and 2020 laminar meshes are different reconstructions.",
+  "nibabel_grid_node_checks": [
+    {
+      "field": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_0.mnc",
+      "points_compared": 3,
+      "maximum_stored_value_difference": 0.0
+    },
+    {
+      "field": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_1.mnc",
+      "points_compared": 3,
+      "maximum_stored_value_difference": 0.0
+    },
+    {
+      "field": "transformation/BigBrain-to-ICBM2009sym-nonlin_grid_2.mnc",
+      "points_compared": 3,
+      "maximum_stored_value_difference": 0.0
+    }
+  ],
+  "local_jacobian_centres_only": [
+    2.2110581637586915,
+    1.3171506099138184,
+    2.1631426868439063
+  ]
+}

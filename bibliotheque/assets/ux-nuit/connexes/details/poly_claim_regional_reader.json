@@ -1,0 +1,91 @@
+{
+  "id": "poly:claim:regional_reader",
+  "kind": "claim",
+  "title": "Lecture régionale du TIFF assemblé",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      2
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "regional_reader",
+      "claim": "Lecture régionale du TIFF assemblé",
+      "status": "exécuté et testé",
+      "evidence_level": "fichiers et programme",
+      "scope": "Deux extractions, centre traversant quatre blocs et bord ; accès hors ligne aux blocs en cache",
+      "next_acceptance_gate": "Autre rectangle : même version/index, bornes, pixels et provenance ; acquisition explicite seulement si blocs absents.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AFFINAGE_2026-10-14/TESTS_REGIONS.json",
+          "selector": [
+            "passed"
+          ],
+          "value": true,
+          "original_sha256": "c95b1280f84cbeb4d198af8883d8d29699feb2124cb7d5e43358003507b57ff0",
+          "sha256": "c95b1280f84cbeb4d198af8883d8d29699feb2124cb7d5e43358003507b57ff0"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AFFINAGE_2026-10-14/REGIONS_SOURCE.json",
+          "selector": [
+            "rows"
+          ],
+          "value": [
+            {
+              "rect_xywh": [
+                9310,
+                9198,
+                512,
+                512
+              ],
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "storage_blocks": [
+                664,
+                665,
+                702,
+                703
+              ],
+              "png": "REGION_1.png",
+              "png_sha256": "b88a3651125daeadad4744d9b3eff0b7908c929a5c26879742e4ec443c8aef8d",
+              "pixel_exact": true
+            },
+            {
+              "rect_xywh": [
+                19069,
+                18845,
+                64,
+                64
+              ],
+              "shape": [
+                64,
+                64,
+                3
+              ],
+              "storage_blocks": [
+                1405
+              ],
+              "png": "REGION_2.png",
+              "png_sha256": "9d2af950d09c45b7752d7198822d05a3e5ac9b09026a94fb8ae5edc7e1352287",
+              "pixel_exact": true
+            }
+          ],
+          "original_sha256": "ef1e7ea57d8578503b6e979d2032e3b97343f0e3afa26ff16f2d15edcc0296a0",
+          "sha256": "2a482e538c11107becd0cb0f2477caa0828dca24334de6e121bf8ceec20efb51"
+        }
+      ]
+    }
+  }
+}

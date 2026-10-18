@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "annotation_id": "95480769",
+      "layer": "incoming_inhibitory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 442
+    },
+    {
+      "annotation_id": "111306169",
+      "layer": "incoming_inhibitory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 405
+    },
+    {
+      "annotation_id": "54213720",
+      "layer": "incoming_inhibitory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 373
+    },
+    {
+      "annotation_id": "143278591",
+      "layer": "incoming_inhibitory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 2567
+    },
+    {
+      "annotation_id": "145894292",
+      "layer": "incoming_inhibitory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 3776
+    },
+    {
+      "annotation_id": "87751454",
+      "layer": "incoming_inhibitory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 3656
+    },
+    {
+      "annotation_id": "95480769",
+      "layer": "incoming_excitatory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 0
+    },
+    {
+      "annotation_id": "111306169",
+      "layer": "incoming_excitatory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 0
+    },
+    {
+      "annotation_id": "54213720",
+      "layer": "incoming_excitatory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 0
+    },
+    {
+      "annotation_id": "143278591",
+      "layer": "incoming_excitatory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 0
+    },
+    {
+      "annotation_id": "145894292",
+      "layer": "incoming_excitatory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 0
+    },
+    {
+      "annotation_id": "87751454",
+      "layer": "incoming_excitatory",
+      "values": 524288,
+      "independent_differences": 0,
+      "target_voxels": 0
+    }
+  ]
+}

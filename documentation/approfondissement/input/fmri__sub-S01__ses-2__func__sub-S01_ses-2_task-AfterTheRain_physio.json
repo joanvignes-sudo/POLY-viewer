@@ -1,0 +1,18 @@
+{
+    "SamplingFrequency": 1000.0,
+    "StartTime": 9.002,
+    "Columns": [
+        "time",
+        "PPG - PPG100C",
+        "EDA - EDA100C-MRI",
+        "RESP",
+        "Digital input",
+        "Digital input",
+        "Digital input",
+        "Digital input",
+        "Digital input",
+        "Digital input",
+        "Digital input",
+        "Digital input"
+    ]
+}

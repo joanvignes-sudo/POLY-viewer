@@ -1,0 +1,67 @@
+{
+  "id": "poly:study:S10-ESHEL-2015",
+  "kind": "study",
+  "title": "Arithmetic and local circuitry underlying dopamine prediction errors",
+  "category": "studies",
+  "provenance": {
+    "file": "IDENTITES_SOURCES_v0.98.json",
+    "sha256": "32dfff8a55965d7f7730a13da895e16f687093e52e0219d69965e2065b76f6dd",
+    "selector": [
+      "sources",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_id": "S10-ESHEL-2015",
+    "doi": "10.1038/nature14855",
+    "recorded_url": "https://www.nature.com/articles/nature14855",
+    "author": {
+      "value": null,
+      "reason": "Auteurs non listés dans ce fichier d’identité ; pas de déduction depuis l’identifiant."
+    },
+    "external_consultation_date": {
+      "value": null,
+      "reason": "Aucune nouvelle consultation externe pendant cette passe."
+    },
+    "source_record": {
+      "id": "S10-ESHEL-2015",
+      "doi": "10.1038/nature14855",
+      "title": "Arithmetic and local circuitry underlying dopamine prediction errors",
+      "url": "https://www.nature.com/articles/nature14855",
+      "alternate_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4567485/",
+      "archive_sha256": "adec5be09ddbf8c523639e32dc4ec6a21574bb62b636e015a8502cd9b4447a61",
+      "corrected_records": [
+        "VTA-GENETIQUE",
+        "VTA-GROUPES",
+        "VTA-CHRT",
+        "VTA-CHR2-CANAL",
+        "VTA-CHR2-EFFET",
+        "VTA-ARCHT",
+        "VTA-ARCHT-POMPE",
+        "VTA-ARCHT-EFFET",
+        "VTA-BLEU",
+        "VTA-VERT",
+        "VTA-COMP",
+        "VTA-BINS",
+        "VTA-VALVE",
+        "VTA-PIC",
+        "VTA-FENETRE-DISCORDANTE"
+      ],
+      "routes": [
+        "TRAJET:P02-VTA:0",
+        "TRAJET:P02-VTA:1",
+        "TRAJET:P02-VTA:2",
+        "PROTOCOLE:VTA-CHR2",
+        "PROTOCOLE:VTA-ARCHT"
+      ],
+      "anchor_checks": 15,
+      "previous_wrong_url": "https://www.nature.com/articles/s41467-025-64132-4"
+    },
+    "external_url_rechecked": false
+  }
+}

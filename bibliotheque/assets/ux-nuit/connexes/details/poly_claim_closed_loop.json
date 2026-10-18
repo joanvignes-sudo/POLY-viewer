@@ -1,0 +1,98 @@
+{
+  "id": "poly:claim:closed_loop",
+  "kind": "claim",
+  "title": "Une boucle 2D est contrôlée sur les originaux",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      6
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "closed_loop",
+      "claim": "Une boucle 2D est contrôlée sur les originaux",
+      "status": "exécuté et contrôlé sur une boucle et trois plans focaux",
+      "evidence_level": "programme et robustesse locale limitée",
+      "scope": "Deux boucles adjacentes ; première auxplans8/9/10, seconde auplan10. Même spécimen et arête commune, pas réplicats biologiques.",
+      "next_acceptance_gate": "Contrôle anatomique homologué ; unité physique/documentation et IHC/CT restent manquants. Ne pas répéter ces essais sans question nouvelle.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "original_2D_loops"
+          ],
+          "value": 1,
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "focus_planes"
+          ],
+          "value": [
+            8,
+            9,
+            10
+          ],
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "NCC_consensus_closure_raw_px"
+          ],
+          "value": {
+            "8": 1.0,
+            "9": 0.0,
+            "10": 1.4142135623730951
+          },
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "max_component_shift_delta_from_Z9"
+          ],
+          "value": 1,
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "spatial_loops_evaluated_cumulative"
+          ],
+          "value": 2,
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "NCC_consensus_closure_px"
+          ],
+          "value": {
+            "0": 1.4142135623730951,
+            "2": 1.0
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        }
+      ],
+      "previous_status": "bloqué : pixels48/49 absents",
+      "previous_scope": "Une boucle originale8-9-48-49 aux plans8/9/10 ; fermeture NCCconsensus0..√2px, vecteurs±1px parcomposante. Pas réplicats biologiques."
+    }
+  }
+}

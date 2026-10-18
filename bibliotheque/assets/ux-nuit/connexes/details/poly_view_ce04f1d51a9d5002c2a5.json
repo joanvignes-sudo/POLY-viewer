@@ -1,0 +1,29 @@
+{
+  "id": "poly:view:ce04f1d51a9d5002c2a5",
+  "kind": "view",
+  "title": "Marquages immunohistochimiques",
+  "category": "organes",
+  "provenance": {
+    "file": "ETAT_CANONIQUE.json",
+    "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7",
+    "selector": [
+      "categories",
+      3,
+      "links",
+      5
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "href": "immunohistochimie.html",
+    "source_label": "HiP-CT · SPARC",
+    "scientific_identity": {
+      "value": null,
+      "reason": "Une destination de navigation ne définit pas un spécimen."
+    }
+  }
+}

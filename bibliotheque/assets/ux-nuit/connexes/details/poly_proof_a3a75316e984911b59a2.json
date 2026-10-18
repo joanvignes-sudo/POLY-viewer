@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:a3a75316e984911b59a2",
+  "kind": "proof",
+  "title": "RESUME_SEUIL.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      12,
+      "proofs",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+    "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+    "bytes": 1527,
+    "content_loaded": false
+  }
+}

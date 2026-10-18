@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:ce5f37d9e2a20714c5c7",
+  "kind": "proof",
+  "title": "RESUME_SECONDE_BOUCLE.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      4,
+      "proofs",
+      1
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+    "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+    "bytes": 5990,
+    "content_loaded": false
+  }
+}

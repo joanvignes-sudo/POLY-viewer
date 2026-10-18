@@ -1,0 +1,3219 @@
+{
+  "scope": "Inventaire de chemins à partir de l’arbre complet figé ; aucun contrôle des 450 signaux.",
+  "commit": "cdf68fe448ad180a476fa2371473a1a6ed063774",
+  "records": [
+    {
+      "path": "sub-S01/ses-1/func/sub-S01_ses-1_task-BigBuckBunny_physio.json",
+      "subject": "S01",
+      "session": "1",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S01/ses-1/func/sub-S01_ses-1_task-FirstBite_physio.json",
+      "subject": "S01",
+      "session": "1",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S01/ses-1/func/sub-S01_ses-1_task-Rest_physio.json",
+      "subject": "S01",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "9946dc82e3f383634a595f291fa8222d53e7f694"
+    },
+    {
+      "path": "sub-S01/ses-1/func/sub-S01_ses-1_task-YouAgain_physio.json",
+      "subject": "S01",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S01/ses-2/func/sub-S01_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S01",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S01/ses-2/func/sub-S01_ses-2_task-LessonLearned_physio.json",
+      "subject": "S01",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S01/ses-2/func/sub-S01_ses-2_task-Payload_physio.json",
+      "subject": "S01",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S01/ses-2/func/sub-S01_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S01",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S01/ses-3/func/sub-S01_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S01",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S01/ses-3/func/sub-S01_ses-3_task-Chatter_physio.json",
+      "subject": "S01",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S01/ses-3/func/sub-S01_ses-3_task-Spaceman_physio.json",
+      "subject": "S01",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S01/ses-3/func/sub-S01_ses-3_task-ToClaireFromSonny_physio.json",
+      "subject": "S01",
+      "session": "3",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S01/ses-4/func/sub-S01_ses-4_task-Sintel_physio.json",
+      "subject": "S01",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S01/ses-4/func/sub-S01_ses-4_task-Superhero_physio.json",
+      "subject": "S01",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S01/ses-4/func/sub-S01_ses-4_task-TearsOfSteel_physio.json",
+      "subject": "S01",
+      "session": "4",
+      "task": "TearsOfSteel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S02/ses-1/func/sub-S02_ses-1_task-AfterTheRain_physio.json",
+      "subject": "S02",
+      "session": "1",
+      "task": "AfterTheRain",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S02/ses-1/func/sub-S02_ses-1_task-Rest_physio.json",
+      "subject": "S02",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "7d7a18cbde6b63c7fca8cc39a847db574895cb4a"
+    },
+    {
+      "path": "sub-S02/ses-1/func/sub-S02_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S02",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "779fef33aedcf5c4dcf6afa8c7f2931dea3033df"
+    },
+    {
+      "path": "sub-S02/ses-1/func/sub-S02_ses-1_task-YouAgain_physio.json",
+      "subject": "S02",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S02/ses-2/func/sub-S02_ses-2_task-BigBuckBunny_physio.json",
+      "subject": "S02",
+      "session": "2",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S02/ses-2/func/sub-S02_ses-2_task-Chatter_physio.json",
+      "subject": "S02",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S02/ses-2/func/sub-S02_ses-2_task-Superhero_physio.json",
+      "subject": "S02",
+      "session": "2",
+      "task": "Superhero",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S02/ses-2/func/sub-S02_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S02",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S02/ses-3/func/sub-S02_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S02",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S02/ses-3/func/sub-S02_ses-3_task-LessonLearned_physio.json",
+      "subject": "S02",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "a36f1ccc7435f03fb3af048fee5e23fbd2d0027a"
+    },
+    {
+      "path": "sub-S02/ses-3/func/sub-S02_ses-3_task-Payload_physio.json",
+      "subject": "S02",
+      "session": "3",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S02/ses-4/func/sub-S02_ses-4_task-FirstBite_physio.json",
+      "subject": "S02",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S02/ses-4/func/sub-S02_ses-4_task-Sintel_physio.json",
+      "subject": "S02",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S02/ses-4/func/sub-S02_ses-4_task-Spaceman_physio.json",
+      "subject": "S02",
+      "session": "4",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S02/ses-4/func/sub-S02_ses-4_task-ToClairefromSonny_physio.json",
+      "subject": "S02",
+      "session": "4",
+      "task": "ToClairefromSonny",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S03/ses-1/func/sub-S03_ses-1_task-Payload_physio.json",
+      "subject": "S03",
+      "session": "1",
+      "task": "Payload",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S03/ses-1/func/sub-S03_ses-1_task-Rest_physio.json",
+      "subject": "S03",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "0ec9740012d0f53130935f5af3d4d3e783f382d1"
+    },
+    {
+      "path": "sub-S03/ses-1/func/sub-S03_ses-1_task-Spaceman_physio.json",
+      "subject": "S03",
+      "session": "1",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S03/ses-2/func/sub-S03_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S03",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S03/ses-2/func/sub-S03_ses-2_task-LessonLearned_physio.json",
+      "subject": "S03",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S03/ses-2/func/sub-S03_ses-2_task-Superhero_physio.json",
+      "subject": "S03",
+      "session": "2",
+      "task": "Superhero",
+      "blob_sha": "852d9d990d418f97a448b0b9e166f3adc52d1d2b"
+    },
+    {
+      "path": "sub-S03/ses-2/func/sub-S03_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S03",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S03/ses-3/func/sub-S03_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S03",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "85149862db7e7769fe8ddd7155e102c75e2cf82e"
+    },
+    {
+      "path": "sub-S03/ses-3/func/sub-S03_ses-3_task-FirstBite_physio.json",
+      "subject": "S03",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S03/ses-3/func/sub-S03_ses-3_task-Sintel_physio.json",
+      "subject": "S03",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S03/ses-3/func/sub-S03_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S03",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S03/ses-4/func/sub-S03_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S03",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S03/ses-4/func/sub-S03_ses-4_task-Chatter_physio.json",
+      "subject": "S03",
+      "session": "4",
+      "task": "Chatter",
+      "blob_sha": "7a4637d90b8df59513ef39c8a45983e0ab4bf15e"
+    },
+    {
+      "path": "sub-S03/ses-4/func/sub-S03_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S03",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S03/ses-4/func/sub-S03_ses-4_task-YouAgain_physio.json",
+      "subject": "S03",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S04/ses-1/func/sub-S04_ses-1_task-BetweenViewing_physio.json",
+      "subject": "S04",
+      "session": "1",
+      "task": "BetweenViewing",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S04/ses-1/func/sub-S04_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S04",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S04/ses-1/func/sub-S04_ses-1_task-Rest_physio.json",
+      "subject": "S04",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "487ef11193d572459cd250288e02bdb4247df017"
+    },
+    {
+      "path": "sub-S04/ses-1/func/sub-S04_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S04",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S04/ses-1/func/sub-S04_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S04",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S04/ses-2/func/sub-S04_ses-2_task-Sintel_physio.json",
+      "subject": "S04",
+      "session": "2",
+      "task": "Sintel",
+      "blob_sha": "094c6145718e0ce765a8a03e14980f53d2f1f8d3"
+    },
+    {
+      "path": "sub-S04/ses-2/func/sub-S04_ses-2_task-Spaceman_physio.json",
+      "subject": "S04",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S04/ses-2/func/sub-S04_ses-2_task-ToClaireFromSonny_physio.json",
+      "subject": "S04",
+      "session": "2",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S04/ses-2/func/sub-S04_ses-2_task-YouAgain_physio.json",
+      "subject": "S04",
+      "session": "2",
+      "task": "YouAgain",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S04/ses-3/func/sub-S04_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S04",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S04/ses-3/func/sub-S04_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S04",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S04/ses-3/func/sub-S04_ses-3_task-Chatter_physio.json",
+      "subject": "S04",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "c00a1041107b2adab9a4e8b0f60cdd4122c767d5"
+    },
+    {
+      "path": "sub-S04/ses-3/func/sub-S04_ses-3_task-LessonLearned_physio.json",
+      "subject": "S04",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S04/ses-4/func/sub-S04_ses-4_task-FirstBite_physio.json",
+      "subject": "S04",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S04/ses-4/func/sub-S04_ses-4_task-Payload_physio.json",
+      "subject": "S04",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S04/ses-4/func/sub-S04_ses-4_task-Superhero_physio.json",
+      "subject": "S04",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S05/ses-1/func/sub-S05_ses-1_task-BigBuckBunny_physio.json",
+      "subject": "S05",
+      "session": "1",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S05/ses-1/func/sub-S05_ses-1_task-Rest_physio.json",
+      "subject": "S05",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "4526ec5905f6859ca9537aab73b20eb4b482d0c8"
+    },
+    {
+      "path": "sub-S05/ses-1/func/sub-S05_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S05",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S05/ses-1/func/sub-S05_ses-1_task-YouAgain_physio.json",
+      "subject": "S05",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S05/ses-2/func/sub-S05_ses-2_task-Chatter_physio.json",
+      "subject": "S05",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S05/ses-2/func/sub-S05_ses-2_task-LessonLearned_physio.json",
+      "subject": "S05",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S05/ses-2/func/sub-S05_ses-2_task-Spaceman_physio.json",
+      "subject": "S05",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S05/ses-2/func/sub-S05_ses-2_task-ToClaireFromSonny_physio.json",
+      "subject": "S05",
+      "session": "2",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "264ed68269a8855897f644ce7291739a68e7c6c3"
+    },
+    {
+      "path": "sub-S05/ses-3/func/sub-S05_ses-3_task-FirstBite_physio.json",
+      "subject": "S05",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S05/ses-3/func/sub-S05_ses-3_task-Sintel_physio.json",
+      "subject": "S05",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S05/ses-3/func/sub-S05_ses-3_task-Superhero_physio.json",
+      "subject": "S05",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "d3455d7cb78fbd30000343681d748a35c35e739a"
+    },
+    {
+      "path": "sub-S05/ses-4/func/sub-S05_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S05",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S05/ses-4/func/sub-S05_ses-4_task-BetweenViewings_physio.json",
+      "subject": "S05",
+      "session": "4",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S05/ses-4/func/sub-S05_ses-4_task-Payload_physio.json",
+      "subject": "S05",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "810a484cd9343364f7e1f5175bc3bbae57c8c901"
+    },
+    {
+      "path": "sub-S05/ses-4/func/sub-S05_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S05",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S06/ses-1/func/sub-S06_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S06",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S06/ses-1/func/sub-S06_ses-1_task-Payload_physio.json",
+      "subject": "S06",
+      "session": "1",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S06/ses-1/func/sub-S06_ses-1_task-Rest_physio.json",
+      "subject": "S06",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "07360333391fc17d2c54837ff7e2af3fda57ceed"
+    },
+    {
+      "path": "sub-S06/ses-2/func/sub-S06_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S06",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S06/ses-2/func/sub-S06_ses-2_task-Chatter_physio.json",
+      "subject": "S06",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S06/ses-2/func/sub-S06_ses-2_task-Spaceman_physio.json",
+      "subject": "S06",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "97b25788d51166aabe5b1410b675842b51677bbe"
+    },
+    {
+      "path": "sub-S06/ses-2/func/sub-S06_ses-2_task-ToClaireFromSonny_physio.json",
+      "subject": "S06",
+      "session": "2",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S06/ses-3/func/sub-S06_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S06",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S06/ses-3/func/sub-S06_ses-3_task-Sintel_physio.json",
+      "subject": "S06",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S06/ses-3/func/sub-S06_ses-3_task-Superhero_physio.json",
+      "subject": "S06",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S06/ses-4/func/sub-S06_ses-4_task-FirstBite_physio.json",
+      "subject": "S06",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S06/ses-4/func/sub-S06_ses-4_task-LessonLearned_physio.json",
+      "subject": "S06",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "df1a4600e96f2d897a573b1492d5a43120ca4247"
+    },
+    {
+      "path": "sub-S06/ses-4/func/sub-S06_ses-4_task-TearsOfSteel_physio.json",
+      "subject": "S06",
+      "session": "4",
+      "task": "TearsOfSteel",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S06/ses-4/func/sub-S06_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S06",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S06/ses-4/func/sub-S06_ses-4_task-YouAgain_physio.json",
+      "subject": "S06",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S07/ses-1/func/sub-S07_ses-1_task-Rest_physio.json",
+      "subject": "S07",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "f92a4f46240d2cfebfe73377b1c08fc55631b647"
+    },
+    {
+      "path": "sub-S07/ses-1/func/sub-S07_ses-1_task-Sintel_physio.json",
+      "subject": "S07",
+      "session": "1",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S07/ses-1/func/sub-S07_ses-1_task-Superhero_physio.json",
+      "subject": "S07",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S07/ses-1/func/sub-S07_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S07",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S07/ses-2/func/sub-S07_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S07",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S07/ses-2/func/sub-S07_ses-2_task-Chatter_physio.json",
+      "subject": "S07",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S07/ses-2/func/sub-S07_ses-2_task-Payload_physio.json",
+      "subject": "S07",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "651db35e8424e8c0367fbd8d5139acc8239f1151"
+    },
+    {
+      "path": "sub-S07/ses-3/func/sub-S07_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S07",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S07/ses-3/func/sub-S07_ses-3_task-TheSecretNumber_physio.json",
+      "subject": "S07",
+      "session": "3",
+      "task": "TheSecretNumber",
+      "blob_sha": "2f17ba4b2b515ddc3b5906b57d959dc18dc201de"
+    },
+    {
+      "path": "sub-S07/ses-4/func/sub-S07_ses-4_task-FirstBite_physio.json",
+      "subject": "S07",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S07/ses-4/func/sub-S07_ses-4_task-LessonLearned_physio.json",
+      "subject": "S07",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "e58827c707fb459563dba01c7698bfdd55317a18"
+    },
+    {
+      "path": "sub-S07/ses-4/func/sub-S07_ses-4_task-YouAgain_physio.json",
+      "subject": "S07",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S07/ses-5/func/sub-S07_ses-5_task-BetweenViewings_physio.json",
+      "subject": "S07",
+      "session": "5",
+      "task": "BetweenViewings",
+      "blob_sha": "1983c4b27c1113cbf76157c2bdf0c95d9ccd19a6"
+    },
+    {
+      "path": "sub-S07/ses-5/func/sub-S07_ses-5_task-Spaceman_physio.json",
+      "subject": "S07",
+      "session": "5",
+      "task": "Spaceman",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S07/ses-5/func/sub-S07_ses-5_task-ToClaireFromSonny_physio.json",
+      "subject": "S07",
+      "session": "5",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S08/ses-1/func/sub-S08_ses-1_task-FirstBite_physio.json",
+      "subject": "S08",
+      "session": "1",
+      "task": "FirstBite",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S08/ses-1/func/sub-S08_ses-1_task-Rest_physio.json",
+      "subject": "S08",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "60c43119448c08ff73370f26425ff2d3b09f3956"
+    },
+    {
+      "path": "sub-S08/ses-1/func/sub-S08_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S08",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S08/ses-2/func/sub-S08_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S08",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "dc76bc463928058e36560d08ac91511837b0d5a6"
+    },
+    {
+      "path": "sub-S08/ses-2/func/sub-S08_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S08",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S08/ses-2/func/sub-S08_ses-2_task-Spaceman_physio.json",
+      "subject": "S08",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S08/ses-2/func/sub-S08_ses-2_task-YouAgain_physio.json",
+      "subject": "S08",
+      "session": "2",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S08/ses-3/func/sub-S08_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S08",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S08/ses-3/func/sub-S08_ses-3_task-Sintel_physio.json",
+      "subject": "S08",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "db6546201224bdb9357c61423d34d9cf0f63e595"
+    },
+    {
+      "path": "sub-S08/ses-3/func/sub-S08_ses-3_task-Superhero_physio.json",
+      "subject": "S08",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S08/ses-3/func/sub-S08_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S08",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S08/ses-3/func/sub-S08_ses-3_task-ToClaireFromSonny_physio.json",
+      "subject": "S08",
+      "session": "3",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S08/ses-4/func/sub-S08_ses-4_task-Chatter_physio.json",
+      "subject": "S08",
+      "session": "4",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S08/ses-4/func/sub-S08_ses-4_task-LessonLearned_physio.json",
+      "subject": "S08",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S08/ses-4/func/sub-S08_ses-4_task-Payload_physio.json",
+      "subject": "S08",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "d3bf2bc2d02b2f902e1daa1abfa34fc37a12426d"
+    },
+    {
+      "path": "sub-S09/ses-1/func/sub-S09_ses-1_task-BigBuckBunny_physio.json",
+      "subject": "S09",
+      "session": "1",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S09/ses-1/func/sub-S09_ses-1_task-LessonLearned_physio.json",
+      "subject": "S09",
+      "session": "1",
+      "task": "LessonLearned",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S09/ses-1/func/sub-S09_ses-1_task-Rest_physio.json",
+      "subject": "S09",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "7bfdcdd7aa8f09985764a39274c5c129090125f1"
+    },
+    {
+      "path": "sub-S09/ses-1/func/sub-S09_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S09",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S09/ses-2/func/sub-S09_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S09",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S09/ses-2/func/sub-S09_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S09",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S09/ses-2/func/sub-S09_ses-2_task-Chatter_physio.json",
+      "subject": "S09",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "bcae888cf0a0e7737f103446a55eb2019daad2ed"
+    },
+    {
+      "path": "sub-S09/ses-2/func/sub-S09_ses-2_task-Superhero_physio.json",
+      "subject": "S09",
+      "session": "2",
+      "task": "Superhero",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S09/ses-3/func/sub-S09_ses-3_task-FirstBite_physio.json",
+      "subject": "S09",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S09/ses-3/func/sub-S09_ses-3_task-Payload_physio.json",
+      "subject": "S09",
+      "session": "3",
+      "task": "Payload",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S09/ses-3/func/sub-S09_ses-3_task-Spaceman_physio.json",
+      "subject": "S09",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S09/ses-3/func/sub-S09_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S09",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S09/ses-4/func/sub-S09_ses-4_task-Sintel_physio.json",
+      "subject": "S09",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S09/ses-4/func/sub-S09_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S09",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S09/ses-4/func/sub-S09_ses-4_task-YouAgain_physio.json",
+      "subject": "S09",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S10/ses-1/func/sub-S10_ses-1_task-Chatter_physio.json",
+      "subject": "S10",
+      "session": "1",
+      "task": "Chatter",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S10/ses-1/func/sub-S10_ses-1_task-Rest_physio.json",
+      "subject": "S10",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "f6d81c1923354b484f63ccbc1dc49c7cdc073afc"
+    },
+    {
+      "path": "sub-S10/ses-1/func/sub-S10_ses-1_task-Superhero_physio.json",
+      "subject": "S10",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S10/ses-2/func/sub-S10_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S10",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S10/ses-2/func/sub-S10_ses-2_task-Payload_physio.json",
+      "subject": "S10",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S10/ses-2/func/sub-S10_ses-2_task-Sintel_physio.json",
+      "subject": "S10",
+      "session": "2",
+      "task": "Sintel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S10/ses-3/func/sub-S10_ses-3_task-FirstBite_physio.json",
+      "subject": "S10",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S10/ses-3/func/sub-S10_ses-3_task-LessonLearned_physio.json",
+      "subject": "S10",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "d84ad344efe7ceb037f5b54277f28b17a64252bf"
+    },
+    {
+      "path": "sub-S10/ses-3/func/sub-S10_ses-3_task-Spaceman_physio.json",
+      "subject": "S10",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S10/ses-3/func/sub-S10_ses-3_task-TheSecretNumber_physio.json",
+      "subject": "S10",
+      "session": "3",
+      "task": "TheSecretNumber",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S10/ses-4/func/sub-S10_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S10",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S10/ses-4/func/sub-S10_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S10",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "6d928ee124d3962083ca7b5b3dadd3907c87ed03"
+    },
+    {
+      "path": "sub-S10/ses-4/func/sub-S10_ses-4_task-TearsOfSteel_physio.json",
+      "subject": "S10",
+      "session": "4",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S10/ses-4/func/sub-S10_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S10",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S10/ses-4/func/sub-S10_ses-4_task-YouAgain_physio.json",
+      "subject": "S10",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S11/ses-1/func/sub-S11_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S11",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S11/ses-1/func/sub-S11_ses-1_task-BigBuckBunny_physio.json",
+      "subject": "S11",
+      "session": "1",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S11/ses-1/func/sub-S11_ses-1_task-Chatter_physio.json",
+      "subject": "S11",
+      "session": "1",
+      "task": "Chatter",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S11/ses-1/func/sub-S11_ses-1_task-Rest_physio.json",
+      "subject": "S11",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "9edc63caec2cbb09461b306eb634e4a564353dde"
+    },
+    {
+      "path": "sub-S11/ses-1/func/sub-S11_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S11",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S11/ses-2/func/sub-S11_ses-2_task-FirstBite_physio.json",
+      "subject": "S11",
+      "session": "2",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S11/ses-2/func/sub-S11_ses-2_task-Payload_physio.json",
+      "subject": "S11",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S11/ses-2/func/sub-S11_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S11",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "2ae66eaf673aedbfb027b966abe59d0675fc60aa"
+    },
+    {
+      "path": "sub-S11/ses-3/func/sub-S11_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S11",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S11/ses-3/func/sub-S11_ses-3_task-LessonLearned_physio.json",
+      "subject": "S11",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S11/ses-3/func/sub-S11_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S11",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "4955744d73f84c38d8bc0b08fbbf959c5aa828f9"
+    },
+    {
+      "path": "sub-S11/ses-3/func/sub-S11_ses-3_task-YouAgain_physio.json",
+      "subject": "S11",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S11/ses-4/func/sub-S11_ses-4_task-Sintel_physio.json",
+      "subject": "S11",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S11/ses-4/func/sub-S11_ses-4_task-Spaceman_physio.json",
+      "subject": "S11",
+      "session": "4",
+      "task": "Spaceman",
+      "blob_sha": "f0ccb38365887ab1b3659ac7e7006fefc5024489"
+    },
+    {
+      "path": "sub-S11/ses-4/func/sub-S11_ses-4_task-Superhero_physio.json",
+      "subject": "S11",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S13/ses-1/func/sub-S13_ses-1_task-AfterTheRain_physio.json",
+      "subject": "S13",
+      "session": "1",
+      "task": "AfterTheRain",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S13/ses-1/func/sub-S13_ses-1_task-LessonLearned_physio.json",
+      "subject": "S13",
+      "session": "1",
+      "task": "LessonLearned",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S13/ses-1/func/sub-S13_ses-1_task-Rest_physio.json",
+      "subject": "S13",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "edb11af09cb04b476fcc65520e1afa8c4a881038"
+    },
+    {
+      "path": "sub-S13/ses-1/func/sub-S13_ses-1_task-Sintel_physio.json",
+      "subject": "S13",
+      "session": "1",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S13/ses-1/func/sub-S13_ses-1_task-YouAgain_physio.json",
+      "subject": "S13",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S13/ses-2/func/sub-S13_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S13",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S13/ses-3/func/sub-S13_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S13",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S13/ses-3/func/sub-S13_ses-3_task-Chatter_physio.json",
+      "subject": "S13",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S13/ses-3/func/sub-S13_ses-3_task-Spaceman_physio.json",
+      "subject": "S13",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "075bda166d0b4c3a3dc0513e3166378f07aa4ab8"
+    },
+    {
+      "path": "sub-S13/ses-3/func/sub-S13_ses-3_task-ToClaireFromSonny_physio.json",
+      "subject": "S13",
+      "session": "3",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S13/ses-4/func/sub-S13_ses-4_task-FirstBite_physio.json",
+      "subject": "S13",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "606edc8e81cfc849a83d5f566180e6216f4ed12b"
+    },
+    {
+      "path": "sub-S13/ses-4/func/sub-S13_ses-4_task-Superhero_physio.json",
+      "subject": "S13",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S13/ses-4/func/sub-S13_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S13",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S14/ses-1/func/sub-S14_ses-1_task-Chatter_physio.json",
+      "subject": "S14",
+      "session": "1",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S14/ses-1/func/sub-S14_ses-1_task-Rest_physio.json",
+      "subject": "S14",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "1872b89150aedc256f2c90c2b2c3fee932f88e0d"
+    },
+    {
+      "path": "sub-S14/ses-1/func/sub-S14_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S14",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "094c6145718e0ce765a8a03e14980f53d2f1f8d3"
+    },
+    {
+      "path": "sub-S14/ses-2/func/sub-S14_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S14",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S14/ses-2/func/sub-S14_ses-2_task-LessonLearned_physio.json",
+      "subject": "S14",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S14/ses-2/func/sub-S14_ses-2_task-Spaceman_physio.json",
+      "subject": "S14",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S14/ses-2/func/sub-S14_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S14",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "8366434d20a0aef52557ff4f434a4cf8ab10197b"
+    },
+    {
+      "path": "sub-S14/ses-3/func/sub-S14_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S14",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S14/ses-3/func/sub-S14_ses-3_task-FirstBite_physio.json",
+      "subject": "S14",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S14/ses-3/func/sub-S14_ses-3_task-Payload_physio.json",
+      "subject": "S14",
+      "session": "3",
+      "task": "Payload",
+      "blob_sha": "07e5cdc66075be4e793865c449588c068aabc5dc"
+    },
+    {
+      "path": "sub-S14/ses-3/func/sub-S14_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S14",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S14/ses-4/func/sub-S14_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S14",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S14/ses-4/func/sub-S14_ses-4_task-Sintel_physio.json",
+      "subject": "S14",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S14/ses-4/func/sub-S14_ses-4_task-Superhero_physio.json",
+      "subject": "S14",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S14/ses-4/func/sub-S14_ses-4_task-YouAgain_physio.json",
+      "subject": "S14",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "5d567bc6c6e870687c398674cd8674db66450baa"
+    },
+    {
+      "path": "sub-S15/ses-1/func/sub-S15_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S15",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S15/ses-1/func/sub-S15_ses-1_task-Rest_physio.json",
+      "subject": "S15",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "7c329bb0d18ceff57f9671c02c6112171950bbf5"
+    },
+    {
+      "path": "sub-S15/ses-1/func/sub-S15_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S15",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S15/ses-1/func/sub-S15_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S15",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S15/ses-2/func/sub-S15_ses-2_task-FirstBite_physio.json",
+      "subject": "S15",
+      "session": "2",
+      "task": "FirstBite",
+      "blob_sha": "5b107bfba0ed13ffdb9c485b22db3792ebf3891a"
+    },
+    {
+      "path": "sub-S15/ses-2/func/sub-S15_ses-2_task-Payload_physio.json",
+      "subject": "S15",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S15/ses-2/func/sub-S15_ses-2_task-Spaceman_physio.json",
+      "subject": "S15",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S15/ses-3/func/sub-S15_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S15",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S15/ses-3/func/sub-S15_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S15",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S15/ses-3/func/sub-S15_ses-3_task-Chatter_physio.json",
+      "subject": "S15",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S15/ses-3/func/sub-S15_ses-3_task-TheSecretNumber_physio.json",
+      "subject": "S15",
+      "session": "3",
+      "task": "TheSecretNumber",
+      "blob_sha": "dba9545850ba12866fbc8ce548f56954cbeab14a"
+    },
+    {
+      "path": "sub-S15/ses-3/func/sub-S15_ses-3_task-YouAgain_physio.json",
+      "subject": "S15",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S15/ses-4/func/sub-S15_ses-4_task-LessonLearned_physio.json",
+      "subject": "S15",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "f1368568de975cfda77d3786f407b63bae1ace21"
+    },
+    {
+      "path": "sub-S15/ses-4/func/sub-S15_ses-4_task-Sintel_physio.json",
+      "subject": "S15",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S15/ses-4/func/sub-S15_ses-4_task-Superhero_physio.json",
+      "subject": "S15",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S16/ses-1/func/sub-S16_ses-1_task-Rest_physio.json",
+      "subject": "S16",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "f3b523c0728cd80878a2b509eb53699c4bd764fb"
+    },
+    {
+      "path": "sub-S16/ses-1/func/sub-S16_ses-1_task-Spaceman_physio.json",
+      "subject": "S16",
+      "session": "1",
+      "task": "Spaceman",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S16/ses-1/func/sub-S16_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S16",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S16/ses-1/func/sub-S16_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S16",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S16/ses-2/func/sub-S16_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S16",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S16/ses-2/func/sub-S16_ses-2_task-BigBuckBunny_physio.json",
+      "subject": "S16",
+      "session": "2",
+      "task": "BigBuckBunny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S16/ses-2/func/sub-S16_ses-2_task-ToClaireFromSonny_physio.json",
+      "subject": "S16",
+      "session": "2",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S16/ses-2/func/sub-S16_ses-2_task-YouAgain_physio.json",
+      "subject": "S16",
+      "session": "2",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S16/ses-3/func/sub-S16_ses-3_task-Chatter_physio.json",
+      "subject": "S16",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S16/ses-3/func/sub-S16_ses-3_task-FirstBite_physio.json",
+      "subject": "S16",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S16/ses-3/func/sub-S16_ses-3_task-LessonLearned_physio.json",
+      "subject": "S16",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S16/ses-3/func/sub-S16_ses-3_task-Payload_physio.json",
+      "subject": "S16",
+      "session": "3",
+      "task": "Payload",
+      "blob_sha": "4f2ca614d5c115587696662ba6ae3c55322caaf5"
+    },
+    {
+      "path": "sub-S16/ses-4/func/sub-S16_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S16",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S16/ses-4/func/sub-S16_ses-4_task-Sintel_physio.json",
+      "subject": "S16",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S16/ses-4/func/sub-S16_ses-4_task-Superhero_physio.json",
+      "subject": "S16",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S17/ses-1/func/sub-S17_ses-1_task-Chatter_physio.json",
+      "subject": "S17",
+      "session": "1",
+      "task": "Chatter",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S17/ses-1/func/sub-S17_ses-1_task-Rest_physio.json",
+      "subject": "S17",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "118df1e343cc3fd6abd33e19d3d1e10bc82b20c0"
+    },
+    {
+      "path": "sub-S17/ses-1/func/sub-S17_ses-1_task-Spaceman_physio.json",
+      "subject": "S17",
+      "session": "1",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S17/ses-1/func/sub-S17_ses-1_task-YouAgain_physio.json",
+      "subject": "S17",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S17/ses-2/func/sub-S17_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S17",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S17/ses-2/func/sub-S17_ses-2_task-LessonLearned_physio.json",
+      "subject": "S17",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S17/ses-2/func/sub-S17_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S17",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S17/ses-2/func/sub-S17_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S17",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S17/ses-3/func/sub-S17_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S17",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S17/ses-3/func/sub-S17_ses-3_task-FirstBite_physio.json",
+      "subject": "S17",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S17/ses-3/func/sub-S17_ses-3_task-Superhero_physio.json",
+      "subject": "S17",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "d5d51b1945511f05b33319e76f4cfed7cbd53e4f"
+    },
+    {
+      "path": "sub-S17/ses-4/func/sub-S17_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S17",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "caa373aa209e22fd1f12303e1a772b29b4dfe7df"
+    },
+    {
+      "path": "sub-S17/ses-4/func/sub-S17_ses-4_task-Payload_physio.json",
+      "subject": "S17",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S17/ses-4/func/sub-S17_ses-4_task-Sintel_physio.json",
+      "subject": "S17",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S17/ses-4/func/sub-S17_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S17",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S19/ses-1/func/sub-S19_ses-1_task-AfterTheRain_physio.json",
+      "subject": "S19",
+      "session": "1",
+      "task": "AfterTheRain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S19/ses-1/func/sub-S19_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S19",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S19/ses-1/func/sub-S19_ses-1_task-Rest_physio.json",
+      "subject": "S19",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "8e913d92bb858dec7ddfa9d1c22cbda1405c4ba2"
+    },
+    {
+      "path": "sub-S19/ses-1/func/sub-S19_ses-1_task-YouAgain_physio.json",
+      "subject": "S19",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S19/ses-2/func/sub-S19_ses-2_task-BigBuckBunny_physio.json",
+      "subject": "S19",
+      "session": "2",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S19/ses-2/func/sub-S19_ses-2_task-Chatter_physio.json",
+      "subject": "S19",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S19/ses-2/func/sub-S19_ses-2_task-FirstBite_physio.json",
+      "subject": "S19",
+      "session": "2",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S19/ses-2/func/sub-S19_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S19",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S19/ses-2/func/sub-S19_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S19",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "2d3af6e731d6f274a35a0da0f7f023be00cccd8a"
+    },
+    {
+      "path": "sub-S19/ses-3/func/sub-S19_ses-3_task-LessonLearned_physio.json",
+      "subject": "S19",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S19/ses-3/func/sub-S19_ses-3_task-Payload_physio.json",
+      "subject": "S19",
+      "session": "3",
+      "task": "Payload",
+      "blob_sha": "8e5a9cdafab6f8d487defe385a3c312116d3a806"
+    },
+    {
+      "path": "sub-S19/ses-3/func/sub-S19_ses-3_task-ToClaireFromSonny_physio.json",
+      "subject": "S19",
+      "session": "3",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S19/ses-4/func/sub-S19_ses-4_task-Sintel_physio.json",
+      "subject": "S19",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "f5ed3aeffeda9cf9c814f36a3ef2de7b303124bc"
+    },
+    {
+      "path": "sub-S19/ses-4/func/sub-S19_ses-4_task-Spaceman_physio.json",
+      "subject": "S19",
+      "session": "4",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S19/ses-4/func/sub-S19_ses-4_task-Superhero_physio.json",
+      "subject": "S19",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S20/ses-1/func/sub-S20_ses-1_task-Rest_physio.json",
+      "subject": "S20",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "53aa9df563391cd46d6745d92f07f51bfc764a72"
+    },
+    {
+      "path": "sub-S20/ses-1/func/sub-S20_ses-1_task-Superhero_physio.json",
+      "subject": "S20",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S20/ses-1/func/sub-S20_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S20",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S20/ses-1/func/sub-S20_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S20",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S20/ses-2/func/sub-S20_ses-2_task-Chatter_physio.json",
+      "subject": "S20",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S20/ses-2/func/sub-S20_ses-2_task-FirstBite_physio.json",
+      "subject": "S20",
+      "session": "2",
+      "task": "FirstBite",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S20/ses-2/func/sub-S20_ses-2_task-Sintel_physio.json",
+      "subject": "S20",
+      "session": "2",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S20/ses-2/func/sub-S20_ses-2_task-Spaceman_physio.json",
+      "subject": "S20",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "d2f3d6a0c21861c028b577ce3ed4b61507f2a13f"
+    },
+    {
+      "path": "sub-S20/ses-3/func/sub-S20_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S20",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "5a5009b48bb8fe1cc8aa0121673bc5c44c833343"
+    },
+    {
+      "path": "sub-S20/ses-3/func/sub-S20_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S20",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S20/ses-3/func/sub-S20_ses-3_task-LessonLearned_physio.json",
+      "subject": "S20",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S20/ses-3/func/sub-S20_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S20",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S20/ses-4/func/sub-S20_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S20",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S20/ses-4/func/sub-S20_ses-4_task-Payload_physio.json",
+      "subject": "S20",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "9934ff0f7579df3b827fb1c431747b48a02607cb"
+    },
+    {
+      "path": "sub-S20/ses-4/func/sub-S20_ses-4_task-YouAgain_physio.json",
+      "subject": "S20",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S21/ses-1/func/sub-S21_ses-1_task-Rest_physio.json",
+      "subject": "S21",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "ea75bd5b647f2dced639307c1d28b13c2663d3b8"
+    },
+    {
+      "path": "sub-S21/ses-1/func/sub-S21_ses-1_task-Superhero_physio.json",
+      "subject": "S21",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S21/ses-1/func/sub-S21_ses-1_task-YouAgain_physio.json",
+      "subject": "S21",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S21/ses-2/func/sub-S21_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S21",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-2/func/sub-S21_ses-2_task-Chatter_physio.json",
+      "subject": "S21",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-2/func/sub-S21_ses-2_task-LessonLearned_physio.json",
+      "subject": "S21",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-2/func/sub-S21_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S21",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-2/func/sub-S21_ses-2_task-ToClaireFromSonny_physio.json",
+      "subject": "S21",
+      "session": "2",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-3/func/sub-S21_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S21",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-3/func/sub-S21_ses-3_task-Spaceman_physio.json",
+      "subject": "S21",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-3/func/sub-S21_ses-3_task-TheSecretNumber_physio.json",
+      "subject": "S21",
+      "session": "3",
+      "task": "TheSecretNumber",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S21/ses-4/func/sub-S21_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S21",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S21/ses-4/func/sub-S21_ses-4_task-Error_physio.json",
+      "subject": "S21",
+      "session": "4",
+      "task": "Error",
+      "blob_sha": "a38429648c7ccbe3d2bff44f692a90e68077f570"
+    },
+    {
+      "path": "sub-S21/ses-4/func/sub-S21_ses-4_task-FirstBite_physio.json",
+      "subject": "S21",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S21/ses-4/func/sub-S21_ses-4_task-Payload_physio.json",
+      "subject": "S21",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S21/ses-4/func/sub-S21_ses-4_task-Sintel_physio.json",
+      "subject": "S21",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S22/ses-1/func/sub-S22_ses-1_task-Rest_physio.json",
+      "subject": "S22",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "2eb72291c7e510d369f13b3f9eeb822968a50f6e"
+    },
+    {
+      "path": "sub-S22/ses-1/func/sub-S22_ses-1_task-Spaceman_physio.json",
+      "subject": "S22",
+      "session": "1",
+      "task": "Spaceman",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S22/ses-1/func/sub-S22_ses-1_task-Superhero_physio.json",
+      "subject": "S22",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S22/ses-1/func/sub-S22_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S22",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S22/ses-2/func/sub-S22_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S22",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-2/func/sub-S22_ses-2_task-Chatter_physio.json",
+      "subject": "S22",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-2/func/sub-S22_ses-2_task-LessonLearned_physio.json",
+      "subject": "S22",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-3/func/sub-S22_ses-3_task-FirstBite_physio.json",
+      "subject": "S22",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-3/func/sub-S22_ses-3_task-Sintel_physio.json",
+      "subject": "S22",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-3/func/sub-S22_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S22",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-3/func/sub-S22_ses-3_task-YouAgain_physio.json",
+      "subject": "S22",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S22/ses-4/func/sub-S22_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S22",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S22/ses-4/func/sub-S22_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S22",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S22/ses-4/func/sub-S22_ses-4_task-Payload_physio.json",
+      "subject": "S22",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "c0e8dcb81295599615d50393e5859547efacd3a7"
+    },
+    {
+      "path": "sub-S22/ses-4/func/sub-S22_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S22",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S23/ses-1/func/sub-S23_ses-1_task-Chatter_physio.json",
+      "subject": "S23",
+      "session": "1",
+      "task": "Chatter",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S23/ses-1/func/sub-S23_ses-1_task-Rest_physio.json",
+      "subject": "S23",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "73605876324da94b3287065b7e34767e60f9c6bd"
+    },
+    {
+      "path": "sub-S23/ses-1/func/sub-S23_ses-1_task-Superhero_physio.json",
+      "subject": "S23",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S23/ses-1/func/sub-S23_ses-1_task-TearsOfSteel_physio.json",
+      "subject": "S23",
+      "session": "1",
+      "task": "TearsOfSteel",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S23/ses-2/func/sub-S23_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S23",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S23/ses-2/func/sub-S23_ses-2_task-Payload_physio.json",
+      "subject": "S23",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S23/ses-2/func/sub-S23_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S23",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "e00bc5a3842a5373fbb0d2567303da38e3105f5a"
+    },
+    {
+      "path": "sub-S23/ses-3/func/sub-S23_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S23",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S23/ses-3/func/sub-S23_ses-3_task-Spaceman_physio.json",
+      "subject": "S23",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S23/ses-3/func/sub-S23_ses-3_task-ToClaireFromSonny_physio.json",
+      "subject": "S23",
+      "session": "3",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S23/ses-3/func/sub-S23_ses-3_task-YouAgain_physio.json",
+      "subject": "S23",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S23/ses-4/func/sub-S23_ses-4_task-BetweenViewings_physio.json",
+      "subject": "S23",
+      "session": "4",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S23/ses-4/func/sub-S23_ses-4_task-FirstBite_physio.json",
+      "subject": "S23",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S23/ses-4/func/sub-S23_ses-4_task-LessonLearned_physio.json",
+      "subject": "S23",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "094c6145718e0ce765a8a03e14980f53d2f1f8d3"
+    },
+    {
+      "path": "sub-S23/ses-4/func/sub-S23_ses-4_task-Sintel_physio.json",
+      "subject": "S23",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S24/ses-1/func/sub-S24_ses-1_task-Chatter_physio.json",
+      "subject": "S24",
+      "session": "1",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S24/ses-1/func/sub-S24_ses-1_task-FirstBite_physio.json",
+      "subject": "S24",
+      "session": "1",
+      "task": "FirstBite",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S24/ses-1/func/sub-S24_ses-1_task-Rest_physio.json",
+      "subject": "S24",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "02e4c76db0b3548176f95414d175e42d9acbc9dc"
+    },
+    {
+      "path": "sub-S24/ses-1/func/sub-S24_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S24",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S24/ses-2/func/sub-S24_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S24",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S24/ses-2/func/sub-S24_ses-2_task-LessonLearned_physio.json",
+      "subject": "S24",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "0bf8592f09051654185ce2ce9f2074991a969b65"
+    },
+    {
+      "path": "sub-S24/ses-2/func/sub-S24_ses-2_task-Spaceman_physio.json",
+      "subject": "S24",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S24/ses-2/func/sub-S24_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S24",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S24/ses-3/func/sub-S24_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S24",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S24/ses-3/func/sub-S24_ses-3_task-Sintel_physio.json",
+      "subject": "S24",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S24/ses-3/func/sub-S24_ses-3_task-Superhero_physio.json",
+      "subject": "S24",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "fe772bb0c64bac4fd523af58f8fc91eec685c3e9"
+    },
+    {
+      "path": "sub-S24/ses-3/func/sub-S24_ses-3_task-YouAgain_physio.json",
+      "subject": "S24",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S24/ses-4/func/sub-S24_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S24",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S24/ses-4/func/sub-S24_ses-4_task-Payload_physio.json",
+      "subject": "S24",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S24/ses-4/func/sub-S24_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S24",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S25/ses-1/func/sub-S25_ses-1_task-Payload_physio.json",
+      "subject": "S25",
+      "session": "1",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S25/ses-1/func/sub-S25_ses-1_task-Rest_physio.json",
+      "subject": "S25",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "64650f9d5bb5505e16f42153f31afda859c21d3e"
+    },
+    {
+      "path": "sub-S25/ses-1/func/sub-S25_ses-1_task-YouAgain_physio.json",
+      "subject": "S25",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S25/ses-2/func/sub-S25_ses-2_task-BigBuckBunny_physio.json",
+      "subject": "S25",
+      "session": "2",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S25/ses-2/func/sub-S25_ses-2_task-Spaceman_physio.json",
+      "subject": "S25",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S25/ses-2/func/sub-S25_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S25",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S25/ses-2/func/sub-S25_ses-2_task-TheSecretNumber_physio.json",
+      "subject": "S25",
+      "session": "2",
+      "task": "TheSecretNumber",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S25/ses-3/func/sub-S25_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S25",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S25/ses-3/func/sub-S25_ses-3_task-Chatter_physio.json",
+      "subject": "S25",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S25/ses-3/func/sub-S25_ses-3_task-Sintel_physio.json",
+      "subject": "S25",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S25/ses-3/func/sub-S25_ses-3_task-ToClaireFromSonny_physio.json",
+      "subject": "S25",
+      "session": "3",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S25/ses-4/func/sub-S25_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S25",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S25/ses-4/func/sub-S25_ses-4_task-FirstBite_physio.json",
+      "subject": "S25",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S25/ses-4/func/sub-S25_ses-4_task-LessonLearned_physio.json",
+      "subject": "S25",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S25/ses-4/func/sub-S25_ses-4_task-Superhero_physio.json",
+      "subject": "S25",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S26/ses-1/func/sub-S26_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S26",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S26/ses-1/func/sub-S26_ses-1_task-Rest_physio.json",
+      "subject": "S26",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "3dd1b2f242bff2f4a4ca748daf5ef686361358ba"
+    },
+    {
+      "path": "sub-S26/ses-1/func/sub-S26_ses-1_task-Spaceman_physio.json",
+      "subject": "S26",
+      "session": "1",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S26/ses-2/func/sub-S26_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S26",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "5e0392bd15f2f08318af42efb46831cd11f42b69"
+    },
+    {
+      "path": "sub-S26/ses-2/func/sub-S26_ses-2_task-BigBuckBunny_physio.json",
+      "subject": "S26",
+      "session": "2",
+      "task": "BigBuckBunny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S26/ses-2/func/sub-S26_ses-2_task-LessonLearned_physio.json",
+      "subject": "S26",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S26/ses-2/func/sub-S26_ses-2_task-Superhero_physio.json",
+      "subject": "S26",
+      "session": "2",
+      "task": "Superhero",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S26/ses-3/func/sub-S26_ses-3_task-FirstBite_physio.json",
+      "subject": "S26",
+      "session": "3",
+      "task": "FirstBite",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S26/ses-3/func/sub-S26_ses-3_task-Sintel_physio.json",
+      "subject": "S26",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S26/ses-3/func/sub-S26_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S26",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "5809d8b5e8e1f159102672bb0f713b56b9506d6f"
+    },
+    {
+      "path": "sub-S26/ses-3/func/sub-S26_ses-3_task-TheSecretNumber_physio.json",
+      "subject": "S26",
+      "session": "3",
+      "task": "TheSecretNumber",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S26/ses-4/func/sub-S26_ses-4_task-Chatter_physio.json",
+      "subject": "S26",
+      "session": "4",
+      "task": "Chatter",
+      "blob_sha": "03744dbeb1974955283db848fa070a6d5bca1a01"
+    },
+    {
+      "path": "sub-S26/ses-4/func/sub-S26_ses-4_task-Payload_physio.json",
+      "subject": "S26",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S26/ses-4/func/sub-S26_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S26",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S26/ses-4/func/sub-S26_ses-4_task-YouAgain_physio.json",
+      "subject": "S26",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "094c6145718e0ce765a8a03e14980f53d2f1f8d3"
+    },
+    {
+      "path": "sub-S27/ses-1/func/sub-S27_ses-1_task-FirstBite_physio.json",
+      "subject": "S27",
+      "session": "1",
+      "task": "FirstBite",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S27/ses-1/func/sub-S27_ses-1_task-LessonLearned_physio.json",
+      "subject": "S27",
+      "session": "1",
+      "task": "LessonLearned",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S27/ses-1/func/sub-S27_ses-1_task-Rest_physio.json",
+      "subject": "S27",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "e355bcbb860df442a5a6cee4cc7c7397d40bfccd"
+    },
+    {
+      "path": "sub-S27/ses-1/func/sub-S27_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S27",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S27/ses-2/func/sub-S27_ses-2_task-Chatter_physio.json",
+      "subject": "S27",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "094c6145718e0ce765a8a03e14980f53d2f1f8d3"
+    },
+    {
+      "path": "sub-S27/ses-2/func/sub-S27_ses-2_task-Sintel_physio.json",
+      "subject": "S27",
+      "session": "2",
+      "task": "Sintel",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S27/ses-2/func/sub-S27_ses-2_task-Superhero_physio.json",
+      "subject": "S27",
+      "session": "2",
+      "task": "Superhero",
+      "blob_sha": "b9ad1c0d3a8ad6eea2f7ba3f21534febee3522b4"
+    },
+    {
+      "path": "sub-S27/ses-2/func/sub-S27_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S27",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "e634e593d5194e208b33d1f04ac5a550e2228f73"
+    },
+    {
+      "path": "sub-S27/ses-3/func/sub-S27_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S27",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S27/ses-3/func/sub-S27_ses-3_task-TheSecretNumber_physio.json",
+      "subject": "S27",
+      "session": "3",
+      "task": "TheSecretNumber",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S27/ses-3/func/sub-S27_ses-3_task-YouAgain_physio.json",
+      "subject": "S27",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S27/ses-4/func/sub-S27_ses-4_task-AfterTheRain_physio.json",
+      "subject": "S27",
+      "session": "4",
+      "task": "AfterTheRain",
+      "blob_sha": "002ce8f8c2d4de410dc31f2f24ca0895eda6d46a"
+    },
+    {
+      "path": "sub-S27/ses-4/func/sub-S27_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S27",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S27/ses-4/func/sub-S27_ses-4_task-Payload_physio.json",
+      "subject": "S27",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S27/ses-4/func/sub-S27_ses-4_task-Spaceman_physio.json",
+      "subject": "S27",
+      "session": "4",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S28/ses-1/func/sub-S28_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S28",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S28/ses-1/func/sub-S28_ses-1_task-FirstBite_physio.json",
+      "subject": "S28",
+      "session": "1",
+      "task": "FirstBite",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S28/ses-1/func/sub-S28_ses-1_task-Rest_physio.json",
+      "subject": "S28",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "d6ce448d8b1dcb55f1b2c72a5a941f640c7fa947"
+    },
+    {
+      "path": "sub-S28/ses-1/func/sub-S28_ses-1_task-Spaceman_physio.json",
+      "subject": "S28",
+      "session": "1",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S28/ses-2/func/sub-S28_ses-2_task-Chatter_physio.json",
+      "subject": "S28",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S28/ses-2/func/sub-S28_ses-2_task-LessonLearned_physio.json",
+      "subject": "S28",
+      "session": "2",
+      "task": "LessonLearned",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S28/ses-2/func/sub-S28_ses-2_task-Payload_physio.json",
+      "subject": "S28",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "b2fbfb637169514f50549c493bc082fbcf5c3558"
+    },
+    {
+      "path": "sub-S28/ses-2/func/sub-S28_ses-2_task-Sintel_physio.json",
+      "subject": "S28",
+      "session": "2",
+      "task": "Sintel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S28/ses-3/func/sub-S28_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S28",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S28/ses-3/func/sub-S28_ses-3_task-BigBuckBunny_physio.json",
+      "subject": "S28",
+      "session": "3",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S28/ses-3/func/sub-S28_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S28",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S28/ses-3/func/sub-S28_ses-3_task-YouAgain_physio.json",
+      "subject": "S28",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S28/ses-4/func/sub-S28_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S28",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "0ede2ada1e224c30c09b4b401feb0bfa32f6d8ba"
+    },
+    {
+      "path": "sub-S28/ses-4/func/sub-S28_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S28",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S28/ses-5/func/sub-S28_ses-5_task-Superhero_physio.json",
+      "subject": "S28",
+      "session": "5",
+      "task": "Superhero",
+      "blob_sha": "6669cf998408d23f7dc645242a023acd2bbe951a"
+    },
+    {
+      "path": "sub-S29/ses-1/func/sub-S29_ses-1_task-BigBuckBunny_physio.json",
+      "subject": "S29",
+      "session": "1",
+      "task": "BigBuckBunny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S29/ses-1/func/sub-S29_ses-1_task-Rest_physio.json",
+      "subject": "S29",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "e3d810946ecd640d1b38f80b841c53d24b0d57f6"
+    },
+    {
+      "path": "sub-S29/ses-1/func/sub-S29_ses-1_task-TheSecretNumber_physio.json",
+      "subject": "S29",
+      "session": "1",
+      "task": "TheSecretNumber",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S29/ses-1/func/sub-S29_ses-1_task-YouAgain_physio.json",
+      "subject": "S29",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S29/ses-2/func/sub-S29_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S29",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S29/ses-2/func/sub-S29_ses-2_task-Payload_physio.json",
+      "subject": "S29",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S29/ses-2/func/sub-S29_ses-2_task-Sintel_physio.json",
+      "subject": "S29",
+      "session": "2",
+      "task": "Sintel",
+      "blob_sha": "95968561d684f562751d990f33bfc04fe87329d0"
+    },
+    {
+      "path": "sub-S29/ses-2/func/sub-S29_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S29",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S29/ses-3/func/sub-S29_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S29",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S29/ses-3/func/sub-S29_ses-3_task-Chatter_physio.json",
+      "subject": "S29",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "fdde2ebfa9273a26bf06f081bcf4c1264db73898"
+    },
+    {
+      "path": "sub-S29/ses-3/func/sub-S29_ses-3_task-Spaceman_physio.json",
+      "subject": "S29",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S29/ses-3/func/sub-S29_ses-3_task-Superhero_physio.json",
+      "subject": "S29",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S29/ses-4/func/sub-S29_ses-4_task-FirstBite_physio.json",
+      "subject": "S29",
+      "session": "4",
+      "task": "FirstBite",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S29/ses-4/func/sub-S29_ses-4_task-LessonLearned_physio.json",
+      "subject": "S29",
+      "session": "4",
+      "task": "LessonLearned",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S29/ses-4/func/sub-S29_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S29",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S30/ses-1/func/sub-S30_ses-1_task-LessonLearned_physio.json",
+      "subject": "S30",
+      "session": "1",
+      "task": "LessonLearned",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S30/ses-1/func/sub-S30_ses-1_task-Rest_physio.json",
+      "subject": "S30",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "3acba58cd5235559dde4c00106fc9f9bbb420a4c"
+    },
+    {
+      "path": "sub-S30/ses-1/func/sub-S30_ses-1_task-Superhero_physio.json",
+      "subject": "S30",
+      "session": "1",
+      "task": "Superhero",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S30/ses-2/func/sub-S30_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S30",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "c0a3647b2699bfe0f16b36c0411905347392f9a9"
+    },
+    {
+      "path": "sub-S30/ses-2/func/sub-S30_ses-2_task-BetweenViewings_physio.json",
+      "subject": "S30",
+      "session": "2",
+      "task": "BetweenViewings",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S30/ses-2/func/sub-S30_ses-2_task-BigBuckBunny_physio.json",
+      "subject": "S30",
+      "session": "2",
+      "task": "BigBuckBunny",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S30/ses-2/func/sub-S30_ses-2_task-Chatter_physio.json",
+      "subject": "S30",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S30/ses-2/func/sub-S30_ses-2_task-FirstBite_physio.json",
+      "subject": "S30",
+      "session": "2",
+      "task": "FirstBite",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S30/ses-3/func/sub-S30_ses-3_task-Sintel_physio.json",
+      "subject": "S30",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "274ffa8f7c890c06b84be6863580e189d4809338"
+    },
+    {
+      "path": "sub-S30/ses-3/func/sub-S30_ses-3_task-Spaceman_physio.json",
+      "subject": "S30",
+      "session": "3",
+      "task": "Spaceman",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S30/ses-3/func/sub-S30_ses-3_task-YouAgain_physio.json",
+      "subject": "S30",
+      "session": "3",
+      "task": "YouAgain",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S30/ses-4/func/sub-S30_ses-4_task-Payload_physio.json",
+      "subject": "S30",
+      "session": "4",
+      "task": "Payload",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S30/ses-4/func/sub-S30_ses-4_task-TearsOfSteel_physio.json",
+      "subject": "S30",
+      "session": "4",
+      "task": "TearsOfSteel",
+      "blob_sha": "77b7c2331cef88f9e2fbaef15fb005e3998cb3cf"
+    },
+    {
+      "path": "sub-S30/ses-4/func/sub-S30_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S30",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S30/ses-4/func/sub-S30_ses-4_task-ToClaireFromSonny_physio.json",
+      "subject": "S30",
+      "session": "4",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S31/ses-1/func/sub-S31_ses-1_task-BigBuckBunny_physio.json",
+      "subject": "S31",
+      "session": "1",
+      "task": "BigBuckBunny",
+      "blob_sha": "83461cfe917ff583290494f4f6211e262ee01b4f"
+    },
+    {
+      "path": "sub-S31/ses-1/func/sub-S31_ses-1_task-FirstBite_physio.json",
+      "subject": "S31",
+      "session": "1",
+      "task": "FirstBite",
+      "blob_sha": "760b01391b44a18ce45de0ab53857ef6b2130fa7"
+    },
+    {
+      "path": "sub-S31/ses-1/func/sub-S31_ses-1_task-LessonLearned_physio.json",
+      "subject": "S31",
+      "session": "1",
+      "task": "LessonLearned",
+      "blob_sha": "ee3a453fa2c84c6d8677bde15efe0926d4d70be6"
+    },
+    {
+      "path": "sub-S31/ses-1/func/sub-S31_ses-1_task-Rest_physio.json",
+      "subject": "S31",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-1/func/sub-S31_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S31",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "ce63e8901185e3fac3d5b91ac32639e89aa89a2a"
+    },
+    {
+      "path": "sub-S31/ses-2/func/sub-S31_ses-2_task-Chatter_physio.json",
+      "subject": "S31",
+      "session": "2",
+      "task": "Chatter",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-2/func/sub-S31_ses-2_task-Payload_physio.json",
+      "subject": "S31",
+      "session": "2",
+      "task": "Payload",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-2/func/sub-S31_ses-2_task-Spaceman_physio.json",
+      "subject": "S31",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-3/func/sub-S31_ses-3_task-AfterTheRain_physio.json",
+      "subject": "S31",
+      "session": "3",
+      "task": "AfterTheRain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-3/func/sub-S31_ses-3_task-BetweenViewings_physio.json",
+      "subject": "S31",
+      "session": "3",
+      "task": "BetweenViewings",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-3/func/sub-S31_ses-3_task-Superhero_physio.json",
+      "subject": "S31",
+      "session": "3",
+      "task": "Superhero",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-3/func/sub-S31_ses-3_task-TearsOfSteel_physio.json",
+      "subject": "S31",
+      "session": "3",
+      "task": "TearsOfSteel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-4/func/sub-S31_ses-4_task-Sintel_physio.json",
+      "subject": "S31",
+      "session": "4",
+      "task": "Sintel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-4/func/sub-S31_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S31",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S31/ses-4/func/sub-S31_ses-4_task-YouAgain_physio.json",
+      "subject": "S31",
+      "session": "4",
+      "task": "YouAgain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-1/func/sub-S32_ses-1_task-BetweenViewings_physio.json",
+      "subject": "S32",
+      "session": "1",
+      "task": "BetweenViewings",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-1/func/sub-S32_ses-1_task-Rest_physio.json",
+      "subject": "S32",
+      "session": "1",
+      "task": "Rest",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-1/func/sub-S32_ses-1_task-ToClaireFromSonny_physio.json",
+      "subject": "S32",
+      "session": "1",
+      "task": "ToClaireFromSonny",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-1/func/sub-S32_ses-1_task-YouAgain_physio.json",
+      "subject": "S32",
+      "session": "1",
+      "task": "YouAgain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-2/func/sub-S32_ses-2_task-AfterTheRain_physio.json",
+      "subject": "S32",
+      "session": "2",
+      "task": "AfterTheRain",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-2/func/sub-S32_ses-2_task-FirstBite_physio.json",
+      "subject": "S32",
+      "session": "2",
+      "task": "FirstBite",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-2/func/sub-S32_ses-2_task-Spaceman_physio.json",
+      "subject": "S32",
+      "session": "2",
+      "task": "Spaceman",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-2/func/sub-S32_ses-2_task-TearsOfSteel_physio.json",
+      "subject": "S32",
+      "session": "2",
+      "task": "TearsOfSteel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-3/func/sub-S32_ses-3_task-Chatter_physio.json",
+      "subject": "S32",
+      "session": "3",
+      "task": "Chatter",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-3/func/sub-S32_ses-3_task-LessonLearned_physio.json",
+      "subject": "S32",
+      "session": "3",
+      "task": "LessonLearned",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-3/func/sub-S32_ses-3_task-Payload_physio.json",
+      "subject": "S32",
+      "session": "3",
+      "task": "Payload",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-3/func/sub-S32_ses-3_task-Sintel_physio.json",
+      "subject": "S32",
+      "session": "3",
+      "task": "Sintel",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-4/func/sub-S32_ses-4_task-BigBuckBunny_physio.json",
+      "subject": "S32",
+      "session": "4",
+      "task": "BigBuckBunny",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-4/func/sub-S32_ses-4_task-Superhero_physio.json",
+      "subject": "S32",
+      "session": "4",
+      "task": "Superhero",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    },
+    {
+      "path": "sub-S32/ses-4/func/sub-S32_ses-4_task-TheSecretNumber_physio.json",
+      "subject": "S32",
+      "session": "4",
+      "task": "TheSecretNumber",
+      "blob_sha": "5e638ce33cdf8b20cf4dab9dc33669760a4ead3c"
+    }
+  ],
+  "counts_by_subject": {
+    "S01": 15,
+    "S02": 15,
+    "S03": 15,
+    "S04": 16,
+    "S05": 15,
+    "S06": 15,
+    "S07": 15,
+    "S08": 15,
+    "S09": 15,
+    "S10": 15,
+    "S11": 15,
+    "S13": 13,
+    "S14": 15,
+    "S15": 15,
+    "S16": 15,
+    "S17": 15,
+    "S19": 15,
+    "S20": 15,
+    "S21": 16,
+    "S22": 15,
+    "S23": 15,
+    "S24": 15,
+    "S25": 15,
+    "S26": 15,
+    "S27": 15,
+    "S28": 15,
+    "S29": 15,
+    "S30": 15,
+    "S31": 15,
+    "S32": 15
+  },
+  "counts_by_task": {
+    "BigBuckBunny": 29,
+    "FirstBite": 30,
+    "Rest": 30,
+    "YouAgain": 30,
+    "AfterTheRain": 30,
+    "LessonLearned": 30,
+    "Payload": 29,
+    "TheSecretNumber": 30,
+    "BetweenViewings": 30,
+    "Chatter": 30,
+    "Spaceman": 30,
+    "ToClaireFromSonny": 29,
+    "Sintel": 30,
+    "Superhero": 30,
+    "TearsOfSteel": 30,
+    "ToClairefromSonny": 1,
+    "BetweenViewing": 1,
+    "Error": 1
+  },
+  "alias_candidates_not_applied": [
+    [
+      "BetweenViewing",
+      "BetweenViewings"
+    ],
+    [
+      "ToClairefromSonny",
+      "ToClaireFromSonny"
+    ]
+  ],
+  "unknown_task": "Error"
+}

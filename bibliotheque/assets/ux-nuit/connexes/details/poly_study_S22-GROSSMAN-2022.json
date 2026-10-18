@@ -1,0 +1,52 @@
+{
+  "id": "poly:study:S22-GROSSMAN-2022",
+  "kind": "study",
+  "title": "Serotonin neurons modulate learning rate through uncertainty",
+  "category": "studies",
+  "provenance": {
+    "file": "IDENTITES_SOURCES_v0.98.json",
+    "sha256": "32dfff8a55965d7f7730a13da895e16f687093e52e0219d69965e2065b76f6dd",
+    "selector": [
+      "sources",
+      1
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_id": "S22-GROSSMAN-2022",
+    "doi": "10.1016/j.cub.2021.12.006",
+    "recorded_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
+    "author": {
+      "value": null,
+      "reason": "Auteurs non listés dans ce fichier d’identité ; pas de déduction depuis l’identifiant."
+    },
+    "external_consultation_date": {
+      "value": null,
+      "reason": "Aucune nouvelle consultation externe pendant cette passe."
+    },
+    "source_record": {
+      "id": "S22-GROSSMAN-2022",
+      "doi": "10.1016/j.cub.2021.12.006",
+      "title": "Serotonin neurons modulate learning rate through uncertainty",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825708/",
+      "archive_sha256": "b680928dd8f9c0ced2044452174281398f7209455ebcee2036f67084710d97d5",
+      "records": [
+        "S22-CIBLE",
+        "S22-DOSE",
+        "S22-VOIE",
+        "S22-CONTROLE",
+        "S22-EXCLUSION",
+        "S22-HISTO"
+      ],
+      "routes": [
+        "EXTRAIT:SEROTONINE"
+      ],
+      "limits": "One excluded animal; file-level identity remains unresolved. Methods say alternating days while results say consecutive days; preserve the distinction."
+    },
+    "external_url_rechecked": false
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://h01-release.storage.googleapis.com/data/20210601/proofread_104/synapse_locations.csv",
+    "range": [
+      0,
+      8191
+    ],
+    "generation": "1653435940724799",
+    "etag": "\"cf4f99033724a66bc6c9e9504752ec3c\"",
+    "sha256": "aa1271bd16e17347be9370592a488d3b4dc47fa0797cae0f7f660a28ccd6819e",
+    "file": "ranges/fb8f8bfa7a831da58760.bin",
+    "path": "assets/h01-evidence/probe-ranges/fb8f8bfa7a831da58760.bin"
+  },
+  {
+    "url": "https://h01-release.storage.googleapis.com/data/20210729/c3/synapses/exported/export000000000000.json",
+    "range": [
+      0,
+      8191
+    ],
+    "generation": "1691593310671152",
+    "etag": "\"484db47da94730edb36986addfae8db2\"",
+    "sha256": "79300f86bb4e2630b14bc149126b6e3ca6a6d85e8ffa0771137776eb107a360b",
+    "file": "ranges/ed75c5d8bf27f55d3ebc.bin",
+    "path": "assets/h01-evidence/probe-ranges/ed75c5d8bf27f55d3ebc.bin"
+  }
+]

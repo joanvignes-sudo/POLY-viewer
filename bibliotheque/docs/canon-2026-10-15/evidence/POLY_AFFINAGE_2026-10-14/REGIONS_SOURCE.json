@@ -1,0 +1,189 @@
+{
+  "rows": [
+    {
+      "rect_xywh": [
+        9310,
+        9198,
+        512,
+        512
+      ],
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "storage_blocks": [
+        664,
+        665,
+        702,
+        703
+      ],
+      "png": "REGION_1.png",
+      "png_sha256": "b88a3651125daeadad4744d9b3eff0b7908c929a5c26879742e4ec443c8aef8d",
+      "pixel_exact": true
+    },
+    {
+      "rect_xywh": [
+        19069,
+        18845,
+        64,
+        64
+      ],
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "storage_blocks": [
+        1405
+      ],
+      "png": "REGION_2.png",
+      "png_sha256": "9d2af950d09c45b7752d7198822d05a3e5ac9b09026a94fb8ae5edc7e1352287",
+      "pixel_exact": true
+    }
+  ],
+  "source_block_domains": [
+    {
+      "storage_block": 664,
+      "full_storage_rect_xywh": [
+        9216,
+        8704,
+        512,
+        512
+      ],
+      "valid_image_rect_xywh": [
+        9216,
+        8704,
+        512,
+        512
+      ],
+      "receipt": {
+        "cache_file": "localocal-input://block_664.rgb",
+        "offset": 522190864,
+        "bytes": 786432,
+        "url": "httplocal-input://2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "version_id": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "content_range": "bytes 522190864-522977295/1105746279",
+        "sha256": "d07b5e0d862414937b5d3f45d2fd6d4d29759ddc78cbe87e481661a80fbb6b12",
+        "acquired_utc": "2026-10-14T17:49:11.581061+00:00",
+        "full_object_sha_verified": false,
+        "reused_prior": false
+      }
+    },
+    {
+      "storage_block": 665,
+      "full_storage_rect_xywh": [
+        9728,
+        8704,
+        512,
+        512
+      ],
+      "valid_image_rect_xywh": [
+        9728,
+        8704,
+        512,
+        512
+      ],
+      "receipt": {
+        "cache_file": "localocal-input://block_665.rgb",
+        "offset": 522977296,
+        "bytes": 786432,
+        "url": "httplocal-input://2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "version_id": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "content_range": "bytes 522977296-523763727/1105746279",
+        "sha256": "8edac3c632409564144a8a983acc79af264a68f9c9df665faf8f4d607fcc6941",
+        "acquired_utc": "2026-10-14T17:49:12.573562+00:00",
+        "full_object_sha_verified": false,
+        "reused_prior": false
+      }
+    },
+    {
+      "storage_block": 702,
+      "full_storage_rect_xywh": [
+        9216,
+        9216,
+        512,
+        512
+      ],
+      "valid_image_rect_xywh": [
+        9216,
+        9216,
+        512,
+        512
+      ],
+      "receipt": {
+        "url": "httplocal-input://2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "offset": 552075280,
+        "bytes": 786432,
+        "content_range": "bytes 552075280-552861711/1105746279",
+        "version_id": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "sha256": "c0f174c0d756029650c6ce481a0e129f4d97eed68dfeac9e1a514d8ae101616a",
+        "cache_file": "localocal-input://assembled_block_702.rgb",
+        "acquired_utc": "2026-10-14T16:34:08.235986+00:00",
+        "full_object_hash_verified": false,
+        "reused_prior": true
+      }
+    },
+    {
+      "storage_block": 703,
+      "full_storage_rect_xywh": [
+        9728,
+        9216,
+        512,
+        512
+      ],
+      "valid_image_rect_xywh": [
+        9728,
+        9216,
+        512,
+        512
+      ],
+      "receipt": {
+        "cache_file": "localocal-input://block_703.rgb",
+        "offset": 552861712,
+        "bytes": 786432,
+        "url": "httplocal-input://2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "version_id": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "content_range": "bytes 552861712-553648143/1105746279",
+        "sha256": "16bdfc8eb0072461eed069c5011419aa31ab6f49c1159b19697a6f9bfaac6181",
+        "acquired_utc": "2026-10-14T17:49:13.681036+00:00",
+        "full_object_sha_verified": false,
+        "reused_prior": false
+      }
+    },
+    {
+      "storage_block": 1405,
+      "full_storage_rect_xywh": [
+        18944,
+        18432,
+        512,
+        512
+      ],
+      "valid_image_rect_xywh": [
+        18944,
+        18432,
+        189,
+        477
+      ],
+      "receipt": {
+        "cache_file": "localocal-input://block_1405.rgb",
+        "offset": 1104936976,
+        "bytes": 786432,
+        "url": "httplocal-input://2305_C1L_A_Level_2_part1.tif?versionId=QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "version_id": "QO5FC8EmAaTD9f09mzxVnEyEFuUv.fpp",
+        "content_range": "bytes 1104936976-1105723407/1105746279",
+        "sha256": "79fa5083f02b5274d2c8cf56e59e2b2ca1f9b49970598fcf67606cbe032fe969",
+        "acquired_utc": "2026-10-14T17:49:14.822289+00:00",
+        "full_object_sha_verified": false,
+        "reused_prior": false
+      }
+    }
+  ],
+  "source_index_sha256": "205b4459eb1e9be8c74e32a89e0c0ec1b4f06657b97b5d112e2dc7a5bee7af7c",
+  "source_index_path": "localocal-input://INDEX_BLOCS_TIFF.json",
+  "new_bytes": 3145728,
+  "cached_previous_bytes": 786432,
+  "author_assembled": true,
+  "raw48_49_recovered": false,
+  "anatomical_annotations_added": 0
+}

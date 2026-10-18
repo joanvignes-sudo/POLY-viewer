@@ -1,0 +1,27 @@
+{
+  "id": "poly:proof:de698b3395058847e60e",
+  "kind": "proof",
+  "title": "RESUME_ASHLAR_2D.json",
+  "category": "proofs",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      3,
+      "proofs",
+      4
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+    "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+    "bytes": 478,
+    "content_loaded": false
+  }
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "hassanpour_MOESM64.docx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM64_ESM.docx",
+    "bytes": 609310,
+    "sha256": "301eba4afd35d4e2313392420e8581248e13a34583760fb47ab91a7df3ca174e",
+    "preview": ""
+  },
+  {
+    "name": "hassanpour_MOESM65.docx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM65_ESM.docx",
+    "bytes": 18779,
+    "sha256": "7b2be81652ed3322b192119c548b77331e069015e05e2c527341f3fd5826e0bd",
+    "preview": ""
+  },
+  {
+    "name": "hassanpour_MOESM66.docx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM66_ESM.docx",
+    "bytes": 36170,
+    "sha256": "f97703e3ced9c4660a0abd2c4cc4c705d17ba156957f6d2425721b77aaa543e8",
+    "preview": ""
+  },
+  {
+    "name": "hassanpour_MOESM67.docx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM67_ESM.docx",
+    "bytes": 28115,
+    "sha256": "fe7771d891c4f70c9e207ed82d4dade375faa96e2824223c62b1743919b90520",
+    "preview": ""
+  },
+  {
+    "name": "fmri__sub-S01__ses-2__beh__sub-S01_ses-2_task-AfterTheRain_events.tsv",
+    "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004892/cdf68fe448ad180a476fa2371473a1a6ed063774/sub-S01/ses-2/beh/sub-S01_ses-2_task-AfterTheRain_events.tsv",
+    "bytes": 636,
+    "sha256": "2a36ddbbe6c97ffa6f00d82f34502c51b737c7954974fa72bd128ae755a2c391",
+    "preview": "onset\tduration\tTears\tPleasantOther\tPredictable\tStop\tAnxiety\ttrial\n27\t7\t50.0\t26.5\t16.0\t24.5\t49.0\tclip_1\n55\t6\t1.0\t48.5\t48."
+  },
+  {
+    "name": "fmri__sub-S01__ses-2__func__sub-S01_ses-2_task-AfterTheRain_bold.json",
+    "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004892/cdf68fe448ad180a476fa2371473a1a6ed063774/sub-S01/ses-2/func/sub-S01_ses-2_task-AfterTheRain_bold.json",
+    "bytes": 3050,
+    "sha256": "7b23e3067b818700ae1305e165bd17d47f0218958d69cbb880c8e15e218aa2c7",
+    "preview": "{\n    \"Modality\": \"MR\",\n    \"MagneticFieldStrength\": 3,\n    \"ImagingFrequency\": 123.189,\n    \"Manufacturer\": \"Siemens\",\n"
+  },
+  {
+    "name": "fmri__sub-S01__ses-2__func__sub-S01_ses-2_task-AfterTheRain_physio.json",
+    "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004892/cdf68fe448ad180a476fa2371473a1a6ed063774/sub-S01/ses-2/func/sub-S01_ses-2_task-AfterTheRain_physio.json",
+    "bytes": 368,
+    "sha256": "85f501be597be36f3bbbc4ca835bffa0b8313522e2e442ebb2a6b01c5f410d51",
+    "preview": "{\n    \"SamplingFrequency\": 1000.0,\n    \"StartTime\": 9.002,\n    \"Columns\": [\n        \"time\",\n        \"PPG - PPG100C\",\n   "
+  },
+  {
+    "name": "fmri__sub-S01__ses-2__func__sub-S01_ses-2_task-AfterTheRain_physio.tsv.gz",
+    "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004892/cdf68fe448ad180a476fa2371473a1a6ed063774/sub-S01/ses-2/func/sub-S01_ses-2_task-AfterTheRain_physio.tsv.gz",
+    "bytes": 213,
+    "sha256": "551060be99144c16292662a5be3874c9f46b8c6de853d2bbd048de9fda182966",
+    "preview": "../../../.git/annex/objects/Vz/8g/SHA256E-s5909687--cf3bd5c58df47dd2151404df8af2eedc1609b97f234a517589711f08f919bfbb.tsv"
+  },
+  {
+    "name": "annotation__derivatives__Annot_AfterTheRain_stim.json",
+    "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004872/e9b1bf0b05975f7815f2924da16e3ff37111739e/derivatives/Annot_AfterTheRain_stim.json",
+    "bytes": 1019,
+    "sha256": "fe58b9b2c4e4e9ea8814a6b15d6376ac2e90bc6b9a5dce2cf4e25261ed7f80fa",
+    "preview": "{\n    \"SamplingFrequency\": 1.0,\n    \"Columns\": [\n        \"Standards\",\n        \"PleasantSelf\",\n        \"SocialNorms\",\n   "
+  },
+  {
+    "name": "annotation__derivatives__Annot_AfterTheRain_stim.tsv.gz",
+    "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds004872/e9b1bf0b05975f7815f2924da16e3ff37111739e/derivatives/Annot_AfterTheRain_stim.tsv.gz",
+    "bytes": 205,
+    "sha256": "beab678b985c6f597f53ddcbbbf9cdc0fc919fe3606b78d0a5a0a611520522b5",
+    "preview": "../.git/annex/objects/Z7/99/SHA256E-s104040--f1bb75a71864f9c1740c129769542fe5dc12435731c1517e82a80d32e5eeeae1.tsv.gz/SHA"
+  },
+  {
+    "name": "code__README.md",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/README.md",
+    "bytes": 1423,
+    "sha256": "56ab2d80a266bd35ad6032f3ee82d50e8bec9fe30659187186dd28f06d9181ee",
+    "preview": "Emo-FilM\nThis repository contains the code used for processing of the Emo-FilM dataset\n\nScripts for bidsification:\n- BID"
+  },
+  {
+    "name": "code__constants_emo_film.py",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/constants_emo_film.py",
+    "bytes": 2961,
+    "sha256": "bede027c195d3ffa27259b248f8c0b7fd9cc84efaed8939e5a1a20dc1f93af66",
+    "preview": "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\nfrom copy import deepcopy\n\nALL_PARTICIPANTS_ANNOTATION = [\n    \"mode\",\n  "
+  },
+  {
+    "name": "code__helper_annot.py",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/helper_annot.py",
+    "bytes": 1834,
+    "sha256": "9cd801905f7eccb8013da446685d5fb647da79e906119e4be7f961ba2d2ca281",
+    "preview": "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Fri Jul  7 11:00:38 2023\n\n@author: elliemorgenroth\n\"\"\"\n# G"
+  },
+  {
+    "name": "code__MakeMasterfile.py",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/MakeMasterfile.py",
+    "bytes": 11587,
+    "sha256": "cbed7ba8c5ec68b594d12bb8badd597994aaa63cb53d85fdb86d9adaa574d2ec",
+    "preview": "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Tue Nov 22 09:36:17 2022\n\n@author: elliemorgenroth\n\"\"\"\n\nim"
+  },
+  {
+    "name": "code__AnnotationQC_plots.py",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/AnnotationQC_plots.py",
+    "bytes": 5748,
+    "sha256": "f89d5a1fea163b9fe8b8ab96d832cd33bb072fbb33a144e1d72d19ce937f5dcd",
+    "preview": "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Wed Jul  5 15:15:36 2023\n\n@author: elliemorgenroth\n\nThis m"
+  },
+  {
+    "name": "code__AnnotationVal.py",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/AnnotationVal.py",
+    "bytes": 6487,
+    "sha256": "c6671916df80a8b4e393249667d0c1fe3942b0bcb20f10a4bb2970f82ff2891e",
+    "preview": "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Wed Dec  7 09:44:15 2022\n\n@author: elliemorgenroth\n\nFix fi"
+  },
+  {
+    "name": "code__BIDSification__fixtimeunits.py",
+    "url": "https://raw.githubusercontent.com/EllieMo/Emo-FilM/8a358f820bb0782cbef2ea4bb9820f7fe1413325/BIDSification/fixtimeunits.py",
+    "bytes": 378,
+    "sha256": "5007bd6f424dbc179460ed21e108b4fd580c615ec51795b8544c8756725a6bba",
+    "preview": "#!/usr/bin/env python3\n\nimport sys\nfrom copy import deepcopy as dc\nfrom os.path import isfile\n\nimport niutils as niu\nimp"
+  }
+]

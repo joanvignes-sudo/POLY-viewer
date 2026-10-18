@@ -1,0 +1,320 @@
+{
+  "version": "0.98",
+  "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
+  "chains": 14,
+  "canonical_nodes": 172,
+  "canonical_edges": 165,
+  "paths": 50,
+  "human_paths": 22,
+  "public_documents": 215,
+  "catalogue_files": 1631,
+  "correspondence_published": false,
+  "new_measured_geometry": true,
+  "four_chain_combined_prediction": false,
+  "comments": "Annotations privées exportables/importables ; observations partagées sur GitHub par envoi manuel. Aucun forum intégré.",
+  "public_github_issues_available": true,
+  "geometry_scope": "Atlas CerebrA/MNI2009cSym dérivé de données IRM ; ni géométrie individuelle P8 ni recalage au corps schématique",
+  "anatomical_components": 17,
+  "human_anatomical_binding": "P8 · contexte amygdalien uniquement",
+  "usability": "Protocoles préparés, études auprès de lecteurs non réalisées",
+  "bigbrain": {
+    "integration": "Two context pial surfaces; three left cortical patches, each seven reconstructed boundary surfaces",
+    "reference": "BigBrain native histological surface coordinates, mm",
+    "registration_to_current_atlas": null,
+    "neurons_or_synapses": false,
+    "functional_propagation": false
+  },
+  "histology": {
+    "section": "3863",
+    "sampling_um": 20,
+    "manual_rois": 6,
+    "plane_native_y_mm": 7.24,
+    "native_grid_matches_labels": true,
+    "functional_registration": null,
+    "neurons_or_synapses": false
+  },
+  "navigation_audit": "CONTROLES_v0.96.1.json",
+  "organisation_audit": "AUDIT_ORGANISATION_v0.97.md",
+  "active_registry": "EXPLORATION_v0.98.json",
+  "derived_directory": "ORGANISATION_v0.98.json",
+  "source_identity_audit": "AUDIT_SOURCES_v0.98.md",
+  "presentation_version": "0.124",
+  "cogitate": {
+    "scope": "author-saved example outputs and aggregate public metadata",
+    "raw_signals_acquired": false,
+    "author_analysis_rerun": false,
+    "new_affective_chain": false,
+    "individual_registration": false,
+    "local_event_file_inspector": true
+  },
+  "vagus_ihc_measurement": {
+    "field": "field9",
+    "focal_planes_compared": 17,
+    "local_patch_checks": 136,
+    "distance_unit": "native pixels",
+    "measurement_export_includes_sources": true,
+    "calibration_files_checked": 136,
+    "source_units_per_pixel": 150.97671666666668,
+    "physical_conversion_enabled": false,
+    "physical_z_step": null,
+    "registration_to_microct": null,
+    "dossier": "calibration.html"
+  },
+  "vagus_c1": {
+    "primary_complete_acquired_and_verified": true,
+    "primary_intensities_preserved": true,
+    "source_landmarks_displayed": 4,
+    "context_step": 8,
+    "native_rois": 4,
+    "native_annotated_slices": 4,
+    "source_contours": 466,
+    "ihc_transform": null,
+    "whole_body_transform": null
+  },
+  "h01_em": {
+    "release": "20210601",
+    "segment": "1072605926",
+    "image_windows": 3,
+    "native_sampling_nm": [
+      4,
+      4,
+      33
+    ],
+    "native_mask_sampling_nm": [
+      8,
+      8,
+      33
+    ],
+    "same_frame_as_existing_skeleton": true,
+    "independent_decoder_values_equal": true,
+    "synapse_annotations": false,
+    "new_activity": false,
+    "registration_to_other_specimen": null
+  },
+  "h01_synapses": {
+    "source_release": "20210729/c3",
+    "local_annotation_count": 180,
+    "target_annotation_count": 6,
+    "detail_annotation": "95480769",
+    "target_relations": "postsynaptic",
+    "local_overlap_voxels": 4066809,
+    "endpoint_checks": {
+      "matching": 9,
+      "unlabeled": 3
+    },
+    "excitatory_inhibitory_mapping": null,
+    "activity": null,
+    "transmission_delays": null,
+    "whole_neuron_exhaustiveness": false,
+    "native_details": 6,
+    "total_image_windows": 9,
+    "source_csv_positions": 1571,
+    "source_csv_incoming": 1507,
+    "source_csv_outgoing": 64,
+    "exact_csv_endpoint_matches": 6,
+    "source_inhibitory_post_point_matches": 5,
+    "source_inhibitory_post_point_unlabeled": 1,
+    "source_site_masks": true,
+    "site_surfaces": "Exact exposed voxel faces, no smoothing",
+    "human_individual_synapse_validation": false
+  },
+  "h01_geometric_routes": {
+    "projected_source_positions": 1571,
+    "skeleton_components": 45,
+    "cycles": 0,
+    "nearest_segment_projection": true,
+    "anatomical_attachment_confirmed": false,
+    "biological_time": null,
+    "inter_component_bridges_added": 0,
+    "source_graph_modified": false,
+    "independent_route_cases": 37
+  },
+  "h01_source_compartment_points": {
+    "source_annotations": 5050,
+    "unique_exact_vertex_matches": 5050,
+    "unannotated_vertices": 20845,
+    "nearest_neighbour_class_assignment": false,
+    "classes_interpolated": false,
+    "astrocyte_labels_for_review": 40,
+    "manual_biological_validation_claimed": false,
+    "biological_time": null
+  },
+  "h01_native_class_images": {
+    "windows": 6,
+    "source_point_mask_matches": 6,
+    "image_values_independently_compared": 12582912,
+    "class_validation": false,
+    "biological_time": null
+  },
+  "allen_comparison": {
+    "cells": 3,
+    "donors": 2,
+    "sweeps": 9,
+    "source_spike_detections": 41,
+    "independent_sdk_signal_values": 1080000,
+    "source_qc_reanalysed": false,
+    "spatial_activity_in_branches": false,
+    "matched_cohort": false
+  },
+  "sparc_license_confirmation": {
+    "license": "CC BY 4.0 International",
+    "datasets": [
+      {
+        "id": 674,
+        "version": 1
+      },
+      {
+        "id": 426,
+        "version": 7
+      }
+    ],
+    "evidence": "assets/licenses/SPARC_RIGHTS_v0.116.json"
+  },
+  "allen_published_quality": {
+    "sweeps": 9,
+    "api_records_acquired": 196,
+    "source_concordance_only": true,
+    "experimental_qc_reexecuted": false,
+    "individual_api_verdict_field_available": false,
+    "missing_spike_counts_preserved": 3,
+    "curation_policy_source": "https://brain-map.org/support/documentation/documentation-cell-types-database"
+  },
+  "allen_pair_comparison": {
+    "existing_trials": 9,
+    "new_recordings": 0,
+    "shared_physical_axes": true,
+    "display_alignment_only": true,
+    "amplitude_normalization": false,
+    "biological_combination_model": false,
+    "provenance": "assets/allen-pairs/PROVENANCE.json"
+  },
+  "shared_multiscale_orientation": {
+    "pages": 19,
+    "reference_views": 19,
+    "source_relations": 18,
+    "continuous_anatomical_path_established": false,
+    "reader_trials_completed": false,
+    "evidence": "assets/navigation/PROVENANCE.json"
+  },
+  "bigbrain_registration_preparation": {
+    "provenance": "assets/bigbrain-registration-v0120/PROVENANCE.json",
+    "fields_acquired": 3,
+    "applied_to_viewer": false
+  },
+  "bigbrain_warp_preview": {
+    "provenance": "assets/bigbrain-warp-v0121/PROVENANCE.json",
+    "complete_published_composition": true,
+    "independent_anatomical_validation": false,
+    "native_lengths_unchanged": true
+  },
+  "bigbrain_quantitative_checks": {
+    "rendered_vertices": 348845,
+    "nonpositive_jacobians_at_vertices": 0,
+    "published_landmark_correspondences": 63,
+    "primary_correspondences": 59,
+    "published_raters": 2,
+    "new_annotations": false,
+    "original_study_group_average_reproduced": false,
+    "provenance": "assets/bigbrain-validation-v0122/PROVENANCE.json"
+  },
+  "bigbrain_triangle_checks": {
+    "triangles": 693293,
+    "sample_points_per_triangle": 1,
+    "nonpositive_at_centres": 0,
+    "orientation_discrepancies": 86,
+    "flagged_left": 41,
+    "flagged_right": 45,
+    "whole_triangle_certified": false,
+    "geometry_modified": false,
+    "provenance": "assets/bigbrain-triangles-v0123/PROVENANCE.json"
+  },
+  "bigbrain_subdivision_previews": {
+    "source_facets": 86,
+    "preview_subtriangles": 5348,
+    "synthetic_points": true,
+    "new_anatomical_observations": false,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-refinement-v0124/PROVENANCE.json"
+  },
+  "bigbrain_neighbor_previews": {
+    "patches": 86,
+    "source_faces_per_patch": 4,
+    "vertices": 3771,
+    "triangles": 6854,
+    "maximum_vertices": 2151,
+    "maximum_triangles": 4294,
+    "shared_edge_index_mismatches": 0,
+    "patches_with_neighbor_orientation_alerts": 24,
+    "opposed_normals_neighbors": 42,
+    "opposed_normals_root": 0,
+    "nonpositive_sampled_determinants": 0,
+    "maximum_unmatched_coarse_edge_gap_mm": 0.5108374174437044,
+    "maximum_boundary_storage_rounding_mm": 2.0635721753394354e-07,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-neighbors-v0125/PROVENANCE.json"
+  },
+  "bigbrain_adaptive_previews": {
+    "patches": 86,
+    "initial_patches_with_alerts": 24,
+    "initial_opposed_normals": 42,
+    "remaining_patches_with_alerts": 22,
+    "remaining_opposed_normals": 26,
+    "root_opposed_normals": 0,
+    "triangles": 6908,
+    "maximum_triangles": 4310,
+    "maximum_vertices": 2159,
+    "nonpositive_sampled_determinants": 0,
+    "maximum_sampled_gap_mm": 0.27928755074295214,
+    "boundary_changed": false,
+    "max_tested_rounds": 16,
+    "patches_with_selected_refinement": 10,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-adaptive-v0126/PROVENANCE.json"
+  },
+  "bigbrain_expanded_previews": {
+    "patches": 86,
+    "expansion_requested": 22,
+    "expanded_patches": 22,
+    "rejected_expansions": 0,
+    "previous_core_alerts": 26,
+    "remaining_core_alerts": 0,
+    "remaining_core_alert_patches": 0,
+    "remaining_outer_alerts": 8,
+    "remaining_total_alert_patches": 4,
+    "root_alerts": 0,
+    "triangles": 7152,
+    "maximum_triangles": 4318,
+    "maximum_vertices": 2166,
+    "maximum_source_faces": 10,
+    "nonpositive_sampled_determinants": 0,
+    "maximum_sampled_gap_mm": 0.3877473794973773,
+    "maximum_boundary_storage_rounding_mm": 2.2164924775697018e-07,
+    "old_vertices_changed": false,
+    "source_geometry_modified": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-expanded-v0127/PROVENANCE.json"
+  },
+  "bigbrain_contact_checked_previews": {
+    "patches": 86,
+    "initial_contact_pairs": 693,
+    "initial_contact_patches": 31,
+    "remaining_contact_pairs": 631,
+    "remaining_contact_patches": 25,
+    "orientation_alerts": 0,
+    "triangles": 7486,
+    "maximum_vertices": 2166,
+    "maximum_triangles": 4318,
+    "source_vertices_changed": false,
+    "global_replacement": false,
+    "provenance": "assets/bigbrain-conform-v0128/PROVENANCE.json"
+  },
+  "technical_counter_review": {
+    "version": "0.128.1",
+    "kind": "AI-agent technical counter-review",
+    "human_anatomical_validation": false,
+    "provenance": "assets/bigbrain-counterreview-v0128_1/PROVENANCE.json"
+  }
+}

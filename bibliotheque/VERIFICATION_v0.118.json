@@ -1,0 +1,54 @@
+{
+  "version": "0.118",
+  "status": "passed",
+  "data": {
+    "status": "passed",
+    "existing_trials": 9,
+    "pair_reference_cases": 81,
+    "input_sha256_verified": true,
+    "signals_modified": false
+  },
+  "browser": {
+    "status": "passed",
+    "pair_cases": 81,
+    "shared_physical_axes_match_independent_reference": true,
+    "original_trace_objects_unchanged": true,
+    "source_cursor_values_and_indices_checked": true,
+    "display_alignment_roundtrip": true,
+    "same_trial_not_independent": true,
+    "unique_export_recordings": true,
+    "source_spike_jump": true,
+    "share_pair_time": true,
+    "single_view_share_omits_pair_parameters": true,
+    "closing_panel_stops_playback": true,
+    "playback_swap_current": true,
+    "rapid_pair_selection": true,
+    "retained_recordings_max": 2,
+    "mobile_no_overflow": true,
+    "no_webgl_comparison": true,
+    "corrupt_pair_blocked_retry": true,
+    "page_errors": [],
+    "url": "http://127.0.0.1:8890/"
+  },
+  "local_html_paths": {
+    "pages": 19,
+    "links": 367,
+    "broken": []
+  },
+  "canonical_unchanged": [
+    "EXPLORATION_v0.98.json",
+    "ORGANISATION_v0.98.json",
+    "assets/allen-comparison/PROVENANCE.json",
+    "assets/allen-qc/PROVENANCE.json",
+    "assets/allen-comparison/637034000-sweep-36.json",
+    "assets/neurons/allen-sweep-62.json",
+    "assets/allen-comparison/637034000-sweep-64.json",
+    "assets/allen-comparison/637038252-sweep-17.json",
+    "assets/allen-comparison/637038252-sweep-20.json",
+    "assets/allen-comparison/637038252-sweep-22.json",
+    "assets/allen-comparison/508279351-sweep-48.json",
+    "assets/allen-comparison/508279351-sweep-72.json",
+    "assets/allen-comparison/508279351-sweep-66.json"
+  ],
+  "scope": "Descriptive pair views, common physical axes, original source values and display-only alignment. No simultaneous acquisition or coupled biological prediction."
+}

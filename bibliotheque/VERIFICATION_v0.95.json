@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8895/",
+  "canonical_chains": 14,
+  "canonical_nodes": 172,
+  "canonical_edges": 165,
+  "documented_paths": 50,
+  "human_paths": 22,
+  "all_steps_and_edges": true,
+  "shared_selection_across_five_modes": true,
+  "orbit": true,
+  "exploded_slider": true,
+  "global_latency_not_split": true,
+  "missing_intervals_explicit": true,
+  "annotations_save_reload_export_import": true,
+  "annotation_html_escaped": true,
+  "permalink_and_browser_back": true,
+  "four_independent_readers": true,
+  "hidden_lane_not_advanced": true,
+  "specialist_round_trip": true,
+  "mobile_modes": 5,
+  "javascript_errors": []
+}

@@ -1,0 +1,3537 @@
+{
+  "version": "0.107",
+  "checked_on": "2026-10-13",
+  "dataset": 674,
+  "source_version": 1,
+  "doi": "https://doi.org/10.26275/imas-52lf",
+  "sample": "C1-A-Level 2 part1",
+  "status": "source-unit consistency verified; physical-unit convention remains unconfirmed",
+  "pixel_size_source_units": 150.97671666666668,
+  "xy_source_units_explicit": false,
+  "physical_conversion_enabled": false,
+  "physical_pixel_size_um": null,
+  "nominal_hypothesis": {
+    "assumption": "Calibration and XY stage extents stored in nanometres",
+    "pixel_size_um": 0.15097671666666668,
+    "field_size_um": [
+      144.93764800000002,
+      108.703236
+    ],
+    "status": "consistent with rounded manufacturer field of view; not verified as an instrument-specific calibration",
+    "vendor_url": "https://www.keyence.com/products/microscope/fluorescence-microscope/bz-x700/models/bz-pa100/",
+    "vendor_field_of_view_um": [
+      145,
+      109
+    ],
+    "vendor_lens": "Plan Apochromat 100X Oil BZ-PA100; NA 1.45, working distance 0.13 mm",
+    "checked_on": "2026-10-13"
+  },
+  "focal_files_verified": 136,
+  "montage_metadata": [
+    {
+      "path": "assets/ihc/originals/part1-metadata.xml",
+      "sha256": "c2205b1cf8aee6e5f4bc9849680bc03e386dde138c1bbac6327ebd1996108926",
+      "dimensions": [
+        19133,
+        18909
+      ],
+      "xy_stage_extent": [
+        2888638,
+        2854818
+      ],
+      "calibration_decoded": 150.97671666666668
+    },
+    {
+      "path": "assets/ihc/originals/part2-metadata.xml",
+      "sha256": "aaf867e4141e7275a53ff9a13d8e5a6f54e759a232f69a7114c16d8ec91166d1",
+      "dimensions": [
+        12403,
+        10323
+      ],
+      "xy_stage_extent": [
+        1872564,
+        1558532
+      ],
+      "calibration_decoded": 150.97671666666668
+    }
+  ],
+  "gci": {
+    "path": "assets/focal/originals/2.28.2024_part1_xy1_XY01.gci",
+    "sha256": "93c2ef65db582d540b1d9f99376f1d95efb3120614bac8acb99362831a79fc38",
+    "planes": 17,
+    "pitch_parameter": 10,
+    "pitch_units_explicit": false
+  },
+  "z_series": [
+    {
+      "field": "field9",
+      "channel": "CH1",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field9",
+      "channel": "CH2",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field9",
+      "channel": "CH4",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field9",
+      "channel": "Overlay",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field1",
+      "channel": "CH1",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field1",
+      "channel": "CH2",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field1",
+      "channel": "CH4",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    },
+    {
+      "field": "field1",
+      "channel": "Overlay",
+      "stage_z_first": 2549710,
+      "stage_z_last": 2533710,
+      "step_source_units": -1000
+    }
+  ],
+  "records": [
+    {
+      "field": "field9",
+      "plane": 1,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z001_CH1.tif",
+      "source_sha256": "9cef6d0a8eb1fa0b08b2e7b85cfc943f227f34354fc1ee0aa73426d9afbe42e1",
+      "xml_sha256": "90a23cb53c73f514abb495a25f1f143b6f183bbc01e955539e04177fcd9d5613",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 1,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z001_CH2.tif",
+      "source_sha256": "4012f5c5c2811b4c64e9308977fce2795244f88ed9f3080da0690f4625e96b82",
+      "xml_sha256": "fde75d2a0f30d8a3bf5485d6c5f78660a6a039e8a22d186e0d0d5e1fd2246bbd",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 1,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z001_CH4.tif",
+      "source_sha256": "69789d291292e1456bed24b08312e82ee4ba059380cdbff1f37fee6f2eaa0af1",
+      "xml_sha256": "c6bb6183ab16bdda5d461ab6fa55aa6486a4cd7037771a885e96ea57269378f7",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 1,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z001_Overlay.tif",
+      "source_sha256": "a6c88a9164fa4cc3ba553f14ba98828d121017cd6ab29efd734e24c6787181f4",
+      "xml_sha256": "281c87875f4d835dcddf7a83b2b752678cf303baed345578bc66ed899e2c89e8",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 2,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z002_CH1.tif",
+      "source_sha256": "7b8f438257741e20ff49a71d53c1f29c11b77cbd954f8d48a775619f55fe824e",
+      "xml_sha256": "734b6fd227772427225fa85361f8f432686f02e80491d448c8df9b28608a901a",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 2,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z002_CH2.tif",
+      "source_sha256": "d879960580b9b237773fc5081fa8d26fe9402d0b5473cccb0f3ae5034db2f79b",
+      "xml_sha256": "f917de420af8408cfa5c23fc25fa4caa5a43472778ee3980f885731c217a9c7d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 2,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z002_CH4.tif",
+      "source_sha256": "f2f9665ce2c5a644ec1124b2d6f91c5c9a43632c6e4a5208f699f1667dd69edd",
+      "xml_sha256": "44c90f653eed29d6deb974755bab036b2e29d9a7399e0a92c92a71b3aec5d7ff",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 2,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z002_Overlay.tif",
+      "source_sha256": "bef6d5ad3b13a8b2d3c0fe5636da06862d59b89f531be43d45929943dbdd6b45",
+      "xml_sha256": "8f2f247351b34f9be4ebd1f13d83dac498fd3d44331493d968fcaf3ba55e194f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 3,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z003_CH1.tif",
+      "source_sha256": "af86055896c1122c8a64ffc6ba72f754feefdaccbd20ae9438da3719d4ff5506",
+      "xml_sha256": "6b1487792344d8a9f89ea9abb733ebbfe6d58740d6529d8eeb68fd9572d402b8",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 3,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z003_CH2.tif",
+      "source_sha256": "e2bbd009488510d97983dbeaa3767aa253209d22dad9cba15d3531c5569e28cc",
+      "xml_sha256": "92bf07c74cadd5afd5c7c6ec5f57b7efd1bf1cfa9468360153d456614425d605",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 3,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z003_CH4.tif",
+      "source_sha256": "7bedde22dd487d05de4a7acbd8ec201fb0bc4455cfdaadf599f1883cbfc91451",
+      "xml_sha256": "00fb09cb9b298a99ea10072ec151887d626543b55fcd39ca021689013b2c0935",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 3,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z003_Overlay.tif",
+      "source_sha256": "571bf8e67b4b8653d313bd846e0ab2ea51e323f2e59bf246ffc4e11f458282a3",
+      "xml_sha256": "6d0b98f480a977811a26f4254f057753f9ac0bad9fe8f95989491f4c19f5571b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 4,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z004_CH1.tif",
+      "source_sha256": "8ddf574fd33ecec4364f1b7b88a72491b9c7ad8cad221e864ed07f3715fc13df",
+      "xml_sha256": "9e582c38201e03d4421f524b3f1eb5595237fa088f0508409188734bd9f6be2e",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 4,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z004_CH2.tif",
+      "source_sha256": "a3fcc2c59089ab33cf0e1ca8c46ee71ad9825d0a408d725fe30eec351ae3f87f",
+      "xml_sha256": "a1de38442a5d36cbb0241ab88d3ce3e027fa702dd5cb0c5bf2032edfebc701e9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 4,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z004_CH4.tif",
+      "source_sha256": "595dcf750f60ee5c2e8f6331d9e8f0d295962244ec6fd8cd672a8c347ffa425f",
+      "xml_sha256": "4d6d81300712a5ac7a06732240ec13845c3f651362ff33e40a729a73d8b46714",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 4,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z004_Overlay.tif",
+      "source_sha256": "135d678b4ae8491e5fc9f4b29b60fde5c4436d7310424db4982775d4a7cbf645",
+      "xml_sha256": "6ae30ade3a35f60d89a2b243ec86cfbc2f3a1d905536017de4e23d8c8633cb4b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 5,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z005_CH1.tif",
+      "source_sha256": "d1af9dba9359623aaccc41c8a9574cafdc1858589744ecd2eb8964e9f6360569",
+      "xml_sha256": "67ca50a81732c53aa89167354141cdafa68f0d6386c7eda8cc27f28069ebc5aa",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 5,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z005_CH2.tif",
+      "source_sha256": "8b0b09099c9df6cdb831b64fe54fe84b6f454531df74eab1b7ff402ed0b8f78a",
+      "xml_sha256": "18abb3a43377fd1e3004bd644098a74801146ae92c5e9893277adbb2979e4f45",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 5,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z005_CH4.tif",
+      "source_sha256": "2dccf90afa83f8d911bfab66a1b2ea6f2804c4df669498e11fab3d9dfa63cf38",
+      "xml_sha256": "1f7b8ea7f0f86f6433b25b34cd9ba0ea4cc4f3458c91fd26c775ea5c780c38d9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 5,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z005_Overlay.tif",
+      "source_sha256": "07f8f15184a5d6205092dc9d27c8459d8b01e48fecd701ddfd1070ae3fe1b140",
+      "xml_sha256": "3a3204abf7c82262e539eb93bc062aa8fe714357c8d0c91c22864d593f24ef6d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 6,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z006_CH1.tif",
+      "source_sha256": "46589983eefb5670d9abb31cc74eee200e239e4916034b8413fe350fb5e367a4",
+      "xml_sha256": "3aaa8656519d1236fd7104c151a7bd704e170f7cc8ce939e78f2f2d426ae7b9f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 6,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z006_CH2.tif",
+      "source_sha256": "070372125c661c9fea7545ca527534bf323db6409c8dff08fe04be63572a8c16",
+      "xml_sha256": "c36e4014093f684d0e58c44c65dc4fc265095374e1d6f5ab00a8a60f705a946d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 6,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z006_CH4.tif",
+      "source_sha256": "78b115e44029abd4f39813a1b5a123af3eb773c15c5ae00fd50284a23552bf33",
+      "xml_sha256": "90e06e7e4840a72cfab00ef50da8acf812ee24f30d4d2bd14ef0ec6ef25cd2dd",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 6,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z006_Overlay.tif",
+      "source_sha256": "9a8eb977e0c816675df82e51c1b20c661ac34626dca296283956d358d2822de7",
+      "xml_sha256": "5737925f00507bba8c45abb55885d2dce2ae68146445c4c51b07bc15ccb92066",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 7,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z007_CH1.tif",
+      "source_sha256": "725cc85b9cd1718a92e96e75cb857c69abe5b4af6aa46c26cabd814f7977c989",
+      "xml_sha256": "dfac2782b91381ba9ef9b800d5cd1d4a19b0c9f06667083e8e6a8d70e5a1134d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 7,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z007_CH2.tif",
+      "source_sha256": "d61f015a4bb792e6ebc8da4bb9f2547a7b1d6903fadf08eff8924fdd5c259719",
+      "xml_sha256": "8ae3b53315dba667026ebf3506e65e489b19cad18484ed1dc9886613459d966f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 7,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z007_CH4.tif",
+      "source_sha256": "bfe6cd570e882b8eabd3a613b6a2c70101774141f532db3ecc10133b88c4e530",
+      "xml_sha256": "90ad2a641268db5b0ca420cb8a8888ffb611486bd94515f69589a05dfe9eec67",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 7,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z007_Overlay.tif",
+      "source_sha256": "43f7da4c11354c0ba644f2101775611208ca7af297d456b197c7b18b3244dda0",
+      "xml_sha256": "5a3cf645f4bbfdca9694c562d41f5554c2b69c059ebf322dcc4a3a9605ef0e1b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 8,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z008_CH1.tif",
+      "source_sha256": "262c686cfa3380bf24b07a8540c27c272c000e625f036ac5297887fddf128b72",
+      "xml_sha256": "67b2ee5e704377727bc3f4e881870cdfa16e93189e9a7d20a5d61f1d8c0e59c2",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 8,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z008_CH2.tif",
+      "source_sha256": "7496ed22419ef1a16120dfee6227f863402e3b78e4aa5f5f78682010a1ffc617",
+      "xml_sha256": "12dabfd5ce444ac594607ff1434e774aa42a931116dd2afbbf73b1f6737721d3",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 8,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z008_CH4.tif",
+      "source_sha256": "6e235d82aff4e5e9aa49e38aa9f49d4f4205ee61f5935a6ae96284cd44b58373",
+      "xml_sha256": "cbffd9030c971e0089496ca74fe0ece7da715e2dff7c1ef61e134d1e352fecc5",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 8,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z008_Overlay.tif",
+      "source_sha256": "17ca2853b524b4ad7fb78eae908fd3eb15865160acd97146a14eced8630784c5",
+      "xml_sha256": "13f339d17546a69d71936d426ab27ecfc584df9fb7b6b5e5538acce1aada2a66",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 9,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z009_CH1.tif",
+      "source_sha256": "e0b357e945f114bc24508c41315accfe8b2ec4e6687fee859d1029bfc17259ba",
+      "xml_sha256": "dfe71bf9a932418cd49ab8d0bc6c920ac297d97b0c7f73a84c85854ba0f8e157",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 9,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z009_CH2.tif",
+      "source_sha256": "b7939861daa66cb08842a935ea40e7c62b1882b6c58284c050b832a68b9c4eb0",
+      "xml_sha256": "41544050932c034592c2e9838941f97ee7b881d7f9c541b2573e7fc3eedfe306",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 9,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z009_CH4.tif",
+      "source_sha256": "67a02e1e416a719f878f3cbf58a50ed395db9a1a792d92ba207bc2acc30506f8",
+      "xml_sha256": "325b7aedc815d4c333b383077d08ee8a1c4267df885fb2d5f1e93a99d6cffb19",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 9,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z009_Overlay.tif",
+      "source_sha256": "4c6eef83899b1488f58b8a2d34cc7dd826e1263390e71f053a4b12cd38353a38",
+      "xml_sha256": "656e934a1273ab4dee27706201c2359835c86babe2183a4cde2f78242b77cfe9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 10,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z010_CH1.tif",
+      "source_sha256": "f12bfc06f962f7849641d520272ae0ef3737ec527ad469f395d6dc2887fe9ba0",
+      "xml_sha256": "2a3bf509e71dd3b1f1240ad4dca91dc37d4a8bce0490feb2237e14a538a6a761",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 10,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z010_CH2.tif",
+      "source_sha256": "0d429e3c75b660b81c364e7a9009dc182a6745fb11488fdb02f614288ef903ab",
+      "xml_sha256": "8336885b1153bdc671fb0ed1d65995256d04ee81b9f6b192bee522ec0318de06",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 10,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z010_CH4.tif",
+      "source_sha256": "9e7e33c5280a30b937a3677052475329cbdb404ef41e1e638fb65f33ee3f27b3",
+      "xml_sha256": "90a5c79881b388f9f7b2f86421d01ff0f0f736f42f6c910de9e3822f1ff94065",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 10,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z010_Overlay.tif",
+      "source_sha256": "a932857458d0db706d568237a7ddc6640b726c4316d54ea8169d2e9ebdda5dec",
+      "xml_sha256": "f00fecad6fc9e5bc1c3733a1570fc4830df47bcbb29b89ac94c66575b429bbd1",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 11,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z011_CH1.tif",
+      "source_sha256": "601524bb8899b5c53fd405c591efadb321dace02c7e516c8742ef747aa823b48",
+      "xml_sha256": "74a33b4a76b6c31b4ed2718b89f46f2d54142c05228516d93f413e8c03ff6add",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 11,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z011_CH2.tif",
+      "source_sha256": "33359b653c07a87a6b9e5df0f7570db62be528ba9f74e8a550b6997458e53613",
+      "xml_sha256": "c4701e519555617d9999abf6089f6e6f404482656845b5ec9d0f534517f799a1",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 11,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z011_CH4.tif",
+      "source_sha256": "c232ac03730dc9be455f9f4a63ddd8d7164a137cfac9a342e4e13cd21ecf00f0",
+      "xml_sha256": "a8f28bdc71219257af99b042491cbd62589b983f0ff87f7a1d4336c7967359d4",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 11,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z011_Overlay.tif",
+      "source_sha256": "27ee5cf19b4bfde42316687ae0e6bef2de02ec1d2b9c88ecd2da591b5342e099",
+      "xml_sha256": "9fe095a363f7c00c91af7ca88caab18ba22011b141192df1b942078d26b17908",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 12,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z012_CH1.tif",
+      "source_sha256": "dd0d4c4643861843d28518878c54eba40328ed9d52f4ecf98bbdb15c5216c196",
+      "xml_sha256": "c6d4457e4af48d42d4ef012b2bb57b765dac786881a67c8fe126990cad64d370",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 12,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z012_CH2.tif",
+      "source_sha256": "903ed635344e3012032952956ee34e56c4819cd5bca068c24740edd489e7fd7b",
+      "xml_sha256": "9e4f71cb0ccb95c053f09a3dc1fa85f988d21c829b9687cad0862cfab6067c89",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 12,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z012_CH4.tif",
+      "source_sha256": "0ea383506ef063844442bca9b9006749d760a4a51039e81006a07d64f14cc66f",
+      "xml_sha256": "b880b2e02d1e0dd65fbe8c9f08f2d9b726cfd78a0dc43136e01aeda5515e2fd0",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 12,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z012_Overlay.tif",
+      "source_sha256": "cfed143effa06676d61124b3bc9897dc8cfb433f0171de629c82cc48dac3dec4",
+      "xml_sha256": "4177e2278760d94e6220b4fe8f99caca0d2f674a63248904c1e14bb641d054c8",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 13,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z013_CH1.tif",
+      "source_sha256": "f0e34d90911af33bf2259369bd2776dabce60c5462fe14ac178da7036c34796f",
+      "xml_sha256": "cba7ff2a7c219a670d8bd91c97da28e904752bcedcbe4e9142a501a9083ea8bc",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 13,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z013_CH2.tif",
+      "source_sha256": "ec60e83b6aa7806e95bb8baadb12906177c3e9a32c1fa0df4e15faba5c0aa491",
+      "xml_sha256": "309775faf81c5e656d6dfdefcce3c86c9cfd9cfbd3ae1d09c45956035394ebe2",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 13,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z013_CH4.tif",
+      "source_sha256": "7633b6d6d5a7b1da74808afa802ad702e581506028c7958173ecb87a687fe2ae",
+      "xml_sha256": "7d473621ccccb1cadc84edccacb7e4b57adf537273c71c62c096fb7c3adf7a0b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 13,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z013_Overlay.tif",
+      "source_sha256": "0d580eaa08509f123dc05aa71397bacbc63856a1c3898e0c5db241cfce790455",
+      "xml_sha256": "41b62b5d4c4ca7ba344e7c77ac793652ac8cf85c50349e34fceb1425e9c99148",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 14,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z014_CH1.tif",
+      "source_sha256": "eb8ff42cd7f2c968d14a8f7b92e1cd186f14923f2c846cce1d0deb455f69ad03",
+      "xml_sha256": "1ef4ede54b68d0a48da3f6944b7182d671e1156548bcc6d1e5cd05ffcee892a0",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 14,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z014_CH2.tif",
+      "source_sha256": "f94daec6f4562b993f054494c8a00feee9e5c8b1de937b424b006f100b421e14",
+      "xml_sha256": "491b23d6070643b3b15704b3ed57569ee1ecaed9038b44ae8390a1848197ef7b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 14,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z014_CH4.tif",
+      "source_sha256": "4c2b3d0d7a5d1d5ceb26319255c1b3c5c34d42096dd7cae6ba33fc7f6b028539",
+      "xml_sha256": "4fc14938aee79e2bb74cc578f8d11e9c9e640662083ea17b8a685ea92f7949c9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 14,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z014_Overlay.tif",
+      "source_sha256": "4fb61cf09746c73beec29772fca9fdace6cf1049d373a6e8eb9c3e36e3524b7e",
+      "xml_sha256": "f9c602e0ef0f4cdd5bff9777589a7a30ae907f9fb53e90d8af6b843f2c34a1b9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 15,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z015_CH1.tif",
+      "source_sha256": "2fbf2b85abbb3a2b07fbfb183114e633dd88c1e9a0e927757d4970d9c476ffb2",
+      "xml_sha256": "2e8dffb6e8ef8a97cf7112bcffcb461265105d29df94305a593e9f6587822b73",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 15,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z015_CH2.tif",
+      "source_sha256": "dc77fa658c3a870dd7fafe6ed350ad14e334a4168875d4975c4ae7a6313761cb",
+      "xml_sha256": "dee5beca1dc9b9f1ddbf4d3e23d56a1bd2ef10b6629afa3f57ac028504378970",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 15,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z015_CH4.tif",
+      "source_sha256": "396c15ad84b06b617a58e2a4843cfc44438d0f011d696bd7ca7ed7798ce8e383",
+      "xml_sha256": "fa4069d4d718e28a6c358f9e38c86fa62eb6c9c6224d26b6b5a12e9b464fd169",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 15,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z015_Overlay.tif",
+      "source_sha256": "021d012a61e67aaf650334c9267b515746bbf8baadf26b8a3b8e77e417c0fe4d",
+      "xml_sha256": "ec1610bb039d5e50ef7923c44ed59b4fcce6053eeac0b830697c719b0c1e6755",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 16,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z016_CH1.tif",
+      "source_sha256": "1f962406f54b90892276f29eda209329dd74a784dafd90cd4b056577fe18fc7a",
+      "xml_sha256": "fa7c119052989bbcafaa7dabab65eb48ee14306e4b85a51daf4a662b771c499d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 16,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z016_CH2.tif",
+      "source_sha256": "0300293a2ee08050496ded0dc1dcbe8ddfdc6955ffd30e54e5e9f68930d7e289",
+      "xml_sha256": "52a3dbb2264b69b3a76bad94dfd01f3dcacf798473690e42114f4ec4651b5f89",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 16,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z016_CH4.tif",
+      "source_sha256": "1c15a9ed431ce920a4a700602d62c0c1345377ea2e2d9664f23c3232b609bc13",
+      "xml_sha256": "750f1d8eff0fa66d77acbb94cf806bba841565a51f12d2be506a26d5668f1097",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 16,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z016_Overlay.tif",
+      "source_sha256": "224a2f25e121f9f3b7fec653c69aae7151ff51439dec67dfeb45b52abebb2240",
+      "xml_sha256": "c0cb7b49b0e0d760b0f9c16e3a03499a4dbcaefd8df4597da1d492ecb48368b3",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 17,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z017_CH1.tif",
+      "source_sha256": "5ccf5fe219d70a24c26f6aa0748d926c1e9948913a717950ee443c950e505f3d",
+      "xml_sha256": "c9ac0f91cd43408af59da6760170b4983dc832d77f7cdc4b6ea3a4e09c7d9f74",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 17,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z017_CH2.tif",
+      "source_sha256": "781b6a882fb81cd7a38261c9cd16ed7a783a4c34aa2a5a624fc15ab2d2046b32",
+      "xml_sha256": "7a8b215046ce64355433e3f898cdf9a27dd8c1c8c9eb0eb91ec52e5a1754ec46",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 17,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z017_CH4.tif",
+      "source_sha256": "0aa730c53c60c099fe59b6a03980d9289c6225792322ab34ebd77eb24789512b",
+      "xml_sha256": "f9198793af393635c2db6593fe1dcaf41f501713076a408c92b4c2945a4955ab",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field9",
+      "plane": 17,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00009_Z017_Overlay.tif",
+      "source_sha256": "790d37203bf68c767ae901974863a5f004f12c2ffec9defcdd0f4ca9630bd971",
+      "xml_sha256": "22280f7862e689d2067b96a252928bfeb6bb7d41ad66ec4b877019b1332a4089",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        36519599,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 1,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z001_CH1.tif",
+      "source_sha256": "a764f2d13c794d50660799dfcd845c8874def57739ad682af57971e32b5ecb43",
+      "xml_sha256": "3cc56fe468c71e8a7903e3d0859139936433b3f2c47ffc177a751e009b4c2169",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 1,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z001_CH2.tif",
+      "source_sha256": "0336b1e352a5e0034bbe93bc85be32631bbd0edae3880eee57a4519a03a0ee03",
+      "xml_sha256": "fb49c20db95c4465344141728107ff98169ecbd0ade591b9b6c0643eb9bf9abd",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 1,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z001_CH4.tif",
+      "source_sha256": "3b17a3819c51bf6eab36ae9154efbf9f53fcd280aba8410dedd721205135ae83",
+      "xml_sha256": "f387bf30e2afd5a5aaa760581e1f8def404413a7d32f19043e6e952815ac2964",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 1,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z001_Overlay.tif",
+      "source_sha256": "5211874245c6c8357407ecb5f2e3f103094348abebec51e45e1b1ee00693b57c",
+      "xml_sha256": "666e3887049d689106dd861155f3b9a6b201a0338cd34cf645eeb0d1c45c8444",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2549710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 2,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z002_CH1.tif",
+      "source_sha256": "7a464862db9df2f733446cdd1993908d0c1a606dacf8cc2dc7cfcf7ee411c4ce",
+      "xml_sha256": "4c125084d2d190c2851a50f08d7596195a511fec150fee0d756aca6d71183cac",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 2,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z002_CH2.tif",
+      "source_sha256": "89d27c714293afa647a0c2ba5d1d3e774792a31e55de365bf5f29298176b56be",
+      "xml_sha256": "ff17cde552da1100703a2213eb841acdc56a0b4a22a0a0afc47074d3764e5b8e",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 2,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z002_CH4.tif",
+      "source_sha256": "011741076c537d482e10b5d77855ebd6e59b733c96bf85446c2feb9c0d5d7dd0",
+      "xml_sha256": "47bad4d62fa91e1de28d4f9a87b4b86d9be317103e2e19f6cc9ed86ce017ed7b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 2,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z002_Overlay.tif",
+      "source_sha256": "11c22e6f699333cdff804518c872a4a4459e5d72aa09f4621c358dabc6e47875",
+      "xml_sha256": "33258d9f79f0e526dae4dadecedb36bc4a3f184da75defa276266f5fb96905d3",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2548710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 3,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z003_CH1.tif",
+      "source_sha256": "215dc2e848799b12af72d9d4503558b24ed5a19eda2060efc1b9d14e6d3319d5",
+      "xml_sha256": "a77c1cddcdcd35aaa99c93a8ea31c42a87d956bcda29e14abc5a71afb465bcd0",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 3,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z003_CH2.tif",
+      "source_sha256": "7afb699efd0a134acc67904d4f2d4f93ef3559c410161d83a906f0dab95df9ca",
+      "xml_sha256": "56420f07e3cf4920ad28db16d90b7df65c2282c3a00e2b6614e0cb9f919632ed",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 3,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z003_CH4.tif",
+      "source_sha256": "f9e6c2af134960588936b9b441034354d2b1d5e6a46144e4c09f5b58a02e8274",
+      "xml_sha256": "75f6c4f67e6bac1436369575fe1945caa2cad6b4a02dc920cf7444bbc99b6338",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 3,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z003_Overlay.tif",
+      "source_sha256": "d6c6a881f4b7e6e769cf67778c7bf0bd4a480caaffff6ff3e27d983f883ecaa2",
+      "xml_sha256": "8dd0f3cb2756aa1142004a3b59c46b03c33ae3643c6cdc3c3a966bd8fe1379fe",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2547710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 4,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z004_CH1.tif",
+      "source_sha256": "5bff6b582d8561d3ef734aa9f7bdef42db05de170488749a15effd8c572ba392",
+      "xml_sha256": "bac890862e3da8570a5078b174be0f3b92b5ca5a5a8d3ad2e5b3894c2e72414c",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 4,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z004_CH2.tif",
+      "source_sha256": "1093d59cd139061e7b3976686d7e78e3867981616dd5eca9d526983d3f96c998",
+      "xml_sha256": "7d21a5f3aca243ef0119ff391694d1afbe86de5449fa629a504e0df4261e7939",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 4,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z004_CH4.tif",
+      "source_sha256": "f7ce375bb8de7d3357acb41f6bd3fe185b17f6e0816457b2cb4125965e012c32",
+      "xml_sha256": "73e6118eff6e17e17b518544bde6cfd500866494855fe56aaf2d0017219ca126",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 4,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z004_Overlay.tif",
+      "source_sha256": "68312ee263797616899738af33cd00978403185fc327a0ebb9b9919df77f8c5e",
+      "xml_sha256": "41df4648645e2a00e990be99cb28dd6e95f5a1e3cd75bc6cc117959d20375ecb",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2546710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 5,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z005_CH1.tif",
+      "source_sha256": "3a4cc96b27c4a086300d02d56b10cb464fe2d55f0a5726475ec87c485fe1b409",
+      "xml_sha256": "03648c97faa61fa0a4e7dbdc9915171d03fc446e7f8ed872cda2db683e0ff395",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 5,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z005_CH2.tif",
+      "source_sha256": "00ab59798d8c15ef9e302eecdab22abdc1253f83f43f603733cd56d8a4da3af5",
+      "xml_sha256": "6c0e86e041fcd65333d22c5e6af19345a679d7b7b37d974ddfae53fa781c7b3b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 5,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z005_CH4.tif",
+      "source_sha256": "9c5bcb1532e58509508a860126e0d8d3270867ed34beebcb8286fa03ee2ae63e",
+      "xml_sha256": "b907e8a103ff5e570315350ee1758d1a0ffac12981ee30c7d3a54cb37d71d74d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 5,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z005_Overlay.tif",
+      "source_sha256": "1bb9338f5454d21dc5a3bdf4c983621897d1c31de85315abba39d95ae444b18b",
+      "xml_sha256": "b35808c4b0a37821c38fc75bcbc9772ace24cb57964b88af162fe68a522d3365",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2545710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 6,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z006_CH1.tif",
+      "source_sha256": "906d135374db5981dbfa5fde50049f39c5673cc079e7315b03c100b62fc99733",
+      "xml_sha256": "8aae317805a2dbbeaf80d91a7fe869ba2182260eec00bf7741d3b3ac43537d9c",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 6,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z006_CH2.tif",
+      "source_sha256": "1de153b3b88588498080070336c80f6796617f253fc433c7d3fa4824b78ea67a",
+      "xml_sha256": "52215db7e77befb88085544baeea6501a241d383585368c2dbd85172e760002c",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 6,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z006_CH4.tif",
+      "source_sha256": "02640ac663356207c2b81fcc75d32087371a1e3422e74d60b6bab24cbcfbbab4",
+      "xml_sha256": "52e4b1b4f138f9f210d58fe59ad53009df8692b695fee48d98d9ee93ec3dff9f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 6,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z006_Overlay.tif",
+      "source_sha256": "bed0b0aa2f08482ed9b139f547472e83f06d3ed466b57ec12d508e704551e373",
+      "xml_sha256": "689c8eeeae989b41c579ac9ce4337a7d9a491eb38cca740b75a99a548356833f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2544710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 7,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z007_CH1.tif",
+      "source_sha256": "e579112f9d8b052f0935134b80364560a152f2df17b6ddb9e45bf033903f1701",
+      "xml_sha256": "7bfdf3aedbf8b9948bba8edff25707af4444e91e4683483e1129799a4e7fffd1",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 7,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z007_CH2.tif",
+      "source_sha256": "0b5c3ca0b20848658ac58854d386eba0c57a50dddaf8e87bfe6532d51ac84b42",
+      "xml_sha256": "d7bd18aa234d2c034d0d3999377d75c1bb405e42431d5464f86e7f3be3a66c57",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 7,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z007_CH4.tif",
+      "source_sha256": "e8e3390fc26461f9b62244aa4751a52ce821449dd6e655570ef4b1f8f1bc1942",
+      "xml_sha256": "77bb55e9096d3c8d00b58870f6d75aead91a972e505691505d6373bb267f578b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 7,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z007_Overlay.tif",
+      "source_sha256": "e3d1954f2114ed973fea2bd37d1a9a57a4732fa0c9d4074ee7042c7c9fa288c1",
+      "xml_sha256": "d27f289f602bd47b0c439756fc301fdf1a3beaa21332c09a2461c57a5a36d844",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2543710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 8,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z008_CH1.tif",
+      "source_sha256": "c7346a40c5588b5a2dcdede906c2e5f33710b4bcec0fac998e87e814d2d5d280",
+      "xml_sha256": "3166c3b40fa3b177e53fa4001c2d0efad991c6b450e601626470ff275e6604f7",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 8,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z008_CH2.tif",
+      "source_sha256": "969595f5ad769899f43d736c9422ba76a8f7b6f52e9bee6902cfd50386f8f6f6",
+      "xml_sha256": "feb352c3dbb3087b743b965e46b8782fe233c5f1934fd21e4ac3d6d85cccb6eb",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 8,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z008_CH4.tif",
+      "source_sha256": "a8a2ff1033d7f773f85415d1f81eb2e726a351ebcde659f2d7cebf0eeba9ed56",
+      "xml_sha256": "cdf4f6396fcb594a9a71275f62b1f7bf225424ccc6a97c57bc4174199d52cfad",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 8,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z008_Overlay.tif",
+      "source_sha256": "a857ae9c503932cc98d0cb75824d1ab20e1f38fadfa99feb65c21888b4c17baf",
+      "xml_sha256": "ae2b72aefc9564a853a97719a78ba6edc51353c3ec1edc4e637dfcb0d01feab8",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2542710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 9,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z009_CH1.tif",
+      "source_sha256": "6e423eb24183bfb6f6ce21070e27998cfdc477a6e6aacf0f116c819aca2bab82",
+      "xml_sha256": "9d97d2b637711678a77eac657faf32fcfd0e859ce8f6aef13b6ed8f22e444a65",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 9,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z009_CH2.tif",
+      "source_sha256": "f8504a5959e6a4ef97a6a05f787371c9b54cea3865541bb8b5e5c502cd1dcf3a",
+      "xml_sha256": "3523fec5621fd54787ba8bff74c022fd1d1750560d95046eafe4aebf5c8c55e4",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 9,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z009_CH4.tif",
+      "source_sha256": "caf92e6d5cb8717994e98a58c4187c81ebd06b29c7e2b1254e5b3bf28e81f8da",
+      "xml_sha256": "80fe85f659bf1f4ed56be4a75bf9612205424d4fc7df5800b5a8383638114c28",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 9,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z009_Overlay.tif",
+      "source_sha256": "29c8b5fac2bbba84f61ea960302679ba3d2847a3c868550797df0b6d12db12ed",
+      "xml_sha256": "6e04124bfd0a17f2380b25393148ad405e012c42093b62b628d2b3c3bd88295d",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2541710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 10,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z010_CH1.tif",
+      "source_sha256": "75217414da933c8ac6dfc3df1d8717979dbd76aeb2c074a47efe5a41be5b9618",
+      "xml_sha256": "8f14b9f4f720f367dd5e2b81d88090a7cb5512e39c4723e41325d0f7e00d227a",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 10,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z010_CH2.tif",
+      "source_sha256": "2379e8eda6f4a03c1caa64571cb5ef28be0bb4d512abc4ae0be41b4855d4a38b",
+      "xml_sha256": "7aa24f5db66a19494b63a02fdefea145baa2fdc151a56f1dcfe9fd765b755316",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 10,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z010_CH4.tif",
+      "source_sha256": "459234cda1854d28b117af576369d02b8e7a511ce9b38fa8e44d6676eaa94764",
+      "xml_sha256": "f408130c5c31c036e991e8d04bd95479bc81cc94bc41c11eac0a132eec3d3f6f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 10,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z010_Overlay.tif",
+      "source_sha256": "219c93ddad680234d1393d8a77c0fdb5aa1fcafa29ead0f91ed6c8d6bda3c416",
+      "xml_sha256": "5d0a1748bbd17215ee45266392eb90890e741e2c6b0aa5400bd5fa648a048d9b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2540710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 11,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z011_CH1.tif",
+      "source_sha256": "86c705a72b6f632da65d0c6f01156327bcf3d0c6b8a920158f82c9b0b27c583b",
+      "xml_sha256": "1751462a7450ad9bee41745f1c34715355a06eb3eec50c59f425b81e3cb6a8f5",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 11,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z011_CH2.tif",
+      "source_sha256": "765d96d8c9b0c7dffb85fe9e396deb47afbba3a1967c8c176d06cda05d13247f",
+      "xml_sha256": "bc5898ee567aec04f28da6abfec605ccb07cfd14dc09e3476dfdd05ffad29f36",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 11,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z011_CH4.tif",
+      "source_sha256": "6ba9612f4541964b61076b72a8d151e33083b34e61afc0c7c14b8ac382ff91c5",
+      "xml_sha256": "1d062e30e580568af9e73a6b915608484a83a34b759fada649fdde3e73031cc0",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 11,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z011_Overlay.tif",
+      "source_sha256": "c5b9cf73b995916dfc99ea7c1a71be3b23a51fcd35fcfd7e444937ff1f288aac",
+      "xml_sha256": "ada27b48789bb6474b2e9826527fdd960caf4a6c3a3e7267f3c8ea2d7bc685e2",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2539710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 12,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z012_CH1.tif",
+      "source_sha256": "3aefcaee319c11115341e6cfb9fd18b8b4ab7a24823a9cd9cc707d8112aeb9c1",
+      "xml_sha256": "59c3705ad92706e7e29e539871370b762c7ebebda49df7cc8f12484aa7ac23b8",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 12,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z012_CH2.tif",
+      "source_sha256": "f0eb4424786b5e95cbed870606ae6bce9da1ae4aa1bfee227fadee78bc736f9a",
+      "xml_sha256": "c87b1c9afe9ac3c2c3346c4d5e02867ece450dbeffc3edc97d6a3e2a6f11c9e9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 12,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z012_CH4.tif",
+      "source_sha256": "c3e78c7f3ae9f6f9c779c1764fd533565fa8931e465eb61a7ad838d93f4ab9cc",
+      "xml_sha256": "4a974061fed1dc37b9b3663187feaf3d42fa3f4a4be9c7142c446c284ec79604",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 12,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z012_Overlay.tif",
+      "source_sha256": "4925acf4f3a47d82503bf8341c0e691306246839e2551294b83d6bad32a53eb9",
+      "xml_sha256": "902698ffa5d4ee0071289e90eda6b72f82d314bcf5700d2cc529a35ad62baec6",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2538710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 13,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z013_CH1.tif",
+      "source_sha256": "787c20de932238c189f4aa637242a593f4fa5a41103e6203fa7e839926d1c56c",
+      "xml_sha256": "b14d45e974ab51d2c0495295309de30106d12532347f61335486eacc48ca9c2a",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 13,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z013_CH2.tif",
+      "source_sha256": "63a496286deec21275d38a7dec8a400fd549ae1e09b95234cb12ffbece9cbeb4",
+      "xml_sha256": "82a623d7404a36702ebe68385a03e17b8ee2a70b1b44c07fa3f6ebdb78803d2e",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 13,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z013_CH4.tif",
+      "source_sha256": "e1df5dbcb7cc9e0008a412d23ebb29d5ee5d49634b148c571bdfb08d18067a98",
+      "xml_sha256": "9ccf6847658c1f2c089f22fb690d0b0e7383f977c04e76b96f7c55f107b42bd1",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 13,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z013_Overlay.tif",
+      "source_sha256": "e9828bd4519b6fca421ad015ba2b258e95419fe4072b504a53ec3643b579e7ce",
+      "xml_sha256": "359c0e9c3ed47c0cae575061ab078260741e61fde153d41ee819350ca70bfaf9",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2537710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 14,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z014_CH1.tif",
+      "source_sha256": "6853141d4ab5e5cbca2d716c78244ec324cb8ce0e4e60241dbd76fe34683f362",
+      "xml_sha256": "17e66abf4be60ef4b65d8720f45144afa85aaa723c3457c93925a5012fabd418",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 14,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z014_CH2.tif",
+      "source_sha256": "aebd56ce96c8ba8ae578bb88aeb236269121a86394fd95aa1fc703cc720b1b93",
+      "xml_sha256": "3b013319c5dad4e6a1185743afb118dd5fb003afe511eed7bb779ec50580fbc8",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 14,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z014_CH4.tif",
+      "source_sha256": "bd58bff52bcd8a27ef1727e4e75d773363c936492dc37cbf78943a8d46c2c58f",
+      "xml_sha256": "e7f287564cce719dc60a8f3bb4534c7c0b32304ebf4de78ea9b904f79dddf89f",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 14,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z014_Overlay.tif",
+      "source_sha256": "e16312de278b4f24d995b9ac2a425543737f7cf29087174a8366d4aec5037fb2",
+      "xml_sha256": "3763179a000599d9dc2968ffe4614e8e417e6efc8aed083040cea653a692df77",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2536710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 15,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z015_CH1.tif",
+      "source_sha256": "9eb4109f8e70c80ff38756cdd8fdd417534645e4e7dafa5fd71188ecd296bd61",
+      "xml_sha256": "88010b624e26eedbf83be9c802212d93c80b4728e18da865db4fd40ac7293c6e",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 15,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z015_CH2.tif",
+      "source_sha256": "8d33a563fdad0571f596d6235421e8f38908904a96e50efbe01a8087626b7c6e",
+      "xml_sha256": "3dd9390b0d697403ca584faa1ceb259cf7c15a6424c4b365ea205500a11012fa",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 15,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z015_CH4.tif",
+      "source_sha256": "7bdf7466e332a4a09d359464a0110514ff704b1dfc9d70922f469c38f3b01d98",
+      "xml_sha256": "11a79d50c8dc262e9a9c651538e7285a82d548042660e002528c8ee658a45144",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 15,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z015_Overlay.tif",
+      "source_sha256": "dee974e657e63ea9803b3c79dd01f505cd86b2eeacbc5be14a4affa1da04f0de",
+      "xml_sha256": "0597b79855d10b140a4edd7afcc9b17d38175518590318f77634667bcd209440",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2535710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 16,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z016_CH1.tif",
+      "source_sha256": "a3b11bb58b9cbea448e9019d900f53d3c63a4241a39699172d7d5fc7e03ed638",
+      "xml_sha256": "43c915998696200b679790d932919ced061186b9a8e6464c03f285646c0c0f2c",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 16,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z016_CH2.tif",
+      "source_sha256": "bd6be173ee038a532426f63d9291cec8a09bba412acd5ffa3c3b7ab5a1a7388f",
+      "xml_sha256": "f55a4ac5b5c22605e0ee271cb09e3414d66a33e6ecf64ec6327bd1b99a014742",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 16,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z016_CH4.tif",
+      "source_sha256": "01c58963eeab52d99cf49e44c8f3930c2ae476c3f6f8abf0c1815a251d233464",
+      "xml_sha256": "6184954e72b8ed5ab39406992bd6938328fed99e6f743d0258a51d7efa46a1fa",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 16,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z016_Overlay.tif",
+      "source_sha256": "dcdeafd29d65602d30c42ac96336a404d00cb624358248eb689f2989b51c2641",
+      "xml_sha256": "a85ea37f86a904e62a4c6e7056b63744d8cd2a5a9adc9be35c28235f9600effe",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2534710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 17,
+      "channel": "CH1",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z017_CH1.tif",
+      "source_sha256": "69577d203e2a1ea32d00aae7aed7086728fe5f1d7d3dbceac2cb8dff3fb283c9",
+      "xml_sha256": "097d769dea648d6e2968ed6200e01ece3fee82f8a47e50b32d72f5b8511da213",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 17,
+      "channel": "CH2",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z017_CH2.tif",
+      "source_sha256": "81a31cbea29e33b131ee470328806d154b61b8e4b44deb4c5fee49b8ba8a594d",
+      "xml_sha256": "f44889427f08245ade7b40c928364cfd8f7cf13bc335f387a425c74fb78bc5fc",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 17,
+      "channel": "CH4",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z017_CH4.tif",
+      "source_sha256": "a4fa5344b96de785569fc82e1e03593c9852985c3b44e124581bfe5af93a5ef0",
+      "xml_sha256": "3c66daf7350c308cae079b7332dd411ffe12148deaba5bd99a8dbedea668d87b",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    },
+    {
+      "field": "field1",
+      "plane": 17,
+      "channel": "Overlay",
+      "original": "2.28.2024_part1_xy1_XY01_00001_Z017_Overlay.tif",
+      "source_sha256": "6e9741f620d639683d3afa761692919f2aee9f29711e5a2496112f5aa58ff309",
+      "xml_sha256": "7392bda5a7dc8c925c96afca5794c2e53a123bff5c2a8d1f05f61cf6b10b9f63",
+      "calibration_encoded": "4639516037540190548",
+      "calibration_decoded": 150.97671666666668,
+      "dimensions": [
+        960,
+        720
+      ],
+      "xy_stage_extent": [
+        144938,
+        108703
+      ],
+      "stage_location": [
+        37331250,
+        59369687,
+        2533710
+      ],
+      "lens": "PlanApo 100x 1.45/0.13mm Oil :Default",
+      "binning": "TwoByTwo"
+    }
+  ],
+  "limits": [
+    "Physical size per pixel is not optical resolution.",
+    "No physical Z increment inferred from Pitch=10 or stage Z=-1000.",
+    "No stage orientation relative to the body is established.",
+    "No correspondence to C10 microCT or the anatomical scaffold is established.",
+    "No raw detector counts, activity or cell identity are inferred."
+  ],
+  "confirmation_needed": [
+    "Unit definitions for Calibration, XY stage extents, StageLocationZ and Pitch in this software version.",
+    "Acquisition-specific calibration or calibrated source export (e.g. OME-TIFF) with known units.",
+    "Confirmation of any resizing during montage/export and of the source optical sampling."
+  ]
+}

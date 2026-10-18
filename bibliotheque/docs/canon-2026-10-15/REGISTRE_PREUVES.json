@@ -1,0 +1,883 @@
+{
+  "rows": [
+    {
+      "id": "source_catalogue",
+      "claim": "Le catalogue décrit l’acquisition",
+      "status": "contrôlé",
+      "evidence_level": "fichiers et programme",
+      "scope": "70 448 références ; pas autant de TIFF acquis",
+      "next_acceptance_gate": "Pour affirmer la disponibilité des pixels supplémentaires : obtenir et contrôler leurs fichiers.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/CATALOGUE_BILAN.json",
+          "selector": [
+            "source_count"
+          ],
+          "value": 70448,
+          "original_sha256": "098e9cac48c86503a2cd03fdef43e853ed418cbb6e74bdbb031a98a0c374ba1e",
+          "sha256": "d1c7e4ae1757cd3ded2c30f18c18ed8d20eb0f2bba7c0902ec696beec669e83f"
+        }
+      ]
+    },
+    {
+      "id": "local_raw_coverage",
+      "claim": "Onze champs complets et trois champs partiels sont acquis localement",
+      "status": "contrôlé dans ce périmètre",
+      "evidence_level": "fichiers et programme",
+      "scope": "799TIFF uniques ;11champs17×4 complets,42TIFF des48/49 et9TIFF du47 partiels. Pas archivecomplète.",
+      "next_acceptance_gate": "Toute extension doit vérifier les nouveaux fichiers et leur provenance ; ne pas confondre couverture et validité scientifique.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/CATALOGUE_BILAN.json",
+          "selector": [
+            "canonical_local_images"
+          ],
+          "value": 748,
+          "original_sha256": "098e9cac48c86503a2cd03fdef43e853ed418cbb6e74bdbb031a98a0c374ba1e",
+          "sha256": "d1c7e4ae1757cd3ded2c30f18c18ed8d20eb0f2bba7c0902ec696beec669e83f"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "local_original_TIFFs"
+          ],
+          "value": 790,
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "partial_target_TIFFs"
+          ],
+          "value": 42,
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_EXTENSION_SPATIALE_2026-10-15/RESUME_EXTENSION.json",
+          "selector": [
+            "cumulative_unique_TIFFs"
+          ],
+          "value": 799,
+          "original_sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf",
+          "sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf"
+        }
+      ],
+      "previous_scope": "790 TIFF uniques ; 11champs17×4 complets, 42TIFF des champs48/49 partiels. Pas archive complète."
+    },
+    {
+      "id": "regional_reader",
+      "claim": "Lecture régionale du TIFF assemblé",
+      "status": "exécuté et testé",
+      "evidence_level": "fichiers et programme",
+      "scope": "Deux extractions, centre traversant quatre blocs et bord ; accès hors ligne aux blocs en cache",
+      "next_acceptance_gate": "Autre rectangle : même version/index, bornes, pixels et provenance ; acquisition explicite seulement si blocs absents.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AFFINAGE_2026-10-14/TESTS_REGIONS.json",
+          "selector": [
+            "passed"
+          ],
+          "value": true,
+          "original_sha256": "c95b1280f84cbeb4d198af8883d8d29699feb2124cb7d5e43358003507b57ff0",
+          "sha256": "c95b1280f84cbeb4d198af8883d8d29699feb2124cb7d5e43358003507b57ff0"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AFFINAGE_2026-10-14/REGIONS_SOURCE.json",
+          "selector": [
+            "rows"
+          ],
+          "value": [
+            {
+              "rect_xywh": [
+                9310,
+                9198,
+                512,
+                512
+              ],
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "storage_blocks": [
+                664,
+                665,
+                702,
+                703
+              ],
+              "png": "REGION_1.png",
+              "png_sha256": "b88a3651125daeadad4744d9b3eff0b7908c929a5c26879742e4ec443c8aef8d",
+              "pixel_exact": true
+            },
+            {
+              "rect_xywh": [
+                19069,
+                18845,
+                64,
+                64
+              ],
+              "shape": [
+                64,
+                64,
+                3
+              ],
+              "storage_blocks": [
+                1405
+              ],
+              "png": "REGION_2.png",
+              "png_sha256": "9d2af950d09c45b7752d7198822d05a3e5ac9b09026a94fb8ae5edc7e1352287",
+              "pixel_exact": true
+            }
+          ],
+          "original_sha256": "ef1e7ea57d8578503b6e979d2032e3b97343f0e3afa26ff16f2d15edcc0296a0",
+          "sha256": "2a482e538c11107becd0cb0f2477caa0828dca24334de6e121bf8ceec20efb51"
+        }
+      ]
+    },
+    {
+      "id": "sparc_methods",
+      "claim": "Les méthodes ont été comparées",
+      "status": "exécuté avec résultats faibles conservés",
+      "evidence_level": "robustesse de méthode",
+      "scope": "NCC et phase sur deux boucles adjacentes, ASHLAR16exécutions spatiales (9graphes reliés,7replis/déconnexions), plus12contre-factuels de seuil sans réestimer les arêtes. Même spécimen et données réutilisées.",
+      "next_acceptance_gate": "Une question nouvelle ou des repères homologués ; ne pas répéter les calculs clos ni confondre graphe relié et justesse anatomique.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AUDIT_CORRIGE_2026-10-14/AUDIT_FINAL_TESTS.json",
+          "selector": [
+            "known_failures"
+          ],
+          "value": [
+            "ASHLAR exact-identity numerical error retained; noisy known-shift test passes",
+            "Two full-pipeline edges rejected; original stage fallback is not a registration"
+          ],
+          "original_sha256": "c44c73ba87a1f2e9b1df9a32fd6e620193de0b51b20b2230d63c657d10382bcb",
+          "sha256": "c44c73ba87a1f2e9b1df9a32fd6e620193de0b51b20b2230d63c657d10382bcb"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/PRECISION_BILAN.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface",
+          "sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/ESTIMATIONS_STABILITE.json",
+          "selector": [
+            "count"
+          ],
+          "value": 32,
+          "original_sha256": "55644be9b5e7fa681aa5efa55e0f45e9a3349528b49eeee9befceeb9745f168d",
+          "sha256": "55644be9b5e7fa681aa5efa55e0f45e9a3349528b49eeee9befceeb9745f168d"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/SCORES_STABILITE.json",
+          "selector": [
+            "count"
+          ],
+          "value": 768,
+          "original_sha256": "e47a3cebfceced4e855461d8b841622694ea4f8e5ca62b1a3619f196e305f194",
+          "sha256": "e47a3cebfceced4e855461d8b841622694ea4f8e5ca62b1a3619f196e305f194"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "runs"
+          ],
+          "value": 12,
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "statuses"
+          ],
+          "value": {
+            "no_accepted_edges_stage_fallback": 5,
+            "connected_image_based_positions": 7
+          },
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "LoG2_all4edges_accepted"
+          ],
+          "value": 6,
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_ASHLAR_2D_2026-10-15/RESUME_ASHLAR_2D.json",
+          "selector": [
+            "negative_nominally_overlapping_per_run"
+          ],
+          "value": 12,
+          "original_sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf",
+          "sha256": "fd7f68c66a2ec600ae5797dcf5db8b7e0f331fbd41793535b69e323fe7e00faf"
+        }
+      ],
+      "previous_scope": "NCC, phase, ASHLAR, régions/plans/échelles/précision ; mêmes données réutilisées ; premièreboucle2D sur3plans et transfertfixeZ9 évalués, phase instable conservée ; ASHLAR1.20 sur grille2D,12essais,7graphes reliés et5replis, domaines du seuil audités"
+    },
+    {
+      "id": "ch4_cause",
+      "claim": "La cause des écarts CH4 est identifiée",
+      "status": "non établi",
+      "evidence_level": "validation scientifique",
+      "scope": "Cause nonétablie ; forte hétérogénéité spatiale. Deuxièmeboucle, contrôleNCCnatifsCH4:0,150..0,968 selonliaison. Le canal ne peut pas être résumé comme uniformément défaillant.",
+      "next_acceptance_gate": "Décomposition descriptive de texture disponible sur la seconde boucle ; toujours aucun contrôle identifiant une cause biologique/instrumentale.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_2026-10-14/SPARC_TEXTURE_BILAN.json",
+          "selector": [
+            "adopted_method"
+          ],
+          "value": null,
+          "original_sha256": "74e25e1e7f8ed0b17fe184a86aaa9627f380f49f3225d81ffe5a22d4dcbe3dbf",
+          "sha256": "74e25e1e7f8ed0b17fe184a86aaa9627f380f49f3225d81ffe5a22d4dcbe3dbf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "native_NCC_consensus_controls_by_edge"
+          ],
+          "value": [
+            {
+              "edge": [
+                9,
+                10
+              ],
+              "controls": {
+                "CH1": 0.9635655106906335,
+                "CH2": 0.9685862750553541,
+                "CH4": 0.4691449677627284
+              }
+            },
+            {
+              "edge": [
+                10,
+                47
+              ],
+              "controls": {
+                "CH1": 0.9589349469464713,
+                "CH2": 0.9155147526064615,
+                "CH4": 0.15048217786620707
+              }
+            },
+            {
+              "edge": [
+                48,
+                47
+              ],
+              "controls": {
+                "CH1": 0.9127432417079597,
+                "CH2": 0.9580758891895612,
+                "CH4": 0.9680943234715018
+              }
+            },
+            {
+              "edge": [
+                9,
+                48
+              ],
+              "controls": {
+                "CH1": 0.9453620394094405,
+                "CH2": 0.950694754914763,
+                "CH4": 0.2452091267162092
+              }
+            }
+          ],
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_TEXTURE_BOUCLE2_2026-10-15/RESUME_TEXTURE.json",
+          "selector": [
+            "CH4_controls"
+          ],
+          "value": [
+            {
+              "edge": [
+                9,
+                10
+              ],
+              "representation": "raw",
+              "ncc": 0.4691449677627284,
+              "all_cyclic_NCC": [
+                0.22709342318463166,
+                0.13364559863034725,
+                0.09900486659776998,
+                0.06726227222536227,
+                0.06139753696029484
+              ]
+            },
+            {
+              "edge": [
+                9,
+                10
+              ],
+              "representation": "lowpass4",
+              "ncc": 0.7721973053893946,
+              "all_cyclic_NCC": [
+                0.5161336692784929,
+                0.3228832790023753,
+                0.25665980819496004,
+                0.20805351930573088,
+                0.11070980700834444
+              ]
+            },
+            {
+              "edge": [
+                9,
+                10
+              ],
+              "representation": "highpass4",
+              "ncc": 0.19504700712219997,
+              "all_cyclic_NCC": [
+                0.001418989924104795,
+                -0.0037851504470823574,
+                -0.005122146223517772,
+                -0.0038345621527536393,
+                0.004261425870930721
+              ]
+            },
+            {
+              "edge": [
+                10,
+                47
+              ],
+              "representation": "raw",
+              "ncc": 0.15048217786620707,
+              "all_cyclic_NCC": [
+                0.03562538813328723,
+                0.010117490661584166,
+                -0.02733684296306734,
+                0.06137078930584411,
+                0.018786375742749533
+              ]
+            },
+            {
+              "edge": [
+                10,
+                47
+              ],
+              "representation": "lowpass4",
+              "ncc": 0.4003834527221464,
+              "all_cyclic_NCC": [
+                0.09708200885861074,
+                -0.004511172357034584,
+                -0.12054242507391243,
+                0.2240250423773967,
+                0.10019936399875087
+              ]
+            },
+            {
+              "edge": [
+                10,
+                47
+              ],
+              "representation": "highpass4",
+              "ncc": 0.06395002891581553,
+              "all_cyclic_NCC": [
+                0.020942432811992116,
+                0.010978500078779414,
+                -0.007969300836998722,
+                0.013309453986042236,
+                -0.002562017001968649
+              ]
+            },
+            {
+              "edge": [
+                48,
+                47
+              ],
+              "representation": "raw",
+              "ncc": 0.9680943234715018,
+              "all_cyclic_NCC": [
+                0.48595122941895513,
+                0.1348114376355489,
+                0.09958563520868967,
+                0.6253264838920041,
+                0.2631863019071052
+              ]
+            },
+            {
+              "edge": [
+                48,
+                47
+              ],
+              "representation": "lowpass4",
+              "ncc": 0.9963566646083882,
+              "all_cyclic_NCC": [
+                0.5040707723813831,
+                0.1473460263196175,
+                0.10552338596455531,
+                0.6489251166869877,
+                0.27826275837597625
+              ]
+            },
+            {
+              "edge": [
+                48,
+                47
+              ],
+              "representation": "highpass4",
+              "ncc": 0.16820568786590562,
+              "all_cyclic_NCC": [
+                -0.0041520109081036845,
+                -0.004911134623047856,
+                -0.009599389659236249,
+                0.019815271795523972,
+                -0.0038175772543399987
+              ]
+            },
+            {
+              "edge": [
+                9,
+                48
+              ],
+              "representation": "raw",
+              "ncc": 0.2452091267162092,
+              "all_cyclic_NCC": [
+                0.14985662150089732,
+                0.06808211686751516,
+                0.024191153361142106,
+                0.054136314915420355,
+                0.05585272130952433
+              ]
+            },
+            {
+              "edge": [
+                9,
+                48
+              ],
+              "representation": "lowpass4",
+              "ncc": 0.5686671515870582,
+              "all_cyclic_NCC": [
+                0.3876532182624005,
+                0.1799212282840805,
+                0.034248564115114094,
+                0.1724951262431444,
+                0.16794654844210813
+              ]
+            },
+            {
+              "edge": [
+                9,
+                48
+              ],
+              "representation": "highpass4",
+              "ncc": 0.034275271012502655,
+              "all_cyclic_NCC": [
+                0.003175998586354167,
+                -0.004849470993830524,
+                0.002650041895523836,
+                0.00262705851716322,
+                -4.8262734391307206e-05
+              ]
+            }
+          ],
+          "original_sha256": "2dad5a6e7a91e33a64f4648b68840456ddc41c13752369ac2dcc8ac6f060526e",
+          "sha256": "2dad5a6e7a91e33a64f4648b68840456ddc41c13752369ac2dcc8ac6f060526e"
+        }
+      ],
+      "previous_scope": "Texture fine faible ; aucune attribution unique au bruit, à la biologie ou à la mise au point"
+    },
+    {
+      "id": "anatomical_alignment",
+      "claim": "Le raccord SPARC est validé anatomiquement",
+      "status": "non établi",
+      "evidence_level": "validation scientifique",
+      "scope": "Vues séparées conservées ; image assemblée des auteurs non indépendante",
+      "next_acceptance_gate": "Correspondances identifiées et contrôle distinct de l’ajustement, modèle justifié, erreurs/incertitudes conservées ; pas de région déjà recherchée qualifiée de vierge.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/PRECISION_BILAN.json",
+          "selector": [
+            "anatomical_validation"
+          ],
+          "value": false,
+          "original_sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface",
+          "sha256": "535d18442884aad623c7ccb21d68b919a2594e13c3e4a5be8d1d14a673cdface"
+        }
+      ]
+    },
+    {
+      "id": "closed_loop",
+      "claim": "Une boucle 2D est contrôlée sur les originaux",
+      "status": "exécuté et contrôlé sur une boucle et trois plans focaux",
+      "evidence_level": "programme et robustesse locale limitée",
+      "scope": "Deux boucles adjacentes ; première auxplans8/9/10, seconde auplan10. Même spécimen et arête commune, pas réplicats biologiques.",
+      "next_acceptance_gate": "Contrôle anatomique homologué ; unité physique/documentation et IHC/CT restent manquants. Ne pas répéter ces essais sans question nouvelle.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "original_2D_loops"
+          ],
+          "value": 1,
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "focus_planes"
+          ],
+          "value": [
+            8,
+            9,
+            10
+          ],
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "NCC_consensus_closure_raw_px"
+          ],
+          "value": {
+            "8": 1.0,
+            "9": 0.0,
+            "10": 1.4142135623730951
+          },
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_BOUCLE_2026-10-15/RESUME_PREUVES.json",
+          "selector": [
+            "max_component_shift_delta_from_Z9"
+          ],
+          "value": 1,
+          "original_sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6",
+          "sha256": "5f6bc091f7aea458c8108b0e6067db53b0bcb04f228643b644caeed3ac21ebb6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "spatial_loops_evaluated_cumulative"
+          ],
+          "value": 2,
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "NCC_consensus_closure_px"
+          ],
+          "value": {
+            "0": 1.4142135623730951,
+            "2": 1.0
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        }
+      ],
+      "previous_status": "bloqué : pixels48/49 absents",
+      "previous_scope": "Une boucle originale8-9-48-49 aux plans8/9/10 ; fermeture NCCconsensus0..√2px, vecteurs±1px parcomposante. Pas réplicats biologiques."
+    },
+    {
+      "id": "ihc_units",
+      "claim": "L’unité physique GCI est confirmée",
+      "status": "bloqué : définition d’unité absente",
+      "evidence_level": "validation scientifique",
+      "scope": "150,9767167 unités source/pixel ; hypothèse nm conditionnelle",
+      "next_acceptance_gate": "Définition explicite rattachée à cette acquisition/version ou export microscopique calibré ; DPI et nominal constructeur insuffisants.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/CATALOGUE_BILAN.json",
+          "selector": [
+            "physical_unit_confirmed"
+          ],
+          "value": false,
+          "original_sha256": "098e9cac48c86503a2cd03fdef43e853ed418cbb6e74bdbb031a98a0c374ba1e",
+          "sha256": "d1c7e4ae1757cd3ded2c30f18c18ed8d20eb0f2bba7c0902ec696beec669e83f"
+        }
+      ]
+    },
+    {
+      "id": "ihc_ct",
+      "claim": "La transformation IHC vers CT est établie",
+      "status": "bloqué : repères et plan absents",
+      "evidence_level": "validation scientifique",
+      "scope": "Même parent C1 insuffisant",
+      "next_acceptance_gate": "Plan/orientation identifiés, correspondances et sens/unités de transformation, contrôle d’erreur distinct.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/CATALOGUE_BILAN.json",
+          "selector": [
+            "ct_transform"
+          ],
+          "value": null,
+          "original_sha256": "098e9cac48c86503a2cd03fdef43e853ed418cbb6e74bdbb031a98a0c374ba1e",
+          "sha256": "d1c7e4ae1757cd3ded2c30f18c18ed8d20eb0f2bba7c0902ec696beec669e83f"
+        }
+      ]
+    },
+    {
+      "id": "allen_numerics",
+      "claim": "Les mesures et pentes Allen ciblées sont reproduites",
+      "status": "contrôlé dans ce périmètre",
+      "evidence_level": "fichiers et programme",
+      "scope": "78 essais, 312 valeurs QC, 3 pentes ; ne couvre pas tout le pipeline",
+      "next_acceptance_gate": "Nouveau calcul seulement si question/donnée nouvelle ; rester explicite sur précision, fenêtres et détection source.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_2026-10-14/ALLEN_QC_RECALCULE.json",
+          "selector": [
+            "within_tolerance"
+          ],
+          "value": 78,
+          "original_sha256": "f815fb018965a54387253b48745f0dda5f34387221a0c11f00c69fc7be7ab039",
+          "sha256": "f815fb018965a54387253b48745f0dda5f34387221a0c11f00c69fc7be7ab039"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONTEXTE_2026-10-14/VERIFICATION_FINALE.json",
+          "selector": [
+            "three_source_slopes_match"
+          ],
+          "value": true,
+          "original_sha256": "e1480f5b78fe083d47f48ad88405755635ad3d39a9d2a3e45da91cc473d5d88c",
+          "sha256": "e1480f5b78fe083d47f48ad88405755635ad3d39a9d2a3e45da91cc473d5d88c"
+        }
+      ]
+    },
+    {
+      "id": "allen_original_qc",
+      "claim": "Le QC historique complet Allen est reconstitué",
+      "status": "bloqué : traces techniques et revue manquantes",
+      "evidence_level": "validation scientifique",
+      "scope": "Criblage numérique partiel ; 3 dépassements conservés ; pas verdict des auteurs",
+      "next_acceptance_gate": "Traces techniques initiales et revue de compensation/exception selon conditions historiques ; aucune substitution par nos seuils.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_EVALUATIONS_2026-10-14/ALLEN_CRIBLAGE.json",
+          "selector": [
+            "author_verdict_not_available"
+          ],
+          "value": true,
+          "original_sha256": "cd414cdff73fc0192c7b744115b0bfec84766ffbb884de6435621aba8c7461ec",
+          "sha256": "cd414cdff73fc0192c7b744115b0bfec84766ffbb884de6435621aba8c7461ec"
+        }
+      ]
+    },
+    {
+      "id": "readers",
+      "claim": "Les parcours sont compris par de vrais lecteurs",
+      "status": "non mesuré",
+      "evidence_level": "validation humaine",
+      "scope": "Fiches prêtes ; pas de séance attestée",
+      "next_acceptance_gate": "Séances réelles, consentement et réponses/erreurs conservés ; pas de lecteurs simulés.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_AUDIT_CORRIGE_2026-10-14/ESSAIS_LECTEURS.md",
+          "selector": null,
+          "value": null,
+          "original_sha256": "25747fd0b0f6aed346fa879b57e33532f0227827993e2569ddc2583259b61c08",
+          "sha256": "25747fd0b0f6aed346fa879b57e33532f0227827993e2569ddc2583259b61c08"
+        }
+      ]
+    },
+    {
+      "id": "ashlar_disjoint_threshold_sensitivity",
+      "claim": "Sensibilité du rejet ASHLAR à une population de bandes disjointes en pixels",
+      "status": "exécuté et contrôlé dans ce périmètre",
+      "evidence_level": "programme et robustesse descriptive",
+      "scope": "12 seuils ; 1 essai(s) avec décision/position modifiée ; aucune indépendance biologique ou adoption",
+      "next_acceptance_gate": "Extension spatiale/plan/canal avec protocole préalable, et validation scientifique par données homologuées.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "runs"
+          ],
+          "value": 12,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "changed_run_count"
+          ],
+          "value": 1,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "shared_pixels_in_each_pair"
+          ],
+          "value": 0,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SEUIL_ASHLAR_2026-10-15/RESUME_SEUIL.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65",
+          "sha256": "c987b53743d61a71c85978ce4139cce032cf098c2acc524e78815854d9bd7c65"
+        }
+      ]
+    },
+    {
+      "id": "second_loop_source_available",
+      "claim": "Les trois canaux originaux de la seconde boucle sont disponibles au plan10",
+      "status": "source contrôlée et seconde boucle évaluée auplan10",
+      "evidence_level": "fichiers et métadonnées",
+      "scope": "9TIFF vérifiés duchamp47 ; boucle9-10-47-48, même spécimen, champs9/48 partagés",
+      "next_acceptance_gate": "Validation par repères homologués et extension décidée sur une question nouvelle ; ne pas confondre fermeture et précision anatomique.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_EXTENSION_SPATIALE_2026-10-15/PORTE_SECONDE_BOUCLE.json",
+          "selector": [
+            "first_available_plane"
+          ],
+          "value": 10,
+          "original_sha256": "c6edcb16e1a9276bc288731334164d1cca3d21f90dfff3f8092970d41e37acf6",
+          "sha256": "c6edcb16e1a9276bc288731334164d1cca3d21f90dfff3f8092970d41e37acf6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_EXTENSION_SPATIALE_2026-10-15/RESUME_EXTENSION.json",
+          "selector": [
+            "new_unique_TIFFs"
+          ],
+          "value": 9,
+          "original_sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf",
+          "sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "spatial_loops_evaluated_cumulative"
+          ],
+          "value": 2,
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "NCC_consensus_closure_px"
+          ],
+          "value": {
+            "0": 1.4142135623730951,
+            "2": 1.0
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "phase_consensus_closure_px"
+          ],
+          "value": {
+            "0": 29.614185789921695,
+            "2": 9.219544457292887
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "ASHLAR_statuses"
+          ],
+          "value": {
+            "disconnected_with_stage_model_repositioning": 2,
+            "connected_image_based_positions": 2
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        }
+      ]
+    },
+    {
+      "id": "night_consolidation_integrity",
+      "claim": "État local consolidé et contrôlé sans répétition des calculs scientifiques",
+      "status": "exécuté et contrôlé",
+      "evidence_level": "provenance et programme",
+      "scope": "21suppléments préservés et799TIFF/PNG vérifiés parempreinte ; aucun verdictscientifique ajouté",
+      "next_acceptance_gate": "Clôturer le relais à06:00UTC, puis toute reprise exige une instruction et une opération utile nouvelle.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "source_unique_TIFFs"
+          ],
+          "value": 799,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "spatial_loops_evaluated"
+          ],
+          "value": 2,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "ASHLAR_total_spatial_executions"
+          ],
+          "value": 16,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "new_scientific_evaluations"
+          ],
+          "value": 0,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONSOLIDATION_NOCTURNE_2026-10-15/RESUME_AVANCEMENT.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40",
+          "sha256": "fe69de146be069dbac4815eec97ac7fd055d136fab46bf064b7dff411ac97f40"
+        }
+      ]
+    }
+  ],
+  "global_percent": null,
+  "criteria_for_future_evaluations": true,
+  "not_new_scientific_validation": true,
+  "source_register": "localocal-input://REGISTRE_PREUVES_ACTUALISE.json",
+  "source_register_sha256": "3691dea6666f1d3dc6a57859771e5bee865c453107edce343333543e88ac0279",
+  "updated_for_2D_loop_and_raw_access": true,
+  "anatomical_validation": false,
+  "updated_for_global_ASHLAR": true,
+  "scope": "État local vérifié, sans adoption de transformation ni validation anatomique nouvelle. Chemins locaux neutralisés pour la publication."
+}

@@ -1,0 +1,128 @@
+{
+  "available": [
+    {
+      "id": "navigate",
+      "label": "Sélection, branches, lecture sûre, pause et retour",
+      "changes": "Point de consultation et rythme d’écran",
+      "calculates": "Aucune réponse physiologique"
+    },
+    {
+      "id": "compare",
+      "label": "Comparer deux contextes documentaires",
+      "changes": "Documents affichés séparément",
+      "calculates": "Aucun effet de condition ni horloge commune"
+    },
+    {
+      "id": "sources",
+      "label": "Lire lieux, mesures déclarées, sources et limites",
+      "changes": "Panneaux de consultation",
+      "calculates": "Aucune nouvelle mesure"
+    }
+  ],
+  "documentary_explorations": [
+    {
+      "id": "P01-LIGHT",
+      "label": "Lumière thoracique · préparation précisée",
+      "documented_action": "589 nm dans la calibration anesthésiée ; micro-LED 591 nm dans le gilet pour souris libre. ChRmine ciblée aux cardiomyocytes.",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "sources": [
+        "REF-P01"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P01-ICPP",
+      "label": "Lumière bleue + iC++",
+      "documented_action": "Lumière 473 nm sur canal inhibiteur iC++ exprimé dans pIC.",
+      "scope": "Souris · S15 / Hsueh 2023",
+      "sources": [
+        "REF-P01"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P02-VTA-LIGHT",
+      "label": "ChR2 / ArchT + lumière",
+      "documented_action": "ChR2 active GABA ; ArchT inhibe GABA. Deux manipulations à distinguer.",
+      "scope": "Souris · S10 / Eshel 2015",
+      "sources": [
+        "REF-P02-VTA"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P03-PHYSIO-GAS",
+      "label": "Inhalation CO₂ / air",
+      "documented_action": "Intervention comparée à l’air ; début physique et synchronisation restent à préciser.",
+      "scope": "Humain · S16 · préparations séparées",
+      "sources": [
+        "REF-P03-PHYSIO"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P03-RAPPORT-GAS",
+      "label": "Inhalation CO₂",
+      "documented_action": "Provocation expérimentale.",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "sources": [
+        "REF-P03-RAPPORT"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P03-REPERES-GAS",
+      "label": "Inhalation CO₂",
+      "documented_action": "Provocation expérimentale.",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "sources": [
+        "REF-P03-REPERES"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P03-ISO-PANIC-BOLUS",
+      "label": "Bolus isoprotérénol",
+      "documented_action": "Agoniste β-adrénergique périphérique ; doses et séquences selon protocole.",
+      "scope": "Humain · S21 · AM et BG, témoins selon protocole",
+      "sources": [
+        "REF-P03-ISO-PANIC"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    },
+    {
+      "id": "P03-ISO-DIAL-BOLUS",
+      "label": "Bolus isoprotérénol",
+      "documented_action": "Agoniste β-adrénergique périphérique ; doses et séquences selon protocole.",
+      "scope": "Humain · S21 · AM et BG, témoins selon protocole",
+      "sources": [
+        "REF-P03-ISO-DIAL"
+      ],
+      "simulation_available": false,
+      "reason": "Intervention décrite dans les sources ; modèle physiologique réglable et calibré absent de ce lecteur."
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "brûlure",
+      "reason": "Sources propres, modèle, paramètres, calibration, domaine de validité et tests manquants dans ce lecteur."
+    },
+    {
+      "id": "paracétamol",
+      "reason": "Sources propres, modèle, paramètres, calibration, domaine de validité et tests manquants dans ce lecteur."
+    },
+    {
+      "id": "propofol",
+      "reason": "Sources propres, modèle, paramètres, calibration, domaine de validité et tests manquants dans ce lecteur."
+    }
+  ],
+  "existing_analysis": "Les contrôles techniques Bang sont documentés dans la source locale v0.80. Ils ne constituent pas un simulateur physiologique interactif et ne sont pas relancés ici.",
+  "scientific_global_validation": false
+}

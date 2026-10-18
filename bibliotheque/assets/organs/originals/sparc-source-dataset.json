@@ -1,0 +1,221 @@
+{
+  "id": 674,
+  "sourceDatasetId": 3100,
+  "name": "Human vagus nerve anatomical reconstruction using microCT and immunohistochemistry - f002",
+  "description": "Data created as part of the SPARC REVA award. The dataset includes anatomical images and videos of the vagus nerve, microCT scans across the length of the nerve, and IHC images across multiple levels.",
+  "ownerId": 1655,
+  "ownerFirstName": "Todd",
+  "ownerLastName": "Levy",
+  "ownerOrcid": "0000-0003-0440-7791",
+  "organizationName": "SPARC",
+  "organizationId": 367,
+  "license": "Creative Commons Attribution",
+  "tags": [
+    "reva",
+    "immunohistochemistry",
+    "ihc",
+    "vagus nerve",
+    "dissection",
+    "human",
+    "microct"
+  ],
+  "version": 1,
+  "revision": 1,
+  "size": 1502010134811,
+  "modelCount": [],
+  "fileCount": 705,
+  "recordCount": 0,
+  "uri": "s3://sparc-prod-aod-discover-publish50-use1/674/",
+  "arn": "arn:aws:s3:::sparc-prod-aod-discover-publish50-use1/674/",
+  "status": "PUBLISH_SUCCEEDED",
+  "doi": "10.26275/imas-52lf",
+  "banner": "https://assets.discover.pennsieve.io/dataset-assets/674/1/revisions/1/banner.jpg",
+  "readme": "https://assets.discover.pennsieve.io/dataset-assets/674/1/revisions/1/readme.md",
+  "changelog": "https://assets.discover.pennsieve.io/dataset-assets/674/1/revisions/1/changelog.md",
+  "contributors": [
+    {
+      "firstName": "Stavros",
+      "middleInitial": null,
+      "lastName": "Zanos",
+      "degree": null,
+      "orcid": "0000-0002-3967-8164"
+    },
+    {
+      "firstName": "Naveen",
+      "middleInitial": null,
+      "lastName": "Jayaprakash",
+      "degree": null,
+      "orcid": "0000-0002-9466-5745"
+    },
+    {
+      "firstName": "Qanud",
+      "middleInitial": null,
+      "lastName": "Khaled",
+      "degree": null,
+      "orcid": "0000-0003-2943-1245"
+    },
+    {
+      "firstName": "Zeinab",
+      "middleInitial": null,
+      "lastName": "Nassrallah",
+      "degree": null,
+      "orcid": "0000-0001-7507-8126"
+    },
+    {
+      "firstName": "Mary",
+      "middleInitial": null,
+      "lastName": "Barbe",
+      "degree": null,
+      "orcid": "0000-0002-5235-9803"
+    },
+    {
+      "firstName": "Frank Lui",
+      "middleInitial": null,
+      "lastName": "Chen",
+      "degree": null,
+      "orcid": null
+    },
+    {
+      "firstName": "larry",
+      "middleInitial": null,
+      "lastName": "miller",
+      "degree": null,
+      "orcid": "0000-0002-0148-2297"
+    },
+    {
+      "firstName": "Theodoros",
+      "middleInitial": null,
+      "lastName": "Zanos",
+      "degree": null,
+      "orcid": "0000-0002-9204-9551"
+    },
+    {
+      "firstName": "Todd",
+      "middleInitial": "J",
+      "lastName": "Levy",
+      "degree": "M.S.",
+      "orcid": "0000-0003-0440-7791"
+    },
+    {
+      "firstName": "Avantika",
+      "middleInitial": null,
+      "lastName": "Vardhan",
+      "degree": null,
+      "orcid": "0000-0002-3725-8852"
+    },
+    {
+      "firstName": "Jinxuan",
+      "middleInitial": "",
+      "lastName": "Cang",
+      "degree": null,
+      "orcid": "0000-0003-3232-2998"
+    },
+    {
+      "firstName": "Viktor",
+      "middleInitial": null,
+      "lastName": "Toth",
+      "degree": null,
+      "orcid": "0000-0002-3730-1400"
+    },
+    {
+      "firstName": "Kevin",
+      "middleInitial": null,
+      "lastName": "Coppa",
+      "degree": null,
+      "orcid": null
+    },
+    {
+      "firstName": "Netanel",
+      "middleInitial": null,
+      "lastName": "Ben-Shalom",
+      "degree": null,
+      "orcid": null
+    },
+    {
+      "firstName": "Weiguo",
+      "middleInitial": null,
+      "lastName": "Song",
+      "degree": null,
+      "orcid": null
+    },
+    {
+      "firstName": "Nicole",
+      "middleInitial": null,
+      "lastName": "Carpentiere",
+      "degree": null,
+      "orcid": "0009-0005-8380-8121"
+    },
+    {
+      "firstName": "Theofilos",
+      "middleInitial": null,
+      "lastName": "Kanavos",
+      "degree": "M.D.",
+      "orcid": "0000-0002-4430-0588"
+    },
+    {
+      "firstName": "Effrosyni",
+      "middleInitial": null,
+      "lastName": "Birbas",
+      "degree": "M.D.",
+      "orcid": "0000-0002-5263-9207"
+    },
+    {
+      "firstName": "Siyar",
+      "middleInitial": null,
+      "lastName": "Bahadir",
+      "degree": null,
+      "orcid": null
+    },
+    {
+      "firstName": "Parisa",
+      "middleInitial": null,
+      "lastName": "Saleknezhad",
+      "degree": null,
+      "orcid": "0000-0002-6118-1525"
+    },
+    {
+      "firstName": "Tara",
+      "middleInitial": null,
+      "lastName": "Yari",
+      "degree": null,
+      "orcid": null
+    }
+  ],
+  "collections": [
+    {
+      "id": 556,
+      "name": "SPARC REVA FEINSTEIN"
+    }
+  ],
+  "externalPublications": [
+    {
+      "doi": "10.17504/protocols.io.14egn683ml5d/v1",
+      "relationshipType": "IsSupplementedBy"
+    },
+    {
+      "doi": "10.17504/protocols.io.e6nvwwy4dvmk/v1",
+      "relationshipType": "IsSupplementedBy"
+    },
+    {
+      "doi": "10.17504/protocols.io.kxygxy99ol8j/v1",
+      "relationshipType": "IsSupplementedBy"
+    },
+    {
+      "doi": "10.17504/protocols.io.3byl497yrgo5/v1",
+      "relationshipType": "IsSupplementedBy"
+    }
+  ],
+  "sponsorship": null,
+  "pennsieveSchemaVersion": "4.0",
+  "createdAt": "2026-05-22T21:50:25.515477Z",
+  "updatedAt": "2026-09-27T18:12:51.663136Z",
+  "firstPublishedAt": "2026-05-22T21:50:25.496238Z",
+  "versionPublishedAt": "2026-05-22T21:50:25.515477Z",
+  "revisedAt": "2026-08-10T17:10:26.274576Z",
+  "embargo": false,
+  "embargoReleaseDate": null,
+  "embargoAccess": null,
+  "datasetType": "research",
+  "release": null,
+  "doiCollection": null
+}

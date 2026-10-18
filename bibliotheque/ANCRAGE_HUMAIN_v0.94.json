@@ -1,0 +1,113 @@
+{
+  "version": "0.94",
+  "reference": "CerebrA / MNI152NLin2009cSym",
+  "binding_kind": "anatomical_context_only",
+  "subject_registration": null,
+  "routes": [
+    {
+      "path": "HUMAIN:NEZ-P8",
+      "label": "Une personne : respiration, amygdale et reconnaissance",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5148230/",
+      "evidence_records": [
+        "H01-P8",
+        "H01-COHORTE"
+      ],
+      "steps": [
+        {
+          "index": 0,
+          "id": "HUMAIN:NEZ-P8:N0",
+          "label": "Respiration enregistrée",
+          "atlas_regions": [],
+          "scope": "Opération ou observation sans localisation dans cet atlas.",
+          "limit": "Aucun emplacement cérébral déduit du libellé."
+        },
+        {
+          "index": 1,
+          "id": "HUMAIN:NEZ-P8:N1",
+          "label": "LFP amygdalien",
+          "atlas_regions": [
+            "amygdala-left",
+            "amygdala-right"
+          ],
+          "scope": "Contexte anatomique amygdalien de référence.",
+          "limit": "Les deux amygdales servent de repères anatomiques : ni latéralité expérimentale assignée, ni coordonnées des électrodes de P8, ni trajet axonal."
+        },
+        {
+          "index": 2,
+          "id": "HUMAIN:NEZ-P8:N2",
+          "label": "Visage peur / surprise",
+          "atlas_regions": [],
+          "scope": "Opération ou observation sans localisation dans cet atlas.",
+          "limit": "Aucun emplacement cérébral déduit du libellé."
+        },
+        {
+          "index": 3,
+          "id": "HUMAIN:NEZ-P8:N3",
+          "label": "Temps de réponse",
+          "atlas_regions": [],
+          "scope": "Opération ou observation sans localisation dans cet atlas.",
+          "limit": "Aucun emplacement cérébral déduit du libellé."
+        },
+        {
+          "index": 4,
+          "id": "HUMAIN:NEZ-P8:N4",
+          "label": "Association dans P8",
+          "atlas_regions": [],
+          "scope": "Opération ou observation sans localisation dans cet atlas.",
+          "limit": "Aucun emplacement cérébral déduit du libellé."
+        }
+      ],
+      "links": [
+        {
+          "id": "HUMAIN:NEZ-P8:L0",
+          "from": "HUMAIN:NEZ-P8:N0",
+          "to": "HUMAIN:NEZ-P8:N4",
+          "label": "Attribuer la phase",
+          "status": "measurement",
+          "detail": "Condition de l’analyse.",
+          "source": "H01",
+          "interval": null,
+          "interval_status": "ND"
+        },
+        {
+          "id": "HUMAIN:NEZ-P8:L1",
+          "from": "HUMAIN:NEZ-P8:N1",
+          "to": "HUMAIN:NEZ-P8:N4",
+          "label": "Puissance delta",
+          "status": "measurement",
+          "detail": "Moyenne par essai dans la fenêtre retenue.",
+          "source": "H01",
+          "interval": null,
+          "interval_status": "ND"
+        },
+        {
+          "id": "HUMAIN:NEZ-P8:L2",
+          "from": "HUMAIN:NEZ-P8:N2",
+          "to": "HUMAIN:NEZ-P8:N3",
+          "label": "Recueillir la réponse",
+          "status": "measurement",
+          "detail": "Temps de réponse comportemental.",
+          "source": "H01",
+          "interval": null,
+          "interval_status": "ND"
+        },
+        {
+          "id": "HUMAIN:NEZ-P8:L3",
+          "from": "HUMAIN:NEZ-P8:N3",
+          "to": "HUMAIN:NEZ-P8:N4",
+          "label": "Comparer les essais",
+          "status": "measurement",
+          "detail": "Une seule personne, essais répétés.",
+          "source": "H01",
+          "interval": null,
+          "interval_status": "ND"
+        }
+      ],
+      "limits": [
+        "P8 : une personne, 24 essais peur-inspiration dans cette association ; pas une réplication de groupe.",
+        "Ordre et relations du protocole, pas une chaîne causale synaptique complète.",
+        "Les durées de protocole ne deviennent pas des délais de transmission."
+      ]
+    }
+  ]
+}

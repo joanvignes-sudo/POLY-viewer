@@ -1,0 +1,11 @@
+
+------------------------------------------------
+Filename:            S01_2.acq
+
+Timepoints expected: [6, 759, 535, 929, 666]
+Timepoints found:    535
+Sampling Frequency:  1000.0 Hz
+Sampling started at: 9.0020 s
+Tip: Time 0 is the time of first trigger
+------------------------------------------------
+

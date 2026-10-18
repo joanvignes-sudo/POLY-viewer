@@ -1,3 +1,7 @@
+# POLY v0.130.0
+
+[Ouvrir le corps et les chaînes](https://joanvignes-sudo.github.io/POLY-viewer/) · [Version et limites](RELEASE_v0.130.0.md) · [Ancien accueil](accueil-v0.129.0.html)
+
 # POLY v0.129.0
 
 [Sommaire général](index.html) · [État canonique et limites](etat-scientifique.html) · [Notes de version](RELEASE_v0.129.0.md)

@@ -1,0 +1,1258 @@
+{
+  "version": "0.97",
+  "original_count": 215,
+  "canonical_count": 205,
+  "groups": [
+    {
+      "canonical_path": "reference/documents/analyses/COMPARAISONS_COLLECTE_MONDIALE_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "0864613970465a8df09830dceed9d0559e9ce46ffb1786c4112c2528c8ffc9b5",
+      "title": "POLY — cadre de comparaison des nouvelles sources"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.11/ARCHIVAGE_ET_REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "0b6e888e6a8b1891d857084e2a870d3073fe4cd1419cc0ed6d817ef2b0361810",
+      "title": "Archive de recherche v0.11"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.11/BILAN_EMOTIONNEL_v0.11.md",
+      "aliases": [],
+      "normalized_body_sha256": "1162b28d6cc5b36bfd2ba0c7c3541cfeac91ccccb1d7341f0aab59d8e1a0d9d6",
+      "title": "POLY émotionnel v0.11 — bilan des quatre premiers axes"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.11/code_auteur/README.md",
+      "aliases": [],
+      "normalized_body_sha256": "faabb6f6038cc03d09221b6b43932971e8812d9b3fcff3327f3964c5d685092b",
+      "title": "A prospective code for value in the serotonin system"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.11/MATRICE_PERTURBATIONS_EMOTIONNEL_v0.11.md",
+      "aliases": [],
+      "normalized_body_sha256": "78499552a4d3b5b9721b917da5696680625c3ac3eb6c06eeedf24f5f8cf7d474",
+      "title": "Perturbations corporelles et neuromodulatrices — examen v0.11"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.11/SPECIFICATION_ANALYSES_EMOTIONNEL_v0.11.md",
+      "aliases": [],
+      "normalized_body_sha256": "70666a41933b57674206b5d586475d1802da54eb01532a91f08c76d12fb078f9",
+      "title": "Spécification fixée avant les nouveaux calculs — v0.11"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.11/SPECIFICATION_EXTENSIONS_EMOTIONNEL_v0.11.md",
+      "aliases": [],
+      "normalized_body_sha256": "1847a030711a92b4578fe72a8bd4c007338f6f0e9cbe4be81d01452a4cae614c",
+      "title": "Extensions d'audit et de contraste — v0.11"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.12/BILAN_EMOTIONNEL_v0.12.md",
+      "aliases": [],
+      "normalized_body_sha256": "73ad51b865f674a1dda2df95edfcafc4a36d203bd63fb351b1445a307d02acba",
+      "title": "POLY émotionnel v0.12 — robustesse d'une perturbation"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.12/SPECIFICATION_SENSIBILITE_EMOTIONNEL_v0.12.md",
+      "aliases": [],
+      "normalized_body_sha256": "e9c26a748d10298b82973d0b453a935c49a9d94676a9c21e6f82f1aec457975c",
+      "title": "Sensibilité de la perturbation sérotoninergique — v0.12"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.13/ARCHIVAGE_ET_REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "c88351972487f159b6066bcf3154582bded47783360b380b5217d7c4d2d61156",
+      "title": "Archive et reproduction v0.13"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.13/BILAN_EMOTIONNEL_v0.13.md",
+      "aliases": [],
+      "normalized_body_sha256": "27c0b71ea599d9d5c18074ba9212295f7c93695bb3562071749439fd6dfb8241",
+      "title": "POLY émotionnel v0.13 — étapes 2, 3 et 4 approfondies"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.13/ELIMINATIONS_EMOTIONNEL_v0.13.md",
+      "aliases": [],
+      "normalized_body_sha256": "521ca1e7bc5995578d46600618ab41087810a74af02b0c5f3db2a867d1f143e1",
+      "title": "État des éliminations et des couplages — v0.13"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.13/SPECIFICATION_EMOTIONNEL_v0.13.md",
+      "aliases": [],
+      "normalized_body_sha256": "223101f9219c70c5261a156ce312a152af47f2e3b59eb43f89f1d8807253e85b",
+      "title": "POLY émotionnel v0.13 — audit, modèles, perturbations"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.13/SPECIFICATION_FORAGING_EMOTIONNEL_v0.13.md",
+      "aliases": [],
+      "normalized_body_sha256": "e622b0252171ed5a1f6005c149cb9bb447bfe0eccdd5f9d4149ae78f5de94b19",
+      "title": "POLY émotionnel v0.13 — audit, modèles, perturbations"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.13/SPECIFICATION_TRANSFERT_EMOTIONNEL_v0.13.md",
+      "aliases": [],
+      "normalized_body_sha256": "df23fb0be69c91d781115637f05c59b6f5ed7aa93ed7becf19161fdb6a352d17",
+      "title": "POLY émotionnel v0.13 — audit, modèles, perturbations"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/BILAN_EMOTIONNEL_v0.14.md",
+      "aliases": [],
+      "normalized_body_sha256": "8162e54e188b57c157b8724981711097700b8f2c1733a2fc3b2847423259c0cc",
+      "title": "POLY émotionnel v0.14 — comparaisons, perturbation et données humaines"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/ELIMINATIONS_EMOTIONNEL_v0.14.md",
+      "aliases": [],
+      "normalized_body_sha256": "f638375e8e6fa8ef3b011dde34290beee9a32be918e301076d1da3ed2edb1966",
+      "title": "Éliminations et pistes — v0.14"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "75c9bd7d71c2b22183a60c66248ba05419e048f6b941b82ac187f37cc9565eb1",
+      "title": "Reproduction v0.14"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/SPECIFICATION_DONNEES_HUMAINES_EMOTIONNEL_v0.14.md",
+      "aliases": [],
+      "normalized_body_sha256": "38e2600ca215403ce3ea1f86bbbaaab5b9c24b6d6e06bef46307d0e3ff3b5f5f",
+      "title": "Complément humain S24 — audit et analyse exploratoire fixés avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/SPECIFICATION_EMOTIONNEL_v0.14.md",
+      "aliases": [],
+      "normalized_body_sha256": "ef48d73ab135bb6f328ac37d2adfccaad1341f497a0f867afb1a5c6ba55f9334",
+      "title": "POLY émotionnel v0.14 — extensions fixées avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/SPECIFICATION_PERTURBATION_MODELE_EMOTIONNEL_v0.14.md",
+      "aliases": [],
+      "normalized_body_sha256": "213348ed1557ad71b034ece6cc083a6bc487ecac25dab475d65116140fe679ae",
+      "title": "Perturbation du modèle de choix — extension v0.14"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.14/SPECIFICATION_SENSIBILITE_APPRENTISSAGE_EMOTIONNEL_v0.14.md",
+      "aliases": [],
+      "normalized_body_sha256": "122ccae9563128eab609c7079c160b684790b46f6ca6e8a2b93fe919bfb4464b",
+      "title": "Sensibilité à l'état initial d'incertitude — v0.14"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.15/BILAN_EMOTIONNEL_v0.15.md",
+      "aliases": [],
+      "normalized_body_sha256": "d023698ef087a1efaff00f6f51fe66a0dbf46b69eada9d6c0403558015c43eb2",
+      "title": "POLY émotionnel v0.15 — temps humains et simulation libre"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.15/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "8857b2dac3c04457ad3c096308516574bd63604fac94c9cdae4648da6f10a3db",
+      "title": "Reproduction et statut v0.15"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.15/SPECIFICATION_EMOTIONNEL_v0.15.md",
+      "aliases": [],
+      "normalized_body_sha256": "f8bc03539976299a69569530048dc6805a2ee2a5ab1f42f7b173ee2109a9b062",
+      "title": "Spécification v0.15 — alignement temporel humain"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.15/SPECIFICATION_SENSIBILITE_SIMULATION_v0.15.md",
+      "aliases": [],
+      "normalized_body_sha256": "7c4db7917619e914d83b36c9ab8bd6d7937e6cded7126dd368326a0b8a3e0203",
+      "title": "Contrôle Monte Carlo — après première simulation, avant ce contrôle"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.15/SPECIFICATION_SIMULATION_EMOTIONNEL_v0.15.md",
+      "aliases": [],
+      "normalized_body_sha256": "1d1d79fbb9dc253431fca9e4ade95f0a0835e4c9676226c98bc27a183e68c4a1",
+      "title": "Simulation exploratoire v0.15 — avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.16/BILAN_EMOTIONNEL_v0.16.md",
+      "aliases": [],
+      "normalized_body_sha256": "31067ab2c49b154264391a5e18c82d68559eaccf97f57afda19f866090578172",
+      "title": "POLY émotionnel v0.16 — absences de choix et stabilité"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.16/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "e6c858e2517fedfe19b4b08f011d8f6b9d0ebf1951dbe5d3b4994c7da1e34287",
+      "title": "Reproduction v0.16"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.16/SPECIFICATION_EMOTIONNEL_v0.16.md",
+      "aliases": [],
+      "normalized_body_sha256": "10513a8e38b78874a7a1d5f341af41e23d324e61714c218329149cfeb420f8bd",
+      "title": "Spécification v0.16 — participation et stabilité, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.16/SPECIFICATION_ISSUES_LECHAGES_v0.16.md",
+      "aliases": [],
+      "normalized_body_sha256": "14cbd8557a008abc8b00da690609284ecfc753ecb7abd07aab65e97b0efd5dce",
+      "title": "Diagnostic issues–léchages, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.17/BILAN_EMOTIONNEL_v0.17.md",
+      "aliases": [],
+      "normalized_body_sha256": "daeaf6d6a29636ff29716a4616f4497b37003c39f733d655922a34c56c82495b",
+      "title": "POLY émotionnel v0.17 — réponse nominale et adaptation"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.17/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "9ad9ed5b657e3316d0698f9a78af2767a30030ba2a8db6669874a75505783ca9",
+      "title": "Reproduction v0.17"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.17/SPECIFICATION_EMOTIONNEL_v0.17.md",
+      "aliases": [],
+      "normalized_body_sha256": "8a6156298a9b4f0ecc1685d44e8098ac09ffb0e30400d9114491560728c631c4",
+      "title": "v0.17 — fenêtres de réponse et adaptation causale, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.18/BILAN_EMOTIONNEL_v0.18.md",
+      "aliases": [],
+      "normalized_body_sha256": "4bf385eb9db4d66cd80833eb271a1f2485d9126d3f621470b1c73073494b0547",
+      "title": "POLY émotionnel v0.18 — audit du domaine et des archives"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.18/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "66c90109a7adcc4fbca855788b82bd1b7f42c2a4c2bb563c6afbb87834abf12a",
+      "title": "Reproduction v0.18"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.18/SPECIFICATION_EMOTIONNEL_v0.18.md",
+      "aliases": [],
+      "normalized_body_sha256": "5febc463ebfc254cd598a11efc9ecd4422bb03866814c6491770ee21d1e2e7c0",
+      "title": "v0.18 — domaine numérique et conservation, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.18/SPECIFICATION_PROBABILITES_v0.18.md",
+      "aliases": [],
+      "normalized_body_sha256": "458c021090e35b90624502206bb951549d8b977ca3f20b5e6eaa4dd8f99a6ba1",
+      "title": "Inventaire des probabilités et événements, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.19/BILAN_EMOTIONNEL_v0.19.md",
+      "aliases": [],
+      "normalized_body_sha256": "09e46ca8442e1e682f216f9e81a2cb019bb76456094974294d24e1e746138239",
+      "title": "POLY émotionnel v0.19 — trois audits liés"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.19/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "8bd839d03a8b3fa2e3ceb75af8c49bce916897af2cd8e8001951beeb536a7a19",
+      "title": "REPRODUCTION"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.19/SPECIFICATION_EMOTIONNEL_v0.19.md",
+      "aliases": [],
+      "normalized_body_sha256": "442a495c9b9b4d476a11fbe862b6dcd4d30ca3d7ae9f2a1b222452d993f7f5c7",
+      "title": "v0.19 — trois audits liés, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.20/BILAN_EMOTIONNEL_v0.20.md",
+      "aliases": [],
+      "normalized_body_sha256": "d87b620b95c72d5e47bcb5239cdcc2961dfdee84e8bb540f33a5eb9140fa31a0",
+      "title": "POLY émotionnel v0.20 — sensibilité DR11 et calibration"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.20/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "bed27f2b3a65a18a1fca099525246b0072c2fcfdda707c1407fb349093de826b",
+      "title": "REPRODUCTION"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.20/SPECIFICATION_EMOTIONNEL_v0.20.md",
+      "aliases": [],
+      "normalized_body_sha256": "8877fbec34875796cb2d6a7e93eb6f870862a477f40849961ddc8096a16399f8",
+      "title": "v0.20 — sensibilité DR11 et calibration, avant calcul"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/BILAN_EMOTIONNEL_v0.21.md",
+      "aliases": [],
+      "normalized_body_sha256": "de093e64fbb6e9b46bcb6686ef6d90770fcab36e6a8fa0d08628c127aeb9c577",
+      "title": "POLY émotionnel v0.21 — dépendances et indicateurs respiratoires"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/locus_coeruleus_norepinephrine_neurons_README.md",
+      "aliases": [],
+      "normalized_body_sha256": "cad614a4fc5069b3d841fa823c75c847cccf12ec00f6d68929ed320abe750a2a",
+      "title": "Locus Coeruleus Norepinephrine Neurons"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/NeuralBreathing_README.md",
+      "aliases": [],
+      "normalized_body_sha256": "9b24c33d75b7830a8358d22a16acd185d56ed0f97c83092cf05b4fe60cf5eb34",
+      "title": "NeuralBreathing"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/NeuralBreathing_README_coherence_plots.md",
+      "aliases": [],
+      "normalized_body_sha256": "6a1bbabfa0ff3e197da63a6c05078d05b641eee458e8d9bd23213136d8dc6923",
+      "title": "Coherence Plotting Pipeline — README"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/REPRODUCTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "a5bd1161b8b12c540c15cda4f1982007d888126abc3dc21873b9ae75d4f9e5b0",
+      "title": "REPRODUCTION"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/SPECIFICATION_EMOTIONNEL_v0.21.md",
+      "aliases": [],
+      "normalized_body_sha256": "4605b5e3af8949f68a795e86aa69ff80df10dd5c5e34b855e27a4b4d90045674",
+      "title": "v0.21 — indicateurs respiratoires et dépendances"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.21/SPECIFICATION_SEUILS_RESPIRATOIRES_v0.21.md",
+      "aliases": [],
+      "normalized_body_sha256": "10316c0db7f6fdd6cf773f36342b86eb29736eaa9cbebb5847de99b7ec11e6a1",
+      "title": "Sensibilité descriptive des seuils, avant contraste"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.24/AMENDEMENT_NHANES_COMPARAISONS_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "5fce6b66973e4e3e46d0a8f77221e029be51d035f0d572c3df378d55e284dac4",
+      "title": "Amendement exploratoire NHANES"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.24/PROTOCOLE_COMPARAISONS_POLY_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "caced18d84107d10cc20033949b83bbf13c528f50e55b2d9e6b3a65edb94ae18",
+      "title": "POLY — protocole des comparaisons quantitatives"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.24/reproduction/README.md",
+      "aliases": [],
+      "normalized_body_sha256": "0e03f305ae50f56aa23c6ed640bb3b10c3063e7bb6bf5e8c7a7ecd8ea3cc721c",
+      "title": "README"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.24/SYNTHESE_QUANTITATIVE_POLY_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "f2a4a03258f98eea7594ace1ffc25a0801460ff44b973acf86ed6e00f54a3fd2",
+      "title": "POLY — première synthèse quantitative des comparaisons"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.25/BILAN_REPLICATION_POLY_v0.25.md",
+      "aliases": [],
+      "normalized_body_sha256": "700c58ff2255862fd10e39840f02086533d96289089022501225e7e38d1be3b3",
+      "title": "POLY — réplication et vérification des mesures, v0.25"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.26/BILAN_REACIDIFICATION_POLY_v0.26.md",
+      "aliases": [],
+      "normalized_body_sha256": "39ed68d71ced8944376da24883d9cf0fafa198ba55ba74e1696d2bae3e98243b",
+      "title": "POLY — réacidification, recherche v0.26"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.27/BILAN_CALIBRATION_POLY_v0.27.md",
+      "aliases": [],
+      "normalized_body_sha256": "ae2a4ba7fc2c7459a1eb0bec05c3319b41a7e4086b9b7e9f99bdbc57e09d47c9",
+      "title": "POLY — calibration des capteurs, recherche v0.27"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.28/BILAN_COURANTS_POLY_v0.28.md",
+      "aliases": [],
+      "normalized_body_sha256": "9b435b36f800b0faf8a9defb3ea82ee59187ae94622576af9d8a877675b2cacb",
+      "title": "POLY — courants synaptiques rapides, recherche v0.28"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.29/BILAN_REPLICATION_EPSC_v0.29.md",
+      "aliases": [],
+      "normalized_body_sha256": "0c94ed651037631f822037335fd9e5e3776b2de46eee1798dc71b170658d62f8",
+      "title": "POLY — réplication du calcul EPSC, recherche v0.29"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_EMOTIONNEL_v0.3.md",
+      "aliases": [
+        "reference/documents/analyses/v0.3/BILAN_EMOTIONNEL_v0.3.md"
+      ],
+      "normalized_body_sha256": "270a127aef190d66c0beda758caa883e95933fc49f6f2105e252c816db1e6dbf",
+      "title": "POLY emotionnel — étape v0.3"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.3/SPECIFICATION_PILOTE_COMPORTEMENT_v0.3.md",
+      "aliases": [],
+      "normalized_body_sha256": "334bf0b74db7810a2abac128fac5f2b05b09450c7a50bbb175495af90ca54ab3",
+      "title": "POLY emotionnel — spécification du pilote comportemental"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.30/BILAN_CONDITIONS_POLY_v0.30.md",
+      "aliases": [],
+      "normalized_body_sha256": "1305c7b63291ec899fab1d10f1ab39c6bcf6d9bf85cd646d967605c113e904a3",
+      "title": "POLY — conditions de comparaison, recherche v0.30"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.31/BILAN_THERMIQUE_v0.31.md",
+      "aliases": [],
+      "normalized_body_sha256": "146dc8536255c4d9acc7c9e9cc945d50ed234347028d64429ba0ba80e5754b4b",
+      "title": "POLY — extension thermique, recherche v0.31"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.32/BILAN_VARIATIONS_v0.32.md",
+      "aliases": [],
+      "normalized_body_sha256": "233fd318596856d9442334a7988e86b4e179f6398345cc02c6838076fc6be8bd",
+      "title": "POLY — variations appariées, recherche v0.32"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.33/BILAN_APPARIEMENT_v0.33.md",
+      "aliases": [],
+      "normalized_body_sha256": "e226345d459ac43ee3a0d34b166e522a127783de49ce1f6c711ad4f49a96015b",
+      "title": "POLY — données appariées v0.33"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.34/BILAN_ET_RESTE_v0.34.md",
+      "aliases": [],
+      "normalized_body_sha256": "04865601149b92fe84012c00574045b06267dbc470de1c06021b30df5151c303",
+      "title": "POLY — clôture des vérifications accessibles v0.34"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.35/BILAN_QUESTIONNAIRES_v0.35.md",
+      "aliases": [],
+      "normalized_body_sha256": "eb6f08fb845dd189036c366e196447f3da816fffe0af20527b02edb854a998ff",
+      "title": "POLY — audit des questionnaires v0.35"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.36/BILAN_ONS4_v0.36.md",
+      "aliases": [],
+      "normalized_body_sha256": "83bc146a23c8ebca4cb9d085911879e5b443707ca63cd8427926f37b4e9773aa",
+      "title": "POLY — questionnaires ONS4 v0.36"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.37/BILAN_PROVENANCE_v0.37.md",
+      "aliases": [],
+      "normalized_body_sha256": "5f7f3d6ea74e3beb8a2566e73a073a4880dc2abac92579aa2b3492b7bbe96451",
+      "title": "POLY — provenance des séries ONS v0.37"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.38/BILAN_RUPTURE_v0.38.md",
+      "aliases": [],
+      "normalized_body_sha256": "0793802bae8b8fb346604122cc19a62a6c562441a974e5a5feac6c05398193ec",
+      "title": "POLY — rupture du questionnaire norvégien v0.38"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.39/BILAN_LOT_v0.39.md",
+      "aliases": [],
+      "normalized_body_sha256": "f1261ff875e5987418553b798adfc67b9ef4cb274020a510215080e186900d4b",
+      "title": "POLY — audit enchaîné v0.39, 5 octobre 2026"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_EMOTIONNEL_v0.4.md",
+      "aliases": [
+        "reference/documents/analyses/v0.4/BILAN_EMOTIONNEL_v0.4.md"
+      ],
+      "normalized_body_sha256": "fcf88fb172f4a88c726f7fa7a2fea412f10adba9f39984e944403cf2f986c254",
+      "title": "POLY emotionnel v0.4 — horloges, états et premières mesures"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.4/SPECIFICATION_HORLOGES_EMOTIONNEL_v0.4.md",
+      "aliases": [],
+      "normalized_body_sha256": "cb867cc085f14f9e689602eaaad446b0e1b0c1d6f0327a71af30c7ea0457f57d",
+      "title": "Audit des horloges v0.4 — critères avant extension"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.4/SPECIFICATION_MESURES_EMOTIONNEL_v0.4.md",
+      "aliases": [],
+      "normalized_body_sha256": "a3b2b16bda1b9724f6dbbedc1250f3b0c04f5bfdc95d30d848c87214bd610b69",
+      "title": "Mesures descriptives v0.4"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.40/BILAN_LOT_v0.40.md",
+      "aliases": [],
+      "normalized_body_sha256": "9f6e717eab7b1d34b26f8edfa137385bbd6339f0ec199f93f3212cd866aa0927",
+      "title": "POLY — lot Canada / Nouvelle-Zélande v0.40"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.41/01_JAPON.md",
+      "aliases": [],
+      "normalized_body_sha256": "b16aea9f52150fe633ef444ee6df0f324946b9fa5e52e9fb45791a6374e5a60d",
+      "title": "Japon — questionnaire et dépendance des vagues"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.41/02_AUSTRALIE.md",
+      "aliases": [],
+      "normalized_body_sha256": "a2a7bca38695d266032c5ebef4a6421ba599039599dd43391d67a53f81ae30b5",
+      "title": "Australie — champ, modes et vagues"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.41/03_EUROSTAT.md",
+      "aliases": [],
+      "normalized_body_sha256": "0410868a24682b59fbfa542210bd97d379e766d36833a2670e9a4e28927050d6",
+      "title": "Eurostat — audit des drapeaux de la sélection réelle"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.41/04_WHR_AFROBAROMETER.md",
+      "aliases": [],
+      "normalized_body_sha256": "438fbbc18788fe1445e7d6b8ce2da2d5908bb5fca03b646464ab7d56717ee874",
+      "title": "WHR et Afrobarometer — fenêtres et poids"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.41/05_SYNTHESE_COMPARABILITE.md",
+      "aliases": [],
+      "normalized_body_sha256": "cd9e3712b6ce103f2ec7cf73a222c97abf528d685376abb41153d51ec048b00d",
+      "title": "POLY v0.41 — cinq lots traités"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.42/MATRICE_PREPARATION_MODELISATION.md",
+      "aliases": [],
+      "normalized_body_sha256": "13092d69a6dbbb746bfcfd5ae2ab10ed7597714caff1b8b725b4ce51b034670c",
+      "title": "POLY — préparation à la modélisation, v0.42"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.43/LECTURE_ET_PREALABLE.md",
+      "aliases": [],
+      "normalized_body_sha256": "74f21afcda2ae20c4e3961c19d690b6f8c5682b419eb8a54a69394c9fe58906c",
+      "title": "Carte de départ POLY v0.43"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.44/REGLES_CARTE.md",
+      "aliases": [],
+      "normalized_body_sha256": "a39cee3ec1b4d9a95e5a57c3864e81518831c591f4e9b78595620af95a096f78",
+      "title": "Carte v0.44 — maquette documentaire"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.45/BILAN_BORNES_ET_TROUS.md",
+      "aliases": [],
+      "normalized_body_sha256": "14a8413f3c6797453b77ca7ef2e2fc5165e8779f2dfb164cf1ba619e296bc4bc",
+      "title": "POLY v0.45 — borner les intervalles avant de rechercher les trous"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.46/BILAN_P02.md",
+      "aliases": [],
+      "normalized_body_sha256": "c5e0a11a486db0cecd00cdc4c8571f9aee16f9a2d778439d0d3b785dcc5c81ff",
+      "title": "POLY v0.46 — quatre fiches P02, sans chaîne artificielle"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.47/BILAN_P01.md",
+      "aliases": [],
+      "normalized_body_sha256": "7288950ad2ad453ac5faf365b0d02d91550041d2f763e35f81ca11d9de5e9519",
+      "title": "POLY v0.47 — borner cœur × contexte"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.48/BILAN_P03.md",
+      "aliases": [],
+      "normalized_body_sha256": "7a32b2e78997d37aa90d41e2d9229d0d57689d64237e16261a5caf609d3d5be2",
+      "title": "POLY v0.48 — quatre fiches P03"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.49/BILAN_QUESTIONNAIRES_P03.md",
+      "aliases": [],
+      "normalized_body_sha256": "03c328856e7753cf9f2bb25e28c18dc6bbbc838d08ad04426f7788a6aaa634b5",
+      "title": "POLY v0.49 — sorties rapportées et dénominateurs P03"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_EMOTIONNEL_v0.5.md",
+      "aliases": [
+        "reference/documents/analyses/v0.5/BILAN_EMOTIONNEL_v0.5.md"
+      ],
+      "normalized_body_sha256": "37ba269fee13d0ca8770466560d9f5f194709d3c8f1c30cd12d862432567934e",
+      "title": "POLY emotionnel v0.5 — première élimination d'un couplage candidat"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.5/SPECIFICATION_COUPLAGE_CANDIDAT_v0.5.md",
+      "aliases": [],
+      "normalized_body_sha256": "df6dc79c562284c68cbe0d5f087486a233a3ccd4d7101fffbf84ad9533e4db01",
+      "title": "Couplage candidat v0.5 — activité préalable et choix enregistré"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.50/BILAN_LATENCE_PIC.md",
+      "aliases": [],
+      "normalized_body_sha256": "4cfbb282039f11bc44c91d2e2afea034ac51ecad98ce3e1fc9d27e7ff056557a",
+      "title": "POLY v0.50 — réponse VTA au pic"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.51/BILAN_ETUDE_INDEPENDANTE.md",
+      "aliases": [],
+      "normalized_body_sha256": "58e32020849f588b5afabcb439ab9a71453f36d653285de533d3c2696365cad5",
+      "title": "POLY v0.51 — candidate indépendante pour P02-VTA"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.52/BILAN_DONNEES_VTA.md",
+      "aliases": [],
+      "normalized_body_sha256": "e999a3a75d1a2207c9c85d70d515b72e95f5bdb3c420a80b877e47ca4a07365d",
+      "title": "POLY v0.52 — données sources acquises"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.53/BILAN_PASSE_ETENDUE.md",
+      "aliases": [],
+      "normalized_body_sha256": "2814be07b140b70c47b9fea0c8d818913ae1a64744a9ba1fc930952f35154a4a",
+      "title": "POLY v0.53 — passe étendue sur récompense VTA"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.54/BILAN_MAPPING_ET_PASSE.md",
+      "aliases": [],
+      "normalized_body_sha256": "029d3eceaf84dc1e07afb17feef1af3c5e355fe42200141dc71f80db347ca49a",
+      "title": "POLY v0.54 — animaux, traitement temporel et vérification indépendante"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.55/BILAN_CONDITIONS_VTA.md",
+      "aliases": [],
+      "normalized_body_sha256": "a64e716913052a99a8fc226cf66586073017271efbfcd572428286e6adbfe612",
+      "title": "POLY v0.55 — conditions de récompense et référence temporelle"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.56/BILAN_SIX_LOTS.md",
+      "aliases": [],
+      "normalized_body_sha256": "93e3fc13bb872f25abb5a7db0f6809e6b355966af3d723bdf6e4d600c8191aa8",
+      "title": "POLY v0.56 — six lots, apprentissage et perturbation VTA"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.57/BILAN_PICS_AIRPUFF.md",
+      "aliases": [],
+      "normalized_body_sha256": "dfcba461d6aad9cfe8f26f982ec48d45a8020bfbadbaae0279e86946c5fd8b80",
+      "title": "POLY v0.57 — pics après souffle d’air, effectifs séparés"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.58/BILAN_REPERES_ET_PASSE_LONGUE.md",
+      "aliases": [],
+      "normalized_body_sha256": "cdd5764d1a911abca3825890dff57e84476e1b3018513223d5e6eb2add6ab4ff",
+      "title": "POLY v0.58 — localisations natives et bilan de passe prolongée"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.59/BILAN_MESURE.md",
+      "aliases": [],
+      "normalized_body_sha256": "13be6d297ec83a4c911e32059dc4467b9c2471862cb0eaeb217e68ad49f24988",
+      "title": "POLY v0.59 — pipelines et identité des cellules"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_EMOTIONNEL_v0.6.md",
+      "aliases": [
+        "reference/documents/analyses/v0.6/BILAN_EMOTIONNEL_v0.6.md"
+      ],
+      "normalized_body_sha256": "c7c90f2250e2a2c393508459c544a6cff31901607f6adc19dcfd187b8e51e224",
+      "title": "POLY emotionnel v0.6 — extension temporelle et contrôle des proxys"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.6/SPECIFICATION_EXTENSION_EMOTIONNEL_v0.6.md",
+      "aliases": [],
+      "normalized_body_sha256": "28a54783b76375d38ea1278041d150d9f34f862f26825bf3e85962931e6bac8d",
+      "title": "Extension v0.6 — sélection et contrôles de mouvement"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.60/BILAN_DEFINITIONS_ET_RESULTATS_NEGATIFS.md",
+      "aliases": [],
+      "normalized_body_sha256": "8acfbf1c91b6fad2f0bed42543b1f02356c39536d5f242ae298b2777ea627f26",
+      "title": "POLY v0.60 — définitions et portée des résultats négatifs"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.61/BILAN_P01_MAPPING_ET_MESURE.md",
+      "aliases": [],
+      "normalized_body_sha256": "e639ef0baeb025501ae861c142a1164801535b7b6b24ecd90656d9609a38e724",
+      "title": "POLY v0.61 — P01 : effectifs et définitions de mesure"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.62/BILAN_P03_DEFINITIONS_ET_LIMITES.md",
+      "aliases": [],
+      "normalized_body_sha256": "7ecfda08ea9da2ecaa78120b5c9faae338dd1b37f5d9495772ba979a7f134e57",
+      "title": "POLY v0.62 — P03 : six estimands, fenêtres et disponibilité"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.63/BILAN_P03_ET_MODES_ONS.md",
+      "aliases": [],
+      "normalized_body_sha256": "ceab08af3ff20089c5833455255541c262fd790235ca17b9de3e8848b87abcab",
+      "title": "POLY v0.63 — repères CO₂ et modes de collecte ONS"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.64/BILAN_CARTE_ET_MODES_GSS.md",
+      "aliases": [],
+      "normalized_body_sha256": "ecaca0cd5e96086b03bae92a1a903f28307a7dbd25a3c2c9aacffbf337d7c2bd",
+      "title": "POLY v0.64 — carte actualisée et modes GSS australiens"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.65/BILAN_PROMOTION.md",
+      "aliases": [],
+      "normalized_body_sha256": "af9cdcd7cfde22f34d68cc34ce9358d3799b78e2245b70f5a44aedfdb751fcfe",
+      "title": "POLY v0.65 — première passe de promotion"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.65/CRITERES_PROMOTION.md",
+      "aliases": [
+        "reference/documents/analyses/v0.75/cloture_phase_autonome/CRITERES_PROMOTION.md"
+      ],
+      "normalized_body_sha256": "1b80b497094e6b9ab9172e76a9ed182404bd47e4ad2f14893a8f8da7d1c0db59",
+      "title": "Critères opérationnels de promotion — v0.65"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.65/LOT_1_FORMULATIONS_ADMISSIBLES.md",
+      "aliases": [],
+      "normalized_body_sha256": "2bfdeff8888f9d8e2d7ab496104a17ce1b0670a787ee8fc91a211831198ee347",
+      "title": "Lot 1 — formulations proposées à la promotion"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.66/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "1995054487bfaabdff157261af29d4cb8d3af812e970ac1142c8aa3204d623eb",
+      "title": "POLY v0.66 — unités, pondérations et contrôles locaux"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.66/GSS_COMPARABILITE.md",
+      "aliases": [],
+      "normalized_body_sha256": "98480971e381385bc6f885fe62787fb9744b285a1a56d7051ec5d7ab9fae7854",
+      "title": "GSS — effectifs, pondérations et comparabilité, v0.66"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.66/P01_LIMITES_MECANISTIQUES.md",
+      "aliases": [],
+      "normalized_body_sha256": "c11b1fd562fff437f903812f8fffd01e1379595f0170b212793ddd0c872e2615",
+      "title": "P01 — contrôle local et portée mécanistique, v0.66"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.67/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "3fe87c7d977d3b017ca5259850207a9e3f91876154ffbce3e35d2fdfd6453d4e",
+      "title": "POLY v0.67 — protocoles P03 et portée du filtre VTA"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.67/LOT_2_FORMULATIONS_PROPOSEES.md",
+      "aliases": [],
+      "normalized_body_sha256": "c5ce2249a4fe254dd619e339f5459f641db0535cd44a339d50ad8f7535728882",
+      "title": "Lot 2 — formulations locales proposées, v0.67"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.67/P03_COMPLEMENT_ISOPRO.md",
+      "aliases": [],
+      "normalized_body_sha256": "6af989caa85f67ba56edf432699e6e21d4350fdc8fa2c2f40fe9a87e001d8cd1",
+      "title": "P03 — deux protocoles isoprotérénol, v0.67"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.67/TRAITEMENT_S10_ET_PORTEE.md",
+      "aliases": [],
+      "normalized_body_sha256": "9f64763a96d61b036dfb6f574ed6fecca268f44f2ae9b1afa9df031c9eebd572",
+      "title": "S10 — paramètres du filtre et portée des pics, v0.67"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.68/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "dd34325029831878b75c135ad2d0a049582766bcb3427a1f86a5945319360865",
+      "title": "POLY v0.68 — formulaire canadien et comparabilité nationale"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.69/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "4b86c32c3f4b86bf207b3484fea94cc06a787f8abf8dd0414a321c67e0863303",
+      "title": "POLY v0.69 — versions CSS et contrôles conclus"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_EMOTIONNEL_v0.7.md",
+      "aliases": [
+        "reference/documents/analyses/v0.7/BILAN_EMOTIONNEL_v0.7.md"
+      ],
+      "normalized_body_sha256": "6aae194e7d35d786655e8fbf2646feef8c864b82abd5e87044f16c694f98db53",
+      "title": "POLY emotionnel v0.7 — contacts bruts validés localement, candidat toujours non retenu"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.7/SPECIFICATION_CONTACTS_BRUTS_EMOTIONNEL_v0.7.md",
+      "aliases": [],
+      "normalized_body_sha256": "cb576dd3ab87b0a85c5169788016f74a7cd26b7de77eb277ed0e7120d53ea2a9",
+      "title": "Contacts candidats bruts v0.7"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.70/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "45212cfc34038552910e73ddd0dc3c6afd19b91f46dbb4968e8b0b935a8d33c1",
+      "title": "POLY v0.70 — versions CSS complètes et dossier réuni"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.70/CSS_CLOTURE_DOCUMENTAIRE.md",
+      "aliases": [],
+      "normalized_body_sha256": "7b22f93c9b1a0cadb32ae2be0ffef13a0cc4daa9c361ceb5eed18b987c069378",
+      "title": "CSS — clôture de l’identification des seize formulaires"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.70/DOSSIER_CLOTURE_PREPARATOIRE.md",
+      "aliases": [],
+      "normalized_body_sha256": "d387b722357b9afb136e8074f7c5f49831761e96a46720e33f5ee10f74101050",
+      "title": "Dossier de clôture préparatoire — POLY v0.70"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.71/BILAN_METHODES_HISTORIQUES.md",
+      "aliases": [],
+      "normalized_body_sha256": "a3bdea72e326ee9ef2d6907d22bb6977344db2a15ffa9b9f20e78b0a7e2e40fa",
+      "title": "POLY v0.71 — méthodes historiques CSS et limites d’attribution"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.71/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "af11c0dec8585a4f37bb6cb6dc316b492304633cb588fcabd1e30e7e47717458",
+      "title": "POLY v0.71 — appuis historiques et non-réponses CSS"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.71/DOSSIER_CLOTURE_PREPARATOIRE_ACTUALISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "bf05623002b60497f7a216fdbb0ba250a5fec1e1ae8885e23be732a46a279c59",
+      "title": "Dossier de clôture préparatoire — POLY v0.70"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.72/BILAN_FICHIERS_ET_ESTIMATION.md",
+      "aliases": [],
+      "normalized_body_sha256": "bd4dcad222d2cf5e68d5abe9ba5a99798707b0a9e5e49ffa092fea431d5c07b4",
+      "title": "POLY v0.72 — correspondance des fichiers CSS et calculs conditionnels"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.72/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "90b89ace08864aea70178573668e79b3b92f95dd8156203facd82bc05b87b019",
+      "title": "POLY v0.72 — jointures CSS et reprise conditionnelle"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.72/DOSSIER_PREPARATOIRE_FINAL_v0.72.md",
+      "aliases": [],
+      "normalized_body_sha256": "0b53a04151bb56ef9866da3ee1885667597f5e924da85955c274bad7fbb28aaf",
+      "title": "Dossier de clôture préparatoire — POLY v0.70"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.73/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "9efd25169bcd47bceee6060058265ed0f7530d191c1aff1a19da1fc3f82b7c0e",
+      "title": "POLY v0.73 — examen des deux propositions S21"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.73/DOSSIER_HUIT_FORMULATIONS_ADMISSIBLES.md",
+      "aliases": [
+        "reference/documents/analyses/v0.75/cloture_phase_autonome/FORMULATIONS_AVEC_RESERVES.md"
+      ],
+      "normalized_body_sha256": "da72eb6bcf985b3fddf2e1eec49f15b47c25ff115fa6f14e4d53c17947de7857",
+      "title": "Dossier de huit formulations admissibles — POLY v0.73"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.73/LOT_2_FORMULATIONS_ADMISSIBLES.md",
+      "aliases": [],
+      "normalized_body_sha256": "8ea5a8eb32bf0ff6ce324f0f2ff5fb57688643bc1cf11f49fc8f16f977b966bf",
+      "title": "Lot2 — décision documentaire v0.73"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.74/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "88d051b9cf6665e469222a075a4facd8e04cb2d2518a9894e375a5502d567160",
+      "title": "POLY v0.74 — six étapes et carte documentaire actualisée"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.74/BILAN_SIX_ETAPES.md",
+      "aliases": [],
+      "normalized_body_sha256": "f9106c71ddd2689ede0a0c71e2097d6875c0f350972b09c75afcd80a13511689",
+      "title": "POLY — bilan de reprise v0.74, 6 octobre 2026"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.75/BILAN_REPRISE.md",
+      "aliases": [
+        "reference/documents/analyses/v0.75/cloture_phase_autonome/COMPLEMENT_P01.md"
+      ],
+      "normalized_body_sha256": "1ae3552372660dae3c078a01502d06cd7145a271b5e9a4968a6ef22bf258ad0a",
+      "title": "Reprise P01 — v0.75, hors canon"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.75/cloture_phase_autonome/LIRE_EN_PREMIER.md",
+      "aliases": [],
+      "normalized_body_sha256": "c87f61cc633cb0ade8e7d218a0ffe3a97f3be120113a9fa166667effdcec8e03",
+      "title": "POLY émotionnel — dossier final de la phase autonome, hors canon"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.76/BILAN_REPRISE.md",
+      "aliases": [],
+      "normalized_body_sha256": "d3e89ac64428aca9e8cf0d17a2a9e613e7ac1814637b818232eb432bf2046097",
+      "title": "Manquants POLY — reprise v0.76, hors canon"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.77/BILAN_REPONSES.md",
+      "aliases": [],
+      "normalized_body_sha256": "a76b3a167129dceaf4047c9db94ee8fdfc5dbeae7a56deb5429b3c12f9ce626f",
+      "title": "Réponse Dan Bang — 6 octobre 2026, v0.77 hors canon"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.78/BILAN_CORRECTIONS.md",
+      "aliases": [],
+      "normalized_body_sha256": "3c52147d0b3782c4c7063fff2ac894dbf16979d367af6644b4e2e22384b5d292",
+      "title": "Correction Bang et tests — v0.78, 7 octobre 2026"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.78/REJOUER.md",
+      "aliases": [],
+      "normalized_body_sha256": "4bda9f5fd3e098aadf05b77e4e90805a4b838608937fe8b6c431083647281573",
+      "title": "Rejouer les tests"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.79/BILAN_TESTS_COMPLETS.md",
+      "aliases": [],
+      "normalized_body_sha256": "be743ff77d03e72a37f61249c7772a088680547601cf3808a359cc84f90f283a",
+      "title": "Comparaison complète des calculs Figure 3 — v0.79"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.79/REJOUER.md",
+      "aliases": [],
+      "normalized_body_sha256": "1a7ae1041988ed8241d10976b9144ea8d1861788708c269556f0e8a36edae6bd",
+      "title": "Rejouer la comparaison"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_EMOTIONNEL_v0.8.md",
+      "aliases": [
+        "reference/documents/analyses/v0.8/BILAN_EMOTIONNEL_v0.8.md"
+      ],
+      "normalized_body_sha256": "c2f7d2623b1f693c0614a2ab43da640cf216af6fcbf866a9a9a6802c96dc2268",
+      "title": "POLY emotionnel v0.8 — branche causale cœur–insula et audit des chiffres publiés"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.8/CAHIER_DONNEES_COEUR_INSULA_v0.8.md",
+      "aliases": [],
+      "normalized_body_sha256": "53ede1a0024c00ca425001a93f7bfbd9e4d43e94b8121f5ea5f51053f804d473",
+      "title": "Cahier des données nécessaires — cœur–insula, POLY v0.8"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+      "aliases": [],
+      "normalized_body_sha256": "4a7f1dd74687b3763c70ee7584b319e33f9fb0cb1dfc32a2e34a04c43e4381af",
+      "title": "POLY émotionnel — vérification native v0.80"
+    },
+    {
+      "canonical_path": "reference/documents/analyses/v0.80/LIRE_AVANT_EXECUTION.md",
+      "aliases": [
+        "reference/documents/analyses/v0.80/package/LIRE_AVANT_EXECUTION.md"
+      ],
+      "normalized_body_sha256": "2ae5b7aa122b8f2e2281a374bebb52b8a1aecf2af6ebfc80c057183675d1682c",
+      "title": "Vérification MATLAB native préparée"
+    },
+    {
+      "canonical_path": "reference/documents/BILAN_COLLECTE_MONDIALE_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "9dc05730a8438f9fa6ebdfa9c48931321fa554b4a3b4d20fb5765b1df2fd99bc",
+      "title": "POLY — collecte mondiale du 4 octobre 2026"
+    },
+    {
+      "canonical_path": "reference/documents/collecte/v0.10/COLLECTE_EMOTIONNEL_v0.10.md",
+      "aliases": [],
+      "normalized_body_sha256": "09a733b2a2e1bdc0dffbfea748c4ea1da945d01dcd6002978f46b68d12d7183f",
+      "title": "Collecte POLY émotionnel v0.10"
+    },
+    {
+      "canonical_path": "reference/documents/donnees/collecte_mondiale_2026-10-04/WORLD_RECEPTORS/LICENSE.md",
+      "aliases": [],
+      "normalized_body_sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1",
+      "title": "LICENSE"
+    },
+    {
+      "canonical_path": "reference/documents/donnees/collecte_mondiale_2026-10-04/WORLD_RECEPTORS/README.md",
+      "aliases": [],
+      "normalized_body_sha256": "80bd67831926ef6fb20ccd199787cd7b67b124a2b391e9b984642ee60d91fe4a",
+      "title": "Mapping neurotransmitter systems to the structural and functional organization of the human neocortex"
+    },
+    {
+      "canonical_path": "reference/documents/EXTRACTION_EMOTIONNEL_v0.2.md",
+      "aliases": [],
+      "normalized_body_sha256": "414a6a76b8a19e0412149eb9bf1c3cd54b0a5deda500e1fe716e3c05f163c5c7",
+      "title": "POLY emotionnel — extraction contradictoire v0.2"
+    },
+    {
+      "canonical_path": "reference/documents/POINT_AVANCEMENT_EMOTIONNEL.md",
+      "aliases": [],
+      "normalized_body_sha256": "1c7fe6449d52864860310cf271c054d6836f7e66b667cdbaf4666b33799547a2",
+      "title": "POLY — point au 4 octobre 2026"
+    },
+    {
+      "canonical_path": "reference/documents/PROSPECTION_COREE_JAPON_FRANCE_EMOTIONS_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "ab6d74dd638ab4b0a0bc0e01a05636a5a04e76c621b738d59a455c6506aab45d",
+      "title": "POLY — émotions : Corée du Sud, Japon, France"
+    },
+    {
+      "canonical_path": "reference/documents/PROSPECTION_PAYSAGE_EMOTIONNEL_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "535bf84ee302cf5dc2e7a23ff1d96eea02f5b1b53189f9f5009416ec6143a818",
+      "title": "POLY — rouvrir le paysage de l’émotionnel"
+    },
+    {
+      "canonical_path": "reference/documents/PROSPECTIVE_EMOTIONNEL_POLY_v0.1.md",
+      "aliases": [],
+      "normalized_body_sha256": "adf76943260ee1014e80869c481e3c80dff92dd0591aca2d565e88ff0df95c70",
+      "title": "POLY — prospective du chantier emotionnel"
+    },
+    {
+      "canonical_path": "reference/documents/PROTOCOLE_ANALYSE_EMOTIONNEL_v0.2.md",
+      "aliases": [],
+      "normalized_body_sha256": "a0972fb200c6876cbd1a5d11ff43bb215f8171580674f7648ff84a07250ba9d0",
+      "title": "POLY emotionnel — protocole de première analyse"
+    },
+    {
+      "canonical_path": "reference/documents/README.md",
+      "aliases": [],
+      "normalized_body_sha256": "8e9d2dcb266e0ce1913d7f402b00e877d85ba1e4668da30895fa3a569cf175bd",
+      "title": "POLY — chantier emotionnel"
+    },
+    {
+      "canonical_path": "reference/documents/REFERENCES_COLLECTE_MONDIALE_2026-10-04.md",
+      "aliases": [],
+      "normalized_body_sha256": "3f8b1b479e098e1bae8d8979f5245a15817a57fc23475f130b1b310e1665d570",
+      "title": "POLY — références intégrées de la collecte mondiale"
+    },
+    {
+      "canonical_path": "reference/documents/REVUE_MODELES_EMOTIONNEL_v0.1.md",
+      "aliases": [],
+      "normalized_body_sha256": "d20030fe35df054d426850ed8118ed5d2942c6b4e483ca2b75563a35101b6261",
+      "title": "POLY — première prospection des modèles émotionnels"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_AF_AFRO.md",
+      "aliases": [],
+      "normalized_body_sha256": "671bb4bee3c0949e10a7a5d66022476533ea072510a030f5fb9c4022f19a5f13",
+      "title": "MONDE_AF_AFRO — Afrobarometer — Round 9, merged data, 39 countries"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_AU_ABS.md",
+      "aliases": [],
+      "normalized_body_sha256": "254a07104d2ed641509e9dc7177c666ed024198c446c8efa97a8ccc530f0ddf5",
+      "title": "MONDE_AU_ABS — Australian Bureau of Statistics — General Social Survey 2025"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_BR_IBGE.md",
+      "aliases": [],
+      "normalized_body_sha256": "a6257ca2fe45a2f3b9aac1b43c6887e4c8b67912e7b6255cbd73eb6c6d0954c5",
+      "title": "MONDE_BR_IBGE — IBGE — Pesquisa Nacional de Saúde"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_BT_GNH.md",
+      "aliases": [],
+      "normalized_body_sha256": "048b1e89bca1089fe979a265a4533fecd7c1555162b1d95ecfd1c3e35cacc91c",
+      "title": "MONDE_BT_GNH — Centre for Bhutan and GNH Studies — 2022 GNH Survey Report"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_CA_STATCAN.md",
+      "aliases": [],
+      "normalized_body_sha256": "dbf3d9d79536f0a77b6dcf57b435df554c3056b80a4308c4e7a1ff76440cb6e2",
+      "title": "MONDE_CA_STATCAN — Statistics Canada — Life satisfaction, table 13-10-0843"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_CN_SEED.md",
+      "aliases": [],
+      "normalized_body_sha256": "9011900c0022bc4fd9c74e72a04642daf3e1e7f567537125fb401e3c8993c110",
+      "title": "MONDE_CN_SEED — Shanghai Jiao Tong University — SEED-IV academic licence"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_DE_CASE.md",
+      "aliases": [],
+      "normalized_body_sha256": "53c19769aa21d7d8d67183577984dc8e25a3bd794e2f6690dc3efd6b40944635",
+      "title": "MONDE_DE_CASE — Castellini et al. — CASE dataset, full dataset catalogue"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_EU_EUROSTAT.md",
+      "aliases": [],
+      "normalized_body_sha256": "8d5d86e73751275be8a64dd0e4d3a81ae04fd2b7c2a8a8fdfcc3f2cb3dd8932e",
+      "title": "MONDE_EU_EUROSTAT — Eurostat — Overall life satisfaction, ilc_pw01"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_INSEE.md",
+      "aliases": [],
+      "normalized_body_sha256": "395ff0d02c8a0182a9e1891546eeb61a93a2cc48c1f2c48b963df04f0b840610",
+      "title": "MONDE_FR_INSEE — INSEE — Satisfaction dans la vie et confiance, SRCV 2025"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_TOURS.md",
+      "aliases": [],
+      "normalized_body_sha256": "8129804d10d4417dbb61d165b068d11daedc47edeaca73a6ef4b4fd1c69b44c8",
+      "title": "MONDE_FR_TOURS — Psychophysiology — Article 10.1111/psyp.70206"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_VALUE.md",
+      "aliases": [],
+      "normalized_body_sha256": "edd36400b01e7811e897facb4410f591c92d37198d8b8ca35b6290f8d9b9ffdd",
+      "title": "MONDE_FR_VALUE — Winke/Jercog — WinkeEtAl-value-2025 repository"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_FR_VOICE.md",
+      "aliases": [],
+      "normalized_body_sha256": "6e3fa3d29045eea0dead9b330fb4aed03818a547a7d3fcfe6724a4e2aac59594",
+      "title": "MONDE_FR_VOICE — Aucouturier et al. — Emotional voice feedback, PMC4743803"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_IN_DENS.md",
+      "aliases": [],
+      "normalized_body_sha256": "2b622d4edaa81a8f0bfb2dd4d43ea04eb47229035f641400adad75b19a26dd7b",
+      "title": "MONDE_IN_DENS — DENS — NEMAR dataset on003751"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_IN_NMHS.md",
+      "aliases": [],
+      "normalized_body_sha256": "747f4e53d1921436242e0a940972ad8ad08e655a68378fd712f717898359f255",
+      "title": "MONDE_IN_NMHS — NIMHANS — National Mental Health Survey of India 2015–2016"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_JP_CAO.md",
+      "aliases": [],
+      "normalized_body_sha256": "35342dcfd3edc6f07ee35457448faedd169eb9c9cb821353075142f9e532e1f6",
+      "title": "MONDE_JP_CAO — Cabinet Office Japan — Satisfaction and quality of life survey 2026"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_JP_RIKEN.md",
+      "aliases": [],
+      "normalized_body_sha256": "715d8368d54ff14672df0b2225ad0d5a9a6164595b0c59e1d217c16d940a8e5c",
+      "title": "MONDE_JP_RIKEN — Communications Biology — Article s42003-025-09361-5, experimental supplements"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_KR_DATA.md",
+      "aliases": [],
+      "normalized_body_sha256": "d3eb1747afb36b75865eeb8820ab61b8f540c74c862814387e4a30d8817726e2",
+      "title": "MONDE_KR_DATA — Korean public data portal — Healthcare dataset 15148649"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_KR_KEMDY.md",
+      "aliases": [],
+      "normalized_body_sha256": "5233a899b619e15d2c050da54bd6e9a82497951d5d4c2c654e4181d1b14151da",
+      "title": "MONDE_KR_KEMDY — ETRI — KEMDy corpus access notice"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_KR_KEMOCON.md",
+      "aliases": [],
+      "normalized_body_sha256": "4f94a0486074afc01bb24e43b9b0c189d504e00d951b54cb7d03c0234a66011b",
+      "title": "MONDE_KR_KEMOCON — KEmoCon — Article and Zenodo metadata"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_LAT_LATINO.md",
+      "aliases": [],
+      "normalized_body_sha256": "fb4e80b681856dc96690cdc46540e9923c318c0aa39410bea8195ecf416a7180",
+      "title": "MONDE_LAT_LATINO — Latinobarómetro — Report 2024"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_MENA_ARAB.md",
+      "aliases": [],
+      "normalized_body_sha256": "8f07324e2cd0589a3848f0b616897a7e2c0836215cf7a0680de059ec3f6d47c3",
+      "title": "MONDE_MENA_ARAB — Arab Barometer — Wave VIII documentation"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_MX_INEGI.md",
+      "aliases": [],
+      "normalized_body_sha256": "f5140f6ca361116ea206b445fa3b1fbe6857589570bdcd55ac04aa71f7ab6d5c",
+      "title": "MONDE_MX_INEGI — INEGI — BIARE, July 2025"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_NO_SSB.md",
+      "aliases": [],
+      "normalized_body_sha256": "5e8edc8513fc92199241331bc1331f53e8dca6382ff2c4c7ebd61e089c657909",
+      "title": "MONDE_NO_SSB — Statistics Norway — Positive and negative emotions, table 13800, 2020–2025"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_NZ_STATS.md",
+      "aliases": [],
+      "normalized_body_sha256": "20d83c663259edf92688bb0f3ff81965a203df988d55389e29a39cc70a330772",
+      "title": "MONDE_NZ_STATS — Stats NZ — Wellbeing statistics 2023, updated March 2025"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_UK_ONS.md",
+      "aliases": [],
+      "normalized_body_sha256": "b144c309d9f7b50a180397d9204056deb5d2a220c00f83b9bad17c1272a463f7",
+      "title": "MONDE_UK_ONS — Office for National Statistics — Personal well-being, local authority time-series, version 4"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_US_NHANES.md",
+      "aliases": [],
+      "normalized_body_sha256": "34b9f04b6281c95d9d23853d9a26ed622563a895cec6053fc1faa4493e022393",
+      "title": "MONDE_US_NHANES — CDC/NCHS — NHANES August 2021–August 2023, DPQ/DEMO/SLQ"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_OECD.md",
+      "aliases": [],
+      "normalized_body_sha256": "b4db555dc708170152a6220adbc221d39570d7e807695ade92ae3d61c341b315",
+      "title": "MONDE_WORLD_OECD — OECD — Well-being SDMX access attempt"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_RECEPTORS.md",
+      "aliases": [],
+      "normalized_body_sha256": "d84afc38f113bda790f2bf43cdb650eadfb10d5262a0ac91e5491bc672ccec1c",
+      "title": "MONDE_WORLD_RECEPTORS — Hansen et al. — Receptor maps and analysis repository, scale100"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_WHO.md",
+      "aliases": [],
+      "normalized_body_sha256": "9f29e531ab4998d8d73c797f82be71819e956ab901dacc5450c54e18319007d6",
+      "title": "MONDE_WORLD_WHO — World Health Organization — Mental health indicators"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_WHR.md",
+      "aliases": [],
+      "normalized_body_sha256": "04dac9cce6238499accb0fa1edd3484b1e92c0eebc3c7f27f170f33cdfaf351b",
+      "title": "MONDE_WORLD_WHR — World Happiness Report 2026 — Data for Figure 2.1"
+    },
+    {
+      "canonical_path": "reference/documents/sources/collecte_mondiale_2026-10-04/MONDE_WORLD_WVS.md",
+      "aliases": [],
+      "normalized_body_sha256": "13195b428aadab5c5129afa2ab841dd1ceb91ffe0b3d1ceb5d97a6f7c0b567c4",
+      "title": "MONDE_WORLD_WVS — World Values Survey — Documentation"
+    },
+    {
+      "canonical_path": "reference/documents/sources/v0.77/OSF_WIKI_CONTENU.md",
+      "aliases": [],
+      "normalized_body_sha256": "ebaeda31da38bc2fd4585c091b5364506b548950376e32726b4425f09e478781",
+      "title": "OSF_WIKI_CONTENU"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/d7/d77982b190a0a8627bc58b5cdb916bde67d04838796182ebeee952168ac8d656.md",
+      "aliases": [],
+      "normalized_body_sha256": "dff0624054caa7d82510285905e45cb28b1a9383cdf02e27f086c698702ee078",
+      "title": "analyses/v0.82/BILAN_REFERENCE.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/07/07cce3f98a0e6e6c7ca8167be8eebf6b723b945d38cf43c7e5b09016651150ed.md",
+      "aliases": [],
+      "normalized_body_sha256": "ce55e1d0707c829c562f8036e27c21186383cead538b5e3fe57f13f0c9c2a57a",
+      "title": "analyses/v0.83/BILAN_CORRECTION.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/87/872000a0c6d070be0f2a36816478044ba45ccc2c6fd52b229ac96226b22dc0b8.md",
+      "aliases": [],
+      "normalized_body_sha256": "9cc72461fc3202de3292f5c11c447aecc88b067a47cd8a334453f98ed652d01d",
+      "title": "analyses/v0.84/BILAN_ANIMATIONS.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/45/45f0a6d0c0bf743a806b713249dc00ffc810c05c2df76e443b51731817c69aef.md",
+      "aliases": [],
+      "normalized_body_sha256": "45f0a6d0c0bf743a806b713249dc00ffc810c05c2df76e443b51731817c69aef",
+      "title": "analyses/v0.85/BILAN_INVENTAIRE.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/76/76fbb13831302bbdf989b089ca4ba73fc0a4f3aef365f9c3f2598662cbf77404.md",
+      "aliases": [],
+      "normalized_body_sha256": "76fbb13831302bbdf989b089ca4ba73fc0a4f3aef365f9c3f2598662cbf77404",
+      "title": "analyses/v0.86/BILAN_STRUCTURE.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/f1/f183b4df29466cf118da8127af6cb327515bc0d89409fff759632e090e4c8984.md",
+      "aliases": [],
+      "normalized_body_sha256": "f183b4df29466cf118da8127af6cb327515bc0d89409fff759632e090e4c8984",
+      "title": "analyses/v0.87/BILAN_v0.87.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/11/1139eae7aeb15e7d7a8bf3bb8c9974cfa86769acd27175cd94a34fd3c05d2e47.md",
+      "aliases": [],
+      "normalized_body_sha256": "ac5ba3741787cf525f94195a637146d1fb1b4247b035178486bbbdfd17e500c4",
+      "title": "analyses/v0.88/BILAN_v0.88.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/78/78844d38e41dcc5b141411430e07058546b9ccf2dd2739bb3d1ad1baeeb7c137.md",
+      "aliases": [],
+      "normalized_body_sha256": "78844d38e41dcc5b141411430e07058546b9ccf2dd2739bb3d1ad1baeeb7c137",
+      "title": "analyses/v0.88/PLAN_SUITE_HUMAIN.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/44/443f9d2b50774ed44a3271f1675ab9fcc6dd21f966c13fa31a786278048c69e0.md",
+      "aliases": [],
+      "normalized_body_sha256": "443f9d2b50774ed44a3271f1675ab9fcc6dd21f966c13fa31a786278048c69e0",
+      "title": "analyses/v0.89/BILAN_v0.89.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/a8/a83b36a8bc5294815e74f53089c02e5362a7eee5707163e131548b364e3d8fca.md",
+      "aliases": [],
+      "normalized_body_sha256": "180a1c6ada243fb02c3b4734e7dad554d9acf5cf8d8af598214bc34757c3fc69",
+      "title": "POINT_AVANCEMENT_EMOTIONNEL.md"
+    },
+    {
+      "canonical_path": "bibliotheque/fichiers/0e/0e01ca871674337560f2206f4f0530161bc689c40735b491fcb22d14ce0f3b02.md",
+      "aliases": [],
+      "normalized_body_sha256": "e3f91894f50ef52dbb82ce9b34a3a9914cdd0d7a868fceb7b8a0648c056e952c",
+      "title": "README.md"
+    },
+    {
+      "canonical_path": "pieces/FR_VALUE_README.md",
+      "aliases": [],
+      "normalized_body_sha256": "4fd9c0944a70af874c3df7f47d3dd38bbbcf67a209cdc5d8dced9f08d278e0c6",
+      "title": "FR_VALUE · README primaire auteur · souris"
+    }
+  ],
+  "policy": "Exact text identity after CRLF normalization only. Original files and historical references retained."
+}

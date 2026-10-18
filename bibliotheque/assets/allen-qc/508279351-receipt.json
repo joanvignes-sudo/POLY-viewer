@@ -1,0 +1,23 @@
+{
+  "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AEphysSweep%2Crma%3A%3Acriteria%2C%5Bspecimen_id%24eq508279351%5D%2Crma%3A%3Aoptions%5Bnum_rows%24eqall%5D",
+  "headers": {
+    "Date": "Tue, 13 Oct 2026 18:58:39 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "AWSALB=jfZd2ZYtryhkWYN2F96q0W1YiBpOsVODtaVHjqU6K+raLnB1ZE1PTlB03ezy2QumEZn3aku9hLgiHUjRDj2G7RtwGKhT/mL+vq9+YC60cc20T2T20i5wP+Lb8gpe; Expires=Tue, 20 Oct 2026 18:58:39 GMT; Path=/",
+    "Server": "Apache",
+    "Cache-Control": "max-age=0, private, must-revalidate",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Max-Age": "1728000",
+    "X-Request-Id": "c1c553f3fe873b877ced578e1d655152",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "X-UA-Compatible": "IE=Edge,chrome=1",
+    "X-Runtime": "0.098902",
+    "X-Rack-Cache": "miss",
+    "X-Powered-By": "Phusion Passenger 5.0.21",
+    "ETag": "\"ee11a9f7878e71a9f234301b1bda7711\"",
+    "Status": "200 OK"
+  },
+  "sha256": "631924061e1d512b015351795e2d1d8add0419589f79a549cf28818f2a3c59a6"
+}

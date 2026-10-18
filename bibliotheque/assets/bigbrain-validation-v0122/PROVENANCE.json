@@ -1,0 +1,102 @@
+{
+  "version": "0.122",
+  "date": "2026-10-14",
+  "status": "published_landmarks_reassessed",
+  "geometry_modified": false,
+  "new_manual_annotations": false,
+  "independent_whole_brain_anatomical_validation": false,
+  "original_study_group_average_reproduced": false,
+  "temporal_activity_available": false,
+  "geometry": {
+    "path": "assets/bigbrain-warp-v0121/PROVENANCE.json",
+    "sha256": "b6020bb727153e71de43f9cd7922f848b6099a3fff6813f686c454ea5c441a31"
+  },
+  "landmarks": {
+    "path": "assets/bigbrain-validation-v0122/LANDMARKS.json",
+    "sha256": "153c05a84f97407bc2470e232b300b7a764d7d89913e52b613c452c9d22e86c4"
+  },
+  "regularity": {
+    "path": "assets/bigbrain-validation-v0122/REGULARITY.json",
+    "sha256": "ed6a1b16df26add2968ca8c8ecf2d02d227dcb7d3540f5253613a68f15575a06"
+  },
+  "sources": [
+    {
+      "path": "assets/bigbrain-validation-v0122/BigBrain_T1_Rater03_1_20180918.fcsv",
+      "file": "BigBrain_T1_Rater03_1_20180918.fcsv",
+      "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/BigBrain_T1_Rater03_1_20180918.fcsv",
+      "bytes": 4183,
+      "sha256": "d6fbfead45a35a3d02ead74e8cce26f883ca878d1cb639432ad972112ee022f3"
+    },
+    {
+      "path": "assets/bigbrain-validation-v0122/BigBrain_T1_Rater07_1_20180918.fcsv",
+      "file": "BigBrain_T1_Rater07_1_20180918.fcsv",
+      "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/BigBrain_T1_Rater07_1_20180918.fcsv",
+      "bytes": 3655,
+      "sha256": "ca5083192d69256334964f43374984bccd9e3d078ac139efaee0cb67ea784f4f"
+    },
+    {
+      "path": "assets/bigbrain-validation-v0122/MNI152NLin2009bSym_T1_Rater03_1_20180914.fcsv",
+      "file": "MNI152NLin2009bSym_T1_Rater03_1_20180914.fcsv",
+      "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/MNI152NLin2009bSym_T1_Rater03_1_20180914.fcsv",
+      "bytes": 4190,
+      "sha256": "b83712f9161ca87ebbca6b9b2789104991cabd1ab0d8abff27f2315f4a2ed562"
+    },
+    {
+      "path": "assets/bigbrain-validation-v0122/MNI152NLin2009bSym_T1_Rater07_1_20180917.fcsv",
+      "file": "MNI152NLin2009bSym_T1_Rater07_1_20180917.fcsv",
+      "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/data/PHASE4_input_afid/MNI152NLin2009bSym_T1_Rater07_1_20180917.fcsv",
+      "bytes": 3417,
+      "sha256": "45569c0c507026c6473c5eebb8d30753b0483f85dcb74e39e97ce531d045e098"
+    },
+    {
+      "path": "assets/bigbrain-validation-v0122/README.md",
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/README.md",
+      "bytes": 4699,
+      "sha256": "25c0462881c41e681c8188e2cd7fe7bc60f0381e8506bae3fbf2333821ca034f"
+    },
+    {
+      "path": "assets/bigbrain-validation-v0122/LICENSE",
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/afids/afids-analysis/7b50e975cb13b27ff7847aaf820e7509996e9f21/LICENSE",
+      "bytes": 1063,
+      "sha256": "30052b52d91d56a56831aaeb392f7a26216ef8db86ee92e2eae63707e7043f35"
+    }
+  ],
+  "jacobians": {
+    "path": "assets/bigbrain-validation-v0122/jacobians.bin",
+    "bytes": 1395380,
+    "sha256": "81aa9b1ae111de14a99f545ef53f14e2308ca15fc0212f2dd10a80105b965a55",
+    "dtype": "little-endian float32"
+  },
+  "primary_exclusions": [
+    {
+      "afid": 10,
+      "name": "Culmen"
+    },
+    {
+      "afid": 14,
+      "name": "Pineal gland"
+    }
+  ],
+  "ambiguous_label_not_corrected": {
+    "rater": "Rater07",
+    "source_label": "c",
+    "source": "BigBrain_T1_Rater07_1_20180918.fcsv",
+    "omitted_from_correspondence": true
+  },
+  "citations": [
+    "https://doi.org/10.1002/hbm.24693",
+    "https://doi.org/10.1038/s41597-019-0217-0",
+    "https://github.com/afids/afids-analysis/tree/7b50e975cb13b27ff7847aaf820e7509996e9f21"
+  ],
+  "frame_evidence": "AFIDs README PHASE4 states BigBrainSym; FCSV CoordinateSystem=0 (RAS). Only 2019 improved fields applied to AFIDs, not the 2015 transform again.",
+  "rights": "Original AFIDs repository MIT license and JC Lau attribution retained. BigBrain-derived transformations/geometry retain their existing source terms; no new license replaces them.",
+  "limits": [
+    "Selected landmarks and two published rater files do not provide whole-brain spatial accuracy or reproduce eight-rater group averages",
+    "Landmark differences include annotation variability; before/after improvements are descriptive, no significance test or population inference claimed",
+    "Positive Jacobian at all displayed vertices does not guarantee positivity between vertices or throughout the volume",
+    "Unweighted vertex determinant statistics include duplicated patch positions; they are not volume-weighted brain statistics",
+    "3D segments show positional residuals, not nerves, neuronal connections, movement or physiological time"
+  ]
+}

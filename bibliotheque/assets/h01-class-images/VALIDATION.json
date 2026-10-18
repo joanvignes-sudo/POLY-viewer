@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "id": "class-0",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+      "source_point_mask_id": "1072605926"
+    },
+    {
+      "id": "class-5",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+      "source_point_mask_id": "1072605926"
+    },
+    {
+      "id": "class-1001",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+      "source_point_mask_id": "1072605926"
+    },
+    {
+      "id": "class-1",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+      "source_point_mask_id": "1072605926"
+    },
+    {
+      "id": "class-3",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+      "source_point_mask_id": "1072605926"
+    },
+    {
+      "id": "class-2",
+      "image_values": 2097152,
+      "independent_image_differences": 0,
+      "mask_values": 524288,
+      "mask_reader": "TensorStore 0.1.85; no independent decoder comparison claimed",
+      "source_point_mask_id": "1072605926"
+    }
+  ]
+}

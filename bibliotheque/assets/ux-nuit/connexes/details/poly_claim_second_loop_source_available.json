@@ -1,0 +1,103 @@
+{
+  "id": "poly:claim:second_loop_source_available",
+  "kind": "claim",
+  "title": "Les trois canaux originaux de la seconde boucle sont disponibles au plan10",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      13
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "second_loop_source_available",
+      "claim": "Les trois canaux originaux de la seconde boucle sont disponibles au plan10",
+      "status": "source contrôlée et seconde boucle évaluée auplan10",
+      "evidence_level": "fichiers et métadonnées",
+      "scope": "9TIFF vérifiés duchamp47 ; boucle9-10-47-48, même spécimen, champs9/48 partagés",
+      "next_acceptance_gate": "Validation par repères homologués et extension décidée sur une question nouvelle ; ne pas confondre fermeture et précision anatomique.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_EXTENSION_SPATIALE_2026-10-15/PORTE_SECONDE_BOUCLE.json",
+          "selector": [
+            "first_available_plane"
+          ],
+          "value": 10,
+          "original_sha256": "c6edcb16e1a9276bc288731334164d1cca3d21f90dfff3f8092970d41e37acf6",
+          "sha256": "c6edcb16e1a9276bc288731334164d1cca3d21f90dfff3f8092970d41e37acf6"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_EXTENSION_SPATIALE_2026-10-15/RESUME_EXTENSION.json",
+          "selector": [
+            "new_unique_TIFFs"
+          ],
+          "value": 9,
+          "original_sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf",
+          "sha256": "1dfce32b58d305ca9906b3d9fd0da497544d948d5754dc90952474b7d95a02cf"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "spatial_loops_evaluated_cumulative"
+          ],
+          "value": 2,
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "NCC_consensus_closure_px"
+          ],
+          "value": {
+            "0": 1.4142135623730951,
+            "2": 1.0
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "phase_consensus_closure_px"
+          ],
+          "value": {
+            "0": 29.614185789921695,
+            "2": 9.219544457292887
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "ASHLAR_statuses"
+          ],
+          "value": {
+            "disconnected_with_stage_model_repositioning": 2,
+            "connected_image_based_positions": 2
+          },
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_SECONDE_BOUCLE_2026-10-15/RESUME_SECONDE_BOUCLE.json",
+          "selector": [
+            "adopted_transform"
+          ],
+          "value": null,
+          "original_sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b",
+          "sha256": "ffb420425b97e79cdb11e9612011123478e2f3eb936bf02753edfd8c3ce8c33b"
+        }
+      ]
+    }
+  }
+}

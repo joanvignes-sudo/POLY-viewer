@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glossaire POLY — bibliothèque de personnages</title>
+<style>
+:root{--bg:#0d1117;--panel:#151b23;--line:#30363d;--text:#eef3f7;--muted:#9ba7b1;--accent:#6cb6ff;--warn:#f0b95a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,Segoe UI,Arial,sans-serif}
+header{position:sticky;top:0;z-index:4;background:#111820;border-bottom:1px solid var(--line);padding:14px 18px}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+input,select,button,a.btn{background:#0d1117;color:var(--text);border:1px solid var(--line);border-radius:7px;padding:8px 10px;text-decoration:none}
+button,.btn{cursor:pointer}.wrap{max-width:1400px;margin:auto;padding:18px}.note{border-left:3px solid var(--warn);background:#181b1f;padding:10px 12px;border-radius:6px;margin-bottom:18px}
+.index{display:grid;grid-template-columns:1fr 2fr;gap:12px;margin-bottom:16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+.index h2,.presence h2{font-size:15px;margin:0 0 9px}.letters,.families{display:flex;gap:6px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);border-radius:999px;padding:4px 8px;background:#10161d;cursor:pointer}.pill.active{border-color:var(--accent);background:#203144}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.visual{height:150px;display:flex;align-items:center;justify-content:center;background:#eef5f8}.visual svg{width:118px;height:118px}.body{padding:11px}.body h3{margin:0 0 2px;font-size:17px}.symbol{font-weight:800;font-size:21px}.family{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}.role{margin:8px 0}.actions{font-size:12px;color:#cfd8df}.sceneTags{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px}.sceneTags span{font-size:10px;border:1px solid var(--line);border-radius:999px;padding:2px 6px}.status{font-size:10px;margin-top:8px;color:#a7d6a8}.caveat{font-size:11px;color:#f1cf89;margin-top:7px}.presence{margin-top:18px;overflow:auto}
+table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:7px;text-align:center}th:first-child,td:first-child{text-align:left}.yes{font-weight:800;color:#8dde8d}.no{color:#56606a}
+footer{padding:18px;color:var(--muted);font-size:11px;text-align:center}
+@media(max-width:760px){.index{grid-template-columns:1fr}.wrap{padding:10px}.visual{height:130px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Glossaire POLY — bibliothèque de personnages</h1>
+  <div class="sub" id="glossarySub">Bibliothèque de personnages visuels réutilisables pour les animations pédagogiques</div>
+  <div class="toolbar">
+    <a class="btn" id="backViewer" href="./?chain=C01">← Retour au viewer</a>
+    <select id="chainFilter"><option value="C01">C01 · entrée sensorielle</option><option value="C08">C08 · énergie / homéostasie</option><option value="ALL">Toutes les chaînes actives</option></select>
+    <input id="search" placeholder="Rechercher : photon, sodium, ATP…">
+    <select id="sort"><option value="alpha">A → Z</option><option value="family">Par famille</option></select>
+  </div>
+</header>
+<main class="wrap">
+  <div class="note"><b>Convention :</b> les personnages servent uniquement de repères visuels. Les yeux, expressions et comportements ne signifient aucune intention biologique ; les affirmations scientifiques restent dans les données, sources et limites du viewer.</div>
+
+  <section class="index">
+    <div class="panel">
+      <h2>Index alphabétique</h2>
+      <div class="letters" id="letters"></div>
+    </div>
+    <div class="panel">
+      <h2>Index par familles</h2>
+      <div class="families" id="families"></div>
+    </div>
+  </section>
+
+  <section class="cards" id="cards"></section>
+
+  <section class="presence">
+    <h2 id="presenceTitle">Présence dans les intervalles</h2>
+    <div class="sub" id="presenceSub" style="margin-bottom:8px">✓ = personnage utilisé dans l’intervalle pédagogique sélectionné.</div>
+    <table id="sceneTable"></table>
+  </section>
+</main>
+<footer>POLY · glossaire figuratif expérimental · les symboles visuels sont des outils pédagogiques, pas des mécanismes démontrés.</footer>
+<script src="assets/characters/poly_characters_v0.1.js"></script>
+<script src="assets/characters/c01_characters_v0.1.js"></script>
+<script src="assets/intervals/c01_interval_actions_v0.1.js"></script>
+<script src="assets/intervals/c08_interval_actions_v0.1.js"></script>
+<script>
+const LIB=window.POLY_CHARACTER_LIBRARY,SVGS=window.POLY_CHARACTER_SVGS;
+let letterFilter="",familyFilter="";
+const params=new URLSearchParams(location.search);
+let activeChain=["C01","C08","ALL"].includes(params.get("chain"))?params.get("chain"):"C01";
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+function actionsFor(chain){
+ if(chain==="C01")return window.POLY_C01_INTERVAL_ACTIONS?.actions||[];
+ if(chain==="C08")return window.POLY_INTERVAL_ACTIONS?.actions||[];
+ return [...(window.POLY_C01_INTERVAL_ACTIONS?.actions||[]),...(window.POLY_INTERVAL_ACTIONS?.actions||[])];
+}
+function usageFor(charId,chain=activeChain){
+ const groups=chain==="ALL"?["C01","C08"]:[chain];
+ const out=[];
+ for(const cid of groups)for(const a of actionsFor(cid))if((a.actors||[]).includes(charId))out.push({chain:cid,id:a.id,title:a.title});
+ return out;
+}
+function usedCharacters(chain=activeChain){
+ return new Set(actionsFor(chain).flatMap(a=>a.actors||[]));
+}
+function filtered(){
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ const used=usedCharacters(activeChain);
+ let a=LIB.characters.filter(c=>{
+   const use=usageFor(c.id);
+   const hay=[c.symbol,c.name,c.family,c.role,...(c.actions||[]),...(c.scenes||[]),...(c.objects||[]),...use.map(x=>x.id+" "+x.title)].join(" ").toLowerCase();
+   const chainOK=activeChain==="ALL"||used.has(c.id);
+   return chainOK&&(!q||hay.includes(q))&&(!letterFilter||c.name.normalize("NFD").replace(/\p{Diacritic}/gu,"").toUpperCase().startsWith(letterFilter))&&(!familyFilter||c.family===familyFilter);
+ });
+ if(document.getElementById("sort").value==="family")a.sort((x,y)=>x.family.localeCompare(y.family,"fr")||x.name.localeCompare(y.name,"fr"));
+ else a.sort((x,y)=>x.name.localeCompare(y.name,"fr"));
+ return a;
+}
+function renderIndexes(){
+ const pool=LIB.characters.filter(c=>activeChain==="ALL"||usedCharacters(activeChain).has(c.id));
+ const letters=[...new Set(pool.map(c=>c.name.normalize("NFD").replace(/\p{Diacritic}/gu,"")[0].toUpperCase()))].sort();
+ document.getElementById("letters").innerHTML='<button class="pill '+(!letterFilter?'active':'')+'" onclick="setLetter(\'\')">Tous</button>'+letters.map(l=>'<button class="pill '+(letterFilter===l?'active':'')+'" onclick="setLetter(\''+l+'\')">'+l+'</button>').join("");
+ const fams=[...new Set(pool.map(c=>c.family))].sort((a,b)=>a.localeCompare(b,"fr"));
+ document.getElementById("families").innerHTML='<button class="pill '+(!familyFilter?'active':'')+'" onclick="setFamily(\'\')">Toutes</button>'+fams.map(f=>'<button class="pill '+(familyFilter===f?'active':'')+'" onclick="setFamily(\''+esc(f).replace(/'/g,"\\'")+'\')">'+esc(f)+'</button>').join("");
+}
+function setLetter(x){letterFilter=x;render()}
+function setFamily(x){familyFilter=x;render()}
+function statusText(c){
+ const u=usageFor(c.id);
+ if(!u.length)return "○ bibliothèque";
+ const chains=[...new Set(u.map(x=>x.chain))].join(" + ");
+ return "✓ utilisé dans "+chains;
+}
+function renderCards(){
+ document.getElementById("cards").innerHTML=filtered().map(c=>{
+   const use=usageFor(c.id);
+   const tags=use.length?use.map(u=>'<span>'+esc(u.chain+" · "+u.id)+'</span>').join(""):'<span>bibliothèque</span>';
+   return '<article class="card" id="'+esc(c.id)+'"><div class="visual" style="border-top:5px solid '+esc(c.accent||"#6cb6ff")+'">'+(SVGS[c.id]||"")+'</div><div class="body"><div class="symbol">'+esc(c.symbol)+'</div><h3>'+esc(c.name)+'</h3><div class="family">'+esc(c.family)+'</div><p class="role">'+esc(c.role)+'</p><div class="actions"><b>Actions typiques :</b> '+(c.actions||[]).map(esc).join(" · ")+'</div><div class="sceneTags">'+tags+'</div><div class="status">'+statusText(c)+'</div>'+(c.objects?.length?'<div class="sub" style="margin-top:4px">Objets POLY : '+c.objects.map(esc).join(", ")+'</div>':'')+(c.caveat?'<div class="caveat">'+esc(c.caveat)+'</div>':'')+'</div></article>';
+ }).join("");
+}
+function renderTable(){
+ const acts=actionsFor(activeChain);
+ const chars=filtered();
+ if(activeChain==="ALL"){
+   let h='<thead><tr><th>Personnage</th><th>C01</th><th>C08</th><th>Intervalles</th></tr></thead><tbody>';
+   for(const c of chars){
+     const u1=usageFor(c.id,"C01"),u8=usageFor(c.id,"C08");
+     h+='<tr><td><b>'+esc(c.symbol)+'</b> · '+esc(c.name)+'</td><td class="'+(u1.length?"yes":"no")+'">'+(u1.length?"✓":"—")+'</td><td class="'+(u8.length?"yes":"no")+'">'+(u8.length?"✓":"—")+'</td><td>'+esc([...u1,...u8].map(x=>x.chain+" "+x.id).join(" · ")||"—")+'</td></tr>';
+   }
+   h+='</tbody>';document.getElementById("sceneTable").innerHTML=h;return;
+ }
+ let h='<thead><tr><th>Personnage</th>'+acts.map(a=>'<th title="'+esc(a.title)+'">'+esc(a.id)+'</th>').join("")+'</tr></thead><tbody>';
+ for(const c of chars){
+   const ids=new Set(usageFor(c.id,activeChain).map(x=>x.id));
+   h+='<tr><td><b>'+esc(c.symbol)+'</b> · '+esc(c.name)+'</td>'+acts.map(a=>'<td class="'+(ids.has(a.id)?"yes":"no")+'">'+(ids.has(a.id)?"✓":"—")+'</td>').join("")+'</tr>';
+ }
+ h+='</tbody>';document.getElementById("sceneTable").innerHTML=h;
+}
+function updateChainUI(){
+ document.getElementById("chainFilter").value=activeChain;
+ document.getElementById("backViewer").href="./?chain="+(activeChain==="ALL"?"C01":activeChain);
+ document.getElementById("backViewer").textContent="← Retour au viewer "+(activeChain==="ALL"?"C01":activeChain);
+ document.getElementById("glossarySub").textContent=activeChain==="ALL"?"C01 + C08 · bibliothèque active":"Glossaire "+activeChain+" · personnages réellement utilisés dans les intervalles manuels";
+ document.getElementById("presenceTitle").textContent=activeChain==="ALL"?"Présence par chaîne":"Présence dans les intervalles "+activeChain;
+ document.getElementById("presenceSub").textContent=activeChain==="ALL"?"✓ = personnage utilisé dans au moins un intervalle manuel de la chaîne.":"✓ = personnage utilisé dans cet intervalle pédagogique. Les colonnes sont les intervalles manuels de "+activeChain+".";
+ try{const u=new URL(location.href);u.searchParams.set("chain",activeChain);history.replaceState({},"",u)}catch(e){}
+}
+function render(){updateChainUI();renderIndexes();renderCards();renderTable()}
+document.getElementById("search").addEventListener("input",render);
+document.getElementById("sort").addEventListener("change",render);
+document.getElementById("chainFilter").addEventListener("change",e=>{activeChain=e.target.value;letterFilter="";familyFilter="";render()});
+render();
+</script>
+</body></html>

@@ -1,0 +1,267 @@
+{
+  "version": "0.119",
+  "date": "2026-10-13",
+  "scope": "Programme entre échelles : BigBrain, Allen humain, H01 EM, HiP-CT, SPARC humain.",
+  "individual_registration_available": false,
+  "sources": [
+    {
+      "id": "bigbrain",
+      "name": "BigBrain",
+      "status": "Intégré",
+      "sample": "Cortex, trois voisinages et coupe 3863",
+      "access": "Sources acquises localement ; surfaces et tuiles servies par POLY.",
+      "license": "CC BY-NC-SA 4.0",
+      "format": "Surfaces GIFTI ; volume MINC ; dérivés binaires et tuiles d’image.",
+      "reference": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain.",
+      "scale": "Image histologique à 20 µm ; six couches délimitées par sept frontières reconstruites.",
+      "next": "Vérifier un transform publié avant tout raccord spatial vers l’atlas moyen CerebrA.",
+      "url": "https://bigbrain.loris.ca/",
+      "local": "microstructures.html",
+      "provenance": "assets/bigbrain/PROVENANCE.json"
+    },
+    {
+      "id": "allen",
+      "name": "Cellules humaines Allen",
+      "status": "Trois cellules et neuf essais intégrés",
+      "sample": "637034000 et 637038252 (donneur H17.03.013) ; 508279351 (donneur H16.06.004)",
+      "access": "SWC et NWB acquis ; neuf fenêtres de 60 000 paires tension/courant à 50 kHz, sans sous-échantillonnage.",
+      "license": "Conditions Allen Institute, recherche et usages non commerciaux, attribution obligatoire.",
+      "format": "SWC ; NWB/HDF5 ; métadonnées JSON.",
+      "reference": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
+      "scale": "Reconstruction cellulaire ; pas de résolution uniforme attribuée au squelette.",
+      "next": "Examiner les conditions et les limites des comparaisons avec des spécialistes ; construire un protocole de comparaison appariée. Indicateurs publiés documentés, contrôles expérimentaux Allen non réexécutés.",
+      "url": "https://celltypes.brain-map.org/experiment/morphology/637034000",
+      "local": "neurones.html?sample=allen-637034000",
+      "provenance": "assets/allen-comparison/PROVENANCE.json",
+      "quality_provenance": "assets/allen-qc/PROVENANCE.json"
+    },
+    {
+      "id": "h01-em",
+      "name": "H01 · microscopie électronique",
+      "status": "Squelette, 1 571 positions, six détails synaptiques, classes source et six fenêtres anatomiques intégrés",
+      "sample": "Segment 1072605926, proofread_104, release 20210601",
+      "access": "CSV complet acquis avec génération et MD5 contrôlés : six correspondances exactes pré/post. Douze fenêtres de labels synaptiques inhibiteurs/excitateurs décodées et vérifiées indépendamment.",
+      "license": "CC BY 4.0",
+      "format": "Neuroglancer precomputed, squelette binaire et stockage shard ; export SWC de contrôle.",
+      "reference": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
+      "scale": "Images acquises : 64×64×66 nm, 16×16×33 nm, 4×4×33 nm. Masque du détail natif à 8×8×33 nm ; pas de précision artificielle à 4 nm. Échantillonnage anisotrope, pas de résolution isotrope garantie.",
+      "next": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
+      "url": "https://h01-release.storage.googleapis.com/data.html",
+      "local": "neurones.html?sample=h01-em-1072605926",
+      "provenance": "assets/neurons/PROVENANCE.json",
+      "image_local": "microscopie.html",
+      "image_provenance": "assets/h01-em/PROVENANCE.json",
+      "synapse_provenance": "assets/h01-synapses/PROVENANCE.json",
+      "detail_provenance": "assets/h01-details/PROVENANCE.json",
+      "evidence_provenance": "assets/h01-evidence/PROVENANCE.json",
+      "geometry_routes": "trajets.html",
+      "geometry_provenance": "assets/h01-paths/PROVENANCE.json",
+      "compartment_provenance": "assets/h01-compartments/PROVENANCE.json",
+      "compartment_source_points": 5050,
+      "compartment_vertex_join": "Native coordinate bytes equal; no nearest-neighbour class transfer",
+      "compartment_image_local": "compartiments.html",
+      "compartment_image_provenance": "assets/h01-class-images/PROVENANCE.json"
+    },
+    {
+      "id": "hipct",
+      "name": "HiP-CT · Human Organ Atlas",
+      "status": "Deux acquisitions reliées",
+      "sample": "Cœur S-20-28 : vue entière 19,85 µm ; VOI-01 6,51 µm ; valve tricuspide annoncée 12,02 µm (champ acquisition arrondi à 12,0).",
+      "access": "78 blocs N5 acquis : 65 vue entière et 13 région ; quatre volumes légers locaux.",
+      "license": "CC BY 4.0 selon le portail Human Organ Atlas.",
+      "format": "N5, uint16 Blosc zstd, axes XYZ, blocs 128³.",
+      "reference": "Même cœur S-20-28 ; transformation publiée overview 19,85 µm vers région 6,51 µm, convention d’unités vérifiée. Erreur anatomique indépendante non fournie.",
+      "scale": "Ensemble 635,2 µm ; extrait 19,85 µm ; région 208,32 µm ; extrait 6,51 µm. Pas d’échantillonnage, pas pouvoir résolvant garanti.",
+      "next": "Explorer davantage de régions, améliorer les mesures et tester avec des lecteurs.",
+      "url": "https://human-organ-atlas.esrf.fr/explore/organ/heart",
+      "local": "organes.html?sample=heart",
+      "provenance": "assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc",
+      "name": "SPARC · nerf vague humain",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "access": "Micro-CT C1 primaire complet de 738 652 116 octets acquis et SHA-256 vérifié ; contexte, quatre fenêtres et quatre plans natifs diffusés. C10 et modèle conservés.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "format": "EXF, surfaces JSON, XML MBF, NIfTI uint8 ; volumes gzip.",
+      "reference": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "scale": "Micro-CT nominal 9 µm ; contexte sous-échantillonné 36 µm. 15 surfaces et 178 049 segments ; modèle ex vivo. IHC C1 : six fenêtres 2048² RGB natifs, épaisseur de section 5 µm ; échelle XY physique non vérifiée. Deux champs sources 960×720, 17 plans focaux chacun, exports colorisés 8 bits et Overlay indépendant.",
+      "next": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "url": "https://sparc.science/datasets/426",
+      "local": "organes.html?sample=vagus",
+      "provenance": "assets/organs/PROVENANCE.json",
+      "ihc_local": "immunohistochimie.html",
+      "ihc_provenance": "assets/ihc/PROVENANCE.json",
+      "ihc_focal_local": "canaux.html",
+      "ihc_focal_provenance": "assets/focal/PROVENANCE.json",
+      "c1_local": "c1.html",
+      "c1_provenance": "assets/c1/PROVENANCE.json",
+      "license_evidence": "assets/licenses/SPARC_RIGHTS_v0.116.json"
+    }
+  ],
+  "metadata_files": [
+    {
+      "path": "assets/multiscale/hoa-heart-selection.json",
+      "sha256": "79f153b8c376511fa4305d5240451a5fe33ee0073c5498910c4119218bb5027c"
+    },
+    {
+      "path": "assets/multiscale/sparc-426.json",
+      "sha256": "668356ccbfbd8e99763ae101244d9b52dcb842bf069dd1f320e0f84410aebf41"
+    },
+    {
+      "path": "assets/multiscale/sparc-readme.md",
+      "sha256": "a77354664bd44f921b7ee70eebdfa67861418550a788da99a2db7f523851a00a"
+    },
+    {
+      "path": "assets/organs/REGISTRATION.json",
+      "sha256": "27b08adf9615e7a64f4b526e4e19533226f509fd1e22de7a8cddb787180f065b"
+    },
+    {
+      "path": "assets/organs/originals/next/hoa-6.51-state.json",
+      "sha256": "d38b71c1402cd2ee2a2a6e8378212d40f184f232f4470f837102c8df7982b7e9"
+    },
+    {
+      "path": "assets/ihc/PROVENANCE.json",
+      "sha256": "40f7b045ec6217287694f15590738546b50dcabd9295fa460496e1bb91a1e95c"
+    },
+    {
+      "path": "assets/focal/PROVENANCE.json",
+      "sha256": "c9aeffc9a23d159f4a28556fad6006b3e5a5f702ee614696487062c52d628255"
+    },
+    {
+      "path": "assets/registration/PROVENANCE.json",
+      "sha256": "a4ebc17c3ed4fd13898ed70acac2b36adfa93993c15dcc2cd2203a1c55906df5"
+    },
+    {
+      "path": "assets/c1/PROVENANCE.json",
+      "sha256": "d1666cc81c8d9db7fe96cdcc289d8536d83fc901e379d4c8213cb7ac0d99895a"
+    },
+    {
+      "path": "assets/registration/CALIBRATION.json",
+      "sha256": "da916bbddc51ca73b30cbb4847b801b0272c3ad4a46a14fda341db0165a1d796"
+    },
+    {
+      "path": "assets/registration/FOCAL_VALIDATION.json",
+      "sha256": "5a582c0a71b7f1f479b51cdab9f91352e27095a65b0bb8c58311cbe91bed98cd"
+    },
+    {
+      "path": "assets/h01-em/PROVENANCE.json",
+      "sha256": "6f7ea5c020ffc67ed66442c30edf5bf3c004a94c3d08d04f7c8f10d14492f524"
+    },
+    {
+      "path": "assets/h01-synapses/PROVENANCE.json",
+      "sha256": "256561c9d3303ddf37612f1500c36179971256d44a9fb6a4d18644aba0d7c013"
+    },
+    {
+      "path": "assets/h01-details/PROVENANCE.json",
+      "sha256": "85677cef1cd7652cbd10ceaee871b377de5172ed821a523b514847cf190ff228"
+    },
+    {
+      "path": "assets/h01-evidence/PROVENANCE.json",
+      "sha256": "92daa8bc790476d4d2fba7b7ff58fb4b3c142ed6e0e7e3081b997eb7e4f1e07c"
+    },
+    {
+      "path": "assets/h01-paths/PROVENANCE.json",
+      "sha256": "03b24e17057bf6f9481be02c589b7e0018206a826309e74a6b38bcf9b3b9a62d"
+    },
+    {
+      "path": "assets/h01-compartments/PROVENANCE.json",
+      "sha256": "64cbdc8a78441a92f3bc74e78d858126a34f684f0713b22cd907031c1d49ec07"
+    },
+    {
+      "path": "assets/h01-class-images/PROVENANCE.json",
+      "sha256": "eb16cbc2b5301be196b6f3f6d5b42d1dd1e00c26b631a66d5f062a501b315723"
+    },
+    {
+      "path": "assets/allen-comparison/PROVENANCE.json",
+      "sha256": "063f7131f6e596daaf60f07b733069376503bc98e2515ffe91c7880190bbb9a8"
+    },
+    {
+      "path": "assets/licenses/SPARC_RIGHTS_v0.116.json",
+      "sha256": "82f94eb42ea63a98245314aeab04b3cfbee491d5064aa0db5047f6186d6c45d0"
+    },
+    {
+      "path": "assets/allen-qc/PROVENANCE.json",
+      "sha256": "71e1676b457067abe51b6ece390487acbd6fa12f32e329e08f51309cc59f2587"
+    },
+    {
+      "path": "assets/allen-pairs/PROVENANCE.json",
+      "sha256": "ac9b804d2a789dbb30b0003ae4630446fe67c7cc549e608a6a3782f3de16b3a2"
+    },
+    {
+      "path": "assets/navigation/PROVENANCE.json",
+      "sha256": "2a7bc51477db5b3ffab05ae172adef859886c5c51475a8c6d46318f9b34ebc94"
+    }
+  ],
+  "within_donor_registration": {
+    "heart": "Published overview-to-6.51um acquisition transform, units verified; no independent anatomical error supplied",
+    "vagus_c10": "Original XML to EXF to stitched export, scale=1 verified; image correspondence visually checked at Z84",
+    "vagus_c1": "XML / derived label grid numerical consistency, primary intensity visual checks on four planes, author LPS landmarks via inverse sform. No IHC plane transform or independent anatomical error.",
+    "h01": "Image pyramid, proofread mask and existing skeleton share the release-native nm frame; no registration to other specimens."
+  },
+  "h01_class_windows": {
+    "count": 6,
+    "planes_per_window": 32,
+    "image_resolution_nm": [
+      4,
+      4,
+      33
+    ],
+    "mask_resolution_nm": [
+      8,
+      8,
+      33
+    ],
+    "source_point_mask_matches": 6,
+    "classes_manually_validated": false,
+    "local": "compartiments.html",
+    "provenance": "assets/h01-class-images/PROVENANCE.json"
+  },
+  "consolidation": {
+    "first_samples_all_five_sources": true,
+    "reader_trials_completed": false,
+    "specialist_anatomical_validation_completed": false,
+    "continuous_cross_specimen_registration": false,
+    "temporal_propagation_measured": false,
+    "programme": "suite.html#consolidation"
+  },
+  "allen_comparison": {
+    "cells": 3,
+    "donors": 2,
+    "sweeps": 9,
+    "sample_pairs": 540000,
+    "source_spike_detections": 41,
+    "signals_independently_compared": 1080000,
+    "matched_cohort": false,
+    "spatial_propagation_localized": false
+  },
+  "allen_published_indicators": {
+    "sweeps": 9,
+    "records_acquired": 196,
+    "by_id_source_concordances": 9,
+    "api_spike_counts_matching": 6,
+    "api_spike_counts_missing": 3,
+    "sample_period_us": 20,
+    "raw_signal_quality_metrics_reestimated": false
+  },
+  "allen_paired_views": {
+    "existing_trials": 9,
+    "possible_ordered_pairs": 81,
+    "maximum_retained_comparison_recordings": 2,
+    "signals_modified": false,
+    "amplitude_normalization": false,
+    "display_only_stimulus_alignment": true,
+    "coupled_biological_prediction": false,
+    "provenance": "assets/allen-pairs/PROVENANCE.json"
+  },
+  "shared_navigation": {
+    "pages": 19,
+    "reference_views": 19,
+    "explicit_relations": 18,
+    "source_changes_disclosed": true,
+    "curated_destinations_not_registration": true,
+    "map": "assets/navigation/MAP.json",
+    "reader_trials_completed": false
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "groups": [
+    {
+      "group": "C01",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "C02",
+      "cards": 17,
+      "interval": "I200",
+      "expected": 17
+    },
+    {
+      "group": "C03",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "C04",
+      "cards": 7,
+      "interval": "I01",
+      "expected": 7
+    },
+    {
+      "group": "C05",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "C06",
+      "cards": 8,
+      "interval": "I01",
+      "expected": 8
+    },
+    {
+      "group": "C07",
+      "cards": 11,
+      "interval": "I01",
+      "expected": 11
+    },
+    {
+      "group": "C08",
+      "cards": 13,
+      "interval": "I01",
+      "expected": 13
+    },
+    {
+      "group": "C09",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "C10",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "C11",
+      "cards": 8,
+      "interval": "I01",
+      "expected": 8
+    },
+    {
+      "group": "C12",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "C13",
+      "cards": 80,
+      "interval": "I01",
+      "expected": 80
+    },
+    {
+      "group": "C14",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "TRAJET:P01:0",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "TRAJET:P01:1",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "TRAJET:P01:2",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "TRAJET:P01:3",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "TRAJET:P02-VTA:0",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "TRAJET:P02-VTA:1",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "TRAJET:P02-VTA:2",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "TRAJET:P02-LC:0",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "TRAJET:P02-LC:1",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "TRAJET:P02-LC:2",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "TRAJET:P03-PHYSIO:0",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "TRAJET:P03-PHYSIO:1",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "TRAJET:P03-PHYSIO:2",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "TRAJET:P03-RAPPORT:0",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "TRAJET:P03-RAPPORT:1",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "TRAJET:P03-SYNCHRO:0",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "TRAJET:P03-SYNCHRO:1",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "TRAJET:P03-ISO-PANIC:0",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "TRAJET:P03-ISO-PANIC:1",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "TRAJET:BANG-S24:0",
+      "cards": 7,
+      "interval": "I01",
+      "expected": 7
+    },
+    {
+      "group": "TRAJET:BANG-S24:1",
+      "cards": 7,
+      "interval": "I01",
+      "expected": 7
+    },
+    {
+      "group": "TRAJET:BANG-S24:2",
+      "cards": 2,
+      "interval": "I01",
+      "expected": 2
+    },
+    {
+      "group": "ARCHIVE:syn",
+      "cards": 14,
+      "interval": "I01",
+      "expected": 14
+    },
+    {
+      "group": "ARCHIVE:vision",
+      "cards": 10,
+      "interval": "I01",
+      "expected": 10
+    },
+    {
+      "group": "ARCHIVE:pain",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "ARCHIVE:sleep",
+      "cards": 8,
+      "interval": "I01",
+      "expected": 8
+    },
+    {
+      "group": "ARCHIVE:stable",
+      "cards": 10,
+      "interval": "I01",
+      "expected": 10
+    },
+    {
+      "group": "EXTRAIT:SEROTONINE",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "EXTRAIT:DA-MOTEUR",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:AIR-DA",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:AIR-FORCE",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:4AP",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:TTX",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:THERMIQUE",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:CARGO",
+      "cards": 3,
+      "interval": "I01",
+      "expected": 3
+    },
+    {
+      "group": "EXTRAIT:REACID",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "PROTOCOLE:VTA-CHR2",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "PROTOCOLE:VTA-ARCHT",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "MESURE:LC-PHOTOMETRIE",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "MESURE:COEUR-TRAP2",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "MESURE:ISO-DIAL",
+      "cards": 4,
+      "interval": "I01",
+      "expected": 4
+    },
+    {
+      "group": "HUMAIN:CFS-CARDIAQUE",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "HUMAIN:RESP-MESURE",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "HUMAIN:FACIAL-RESSENTI",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "HUMAIN:NEZ-IEEG",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "HUMAIN:NEZ-EXPRESSIONS",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "HUMAIN:NEZ-MEMOIRE",
+      "cards": 7,
+      "interval": "I01",
+      "expected": 7
+    },
+    {
+      "group": "HUMAIN:COEUR-BLINK",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "HUMAIN:COEUR-JUGEMENT-IRM",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "HUMAIN:NEZ-P8",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "DOSSIER:P01",
+      "cards": 11,
+      "interval": "I01",
+      "expected": 11
+    },
+    {
+      "group": "DOSSIER:P02-VTA",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "DOSSIER:P02-LC",
+      "cards": 8,
+      "interval": "I01",
+      "expected": 8
+    },
+    {
+      "group": "DOSSIER:P03-PHYSIO",
+      "cards": 7,
+      "interval": "I01",
+      "expected": 7
+    },
+    {
+      "group": "DOSSIER:P03-RAPPORT",
+      "cards": 6,
+      "interval": "I01",
+      "expected": 6
+    },
+    {
+      "group": "DOSSIER:P03-REPERES",
+      "cards": 7,
+      "interval": "I01",
+      "expected": 7
+    },
+    {
+      "group": "DOSSIER:P03-SYNCHRO",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    },
+    {
+      "group": "DOSSIER:P03-ISO-PANIC",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "DOSSIER:P03-ISO-DIAL",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "DOSSIER:BANG-S24",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "ETUDE:EMO-FILM",
+      "cards": 11,
+      "interval": "I01",
+      "expected": 11
+    },
+    {
+      "group": "ETUDE:HASSANPOUR",
+      "cards": 9,
+      "interval": "I01",
+      "expected": 9
+    },
+    {
+      "group": "ETUDE:INMAN",
+      "cards": 10,
+      "interval": "I01",
+      "expected": 10
+    },
+    {
+      "group": "FILMS",
+      "cards": 5,
+      "interval": "I01",
+      "expected": 5
+    }
+  ],
+  "mechanisms": [
+    {
+      "group": "C01",
+      "interval": "I01",
+      "phase": "1",
+      "micro": {
+        "group": "C01",
+        "interval": "I01",
+        "playing": "false",
+        "progress": "0.5000"
+      }
+    },
+    {
+      "group": "C02",
+      "interval": "I200",
+      "phase": "1",
+      "micro": {
+        "group": "C02",
+        "interval": "I200",
+        "playing": "false",
+        "progress": "0.5000"
+      }
+    },
+    {
+      "group": "C08",
+      "interval": "I03",
+      "phase": "1",
+      "micro": {
+        "group": "C08",
+        "interval": "I03",
+        "playing": "false",
+        "progress": "0.5000"
+      }
+    },
+    {
+      "group": "ETUDE:HASSANPOUR",
+      "interval": "I01",
+      "phase": "1",
+      "micro": {
+        "group": "ETUDE:HASSANPOUR",
+        "interval": "I01",
+        "playing": "false",
+        "progress": "0.5000"
+      }
+    },
+    {
+      "group": "ETUDE:INMAN",
+      "interval": "I01",
+      "phase": "1",
+      "micro": {
+        "group": "ETUDE:INMAN",
+        "interval": "I01",
+        "playing": "false",
+        "progress": "0.5000"
+      }
+    },
+    {
+      "group": "FILMS",
+      "interval": "I01",
+      "phase": "1",
+      "micro": {
+        "group": "FILMS",
+        "interval": "I01",
+        "playing": "false",
+        "progress": "0.5000"
+      }
+    }
+  ],
+  "transitionObserved": "C01 I01 → I02 → arrêt 100 %, proposition I05",
+  "pausedSeekStable": true,
+  "anatomicalTraceObserved": "ETUDE:HASSANPOUR I05",
+  "mobile": {
+    "requestedWidth": 390,
+    "requestedHeight": 844,
+    "measuredContentWidth": 375,
+    "scrollWidth": 375
+  },
+  "console": [
+    {
+      "level": "error",
+      "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "timestamp": "2026-10-18T16:45:51.326Z"
+    },
+    {
+      "level": "error",
+      "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "timestamp": "2026-10-18T16:47:05.651Z"
+    }
+  ]
+}

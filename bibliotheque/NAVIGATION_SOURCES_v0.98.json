@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8898/",
+  "source_identity_in_atlas": true,
+  "node_specific_evidence_in_viewer": true,
+  "node_specific_directory_link": true,
+  "serotonin_protocol_records": 6,
+  "dose_and_route_localized_to_administration": true,
+  "context_records_separate": true,
+  "eshel_wrong_url_absent": true,
+  "duplicate_context_references_grouped": true,
+  "mobile_overflow": false,
+  "javascript_errors": []
+}

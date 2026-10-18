@@ -1,5 +1,5 @@
 {
-  "version": "0.98",
+  "version": "0.130.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -316,5 +316,23 @@
     "kind": "AI-agent technical counter-review",
     "human_anatomical_validation": false,
     "provenance": "assets/bigbrain-counterreview-v0128_1/PROVENANCE.json"
-  }
+  },
+  "visual_reader": {
+    "chains": "C01–C14",
+    "groups": 78,
+    "intervals": 544,
+    "visual_seconds_per_interval": [
+      6,
+      12,
+      24,
+      60,
+      120
+    ],
+    "measured_time_conversion": false,
+    "continuous_human_anatomical_path_established": false,
+    "scientific_or_human_validation": false,
+    "documentation": "publication/v0.130.0/GUIDE.md"
+  },
+  "previous_public_version": "0.129.0",
+  "technical_review_preserved": "0.128.1"
 }

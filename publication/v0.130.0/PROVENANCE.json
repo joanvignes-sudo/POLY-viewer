@@ -1,0 +1,19 @@
+{
+  "base": "POLY_TOUTES_CHAINES_2026-10-18",
+  "unchanged_payload_files": 3043,
+  "changed": [
+    "assets/catalogue/app.js",
+    "assets/catalogue/micro.js",
+    "assets/corps/scene.js",
+    "assets/corps/style.css",
+    "corps.html",
+    "index.html",
+    "micro.html"
+  ],
+  "added": [
+    "assets/catalogue/journey.js"
+  ],
+  "canonical_catalogue_unchanged": true,
+  "publication": "Autorisation de Joan après revue visuelle, 18 octobre 2026",
+  "historical_delivery_publication_status": "suspendue"
+}

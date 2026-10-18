@@ -1,0 +1,68 @@
+{
+  "version": "0.116",
+  "status": "verified_published_rights_metadata",
+  "retrieved_utc_date": "2026-10-13",
+  "records": [
+    {
+      "dataset_id": 674,
+      "dataset_version": 1,
+      "doi": "10.26275/imas-52lf",
+      "landing_page": "https://sparc.science/datasets/674/version/1",
+      "rights": {
+        "rights": "Creative Commons Attribution 4.0 International",
+        "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "schemeUri": "https://spdx.org/licenses/",
+        "rightsIdentifier": "cc-by-4.0",
+        "rightsIdentifierScheme": "SPDX"
+      },
+      "dataset_metadata": {
+        "path": "assets/organs/originals/sparc-source-dataset.json",
+        "sha256": "a2cf67b3cabbd8d65d334c8c0297a2c9c0f5ed5573bde4a2fabf96b89105685f"
+      },
+      "notice": {
+        "path": "assets/licenses/datacite-674-v1.json",
+        "sha256": "a9af12a6e7906c818cca5da9efaec4e965c22206a462eaab4d61b296d7e27ac7",
+        "bytes": 20506,
+        "url": "https://api.datacite.org/dois/10.26275/imas-52lf"
+      }
+    },
+    {
+      "dataset_id": 426,
+      "dataset_version": 7,
+      "doi": "10.26275/tjzi-muqm",
+      "landing_page": "https://sparc.science/datasets/426/version/7",
+      "rights": {
+        "rights": "Creative Commons Attribution 4.0 International",
+        "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "schemeUri": "https://spdx.org/licenses/",
+        "rightsIdentifier": "cc-by-4.0",
+        "rightsIdentifierScheme": "SPDX"
+      },
+      "dataset_metadata": {
+        "path": "assets/organs/originals/sparc-dataset.json",
+        "sha256": "668356ccbfbd8e99763ae101244d9b52dcb842bf069dd1f320e0f84410aebf41"
+      },
+      "notice": {
+        "path": "assets/licenses/datacite-426-v7.json",
+        "sha256": "ad8f87caee963c1a1eed5146b08de7da856b9d2124ebfcd5ce19666be6c7203d",
+        "bytes": 14483,
+        "url": "https://api.datacite.org/dois/10.26275/tjzi-muqm"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/licenses/datacite-674-v1.json",
+      "sha256": "a9af12a6e7906c818cca5da9efaec4e965c22206a462eaab4d61b296d7e27ac7",
+      "bytes": 20506,
+      "url": "https://api.datacite.org/dois/10.26275/imas-52lf"
+    },
+    {
+      "path": "assets/licenses/datacite-426-v7.json",
+      "sha256": "ad8f87caee963c1a1eed5146b08de7da856b9d2124ebfcd5ce19666be6c7203d",
+      "bytes": 14483,
+      "url": "https://api.datacite.org/dois/10.26275/tjzi-muqm"
+    }
+  ],
+  "scope": "Exact DOI records for SPARC 674 version 1 and 426 version 7, matched to previously acquired dataset metadata. Published rights declaration, not a separate legal opinion or a claim about later versions. Original provenance files kept unchanged; author credits retained."
+}

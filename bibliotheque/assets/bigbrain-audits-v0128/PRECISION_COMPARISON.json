@@ -1,0 +1,226 @@
+{
+  "status": "completed",
+  "scope": "Re-evaluation of only the 693 originally detected pairs; no search for new pairs, no claim of a globally contact-free float64 mesh. Float64 mapping evaluation itself remains finite precision.",
+  "initial_pairs": 693,
+  "unrounded_mapping_remaining_pairs": 693,
+  "pinned_float64_remaining_pairs": 693,
+  "records": [
+    {
+      "key": "context-left:11342",
+      "initial_pairs": 5,
+      "maximum_stored_position_difference_mm": 1.7845854896245337e-06,
+      "unrounded_mapping_float64": 5,
+      "float64_with_source_corners_pinned": 5
+    },
+    {
+      "key": "context-left:46270",
+      "initial_pairs": 6,
+      "maximum_stored_position_difference_mm": 1.0995313046521765e-06,
+      "unrounded_mapping_float64": 6,
+      "float64_with_source_corners_pinned": 6
+    },
+    {
+      "key": "context-left:120660",
+      "initial_pairs": 8,
+      "maximum_stored_position_difference_mm": 1.619085822952614e-06,
+      "unrounded_mapping_float64": 8,
+      "float64_with_source_corners_pinned": 8
+    },
+    {
+      "key": "context-left:126296",
+      "initial_pairs": 33,
+      "maximum_stored_position_difference_mm": 2.5606708831395926e-06,
+      "unrounded_mapping_float64": 33,
+      "float64_with_source_corners_pinned": 33
+    },
+    {
+      "key": "context-left:213104",
+      "initial_pairs": 8,
+      "maximum_stored_position_difference_mm": 2.083798330446766e-06,
+      "unrounded_mapping_float64": 8,
+      "float64_with_source_corners_pinned": 8
+    },
+    {
+      "key": "context-left:221730",
+      "initial_pairs": 6,
+      "maximum_stored_position_difference_mm": 3.910778761026981e-06,
+      "unrounded_mapping_float64": 6,
+      "float64_with_source_corners_pinned": 6
+    },
+    {
+      "key": "context-left:253794",
+      "initial_pairs": 5,
+      "maximum_stored_position_difference_mm": 3.6091749596706587e-06,
+      "unrounded_mapping_float64": 5,
+      "float64_with_source_corners_pinned": 5
+    },
+    {
+      "key": "context-left:280961",
+      "initial_pairs": 13,
+      "maximum_stored_position_difference_mm": 1.7927365957076235e-06,
+      "unrounded_mapping_float64": 13,
+      "float64_with_source_corners_pinned": 13
+    },
+    {
+      "key": "context-left:280969",
+      "initial_pairs": 8,
+      "maximum_stored_position_difference_mm": 1.8029716288443071e-06,
+      "unrounded_mapping_float64": 8,
+      "float64_with_source_corners_pinned": 8
+    },
+    {
+      "key": "context-left:290647",
+      "initial_pairs": 9,
+      "maximum_stored_position_difference_mm": 1.8461030095048179e-06,
+      "unrounded_mapping_float64": 9,
+      "float64_with_source_corners_pinned": 9
+    },
+    {
+      "key": "context-right:5535",
+      "initial_pairs": 209,
+      "maximum_stored_position_difference_mm": 2.0367788115814615e-06,
+      "unrounded_mapping_float64": 209,
+      "float64_with_source_corners_pinned": 209
+    },
+    {
+      "key": "context-right:28988",
+      "initial_pairs": 3,
+      "maximum_stored_position_difference_mm": 1.8146315673214602e-06,
+      "unrounded_mapping_float64": 3,
+      "float64_with_source_corners_pinned": 3
+    },
+    {
+      "key": "context-right:40617",
+      "initial_pairs": 4,
+      "maximum_stored_position_difference_mm": 2.1265191210999314e-06,
+      "unrounded_mapping_float64": 4,
+      "float64_with_source_corners_pinned": 4
+    },
+    {
+      "key": "context-right:42142",
+      "initial_pairs": 13,
+      "maximum_stored_position_difference_mm": 1.8781722518719026e-06,
+      "unrounded_mapping_float64": 13,
+      "float64_with_source_corners_pinned": 13
+    },
+    {
+      "key": "context-right:78777",
+      "initial_pairs": 4,
+      "maximum_stored_position_difference_mm": 2.3443788245841057e-06,
+      "unrounded_mapping_float64": 4,
+      "float64_with_source_corners_pinned": 4
+    },
+    {
+      "key": "context-right:94101",
+      "initial_pairs": 14,
+      "maximum_stored_position_difference_mm": 2.0770681993548877e-06,
+      "unrounded_mapping_float64": 14,
+      "float64_with_source_corners_pinned": 14
+    },
+    {
+      "key": "context-right:104293",
+      "initial_pairs": 8,
+      "maximum_stored_position_difference_mm": 1.7920505093789493e-06,
+      "unrounded_mapping_float64": 8,
+      "float64_with_source_corners_pinned": 8
+    },
+    {
+      "key": "context-right:107130",
+      "initial_pairs": 29,
+      "maximum_stored_position_difference_mm": 2.418293631081875e-06,
+      "unrounded_mapping_float64": 29,
+      "float64_with_source_corners_pinned": 29
+    },
+    {
+      "key": "context-right:127113",
+      "initial_pairs": 9,
+      "maximum_stored_position_difference_mm": 2.5384898315660268e-06,
+      "unrounded_mapping_float64": 9,
+      "float64_with_source_corners_pinned": 9
+    },
+    {
+      "key": "context-right:144903",
+      "initial_pairs": 8,
+      "maximum_stored_position_difference_mm": 2.3756800534885e-06,
+      "unrounded_mapping_float64": 8,
+      "float64_with_source_corners_pinned": 8
+    },
+    {
+      "key": "context-right:175226",
+      "initial_pairs": 6,
+      "maximum_stored_position_difference_mm": 1.5265970504247491e-06,
+      "unrounded_mapping_float64": 6,
+      "float64_with_source_corners_pinned": 6
+    },
+    {
+      "key": "context-right:183351",
+      "initial_pairs": 29,
+      "maximum_stored_position_difference_mm": 2.0191613573417363e-06,
+      "unrounded_mapping_float64": 29,
+      "float64_with_source_corners_pinned": 29
+    },
+    {
+      "key": "context-right:187239",
+      "initial_pairs": 8,
+      "maximum_stored_position_difference_mm": 2.5714624214389763e-06,
+      "unrounded_mapping_float64": 8,
+      "float64_with_source_corners_pinned": 8
+    },
+    {
+      "key": "context-right:195325",
+      "initial_pairs": 7,
+      "maximum_stored_position_difference_mm": 1.9012766392800102e-06,
+      "unrounded_mapping_float64": 7,
+      "float64_with_source_corners_pinned": 7
+    },
+    {
+      "key": "context-right:214958",
+      "initial_pairs": 10,
+      "maximum_stored_position_difference_mm": 3.4111569395827928e-06,
+      "unrounded_mapping_float64": 10,
+      "float64_with_source_corners_pinned": 10
+    },
+    {
+      "key": "context-right:226398",
+      "initial_pairs": 26,
+      "maximum_stored_position_difference_mm": 3.709127938726124e-06,
+      "unrounded_mapping_float64": 26,
+      "float64_with_source_corners_pinned": 26
+    },
+    {
+      "key": "context-right:228967",
+      "initial_pairs": 11,
+      "maximum_stored_position_difference_mm": 3.6503269697470156e-06,
+      "unrounded_mapping_float64": 11,
+      "float64_with_source_corners_pinned": 11
+    },
+    {
+      "key": "context-right:264720",
+      "initial_pairs": 9,
+      "maximum_stored_position_difference_mm": 1.8059783207867042e-06,
+      "unrounded_mapping_float64": 9,
+      "float64_with_source_corners_pinned": 9
+    },
+    {
+      "key": "context-right:279627",
+      "initial_pairs": 152,
+      "maximum_stored_position_difference_mm": 1.7643929333909342e-06,
+      "unrounded_mapping_float64": 152,
+      "float64_with_source_corners_pinned": 152
+    },
+    {
+      "key": "context-right:283465",
+      "initial_pairs": 23,
+      "maximum_stored_position_difference_mm": 1.4648252332081995e-06,
+      "unrounded_mapping_float64": 23,
+      "float64_with_source_corners_pinned": 23
+    },
+    {
+      "key": "context-right:301565",
+      "initial_pairs": 10,
+      "maximum_stored_position_difference_mm": 1.9151298407723063e-06,
+      "unrounded_mapping_float64": 10,
+      "float64_with_source_corners_pinned": 10
+    }
+  ]
+}

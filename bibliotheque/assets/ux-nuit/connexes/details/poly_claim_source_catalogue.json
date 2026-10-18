@@ -1,0 +1,40 @@
+{
+  "id": "poly:claim:source_catalogue",
+  "kind": "claim",
+  "title": "Le catalogue décrit l’acquisition",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      0
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "source_catalogue",
+      "claim": "Le catalogue décrit l’acquisition",
+      "status": "contrôlé",
+      "evidence_level": "fichiers et programme",
+      "scope": "70 448 références ; pas autant de TIFF acquis",
+      "next_acceptance_gate": "Pour affirmer la disponibilité des pixels supplémentaires : obtenir et contrôler leurs fichiers.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CATALOGUE_PRECISION_2026-10-14/CATALOGUE_BILAN.json",
+          "selector": [
+            "source_count"
+          ],
+          "value": 70448,
+          "original_sha256": "098e9cac48c86503a2cd03fdef43e853ed418cbb6e74bdbb031a98a0c374ba1e",
+          "sha256": "d1c7e4ae1757cd3ded2c30f18c18ed8d20eb0f2bba7c0902ec696beec669e83f"
+        }
+      ]
+    }
+  }
+}

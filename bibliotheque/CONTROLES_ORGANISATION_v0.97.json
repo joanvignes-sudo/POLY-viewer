@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "version": "0.97",
+  "chains": 14,
+  "paths": 50,
+  "nodes": 172,
+  "evidence": 165,
+  "observations": 127,
+  "measured_observations": 25,
+  "all_values_unchanged": true,
+  "source_links_restored": 4,
+  "stale_supports_reclassified_as_context": 24,
+  "exact_duplicate_groups": 10,
+  "canonical_documents": 205,
+  "documents_retained": 215,
+  "timings_concordant": 45,
+  "extractions_indexed": 128,
+  "extractions_without_route_assignment": [
+    "S22-CIBLE",
+    "S22-DOSE",
+    "S22-VOIE",
+    "S22-CONTROLE",
+    "S22-EXCLUSION",
+    "S22-HISTO",
+    "VTA-VALVE"
+  ],
+  "immutable_anatomical_files": 628,
+  "atlas_embedded_export_matches_download": true,
+  "limits": [
+    "Source linkage and identity checks are not an exhaustive rereading of every primary article.",
+    "Context references do not independently establish each step.",
+    "Unassigned extractions remain searchable in the complete register; no route assignment invented."
+  ]
+}

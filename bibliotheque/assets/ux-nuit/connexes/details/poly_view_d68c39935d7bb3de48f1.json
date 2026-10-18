@@ -1,0 +1,29 @@
+{
+  "id": "poly:view:d68c39935d7bb3de48f1",
+  "kind": "view",
+  "title": "Examiner les indicateurs de qualité",
+  "category": "neurones",
+  "provenance": {
+    "file": "ETAT_CANONIQUE.json",
+    "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7",
+    "selector": [
+      "categories",
+      1,
+      "links",
+      2
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "href": "neurones.html?sample=allen-637038252&sweep=22&quality=1#quality-panel",
+    "source_label": "Allen · cellules humaines",
+    "scientific_identity": {
+      "value": null,
+      "reason": "Une destination de navigation ne définit pas un spécimen."
+    }
+  }
+}

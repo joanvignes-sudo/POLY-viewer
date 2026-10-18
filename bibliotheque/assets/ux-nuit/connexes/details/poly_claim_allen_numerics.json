@@ -1,0 +1,49 @@
+{
+  "id": "poly:claim:allen_numerics",
+  "kind": "claim",
+  "title": "Les mesures et pentes Allen ciblées sont reproduites",
+  "category": "claims",
+  "provenance": {
+    "file": "docs/canon-2026-10-15/REGISTRE_PREUVES.json",
+    "sha256": "ff21cc267c43874099f869d7c8a03d99485bb9c0318f32fd9175d9d92bc5cbaf",
+    "selector": [
+      "rows",
+      9
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "source_record": {
+      "id": "allen_numerics",
+      "claim": "Les mesures et pentes Allen ciblées sont reproduites",
+      "status": "contrôlé dans ce périmètre",
+      "evidence_level": "fichiers et programme",
+      "scope": "78 essais, 312 valeurs QC, 3 pentes ; ne couvre pas tout le pipeline",
+      "next_acceptance_gate": "Nouveau calcul seulement si question/donnée nouvelle ; rester explicite sur précision, fenêtres et détection source.",
+      "proofs": [
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_STABILITE_2026-10-14/ALLEN_QC_RECALCULE.json",
+          "selector": [
+            "within_tolerance"
+          ],
+          "value": 78,
+          "original_sha256": "f815fb018965a54387253b48745f0dda5f34387221a0c11f00c69fc7be7ab039",
+          "sha256": "f815fb018965a54387253b48745f0dda5f34387221a0c11f00c69fc7be7ab039"
+        },
+        {
+          "file": "docs/canon-2026-10-15/evidence/POLY_CONTEXTE_2026-10-14/VERIFICATION_FINALE.json",
+          "selector": [
+            "three_source_slopes_match"
+          ],
+          "value": true,
+          "original_sha256": "e1480f5b78fe083d47f48ad88405755635ad3d39a9d2a3e45da91cc473d5d88c",
+          "sha256": "e1480f5b78fe083d47f48ad88405755635ad3d39a9d2a3e45da91cc473d5d88c"
+        }
+      ]
+    }
+  }
+}

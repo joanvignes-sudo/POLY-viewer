@@ -1,0 +1,29 @@
+{
+  "id": "poly:view:5b1e9f4dfa534655dfc1",
+  "kind": "view",
+  "title": "Programme et conditions restantes",
+  "category": "sources",
+  "provenance": {
+    "file": "ETAT_CANONIQUE.json",
+    "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7",
+    "selector": [
+      "categories",
+      6,
+      "links",
+      2
+    ]
+  },
+  "license": {
+    "value": null,
+    "reason": "Non précisée dans les métadonnées importées ; aucun droit de republication supplémentaire déduit."
+  },
+  "measurements": [],
+  "payload": {
+    "href": "suite.html#programme",
+    "source_label": "Références · limites · programme",
+    "scientific_identity": {
+      "value": null,
+      "reason": "Une destination de navigation ne définit pas un spécimen."
+    }
+  }
+}
