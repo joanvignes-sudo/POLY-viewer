@@ -1,0 +1,33 @@
+name: Retour scientifique POLY
+description: Signaler une erreur, proposer une source ou commenter un mécanisme
+title: "[Retour scientifique] "
+labels: []
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Nature du retour
+      options:
+        - Correction factuelle
+        - Source scientifique
+        - Question
+        - Problème d'interface
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page ou chaîne concernée
+      placeholder: URL de la page POLY ou identifiant C13
+  - type: textarea
+    id: detail
+    attributes:
+      label: Observation ou correction proposée
+      description: Ne transmettez pas de données médicales personnelles.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources ou références (facultatif)
