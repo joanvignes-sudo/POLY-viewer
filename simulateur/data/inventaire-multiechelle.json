@@ -1,0 +1,1948 @@
+{
+  "schema": "poly.multiscale-inventory/1",
+  "vision": "Navigation reliée du corps et des organes aux tissus, cellules, microbes, molécules et structures atomiques, avec interactions environnementales.",
+  "exhaustive": false,
+  "inventory_type": "coverage_and_research_backlog; topics are not validated causal interactions",
+  "families": [
+    "Anatomie et compartiments",
+    "Mécanique corporelle",
+    "Signaux électriques et nerveux",
+    "Sens et environnement",
+    "Cardiovasculaire et sang",
+    "Respiration",
+    "Biochimie et énergie",
+    "Cellules et organites",
+    "Digestion et foie",
+    "Rein et homéostasie",
+    "Endocrinologie et régulation",
+    "Immunité et lymphatique",
+    "Microbiomes et hôte",
+    "Molécules et atomes",
+    "Reproduction et développement",
+    "Interactions environnementales"
+  ],
+  "entries": [
+    {
+      "id": "INV-01-01",
+      "family": "Anatomie et compartiments",
+      "topic": "Organes et sous-structures",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-01-02",
+      "family": "Anatomie et compartiments",
+      "topic": "Latéralité et variantes anatomiques",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-01-03",
+      "family": "Anatomie et compartiments",
+      "topic": "Tissus et matrice extracellulaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-01-04",
+      "family": "Anatomie et compartiments",
+      "topic": "Types cellulaires et biomarqueurs",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-02-01",
+      "family": "Mécanique corporelle",
+      "topic": "Muscles et tendons",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-02-02",
+      "family": "Mécanique corporelle",
+      "topic": "Articulations et ligaments",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-02-03",
+      "family": "Mécanique corporelle",
+      "topic": "Appuis et forces du sol",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-02-04",
+      "family": "Mécanique corporelle",
+      "topic": "Coordination des membres",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-02-05",
+      "family": "Mécanique corporelle",
+      "topic": "Posture et équilibre",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-01",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Potentiels de membrane",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-02",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Conduction axonale",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-03",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Synapses et neurotransmetteurs",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-04",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Jonction neuromusculaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-05",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Afférences proprioceptives",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-06",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Afférences cutanées",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-07",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Commande motrice descendante",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-03-08",
+      "family": "Signaux électriques et nerveux",
+      "topic": "Réseaux spinaux et modulation",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-01",
+      "family": "Sens et environnement",
+      "topic": "Vision et lumière",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-02",
+      "family": "Sens et environnement",
+      "topic": "Vestibule et gravité",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-03",
+      "family": "Sens et environnement",
+      "topic": "Audition et vibrations",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-04",
+      "family": "Sens et environnement",
+      "topic": "Olfaction et molécules volatiles",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-05",
+      "family": "Sens et environnement",
+      "topic": "Goût et aliments",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-06",
+      "family": "Sens et environnement",
+      "topic": "Douleur et lésions",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-07",
+      "family": "Sens et environnement",
+      "topic": "Pression et toucher",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-04-08",
+      "family": "Sens et environnement",
+      "topic": "Température et humidité",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-01",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Électrophysiologie cardiaque",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-02",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Contraction et valves cardiaques",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-03",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Débit et pression artérielle",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-04",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Retour veineux et pompe musculaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-05",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Microcirculation et échanges",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-06",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Globules rouges et transport des gaz",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-07",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Globules blancs et migration",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-08",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Plaquettes et coagulation",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-05-09",
+      "family": "Cardiovasculaire et sang",
+      "topic": "Plasma et transport moléculaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-06-01",
+      "family": "Respiration",
+      "topic": "Ventilation et mécanique pulmonaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-06-02",
+      "family": "Respiration",
+      "topic": "Échanges alvéolocapillaires",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-06-03",
+      "family": "Respiration",
+      "topic": "Transport O₂/CO₂ et hémoglobine",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-06-04",
+      "family": "Respiration",
+      "topic": "Commande ventilatoire et chimiosensibilité",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-06-05",
+      "family": "Respiration",
+      "topic": "Clairance mucociliaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-01",
+      "family": "Biochimie et énergie",
+      "topic": "Enzymes et réactions",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-02",
+      "family": "Biochimie et énergie",
+      "topic": "Glycolyse",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-03",
+      "family": "Biochimie et énergie",
+      "topic": "Métabolisme mitochondrial et ATP",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-04",
+      "family": "Biochimie et énergie",
+      "topic": "Métabolisme lipidique",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-05",
+      "family": "Biochimie et énergie",
+      "topic": "Métabolisme des acides aminés",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-06",
+      "family": "Biochimie et énergie",
+      "topic": "Pompes ioniques et gradients",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-07",
+      "family": "Biochimie et énergie",
+      "topic": "Tampons et équilibre acido-basique",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-07-08",
+      "family": "Biochimie et énergie",
+      "topic": "Stress oxydant",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-01",
+      "family": "Cellules et organites",
+      "topic": "Membranes et transport",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-02",
+      "family": "Cellules et organites",
+      "topic": "Cytosquelette et force",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-03",
+      "family": "Cellules et organites",
+      "topic": "Noyau et expression génique",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-04",
+      "family": "Cellules et organites",
+      "topic": "Réticulum et synthèse protéique",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-05",
+      "family": "Cellules et organites",
+      "topic": "Mitochondries et énergie",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-06",
+      "family": "Cellules et organites",
+      "topic": "Vésicules et trafic",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-08-07",
+      "family": "Cellules et organites",
+      "topic": "Cycle cellulaire et mort cellulaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-09-01",
+      "family": "Digestion et foie",
+      "topic": "Motricité digestive",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-09-02",
+      "family": "Digestion et foie",
+      "topic": "Sécrétions et enzymes digestives",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-09-03",
+      "family": "Digestion et foie",
+      "topic": "Absorption et transport intestinal",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-09-04",
+      "family": "Digestion et foie",
+      "topic": "Fonctions hépatiques",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-09-05",
+      "family": "Digestion et foie",
+      "topic": "Bile et cycle entérohépatique",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-09-06",
+      "family": "Digestion et foie",
+      "topic": "Barrière intestinale",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-10-01",
+      "family": "Rein et homéostasie",
+      "topic": "Filtration glomérulaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-10-02",
+      "family": "Rein et homéostasie",
+      "topic": "Réabsorption et sécrétion tubulaire",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-10-03",
+      "family": "Rein et homéostasie",
+      "topic": "Eau et électrolytes",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-10-04",
+      "family": "Rein et homéostasie",
+      "topic": "Équilibre acido-basique rénal",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-10-05",
+      "family": "Rein et homéostasie",
+      "topic": "Miction et voies urinaires",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-01",
+      "family": "Endocrinologie et régulation",
+      "topic": "Axes hormonaux",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-02",
+      "family": "Endocrinologie et régulation",
+      "topic": "Insuline et glucagon",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-03",
+      "family": "Endocrinologie et régulation",
+      "topic": "Thyroïde et métabolisme",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-04",
+      "family": "Endocrinologie et régulation",
+      "topic": "Surrénales et stress",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-05",
+      "family": "Endocrinologie et régulation",
+      "topic": "Régulation hydrosodée",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-06",
+      "family": "Endocrinologie et régulation",
+      "topic": "Boucles autonomes et baroréflexes",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-11-07",
+      "family": "Endocrinologie et régulation",
+      "topic": "Rythmes circadiens et sommeil",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-12-01",
+      "family": "Immunité et lymphatique",
+      "topic": "Reconnaissance innée",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-12-02",
+      "family": "Immunité et lymphatique",
+      "topic": "Immunité adaptative",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-12-03",
+      "family": "Immunité et lymphatique",
+      "topic": "Inflammation",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-12-04",
+      "family": "Immunité et lymphatique",
+      "topic": "Lymphe et drainage",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-12-05",
+      "family": "Immunité et lymphatique",
+      "topic": "Cicatrisation et réparation",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-12-06",
+      "family": "Immunité et lymphatique",
+      "topic": "Complément et médiateurs",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-13-01",
+      "family": "Microbiomes et hôte",
+      "topic": "Microbiote intestinal",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-13-02",
+      "family": "Microbiomes et hôte",
+      "topic": "Microbiote cutané",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-13-03",
+      "family": "Microbiomes et hôte",
+      "topic": "Microbiote buccal",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-13-04",
+      "family": "Microbiomes et hôte",
+      "topic": "Métabolites microbiens",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-13-05",
+      "family": "Microbiomes et hôte",
+      "topic": "Barrières et immunité de l’hôte",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-13-06",
+      "family": "Microbiomes et hôte",
+      "topic": "Variations liées au site et à l’individu",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-14-01",
+      "family": "Molécules et atomes",
+      "topic": "Structures des protéines",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-14-02",
+      "family": "Molécules et atomes",
+      "topic": "Substrats et produits",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-14-03",
+      "family": "Molécules et atomes",
+      "topic": "Ions et éléments chimiques",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-14-04",
+      "family": "Molécules et atomes",
+      "topic": "Liaisons et changements de conformation",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-14-05",
+      "family": "Molécules et atomes",
+      "topic": "Diffusion et collisions moléculaires",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-15-01",
+      "family": "Reproduction et développement",
+      "topic": "Appareil reproducteur féminin",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-15-02",
+      "family": "Reproduction et développement",
+      "topic": "Appareil reproducteur masculin",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-15-03",
+      "family": "Reproduction et développement",
+      "topic": "Gamétogenèse et cycles",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-15-04",
+      "family": "Reproduction et développement",
+      "topic": "Grossesse et interfaces maternofœtales",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-15-05",
+      "family": "Reproduction et développement",
+      "topic": "Croissance, vieillissement et renouvellement",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-16-01",
+      "family": "Interactions environnementales",
+      "topic": "Air et gaz inhalés",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-16-02",
+      "family": "Interactions environnementales",
+      "topic": "Nutrition et eau ingérées",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-16-03",
+      "family": "Interactions environnementales",
+      "topic": "Chaleur et rayonnement",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-16-04",
+      "family": "Interactions environnementales",
+      "topic": "Microorganismes et exposition",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-16-05",
+      "family": "Interactions environnementales",
+      "topic": "Substances chimiques et médicaments",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    },
+    {
+      "id": "INV-16-06",
+      "family": "Interactions environnementales",
+      "topic": "Efforts, gravité et contraintes mécaniques",
+      "status": "candidate_to_document",
+      "evidence_ids": [],
+      "runtime_model": false,
+      "parameters": null,
+      "anatomical_registration": null,
+      "missing": [
+        "Entités et compartiments précis",
+        "Relation orientée et conditions",
+        "Espèce et préparation",
+        "Preuve primaire propre à la relation",
+        "Mesures, unités et incertitudes",
+        "Modèle exécutable et validation indépendante"
+      ]
+    }
+  ],
+  "documented_walking_families": [
+    {
+      "id": "motor",
+      "title": "Commande motrice",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "spinal",
+      "title": "Coordination spinale · modèle",
+      "evidence": "model",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "mechanics",
+      "title": "Propulsion et appuis",
+      "evidence": "reference",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "arms",
+      "title": "Coordination bras–jambes",
+      "evidence": "coordination",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "proprio",
+      "title": "Retour proprioceptif",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "plantar",
+      "title": "Sensibilité plantaire",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "vision",
+      "title": "Vision et régulation des pas",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "vestibular",
+      "title": "Vestibule et équilibre",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "respiration",
+      "title": "Ventilation et échanges",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "circulation",
+      "title": "Distribution circulatoire",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "venous",
+      "title": "Pompe musculoveineuse",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    },
+    {
+      "id": "energy",
+      "title": "Coût énergétique",
+      "evidence": "human",
+      "runtime": "visual_functional_only"
+    }
+  ],
+  "resources": [
+    {
+      "id": "HRA",
+      "title": "Anatomie, types cellulaires, biomarqueurs HRA",
+      "url": "https://humanatlas.io/asctb-tables",
+      "scope": "Catalogue de référence, pas preuve d’activité dynamique chez un individu."
+    },
+    {
+      "id": "REACTOME",
+      "title": "Reactome — voies et réactions humaines",
+      "url": "https://reactome.org/userguide",
+      "scope": "À importer avec espèce et niveau de preuve par réaction ; aucune importation globale réalisée."
+    },
+    {
+      "id": "RHEA",
+      "title": "Rhea — réactions biochimiques",
+      "url": "https://www.rhea-db.org/help/what-is-rhea",
+      "scope": "Réactions et participants à relier à leurs compartiments ; pas des constantes cinétiques universelles."
+    },
+    {
+      "id": "CHEBI",
+      "title": "ChEBI — entités chimiques",
+      "url": "https://www.ebi.ac.uk/chebi/about",
+      "scope": "Identifiants chimiques ; aucune concentration ou activité par défaut."
+    },
+    {
+      "id": "PDB",
+      "title": "wwPDB — structures macromoléculaires",
+      "url": "https://www.wwpdb.org/index",
+      "scope": "Structures de molécules, pas état atomique complet d’un organisme."
+    },
+    {
+      "id": "HMP",
+      "title": "NIH Human Microbiome Project",
+      "url": "https://www.hmpdacc.org/ihmp/",
+      "scope": "Références de populations et de sites corporels ; microbiote individuel non déduit."
+    }
+  ],
+  "priorities": [
+    "Organe entier disponible depuis un clic et couverture explicite",
+    "Délais et durées neuromusculaires avec origine temporelle",
+    "Une boucle appui–retour sensoriel–ajustement moteur, validation indépendante",
+    "Circulation compartimentale et transport de globules rouges",
+    "Cellules, réactions enzymatiques et espèces chimiques localisées",
+    "Microbiomes et environnement selon données de site",
+    "Structures moléculaires et atomiques ciblées, jamais un faux organisme quantique complet"
+  ],
+  "acceptance_rule": "Une interaction ne devient calculée que si compartiments, causalité, unités, conditions, paramètres, provenance et validation sont renseignés."
+}

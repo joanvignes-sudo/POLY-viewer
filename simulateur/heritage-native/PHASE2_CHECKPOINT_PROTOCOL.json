@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-17",
+  "status": "PROTOCOL_BEFORE_NATIVE_EXECUTION",
+  "scope": "Experimental checkpoint envelope and four separate-process restores",
+  "trusted_anchor": "previous qualified patched run checkpoint-1500, digest checked against committed analysis",
+  "bindings": [
+    "profile ID",
+    "engine commit",
+    "patch digest",
+    "worker digest",
+    "library digest",
+    "91-file runtime data manifest",
+    "exact serialized initial patient digest",
+    "native dt and version",
+    "clock ID/origin/time/tick",
+    "exact configuration digest, dynamic timestep disabled",
+    "current-patient digest expected separately for each already-qualified checkpoint"
+  ],
+  "unsupported": [
+    "external event ledger",
+    "pending events",
+    "fractional scheduler time",
+    "arbitrary patient migration",
+    "clinical validation"
+  ],
+  "procedure": [
+    "Validate immutable input bytes and externally expected context before native process launch",
+    "Verify worker, library and declared runtime data immediately before each launch",
+    "Send exact validated JSON bytes via stdin, no checkpoint file reopened by worker",
+    "Fresh native process per checkpoint tick 1500/1501/1520/1541",
+    "Compare nine outputs at horizons 0/1/50/500/3000 ticks against pinned uninterrupted reference",
+    "Use original 1e-9 relative threshold",
+    "Exercise negative context/clock/orchestration cases before any native launch"
+  ],
+  "limits": [
+    "Local trusted inputs; digest is not an authorization signature",
+    "Not a full rollback guarantee or event scheduler implementation"
+  ],
+  "observed_refinement": "CurrentPatient.Weight evolves across native ticks; fixed-anchor guard rejected tick 1501. Partial rejected run retained; expected current-patient identity is now pinned per independently SHA-qualified checkpoint, not inferred from an envelope."
+}

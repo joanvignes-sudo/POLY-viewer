@@ -1,0 +1,23 @@
+/* Keep the interval map visible while returning more room to the body. */
+@media(min-width:721px){
+ #stage{bottom:245px}
+ #journey-map{height:96px}
+ #journey-map svg{transform:scaleY(.66);transform-origin:top left}
+ .journey-card{top:6px;height:46px;padding:5px 9px}
+ .journey-card b{margin-bottom:1px}
+ .journey-card span{font-size:10px;line-height:1.3}
+ .micro-card{top:184px;height:154px;width:222px}
+ .micro-card iframe{height:116px}
+ .micro-head{padding:6px}
+ .spatial-key{top:153px;font-size:8px}
+}
+.spatial-label.waypoint{width:144px;font-size:9px;padding:3px 6px;border-color:#edb582}
+#journey-rail{scroll-behavior:auto}
+.journey-link{opacity:.16}
+.journey-link.visited{opacity:.55}
+.journey-link.focused{opacity:1;stroke-width:2.8}
+.mechanism-link{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:3}
+.mechanism-link path{stroke:#a4c8b2;stroke-width:1;stroke-dasharray:3 5;fill:none;opacity:.65}
+
+/* Keep route labels and the legend clear of the brain controls. */
+@media(min-width:721px){.spatial-key{top:auto;bottom:260px;right:16px}}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_LOCAL_EVIDENCE_VIEW_BROWSER_QA",
+  "report": "results/phase2-guarded-local-view-2026-10-18/report.json",
+  "build_receipt": "results/phase2-guarded-local-view-2026-10-18/build.json",
+  "runtime_evidence_root": "work/p2/o2-experiment/guarded-view-qa-20261018-1058",
+  "deliverable": "outputs/POLY_BANC_CONSULTATION_2026-10-18.html",
+  "execution_family": "guarded_bounded_baseline",
+  "state_value_comparisons": 120,
+  "refusals": 3,
+  "new_tests": 2,
+  "python_tests": 284,
+  "native_processes_launched": 0,
+  "remote_requests": 0,
+  "deployment_performed": false,
+  "scientific_validation": false
+}

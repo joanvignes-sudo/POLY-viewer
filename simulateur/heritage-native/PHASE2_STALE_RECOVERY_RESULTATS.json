@@ -1,0 +1,21 @@
+{
+  "status": "PASS_STALE_RECOVERY_BEFORE_MUTATION",
+  "date_local": "2026-10-18",
+  "report": "results/phase2-stale-recovery-2026-10-18/report.json",
+  "operations_regression": "results/phase2-stale-recovery-2026-10-18/operations-regression.json",
+  "coordination_regression": "results/phase2-stale-recovery-2026-10-18/coordination-regression.json",
+  "separate_process_cases": 3,
+  "native_comparisons": 9,
+  "operations_regression_comparisons": 54,
+  "coordination_regression_comparisons": 9,
+  "test_methods": 93,
+  "dead_locked_guard_retirement_qualified": true,
+  "original_guard_bytes_preserved": true,
+  "mutation_pending_refused": true,
+  "exception_after_mutation_marker_preserves_guard": true,
+  "legacy_unknown_live_owner_reclamation": false,
+  "partial_quarantine_resume_qualified": false,
+  "power_loss_qualified": false,
+  "scientific_validation": false,
+  "original_failure_reclassified": false
+}

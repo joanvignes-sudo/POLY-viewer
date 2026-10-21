@@ -1,0 +1,15 @@
+{
+  "status": "PASS_GUARDED_WORKBENCH_PORTABLE_COMPOSITION",
+  "report": "results/phase2-guarded-composition-2026-10-18/report.json",
+  "trusted_bundles": "results/phase2-guarded-composition-2026-10-18/trusted-bundles.json",
+  "runtime_evidence_root": "work/p2/o2-experiment/guarded-workbench-20261018-105201",
+  "python_tests": 282,
+  "new_tests": 7,
+  "native_reference_comparisons": 180,
+  "real_failure_cases": 3,
+  "refusals": 3,
+  "isolated_portable_checks": 4,
+  "backend_selection": "EXPLICIT_GUARDED_NO_SILENT_DEFAULT_SWITCH_OR_FALLBACK",
+  "native_or_guard_profile_changed": false,
+  "scientific_validation": false
+}

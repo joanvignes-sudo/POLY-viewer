@@ -1,0 +1,33 @@
+{
+  "date_local": "2026-10-18",
+  "started_utc": "2026-10-17T22:01:52Z",
+  "status": "PROTOCOL_BEFORE_DISPATCHER_EXECUTION",
+  "scope": "Closed-set restore and last-good transaction only",
+  "inputs": "Four previously qualified checkpoint byte hashes and persisted engine/data/patient/configuration bindings",
+  "native_matrix": "Four checkpoints, horizons 0/1/50/500/3000 ticks, original relative threshold 1e-9",
+  "negative_cases": [
+    "unknown state or requested tick",
+    "changed binary/library/data or envelope",
+    "nonzero child exit",
+    "child timeout",
+    "missing/corrupt/nonfinite/wrong-time outputs",
+    "busy owner lock",
+    "incompatible previous pointer"
+  ],
+  "last_good_policy": [
+    "No live Pulse engine in parent",
+    "Disposable candidate child; exact validated input bytes on stdin",
+    "Advance observed outputs does not create a new restorable checkpoint",
+    "Persist pointer to original qualified input only after all outputs pass",
+    "Preserve pointer byte-for-byte on refusals or child failures",
+    "Per-output-root exclusive lock; no automatic removal of a stale lock",
+    "Atomic same-directory pointer replace after validation"
+  ],
+  "test_boundaries": "Native successes use pinned Pulse. Exit/timeout/bad-output tests use clearly labelled synthetic child fixtures; no physiological result from those fixtures",
+  "limits": [
+    "No arbitrary checkpoint acceptance",
+    "No external event scheduler",
+    "No clinical/scientific validation",
+    "No process-tree or sandbox guarantee beyond the direct worker child"
+  ]
+}

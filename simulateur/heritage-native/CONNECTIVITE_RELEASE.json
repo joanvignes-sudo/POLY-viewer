@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "scope": "Published structural reference pair, not a physiological coupling",
+  "apinatomy": {
+    "tag": "0.0.4",
+    "commit": "4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e",
+    "record_uri": "https://zenodo.org/records/17127951",
+    "doi": "10.5281/zenodo.17127951",
+    "license_declared": "cc-by-4.0",
+    "archive": {
+      "name": "open-physiology/apinatomy-models-0.0.4.zip",
+      "bytes": 6857758,
+      "checksum_declared": "md5:d9dc440e5c9f0bacf495f4d7b0d960f4",
+      "downloaded": false
+    },
+    "selected_model": "ard-arm-cardiac",
+    "species_scope": "README describes predominantly porcine model; selected chain has no explicit species field",
+    "attribution": [
+      "Bernard de Bono",
+      "Monique Surles-Zeigler",
+      "Thomas H Gillespie",
+      "Jeffrey Ardell"
+    ],
+    "source_publication_ids": [
+      "PMID:27783854"
+    ],
+    "license_scope": "Zenodo release archive declaration, not a relicense of cited publications"
+  },
+  "sckan": {
+    "tag": "sckan-2025-09-14",
+    "commit": "3958dd4d3ca679a1187e483a3f1c6bbad334ce10",
+    "release_uri": "https://github.com/SciCrunch/NIF-Ontology/releases/tag/sckan-2025-09-14",
+    "published_at": "2025-09-14T20:52:26Z",
+    "repository_license_file": "CC-BY-4.0",
+    "license_scope": "NIF repository LICENSE at release tag; separately imported ontologies retain own notices",
+    "assets": [
+      {
+        "name": "docker-sckan-data-2025-09-14T201520Z.tar.gz",
+        "uri": "https://github.com/SciCrunch/NIF-Ontology/releases/download/sckan-2025-09-14/docker-sckan-data-2025-09-14T201520Z.tar.gz",
+        "bytes": 620823065,
+        "digest_declared": "sha256:28c9d0ad6d9f88bd67feeec3896f41aa08b11e6fd3f53dec95cbfc29d799e4db",
+        "digest_status": "REMOTE_DECLARED_NOT_LOCALLY_VERIFIED",
+        "downloaded": false
+      },
+      {
+        "name": "release-2025-09-14T192449Z-sckan.zip",
+        "uri": "https://github.com/SciCrunch/NIF-Ontology/releases/download/sckan-2025-09-14/release-2025-09-14T192449Z-sckan.zip",
+        "bytes": 160664600,
+        "digest_declared": "sha256:6af8150182a152a707c61e02bc36071acbbe48257eb35529bb3d35b8e349f6c7",
+        "digest_status": "REMOTE_DECLARED_NOT_LOCALLY_VERIFIED",
+        "downloaded": false
+      },
+      {
+        "name": "sparc-sckan-graph-20250914T123230.zip",
+        "uri": "https://github.com/SciCrunch/NIF-Ontology/releases/download/sckan-2025-09-14/sparc-sckan-graph-20250914T123230.zip",
+        "bytes": 480745267,
+        "digest_declared": "sha256:a9aafa0df0572fb857c669e2c75343240ffe5b510611e77b2e94517bb2bfbff7",
+        "digest_status": "REMOTE_DECLARED_NOT_LOCALLY_VERIFIED",
+        "downloaded": false
+      }
+    ]
+  },
+  "pairing_evidence": {
+    "source_uri": "https://zenodo.org/api/records/17127951",
+    "sha256": "931e6e65e22a81585b42c0da430c99b095b63faed355bd2e250569c37534795b",
+    "statement_role": "release description explicitly identifies corresponding SCKAN release"
+  },
+  "not_established": [
+    "compiled SCKAN graph extraction equivalence",
+    "per-publication causal timing",
+    "individual neuron identity across studies",
+    "human/mouse/porcine interchangeability"
+  ],
+  "dynamic_bridge_authorized": false
+}

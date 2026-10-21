@@ -1,0 +1,402 @@
+{
+  "schema": "poly.timing-evidence/1",
+  "scope": "Première extraction ciblée, non exhaustive ; dix observations ou fenêtres et deux lacunes suivies.",
+  "sources": [
+    {
+      "id": "SINK2000",
+      "title": "Sinkjaer et al. 2000",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10718758/",
+      "locator": "Abstract, point 2",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    },
+    {
+      "id": "GREY2001",
+      "title": "Grey et al. 2001",
+      "url": "https://doi.org/10.1111/j.1469-7793.2001.00925.x",
+      "locator": "Abstract, points 2–3",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    },
+    {
+      "id": "PET2001",
+      "title": "Petersen et al. 2001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11731595/",
+      "locator": "Abstract, points 1–2",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    },
+    {
+      "id": "CHR1999",
+      "title": "Christensen et al. 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9928790/",
+      "locator": "Abstract",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    },
+    {
+      "id": "CUT2016",
+      "title": "Regionally distinct cutaneous afferent populations…, 2016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4961762/",
+      "locator": "Abstract, MLR analysis window",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    },
+    {
+      "id": "NOR2009",
+      "title": "Nordez et al. 2009",
+      "url": "https://doi.org/10.1152/japplphysiol.00221.2009",
+      "locator": "Methods: Processing and Statistical Analysis; Table 1, p.1973",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    },
+    {
+      "id": "WIN1987",
+      "title": "Winter et Yack 1987",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2444408/",
+      "locator": "Abstract; 16 muscle EMG profiles",
+      "accessed": "2026-10-19",
+      "role": "primary_study"
+    }
+  ],
+  "records": [
+    {
+      "id": "T01",
+      "title": "Décharge du soléaire → diminution EMG",
+      "quantity_kind": "response_onset",
+      "clock_start": "Début de décharge mécanique des extenseurs",
+      "clock_end": "Début de diminution EMG du soléaire",
+      "value": 64,
+      "reported_spread": null,
+      "spread_type": null,
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": 20,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": "Début / milieu de l’appui",
+      "source_ids": [
+        "SINK2000"
+      ],
+      "limitations": [
+        "Réponse intégrée ; pas un temps de conduction axonale isolé."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T02",
+      "title": "Réflexe soléaire · composante courte",
+      "quantity_kind": "response_onset",
+      "clock_start": "Début de perturbation de dorsiflexion",
+      "clock_end": "Début de réponse EMG courte",
+      "value": 55,
+      "reported_spread": 5,
+      "spread_type": "not_established_in_extraction",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": 14,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": "Perturbation 200 ms après contact talon",
+      "source_ids": [
+        "GREY2001"
+      ],
+      "limitations": [
+        "Le ± publié n’est pas converti en intervalle individuel ; type de dispersion à confirmer."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T03",
+      "title": "Réflexe soléaire · composante moyenne",
+      "quantity_kind": "response_onset",
+      "clock_start": "Début de perturbation de dorsiflexion",
+      "clock_end": "Début de réponse EMG moyenne",
+      "value": 78,
+      "reported_spread": 6,
+      "spread_type": "not_established_in_extraction",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": 14,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": "Perturbation 200 ms après contact talon",
+      "source_ids": [
+        "GREY2001"
+      ],
+      "limitations": [
+        "Composante du même protocole que T02 ; ne pas additionner les deux latences."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T04",
+      "title": "Stimulation corticale → suppression EMG",
+      "quantity_kind": "response_onset",
+      "clock_start": "Impulsion TMS corticale de faible intensité",
+      "clock_end": "Début de suppression EMG pendant la marche",
+      "value": 40,
+      "reported_spread": 1,
+      "spread_type": "not_established_in_extraction",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": null,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": null,
+      "source_ids": [
+        "PET2001"
+      ],
+      "limitations": [
+        "TMS expérimentale ; pas délai d’une commande volontaire naturelle."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T05",
+      "title": "Stimulation corticale → facilitation EMG",
+      "quantity_kind": "response_onset",
+      "clock_start": "Impulsion TMS d’intensité légèrement supérieure",
+      "clock_end": "Début de facilitation EMG pendant la marche",
+      "value": 29.5,
+      "reported_spread": 1,
+      "spread_type": "not_established_in_extraction",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": null,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": null,
+      "source_ids": [
+        "PET2001"
+      ],
+      "limitations": [
+        "Autre intensité que T04 ; pas une étape après la suppression."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T06",
+      "title": "Afférences du pied → facilitation du tibial antérieur",
+      "quantity_kind": "reported_latency_range",
+      "clock_start": "Stimulation cutanée / surale",
+      "clock_end": "Début de facilitation EMG du tibial antérieur",
+      "value": null,
+      "reported_spread": null,
+      "spread_type": null,
+      "reported_range": [
+        70,
+        95
+      ],
+      "units": "ms",
+      "species": "human",
+      "population_n": 17,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": "Début / milieu de l’oscillation",
+      "source_ids": [
+        "CHR1999"
+      ],
+      "limitations": [
+        "Plage rapportée ; pas un intervalle de confiance. Participation transcorticale suggérée, pas trajet individuel mesuré.",
+        "La plage est rappelée au début du résumé ; effectif propre à cet estimateur non extrait."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T07",
+      "title": "Réflexes cutanés · fenêtre de moyenne latence",
+      "quantity_kind": "analysis_window",
+      "clock_start": "Début de stimulation tibiale",
+      "clock_end": "Bornes de la fenêtre d’analyse EMG",
+      "value": null,
+      "reported_spread": null,
+      "spread_type": null,
+      "reported_range": [
+        70,
+        120
+      ],
+      "units": "ms",
+      "species": "human",
+      "population_n": null,
+      "context": "Marche humaine avec perturbation expérimentale",
+      "gait_phase": "Dépendante de la phase du pas",
+      "source_ids": [
+        "CUT2016"
+      ],
+      "limitations": [
+        "Fenêtre d’analyse, pas latence observée pour chaque sujet ni durée de conduction."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T08",
+      "title": "Stimulation musculaire → force du gastrocnémien",
+      "quantity_kind": "electromechanical_delay",
+      "clock_start": "Début de stimulation électrique / artefact",
+      "clock_end": "Début de force, essai musculaire",
+      "value": 11.63,
+      "reported_spread": 1.51,
+      "spread_type": "SD",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": 9,
+      "context": "Contractions électriquement évoquées, couché sur le ventre ; pas pendant la marche",
+      "gait_phase": null,
+      "source_ids": [
+        "NOR2009"
+      ],
+      "limitations": [
+        "Origine : stimulation, pas début EMG volontaire. Cheville en flexion plantaire 10°."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": 9
+    },
+    {
+      "id": "T09",
+      "title": "Stimulation → mouvement des fascicules",
+      "quantity_kind": "tissue_motion_onset",
+      "clock_start": "Début de stimulation électrique",
+      "clock_end": "Début de mouvement ultrasonore des fascicules",
+      "value": 6.05,
+      "reported_spread": 0.64,
+      "spread_type": "SD",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": 9,
+      "context": "Même étude au repos que T08 ; échographie 4 kHz",
+      "gait_phase": null,
+      "source_ids": [
+        "NOR2009"
+      ],
+      "limitations": [
+        "Mouvement initial, pas force ni contraction utile complète."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": 9
+    },
+    {
+      "id": "T10",
+      "title": "Stimulation → mouvement myotendineux",
+      "quantity_kind": "tissue_motion_onset",
+      "clock_start": "Début de stimulation électrique",
+      "clock_end": "Début de mouvement de la jonction myotendineuse",
+      "value": 8.42,
+      "reported_spread": 1.63,
+      "spread_type": "SD",
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": 9,
+      "context": "Essais tendineux séparés du même protocole au repos",
+      "gait_phase": null,
+      "source_ids": [
+        "NOR2009"
+      ],
+      "limitations": [
+        "Mesure distincte de T08/T09 ; pas une chaîne de trois délais à sommer."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "documented_context_only",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": 9
+    },
+    {
+      "id": "T11",
+      "title": "Durées d’activation des muscles pendant le cycle",
+      "quantity_kind": "activation_duration",
+      "clock_start": "Début de bouffée EMG selon seuil",
+      "clock_end": "Fin de bouffée EMG selon seuil",
+      "value": null,
+      "reported_spread": null,
+      "spread_type": null,
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": null,
+      "context": "Marche humaine non perturbée ; profils par muscle",
+      "gait_phase": null,
+      "source_ids": [
+        "WIN1987"
+      ],
+      "limitations": [
+        "Profils de 16 muscles et variabilité ; onsets/offsets chiffrés non extraits. Pas de durée universelle assignée."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "pending_extraction",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    },
+    {
+      "id": "T12",
+      "title": "Conduction d’un nerf périphérique individuel",
+      "quantity_kind": "axon_conduction",
+      "clock_start": "Site de stimulation ou émission défini",
+      "clock_end": "Site d’enregistrement défini",
+      "value": null,
+      "reported_spread": null,
+      "spread_type": null,
+      "reported_range": null,
+      "units": "ms",
+      "species": "human",
+      "population_n": null,
+      "context": "À documenter pour le nerf et la préparation concernés",
+      "gait_phase": null,
+      "source_ids": [],
+      "limitations": [
+        "Longueur, type de fibres, température et protocole absents ; aucune vitesse par défaut. Aucune latence réflexe réutilisée comme conduction isolée."
+      ],
+      "runtime_parameter": false,
+      "aggregation_allowed": false,
+      "status": "pending_extraction",
+      "population_n_scope": "effectif de l’étude ou du protocole cité, pas automatiquement celui de cet estimateur",
+      "measurement_n": null
+    }
+  ],
+  "guards": [
+    "Aucune addition automatique de latences issues de protocoles différents.",
+    "Une moyenne ± SD/SEM n’est pas un minimum et maximum individuel.",
+    "Les fenêtres EMG ne sont pas des délais biologiques.",
+    "Aucun de ces chiffres ne pilote encore l’animation ou un individu humain."
+  ],
+  "source_notes": [
+    "Nordez 2009 : le résumé rapporte EMD tendineux 11,67 ms, tandis que la table 1 du PDF consulté indique 11,65 ms. Ce paramètre tendineux n’est pas adopté. L’EMD musculaire 11,63 ms concorde."
+  ]
+}

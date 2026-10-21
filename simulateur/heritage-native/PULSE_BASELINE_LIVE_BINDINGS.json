@@ -1,0 +1,103 @@
+{
+  "schema_version": "poly-pulse-live-bindings/0.1",
+  "status": "EXPERIMENTAL_PINNED_PENDING_LIVE_QUALIFICATION",
+  "protocol": "poly-pulse-live-baseline/0.2",
+  "worker_relative_path": "o2-experiment/live-build/poly_pulse_live_baseline_worker.exe",
+  "worker_sha256": "d81dce175e54276fdb64c7e60412d20fac877abe3945f4966fc0b6ab579b8e46",
+  "worker_source_sha256": "b992ee24dc60a03ff08ca279af99cfb36ad2a58df38f352bca7916d0596059d4",
+  "base_bindings_sha256": "20ee85f29a3426a240b28cd190dd690ae94d2587fc816f598af28ed4c3aa3bb6",
+  "runtime_dll_manifest": {
+    "schema_version": "poly-pulse-runtime-dlls/0.1",
+    "profile_id": "poly-pulse-live-baseline/0.2",
+    "worker_sha256": "d81dce175e54276fdb64c7e60412d20fac877abe3945f4966fc0b6ab579b8e46",
+    "dlls": [
+      {
+        "name": "libc++.dll",
+        "runtime_relative_path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/bin/libc++.dll",
+        "sha256": "81fb50f0866840d7e5a1d35d48cf31adc02f623a61d8b77daf62881e1e59401b",
+        "bytes": 2000384,
+        "declared_imports": [
+          "libunwind.dll",
+          "KERNEL32.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-multibyte-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll"
+        ]
+      },
+      {
+        "name": "libunwind.dll",
+        "runtime_relative_path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/bin/libunwind.dll",
+        "sha256": "b0636a4281610124704adb2be2edf5642e830d86c68b7f27dbc9c8154705a780",
+        "bytes": 183808,
+        "declared_imports": [
+          "KERNEL32.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll"
+        ]
+      },
+      {
+        "name": "libwinpthread-1.dll",
+        "runtime_relative_path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/bin/libwinpthread-1.dll",
+        "sha256": "7658f9e5e89213af287d342c554b8abcb5b2700b4a44d02184b56004b104ceec",
+        "bytes": 293888,
+        "declared_imports": [
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "KERNEL32.dll"
+        ]
+      }
+    ],
+    "system_policy": "Trust Windows System32/SysWOW64/WinSxS paths; no OS module hash claim",
+    "source_audit": "results/phase2-runtime-audit-2026-10-18/report.json"
+  },
+  "horizons": [
+    0,
+    1,
+    50,
+    500,
+    3000
+  ],
+  "initial_ticks": [
+    1500,
+    1501,
+    1520,
+    1541
+  ],
+  "biological_events": false,
+  "new_restorable_states": false,
+  "scientific_validation": false,
+  "provenance": "New worker compiled separately against unchanged corrected Pulse library; source-state v2 context and new execution worker are distinct",
+  "protocol_preregistered": "PHASE2_BASELINE_VIVANTE_PROTOCOLE.md",
+  "controller_sources_sha256": {
+    "tools/organisme_entier/pulse_live_baseline.py": "4a5fb591c888a7e61f5c176c7d86e440cdfe342214a314171d478217a08563f5",
+    "tools/organisme_entier/pulse_output_adapter.py": "5d73661f7770e444e3fa62ff9de894632bc21b8eaf259b4976137e93394b5c52",
+    "tools/organisme_entier/contract.py": "a708c9671825c0f39a87d50f04294fb4c911db01947f86f66b4e7e5021ccb74f",
+    "tools/organisme_entier/pulse_contract.py": "b41240997e9aadb54d11324e373f6ed47d7ca1ef06626ca8d751a5682a1d5947",
+    "tools/pulse_probe/checkpoint_envelope.py": "8c0e405a977efa24bc0237680faf9024bc5e60a493e25a5df27158085bda74db",
+    "tools/pulse_probe/restore_dispatcher.py": "8a685ef011c03d4243d46a3a192f539552d2968ccd66c009cb2dd1cce8e00cdd",
+    "tools/pulse_probe/restore_operations.py": "be314b0b80948902f1259e0350cb59c5c4653b68d4fe28fb00fba3fd994f2b62",
+    "tools/pulse_probe/operation_gate.py": "15fc24272ea52de5cddceb52bedd50099831d3fd316ff9c9c4e477f1100ed527",
+    "tools/pulse_probe/process_owner.py": "5bddc01dd2f837bd4685c7e3fe184bab657f75cf3a2ab12640ca7226c756d5bf",
+    "tools/pulse_probe/runtime_dll_guard.py": "75f6f4841fdc460f3a13efddf0f4b8fc9d0d8861c389249869eb63dcc0cf0c8c"
+  }
+}

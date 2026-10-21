@@ -1,0 +1,23 @@
+{
+  "status": "PASS_WINDOWS_OPERATION_COORDINATION",
+  "date_local": "2026-10-18",
+  "report": "results/phase2-coordination-2026-10-18/report.json",
+  "operations_regression": "results/phase2-coordination-2026-10-18/operations-regression.json",
+  "child_regression": "results/phase2-coordination-2026-10-18/child-regression.json",
+  "separate_process_cases": 6,
+  "native_comparisons": 9,
+  "operation_regression_comparisons": 54,
+  "child_normal_comparisons": 45,
+  "child_orphan_diagnostic_comparisons": 45,
+  "test_methods": 88,
+  "cooperating_clients_exclusive": true,
+  "os_gate_released_after_owner_death": true,
+  "gate_file_never_replaced_or_unlinked": true,
+  "stale_recovery_marker_blocks": true,
+  "stale_recovery_reclamation_qualified": false,
+  "interrupted_quarantine_qualified": false,
+  "power_loss_qualified": false,
+  "general_adapter_lifecycle_qualified": false,
+  "scientific_validation": false,
+  "original_failure_reclassified": false
+}

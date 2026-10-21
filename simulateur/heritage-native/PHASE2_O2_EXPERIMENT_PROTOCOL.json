@@ -1,0 +1,63 @@
+{
+  "status": "REVIEWED_EXPERIMENT_BEFORE_BUILD",
+  "date": "2026-10-17",
+  "user_authorization": "ok max fait donc le ximum, following announced isolated correction experiment",
+  "base_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "patch": "tools/pulse_probe/patches/o2-state-experimental.patch",
+  "review": [
+    "Only proto fields 55/56, four bidirectional assignments and pre-load presence checks; existing field numbers unchanged",
+    "No physiology equation or baseline parameter change",
+    "Optional double preserves zero as an explicit present value",
+    "Both file and string state imports reject missing O2 fields before PBState::Load; no legacy value guessed",
+    "Original source/build/install retained; separate source worktree and build, dependencies reused read-only",
+    "Controller readiness is preserved on boolean parse/presence rejection, which occurs before PBState::Load; exceptions during actual loading are not made atomic by this patch"
+  ],
+  "matrix": {
+    "checkpoint_steps": [
+      1500,
+      1501,
+      1520,
+      1541
+    ],
+    "dt_s": 0.02,
+    "horizon_steps": [
+      1,
+      50,
+      500,
+      3000
+    ],
+    "paths": [
+      "uninterrupted memory reference",
+      "same engine restored",
+      "fresh engine restored"
+    ],
+    "observables": [
+      "time",
+      "six original outputs",
+      "mean arterial O2",
+      "chemoreceptor HR scale"
+    ],
+    "tolerance": "abs(candidate-reference) <= 1e-9 * max(1, abs(reference))"
+  },
+  "control": "Run identical native matrix program against original build; compare uninterrupted trajectories between builds at unchanged threshold",
+  "legacy_policy": "Reject original checkpoint via file and string; test state unchanged after rejection; also preserve GetInitializationState after each rejection",
+  "limits": [
+    "Technical experiment only, no exercise",
+    "Original failed result unchanged",
+    "Finite scenarios cannot prove exhaustive state serialization"
+  ],
+  "guard_extension_before_execution": {
+    "scope": "Schema/presence behavior only; mutated JSON fixtures are not physiological patients",
+    "cases": [
+      "missing_average",
+      "missing_previous",
+      "missing_both",
+      "explicit_zero_previous_mean"
+    ],
+    "formats": [
+      "file JSON",
+      "string JSON"
+    ],
+    "criteria": "Absent field returns false with full state AND initialization readiness unchanged; explicit zero is present and accepted, no simulation of the artificial zero state"
+  }
+}

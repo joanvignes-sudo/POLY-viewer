@@ -1,0 +1,18 @@
+{
+  "status": "PASS_PINNED_CANON_REFERENCE_RESOLUTION",
+  "report": "results/phase2-canon-reference-2026-10-18/report.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "resolved_references": 670,
+  "native_nonfinite_tokens_preserved": 169,
+  "research_status_counts": {
+    "MEASURED": 74,
+    "RECONSTRUCTED": 8,
+    "ND": 4
+  },
+  "unit_tests": 13,
+  "python_tests": 221,
+  "source_tiers_distinct": true,
+  "canon_writes": false,
+  "numeric_propagation_authorized": false,
+  "scientific_validation": false
+}

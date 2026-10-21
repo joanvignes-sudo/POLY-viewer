@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_RUNTIME_IMPORT_AND_LICENSE_INVENTORY",
+  "date_local": "2026-10-18",
+  "report": "results/phase2-runtime-audit-2026-10-18/report.json",
+  "linked_static_archive_count": 81,
+  "archive_family_counts": {
+    "pulse": 1,
+    "protobuf": 1,
+    "abseil": 78,
+    "utf8_range": 1
+  },
+  "workspace_runtime_dll_count": 3,
+  "license_proof_count": 10,
+  "license_labels_from_local_sources_only": true,
+  "actual_loaded_module_paths_verified": false,
+  "dynamic_dll_hashes_enforced_by_current_restore_preflight": false,
+  "binary_redistribution_qualified": false,
+  "copied_binaries_or_models": false,
+  "scientific_validation": false,
+  "test_methods": 127,
+  "next_action": "Pin non-OS DLL closure in restore context and verify actual loaded paths/hashes before delivering stdin; retain original bindings/history and refuse implicit migrations"
+}

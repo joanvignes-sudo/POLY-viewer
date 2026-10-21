@@ -1,0 +1,438 @@
+{
+  "schema_version": "poly-technical-api/0.1",
+  "status": "CURRENT_SCOPED_IMPLEMENTATIONS_OUTSIDE_CANON",
+  "general_dynamic_lifecycle": false,
+  "biological_events_available": false,
+  "scientific_validation": false,
+  "recommended_entrypoint": "organism.workbench",
+  "candidate_contract": "CONTRAT_ADAPTATEUR.json",
+  "candidate_contract_promoted": false,
+  "composition": "COMPOSITION_TECHNIQUE.json",
+  "initial_ticks": [
+    1500,
+    1501,
+    1520,
+    1541
+  ],
+  "horizons_steps": [
+    0,
+    1,
+    50,
+    500,
+    3000
+  ],
+  "dt_s": 0.02,
+  "components": [
+    {
+      "id": "canon.reference",
+      "implementation": "tools/organisme_entier/canon_reference_adapter.py",
+      "qualification": "PHASE2_REFERENCES_CANON_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "describe",
+          "target": "CanonReferenceAdapter.describe",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "list_references",
+          "target": "CanonReferenceAdapter.list_references",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "resolve",
+          "target": "CanonReferenceAdapter.resolve",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "close",
+          "target": "CanonReferenceAdapter.close",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "to_numeric",
+          "target": "CanonReferenceAdapter.to_numeric",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "CANON_NUMERIC_PROPAGATION_UNAVAILABLE"
+        }
+      ],
+      "limits": [
+        "Pinned immutable reference snapshots; original tiers/species/statuses retained; no numerical output bridge."
+      ]
+    },
+    {
+      "id": "anatomy.reference",
+      "implementation": "tools/organisme_entier/reference_adapter.py",
+      "qualification": "QUALIFICATION_P1_SOURCES.json",
+      "bindings": [
+        {
+          "capability": "resolve",
+          "target": "ReferenceAdapter.resolve",
+          "availability": "AVAILABLE_SCOPED"
+        }
+      ],
+      "limits": [
+        "Minimal HRA/ApiNATOMY pointer resolver; not a complete generic reference lifecycle or anatomical registration."
+      ]
+    },
+    {
+      "id": "pulse.committed_output",
+      "implementation": "tools/organisme_entier/pulse_output_adapter.py",
+      "qualification": "PHASE2_SORTIES_POLY_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "describe",
+          "target": "PulseOutputAdapter.describe",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read",
+          "target": "PulseOutputAdapter.read",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "open_existing_reader",
+          "target": "open_reader",
+          "availability": "AVAILABLE_SCOPED"
+        }
+      ],
+      "limits": [
+        "Read-only committed v2 receipts; no patient initialization, event or pointer rollback."
+      ]
+    },
+    {
+      "id": "pulse.closed_session",
+      "implementation": "tools/organisme_entier/pulse_session.py",
+      "qualification": "PHASE2_SESSION_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "create",
+          "target": "ClosedSetPulseSession.create",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "open",
+          "target": "ClosedSetPulseSession.open",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "describe",
+          "target": "ClosedSetPulseSession.describe",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "restore_known",
+          "target": "ClosedSetPulseSession.restore_known",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read_committed",
+          "target": "ClosedSetPulseSession.read_committed",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "close",
+          "target": "ClosedSetPulseSession.close",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "apply",
+          "target": "ClosedSetPulseSession.apply",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "SESSION_CAPABILITY_UNAVAILABLE:apply"
+        },
+        {
+          "capability": "advance",
+          "target": "ClosedSetPulseSession.advance",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "SESSION_CAPABILITY_UNAVAILABLE:advance"
+        },
+        {
+          "capability": "checkpoint",
+          "target": "ClosedSetPulseSession.checkpoint",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "SESSION_CAPABILITY_UNAVAILABLE:checkpoint"
+        }
+      ],
+      "limits": [
+        "create/open bind a session; restore_known executes a fresh bounded worker, not a continuously evolving engine. Closed sessions reject new/cached operational reads."
+      ]
+    },
+    {
+      "id": "pulse.bounded_live",
+      "implementation": "tools/organisme_entier/pulse_live_baseline.py",
+      "qualification": "PHASE2_BASELINE_VIVANTE_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "describe",
+          "target": "PinnedLiveBaseline.describe",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read",
+          "target": "PinnedLiveBaseline.read",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "advance_to_known_horizon",
+          "target": "PinnedLiveBaseline.advance_to_known_horizon",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "close",
+          "target": "PinnedLiveBaseline.close",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "abort",
+          "target": "PinnedLiveBaseline.abort",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "restore_initial_known_state",
+          "target": "PinnedLiveBaseline.start",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read_closed_archive",
+          "target": "read_closed",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "apply",
+          "target": "PinnedLiveBaseline.apply",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "LIVE_CAPABILITY_UNAVAILABLE:apply"
+        },
+        {
+          "capability": "checkpoint",
+          "target": "PinnedLiveBaseline.checkpoint",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "LIVE_CAPABILITY_UNAVAILABLE:checkpoint"
+        }
+      ],
+      "limits": [
+        "Semantic restore_initial_known_state maps to start(), not a general restore method. Four anchors/five horizons only.",
+        "Pinned historical direct I/O-loss cleanup limitation: use the qualified facade or context manager; see PHASE2_AUDIT_INTERFACES.md."
+      ]
+    },
+    {
+      "id": "observation.registry",
+      "implementation": "tools/organisme_entier/observation_registry.py",
+      "qualification": "PHASE2_REGISTRE_OBSERVATIONS_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "register",
+          "target": "ObservationRegistry.register",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "ingest",
+          "target": "ObservationRegistry.ingest",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read_latest_frame",
+          "target": "ObservationRegistry.read_latest_frame",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "release",
+          "target": "ObservationRegistry.release",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "snapshot",
+          "target": "ObservationRegistry.snapshot",
+          "availability": "AVAILABLE_SCOPED"
+        }
+      ],
+      "limits": [
+        "Coordinator-local memory only; no persistence, distributed recovery, implicit clock/unit alignment or biological source qualification."
+      ]
+    },
+    {
+      "id": "organism.workbench",
+      "implementation": "tools/organisme_entier/organism_workbench.py",
+      "qualification": "PHASE2_COMPOSITION_GARDEE_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "start",
+          "target": "OrganismWorkbench.start",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "reference",
+          "target": "OrganismWorkbench.reference",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "snapshot",
+          "target": "OrganismWorkbench.snapshot",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "refresh",
+          "target": "OrganismWorkbench.refresh",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "advance_to_known_horizon",
+          "target": "OrganismWorkbench.advance_to_known_horizon",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "close",
+          "target": "OrganismWorkbench.close",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "abort",
+          "target": "OrganismWorkbench.abort",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read_closed_archive",
+          "target": "read_closed_workbench",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "apply",
+          "target": "OrganismWorkbench.apply",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "ORGANISM_CAPABILITY_UNAVAILABLE:apply"
+        },
+        {
+          "capability": "apply_reference",
+          "target": "OrganismWorkbench.apply_reference",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "ORGANISM_REFERENCE_NOT_EXECUTABLE"
+        },
+        {
+          "capability": "checkpoint",
+          "target": "OrganismWorkbench.checkpoint",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "ORGANISM_CAPABILITY_UNAVAILABLE:checkpoint"
+        },
+        {
+          "capability": "read_physiology_archive",
+          "target": "physiology_export",
+          "availability": "AVAILABLE_SCOPED"
+        }
+      ],
+      "limits": [
+        "Recommended integration entry point. No executable canon bridge, detailed neural simulation, anatomical registration or biological action."
+      ],
+      "backend_selection": {
+        "default": "historical_bounded_baseline",
+        "explicit_cli": "--guarded",
+        "explicit_factory": "GuardedLiveBaseline",
+        "silent_fallback": false
+      }
+    },
+    {
+      "id": "evidence.portable",
+      "implementation": "tools/organisme_entier/portable_evidence.py",
+      "qualification": "PHASE2_PREUVES_PORTABLES_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "export_bundle",
+          "target": "export_bundle",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "inspect_bundle",
+          "target": "inspect_bundle",
+          "availability": "AVAILABLE_SCOPED"
+        }
+      ],
+      "limits": [
+        "Export requires the local qualified runtime; inspect is stdlib-only archive integrity with independent expected SHA, never fresh runtime/scientific qualification."
+      ]
+    },
+    {
+      "id": "evidence.local_view",
+      "implementation": "tools/organisme_entier/build_evidence_view.py",
+      "qualification": "PHASE2_CONSULTATION_GARDEE_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "build",
+          "target": "build",
+          "availability": "AVAILABLE_SCOPED"
+        }
+      ],
+      "limits": [
+        "Produces a local read-only HTML deliverable from approved packages. No web hosting or native model execution."
+      ]
+    },
+    {
+      "id": "pulse.guarded_bounded_live",
+      "implementation": "tools/organisme_entier/guarded_live_baseline.py",
+      "qualification": "PHASE2_GARDE_NATIVE_RESULTATS.json",
+      "bindings": [
+        {
+          "capability": "start",
+          "target": "GuardedLiveBaseline.start",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read",
+          "target": "GuardedLiveBaseline.read",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "advance_to_known_horizon",
+          "target": "GuardedLiveBaseline.advance_to_known_horizon",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "close",
+          "target": "GuardedLiveBaseline.close",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "abort",
+          "target": "GuardedLiveBaseline.abort",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "describe",
+          "target": "GuardedLiveBaseline.describe",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "read_closed_archive",
+          "target": "read_closed_guarded",
+          "availability": "AVAILABLE_SCOPED"
+        },
+        {
+          "capability": "apply",
+          "target": "GuardedLiveBaseline.apply",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "GUARD_CAPABILITY_UNAVAILABLE:apply"
+        },
+        {
+          "capability": "checkpoint",
+          "target": "GuardedLiveBaseline.checkpoint",
+          "availability": "UNAVAILABLE_EXPLICIT_REFUSAL",
+          "error": "GUARD_CAPABILITY_UNAVAILABLE:checkpoint"
+        }
+      ],
+      "limits": [
+        "Separately qualified lifecycle guard; numerical controller/profile remain immutable and separately required.",
+        "Same four anchors/five horizons. No general dynamics, biological event or arbitrary rollback.",
+        "Explicit facade/registry/portable composition qualified separately in PHASE2_COMPOSITION_GARDEE_RESULTATS.json; default historical backend unchanged."
+      ]
+    }
+  ],
+  "not_implemented": [
+    "general_initialize_apply_advance_lifecycle",
+    "arbitrary_checkpoint_restore_rollback",
+    "unit_conversion_or_clock_alignment",
+    "canonical_to_physiology_bridge",
+    "anatomical_registration",
+    "walking_or_noise_model",
+    "A_B_C_execution",
+    "phases_3_4_5"
+  ],
+  "static_check_limit": "AST names/signatures/plain refusals only; behavioral proofs remain the named qualification reports."
+}

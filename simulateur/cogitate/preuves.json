@@ -1,0 +1,52 @@
+{
+  "schema": "poly.cogitate.evidence/1",
+  "date": "2026-10-20",
+  "participant_example": "CF102",
+  "raw_signals_acquired": false,
+  "independent_reanalysis": false,
+  "individual_atlas_registration": false,
+  "records": [
+    {
+      "id": "event",
+      "title": "1 · Stimulus",
+      "fact": "Le dictionnaire distingue le début du stimulus, sa fin et le début de l’intervalle variable. Durées prévues : 500, 1 000 ou 1 500 ms.",
+      "limit": "Durée prévue ≠ vérification physique du moniteur. Les corrections temporelles doivent être contrôlées par session.",
+      "source": "https://github.com/Cogitate-consortium/iEEG-data-release/blob/a42cff6f898a9bef29d639b6c1adb6218db2f499/docs/task-Dur_events_description.json",
+      "status": "Dictionnaire public"
+    },
+    {
+      "id": "signal",
+      "title": "2 · Réponse enregistrée",
+      "fact": "La figure LO1 sauvegardée dans le tutoriel présente l’activité haute gamma normalisée, alignée au début du stimulus pour CF102.",
+      "limit": "Image publiée par les auteurs, pas signal brut réanalysé par POLY. Aucun point numérique extrait de l’image.",
+      "source": "https://github.com/Cogitate-consortium/iEEG-data-release/blob/a42cff6f898a9bef29d639b6c1adb6218db2f499/notebooks/ieeg-data-release.ipynb",
+      "image": "assets/cogitate/notebook-cell-39-output-1.png",
+      "status": "Sortie des auteurs · cellule 39"
+    },
+    {
+      "id": "analysis",
+      "title": "3 · Analyse",
+      "fact": "Sorties sauvegardées : 28 canaux réactifs parmi 92 analysés ; 18 augmentations et 10 diminutions. 720 époques dans la sortie correspondante.",
+      "limit": "Fenêtres −0,30 à 0 s et 0,05 à 0,35 s : fenêtres de comparaison, pas latences estimées. Un participant d’exemple, pas un résultat de population.",
+      "source": "https://github.com/Cogitate-consortium/iEEG-data-release/blob/a42cff6f898a9bef29d639b6c1adb6218db2f499/notebooks/ieeg-data-release.ipynb",
+      "status": "Résultat sauvegardé, non répliqué"
+    },
+    {
+      "id": "space",
+      "title": "4 · Localisation",
+      "fact": "La figure des auteurs représente la localisation des canaux réactifs.",
+      "limit": "Coordonnées numériques non acquises ici. Aucun placement individuel dans le corps HRA ou le cerveau CerebrA de POLY.",
+      "source": "https://github.com/Cogitate-consortium/iEEG-data-release/blob/a42cff6f898a9bef29d639b6c1adb6218db2f499/notebooks/ieeg-data-release.ipynb",
+      "image": "assets/cogitate/notebook-cell-55-output-1.png",
+      "status": "Image statique · cellule 55"
+    },
+    {
+      "id": "access",
+      "title": "5 · Réanalyse à préparer",
+      "fact": "L’accès au compte XNAT a été réactivé. Les ressources officielles proposent un accès sélectif ou des lots préparés.",
+      "limit": "Il reste à acquérir et vérifier la même session : signaux, événements, canaux, électrodes, coordonnées, qualité, horloges et versions. Aucun résultat sur le moment d’apparition de la conscience.",
+      "source": "https://www.arc-cogitate.com/data-release",
+      "status": "Accès activé · acquisition non effectuée"
+    }
+  ]
+}

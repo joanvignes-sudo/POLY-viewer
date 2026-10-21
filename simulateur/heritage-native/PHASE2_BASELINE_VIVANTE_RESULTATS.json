@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PERSISTENT_BOUNDED_BASELINE",
+  "report": "results/phase2-live-baseline-2026-10-18/report.json",
+  "report_file_sha256": "b670495e13576495fc0bbb33dd1b850ea9ce34817e309581e6aecaf686ca24cd",
+  "profile_file_sha256": "aa208e03ebe47cec6836723952559e1e546d24b94da9ebcc818f6c1ab4393be4",
+  "worker_sha256": "d81dce175e54276fdb64c7e60412d20fac877abe3945f4966fc0b6ab579b8e46",
+  "build_audit": "results/phase2-live-baseline-2026-10-18/build-audit/report.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "native_reference_comparisons": 180,
+  "exact_read_comparisons": 180,
+  "semantic_base_items": 120,
+  "closed_export_items_including_repeated_reads": 240,
+  "real_failure_cases": 5,
+  "python_tests": 184,
+  "scientific_validation": false,
+  "original_failure_reclassified": false,
+  "new_restorable_states": false,
+  "biological_events_applied": false,
+  "qualification_runs_retained": [
+    "p2/o2-experiment/live-qualification-20261018-085924",
+    "p2/o2-experiment/live-qualification-20261018-090050",
+    "p2/o2-experiment/live-qualification-20261018-090244",
+    "p2/o2-experiment/live-qualification-20261018-090338",
+    "p2/o2-experiment/live-qualification-20261018-090836",
+    "p2/o2-experiment/live-qualification-20261018-091019",
+    "p2/o2-experiment/live-qualification-20261018-091330"
+  ]
+}

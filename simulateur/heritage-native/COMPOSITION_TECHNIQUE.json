@@ -1,0 +1,183 @@
+{
+  "schema_version": "poly-technical-composition/0.1",
+  "status": "BOUNDED_TECHNICAL_WORKBENCH_NOT_VALIDATED_WHOLE_ORGANISM",
+  "phase": 2,
+  "entrypoint": "tools/organisme_entier/organism_workbench.py",
+  "components": [
+    {
+      "id": "poly.canon.reference",
+      "role": "NEUROBIOLOGY_AND_PROVENANCE_CORE",
+      "kind": "reference",
+      "implementation": "tools/organisme_entier/canon_reference_adapter.py",
+      "qualification": "PHASE2_REFERENCES_CANON_RESULTATS.json",
+      "actual_capabilities": [
+        "describe",
+        "list_references",
+        "resolve",
+        "close"
+      ],
+      "numeric_outputs": [],
+      "source_tiers": [
+        "STABLE_DOCUMENTARY",
+        "RESEARCH_PR1_READ_ONLY",
+        "LOCAL_SEPARATE_CORPUS"
+      ],
+      "dynamic_neural_simulation": false
+    },
+    {
+      "id": "poly.pulse.bounded_live_baseline",
+      "role": "AGGREGATE_PHYSIOLOGY_REFERENCE_PATIENT",
+      "kind": "dynamic_bounded_baseline",
+      "implementation": "tools/organisme_entier/pulse_live_baseline.py",
+      "qualification": "PHASE2_BASELINE_VIVANTE_RESULTATS.json",
+      "profile": "PULSE_BASELINE_LIVE_BINDINGS.json",
+      "actual_capabilities": [
+        "describe",
+        "restore_initial_known_state",
+        "read",
+        "advance_to_known_horizon",
+        "close",
+        "abort"
+      ],
+      "initial_ticks": [
+        1500,
+        1501,
+        1520,
+        1541
+      ],
+      "horizons_steps": [
+        0,
+        1,
+        50,
+        500,
+        3000
+      ],
+      "dt_s": 0.02,
+      "output_ports": [
+        "physiology.heart_rate",
+        "physiology.mean_arterial_pressure",
+        "physiology.respiration_rate",
+        "physiology.total_pulmonary_ventilation",
+        "physiology.core_temperature",
+        "physiology.total_metabolic_rate"
+      ],
+      "owner": "pulse.whole_body",
+      "historical_candidate": "PULSE_ADAPTER_CANDIDAT.json",
+      "historical_candidate_promoted": false,
+      "biological_apply_available": false,
+      "arbitrary_checkpoint_or_rollback_available": false,
+      "qualified_backend_choices": [
+        {
+          "kind": "historical_bounded_baseline",
+          "implementation": "tools/organisme_entier/pulse_live_baseline.py",
+          "profile": "PULSE_BASELINE_LIVE_BINDINGS.json"
+        },
+        {
+          "kind": "guarded_bounded_baseline",
+          "implementation": "tools/organisme_entier/guarded_live_baseline.py",
+          "profile": "PULSE_LIFECYCLE_GUARD_BINDINGS.json",
+          "numerical_profile": "PULSE_BASELINE_LIVE_BINDINGS.json",
+          "composition_qualification": "PHASE2_COMPOSITION_GARDEE_RESULTATS.json"
+        }
+      ],
+      "ordinary_cli_default": "historical_bounded_baseline",
+      "guarded_cli_selection": "--guarded",
+      "silent_fallback": false
+    },
+    {
+      "id": "poly.observation.registry",
+      "role": "ATOMIC_OBSERVATION_ADMISSION_AND_LOCAL_STATE",
+      "kind": "coordinator_local_memory",
+      "implementation": "tools/organisme_entier/observation_registry.py",
+      "qualification": "PHASE2_REGISTRE_OBSERVATIONS_RESULTATS.json",
+      "actual_capabilities": [
+        "register",
+        "ingest",
+        "read_latest_frame",
+        "release",
+        "snapshot"
+      ],
+      "implicit_clock_alignment": false,
+      "implicit_unit_conversion": false,
+      "independent_source_scientific_qualification": false,
+      "distributed_recovery": false
+    },
+    {
+      "id": "poly.organism.workbench",
+      "role": "BOUNDED_COMPONENT_COMPOSITION_AND_PROVENANCE_VIEW",
+      "kind": "technical_facade",
+      "implementation": "tools/organisme_entier/organism_workbench.py",
+      "qualification": "PHASE2_BANC_ORGANISME_RESULTATS.json",
+      "actual_capabilities": [
+        "start",
+        "reference",
+        "snapshot",
+        "refresh",
+        "advance_to_known_horizon",
+        "close",
+        "abort",
+        "read_closed_workbench"
+      ],
+      "canonical_to_physiology_bridge": false,
+      "external_autonomic_loop": false,
+      "anatomical_registration": false
+    },
+    {
+      "id": "external.anatomy_connectivity.references",
+      "role": "HRA_SCKAN_APINATOMY_MINIMAL_PINNED_REFERENCES",
+      "kind": "reference_inputs_not_registered_to_runtime",
+      "qualification": "QUALIFICATION_P1_SOURCES.json",
+      "manifest": "REFERENCES_VERROUILLEES.json",
+      "numeric_runtime_connection": false,
+      "anatomical_registration": false,
+      "phase3_started": false
+    },
+    {
+      "id": "external.specialist.models",
+      "role": "OPENSIM_CELLML_BIOMODELS_FUTURE_SELECTION",
+      "kind": "not_selected",
+      "actual_capabilities": [],
+      "models_copied": false,
+      "phases4_5_started": false
+    }
+  ],
+  "dataflows": [
+    {
+      "from": "poly.canon.reference",
+      "to": "poly.organism.workbench",
+      "payload_kind": "reference",
+      "causal": false
+    },
+    {
+      "from": "poly.pulse.bounded_live_baseline",
+      "to": "poly.observation.registry",
+      "payload_kind": "SIMULATED_state_envelopes",
+      "causal_coupling_to_other_engine": false
+    },
+    {
+      "from": "poly.observation.registry",
+      "to": "poly.organism.workbench",
+      "payload_kind": "read_only_admitted_frame",
+      "new_physiology": false
+    }
+  ],
+  "forbidden_or_unimplemented": [
+    "canonical_reference_as_executable_physiology",
+    "implicit_cross_species_or_cross_study_identity",
+    "C13_missing_clocks_reconstructed_by_assumption",
+    "walking_speed_to_exercise_intensity",
+    "noise_to_startle_dynamic_bridge",
+    "external_replacement_of_Pulse_autonomic_feedback",
+    "arbitrary_patient_or_pathology",
+    "general_checkpoint_rollback",
+    "clinical_or_scientific_validation_claim"
+  ],
+  "scenario_execution": {
+    "A": "NOT_RUN",
+    "B": "NOT_RUN",
+    "C": "NOT_RUN"
+  },
+  "main_or_pr1_modified": false,
+  "deployment_performed": false,
+  "scientific_validation": false
+}

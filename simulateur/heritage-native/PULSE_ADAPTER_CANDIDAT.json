@@ -1,0 +1,212 @@
+{
+  "adapter_id": "poly.pulse.whole_body",
+  "adapter_version": "0.1",
+  "status": "STATICALLY_VERIFIED_CANDIDATE_NOT_IMPLEMENTED",
+  "kind": "dynamic",
+  "artifact_uri": "https://gitlab.kitware.com/physiology/engine",
+  "artifact_version": "4.4.0",
+  "artifact_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "artifact_digest": "dfed044292b12fc6ec3895c55bfe485ca7fbee92dcae7e088f8e6029be732658",
+  "artifact_digest_scope": "src/cpp/cdm/PhysiologyEngine.h only; not the entire engine or a binary build",
+  "license": {
+    "code": "Apache-2.0",
+    "license_path": "LICENSE",
+    "notice_path": "NOTICE",
+    "binary_dependencies": "NOT_YET_QUALIFIED",
+    "patient_state": "No third-party state selected; original synthetic API configuration proposed, not initialized"
+  },
+  "domain": {
+    "species": "human",
+    "model": "HumanAdultWholeBody",
+    "resolution": "lumped whole-body physiology",
+    "neural_detail": "not a cellular neural simulation"
+  },
+  "capabilities": [
+    "describe",
+    "initialize",
+    "read",
+    "apply",
+    "advance",
+    "close",
+    "checkpoint",
+    "restore"
+  ],
+  "capability_status": "native API present; POLY lifecycle implementation and runtime tests absent",
+  "binding_candidate": "C++ PhysiologyEngine",
+  "ports": [
+    {
+      "id": "exercise.intensity",
+      "direction": "input",
+      "quantity": "exercise_intensity",
+      "unit": "1",
+      "range_inclusive": [
+        0,
+        1
+      ],
+      "native_api": "SEExercise::GetIntensity().SetValue(value); PhysiologyEngine::ProcessAction(action)",
+      "owner": "scenario-controller",
+      "compartment": "patient",
+      "species": "human",
+      "meaning": "Fraction of maximum patient exertion; not speed, watts or MET",
+      "evidence_paths": [
+        "src/cpp/cdm/patient/actions/SEExercise.h",
+        "src/cpp/cdm/patient/actions/SEExercise.cpp",
+        "src/schema/pulse/cdm/bind/PatientActions.proto"
+      ]
+    },
+    {
+      "id": "physiology.heart_rate",
+      "direction": "output",
+      "quantity": "heart_rate",
+      "unit": "1/min",
+      "native_request": "HeartRate",
+      "native_getter": "GetHeartRate",
+      "owner": "pulse.whole_body",
+      "compartment": "patient",
+      "species": "human",
+      "system": "cardiovascular",
+      "availability": "CHECK_HAS_OR_FINITE_AT_RUNTIME",
+      "evidence_paths": [
+        "src/cpp/cdm/system/physiology/SECardiovascularSystem.h"
+      ],
+      "evidence_status": "SIMULATED"
+    },
+    {
+      "id": "physiology.mean_arterial_pressure",
+      "direction": "output",
+      "quantity": "mean_arterial_pressure",
+      "unit": "mmHg",
+      "native_request": "MeanArterialPressure",
+      "native_getter": "GetMeanArterialPressure",
+      "owner": "pulse.whole_body",
+      "compartment": "patient",
+      "species": "human",
+      "system": "cardiovascular",
+      "availability": "CHECK_HAS_OR_FINITE_AT_RUNTIME",
+      "evidence_paths": [
+        "src/cpp/cdm/system/physiology/SECardiovascularSystem.h"
+      ],
+      "evidence_status": "SIMULATED"
+    },
+    {
+      "id": "physiology.respiration_rate",
+      "direction": "output",
+      "quantity": "respiration_rate",
+      "unit": "1/min",
+      "native_request": "RespirationRate",
+      "native_getter": "GetRespirationRate",
+      "owner": "pulse.whole_body",
+      "compartment": "patient",
+      "species": "human",
+      "system": "respiratory",
+      "availability": "CHECK_HAS_OR_FINITE_AT_RUNTIME",
+      "evidence_paths": [
+        "src/cpp/cdm/system/physiology/SERespiratorySystem.h"
+      ],
+      "evidence_status": "SIMULATED"
+    },
+    {
+      "id": "physiology.total_pulmonary_ventilation",
+      "direction": "output",
+      "quantity": "total_pulmonary_ventilation",
+      "unit": "L/min",
+      "native_request": "TotalPulmonaryVentilation",
+      "native_getter": "GetTotalPulmonaryVentilation",
+      "owner": "pulse.whole_body",
+      "compartment": "patient",
+      "species": "human",
+      "system": "respiratory",
+      "availability": "CHECK_HAS_OR_FINITE_AT_RUNTIME",
+      "evidence_paths": [
+        "src/cpp/cdm/system/physiology/SERespiratorySystem.h"
+      ],
+      "evidence_status": "SIMULATED"
+    },
+    {
+      "id": "physiology.core_temperature",
+      "direction": "output",
+      "quantity": "core_temperature",
+      "unit": "degC",
+      "native_request": "CoreTemperature",
+      "native_getter": "GetCoreTemperature",
+      "owner": "pulse.whole_body",
+      "compartment": "patient",
+      "species": "human",
+      "system": "energy",
+      "availability": "CHECK_HAS_OR_FINITE_AT_RUNTIME",
+      "evidence_paths": [
+        "src/cpp/cdm/system/physiology/SEEnergySystem.h"
+      ],
+      "evidence_status": "SIMULATED"
+    },
+    {
+      "id": "physiology.total_metabolic_rate",
+      "direction": "output",
+      "quantity": "total_metabolic_rate",
+      "unit": "W",
+      "native_request": "TotalMetabolicRate",
+      "native_getter": "GetTotalMetabolicRate",
+      "owner": "pulse.whole_body",
+      "compartment": "patient",
+      "species": "human",
+      "system": "energy",
+      "availability": "CHECK_HAS_OR_FINITE_AT_RUNTIME",
+      "evidence_paths": [
+        "src/cpp/cdm/system/physiology/SEEnergySystem.h"
+      ],
+      "evidence_status": "SIMULATED"
+    }
+  ],
+  "lifecycle_native": {
+    "initialize": "InitializeEngine or SerializeFromString; require true",
+    "apply": "ProcessAction; require true",
+    "advance": "AdvanceModelTime then GetSimulationTime(s); require true and read actual time",
+    "read": "HasX/GetX or explicitly ordered data requests; missing is ND",
+    "checkpoint": "SerializeToString; require true",
+    "restore": "SerializeFromString; engine-state restoration only, not coordinator/event journal restoration",
+    "close": "release engine resource"
+  },
+  "ownership": {
+    "pulse.whole_body": [
+      "cardiovascular regulation",
+      "respiration",
+      "thermal/metabolic balances",
+      "autonomic feedback already inside Pulse"
+    ],
+    "poly.reference": [
+      "evidence and metadata only"
+    ],
+    "scenario-controller": [
+      "exercise intensity and explicit event schedule"
+    ]
+  },
+  "clock": {
+    "id_template": "run:{run_id}:pulse",
+    "unit": "s",
+    "origin": "successful initialization or explicitly restored state",
+    "time_step": "read GetTimeStep(s); never assume from visualization",
+    "requested_vs_actual": "read actual time after every advancement"
+  },
+  "gates": [
+    "Pin licensed patient state and native build before execution",
+    "Check native version/hash against manifest",
+    "No concurrent read/action during advance",
+    "No duplicate external autonomic loop",
+    "No unsupported port or implicit conversion",
+    "No full rollback advertised until adapter + scheduler + event journal are tested"
+  ],
+  "python_binding_findings": [
+    "process_action and nonempty process_actions do not return native acknowledgement in pinned wrapper",
+    "advance_time_s accumulates fractional remaining time in _spare_time_s",
+    "pull_data returns cached vector; first result is simulation time, subsequent results follow request order",
+    "serialize_to_string does not itself serialize coordinator event ledger or wrapper fractional-time bookkeeping"
+  ],
+  "unsupported_in_this_contract": [
+    "walking-speed-to-intensity conversion",
+    "noise-to-startle dynamic bridge",
+    "external neural replacement of autonomic feedback",
+    "direct total burn outputs as user input"
+  ],
+  "candidate_patient_build_recipe": "PULSE_PATIENT_BUILD_CANDIDAT.json",
+  "runtime_probe_result": "PHASE2_RESULTATS.json"
+}

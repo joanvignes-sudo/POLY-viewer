@@ -1,0 +1,16 @@
+{
+  "status": "PROTOCOL_BEFORE_NATIVE_PARENT_DEATH",
+  "date_local": "2026-10-18",
+  "cases": [
+    "identity_durable_before_stdin_live_parent_refused",
+    "parent_death_before_stdin_no_adoption",
+    "parent_death_after_native_output_begins_no_adoption",
+    "normal_restore_unchanged"
+  ],
+  "recovery": "Never kill by recovered PID; live/unknown child blocks; proven absent/reused child permits INTERRUPTED only; pre-identity crash stays blocked",
+  "inflight_output_adoption": false,
+  "tolerance_relative": 1e-09,
+  "scientific_validation": false,
+  "power_loss_qualified": false,
+  "concurrent_recovery_qualified": false
+}

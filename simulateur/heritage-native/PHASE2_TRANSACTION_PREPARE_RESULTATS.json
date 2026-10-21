@@ -1,0 +1,18 @@
+{
+  "status": "PASS_PERSISTED_TRANSACTION_PREPARATION",
+  "date_local": "2026-10-18",
+  "report": "results/phase2-transaction-prepare-2026-10-18/report.json",
+  "qualification_cases": 5,
+  "native_diagnostic_comparisons": 9,
+  "new_native_attempts_during_preparation": 0,
+  "test_methods": 117,
+  "durable_guard_plan_link_qualified": true,
+  "source_receipt_locks_pointer_preserved": true,
+  "fresh_process_inspection_qualified": true,
+  "execution_stays_blocked": true,
+  "mutating_executor_implemented": false,
+  "partial_quarantine_resume_qualified": false,
+  "power_loss_qualified": false,
+  "scientific_validation": false,
+  "original_failure_reclassified": false
+}

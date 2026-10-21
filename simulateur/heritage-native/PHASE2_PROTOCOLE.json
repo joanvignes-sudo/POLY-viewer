@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "authorization": "User requested continuation after the explicitly announced phase-2 native build and patient-initialization milestone",
+  "scope": "P2-01 isolated native build, required runtime data, original synthetic patient initialization, baseline and engine-state replay",
+  "source_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "patient_recipe": "PULSE_PATIENT_BUILD_CANDIDAT.json",
+  "predeclared_before_execution": true,
+  "baseline": {"duration_requested_s": 30, "sample_interval_requested_s": 1, "native_dt": "READ_FROM_ENGINE"},
+  "checkpoint_probe": {
+    "segment_duration_requested_s": 10,
+    "comparison": "abs(first-second) <= 1e-9 * max(1, abs(first)) for actual time and six selected outputs",
+    "scope": "Same binary, same serialized engine state; not full coordinator rollback or scientific validation"
+  },
+  "technical_acceptance": [
+    "Native initialization returns true",
+    "Resolved patient and initial engine state saved successfully",
+    "Six outputs and actual time finite",
+    "Actual time monotonic and consistent with requested advances within native-step tolerance",
+    "Engine checkpoint restore and repeated 10s segment within declared tolerance",
+    "Binary/source/data/toolchain hashes and source changes recorded"
+  ],
+  "not_established_by_this_probe": ["physiological calibration", "native-solver convergence", "cross-model coupling", "C13 subject or clock alignment", "consciousness mechanism"],
+  "physiological_scenarios": {"A": "NOT_EXECUTED_BY_THIS_PROBE", "B": "NOT_AUTHORIZED_IN_THIS_LOT", "C": "NOT_AUTHORIZED_IN_THIS_LOT"},
+  "main_modification_authorized": false,
+  "pr1_merge_authorized": false,
+  "deployment_authorized": false
+}

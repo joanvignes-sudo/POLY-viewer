@@ -1,0 +1,322 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "source_id": "c13-local",
+  "sha256": "5efa158a1a3741ad44b023abfabfda26c08517a9eba4035929e49eb9535a0612",
+  "scope": "Qualification of pinned local metadata only; no full-text scientific reassessment",
+  "groups": [
+    {
+      "id": "P01",
+      "pointer": "/groups/0",
+      "species_original": "mouse",
+      "study_id_original": "S15",
+      "scope_original": "Souris · S15 / Hsueh 2023",
+      "nodes": 11,
+      "edges": 15,
+      "qualification_missing_counts": {
+        "biologicalTime": 11,
+        "datasetId": 11,
+        "experimentId": 11,
+        "participantSetId": 11
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P01",
+          "uri_original": "https://www.nature.com/articles/s41586-023-05748-8",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/0/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 11,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P02-VTA",
+      "pointer": "/groups/1",
+      "species_original": "mouse",
+      "study_id_original": "S10",
+      "scope_original": "Souris · S10 / Eshel 2015",
+      "nodes": 9,
+      "edges": 8,
+      "qualification_missing_counts": {
+        "biologicalTime": 9,
+        "datasetId": 9,
+        "experimentId": 9,
+        "participantSetId": 9
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P02-VTA",
+          "uri_original": "https://www.nature.com/articles/nature14855",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/1/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 0,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P02-LC",
+      "pointer": "/groups/2",
+      "species_original": "mouse",
+      "study_id_original": "S14",
+      "scope_original": "Souris · S14",
+      "nodes": 8,
+      "edges": 8,
+      "qualification_missing_counts": {
+        "biologicalTime": 8,
+        "datasetId": 8,
+        "experimentId": 8,
+        "participantSetId": 8
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P02-LC",
+          "uri_original": "https://www.nature.com/articles/s41586-026-11026-0",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/2/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 8,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P03-PHYSIO",
+      "pointer": "/groups/3",
+      "species_original": "human",
+      "study_id_original": "S16",
+      "scope_original": "Humain · S16 · préparations séparées",
+      "nodes": 7,
+      "edges": 11,
+      "qualification_missing_counts": {
+        "biologicalTime": 7,
+        "datasetId": 7,
+        "experimentId": 7,
+        "participantSetId": 7
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P03-PHYSIO",
+          "uri_original": "https://www.nature.com/articles/nn.3323",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/3/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 7,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P03-RAPPORT",
+      "pointer": "/groups/4",
+      "species_original": "human",
+      "study_id_original": "S16",
+      "scope_original": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "nodes": 6,
+      "edges": 6,
+      "qualification_missing_counts": {
+        "biologicalTime": 6,
+        "datasetId": 6,
+        "experimentId": 6,
+        "participantSetId": 6
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P03-RAPPORT",
+          "uri_original": "https://www.nature.com/articles/nn.3323",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/4/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 6,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P03-REPERES",
+      "pointer": "/groups/5",
+      "species_original": "human",
+      "study_id_original": "S16",
+      "scope_original": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "nodes": 7,
+      "edges": 7,
+      "qualification_missing_counts": {
+        "biologicalTime": 7,
+        "datasetId": 7,
+        "experimentId": 7,
+        "participantSetId": 7
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P03-REPERES",
+          "uri_original": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnn.3323/MediaObjects/41593_2013_BFnn3323_MOESM19_ESM.pdf",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/5/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 7,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P03-SYNCHRO",
+      "pointer": "/groups/6",
+      "species_original": "human",
+      "study_id_original": "S18",
+      "scope_original": "Humain · S18 · six exports audités",
+      "nodes": 5,
+      "edges": 4,
+      "qualification_missing_counts": {
+        "biologicalTime": 5,
+        "datasetId": 5,
+        "experimentId": 5,
+        "participantSetId": 5
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P03-SYNCHRO",
+          "uri_original": "https://www.nature.com/articles/s41467-026-73828-0",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/6/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 5,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P03-ISO-PANIC",
+      "pointer": "/groups/7",
+      "species_original": "human",
+      "study_id_original": "S21",
+      "scope_original": "Humain · S21 · AM et BG, témoins selon protocole",
+      "nodes": 9,
+      "edges": 11,
+      "qualification_missing_counts": {
+        "biologicalTime": 9,
+        "datasetId": 9,
+        "experimentId": 9,
+        "participantSetId": 9
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P03-ISO-PANIC",
+          "uri_original": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4804013/",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/7/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 9,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "P03-ISO-DIAL",
+      "pointer": "/groups/8",
+      "species_original": "human",
+      "study_id_original": "S21",
+      "scope_original": "Humain · S21 · AM et BG, témoins selon protocole",
+      "nodes": 9,
+      "edges": 11,
+      "qualification_missing_counts": {
+        "biologicalTime": 9,
+        "datasetId": 9,
+        "experimentId": 9,
+        "participantSetId": 9
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-P03-ISO-DIAL",
+          "uri_original": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4804013/",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/8/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 9,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    },
+    {
+      "id": "BANG-S24",
+      "pointer": "/groups/9",
+      "species_original": "human",
+      "study_id_original": "S24",
+      "scope_original": "Humain · S24 / Bang · caudé et putamen",
+      "nodes": 9,
+      "edges": 11,
+      "qualification_missing_counts": {
+        "biologicalTime": 9,
+        "datasetId": 9,
+        "experimentId": 9,
+        "participantSetId": 9
+      },
+      "evidence_references": [
+        {
+          "evidence_id": "REF-BANG-S24",
+          "uri_original": "atlas/reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+          "reference_role_original": "dossier_context",
+          "pointer": "/groups/9/evidence/0"
+        }
+      ],
+      "reader_auto_qualification_count": 9,
+      "dynamic_bridge": "BLOCKED_MISSING_NATIVE_CONTEXT",
+      "next_required": [
+        "dataset-native experiment/participant identity",
+        "time origin and alignment uncertainty",
+        "study-specific preparation and quantity units",
+        "per-assertion source attribution"
+      ]
+    }
+  ],
+  "scientific_promotions": [],
+  "cross_dataset_identity_assertions": [],
+  "warning": "studyId and autoQualified are documentary metadata, not a native experiment identity or scientific validation"
+}

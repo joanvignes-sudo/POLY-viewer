@@ -1,0 +1,747 @@
+{
+  "version": "0.94",
+  "id": "MNI-ICBM152-2009c-SYM-CEREBRA",
+  "name": "CerebrA · MNI-ICBM152 non linéaire symétrique 2009c",
+  "species": "Homo sapiens",
+  "space": "MNI152NLin2009cSym",
+  "units": "mm",
+  "axes": "RAS+ : x droite, y antérieur, z supérieur",
+  "volume_shape": [
+    193,
+    229,
+    193
+  ],
+  "voxel_to_world": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -96.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -132.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -78.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_segmentation_spacing_mm": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "source_url": "https://packages.bic.mni.mcgill.ca/mni-models/icbm152/mni_icbm152_nlin_sym_09c_CerebrA_nifti.zip",
+  "source_sha256": "51ae4a9a2d004c3c0edea2e3ab0c15f71a2c88f04960aa2e599a3633816f445d",
+  "mesh_sha256": "4630d8682ddf780aaccfadb52876f94e903ae07b5cb294a773c5f6c0538c96b1",
+  "mesh_file": "cerebra-surfaces.bin",
+  "source_license": "CerebrA CC0 1.0; MNI copyright and permission notice retained",
+  "license_urls": [
+    "https://gin.g-node.org/anamanera/CerebrA/raw/master/LICENSE",
+    "https://nist.mni.mcgill.ca/icbm-152-nonlinear-atlases-2009/"
+  ],
+  "citations": [
+    "https://doi.org/10.1038/s41597-020-0557-9",
+    "https://doi.org/10.1016/j.neuroimage.2010.07.033"
+  ],
+  "processing": {
+    "method": "Marching cubes on labelled segmentation; level 0.5; step_size 2; no smoothing; affine applied to vertices",
+    "render_transform": "RAS mm → scene: (x, z, -y) / 50; uniform scale for display; no registration to schematic body",
+    "registration_to_experimental_subjects": null
+  },
+  "limits": [
+    "Atlas moyen humain, pas un participant de POLY.",
+    "Étiquettes anatomiques recalées et corrigées, pas des limites individuelles mesurées chez P8.",
+    "Échantillonnage du maillage à deux voxels ; ne représente pas une résolution neuronale.",
+    "Aucun trajet axonal ni délai déduit de ces surfaces."
+  ],
+  "regions": [
+    {
+      "id": "cortex-right",
+      "label": "Cortex droit",
+      "group": "cortex",
+      "hemisphere": "right",
+      "label_values": [
+        30,
+        42,
+        43,
+        36,
+        24,
+        10,
+        3,
+        33,
+        34,
+        7,
+        12,
+        15,
+        28,
+        18,
+        16,
+        32,
+        44,
+        22,
+        6,
+        13,
+        47,
+        35,
+        31,
+        8,
+        1,
+        38,
+        9,
+        45,
+        51,
+        14,
+        23
+      ],
+      "vertices": 62724,
+      "triangles": 127040,
+      "position_offset": 0,
+      "index_offset": 752688,
+      "bounds_mm": [
+        [
+          -1.0,
+          -107.0,
+          -53.0
+        ],
+        [
+          73.0,
+          75.0,
+          83.0
+        ]
+      ],
+      "centroid_mm": [
+        31.276609420776367,
+        -18.459888458251953,
+        18.5620174407959
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "amygdala-right",
+      "label": "Amygdale droit",
+      "group": "amygdala",
+      "hemisphere": "right",
+      "label_values": [
+        19
+      ],
+      "vertices": 342,
+      "triangles": 680,
+      "position_offset": 2277168,
+      "index_offset": 2281272,
+      "bounds_mm": [
+        [
+          13.0,
+          -13.0,
+          -31.0
+        ],
+        [
+          33.0,
+          1.0,
+          -9.0
+        ]
+      ],
+      "centroid_mm": [
+        23.4970760345459,
+        -4.73099422454834,
+        -20.327486038208008
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "hippocampus-right",
+      "label": "Hippocampe droit",
+      "group": "hippocampus",
+      "hemisphere": "right",
+      "label_values": [
+        48
+      ],
+      "vertices": 902,
+      "triangles": 1820,
+      "position_offset": 2289432,
+      "index_offset": 2300256,
+      "bounds_mm": [
+        [
+          11.0,
+          -43.0,
+          -31.0
+        ],
+        [
+          37.0,
+          -5.0,
+          9.0
+        ]
+      ],
+      "centroid_mm": [
+        25.090909957885742,
+        -23.356985092163086,
+        -13.534368515014648
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "insula-right",
+      "label": "Insula droit",
+      "group": "insula",
+      "hemisphere": "right",
+      "label_values": [
+        23
+      ],
+      "vertices": 1738,
+      "triangles": 3472,
+      "position_offset": 2322096,
+      "index_offset": 2342952,
+      "bounds_mm": [
+        [
+          27.0,
+          -29.0,
+          -19.0
+        ],
+        [
+          45.0,
+          31.0,
+          21.0
+        ]
+      ],
+      "centroid_mm": [
+        36.479862213134766,
+        1.2566168308258057,
+        1.5097813606262207
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "thalamus-right",
+      "label": "Thalamus droit",
+      "group": "thalamus",
+      "hemisphere": "right",
+      "label_values": [
+        40
+      ],
+      "vertices": 1011,
+      "triangles": 2022,
+      "position_offset": 2384616,
+      "index_offset": 2396748,
+      "bounds_mm": [
+        [
+          -1.0,
+          -37.0,
+          -7.0
+        ],
+        [
+          27.0,
+          1.0,
+          21.0
+        ]
+      ],
+      "centroid_mm": [
+        11.981206893920898,
+        -18.149356842041016,
+        6.202769756317139
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "caudate-right",
+      "label": "Noyau caudé droit",
+      "group": "caudate",
+      "hemisphere": "right",
+      "label_values": [
+        49
+      ],
+      "vertices": 916,
+      "triangles": 1836,
+      "position_offset": 2421012,
+      "index_offset": 2432004,
+      "bounds_mm": [
+        [
+          5.0,
+          -29.0,
+          -11.0
+        ],
+        [
+          23.0,
+          27.0,
+          27.0
+        ]
+      ],
+      "centroid_mm": [
+        14.447598457336426,
+        7.294759750366211,
+        11.310043334960938
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "putamen-right",
+      "label": "Putamen droit",
+      "group": "putamen",
+      "hemisphere": "right",
+      "label_values": [
+        21
+      ],
+      "vertices": 908,
+      "triangles": 1812,
+      "position_offset": 2454036,
+      "index_offset": 2464932,
+      "bounds_mm": [
+        [
+          13.0,
+          -23.0,
+          -13.0
+        ],
+        [
+          33.0,
+          21.0,
+          15.0
+        ]
+      ],
+      "centroid_mm": [
+        25.370044708251953,
+        1.6079294681549072,
+        0.07268722355365753
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "cerebellum-right",
+      "label": "Cervelet droit",
+      "group": "cerebellum",
+      "hemisphere": "right",
+      "label_values": [
+        46,
+        39
+      ],
+      "vertices": 4299,
+      "triangles": 8602,
+      "position_offset": 2486676,
+      "index_offset": 2538264,
+      "bounds_mm": [
+        [
+          1.0,
+          -93.0,
+          -69.0
+        ],
+        [
+          57.0,
+          -21.0,
+          -5.0
+        ]
+      ],
+      "centroid_mm": [
+        24.441730499267578,
+        -59.799720764160156,
+        -37.756919860839844
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "cortex-left",
+      "label": "Cortex gauche",
+      "group": "cortex",
+      "hemisphere": "left",
+      "label_values": [
+        81,
+        93,
+        94,
+        87,
+        75,
+        61,
+        54,
+        84,
+        85,
+        58,
+        63,
+        66,
+        79,
+        69,
+        67,
+        83,
+        95,
+        73,
+        57,
+        64,
+        98,
+        86,
+        82,
+        59,
+        52,
+        89,
+        60,
+        96,
+        102,
+        65,
+        74
+      ],
+      "vertices": 62571,
+      "triangles": 126734,
+      "position_offset": 2641488,
+      "index_offset": 3392340,
+      "bounds_mm": [
+        [
+          -73.0,
+          -107.0,
+          -53.0
+        ],
+        [
+          -1.0,
+          75.0,
+          83.0
+        ]
+      ],
+      "centroid_mm": [
+        -31.355308532714844,
+        -18.51511001586914,
+        18.58411979675293
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "amygdala-left",
+      "label": "Amygdale gauche",
+      "group": "amygdala",
+      "hemisphere": "left",
+      "label_values": [
+        70
+      ],
+      "vertices": 342,
+      "triangles": 680,
+      "position_offset": 4913148,
+      "index_offset": 4917252,
+      "bounds_mm": [
+        [
+          -33.0,
+          -13.0,
+          -31.0
+        ],
+        [
+          -13.0,
+          1.0,
+          -9.0
+        ]
+      ],
+      "centroid_mm": [
+        -23.4970760345459,
+        -4.73099422454834,
+        -20.327486038208008
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "hippocampus-left",
+      "label": "Hippocampe gauche",
+      "group": "hippocampus",
+      "hemisphere": "left",
+      "label_values": [
+        99
+      ],
+      "vertices": 902,
+      "triangles": 1820,
+      "position_offset": 4925412,
+      "index_offset": 4936236,
+      "bounds_mm": [
+        [
+          -37.0,
+          -43.0,
+          -31.0
+        ],
+        [
+          -11.0,
+          -5.0,
+          9.0
+        ]
+      ],
+      "centroid_mm": [
+        -25.090909957885742,
+        -23.356985092163086,
+        -13.534368515014648
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "insula-left",
+      "label": "Insula gauche",
+      "group": "insula",
+      "hemisphere": "left",
+      "label_values": [
+        74
+      ],
+      "vertices": 1738,
+      "triangles": 3472,
+      "position_offset": 4958076,
+      "index_offset": 4978932,
+      "bounds_mm": [
+        [
+          -45.0,
+          -29.0,
+          -19.0
+        ],
+        [
+          -27.0,
+          31.0,
+          21.0
+        ]
+      ],
+      "centroid_mm": [
+        -36.479862213134766,
+        1.2566168308258057,
+        1.5097813606262207
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "thalamus-left",
+      "label": "Thalamus gauche",
+      "group": "thalamus",
+      "hemisphere": "left",
+      "label_values": [
+        91
+      ],
+      "vertices": 1007,
+      "triangles": 2014,
+      "position_offset": 5020596,
+      "index_offset": 5032680,
+      "bounds_mm": [
+        [
+          -27.0,
+          -37.0,
+          -7.0
+        ],
+        [
+          -1.0,
+          1.0,
+          21.0
+        ]
+      ],
+      "centroid_mm": [
+        -12.030784606933594,
+        -18.197616577148438,
+        6.21946382522583
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "caudate-left",
+      "label": "Noyau caudé gauche",
+      "group": "caudate",
+      "hemisphere": "left",
+      "label_values": [
+        100
+      ],
+      "vertices": 916,
+      "triangles": 1836,
+      "position_offset": 5056848,
+      "index_offset": 5067840,
+      "bounds_mm": [
+        [
+          -23.0,
+          -29.0,
+          -11.0
+        ],
+        [
+          -5.0,
+          27.0,
+          27.0
+        ]
+      ],
+      "centroid_mm": [
+        -14.447598457336426,
+        7.294759750366211,
+        11.310043334960938
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "putamen-left",
+      "label": "Putamen gauche",
+      "group": "putamen",
+      "hemisphere": "left",
+      "label_values": [
+        72
+      ],
+      "vertices": 908,
+      "triangles": 1812,
+      "position_offset": 5089872,
+      "index_offset": 5100768,
+      "bounds_mm": [
+        [
+          -33.0,
+          -23.0,
+          -13.0
+        ],
+        [
+          -13.0,
+          21.0,
+          15.0
+        ]
+      ],
+      "centroid_mm": [
+        -25.370044708251953,
+        1.6079294681549072,
+        0.07268722355365753
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "cerebellum-left",
+      "label": "Cervelet gauche",
+      "group": "cerebellum",
+      "hemisphere": "left",
+      "label_values": [
+        97,
+        90
+      ],
+      "vertices": 4299,
+      "triangles": 8602,
+      "position_offset": 5122512,
+      "index_offset": 5174100,
+      "bounds_mm": [
+        [
+          -57.0,
+          -93.0,
+          -69.0
+        ],
+        [
+          -1.0,
+          -21.0,
+          -5.0
+        ]
+      ],
+      "centroid_mm": [
+        -24.441730499267578,
+        -59.799720764160156,
+        -37.756919860839844
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    },
+    {
+      "id": "brainstem",
+      "label": "Tronc cérébral",
+      "group": "brainstem",
+      "hemisphere": "both",
+      "label_values": [
+        11,
+        62
+      ],
+      "vertices": 2654,
+      "triangles": 5296,
+      "position_offset": 5277324,
+      "index_offset": 5309172,
+      "bounds_mm": [
+        [
+          -19.0,
+          -51.0,
+          -78.0
+        ],
+        [
+          19.0,
+          -5.0,
+          1.0
+        ]
+      ],
+      "centroid_mm": [
+        0.0,
+        -31.731725692749023,
+        -35.29465103149414
+      ],
+      "segmentation_spacing_mm": [
+        1,
+        1,
+        1
+      ],
+      "surface_sampling_step_voxels": 2
+    }
+  ],
+  "created_on": "2026-10-12"
+}

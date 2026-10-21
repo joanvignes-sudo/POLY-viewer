@@ -1,0 +1,15 @@
+{
+  "status": "PROTOCOL_BEFORE_RECOVERY_PARENT_DEATH",
+  "date_local": "2026-10-18",
+  "schema": "poly-pulse-recovery-guard/0.1",
+  "cases": [
+    "dead_LOCKED_guard_retired_without_native_launch",
+    "dead_MUTATION_PENDING_guard_refused_unchanged",
+    "normal_native_after_recovery"
+  ],
+  "pre_mutation_phase": "LOCKED",
+  "durable_marker_before_receipt_or_lock_moves": "MUTATION_PENDING",
+  "legacy_unknown_live_owner_reclamation": false,
+  "quarantine_partial_resume_qualified": false,
+  "scientific_validation": false
+}

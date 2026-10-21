@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "status": "NATIVE_INITIALIZATION_EXECUTED_CONTINUITY_GATE_OPEN",
+  "engine_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "patient": {
+    "id": "POLY-REFERENCE-FEMALE-v0.1",
+    "type": "synthetic engine reference; not an experimental subject",
+    "construction": "SEPatientConfiguration.GetPatient API; Name and Sex explicitly set; native defaults for other fields",
+    "native_patient_fields": {
+      "Name": "POLY-REFERENCE-FEMALE-v0.1",
+      "Sex": "Female"
+    },
+    "conditions": [],
+    "disable_bounds": false,
+    "numeric_baseline_parameters": "NOT_ASSIGNED_BY_POLY; read all resolved defaults and units after initialization",
+    "state_file": "local-runtime:work/p2/run-initialization-20261017-130537/initialized_state.json",
+    "state_sha256": "23942383fe4c7f7effb4d87fff86af7b88093a93feaffec82fc7c18e461d5151",
+    "license_basis": "Original POLY configuration proposal referencing Apache-2.0 engine API; no third-party patient-state file copied",
+    "anatomical_subject_identity_with_hra": false,
+    "identity_with_c13": false,
+    "scope": "HumanAdultWholeBody adult reference; no pediatric/disease generalization"
+  },
+  "build": {
+    "native_interface": "C++20 enforced by pinned CMakeLists.txt; README C++17 is stale",
+    "minimum_cmake": "3.31 per pinned CMakeLists.txt; README says 3.12 and is stale for this snapshot",
+    "mode": "Release native built with portable LLVM-MinGW; C++20",
+    "default_data_generation": {
+      "Pulse_JAVA_API": true,
+      "Pulse_PYTHON_API": true,
+      "Pulse_GEN_DATA": true
+    },
+    "data_rule": "Turning either Java or Python API off disables default data generation; native-only build still needs qualified generated data from matching source",
+    "externaldata_baselines": "data/CMakeLists downloads validation archives by SHA512 when requested; not required to copy all archives in phase 1",
+    "isolation_rule": "Use dedicated build and language environments; never mutate bundled Codex runtime",
+    "dependencies_declared": [
+      {
+        "id": "Eigen3",
+        "version": "5.0.1",
+        "archive_md5_declared": "b8e2be4dcc4d9a455584af1b28323567"
+      },
+      {
+        "id": "absl",
+        "version": "20260526.0",
+        "archive_md5_declared": "a8a8a3de136df18dbe87b47c174e7c16"
+      },
+      {
+        "id": "protobuf",
+        "version": "35.0 default; 21.12 alternate exposed",
+        "archive_md5_default_declared": "33b48d10c1054175c35a30238eaf0b73"
+      },
+      {
+        "id": "pybind11",
+        "version": "3.0.4 if Python enabled",
+        "archive_md5_declared": "b76268734a8655557c608407395a5700"
+      }
+    ],
+    "dependency_status": "Selected native dependencies built locally; exact artifacts and retained license/NOTICE hashes in PHASE2_BUILD_RECEIPT.json"
+  },
+  "environment_observation": {
+    "date": "2026-10-17",
+    "method": "Get-Command on PATH plus vswhere C++ component query when available",
+    "cmake_on_path": false,
+    "cpp_compiler_on_path": false,
+    "java_on_path": true,
+    "javac_on_path": false,
+    "limits": "Absence on PATH does not establish absence from all disks; no software installed"
+  },
+  "before_future_execution": [
+    "Explicit phase-2 scope decision",
+    "Qualified native compiler and CMake >=3.31",
+    "Pin generated runtime data and binary hashes",
+    "Record dependency licenses/notices and isolated build environment",
+    "Initialize patient successfully with bounds enabled and no conditions",
+    "Capture resolved initial patient, native engine version/hash, actual dt and time",
+    "Write state bytes and SHA-256; select baseline/effect/convergence thresholds before experiment"
+  ],
+  "baseline_validation": {
+    "initialization_success": true,
+    "stable_state": null,
+    "resolved_defaults": "results/phase2-init-2026-10-17/resolved_patient.json",
+    "validation_result": "INITIALIZATION_PASS_CONTINUITY_FAIL",
+    "native_stabilization_reported": true
+  },
+  "phase2_executed": true,
+  "execution_report": "PHASE2_RESULTATS.json"
+}

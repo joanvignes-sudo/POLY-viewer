@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-17",
+  "version": "4.4.0",
+  "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "evidence_kind": "STATIC_SOURCE_INSPECTION",
+  "files": [
+    {
+      "path": "LICENSE",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "bytes": 11356
+    },
+    {
+      "path": "NOTICE",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/NOTICE",
+      "sha256": "99a17dceaadffd6687113bddd8fbda9051dd8b74fac0b88548edbc3a09665de6",
+      "bytes": 2560
+    },
+    {
+      "path": "CMakeLists.txt",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/CMakeLists.txt",
+      "sha256": "db7117b5f4a31e5fd8a451eaafd4276a841608deeca5dc0f4e29eecfd3df7186",
+      "bytes": 19501
+    },
+    {
+      "path": "src/cpp/cdm/PhysiologyEngine.h",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/cpp/cdm/PhysiologyEngine.h",
+      "sha256": "dfed044292b12fc6ec3895c55bfe485ca7fbee92dcae7e088f8e6029be732658",
+      "bytes": 21257
+    },
+    {
+      "path": "src/cpp/cdm/patient/actions/SEExercise.h",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/cpp/cdm/patient/actions/SEExercise.h",
+      "sha256": "1b4bdc19b1360529cd8460810b77781653e03e4801320c83274f77e206a6078e",
+      "bytes": 876
+    },
+    {
+      "path": "src/cpp/cdm/patient/actions/SEExercise.cpp",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/cpp/cdm/patient/actions/SEExercise.cpp",
+      "sha256": "2effea1a170f6873dc24022a5492d65b3f4e4b8e97c3c3c7341db55aa4d0bf17",
+      "bytes": 1616
+    },
+    {
+      "path": "src/schema/pulse/cdm/bind/PatientActions.proto",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/schema/pulse/cdm/bind/PatientActions.proto",
+      "sha256": "d3ca4df9a2ee9b62f6b46a25a0a852087f212f1722fe61ea02ad0a0bf89029b5",
+      "bytes": 40969
+    },
+    {
+      "path": "src/python/pulse/cdm/patient_actions.py",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/python/pulse/cdm/patient_actions.py",
+      "sha256": "708543cd2de66570c0eeb91ee485a8bdbffa01308a6e69997afabf578219e623",
+      "bytes": 60358
+    },
+    {
+      "path": "src/python/pulse/engine/PulseEngine.py",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/python/pulse/engine/PulseEngine.py",
+      "sha256": "96580034bf273e5073b22f452cae13f144d9120c68800451bb3c76f617380ca3",
+      "bytes": 11043
+    },
+    {
+      "path": "src/python/pulse/howto/HowTo_Exercise.py",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/python/pulse/howto/HowTo_Exercise.py",
+      "sha256": "454f07abc6d0d609b87b2c83a17561ad1ee4193543a9641fb69c90dd08925411",
+      "bytes": 1141
+    },
+    {
+      "path": "src/python/pulse/cdm/engine.py",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/python/pulse/cdm/engine.py",
+      "sha256": "5b519688759d78a40909cbff4b42385f4ede706808c0aef7c4ea418e4c6712f9",
+      "bytes": 33815
+    },
+    {
+      "path": "src/cpp/cdm/system/physiology/SECardiovascularSystem.h",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/cpp/cdm/system/physiology/SECardiovascularSystem.h",
+      "sha256": "2d230883b17f505a6ef660d611a8ea926cb05f1eba7ec1859c7cc17cb497f503",
+      "bytes": 12168
+    },
+    {
+      "path": "src/cpp/cdm/system/physiology/SERespiratorySystem.h",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/cpp/cdm/system/physiology/SERespiratorySystem.h",
+      "sha256": "dabc72a4a7eca7b75dd9cc7401560c7a61a49d1efc6b7365e9b7b81479d6e7d8",
+      "bytes": 17250
+    },
+    {
+      "path": "src/cpp/cdm/system/physiology/SEEnergySystem.h",
+      "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "uri": "https://gitlab.kitware.com/physiology/engine/-/blob/60c4473912b047500bcbc396eceec7588c48fad4/src/cpp/cdm/system/physiology/SEEnergySystem.h",
+      "sha256": "93804df1d76c8ce5fecb8604c8b39103d3fb2fc0f17a71a5996f8e4123419a6a",
+      "bytes": 2881
+    }
+  ],
+  "copied_into_repository": false,
+  "runtime_executed": false
+}

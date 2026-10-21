@@ -1,0 +1,95 @@
+{
+  "status": "P2_01_SCOPED_CONFORMANCE_AUDIT",
+  "date_local": "2026-10-18",
+  "contract": "CONTRAT_ADAPTATEUR.json",
+  "candidate": "PULSE_ADAPTER_CANDIDAT.json",
+  "candidate_preserved_as_static": true,
+  "contract_unchanged": true,
+  "capabilities": [
+    {
+      "capability": "describe",
+      "status": "STATIC_CANDIDATE_ONLY",
+      "evidence": "PULSE_ADAPTER_CANDIDAT.json",
+      "limit": "No installed dynamic POLY adapter descriptor"
+    },
+    {
+      "capability": "initialize",
+      "status": "NATIVE_PROBE_QUALIFIED",
+      "evidence": "PHASE2_RESULTATS.json",
+      "limit": "One synthetic reference patient; native initialization only"
+    },
+    {
+      "capability": "read",
+      "status": "NATIVE_FIXED_OUTPUTS_QUALIFIED",
+      "evidence": "PHASE2_CHECKPOINT_BINDINGS.json",
+      "limit": "Nine finite quantities including time; not general state envelope read API"
+    },
+    {
+      "capability": "apply",
+      "status": "NOT_EXECUTED",
+      "evidence": "CONTRAT_ADAPTATEUR.json",
+      "limit": "No exercise/noise/burn/drug/anesthesia action applied"
+    },
+    {
+      "capability": "advance",
+      "status": "NATIVE_FIXED_HORIZONS_QUALIFIED",
+      "evidence": "PHASE2_CHECKPOINT_BINDINGS.json",
+      "limit": "dt 0.02, horizons 0/1/50/500/3000 on allowlisted states; no coupled scheduler"
+    },
+    {
+      "capability": "close",
+      "status": "DIRECT_CHILD_LIFETIME_QUALIFIED",
+      "evidence": "PHASE2_CHILD_RESULTATS.json",
+      "limit": "Owned child timeout/error cleanup; not full adapter lifecycle"
+    },
+    {
+      "capability": "checkpoint",
+      "status": "KNOWN_NATIVE_STATES_ONLY",
+      "evidence": "PHASE2_O2_RESULTATS.json",
+      "limit": "Four known phase checkpoints; no arbitrary new final checkpoint export"
+    },
+    {
+      "capability": "restore",
+      "status": "EXPERIMENTAL_CLOSED_SET_ONLY",
+      "evidence": "PHASE2_TRANSACTION_RESUME_RESULTATS.json",
+      "limit": "Exact pinned engine/patch/data/patient/clock; no general rollback"
+    },
+    {
+      "capability": "restore_operation_idempotence",
+      "status": "QUALIFIED_BOUNDED",
+      "evidence": "PHASE2_OPERATIONS_RESULTATS.json",
+      "limit": "Restore IDs only; not biological event deduplication"
+    }
+  ],
+  "dynamic_adapter_lifecycle_implemented": false,
+  "biological_event_deduplication_implemented": false,
+  "scheduler_implemented": false,
+  "general_rollback_qualified": false,
+  "scientific_validation": false,
+  "original_engine_continuity": "FAIL_RETAINED_AT_ORIGINAL_THRESHOLD",
+  "experimental_profile": "PULSE_O2_PROFIL_EXPERIMENTAL.json",
+  "experimental_profile_promoted_to_original": false,
+  "canon_counts_preserved": {
+    "MEASURED": 74,
+    "RECONSTRUCTED": 8,
+    "ND": 4
+  },
+  "no_scenarios_executed": [
+    "A",
+    "B",
+    "C"
+  ],
+  "open_gates": [
+    "Explicit v2 DLL guards, 24 recovery/conformance cases and real native timeout isolation qualified; general lifecycle/scenarios remain unimplemented or unauthorized",
+    "Formal POLY dynamic lifecycle integration not implemented",
+    "Predeclared physiological/convergence criteria and scenario authorization",
+    "Legacy guards and child pre-identity crash gap remain explicit conservative blocks",
+    "Power loss and arbitrary storage failures not qualified"
+  ],
+  "next_authorized_technical_lot": null,
+  "runtime_dependency_audit": "PHASE2_RUNTIME_AUDIT_RESULTATS.json",
+  "runtime_dll_v2": "PHASE2_DLL_V2_RESULTATS.json",
+  "dll_v2_recovery_conformance": "PHASE2_DLL_V2_RECOVERY_RESULTATS.json",
+  "dll_v2_timeout_isolation": "PHASE2_DLL_V2_TIMEOUT_RESULTATS.json",
+  "next_scope_requires_decision": true
+}

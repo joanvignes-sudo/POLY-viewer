@@ -1,0 +1,33 @@
+{
+  "date_local": "2026-10-18",
+  "started_utc": "2026-10-17T22:31:53Z",
+  "status": "PROTOCOL_BEFORE_PARENT_EXIT_QUALIFICATION",
+  "scope": "Durable restore operation IDs and bounded parent-interruption recovery",
+  "boundaries": [
+    "PREPARED before restore lock/native launch",
+    "VALIDATED after child/output checks but before pointer replacement",
+    "POINTER_COMMITTED after pointer replacement before final operation acknowledgement",
+    "LIVE_OWNER refusal then controlled termination of owned helper",
+    "CHILD_IN_FLIGHT marker conservatively blocked; no real in-flight Pulse termination qualified"
+  ],
+  "normal_cases": [
+    "Native first request and repeated ID after reopening, no new attempt",
+    "Changed parameters under same ID rejected",
+    "Older committed ID replay does not rewind a later pointer"
+  ],
+  "native_comparisons_expected": 54,
+  "recovery_rules": [
+    "PID plus process creation time, not PID alone",
+    "Persist intent and lifecycle stages with fsync plus atomic same-directory receipt replace",
+    "Recover only when original owner is proven dead or PID reused",
+    "Committed pointer already present can recover lost reply; validated uncommitted output never adopted",
+    "Move attributable dead-owner locks to quarantine, preserve bytes",
+    "Unknown/live/in-flight/unattributed locks remain blocked",
+    "Interrupted ID never silently reruns; explicit new ID required"
+  ],
+  "limits": [
+    "Windows process exits, not power failure or disk-full guarantees",
+    "No external events or physiological model changes",
+    "No new restorable checkpoint or broader rollback qualification"
+  ]
+}

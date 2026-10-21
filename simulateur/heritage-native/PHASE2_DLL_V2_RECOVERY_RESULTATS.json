@@ -1,0 +1,32 @@
+{
+  "status": "PASS_DLL_V2_RECOVERY_AND_TRANSACTION_CONFORMANCE",
+  "date_local": "2026-10-18",
+  "profile": "dll-v2",
+  "reports": {
+    "transactions": "results/phase2-dll-v2-recovery-2026-10-18/transactions-report.json",
+    "refusals": "results/phase2-dll-v2-recovery-2026-10-18/refusals-report.json",
+    "child": "results/phase2-dll-v2-recovery-2026-10-18/child-report.json",
+    "coordination": "results/phase2-dll-v2-recovery-2026-10-18/coordination-report.json"
+  },
+  "qualification_cases": 24,
+  "transaction_parent_exit_cases": 6,
+  "CLI_refusal_cases": 8,
+  "child_parent_death_cases": 4,
+  "coordination_cases": 6,
+  "transaction_seed_comparisons": 54,
+  "refusal_seed_comparisons": 9,
+  "child_normal_comparisons": 45,
+  "child_orphan_diagnostic_comparisons": 45,
+  "coordination_comparisons": 9,
+  "test_methods": 141,
+  "no_native_launch_during_transaction_resume_or_refusal": true,
+  "no_orphan_output_adoption": true,
+  "pointer_and_original_guard_lock_bytes_preserved": true,
+  "explicit_profile_selection": true,
+  "legacy_reports_preserved": true,
+  "native_timeout_failure_isolation_v2_qualified": true,
+  "scientific_validation": false,
+  "original_failure_reclassified": false,
+  "general_rollback_qualified": false,
+  "timeout_result": "PHASE2_DLL_V2_TIMEOUT_RESULTATS.json"
+}

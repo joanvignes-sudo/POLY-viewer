@@ -1,0 +1,243 @@
+{
+  "schema": "poly.recovered.resources/1",
+  "resources": [
+    {
+      "id": "bigbrain",
+      "title": "BigBrain",
+      "status": "Intégré",
+      "sample": "Cortex, trois voisinages et coupe 3863",
+      "scope": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain. Mode atlas optionnel : composition publiée 2015→2019, comparaison dans les coordonnées physiques MNI.",
+      "limit": "Examiner les aperçus calculés, contrôler les raccords entre facettes et étendre la régularité au volume ; validation anatomique indépendante toujours ouverte.",
+      "license": "CC BY-NC-SA 4.0",
+      "href": "../../bibliotheque/microstructures.html",
+      "provenance": "../../bibliotheque/assets/bigbrain/PROVENANCE.json"
+    },
+    {
+      "id": "allen",
+      "title": "Cellules humaines Allen",
+      "status": "Trois cellules et neuf essais intégrés",
+      "sample": "637034000 et 637038252 (donneur H17.03.013) ; 508279351 (donneur H16.06.004)",
+      "scope": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
+      "limit": "Examiner les conditions et les limites des comparaisons avec des spécialistes ; construire un protocole de comparaison appariée. Indicateurs publiés documentés, contrôles expérimentaux Allen non réexécutés.",
+      "license": "Conditions Allen Institute, recherche et usages non commerciaux, attribution obligatoire.",
+      "href": "../../bibliotheque/neurones.html?sample=allen-637034000",
+      "provenance": "../../bibliotheque/assets/allen-comparison/PROVENANCE.json"
+    },
+    {
+      "id": "h01-em",
+      "title": "H01 · microscopie électronique",
+      "status": "Squelette, 1 571 positions, six détails synaptiques, classes source et six fenêtres anatomiques intégrés",
+      "sample": "Segment 1072605926, proofread_104, release 20210601",
+      "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
+      "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
+      "license": "CC BY 4.0",
+      "href": "../../bibliotheque/neurones.html?sample=h01-em-1072605926",
+      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "hipct",
+      "title": "HiP-CT · Human Organ Atlas",
+      "status": "Deux acquisitions reliées",
+      "sample": "Cœur S-20-28 : vue entière 19,85 µm ; VOI-01 6,51 µm ; valve tricuspide annoncée 12,02 µm (champ acquisition arrondi à 12,0).",
+      "scope": "Même cœur S-20-28 ; transformation publiée overview 19,85 µm vers région 6,51 µm, convention d’unités vérifiée. Erreur anatomique indépendante non fournie.",
+      "limit": "Explorer davantage de régions, améliorer les mesures et tester avec des lecteurs.",
+      "license": "CC BY 4.0 selon le portail Human Organ Atlas.",
+      "href": "../../bibliotheque/organes.html?sample=heart",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc",
+      "title": "SPARC · nerf vague humain",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "href": "../../bibliotheque/organes.html?sample=vagus",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "hh",
+      "title": "Membrane · Hodgkin–Huxley",
+      "status": "Cinq traces calculées et contrôlées",
+      "scope": "Axone géant de calmar · 6,3 °C · simulation, sans position anatomique humaine",
+      "limit": "Validation numérique distincte de la validation expérimentale. Aucun couplage physiologique à cet avatar.",
+      "href": "../membrane/web/index.html",
+      "provenance": "../membrane/BILAN.md"
+    },
+    {
+      "id": "r6",
+      "title": "Revue des 544 intervalles",
+      "status": "Revue historique R6",
+      "scope": "Registre documentaire conservé, couverture graphique distincte de validation scientifique",
+      "limit": "Trois liaisons ouvertes et 385 attributions préexistantes encore à approfondir selon le bilan de reprise.",
+      "href": "../../revue544.html"
+    },
+    {
+      "id": "reference",
+      "title": "Nerfs et vaisseaux · références",
+      "status": "Scènes de référence conservées",
+      "scope": "Structures de référence distinctes du corps HRA actuel",
+      "limit": "Aucune continuité axonale entre prélèvements établie.",
+      "href": "../../reference.html"
+    },
+    {
+      "id": "pulse",
+      "title": "Organisme entier · travaux Pulse",
+      "status": "Architecture, journaux et qualifications conservés",
+      "scope": "Modèle distinct ; aucune commande native émise depuis cet avatar.",
+      "limit": "Rapports historiques consultables, sans annoncer leur requalification ni inventer un raccord physiologique.",
+      "href": "../heritage-native/index.html",
+      "provenance": "../heritage-native/ETAT.json"
+    },
+    {
+      "id": "bigbrain-histology",
+      "title": "BigBrain · coupe histologique",
+      "status": "Intégré",
+      "sample": "Cortex, trois voisinages et coupe 3863",
+      "scope": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain. Mode atlas optionnel : composition publiée 2015→2019, comparaison dans les coordonnées physiques MNI.",
+      "limit": "Examiner les aperçus calculés, contrôler les raccords entre facettes et étendre la régularité au volume ; validation anatomique indépendante toujours ouverte.",
+      "license": "CC BY-NC-SA 4.0",
+      "href": "../../bibliotheque/histologie.html",
+      "provenance": "../../bibliotheque/assets/bigbrain/PROVENANCE.json"
+    },
+    {
+      "id": "bigbrain-cortex",
+      "title": "BigBrain · cortex et couches",
+      "status": "Intégré",
+      "sample": "Cortex, trois voisinages et coupe 3863",
+      "scope": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain. Mode atlas optionnel : composition publiée 2015→2019, comparaison dans les coordonnées physiques MNI.",
+      "limit": "Examiner les aperçus calculés, contrôler les raccords entre facettes et étendre la régularité au volume ; validation anatomique indépendante toujours ouverte.",
+      "license": "CC BY-NC-SA 4.0",
+      "href": "../../bibliotheque/cortex.html",
+      "provenance": "../../bibliotheque/assets/bigbrain/PROVENANCE.json"
+    },
+    {
+      "id": "h01-images",
+      "title": "H01 · images et synapses",
+      "status": "Squelette, 1 571 positions, six détails synaptiques, classes source et six fenêtres anatomiques intégrés",
+      "sample": "Segment 1072605926, proofread_104, release 20210601",
+      "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
+      "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
+      "license": "CC BY 4.0",
+      "href": "../../bibliotheque/microscopie.html",
+      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "h01-paths",
+      "title": "H01 · branches et trajets",
+      "status": "Squelette, 1 571 positions, six détails synaptiques, classes source et six fenêtres anatomiques intégrés",
+      "sample": "Segment 1072605926, proofread_104, release 20210601",
+      "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
+      "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
+      "license": "CC BY 4.0",
+      "href": "../../bibliotheque/trajets.html",
+      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "h01-compartments",
+      "title": "H01 · compartiments anatomiques",
+      "status": "Squelette, 1 571 positions, six détails synaptiques, classes source et six fenêtres anatomiques intégrés",
+      "sample": "Segment 1072605926, proofread_104, release 20210601",
+      "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
+      "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
+      "license": "CC BY 4.0",
+      "href": "../../bibliotheque/compartiments.html",
+      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+    },
+    {
+      "id": "allen-qc",
+      "title": "Allen · qualité des enregistrements",
+      "status": "Trois cellules et neuf essais intégrés",
+      "sample": "637034000 et 637038252 (donneur H17.03.013) ; 508279351 (donneur H16.06.004)",
+      "scope": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
+      "limit": "Examiner les conditions et les limites des comparaisons avec des spécialistes ; construire un protocole de comparaison appariée. Indicateurs publiés documentés, contrôles expérimentaux Allen non réexécutés.",
+      "license": "Conditions Allen Institute, recherche et usages non commerciaux, attribution obligatoire.",
+      "href": "../../bibliotheque/neurones.html?sample=allen-637038252&sweep=22&quality=1",
+      "provenance": "../../bibliotheque/assets/allen-comparison/PROVENANCE.json"
+    },
+    {
+      "id": "heart-sinus",
+      "title": "Cœur · région détaillée",
+      "status": "Deux acquisitions reliées",
+      "sample": "Cœur S-20-28 : vue entière 19,85 µm ; VOI-01 6,51 µm ; valve tricuspide annoncée 12,02 µm (champ acquisition arrondi à 12,0).",
+      "scope": "Même cœur S-20-28 ; transformation publiée overview 19,85 µm vers région 6,51 µm, convention d’unités vérifiée. Erreur anatomique indépendante non fournie.",
+      "limit": "Explorer davantage de régions, améliorer les mesures et tester avec des lecteurs.",
+      "license": "CC BY 4.0 selon le portail Human Organ Atlas.",
+      "href": "../../bibliotheque/organes.html?sample=heart&level=sinus-detail",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc-ct",
+      "title": "Nerf vague · microCT C10",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "href": "../../bibliotheque/organes.html?sample=nerve-ct&level=vagus-ct-detail",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc-c1",
+      "title": "Nerf vague · segment C1",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "href": "../../bibliotheque/c1.html",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc-ihc",
+      "title": "Nerf vague · immunohistochimie",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "href": "../../bibliotheque/immunohistochimie.html",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc-channels",
+      "title": "Nerf vague · canaux et plans focaux",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "href": "../../bibliotheque/canaux.html?field=field9&z=9",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "sparc-calibration",
+      "title": "Nerf vague · calibration et raccords",
+      "status": "Modèle, micro-CT C10 et C1, montages et canaux IHC intégrés",
+      "sample": "Scaffold 426 v7 et original 674 v1, sub-f002 gauche ; C10 et C1, IHC C1-A-L2.",
+      "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
+      "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
+      "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
+      "href": "../../bibliotheque/calibration.html",
+      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+    },
+    {
+      "id": "timing",
+      "title": "Délais et inventaire multi-échelle",
+      "status": "Référentiel I conservé",
+      "scope": "12 fiches temporelles, couverture anatomique et 100 sujets de recherche candidats.",
+      "limit": "Aucune durée utilisée automatiquement pour chronométrer les animations ; aucune exhaustivité biologique revendiquée.",
+      "href": "inventory.html"
+    },
+    {
+      "id": "validation-g",
+      "title": "HH · NEURON, Clay et contrôle SGAMP",
+      "status": "Validations et résultat négatif conservés",
+      "scope": "Dix cas numériques NEURON ; contrôle indépendant du décodage et comparaison de modèles de calmar.",
+      "limit": "Incompatibilité du couple HH–SGAMP documentée. Calibration non résolue ; aucune extrapolation humaine.",
+      "href": "../heritage-science/index.html",
+      "provenance": "../heritage-science/reports/NEURON_CROSS_VALIDATION.json"
+    }
+  ]
+}

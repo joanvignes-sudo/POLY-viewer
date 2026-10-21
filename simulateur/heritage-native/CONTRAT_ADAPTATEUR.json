@@ -1,0 +1,143 @@
+{
+  "contract_version": "0.1",
+  "status": "DRAFT_PHASE_1",
+  "runtime_integrations": [
+    {
+      "id": "native_cpp_probe",
+      "result": "PHASE2_RESULTATS.json",
+      "scope": "Initialization/baseline and engine-state replay only",
+      "status": "INITIALIZATION_PASS_CONTINUITY_GATE_OPEN"
+    }
+  ],
+  "adapter_kinds": {
+    "reference": [
+      "describe",
+      "resolve",
+      "close"
+    ],
+    "dynamic": [
+      "describe",
+      "initialize",
+      "read",
+      "apply",
+      "advance",
+      "close"
+    ]
+  },
+  "optional_capabilities": [
+    "checkpoint",
+    "restore"
+  ],
+  "required_descriptor_fields": [
+    "adapter_id",
+    "adapter_version",
+    "kind",
+    "artifact_uri",
+    "artifact_version",
+    "artifact_digest",
+    "license",
+    "domain",
+    "capabilities",
+    "ports"
+  ],
+  "state_envelope_required": [
+    "kind",
+    "entity_ref",
+    "quantity",
+    "value",
+    "unit",
+    "clock",
+    "species",
+    "owner",
+    "evidence_status",
+    "provenance",
+    "limitations"
+  ],
+  "evidence_statuses": [
+    "MEASURED",
+    "RECONSTRUCTED",
+    "ND",
+    "SIMULATED",
+    "HYPOTHETICAL",
+    "PEDAGOGICAL",
+    "OBSERVATION"
+  ],
+  "state_key": "run/entity/quantity/compartment",
+  "event_required": [
+    "event_id",
+    "idempotency_key",
+    "clock",
+    "time",
+    "priority",
+    "target",
+    "payload",
+    "provenance"
+  ],
+  "event_order": [
+    "time",
+    "priority",
+    "event_id"
+  ],
+  "mapping_required": [
+    "source_ref",
+    "target_ref",
+    "mapping_type",
+    "justification",
+    "provenance",
+    "review_status"
+  ],
+  "mapping_types": [
+    "exactMatch",
+    "closeMatch",
+    "partOf",
+    "locatedIn",
+    "candidate"
+  ],
+  "guards": {
+    "source_mutation": false,
+    "unknown_value": null,
+    "implicit_unit_conversion": false,
+    "implicit_clock_alignment": false,
+    "implicit_species_transfer": false,
+    "single_writer_per_state": true,
+    "numerical_bridge_allowed_statuses": [
+      "SIMULATED"
+    ],
+    "unsupported_capability": "ERROR",
+    "unknown_license_allows_artifact_import": false
+  },
+  "implemented_in_phase_1": [
+    "validate_envelope",
+    "validate_exchange",
+    "validate_candidate",
+    "validate_exercise_event",
+    "ReferenceAdapter.resolve",
+    "json_pointer",
+    "qualify_references"
+  ],
+  "not_implemented": [
+    "general_adapter_lifecycle",
+    "event_deduplication",
+    "scheduler",
+    "unit_conversion",
+    "clock_alignment",
+    "rollback",
+    "physiological_solver",
+    "mapping_review",
+    "general_adapter_descriptor_validation"
+  ],
+  "errors": [
+    "INVALID_ENVELOPE",
+    "ND_VALUE",
+    "NON_SIMULATION",
+    "UNDECLARED_PORT",
+    "QUANTITY_MISMATCH",
+    "UNIT_MISMATCH",
+    "CLOCK_MISMATCH",
+    "SPECIES_MISMATCH",
+    "OWNER_CONFLICT"
+  ],
+  "reference_input_contract": "REFERENCES_VERROUILLEES.json",
+  "current_technical_api": "API_TECHNIQUE.json",
+  "runtime_integrations_note": "Historical first native probe retained below; current scoped implementations and limits are enumerated separately in API_TECHNIQUE.json. Generic dynamic lifecycle is not promoted."
+}

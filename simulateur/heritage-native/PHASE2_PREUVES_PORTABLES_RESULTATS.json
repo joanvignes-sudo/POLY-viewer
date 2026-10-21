@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PORTABLE_CLOSED_RUN_VIEWS",
+  "report": "results/phase2-portable-evidence-2026-10-18/report.json",
+  "trusted_bundles": "results/phase2-portable-evidence-2026-10-18/trusted-bundles.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "bundles": 4,
+  "isolated_stdlib_checks": 4,
+  "refusals": 6,
+  "unit_tests": 8,
+  "python_tests": 243,
+  "native_processes_launched": 0,
+  "current_runtime_qualification_performed": false,
+  "scientific_validation": false,
+  "models_or_binaries_copied": false,
+  "full_negative_test_packages": "WORKSPACE_ONLY_NOT_APPROVED_IN_TRUSTED_REGISTRY"
+}

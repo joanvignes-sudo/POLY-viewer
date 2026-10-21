@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.1",
+  "status": "SPECIFIED_NOT_PHYSIOLOGICALLY_EXECUTED",
+  "scenarios": [
+    {
+      "id": "A",
+      "name": "repos -> exercice",
+      "phase": 2,
+      "preconditions": [
+        "Pinned Pulse version and licensed patient",
+        "Stabilized baseline",
+        "Supported exercise action",
+        "Predeclared numerical tolerances and reference outputs"
+      ],
+      "events": [
+        "SEExercise.Intensity in [0,1], dimensionless; no uncalibrated watts/speed conversion"
+      ],
+      "observables": [
+        "heart rate",
+        "respiration",
+        "oxygen consumption if supported",
+        "energy balance if exposed"
+      ],
+      "acceptance": [
+        "Deterministic replay within predeclared tolerance",
+        "No duplicate event",
+        "No double ownership",
+        "Convergence across exchange steps",
+        "Compare to version-specific engine reference"
+      ],
+      "failure_cases": [
+        "Unsupported workload",
+        "Missing units",
+        "Unstable baseline",
+        "Model domain exceeded"
+      ],
+      "physiological_thresholds": null,
+      "threshold_gate": "Select model and references before execution",
+      "candidate_contract": "PULSE_ADAPTER_CANDIDAT.json"
+    },
+    {
+      "id": "B",
+      "name": "brulure",
+      "phase": 3,
+      "preconditions": [
+        "A baseline",
+        "Verify burn capability and actual action fields in pinned Pulse version",
+        "Predeclare severity/extent parameters and validation references"
+      ],
+      "events": [
+        "Single supported burn action; no inferred neural pain mechanism"
+      ],
+      "observables": [
+        "temperature",
+        "hemodynamics",
+        "fluid balance",
+        "metabolic outputs if supported"
+      ],
+      "acceptance": [
+        "Trace action and affected states",
+        "Conservation within predeclared tolerances",
+        "Replay",
+        "Explicit uncovered nociception and subjective pain"
+      ],
+      "failure_cases": [
+        "Unsupported action",
+        "Invalid extent",
+        "Extrapolation outside validated domain"
+      ],
+      "physiological_thresholds": null,
+      "threshold_gate": "Select model and references before execution",
+      "schema_findings": {
+        "commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+        "action": "ThermalBurnData",
+        "input": "Wounds: Compartment + SurfaceAreaFraction OR SurfaceArea + Severity",
+        "output_only": [
+          "TotalBodySurfaceArea",
+          "TotalWeightedSeverity"
+        ],
+        "runtime_support_tested": false
+      }
+    },
+    {
+      "id": "C",
+      "name": "marche -> bruit soudain",
+      "phase": 4,
+      "preconditions": [
+        "Pinned licensed OpenSim model",
+        "Documented walking baseline",
+        "Acoustic event units and timestamp",
+        "Reviewed auditory/postural mappings or explicit ND"
+      ],
+      "events": [
+        "Single sudden-noise event during walking"
+      ],
+      "observables": [
+        "gait state",
+        "event timestamp",
+        "candidate sensory chains",
+        "evidence boundaries"
+      ],
+      "acceptance": [
+        "Keep walking continuity",
+        "Separate event and visual clocks",
+        "Block unsupported neural/postural bridge",
+        "No invented startle latency",
+        "Separate anatomical route from activation"
+      ],
+      "failure_cases": [
+        "Cross-experiment clock arithmetic",
+        "Species transfer",
+        "Anatomical layout used as measurement",
+        "Missing causal bridge silently filled"
+      ],
+      "physiological_thresholds": null,
+      "threshold_gate": "No quantitative startle claim until a valid model and evidence exist"
+    }
+  ]
+}

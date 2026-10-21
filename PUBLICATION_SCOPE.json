@@ -1,5 +1,5 @@
 {
-  "version": "0.130.0",
+  "version": "0.131.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -334,5 +334,7 @@
     "documentation": "publication/v0.130.0/GUIDE.md"
   },
   "previous_public_version": "0.129.0",
-  "technical_review_preserved": "0.128.1"
+  "technical_review_preserved": "0.128.1",
+  "human_prediction_validated": false,
+  "integrated_simulator": "index.html"
 }

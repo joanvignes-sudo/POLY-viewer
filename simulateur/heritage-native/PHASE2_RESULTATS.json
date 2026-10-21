@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "status": "INITIALIZATION_PASS_CONTINUITY_GATE_OPEN",
+  "evidence_status": "SIMULATED",
+  "native_build": "PASS_WITH_DECLARED_TIMESTAMP_PORTABILITY_PATCH",
+  "runtime_data_generation": "PASS",
+  "patient_initialization": "PASS",
+  "native_initialization_log": "Reported stabilized healthy baselines at 281.36 simulated seconds, then reset run time to 0",
+  "baseline": "31 samples from 0 to approximately 30s; six finite outputs, no native error lines",
+  "native_dt_s": 0.02,
+  "original_engine_state_continuity": {
+    "status": "FAIL_AT_PREDECLARED_TOLERANCE",
+    "quantity": "heart_rate_per_min",
+    "absolute_difference": 1.555297927779975e-06,
+    "tolerance": 7.198900029141692e-08,
+    "other_five_outputs_and_time": "identical at reported double precision"
+  },
+  "post_hoc_diagnostic": {
+    "method": "Two fresh engines restored from exactly same checkpoint, then advanced 10s",
+    "status": "MATCH_AT_1E_9_RELATIVE",
+    "original_test_reclassified": false,
+    "causal_explanation": "NOT_ESTABLISHED"
+  },
+  "paths": {
+    "artifacts": "docs/organisme-entier/results/phase2-init-2026-10-17",
+    "run_cache": "work/p2/run-initialization-20261017-130537",
+    "diagnostic_cache": "work/p2/run-replay-diagnostic-20261017-130826"
+  },
+  "state_retention": {
+    "initialized_state_sha256": "23942383fe4c7f7effb4d87fff86af7b88093a93feaffec82fc7c18e461d5151",
+    "checkpoint_sha256": "07967113636a63ed422beb146a8fe3748117578f137c95917d27789adab0a49e",
+    "full_states_in_git": false,
+    "full_states_preserved_locally": true
+  },
+  "automated_unit_test_methods": 141,
+  "physiological_scenarios": {
+    "A": "NOT_RUN_PENDING_CONTINUITY_ANALYSIS",
+    "B": "NOT_RUN",
+    "C": "NOT_RUN"
+  },
+  "physiological_validation": "NOT_PERFORMED",
+  "next_action": "Technical handoff; explicit next-scope/scientific-criteria decision before any scenario or broader adapter integration",
+  "state_diagnostic": {
+    "report": "PHASE2_DIAGNOSTIC_ETAT.md",
+    "artifacts": "results/phase2-state-2026-10-17",
+    "first_oxygen_and_chemoreceptor_difference_step": 33,
+    "first_heart_rate_difference_step": 75,
+    "source_omissions_confirmed": 2,
+    "causal_intervention_performed": false,
+    "original_failure_reclassified": false,
+    "rollback_safe": false
+  },
+  "experimental_o2_correction": {
+    "status": "PASS_ISOLATED_O2_EXPERIMENT",
+    "result": "PHASE2_O2_RESULTATS.json",
+    "original_failure_reclassified": false,
+    "general_rollback_qualified": false
+  },
+  "checkpoint_experiment": {
+    "status": "PASS_SEPARATE_PROCESS_CHECKPOINT",
+    "comparisons": 180,
+    "processes": 4,
+    "preflight_rejections": 7,
+    "bindings": "PHASE2_CHECKPOINT_BINDINGS.json",
+    "general_rollback_qualified": false,
+    "original_failure_reclassified": false
+  },
+  "closed_set_dispatcher": {
+    "status": "PASS_CLOSED_SET_DISPATCHER",
+    "report": "PHASE2_DISPATCHER_RESULTATS.json",
+    "general_rollback_qualified": false,
+    "new_end_checkpoint_exported": false
+  },
+  "operation_journal": {
+    "status": "PASS_RESTORE_OPERATION_BOUNDARIES",
+    "report": "PHASE2_OPERATIONS_RESULTATS.json",
+    "inflight_child_recovery_qualified": false,
+    "general_rollback_qualified": false
+  },
+  "child_lifetime": {
+    "status": "PASS_NATIVE_CHILD_PARENT_DEATH",
+    "report": "PHASE2_CHILD_RESULTATS.json",
+    "general_rollback_qualified": false
+  },
+  "operation_coordination": {
+    "status": "PASS_WINDOWS_OPERATION_COORDINATION",
+    "report": "PHASE2_COORDINATION_RESULTATS.json",
+    "general_rollback_qualified": false
+  },
+  "stale_recovery_guard": {
+    "status": "PASS_STALE_RECOVERY_BEFORE_MUTATION",
+    "report": "PHASE2_STALE_RECOVERY_RESULTATS.json",
+    "partial_quarantine_resume_qualified": false
+  },
+  "recovery_transaction_plan": {
+    "status": "PASS_READ_ONLY_RECOVERY_TRANSACTION_PLAN",
+    "design": "PHASE2_RECOVERY_TRANSACTION.json",
+    "live_restore_integration": false
+  },
+  "recovery_transaction_persistence": {
+    "status": "PASS_PERSISTED_TRANSACTION_PREPARATION",
+    "report": "PHASE2_TRANSACTION_PREPARE_RESULTATS.json",
+    "mutating_executor_implemented": false
+  },
+  "recovery_transaction_resume": {
+    "status": "PASS_TRANSACTION_PROCESS_EXIT_MATRIX",
+    "report": "PHASE2_TRANSACTION_RESUME_RESULTATS.json",
+    "general_rollback_qualified": false
+  },
+  "transaction_cli_refusals": {
+    "status": "PASS_NATIVE_SEEDED_CLI_REFUSALS",
+    "report": "PHASE2_TRANSACTION_REFUSAL_RESULTATS.json"
+  },
+  "capability_audit": "PHASE2_CONFORMITE_CAPACITES.json",
+  "runtime_dependency_audit": {
+    "report": "PHASE2_RUNTIME_AUDIT_RESULTATS.json",
+    "dll_binding_enforced": false,
+    "binary_redistribution_qualified": false
+  },
+  "runtime_dll_v2": {
+    "report": "PHASE2_DLL_V2_RESULTATS.json",
+    "explicit_entrypoint": "tools/pulse_probe/restore_dll_bound.py",
+    "legacy_profile_upgraded": false
+  },
+  "dll_v2_recovery_conformance": "PHASE2_DLL_V2_RECOVERY_RESULTATS.json",
+  "dll_v2_timeout_isolation": "PHASE2_DLL_V2_TIMEOUT_RESULTATS.json",
+  "authorized_technical_scope_complete": true,
+  "physiological_scenario_gate_open": true
+}

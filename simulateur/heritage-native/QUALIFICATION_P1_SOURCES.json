@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "evidence_kind": "SOURCE_METADATA_AND_TARGETED_STATIC_INSPECTION",
+  "sources": [
+    {
+      "id": "hra-production-metadata",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "resolved_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "sha256": "f51995e19a373f76ebae677d2a7e6ac7f0a6a24dfeae17a8127da735335d9540",
+      "bytes": 7534,
+      "media_type": "application/json"
+    },
+    {
+      "id": "hra-production-graph-verified",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "resolved_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "sha256": "572c7e15818a56e388d0636716848786b2d93b905914a2e41641cfede6806e9b",
+      "bytes": 59512,
+      "media_type": "application/json"
+    },
+    {
+      "id": "hra-crosswalk",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/assets/crosswalk.csv",
+      "resolved_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/assets/crosswalk.csv",
+      "sha256": "a529992b6e444d40fa9e361542fd694d773de429f611276b292133aa30be1cb2",
+      "bytes": 1170,
+      "media_type": "text/csv"
+    },
+    {
+      "id": "apinatomy-cardiac",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/source/ard-arm-cardiac.json",
+      "resolved_uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/source/ard-arm-cardiac.json",
+      "sha256": "76297884534ebcc2bd69d8277bdc09f7f1e21571e81e5580e35428f031c2ced3",
+      "bytes": 151921,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "apinatomy-cardiac-readme",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/README.md",
+      "resolved_uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/README.md",
+      "sha256": "a4f6692051008c15670ad4651429b70438f414ee4f45c0b8e5850c96d4ca6ced",
+      "bytes": 3255,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "apinatomy-zenodo",
+      "uri": "https://zenodo.org/api/records/17127951",
+      "resolved_uri": "https://zenodo.org/api/records/17127951",
+      "sha256": "931e6e65e22a81585b42c0da430c99b095b63faed355bd2e250569c37534795b",
+      "bytes": 4869,
+      "media_type": "application/json"
+    },
+    {
+      "id": "sckan-release",
+      "uri": "https://api.github.com/repos/SciCrunch/NIF-Ontology/releases/tags/sckan-2025-09-14",
+      "resolved_uri": "https://api.github.com/repos/SciCrunch/NIF-Ontology/releases/tags/sckan-2025-09-14",
+      "sha256": "70369615248df916daf946f1f999b7e387006941f82497cbbd4909902c8bcb38",
+      "bytes": 6461,
+      "media_type": "application/json; charset=utf-8"
+    },
+    {
+      "id": "nif-license",
+      "uri": "https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/sckan-2025-09-14/LICENSE",
+      "resolved_uri": "https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/sckan-2025-09-14/LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "bytes": 18650,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-create-patient",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fcpp%2Fhowto%2FHowTo-CreateAPatient.cpp/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fcpp%2Fhowto%2FHowTo-CreateAPatient.cpp/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "f34afe77daf673dadb9c38917d782dd5cee5145da7b21d3dc5cc741ee3884838",
+      "bytes": 6515,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-patient-schema",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FPatient.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FPatient.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "be528d15f2b31ec144ec09f7eb7ebf9351d149eda8a030461ee547151cd1ea2f",
+      "bytes": 5168,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "Engine.proto",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FEngine.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FEngine.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "8caa11b9fc26bd1bf173b4ae44cc5a8b5af0ecf6f96dfca507681cb18110a756",
+      "bytes": 11699,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-data-cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/data%2FCMakeLists.txt/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/data%2FCMakeLists.txt/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "1b7d575f49b836feb0d351875d83b350269af89a3fe8d70ccdab0416c46e5abe",
+      "bytes": 2012,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-initial-template",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/bin%2FInitialPatientState.json/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/bin%2FInitialPatientState.json/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "736de693da0f77c124ef06b47bddf5305743eb6ac3851ca1eb05c108223e39b0",
+      "bytes": 376,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_Eigen3.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_Eigen3.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_Eigen3.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "01597b617df547257011629616a809f00a07283271c6b92d6e23c7b78dbc5955",
+      "bytes": 816,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_absl.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_absl.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_absl.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "516f6eaffa15d81e7f575257bb90e764faf144f8e262431e4600efdb18613cf2",
+      "bytes": 1794,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_protobuf.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_protobuf.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_protobuf.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "8fd525b7323625d7f34e7c23371c005b9314f132bc363301ab7b39152ea15a28",
+      "bytes": 4735,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_pybind11.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_pybind11.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_pybind11.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "36ca655b6eff577988baa94ec6a9b5da0d09e6769a198bed4172d3d39a804a5b",
+      "bytes": 819,
+      "media_type": "text/plain; charset=utf-8"
+    }
+  ],
+  "historical_failures": [
+    {
+      "id": "hra-purl",
+      "uri": "https://purl.humanatlas.io/ref-organ/heart-female",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "hra-doi",
+      "uri": "https://doi.org/10.48539/HBM459.GVPS.249",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "hra-production-graph",
+      "uri": "https://cdn.humanatlas.io/hra-kg/ref-organ/heart-female/v1.1/graph.json",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "pulse-python-dataset-tree",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/tree?ref=60c4473912b047500bcbc396eceec7588c48fad4&path=src/python/pulse/dataset&per_page=100",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nif-zenodo-config",
+      "uri": "https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/sckan-2025-09-14/.zenodo.json",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "apinatomy-zenodo-config",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/.zenodo.json",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "source_bytes_copied_into_repository": false
+}

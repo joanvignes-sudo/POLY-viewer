@@ -1,0 +1,17 @@
+{
+  "status": "PROTOCOL_BEFORE_PROCESS_CONTENTION",
+  "date_local": "2026-10-18",
+  "scope": "One permanent Windows byte-lock file shared by RestoreOperations.execute/recover; cooperating clients only",
+  "cases": [
+    "execute_excludes_execute",
+    "execute_excludes_recover",
+    "gate_released_after_owner_death",
+    "recover_excludes_execute",
+    "recover_excludes_recover",
+    "interrupted_recovery_marker_blocks_execute",
+    "normal_native_restore"
+  ],
+  "stale_recovery_reclamation": false,
+  "power_loss_qualified": false,
+  "scientific_validation": false
+}

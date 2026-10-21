@@ -1,0 +1,286 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "status": "CANDIDATES_ONLY_NO_RUNTIME_IMPORT",
+  "evidence": [
+    {
+      "id": "opensim-license",
+      "uri": "https://raw.githubusercontent.com/opensim-org/opensim-core/6e3a883f66220f7d0c0b20f255e1c714cc828144/LICENSE.txt",
+      "resolved_uri": "https://raw.githubusercontent.com/opensim-org/opensim-core/6e3a883f66220f7d0c0b20f255e1c714cc828144/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "apinatomy-readme",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/README.md",
+      "resolved_uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/README.md",
+      "sha256": "245a1ce98a44b04712a11f1b5df27f5951b093f35d83226b07494a284d0df009",
+      "bytes": 96,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "sckan-overview",
+      "uri": "https://raw.githubusercontent.com/SciCrunch/sparc-curation/54a4c7ed112bc60387e46bb61287d2092239b5c5/docs/sckan/overview.org",
+      "resolved_uri": "https://raw.githubusercontent.com/SciCrunch/sparc-curation/54a4c7ed112bc60387e46bb61287d2092239b5c5/docs/sckan/overview.org",
+      "sha256": "5baf17ea149be8cc6db09b0d59cfbda866fbb77bbf412bdf7b00cf51ed145245",
+      "bytes": 6490,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "sckan-license",
+      "uri": "https://raw.githubusercontent.com/SciCrunch/sparc-curation/54a4c7ed112bc60387e46bb61287d2092239b5c5/LICENSE",
+      "resolved_uri": "https://raw.githubusercontent.com/SciCrunch/sparc-curation/54a4c7ed112bc60387e46bb61287d2092239b5c5/LICENSE",
+      "sha256": "3bab37c5d1000598ec0fecf6e3fdfebc2c4243b0d5690cb9a40018359d807bc7",
+      "bytes": 1070,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "hra-heart",
+      "uri": "https://lod.humanatlas.io/ref-organ/heart-female/v1.1",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "uberon-heart",
+      "uri": "https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948",
+      "resolved_uri": "https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948",
+      "sha256": "c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4",
+      "bytes": 12217,
+      "media_type": "application/json"
+    },
+    {
+      "id": "uberon-version",
+      "uri": "https://www.ebi.ac.uk/ols4/api/ontologies/uberon",
+      "resolved_uri": "https://www.ebi.ac.uk/ols4/api/ontologies/uberon",
+      "sha256": "dbfbbb1ecfb86a853c7adad23d19d07c2865072edb51dabf0b099614eba44625",
+      "bytes": 2074,
+      "media_type": "application/json"
+    },
+    {
+      "id": "cellml-candidate",
+      "uri": "https://models.physiomeproject.org/workspace/hodgkin_huxley_1952/rawfile/02573438cc3c00d0d7ce24e2111ebdf140ec149c/hodgkin_huxley_1952.cellml",
+      "resolved_uri": "https://models.physiomeproject.org/workspace/hodgkin_huxley_1952/rawfile/02573438cc3c00d0d7ce24e2111ebdf140ec149c/hodgkin_huxley_1952.cellml",
+      "sha256": "296be4bef01a04a9e78f6b0cc39e9e28f0910aee331abced6cf85487b54f3063",
+      "bytes": 40978,
+      "media_type": "application/cellml+xml"
+    },
+    {
+      "id": "biomodels-candidate",
+      "uri": "https://raw.githubusercontent.com/biomodels/BIOMD0000000010/d95a205b39b7e5bdc172a368534cda60c74ab420/README.md",
+      "sha256": "4089c8ad83b55334a6c493bc364d68844b7ce766289cf8c220ebdc3a2f7c864f",
+      "bytes": 3014
+    },
+    {
+      "id": "hra-production-metadata",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "resolved_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "sha256": "f51995e19a373f76ebae677d2a7e6ac7f0a6a24dfeae17a8127da735335d9540",
+      "bytes": 7534,
+      "media_type": "application/json"
+    },
+    {
+      "id": "hra-production-graph-verified",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "resolved_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "sha256": "572c7e15818a56e388d0636716848786b2d93b905914a2e41641cfede6806e9b",
+      "bytes": 59512,
+      "media_type": "application/json"
+    },
+    {
+      "id": "hra-crosswalk",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/assets/crosswalk.csv",
+      "resolved_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/assets/crosswalk.csv",
+      "sha256": "a529992b6e444d40fa9e361542fd694d773de429f611276b292133aa30be1cb2",
+      "bytes": 1170,
+      "media_type": "text/csv"
+    },
+    {
+      "id": "apinatomy-cardiac",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/source/ard-arm-cardiac.json",
+      "resolved_uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/source/ard-arm-cardiac.json",
+      "sha256": "76297884534ebcc2bd69d8277bdc09f7f1e21571e81e5580e35428f031c2ced3",
+      "bytes": 151921,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "apinatomy-cardiac-readme",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/README.md",
+      "resolved_uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/README.md",
+      "sha256": "a4f6692051008c15670ad4651429b70438f414ee4f45c0b8e5850c96d4ca6ced",
+      "bytes": 3255,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "apinatomy-zenodo",
+      "uri": "https://zenodo.org/api/records/17127951",
+      "resolved_uri": "https://zenodo.org/api/records/17127951",
+      "sha256": "931e6e65e22a81585b42c0da430c99b095b63faed355bd2e250569c37534795b",
+      "bytes": 4869,
+      "media_type": "application/json"
+    },
+    {
+      "id": "sckan-release",
+      "uri": "https://api.github.com/repos/SciCrunch/NIF-Ontology/releases/tags/sckan-2025-09-14",
+      "resolved_uri": "https://api.github.com/repos/SciCrunch/NIF-Ontology/releases/tags/sckan-2025-09-14",
+      "sha256": "70369615248df916daf946f1f999b7e387006941f82497cbbd4909902c8bcb38",
+      "bytes": 6461,
+      "media_type": "application/json; charset=utf-8"
+    },
+    {
+      "id": "nif-license",
+      "uri": "https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/sckan-2025-09-14/LICENSE",
+      "resolved_uri": "https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/sckan-2025-09-14/LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "bytes": 18650,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-create-patient",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fcpp%2Fhowto%2FHowTo-CreateAPatient.cpp/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fcpp%2Fhowto%2FHowTo-CreateAPatient.cpp/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "f34afe77daf673dadb9c38917d782dd5cee5145da7b21d3dc5cc741ee3884838",
+      "bytes": 6515,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-patient-schema",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FPatient.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FPatient.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "be528d15f2b31ec144ec09f7eb7ebf9351d149eda8a030461ee547151cd1ea2f",
+      "bytes": 5168,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "Engine.proto",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FEngine.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/src%2Fschema%2Fpulse%2Fcdm%2Fbind%2FEngine.proto/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "8caa11b9fc26bd1bf173b4ae44cc5a8b5af0ecf6f96dfca507681cb18110a756",
+      "bytes": 11699,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-data-cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/data%2FCMakeLists.txt/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/data%2FCMakeLists.txt/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "1b7d575f49b836feb0d351875d83b350269af89a3fe8d70ccdab0416c46e5abe",
+      "bytes": 2012,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "pulse-initial-template",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/bin%2FInitialPatientState.json/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/bin%2FInitialPatientState.json/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "736de693da0f77c124ef06b47bddf5305743eb6ac3851ca1eb05c108223e39b0",
+      "bytes": 376,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_Eigen3.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_Eigen3.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_Eigen3.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "01597b617df547257011629616a809f00a07283271c6b92d6e23c7b78dbc5955",
+      "bytes": 816,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_absl.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_absl.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_absl.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "516f6eaffa15d81e7f575257bb90e764faf144f8e262431e4600efdb18613cf2",
+      "bytes": 1794,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_protobuf.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_protobuf.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_protobuf.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "8fd525b7323625d7f34e7c23371c005b9314f132bc363301ab7b39152ea15a28",
+      "bytes": 4735,
+      "media_type": "text/plain; charset=utf-8"
+    },
+    {
+      "id": "External_pybind11.cmake",
+      "uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_pybind11.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "resolved_uri": "https://gitlab.kitware.com/api/v4/projects/physiology%2Fengine/repository/files/cmake%2Fexternal%2FExternal_pybind11.cmake/raw?ref=60c4473912b047500bcbc396eceec7588c48fad4",
+      "sha256": "36ca655b6eff577988baa94ec6a9b5da0d09e6769a198bed4172d3d39a804a5b",
+      "bytes": 819,
+      "media_type": "text/plain; charset=utf-8"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "pulse",
+      "version": "60c4473912b047500bcbc396eceec7588c48fad4",
+      "role": "whole-body physiology",
+      "qualification": "STATIC_BUILD_AND_ORIGINAL_PATIENT_RECIPE_DEFINED_NOT_INITIALIZED",
+      "recipe": "PULSE_PATIENT_BUILD_CANDIDAT.json"
+    },
+    {
+      "id": "opensim-core",
+      "version": "6e3a883f66220f7d0c0b20f255e1c714cc828144",
+      "role": "movement engine",
+      "code_license": "Apache-2.0",
+      "model_selected": false,
+      "qualification": "CODE_ONLY_MODEL_LICENSE_PENDING"
+    },
+    {
+      "id": "sckan-documentation",
+      "version": "54a4c7ed112bc60387e46bb61287d2092239b5c5",
+      "role": "connectivity source architecture",
+      "repository_license": "MIT",
+      "qualification": "DOCUMENTATION_AND_MATCHED_RELEASE_QUALIFIED_NOT_DOWNLOADED",
+      "warning": "sparc-curation code license is not blanket permission for all SCKAN assertions/datasets",
+      "release": "sckan-2025-09-14",
+      "release_details": "CONNECTIVITE_RELEASE.json"
+    },
+    {
+      "id": "apinatomy-models",
+      "version": "4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e",
+      "role": "connectivity model candidates",
+      "qualification": "RELEASE_AND_CARDIAC_REFERENCE_QUALIFIED",
+      "import_allowed": false,
+      "release": "0.0.4",
+      "release_license": "CC-BY-4.0 via Zenodo 17127951",
+      "selected_model": "ard-arm-cardiac",
+      "reference_resolution_available": true,
+      "runtime_coupling_authorized": false
+    },
+    {
+      "id": "hra-heart-female",
+      "version": "v1.1",
+      "role": "reference anatomy candidate",
+      "qualification": "PRODUCTION_REFERENCE_METADATA_AND_GRAPH_VERIFIED",
+      "staging_metadata_uri": "https://cdn.humanatlas.io/hra-kg--staging/ref-organ/heart-female/v1.1/",
+      "staging_license_declaration": "CC-BY-4.0",
+      "warning": "Production metadata and graph verified; native placements not registered to POLY, no geometry downloaded",
+      "import_allowed": false,
+      "production_metadata_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "production_graph_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "license": "CC-BY-4.0",
+      "reference_resolution_available": true,
+      "historical_resolution_failure": {
+        "uri": "https://lod.humanatlas.io/ref-organ/heart-female/v1.1",
+        "http_status": 404
+      }
+    },
+    {
+      "id": "cellml-hodgkin-huxley-1952",
+      "version": "02573438cc3c00d0d7ce24e2111ebdf140ec149c",
+      "role": "format/metadata example only; not selected as human neural module",
+      "species": "squid",
+      "qualification": "ARTIFACT_PINNED_LICENSE_UNRESOLVED",
+      "import_allowed": false,
+      "selection_decision": "DEFERRED_UNRESOLVED_LICENSE_AND_NONHUMAN_DOMAIN"
+    },
+    {
+      "id": "biomodels-mapk-0010",
+      "version": "d95a205b39b7e5bdc172a368534cda60c74ab420",
+      "native_id": "BIOMD0000000010",
+      "role": "SBML metadata example only; no selected POLY pathway",
+      "model_license_declaration": "CC0-1.0 in pinned README",
+      "qualification": "README_PINNED_MODEL_FILE_AND_DOMAIN_REVIEW_PENDING",
+      "import_allowed": false,
+      "selection_decision": "METADATA_EXAMPLE_ONLY_NO_POLY_BIOLOGICAL_SELECTION"
+    }
+  ]
+}

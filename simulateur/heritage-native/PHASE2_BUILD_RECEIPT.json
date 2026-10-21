@@ -1,0 +1,365 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "source_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "native_version": "4.4.0",
+  "native_source_hash": "60c44739",
+  "cpp_standard": 20,
+  "source_patch": {
+    "path": "cmake/PulseBuildInformation.cpp.in",
+    "purpose": "Select Windows localtime_s on _WIN32 for LLVM-MinGW timestamp metadata only",
+    "original_blob_sha256": "eed57cded34312f30071114b507cbdcfe576fdc6fb17d83b34b1445e98191090",
+    "patched_file_sha256": "9d5a7c49bec0c74dd8f19701f2818b119277fc8c084d86c12bbe4fff6643ff6a",
+    "git_diff_sha256": "77101c15630d0b7cb519751c790118b7d0e28074c8373db264c68a43c2a079a7",
+    "tracked_patch": "tools/pulse_probe/patches/windows-localtime.patch",
+    "physiology_equations_modified": false
+  },
+  "toolchain_manifest": "PHASE2_TOOLCHAIN.json",
+  "artifacts": [
+    {
+      "path": "probe-initialization-v1.exe",
+      "bytes": 14435328,
+      "sha256": "3e4b61378f027135b4ded7b83e43c887323eaedf1496ed4a6a8e6ac985f67ea2"
+    },
+    {
+      "path": "probe-initialization-v1.cpp",
+      "bytes": 5252,
+      "sha256": "5932a89715dcd5eb9b045b5fd2cd4c4f4a7ee2da2382fc8bee2e716424bff51b"
+    },
+    {
+      "path": "probe-build/poly_pulse_replay_diagnostic.exe",
+      "bytes": 14429184,
+      "sha256": "dc86874f1d6ca039c40b5b407400869cfa749e88c220c145b168f595cfaa64cb"
+    },
+    {
+      "path": "install/bin/PulseScenarioDriver.exe",
+      "bytes": 14427648,
+      "sha256": "a6461660d1fea1deab38abf329aa1e3390bcbc10887d874c1301bcc1c4fb01eb"
+    },
+    {
+      "path": "install/bin/PulseTestsDriver.exe",
+      "bytes": 16419328,
+      "sha256": "511c5c403357af42fe6f2dc9a90c9f26007642c00c60b9b28fd4bb2974f31bf8"
+    },
+    {
+      "path": "install/bin/libPulseJNI.dll",
+      "bytes": 16409600,
+      "sha256": "4d01465cc348f1a50df262537901478427b169258ada031fa34ef30b8a29b656"
+    },
+    {
+      "path": "install/bin/Pulse.jar",
+      "bytes": 8103143,
+      "sha256": "10ad9afbdfee2abec284a004960d0a328feb18f71f44b925437ba67f94276ec7"
+    },
+    {
+      "path": "install/lib/libPulse.a",
+      "bytes": 108967744,
+      "sha256": "591b4a5b00529bb30ab2ee4714a94f38c8aeb0ba338d8beb6257a4d35955830d"
+    },
+    {
+      "path": "src/data/Data.xlsx",
+      "bytes": 112203,
+      "sha256": "a87b41c3a7cf68a597ed117c492bc3f9c46abcd91fa42c8df99597f99838c185"
+    }
+  ],
+  "license_artifacts_preserved_locally": [
+    {
+      "path": "src/LICENSE",
+      "sha256": "5ad8c213095c573921d7388edf93f6a9f54490b8ebf3b165ae8ef1947cf70846",
+      "bytes": 11556
+    },
+    {
+      "path": "src/NOTICE",
+      "sha256": "a0ae4b3eb1f155c58a6357c908cfcae0f2b0fa6c75ef60822d517dbcf0ff2830",
+      "bytes": 2632
+    },
+    {
+      "path": "build/External/absl/src/LICENSE",
+      "sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747",
+      "bytes": 11361
+    },
+    {
+      "path": "build/External/protobuf/src/LICENSE",
+      "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "bytes": 1732
+    },
+    {
+      "path": "build/External/protobuf/src/third_party/utf8_range/LICENSE",
+      "sha256": "02de69b64fc36d9e938f418e52723e42f0b2b226d58a9cb3c8dcbdf7059f5074",
+      "bytes": 1091
+    },
+    {
+      "path": "build/External/Eigen3/src/COPYING.README",
+      "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644",
+      "bytes": 264
+    },
+    {
+      "path": "build/External/Eigen3/src/COPYING.MPL2",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172",
+      "bytes": 16727
+    },
+    {
+      "path": "build/External/Eigen3/src/COPYING.APACHE",
+      "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7",
+      "bytes": 11362
+    },
+    {
+      "path": "build/External/Eigen3/src/COPYING.BSD",
+      "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb",
+      "bytes": 1517
+    },
+    {
+      "path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/LICENSE.TXT",
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+      "bytes": 15141
+    },
+    {
+      "path": "toolchain/jdk/jdk8u504-b01/LICENSE",
+      "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726",
+      "bytes": 19274
+    },
+    {
+      "path": "toolchain/jdk/jdk8u504-b01/NOTICE",
+      "sha256": "c02756bcd9fa8191bf0fda4451bc018414dd44ee35bf09922c24377a475e4b5a",
+      "bytes": 2400
+    }
+  ],
+  "java_dependency_jars": [
+    {
+      "name": "commons-collections4-4.4.jar",
+      "sha256": "1df8b9430b5c8ed143d7815e403e33ef5371b2400aadbe9bda0883762e0846d1",
+      "notice_entries": [
+        "META-INF/LICENSE.txt",
+        "META-INF/NOTICE.txt"
+      ]
+    },
+    {
+      "name": "commons-compress-1.21.jar",
+      "sha256": "6aecfd5459728a595601cfa07258d131972ffc39b492eb48bdd596577a2f244a",
+      "notice_entries": [
+        "META-INF/LICENSE.txt",
+        "META-INF/NOTICE.txt"
+      ]
+    },
+    {
+      "name": "commons-io-2.11.0.jar",
+      "sha256": "961b2f6d87dbacc5d54abf45ab7a6e2495f89b75598962d8c723cea9bc210908",
+      "notice_entries": [
+        "META-INF/LICENSE.txt",
+        "META-INF/NOTICE.txt"
+      ]
+    },
+    {
+      "name": "commons-math3-3.6.1.jar",
+      "sha256": "1e56d7b058d28b65abd256b8458e3885b674c1d588fa43cd7d1cbb9c7ef2b308",
+      "notice_entries": [
+        "META-INF/LICENSE.txt",
+        "META-INF/NOTICE.txt"
+      ]
+    },
+    {
+      "name": "error_prone_annotations-2.11.0.jar",
+      "sha256": "721cb91842b46fa056847d104d5225c8b8e1e8b62263b993051e1e5a0137b7ec",
+      "notice_entries": []
+    },
+    {
+      "name": "gson-2.10.1.jar",
+      "sha256": "4241c14a7727c34feea6507ec801318a3d4a90f070e4525681079fb94ee4c593",
+      "notice_entries": []
+    },
+    {
+      "name": "guava-31.1-jre.jar",
+      "sha256": "a42edc9cab792e39fe39bb94f3fca655ed157ff87a8af78e1d6ba5b07c4a00ab",
+      "notice_entries": []
+    },
+    {
+      "name": "j2objc-annotations-1.3.jar",
+      "sha256": "21af30c92267bd6122c0e0b4d20cccb6641a37eaf956c6540ec471d584e64a7b",
+      "notice_entries": []
+    },
+    {
+      "name": "java-ordered-properties-1.0.4.jar",
+      "sha256": "803766d9fecc4112c72b39951e60c2e60156c2b100c3aa11df98b27583ba3eb6",
+      "notice_entries": []
+    },
+    {
+      "name": "javassist-3.28.0-GA.jar",
+      "sha256": "57d0a9e9286f82f4eaa851125186997f811befce0e2060ff0a15a77f5a9dd9a7",
+      "notice_entries": []
+    },
+    {
+      "name": "jfreechart-1.5.4.jar",
+      "sha256": "cd0649b04b64f2638b55c7c3ac24788ff064b777bbbaf1b952f82ee078ed8b81",
+      "notice_entries": []
+    },
+    {
+      "name": "jsr305-3.0.2.jar",
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+      "notice_entries": []
+    },
+    {
+      "name": "log4j-api-2.20.0.jar",
+      "sha256": "2f43eea679ea66f14ca0f13fec2a8600ac124f5a5231dcb4df8393eddcb97550",
+      "notice_entries": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE"
+      ]
+    },
+    {
+      "name": "log4j-core-2.20.0.jar",
+      "sha256": "6137df848cdaed9f4d5076f75513c6c85da80b953f4e7acca38098b770763f55",
+      "notice_entries": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE"
+      ]
+    },
+    {
+      "name": "logback-core-1.4.6.jar",
+      "sha256": "f19cbd234b3f7d4e1292c62cb49e9090ee12a80e72891431076cbbc7df2d694c",
+      "notice_entries": []
+    },
+    {
+      "name": "poi-5.2.3.jar",
+      "sha256": "1d4c81a283e127693db89e85df45119d9d312d5686d2439b5be9445c2c649155",
+      "notice_entries": [
+        "META-INF/NOTICE",
+        "META-INF/LICENSE"
+      ]
+    },
+    {
+      "name": "poi-ooxml-5.2.3.jar",
+      "sha256": "9b8ff6ecf562836299ce15997796e3d47fe063a5956c1c7d3f6e2a4bf6e60b79",
+      "notice_entries": [
+        "META-INF/NOTICE",
+        "META-INF/LICENSE"
+      ]
+    },
+    {
+      "name": "poi-ooxml-lite-5.2.3.jar",
+      "sha256": "35a200a9bd110b176450179170887bb9eac2dcba47a09d93c91e83afe70b7147",
+      "notice_entries": [
+        "META-INF/NOTICE",
+        "META-INF/LICENSE"
+      ]
+    },
+    {
+      "name": "reflections-0.10.2.jar",
+      "sha256": "938a2d08fe54050d7610b944d8ddc3a09355710d9e6be0aac838dbc04e9a2825",
+      "notice_entries": []
+    },
+    {
+      "name": "slf4j-api-2.0.7.jar",
+      "sha256": "5d6298b93a1905c32cda6478808ac14c2d4a47e91535e53c41f7feeb85d946f4",
+      "notice_entries": [
+        "META-INF/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "slf4j-simple-2.0.7.jar",
+      "sha256": "50eae3f1cc9a78a970970518e005d3f43d5cd3262d234f47ebdf3ca3f8bc01a7",
+      "notice_entries": [
+        "META-INF/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "xmlbeans-5.1.1.jar",
+      "sha256": "5f484a78bed71cbffe3709678b6bdd3463781a7c61c6d9872330aecbf150762a",
+      "notice_entries": []
+    }
+  ],
+  "command_outcomes": [
+    {
+      "action": "build",
+      "exit_code": 1,
+      "elapsed_s": 518.526,
+      "log_name": "build-20261017-125318.log",
+      "log_sha256": "521b2f0c13d35e5ce3a2b3c73601edf86bfae75434fb690b17293a0b4e64c2a1"
+    },
+    {
+      "action": "build",
+      "exit_code": 0,
+      "elapsed_s": 139.293,
+      "log_name": "build-20261017-130240.log",
+      "log_sha256": "bb422ee99ae3afc827e255eff85341329b42ab2cdc9d488be8e6a529a36489e0"
+    },
+    {
+      "action": "configure",
+      "exit_code": 1,
+      "elapsed_s": 5.541,
+      "log_name": "configure-20261017-125255.log",
+      "log_sha256": "e26ecc6e05f531898fdccd65109b2db86a0470a509bc65c781e0c17b7a20c7fe"
+    },
+    {
+      "action": "configure",
+      "exit_code": 0,
+      "elapsed_s": 0.957,
+      "log_name": "configure-20261017-125317.log",
+      "log_sha256": "74853f50011af59a42f638a7926eaa1af45b01b7a39d0e900984fe11a25a33fd"
+    },
+    {
+      "action": "data",
+      "exit_code": 0,
+      "elapsed_s": 3.217,
+      "log_name": "data-20261017-130526.log",
+      "log_sha256": "2b9d51909a3c4b497a4501692dfffa7fd85750b75fd5309b0e702ae8f599bf53"
+    },
+    {
+      "action": "probe-build",
+      "exit_code": 0,
+      "elapsed_s": 2.788,
+      "log_name": "probe-build-20261017-130534.log",
+      "log_sha256": "db425592efe09f7472d86c0c98304dd2da500fb0d1e59b257ec20e6210e9600a"
+    },
+    {
+      "action": "probe-build",
+      "exit_code": 0,
+      "elapsed_s": 2.774,
+      "log_name": "probe-build-20261017-130823.log",
+      "log_sha256": "100a161b1b660fa1c5dbbd3f92f993b60e12a71a157b2369f86f62ec769de9c8"
+    },
+    {
+      "action": "probe-configure",
+      "exit_code": 0,
+      "elapsed_s": 3.329,
+      "log_name": "probe-configure-20261017-130526.log",
+      "log_sha256": "8dc34c2f1091a62162ccdc8f040a5d3ccc342cb6132b6b2a27a7b17e4f95e632"
+    },
+    {
+      "action": "probe-run",
+      "exit_code": 4,
+      "elapsed_s": 33.966,
+      "log_name": "probe-run-20261017-130537.log",
+      "log_sha256": "8716ec657ad6057be5fcfb7b03f65c73d6e6883d8107ed0350172e779d108888"
+    },
+    {
+      "action": "replay-diagnostic",
+      "exit_code": 0,
+      "elapsed_s": 1.891,
+      "log_name": "replay-diagnostic-20261017-130826.log",
+      "log_sha256": "9beee45322568269def89c4d4c1c3bc2dc0c0fc4e226ad40eb7bffa5f9f9fc83"
+    }
+  ],
+  "configuration": {
+    "build": "Release",
+    "Pulse_JAVA_API": true,
+    "Pulse_PYTHON_API": false,
+    "Pulse_GEN_DATA": false,
+    "Protobuf_VERSION": "35.0",
+    "data_generation": "Explicit Java DataSetReader in isolated install/bin; validation baselines not downloaded"
+  },
+  "rejected_attempts": [
+    {
+      "mode": "Protobuf 21.12 alternate option",
+      "result": "configure failed: superbuild retained dependency on missing absl target",
+      "resolution": "Use upstream default Protobuf 35.0 without changing dependency scripts"
+    },
+    {
+      "mode": "Unmodified source with LLVM-MinGW",
+      "result": "localtime_r unavailable on Windows in generated build-information source",
+      "resolution": "One declared timestamp-only portability patch"
+    }
+  ],
+  "runtime_location": "work/p2 (outside Git checkout)",
+  "upstream_binary_dependencies_redistributed": false,
+  "source_or_bin_copied_into_repo": false
+}

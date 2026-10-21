@@ -1,0 +1,16 @@
+{
+  "status": "PASS_COMMITTED_OUTPUT_ENVELOPES",
+  "report": "results/phase2-output-adapter-2026-10-18/report.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "native_seed_processes": 4,
+  "native_seed_comparisons": 180,
+  "semantic_items": 120,
+  "ports": 6,
+  "unit_test_methods": 12,
+  "read_only": true,
+  "dynamic_lifecycle_implemented": false,
+  "scientific_validation": false,
+  "first_run_retained": "work/p2/o2-experiment/output-adapter-20261018-084021",
+  "candidate_preserved": true,
+  "original_failure_reclassified": false
+}

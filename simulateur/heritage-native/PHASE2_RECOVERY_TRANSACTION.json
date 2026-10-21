@@ -1,0 +1,59 @@
+{
+  "schema_version": "poly-pulse-recovery-transaction-design/0.1",
+  "implementation": "tools/pulse_probe/recovery_transaction.py",
+  "status": "EXPLICIT_PREPARE_INSPECT_RESUME_QUALIFIED_AT_NAMED_PROCESS_BOUNDARIES",
+  "transaction_schema": "poly-pulse-recovery-transaction/0.1",
+  "ordered_prefixes": [
+    "PREPARED",
+    "RECEIPT_WRITTEN",
+    "RESTORE_MOVED",
+    "LOCKS_MOVED"
+  ],
+  "plan_binds": [
+    "bindings_sha256",
+    "root_sha256",
+    "transaction_id",
+    "recovery_owner",
+    "recovery_nonce",
+    "receipt_file",
+    "receipt_before",
+    "receipt_after",
+    "pointer_before",
+    "moves"
+  ],
+  "byte_evidence": "Hex bytes plus SHA256; semantic JSON equivalence does not authorize changes",
+  "unambiguous_move": "Exactly one of source or destination exists with exact planned bytes",
+  "preparation_requires": [
+    "Qualified OS gate held by caller",
+    "Current LOCKED recovery guard owned by caller",
+    "Original operation owner dead or PID reused",
+    "Known operation phase and child dead when applicable",
+    "No candidate adoption except already committed pointer with validated outputs"
+  ],
+  "future_persistence_barriers": [
+    "Write immutable plan and fsync before pinning its digest in guard",
+    "Durably link guard to plan before receipt change",
+    "Write exact planned receipt after bytes atomically",
+    "Move restore.lock if present then operation.lock without overwriting destination",
+    "Write and validate completion record before retiring current guard"
+  ],
+  "future_refusals": [
+    "Changed plan/pointer/receipt/lock",
+    "Both or neither source and destination",
+    "Operation move before restore move",
+    "Receipt unchanged before a completed move",
+    "Unattributed guard or missing plan digest",
+    "Legacy MUTATION_PENDING without matching durable transaction"
+  ],
+  "mutating_executor_implemented": true,
+  "live_restore_integration": false,
+  "partial_quarantine_resume_qualified": true,
+  "scientific_validation": false,
+  "report": "results/phase2-transaction-plan-2026-10-18/report.json",
+  "explicit_preparation_cli_implemented": true,
+  "durable_guard_plan_link_qualified": true,
+  "persistence_result": "PHASE2_TRANSACTION_PREPARE_RESULTATS.json",
+  "resume_result": "PHASE2_TRANSACTION_RESUME_RESULTATS.json",
+  "normal_recover_automatically_prepares_transaction": false,
+  "completion_retry_scope": "Before a later operation changes pointer/locks/receipt context"
+}

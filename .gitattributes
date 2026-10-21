@@ -1,0 +1,4 @@
+
+# Scientific source hashes require exact bytes, including original line endings.
+simulateur/membrane/core/hh.js -text
+simulateur/membrane/source/hh_variant01.cellml -text

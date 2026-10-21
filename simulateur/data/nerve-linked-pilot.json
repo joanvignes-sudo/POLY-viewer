@@ -1,0 +1,112 @@
+{
+  "schema": "poly.nerve-linked-pilot.v1",
+  "species": "Homo sapiens",
+  "geometry": "schematic_regional",
+  "pilots": [
+    {
+      "id": "median",
+      "name": "Médian droit → branche récurrente → région thénar",
+      "itinerary": "thenar_R",
+      "trunk": "median_R",
+      "branch": "median_recurrent_R",
+      "target": "Région thénar HRA · trois muscles associés dans BodyParts3D, sans recalage validé",
+      "sources": [
+        "HAND_H2023",
+        "MEDIAN"
+      ],
+      "links": [
+        {
+          "id": "median_branch",
+          "type": "regional_branch_continuity",
+          "from_route": "median_R",
+          "to_route": "median_recurrent_R",
+          "delay_ms": null,
+          "delay_scope": "Continuité régionale du dessin ; conduction de cette jonction non mesurée."
+        },
+        {
+          "id": "median_terminal",
+          "type": "terminal_relation_not_simulated",
+          "from_route": "median_recurrent_R",
+          "target": "Région thénar",
+          "delay_ms": null,
+          "delay_scope": "Délai jonction neuromusculaire et réponse musculaire non établis pour cette scène."
+        }
+      ],
+      "associated_reference": {
+        "dataset": "hand-muscles-reference.json",
+        "parts": [
+          "FJ1483",
+          "FJ1501",
+          "FJ1514"
+        ],
+        "type": "documented_typical_innervation",
+        "geometric_connection": false,
+        "entry_points": null,
+        "delay_ms": null,
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/3584881/",
+          "https://pubmed.ncbi.nlm.nih.gov/8771405/"
+        ]
+      }
+    },
+    {
+      "id": "ulnar",
+      "name": "Ulnaire droit → branche profonde → territoire de la main",
+      "itinerary": "ulnar_R",
+      "trunk": "ulnar_R",
+      "branch": "ulnar_deep_R",
+      "target": "Main droite · cibles ulnaires dans BodyParts3D, sans recalage validé",
+      "sources": [
+        "HAND_H2023"
+      ],
+      "links": [
+        {
+          "id": "ulnar_branch",
+          "type": "regional_branch_continuity",
+          "from_route": "ulnar_R",
+          "to_route": "ulnar_deep_R",
+          "delay_ms": null,
+          "delay_scope": "Continuité régionale du dessin ; conduction de cette jonction non mesurée."
+        },
+        {
+          "id": "ulnar_terminal",
+          "type": "terminal_relation_not_simulated",
+          "from_route": "ulnar_deep_R",
+          "target": "Main profonde",
+          "delay_ms": null,
+          "delay_scope": "Délai jonction neuromusculaire et réponse musculaire non établis pour cette scène."
+        }
+      ],
+      "associated_reference": {
+        "dataset": "hand-muscles-reference.json",
+        "parts": [
+          "FJ1466",
+          "FJ1470",
+          "FJ1482",
+          "FJ1511",
+          "FJ1509",
+          "FJ1481",
+          "FJ1515"
+        ],
+        "type": "documented_typical_innervation",
+        "geometric_connection": false,
+        "entry_points": null,
+        "delay_ms": null,
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/19129366/",
+          "https://pubmed.ncbi.nlm.nih.gov/4066477/"
+        ]
+      }
+    }
+  ],
+  "between_pilots": [
+    {
+      "type": "shared_body_region_not_electrical_connection",
+      "from_pilot": "median",
+      "to_pilot": "ulnar",
+      "delay_ms": null,
+      "scope": "Deux territoires dans la main ; aucune synapse ni anastomose précise attribuée. Croisement géométrique éventuel ≠ transmission. Synchronisation non mesurée."
+    }
+  ],
+  "timing_policy": "Aucun délai issu de la longueur graphique. Temps du lecteur pédagogique, aucun délai de réaction calculé."
+}

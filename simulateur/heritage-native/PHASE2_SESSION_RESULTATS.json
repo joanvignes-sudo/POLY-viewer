@@ -1,0 +1,15 @@
+{
+  "status": "PASS_MANIFEST_BOUND_CLOSED_SESSION",
+  "report": "results/phase2-session-2026-10-18/report.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "cases": 8,
+  "additional_tests": 12,
+  "python_tests": 165,
+  "closed_set_only": true,
+  "scientific_validation": false,
+  "initial_fixture_failure_retained": "work/p2/o2-experiment/session-20261018-084728",
+  "first_pass_retained": "work/p2/o2-experiment/session-20261018-084745",
+  "output_reader_regression_run": "work/p2/o2-experiment/output-adapter-20261018-084949",
+  "native_actions_applied": false,
+  "general_dynamic_lifecycle": false
+}

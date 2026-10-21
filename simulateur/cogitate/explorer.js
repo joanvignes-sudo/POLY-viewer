@@ -1,0 +1,19 @@
+fetch('preuves.json').then(r=>{if(!r.ok)throw Error('Dossier indisponible');return r.json()}).then(data=>{
+ const steps=document.querySelector('#steps'),detail=document.querySelector('#evidence');let current=0;
+ const dialog=document.querySelector('#figure-dialog'),large=document.querySelector('#figure-large'),zoom=document.querySelector('#figure-zoom');
+ const labels=['Stimulus visuel','Réponse enregistrée','Résultats de l’analyse','Localisation cérébrale','Préparer la réanalyse'];
+ function el(tag,text,cls){const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n}
+ function show(index){current=index;const item=data.records[index];for(const [i,b] of [...steps.children].entries())b.setAttribute('aria-pressed',String(i===index));detail.replaceChildren();detail.append(el('p',item.status,'status-tag'),el('h3',labels[index]),el('p',item.fact),el('p',item.limit,'limit'));
+  if(item.id==='event'){const p=el('div',null,'protocol');p.append(el('strong','DÉBUT → PRÉSENTATION → FIN → INTERVALLE'),el('p','500 / 1 000 / 1 500 ms : durées prévues de présentation.'),el('p','Schéma du protocole, sans signal ou essai simulé.'));detail.append(p)}
+  if(item.id==='analysis'){const bars=el('div',null,'analysis-bars'),track=el('div',null,'analysis-track');track.setAttribute('role','img');track.setAttribute('aria-label','92 canaux analysés : 18 augmentations, 10 diminutions, 64 autres');for(let i=0;i<3;i++)track.append(el('span'));bars.append(track,el('div','18 augmentations · 10 diminutions · 64 autres canaux analysés','bar-legend'));detail.append(bars)}
+  if(item.id==='access'){const p=el('div',null,'protocol');p.append(el('strong','POUR UNE MÊME SESSION'),el('p','Signaux + événements + canaux + électrodes + système de coordonnées'),el('p','Puis : qualité, versions, corrections temporelles et synchronisation.'));detail.append(p)}
+  const a=el('a','Consulter la source exacte ↗','source-link');a.href=item.source;a.target='_blank';a.rel='noopener';detail.append(a);
+  if(item.image){const figure=el('figure',null,'figure-preview'),button=el('button'),img=el('img');img.src=item.image;img.alt=item.fact;button.setAttribute('aria-label','Agrandir la figure : '+labels[index]);button.append(img);button.onclick=()=>{large.src=item.image;large.alt=item.fact;zoom.value='100';large.style.width='100%';document.querySelector('#zoom-value').value='100 %';document.querySelector('#figure-caption').textContent=item.status+' · '+item.limit;document.querySelector('#figure-original').href=item.image;dialog.showModal()};const caption=el('figcaption');caption.append(el('span',item.status),el('span','Agrandir et zoomer ↗'));figure.append(button,caption);detail.append(figure)}
+  document.querySelector('#step-counter').textContent=String(index+1).padStart(2,'0')+' / 05';document.querySelector('#previous-step').disabled=index===0;document.querySelector('#next-step').disabled=index===data.records.length-1;
+ }
+ for(const [i,item] of data.records.entries()){const b=el('button');b.dataset.id=item.id;b.append(el('span',String(i+1).padStart(2,'0'),'step-no'),el('span',labels[i]));b.onclick=()=>show(i);steps.append(b)}
+ document.querySelector('#previous-step').onclick=()=>show(Math.max(0,current-1));document.querySelector('#next-step').onclick=()=>show(Math.min(data.records.length-1,current+1));
+ document.querySelector('#figure-close').onclick=()=>dialog.close();zoom.oninput=()=>{large.style.width=zoom.value+'%';document.querySelector('#zoom-value').value=zoom.value+' %'};
+ show(1);
+ document.querySelector('#export-evidence').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='POLY-COGITATE-preuves.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+}).catch(e=>document.querySelector('#evidence').textContent=e.message);

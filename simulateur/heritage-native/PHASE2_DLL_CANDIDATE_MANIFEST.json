@@ -1,0 +1,85 @@
+{
+  "status": "AUDITED_CANDIDATE_NOT_ENFORCED",
+  "date_local": "2026-10-18",
+  "source_report": "results/phase2-runtime-audit-2026-10-18/report.json",
+  "source_report_sha256": "f62870df227ef587d9d8767cbb1405db605215cacec99681ad0df4e079a14e84",
+  "worker_sha256": "6b0e0e0ed85599d12d42f922359199bb7bc95e9a88cec2b659a6d4783d2fee31",
+  "dlls": [
+    {
+      "name": "libc++.dll",
+      "runtime_relative_path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/bin/libc++.dll",
+      "sha256": "81fb50f0866840d7e5a1d35d48cf31adc02f623a61d8b77daf62881e1e59401b",
+      "bytes": 2000384,
+      "declared_imports": [
+        "libunwind.dll",
+        "KERNEL32.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-multibyte-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll"
+      ]
+    },
+    {
+      "name": "libunwind.dll",
+      "runtime_relative_path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/bin/libunwind.dll",
+      "sha256": "b0636a4281610124704adb2be2edf5642e830d86c68b7f27dbc9c8154705a780",
+      "bytes": 183808,
+      "declared_imports": [
+        "KERNEL32.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll"
+      ]
+    },
+    {
+      "name": "libwinpthread-1.dll",
+      "runtime_relative_path": "toolchain/llvm/llvm-mingw-20261006-ucrt-x86_64/bin/libwinpthread-1.dll",
+      "sha256": "7658f9e5e89213af287d342c554b8abcb5b2700b4a44d02184b56004b104ceec",
+      "bytes": 293888,
+      "declared_imports": [
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll"
+      ]
+    }
+  ],
+  "os_import_declarations": [
+    "ADVAPI32.dll",
+    "KERNEL32.dll",
+    "api-ms-win-crt-convert-l1-1-0.dll",
+    "api-ms-win-crt-environment-l1-1-0.dll",
+    "api-ms-win-crt-filesystem-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-locale-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-multibyte-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "api-ms-win-crt-time-l1-1-0.dll",
+    "api-ms-win-crt-utility-l1-1-0.dll",
+    "dbghelp.dll"
+  ],
+  "actual_loaded_paths_qualified": false,
+  "preflight_enforcement_implemented": false,
+  "scientific_validation": false
+}

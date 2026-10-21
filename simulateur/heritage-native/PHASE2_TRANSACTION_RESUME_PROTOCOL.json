@@ -1,0 +1,22 @@
+{
+  "status": "PROTOCOL_BEFORE_PROCESS_EXIT_MATRIX",
+  "date_local": "2026-10-18",
+  "uncommitted_exit_stages": [
+    "TRANSACTION_RECEIPT_WRITTEN",
+    "TRANSACTION_RESTORE_MOVED",
+    "TRANSACTION_OPERATION_MOVED",
+    "TRANSACTION_COMPLETION_WRITTEN",
+    "TRANSACTION_GUARD_RETIRED"
+  ],
+  "already_committed_exit_stage": "TRANSACTION_OPERATION_MOVED",
+  "requirements": [
+    "Parent exits 86 at named completed mutation boundary",
+    "Resume only matching published guard/plan",
+    "No native launch during resume",
+    "Exact pointer bytes unchanged",
+    "Original guard and locks archived unchanged",
+    "Second resume read-only before any later operation"
+  ],
+  "power_loss_qualified": false,
+  "scientific_validation": false
+}

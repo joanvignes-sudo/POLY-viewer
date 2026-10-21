@@ -1,0 +1,55 @@
+{
+  "schema_version": "poly-pulse-qualified-checkpoints/0.2",
+  "status": "EXPERIMENTAL_CLOSED_SET_BINDINGS",
+  "base_context": {
+    "profile_id": "poly-pulse-o2-state-dll-v2",
+    "engine_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+    "patch_sha256": "059902a5dfb9714aab0bd87c1f7caf2d56781db41e46ddf9430cb29aba2584f0",
+    "worker_sha256": "6b0e0e0ed85599d12d42f922359199bb7bc95e9a88cec2b659a6d4783d2fee31",
+    "library_sha256": "fe3e9977eba2034d1202ace85171061d983b3877b1cf4b43176edf93b68e081e",
+    "data_manifest_sha256": "fc9cb7b18b11e60e072ff6003049848fa7f91008a3eeae92cadbe6d40a054d68",
+    "initial_patient_sha256": "b9dc445c8001f80fcf57444f108da483c505bf4a01be843756561874a0a99373",
+    "current_patient_sha256": "acebeb5ce6bc53fae4ad31de691073a035a515e675d0e544039803594b72e221",
+    "configuration_sha256": "ffb5518d53524a54644ea3a71e6050407b44a6d9d83136d52e1c920be80a85f0",
+    "dt_s": 0.02,
+    "state_version": "4.4.0-60c44739",
+    "runtime_dll_manifest_sha256": "fe6eceae0b09afb99cc4933889a98492ff776c360963e1b1415015ab7e6017c6"
+  },
+  "known_checkpoints": [
+    {
+      "requested_tick": 1500,
+      "state_sha256": "4d5e9fff974d4a344614344c4727a18ad30838cc23d7b142a1b2fd7fe935706e",
+      "current_patient_sha256": "acebeb5ce6bc53fae4ad31de691073a035a515e675d0e544039803594b72e221",
+      "envelope_file": "results/phase2-dll-v2-2026-10-18/envelope-1500.json"
+    },
+    {
+      "requested_tick": 1501,
+      "state_sha256": "ade72eb37e96befb29853789b5a2498988e41058c31e499668cf82d7915d4528",
+      "current_patient_sha256": "e3e6533ab41193390a5b3b78024512f26509c0c9258317056b3208edb9947e7e",
+      "envelope_file": "results/phase2-dll-v2-2026-10-18/envelope-1501.json"
+    },
+    {
+      "requested_tick": 1520,
+      "state_sha256": "f01a1c54448593f7d4b0e8b10269c06e461e93e06d0c3e0a16a7b947658d24b9",
+      "current_patient_sha256": "53093ab90b47269ac425fe440b2bd6ea946ca0f859517beba2b93e11accd1e86",
+      "envelope_file": "results/phase2-dll-v2-2026-10-18/envelope-1520.json"
+    },
+    {
+      "requested_tick": 1541,
+      "state_sha256": "1d37f1fc18a5d7055c2546188c18c2ab05f004d81b307fa9d4266d8f0be95414",
+      "current_patient_sha256": "4824972a68c5e1d2875e18e410f5c0026ab7f65c696d033a066db371eca2fe7a",
+      "envelope_file": "results/phase2-dll-v2-2026-10-18/envelope-1541.json"
+    }
+  ],
+  "runtime_manifest": "results/phase2-init-2026-10-17/runtime_data_manifest.json",
+  "qualification_report": "results/phase2-checkpoint-2026-10-17/report.json",
+  "trust_boundary": "Qualification measures the controlled experimental build; future restores must compare to these persisted expected digests rather than approve a newly observed binary automatically",
+  "general_restore_advertised": false,
+  "qualification_report_sha256": "75739b5bc033c964dc551f4431676856665a67c70ca0d87351d1c66b0ddfb317",
+  "binding_version": "DLL_V2_EXPLICIT",
+  "legacy_bindings_file_sha256": "c357a4f983caa8f343b2e89d13ab44147b1362ee38eb9ca28428eefda1840d42",
+  "legacy_bindings_content_sha256": "dd71d9577629a0f172a9b148bde5e84a36b4b5a2490c107591105f428d260aaa",
+  "runtime_dll_manifest": "PHASE2_RUNTIME_DLL_MANIFEST_V2.json",
+  "runtime_dll_manifest_file_sha256": "4b15f300817f2fa366497a724ed91fe73040aaf64ee964f86cd1f54468a10a1d",
+  "scope": "DLL_V2_FIXED_INPUTS_NOT_GENERAL"
+}

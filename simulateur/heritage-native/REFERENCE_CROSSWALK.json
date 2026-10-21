@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "status": "SHARED_CLASS_ONLY_NOT_SUBJECT_IDENTITY",
+  "shared_class": "UBERON:0000948",
+  "source_assertions": [
+    {
+      "source_id": "hra-production-graph-verified",
+      "version": "v1.1",
+      "sha256": "572c7e15818a56e388d0636716848786b2d93b905914a2e41641cfede6806e9b",
+      "pointer": "/data/0",
+      "native_id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.1#primary",
+      "annotation_field": "representation_of",
+      "scope": "human female reference organ"
+    },
+    {
+      "source_id": "apinatomy-cardiac",
+      "version": "4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e",
+      "sha256": "76297884534ebcc2bd69d8277bdc09f7f1e21571e81e5580e35428f031c2ced3",
+      "pointer": "/lyphs/73",
+      "native_id": "A74",
+      "annotation_field": "ontologyTerms",
+      "scope": "model described as predominantly porcine"
+    }
+  ],
+  "poly_context": {
+    "mapping_id": "c13-p01-heart-anatomy",
+    "species": "mouse",
+    "status": "CANDIDATE_CLASS_MAPPING_ONLY"
+  },
+  "authorizes": [
+    "versioned navigation between source annotations to the same anatomical class"
+  ],
+  "does_not_authorize": [
+    "exact native object identity",
+    "same subject",
+    "species transfer",
+    "coordinate transfer",
+    "causal propagation or timing"
+  ],
+  "dynamic_bridge_authorized": false,
+  "scientific_promotions": []
+}

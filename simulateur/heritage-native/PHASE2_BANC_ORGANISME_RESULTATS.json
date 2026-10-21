@@ -1,0 +1,17 @@
+{
+  "status": "PASS_TECHNICAL_ORGANISM_COMPOSITION",
+  "report": "results/phase2-organism-workbench-2026-10-18/report.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "positive_trajectories": 4,
+  "negative_cases": 5,
+  "native_reference_comparisons": 180,
+  "published_output_ports": 6,
+  "unit_tests": 14,
+  "python_tests": 235,
+  "canonical_to_physiology_bridge": false,
+  "neural_dynamic_simulation": false,
+  "anatomical_registration": false,
+  "biological_events_applied": false,
+  "scientific_validation": false,
+  "initial_cli_smoke_retained": "work/p2/o2-experiment/workbench-smoke-20261018-094633"
+}

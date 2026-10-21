@@ -1,0 +1,39 @@
+{
+  "schema": "poly.prospective.empirical-protocol/1",
+  "state": "PREREGISTERED_LOCALLY_NOT_EXECUTED",
+  "purpose": "describe predictive performance only after source calibration and preparation-model compatibility are established",
+  "fit_axons": [
+    1,
+    4
+  ],
+  "evaluation_axons": [
+    2,
+    3
+  ],
+  "split_unit": "biological axon, never randomly split trials of same axon across fit and test",
+  "model_required": "coupled sodium gating and pH/temperature mechanism matching alkaline perfused squid preparation, with complete equations/parameters/source",
+  "temperature_C_by_article_axon": {
+    "1": 17.2,
+    "2": 20.5,
+    "3": 22.1,
+    "4": 17.7
+  },
+  "calibration_policy": "No optimizing conversion gains against voltage/model performance. Resolve or explicitly bound hardware calibration independently. Exclude disputed pulse trials from accuracy scoring until clarified.",
+  "initialization": "preserve measured absolute voltage; any gating initialization/burn-in must be prospectively specified using pre-stimulus data only",
+  "metrics": [
+    "all-trace voltage RMSE and MAE with absolute physical units",
+    "positive 0mV crossings with one-to-one match within +/-1ms, report precision/recall and counts",
+    "spike latency, peak voltage and after-hyperpolarization, each reported separately"
+  ],
+  "uncertainty": "report separately by axon and protocol; four axons do not establish population-wide accuracy",
+  "no_preset_biological_success_threshold": "Do not reuse the 0.1mV engineering solver threshold as a physiological validation threshold. No release approval inferred from a numerical score.",
+  "prohibited_inferences": [
+    "human neurons",
+    "pain perception",
+    "organ-level physiology",
+    "spatial nerve propagation",
+    "causal transitions along documentary graph"
+  ],
+  "current_execution_authorized": false,
+  "why_not_executed": "required preparation-model parameters and calibration are unavailable in verified sources so far"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FACADE_INTERFACE_HARDENING",
+  "report": "results/phase2-interface-audit-2026-10-18/report.json",
+  "closure_boundaries": "results/phase2-interface-audit-2026-10-18/closure-boundaries.json",
+  "initial_failure": "results/phase2-interface-audit-2026-10-18/initial-failure.log",
+  "initial_implementation_commit": "632eda4c2f08ff952fd333ea79f123f8e5cbfed3",
+  "python_tests": 257,
+  "new_tests": 8,
+  "native_reference_comparisons": 180,
+  "real_missing_manifest_cases": 2,
+  "closed_evidence_refusals": 3,
+  "real_parent_exit_boundaries": 2,
+  "legacy_v0_1_proofs_unchanged": true,
+  "native_profile_or_engine_changed": false,
+  "scientific_validation": false,
+  "biological_events_applied": false
+}

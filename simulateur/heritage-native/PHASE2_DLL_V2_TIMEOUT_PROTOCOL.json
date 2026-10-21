@@ -1,0 +1,27 @@
+{
+  "status": "PROTOCOL_BEFORE_REAL_V2_TIMEOUT",
+  "date_local": "2026-10-18",
+  "profile": "DLL_V2_EXPLICIT",
+  "normal_horizon_steps": 0,
+  "timeout_horizon_steps": 3000,
+  "timeout_seconds": 0.1,
+  "requirements": [
+    "Normal success committed first",
+    "Real pinned v2 worker only, no runner injection",
+    "CHILD_TIMEOUT after module verification",
+    "Direct child proven absent/reused after cleanup",
+    "last_good exact bytes unchanged",
+    "Failed operation recorded and retry under same ID refused without new attempt",
+    "New explicit operation can succeed afterwards"
+  ],
+  "guard_timeout_separate": "DLL_READY_TIMEOUT is not accepted as native CHILD_TIMEOUT",
+  "scientific_validation": false,
+  "power_loss_qualified": false,
+  "progress_extension_before_execution": {
+    "timeout_seconds": 1.0,
+    "require_engine_log_and_partial_horizons_above_zero": true,
+    "require_partial_max_below_3000": true,
+    "budget_basis": "Earlier qualified h0 ~0.438 s, h3000 ~5.1 s; first 0.1 s timed out before engine.log",
+    "physiological_tolerance_changed": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "package": "three",
+  "version": "0.158.0",
+  "license": "MIT",
+  "assets": [
+    {
+      "name": "three.module.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+      "sha256": "313203957197800a1dfa954cfde84103be12bcd8e33aeee07be04216002b2e6d",
+      "size": 1237216
+    },
+    {
+      "name": "loaders/GLTFLoader.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js",
+      "sha256": "b85db4109434f8eb1d1d51c5d46ce3fa2df01819f141ad395f7be5cc44529151",
+      "size": 106576
+    },
+    {
+      "name": "utils/BufferGeometryUtils.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/utils/BufferGeometryUtils.js",
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb",
+      "size": 31906
+    }
+  ]
+}

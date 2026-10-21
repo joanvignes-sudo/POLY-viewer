@@ -1,0 +1,1274 @@
+{
+  "schema": "poly.hra.asset-manifest/1",
+  "source_collection": "HRA v2.5",
+  "license": "CC BY 4.0",
+  "retrieved_utc": "2026-10-19T09:48:29.174509+00:00",
+  "total_downloaded_bytes": 47389496,
+  "assets": [
+    {
+      "id": "skin",
+      "organ_label": "Skin",
+      "sex_reference": "male",
+      "file": "hra_skin_male.glb",
+      "crosswalk_file": "hra_skin_crosswalk.csv",
+      "sha256": "4764602f0866fbdad19382e7f12ba148ee33141677153b556f7238116bc33c2a",
+      "crosswalk_sha256": "0445fc54a80a6b9a7af5e4953fc2f858a911c350a5db62ef24e8ecaf2d7b000f",
+      "file_bytes": 19901928,
+      "crosswalk_rows": 1,
+      "source_model_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.4/assets/3d-vh-m-skin.glb",
+      "source_crosswalk_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.4/assets/crosswalk.csv",
+      "source_data_url": "https://purl.humanatlas.io/ref-organ/skin-male/v1.4",
+      "manifest_url": "https://humanatlas.io/assets/content/3d-reference-library-page/data.yaml",
+      "source_version": "v1.4",
+      "collection_version": "HRA 2.5, published June 2026",
+      "licence": "CC BY 4.0, Human Reference Atlas official 3D reference objects",
+      "coordinate_frame": "original HRA organ asset; no registration to POLY walker or f002",
+      "clinical_subject": "reference anatomy from Visible Human datasets, not a POLY individual",
+      "atlas_to_POLY_registration": "NOT_VALIDATED",
+      "physiological_route_verified": false,
+      "terms": [
+        {
+          "node_name": "VH_M_skin",
+          "ontology_id": "UBERON:0002097",
+          "label": "skin of body"
+        }
+      ]
+    },
+    {
+      "id": "brain",
+      "organ_label": "Brain",
+      "sex_reference": "male",
+      "file": "hra_brain_male.glb",
+      "crosswalk_file": "hra_brain_crosswalk.csv",
+      "sha256": "c97d7d0b9ff0baebbdec5566fa7b08d789195ef965e0bd04cf743a8d683882db",
+      "crosswalk_sha256": "55907c4a83180f4af06a41a4b4361cf8afd4520ead71e6bef5f75ffef62febcf",
+      "file_bytes": 11982812,
+      "crosswalk_rows": 108,
+      "source_model_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/v1.4/assets/3d-allen-m-brain.glb",
+      "source_crosswalk_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-male/v1.4/assets/crosswalk.csv",
+      "source_data_url": "https://purl.humanatlas.io/ref-organ/brain-male/v1.4",
+      "manifest_url": "https://humanatlas.io/assets/content/3d-reference-library-page/data.yaml",
+      "source_version": "v1.4",
+      "collection_version": "HRA 2.5, published June 2026",
+      "licence": "CC BY 4.0, Human Reference Atlas official 3D reference objects",
+      "coordinate_frame": "original HRA organ asset; no registration to POLY walker or f002",
+      "clinical_subject": "reference anatomy from Visible Human datasets, not a POLY individual",
+      "atlas_to_POLY_registration": "NOT_VALIDATED",
+      "physiological_route_verified": false,
+      "terms": [
+        {
+          "node_name": "Allen_brain",
+          "ontology_id": "UBERON:0000955",
+          "label": "brain"
+        },
+        {
+          "node_name": "Allen_brain_Hemisphere_L",
+          "ontology_id": "UBERON:0002812",
+          "label": "left cerebral hemisphere"
+        },
+        {
+          "node_name": "Allen_olfactory_bulb_L",
+          "ontology_id": "UBERON:0002264",
+          "label": "olfactory bulb"
+        },
+        {
+          "node_name": "Allen_anterior_olfactory_nucleus_L",
+          "ontology_id": "UBERON:0002266",
+          "label": "anterior olfactory nucleus"
+        },
+        {
+          "node_name": "Allen_piriform_region_L",
+          "ontology_id": "UBERON:0004725",
+          "label": "piriform cortex"
+        },
+        {
+          "node_name": "Allen_putamen_L",
+          "ontology_id": "UBERON:0008884",
+          "label": "left putamen"
+        },
+        {
+          "node_name": "Allen_pineal_body_L",
+          "ontology_id": "UBERON:0001905",
+          "label": "pineal body"
+        },
+        {
+          "node_name": "Allen_anterior_commissure_L",
+          "ontology_id": "UBERON:0000935",
+          "label": "anterior commissure"
+        },
+        {
+          "node_name": "Allen_corpus_callosum_L",
+          "ontology_id": "UBERON:0002336",
+          "label": "corpus callosum"
+        },
+        {
+          "node_name": "Allen_fornix_L",
+          "ontology_id": "UBERON:0000052",
+          "label": "fornix of brain"
+        },
+        {
+          "node_name": "Allen_optic_tract_L",
+          "ontology_id": "UBERON:0001908",
+          "label": "optic tract"
+        },
+        {
+          "node_name": "Allen_cerebellar_vermis_L",
+          "ontology_id": "UBERON:0004720",
+          "label": "cerebellar vermis"
+        },
+        {
+          "node_name": "Allen_primary_motor_cortex_L",
+          "ontology_id": "UBERON:0002703",
+          "label": "primary motor cortex"
+        },
+        {
+          "node_name": "Allen_superior_frontal_gyrus_L",
+          "ontology_id": "UBERON:0002661",
+          "label": "superior frontal gyrus"
+        },
+        {
+          "node_name": "Allen_middle_frontal_gyrus_L",
+          "ontology_id": "UBERON:0002702",
+          "label": "middle frontal gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_frontal_gyrus_triangular_part_L",
+          "ontology_id": "UBERON:0002629",
+          "label": "triangular part of inferior frontal gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_frontal_gyrus_opercular_part_L",
+          "ontology_id": "UBERON:0002980",
+          "label": "opercular part of inferior frontal gyrus"
+        },
+        {
+          "node_name": "Allen_gyrus_rectus_straight_gyrus_L",
+          "ontology_id": "UBERON:0004671",
+          "label": "gyrus rectus"
+        },
+        {
+          "node_name": "Allen_medial_orbital_gyrus_L",
+          "ontology_id": "UBERON:0002570",
+          "label": "medial orbital gyrus"
+        },
+        {
+          "node_name": "Allen_anterior_intermediate_orbital_gyrus_L",
+          "ontology_id": "UBERON:0002644",
+          "label": "intermediate orbital gyrus"
+        },
+        {
+          "node_name": "Allen_posterior_intermediate_orbital_gyrus_L",
+          "ontology_id": "UBERON:0002644",
+          "label": "intermediate orbital gyrus"
+        },
+        {
+          "node_name": "Allen_lateral_orbital_gyrus_L",
+          "ontology_id": "UBERON:0002564",
+          "label": "lateral orbital gyrus"
+        },
+        {
+          "node_name": "Allen_paracentral_lobule_rostral_part_L",
+          "ontology_id": "UBERON:0035932",
+          "label": "anterior segment of paracentral lobule"
+        },
+        {
+          "node_name": "Allen_frontal_operculum_L",
+          "ontology_id": "UBERON:0002947",
+          "label": "frontal operculum"
+        },
+        {
+          "node_name": "Allen_postcentral_gyrus_L",
+          "ontology_id": "UBERON:0002581",
+          "label": "postcentral gyrus"
+        },
+        {
+          "node_name": "Allen_precuneus_L",
+          "ontology_id": "UBERON:0006093",
+          "label": "precuneus cortex"
+        },
+        {
+          "node_name": "Allen_superior_temporal_gyrus_L",
+          "ontology_id": "UBERON:0002769",
+          "label": "superior temporal gyrus"
+        },
+        {
+          "node_name": "Allen_middle_temporal_gyrus_L",
+          "ontology_id": "UBERON:0002771",
+          "label": "middle temporal gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_temporal_gyrus_L",
+          "ontology_id": "UBERON:0002751",
+          "label": "inferior temporal gyrus"
+        },
+        {
+          "node_name": "Allen_planum_temporale_L",
+          "ontology_id": "UBERON:0022268",
+          "label": "planum temporale"
+        },
+        {
+          "node_name": "Allen_temporal_pole_L",
+          "ontology_id": "UBERON:0002576",
+          "label": "temporal pole"
+        },
+        {
+          "node_name": "Allen_planum_polare_L",
+          "ontology_id": "UBERON:0023861",
+          "label": "planum polare"
+        },
+        {
+          "node_name": "Allen_occipital_pole_L",
+          "ontology_id": "UBERON:0002902",
+          "label": "occipital pole"
+        },
+        {
+          "node_name": "Allen_cuneus_L",
+          "ontology_id": "UBERON:0006092",
+          "label": "cuneus cortex"
+        },
+        {
+          "node_name": "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_L",
+          "ontology_id": "UBERON:0002943",
+          "label": "lingual gyrus"
+        },
+        {
+          "node_name": "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_L",
+          "ontology_id": "UBERON:0022364",
+          "label": "occipital fusiform gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_occipital_gyrus_L",
+          "ontology_id": "UBERON:0014608",
+          "label": "inferior occipital gyrus"
+        },
+        {
+          "node_name": "Allen_superior_occipital_gyrus_L",
+          "ontology_id": "UBERON:0002948",
+          "label": "superior occipital gyrus"
+        },
+        {
+          "node_name": "Allen_cingulate_gyrus_rostral_anterior_part_L",
+          "ontology_id": "UBERON:0002756",
+          "label": "anterior cingulate gyrus"
+        },
+        {
+          "node_name": "Allen_cingulate_gyrus_caudal_posterior_part_L",
+          "ontology_id": "UBERON:0002740",
+          "label": "posterior cingulate gyrus"
+        },
+        {
+          "node_name": "Allen_ingulo_parahippocampal_isthmus_L",
+          "ontology_id": "UBERON:0002738",
+          "label": "isthmus of cingulate gyrus"
+        },
+        {
+          "node_name": "Allen_subcallosal_gyrus_parolfactory_gyrus_L",
+          "ontology_id": "UBERON:0003020",
+          "label": "subcallosal area"
+        },
+        {
+          "node_name": "Allen_anterior_parahippocampal_gyrus_L",
+          "ontology_id": "UBERON:0022383",
+          "label": "anterior parahippocampal gyrus"
+        },
+        {
+          "node_name": "Allen_posterior_parahippocampal_gyrus_L",
+          "ontology_id": "UBERON:0002657",
+          "label": "posterior parahippocampal gyrus"
+        },
+        {
+          "node_name": "Allen_substantia_nigra_L",
+          "ontology_id": "UBERON:0002038",
+          "label": "substantia nigra"
+        },
+        {
+          "node_name": "Allen_superior_colliculus_L",
+          "ontology_id": "UBERON:0001945",
+          "label": "superior colliculus"
+        },
+        {
+          "node_name": "Allen_cerebral_peduncle_crus_cerebri_L",
+          "ontology_id": "UBERON:0002623",
+          "label": "cerebral peduncle"
+        },
+        {
+          "node_name": "Allen_basilar_part_of_pons_L",
+          "ontology_id": "UBERON:0002151",
+          "label": "pontine nuclear group"
+        },
+        {
+          "node_name": "Allen_pontine_tegmentum_L",
+          "ontology_id": "UBERON:0003023",
+          "label": "pontine tegmentum"
+        },
+        {
+          "node_name": "Allen_fourth_ventricle_L",
+          "ontology_id": "UBERON:0002422",
+          "label": "fourth ventricle"
+        },
+        {
+          "node_name": "Allen_parietal_operculum_L",
+          "ontology_id": "UBERON:0002911",
+          "label": "parietal operculum"
+        },
+        {
+          "node_name": "Allen_optic_radiation_L",
+          "ontology_id": "UBERON:0022264",
+          "label": "optic radiation"
+        },
+        {
+          "node_name": "Allen_hippocampus_L",
+          "ontology_id": "UBERON:0002421",
+          "label": "hippocampal formation"
+        },
+        {
+          "node_name": "Allen_brain_Hemisphere_R",
+          "ontology_id": "UBERON:0002813",
+          "label": "right cerebral hemisphere"
+        },
+        {
+          "node_name": "Allen_putamen_R",
+          "ontology_id": "UBERON:0008885",
+          "label": "right putamen"
+        },
+        {
+          "node_name": "Allen_pineal_body_R",
+          "ontology_id": "UBERON:0001905",
+          "label": "pineal body"
+        },
+        {
+          "node_name": "Allen_anterior_commissure_R",
+          "ontology_id": "UBERON:0000935",
+          "label": "anterior commissure"
+        },
+        {
+          "node_name": "Allen_corpus_callosum_R",
+          "ontology_id": "UBERON:0002336",
+          "label": "corpus callosum"
+        },
+        {
+          "node_name": "Allen_fornix_R",
+          "ontology_id": "UBERON:0000052",
+          "label": "fornix of brain"
+        },
+        {
+          "node_name": "Allen_optic_tract_R",
+          "ontology_id": "UBERON:0001908",
+          "label": "optic tract"
+        },
+        {
+          "node_name": "Allen_primary_motor_cortex_R",
+          "ontology_id": "UBERON:0002703",
+          "label": "primary motor cortex"
+        },
+        {
+          "node_name": "Allen_superior_frontal_gyrus_R",
+          "ontology_id": "UBERON:0002661",
+          "label": "superior frontal gyrus"
+        },
+        {
+          "node_name": "Allen_middle_frontal_gyrus_R",
+          "ontology_id": "UBERON:0002702",
+          "label": "middle frontal gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_frontal_gyrus_triangular_part_R",
+          "ontology_id": "UBERON:0002629",
+          "label": "triangular part of inferior frontal gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_frontal_gyrus_opercular_part_R",
+          "ontology_id": "UBERON:0002980",
+          "label": "opercular part of inferior frontal gyrus"
+        },
+        {
+          "node_name": "Allen_gyrus_rectus_straight_gyrus_R",
+          "ontology_id": "UBERON:0004671",
+          "label": "gyrus rectus"
+        },
+        {
+          "node_name": "Allen_medial_orbital_gyrus_R",
+          "ontology_id": "UBERON:0002570",
+          "label": "medial orbital gyrus"
+        },
+        {
+          "node_name": "Allen_anterior_intermediate_orbital_gyrus_R",
+          "ontology_id": "UBERON:0002644",
+          "label": "intermediate orbital gyrus"
+        },
+        {
+          "node_name": "Allen_posterior_intermediate_orbital_gyrus_R",
+          "ontology_id": "UBERON:0002644",
+          "label": "intermediate orbital gyrus"
+        },
+        {
+          "node_name": "Allen_lateral_orbital_gyrus_R",
+          "ontology_id": "UBERON:0002564",
+          "label": "lateral orbital gyrus"
+        },
+        {
+          "node_name": "Allen_paracentral_lobule_rostral_part_R",
+          "ontology_id": "UBERON:0035932",
+          "label": "anterior segment of paracentral lobule"
+        },
+        {
+          "node_name": "Allen_frontal_operculum_R",
+          "ontology_id": "UBERON:0002947",
+          "label": "frontal operculum"
+        },
+        {
+          "node_name": "Allen_postcentral_gyrus_R",
+          "ontology_id": "UBERON:0002581",
+          "label": "postcentral gyrus"
+        },
+        {
+          "node_name": "Allen_precuneus_R",
+          "ontology_id": "UBERON:0006093",
+          "label": "precuneus cortex"
+        },
+        {
+          "node_name": "Allen_superior_temporal_gyrus_R",
+          "ontology_id": "UBERON:0002769",
+          "label": "superior temporal gyrus"
+        },
+        {
+          "node_name": "Allen_middle_temporal_gyrus_R",
+          "ontology_id": "UBERON:0002771",
+          "label": "middle temporal gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_temporal_gyrus_R",
+          "ontology_id": "UBERON:0002751",
+          "label": "inferior temporal gyrus"
+        },
+        {
+          "node_name": "Allen_planum_temporale_R",
+          "ontology_id": "UBERON:0022268",
+          "label": "planum temporale"
+        },
+        {
+          "node_name": "Allen_temporal_pole_R",
+          "ontology_id": "UBERON:0002576",
+          "label": "temporal pole"
+        },
+        {
+          "node_name": "Allen_planum_polare_R",
+          "ontology_id": "UBERON:0023861",
+          "label": "planum polare"
+        },
+        {
+          "node_name": "Allen_occipital_pole_R",
+          "ontology_id": "UBERON:0002902",
+          "label": "occipital pole"
+        },
+        {
+          "node_name": "Allen_cuneus_R",
+          "ontology_id": "UBERON:0006092",
+          "label": "cuneus cortex"
+        },
+        {
+          "node_name": "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_R",
+          "ontology_id": "UBERON:0002943",
+          "label": "lingual gyrus"
+        },
+        {
+          "node_name": "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_R",
+          "ontology_id": "UBERON:0022364",
+          "label": "occipital fusiform gyrus"
+        },
+        {
+          "node_name": "Allen_inferior_occipital_gyrus_R",
+          "ontology_id": "UBERON:0014608",
+          "label": "inferior occipital gyrus"
+        },
+        {
+          "node_name": "Allen_superior_occipital_gyrus_R",
+          "ontology_id": "UBERON:0002948",
+          "label": "superior occipital gyrus"
+        },
+        {
+          "node_name": "Allen_cingulate_gyrus_rostral_anterior_part_R",
+          "ontology_id": "UBERON:0002756",
+          "label": "anterior cingulate gyrus"
+        },
+        {
+          "node_name": "Allen_cingulate_gyrus_caudal_posterior_part_R",
+          "ontology_id": "UBERON:0002740",
+          "label": "posterior cingulate gyrus"
+        },
+        {
+          "node_name": "Allen_ingulo_parahippocampal_isthmus_R",
+          "ontology_id": "UBERON:0002738",
+          "label": "isthmus of cingulate gyrus"
+        },
+        {
+          "node_name": "Allen_subcallosal_gyrus_parolfactory_gyrus_R",
+          "ontology_id": "UBERON:0003020",
+          "label": "subcallosal area"
+        },
+        {
+          "node_name": "Allen_anterior_parahippocampal_gyrus_R",
+          "ontology_id": "UBERON:0022383",
+          "label": "anterior parahippocampal gyrus"
+        },
+        {
+          "node_name": "Allen_posterior_parahippocampal_gyrus_R",
+          "ontology_id": "UBERON:0002657",
+          "label": "posterior parahippocampal gyrus"
+        },
+        {
+          "node_name": "Allen_red_nucleus_R",
+          "ontology_id": "UBERON:0001947",
+          "label": "red nucleus"
+        },
+        {
+          "node_name": "Allen_substantia_nigra_R",
+          "ontology_id": "UBERON:0002038",
+          "label": "substantia nigra"
+        },
+        {
+          "node_name": "Allen_superior_colliculus_R",
+          "ontology_id": "UBERON:0001945",
+          "label": "superior colliculus"
+        },
+        {
+          "node_name": "Allen_inferior_colliculus_R",
+          "ontology_id": "UBERON:0001946",
+          "label": "inferior colliculus"
+        },
+        {
+          "node_name": "Allen_cerebral_peduncle_crus_cerebri_R",
+          "ontology_id": "UBERON:0002623",
+          "label": "cerebral peduncle"
+        },
+        {
+          "node_name": "Allen_basilar_part_of_pons_R",
+          "ontology_id": "UBERON:0002151",
+          "label": "pontine nuclear group"
+        },
+        {
+          "node_name": "Allen_pontine_tegmentum_R",
+          "ontology_id": "UBERON:0003023",
+          "label": "pontine tegmentum"
+        },
+        {
+          "node_name": "Allen_fourth_ventricle_R",
+          "ontology_id": "UBERON:0002422",
+          "label": "fourth ventricle"
+        },
+        {
+          "node_name": "Allen_parietal_operculum_R",
+          "ontology_id": "UBERON:0002911",
+          "label": "parietal operculum"
+        },
+        {
+          "node_name": "Allen_optic_radiation_R",
+          "ontology_id": "UBERON:0022264",
+          "label": "optic radiation"
+        },
+        {
+          "node_name": "Allen_hypothalamus_L",
+          "ontology_id": "UBERON:0001898",
+          "label": "hypothalamus"
+        },
+        {
+          "node_name": "Allen_hypothalamus_R",
+          "ontology_id": "UBERON:0001898",
+          "label": "hypothalamus"
+        },
+        {
+          "node_name": "Allen_red_nucleus_L",
+          "ontology_id": "UBERON:0001947",
+          "label": "red nucleus"
+        },
+        {
+          "node_name": "Allen_inferior_colliculus_L",
+          "ontology_id": "UBERON:0001946",
+          "label": "inferior colliculus"
+        },
+        {
+          "node_name": "Allen_hippocampus_R",
+          "ontology_id": "UBERON:0002421",
+          "label": "hippocampal formation"
+        },
+        {
+          "node_name": "VH_M_optic_chiasm",
+          "ontology_id": "UBERON:0000959",
+          "label": "optic chiasma"
+        }
+      ]
+    },
+    {
+      "id": "spinal_cord",
+      "organ_label": "Spinal Cord",
+      "sex_reference": "male",
+      "file": "hra_spinal_cord_male.glb",
+      "crosswalk_file": "hra_spinal_cord_crosswalk.csv",
+      "sha256": "b8a2c2a288a8f7af84d5b93900b3c506a7996aa28518e9fb8a3ab9b6db6e6827",
+      "crosswalk_sha256": "aae2776684334b299d087f03bb273b824206bf5831fb0481bfddda1db108fd4e",
+      "file_bytes": 490652,
+      "crosswalk_rows": 31,
+      "source_model_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/spinal-cord-male/v1.1/assets/3d-vh-m-spinal-cord.glb",
+      "source_crosswalk_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/spinal-cord-male/v1.1/assets/crosswalk.csv",
+      "source_data_url": "https://purl.humanatlas.io/ref-organ/spinal-cord-male/v1.1",
+      "manifest_url": "https://humanatlas.io/assets/content/3d-reference-library-page/data.yaml",
+      "source_version": "v1.1",
+      "collection_version": "HRA 2.5, published June 2026",
+      "licence": "CC BY 4.0, Human Reference Atlas official 3D reference objects",
+      "coordinate_frame": "original HRA organ asset; no registration to POLY walker or f002",
+      "clinical_subject": "reference anatomy from Visible Human datasets, not a POLY individual",
+      "atlas_to_POLY_registration": "NOT_VALIDATED",
+      "physiological_route_verified": false,
+      "terms": [
+        {
+          "node_name": "VH_M_spinal_cord",
+          "ontology_id": "UBERON:0002240",
+          "label": "spinal cord"
+        },
+        {
+          "node_name": "VH_M_C1_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006469",
+          "label": "C1 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C2_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006489",
+          "label": "C2 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C3_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006488",
+          "label": "C3 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C4_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006490",
+          "label": "C4 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C5_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006491",
+          "label": "C5 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C6_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006492",
+          "label": "C6 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C7_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006493",
+          "label": "C7 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_C8_segment_of_cervical_spinal_cord",
+          "ontology_id": "UBERON:0006470",
+          "label": "C8 segment of cervical spinal cord"
+        },
+        {
+          "node_name": "VH_M_first_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006457",
+          "label": "first thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_second_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006458",
+          "label": "second thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_third_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006459",
+          "label": "third thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_fourth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006452",
+          "label": "fourth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_fifth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006453",
+          "label": "fifth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_sixth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006454",
+          "label": "sixth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_seventh_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006455",
+          "label": "seventh thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_eighth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006456",
+          "label": "eighth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_ninth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006465",
+          "label": "ninth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_tenth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006466",
+          "label": "tenth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_eleventh_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006467",
+          "label": "eleventh thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_twelfth_thoracic_spinal_cord_segment",
+          "ontology_id": "UBERON:0006468",
+          "label": "twelfth thoracic spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_first_lumbar_spinal_cord_segment",
+          "ontology_id": "UBERON:0006448",
+          "label": "first lumbar spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_second_lumbar_spinal_cord_segment",
+          "ontology_id": "UBERON:0006450",
+          "label": "second lumbar spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_third_lumbar_spinal_cord_segment",
+          "ontology_id": "UBERON:0006449",
+          "label": "third lumbar spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_fourth_lumbar_spinal_cord_segment",
+          "ontology_id": "UBERON:0006451",
+          "label": "fourth lumbar spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_fifth_lumbar_spinal_cord_segment",
+          "ontology_id": "UBERON:0006447",
+          "label": "fifth lumbar spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_first_sacral_spinal_cord_segment",
+          "ontology_id": "UBERON:0006460",
+          "label": "first sacral spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_second_sacral_spinal_cord_segment",
+          "ontology_id": "UBERON:0006461",
+          "label": "second sacral spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_third_sacral_spinal_cord_segment",
+          "ontology_id": "UBERON:0006462",
+          "label": "third sacral spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_fourth_sacral_spinal_cord_segment",
+          "ontology_id": "UBERON:0006463",
+          "label": "fourth sacral spinal cord segment"
+        },
+        {
+          "node_name": "VH_M_fifth_sacral_spinal_cord_segment",
+          "ontology_id": "UBERON:0006464",
+          "label": "fifth sacral spinal cord segment"
+        }
+      ]
+    },
+    {
+      "id": "heart",
+      "organ_label": "Heart",
+      "sex_reference": "male",
+      "file": "hra_heart_male.glb",
+      "crosswalk_file": "hra_heart_crosswalk.csv",
+      "sha256": "689df039c8bc264ea06a44cd926762976f0666c0ff2dc532d046409b185e6b0c",
+      "crosswalk_sha256": "9c8ce8f37228aaeab359ffb7c40b83904062b773bf464a7ca5d5f7f7636f9313",
+      "file_bytes": 4071772,
+      "crosswalk_rows": 17,
+      "source_model_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-male/v1.3/assets/3d-vh-m-heart.glb",
+      "source_crosswalk_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-male/v1.3/assets/crosswalk.csv",
+      "source_data_url": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3",
+      "manifest_url": "https://humanatlas.io/assets/content/3d-reference-library-page/data.yaml",
+      "source_version": "v1.3",
+      "collection_version": "HRA 2.5, published June 2026",
+      "licence": "CC BY 4.0, Human Reference Atlas official 3D reference objects",
+      "coordinate_frame": "original HRA organ asset; no registration to POLY walker or f002",
+      "clinical_subject": "reference anatomy from Visible Human datasets, not a POLY individual",
+      "atlas_to_POLY_registration": "NOT_VALIDATED",
+      "physiological_route_verified": false,
+      "terms": [
+        {
+          "node_name": "VH_M_heart",
+          "ontology_id": "UBERON:0000948",
+          "label": "heart"
+        },
+        {
+          "node_name": "VH_M_heart_valve",
+          "ontology_id": "UBERON:0003978",
+          "label": "valve"
+        },
+        {
+          "node_name": "VH_M_mitral_valve",
+          "ontology_id": "UBERON:0002135",
+          "label": "mitral valve"
+        },
+        {
+          "node_name": "VH_M_tricuspid_valve",
+          "ontology_id": "UBERON:0002134",
+          "label": "tricuspid valve"
+        },
+        {
+          "node_name": "VH_M_aortic_valve",
+          "ontology_id": "UBERON:0002137",
+          "label": "aortic valve"
+        },
+        {
+          "node_name": "VH_M_pulmonary_valve",
+          "ontology_id": "UBERON:0002146",
+          "label": "pulmonary valve"
+        },
+        {
+          "node_name": "VH_M_papillary_muscle_of_heart",
+          "ontology_id": "UBERON:0002494",
+          "label": "papillary muscle of heart"
+        },
+        {
+          "node_name": "VH_M_papillary_muscle_of_heart_anterior",
+          "ontology_id": "FMA:7264",
+          "label": "Anterior papillary muscle of left ventricle"
+        },
+        {
+          "node_name": "VH_M_papillary_muscle_of_heart_anterolateral",
+          "ontology_id": "FMA:7265",
+          "label": "Anterolateral head of lateral papillary muscle of left ventricle"
+        },
+        {
+          "node_name": "VH_M_papillary_muscle_of_heart_medial",
+          "ontology_id": "FMA:7262",
+          "label": "Septal papillary muscle of right ventricle"
+        },
+        {
+          "node_name": "VH_M_papillary_muscle_of_heart_posterior",
+          "ontology_id": "FMA:7261",
+          "label": "Posterior papillary muscle of right ventricle"
+        },
+        {
+          "node_name": "VH_M_papillary_muscle_of_heart_posteromedial",
+          "ontology_id": "FMA:7267",
+          "label": "Posteromedial head of posterior papillary muscle of left ventricle"
+        },
+        {
+          "node_name": "VH_M_left_cardiac_atrium",
+          "ontology_id": "UBERON:0002079",
+          "label": "left cardiac atrium"
+        },
+        {
+          "node_name": "VH_M_right_cardiac_atrium",
+          "ontology_id": "UBERON:0002078",
+          "label": "right cardiac atrium"
+        },
+        {
+          "node_name": "VH_M_heart_right_ventricle",
+          "ontology_id": "UBERON:0002080",
+          "label": "heart right ventricle"
+        },
+        {
+          "node_name": "VH_M_interventricular_septum",
+          "ontology_id": "UBERON:0002094",
+          "label": "interventricular septum"
+        },
+        {
+          "node_name": "VH_M_heart_left_ventricle",
+          "ontology_id": "UBERON:0002084",
+          "label": "heart left ventricle"
+        }
+      ]
+    },
+    {
+      "id": "lung",
+      "organ_label": "Lung",
+      "sex_reference": "male",
+      "file": "hra_lung_male.glb",
+      "crosswalk_file": "hra_lung_crosswalk.csv",
+      "sha256": "bba95516fa993ac45c3b1c53f32b58d97232ffd78ae56397e5a2589c6ce4903d",
+      "crosswalk_sha256": "072b3741e7e60c16f8d6f577ff302978211e826d7b9e345eb725afe5bdd9b910",
+      "file_bytes": 10942332,
+      "crosswalk_rows": 72,
+      "source_model_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/3d-vh-m-lung.glb",
+      "source_crosswalk_url": "https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/crosswalk.csv",
+      "source_data_url": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4",
+      "manifest_url": "https://humanatlas.io/assets/content/3d-reference-library-page/data.yaml",
+      "source_version": "v1.4",
+      "collection_version": "HRA 2.5, published June 2026",
+      "licence": "CC BY 4.0, Human Reference Atlas official 3D reference objects",
+      "coordinate_frame": "original HRA organ asset; no registration to POLY walker or f002",
+      "clinical_subject": "reference anatomy from Visible Human datasets, not a POLY individual",
+      "atlas_to_POLY_registration": "NOT_VALIDATED",
+      "physiological_route_verified": false,
+      "terms": [
+        {
+          "node_name": "VH_M_respiratory_system",
+          "ontology_id": "UBERON:0001004",
+          "label": "respiratory system"
+        },
+        {
+          "node_name": "VH_M_lungs",
+          "ontology_id": "UBERON:0002048",
+          "label": "lung"
+        },
+        {
+          "node_name": "VH_M_lungs_L",
+          "ontology_id": "UBERON:0002168",
+          "label": "left lung"
+        },
+        {
+          "node_name": "VH_M_hilum_L",
+          "ontology_id": "UBERON:0004887",
+          "label": "left lung hilus"
+        },
+        {
+          "node_name": "VH_M_lungs_L_upper_lobe",
+          "ontology_id": "UBERON:0008952",
+          "label": "Upper Lobe of Left Lung"
+        },
+        {
+          "node_name": "VH_M_hilum_upper_L",
+          "ontology_id": "UBERON:0004887",
+          "label": "left lung hilus"
+        },
+        {
+          "node_name": "VH_M_left_lingula_superior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7374",
+          "label": "Superior lingular bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_left_posterior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7386",
+          "label": "Left posterior bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7373",
+          "label": "Left Anterior Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_left_apical_bronchopulmonary_segment",
+          "ontology_id": "FMA:7385",
+          "label": "Left apical bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_left_lingula_inferior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7375",
+          "label": "Inferior lingular bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_lungs_L_lower_lobe",
+          "ontology_id": "UBERON:0008953",
+          "label": "Lower Lobe of Left Lung"
+        },
+        {
+          "node_name": "VH_M_hilum_lower_L",
+          "ontology_id": "UBERON:0004887",
+          "label": "left lung hilus"
+        },
+        {
+          "node_name": "VH_M_left_anterior_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7378",
+          "label": "left anterior basal bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_left_lateral_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7379",
+          "label": "left Lateral Basal Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_left_medial_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7377",
+          "label": "Left Medial Basal Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7508",
+          "label": "Left posterior basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_superior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7376",
+          "label": "Left superior bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_lungs_R",
+          "ontology_id": "UBERON:0002167",
+          "label": "right lung"
+        },
+        {
+          "node_name": "VH_M_hilum_R",
+          "ontology_id": "UBERON:0004888",
+          "label": "right lung hilus"
+        },
+        {
+          "node_name": "VH_M_lungs_R_middle_lobe",
+          "ontology_id": "UBERON:0002174",
+          "label": "Middle Lobe of Right Lung"
+        },
+        {
+          "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+          "ontology_id": "FMA:7361",
+          "label": "Right Lateral Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_right_medial_bronchopulmonary_segment",
+          "ontology_id": "FMA:7360",
+          "label": "Right Medial Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_hilum_middle_R",
+          "ontology_id": "UBERON:0004888",
+          "label": "right lung hilus"
+        },
+        {
+          "node_name": "VH_M_lungs_R_lower_lobe",
+          "ontology_id": "UBERON:0002171",
+          "label": "Lower Lobe of Right Lung"
+        },
+        {
+          "node_name": "VH_M_hilum_lower_R",
+          "ontology_id": "UBERON:0004888",
+          "label": "right lung hilus"
+        },
+        {
+          "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7364",
+          "label": "Right anterior basal bronchopulmonary segment"
+        },
+        {
+          "node_name": "VH_M_right_lateral_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7363",
+          "label": "Right Lateral Basal Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_right_medial_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7365",
+          "label": "Right Medial Basal Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_right_posterior_basal_bronchopulmonary_segment",
+          "ontology_id": "FMA:7362",
+          "label": "Right Posterior Basal Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_right_superior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7366",
+          "label": "Right Superior Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_lungs_R_upper_lobe",
+          "ontology_id": "UBERON:0002170",
+          "label": "Upper Lobe of Right Lung"
+        },
+        {
+          "node_name": "VH_M_right_apical_bronchopulmonary_segment",
+          "ontology_id": "FMA:7338",
+          "label": "Right Apical Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_right_posterior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7339",
+          "label": "Right Posterior Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_right_anterior_bronchopulmonary_segment",
+          "ontology_id": "FMA:7359",
+          "label": "Right Anterior Bronchopulmonary Segment"
+        },
+        {
+          "node_name": "VH_M_hilum_upper_R",
+          "ontology_id": "UBERON:0004888",
+          "label": "right lung hilus"
+        },
+        {
+          "node_name": "VH_M_bronchi",
+          "ontology_id": "UBERON:0002185",
+          "label": "bronchus"
+        },
+        {
+          "node_name": "VH_M_cartilage_of_the_lobar_bronchus_L",
+          "ontology_id": "FMA:62659",
+          "label": "Cartilage of lobar bronchus"
+        },
+        {
+          "node_name": "VH_M_cartilage_of_the_tertiary_bronchus_L",
+          "ontology_id": "FMA:62662",
+          "label": "Cartilage of segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_lobar_bronchus_L",
+          "ontology_id": "UBERON:0003405",
+          "label": "lobar bronchus of left lung"
+        },
+        {
+          "node_name": "VH_M_left_superior_lobar_bronchus",
+          "ontology_id": "UBERON:0012065",
+          "label": "lobar bronchus of left lung upper lobe"
+        },
+        {
+          "node_name": "VH_M_left_inferior_lobar_bronchus",
+          "ontology_id": "UBERON:0012066",
+          "label": "lobar bronchus of left lung lower lobe"
+        },
+        {
+          "node_name": "VH_M_tertiary_bronchi_L",
+          "ontology_id": "UBERON:0002184",
+          "label": "Segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_superior_bronchus",
+          "ontology_id": "FMA:7504",
+          "label": "Left superior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_posterior_basal_bronchus",
+          "ontology_id": "FMA:7508",
+          "label": "Left posterior basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_medial_basal_bronchus",
+          "ontology_id": "FMA:7505",
+          "label": "Left medial basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_apical_bronchus",
+          "ontology_id": "FMA:7426",
+          "label": "Left apical segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_anterior_bronchus",
+          "ontology_id": "FMA:7428",
+          "label": "Left anterior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_lingula_superior_bronchus",
+          "ontology_id": "FMA:7430",
+          "label": "Superior lingular bronchus"
+        },
+        {
+          "node_name": "VH_M_left_lingula_inferior_bronchus",
+          "ontology_id": "FMA:7431",
+          "label": "Inferior lingular bronchus"
+        },
+        {
+          "node_name": "VH_M_left_lateral_basal_bronchus",
+          "ontology_id": "FMA:7507",
+          "label": "Left lateral basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_left_anterior_basal_bronchus",
+          "ontology_id": "FMA:7506",
+          "label": "Left anterior basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_cartilage_of_the_lobar_bronchus_R",
+          "ontology_id": "FMA:62659",
+          "label": "Cartilage of lobar bronchus"
+        },
+        {
+          "node_name": "VH_M_cartilage_of_the_tertiary_bronchus_R",
+          "ontology_id": "FMA:62662",
+          "label": "Cartilage of segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_lobar_bronchi_R",
+          "ontology_id": "UBERON:0003404",
+          "label": "lobar bronchus of right lung"
+        },
+        {
+          "node_name": "VH_M_right_intermediate_bronchus",
+          "ontology_id": "FMA:7415",
+          "label": "Interlobar bronchus"
+        },
+        {
+          "node_name": "VH_M_right_middle_lobar_bronchus",
+          "ontology_id": "FMA:7401",
+          "label": "Middle lobar bronchus"
+        },
+        {
+          "node_name": "VH_M_right_superior_lobar_bronchus",
+          "ontology_id": "FMA:7397",
+          "label": "Right superior lobar bronchus"
+        },
+        {
+          "node_name": "VH_M_tertiary_bronchi_R",
+          "ontology_id": "UBERON:0002184",
+          "label": "Segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_anterior_bronchus",
+          "ontology_id": "FMA:7400",
+          "label": "Right anterior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_lateral_basal_bronchus",
+          "ontology_id": "FMA:7419",
+          "label": "Right lateral basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_lateral_bronchus",
+          "ontology_id": "FMA:7402",
+          "label": "Lateral segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_lower_lobar_bronchus",
+          "ontology_id": "FMA:7404",
+          "label": "Right inferior lobar bronchus"
+        },
+        {
+          "node_name": "VH_M_right_medial_basal_bronchus",
+          "ontology_id": "FMA:7417",
+          "label": "Right medial basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_medial_bronchus",
+          "ontology_id": "FMA:7403",
+          "label": "Medial segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_posterior_basal",
+          "ontology_id": "FMA:7420",
+          "label": "Right posterior basal segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_posterior_bronchus",
+          "ontology_id": "FMA:7399",
+          "label": "Right posterior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_superior_bronchus",
+          "ontology_id": "FMA:7416",
+          "label": "Right superior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_apical_bronchus",
+          "ontology_id": "FMA:7416",
+          "label": "Right superior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_right_anterior_basal_bronchus",
+          "ontology_id": "FMA:7399",
+          "label": "Right posterior segmental bronchus"
+        },
+        {
+          "node_name": "VH_M_bronchus",
+          "ontology_id": "UBERON:0002185",
+          "label": "bronchus"
+        },
+        {
+          "node_name": "VH_M_hyoid",
+          "ontology_id": "UBERON:0001685",
+          "label": "hyoid bone"
+        }
+      ]
+    }
+  ]
+}

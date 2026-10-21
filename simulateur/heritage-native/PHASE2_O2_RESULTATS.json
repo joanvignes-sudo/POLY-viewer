@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-17",
+  "status": "PASS_ISOLATED_O2_EXPERIMENT",
+  "original_engine_continuity": "FAIL_RETAINED",
+  "patched_continuity": "PASS_360_SAMPLED_COMPARISONS",
+  "control_failures": 32,
+  "patched_failures": 0,
+  "uninterrupted_trajectory_rows": 4542,
+  "uninterrupted_maximum_difference": 0,
+  "legacy_guard": "PASS_4_CASES_FILE_AND_STRING",
+  "original_failure_reclassified": false,
+  "physiological_validation": "NOT_PERFORMED",
+  "protocol": "PHASE2_O2_EXPERIMENT_PROTOCOL.json",
+  "profile": "PULSE_O2_PROFIL_EXPERIMENTAL.json",
+  "report": "PHASE2_CORRECTION_O2.md",
+  "build_receipt": "results/phase2-o2-2026-10-17/build_review_receipt.json",
+  "next_action": "Bind this experimental profile into an explicit adapter checkpoint envelope with artifact/patient/clock validation; test rejected inputs and separate-process restore before any exercise decision"
+}

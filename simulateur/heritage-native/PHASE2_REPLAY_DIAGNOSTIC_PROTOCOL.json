@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "timing": "POST_HOC_AFTER_ORIGINAL_CONTINUITY_FAILURE; specified before diagnostic execution",
+  "reason": "Original in-memory continuation versus reload comparison exceeded declared 1e-9 relative tolerance for heart rate only",
+  "method": "Two fresh engines each load exactly the same original checkpoint and advance 10 seconds",
+  "comparison": "abs(first-second) <= 1e-9 * max(1, abs(first)) on actual time and six selected outputs",
+  "does_not_replace": "The original continuity test remains failed at its predeclared tolerance",
+  "physiological_model_changes": false,
+  "scientific_validation": false
+}

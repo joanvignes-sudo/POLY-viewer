@@ -1,0 +1,19 @@
+{
+  "status": "PASS_CLOSED_SET_DISPATCHER",
+  "date_local": "2026-10-18",
+  "native_comparisons": 180,
+  "native_processes": 4,
+  "cli_smoke_comparisons": 9,
+  "failure_checks": 6,
+  "test_methods": 68,
+  "bindings_sha256": "dd71d9577629a0f172a9b148bde5e84a36b4b5a2490c107591105f428d260aaa",
+  "synthetic_failure_injection": true,
+  "direct_timed_out_child_reaped": true,
+  "pointer_bytes_preserved_on_failure": true,
+  "new_end_checkpoint_exported": false,
+  "general_rollback_advertised": false,
+  "scientific_validation": false,
+  "original_failure_reclassified": false,
+  "report": "results/phase2-dispatcher-2026-10-18/report.json",
+  "next_action": "Qualify retry/idempotency and parent-interruption recovery for closed-set restore operations; preserve owned locks and last-good pointer, no external events or new physiology"
+}

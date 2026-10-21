@@ -1,0 +1,15 @@
+{
+  "status": "PASS_QUALIFIED_LIVE_OBSERVATION_ADMISSION",
+  "report": "results/phase2-observation-registry-2026-10-18/report.json",
+  "runtime_evidence_root": "Chemin de travail local non publié",
+  "accepted_frames": 40,
+  "accepted_observations_including_repeat_reads": 240,
+  "latest_states": 24,
+  "independent_clocks": 4,
+  "refusal_cases": 10,
+  "unit_tests": 24,
+  "native_processes_launched": 0,
+  "scientific_validation": false,
+  "biological_events_applied": false,
+  "first_run_retained": "work/p2/o2-experiment/registry-qualification-20261018-092431"
+}

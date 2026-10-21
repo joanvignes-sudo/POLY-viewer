@@ -1,0 +1,17 @@
+{
+  "status": "PROTOCOL_BEFORE_DLL_V2_NATIVE_QUALIFICATION",
+  "date_local": "2026-10-18",
+  "profile": "poly-pulse-o2-state-dll-v2",
+  "cases": [
+    "four known checkpoints, 5 horizons, 9 outputs, unchanged relative 1e-9",
+    "actual loaded paths and DLL hashes verified before stdin",
+    "identical shadow DLL beside worker rejected without attempt creation",
+    "legacy v1 pointer rejected unchanged by v2 profile",
+    "explicit v2 CLI succeeds and replays restore ID"
+  ],
+  "preserve_legacy_bindings_and_envelopes": true,
+  "new_checkpoints_exported": false,
+  "system_modules_trusted_not_hashed": true,
+  "scientific_validation": false,
+  "power_loss_qualified": false
+}

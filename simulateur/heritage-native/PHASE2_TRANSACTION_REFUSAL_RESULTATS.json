@@ -1,0 +1,14 @@
+{
+  "status": "PASS_NATIVE_SEEDED_CLI_REFUSALS",
+  "date_local": "2026-10-18",
+  "report": "results/phase2-transaction-refusals-2026-10-18/report.json",
+  "cli_refusal_cases": 8,
+  "native_seed_processes": 1,
+  "native_seed_comparisons": 9,
+  "new_native_attempts_during_refusals_or_resume": 0,
+  "all_refusals_preserve_snapshot_bytes": true,
+  "valid_resume_after_owned_injections_removed": true,
+  "test_methods": 127,
+  "scientific_validation": false,
+  "original_failure_reclassified": false
+}

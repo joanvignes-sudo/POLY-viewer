@@ -1,0 +1,64 @@
+{
+  "schema": "poly.neuromuscular.guide/1",
+  "scope": "Schéma qualitatif de mécanisme associé à la sélection anatomique ; pas une jonction localisée ni un modèle calibré de la main.",
+  "source": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6516829/",
+    "doi": "10.7554/eLife.44530",
+    "year": 2019,
+    "authors": "Afshar Bakooshli et al.",
+    "preparation": "Co-culture 3D : progéniteurs musculaires humains issus de multifidus de patients opérés du rachis et motoneurones dérivés de cellules souches pluripotentes humaines.",
+    "conditions": "Cultures différenciées environ deux semaines ; stimulation neuronale par glutamate, témoins et blocages présynaptique/postsynaptique. Réponse calcique et contraction étudiées ; pas une préparation de muscle intrinsèque de la main.",
+    "figures": "Figure 3 et vidéo 7",
+    "samples_note": "Figure 3B : neuf cultures / trois donneurs musculaires ; 3C–D : huit échantillons / trois donneurs. Pas neuf ou huit personnes indépendantes.",
+    "observation": "Sous blocages présynaptique ou postsynaptique : activité calcique significativement diminuée, contraction non observée en réponse à la stimulation utilisée.",
+    "limits": "Cellules humaines dans un système de culture utilisant aussi des réactifs d’origine animale ; aucune mesure animale transposée. Aucun gain, latence, force ou vitesse ajusté."
+  },
+  "steps": [
+    {
+      "id": "neural",
+      "title": "Signal nerveux",
+      "text": "Signal illustratif dans le motoneurone ; la préparation de culture utilise une stimulation neuronale par glutamate.",
+      "delay_ms": null
+    },
+    {
+      "id": "release",
+      "title": "Acétylcholine",
+      "text": "La terminaison présynaptique libère le neurotransmetteur vers les récepteurs musculaires.",
+      "delay_ms": null
+    },
+    {
+      "id": "receptors",
+      "title": "Récepteurs musculaires",
+      "text": "L’acétylcholine agit sur les récepteurs nicotiniques. La réponse électrique est distincte de la force.",
+      "delay_ms": null
+    },
+    {
+      "id": "response",
+      "title": "Réponse de la fibre",
+      "text": "Réponse calcique et raccourcissement observés dans la culture humaine. L’avatar ne reçoit aucune force calculée.",
+      "delay_ms": null
+    }
+  ],
+  "modes": [
+    {
+      "id": "intact",
+      "name": "Transmission de référence",
+      "last_step": 3
+    },
+    {
+      "id": "presynaptic",
+      "name": "Libération bloquée · expérience",
+      "last_step": 1
+    },
+    {
+      "id": "postsynaptic",
+      "name": "Récepteurs bloqués · expérience",
+      "last_step": 2
+    }
+  ],
+  "biological_timing": null,
+  "pedagogic_seconds_per_step": 2,
+  "actual_hand_junction_location": null,
+  "contraction_force": null,
+  "animal_parameters_used": false
+}

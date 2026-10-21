@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>POLY — atlas et modèle de membrane</title>
+<link rel="stylesheet" href="style.css">
+<script src="../../public-assets.js"></script><script defer src="../core/session.js"></script>
+<script defer src="../adapters/registry.js"></script>
+<script defer src="../adapters/representations.js"></script>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+<script type="module" src="atlas-viewer.js"></script>
+<script defer src="app.js"></script>
+<script defer src="quantitative-panel.js"></script>
+<link rel="stylesheet" href="quantitative-panel.css">
+</head><body>
+<header class="masthead">
+  <div><p class="eyebrow">POLY · Développement local · Version adaptative locale F</p>
+  <h1>Documents, atlas et modèle de membrane</h1>
+  <p class="subhead">Même connaissance, représentations interchangeables. Les preuves et les limites restent visibles.</p></div>
+  <div class="status-tag">DÉMONSTRATEUR DOCUMENTAIRE</div>
+</header>
+<main>
+  <section class="toolbar" aria-label="Contrôles du scénario">
+    <div class="field"><label for="view-mode">Représentation</label>
+    <select id="view-mode"><option value="body_schematic">Corps schématique</option><option value="evidence_graph">Graphe documentaire</option><option value="hra_atlas">Atlas HRA 3D (référence)</option></select></div>
+    <div class="field"><label for="scenario">Scénario</label>
+    <select id="scenario"><option value="pain_thermal_r6">Douleur thermique · ARCHIVE:pain</option></select></div>
+    <div class="field"><label for="atlas-organ">Organe 3D</label>
+    <select id="atlas-organ" disabled><option value="skin">Peau</option><option value="brain">Cerveau</option><option value="spinal_cord">Moelle épinière</option><option value="heart">Cœur</option><option value="lung">Poumons</option></select></div>
+    <div class="field"><label for="physiology">Moteur de calcul</label>
+    <select id="physiology" aria-describedby="no-simulation"><option value="documentary_step">Rejeu documentaire (disponible)</option><option disabled value="predictive">Physiologie quantitative (non validée)</option></select></div>
+  </section>
+  <section class="layout">
+    <div class="left-column">
+      <section id="canvas" aria-label="Représentation du mécanisme"><p>Chargement des registres locaux…</p></section>
+      <section class="timeline" aria-label="Navigation">
+        <div class="timeline-meta"><strong id="position">Étape —</strong><span>Curseur pédagogique, pas une horloge biologique</span></div>
+        <input type="range" id="position-slider" min="0" max="8" step="1" value="0" aria-label="Choisir un intervalle documentaire">
+        <div class="buttons"><button id="back">← Précédent</button><button id="play">▶ Lecture pédagogique</button><button id="next">Suivant →</button></div>
+      </section>
+    </div>
+    <aside aria-label="Dossier de preuve">
+      <div class="pill">TRAÇABILITÉ SCIENTIFIQUE</div>
+      <h2 id="event-title">Chargement…</h2>
+      <dl class="meta">
+        <div><dt>Classe</dt><dd id="event-role">—</dd></div>
+        <div><dt>Espèce / préparation</dt><dd id="event-species">—</dd></div>
+        <div><dt>Localisation</dt><dd id="event-location">—</dd></div>
+        <div><dt>Statut du trajet</dt><dd id="event-route">—</dd></div>
+      </dl>
+      <h3>Sources à examiner</h3><div id="sources">—</div>
+      <h3>Réserves scientifiques</h3><p id="warning">—</p>
+      <details><summary>Question de confirmation</summary><p id="confirmation">—</p></details>
+      <details><summary>Capacités des environnements</summary><div id="capabilities">—</div></details>
+    </aside>
+  </section>
+
+  <section id="quantitative-panel" class="quant-panel" aria-labelledby="quant-title" data-status="loading">
+   <div class="pill">MODÈLE SIMULÉ · CALMAR · 6,3 °C</div>
+   <h2 id="quant-title">Une membrane, un modèle indépendant</h2>
+   <p>Explorez un calcul Hodgkin–Huxley à côté du parcours documentaire. Il ne prédit ni la douleur humaine ni les réponses du corps représenté.</p>
+   <p id="quant-status" role="status">Vérification des résultats locaux…</p>
+   <div id="quant-content" hidden>
+    <label for="quant-amplitude">Trace simulée · impulsion de 1 ms</label>
+    <select id="quant-amplitude"><option>Chargement…</option></select>
+    <svg id="quant-chart" viewBox="0 0 760 300" role="img" aria-label="Potentiel de membrane simulé en fonction du temps propre au modèle"></svg>
+    <div class="quant-readout"><strong id="quant-metrics"></strong><span id="quant-context"></span></div>
+    <p>Temps propre au modèle : 0–40 ms. Le curseur documentaire reste indépendant. Aucune localisation du calcul dans l’atlas HRA.</p>
+    <details><summary>Sources et limites de la comparaison</summary>
+     <p>30 configurations vérifiées contre les équations CellML, avec conventions déclarées. Cette vérification des calculs ne valide pas expérimentalement le modèle.</p>
+     <a href="../reports/INDEPENDENT_REFERENCE.json">Rapport des comparaisons numériques</a>
+     <p id="quant-provenance"></p>
+    </details>
+   </div>
+  </section>
+  <p class="footnote" id="no-simulation">Le parcours documentaire ne génère aucune durée biologique, géométrie anatomique mesurée ou réponse pharmacologique. Les temps du modèle calmar restent simulés et séparés. Le remplacement d'un modèle graphique n'est pas une validation scientifique.</p>
+  <p class="error" id="error" role="alert" hidden></p>
+</main>
+<footer>POLY · Copie locale isolée · 19 octobre 2026 · Pas de publication · Sources R6 lues sans modification</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "94e21b2555914e1e98a5b2b0b4fabcfd"}'></script></body></html>

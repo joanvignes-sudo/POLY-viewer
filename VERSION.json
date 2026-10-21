@@ -1,10 +1,9 @@
 {
-  "version": "0.130.0",
-  "date": "2026-10-18",
-  "canonical_state": "ETAT_CANONIQUE.json",
-  "review_version_preserved": "0.128.1",
-  "previous_public_version": "0.129.0",
-  "previous_public_commit": "ff2f1b249a2f70e78b74d488659840bdb2aed555",
-  "entry": "corps.html",
-  "release": "RELEASE_v0.130.0.md"
+  "version": "0.131.0",
+  "date": "2026-10-21",
+  "entry": "index.html",
+  "release": "RELEASE_v0.131.0.md",
+  "previous_public_version": "0.130.0",
+  "previous_public_commit": "bf0d3c8eed3864be601af81938820fe8aa2032a0",
+  "review_version_preserved": "0.128.1"
 }

@@ -1,0 +1,25 @@
+{
+  "status": "POST_HOC_PROTOCOL_BEFORE_EXECUTION",
+  "date": "2026-10-17",
+  "purpose": "Locate first divergence between in-memory and restored continuation without changing Pulse source or thresholds",
+  "engine_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "original_failure_reclassified": false,
+  "procedure": [
+    "Fresh native patient initialization as original probe",
+    "30 seconds baseline then save checkpoint",
+    "Memory branch: 500 single native steps, seven outputs each step, snapshots steps 0/1/50/500",
+    "Restore same engine from checkpoint; repeat identical steps/snapshots",
+    "Recursively compare serialized JSON values and step traces; distinguish observations from causal hypotheses"
+  ],
+  "scope_limits": [
+    "No physiology equation edits",
+    "No exercise or scientific validation",
+    "Original relative threshold 1e-9 unchanged"
+  ],
+  "extension_after_first_run": {
+    "reason": "Missing O2 cardiac running average in schema/serializer; test temporal order with public getters",
+    "procedure": "Repeat fresh initialization, add mean arterial O2 and chemoreceptor HR scale each step; no threshold or model change",
+    "first_run": "run-state-diagnostic-20261017-150434",
+    "causal_intervention": "NOT_PERFORMED"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1",
+  "status": "EXPERIMENTAL_TECHNICAL_PROFILE_ONLY",
+  "profile_id": "poly-pulse-o2-state-v1",
+  "engine_commit": "60c4473912b047500bcbc396eceec7588c48fad4",
+  "patch_sha256": "059902a5dfb9714aab0bd87c1f7caf2d56781db41e46ddf9430cb29aba2584f0",
+  "upstream_release": false,
+  "dt_s": 0.02,
+  "patient": "POLY-REFERENCE-FEMALE-v0.1, native resolved defaults as prior initialization",
+  "evidence_status": "SIMULATED",
+  "scientific_validation": false,
+  "native_matrix": {
+    "checkpoints_s": [
+      30,
+      30.02,
+      30.4,
+      30.82
+    ],
+    "horizons_s": [
+      0,
+      0.02,
+      1,
+      10,
+      60
+    ],
+    "paths": [
+      "same_engine",
+      "fresh_engine"
+    ],
+    "observable_comparisons": 360,
+    "result": "PASS_AT_1E_9_RELATIVE",
+    "uninterrupted_control_comparison": "4542 rows, all nine quantities exactly equal"
+  },
+  "state_requirements": [
+    "Exact engine commit AND patch digest; upstream version/hash alone is insufficient",
+    "O2 running-average sum/count and previous O2 cycle mean must be present",
+    "Reject legacy state; no inferred migration from missing history",
+    "Use hashes and bound model/patient/dt in future adapter envelope"
+  ],
+  "qualified_for": "Isolated reference-patient experiment at sampled phases/horizons only",
+  "not_qualified_for": [
+    "Arbitrary patient or pathology",
+    "Clinical predictions",
+    "Arbitrary corrupt checkpoint atomicity",
+    "Concurrent-engine safety",
+    "General POLY adapter lifecycle or deployment"
+  ],
+  "adapter_integration": "EXPERIMENTAL_CLOSED_SET_RESTORE_WITH_IDS_AND_BOUNDARY_RECOVERY; NO_GENERAL_LIFECYCLE",
+  "original_failure_reclassified": false,
+  "evidence": "results/phase2-o2-2026-10-17/experiment_analysis-final.json",
+  "checkpoint_bindings": "PHASE2_CHECKPOINT_BINDINGS.json",
+  "dispatcher_result": "PHASE2_DISPATCHER_RESULTATS.json",
+  "operation_journal": "PHASE2_OPERATIONS_RESULTATS.json",
+  "child_lifetime": "PHASE2_CHILD_RESULTATS.json",
+  "operation_coordination": "PHASE2_COORDINATION_RESULTATS.json",
+  "stale_recovery_guard": "PHASE2_STALE_RECOVERY_RESULTATS.json",
+  "transaction_resume": "PHASE2_TRANSACTION_RESUME_RESULTATS.json",
+  "runtime_dependency_audit": "PHASE2_RUNTIME_AUDIT_RESULTATS.json",
+  "runtime_dll_binding_status": "EXPLICIT_V2_QUALIFIED_LEGACY_V1_UNCHANGED",
+  "runtime_dll_v2": "PHASE2_DLL_V2_RESULTATS.json",
+  "dll_v2_recovery_conformance": "PHASE2_DLL_V2_RECOVERY_RESULTATS.json"
+}

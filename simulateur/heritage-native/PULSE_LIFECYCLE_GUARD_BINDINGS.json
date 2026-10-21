@@ -1,0 +1,11 @@
+{
+  "schema_version": "poly-pulse-lifecycle-guard-bindings/0.1",
+  "status": "EXPERIMENTAL_PINNED_PENDING_SEPARATE_GUARD_QUALIFICATION",
+  "base_profile_sha256": "aa208e03ebe47cec6836723952559e1e546d24b94da9ebcc818f6c1ab4393be4",
+  "guard_source_sha256": "101c5850a0d0c42961fe55ab77791168662b4bbde6a7232cd8c39f932f93daac",
+  "numerical_controller_modified": false,
+  "biological_events": false,
+  "new_restorable_states": false,
+  "scope": "LIFECYCLE_CONTAINMENT_ONLY_SAME_FOUR_ANCHORS_FIVE_HORIZONS",
+  "preregistered_protocol": "PHASE2_GARDE_NATIVE_PROTOCOLE.md"
+}

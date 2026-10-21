@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "status": "REFERENCE_INPUTS_ONLY",
+  "descriptors": [
+    {
+      "source_id": "hra-production-metadata",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "version": "v1.1",
+      "sha256": "f51995e19a373f76ebae677d2a7e6ac7f0a6a24dfeae17a8127da735335d9540",
+      "license": "CC-BY-4.0",
+      "kind": "reference",
+      "local_input_filename": "hra-production-metadata.txt"
+    },
+    {
+      "source_id": "hra-production-graph-verified",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "version": "v1.1",
+      "sha256": "572c7e15818a56e388d0636716848786b2d93b905914a2e41641cfede6806e9b",
+      "license": "CC-BY-4.0",
+      "kind": "reference",
+      "local_input_filename": "hra-production-graph-verified.txt"
+    },
+    {
+      "source_id": "apinatomy-cardiac",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/source/ard-arm-cardiac.json",
+      "version": "4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e",
+      "sha256": "76297884534ebcc2bd69d8277bdc09f7f1e21571e81e5580e35428f031c2ced3",
+      "license": "CC-BY-4.0",
+      "kind": "reference",
+      "local_input_filename": "apinatomy-cardiac.txt"
+    }
+  ],
+  "source_files_copied_to_repository": false,
+  "required_inputs": "Obtain precisely these small JSON reference artifacts, verify SHA-256; no geometry or engine required"
+}

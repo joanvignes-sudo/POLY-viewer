@@ -1,0 +1,27 @@
+{
+  "status": "PROTOCOL_BEFORE_DLL_V2_RECOVERY_MATRIX",
+  "date_local": "2026-10-18",
+  "binding_profile": "DLL_V2_EXPLICIT",
+  "bindings": "PHASE2_CHECKPOINT_BINDINGS_DLL_V2.json",
+  "matrices": {
+    "transaction_parent_exits": 6,
+    "CLI_owned_byte_injections": 8,
+    "child_parent_death_cases": 4
+  },
+  "requirements": [
+    "Every native seed uses v2 envelope and v2 dispatcher",
+    "Loaded modules verified before checkpoint stdin",
+    "No implicit v1 pointer/receipt migration",
+    "No native launch during transaction resume/refusals",
+    "Exact-byte pointer/guard/lock invariants",
+    "No orphan output adoption"
+  ],
+  "old_reports_preserved": true,
+  "scientific_validation": false,
+  "power_loss_qualified": false,
+  "additional_protocol_before_execution": {
+    "matrix": "Windows execute/recover gate",
+    "cases": 6,
+    "profile": "DLL_V2_EXPLICIT"
+  }
+}

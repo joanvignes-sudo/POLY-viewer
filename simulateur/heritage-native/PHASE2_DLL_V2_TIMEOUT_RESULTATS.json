@@ -1,0 +1,25 @@
+{
+  "status": "PASS_DLL_V2_REAL_TIMEOUT_AND_ISOLATION",
+  "date_local": "2026-10-18",
+  "initialization_report": "results/phase2-dll-v2-timeout-2026-10-18/initialization-timeout-report.json",
+  "progress_report": "results/phase2-dll-v2-timeout-2026-10-18/progress-timeout-report.json",
+  "timeouts_seconds": [
+    0.1,
+    1.0
+  ],
+  "progress_partial_horizons": [
+    0,
+    1,
+    50
+  ],
+  "direct_child_reaped": true,
+  "last_good_bytes_preserved": true,
+  "failed_ID_not_silently_retried": true,
+  "new_explicit_operation_succeeds": true,
+  "successful_comparisons_per_run": 18,
+  "timed_out_outputs_promoted": false,
+  "test_methods": 141,
+  "scientific_validation": false,
+  "original_failure_reclassified": false,
+  "general_rollback_qualified": false
+}

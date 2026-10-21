@@ -1,0 +1,24 @@
+{
+  "status": "PROTOCOL_BEFORE_NATIVE_SEEDED_CLI_REFUSALS",
+  "date_local": "2026-10-18",
+  "fixture": "One native VALIDATED parent stopped before commit; explicit transaction prepared",
+  "cases": [
+    "plan_bytes_changed",
+    "guard_nonce_changed",
+    "receipt_bytes_changed",
+    "restore_lock_changed",
+    "pointer_invalid_JSON",
+    "completion_changed",
+    "duplicate_retired_guard",
+    "transaction_id_invalid"
+  ],
+  "requirements": [
+    "CLI exit 4 with expected explicit error",
+    "No snapshot file changed by refusal",
+    "No additional native attempt",
+    "Restore only the owned injected fixture bytes between cases",
+    "Valid transaction still resumes after all injections removed"
+  ],
+  "scientific_validation": false,
+  "power_loss_qualified": false
+}

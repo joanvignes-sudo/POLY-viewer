@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "status": "NATIVE_REFERENCES_RESOLVED_OFFLINE",
+  "sources": [
+    {
+      "source_id": "hra-production-metadata",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/metadata.json",
+      "version": "v1.1",
+      "sha256": "f51995e19a373f76ebae677d2a7e6ac7f0a6a24dfeae17a8127da735335d9540",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "source_id": "hra-production-graph-verified",
+      "uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/graph.json",
+      "version": "v1.1",
+      "sha256": "572c7e15818a56e388d0636716848786b2d93b905914a2e41641cfede6806e9b",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "source_id": "apinatomy-cardiac",
+      "uri": "https://raw.githubusercontent.com/open-physiology/apinatomy-models/4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e/models/ard-arm-cardiac/source/ard-arm-cardiac.json",
+      "version": "4bc5b8ef658ffb2f150c0d27e79b0a55ffe9d69e",
+      "sha256": "76297884534ebcc2bd69d8277bdc09f7f1e21571e81e5580e35428f031c2ced3",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "anatomy": {
+    "source_id": "hra-production-graph-verified",
+    "native_id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.1#primary",
+    "pointer": "/data/0",
+    "representation_of_original": "UBERON:0000948",
+    "sex_original": "Female",
+    "dimensions_unit_original": "millimeter",
+    "native_object_reference": "https://purl.humanatlas.io/ref-organ/heart-female/v1.1#primary_obj",
+    "geometry_uri": "https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.1/assets/VH_F_Heart.glb",
+    "geometry_downloaded": false,
+    "placement_references": [
+      {
+        "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.1#primary_global_placement",
+        "source": "https://purl.humanatlas.io/ref-organ/heart-female/v1.1#primary",
+        "target": "https://purl.humanatlas.io/graph/hra-ccf-body#VHFemale",
+        "pointer": "/data/0/placements/0"
+      }
+    ],
+    "local_object_placement_pointer": "/data/0/object_reference/placement",
+    "poly_coordinates": null,
+    "poly_registration_status": "NOT_ESTABLISHED",
+    "frame_gates": [
+      "Verify axes/handedness and rotation order from native specification before composing transforms",
+      "Do not use dimensions as coordinates",
+      "Never register pedagogical C13 xyz by label matching"
+    ],
+    "attribution": {
+      "creator": "Kristen Browne",
+      "publisher": "HuBMAP",
+      "version": "v1.1",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "connectivity": {
+    "source_id": "apinatomy-cardiac",
+    "model_id_original": "ard-arm-cardiac",
+    "native_chain_id": "ac-sn-med_11",
+    "name_original": "Axon in the nodose ganglia to medulla_Neuron 11 (aacar)",
+    "pointer": "/chains/127",
+    "root_original": "ns161",
+    "leaf_original": "ns163",
+    "housing_lyphs_original": [
+      {
+        "native_id": "A73",
+        "name_original": "Nodose Ganglion (aacar)",
+        "ontology_terms_original": [
+          "UBERON:0005363"
+        ],
+        "pointer": "/lyphs/72"
+      },
+      {
+        "native_id": "A69",
+        "name_original": "Medulla (aacar)",
+        "ontology_terms_original": [
+          "UBERON:0001896"
+        ],
+        "pointer": "/lyphs/68"
+      },
+      {
+        "native_id": "A72",
+        "name_original": "Nucleus Tractus Soltarius (aacar)",
+        "ontology_terms_original": [
+          "UBERON:0009050"
+        ],
+        "pointer": "/lyphs/71"
+      }
+    ],
+    "housing_layers_original": [
+      0,
+      0,
+      0
+    ],
+    "source_model_species_field": null,
+    "scope_from_pinned_readme": "predominantly porcine; not a human or mouse-specific circuit",
+    "model_reference_ids_original": [
+      "PMID:27783854"
+    ],
+    "interpretation": "Ordered native housing references of one source chain, not measured propagation or timing",
+    "latency": null,
+    "same_subject_as_poly": false,
+    "causal_bridge_authorized": false
+  },
+  "scientific_promotions": [],
+  "dynamic_bridge_authorized": false,
+  "not_claimed": [
+    "patient identity across HRA/Pulse/C13",
+    "direct C13 mouse to ApiNATOMY porcine transfer",
+    "coordinate transform into POLY",
+    "full SCKAN graph validation"
+  ]
+}

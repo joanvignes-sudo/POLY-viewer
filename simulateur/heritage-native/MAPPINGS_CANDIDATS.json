@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-10-17",
+  "review_status": "CANDIDATES_NOT_ACCEPTED",
+  "mappings": [
+    {
+      "id": "c13-p01-heart-anatomy",
+      "source_ref": {
+        "namespace": "poly.c13.local",
+        "version": "5efa158a1a3741ad44b023abfabfda26c08517a9eba4035929e49eb9535a0612",
+        "native_id": "P01-HEART",
+        "pointer": "/groups/0/nodes/2"
+      },
+      "target_ref": {
+        "namespace": "UBERON",
+        "version": "http://purl.obolibrary.org/obo/uberon/releases/2026-10-01/uberon.owl",
+        "native_id": "UBERON:0000948",
+        "uri": "http://purl.obolibrary.org/obo/UBERON_0000948"
+      },
+      "mapping_type": "candidate",
+      "proposed_relation": "locatedIn",
+      "justification": "C13 P01-HEART describes induced tachycardia in a mouse cardiac preparation; anatomical heart term only. This does not identify a human subject or a Pulse compartment equivalence.",
+      "provenance": {
+        "uri": "https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948",
+        "response_sha256": "c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4",
+        "version_metadata_sha256": "dbfbbb1ecfb86a853c7adad23d19d07c2865072edb51dabf0b099614eba44625"
+      },
+      "review_status": "PENDING_SCIENTIFIC_REVIEW",
+      "source_species": "mouse",
+      "target_species_scope": "cross-species anatomical class",
+      "coordinates": null,
+      "dynamic_bridge_authorized": false,
+      "exact_identity_authorized": false
+    }
+  ],
+  "crosswalk_C01_C12_C13": {
+    "status": "NO_EXACT_MATCH_ASSERTED",
+    "reason": "Different empirical units and source contexts; inventory can be linked by versioned references without merging objects"
+  },
+  "blocked_mappings": [
+    {
+      "id": "c13-mouse-heart-to-pulse-human",
+      "reason": "species/preparation mismatch and absent shared experimental identity"
+    },
+    {
+      "id": "c13-layout-to-hra-coordinate",
+      "reason": "pedagogical xyz are not registered anatomical coordinates"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SEPARATE_NATIVE_LIFECYCLE_GUARD",
+  "guard_profile_sha256": "ee5a040eb0b3f53467c738a23ee1623038892a1651b978a13ab8e1df5f02b339",
+  "report": "results/phase2-native-guard-2026-10-18/report.json",
+  "report_sha256": "bb6a55cb69e6051bed09fa79a51fdc103c39cc0c7bc42c311685004e51b184b1",
+  "unit_tests": 13,
+  "python_tests": 275,
+  "native_reference_comparisons": 180,
+  "exact_repeat_read_comparisons": 180,
+  "real_failure_cases": 6,
+  "additional_refusals": 3,
+  "numerical_profile_or_engine_changed": false,
+  "scientific_validation": false,
+  "runtime_evidence_root": "work/p2/o2-experiment/guard-qualification-20261018-104354",
+  "intermediate_prototype_root": "work/p2/o2-experiment/guard-qualification-20261018-104206"
+}

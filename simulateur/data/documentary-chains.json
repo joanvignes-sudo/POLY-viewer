@@ -1,0 +1,2250 @@
+{
+  "groups": [
+    {
+      "id": "P03-PHYSIO",
+      "title": "Réponses corporelles au CO₂",
+      "scope": "Humain · S16 · préparations séparées",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "P03-PHYSIO-GAS",
+          "title": "Inhalation CO₂ / air",
+          "text": "Intervention comparée à l’air ; début physique et synchronisation restent à préciser.",
+          "limit": "Portée de préparation : Humain · S16 · préparations séparées",
+          "kind": "intervention",
+          "region": "lungs",
+          "where": "Voies respiratoires — inhalation",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-PHYSIO-SENSE",
+          "title": "Détection / relais ?",
+          "text": "Route chémosensorielle exacte non identifiée par cette expérience.",
+          "limit": "Route chémosensorielle exacte non identifiée par cette expérience.",
+          "kind": "gap",
+          "region": null,
+          "where": "Capteurs périphériques ou centraux — alternatives",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-PHYSIO-CIRCUIT",
+          "title": "Circuits effecteurs ?",
+          "text": "Nerfs et noyaux à déterminer séparément pour chaque réponse.",
+          "limit": "Nerfs et noyaux à déterminer séparément pour chaque réponse.",
+          "kind": "gap",
+          "region": null,
+          "where": "Tronc cérébral ou système autonome — relais présumés",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-PHYSIO-HEART",
+          "title": "Rythme cardiaque",
+          "text": "Maximum dans la minute ; baseline et exclusions propres à ce capteur.",
+          "limit": "Portée de préparation : Humain · S16 · préparations séparées",
+          "kind": "readout",
+          "region": "heart",
+          "where": "Cœur — mesure ECG",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-PHYSIO-RESP",
+          "title": "Rythme respiratoire",
+          "text": "Intervalles entre respirations ; maximum dans minute, baseline 2 minutes avant.",
+          "limit": "Portée de préparation : Humain · S16 · préparations séparées",
+          "kind": "readout",
+          "region": "lungs",
+          "where": "Respiration — mesure périphérique",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-PHYSIO-SKIN",
+          "title": "Conductance cutanée",
+          "text": "Pic dans minute ; baseline première seconde d’inhalation ; AM seule côté lésions.",
+          "limit": "Portée de préparation : Humain · S16 · préparations séparées",
+          "kind": "readout",
+          "region": "skin",
+          "where": "Peau — conductance cutanée",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-PHYSIO-TIME",
+          "title": "Délai de propagation ?",
+          "text": "Fenêtres analytiques disponibles ; onset et temps individuels de pic non extraits.",
+          "limit": "Fenêtres analytiques disponibles ; onset et temps individuels de pic non extraits.",
+          "kind": "gap",
+          "region": null,
+          "where": "Horloges et événements de mesure",
+          "sources": [
+            "REF-P03-PHYSIO"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "P03-PHYSIO-LIEN-1",
+          "fromId": "P03-PHYSIO-GAS",
+          "toId": "P03-PHYSIO-SENSE",
+          "label": "détection à préciser",
+          "status": "gap",
+          "detail": "Cette expérience ne localise pas tout le chemin."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-2",
+          "fromId": "P03-PHYSIO-SENSE",
+          "toId": "P03-PHYSIO-CIRCUIT",
+          "label": "relais à identifier",
+          "status": "gap",
+          "detail": "Pas de chaîne nerveuse démontrée."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-3",
+          "fromId": "P03-PHYSIO-CIRCUIT",
+          "toId": "P03-PHYSIO-HEART",
+          "label": "commande non tracée",
+          "status": "gap",
+          "detail": "Nerfs effecteurs non identifiés dans cette extraction."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-4",
+          "fromId": "P03-PHYSIO-GAS",
+          "toId": "P03-PHYSIO-HEART",
+          "label": "réponse mesurée",
+          "status": "association",
+          "detail": "Effet observé du protocole ; trait entre intervention et réponse, pas trajet anatomique direct."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-5",
+          "fromId": "P03-PHYSIO-HEART",
+          "toId": "P03-PHYSIO-TIME",
+          "label": "temps manquant",
+          "status": "gap",
+          "detail": "Amplitude et fenêtre ne sont pas un délai."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-6",
+          "fromId": "P03-PHYSIO-CIRCUIT",
+          "toId": "P03-PHYSIO-RESP",
+          "label": "commande non tracée",
+          "status": "gap",
+          "detail": "Nerfs effecteurs non identifiés dans cette extraction."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-7",
+          "fromId": "P03-PHYSIO-GAS",
+          "toId": "P03-PHYSIO-RESP",
+          "label": "réponse mesurée",
+          "status": "association",
+          "detail": "Effet observé du protocole ; trait entre intervention et réponse, pas trajet anatomique direct."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-8",
+          "fromId": "P03-PHYSIO-RESP",
+          "toId": "P03-PHYSIO-TIME",
+          "label": "temps manquant",
+          "status": "gap",
+          "detail": "Amplitude et fenêtre ne sont pas un délai."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-9",
+          "fromId": "P03-PHYSIO-CIRCUIT",
+          "toId": "P03-PHYSIO-SKIN",
+          "label": "commande non tracée",
+          "status": "gap",
+          "detail": "Nerfs effecteurs non identifiés dans cette extraction."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-10",
+          "fromId": "P03-PHYSIO-GAS",
+          "toId": "P03-PHYSIO-SKIN",
+          "label": "réponse mesurée",
+          "status": "association",
+          "detail": "Effet observé du protocole ; trait entre intervention et réponse, pas trajet anatomique direct."
+        },
+        {
+          "id": "P03-PHYSIO-LIEN-11",
+          "fromId": "P03-PHYSIO-SKIN",
+          "toId": "P03-PHYSIO-TIME",
+          "label": "temps manquant",
+          "status": "gap",
+          "detail": "Amplitude et fenêtre ne sont pas un délai."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-P03-PHYSIO",
+          "source_id": "REF-P03-PHYSIO",
+          "citation_short": "Source primaire",
+          "title": "CO₂ · physiologie",
+          "url": "https://www.nature.com/articles/nn.3323",
+          "preparation": "Humain · patientes et témoins, n selon capteur",
+          "measurement_method": "Méthodes S16 et exclusions distinctes : SCR AM seule côté lésions ; SM exclue ECG, premier CO₂ AM/BG artéfactuel.",
+          "measured_quantity": "Six estimands v0.62 : HR/RR/SCR évoqués, HR/SCR anticipatoires, contraste CO₂−air. Maxima dans minute après inhalation ; anticipation SCR 10 s, HR minute avant par tranches 3 s.",
+          "limitations": [
+            "Amplitudes et fenêtres ne sont pas latences de pics. Baseline SCR première seconde inhalation, respiration deux minutes avant ; baseline HR conservée selon source.",
+            "Mapping capteur→essai→visite non extrait ; début physique inhalation et horloges capteurs non établis."
+          ],
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "P03-PHYSIO-ENTREE",
+            "P03-PHYSIO-SORTIE"
+          ],
+          "related_nodes": [
+            "P03-PHYSIO-GAS",
+            "P03-PHYSIO-SENSE",
+            "P03-PHYSIO-CIRCUIT",
+            "P03-PHYSIO-HEART",
+            "P03-PHYSIO-RESP",
+            "P03-PHYSIO-SKIN",
+            "P03-PHYSIO-TIME"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "P03-RAPPORT",
+      "title": "Panique et lésions",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "P03-RAPPORT-GAS",
+          "title": "Inhalation CO₂",
+          "text": "Provocation expérimentale.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "intervention",
+          "region": "lungs",
+          "where": "Voies respiratoires — inhalation CO₂",
+          "sources": [
+            "REF-P03-RAPPORT"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-RAPPORT-BODY",
+          "title": "Réponses corporelles",
+          "text": "Mesures physiologiques parallèles ; ne prouvent pas qu’elles causent à elles seules le ressenti.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": "heart",
+          "where": "Cœur, respiration et peau — mesures distinctes",
+          "sources": [
+            "REF-P03-RAPPORT"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-RAPPORT-ROUTE",
+          "title": "Réseaux de panique ?",
+          "text": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+          "limit": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+          "kind": "gap",
+          "region": null,
+          "where": "Réseaux soutenant la panique malgré les lésions — non identifiés",
+          "sources": [
+            "REF-P03-RAPPORT"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-RAPPORT-REPORT",
+          "title": "Panique rapportée",
+          "text": "Panique chez trois patientes ; comparaison locale avec témoins. Questionnaire recueilli après épreuve.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": null,
+          "where": "Rapport subjectif — questionnaire",
+          "sources": [
+            "REF-P03-RAPPORT"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-RAPPORT-AMYG",
+          "title": "Amygdales lésées",
+          "text": "Condition clinique ; pas un passage obligatoire à placer entre CO₂ et panique.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "lesion",
+          "region": "amygdala",
+          "where": "Amygdales bilatérales — lésions",
+          "sources": [
+            "REF-P03-RAPPORT"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-RAPPORT-SYMPTOM",
+          "title": "Symptômes / fuite",
+          "text": "Symptômes et désir ou comportement de fuite dans le critère auteur ; onset subjectif non établi.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": null,
+          "where": "Symptômes et comportement de fuite",
+          "sources": [
+            "REF-P03-RAPPORT"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "P03-RAPPORT-LIEN-1",
+          "fromId": "P03-RAPPORT-GAS",
+          "toId": "P03-RAPPORT-BODY",
+          "label": "réponses mesurées",
+          "status": "association",
+          "detail": "Physiologie et rapports ne sont pas une seule série causale."
+        },
+        {
+          "id": "P03-RAPPORT-LIEN-2",
+          "fromId": "P03-RAPPORT-BODY",
+          "toId": "P03-RAPPORT-ROUTE",
+          "label": "transmission à établir",
+          "status": "gap",
+          "detail": "Aucune voie complète identifiée."
+        },
+        {
+          "id": "P03-RAPPORT-LIEN-3",
+          "fromId": "P03-RAPPORT-ROUTE",
+          "toId": "P03-RAPPORT-REPORT",
+          "label": "mécanisme ouvert",
+          "status": "gap",
+          "detail": "Réseau générateur du ressenti non localisé."
+        },
+        {
+          "id": "P03-RAPPORT-LIEN-4",
+          "fromId": "P03-RAPPORT-GAS",
+          "toId": "P03-RAPPORT-REPORT",
+          "label": "panique rapportée",
+          "status": "intervention",
+          "detail": "Résultat local de provocation ; pas nécessité universelle d’un mécanisme."
+        },
+        {
+          "id": "P03-RAPPORT-LIEN-5",
+          "fromId": "P03-RAPPORT-GAS",
+          "toId": "P03-RAPPORT-SYMPTOM",
+          "label": "manifestations",
+          "status": "association",
+          "detail": "Repères observés et rapport subjectif distingués."
+        },
+        {
+          "id": "P03-RAPPORT-LIEN-6",
+          "fromId": "P03-RAPPORT-AMYG",
+          "toId": "P03-RAPPORT-REPORT",
+          "label": "présente malgré lésions",
+          "status": "condition",
+          "detail": "Ce trait décrit la condition clinique, pas un signal qui part de l’amygdale."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-P03-RAPPORT",
+          "source_id": "REF-P03-RAPPORT",
+          "citation_short": "Source primaire",
+          "title": "CO₂ · rapports",
+          "url": "https://www.nature.com/articles/nn.3323",
+          "preparation": "Humain · mêmes trois patientes répétées",
+          "measurement_method": "Supplément S16 acquis et table inspectée en v0.63 ; aucune nouvelle réplication indépendante.",
+          "measured_quantity": "Six cellules de symptômes dans supplément, trois patientes × deux épisodes. Panic #2 désigne un épisode ultérieur, pas numéro assuré de visite/essai.",
+          "limitations": [
+            "Questionnaire rétrospectif ne fixe pas onset subjectif. Puces documentaires non transformées en score DSM harmonisé.",
+            "Identifiants essai/visite et réponses item par item des témoins non extraits."
+          ],
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "P03-RAPPORT-ENTREE",
+            "P03-RAPPORT-SORTIE"
+          ],
+          "related_nodes": [
+            "P03-RAPPORT-GAS",
+            "P03-RAPPORT-BODY",
+            "P03-RAPPORT-ROUTE",
+            "P03-RAPPORT-REPORT",
+            "P03-RAPPORT-AMYG",
+            "P03-RAPPORT-SYMPTOM"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "P03-REPERES",
+      "title": "Repères observés après CO₂",
+      "scope": "Humain · S16 · trois patientes avec lésions amygdaliennes",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "P03-REPERES-GAS",
+          "title": "Inhalation CO₂",
+          "text": "Provocation expérimentale.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "intervention",
+          "region": "lungs",
+          "where": "Voies respiratoires — inhalation CO₂",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-REPERES-BODY",
+          "title": "Réponses corporelles",
+          "text": "Mesures physiologiques parallèles ; ne prouvent pas qu’elles causent à elles seules le ressenti.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": "heart",
+          "where": "Cœur, respiration et peau — mesures distinctes",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-REPERES-ROUTE",
+          "title": "Réseaux de panique ?",
+          "text": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+          "limit": "Relais capables de soutenir ces réponses malgré les lésions : non identifiés dans cette étude.",
+          "kind": "gap",
+          "region": null,
+          "where": "Réseaux soutenant la panique malgré les lésions — non identifiés",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-REPERES-REPORT",
+          "title": "Panique rapportée",
+          "text": "Panique chez trois patientes ; comparaison locale avec témoins. Questionnaire recueilli après épreuve.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": null,
+          "where": "Rapport subjectif — questionnaire",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-REPERES-AMYG",
+          "title": "Amygdales lésées",
+          "text": "Condition clinique ; pas un passage obligatoire à placer entre CO₂ et panique.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "lesion",
+          "region": "amygdala",
+          "where": "Amygdales bilatérales — lésions",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-REPERES-SYMPTOM",
+          "title": "Symptômes / fuite",
+          "text": "Symptômes et désir ou comportement de fuite dans le critère auteur ; onset subjectif non établi.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": null,
+          "where": "Symptômes et comportement de fuite",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-REPERES-CHRONO",
+          "title": "Repères vidéo / récit",
+          "text": "Neuf repères numériques et trois qualitatifs. Ni onset de panique ni délai de conduction.",
+          "limit": "Portée de préparation : Humain · S16 · trois patientes avec lésions amygdaliennes",
+          "kind": "readout",
+          "region": null,
+          "where": "Repères vidéo et récit des auteurs",
+          "sources": [
+            "REF-P03-REPERES"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "P03-REPERES-LIEN-1",
+          "fromId": "P03-REPERES-GAS",
+          "toId": "P03-REPERES-BODY",
+          "label": "réponses mesurées",
+          "status": "association",
+          "detail": "Physiologie et rapports ne sont pas une seule série causale."
+        },
+        {
+          "id": "P03-REPERES-LIEN-2",
+          "fromId": "P03-REPERES-BODY",
+          "toId": "P03-REPERES-ROUTE",
+          "label": "transmission à établir",
+          "status": "gap",
+          "detail": "Aucune voie complète identifiée."
+        },
+        {
+          "id": "P03-REPERES-LIEN-3",
+          "fromId": "P03-REPERES-ROUTE",
+          "toId": "P03-REPERES-REPORT",
+          "label": "mécanisme ouvert",
+          "status": "gap",
+          "detail": "Réseau générateur du ressenti non localisé."
+        },
+        {
+          "id": "P03-REPERES-LIEN-4",
+          "fromId": "P03-REPERES-GAS",
+          "toId": "P03-REPERES-REPORT",
+          "label": "panique rapportée",
+          "status": "intervention",
+          "detail": "Résultat local de provocation ; pas nécessité universelle d’un mécanisme."
+        },
+        {
+          "id": "P03-REPERES-LIEN-5",
+          "fromId": "P03-REPERES-GAS",
+          "toId": "P03-REPERES-SYMPTOM",
+          "label": "manifestations",
+          "status": "association",
+          "detail": "Repères observés et rapport subjectif distingués."
+        },
+        {
+          "id": "P03-REPERES-LIEN-6",
+          "fromId": "P03-REPERES-AMYG",
+          "toId": "P03-REPERES-REPORT",
+          "label": "présente malgré lésions",
+          "status": "condition",
+          "detail": "Ce trait décrit la condition clinique, pas un signal qui part de l’amygdale."
+        },
+        {
+          "id": "P03-REPERES-LIEN-7",
+          "fromId": "P03-REPERES-SYMPTOM",
+          "toId": "P03-REPERES-CHRONO",
+          "label": "horodatage narratif",
+          "status": "measurement",
+          "detail": "Chronologie des manifestations ; incertitude temporelle non donnée."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-P03-REPERES",
+          "source_id": "REF-P03-REPERES",
+          "citation_short": "Source primaire",
+          "title": "CO₂ · repères observés",
+          "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnn.3323/MediaObjects/41593_2013_BFnn3323_MOESM19_ESM.pdf",
+          "preparation": "Humain · SM, AM, BG, premier épisode décrit",
+          "measurement_method": "Neuf repères numériques et trois qualitatifs extraits en v0.63 ; descriptions pp6–8 supplément.",
+          "measured_quantity": "SM : environ 8 s après inhalation — main agitée près du masque ; SM : 14 s après inhalation — appel à l’aide et geste vers masque ; retrait ensuite par expérimentateur ; SM : 30 s après inhalation — respiration commence à revenir vers un rythme normal ; AM : 10 s après inhalation — tentative de fuite sous le masque ; AM : 15 s après inhalation — arrêt tentative fuite ; yeux encore fermés ; AM : au plus tard à 22 s après inhalation — posture, visage et respiration plus détendus ; BG : 8 s après inhalation — inspiration haletante et contraction cou ; BG : 16 s après inhalation — arrache masque avec deux mains ; BG : 36 s après inhalation — mains revenues sur abdomen, respiration moins laborieuse",
+          "limitations": [
+            "Repères vidéo narratifs auteurs ; début/fin exact de l’inhalation, précision temporelle et synchronisation non donnés. Aucun zéro pour « immédiatement ».",
+            "Ces repères ne sont ni onset de panique subjective ni délais de propagation ; récupération seulement partielle décrite."
+          ],
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "P03-REPERES-ENTREE",
+            "P03-REPERES-SORTIE"
+          ],
+          "related_nodes": [
+            "P03-REPERES-GAS",
+            "P03-REPERES-BODY",
+            "P03-REPERES-ROUTE",
+            "P03-REPERES-REPORT",
+            "P03-REPERES-AMYG",
+            "P03-REPERES-SYMPTOM",
+            "P03-REPERES-CHRONO"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "P03-SYNCHRO",
+      "title": "Respiration et synchronisation",
+      "scope": "Humain · S18 · six exports audités",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "P03-SYNCHRO-RESP",
+          "title": "Respiration",
+          "text": "Signal respiratoire enregistré selon condition.",
+          "limit": "Portée de préparation : Humain · S18 · six exports audités",
+          "kind": "readout",
+          "region": "lungs",
+          "where": "Corps — capteur respiratoire",
+          "sources": [
+            "REF-P03-SYNCHRO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-SYNCHRO-BRAIN",
+          "title": "Signal intracrânien",
+          "text": "Localisation des contacts à conserver par participant ; pas un circuit universel.",
+          "limit": "Portée de préparation : Humain · S18 · six exports audités",
+          "kind": "readout",
+          "region": null,
+          "where": "Contacts cérébraux selon participant et fichier",
+          "sources": [
+            "REF-P03-SYNCHRO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-SYNCHRO-ALIGN",
+          "title": "Horloges / alignement",
+          "text": "Synchronisation physique incomplète ; contexte éveil, sommeil et ventilation distingué.",
+          "limit": "Synchronisation physique incomplète ; contexte éveil, sommeil et ventilation distingué.",
+          "kind": "gap",
+          "region": null,
+          "where": "Acquisition et traitement — alignement",
+          "sources": [
+            "REF-P03-SYNCHRO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-SYNCHRO-COHER",
+          "title": "Cohérence calculée",
+          "text": "Cohérence, direction causale et latence sont distinctes.",
+          "limit": "Portée de préparation : Humain · S18 · six exports audités",
+          "kind": "readout",
+          "region": null,
+          "where": "Relation calculée entre signaux",
+          "sources": [
+            "REF-P03-SYNCHRO"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-SYNCHRO-ROUTE",
+          "title": "Voie nerveuse ?",
+          "text": "Une synchronie n’établit ni commande cerveau→respiration ni entrée respiration→cerveau.",
+          "limit": "Une synchronie n’établit ni commande cerveau→respiration ni entrée respiration→cerveau.",
+          "kind": "gap",
+          "region": null,
+          "where": "Voie cerveau ↔ respiration — non identifiée",
+          "sources": [
+            "REF-P03-SYNCHRO"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "P03-SYNCHRO-LIEN-1",
+          "fromId": "P03-SYNCHRO-RESP",
+          "toId": "P03-SYNCHRO-ALIGN",
+          "label": "alignement",
+          "status": "measurement",
+          "detail": "Horloges propres aux capteurs."
+        },
+        {
+          "id": "P03-SYNCHRO-LIEN-2",
+          "fromId": "P03-SYNCHRO-BRAIN",
+          "toId": "P03-SYNCHRO-ALIGN",
+          "label": "alignement",
+          "status": "measurement",
+          "detail": "Horloges propres aux capteurs."
+        },
+        {
+          "id": "P03-SYNCHRO-LIEN-3",
+          "fromId": "P03-SYNCHRO-ALIGN",
+          "toId": "P03-SYNCHRO-COHER",
+          "label": "analyse de cohérence",
+          "status": "measurement",
+          "detail": "Variable statistique, pas un relais biologique."
+        },
+        {
+          "id": "P03-SYNCHRO-LIEN-4",
+          "fromId": "P03-SYNCHRO-COHER",
+          "toId": "P03-SYNCHRO-ROUTE",
+          "label": "causalité ouverte",
+          "status": "gap",
+          "detail": "Le mécanisme ne découle pas du seul couplage statistique."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-P03-SYNCHRO",
+          "source_id": "REF-P03-SYNCHRO",
+          "citation_short": "Source primaire",
+          "title": "Respiration · synchronisation",
+          "url": "https://www.nature.com/articles/s41467-026-73828-0",
+          "preparation": "Humain · participants et capteurs selon export",
+          "measurement_method": "Fiche P03-RESP-SYNCHRO v0.48 et audits v0.11/v0.21 ; aucun contrôle conclu relancé.",
+          "measured_quantity": "Six exports déjà audités ; cohérence, direction et latence restent distinctes.",
+          "limitations": [
+            "Conditions éveil/sommeil/ventilation séparées ; n propres aux fichiers.",
+            "Horloges physiques et p brut/corrigé non établis ; données brutes sur demande, pas de délai ajouté."
+          ],
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "P03-SYNCHRO-ENTREE",
+            "P03-SYNCHRO-SORTIE"
+          ],
+          "related_nodes": [
+            "P03-SYNCHRO-RESP",
+            "P03-SYNCHRO-BRAIN",
+            "P03-SYNCHRO-ALIGN",
+            "P03-SYNCHRO-COHER",
+            "P03-SYNCHRO-ROUTE"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "P03-ISO-PANIC",
+      "title": "Isoprotérénol et panique",
+      "scope": "Humain · S21 · AM et BG, témoins selon protocole",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "P03-ISO-PANIC-BOLUS",
+          "title": "Bolus isoprotérénol",
+          "text": "Agoniste β-adrénergique périphérique ; doses et séquences selon protocole.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "intervention",
+          "region": null,
+          "where": "Voie intraveineuse — injection",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-BETA",
+          "title": "Récepteurs β périphériques",
+          "text": "Cible pharmacologique décrite ; pas une mesure séparée de chaque population de récepteurs.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "biological",
+          "region": "heart",
+          "where": "Tissus périphériques — récepteurs β",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-HEART",
+          "title": "Rythme cardiaque / palpitations",
+          "text": "Changements physiologiques et perception ne sont pas la même variable.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": "heart",
+          "where": "Cœur — rythme, et sensations rapportées séparément",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-BREATH",
+          "title": "Dyspnée rapportée",
+          "text": "AM rapporte absence de dyspnée ; ne pas confondre sensation et fonctionnement pulmonaire.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": "lungs",
+          "where": "Dyspnée rapportée — sensation respiratoire",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-ROUTE",
+          "title": "Afférences et relais ?",
+          "text": "Récepteurs afférents évoqués dans les limites ; route spécifique non démontrée.",
+          "limit": "Récepteurs afférents évoqués dans les limites ; route spécifique non démontrée.",
+          "kind": "gap",
+          "region": null,
+          "where": "Voies vagales ou spinales — possibilités non démontrées",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-AMYG",
+          "title": "Amygdales lésées",
+          "text": "Mêmes jumelles que S16 ; pas deux nouvelles personnes indépendantes.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "lesion",
+          "region": "amygdala",
+          "where": "Amygdales bilatérales — lésions",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-REPORT",
+          "title": "Anxiété / panique rapportée",
+          "text": "Anxiété chez les deux ; critère de panique atteint chez BG dans le protocole de provocation.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": null,
+          "where": "Anxiété et panique rapportées",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-DIAL",
+          "title": "Dial continu",
+          "text": "Signal subjectif continu, protocole distinct de la provocation de panique.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": null,
+          "where": "Évaluation cardiorespiratoire continue — dial",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-PANIC-XCORR",
+          "title": "Corrélation au lag zéro",
+          "text": "Signaux centrés sur leurs moyennes, fenêtre de 2 minutes ; pas délai de transmission nul.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": null,
+          "where": "Corrélation HR ↔ dial — analyse",
+          "sources": [
+            "REF-P03-ISO-PANIC"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "P03-ISO-PANIC-LIEN-1",
+          "fromId": "P03-ISO-PANIC-BOLUS",
+          "toId": "P03-ISO-PANIC-BETA",
+          "label": "agonisme β",
+          "status": "pharmacology",
+          "detail": "Mécanisme pharmacologique attribué à la molécule."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-2",
+          "fromId": "P03-ISO-PANIC-BETA",
+          "toId": "P03-ISO-PANIC-HEART",
+          "label": "effets cardiaques",
+          "status": "pharmacology",
+          "detail": "Modèle pharmacologique ; distribution exacte des cibles non isolée par cette étude."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-3",
+          "fromId": "P03-ISO-PANIC-BOLUS",
+          "toId": "P03-ISO-PANIC-BREATH",
+          "label": "sensation observée",
+          "status": "association",
+          "detail": "AM/BG diffèrent ; pas tous les sujets ressentent une dyspnée."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-4",
+          "fromId": "P03-ISO-PANIC-HEART",
+          "toId": "P03-ISO-PANIC-ROUTE",
+          "label": "signal à transmettre",
+          "status": "gap",
+          "detail": "Nerfs/récepteurs recrutés non identifiés."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-5",
+          "fromId": "P03-ISO-PANIC-BREATH",
+          "toId": "P03-ISO-PANIC-ROUTE",
+          "label": "raccord à établir",
+          "status": "gap",
+          "detail": "La présence de dyspnée n’est pas universelle."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-6",
+          "fromId": "P03-ISO-PANIC-ROUTE",
+          "toId": "P03-ISO-PANIC-REPORT",
+          "label": "mécanisme ouvert",
+          "status": "gap",
+          "detail": "Aucune chaîne complète vers panique démontrée."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-7",
+          "fromId": "P03-ISO-PANIC-BOLUS",
+          "toId": "P03-ISO-PANIC-REPORT",
+          "label": "effet rapporté",
+          "status": "intervention",
+          "detail": "Effet local, pas chemin direct médicament→émotion."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-8",
+          "fromId": "P03-ISO-PANIC-AMYG",
+          "toId": "P03-ISO-PANIC-REPORT",
+          "label": "malgré lésions",
+          "status": "condition",
+          "detail": "Condition clinique ; aucune transmission depuis une structure lésée."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-9",
+          "fromId": "P03-ISO-PANIC-HEART",
+          "toId": "P03-ISO-PANIC-DIAL",
+          "label": "sensations évaluées",
+          "status": "association",
+          "detail": "HR physiologique et dial sont des signaux distincts."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-10",
+          "fromId": "P03-ISO-PANIC-HEART",
+          "toId": "P03-ISO-PANIC-XCORR",
+          "label": "signal HR",
+          "status": "measurement",
+          "detail": "Input du calcul, pas un trajet neuronal."
+        },
+        {
+          "id": "P03-ISO-PANIC-LIEN-11",
+          "fromId": "P03-ISO-PANIC-DIAL",
+          "toId": "P03-ISO-PANIC-XCORR",
+          "label": "signal dial",
+          "status": "measurement",
+          "detail": "Corrélation calculée au lag zéro."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-P03-ISO-PANIC",
+          "source_id": "REF-P03-ISO-PANIC",
+          "citation_short": "S21 · protocole publié",
+          "title": "Isoprotérénol · panique",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4804013/",
+          "preparation": "Humain · AM/BG, mêmes jumelles queS16 ;15 témoins exp1",
+          "measurement_method": "PROM-F03 admissible à portée locale attribuée v0.73. AM rapporte anxiété/palpitations malgré non-panique. Pas nouvelles participantes indépendantes par rapport à S16.",
+          "measured_quantity": "BG panique, AM non-panique,4/15 témoins selon auteurs. Critère : hausse≥5 points0–10 versuspré-infusion dans≥4 symptômes.",
+          "limitations": [
+            "Évaluation2 minaprès, pas une latence ni un onset. Ordre fixe0,1 μg→saline→4 μg, simple aveugle ; témoinsautre jeu même protocole plus jeunes.",
+            "Horloge physique du bolus et onset de panique non établis ; témoins d’âge différent ; mécanisme/relais non identifiés."
+          ],
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "P03-ISO-PANIC-ENTREE",
+            "P03-ISO-PANIC-SORTIE"
+          ],
+          "related_nodes": [
+            "P03-ISO-PANIC-BOLUS",
+            "P03-ISO-PANIC-BETA",
+            "P03-ISO-PANIC-HEART",
+            "P03-ISO-PANIC-BREATH",
+            "P03-ISO-PANIC-ROUTE",
+            "P03-ISO-PANIC-AMYG",
+            "P03-ISO-PANIC-REPORT",
+            "P03-ISO-PANIC-DIAL",
+            "P03-ISO-PANIC-XCORR"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "P03-ISO-DIAL",
+      "title": "Isoprotérénol et évaluations continues",
+      "scope": "Humain · S21 · AM et BG, témoins selon protocole",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "P03-ISO-DIAL-BOLUS",
+          "title": "Bolus isoprotérénol",
+          "text": "Agoniste β-adrénergique périphérique ; doses et séquences selon protocole.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "intervention",
+          "region": null,
+          "where": "Voie intraveineuse — injection",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-BETA",
+          "title": "Récepteurs β périphériques",
+          "text": "Cible pharmacologique décrite ; pas une mesure séparée de chaque population de récepteurs.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "biological",
+          "region": "heart",
+          "where": "Tissus périphériques — récepteurs β",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-HEART",
+          "title": "Rythme cardiaque / palpitations",
+          "text": "Changements physiologiques et perception ne sont pas la même variable.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": "heart",
+          "where": "Cœur — rythme, et sensations rapportées séparément",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-BREATH",
+          "title": "Dyspnée rapportée",
+          "text": "AM rapporte absence de dyspnée ; ne pas confondre sensation et fonctionnement pulmonaire.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": "lungs",
+          "where": "Dyspnée rapportée — sensation respiratoire",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-ROUTE",
+          "title": "Afférences et relais ?",
+          "text": "Récepteurs afférents évoqués dans les limites ; route spécifique non démontrée.",
+          "limit": "Récepteurs afférents évoqués dans les limites ; route spécifique non démontrée.",
+          "kind": "gap",
+          "region": null,
+          "where": "Voies vagales ou spinales — possibilités non démontrées",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-AMYG",
+          "title": "Amygdales lésées",
+          "text": "Mêmes jumelles que S16 ; pas deux nouvelles personnes indépendantes.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "lesion",
+          "region": "amygdala",
+          "where": "Amygdales bilatérales — lésions",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-REPORT",
+          "title": "Anxiété / panique rapportée",
+          "text": "Anxiété chez les deux ; critère de panique atteint chez BG dans le protocole de provocation.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": null,
+          "where": "Anxiété et panique rapportées",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-DIAL",
+          "title": "Dial continu",
+          "text": "Signal subjectif continu, protocole distinct de la provocation de panique.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": null,
+          "where": "Évaluation cardiorespiratoire continue — dial",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "P03-ISO-DIAL-XCORR",
+          "title": "Corrélation au lag zéro",
+          "text": "Signaux centrés sur leurs moyennes, fenêtre de 2 minutes ; pas délai de transmission nul.",
+          "limit": "Portée de préparation : Humain · S21 · AM et BG, témoins selon protocole",
+          "kind": "readout",
+          "region": null,
+          "where": "Corrélation HR ↔ dial — analyse",
+          "sources": [
+            "REF-P03-ISO-DIAL"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "P03-ISO-DIAL-LIEN-1",
+          "fromId": "P03-ISO-DIAL-BOLUS",
+          "toId": "P03-ISO-DIAL-BETA",
+          "label": "agonisme β",
+          "status": "pharmacology",
+          "detail": "Mécanisme pharmacologique attribué à la molécule."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-2",
+          "fromId": "P03-ISO-DIAL-BETA",
+          "toId": "P03-ISO-DIAL-HEART",
+          "label": "effets cardiaques",
+          "status": "pharmacology",
+          "detail": "Modèle pharmacologique ; distribution exacte des cibles non isolée par cette étude."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-3",
+          "fromId": "P03-ISO-DIAL-BOLUS",
+          "toId": "P03-ISO-DIAL-BREATH",
+          "label": "sensation observée",
+          "status": "association",
+          "detail": "AM/BG diffèrent ; pas tous les sujets ressentent une dyspnée."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-4",
+          "fromId": "P03-ISO-DIAL-HEART",
+          "toId": "P03-ISO-DIAL-ROUTE",
+          "label": "signal à transmettre",
+          "status": "gap",
+          "detail": "Nerfs/récepteurs recrutés non identifiés."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-5",
+          "fromId": "P03-ISO-DIAL-BREATH",
+          "toId": "P03-ISO-DIAL-ROUTE",
+          "label": "raccord à établir",
+          "status": "gap",
+          "detail": "La présence de dyspnée n’est pas universelle."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-6",
+          "fromId": "P03-ISO-DIAL-ROUTE",
+          "toId": "P03-ISO-DIAL-REPORT",
+          "label": "mécanisme ouvert",
+          "status": "gap",
+          "detail": "Aucune chaîne complète vers panique démontrée."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-7",
+          "fromId": "P03-ISO-DIAL-BOLUS",
+          "toId": "P03-ISO-DIAL-REPORT",
+          "label": "effet rapporté",
+          "status": "intervention",
+          "detail": "Effet local, pas chemin direct médicament→émotion."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-8",
+          "fromId": "P03-ISO-DIAL-AMYG",
+          "toId": "P03-ISO-DIAL-REPORT",
+          "label": "malgré lésions",
+          "status": "condition",
+          "detail": "Condition clinique ; aucune transmission depuis une structure lésée."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-9",
+          "fromId": "P03-ISO-DIAL-HEART",
+          "toId": "P03-ISO-DIAL-DIAL",
+          "label": "sensations évaluées",
+          "status": "association",
+          "detail": "HR physiologique et dial sont des signaux distincts."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-10",
+          "fromId": "P03-ISO-DIAL-HEART",
+          "toId": "P03-ISO-DIAL-XCORR",
+          "label": "signal HR",
+          "status": "measurement",
+          "detail": "Input du calcul, pas un trajet neuronal."
+        },
+        {
+          "id": "P03-ISO-DIAL-LIEN-11",
+          "fromId": "P03-ISO-DIAL-DIAL",
+          "toId": "P03-ISO-DIAL-XCORR",
+          "label": "signal dial",
+          "status": "measurement",
+          "detail": "Corrélation calculée au lag zéro."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-P03-ISO-DIAL",
+          "source_id": "REF-P03-ISO-DIAL",
+          "citation_short": "S21 · protocole publié",
+          "title": "Isoprotérénol · dial",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4804013/",
+          "preparation": "Humain · mêmes jumelles ;16 témoins exp2, chevauchementexp1 inconnu",
+          "measurement_method": "PROM-D04 définition documentaire attribuée admissible v0.73 ; seuils de détection, magnitudes et exactitude sont distincts.",
+          "measured_quantity": "Corrélations croisées au lag zéro, pour chaque dose ; deux signaux centrés sur leur moyenne.14 bolus :7 doses et7 salines, double aveugle/ordre aléatoire.",
+          "limitations": [
+            "Lagzéro fixé par méthode : ni corrélationnulle ni délai propagation nul. Aucun onsetdéduit des2 min ou de la détectiondial>0.",
+            "Horloge physique et onset du dial ; code/normalisation précis non répliqués.16 témoins non additionnés aux15 exp1."
+          ],
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "P03-ISO-DIAL-ENTREE",
+            "P03-ISO-DIAL-SORTIE"
+          ],
+          "related_nodes": [
+            "P03-ISO-DIAL-BOLUS",
+            "P03-ISO-DIAL-BETA",
+            "P03-ISO-DIAL-HEART",
+            "P03-ISO-DIAL-BREATH",
+            "P03-ISO-DIAL-ROUTE",
+            "P03-ISO-DIAL-AMYG",
+            "P03-ISO-DIAL-REPORT",
+            "P03-ISO-DIAL-DIAL",
+            "P03-ISO-DIAL-XCORR"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "BANG-S24",
+      "title": "Neurochimie striatale",
+      "scope": "Humain · S24 / Bang · caudé et putamen",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "BANG-S24-STIM",
+          "title": "Stimulus visuel",
+          "text": "Difficulté/cohérence du stimulus manipulée.",
+          "limit": "Portée de préparation : Humain · S24 / Bang · caudé et putamen",
+          "kind": "context",
+          "region": null,
+          "where": "Stimulus visuel — tâche perceptive",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-ROUTE",
+          "title": "Voies visuelles → striatum ?",
+          "text": "Le jeu de données ne décrit pas tous les relais ni leurs neurotransmetteurs.",
+          "limit": "Le jeu de données ne décrit pas tous les relais ni leurs neurotransmetteurs.",
+          "kind": "gap",
+          "region": null,
+          "where": "Voies visuelles → striatum — relais à cartographier",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-STR",
+          "title": "Caudé / putamen",
+          "text": "Quatre enregistrements caudé, un putamen ; pas de loi régionale inférée de cette répartition.",
+          "limit": "Portée de préparation : Humain · S24 / Bang · caudé et putamen",
+          "kind": "biological",
+          "region": "striatum",
+          "where": "Striatum — caudé ou putamen selon enregistrement",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-ELECT",
+          "title": "Signal électrochimique",
+          "text": "Signal mesuré puis traité pour estimer deux substances.",
+          "limit": "Portée de préparation : Humain · S24 / Bang · caudé et putamen",
+          "kind": "readout",
+          "region": "striatum",
+          "where": "Site striatal enregistré — caudé ou putamen",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-EST",
+          "title": "Modèle d’estimation",
+          "text": "Poids/entraînement chimiques indisponibles ; reproductibilité des analyses Figure3 établie séparément.",
+          "limit": "Poids/entraînement chimiques indisponibles ; reproductibilité des analyses Figure3 établie séparément.",
+          "kind": "gap",
+          "region": null,
+          "where": "Traitement du signal — modèle d'estimation",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-DA",
+          "title": "Dopamine estimée",
+          "text": "Série temporelle estimée ; cellules d’origine et libération absolue non établies par ces matrices.",
+          "limit": "Portée de préparation : Humain · S24 / Bang · caudé et putamen",
+          "kind": "readout",
+          "region": "striatum",
+          "where": "Site striatal enregistré — dopamine estimée",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-HT",
+          "title": "Sérotonine estimée",
+          "text": "Série temporelle estimée ; ne pas inventer une voie raphé→striatum depuis ces données.",
+          "limit": "Portée de préparation : Humain · S24 / Bang · caudé et putamen",
+          "kind": "readout",
+          "region": "striatum",
+          "where": "Site striatal enregistré — sérotonine estimée",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-DEC",
+          "title": "Choix / temps de réponse",
+          "text": "Analyse de décision perceptive ; pas mesure directe d’émotion.",
+          "limit": "Portée de préparation : Humain · S24 / Bang · caudé et putamen",
+          "kind": "readout",
+          "region": null,
+          "where": "Choix et temps de réponse — comportement",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "BANG-S24-EMO",
+          "title": "Raccord émotionnel ?",
+          "text": "Ni dopamine ni sérotonine ne suffisent à attribuer une émotion à cette tâche.",
+          "limit": "Ni dopamine ni sérotonine ne suffisent à attribuer une émotion à cette tâche.",
+          "kind": "gap",
+          "region": null,
+          "where": "Fonction affective à tester",
+          "sources": [
+            "REF-BANG-S24"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "BANG-S24-LIEN-1",
+          "fromId": "BANG-S24-STIM",
+          "toId": "BANG-S24-ROUTE",
+          "label": "entrée sensorielle",
+          "status": "gap",
+          "detail": "Route non reconstruite dans cette étude."
+        },
+        {
+          "id": "BANG-S24-LIEN-2",
+          "fromId": "BANG-S24-ROUTE",
+          "toId": "BANG-S24-STR",
+          "label": "afférences à identifier",
+          "status": "gap",
+          "detail": "Relais et cellules d’origine manquent."
+        },
+        {
+          "id": "BANG-S24-LIEN-3",
+          "fromId": "BANG-S24-STR",
+          "toId": "BANG-S24-ELECT",
+          "label": "enregistrement",
+          "status": "measurement",
+          "detail": "Lieu de mesure, pas causalité des substances."
+        },
+        {
+          "id": "BANG-S24-LIEN-4",
+          "fromId": "BANG-S24-ELECT",
+          "toId": "BANG-S24-EST",
+          "label": "traitement",
+          "status": "measurement",
+          "detail": "Entraînement chimique non partagé."
+        },
+        {
+          "id": "BANG-S24-LIEN-5",
+          "fromId": "BANG-S24-EST",
+          "toId": "BANG-S24-DA",
+          "label": "estime DA",
+          "status": "measurement",
+          "detail": "Concentration estimée selon modèle source."
+        },
+        {
+          "id": "BANG-S24-LIEN-6",
+          "fromId": "BANG-S24-EST",
+          "toId": "BANG-S24-HT",
+          "label": "estime 5HT",
+          "status": "measurement",
+          "detail": "Concentration estimée selon modèle source."
+        },
+        {
+          "id": "BANG-S24-LIEN-7",
+          "fromId": "BANG-S24-STIM",
+          "toId": "BANG-S24-DEC",
+          "label": "décision",
+          "status": "association",
+          "detail": "Lien de tâche ; voie décisionnelle non entièrement tracée."
+        },
+        {
+          "id": "BANG-S24-LIEN-8",
+          "fromId": "BANG-S24-DA",
+          "toId": "BANG-S24-DEC",
+          "label": "association analysée",
+          "status": "association",
+          "detail": "Modèles comparés ; pas causalité démontrée."
+        },
+        {
+          "id": "BANG-S24-LIEN-9",
+          "fromId": "BANG-S24-HT",
+          "toId": "BANG-S24-DEC",
+          "label": "association analysée",
+          "status": "association",
+          "detail": "Modèles comparés ; pas causalité démontrée."
+        },
+        {
+          "id": "BANG-S24-LIEN-10",
+          "fromId": "BANG-S24-DA",
+          "toId": "BANG-S24-EMO",
+          "label": "affect non mesuré",
+          "status": "gap",
+          "detail": "Le nom du neurotransmetteur ne fixe pas la fonction."
+        },
+        {
+          "id": "BANG-S24-LIEN-11",
+          "fromId": "BANG-S24-HT",
+          "toId": "BANG-S24-EMO",
+          "label": "affect non mesuré",
+          "status": "gap",
+          "detail": "Émotion non mesurée."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "REF-BANG-S24",
+          "source_id": "REF-BANG-S24",
+          "citation_short": "Bilan de vérification native v0.80",
+          "title": "Neurochimie humaine · Bang",
+          "url": "atlas/reference/documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+          "preparation": "Humain · P1–P3 groupés, 757 essais ; P4 et P5 séparés",
+          "measurement_method": "Réponse auteur et correction publique v0.77 ; tests complets v0.79 ; exécution MATLAB Online PASSED v0.80. La réserve d’exécution native est fermée.",
+          "measured_quantity": "61 bins calculés. Figure3A : 0–1,5 s ; Figure3C : 0–4 s. Trois modèles comparés, sorties natives MATLAB et Python concordantes à la tolérance absolue 10⁻⁸.",
+          "limitations": [
+            "Concordance technique ; aucun délai stimulus→émotion établi. Modèle corrigé : deux indicatrices sans constante, P1 contraint à zéro. Entraînement/poids/prétraitement chimiques non disponibles ; waveforms TTL absentes.",
+            "Données d’entraînement, calibration chimique et horloge TTL physique manquantes. P5 stimulus essai 199 : espacement 339,16 ms entre centres ; aucune latence biologique déduite."
+          ],
+          "original_locator": "documents/analyses/v0.80/BILAN_VERIFICATION_NATIVE.md",
+          "reference_role": "dossier_context",
+          "support_scope": "Référence de dossier : le texte de synthèse ne constitue pas une attribution isolée à chaque article.",
+          "original_supports": [
+            "BANG-S24-ENTREE",
+            "BANG-S24-SORTIE"
+          ],
+          "related_nodes": [
+            "BANG-S24-STIM",
+            "BANG-S24-ROUTE",
+            "BANG-S24-STR",
+            "BANG-S24-ELECT",
+            "BANG-S24-EST",
+            "BANG-S24-DA",
+            "BANG-S24-HT",
+            "BANG-S24-DEC",
+            "BANG-S24-EMO"
+          ]
+        }
+      ],
+      "original": true
+    },
+    {
+      "id": "EMO-FILM",
+      "title": "Emo-FilM · films, corps et ressentis",
+      "scope": "44 annotateurs et un autre groupe de 30 personnes en IRMf. Deux populations distinctes.",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "EMO-START",
+          "title": "Deux groupes pour étudier les films",
+          "text": "Des annotations décrivent l’expérience des films ; d’autres personnes sont enregistrées en IRMf.",
+          "limit": "Les deux groupes ne sont pas les mêmes personnes.",
+          "kind": "event",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-ANNOTATORS",
+          "title": "Les 44 annotateurs",
+          "text": "Ils évaluent continûment des aspects de leur expérience.",
+          "limit": "Chaque personne n’évalue pas chaque item ; les contributions sont sélectionnées selon la méthode.",
+          "kind": "condition",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-CONSENSUS",
+          "title": "Un consensus de 50 items",
+          "text": "14 films restent dans le consensus après retrait de films et d’items peu concordants.",
+          "limit": "Les valeurs ont été standardisées et centrées : aucune note absolue de peur ou de plaisir.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER",
+            "EMO-ANNOT"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-BREATHING",
+          "title": "Respiration ressentie : un item retiré",
+          "text": "L’annotation Breathing a été retirée pour faible accord entre annotations.",
+          "limit": "Le signal respiratoire mesuré chez le groupe IRMf reste une variable différente.",
+          "kind": "gap",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-FMRI-GROUP",
+          "title": "Les 30 personnes en IRMf",
+          "text": "30 personnes ont terminé l’expérience d’imagerie après deux exclusions initiales.",
+          "limit": "Aucune de ces personnes ne participait au groupe d’annotation.",
+          "kind": "condition",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-PPG",
+          "title": "Mesurer le pouls optique",
+          "text": "Un capteur PPG enregistre un signal périphérique pulsatile.",
+          "limit": "Ce signal n’est ni un ECG, ni une fréquence cardiaque déjà calculée, ni une émotion.",
+          "kind": "measurement",
+          "region": "skin",
+          "where": "Site du capteur périphérique",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-RESP",
+          "title": "Mesurer les mouvements respiratoires",
+          "text": "Une ceinture enregistre les variations liées aux mouvements de la respiration.",
+          "limit": "Ce signal ne constitue pas la sensation respiratoire d’un annotateur.",
+          "kind": "measurement",
+          "region": "lungs",
+          "where": "Thorax · ceinture respiratoire",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-EDA",
+          "title": "Mesurer la conductance cutanée",
+          "text": "Un enregistrement électrodermal accompagne les mesures d’imagerie.",
+          "limit": "Une réponse cutanée ne signifie pas à elle seule peur ressentie. Unités du pilote non renseignées.",
+          "kind": "measurement",
+          "region": "skin",
+          "where": "Peau · mesure électrodermale",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-IRM",
+          "title": "Observer le signal IRMf",
+          "text": "L’imagerie suit une réponse hémodynamique pendant les films.",
+          "limit": "Le BOLD n’est pas une mesure directe de décharge neuronale. Aucun volume IRM acquis dans ce pilote.",
+          "kind": "measurement",
+          "region": "brain",
+          "where": "Cerveau · imagerie de groupe",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-RECALL",
+          "title": "Évaluer après le scanner",
+          "text": "Des évaluations sur extraits sont recueillies après les acquisitions.",
+          "limit": "Ce rappel n’est pas une mesure continue du ressenti pendant le scan. Heartrate et Warm ne figurent pas dans cette validation.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "EMO-CLOCK",
+          "title": "Le raccord des horloges reste ouvert",
+          "text": "Le fichier descriptif et la colonne de temps du pilote donnent des origines différentes.",
+          "limit": "Un canal candidat comporte 535 fronts ; le début exact du film et le conflit de métadonnée ne sont pas encore résolus. Aucune synchronisation affichée.",
+          "kind": "gap",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "EMO-PAPER"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "EMO-FILM-R01",
+          "fromId": "EMO-START",
+          "toId": "EMO-ANNOTATORS",
+          "label": "Voir le groupe d’annotation",
+          "status": "condition",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R02",
+          "fromId": "EMO-START",
+          "toId": "EMO-FMRI-GROUP",
+          "label": "Voir le groupe IRMf",
+          "status": "condition",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R03",
+          "fromId": "EMO-ANNOTATORS",
+          "toId": "EMO-CONSENSUS",
+          "label": "Consulter le consensus",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R04",
+          "fromId": "EMO-CONSENSUS",
+          "toId": "EMO-BREATHING",
+          "label": "Comprendre un retrait",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R05",
+          "fromId": "EMO-CONSENSUS",
+          "toId": "EMO-FMRI-GROUP",
+          "label": "Comparer les deux groupes",
+          "status": "comparison",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R06",
+          "fromId": "EMO-FMRI-GROUP",
+          "toId": "EMO-PPG",
+          "label": "Mesure du pouls",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R07",
+          "fromId": "EMO-FMRI-GROUP",
+          "toId": "EMO-RESP",
+          "label": "Mesure respiratoire",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R08",
+          "fromId": "EMO-FMRI-GROUP",
+          "toId": "EMO-EDA",
+          "label": "Mesure cutanée",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R09",
+          "fromId": "EMO-FMRI-GROUP",
+          "toId": "EMO-IRM",
+          "label": "Mesure d’imagerie",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R10",
+          "fromId": "EMO-IRM",
+          "toId": "EMO-RECALL",
+          "label": "Consulter les rapports ultérieurs",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R11",
+          "fromId": "EMO-RESP",
+          "toId": "EMO-CLOCK",
+          "label": "Lire la limite temporelle",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R12",
+          "fromId": "EMO-PPG",
+          "toId": "EMO-CLOCK",
+          "label": "Lire la limite temporelle",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R13",
+          "fromId": "EMO-EDA",
+          "toId": "EMO-CLOCK",
+          "label": "Lire la limite temporelle",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "EMO-FILM-R14",
+          "fromId": "EMO-CLOCK",
+          "toId": "EMO-CONSENSUS",
+          "label": "Comparer sans synchroniser",
+          "status": "comparison",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EMO-PAPER",
+          "source_id": "EMO-PAPER",
+          "title": "Morgenroth et al. · 2025",
+          "url": "https://www.nature.com/articles/s41597-025-04803-5",
+          "support_scope": "Méthodes et validation technique de l’expérience."
+        },
+        {
+          "evidence_id": "EMO-ANNOT",
+          "source_id": "EMO-ANNOT",
+          "title": "Annotations · version 1.0.3",
+          "url": "https://github.com/OpenNeuroDatasets/ds004872/tree/e9b1bf0b05975f7815f2924da16e3ff37111739e",
+          "support_scope": "Instantané des annotations ; consensus standardisé, pas notes absolues."
+        },
+        {
+          "evidence_id": "EMO-FMRI",
+          "source_id": "EMO-FMRI",
+          "title": "IRMf et physiologie · version 1.0.2",
+          "url": "https://github.com/OpenNeuroDatasets/ds004892/tree/cdf68fe448ad180a476fa2371473a1a6ed063774",
+          "support_scope": "Instantané du jeu ; physiologie du pilote acquise et contrôlée, volumes IRM non acquis."
+        }
+      ],
+      "original": false
+    },
+    {
+      "id": "HASSANPOUR",
+      "title": "Hassanpour · sensations et insula",
+      "scope": "23 volontaires sains et non médicamentés · en ligne 2017, volume 2018.",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "HASS-START",
+          "title": "Le contexte des 23 volontaires",
+          "text": "Cette étude porte sur des personnes saines, avec familiarisation préalable et début de perfusion annoncé.",
+          "limit": "Elle ne décrit pas une cohorte présentant un trouble panique.",
+          "kind": "condition",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-PERTURB",
+          "title": "Une perturbation périphérique documentée",
+          "text": "Le protocole compare une perturbation adrénergique et un contrôle salin, avec ordre randomisé et double aveugle déclaré.",
+          "limit": "La consultation décrit l’expérience publiée ; aucun effet pharmacologique n’est calculé.",
+          "kind": "event",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-BODY",
+          "title": "Enregistrer les réponses corporelles",
+          "text": "Les signaux cardiaques et respiratoires sont enregistrés pendant l’acquisition.",
+          "limit": "La fréquence des capteurs ne fournit pas la résolution temporelle du signal neuronal.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Cœur et respiration · capteurs périphériques",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-DIAL",
+          "title": "La molette des sensations",
+          "text": "La personne suit l’intensité globale de ses sensations cardiaques et respiratoires.",
+          "limit": "La molette n’est pas une mesure continue de peur, de plaisir ou de conscience.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-ASL",
+          "title": "Comparer des fenêtres ASL",
+          "text": "Référence 0–60 s, pic 80–140 s et récupération 160–240 s sont des fenêtres du protocole.",
+          "limit": "Ces fenêtres ne sont pas des instants de propagation. TR fonctionnel de 4 s ; signal hémodynamique indirect.",
+          "kind": "measurement",
+          "region": "brain",
+          "where": "Cerveau · réponse hémodynamique ASL",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-INSULA",
+          "title": "Des contrastes dans l’insula",
+          "text": "Des amas insulaires diffèrent entre fenêtres et selon le traitement du bruit physiologique.",
+          "limit": "Les maxima MNI sont des repères statistiques de groupe, pas des capteurs ou un trajet observé. Aucune projection individuelle ajoutée.",
+          "kind": "anatomy",
+          "region": "insula",
+          "where": "Insula · plusieurs sous-régions selon le contraste",
+          "sources": [
+            "HASS-PAPER",
+            "HASS-SUP"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-EMOTION",
+          "title": "Les émotions sont rapportées après",
+          "text": "Le résultat d’émotion négative est p = 0,053 ; celui d’émotion positive p = 0,95.",
+          "limit": "L’augmentation d’émotion négative ne franchit pas le seuil usuel de 0,05. Ce protocole ne démontre pas une induction significative de panique.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-NULL",
+          "title": "Conserver les résultats absents",
+          "text": "Les analyses exploratoires ne trouvent pas de corrélation significative entre activité insulaire et plusieurs mesures d’anxiété ou d’interoception.",
+          "limit": "L’absence de significativité ne prouve pas un effet nul dans toutes les populations ; les dénominateurs restent propres aux analyses.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "HASS-GAP",
+          "title": "Le trajet afférent n’est pas suivi",
+          "text": "L’expérience ne mesure pas d’un seul tenant cœur, ganglion nodose, NTS et insula.",
+          "limit": "Le raccord ouvert de P01 reste ouvert ; aucune continuité souris–humain n’est ajoutée. Données individuelles et scripts complets non identifiés.",
+          "kind": "gap",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "HASS-PAPER"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "HASSANPOUR-R01",
+          "fromId": "HASS-START",
+          "toId": "HASS-PERTURB",
+          "label": "Lire le protocole",
+          "status": "condition",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R02",
+          "fromId": "HASS-PERTURB",
+          "toId": "HASS-BODY",
+          "label": "Consulter les mesures corporelles",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R03",
+          "fromId": "HASS-PERTURB",
+          "toId": "HASS-DIAL",
+          "label": "Consulter les sensations",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R04",
+          "fromId": "HASS-PERTURB",
+          "toId": "HASS-ASL",
+          "label": "Consulter l’imagerie",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R05",
+          "fromId": "HASS-PERTURB",
+          "toId": "HASS-EMOTION",
+          "label": "Consulter le rapport ultérieur",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R06",
+          "fromId": "HASS-ASL",
+          "toId": "HASS-INSULA",
+          "label": "Situer le contraste",
+          "status": "anatomy",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R07",
+          "fromId": "HASS-INSULA",
+          "toId": "HASS-NULL",
+          "label": "Lire les résultats exploratoires",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R08",
+          "fromId": "HASS-NULL",
+          "toId": "HASS-GAP",
+          "label": "Voir la limite du trajet",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R09",
+          "fromId": "HASS-DIAL",
+          "toId": "HASS-EMOTION",
+          "label": "Comparer sensation et émotion rapportée",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "HASSANPOUR-R10",
+          "fromId": "HASS-BODY",
+          "toId": "HASS-GAP",
+          "label": "Lire ce qui reste inconnu",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "HASS-PAPER",
+          "source_id": "HASS-PAPER",
+          "title": "Hassanpour et al. · 2017/2018",
+          "url": "https://www.nature.com/articles/npp2017154",
+          "support_scope": "Protocole, résultats et limites de l’étude."
+        },
+        {
+          "evidence_id": "HASS-SUP",
+          "source_id": "HASS-SUP",
+          "title": "Tables supplémentaires 1–4",
+          "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnpp.2017.154/MediaObjects/41386_2018_BFnpp2017154_MOESM66_ESM.docx",
+          "support_scope": "Contrastes de groupe et chevauchements d’atlas, pas positions individuelles."
+        }
+      ],
+      "original": false
+    },
+    {
+      "id": "INMAN",
+      "title": "Inman · corps et émotion déclarée",
+      "scope": "9 patients épileptiques étudiés · 7 dans le modèle principal · deux cas émotionnels séparés.",
+      "species": "human",
+      "nodes": [
+        {
+          "id": "INMAN-START",
+          "title": "Neuf patients et plusieurs analyses",
+          "text": "Les électrodes sont implantées dans le cadre d’une exploration clinique de l’épilepsie.",
+          "limit": "Cette population et ces sites ne représentent pas l’ensemble des personnes.",
+          "kind": "condition",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-MAIN",
+          "title": "Sept patients dans le modèle principal",
+          "text": "S8 est traité séparément en raison de son profil de réponse ; S9 a des enregistrements autonomes insuffisants.",
+          "limit": "La sélection du modèle conditionne sa portée ; les essais répétés ne sont pas des personnes indépendantes.",
+          "kind": "condition",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-STIM",
+          "title": "Une intervention comparée à des témoins",
+          "text": "La stimulation amygdalienne est comparée à un site temporal et à des essais simulés intercalés.",
+          "limit": "Le participant est aveugle ; les amplitudes augmentent par paliers. Aucun réglage ni stimulation réelle n’est proposé ici.",
+          "kind": "event",
+          "region": "amygdala",
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-AUTON",
+          "title": "Des réponses autonomes observées",
+          "text": "Le modèle principal décrit des réponses électrodermales et un ralentissement cardiaque.",
+          "limit": "Les amplitudes ne sont pas réutilisées : échelle et transformation EDA demandent clarification.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Peau et cœur · signaux périphériques",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-NOREPORT",
+          "title": "Pas d’émotion déclarée chez ces sept personnes",
+          "text": "Ces participants ne rapportent pas d’émotion lorsqu’ils sont interrogés après les essais.",
+          "limit": "Ne pas rapporter n’est pas démontrer une absence absolue d’expérience ; sensibilité et moment du recueil comptent.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-EXCEPTIONS",
+          "title": "Deux cas avec réponses subjectives",
+          "text": "S8 et S9 sont décrits séparément dans le manuscrit.",
+          "limit": "Ces deux cas appartiennent aux neuf personnes ; ils ne sont pas deux nouvelles cohortes.",
+          "kind": "condition",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-S8",
+          "title": "S8 : peur rapportée et cœur accéléré",
+          "text": "Ce cas associe notamment un rapport de peur et une augmentation cardiaque à certaines stimulations.",
+          "limit": "La direction cardiaque diffère du groupe principal ; conserver cette exception. Aucun instant d’apparition subjectif n’est déduit.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Amygdale stimulée ; cœur enregistré ; rapport du patient",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-S9",
+          "title": "S9 : rapports conservés, signaux insuffisants",
+          "text": "Des expériences subjectives sont rapportées, avec des enregistrements autonomes insuffisants pour la modélisation.",
+          "limit": "Aucune courbe physiologique n’est fabriquée pour compléter ce cas.",
+          "kind": "measurement",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-RESP",
+          "title": "Respiration : distinguer les termes du modèle",
+          "text": "Le terme de tension et le contraste régional ne donnent pas le même résultat statistique. Aucune apnée n’est observée dans les conditions rapportées.",
+          "limit": "Cela ne signifie ni absence universelle d’effet, ni équivalence avec les protocoles d’apnée d’autres articles.",
+          "kind": "measurement",
+          "region": "lungs",
+          "where": "Thorax · ceinture respiratoire",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        },
+        {
+          "id": "INMAN-QUANT",
+          "title": "Des ambiguïtés quantitatives à garder ouvertes",
+          "text": "Le texte et la table n’impriment pas le même p pour le terme de tension EDA ; la retransformation et le traitement respiratoire sont à clarifier.",
+          "limit": "Pas de pente ou d’amplitude simulée à partir de ces seules descriptions. Scripts et données par essai non identifiés.",
+          "kind": "gap",
+          "region": null,
+          "where": "Ensemble de l’expérience",
+          "sources": [
+            "INMAN-PAPER"
+          ],
+          "biologicalTime": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "INMAN-R01",
+          "fromId": "INMAN-START",
+          "toId": "INMAN-MAIN",
+          "label": "Voir le groupe du modèle",
+          "status": "condition",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R02",
+          "fromId": "INMAN-START",
+          "toId": "INMAN-EXCEPTIONS",
+          "label": "Voir les cas émotionnels",
+          "status": "condition",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R03",
+          "fromId": "INMAN-MAIN",
+          "toId": "INMAN-STIM",
+          "label": "Lire le protocole",
+          "status": "condition",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R04",
+          "fromId": "INMAN-STIM",
+          "toId": "INMAN-AUTON",
+          "label": "Consulter les réponses autonomes",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R05",
+          "fromId": "INMAN-STIM",
+          "toId": "INMAN-NOREPORT",
+          "label": "Consulter les rapports après essai",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R06",
+          "fromId": "INMAN-STIM",
+          "toId": "INMAN-RESP",
+          "label": "Consulter la respiration",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R07",
+          "fromId": "INMAN-EXCEPTIONS",
+          "toId": "INMAN-S8",
+          "label": "Lire le cas S8",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R08",
+          "fromId": "INMAN-EXCEPTIONS",
+          "toId": "INMAN-S9",
+          "label": "Lire le cas S9",
+          "status": "measurement",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R09",
+          "fromId": "INMAN-AUTON",
+          "toId": "INMAN-QUANT",
+          "label": "Lire les limites quantitatives",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R10",
+          "fromId": "INMAN-AUTON",
+          "toId": "INMAN-S8",
+          "label": "Comparer avec un autre profil",
+          "status": "comparison",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R11",
+          "fromId": "INMAN-RESP",
+          "toId": "INMAN-QUANT",
+          "label": "Lire les réserves de méthode",
+          "status": "gap",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        },
+        {
+          "id": "INMAN-R12",
+          "fromId": "INMAN-NOREPORT",
+          "toId": "INMAN-EXCEPTIONS",
+          "label": "Comparer avec les cas émotionnels",
+          "status": "comparison",
+          "detail": "Consultation explicite : lien entre documents ou mesures, sans propagation biologique calculée."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "INMAN-PAPER",
+          "source_id": "INMAN-PAPER",
+          "title": "Inman et al. · 2018/2020",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139084/",
+          "support_scope": "Sections 2.1–2.4, 3.1–3.4, table 2 et limites du manuscrit primaire."
+        }
+      ],
+      "original": false
+    }
+  ],
+  "excluded_species": [
+    {
+      "id": "P01",
+      "species": "mouse",
+      "nodes": 11
+    },
+    {
+      "id": "P02-VTA",
+      "species": "mouse",
+      "nodes": 9
+    },
+    {
+      "id": "P02-LC",
+      "species": "mouse",
+      "nodes": 8
+    }
+  ],
+  "policy": {
+    "coordinates": "illustrative_graphic_units",
+    "biological_times_assigned": false,
+    "walking": "procedural_illustration_not_recorded_experiment",
+    "cross_study_links": false
+  }
+}

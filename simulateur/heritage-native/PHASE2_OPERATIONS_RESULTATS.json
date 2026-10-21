@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-10-18",
+  "status": "PASS_RESTORE_OPERATION_BOUNDARIES",
+  "qualification_cases": 8,
+  "native_processes_with_valid_outputs": 4,
+  "native_comparisons": 54,
+  "cli_native_comparisons": 9,
+  "cli_calls": 2,
+  "cli_native_attempts": 1,
+  "test_methods": 80,
+  "idempotent_restore_ids": true,
+  "historical_replay_does_not_rewind_last_good": true,
+  "lost_commit_reply_recovered_without_native_execution": true,
+  "uncommitted_validated_candidate_adopted": false,
+  "inflight_child_recovery_qualified": false,
+  "power_loss_qualified": false,
+  "general_rollback_qualified": false,
+  "scientific_validation": false,
+  "original_failure_reclassified": false,
+  "report": "results/phase2-operations-2026-10-18/report.json"
+}

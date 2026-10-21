@@ -1,0 +1,22 @@
+{
+  "status": "PASS_TRANSACTION_PROCESS_EXIT_MATRIX",
+  "date_local": "2026-10-18",
+  "report": "results/phase2-transaction-resume-2026-10-18/report.json",
+  "real_process_exit_cases": 6,
+  "native_seed_processes": 6,
+  "native_seed_comparisons": 54,
+  "new_native_attempts_during_resume": 0,
+  "test_methods": 127,
+  "named_completed_mutation_boundaries_qualified": true,
+  "already_committed_and_uncommitted_cases": true,
+  "pointer_bytes_preserved": true,
+  "guard_and_lock_bytes_preserved": true,
+  "second_resume_before_later_operations_read_only": true,
+  "partial_quarantine_resume_qualified": true,
+  "arbitrary_filesystem_failure_qualified": false,
+  "power_loss_qualified": false,
+  "general_rollback_qualified": false,
+  "legacy_MUTATION_PENDING_migrated": false,
+  "scientific_validation": false,
+  "original_failure_reclassified": false
+}
