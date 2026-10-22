@@ -1,3 +1,7 @@
+# POLY v0.134.1
+
+[Accéder au lecteur POLY](https://joanvignes-sudo.github.io/POLY-viewer/) · [Notes de la version](RELEASE_v0.134.1.md)
+
 # POLY v0.134.0
 
 [Ouvrir POLY](https://joanvignes-sudo.github.io/POLY-viewer/) · [Données et limites](RELEASE_v0.134.0.md)\n\n# POLY v0.133.0
