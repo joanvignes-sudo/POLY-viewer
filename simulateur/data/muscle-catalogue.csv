@@ -1,0 +1,881 @@
+TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rapprochées,Libellés POLY disponibles
+1974,Termes généraux,general,systema musculare,muscular system,True,,
+1975,Termes généraux,general,musculi,muscles,True,,
+1976,Termes généraux,general,musculus skeletalis,skeletal muscle,True,,
+1977,Termes généraux,general,musculus cutaneus striatus,striated cutaneous muscle,True,,
+1978,Termes généraux,general,musculus visceralis striatus,striated visceral muscle,True,,
+1979,Termes généraux,general,musculus fusiformis,fusiform muscle,True,,
+1980,Termes généraux,general,musculus planus,flat muscle,True,,
+1981,Termes généraux,general,musculus rectus,straight muscle,True,,
+1982,Termes généraux,general,musculus triangularis,triangular muscle,True,,
+1983,Termes généraux,general,musculus quadratus,quadrate muscle,True,,
+1984,Termes généraux,general,musculus biventer,two-bellied muscle,True,,
+1985,Termes généraux,general,musculus biceps,two-headed muscle,True,,
+1986,Termes généraux,general,musculus triceps,three-headed muscle,True,,
+1987,Termes généraux,general,musculus quadriceps,four-headed muscle,True,,
+1988,Termes généraux,general,musculus unipennatus,unipennate muscle,True,,
+1989,Termes généraux,general,musculus bipennatus,bipennate muscle,True,,
+1990,Termes généraux,general,musculus multipennatus,multipennate muscle,True,,
+1991,Termes généraux,general,musculus orbicularis,orbicular muscle,True,,
+1992,Termes généraux,general,sphincter,sphincter muscle,True,,
+1993,Termes généraux,general,dilatator,dilator muscle,True,,
+1994,Termes généraux,general,musculus,muscle,True,,
+1995,Termes généraux,general,caput musculi,head of muscle,True,,
+1996,Termes généraux,general,venter musculi,belly of muscle,True,,
+1997,Termes généraux,general,insertio,attachment,True,,
+1998,Termes généraux,general,insertio superior,superior attachment,True,,
+1999,Termes généraux,general,insertio inferior,inferior attachment,True,,
+2000,Termes généraux,general,insertio medialis,medial attachment,True,,
+2001,Termes généraux,general,insertio lateralis,lateral attachment,True,,
+2002,Termes généraux,general,insertio proximalis,proximal attachment,True,,
+2003,Termes généraux,general,insertio distalis,distal attachment,True,,
+2004,Termes généraux,general,punctum fixum,fixed end,True,,
+2005,Termes généraux,general,punctum mobile,mobile end,True,,
+2006,Termes généraux,general,fasciculus muscularis,muscle fascicle,True,,
+2007,Termes généraux,general,endomysium,endomysium,True,,
+2008,Termes généraux,general,perimysium,perimysium,True,,
+2009,Termes généraux,general,epimysium,epimysium,True,,
+2010,Termes généraux,general,tendo,tendon,True,,
+2011,Termes généraux,general,tendo intermedius,intermediate tendon,True,,
+2012,Termes généraux,general,aponeurosis,aponeurosis,True,,
+2013,Termes généraux,general,arcus tendineus,tendinous arch,True,,
+2014,Termes généraux,general,trochlea muscularis,muscular trochlea,True,,
+2015,Termes généraux,general,fasciae,fasciae,True,,
+2016,Termes généraux,general,fasciae musculorum,fasciae of muscles,True,,
+2017,Termes généraux,general,fascia investiens,investing fascia,True,,
+2018,Termes généraux,general,fascia propria musculi,fascia of individual muscle,True,,
+2019,Termes généraux,general,septum intermusculare,intermuscular septum,True,,
+2020,Termes généraux,general,compartimentum,compartment,True,,
+2021,Termes généraux,general,retinaculum tendinis,retinaculum,True,,
+2022,Termes généraux,general,fasciae cavitatum trunci,fasciae of body cavities,True,,
+2023,Termes généraux,general,fascia parietalis,parietal fascia,True,,
+2024,Termes généraux,general,fascia visceralis,visceral fascia,True,,
+2025,Termes généraux,general,fascia extraperitonealis,extraperitoneal fascia,True,,
+2026,Termes généraux,general,ligamentum extraperitoneale,extraperitoneal ligament,True,,
+2027,Termes généraux,general,bursae synoviales,synovial bursae,True,,
+2028,Termes généraux,general,bursa synovialis,synovial bursa,True,,
+2029,Termes généraux,general,stratum fibrosum bursae synovialis,fibrous layer of synovial bursa,True,,
+2030,Termes généraux,general,stratum synoviale bursae synovialis,synovial layer of synovial bursa,True,,
+2031,Termes généraux,general,bursa subcutanea,subcutaneous bursa,True,,
+2032,Termes généraux,general,bursa submuscularis,submuscular bursa,True,,
+2033,Termes généraux,general,bursa subfascialis,subfascial bursa,True,,
+2034,Termes généraux,general,bursa subtendinea,subtendinous bursa,True,,
+2035,Termes généraux,general,vaginae tendinum,tendon sheaths,True,,
+2036,Termes généraux,general,vagina fibrosa,fibrous sheath,True,,
+2037,Termes généraux,general,vagina synovialis,synovial sheath,True,,
+2038,Termes généraux,general,vinculum tendinis,vinculum tendinis,True,,
+2039,Tête,context,pars cranialis systematis muscularis,cranial part of muscular system,True,,
+2040,Tête,group,musculi capitis,muscles of head,True,body:FJ2738;body:FJ2739;body:FJ2741;body:FJ2748;body:FJ2750;body:FJ2751;body:FJ2753;body:FJ2760;body:FJ1306;body:FJ1357;body:FJ2762,Génioglosse · gauche;Hyoglosse · gauche;Élévateur du voile du palais · gauche;Tenseur du voile du palais · gauche;Génioglosse · droit;Hyoglosse · droit;Élévateur du voile du palais · droit;Tenseur du voile du palais · droit;Élévateur de la paupière supérieure · gauche;Élévateur de la paupière supérieure · droit;Muscle uvulaire · référence non latéralisée
+2041,Tête,group,musculi externi bulbi oculi,extraocular muscles,True,,
+2042,Tête,named,musculus rectus superior,superior rectus muscle,True,native:391;native:397,VH_M_superior_rectus_extraocular_muscle_L;VH_M_superior_rectus_extraocular_muscle_R
+2043,Tête,named,musculus rectus inferior,inferior rectus muscle,True,native:390;native:399,VH_M_inferior_rectus_extraocular_muscle_L;VH_M_inferior_rectus_extraocular_muscle_R
+2044,Tête,named,musculus rectus medialis,medial rectus muscle,True,native:389;native:398,VH_M_medial_rectus_extraocular_muscle_L;VH_M_medial_rectus_extraocular_muscle_R
+2045,Tête,named,musculus rectus lateralis bulbi oculi,lateral rectus muscle,True,native:393;native:401,VH_M_lateral_rectus_extraocular_muscle_L;VH_M_lateral_rectus_extraocular_muscle_R
+2046,Tête,context,lacertus musculi recti lateralis,check ligament of lateral rectus muscle,True,,
+2047,Tête,context,anulus tendineus communis,common tendinous ring,True,,
+2048,Tête,named,musculus obliquus superior bulbi oculi,superior oblique muscle,True,native:394;native:402,VH_M_superior_oblique_extraocular_muscle_L;VH_M_superior_oblique_extraocular_muscle_R
+2049,Tête,context,trochlea musculi obliqui superioris,trochlea of superior oblique muscle,True,,
+2050,Tête,context,vagina tendinis musculi obliqui superioris,tendon sheath of superior oblique muscle,True,,
+2051,Tête,named,musculus obliquus inferior bulbi oculi,inferior oblique muscle,True,native:392;native:400,VH_M_inferior_oblique_extraocular_muscle_L;VH_M_inferior_oblique_extraocular_muscle_R
+2052,Tête,named,levator palpebrae superioris,levator palpebrae superioris,True,body:FJ1306;body:FJ1357,Élévateur de la paupière supérieure · gauche;Élévateur de la paupière supérieure · droit
+2053,Tête,group,musculi superficiales capitis,superficial muscles of head,True,,
+2054,Tête,named,musculus epicranius,epicranius muscle,True,,
+2055,Tête,named,musculus occipitofrontalis,occipitofrontalis muscle,True,body:ZAN_CP_frontalis_L;body:ZAN_CP_frontalis_R;body:ZAN_CP_occipitalis_L;body:ZAN_CP_occipitalis_R,Muscle frontal · gauche · symétrie de l’atlas;Muscle frontal · droit;Muscle occipital · gauche · symétrie de l’atlas;Muscle occipital · droit
+2056,Tête,named,musculus frontalis,frontalis muscle,True,body:ZAN_CP_frontalis_L;body:ZAN_CP_frontalis_R,Muscle frontal · gauche · symétrie de l’atlas;Muscle frontal · droit
+2057,Tête,named,musculus occipitalis,occipitalis muscle,True,body:ZAN_CP_occipitalis_L;body:ZAN_CP_occipitalis_R,Muscle occipital · gauche · symétrie de l’atlas;Muscle occipital · droit
+2058,Tête,named,musculus temporoparietalis,temporoparietalis muscle,True,body:ZAN_CQ_temporoparietalis_L;body:ZAN_CQ_temporoparietalis_R,Temporopariétal · référence variable · gauche · symétrie de l’atlas;Temporopariétal · référence variable · droit
+2059,Tête,context,galea aponeurotica,epicranial aponeurosis,True,,
+2060,Tête,group,musculi faciales,facial muscles,True,,
+2061,Tête,named,musculus procerus,procerus muscle,True,body:ZAN_CO_procerus_L;body:ZAN_CO_procerus_R,Procérus · gauche · symétrie de l’atlas;Procérus · droit
+2062,Tête,named,musculus nasalis,nasalis muscle,True,body:ZAN_CO_nasalis_L;body:ZAN_CO_nasalis_R,Nasal · gauche · symétrie de l’atlas;Nasal · droit
+2063,Tête,part,pars transversa musculi nasalis,transverse part of nasalis muscle,True,,
+2064,Tête,part,pars alaris musculi nasalis,alar part of nasalis muscle,True,,
+2065,Tête,named,depressor septi nasi,depressor septi nasi,True,body:ZAN_CP_depressor_septi_L;body:ZAN_CP_depressor_septi_R,Abaisseur de la cloison nasale · gauche · symétrie de l’atlas;Abaisseur de la cloison nasale · droit
+2066,Tête,named,musculus orbicularis oculi,orbicularis oculi muscle,True,body:ZAN_CM_oculi_orbital_L;body:ZAN_CM_oculi_orbital_R;body:ZAN_CM_oculi_palpebral_L;body:ZAN_CM_oculi_palpebral_R,Orbiculaire de l’œil · portion orbitaire · gauche · symétrie de l’atlas;Orbiculaire de l’œil · portion orbitaire · droit;Orbiculaire de l’œil · portion palpébrale · gauche · symétrie de l’atlas;Orbiculaire de l’œil · portion palpébrale · droit
+2067,Tête,part,pars palpebralis musculi orbicularis oculi,palpebral part of orbicularis oculi,True,body:ZAN_CM_oculi_palpebral_L;body:ZAN_CM_oculi_palpebral_R,Orbiculaire de l’œil · portion palpébrale · gauche · symétrie de l’atlas;Orbiculaire de l’œil · portion palpébrale · droit
+2068,Tête,part,fasciculus ciliaris musculi orbicularis oculi,ciliary bundle of orbicularis oculi,True,,
+2069,Tête,part,pars palpebralis profunda musculi orbicularis oculi,deep palpebral part of orbicularis oculi muscle,True,,
+2070,Tête,part,pars orbitalis musculi orbicularis oculi,orbital part of orbicularis oculi,True,body:ZAN_CM_oculi_orbital_L;body:ZAN_CM_oculi_orbital_R,Orbiculaire de l’œil · portion orbitaire · gauche · symétrie de l’atlas;Orbiculaire de l’œil · portion orbitaire · droit
+2071,Tête,named,corrugator supercilii,corrugator supercilii,True,body:ZAN_CO_corrugator_L;body:ZAN_CO_corrugator_R,Corrugateur du sourcil · gauche · symétrie de l’atlas;Corrugateur du sourcil · droit
+2072,Tête,context,depressor supercilii,depressor supercilii,True,,
+2073,Tête,named,musculus orbicularis oris,orbicularis oris muscle,True,body:ZAN_CM_orbicularis_oris_L;body:ZAN_CM_orbicularis_oris_R,Orbiculaire de la bouche · gauche · symétrie de l’atlas;Orbiculaire de la bouche · droit
+2074,Tête,part,pars marginalis musculi orbicularis oris,marginal part of orbicularis oris muscle,True,,
+2075,Tête,part,pars labialis musculi orbicularis oris,labial part of orbicularis oris muscle,True,,
+2076,Tête,named,depressor anguli oris,depressor anguli oris,True,body:ZAN_CO_depressor_anguli_L;body:ZAN_CO_depressor_anguli_R,Abaisseur de l’angle de la bouche · gauche · symétrie de l’atlas;Abaisseur de l’angle de la bouche · droit
+2077,Tête,named,musculus transversus menti,transversus menti muscle,True,,
+2078,Tête,named,musculus risorius,risorius muscle,True,body:ZAN_CO_risorius_L;body:ZAN_CO_risorius_R,Risorius · gauche · symétrie de l’atlas;Risorius · droit
+2079,Tête,named,musculus zygomaticus major,zygomaticus major muscle,True,body:ZAN_CO_zygomatic_major_L;body:ZAN_CO_zygomatic_major_R,Grand zygomatique · gauche · symétrie de l’atlas;Grand zygomatique · droit
+2080,Tête,named,musculus zygomaticus minor,zygomaticus minor muscle,True,body:ZAN_CO_zygomatic_minor_L;body:ZAN_CO_zygomatic_minor_R,Petit zygomatique · gauche · symétrie de l’atlas;Petit zygomatique · droit
+2081,Tête,named,levator labii superioris,levator labii superioris,True,body:ZAN_CO_levator_labii_L;body:ZAN_CO_levator_labii_R,Releveur de la lèvre supérieure · gauche · symétrie de l’atlas;Releveur de la lèvre supérieure · droit
+2082,Tête,context,levator nasolabialis,levator nasolabialis,True,,
+2083,Tête,named,depressor labii inferioris,depressor labii inferioris,True,body:ZAN_CO_depressor_labii_L;body:ZAN_CO_depressor_labii_R,Abaisseur de la lèvre inférieure · gauche · symétrie de l’atlas;Abaisseur de la lèvre inférieure · droit
+2084,Tête,named,levator anguli oris,levator anguli oris,True,body:ZAN_CP_levator_anguli_L;body:ZAN_CP_levator_anguli_R,Releveur de l’angle de la bouche · gauche · symétrie de l’atlas;Releveur de l’angle de la bouche · droit
+2085,Tête,context,modiolus anguli oris,modiolus of angulus oris,True,,
+2086,Tête,context,bucinator,bucinator,True,,
+2087,Tête,named,musculus mentalis,mentalis muscle,True,body:ZAN_CO_mentalis_L;body:ZAN_CO_mentalis_R,Mentonnier · gauche · symétrie de l’atlas;Mentonnier · droit
+2088,Tête,group,musculi auriculares externi,extrinsic auricular muscles,True,,
+2089,Tête,named,musculus auricularis anterior,auricularis anterior muscle,True,,
+2090,Tête,named,musculus auricularis superior,auricularis superior muscle,True,,
+2091,Tête,named,musculus auricularis posterior,auricularis posterior muscle,True,,
+2092,Tête,group,musculi auriculares interni,intrinsic auricular muscles,True,,
+2093,Tête,named,musculus major helicis,helicis major muscle,True,,
+2094,Tête,named,musculus minor helicis,helicis minor muscle,True,,
+2095,Tête,named,musculus tragicus,tragicus muscle,True,,
+2096,Tête,named,musculus incisurae terminalis,muscle of terminal notch,True,,
+2097,Tête,named,musculus pyramidalis auriculae,pyramidal muscle of auricle,True,,
+2098,Tête,named,musculus antitragicus,antitragicus muscle,True,,
+2099,Tête,named,musculus transversus auriculae,transverse muscle of auricle,True,,
+2100,Tête,named,musculus obliquus auriculae,oblique muscle of auricle,True,,
+2101,Tête,group,musculi ossiculorum auditus,muscles of auditory ossicles,True,,
+2102,Tête,context,tensor tympani,tensor tympani,True,,
+2103,Tête,named,musculus stapedius,stapedius muscle,True,,
+2104,Tête,group,musculi masticatorii,masticatory muscles,True,,
+2105,Tête,context,masseter,masseter,True,body:ZAN_CM_masseter_deep_L;body:ZAN_CM_masseter_deep_R;body:ZAN_CM_masseter_superficial_L;body:ZAN_CM_masseter_superficial_R,Masséter · partie profonde · gauche · symétrie de l’atlas;Masséter · partie profonde · droit;Masséter · partie superficielle · gauche · symétrie de l’atlas;Masséter · partie superficielle · droit
+2106,Tête,part,pars superficialis masseteris,superficial part of masseter,True,body:ZAN_CM_masseter_superficial_L;body:ZAN_CM_masseter_superficial_R,Masséter · partie superficielle · gauche · symétrie de l’atlas;Masséter · partie superficielle · droit
+2107,Tête,part,pars profunda masseteris,deep part of masseter,True,body:ZAN_CM_masseter_deep_L;body:ZAN_CM_masseter_deep_R,Masséter · partie profonde · gauche · symétrie de l’atlas;Masséter · partie profonde · droit
+2108,Tête,named,musculus temporalis,temporalis muscle,True,body:ZAN_CN_temporalis_L;body:ZAN_CN_temporalis_R,Muscle temporal · gauche · symétrie de l’atlas;Muscle temporal · droit
+2109,Tête,named,musculus pterygoideus lateralis,lateral pterygoid muscle,True,body:ZAN_CN_pterygoid_lateral_inferior_L;body:ZAN_CN_pterygoid_lateral_inferior_R;body:ZAN_CN_pterygoid_lateral_superior_L;body:ZAN_CN_pterygoid_lateral_superior_R,Ptérygoïdien latéral · chef inférieur · gauche · symétrie de l’atlas;Ptérygoïdien latéral · chef inférieur · droit;Ptérygoïdien latéral · chef supérieur · gauche · symétrie de l’atlas;Ptérygoïdien latéral · chef supérieur · droit
+2110,Tête,part,caput superius musculi pterygoidei lateralis,superior head of lateral pterygoid muscle,True,body:ZAN_CN_pterygoid_lateral_superior_L;body:ZAN_CN_pterygoid_lateral_superior_R,Ptérygoïdien latéral · chef supérieur · gauche · symétrie de l’atlas;Ptérygoïdien latéral · chef supérieur · droit
+2111,Tête,part,caput inferius musculi pterygoidei lateralis,inferior head of lateral pterygoid muscle,True,body:ZAN_CN_pterygoid_lateral_inferior_L;body:ZAN_CN_pterygoid_lateral_inferior_R,Ptérygoïdien latéral · chef inférieur · gauche · symétrie de l’atlas;Ptérygoïdien latéral · chef inférieur · droit
+2112,Tête,named,musculus pterygoideus proprius,pterygoideus proprius muscle,True,,
+2113,Tête,named,musculus pterygoideus medialis,medial pterygoid muscle,True,body:ZAN_CN_pterygoid_medial_L;body:ZAN_CN_pterygoid_medial_R,Ptérygoïdien médial · gauche · symétrie de l’atlas;Ptérygoïdien médial · droit
+2114,Tête,part,caput profundum musculi pterygoidei medialis,deep head of medial pterygoid muscle,True,,
+2115,Tête,part,caput superficiale musculi pterygoidei medialis,superficial head of medial pterygoid muscle,True,,
+2116,Tête,group,musculi linguae,muscles of tongue,True,body:FJ2738;body:FJ2739;body:FJ2750;body:FJ2751,Génioglosse · gauche;Hyoglosse · gauche;Génioglosse · droit;Hyoglosse · droit
+2117,Tête,named,musculus genioglossus,genioglossus muscle,True,body:FJ2738;body:FJ2750,Génioglosse · gauche;Génioglosse · droit
+2118,Tête,named,musculus hyoglossus,hyoglossus muscle,True,body:FJ2739;body:FJ2751,Hyoglosse · gauche;Hyoglosse · droit
+2119,Tête,named,musculus chondroglossus,chondroglossus muscle,True,,
+2120,Tête,named,musculus ceratoglossus,ceratoglossus muscle,True,,
+2121,Tête,named,musculus styloglossus,styloglossus muscle,True,,
+2122,Tête,named,musculus longitudinalis superior linguae,superior longitudinal lingual muscle,True,,
+2123,Tête,named,musculus longitudinalis inferior linguae,inferior longitudinal lingual muscle,True,,
+2124,Tête,named,musculus transversus linguae,transversus linguae muscle,True,,
+2125,Tête,named,musculus verticalis linguae,verticalis linguae muscle,True,,
+2126,Tête,group,musculi palati mollis,muscles of soft palate,True,,
+2127,Tête,context,aponeurosis palatina,palatine aponeurosis,True,,
+2128,Tête,named,levator veli palatini,levator veli palatini,True,body:FJ2741;body:FJ2753,Élévateur du voile du palais · gauche;Élévateur du voile du palais · droit
+2129,Tête,named,tensor veli palatini,tensor veli palatini,True,body:FJ2748;body:FJ2760,Tenseur du voile du palais · gauche;Tenseur du voile du palais · droit
+2130,Tête,named,musculus uvulae,musculus uvulae,True,,
+2131,Tête,named,musculus palatoglossus,palatoglossus muscle,True,,
+2132,Tête,named,musculus palatopharyngeus,palatopharyngeus muscle,True,body:FJ2743;body:FJ2755,Palato-pharyngien · gauche;Palato-pharyngien · droit
+2133,Tête,part,fasciculus anterior musculi palatopharyngei,anterior fascicle of palatopharyngeus muscle,True,,
+2134,Tête,part,fasciculus posterior musculi palatopharyngei,posterior fascicle of palatopharyngeus muscle,True,,
+2135,Tête,context,fasciae capitis,fasciae of head,True,,
+2136,Tête,context,fascia masseterica,masseteric fascia,True,,
+2137,Tête,context,fascia parotidea,parotid fascia,True,,
+2138,Tête,context,fascia temporalis,temporal fascia,True,,
+2139,Tête,context,lamina superficialis fasciae temporalis,superficial layer of temporal fascia,True,,
+2140,Tête,context,lamina profunda fasciae temporalis,deep layer of temporal fascia,True,,
+2141,Tête,context,corpus adiposum buccae,buccal fat pad,True,,
+2142,Tête,context,organum juxtaorale,juxtaoral organ,True,,
+2143,Tête,context,bursae capitis,bursae of head,True,,
+2144,Tête,context,bursa tensoris veli palatini,bursa of tensor veli palatini,True,,
+2145,Cou,context,pars cervicalis systematis muscularis,cervical part of muscular system,True,,
+2146,Cou,group,musculi colli,muscles of neck,True,body:FJ1594;body:FJ1572;body:FJ1593;body:FJ1571;body:FJ1592;body:FJ1570;body:FJ1596;body:FJ1574;body:FJ1586;body:FJ1565;body:FJ1597;body:FJ1575;body:FJ1599;body:FJ1577;body:FJ1595;body:FJ1573;body:FJ1598;body:FJ1576;body:FJ1583;body:FJ1562;body:FJ1580;body:FJ1559;body:FJ2740;body:FJ2743;body:FJ2745;body:FJ2746;body:FJ2747;body:FJ2752;body:FJ2755;body:FJ2757;body:FJ2758;body:FJ2759;body:FJ1558;body:FJ1587;body:FJ1555;body:FJ1556;body:FJ1560;body:FJ1578;body:FJ1579,Scalène postérieur · droit;Scalène postérieur · gauche;Scalène moyen · droit;Scalène moyen · gauche;Scalène antérieur · droit;Scalène antérieur · gauche;Sterno-hyoïdien · droit;Sterno-hyoïdien · gauche;Omo-hyoïdien · droit;Omo-hyoïdien · gauche;Sterno-thyroïdien · droit;Sterno-thyroïdien · gauche;Thyro-hyoïdien · droit;Thyro-hyoïdien · gauche;Sterno-cléido-mastoïdien · droit;Sterno-cléido-mastoïdien · gauche;Stylo-hyoïdien · droit;Stylo-hyoïdien · gauche;Mylo-hyoïdien · droit;Mylo-hyoïdien · gauche;Génio-hyoïdien · droit;Génio-hyoïdien · gauche;Constricteur inférieur du pharynx · gauche;Palato-pharyngien · gauche;Salpingo-pharyngien · gauche;Stylo-pharyngien · gauche;Constricteur supérieur du pharynx · gauche;Constricteur inférieur du pharynx · droit;Palato-pharyngien · droit;Salpingo-pharyngien · droit;Stylo-pharyngien · droit;Constricteur supérieur du pharynx · droit;Platysma · gauche;Platysma · droit;Digastrique · gauche · pièce FJ1555 non subdivisée;Digastrique · droit · pièce FJ1556 non subdivisée;Digastrique · gauche · pièce FJ1560 non subdivisée;Digastrique · gauche · pièce FJ1578 non subdivisée;Digastrique · droit · pièce FJ1579 non subdivisée
+2147,Cou,named,platysma,platysma,True,body:FJ1558;body:FJ1587,Platysma · gauche;Platysma · droit
+2148,Cou,named,musculus longus colli,longus colli muscle,True,body:ZAN_CQ_longus_colli_L;body:ZAN_CQ_longus_colli_R;body:FJ1600;body:FJ1601;body:FJ1557,Long du cou · ensemble de référence Z-Anatomy · gauche · symétrie de l’atlas;Long du cou · ensemble de référence Z-Anatomy · droit;Long du cou · portion oblique supérieure · gauche;Long du cou · portion verticale intermédiaire · gauche;Long du cou · portion oblique inférieure · gauche
+2149,Cou,named,musculus longus capitis,longus capitis muscle,True,body:FJ1582;body:FJ1561,Long de la tête · droit;Long de la tête · gauche
+2150,Cou,named,musculus rectus anterior capitis,rectus anterior capitis muscle,True,body:FJ1588;body:FJ1566,Droit antérieur de la tête · droit;Droit antérieur de la tête · gauche
+2151,Cou,named,musculus rectus lateralis capitis,rectus lateralis capitis muscle,True,body:FJ1591;body:FJ1569,Droit latéral de la tête · droit;Droit latéral de la tête · gauche
+2152,Cou,named,musculus scalenus anterior,scalenus anterior muscle,True,body:FJ1592;body:FJ1570,Scalène antérieur · droit;Scalène antérieur · gauche
+2153,Cou,named,musculus scalenus medius,scalenus medius muscle,True,body:FJ1593;body:FJ1571,Scalène moyen · droit;Scalène moyen · gauche
+2154,Cou,named,musculus scalenus posterior,scalenus posterior muscle,True,body:FJ1594;body:FJ1572,Scalène postérieur · droit;Scalène postérieur · gauche
+2155,Cou,named,musculus scalenus minimus,scalenus minimus muscle,True,,
+2156,Cou,named,musculus sternocleidomastoideus,sternocleidomastoid muscle,True,body:FJ1595;body:FJ1573,Sterno-cléido-mastoïdien · droit;Sterno-cléido-mastoïdien · gauche
+2157,Cou,part,caput sternale musculi sternocleidomastoidei,sternal head of sternocleidomastoid muscle,True,,
+2158,Cou,part,caput claviculare musculi sternocleidomastoidei,clavicular head of sternocleidomastoid muscle,True,,
+2159,Cou,group,musculi suprahyoidei,suprahyoid muscles,True,body:FJ1598;body:FJ1576;body:FJ1583;body:FJ1562;body:FJ1580;body:FJ1559;body:FJ1555;body:FJ1556;body:FJ1560;body:FJ1578;body:FJ1579,Stylo-hyoïdien · droit;Stylo-hyoïdien · gauche;Mylo-hyoïdien · droit;Mylo-hyoïdien · gauche;Génio-hyoïdien · droit;Génio-hyoïdien · gauche;Digastrique · gauche · pièce FJ1555 non subdivisée;Digastrique · droit · pièce FJ1556 non subdivisée;Digastrique · gauche · pièce FJ1560 non subdivisée;Digastrique · gauche · pièce FJ1578 non subdivisée;Digastrique · droit · pièce FJ1579 non subdivisée
+2160,Cou,named,musculus digastricus,digastric muscle,True,body:FJ1555;body:FJ1556;body:FJ1560;body:FJ1578;body:FJ1579;body:ZAN_CQ_digastric_anterior_L;body:ZAN_CQ_digastric_anterior_R;body:ZAN_CQ_digastric_posterior_L;body:ZAN_CQ_digastric_posterior_R,Digastrique · gauche · pièce FJ1555 non subdivisée;Digastrique · droit · pièce FJ1556 non subdivisée;Digastrique · gauche · pièce FJ1560 non subdivisée;Digastrique · gauche · pièce FJ1578 non subdivisée;Digastrique · droit · pièce FJ1579 non subdivisée;Digastrique · ventre antérieur · alternative Z-Anatomy · gauche · symétrie de l’atlas;Digastrique · ventre antérieur · alternative Z-Anatomy · droit;Digastrique · ventre postérieur · alternative Z-Anatomy · gauche · symétrie de l’atlas;Digastrique · ventre postérieur · alternative Z-Anatomy · droit
+2161,Cou,part,venter anterior musculi digastrici,anterior belly of digastric muscle,True,body:ZAN_CQ_digastric_anterior_L;body:ZAN_CQ_digastric_anterior_R,Digastrique · ventre antérieur · alternative Z-Anatomy · gauche · symétrie de l’atlas;Digastrique · ventre antérieur · alternative Z-Anatomy · droit
+2162,Cou,context,tendo intermedius musculi digastrici,intermediate tendon of digastric muscle,True,,
+2163,Cou,part,venter posterior musculi digastrici,posterior belly of digastric muscle,True,body:ZAN_CQ_digastric_posterior_L;body:ZAN_CQ_digastric_posterior_R,Digastrique · ventre postérieur · alternative Z-Anatomy · gauche · symétrie de l’atlas;Digastrique · ventre postérieur · alternative Z-Anatomy · droit
+2164,Cou,named,musculus stylohyoideus,stylohyoid muscle,True,body:FJ1598;body:FJ1576,Stylo-hyoïdien · droit;Stylo-hyoïdien · gauche
+2165,Cou,named,musculus mylohyoideus,mylohyoid muscle,True,body:FJ1583;body:FJ1562,Mylo-hyoïdien · droit;Mylo-hyoïdien · gauche
+2166,Cou,named,musculus geniohyoideus,geniohyoid muscle,True,body:FJ1580;body:FJ1559,Génio-hyoïdien · droit;Génio-hyoïdien · gauche
+2167,Cou,group,musculi infrahyoidei,infrahyoid muscles,True,body:FJ1596;body:FJ1574;body:FJ1586;body:FJ1565;body:FJ1597;body:FJ1575;body:FJ1599;body:FJ1577,Sterno-hyoïdien · droit;Sterno-hyoïdien · gauche;Omo-hyoïdien · droit;Omo-hyoïdien · gauche;Sterno-thyroïdien · droit;Sterno-thyroïdien · gauche;Thyro-hyoïdien · droit;Thyro-hyoïdien · gauche
+2168,Cou,named,musculus sternohyoideus,sternohyoid muscle,True,body:FJ1596;body:FJ1574,Sterno-hyoïdien · droit;Sterno-hyoïdien · gauche
+2169,Cou,named,musculus omohyoideus,omohyoid muscle,True,body:FJ1586;body:FJ1565,Omo-hyoïdien · droit;Omo-hyoïdien · gauche
+2170,Cou,part,venter superior musculi omohyoidei,superior belly of omohyoid muscle,True,,
+2171,Cou,context,tendo intermedius musculi omohyoidei,intermediate tendon of omohyoid muscle,True,,
+2172,Cou,part,venter inferior musculi omohyoidei,inferior belly of omohyoid muscle,True,,
+2173,Cou,named,musculus sternothyreoideus,sternothyroid muscle,True,body:FJ1597;body:FJ1575,Sterno-thyroïdien · droit;Sterno-thyroïdien · gauche
+2174,Cou,named,musculus thyreohyoideus,thyrohyoid muscle,True,body:FJ1599;body:FJ1577,Thyro-hyoïdien · droit;Thyro-hyoïdien · gauche
+2175,Cou,context,levator glandulae thyreoideae,levator glandulae thyroideae,True,,
+2176,Cou,group,musculi pharyngis,pharyngeal muscles,True,,
+2177,Cou,context,raphe pharyngis,pharyngeal raphe,True,,
+2178,Cou,context,raphe pterygomandibularis,pterygomandibular raphe,True,,
+2179,Cou,named,constrictor superior pharyngis,superior pharyngeal constrictor,True,body:FJ2747;body:FJ2759,Constricteur supérieur du pharynx · gauche;Constricteur supérieur du pharynx · droit
+2180,Cou,part,pars pterygopharyngea constrictoris superioris pharyngis,pterygopharyngeal part of superior pharyngeal constrictor,True,,
+2181,Cou,part,pars buccopharyngea constrictoris superioris pharyngis,buccopharyngeal part of superior pharyngeal constrictor,True,,
+2182,Cou,part,pars mylopharyngea constrictoris superioris pharyngis,mylopharyngeal part of superior pharyngeal constrictor,True,,
+2183,Cou,part,pars glossopharyngea constrictoris superioris pharyngis,glossopharyngeal part of superior pharyngeal constrictor,True,,
+2184,Cou,context,constrictor medius pharyngis,middle pharyngeal constrictor,True,,
+2185,Cou,part,pars chondropharyngea constrictoris medii pharyngis,chondropharyngeal part of middle pharyngeal constrictor,True,,
+2186,Cou,part,pars ceratopharyngea constrictoris medii pharyngis,ceratopharyngeal part of middle pharyngeal constrictor,True,,
+2187,Cou,named,constrictor inferior pharyngis,inferior pharyngeal constrictor,True,body:FJ2740;body:FJ2752,Constricteur inférieur du pharynx · gauche;Constricteur inférieur du pharynx · droit
+2188,Cou,part,pars thyreopharyngea constrictoris inferioris pharyngis,thyropharyngeal part of inferior pharyngeal constrictor,True,,
+2189,Cou,part,pars cricopharyngea constrictoris inferioris pharyngis,cricopharyngeal part of inferior pharyngeal constrictor,True,,
+2190,Cou,named,musculus stylopharyngeus,stylopharyngeus muscle,True,body:FJ2746;body:FJ2758,Stylo-pharyngien · gauche;Stylo-pharyngien · droit
+2191,Cou,named,musculus salpingopharyngeus,salpingopharyngeus muscle,True,body:FJ2745;body:FJ2757,Salpingo-pharyngien · gauche;Salpingo-pharyngien · droit
+2192,Cou,group,musculi laryngis,laryngeal muscles,True,,
+2193,Cou,named,musculus cricothyreoideus,cricothyroid muscle,True,native:420;native:421;body:ZAN_CR_cricothyroid_oblique_L;body:ZAN_CR_cricothyroid_oblique_R;body:ZAN_CR_cricothyroid_straight_L;body:ZAN_CR_cricothyroid_straight_R,VH_M_cricothyroid_R;VH_M_cricothyroid_L;Cricothyroïdien · portion oblique · alternative · gauche · symétrie de l’atlas;Cricothyroïdien · portion oblique · alternative · droit;Cricothyroïdien · portion droite · alternative · gauche · symétrie de l’atlas;Cricothyroïdien · portion droite · alternative · droit
+2194,Cou,part,pars recta musculi cricothyreoidei,straight part of cricothyroid muscle,True,body:ZAN_CR_cricothyroid_straight_L;body:ZAN_CR_cricothyroid_straight_R,Cricothyroïdien · portion droite · alternative · gauche · symétrie de l’atlas;Cricothyroïdien · portion droite · alternative · droit
+2195,Cou,part,pars obliqua musculi cricothyreoidei,oblique part of cricothyroid muscle,True,body:ZAN_CR_cricothyroid_oblique_L;body:ZAN_CR_cricothyroid_oblique_R,Cricothyroïdien · portion oblique · alternative · gauche · symétrie de l’atlas;Cricothyroïdien · portion oblique · alternative · droit
+2196,Cou,named,musculus cricoarytenoideus posterior,posterior cricoarytentoid muscle,True,native:414;native:415,VH_M_posterior_cricoarytenoid_L;VH_M_posterior_cricoarytenoid_R
+2197,Cou,named,musculus ceratocricoideus,ceratocricoid muscle,True,,
+2198,Cou,named,musculus cricoarytendoideus lateralis,lateral cricoarytenoid muscle,True,native:417;native:418,VH_M_lateral_cricoarytenoid_R;VH_M_lateral_cricoarytenoid_L
+2199,Cou,named,musculus thyreoarytenoideus,thyroarytenoid muscle,True,native:423;native:424;body:ZAN_CR_thyroarytenoid_external_L;body:ZAN_CR_thyroarytenoid_external_R,VH_M_thyroarytenoid_L;VH_M_thyroarytenoid_R;Thyroaryténoïdien · portion externe · alternative · gauche · symétrie de l’atlas;Thyroaryténoïdien · portion externe · alternative · droit
+2200,Cou,part,pars externa musculi thyreoarytenoidei,external part of thyroarytenoid muscle,True,body:ZAN_CR_thyroarytenoid_external_L;body:ZAN_CR_thyroarytenoid_external_R,Thyroaryténoïdien · portion externe · alternative · gauche · symétrie de l’atlas;Thyroaryténoïdien · portion externe · alternative · droit
+2201,Cou,part,pars thyreoepiglottica musculi thyreoarytenoidei,thyroepiglottic part of thyroarytenoid muscle,True,,
+2202,Cou,named,musculus vocalis,vocalis muscle,True,native:412,VH_M_vocalis
+2203,Cou,named,musculus arytenoideus obliquus,oblique arytenoid muscle,True,,
+2204,Cou,part,pars aryepiglottica musculi arytenoidei obliqui,aryepiglottic part of oblique arytenoid muscle,True,,
+2205,Cou,named,musculus arytenoideus transversus,transverse arytenoid muscle,True,,
+2206,Cou,context,fasciae cervicales,cervical fasciae,True,,
+2207,Cou,context,fascia investiens superficialis colli,superficial investing cervical fascia,True,,
+2208,Cou,context,spatium suprasternale,suprasternal space,True,,
+2209,Cou,context,fascia musculorum infrahyoideorum,fascia of infrahyoid muscles,True,,
+2210,Cou,context,fascia visceralis colli,visceral cervical fascia,True,,
+2211,Cou,context,fascia buccopharyngea,buccopharyngeal fascia,True,,
+2212,Cou,context,fascia pretrachealis,pretracheal fascia,True,,
+2213,Cou,context,ligamentum suspensorium glandulae thyreoideae,suspensory ligament of thyroid gland,True,,
+2214,Cou,context,vagina carotidis,carotid sheath,True,,
+2215,Cou,context,fascia investiens profunda colli,deep investing cervical fascia,True,,
+2216,Cou,context,fascia prevertebralis,prevertebral fascia,True,,
+2217,Cou,context,fascia alaris,alar fascia,True,,
+2218,Cou,context,fascia scalena,scalene fascia,True,,
+2219,Cou,context,fascia nuchae,nuchal fascia,True,,
+2220,Cou,context,bursae cervicales,cervical bursae,True,,
+2221,Cou,context,bursa subcutanea prominentiae laryngeae,subcutaneous bursa of laryngeal prominence,True,,
+2222,Cou,context,bursa infrahyoidea,infrahyoid bursa,True,,
+2223,Cou,context,bursa retrohyoidea,retrohyoid bursa,True,,
+2224,Dos,context,pars dorsalis systematis muscularis,dorsal part of muscular system,True,,
+2225,Dos,group,musculi hypaxiales dorsi,hypaxial muscles of back,True,,
+2226,Dos,named,musculus trapezius,trapezius muscle,True,,
+2227,Dos,part,pars descendens musculi trapezii,descending part of trapezius muscle,True,,
+2228,Dos,part,pars transversa musculi trapezii,transverse part of trapezius muscle,True,,
+2229,Dos,part,pars ascendens musculi trapezii,ascending part of trapezius muscle,True,,
+2230,Dos,named,musculus transversus nuchae,transversus nuchae muscle,True,,
+2231,Dos,named,musculus latissimus dorsi,latissimus dorsi muscle,True,,
+2232,Dos,named,musculus rhomboideus major,rhomboid major muscle,True,body:FJ1536;body:FJ1536M,Grand rhomboïde · droit;Grand rhomboïde · gauche
+2233,Dos,named,musculus rhomboideus minor,rhomboid minor muscle,True,body:FJ1537;body:FJ1537M,Petit rhomboïde · droit;Petit rhomboïde · gauche
+2234,Dos,named,levator scapulae,levator scapulae,True,body:FJ1532;body:FJ1532M,Élévateur de la scapula · droit;Élévateur de la scapula · gauche
+2235,Dos,named,musculus serratus posterior inferior,serratus posterior inferior muscle,True,body:FJ1541;body:FJ1541M,Dentelé postérieur inférieur · droit;Dentelé postérieur inférieur · gauche
+2236,Dos,named,musculus serratus posterior superior,serratus posterior superior muscle,True,body:FJ1542;body:FJ1542M,Dentelé postérieur supérieur · droit;Dentelé postérieur supérieur · gauche
+2237,Dos,group,musculi intertransversarii anteriores colli,anterior intertransversarii colli muscles,True,,
+2238,Dos,group,musculi intertransversarii posteriores laterales colli,lateral posterior intertransversarii colli muscles,True,,
+2239,Dos,group,musculi intertransversarii laterales lumborum,lateral intertransversarii lumborum muscles,True,body:FJ1547;body:FJ1547M,Intertransversaires lombaires latéraux · pièce régionale · FJ1547 · côté non annoté;Intertransversaires lombaires latéraux · pièce régionale · FJ1547M · côté non annoté
+2240,Dos,part,partes dorsales musculorum intertransversariorum lateralium lumborum,dorsal parts of lateral intertransversarii lumborum muscles,True,,
+2241,Dos,part,partes ventrales musculorum intertransversariorum lateralium lumborum,ventral parts of lateral intertransversarii lumborum muscles,True,,
+2242,Dos,context,fascia thoracolumbalis,thoracolumbar fascia,True,,
+2243,Dos,context,lamina posterior fasciae thoracolumbaris,posterior layer of thoracolumbar fascia,True,,
+2244,Dos,context,aponeurosis thoracolumbalis,thoracolumbar aponeurosis,True,,
+2245,Dos,context,lamina media fasciae thoracolumbaris,middle layer of thoracolumbar fascia,True,,
+2246,Dos,context,lamina anterior fasciae thoracolumbaris,anterior layer of thoracolumbar fascia,True,,
+2247,Dos,group,musculi epaxiales,epaxial muscles,True,,
+2248,Dos,group,musculi suboccipitales,suboccipital muscles,True,,
+2249,Dos,named,musculus rectus posterior major capitis,rectus posterior major capitis muscle,True,body:FJ1589;body:FJ1567,Grand droit postérieur de la tête · droit;Grand droit postérieur de la tête · gauche
+2250,Dos,named,musculus rectus posterior minor capitis,rectus posterior minor capitis muscle,True,body:FJ1590;body:FJ1568,Petit droit postérieur de la tête · droit;Petit droit postérieur de la tête · gauche
+2251,Dos,named,musculus obliquus superior capitis,obliquus superior capitis muscle,True,body:FJ1585;body:FJ1564,Oblique supérieur de la tête · droit;Oblique supérieur de la tête · gauche
+2252,Dos,named,musculus obliquus inferior capitis,obliquus inferior capitis muscle,True,body:FJ1584;body:FJ1563,Oblique inférieur de la tête · droit;Oblique inférieur de la tête · gauche
+2253,Dos,context,trigonum suboccipitale,suboccipital triangle,True,,
+2254,Dos,context,erector spinae,erector spinae,True,,
+2255,Dos,context,aponeurosis erectoris spinae,erector spinae aponeurosis,True,,
+2256,Dos,context,septum intermusculare erectoris spinae,intermuscular septum of erector spinae,True,,
+2257,Dos,group,musculi iliocostales,iliocostalis muscles,True,body:FJ1527;body:FJ1527M;body:FJ1528;body:FJ1528M;body:FJ1526;body:FJ1526M,Ilio-costal lombaire · droit;Ilio-costal lombaire · gauche;Ilio-costal thoracique · droit;Ilio-costal thoracique · gauche;Ilio-costal cervical · droit;Ilio-costal cervical · gauche
+2258,Dos,named,musculus iliocostalis lumborum,iliocostalis lumborum muscle,True,body:FJ1527;body:FJ1527M,Ilio-costal lombaire · droit;Ilio-costal lombaire · gauche
+2260,Dos,named,musculus iliocostalis thoracis,iliocostalis thoracis muscle,True,body:FJ1528;body:FJ1528M,Ilio-costal thoracique · droit;Ilio-costal thoracique · gauche
+2261,Dos,named,musculus iliocostalis colli,iliocostalis colli muscle,True,body:FJ1526;body:FJ1526M,Ilio-costal cervical · droit;Ilio-costal cervical · gauche
+2262,Dos,group,musculi longissimi,longissimus muscles,True,body:FJ1535;body:FJ1535M;body:FJ1533;body:FJ1533M;body:FJ1534;body:FJ1534M,Longissimus thoracique · droit;Longissimus thoracique · gauche;Longissimus de la tête · droit;Longissimus de la tête · gauche;Longissimus cervical · droit;Longissimus cervical · gauche
+2263,Dos,named,musculus longissimus thoracis,longissimus thoracis muscle,True,body:FJ1535;body:FJ1535M,Longissimus thoracique · droit;Longissimus thoracique · gauche
+2264,Dos,part,pars lumbalis musculi longissimi thoracis,lumbar part of longissimus thoracis muscle,True,,
+2265,Dos,named,musculus longissimus colli,longissimus colli muscle,True,body:FJ1534;body:FJ1534M,Longissimus cervical · droit;Longissimus cervical · gauche
+2266,Dos,named,musculus longissimus capitis,longissimus capitis muscle,True,body:FJ1533;body:FJ1533M,Longissimus de la tête · droit;Longissimus de la tête · gauche
+2267,Dos,group,musculi spinales,spinalis muscles,True,body:FJ1544;body:FJ1544M;body:FJ1543;body:FJ1543M,Épineux thoracique · droit;Épineux thoracique · gauche;Épineux · pièce de groupe · FJ1543 · côté non annoté;Épineux · pièce de groupe · FJ1543M · côté non annoté
+2268,Dos,named,musculus spinalis thoracis,spinalis thoracis muscle,True,body:FJ1544;body:FJ1544M,Épineux thoracique · droit;Épineux thoracique · gauche
+2269,Dos,named,musculus spinalis colli,spinalis colli muscle,True,,
+2270,Dos,named,musculus spinalis capitis,spinalis capitis muscle,True,,
+2271,Dos,group,musculi spinotransversales,spinotransversales muscles,True,,
+2272,Dos,group,musculi splenii,splenius muscles,True,body:FJ1546;body:FJ1546M;body:FJ1545;body:FJ1545M,Splénius cervical · droit;Splénius cervical · gauche;Splénius de la tête · droit;Splénius de la tête · gauche
+2273,Dos,named,musculus splenius capitis,splenius capitis muscle,True,body:FJ1545;body:FJ1545M,Splénius de la tête · droit;Splénius de la tête · gauche
+2274,Dos,named,musculus splenius colli,splenius colli muscle,True,body:FJ1546;body:FJ1546M,Splénius cervical · droit;Splénius cervical · gauche
+2275,Dos,group,musculi transversospinales,transversospinal muscles,True,,
+2276,Dos,group,musculi multifidi,multifidus muscles,True,,
+2277,Dos,named,musculus multifidus lumborum,multifidus lumborum muscle,True,,
+2278,Dos,named,musculus multifidus thoracis,multifidus thoracis muscle,True,,
+2279,Dos,named,musculus multifidus colli,multifidus colli muscle,True,,
+2280,Dos,group,musculi semispinales,semispinalis muscles,True,body:FJ1540;body:FJ1540M;body:FJ1539;body:FJ1539M;body:FJ1538;body:FJ1538M,Semi-épineux thoracique · droit;Semi-épineux thoracique · gauche;Semi-épineux cervical · droit;Semi-épineux cervical · gauche;Semi-épineux de la tête · droit;Semi-épineux de la tête · gauche
+2281,Dos,named,musculus semispinalis thoracis,semispinalis thoracis muscle,True,body:FJ1540;body:FJ1540M,Semi-épineux thoracique · droit;Semi-épineux thoracique · gauche
+2282,Dos,named,musculus semispinalis colli,semispinalis colli muscle,True,body:FJ1539;body:FJ1539M,Semi-épineux cervical · droit;Semi-épineux cervical · gauche
+2283,Dos,named,musculus semispinalis capitis,semispinalis capitis muscle,True,body:FJ1538;body:FJ1538M,Semi-épineux de la tête · droit;Semi-épineux de la tête · gauche
+2284,Dos,group,rotatores,rotatores,True,body:FJ1522;body:FJ1522M;body:FJ1524;body:FJ1524M;body:FJ1525;body:FJ1525M,Rotateurs lombaires · pièce de référence · droit;Rotateurs lombaires · pièce de référence · gauche;Rotateurs cervicaux · pièce de référence · droit;Rotateurs cervicaux · pièce de référence · gauche;Rotateurs thoraciques · pièce régionale · FJ1525 · côté non annoté;Rotateurs thoraciques · pièce régionale · FJ1525M · côté non annoté
+2285,Dos,group,rotatores lumborum,rotatores lumborum,True,body:FJ1522;body:FJ1522M,Rotateurs lombaires · pièce de référence · droit;Rotateurs lombaires · pièce de référence · gauche
+2286,Dos,group,rotatores thoracis,rotatores thoracis,True,body:FJ1525;body:FJ1525M,Rotateurs thoraciques · pièce régionale · FJ1525 · côté non annoté;Rotateurs thoraciques · pièce régionale · FJ1525M · côté non annoté
+2287,Dos,group,rotatores longi,long rotatores,True,,
+2288,Dos,group,rotatores breves,short rotatores,True,,
+2289,Dos,group,rotatores colli,rotatores colli,True,body:FJ1524;body:FJ1524M,Rotateurs cervicaux · pièce de référence · droit;Rotateurs cervicaux · pièce de référence · gauche
+2290,Dos,group,musculi interspinales,interspinales muscles,True,,
+2291,Dos,group,musculi interspinales lumborum,interspinales lumborum muscles,True,,
+2292,Dos,group,musculi interspinales thoracis,interspinales thoracis muscles,True,,
+2293,Dos,group,musculi interspinales colli,interspinales colli muscles,True,,
+2294,Dos,group,musculi intertransversarii,intertransversarii muscles,True,body:FJ1547;body:FJ1547M;body:FJ1548;body:FJ1548M,Intertransversaires lombaires latéraux · pièce régionale · FJ1547 · côté non annoté;Intertransversaires lombaires latéraux · pièce régionale · FJ1547M · côté non annoté;Intertransversaires lombaires médiaux · pièce régionale · FJ1548 · côté non annoté;Intertransversaires lombaires médiaux · pièce régionale · FJ1548M · côté non annoté
+2295,Dos,group,musculi intertransversarii mediales lumborum,medial intertransversarii lumborum muscles,True,body:FJ1548;body:FJ1548M,Intertransversaires lombaires médiaux · pièce régionale · FJ1548 · côté non annoté;Intertransversaires lombaires médiaux · pièce régionale · FJ1548M · côté non annoté
+2296,Dos,group,musculi intertransversarii thoracis,intertransversarii thoracis muscles,True,,
+2297,Dos,group,musculi intertransversarii posteriores mediales colli,medial posterior intertransversarii colli muscles,True,,
+2298,Thorax,context,pars thoracica systematis muscularis,thoracic part of muscular system,True,,
+2299,Thorax,group,musculi thoracis,muscles of thorax,True,body:FJ1451;body:FJ1451M;body:FJ1455;body:FJ1455M;body:FJ1454;body:FJ1454M;body:FJ1461;body:FJ1461M;body:FJ3131,Intercostaux externes · droit;Intercostaux externes · gauche;Intercostaux internes · droit;Intercostaux internes · gauche;Intercostaux intimes · droit;Intercostaux intimes · gauche;Transverse du thorax · droit;Transverse du thorax · gauche;Diaphragme entier · surface bilatérale
+2300,Thorax,named,musculus sternalis,sternalis muscle,True,,
+2301,Thorax,named,musculus pectoralis major,pectoralis major muscle,True,,
+2302,Thorax,part,pars clavicularis musculi pectoralis majoris,clavicular head of pectoralis major muscle,True,,
+2303,Thorax,part,pars sternocostalis musculi pectoralis majoris,sternocostal head of pectoralis major muscle,True,,
+2304,Thorax,part,pars abdominalis musculi pectoralis majoris,abdominal part of pectoralis major muscle,True,,
+2305,Thorax,named,musculus pectoralis minor,pectoralis minor muscle,True,body:FJ1456;body:FJ1456M,Petit pectoral · droit;Petit pectoral · gauche
+2306,Thorax,named,musculus subclavius,subclavius muscle,True,body:FJ1460;body:FJ1460M,Subclavier · droit;Subclavier · gauche
+2307,Thorax,named,musculus serratus anterior,serratus anterior muscle,True,body:FJ1459;body:FJ1459M,Dentelé antérieur · droit;Dentelé antérieur · gauche
+2308,Thorax,context,levatores costarum,levatores costarum,True,,
+2309,Thorax,context,levatores longi costarum,levatores longi costarum,True,,
+2310,Thorax,context,levatores breves costarum,levatores breves costarum,True,,
+2311,Thorax,group,musculi intercostales externi,external intercostal muscles,True,body:FJ1451;body:FJ1451M,Intercostaux externes · droit;Intercostaux externes · gauche
+2312,Thorax,group,musculi intercostales interni,internal intercostal muscles,True,body:FJ1455;body:FJ1455M,Intercostaux internes · droit;Intercostaux internes · gauche
+2313,Thorax,group,musculi intercostales intimi,innermost intercostal muscles,True,body:FJ1454;body:FJ1454M,Intercostaux intimes · droit;Intercostaux intimes · gauche
+2314,Thorax,group,musculi subcostales,subcostal muscles,True,,
+2315,Thorax,named,musculus transversus thoracis,transversus thoracis muscle,True,body:FJ1461;body:FJ1461M,Transverse du thorax · droit;Transverse du thorax · gauche
+2316,Thorax,context,fasciae thoracis,fasciae of thorax,True,,
+2317,Thorax,context,fascia pectoralis,pectoral fascia,True,,
+2318,Thorax,context,fascia clavipectoralis,clavipectoral fascia,True,,
+2319,Thorax,context,ligamentum costocoracoideum,costocoracoid ligament,True,,
+2320,Thorax,context,membrana costocoracoidea,costocoracoid membrane,True,,
+2321,Thorax,context,ligamentum suspensorium axillae,suspensory ligament of axilla,True,,
+2322,Thorax,context,fascia thoracica,thoracic fascia,True,,
+2323,Thorax,context,fascia endothoracica,endothoracic fascia,True,,
+2324,Thorax,context,membrana suprapleuralis,suprapleural membrane,True,,
+2325,Thorax,context,fascia phrenicopleuralis,phrenicopleural fascia,True,,
+2326,Thorax,context,ligamentum phrenicooesophageum superius,superior phrenicoesophageal ligament,True,,
+2327,Thorax,named,diaphragma,diaphragm,True,body:FJ3131,Diaphragme entier · surface bilatérale
+2328,Thorax,context,hemidiaphragma dextrum,right hemidiaphragm,True,,
+2329,Thorax,context,hemidiaphragma sinistrum,left hemidiaphragm,True,,
+2330,Thorax,named,musculus hemidiaphragmatis dextri,muscle of right hemidiaphragm,True,,
+2331,Thorax,part,pars lumbalis dextra diaphragmatis,right lumbar part of diaphragm,True,,
+2332,Thorax,context,crus dextrum diaphragmatis,right crus of diaphragm,True,,
+2333,Thorax,context,hiatus splanchnicus dexter,right hiatus for thoracic splanchnic nerves,True,,
+2334,Thorax,context,ligamentum arcuatum mediale dextrum,right medial arcuate ligament,True,,
+2335,Thorax,context,ligamentum arcuatum laterale dextrum,right lateral arcuate ligament,True,,
+2336,Thorax,part,pars costalis dextra diaphragmatis,right costal part of diaphragm,True,,
+2337,Thorax,part,pars sternalis dextra diaphragmatis,right sternal part of diaphragm,True,,
+2338,Thorax,context,trigonum sternocostale dextrum,right sternocostal triangle,True,,
+2339,Thorax,context,trigonum lumbocostale dextrum,right lumbocostal triangle,True,,
+2340,Thorax,context,centrum tendineum,central tendon,True,,
+2341,Thorax,context,foramen venae cavae,caval foramen,True,,
+2342,Thorax,context,hiatus aorticus,aortic hiatus,True,,
+2343,Thorax,context,ligamentum arcuatum medianum,median arcuate ligament,True,,
+2344,Thorax,context,hiatus oesophageus,esophageal hiatus,True,,
+2345,Thorax,named,musculus hemidiaphragmatis sinistri,muscle of left hemidiaphragm,True,,
+2346,Thorax,part,pars lumbalis sinistra diaphragmatis,left lumbar part of diaphragm,True,,
+2347,Thorax,context,crus sinistrum diaphragmatis,left crus of diaphragm,True,,
+2348,Thorax,context,hiatus splanchnicus sinister,left hiatus for thoracic splanchnic nerves,True,,
+2349,Thorax,context,ligamentum arcuatum mediale sinistrum,left medial arcuate ligament,True,,
+2350,Thorax,context,ligamentum arcuatum laterale sinistrum,left lateral arcuate ligament,True,,
+2351,Thorax,part,pars costalis sinistra diaphragmatis,left costal part of diaphragm,True,,
+2352,Thorax,part,pars sternalis sinistra diaphragmatis,left sternal part of diaphragm,True,,
+2353,Thorax,context,trigonum sternocostale sinistrum,left sternocostal triangle,True,,
+2354,Thorax,context,trigonum lumbocostale sinistrum,left lumbocostal triangle,True,,
+2355,Abdomen,context,pars abdominalis systematis muscularis,abdominal part of muscular system,True,,
+2356,Abdomen,group,musculi abdominis,muscles of abdomen,True,body:FJ1452;body:FJ1452M,Oblique externe abdominal · droit;Oblique externe abdominal · gauche
+2357,Abdomen,named,musculus rectus abdominis,rectus abdominis muscle,True,,
+2358,Abdomen,context,intersectiones tendineae,tendinous intersections,True,,
+2359,Abdomen,context,vagina musculi recti abdominis,rectus sheath,True,,
+2360,Abdomen,context,lamina anterior vaginae musculi recti,anterior layer of rectus sheath,True,,
+2361,Abdomen,context,lamina posterior vaginae musculi recti,posterior layer of rectus sheath,True,,
+2362,Abdomen,context,linea arcuata vaginae musculi recti,arcuate line of rectus sheath,True,,
+2363,Abdomen,named,musculus pyramidalis,pyramidalis muscle,True,,
+2364,Abdomen,named,musculus obliquus externus abdominis,external abdominal oblique muscle,True,body:FJ1452;body:FJ1452M,Oblique externe abdominal · droit;Oblique externe abdominal · gauche
+2365,Abdomen,context,ligamentum inguinale,inguinal ligament,True,,
+2366,Abdomen,context,ligamentum lacunare,lacunar ligament,True,,
+2367,Abdomen,context,ligamentum pectineum,pectineal ligament,True,,
+2368,Abdomen,context,ligamentum inguinale reflexum,reflected inguinal ligament,True,,
+2369,Abdomen,context,anulus inguinalis superficialis,superficial inguinal ring,True,,
+2370,Abdomen,context,crus mediale anuli inguinalis superficialis,medial crus of superficial inguinal ring,True,,
+2371,Abdomen,context,crus laterale anuli inguinalis superficialis,lateral crus of superficial inguinal ring,True,,
+2372,Abdomen,context,fibrae intercrurales,intercrural fibers,True,,
+2373,Abdomen,named,musculus obliquus internus abdominis,internal abdominal oblique muscle,True,,
+2374,Abdomen,context,cremaster,cremaster,True,,
+2375,Abdomen,named,musculus transversus abdominis,transversus abdominis muscle,True,,
+2376,Abdomen,context,falx inguinalis,inguinal falx,True,,
+2377,Abdomen,context,linea alba,linea alba,True,,
+2378,Abdomen,context,anulus umbilicalis,umbilical ring,True,,
+2379,Abdomen,context,adminiculum lineae albae,posterior attachment of linea alba,True,,
+2380,Abdomen,context,linea semilunaris,semilunar line,True,,
+2381,Abdomen,context,canalis inguinalis,inguinal canal,True,,
+2382,Abdomen,named,musculus quadratus lumborum,quadratus lumborum muscle,True,,
+2383,Abdomen,context,fasciae abdominis,fasciae of abdomen,True,,
+2384,Abdomen,context,fascia investiens abdominis,investing abdominal fascia,True,,
+2385,Abdomen,context,fascia endoabdominalis,endoabdominal fascia,True,,
+2386,Abdomen,context,fascia iliopsoae,iliopsoas fascia,True,,
+2387,Abdomen,context,fascia psoae,psoas fascia,True,,
+2388,Abdomen,context,fascia iliaca,iliac fascia,True,,
+2389,Abdomen,context,fascia transversalis,transversalis fascia,True,,
+2390,Abdomen,context,anulus inguinalis profundus,deep inguinal ring,True,,
+2391,Abdomen,context,ligamentum interfoveolare,interfoveolar ligament,True,,
+2392,Abdomen,context,tractus iliopubicus,iliopubic tract,True,,
+2393,Abdomen,context,fascia umbilicalis,umbilical fascia,True,,
+2394,Abdomen,context,fascia diaphragmatica,diaphragmatic fascia,True,,
+2395,Abdomen,context,ligamentum phrenicooesophageum inferius,inferior phrenicoesophageal ligament,True,,
+2396,Bassin et périnée,context,pars pelvica systematis muscularis,pelvic part of muscular system,True,,
+2397,Bassin et périnée,group,musculi pelvis,muscles of pelvis,True,body:FJ1449M;body:FJ2547,Coccygien · référence de préparation non précisée · gauche · FJ1449M;Coccygien · référence de préparation non précisée · droit · FJ2547
+2398,Bassin et périnée,context,corpus perineale,perineal body,True,,
+2399,Bassin et périnée,context,septum postanale,postanal septum,True,,
+2400,Bassin et périnée,context,raphe diaphragmatis pelvis,raphe of pelvic diaphragm,True,,
+2401,Bassin et périnée,context,ligamentum anococcygeum,anococcygeal ligament,True,,
+2402,Bassin et périnée,context,diaphragma pelvis,pelvic diaphragm,True,,
+2403,Bassin et périnée,context,levator ani,levator ani,True,,
+2404,Bassin et périnée,named,musculus iliococcygeus,iliococcygeus muscle,True,,
+2405,Bassin et périnée,named,musculus pubococcygeus,pubococcygeus muscle,True,,
+2406,Bassin et périnée,named,musculus puboanalis,puboanalis muscle,True,,
+2407,Bassin et périnée,named,musculus puboperinealis,puboperinealis muscle,True,,
+2408,Bassin et périnée,named,musculus puboprostaticus,puboprostaticus muscle,True,,
+2409,Bassin et périnée,named,musculus pubovaginalis,pubovaginalis muscle,True,,
+2410,Bassin et périnée,context,hiatus urogenitalis,urogenital hiatus,True,,
+2411,Bassin et périnée,context,hiatus anorectalis,anorectal hiatus,True,,
+2412,Bassin et périnée,named,musculus coccygeus,coccygeus muscle,True,body:FJ1449M;body:FJ2547,Coccygien · référence de préparation non précisée · gauche · FJ1449M;Coccygien · référence de préparation non précisée · droit · FJ2547
+2413,Bassin et périnée,group,musculi perinei,perineal muscles,True,body:FJ1450;body:FJ1450M,Sphincter anal externe · pièce source non stratifiée · côté non annoté · FJ1450;Sphincter anal externe · pièce source non stratifiée · côté non annoté · FJ1450M
+2414,Bassin et périnée,group,musculi regionis urogenitalis,muscles of urogenital triangle,True,,
+2415,Bassin et périnée,context,spatium superficiale perinei,superficial perineal space,True,,
+2416,Bassin et périnée,named,musculus transversus superficialis perinei,superficial transverse perineal muscle,True,,
+2417,Bassin et périnée,named,musculus ischiocavernosus,ischiocavernosus muscle,True,,
+2418,Bassin et périnée,named,musculus bulbospongiosus,bulbospongiosus muscle,True,,
+2419,Bassin et périnée,context,spatium profundum perinei,deep perineal space,True,,
+2420,Bassin et périnée,named,musculus transversus profundus perinei,deep transverse perineal muscle,True,,
+2421,Bassin et périnée,named,sphincter externus urethrae masculinae,male external urethral sphincter,True,,
+2422,Bassin et périnée,named,sphincter externus urethrae femininae,female external urethral sphincter,True,,
+2423,Bassin et périnée,context,compressor urethrae,compressor urethrae,True,,
+2424,Bassin et périnée,named,sphincter urethrovaginalis,sphincter urethrovaginalis,True,,
+2425,Bassin et périnée,named,musculus regionis analis,muscle of anal triangle,True,,
+2426,Bassin et périnée,named,sphincter externus ani,external anal sphincter,True,body:FJ1450;body:FJ1450M,Sphincter anal externe · pièce source non stratifiée · côté non annoté · FJ1450;Sphincter anal externe · pièce source non stratifiée · côté non annoté · FJ1450M
+2427,Bassin et périnée,part,pars subcutanea sphincteris externi ani,subcutaneous part of external anal sphincter,True,,
+2428,Bassin et périnée,part,pars superficialis sphincteris externi ani,superficial part of external anal sphincter,True,,
+2429,Bassin et périnée,part,pars profunda sphincteris externi ani,deep part of external anal sphincter,True,,
+2430,Bassin et périnée,context,fasciae pelvis,pelvic fasciae,True,,
+2431,Bassin et périnée,context,fascia parietalis pelvis,parietal pelvic fascia,True,,
+2432,Bassin et périnée,context,fascia obturatoria,obturator fascia,True,,
+2433,Bassin et périnée,context,pars supradiaphragmatica fasciae obturatoriae,supradiaphragmatic part of obturator fascia,True,,
+2434,Bassin et périnée,context,arcus tendineus levatoris ani,tendinous arch of levator ani,True,,
+2435,Bassin et périnée,context,pars infradiaphragmatica fasciae obturatoriae,infradiaphragmatic part of obturator fascia,True,,
+2436,Bassin et périnée,context,canalis pudendalis,pudendal canal,True,,
+2437,Bassin et périnée,context,fascia musculi piriformis,piriformis fascia,True,,
+2438,Bassin et périnée,context,fascia superior diaphragmatis pelvis,superior fascia of pelvic diaphragm,True,,
+2439,Bassin et périnée,context,arcus tendineus fasciae pelvis,tendinous arch of pelvic fascia,True,,
+2440,Bassin et périnée,context,fascia inferior diaphragmatis pelvis,inferior fascia of pelvic diaphragm,True,,
+2441,Bassin et périnée,context,fascia presacralis,presacral fascia,True,,
+2442,Bassin et périnée,context,fascia rectosacralis,rectosacral fascia,True,,
+2443,Bassin et périnée,context,fascia perinei,perineal fascia,True,,
+2444,Bassin et périnée,context,membrana perinei,perineal membrane,True,,
+2445,Bassin et périnée,context,ligamentum transversum perinei,transverse perineal ligament,True,,
+2446,Bassin et périnée,context,fossa ischioanalis,ischioanal fossa,True,,
+2447,Bassin et périnée,context,corpus adiposum fossae ischioanalis,fat body of ischioanal fossa,True,,
+2448,Bassin et périnée,context,recessus anterior fossae ischioanalis,anterior recess of ischioanal fossa,True,,
+2449,Membre supérieur,context,systema musculare membri superioris,muscular system of upper limb,True,,
+2450,Membre supérieur,group,musculi membri superioris,muscles of upper limb,True,body:FJ1503;body:FJ1498;body:FJ1496;body:FJ1502;body:FJ1475;body:FJ1499;body:FJ1503M;body:FJ1496M;body:FJ1502M;body:FJ1475M;body:FJ1499M;body:FJ1498M;body:FJ1487;body:FJ1487M;body:FJ1490;body:FJ1490M;body:FJ1489;body:FJ1489M;body:FJ1508;body:FJ1508M;body:FJ1488;body:FJ1488M;body:FJ1486;body:FJ1486M;hand:FJ1483;hand:FJ1501;hand:FJ1466;hand:FJ1470;hand:FJ1482;hand:FJ1483M;hand:FJ1501M;hand:FJ1466M;hand:FJ1470M;hand:FJ1482M;body:FJ1484;body:FJ1484M;body:FJ1491;body:FJ1491M;body:FJ1492;body:FJ1492M;body:FJ1493;body:FJ1493M;body:FJ1494;body:FJ1494M;body:FJ1495;body:FJ1495M;body:FJ1456;body:FJ1456M;body:FJ1459;body:FJ1459M;body:FJ1460;body:FJ1460M;body:FJ1500;body:FJ1500M;body:FJ1504;body:FJ1504M;body:FJ1506;body:FJ1506M;body:FJ1507;body:FJ1507M;body:FJ1532;body:FJ1532M;body:FJ1536;body:FJ1536M;body:FJ1537;body:FJ1537M;body:FJ1472;body:FJ1472M;body:FJ1485;body:FJ1485M;body:FJ1497;body:FJ1497M;body:FJ1505;body:FJ1505M;body:FJ1517;body:FJ1517M,Carré pronateur droit;Long fléchisseur du pouce droit;Fléchisseur radial du carpe droit;Long palmaire droit;Fléchisseur superficiel des doigts · pièce A droite;Fléchisseur superficiel des doigts · pièce B droite;Carré pronateur gauche;Fléchisseur radial du carpe gauche;Long palmaire gauche;Fléchisseur superficiel des doigts · pièce A gauche;Fléchisseur superficiel des doigts · pièce B gauche;Long fléchisseur du pouce gauche;Brachioradial · droit;Brachioradial · gauche;Long extenseur radial du carpe · droit;Long extenseur radial du carpe · gauche;Court extenseur radial du carpe · droit;Court extenseur radial du carpe · gauche;Petit rond · droit;Petit rond · gauche;Coracobrachial · droit;Coracobrachial · gauche;Brachial · droit;Brachial · gauche;Court abducteur du pouce;Opposant du pouce;Abducteur du petit doigt;Court fléchisseur du petit doigt;Opposant du petit doigt;Court abducteur du pouce;Opposant du pouce;Abducteur du petit doigt;Court fléchisseur du petit doigt;Opposant du petit doigt;Long abducteur du pouce · droit;Long abducteur du pouce · gauche;Extenseur du petit doigt · droit;Extenseur du petit doigt · gauche;Extenseur des doigts · droit;Extenseur des doigts · gauche;Extenseur de l’index · droit;Extenseur de l’index · gauche;Court extenseur du pouce · droit;Court extenseur du pouce · gauche;Long extenseur du pouce · droit;Long extenseur du pouce · gauche;Petit pectoral · droit;Petit pectoral · gauche;Dentelé antérieur · droit;Dentelé antérieur · gauche;Subclavier · droit;Subclavier · gauche;Infra-épineux · droit;Infra-épineux · gauche;Subscapulaire · droit;Subscapulaire · gauche;Supra-épineux · droit;Supra-épineux · gauche;Grand rond · droit;Grand rond · gauche;Élévateur de la scapula · droit;Élévateur de la scapula · gauche;Grand rhomboïde · droit;Grand rhomboïde · gauche;Petit rhomboïde · droit;Petit rhomboïde · gauche;Extenseur ulnaire du carpe · pièce FJ1472 · droit;Extenseur ulnaire du carpe · pièce FJ1472 · gauche;Anconé · droit;Anconé · gauche;Fléchisseur profond des doigts · droit;Fléchisseur profond des doigts · gauche;Supinateur · droit;Supinateur · gauche;Extenseur ulnaire du carpe · pièce FJ1517 · droit;Extenseur ulnaire du carpe · pièce FJ1517 · gauche
+2451,Membre supérieur,group,musculi scapulohumerales,scapulohumeral muscles,True,,
+2452,Membre supérieur,named,musculus deltoideus,deltoid muscle,True,,
+2453,Membre supérieur,part,pars clavicularis musculi deltoidei,clavicular part of deltoid muscle,True,body:FJ1468;body:FJ1468M,Deltoïde · partie claviculaire · droit;Deltoïde · partie claviculaire · gauche
+2454,Membre supérieur,part,pars acromialis musculi deltoidei,acromial part of deltoid muscle,True,body:FJ1467;body:FJ1467M,Deltoïde · partie acromiale · droit;Deltoïde · partie acromiale · gauche
+2455,Membre supérieur,part,pars spinalis scapularis musculi deltoidei,scapular spinal part of deltoid muscle,True,body:FJ1513;body:FJ1513M,Deltoïde · partie spinale · droit;Deltoïde · partie spinale · gauche
+2456,Membre supérieur,group,musculi cuffiae musculotendineae,rotator cuff muscles,True,,
+2457,Membre supérieur,named,musculus supraspinatus,supraspinatus muscle,True,body:FJ1506;body:FJ1506M,Supra-épineux · droit;Supra-épineux · gauche
+2458,Membre supérieur,named,musculus infraspinatus,infraspinatus muscle,True,body:FJ1500;body:FJ1500M,Infra-épineux · droit;Infra-épineux · gauche
+2459,Membre supérieur,named,musculus teres minor,teres minor muscle,True,body:FJ1508;body:FJ1508M,Petit rond · droit;Petit rond · gauche
+2460,Membre supérieur,named,musculus subscapularis,subscapularis muscle,True,body:FJ1504;body:FJ1504M,Subscapulaire · droit;Subscapulaire · gauche
+2461,Membre supérieur,context,cuffia musculotendinea,musculotendinous cuff,True,,
+2462,Membre supérieur,named,musculus teres major,teres major muscle,True,body:FJ1507;body:FJ1507M,Grand rond · droit;Grand rond · gauche
+2463,Membre supérieur,context,compartimentum anterius brachii,anterior compartment of arm,True,,
+2464,Membre supérieur,named,musculus biceps brachii,biceps brachii muscle,True,,
+2465,Membre supérieur,part,caput longum musculi bicipitis brachii,long head of biceps brachii,True,body:FJ1478;body:FJ1478M,Biceps brachial · chef long · droit;Biceps brachial · chef long · gauche
+2466,Membre supérieur,part,caput breve musculi bicipitis brachii,short head of biceps brachii,True,body:FJ1512;body:FJ1512M,Biceps brachial · chef court · droit;Biceps brachial · chef court · gauche
+2467,Membre supérieur,context,aponeurosis bicipitalis,bicipital aponeurosis,True,,
+2468,Membre supérieur,named,musculus coracobrachialis,coracobrachialis muscle,True,body:FJ1488;body:FJ1488M,Coracobrachial · droit;Coracobrachial · gauche
+2469,Membre supérieur,named,musculus brachialis,brachialis muscle,True,body:FJ1486;body:FJ1486M,Brachial · droit;Brachial · gauche
+2470,Membre supérieur,context,compartimentum posterius brachii,posterior compartment of arm,True,,
+2471,Membre supérieur,named,musculus triceps brachii,triceps brachii muscle,True,,
+2472,Membre supérieur,part,caput longum musculi tricipitis brachii,long head of triceps brachii,True,body:FJ1479;body:FJ1479M,Triceps brachial · chef long · droit;Triceps brachial · chef long · gauche
+2473,Membre supérieur,part,caput laterale musculi tricipitis brachii,lateral head of triceps brachii,True,body:FJ1477;body:FJ1477M,Triceps brachial · chef latéral · droit;Triceps brachial · chef latéral · gauche
+2474,Membre supérieur,part,caput mediale musculi tricipitis brachii,medial head of triceps brachii,True,body:FJ1480;body:FJ1480M,Triceps brachial · chef médial · droit;Triceps brachial · chef médial · gauche
+2475,Membre supérieur,named,musculus articularis cubiti,articularis cubiti muscle,True,,
+2476,Membre supérieur,context,compartimentum anterius antebrachii,anterior compartment of forearm,True,,
+2477,Membre supérieur,part,pars superficialis compartimenti anterioris antebrachii,superficial part of anterior compartment of forearm,True,,
+2478,Membre supérieur,context,pronator teres,pronator teres,True,,
+2479,Membre supérieur,part,caput superficiale pronatoris teretis,superficial head of pronator teres,True,body:FJ1474;body:FJ1474M,Rond pronateur droit · chef huméral;Rond pronateur gauche · chef huméral
+2480,Membre supérieur,part,caput profundum pronatoris teretis,deep head of pronator teres,True,body:FJ1516;body:FJ1516M,Rond pronateur droit · chef ulnaire;Rond pronateur gauche · chef ulnaire
+2481,Membre supérieur,named,flexor radialis carpi,flexor carpi radialis,True,body:FJ1496;body:FJ1496M,Fléchisseur radial du carpe droit;Fléchisseur radial du carpe gauche
+2482,Membre supérieur,named,musculus palmaris longus,palmaris longus muscle,True,body:FJ1502;body:FJ1502M,Long palmaire droit;Long palmaire gauche
+2483,Membre supérieur,context,flexor ulnaris carpi,flexor carpi ulnaris,True,,
+2484,Membre supérieur,part,caput humerale flexoris ulnaris carpi,humeral head of flexor carpi ulnaris,True,body:FJ1473;body:FJ1473M,Fléchisseur ulnaire du carpe · chef huméral · droit;Fléchisseur ulnaire du carpe · chef huméral · gauche
+2485,Membre supérieur,part,caput ulnare flexoris ulnaris carpi,ulnar head of flexor carpi ulnaris,True,body:FJ1518;body:FJ1518M,Fléchisseur ulnaire du carpe · chef ulnaire · droit;Fléchisseur ulnaire du carpe · chef ulnaire · gauche
+2486,Membre supérieur,named,flexor superficialis digitorum,flexor digitorum superficialis,True,body:FJ1475;body:FJ1499;body:FJ1475M;body:FJ1499M,Fléchisseur superficiel des doigts · pièce A droite;Fléchisseur superficiel des doigts · pièce B droite;Fléchisseur superficiel des doigts · pièce A gauche;Fléchisseur superficiel des doigts · pièce B gauche
+2487,Membre supérieur,part,caput humeroulnare flexoris superficialis digitorum,humeroulnar head of flexor digitorum superficialis,True,,
+2488,Membre supérieur,part,caput radiale flexoris superficialis digitorum,radial head of flexor digitorum superficialis,True,,
+2489,Membre supérieur,context,tendo flexorius communis,common flexor tendon,True,,
+2490,Membre supérieur,part,pars profunda compartimenti anterioris antebrachii,deep part of anterior compartment of forearm,True,,
+2491,Membre supérieur,named,flexor profundus digitorum,flexor digitorum profundus,True,body:FJ1497;body:FJ1497M,Fléchisseur profond des doigts · droit;Fléchisseur profond des doigts · gauche
+2492,Membre supérieur,named,flexor longus pollicis,flexor pollicis longus,True,body:FJ1498;body:FJ1498M,Long fléchisseur du pouce droit;Long fléchisseur du pouce gauche
+2493,Membre supérieur,named,pronator quadratus,pronator quadratus,True,body:FJ1503;body:FJ1503M,Carré pronateur droit;Carré pronateur gauche
+2494,Membre supérieur,context,compartimentum posterius antebrachii,posterior compartment of forearm,True,,
+2495,Membre supérieur,part,pars superficialis compartimenti posterioris antebrachii,superficial part of posterior compartment of forearm,True,,
+2496,Membre supérieur,named,musculus brachioradialis,brachioradialis muscle,True,body:FJ1487;body:FJ1487M,Brachioradial · droit;Brachioradial · gauche
+2497,Membre supérieur,named,extensor radialis longus carpi,extensor carpi radialis longus,True,body:FJ1490;body:FJ1490M,Long extenseur radial du carpe · droit;Long extenseur radial du carpe · gauche
+2498,Membre supérieur,context,tendo extensorius communis,common extensor tendon,True,,
+2499,Membre supérieur,named,extensor radialis brevis carpi,extensor carpi radialis brevis,True,body:FJ1489;body:FJ1489M,Court extenseur radial du carpe · droit;Court extenseur radial du carpe · gauche
+2500,Membre supérieur,named,extensor digitorum,extensor digitorum,True,body:FJ1492;body:FJ1492M,Extenseur des doigts · droit;Extenseur des doigts · gauche
+2501,Membre supérieur,context,conexus intertendinei,intertendinous connections,True,,
+2502,Membre supérieur,context,aponeurosis extensoria manus,extensor expansion of hand,True,,
+2503,Membre supérieur,context,cucullus extensorius,extensor hood,True,,
+2504,Membre supérieur,part,fasciculus centralis aponeurosis extensoriae manus,central band of extensor expansion of hand,True,,
+2505,Membre supérieur,part,fasciculi collaterales aponeurosis extensoriae manus,collateral bands of extensor expansion of hand,True,,
+2506,Membre supérieur,named,extensor digiti minimi,extensor digiti minimi,True,body:FJ1491;body:FJ1491M,Extenseur du petit doigt · droit;Extenseur du petit doigt · gauche
+2507,Membre supérieur,named,extensor ulnaris carpi,extensor carpi ulnaris,True,body:FJ1472;body:FJ1472M;body:FJ1517;body:FJ1517M,Extenseur ulnaire du carpe · pièce FJ1472 · droit;Extenseur ulnaire du carpe · pièce FJ1472 · gauche;Extenseur ulnaire du carpe · pièce FJ1517 · droit;Extenseur ulnaire du carpe · pièce FJ1517 · gauche
+2508,Membre supérieur,part,caput humerale extensoris ulnaris carpi,humeral head of extensor carpi ulnaris,True,,
+2509,Membre supérieur,part,caput ulnare extensoris ulnaris carpi,ulnar head of extensor carpi ulnaris,True,,
+2510,Membre supérieur,named,musculus anconeus,anconeus muscle,True,body:FJ1485;body:FJ1485M,Anconé · droit;Anconé · gauche
+2511,Membre supérieur,part,pars profunda compartimenti posterioris antebrachii,deep part of posterior compartment of forearm,True,,
+2512,Membre supérieur,named,supinator,supinator,True,body:FJ1505;body:FJ1505M,Supinateur · droit;Supinateur · gauche
+2513,Membre supérieur,part,caput humerale supinatoris,humeral head of supinator,True,,
+2514,Membre supérieur,part,caput ulnare supinatoris,ulnar head of supinator,True,,
+2515,Membre supérieur,named,extensor indicis,extensor indicis,True,body:FJ1493;body:FJ1493M,Extenseur de l’index · droit;Extenseur de l’index · gauche
+2516,Membre supérieur,named,extensor longus pollicis,extensor pollicis longus,True,body:FJ1495;body:FJ1495M,Long extenseur du pouce · droit;Long extenseur du pouce · gauche
+2517,Membre supérieur,named,abductor longus pollicis,abductor pollicis longus,True,body:FJ1484;body:FJ1484M,Long abducteur du pouce · droit;Long abducteur du pouce · gauche
+2518,Membre supérieur,named,extensor brevis pollicis,extensor pollicis brevis,True,body:FJ1494;body:FJ1494M,Court extenseur du pouce · droit;Court extenseur du pouce · gauche
+2519,Membre supérieur,group,musculi manus,muscles of hand,True,hand:FJ1483;hand:FJ1501;hand:FJ1466;hand:FJ1470;hand:FJ1482;hand:FJ1483M;hand:FJ1501M;hand:FJ1466M;hand:FJ1470M;hand:FJ1482M,Court abducteur du pouce;Opposant du pouce;Abducteur du petit doigt;Court fléchisseur du petit doigt;Opposant du petit doigt;Court abducteur du pouce;Opposant du pouce;Abducteur du petit doigt;Court fléchisseur du petit doigt;Opposant du petit doigt
+2520,Membre supérieur,named,musculus palmaris brevis,palmaris brevis muscle,True,,
+2521,Membre supérieur,named,abductor brevis pollicis,abductor pollicis brevis,True,hand:FJ1483;hand:FJ1483M,Court abducteur du pouce;Court abducteur du pouce
+2522,Membre supérieur,context,flexor brevis pollicis,flexor pollicis brevis,True,,
+2523,Membre supérieur,part,caput superficiale flexoris brevis pollicis,superficial head of flexor pollicis brevis,True,hand:FJ1514;hand:FJ1514M,Court fléchisseur du pouce · chef superficiel;Court fléchisseur du pouce · chef superficiel
+2524,Membre supérieur,part,caput profundum flexoris brevis pollicis,deep head of flexor pollicis brevis,True,,
+2525,Membre supérieur,named,musculus opponens pollicis,opponens pollicis muscle,True,hand:FJ1501;hand:FJ1501M,Opposant du pouce;Opposant du pouce
+2526,Membre supérieur,context,adductor pollicis,adductor pollicis,True,,
+2527,Membre supérieur,part,caput obliquum adductoris pollicis,oblique head of adductor pollicis,True,hand:FJ1481;hand:FJ1481M,Adducteur du pouce · chef oblique;Adducteur du pouce · chef oblique
+2528,Membre supérieur,part,caput transversum adductoris pollicis,transverse head of adductor pollicis,True,hand:FJ1515;hand:FJ1515M,Adducteur du pouce · chef transverse;Adducteur du pouce · chef transverse
+2529,Membre supérieur,named,abductor digiti minimi manus,abductor digiti minimi of hand,True,hand:FJ1466;hand:FJ1466M,Abducteur du petit doigt;Abducteur du petit doigt
+2530,Membre supérieur,named,flexor digiti minimi manus,flexor digiti minimi of hand,True,hand:FJ1470;hand:FJ1470M,Court fléchisseur du petit doigt;Court fléchisseur du petit doigt
+2531,Membre supérieur,named,musculus opponens digiti minimi manus,opponens digiti minimi muscle of hand,True,hand:FJ1482;hand:FJ1482M,Opposant du petit doigt;Opposant du petit doigt
+2532,Membre supérieur,group,musculi lumbricales manus,lumbrical muscles of hand,True,,
+2533,Membre supérieur,group,musculi interossei dorsales manus,dorsal interossei muscles of hand,True,,
+2534,Membre supérieur,group,musculi interossei palmares,palmar interossei muscles,True,,
+2535,Membre supérieur,named,musculus interosseus palmaris pollicis,pollical palmar interosseus muscle,True,,
+2536,Membre supérieur,context,fasciae membri superioris,fasciae of upper limb,True,,
+2537,Membre supérieur,context,fascia axillaris,axillary fascia,True,,
+2538,Membre supérieur,context,fascia supraspinata,supraspinatus fascia,True,,
+2539,Membre supérieur,context,fascia infraspinata,infraspinatus fascia,True,,
+2540,Membre supérieur,context,fascia deltoidea,deltoid fascia,True,,
+2541,Membre supérieur,context,fascia brachii,brachial fascia,True,,
+2542,Membre supérieur,context,septum intermusculare mediale brachii,medial intermuscular septum of arm,True,,
+2543,Membre supérieur,context,septum intermusculare laterale brachii,lateral intermuscular septum of arm,True,,
+2544,Membre supérieur,context,fascia antebrachii,antebrachial fascia,True,,
+2545,Membre supérieur,context,ligamentum palmare carpi,palmar carpal ligament,True,,
+2546,Membre supérieur,context,retinaculum extensorium carpi,extensor retinaculum of wrist,True,,
+2547,Membre supérieur,context,fascia dorsalis manus,dorsal fascia of hand,True,,
+2548,Membre supérieur,context,ligamentum metacarpeum transversum superficiale,superficial transverse metacarpal ligament,True,,
+2549,Membre supérieur,context,aponeurosis palmaris,palmar aponeurosis,True,,
+2550,Membre supérieur,context,retinaculum flexorium carpi,flexor retinaculum of wrist,True,,
+2551,Membre supérieur,context,canalis carpi,carpal tunnel,True,,
+2552,Membre supérieur,context,canalis ulnaris,ulnar canal,True,,
+2553,Membre supérieur,context,chiasma tendinum,tendinous chiasm,True,,
+2554,Membre supérieur,context,bursae membri superioris,bursae of upper limb,True,,
+2555,Membre supérieur,context,bursa subtendinea musculi trapezii,subtendinous bursa of trapezius muscle,True,,
+2556,Membre supérieur,context,bursa subcutanea acromialis,subcutaneous acromial bursa,True,,
+2557,Membre supérieur,context,bursa subacromialis,subacromial bursa,True,,
+2558,Membre supérieur,context,bursa subdeltoidea,subdeltoid bursa,True,,
+2559,Membre supérieur,context,bursa musculi coracobrachialis,coracobrachial bursa,True,,
+2560,Membre supérieur,context,bursa subtendinea musculi infraspinati,subtendinous bursa of infraspinatus muscle,True,,
+2561,Membre supérieur,context,bursa subtendinea musculi subscapularis,subtendinous bursa of subscapularis muscle,True,,
+2562,Membre supérieur,context,bursa subtendinea musculi teretis majoris,subtendinous bursa of teres major muscle,True,,
+2563,Membre supérieur,context,bursa subtendinea musculi latissimi dorsi,subtendinous bursa of latissimus dorsi muscle,True,,
+2564,Membre supérieur,context,bursa subcutanea olecrani,subcutaneous olecranon bursa,True,,
+2565,Membre supérieur,context,bursa intratendinea olecrani,intratendinous olecranon bursa,True,,
+2566,Membre supérieur,context,bursa subtendinea musculi tricipitis brachii,subtendinous bursa of triceps brachii muscle,True,,
+2567,Membre supérieur,context,bursa bicipitoradialis,bicipitoradial bursa,True,,
+2568,Membre supérieur,context,bursa cubitalis interossea,interosseous cubital bursa,True,,
+2569,Membre supérieur,context,vaginae tendinum membri superioris,tendon sheaths of upper limb,True,,
+2570,Membre supérieur,context,vagina tendinis intertubercularis,intertubercular tendon sheath,True,,
+2571,Membre supérieur,context,vaginae carpeae tendinum,carpal tendon sheaths,True,,
+2572,Membre supérieur,context,vaginae carpeae palmares tendinum,palmar carpal tendon sheaths,True,,
+2573,Membre supérieur,context,vagina tendinis flexoris longi pollicis,tendon sheath of flexor pollicis longus,True,,
+2574,Membre supérieur,context,vagina tendinis flexoris radialis carpi,tendon sheath of flexor carpi radialis,True,,
+2575,Membre supérieur,context,vagina communis tendinum flexorum,common flexor tendon sheath,True,,
+2576,Membre supérieur,context,vaginae carpeae dorsales tendinum,dorsal carpal tendon sheaths,True,,
+2577,Membre supérieur,context,vagina tendinum abductoris longi et extensoris brevis pollicis,tendon sheath of abductor pollicis longus and extensor pollicis brevis,True,,
+2578,Membre supérieur,context,vagina tendinum extensorum radialium carpi,tendon sheath of extensors carpi radialis,True,,
+2579,Membre supérieur,context,vagina tendinis extensoris longi pollicis,tendon sheath of extensor pollicis longus,True,,
+2580,Membre supérieur,context,vagina tendinum extensoris digitorum et extensoris indicis,tendon sheath of extensor digitorum and extensor indicis,True,,
+2581,Membre supérieur,context,vagina tendinis extensoris digiti minimi manus,tendon sheath of extensor digiti minimi manus,True,,
+2582,Membre supérieur,context,vagina tendinis extensoris ulnaris carpi,tendon sheath of extensor carpi ulnaris,True,,
+2583,Membre supérieur,context,vaginae tendinum digitorum manus,tendon sheaths of digits of hand,True,,
+2584,Membre supérieur,context,vaginae fibrosae digitorum manus,fibrous sheaths of digits of hand,True,,
+2585,Membre supérieur,context,pars anularis vaginae fibrosae digiti manus,annular part of fibrous sheath of digit of hand,True,,
+2586,Membre supérieur,context,pars cruciformis vaginae fibrosae digiti manus,cruciform part of fibrous sheath of digit of hand,True,,
+2587,Membre supérieur,context,vaginae synoviales digitorum manus,synovial sheaths of digits of hand,True,,
+2588,Membre supérieur,context,vincula tendinum manus,vincula tendinum of hand,True,,
+2589,Membre supérieur,context,vinculum longum tendinis,vinculum longum,True,,
+2590,Membre supérieur,context,vinculum breve tendinis,vinculum breve,True,,
+2591,Membre inférieur,context,systema musculare membri inferioris,muscular system of lower limb,True,,
+2592,Membre inférieur,group,musculi membri inferioris,muscles of lower limb,True,body:FJ1439;body:FJ1439M;body:FJ1410;body:FJ1410M;body:FJ1409;body:FJ1409M;body:FJ1437;body:FJ1437M;body:FJ1434;body:FJ1434M;body:FJ1421;body:FJ1421M;body:FJ1436;body:FJ1436M;body:FJ1435;body:FJ1435M;body:FJ1401;body:FJ1401M;body:FJ1402;body:FJ1402M;body:FJ1427;body:FJ1427M;body:FJ1403;body:FJ1403M;body:FJ1419;body:FJ1419M;body:FJ1420;body:FJ1420M;body:FJ1438;body:FJ1438M;body:FJ1418;body:FJ1418M;body:FJ1426;body:FJ1426M;body:FJ1432;body:FJ1432M;body:FJ1428;body:FJ1428M;body:FJ1417;body:FJ1417M;body:FJ1416;body:FJ1416M;body:FJ1425;body:FJ1425M;body:FJ1415;body:FJ1415M;body:FJ1414;body:FJ1414M;body:FJ1440;body:FJ1440M;body:FJ1408;body:FJ1408M;body:FJ1406;body:FJ1406M;body:FJ1400;body:FJ1400M;body:FJ1389;body:FJ1389M;body:FJ1387;body:FJ1387M;body:FJ1383;body:FJ1383M;body:FJ1385;body:FJ1385M;body:FJ1388;body:FJ1388M;body:FJ1386;body:FJ1386M;body:FJ1384;body:FJ1384M;body:FJ1413;body:FJ1413M;body:FJ1412;body:FJ1412M;body:FJ1391;body:FJ1391M;body:FJ1390;body:FJ1390M;body:FJ1407;body:FJ1407M;body:FJ1411;body:FJ1411M;body:FJ1429;body:FJ1429M;body:FJ1430;body:FJ1430M;body:FJ1422;body:FJ1422M;body:FJ1399;body:FJ1399M;body:FJ1404;body:FJ1404M,Tibial antérieur · droit;Tibial antérieur · gauche;Long fibulaire · droit;Long fibulaire · gauche;Court fibulaire · droit;Court fibulaire · gauche;Soléaire · droit;Soléaire · gauche;Sartorius · droit;Sartorius · gauche;Gracile · droit;Gracile · gauche;Semi-tendineux · droit;Semi-tendineux · gauche;Semi-membraneux · droit;Semi-membraneux · gauche;Court adducteur · droit;Court adducteur · gauche;Long adducteur · droit;Long adducteur · gauche;Pectiné · droit;Pectiné · gauche;Grand adducteur · droit;Grand adducteur · gauche;Moyen fessier · droit;Moyen fessier · gauche;Petit fessier · droit;Petit fessier · gauche;Tenseur du fascia lata · droit;Tenseur du fascia lata · gauche;Grand fessier · droit;Grand fessier · gauche;Obturateur interne · droit;Obturateur interne · gauche;Carré fémoral · droit;Carré fémoral · gauche;Piriforme · droit;Piriforme · gauche;Jumeau supérieur · droit;Jumeau supérieur · gauche;Jumeau inférieur · droit;Jumeau inférieur · gauche;Obturateur externe · droit;Obturateur externe · gauche;Long fléchisseur de l’hallux · droit;Long fléchisseur de l’hallux · gauche;Long fléchisseur des orteils · droit;Long fléchisseur des orteils · gauche;Tibial postérieur · droit;Tibial postérieur · gauche;Long extenseur de l’hallux · droit;Long extenseur de l’hallux · gauche;Long extenseur des orteils · droit;Long extenseur des orteils · gauche;Abducteur de l’hallux · droit;Abducteur de l’hallux · gauche;Quatrième lombrical du pied · droit;Quatrième lombrical du pied · gauche;Troisième lombrical du pied · droit;Troisième lombrical du pied · gauche;Premier lombrical du pied · droit;Premier lombrical du pied · gauche;Deuxième lombrical du pied · droit;Deuxième lombrical du pied · gauche;Troisième interosseux plantaire · droit;Troisième interosseux plantaire · gauche;Deuxième interosseux plantaire · droit;Deuxième interosseux plantaire · gauche;Premier interosseux plantaire · droit;Premier interosseux plantaire · gauche;Court fléchisseur des orteils · droit;Court fléchisseur des orteils · gauche;Carré plantaire · droit;Carré plantaire · gauche;Court fléchisseur du petit orteil · droit;Court fléchisseur du petit orteil · gauche;Abducteur du petit orteil · calcanéen inférieur · droit;Abducteur du petit orteil · calcanéen inférieur · gauche;Court extenseur de l’hallux · droit;Court extenseur de l’hallux · gauche;Troisième fibulaire · droit;Troisième fibulaire · gauche;Plantaire · droit;Plantaire · gauche;Poplité · droit;Poplité · gauche;Iliaque · droit;Iliaque · gauche;Opposant du petit orteil · variante · droit · FJ1399;Opposant du petit orteil · variante · gauche · FJ1399M;Petit adducteur · portion / variante · droit · FJ1404;Petit adducteur · portion / variante · gauche · FJ1404M
+2593,Membre inférieur,group,iliopsoas,iliopsoas muscle,True,,
+2594,Membre inférieur,named,musculus iliacus,iliacus muscle,True,body:FJ1422;body:FJ1422M,Iliaque · droit;Iliaque · gauche
+2595,Membre inférieur,named,psoas major,psoas major,True,body:FJ1431;body:FJ1431M,Psoas majeur · droit;Psoas majeur · gauche
+2596,Membre inférieur,context,psoas minor,psoas minor,True,,
+2597,Membre inférieur,group,musculi glutei superficiales,superficial gluteal muscles,True,,
+2598,Membre inférieur,named,musculus gluteus maximus,gluteus maximus muscle,True,body:FJ1418;body:FJ1418M,Grand fessier · droit;Grand fessier · gauche
+2599,Membre inférieur,named,musculus gluteus medius,gluteus medius muscle,True,body:FJ1419;body:FJ1419M,Moyen fessier · droit;Moyen fessier · gauche
+2600,Membre inférieur,named,musculus gluteus minimus,gluteus minimus muscle,True,body:FJ1420;body:FJ1420M,Petit fessier · droit;Petit fessier · gauche
+2601,Membre inférieur,context,aponeurosis glutea,guteal aponeurosis,True,,
+2602,Membre inférieur,named,tensor fasciae latae,tensor fasciae latae,True,body:FJ1438;body:FJ1438M,Tenseur du fascia lata · droit;Tenseur du fascia lata · gauche
+2603,Membre inférieur,group,musculi glutei profundi,deep gluteal muscles,True,,
+2604,Membre inférieur,named,musculus piriformis,piriformis muscle,True,body:FJ1428;body:FJ1428M,Piriforme · droit;Piriforme · gauche
+2605,Membre inférieur,named,obturator internus,obturator internus,True,body:FJ1426;body:FJ1426M,Obturateur interne · droit;Obturateur interne · gauche
+2606,Membre inférieur,named,musculus gemellus superior,superior gemellus muscle,True,body:FJ1417;body:FJ1417M,Jumeau supérieur · droit;Jumeau supérieur · gauche
+2607,Membre inférieur,named,musculus gemellus inferior,inferior gemellus muscle,True,body:FJ1416;body:FJ1416M,Jumeau inférieur · droit;Jumeau inférieur · gauche
+2608,Membre inférieur,named,musculus quadratus femoris,quadratus femoris muscle,True,body:FJ1432;body:FJ1432M,Carré fémoral · droit;Carré fémoral · gauche
+2609,Membre inférieur,context,compartimentum anterius femoris,anterior compartment of thigh,True,,
+2610,Membre inférieur,named,musculus sartorius,sartorius muscle,True,body:FJ1434;body:FJ1434M,Sartorius · droit;Sartorius · gauche
+2611,Membre inférieur,context,canalis adductorius,adductor canal,True,,
+2612,Membre inférieur,context,pes anserinus,pes anserinus,True,,
+2613,Membre inférieur,named,musculus quadriceps femoris,quadriceps femoris muscle,True,,
+2614,Membre inférieur,named,musculus rectus femoris,rectus femoris muscle,True,body:FJ1433;body:FJ1433M;native:405;native:408,Droit fémoral · droit;Droit fémoral · gauche;VH_M_rectus_femoris_L;VH_M_rectus_femoris_R
+2615,Membre inférieur,part,caput rectum musculi recti femoris,straight head of rectus femoris,True,,
+2616,Membre inférieur,part,caput reflexum musculi recti femoris,reflected head of rectus femoris,True,,
+2617,Membre inférieur,part,caput tertium musculi recti femoris,third head of rectus femoris,True,,
+2618,Membre inférieur,named,musculus vastus lateralis,vastus lateralis muscle,True,body:FJ1442;body:FJ1442M,Vaste latéral · droit;Vaste latéral · gauche
+2619,Membre inférieur,named,musculus vastus intermedius,vastus intermedius muscle,True,body:FJ1441;body:FJ1441M,Vaste intermédiaire · droit;Vaste intermédiaire · gauche
+2620,Membre inférieur,named,musculus vastus medialis,vastus medialis muscle,True,body:FJ1443;body:FJ1443M,Vaste médial · droit;Vaste médial · gauche
+2621,Membre inférieur,context,tendo musculi quadricipitis femoris,tendon of quadriceps femoris muscle,True,native:406;native:409,VH_M_tendon_of_quadriceps_femoris_L;VH_M_tendon_of_quadriceps_femoris_R
+2622,Membre inférieur,context,ligamentum patellae,patellar ligament,True,,
+2623,Membre inférieur,context,retinaculum mediale patellae,medial patellar retinaculum,True,,
+2624,Membre inférieur,context,retinaculum laterale patellae,lateral patellar retinaculum,True,,
+2625,Membre inférieur,named,musculus articularis genus,articularis genus muscle,True,,
+2626,Membre inférieur,context,compartimentum mediale femoris,medial compartment of thigh,True,,
+2627,Membre inférieur,named,musculus pectineus,pectineus muscle,True,body:FJ1427;body:FJ1427M,Pectiné · droit;Pectiné · gauche
+2628,Membre inférieur,named,adductor longus,adductor longus,True,body:FJ1402;body:FJ1402M,Long adducteur · droit;Long adducteur · gauche
+2629,Membre inférieur,named,adductor brevis,adductor brevis,True,body:FJ1401;body:FJ1401M,Court adducteur · droit;Court adducteur · gauche
+2630,Membre inférieur,named,adductor magnus,adductor magnus,True,body:FJ1403;body:FJ1403M,Grand adducteur · droit;Grand adducteur · gauche
+2631,Membre inférieur,part,pars adductoria adductoris magni,adductor part of adductor magnus,True,,
+2632,Membre inférieur,part,adductor minimus,adductor minimus,True,body:FJ1404;body:FJ1404M,Petit adducteur · portion / variante · droit · FJ1404;Petit adducteur · portion / variante · gauche · FJ1404M
+2633,Membre inférieur,part,pars ischiocondylaris adductoris magni,ischiocondylar part of adductor magnus,True,,
+2634,Membre inférieur,context,hiatus adductorius,adductor hiatus,True,,
+2635,Membre inférieur,named,musculus gracilis,gracilis muscle,True,body:FJ1421;body:FJ1421M,Gracile · droit;Gracile · gauche
+2636,Membre inférieur,named,obturator externus,obturator externus,True,body:FJ1425;body:FJ1425M,Obturateur externe · droit;Obturateur externe · gauche
+2637,Membre inférieur,context,compartimentum posterius femoris,posterior compartment of thigh,True,,
+2638,Membre inférieur,named,musculus biceps femoris,biceps femoris muscle,True,,
+2639,Membre inférieur,part,caput longum musculi bicipitis femoris,long head of biceps femoris,True,body:FJ1395;body:FJ1395M,Biceps fémoral · chef long · droit;Biceps fémoral · chef long · gauche
+2640,Membre inférieur,part,caput breve musculi bicipitis femoris,short head of biceps femoris,True,body:FJ1444;body:FJ1444M,Biceps fémoral · chef court · droit;Biceps fémoral · chef court · gauche
+2641,Membre inférieur,named,musculus semitendinosus,semitendinosus muscle,True,body:FJ1436;body:FJ1436M,Semi-tendineux · droit;Semi-tendineux · gauche
+2642,Membre inférieur,named,musculus semimembranosus,semimembranosus muscle,True,body:FJ1435;body:FJ1435M,Semi-membraneux · droit;Semi-membraneux · gauche
+2643,Membre inférieur,context,compartimentum anterius cruris,anterior compartment of leg,True,,
+2644,Membre inférieur,named,musculus tibialis anterior,tibialis anterior muscle,True,body:FJ1439;body:FJ1439M,Tibial antérieur · droit;Tibial antérieur · gauche
+2645,Membre inférieur,named,extensor longus digitorum,extensor digitorum longus,True,body:FJ1406;body:FJ1406M,Long extenseur des orteils · droit;Long extenseur des orteils · gauche
+2646,Membre inférieur,context,aponeurosis extensoria pedis,extensor expansion of foot,True,,
+2647,Membre inférieur,part,fasciculus centralis aponeurosis extensoriae pedis,central band of extensor expansion of foot,True,,
+2648,Membre inférieur,part,fasciculi collaterales aponeurosis extensoriae pedis,collateral bands of extensor expansion of foot,True,,
+2649,Membre inférieur,named,musculus fibularis tertius,fibularis tertius muscle,True,body:FJ1411;body:FJ1411M,Troisième fibulaire · droit;Troisième fibulaire · gauche
+2650,Membre inférieur,named,extensor longus hallucis,extensor hallucis longus,True,body:FJ1408;body:FJ1408M,Long extenseur de l’hallux · droit;Long extenseur de l’hallux · gauche
+2651,Membre inférieur,context,compartimentum laterale cruris,lateral compartment of leg,True,,
+2652,Membre inférieur,named,musculus fibularis longus,fibularis longus muscle,True,body:FJ1410;body:FJ1410M,Long fibulaire · droit;Long fibulaire · gauche
+2653,Membre inférieur,named,musculus fibularis brevis,fibularis brevis muscle,True,body:FJ1409;body:FJ1409M,Court fibulaire · droit;Court fibulaire · gauche
+2654,Membre inférieur,context,compartimentum posterius cruris,posterior compartment of leg,True,,
+2655,Membre inférieur,part,pars superficialis compartimenti posterioris cruris,superficial part of posterior compartment of leg,True,,
+2656,Membre inférieur,named,musculus triceps surae,triceps surae muscle,True,,
+2657,Membre inférieur,named,musculus gastrocnemius,gastrocnemius muscle,True,,
+2658,Membre inférieur,part,caput laterale musculi gastrocnemii,lateral head of gastrocnemius,True,body:FJ1394;body:FJ1394M,Gastrocnémien · chef latéral · droit;Gastrocnémien · chef latéral · gauche
+2659,Membre inférieur,part,caput mediale musculi gastrocnemii,medial head of gastrocnemius,True,body:FJ1397;body:FJ1397M,Gastrocnémien · chef médial · droit;Gastrocnémien · chef médial · gauche
+2660,Membre inférieur,named,musculus soleus,soleus muscle,True,body:FJ1437;body:FJ1437M,Soléaire · droit;Soléaire · gauche
+2661,Membre inférieur,context,arcus tendineus musculi solei,tendinous arch of soleus muscle,True,,
+2662,Membre inférieur,context,tendo calcaneus,calcaneal tendon,True,,
+2663,Membre inférieur,named,musculus plantaris,plantaris muscle,True,body:FJ1429;body:FJ1429M,Plantaire · droit;Plantaire · gauche
+2664,Membre inférieur,part,pars profunda compartimenti posterioris cruris,deep part of posterior compartment of leg,True,,
+2665,Membre inférieur,named,musculus popliteus,popliteus muscle,True,body:FJ1430;body:FJ1430M,Poplité · droit;Poplité · gauche
+2666,Membre inférieur,named,musculus tibialis posterior,tibialis posterior muscle,True,body:FJ1440;body:FJ1440M,Tibial postérieur · droit;Tibial postérieur · gauche
+2667,Membre inférieur,named,flexor longus digitorum,flexor digitorum longus,True,body:FJ1414;body:FJ1414M,Long fléchisseur des orteils · droit;Long fléchisseur des orteils · gauche
+2668,Membre inférieur,named,flexor longus hallucis,flexor hallucis longus,True,body:FJ1415;body:FJ1415M,Long fléchisseur de l’hallux · droit;Long fléchisseur de l’hallux · gauche
+2669,Membre inférieur,group,musculi pedis,muscles of foot,True,body:FJ1400;body:FJ1400M;body:FJ1389;body:FJ1389M;body:FJ1387;body:FJ1387M;body:FJ1383;body:FJ1383M;body:FJ1385;body:FJ1385M;body:FJ1388;body:FJ1388M;body:FJ1386;body:FJ1386M;body:FJ1384;body:FJ1384M;body:FJ1413;body:FJ1413M;body:FJ1412;body:FJ1412M;body:FJ1391;body:FJ1391M;body:FJ1390;body:FJ1390M;body:FJ1407;body:FJ1407M;body:FJ1399;body:FJ1399M,Abducteur de l’hallux · droit;Abducteur de l’hallux · gauche;Quatrième lombrical du pied · droit;Quatrième lombrical du pied · gauche;Troisième lombrical du pied · droit;Troisième lombrical du pied · gauche;Premier lombrical du pied · droit;Premier lombrical du pied · gauche;Deuxième lombrical du pied · droit;Deuxième lombrical du pied · gauche;Troisième interosseux plantaire · droit;Troisième interosseux plantaire · gauche;Deuxième interosseux plantaire · droit;Deuxième interosseux plantaire · gauche;Premier interosseux plantaire · droit;Premier interosseux plantaire · gauche;Court fléchisseur des orteils · droit;Court fléchisseur des orteils · gauche;Carré plantaire · droit;Carré plantaire · gauche;Court fléchisseur du petit orteil · droit;Court fléchisseur du petit orteil · gauche;Abducteur du petit orteil · calcanéen inférieur · droit;Abducteur du petit orteil · calcanéen inférieur · gauche;Court extenseur de l’hallux · droit;Court extenseur de l’hallux · gauche;Opposant du petit orteil · variante · droit · FJ1399;Opposant du petit orteil · variante · gauche · FJ1399M
+2670,Membre inférieur,named,extensor brevis hallucis,extensor hallucis brevis,True,body:FJ1407;body:FJ1407M,Court extenseur de l’hallux · droit;Court extenseur de l’hallux · gauche
+2671,Membre inférieur,context,extensor brevis digitorum,extensor digitorum brevis,True,,
+2672,Membre inférieur,named,abductor hallucis,abductor hallucis,True,body:FJ1400;body:FJ1400M,Abducteur de l’hallux · droit;Abducteur de l’hallux · gauche
+2673,Membre inférieur,context,flexor brevis hallucis,flexor hallucis brevis,True,,
+2674,Membre inférieur,part,caput mediale flexoris brevis hallucis,medial head of flexor hallucis brevis,True,body:FJ1396;body:FJ1396M,Court fléchisseur de l’hallux · chef médial · droit;Court fléchisseur de l’hallux · chef médial · gauche
+2675,Membre inférieur,part,caput laterale flexoris brevis hallucis,lateral head of flexor hallucis brevis,True,body:FJ1393;body:FJ1393M,Court fléchisseur de l’hallux · chef latéral · droit;Court fléchisseur de l’hallux · chef latéral · gauche
+2676,Membre inférieur,context,adductor hallucis,adductor hallucis,True,,
+2677,Membre inférieur,part,caput obliquum adductoris hallucis,oblique head of adductor hallucis,True,body:FJ1398;body:FJ1398M,Adducteur de l’hallux · chef oblique · droit;Adducteur de l’hallux · chef oblique · gauche
+2678,Membre inférieur,part,caput transversum adductoris hallucis,transverse head of adductor hallucis,True,body:FJ1445;body:FJ1445M,Adducteur de l’hallux · chef transverse · droit;Adducteur de l’hallux · chef transverse · gauche
+2679,Membre inférieur,named,abductor digiti minimi pedis,abductor digiti minimi of foot,True,body:FJ1390;body:FJ1390M,Abducteur du petit orteil · calcanéen inférieur · droit;Abducteur du petit orteil · calcanéen inférieur · gauche
+2680,Membre inférieur,context,abductor ossis quinti metatarsi,abductor of fifth metatarsal,True,,
+2681,Membre inférieur,named,musculus opponens digiti minimi pedis,opponens digiti minimi muscle of foot,True,body:FJ1399;body:FJ1399M,Opposant du petit orteil · variante · droit · FJ1399;Opposant du petit orteil · variante · gauche · FJ1399M
+2682,Membre inférieur,named,flexor digiti minimi pedis,flexor digiti minimi of foot,True,body:FJ1391;body:FJ1391M,Court fléchisseur du petit orteil · droit;Court fléchisseur du petit orteil · gauche
+2683,Membre inférieur,named,flexor brevis digitorum,flexor digitorum brevis,True,body:FJ1413;body:FJ1413M,Court fléchisseur des orteils · droit;Court fléchisseur des orteils · gauche
+2684,Membre inférieur,named,musculus quadratus plantae,quadratus plantae muscle,True,body:FJ1412;body:FJ1412M,Carré plantaire · droit;Carré plantaire · gauche
+2685,Membre inférieur,group,musculi lumbricales pedis,lumbrical muscles of foot,True,body:FJ1389;body:FJ1389M;body:FJ1387;body:FJ1387M;body:FJ1383;body:FJ1383M;body:FJ1385;body:FJ1385M,Quatrième lombrical du pied · droit;Quatrième lombrical du pied · gauche;Troisième lombrical du pied · droit;Troisième lombrical du pied · gauche;Premier lombrical du pied · droit;Premier lombrical du pied · gauche;Deuxième lombrical du pied · droit;Deuxième lombrical du pied · gauche
+2686,Membre inférieur,group,musculi interossei dorsales pedis,dorsal interossei muscles of foot,True,,
+2687,Membre inférieur,group,musculi interossei plantares,plantar interossei muscles,True,,
+2688,Membre inférieur,context,fasciae membri inferioris,fasciae of lower limb,True,,
+2689,Membre inférieur,context,fascia lata,fascia lata,True,,
+2690,Membre inférieur,context,tractus iliotibialis,iliotibial tract,True,,
+2691,Membre inférieur,context,septum intermusculare laterale femoris,lateral femoral intermuscular septum,True,,
+2692,Membre inférieur,context,septum intermusculare mediale femoris,medial femoral intermuscular septum,True,,
+2693,Membre inférieur,context,membrana vastoadductoria,vastoadductor membrane,True,,
+2694,Membre inférieur,context,lacuna musculorum,muscular space,True,,
+2695,Membre inférieur,context,arcus iliopectineus,iliopectineal arch,True,,
+2696,Membre inférieur,context,lacuna vasorum,vascular space,True,,
+2697,Membre inférieur,context,vagina femoralis,femoral sheath,True,,
+2698,Membre inférieur,context,canalis femoralis,femoral canal,True,,
+2699,Membre inférieur,context,anulus femoralis,femoral ring,True,,
+2700,Membre inférieur,context,septum femorale,femoral septum,True,,
+2701,Membre inférieur,context,trigonum femorale,femoral triangle,True,,
+2702,Membre inférieur,context,hiatus saphenus,saphenous hiatus,True,,
+2703,Membre inférieur,context,margo falciformis hiatus sapheni,falciform margin of saphenous hiatus,True,,
+2704,Membre inférieur,context,cornu superius marginis falciformis,superior horn of falciform margin,True,,
+2705,Membre inférieur,context,cornu inferius marginis falciformis,inferior horn of falciform margin,True,,
+2706,Membre inférieur,context,fascia cribrosa,cribriform fascia,True,,
+2707,Membre inférieur,context,fascia poplitea,popliteal fascia,True,,
+2708,Membre inférieur,context,fascia cruris,crural fascia,True,,
+2709,Membre inférieur,context,septum intermusculare anterius cruris,anterior intermuscular septum of leg,True,,
+2710,Membre inférieur,context,septum intermusculare posterius cruris,posterior intermuscular septum of leg,True,,
+2711,Membre inférieur,context,septum intermusculare transversum cruris,transverse intermuscular septum of leg,True,,
+2712,Membre inférieur,context,retinaculum extensorium superius tali,superior extensor retinaculum of ankle,True,,
+2713,Membre inférieur,context,retinaculum extensorium inferius tali,inferior extensor retinaculum of ankle,True,,
+2714,Membre inférieur,context,retinaculum flexorium tali,flexor retinaculum of ankle,True,,
+2715,Membre inférieur,context,retinaculum fibulare superius,superior fibular retinaculum,True,,
+2716,Membre inférieur,context,retinaculum fibulare inferius,inferior fibular retinaculum,True,,
+2717,Membre inférieur,context,fascia dorsalis pedis,dorsal fascia of foot,True,,
+2718,Membre inférieur,context,aponeurosis plantaris,plantar aponeurosis,True,,
+2719,Membre inférieur,context,ligamentum calcaneometatarseum,calcaneometatarsal ligament,True,,
+2720,Membre inférieur,context,fasciculi transversi aponeurosis plantaris,transverse fascicles of plantar aponeurosis,True,,
+2721,Membre inférieur,context,ligamentum metatarseum transversum superficiale,superficial transverse metatarsal ligament,True,,
+2722,Membre inférieur,context,bursae membri inferioris,bursae of lower limb,True,,
+2723,Membre inférieur,context,bursa subcutanea trochanterica,subcutaneous trochanteric bursa,True,,
+2724,Membre inférieur,context,bursa trochanterica musculi glutei maximi,trochanteric bursa of gluteus maximus muscle,True,,
+2725,Membre inférieur,context,bursae trochantericae musculi glutei medii,trochanteric bursae of gluteus medius muscle,True,,
+2726,Membre inférieur,context,bursa trochanterica musculi glutei minimi,trochanteric bursa of gluteus minimus muscle,True,,
+2727,Membre inférieur,context,bursa musculi piriformis,bursa of piriformis muscle,True,,
+2728,Membre inférieur,context,bursa ischiadica obturatoris interni,sciatic bursa of obturator internus,True,,
+2729,Membre inférieur,context,bursa subtendinea obturatoris interni,subtendinous bursa of obturator internus,True,,
+2730,Membre inférieur,context,bursae intermusculares gluteae,intermuscular gluteal bursae,True,,
+2731,Membre inférieur,context,bursa ischiadica musculi glutei maximi,sciatic bursa of gluteus maximus muscle,True,,
+2732,Membre inférieur,context,bursa iliopectinea,iliopectineal bursa,True,,
+2733,Membre inférieur,context,bursa subtendinea iliaca,subtendinous bursa of iliacus muscle,True,,
+2734,Membre inférieur,context,bursa superior musculi bicipitis femoris,superior bursa of biceps femoris muscle,True,,
+2735,Membre inférieur,context,bursa subcutanea prepatellaris,subcutaneous prepatellar bursa,True,,
+2736,Membre inférieur,context,bursa subfascialis prepatellaris,subfascial prepatellar bursa,True,,
+2737,Membre inférieur,context,bursa subtendinea prepatellaris,subtendinous prepatellar bursa,True,,
+2738,Membre inférieur,context,bursa suprapatellaris,suprapatellar bursa,True,,
+2739,Membre inférieur,context,bursa subcutanea infrapatellaris,subcutaneous infrapatellar bursa,True,,
+2740,Membre inférieur,context,bursa infrapatellaris profunda,deep infrapatellar bursa,True,,
+2741,Membre inférieur,context,bursa subcutanea tuberositatis tibiae,subcutaneous bursa of tuberosity of tibia,True,,
+2742,Membre inférieur,context,bursa subtendinea musculi sartorii,subtendinous bursa of sartorius muscle,True,,
+2743,Membre inférieur,context,bursa anserina,anserine bursa,True,,
+2744,Membre inférieur,context,bursa subtendinea inferior musculi bicipitis femoris,inferior subtendinous bursa of biceps femoris muscle,True,,
+2745,Membre inférieur,context,recessus subpopliteus,subpopliteal recess,True,,
+2746,Membre inférieur,context,bursa subtendinea lateralis musculi gastrocnemii,lateral subtendinous bursa of gastrocnemius muscle,True,,
+2747,Membre inférieur,context,bursa subtendinea medialis musculi gastrocnemii,medial subtendinous bursa of gastrocnemius muscle,True,,
+2748,Membre inférieur,context,bursa musculi semimembranosi,semimembranosus bursa,True,,
+2749,Membre inférieur,context,bursa subcutanea malleoli lateralis,subcutaneous bursa of lateral malleolus,True,,
+2750,Membre inférieur,context,bursa subcutanea malleoli medialis,subcutaneous bursa of medial malleolus,True,,
+2751,Membre inférieur,context,bursa subtendinea musculi tibialis anterioris,subtendinous bursa of tibialis anterior,True,,
+2752,Membre inférieur,context,bursa subcutanea calcanea,subcutaneous calcaneal bursa,True,,
+2753,Membre inférieur,context,bursa subtendinea calcanea,subtendinous calcaneal bursa,True,,
+2754,Membre inférieur,context,vaginae tendinum membri inferioris,tendon sheaths of lower limb,True,,
+2755,Membre inférieur,context,vaginae tarseae anteriores tendinum,anterior tarsal tendon sheaths,True,,
+2756,Membre inférieur,context,vagina tendinis musculi tibialis anterioris,tendon sheath of tibialis anterior muscle,True,,
+2757,Membre inférieur,context,vagina tendinis extensoris longi hallucis,tendon sheath of extensor hallucis longus,True,,
+2758,Membre inférieur,context,vagina tendinum extensoris longi digitorum,tendon sheath of extensor digitorum longus,True,,
+2759,Membre inférieur,context,vaginae tarseae tibiales tendinum,tibial tarsal tendon sheaths,True,,
+2760,Membre inférieur,context,vagina tendinum flexoris longi digitorum,tendon sheath of flexor digitorum longus,True,,
+2761,Membre inférieur,context,vagina tendinis musculi tibialis posterioris,tendon sheath of tibialis posterior muscle,True,,
+2762,Membre inférieur,context,vagina tendinis flexoris longi hallucis,tendon sheath of flexor hallucis longus,True,,
+2763,Membre inférieur,context,vaginae tarseae fibulares tendinum,fibular tarsal tendon sheaths,True,,
+2764,Membre inférieur,context,vagina communis tendinum musculorum fibularium,common tendon sheath of fibularis muscles,True,,
+2765,Membre inférieur,context,vagina plantaris tendinis musculi fibularis longi,plantar tendon sheath of fibularis longus muscle,True,,
+2766,Membre inférieur,context,vaginae tendinum digitorum pedis,tendon sheaths of toes,True,,
+2767,Membre inférieur,context,vaginae fibrosae digitorum pedis,fibrous sheaths of toes,True,,
+2768,Membre inférieur,context,pars anularis vaginae fibrosae digiti pedis,annular part of fibrous sheath of digit of foot,True,,
+2769,Membre inférieur,context,pars cruciformis vaginae fibrosae digiti pedis,cruciform part of fibrous sheath of digit of foot,True,,
+2770,Membre inférieur,context,vaginae synoviales digitorum pedis,synovial sheaths of toes,True,,
+2771,Membre inférieur,context,vincula tendinum pedis,vincula tendinum of foot,True,,
+2844,Organes et muscles viscéraux,group,musculi linguae,muscles of tongue,False,body:FJ2738;body:FJ2739;body:FJ2750;body:FJ2751,Génioglosse · gauche;Hyoglosse · gauche;Génioglosse · droit;Hyoglosse · droit
+2854,Organes et muscles viscéraux,group,musculi palati mollis,muscles of soft palate,False,,
+2856,Organes et muscles viscéraux,group,musculi pharyngis,pharyngeal muscles,False,,
+2889,Organes et muscles viscéraux,tissue,tunica muscularis oesophagi,muscular layer of esophagus,False,,
+2909,Organes et muscles viscéraux,tissue,tunica muscularis gastris,muscular layer of stomach,False,,
+2910,Organes et muscles viscéraux,tissue,stratum musculare longitudinale gastris,longitudinal muscular layer of stomach,False,,
+2911,Organes et muscles viscéraux,tissue,stratum musculare circulare gastris,circular muscular layer of stomach,False,,
+2931,Organes et muscles viscéraux,named,sphincter pylori,pyloric sphincter,False,,
+2936,Organes et muscles viscéraux,tissue,tunica muscularis intestini tenuis,muscular layer of small intestine,False,,
+2937,Organes et muscles viscéraux,tissue,stratum musculare longitudinale intestini tenuis,longitudinal muscular layer of small intestine,False,,
+2938,Organes et muscles viscéraux,tissue,stratum musculare circulare intestini tenuis,circular muscular layer of small intestine,False,,
+2966,Organes et muscles viscéraux,tissue,tunica muscularis intestini crassi,muscular layer of large intestine,False,,
+2991,Organes et muscles viscéraux,tissue,tunica muscularis coli,muscular layer of colon,False,,
+2992,Organes et muscles viscéraux,tissue,stratum musculare longitudinale coli,longitudinal muscular layer of colon,False,,
+2997,Organes et muscles viscéraux,tissue,stratum musculare circulare coli,circular muscular layer of colon,False,,
+3006,Organes et muscles viscéraux,tissue,tunica muscularis recti,muscular layer of rectum,False,,
+3007,Organes et muscles viscéraux,tissue,stratum musculare longitudinale recti,longitudinal muscular layer of rectum,False,,
+3008,Organes et muscles viscéraux,tissue,stratum musculare circulare recti,circular muscular layer of rectum,False,,
+3018,Organes et muscles viscéraux,named,sphincter internus ani,internal anal sphincter,False,,
+3020,Organes et muscles viscéraux,named,sphincter externus ani,external anal sphincter,False,body:FJ1450;body:FJ1450M,Sphincter anal externe · pièce source non stratifiée · côté non annoté · FJ1450;Sphincter anal externe · pièce source non stratifiée · côté non annoté · FJ1450M
+3088,Organes et muscles viscéraux,tissue,tunica muscularis vesicae biliaris,muscular layer of gallbladder,False,,
+3107,Organes et muscles viscéraux,named,sphincter ductus biliaris,sphincter of bile duct,False,,
+3108,Organes et muscles viscéraux,named,sphincter superior ductus biliaris,superior sphincter of bile duct,False,,
+3109,Organes et muscles viscéraux,named,sphincter inferior ductus biliaris,inferior sphincter of bile duct,False,,
+3112,Organes et muscles viscéraux,named,sphincter ampullae,sphincter of ampulla,False,,
+3130,Organes et muscles viscéraux,named,sphincter ductus pancreatici,sphincter of pancreatic duct,False,,
+3189,Organes et muscles viscéraux,group,musculi laryngis,laryngeal muscles,False,,
+3219,Organes et muscles viscéraux,named,musculus trachealis,trachealis muscle,False,,
+3355,Organes et muscles viscéraux,named,musculus bronchooesophageus,bronchoesophageal muscle,False,,
+3356,Organes et muscles viscéraux,named,musculus pleurooesophageus,pleuroesophageal muscle,False,,
+3392,Organes et muscles viscéraux,tissue,tunica muscularis pelvis renalis,muscular layer of renal pelvis,False,,
+3399,Organes et muscles viscéraux,tissue,tunica muscularis ureteris,muscular layer of ureter,False,,
+3409,Organes et muscles viscéraux,tissue,tunica muscularis vesicae,muscular layer of bladder,False,,
+3410,Organes et muscles viscéraux,group,musculi trigoni vesicae,trigonal muscles,False,,
+3411,Organes et muscles viscéraux,named,musculus superficialis trigoni vesicae,superficial trigone muscle,False,,
+3412,Organes et muscles viscéraux,named,musculus profundus trigoni vesicae,deep trigone muscle,False,,
+3413,Organes et muscles viscéraux,named,detrusor vesicae,detrusor vesicae,False,,
+3428,Organes et muscles viscéraux,named,sphincter internus urethrae femininae,female internal urethral sphincter,False,,
+3431,Organes et muscles viscéraux,named,sphincter externus urethrae femininae,female external urethral sphincter,False,,
+3433,Organes et muscles viscéraux,tissue,tunica muscularis urethrae femininae,muscular layer of female urethra,False,,
+3434,Organes et muscles viscéraux,tissue,stratum musculare circulare urethrae femininae,circular muscular layer of female urethra,False,,
+3435,Organes et muscles viscéraux,tissue,stratum musculare longitudinale urethrae femininae,longitudinal muscular layer of female urethra,False,,
+3444,Organes et muscles viscéraux,named,sphincter internus urethrae masculinae,male internal urethral sphincter,False,,
+3454,Organes et muscles viscéraux,named,sphincter externus urethrae masculinae,male external urethral sphincter,False,,
+3459,Organes et muscles viscéraux,tissue,tunica muscularis urethrae masculinae,muscular layer of male urethra,False,,
+3460,Organes et muscles viscéraux,tissue,stratum musculare circulare urethrae masculinae,circular muscular layer of male urethra,False,,
+3461,Organes et muscles viscéraux,tissue,stratum musculare longitudinale urethrae masculinae,longitudinal muscular layer of male urethra,False,,
+3497,Organes et muscles viscéraux,tissue,tunica muscularis tubae uterinae,muscular layer of uterine tube,False,,
+3532,Organes et muscles viscéraux,tissue,tunica muscularis vaginae,muscular layer of vagina,False,,
+3629,Organes et muscles viscéraux,tissue,tunica muscularis ductus deferentis,muscular layer of ductus deferens,False,,
+3633,Organes et muscles viscéraux,tissue,tunica muscularis glandulae seminalis,muscular layer of seminal gland,False,,
+3697,Organes et muscles viscéraux,named,musculus dartos,dartos muscle of scrotum,False,,
+3781,Organes et muscles viscéraux,named,musculus suspensorius duodeni,suspensory muscle of duodenum,False,,
+3841,Organes et muscles viscéraux,group,musculi leves spatii infraperitonealis,smooth muscles of infraperitoneal space,False,,
+3842,Organes et muscles viscéraux,named,musculus pubovesicalis,pubovesicalis muscle,False,,
+3843,Organes et muscles viscéraux,named,musculus rectovesicalis,rectovesicalis muscle,False,,
+3844,Organes et muscles viscéraux,named,musculus uterosacralis,uterosacralis muscle,False,,
+3845,Organes et muscles viscéraux,named,musculus vesicoprostaticus,vesicoprostaticus muscle,False,,
+3846,Organes et muscles viscéraux,named,musculus vesicovaginalis,vesicovaginalis muscle,False,,
+3847,Organes et muscles viscéraux,named,musculus rectococcygeus,rectococcygeus muscle,False,,
+3848,Organes et muscles viscéraux,group,musculi rectourethrales,rectourethral muscles,False,,
+3849,Organes et muscles viscéraux,named,musculus rectoperinealis,rectoperinealis muscle,False,,
+3850,Organes et muscles viscéraux,named,musculus anoperinealis,anoperinealis muscle,False,,
+3950,Organes et muscles viscéraux,tissue,myocardium,myocardium,False,,
+4024,Organes et muscles viscéraux,group,musculi pectinati atrii dextri,pectinate muscles of right atrium,False,,
+4043,Organes et muscles viscéraux,group,musculi papillares ventriculi dextri,papillary muscles of right ventricle,False,,
+4044,Organes et muscles viscéraux,named,musculus papillaris anterior ventriculi dextri,anterior papillary muscle of right ventricle,False,,
+4045,Organes et muscles viscéraux,named,musculus papillaris inferior ventriculi dextri,inferior papillary muscle of right ventricle,False,,
+4046,Organes et muscles viscéraux,named,musculus papillaris septalis ventriculi dextri,septal papillary muscle of right ventricle,False,,
+4056,Organes et muscles viscéraux,group,musculi pectinati atrii sinistri,pectinate muscles of left atrium,False,,
+4066,Organes et muscles viscéraux,group,musculi papillares ventriculi sinistri,papillary muscles of left ventricle,False,,
+4067,Organes et muscles viscéraux,named,musculus papillaris superior ventriculi sinistri,superior papillary muscle of left ventricle,False,,
+4068,Organes et muscles viscéraux,named,musculus papillaris inferior ventriculi sinistri,inferior papillary muscle of left ventricle,False,,
+6762,Organes et muscles viscéraux,named,sphincter pupillae,sphincter pupillae,False,,
+6763,Organes et muscles viscéraux,named,dilatator pupillae,dilator pupillae,False,,
+6770,Organes et muscles viscéraux,named,musculus ciliaris,ciliary muscle,False,,
+6820,Organes et muscles viscéraux,named,musculus orbitalis,orbitalis muscle,False,,
+6821,Organes et muscles viscéraux,group,musculi externi bulbi oculi,extraocular muscles,False,,
+6828,Organes et muscles viscéraux,named,musculus tarsalis superior,superior tarsal muscle,False,,
+6830,Organes et muscles viscéraux,named,musculus tarsalis inferior,inferior tarsal muscle,False,,
+6866,Organes et muscles viscéraux,group,musculi auriculares interni,intrinsic auricular muscles,False,,
+6925,Organes et muscles viscéraux,group,musculi ossiculorum auditus,muscles of auditory ossicles,False,,
+7051,Organes et muscles viscéraux,named,arrector pili,arrector muscle of hair,False,,

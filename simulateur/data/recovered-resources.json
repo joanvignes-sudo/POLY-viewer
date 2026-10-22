@@ -9,8 +9,8 @@
       "scope": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain. Mode atlas optionnel : composition publiée 2015→2019, comparaison dans les coordonnées physiques MNI.",
       "limit": "Examiner les aperçus calculés, contrôler les raccords entre facettes et étendre la régularité au volume ; validation anatomique indépendante toujours ouverte.",
       "license": "CC BY-NC-SA 4.0",
-      "href": "../../bibliotheque/microstructures.html",
-      "provenance": "../../bibliotheque/assets/bigbrain/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/microstructures.html",
+      "provenance": "../heritage/bibliotheque/assets/bigbrain/PROVENANCE.json"
     },
     {
       "id": "allen",
@@ -20,8 +20,8 @@
       "scope": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
       "limit": "Examiner les conditions et les limites des comparaisons avec des spécialistes ; construire un protocole de comparaison appariée. Indicateurs publiés documentés, contrôles expérimentaux Allen non réexécutés.",
       "license": "Conditions Allen Institute, recherche et usages non commerciaux, attribution obligatoire.",
-      "href": "../../bibliotheque/neurones.html?sample=allen-637034000",
-      "provenance": "../../bibliotheque/assets/allen-comparison/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/neurones.html?sample=allen-637034000",
+      "provenance": "../heritage/bibliotheque/assets/allen-comparison/PROVENANCE.json"
     },
     {
       "id": "h01-em",
@@ -31,8 +31,8 @@
       "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
       "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
       "license": "CC BY 4.0",
-      "href": "../../bibliotheque/neurones.html?sample=h01-em-1072605926",
-      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/neurones.html?sample=h01-em-1072605926",
+      "provenance": "../heritage/bibliotheque/assets/neurons/PROVENANCE.json"
     },
     {
       "id": "hipct",
@@ -42,8 +42,8 @@
       "scope": "Même cœur S-20-28 ; transformation publiée overview 19,85 µm vers région 6,51 µm, convention d’unités vérifiée. Erreur anatomique indépendante non fournie.",
       "limit": "Explorer davantage de régions, améliorer les mesures et tester avec des lecteurs.",
       "license": "CC BY 4.0 selon le portail Human Organ Atlas.",
-      "href": "../../bibliotheque/organes.html?sample=heart",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/organes.html?sample=heart",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "sparc",
@@ -53,8 +53,8 @@
       "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
       "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
-      "href": "../../bibliotheque/organes.html?sample=vagus",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/organes.html?sample=vagus",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "hh",
@@ -71,7 +71,7 @@
       "status": "Revue historique R6",
       "scope": "Registre documentaire conservé, couverture graphique distincte de validation scientifique",
       "limit": "Trois liaisons ouvertes et 385 attributions préexistantes encore à approfondir selon le bilan de reprise.",
-      "href": "../../revue544.html"
+      "href": "../heritage/revue544.html"
     },
     {
       "id": "reference",
@@ -79,7 +79,7 @@
       "status": "Scènes de référence conservées",
       "scope": "Structures de référence distinctes du corps HRA actuel",
       "limit": "Aucune continuité axonale entre prélèvements établie.",
-      "href": "../../reference.html"
+      "href": "../heritage/reference.html"
     },
     {
       "id": "pulse",
@@ -98,8 +98,8 @@
       "scope": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain. Mode atlas optionnel : composition publiée 2015→2019, comparaison dans les coordonnées physiques MNI.",
       "limit": "Examiner les aperçus calculés, contrôler les raccords entre facettes et étendre la régularité au volume ; validation anatomique indépendante toujours ouverte.",
       "license": "CC BY-NC-SA 4.0",
-      "href": "../../bibliotheque/histologie.html",
-      "provenance": "../../bibliotheque/assets/bigbrain/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/histologie.html",
+      "provenance": "../heritage/bibliotheque/assets/bigbrain/PROVENANCE.json"
     },
     {
       "id": "bigbrain-cortex",
@@ -109,8 +109,8 @@
       "scope": "BigBrain natif, mm ; section histologique alignée. Même spécimen au sein de BigBrain. Mode atlas optionnel : composition publiée 2015→2019, comparaison dans les coordonnées physiques MNI.",
       "limit": "Examiner les aperçus calculés, contrôler les raccords entre facettes et étendre la régularité au volume ; validation anatomique indépendante toujours ouverte.",
       "license": "CC BY-NC-SA 4.0",
-      "href": "../../bibliotheque/cortex.html",
-      "provenance": "../../bibliotheque/assets/bigbrain/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/cortex.html",
+      "provenance": "../heritage/bibliotheque/assets/bigbrain/PROVENANCE.json"
     },
     {
       "id": "h01-images",
@@ -120,8 +120,8 @@
       "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
       "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
       "license": "CC BY 4.0",
-      "href": "../../bibliotheque/microscopie.html",
-      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/microscopie.html",
+      "provenance": "../heritage/bibliotheque/assets/neurons/PROVENANCE.json"
     },
     {
       "id": "h01-paths",
@@ -131,8 +131,8 @@
       "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
       "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
       "license": "CC BY 4.0",
-      "href": "../../bibliotheque/trajets.html",
-      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/trajets.html",
+      "provenance": "../heritage/bibliotheque/assets/neurons/PROVENANCE.json"
     },
     {
       "id": "h01-compartments",
@@ -142,8 +142,8 @@
       "scope": "Transformation native identité en nm ; conversion uniforme × 0,001 vers µm pour le squelette. L’export SWC nécessite des facteurs x/y/z = 32/32/33 vers nm.",
       "limit": "Examiner les classes source à confirmer, dont 40 étiquettes astrocyte. Les six fenêtres ciblées axone/AIS et autres classes sont intégrées ; rattachements anatomiques aux branches et délais restent non établis.",
       "license": "CC BY 4.0",
-      "href": "../../bibliotheque/compartiments.html",
-      "provenance": "../../bibliotheque/assets/neurons/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/compartiments.html",
+      "provenance": "../heritage/bibliotheque/assets/neurons/PROVENANCE.json"
     },
     {
       "id": "allen-qc",
@@ -153,8 +153,8 @@
       "scope": "Coordonnées SWC locales, µm ; série électrique NWB, V/A/s convertis en mV/pA/s. Aucun recalage atlas.",
       "limit": "Examiner les conditions et les limites des comparaisons avec des spécialistes ; construire un protocole de comparaison appariée. Indicateurs publiés documentés, contrôles expérimentaux Allen non réexécutés.",
       "license": "Conditions Allen Institute, recherche et usages non commerciaux, attribution obligatoire.",
-      "href": "../../bibliotheque/neurones.html?sample=allen-637038252&sweep=22&quality=1",
-      "provenance": "../../bibliotheque/assets/allen-comparison/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/neurones.html?sample=allen-637038252&sweep=22&quality=1",
+      "provenance": "../heritage/bibliotheque/assets/allen-comparison/PROVENANCE.json"
     },
     {
       "id": "heart-sinus",
@@ -164,8 +164,8 @@
       "scope": "Même cœur S-20-28 ; transformation publiée overview 19,85 µm vers région 6,51 µm, convention d’unités vérifiée. Erreur anatomique indépendante non fournie.",
       "limit": "Explorer davantage de régions, améliorer les mesures et tester avec des lecteurs.",
       "license": "CC BY 4.0 selon le portail Human Organ Atlas.",
-      "href": "../../bibliotheque/organes.html?sample=heart&level=sinus-detail",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/organes.html?sample=heart&level=sinus-detail",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "sparc-ct",
@@ -175,8 +175,8 @@
       "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
       "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
-      "href": "../../bibliotheque/organes.html?sample=nerve-ct&level=vagus-ct-detail",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/organes.html?sample=nerve-ct&level=vagus-ct-detail",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "sparc-c1",
@@ -186,8 +186,8 @@
       "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
       "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
-      "href": "../../bibliotheque/c1.html",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/c1.html",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "sparc-ihc",
@@ -197,8 +197,8 @@
       "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
       "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
-      "href": "../../bibliotheque/immunohistochimie.html",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/immunohistochimie.html",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "sparc-channels",
@@ -208,8 +208,8 @@
       "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
       "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
-      "href": "../../bibliotheque/canaux.html?field=field9&z=9",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/canaux.html?field=field9&z=9",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "sparc-calibration",
@@ -219,8 +219,8 @@
       "scope": "Unités µm retracées XML→EXF→assemblage scale=1 sur C10 ; axes images documentés. En-tête NIfTI sans unité, non pris comme calibration. C1 : grille primaire de mêmes dimensions que le dérivé calibré, XML et repères LPS contrôlés ; pas de transform IHC vers CT.",
       "limit": "Confirmer la calibration physique IHC et obtenir les repères de coupe nécessaires à un transform C1-A-L2 vers CT C1. Le champ 00009 est comparé aux 17 plans dans son montage ; mesures et exports en pixels disponibles. Essais avec lecteurs à organiser.",
       "license": "CC BY 4.0 International, confirmé dans les notices DataCite des DOI 10.26275/imas-52lf (674 v1) et 10.26275/tjzi-muqm (426 v7).",
-      "href": "../../bibliotheque/calibration.html",
-      "provenance": "../../bibliotheque/assets/organs/PROVENANCE.json"
+      "href": "../heritage/bibliotheque/calibration.html",
+      "provenance": "../heritage/bibliotheque/assets/organs/PROVENANCE.json"
     },
     {
       "id": "timing",
