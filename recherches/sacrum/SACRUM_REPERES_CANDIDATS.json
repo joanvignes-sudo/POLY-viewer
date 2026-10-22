@@ -1,0 +1,1030 @@
+{
+  "schema": "poly.sacrum-landmark-proposal/1",
+  "date": "2026-10-22",
+  "sources": {
+    "BP43_FJ3393": {
+      "mesh": "FJ3393_BP22840_FMA16202_Sacrum.obj",
+      "sha256": "075790fa7c698f2128c83c9321167a19f67d09830cbc93b465619b4ac86bd7e6",
+      "vertices": 5293,
+      "reference": "BodyParts3D v4.3, DBCLS"
+    },
+    "Z_Anatomy_sacrum": {
+      "mesh": "BONE:sacrum",
+      "sha256": "064b5fba441f260d4a43c0691b2ea1d019bc0810e1dfb9663741882cf86aef1d",
+      "vertices": 5832,
+      "reference": "Z-Anatomy full skeleton in POLY"
+    }
+  },
+  "numbers": {
+    "surrogate_candidates": 11,
+    "fit_points": 7,
+    "reserved_points": 4,
+    "expert_homologies_validated": 0,
+    "independent_subjects": 0
+  },
+  "type": "operational geometric landmark CANDIDATES NOT verified anatomical homologues",
+  "source_to_Z_existing_surface_fit": [
+    [
+      0.0021353176045923426,
+      -2.1288333789775242e-05,
+      -7.3058512467982135e-06,
+      0.009665304495129007
+    ],
+    [
+      5.775754619442107e-06,
+      -0.0001516630983665958,
+      0.0021300358650389877,
+      0.06612764506261515
+    ],
+    [
+      -2.175337391213648e-05,
+      -0.002129937311879921,
+      -0.00015159709523978116,
+      -0.021502430196334944
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "candidate_points_to_Z_fit": [
+    [
+      0.001834329226992424,
+      -2.512995070991335e-05,
+      1.85977609388934e-05,
+      -0.014842818107242195
+    ],
+    [
+      -1.6595379748630642e-05,
+      0.00014221713098262198,
+      0.0018289997225695023,
+      0.37046980915626193
+    ],
+    [
+      -2.649499019855725e-05,
+      -0.0018289023695554762,
+      0.00014196915954526698,
+      -0.2449882181213389
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "candidate_scale_normalized": 0.0018345956241453435,
+  "rot_det": 1.0000000000000016,
+  "points": [
+    {
+      "id": "base_ant",
+      "intended_anatomical_region_fr": "Base S1 / promontoire présumé",
+      "operational_feature_en": "superior midline ventral boundary proxy",
+      "group": "train",
+      "source_BP43_raw": [
+        2.6488354999999997,
+        -64.662975,
+        905.1027500000001
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.010085430511020068,
+        2.003851250270009,
+        -0.02104291594927749
+      ],
+      "target_Z_display": [
+        0.002990630378304155,
+        2.0112759976565324,
+        -0.031249641805783296
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 91,
+        "selected_vertex_ids": [
+          2698,
+          2125,
+          2581,
+          3049
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.4,
+            0.6
+          ],
+          "y": [
+            0.85,
+            1
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 70,
+        "selected_vertex_ids": [
+          821,
+          3569,
+          2746,
+          2692
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.4,
+            0.6
+          ],
+          "y": [
+            0.85,
+            1
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": true
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.014478961129401963,
+        "landmark_candidate_fit": 0.03383479947048434
+      }
+    },
+    {
+      "id": "ala_plus",
+      "intended_anatomical_region_fr": "Aile sacrée côté +X, bord supérieur",
+      "operational_feature_en": "upper right/left wing candidate",
+      "group": "train",
+      "source_BP43_raw": [
+        58.105249999999984,
+        -60.54602499999999,
+        892.0252499999999
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.1285103879443243,
+        1.9756916194943672,
+        -0.029035614472868218
+      ],
+      "target_Z_display": [
+        0.12761733243992734,
+        1.9832508860201352,
+        -0.029805719392753866
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 829,
+        "selected_vertex_ids": [
+          4920,
+          4919,
+          4932,
+          4929
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.65,
+            1
+          ],
+          "y": [
+            0.7,
+            1
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 539,
+        "selected_vertex_ids": [
+          5247,
+          5248,
+          5244,
+          5821
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.65,
+            1
+          ],
+          "y": [
+            0.7,
+            1
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.007650694094601198,
+        "landmark_candidate_fit": 0.028738697293222936
+      }
+    },
+    {
+      "id": "ala_minus",
+      "intended_anatomical_region_fr": "Aile sacrée côté -X, bord supérieur",
+      "operational_feature_en": "contralateral upper wing candidate",
+      "group": "train",
+      "source_BP43_raw": [
+        -59.487424999999995,
+        -60.756149999999984,
+        889.4552499999998
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        -0.12256407190543969,
+        1.9695701090939173,
+        -0.025640419431839874
+      ],
+      "target_Z_display": [
+        -0.1206189054251515,
+        1.9861282454390108,
+        -0.029649498695515003
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 809,
+        "selected_vertex_ids": [
+          10,
+          13,
+          11,
+          21
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0,
+            0.35
+          ],
+          "y": [
+            0.7,
+            1
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 531,
+        "selected_vertex_ids": [
+          2497,
+          5650,
+          2488,
+          2498
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0,
+            0.35
+          ],
+          "y": [
+            0.7,
+            1
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.017147252502986834,
+        "landmark_candidate_fit": 0.028061643465899663
+      }
+    },
+    {
+      "id": "apex",
+      "intended_anatomical_region_fr": "Apex / facette coccygienne présumée",
+      "operational_feature_en": "inferior median tip candidate",
+      "group": "train",
+      "source_BP43_raw": [
+        -0.9829452500000011,
+        -13.313249999999986,
+        782.92225
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.002129907611971748,
+        1.7357935685933965,
+        -0.11181339880198493
+      ],
+      "target_Z_display": [
+        0.001141608142866755,
+        1.816816664542374,
+        -0.15002836294420507
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 600,
+        "selected_vertex_ids": [
+          2494,
+          2493,
+          2497,
+          5107
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.37,
+            0.63
+          ],
+          "y": [
+            0,
+            0.22
+          ]
+        },
+        "extreme_axis": "y",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 650,
+        "selected_vertex_ids": [
+          446,
+          3199,
+          2721,
+          404
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.37,
+            0.63
+          ],
+          "y": [
+            0,
+            0.22
+          ]
+        },
+        "extreme_axis": "y",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.08958851654865735,
+        "landmark_candidate_fit": 0.043798428547851986
+      }
+    },
+    {
+      "id": "lateral_inferior_plus",
+      "intended_anatomical_region_fr": "Bord inférolatéral +X",
+      "operational_feature_en": "inferior left/right edge proxy",
+      "group": "train",
+      "source_BP43_raw": [
+        34.69344999999999,
+        -14.60649999999998,
+        847.6764999999998
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.07786478867726702,
+        1.8741246399137301,
+        -0.11965149554353724
+      ],
+      "target_Z_display": [
+        0.11156090263003932,
+        1.923920705947426,
+        -0.025364802924410748
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 529,
+        "selected_vertex_ids": [
+          4412,
+          4416,
+          4418,
+          4410
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.52,
+            1
+          ],
+          "y": [
+            0.12,
+            0.46
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 910,
+        "selected_vertex_ids": [
+          5143,
+          5144,
+          5142,
+          5109
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.52,
+            1
+          ],
+          "y": [
+            0.12,
+            0.46
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.11182601080698577,
+        "landmark_candidate_fit": 0.0872189841479435
+      }
+    },
+    {
+      "id": "lateral_inferior_minus",
+      "intended_anatomical_region_fr": "Bord inférolatéral -X",
+      "operational_feature_en": "inferior opposite edge proxy",
+      "group": "train",
+      "source_BP43_raw": [
+        -35.969825,
+        -14.786599999999982,
+        847.6749999999998
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        -0.07301990144069054,
+        1.8737406256469422,
+        -0.11773050179509369
+      ],
+      "target_Z_display": [
+        -0.10474569219024725,
+        1.9229837513430623,
+        -0.024147016999673334
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 552,
+        "selected_vertex_ids": [
+          523,
+          531,
+          535,
+          530
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0,
+            0.48
+          ],
+          "y": [
+            0.12,
+            0.46
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 922,
+        "selected_vertex_ids": [
+          2396,
+          2397,
+          2395,
+          2362
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0,
+            0.48
+          ],
+          "y": [
+            0.12,
+            0.46
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.1104050716836108,
+        "landmark_candidate_fit": 0.08291115476122858
+      }
+    },
+    {
+      "id": "dorsal_mid",
+      "intended_anatomical_region_fr": "Crête sacrée médiane présumée",
+      "operational_feature_en": "central posterior edge proxy",
+      "group": "train",
+      "source_BP43_raw": [
+        4.911454999999997,
+        7.185022500000023,
+        844.6919999999999
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.013828669562164568,
+        1.8642905645588483,
+        -0.16496577199513054
+      ],
+      "target_Z_display": [
+        0.0026728578502930355,
+        1.908811661636293,
+        -0.16652854822842475
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 637,
+        "selected_vertex_ids": [
+          3044,
+          3262,
+          3256,
+          1922
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.39,
+            0.61
+          ],
+          "y": [
+            0.33,
+            0.7
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 1021,
+        "selected_vertex_ids": [
+          3179,
+          425,
+          3185,
+          432
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.39,
+            0.61
+          ],
+          "y": [
+            0.33,
+            0.7
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": true,
+      "errors": {
+        "initial_shared_surface_fit": 0.04592409486843852,
+        "landmark_candidate_fit": 0.0300137238265964
+      }
+    },
+    {
+      "id": "base_dorsal",
+      "intended_anatomical_region_fr": "Ouverture supérieure du canal sacré, voisinage présumé",
+      "operational_feature_en": "superior midline posterior proxy",
+      "group": "test",
+      "source_BP43_raw": [
+        -0.603860000000001,
+        -19.946099999999987,
+        904.7644999999999
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.0021904159906403486,
+        1.9963300790558278,
+        -0.11616502166354924
+      ],
+      "target_Z_display": [
+        0.004075230296048184,
+        2.012575907994644,
+        -0.041851501286725205
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 173,
+        "selected_vertex_ids": [
+          2473,
+          2291,
+          2449,
+          2454
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.4,
+            0.6
+          ],
+          "y": [
+            0.83,
+            1
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 32,
+        "selected_vertex_ids": [
+          3415,
+          667,
+          3240,
+          2745
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.4,
+            0.6
+          ],
+          "y": [
+            0.83,
+            1
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": false,
+      "errors": {
+        "initial_shared_surface_fit": 0.07609191017231591,
+        "landmark_candidate_fit": 0.0395422825093546
+      }
+    },
+    {
+      "id": "lateral_mid_plus",
+      "intended_anatomical_region_fr": "Bord latéral mi-hauteur +X",
+      "operational_feature_en": "mid lateral wing proxy",
+      "group": "test",
+      "source_BP43_raw": [
+        57.94567499999998,
+        -61.83395,
+        887.3767499999998
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.1282310236643884,
+        1.9659845568056538,
+        -0.025584244568601117
+      ],
+      "target_Z_display": [
+        0.12837999968319266,
+        1.965886311503413,
+        -0.025151268925059134
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 977,
+        "selected_vertex_ids": [
+          4920,
+          4919,
+          4915,
+          4926
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.52,
+            1
+          ],
+          "y": [
+            0.43,
+            0.77
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 1227,
+        "selected_vertex_ids": [
+          5259,
+          5255,
+          5254,
+          5258
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.52,
+            1
+          ],
+          "y": [
+            0.43,
+            0.77
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": false,
+      "errors": {
+        "initial_shared_surface_fit": 0.0004683096213955366,
+        "landmark_candidate_fit": 0.03142694145569131
+      }
+    },
+    {
+      "id": "lateral_mid_minus",
+      "intended_anatomical_region_fr": "Bord latéral mi-hauteur -X",
+      "operational_feature_en": "mid other wing proxy",
+      "group": "test",
+      "source_BP43_raw": [
+        -59.484325,
+        -61.618499999999976,
+        888.3999999999999
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        -0.12253138492669366,
+        1.9674531933250505,
+        -0.02364376259164757
+      ],
+      "target_Z_display": [
+        -0.12195052766712548,
+        1.9670398784689245,
+        -0.025534629147443387
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 989,
+        "selected_vertex_ids": [
+          10,
+          13,
+          11,
+          6
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0,
+            0.48
+          ],
+          "y": [
+            0.43,
+            0.77
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 1221,
+        "selected_vertex_ids": [
+          2512,
+          2507,
+          2508,
+          2500
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0,
+            0.48
+          ],
+          "y": [
+            0.43,
+            0.77
+          ]
+        },
+        "extreme_axis": "x",
+        "extreme_sign": "min",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": false,
+      "errors": {
+        "initial_shared_surface_fit": 0.0020207920868101563,
+        "landmark_candidate_fit": 0.03344278424210568
+      }
+    },
+    {
+      "id": "ventral_mid",
+      "intended_anatomical_region_fr": "Face pelvienne médiane présumée",
+      "operational_feature_en": "middle anterior midline proxy",
+      "group": "test",
+      "source_BP43_raw": [
+        0.01787224999999726,
+        -54.91329999999999,
+        881.3942499999998
+      ],
+      "source_BP43_in_Z_initial_frame": [
+        0.004433144804802468,
+        1.9518574332470198,
+        -0.03815774045066166
+      ],
+      "target_Z_display": [
+        0.003398272375931778,
+        1.9801132198964972,
+        0.017180501387364783
+      ],
+      "BP_geometry_rule": {
+        "candidate_count": 637,
+        "selected_vertex_ids": [
+          2699,
+          3054,
+          2409,
+          1717
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.39,
+            0.61
+          ],
+          "y": [
+            0.33,
+            0.7
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "Z_geometry_rule": {
+        "candidate_count": 1021,
+        "selected_vertex_ids": [
+          424,
+          3178,
+          495,
+          3244
+        ],
+        "patch_size": 4,
+        "bbox_fraction_xy": {
+          "x": [
+            0.39,
+            0.61
+          ],
+          "y": [
+            0.33,
+            0.7
+          ]
+        },
+        "extreme_axis": "z",
+        "extreme_sign": "max",
+        "method": "small-patch-extremum-heuristic_NOT_anatomical_markup",
+        "relaxed_window": false
+      },
+      "medical_correspondence_confidence": "unverified_auto_heuristic",
+      "homologous_point_confirmed": false,
+      "expert_reviewed": false,
+      "used_in_estimation": false,
+      "errors": {
+        "initial_shared_surface_fit": 0.06214323333918787,
+        "landmark_candidate_fit": 0.037003631266707054
+      }
+    }
+  ],
+  "results": {
+    "initial_shared_surface_fit": {
+      "train": {
+        "n": 7,
+        "rms": 0.07110521684423404,
+        "max": 0.11182601080698577,
+        "median": 0.04592409486843852,
+        "per_landmark": {
+          "base_ant": 0.014478961129401963,
+          "ala_plus": 0.007650694094601198,
+          "ala_minus": 0.017147252502986834,
+          "apex": 0.08958851654865735,
+          "lateral_inferior_plus": 0.11182601080698577,
+          "lateral_inferior_minus": 0.1104050716836108,
+          "dorsal_mid": 0.04592409486843852
+        }
+      },
+      "test": {
+        "n": 4,
+        "rms": 0.049132634669026634,
+        "max": 0.07609191017231591,
+        "median": 0.032082012712999014,
+        "per_landmark": {
+          "base_dorsal": 0.07609191017231591,
+          "lateral_mid_plus": 0.0004683096213955366,
+          "lateral_mid_minus": 0.0020207920868101563,
+          "ventral_mid": 0.06214323333918787
+        }
+      }
+    },
+    "landmark_candidate_fit": {
+      "train": {
+        "n": 7,
+        "rms": 0.05353063068690775,
+        "max": 0.0872189841479435,
+        "median": 0.03383479947048434,
+        "per_landmark": {
+          "base_ant": 0.03383479947048434,
+          "ala_plus": 0.028738697293222936,
+          "ala_minus": 0.028061643465899663,
+          "apex": 0.043798428547851986,
+          "lateral_inferior_plus": 0.0872189841479435,
+          "lateral_inferior_minus": 0.08291115476122858,
+          "dorsal_mid": 0.0300137238265964
+        }
+      },
+      "test": {
+        "n": 4,
+        "rms": 0.035492722141643035,
+        "max": 0.0395422825093546,
+        "median": 0.03522320775440636,
+        "per_landmark": {
+          "base_dorsal": 0.0395422825093546,
+          "lateral_mid_plus": 0.03142694145569131,
+          "lateral_mid_minus": 0.03344278424210568,
+          "ventral_mid": 0.037003631266707054
+        }
+      }
+    }
+  },
+  "heldout_lumbar_surface_effect": {
+    "L2": {
+      "initial_shared_surface_fit": {
+        "one_way_vertex_rms": 0.004916930333491808,
+        "one_way_median": 0.0039880763707743055
+      },
+      "landmark_candidate_fit": {
+        "one_way_vertex_rms": 0.02444344384402162,
+        "one_way_median": 0.017466707615078188
+      }
+    },
+    "L4": {
+      "initial_shared_surface_fit": {
+        "one_way_vertex_rms": 0.005445355855281738,
+        "one_way_median": 0.004587105369833799
+      },
+      "landmark_candidate_fit": {
+        "one_way_vertex_rms": 0.013381271527818305,
+        "one_way_median": 0.010519160889616701
+      }
+    },
+    "L5": {
+      "initial_shared_surface_fit": {
+        "one_way_vertex_rms": 0.0037088150169088977,
+        "one_way_median": 0.0031119258575996412
+      },
+      "landmark_candidate_fit": {
+        "one_way_vertex_rms": 0.012423446275279597,
+        "one_way_median": 0.0096106671560078
+      }
+    }
+  },
+  "external_anatomy_url": "https://anatomie-fmpm.uca.ma/wp-content/uploads/2020/12/Anatomie-du-rachis.pdf",
+  "method_url": "https://github.com/Slicer/Slicer/blob/main/Docs/user_guide/registration.md",
+  "caveats": [
+    "Numerical nearest extreme of bboxes defines only a repeatable geometric proxy, not a verified sacral promontory, hiatus, ala, or crest.",
+    "Reserved operational points were not fitted but are derived from the same two source meshes; no independent expert/reference landmark was collected.",
+    "Source OBJ units are not calibrated into patient millimetres; all errors are normalized display units.",
+    "Altering the existing 206-bone avatar with this speculative matrix is prohibited; publish research only.",
+    "Sacrum and spine remain on common source atlas; no invented separate anatomic correction or muscle insertion."
+  ]
+}

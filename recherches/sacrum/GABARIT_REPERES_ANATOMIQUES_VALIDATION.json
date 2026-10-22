@@ -1,0 +1,115 @@
+{
+  "schema": "poly.sacrum-clinical-landmark-validation/1",
+  "reference": "UCA anatomy vertebral column PDF",
+  "instructions": "Validate landmark identity on BOTH independent source geometries, correct xyz coordinates, record observer and certainty. Pending fields must remain null.",
+  "requested_anatomical_landmarks": [
+    {
+      "code": "promontory",
+      "name_fr": "Promontoire sacré",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "S1_superior",
+      "name_fr": "Plateau supérieur du corps S1",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "ala_L",
+      "name_fr": "Aile du sacrum gauche",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "ala_R",
+      "name_fr": "Aile du sacrum droite",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "art_sup_L",
+      "name_fr": "Processus articulaire supérieur gauche",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "art_sup_R",
+      "name_fr": "Processus articulaire supérieur droit",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "canal",
+      "name_fr": "Ouverture du canal sacré",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "apex",
+      "name_fr": "Apex sacrée / facette coccygienne",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "hiatus",
+      "name_fr": "Hiatus sacré",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "crest",
+      "name_fr": "Crête sacrée médiane",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "foramen_L",
+      "name_fr": "Premier foramen sacré dorsal gauche",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    },
+    {
+      "code": "foramen_R",
+      "name_fr": "Premier foramen sacré dorsal droit",
+      "bodyparts3d_FJ3393_xyz": null,
+      "Z_sacrum_xyz": null,
+      "observer": null,
+      "certainty": null,
+      "validated": false
+    }
+  ]
+}

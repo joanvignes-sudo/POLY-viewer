@@ -1,5 +1,5 @@
 {
-  "version": "0.135.0",
+  "version": "0.136.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -344,5 +344,13 @@
     "attachments_validated": false,
     "motion": "existing_illustrative_activities",
     "source": "Z-Anatomy CC BY-SA 4.0"
+  },
+  "sacrum_landmarks": {
+    "proposed_heuristic": 11,
+    "fit_candidates": 7,
+    "withheld_geometric_proxies": 4,
+    "homologues_verified": 0,
+    "new_skeletal_transform_applied": false,
+    "independent_subject_validation": false
   }
 }

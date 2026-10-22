@@ -1,0 +1,36 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>POLY — Audit du recalage du sacrum</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}
+body{background:#0b1520;color:#e8eff2;margin:0}.wrap{max-width:1180px;padding:24px;margin:auto}
+a{color:#85d9d1}header{display:flex;align-items:center;gap:20px;padding:20px 0;border-bottom:1px solid #324652;flex-wrap:wrap}
+.kicker{font-size:.82rem;color:#8acfc4;text-transform:uppercase;letter-spacing:.1em}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.13;margin:.3em 0}
+h2{font-size:1.35rem;margin:1em 0 .4em}.lead{max-width:900px;color:#bdced5;font-size:1.08rem}
+nav{margin-left:auto}.tag{display:inline-block;padding:4px 9px;border:1px solid #688385;border-radius:6px;font-size:.82rem}
+section{background:#142330;border:1px solid #2d4350;border-radius:12px;padding:20px;margin:20px 0}
+.meters{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.metric{background:#0d1b27;border-radius:9px;padding:14px}.metric b{font-size:1.7rem;display:block}.metric small{color:#b2c4ce}
+table{border-collapse:collapse;width:100%;margin-top:10px}td,th{padding:12px;text-align:left;border-bottom:1px solid #3b505d}th{color:#a0c7ca;font-weight:600}
+figure{margin:0;background:white;border-radius:10px;padding:12px;color:#28333c}figure img{display:block;width:100%;height:auto}
+figcaption{font-size:.87rem;color:#4d6171;padding:12px}.notice{border-left:4px solid #e9be68;padding-left:16px}
+ul{padding-left:23px}.links{display:flex;flex-wrap:wrap;gap:12px}footer{padding:35px 0;color:#adbdc6;font-size:.9rem}
+</style></head><body><div class="wrap"><header><strong>POLY / Anatomie expérimentale</strong><span class="tag">v0.136.0</span><nav><a href="./?v=0.136.0">← Retour au corps</a></nav></header>
+<p class="kicker">Étude de recalage 3D · sacrum / L1–L5</p><h1>Comparer les os, sans inventer la précision</h1>
+<p class="lead">Les deux atlas ont été comparés avec onze repères géométriques candidats. Leur identité anatomique exacte n'est pas encore validée. L'étude vérifie si déplacer le sacrum améliore réellement la cohérence avec les cinq vertèbres lombaires.</p>
+<section><h2>Constat principal</h2><p><strong>Nous ne retenons pas la correction isolée du sacrum.</strong> Elle rapproche certains repères candidats, mais éloigne les vertèbres L2 et L4 de leur référentiel déjà commun. Les <strong>206 os affichés restent inchangés</strong>.</p><div class="meters">
+<div class="metric"><small>Repères automatiques candidats</small><b>11</b><small>7 ajustement · 4 exclus du calcul</small></div>
+<div class="metric"><small>Repères homologues vérifiés par expert</small><b>0</b><small>Validation anatomique encore nécessaire</small></div>
+<div class="metric"><small>Os déplacés par cette étude</small><b>0</b><small>Transformations proposées, non appliquées</small></div>
+<div class="metric"><small>Unités des écarts</small><b>POLY</b><small>Unités normalisées ; ce ne sont pas des mm</small></div></div></section>
+<section><h2>Écarts mesurés avant et après la correction candidate</h2><table><thead><tr><th>Contrôle hors ajustement</th><th>Transformation commune</th><th>Correction du sacrum candidate</th></tr></thead>
+<tbody><tr><td>4 points candidats réservés sur le sacrum — RMS</td><td>0,04913</td><td>0,03549</td></tr>
+<tr><td>L2 — écart de surface dirigé RMS</td><td>0,00492</td><td>0,02444</td></tr><tr><td>L4 — écart de surface dirigé RMS</td><td>0,00545</td><td>0,01338</td></tr>
+<tr><td>L5 — écart de surface dirigé RMS</td><td>0,00371</td><td>0,01242</td></tr></tbody></table>
+<p class="notice"><strong>Lecture correcte :</strong> les points réservés n'ont pas servi au calcul, mais proviennent des mêmes atlas. Ce n'est ni un scanner indépendant ni une validation clinique. Les métriques des points et celles des surfaces ne doivent pas être mélangées.</p></section>
+<section><h2>Annotations et comparaison</h2><figure><img src="recherches/sacrum/SACRUM_ANNOTATIONS_CANDIDATES.png" alt="Six vues de deux atlas du sacrum montrant les onze repères géométriques candidats, sept points d'ajustement et quatre points réservés à contrôler"><figcaption>Vue comparative des surfaces Z-Anatomy et BodyParts3D 4.3. Les noms des repères désignent des régions anatomiques pressenties, pas des points homologues confirmés.</figcaption></figure></section>
+<section><h2>Ce qu'il reste à qualifier</h2><p>Un anatomiste ou un opérateur expert doit identifier et vérifier dans les deux maillages le promontoire, le plateau S1, les ailes du sacrum, les processus articulaires supérieurs, l'ouverture du canal, l'apex, le hiatus, la crête et les premiers foramens dorsaux. Un jeu de points doit rester réservé à la mesure indépendante après ajustement.</p>
+<p>La documentation de <a href="https://github.com/Slicer/Slicer/blob/main/Docs/user_guide/registration.md">3D Slicer</a> préconise généralement six à huit paires de repères homologues pour démarrer un recalage rigide. Les repères actuellement générés automatiquement à partir des contours ne satisfont pas cette exigence anatomique.</p>
+<div class="links"><a href="recherches/sacrum/SACRUM_REPERES_CANDIDATS.json" download>Données et écarts · JSON</a>
+<a href="recherches/sacrum/GABARIT_REPERES_ANATOMIQUES_VALIDATION.json" download>Grille de validation anatomique · JSON</a>
+<a href="https://anatomie-fmpm.uca.ma/wp-content/uploads/2020/12/Anatomie-du-rachis.pdf">Référence anatomique du sacrum</a></div>
+</section><footer>Attribution : BodyParts3D / DBCLS, Z-Anatomy / Gauthier Kervyn et Marcin Zielinski. Licences source à conserver selon chaque géométrie. Modèle pédagogique expérimental, non certifié pour un usage clinique.</footer></div></body></html>
