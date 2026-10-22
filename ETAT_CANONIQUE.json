@@ -1,6 +1,6 @@
 {
-  "version": "0.131.0",
-  "date": "2026-10-21",
+  "version": "0.132.0",
+  "date": "2026-10-22",
   "status": "Corps animé et lecteur visuel canoniques ; schémas documentaires, validations scientifiques ouvertes.",
   "categories": [
     {
@@ -405,10 +405,10 @@
   "source_licenses": "Les conditions distinctes des sources décrites dans README.md et leurs dossiers de provenance restent applicables.",
   "canonical_state": "ETAT_CANONIQUE.json",
   "review_version_preserved": "0.128.1",
-  "previous_public_version": "0.130.0",
-  "previous_public_commit": "bf0d3c8eed3864be601af81938820fe8aa2032a0",
+  "previous_public_version": "0.131.0",
+  "previous_public_commit": "b2fad87f24ab41422f492e46e1f9044d13fdb9d9",
   "entry": "index.html",
-  "release": "RELEASE_v0.131.0.md",
+  "release": "RELEASE_v0.132.0.md",
   "visual_reader": {
     "chains": "C01–C14",
     "groups": 78,
@@ -428,9 +428,9 @@
   "integrated_simulator": {
     "entry": "index.html",
     "structures": 918,
-    "regional_nerve_routes": 303,
-    "regional_itineraries": 186,
-    "added_muscle_surfaces": 166,
+    "regional_nerve_routes": 428,
+    "regional_itineraries": 311,
+    "added_muscle_surfaces": 258,
     "physiological_validation": false
   }
 }
