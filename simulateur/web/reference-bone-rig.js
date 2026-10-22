@@ -19,6 +19,7 @@ export function deformReferenceBone(point,bone,uniforms){
   }
  }
  if(bone.bone_family==='foot')rotateX(.18,value(bone.side==='L'?'ankL':'ankR'));
+ if(bone.bone_family==='femur')rotateX(1.83,value(bone.side==='L'?'hipL':'hipR'));
  if(['tibia','fibula','foot'].includes(bone.bone_family)){
   rotateX(.99,value(bone.side==='L'?'kneeL':'kneeR'));
   rotateX(1.83,value(bone.side==='L'?'hipL':'hipR'));
