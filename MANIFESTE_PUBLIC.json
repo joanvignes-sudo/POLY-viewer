@@ -1,5 +1,5 @@
 {
-  "version": "0.134.1",
+  "version": "0.135.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -27807,6 +27807,11 @@
       "sha256": "3eddfddaddc7ec2eaaf3e4f80ac23ec6bfd97ca8bfbbf60349b585dee522b63c"
     },
     {
+      "path": "bibliotheque/MANIFESTE_PUBLIC.json",
+      "bytes": 515740,
+      "sha256": "61bee680fb781f3efbd00394814806dce234498e78482c5df6e87df2c5971a26"
+    },
+    {
       "path": "bibliotheque/microscopie.html",
       "bytes": 23942,
       "sha256": "a3d1a62c26d7bda5d4bf21fb147d0a1a6a1cd76a0549b1dfe240e54cd6909fb8"
@@ -28908,8 +28913,8 @@
     },
     {
       "path": "ETAT_CANONIQUE.json",
-      "bytes": 12168,
-      "sha256": "cc30cbd232276b5bd3995956d8f402815bf308ea447343c3e837f208bfb72148"
+      "bytes": 12431,
+      "sha256": "3cb5b4386d40c218c78b63e6da9bfe4e2d0531953700cda2ba39a854009da7cb"
     },
     {
       "path": "EXPLORATION_v0.93.json",
@@ -28958,8 +28963,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7574,
-      "sha256": "ada768fa151cc24cd3dd9a5494daedb18f52fced231abb7e618342f4ef0ea199"
+      "bytes": 7558,
+      "sha256": "8b9158ce0d7ac1d608b99d3c935f362aa2c83beabd75b1631a0c50395f4c544b"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -29227,6 +29232,11 @@
       "sha256": "df158071e57cf6ba1b803f3babc73e548ea2f1e6188be8931f7b0dd0c35696b7"
     },
     {
+      "path": "publication/v0.129.0/MANIFESTE_PUBLIC.json",
+      "bytes": 515740,
+      "sha256": "61bee680fb781f3efbd00394814806dce234498e78482c5df6e87df2c5971a26"
+    },
+    {
       "path": "publication/v0.129.0/PUBLICATION_SCOPE.json",
       "bytes": 11052,
       "sha256": "16c51a10c6fb85f45f5ab8dcab51f76171545f24eec37aafc22d5c01da2a040c"
@@ -29263,8 +29273,8 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 11619,
-      "sha256": "133e1517515d4b36810c6f2e39b1a876df29e038054c7e2668e43fe3afa04945"
+      "bytes": 11882,
+      "sha256": "3ec66ce52f46614a22f673aa7cc3e87468574cde0818c2120fd01e6404b28d99"
     },
     {
       "path": "raccord.html",
@@ -29362,6 +29372,16 @@
       "sha256": "b70cbbdd1a38d4d8ec99213f9d14b8ed4fc3b2c0a9222d0a05d452d9233f0af9"
     },
     {
+      "path": "RELEASE_v0.134.1.md",
+      "bytes": 412,
+      "sha256": "0364b34f0d168f1cf575c921562d5ee02bc46b678c56b1732ac759c29a964cb1"
+    },
+    {
+      "path": "RELEASE_v0.135.0.md",
+      "bytes": 1033,
+      "sha256": "9b139518161b2c6bd9e699a353eb3b48b9a817a3d65c7474ce4da56627394fcf"
+    },
+    {
       "path": "RESILIENCE_NEURONES_v0.99.json",
       "bytes": 315,
       "sha256": "03e01fb04ace708dd42d86cee52713ec373936ec3d2d8e2f1f7e743f3978d5c3"
@@ -29457,6 +29477,16 @@
       "sha256": "c12d056cb3eea25c7b7c4edc45a3332d65dce0de61b4bc44fa63cc6ccd31572c"
     },
     {
+      "path": "simulateur/data/bone-registration-da.json.gz",
+      "bytes": 625196,
+      "sha256": "d9c42841e76b349dcdb141743115377df611495f20f80b3c4d5a32b6df0a81e5"
+    },
+    {
+      "path": "simulateur/data/bone-registration-db.json.gz",
+      "bytes": 3791556,
+      "sha256": "25b3bffd3c8abbacdd29e684bf21efc703f27312d77a6571bc035316ee4fc937"
+    },
+    {
       "path": "simulateur/data/couverture-anatomique.json",
       "bytes": 26354,
       "sha256": "31fb4c5009000845d21144e443076f161e8c66c18c301a084f350532ee2eaa30"
@@ -29545,6 +29575,21 @@
       "path": "simulateur/data/recovered-resources.json",
       "bytes": 18510,
       "sha256": "fce8d49ec1ff777dfb03e141650cd76fa4df3b313b8a90844f3a12bc1aa831cc"
+    },
+    {
+      "path": "simulateur/data/skeleton-source-206.json.gz",
+      "bytes": 10263428,
+      "sha256": "0594c0bb7aeeeb7684409de4e8afdcb941598c723ad6fce3942b4804d60c94b4"
+    },
+    {
+      "path": "simulateur/data/skeleton-worksite-206.json.gz",
+      "bytes": 35697,
+      "sha256": "e0e3794d69dc0b60592e811c681f0a7259bff419389de8a3a1c0056a40767dff"
+    },
+    {
+      "path": "simulateur/data/source-context-da.json.gz",
+      "bytes": 1971303,
+      "sha256": "b6650c157ac5645d11f7fddb8487db408f76f197f4a3132028b8488a2126716d"
     },
     {
       "path": "simulateur/data/walk.json",
@@ -30343,8 +30388,18 @@
     },
     {
       "path": "simulateur/public-assets.js",
-      "bytes": 3099,
-      "sha256": "359ee539cdca9ffc8cbdaf951b8ef70236edc86d4a1f24470084440126c0367e"
+      "bytes": 3862,
+      "sha256": "70219d580cd48d3af8ac6acf9df097ad4c6d478621c45bf67781f6285df221b2"
+    },
+    {
+      "path": "simulateur/reports/BILAN_OS_DE.md",
+      "bytes": 3964,
+      "sha256": "d3239fc80f6a59b8ac3096de7a6eb49969ea7e3f10a01e7cd222a093d9699b12"
+    },
+    {
+      "path": "simulateur/reports/ETUDE_OS_DE.md",
+      "bytes": 15272,
+      "sha256": "52fcfec0dcfe1218195bea371bcbe55ad16406fbd6407118f4d33d84b3793a9c"
     },
     {
       "path": "simulateur/reports/JOURNEE_24H.md",
@@ -30357,9 +30412,29 @@
       "sha256": "891c760a07eb9c4ea20ad4643165c1554ab209ce451c6c9b0d81529e6367050d"
     },
     {
+      "path": "simulateur/reports/PLAN_CHANTIER_206_DC.md",
+      "bytes": 9568,
+      "sha256": "31cda67d058e1dfbb9b5c46b79b18547c84c63a023beced3ae34785b39853c2f"
+    },
+    {
       "path": "simulateur/reports/PORTÉE.md",
       "bytes": 3076,
       "sha256": "86b88f149e4033b39aaea2bb3fdb840eac1c7b71e2e1d216de48d08e1a399357"
+    },
+    {
+      "path": "simulateur/reports/REPRISE_DA_2026-10-22.md",
+      "bytes": 12358,
+      "sha256": "a3ffb2b779b439ea16b92b3716b1e3380061d173579e7da94bb75d5cc0b42a4a"
+    },
+    {
+      "path": "simulateur/reports/REPRISE_OS_DB_2026-10-22.md",
+      "bytes": 8561,
+      "sha256": "b249f513bd2c9ff736b200b26a8f8a414517d14bd9092ca85cc8927bd45cba79"
+    },
+    {
+      "path": "simulateur/reports/REPRISE_SQUELETTE_DC_2026-10-22.md",
+      "bytes": 8515,
+      "sha256": "7359b7156168c9d83e099d1b8a3195e593f7aab77384b0aef3c17e337ed9ee1a"
     },
     {
       "path": "simulateur/web/activities.js",
@@ -30368,8 +30443,13 @@
     },
     {
       "path": "simulateur/web/app.js",
-      "bytes": 37002,
-      "sha256": "acfcd9cdfb3e27df7f32aa583971294399e6110fd67b9193946a6c313843800c"
+      "bytes": 39483,
+      "sha256": "adcfc3a71bc67942b2bf4257a7ba349946f03ada079359f0c3c8222b86ee927e"
+    },
+    {
+      "path": "simulateur/web/avatar-bones.js",
+      "bytes": 12571,
+      "sha256": "309a86a69cbb37e67ebceb95cc7d774a89f365d8c92e469f899be50c517b2eb6"
     },
     {
       "path": "simulateur/web/brain-atlas.js",
@@ -30428,8 +30508,8 @@
     },
     {
       "path": "simulateur/web/index.html",
-      "bytes": 7524,
-      "sha256": "41271eade4db13231cb5be10c72b035d471d8e9a50a8a408b8c6187be8b098e8"
+      "bytes": 7527,
+      "sha256": "d5e8dce0eb98e275355de82739ad401ba6a678dec70e286956944218cc5e5027"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30453,13 +30533,13 @@
     },
     {
       "path": "simulateur/web/muscles.html",
-      "bytes": 3888,
-      "sha256": "08947466fd56127655625a25b5117a56a83a925b5035bedb08fdeb16440b9b81"
+      "bytes": 3845,
+      "sha256": "9ac7e7a76654a99d4db2dbf45ca715e122a7247a9e17b1e42809bc67e5124f43"
     },
     {
       "path": "simulateur/web/muscles.js",
-      "bytes": 7774,
-      "sha256": "2e23beec01d3b1d587011b6652612794e863a6ce06a505e34daa251776df2507"
+      "bytes": 7824,
+      "sha256": "be2dbc0adca0e4d209d44a8d84d9aca2e486b63e8637e9a5b36877ae22db5af1"
     },
     {
       "path": "simulateur/web/nerve-excitability.js",
@@ -30527,9 +30607,24 @@
       "sha256": "a0d5118cdfb09e5d10d412a5e3f515422c25387471452702fd7c23933d815266"
     },
     {
+      "path": "simulateur/web/registration-da.js",
+      "bytes": 7386,
+      "sha256": "dfaa4f74ac3ee9f1d12eb7119dabadca728a22f58a0e707932fee0dce6b05e19"
+    },
+    {
+      "path": "simulateur/web/registration-source-da.html",
+      "bytes": 5680,
+      "sha256": "6e01c5051fa4ae2b4d57f261aa6ae828fce1462c1f071df62b92a677f41b09ad"
+    },
+    {
       "path": "simulateur/web/rig.js",
       "bytes": 2676,
       "sha256": "e928caf400f480c6a74ed5e35cf007b08d4bfa843448c7db7a00985ddd2a19f3"
+    },
+    {
+      "path": "simulateur/web/skeleton-worksite-206.js",
+      "bytes": 7513,
+      "sha256": "e1bda7fadadd893f273c04611e624f4f23041cd8b6a964dcff31e05cc14ba439"
     },
     {
       "path": "simulateur/web/style.css",
@@ -30789,13 +30884,8 @@
     {
       "path": "VERSION.json",
       "bytes": 274,
-      "sha256": "a420cd1aec9bee2b1159ab7c6130be94abdec001b306e940d15416e8cbbae5bf"
-    },
-    {
-      "path": "RELEASE_v0.134.1.md",
-      "bytes": 412,
-      "sha256": "0364b34f0d168f1cf575c921562d5ee02bc46b678c56b1732ac759c29a964cb1"
+      "sha256": "5c4092c3e08934aaaa4c678b689f9cb359780dce21e48f7461e4bb66091bf81f"
     }
   ],
-  "total_bytes": 1044180137
+  "total_bytes": 1061994982
 }

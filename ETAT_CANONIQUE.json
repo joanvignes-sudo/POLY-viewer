@@ -1,5 +1,5 @@
 {
-  "version": "0.134.1",
+  "version": "0.135.0",
   "date": "2026-10-22",
   "status": "Corps animé et lecteur visuel canoniques ; schémas documentaires, validations scientifiques ouvertes.",
   "categories": [
@@ -432,5 +432,13 @@
     "regional_nerve_routes": 575,
     "regional_itineraries": 458,
     "physiological_validation": false
+  },
+  "adult_reference_bones": {
+    "concepts": 206,
+    "source_objects": 208,
+    "anatomical_registration_validated": false,
+    "attachments_validated": false,
+    "motion": "existing_illustrative_activities",
+    "source": "Z-Anatomy CC BY-SA 4.0"
   }
 }

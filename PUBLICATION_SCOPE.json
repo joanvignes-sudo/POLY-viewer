@@ -1,5 +1,5 @@
 {
-  "version": "0.134.1",
+  "version": "0.135.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -336,5 +336,13 @@
   "previous_public_version": "0.129.0",
   "technical_review_preserved": "0.128.1",
   "human_prediction_validated": false,
-  "integrated_simulator": "index.html"
+  "integrated_simulator": "index.html",
+  "adult_reference_bones": {
+    "concepts": 206,
+    "source_objects": 208,
+    "anatomical_registration_validated": false,
+    "attachments_validated": false,
+    "motion": "existing_illustrative_activities",
+    "source": "Z-Anatomy CC BY-SA 4.0"
+  }
 }
