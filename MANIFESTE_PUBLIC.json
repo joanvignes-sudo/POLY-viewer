@@ -1,5 +1,5 @@
 {
-  "version": "0.132.2",
+  "version": "0.132.3",
   "hash_basis": "Exact Git blob bytes served by GitHub Pages; original line endings retained for hashed scientific sources.",
   "files": [
     {
@@ -295,7 +295,7 @@
     {
       "path": "ETAT_CANONIQUE.json",
       "bytes": 12156,
-      "sha256": "4a17f4f4a74e4574f3dfdbe02d0f78a9a5eed004dfb0671ce2f6c11d6125d1ec"
+      "sha256": "d6d216e719286e8c51dfdfc1e3feede0e78e64404f5b383122c37d7cac81ffd5"
     },
     {
       "path": "EXPLORATION_v0.93.json",
@@ -593,6 +593,11 @@
       "sha256": "b4e5592ccfc91c81140fe95f0acadbb3894fe4f382b5adf8fe638324d0e51cb4"
     },
     {
+      "path": "RELEASE_v0.132.3.md",
+      "bytes": 347,
+      "sha256": "52da1567a14d4230870255ba8780c23cc017e7d860ee0f19da173b5639de68f3"
+    },
+    {
       "path": "RESILIENCE_NEURONES_v0.99.json",
       "bytes": 315,
       "sha256": "03e01fb04ace708dd42d86cee52713ec373936ec3d2d8e2f1f7e743f3978d5c3"
@@ -835,7 +840,7 @@
     {
       "path": "VERSION.json",
       "bytes": 274,
-      "sha256": "ab76f5e3116baf2c215a8a1fd4ea07bf630273013992da591fa5af2261f1bb43"
+      "sha256": "ce68cc24583abd7991d84a1e986b0b34576c0e4032de0c917703f371c8ed6787"
     },
     {
       "path": "accueil-v0.129.0.html",
@@ -29464,8 +29469,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7723,
-      "sha256": "97fe461df434e7d7ed51ca33da83bdcea1a032989791bc14a0502f5dbb5a3ada"
+      "bytes": 7718,
+      "sha256": "ad19a7764509c4ca08c271aec68830679a7d584f840ac599d02ccb390cfab889"
     },
     {
       "path": "micro.html",
@@ -30519,8 +30524,8 @@
     },
     {
       "path": "simulateur/web/app.js",
-      "bytes": 34108,
-      "sha256": "ade6fc4215817225ccb4a9c96590c7d66dc866dca4bebf142c726b9e1349b45b"
+      "bytes": 34098,
+      "sha256": "66a550cb60c5f1b8bf2cb13b97e0f0a1b8510317dbeab98d1d1e43761bc0cfcb"
     },
     {
       "path": "simulateur/web/brain-atlas.js",
@@ -30574,13 +30579,13 @@
     },
     {
       "path": "simulateur/web/human-nerves.js",
-      "bytes": 22406,
-      "sha256": "fe9b2c7a0007f2c21de19e8b66209ea41f298dc48baaa24003f59b4f396ac613"
+      "bytes": 22516,
+      "sha256": "25cfb9eae38ff8c069b8c03c8d41ab57efeb13ca5fca279bd1e947fa644a7a51"
     },
     {
       "path": "simulateur/web/index.html",
-      "bytes": 7673,
-      "sha256": "78fed05077b8e63c667919048dde61ba7387f28dd73a8b58df84919cace2162b"
+      "bytes": 7668,
+      "sha256": "8c42ff0a58a6bd8efd6642baa619eac2cae9fbb17c545fdb12be595e27389aca"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30669,8 +30674,8 @@
     },
     {
       "path": "simulateur/web/style.css",
-      "bytes": 9462,
-      "sha256": "1e1190f09e3988306b70df0d7d7d87fb4859638dd79f138ddf1a77b224fdef2d"
+      "bytes": 9978,
+      "sha256": "7b4c1583f02fddb508ebb9c4332239586a08b06f764970ad67270174d6deb8da"
     },
     {
       "path": "simulateur/web/vendor/THREE_LICENSE.txt",
@@ -30699,8 +30704,8 @@
     },
     {
       "path": "simulateur/web/walking-network.js",
-      "bytes": 13197,
-      "sha256": "268c5ffb81c4d83cb55f0e3d7c15e779d08412dc16d554c386db1dd0906d5b3c"
+      "bytes": 15016,
+      "sha256": "514ead85df7a05f027c2b38d306711d26554dfe7c49873bf1e40102c08e34e40"
     },
     {
       "path": "suite.html",
@@ -30718,5 +30723,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1027989144
+  "total_bytes": 1027991916
 }
