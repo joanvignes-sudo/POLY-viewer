@@ -251,12 +251,12 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2223,Cou,context,bursa retrohyoidea,retrohyoid bursa,True,,
 2224,Dos,context,pars dorsalis systematis muscularis,dorsal part of muscular system,True,,
 2225,Dos,group,musculi hypaxiales dorsi,hypaxial muscles of back,True,,
-2226,Dos,named,musculus trapezius,trapezius muscle,True,,
+2226,Dos,named,musculus trapezius,trapezius muscle,True,body:ZAN_CX_2228_L;body:ZAN_CX_2228_R,Trapèze · portion transverse · gauche · symétrie source;Trapèze · portion transverse · droit
 2227,Dos,part,pars descendens musculi trapezii,descending part of trapezius muscle,True,,
-2228,Dos,part,pars transversa musculi trapezii,transverse part of trapezius muscle,True,,
+2228,Dos,part,pars transversa musculi trapezii,transverse part of trapezius muscle,True,body:ZAN_CX_2228_L;body:ZAN_CX_2228_R,Trapèze · portion transverse · gauche · symétrie source;Trapèze · portion transverse · droit
 2229,Dos,part,pars ascendens musculi trapezii,ascending part of trapezius muscle,True,,
 2230,Dos,named,musculus transversus nuchae,transversus nuchae muscle,True,,
-2231,Dos,named,musculus latissimus dorsi,latissimus dorsi muscle,True,,
+2231,Dos,named,musculus latissimus dorsi,latissimus dorsi muscle,True,body:ZAN_CV_2231_L;body:ZAN_CV_2231_R,Grand dorsal · gauche · symétrie source;Grand dorsal · droit
 2232,Dos,named,musculus rhomboideus major,rhomboid major muscle,True,body:FJ1536;body:FJ1536M,Grand rhomboïde · droit;Grand rhomboïde · gauche
 2233,Dos,named,musculus rhomboideus minor,rhomboid minor muscle,True,body:FJ1537;body:FJ1537M,Petit rhomboïde · droit;Petit rhomboïde · gauche
 2234,Dos,named,levator scapulae,levator scapulae,True,body:FJ1532;body:FJ1532M,Élévateur de la scapula · droit;Élévateur de la scapula · gauche
@@ -265,8 +265,8 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2237,Dos,group,musculi intertransversarii anteriores colli,anterior intertransversarii colli muscles,True,,
 2238,Dos,group,musculi intertransversarii posteriores laterales colli,lateral posterior intertransversarii colli muscles,True,,
 2239,Dos,group,musculi intertransversarii laterales lumborum,lateral intertransversarii lumborum muscles,True,body:FJ1547;body:FJ1547M,Intertransversaires lombaires latéraux · pièce régionale · FJ1547 · côté non annoté;Intertransversaires lombaires latéraux · pièce régionale · FJ1547M · côté non annoté
-2240,Dos,part,partes dorsales musculorum intertransversariorum lateralium lumborum,dorsal parts of lateral intertransversarii lumborum muscles,True,,
-2241,Dos,part,partes ventrales musculorum intertransversariorum lateralium lumborum,ventral parts of lateral intertransversarii lumborum muscles,True,,
+2240,Dos,part,partes dorsales musculorum intertransversariorum lateralium lumborum,dorsal parts of lateral intertransversarii lumborum muscles,True,body:ZAN_CY_2240_L;body:ZAN_CY_2240_R,dorsal parts of lateral intertransversarii lumborum muscles · gauche · symétrie source;dorsal parts of lateral intertransversarii lumborum muscles · droit
+2241,Dos,part,partes ventrales musculorum intertransversariorum lateralium lumborum,ventral parts of lateral intertransversarii lumborum muscles,True,body:ZAN_CY_2241_L;body:ZAN_CY_2241_R,ventral parts of lateral intertransversarii lumborum muscles · gauche · symétrie source;ventral parts of lateral intertransversarii lumborum muscles · droit
 2242,Dos,context,fascia thoracolumbalis,thoracolumbar fascia,True,,
 2243,Dos,context,lamina posterior fasciae thoracolumbaris,posterior layer of thoracolumbar fascia,True,,
 2244,Dos,context,aponeurosis thoracolumbalis,thoracolumbar aponeurosis,True,,
@@ -293,17 +293,17 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2266,Dos,named,musculus longissimus capitis,longissimus capitis muscle,True,body:FJ1533;body:FJ1533M,Longissimus de la tête · droit;Longissimus de la tête · gauche
 2267,Dos,group,musculi spinales,spinalis muscles,True,body:FJ1544;body:FJ1544M;body:FJ1543;body:FJ1543M,Épineux thoracique · droit;Épineux thoracique · gauche;Épineux · pièce de groupe · FJ1543 · côté non annoté;Épineux · pièce de groupe · FJ1543M · côté non annoté
 2268,Dos,named,musculus spinalis thoracis,spinalis thoracis muscle,True,body:FJ1544;body:FJ1544M,Épineux thoracique · droit;Épineux thoracique · gauche
-2269,Dos,named,musculus spinalis colli,spinalis colli muscle,True,,
-2270,Dos,named,musculus spinalis capitis,spinalis capitis muscle,True,,
+2269,Dos,named,musculus spinalis colli,spinalis colli muscle,True,body:ZAN_CW_2269_L;body:ZAN_CW_2269_R,Épineux du cou · gauche · symétrie source;Épineux du cou · droit
+2270,Dos,named,musculus spinalis capitis,spinalis capitis muscle,True,body:ZAN_CW_2270_L;body:ZAN_CW_2270_R,Épineux de la tête · gauche · symétrie source;Épineux de la tête · droit
 2271,Dos,group,musculi spinotransversales,spinotransversales muscles,True,,
 2272,Dos,group,musculi splenii,splenius muscles,True,body:FJ1546;body:FJ1546M;body:FJ1545;body:FJ1545M,Splénius cervical · droit;Splénius cervical · gauche;Splénius de la tête · droit;Splénius de la tête · gauche
 2273,Dos,named,musculus splenius capitis,splenius capitis muscle,True,body:FJ1545;body:FJ1545M,Splénius de la tête · droit;Splénius de la tête · gauche
 2274,Dos,named,musculus splenius colli,splenius colli muscle,True,body:FJ1546;body:FJ1546M,Splénius cervical · droit;Splénius cervical · gauche
 2275,Dos,group,musculi transversospinales,transversospinal muscles,True,,
 2276,Dos,group,musculi multifidi,multifidus muscles,True,,
-2277,Dos,named,musculus multifidus lumborum,multifidus lumborum muscle,True,,
-2278,Dos,named,musculus multifidus thoracis,multifidus thoracis muscle,True,,
-2279,Dos,named,musculus multifidus colli,multifidus colli muscle,True,,
+2277,Dos,named,musculus multifidus lumborum,multifidus lumborum muscle,True,body:ZAN_CW_2277_L;body:ZAN_CW_2277_R,Multifides lombaires · gauche · symétrie source;Multifides lombaires · droit
+2278,Dos,named,musculus multifidus thoracis,multifidus thoracis muscle,True,body:ZAN_CW_2278_L;body:ZAN_CW_2278_R,Multifides thoraciques · gauche · symétrie source;Multifides thoraciques · droit
+2279,Dos,named,musculus multifidus colli,multifidus colli muscle,True,body:ZAN_CW_2279_L;body:ZAN_CW_2279_R,Multifides cervicaux · gauche · symétrie source;Multifides cervicaux · droit
 2280,Dos,group,musculi semispinales,semispinalis muscles,True,body:FJ1540;body:FJ1540M;body:FJ1539;body:FJ1539M;body:FJ1538;body:FJ1538M,Semi-épineux thoracique · droit;Semi-épineux thoracique · gauche;Semi-épineux cervical · droit;Semi-épineux cervical · gauche;Semi-épineux de la tête · droit;Semi-épineux de la tête · gauche
 2281,Dos,named,musculus semispinalis thoracis,semispinalis thoracis muscle,True,body:FJ1540;body:FJ1540M,Semi-épineux thoracique · droit;Semi-épineux thoracique · gauche
 2282,Dos,named,musculus semispinalis colli,semispinalis colli muscle,True,body:FJ1539;body:FJ1539M,Semi-épineux cervical · droit;Semi-épineux cervical · gauche
@@ -315,9 +315,9 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2288,Dos,group,rotatores breves,short rotatores,True,,
 2289,Dos,group,rotatores colli,rotatores colli,True,body:FJ1524;body:FJ1524M,Rotateurs cervicaux · pièce de référence · droit;Rotateurs cervicaux · pièce de référence · gauche
 2290,Dos,group,musculi interspinales,interspinales muscles,True,,
-2291,Dos,group,musculi interspinales lumborum,interspinales lumborum muscles,True,,
-2292,Dos,group,musculi interspinales thoracis,interspinales thoracis muscles,True,,
-2293,Dos,group,musculi interspinales colli,interspinales colli muscles,True,,
+2291,Dos,group,musculi interspinales lumborum,interspinales lumborum muscles,True,body:ZAN_CY_2291_L;body:ZAN_CY_2291_R,interspinales lumborum muscles · gauche · symétrie source;interspinales lumborum muscles · droit
+2292,Dos,group,musculi interspinales thoracis,interspinales thoracis muscles,True,body:ZAN_CY_2292_L;body:ZAN_CY_2292_R,interspinales thoracis muscles · gauche · symétrie source;interspinales thoracis muscles · droit
+2293,Dos,group,musculi interspinales colli,interspinales colli muscles,True,body:ZAN_CY_2293_L;body:ZAN_CY_2293_R,interspinales colli muscles · gauche · symétrie source;interspinales colli muscles · droit
 2294,Dos,group,musculi intertransversarii,intertransversarii muscles,True,body:FJ1547;body:FJ1547M;body:FJ1548;body:FJ1548M,Intertransversaires lombaires latéraux · pièce régionale · FJ1547 · côté non annoté;Intertransversaires lombaires latéraux · pièce régionale · FJ1547M · côté non annoté;Intertransversaires lombaires médiaux · pièce régionale · FJ1548 · côté non annoté;Intertransversaires lombaires médiaux · pièce régionale · FJ1548M · côté non annoté
 2295,Dos,group,musculi intertransversarii mediales lumborum,medial intertransversarii lumborum muscles,True,body:FJ1548;body:FJ1548M,Intertransversaires lombaires médiaux · pièce régionale · FJ1548 · côté non annoté;Intertransversaires lombaires médiaux · pièce régionale · FJ1548M · côté non annoté
 2296,Dos,group,musculi intertransversarii thoracis,intertransversarii thoracis muscles,True,,
@@ -325,10 +325,10 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2298,Thorax,context,pars thoracica systematis muscularis,thoracic part of muscular system,True,,
 2299,Thorax,group,musculi thoracis,muscles of thorax,True,body:FJ1451;body:FJ1451M;body:FJ1455;body:FJ1455M;body:FJ1454;body:FJ1454M;body:FJ1461;body:FJ1461M;body:FJ3131,Intercostaux externes · droit;Intercostaux externes · gauche;Intercostaux internes · droit;Intercostaux internes · gauche;Intercostaux intimes · droit;Intercostaux intimes · gauche;Transverse du thorax · droit;Transverse du thorax · gauche;Diaphragme entier · surface bilatérale
 2300,Thorax,named,musculus sternalis,sternalis muscle,True,,
-2301,Thorax,named,musculus pectoralis major,pectoralis major muscle,True,,
-2302,Thorax,part,pars clavicularis musculi pectoralis majoris,clavicular head of pectoralis major muscle,True,,
-2303,Thorax,part,pars sternocostalis musculi pectoralis majoris,sternocostal head of pectoralis major muscle,True,,
-2304,Thorax,part,pars abdominalis musculi pectoralis majoris,abdominal part of pectoralis major muscle,True,,
+2301,Thorax,named,musculus pectoralis major,pectoralis major muscle,True,body:ZAN_CX_2302_L;body:ZAN_CX_2302_R;body:ZAN_CX_2303_L;body:ZAN_CX_2303_R;body:ZAN_CX_2304_L;body:ZAN_CX_2304_R,Grand pectoral · chef claviculaire · gauche · symétrie source;Grand pectoral · chef claviculaire · droit;Grand pectoral · chef sternocostal · gauche · symétrie source;Grand pectoral · chef sternocostal · droit;Grand pectoral · portion abdominale variable · gauche · symétrie source;Grand pectoral · portion abdominale variable · droit
+2302,Thorax,part,pars clavicularis musculi pectoralis majoris,clavicular head of pectoralis major muscle,True,body:ZAN_CX_2302_L;body:ZAN_CX_2302_R,Grand pectoral · chef claviculaire · gauche · symétrie source;Grand pectoral · chef claviculaire · droit
+2303,Thorax,part,pars sternocostalis musculi pectoralis majoris,sternocostal head of pectoralis major muscle,True,body:ZAN_CX_2303_L;body:ZAN_CX_2303_R,Grand pectoral · chef sternocostal · gauche · symétrie source;Grand pectoral · chef sternocostal · droit
+2304,Thorax,part,pars abdominalis musculi pectoralis majoris,abdominal part of pectoralis major muscle,True,body:ZAN_CX_2304_L;body:ZAN_CX_2304_R,Grand pectoral · portion abdominale variable · gauche · symétrie source;Grand pectoral · portion abdominale variable · droit
 2305,Thorax,named,musculus pectoralis minor,pectoralis minor muscle,True,body:FJ1456;body:FJ1456M,Petit pectoral · droit;Petit pectoral · gauche
 2306,Thorax,named,musculus subclavius,subclavius muscle,True,body:FJ1460;body:FJ1460M,Subclavier · droit;Subclavier · gauche
 2307,Thorax,named,musculus serratus anterior,serratus anterior muscle,True,body:FJ1459;body:FJ1459M,Dentelé antérieur · droit;Dentelé antérieur · gauche
@@ -381,13 +381,13 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2354,Thorax,context,trigonum lumbocostale sinistrum,left lumbocostal triangle,True,,
 2355,Abdomen,context,pars abdominalis systematis muscularis,abdominal part of muscular system,True,,
 2356,Abdomen,group,musculi abdominis,muscles of abdomen,True,body:FJ1452;body:FJ1452M,Oblique externe abdominal · droit;Oblique externe abdominal · gauche
-2357,Abdomen,named,musculus rectus abdominis,rectus abdominis muscle,True,,
+2357,Abdomen,named,musculus rectus abdominis,rectus abdominis muscle,True,body:ZAN_CV_2357_L;body:ZAN_CV_2357_R,Droit de l’abdomen · gauche · symétrie source;Droit de l’abdomen · droit
 2358,Abdomen,context,intersectiones tendineae,tendinous intersections,True,,
 2359,Abdomen,context,vagina musculi recti abdominis,rectus sheath,True,,
 2360,Abdomen,context,lamina anterior vaginae musculi recti,anterior layer of rectus sheath,True,,
 2361,Abdomen,context,lamina posterior vaginae musculi recti,posterior layer of rectus sheath,True,,
 2362,Abdomen,context,linea arcuata vaginae musculi recti,arcuate line of rectus sheath,True,,
-2363,Abdomen,named,musculus pyramidalis,pyramidalis muscle,True,,
+2363,Abdomen,named,musculus pyramidalis,pyramidalis muscle,True,body:ZAN_CW_2363_L;body:ZAN_CW_2363_R,Pyramidal de l’abdomen · gauche · symétrie source;Pyramidal de l’abdomen · droit
 2364,Abdomen,named,musculus obliquus externus abdominis,external abdominal oblique muscle,True,body:FJ1452;body:FJ1452M,Oblique externe abdominal · droit;Oblique externe abdominal · gauche
 2365,Abdomen,context,ligamentum inguinale,inguinal ligament,True,,
 2366,Abdomen,context,ligamentum lacunare,lacunar ligament,True,,
@@ -397,16 +397,16 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2370,Abdomen,context,crus mediale anuli inguinalis superficialis,medial crus of superficial inguinal ring,True,,
 2371,Abdomen,context,crus laterale anuli inguinalis superficialis,lateral crus of superficial inguinal ring,True,,
 2372,Abdomen,context,fibrae intercrurales,intercrural fibers,True,,
-2373,Abdomen,named,musculus obliquus internus abdominis,internal abdominal oblique muscle,True,,
+2373,Abdomen,named,musculus obliquus internus abdominis,internal abdominal oblique muscle,True,body:ZAN_CV_2373_L;body:ZAN_CV_2373_R,Oblique interne de l’abdomen · gauche · symétrie source;Oblique interne de l’abdomen · droit
 2374,Abdomen,context,cremaster,cremaster,True,,
-2375,Abdomen,named,musculus transversus abdominis,transversus abdominis muscle,True,,
+2375,Abdomen,named,musculus transversus abdominis,transversus abdominis muscle,True,body:ZAN_CV_2375_L;body:ZAN_CV_2375_R,Transverse de l’abdomen · gauche · symétrie source;Transverse de l’abdomen · droit
 2376,Abdomen,context,falx inguinalis,inguinal falx,True,,
 2377,Abdomen,context,linea alba,linea alba,True,,
 2378,Abdomen,context,anulus umbilicalis,umbilical ring,True,,
 2379,Abdomen,context,adminiculum lineae albae,posterior attachment of linea alba,True,,
 2380,Abdomen,context,linea semilunaris,semilunar line,True,,
 2381,Abdomen,context,canalis inguinalis,inguinal canal,True,,
-2382,Abdomen,named,musculus quadratus lumborum,quadratus lumborum muscle,True,,
+2382,Abdomen,named,musculus quadratus lumborum,quadratus lumborum muscle,True,body:ZAN_CV_2382_L;body:ZAN_CV_2382_R,Carré des lombes · gauche · symétrie source;Carré des lombes · droit
 2383,Abdomen,context,fasciae abdominis,fasciae of abdomen,True,,
 2384,Abdomen,context,fascia investiens abdominis,investing abdominal fascia,True,,
 2385,Abdomen,context,fascia endoabdominalis,endoabdominal fascia,True,,
@@ -428,8 +428,8 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2401,Bassin et périnée,context,ligamentum anococcygeum,anococcygeal ligament,True,,
 2402,Bassin et périnée,context,diaphragma pelvis,pelvic diaphragm,True,,
 2403,Bassin et périnée,context,levator ani,levator ani,True,,
-2404,Bassin et périnée,named,musculus iliococcygeus,iliococcygeus muscle,True,,
-2405,Bassin et périnée,named,musculus pubococcygeus,pubococcygeus muscle,True,,
+2404,Bassin et périnée,named,musculus iliococcygeus,iliococcygeus muscle,True,body:ZAN_CW_2404_L;body:ZAN_CW_2404_R,Iliococcygien · gauche · symétrie source;Iliococcygien · droit
+2405,Bassin et périnée,named,musculus pubococcygeus,pubococcygeus muscle,True,body:ZAN_CW_2405_L;body:ZAN_CW_2405_R,Pubococcygien · gauche · symétrie source;Pubococcygien · droit
 2406,Bassin et périnée,named,musculus puboanalis,puboanalis muscle,True,,
 2407,Bassin et périnée,named,musculus puboperinealis,puboperinealis muscle,True,,
 2408,Bassin et périnée,named,musculus puboprostaticus,puboprostaticus muscle,True,,
@@ -512,7 +512,7 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2485,Membre supérieur,part,caput ulnare flexoris ulnaris carpi,ulnar head of flexor carpi ulnaris,True,body:FJ1518;body:FJ1518M,Fléchisseur ulnaire du carpe · chef ulnaire · droit;Fléchisseur ulnaire du carpe · chef ulnaire · gauche
 2486,Membre supérieur,named,flexor superficialis digitorum,flexor digitorum superficialis,True,body:FJ1475;body:FJ1499;body:FJ1475M;body:FJ1499M,Fléchisseur superficiel des doigts · pièce A droite;Fléchisseur superficiel des doigts · pièce B droite;Fléchisseur superficiel des doigts · pièce A gauche;Fléchisseur superficiel des doigts · pièce B gauche
 2487,Membre supérieur,part,caput humeroulnare flexoris superficialis digitorum,humeroulnar head of flexor digitorum superficialis,True,,
-2488,Membre supérieur,part,caput radiale flexoris superficialis digitorum,radial head of flexor digitorum superficialis,True,,
+2488,Membre supérieur,part,caput radiale flexoris superficialis digitorum,radial head of flexor digitorum superficialis,True,body:ZAN_CY_2488_L;body:ZAN_CY_2488_R,radial head of flexor digitorum superficialis · gauche · symétrie source;radial head of flexor digitorum superficialis · droit
 2489,Membre supérieur,context,tendo flexorius communis,common flexor tendon,True,,
 2490,Membre supérieur,part,pars profunda compartimenti anterioris antebrachii,deep part of anterior compartment of forearm,True,,
 2491,Membre supérieur,named,flexor profundus digitorum,flexor digitorum profundus,True,body:FJ1497;body:FJ1497M,Fléchisseur profond des doigts · droit;Fléchisseur profond des doigts · gauche
@@ -532,8 +532,8 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2505,Membre supérieur,part,fasciculi collaterales aponeurosis extensoriae manus,collateral bands of extensor expansion of hand,True,,
 2506,Membre supérieur,named,extensor digiti minimi,extensor digiti minimi,True,body:FJ1491;body:FJ1491M,Extenseur du petit doigt · droit;Extenseur du petit doigt · gauche
 2507,Membre supérieur,named,extensor ulnaris carpi,extensor carpi ulnaris,True,body:FJ1472;body:FJ1472M;body:FJ1517;body:FJ1517M,Extenseur ulnaire du carpe · pièce FJ1472 · droit;Extenseur ulnaire du carpe · pièce FJ1472 · gauche;Extenseur ulnaire du carpe · pièce FJ1517 · droit;Extenseur ulnaire du carpe · pièce FJ1517 · gauche
-2508,Membre supérieur,part,caput humerale extensoris ulnaris carpi,humeral head of extensor carpi ulnaris,True,,
-2509,Membre supérieur,part,caput ulnare extensoris ulnaris carpi,ulnar head of extensor carpi ulnaris,True,,
+2508,Membre supérieur,part,caput humerale extensoris ulnaris carpi,humeral head of extensor carpi ulnaris,True,body:ZAN_CY_2508_L;body:ZAN_CY_2508_R,humeral head of extensor carpi ulnaris · gauche · symétrie source;humeral head of extensor carpi ulnaris · droit
+2509,Membre supérieur,part,caput ulnare extensoris ulnaris carpi,ulnar head of extensor carpi ulnaris,True,body:ZAN_CY_2509_L;body:ZAN_CY_2509_R,ulnar head of extensor carpi ulnaris · gauche · symétrie source;ulnar head of extensor carpi ulnaris · droit
 2510,Membre supérieur,named,musculus anconeus,anconeus muscle,True,body:FJ1485;body:FJ1485M,Anconé · droit;Anconé · gauche
 2511,Membre supérieur,part,pars profunda compartimenti posterioris antebrachii,deep part of posterior compartment of forearm,True,,
 2512,Membre supérieur,named,supinator,supinator,True,body:FJ1505;body:FJ1505M,Supinateur · droit;Supinateur · gauche
@@ -548,7 +548,7 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2521,Membre supérieur,named,abductor brevis pollicis,abductor pollicis brevis,True,hand:FJ1483;hand:FJ1483M,Court abducteur du pouce;Court abducteur du pouce
 2522,Membre supérieur,context,flexor brevis pollicis,flexor pollicis brevis,True,,
 2523,Membre supérieur,part,caput superficiale flexoris brevis pollicis,superficial head of flexor pollicis brevis,True,hand:FJ1514;hand:FJ1514M,Court fléchisseur du pouce · chef superficiel;Court fléchisseur du pouce · chef superficiel
-2524,Membre supérieur,part,caput profundum flexoris brevis pollicis,deep head of flexor pollicis brevis,True,,
+2524,Membre supérieur,part,caput profundum flexoris brevis pollicis,deep head of flexor pollicis brevis,True,body:ZAN_CY_2524_L;body:ZAN_CY_2524_R,deep head of flexor pollicis brevis · gauche · symétrie source;deep head of flexor pollicis brevis · droit
 2525,Membre supérieur,named,musculus opponens pollicis,opponens pollicis muscle,True,hand:FJ1501;hand:FJ1501M,Opposant du pouce;Opposant du pouce
 2526,Membre supérieur,context,adductor pollicis,adductor pollicis,True,,
 2527,Membre supérieur,part,caput obliquum adductoris pollicis,oblique head of adductor pollicis,True,hand:FJ1481;hand:FJ1481M,Adducteur du pouce · chef oblique;Adducteur du pouce · chef oblique
@@ -556,9 +556,9 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2529,Membre supérieur,named,abductor digiti minimi manus,abductor digiti minimi of hand,True,hand:FJ1466;hand:FJ1466M,Abducteur du petit doigt;Abducteur du petit doigt
 2530,Membre supérieur,named,flexor digiti minimi manus,flexor digiti minimi of hand,True,hand:FJ1470;hand:FJ1470M,Court fléchisseur du petit doigt;Court fléchisseur du petit doigt
 2531,Membre supérieur,named,musculus opponens digiti minimi manus,opponens digiti minimi muscle of hand,True,hand:FJ1482;hand:FJ1482M,Opposant du petit doigt;Opposant du petit doigt
-2532,Membre supérieur,group,musculi lumbricales manus,lumbrical muscles of hand,True,,
-2533,Membre supérieur,group,musculi interossei dorsales manus,dorsal interossei muscles of hand,True,,
-2534,Membre supérieur,group,musculi interossei palmares,palmar interossei muscles,True,,
+2532,Membre supérieur,group,musculi lumbricales manus,lumbrical muscles of hand,True,body:ZAN_CY_2532_L;body:ZAN_CY_2532_R,lumbrical muscles of hand · gauche · symétrie source;lumbrical muscles of hand · droit
+2533,Membre supérieur,group,musculi interossei dorsales manus,dorsal interossei muscles of hand,True,body:ZAN_CY_2533_L;body:ZAN_CY_2533_R,dorsal interossei muscles of hand · gauche · symétrie source;dorsal interossei muscles of hand · droit
+2534,Membre supérieur,group,musculi interossei palmares,palmar interossei muscles,True,body:ZAN_CY_2534_L;body:ZAN_CY_2534_R,palmar interossei muscles · gauche · symétrie source;palmar interossei muscles · droit
 2535,Membre supérieur,named,musculus interosseus palmaris pollicis,pollical palmar interosseus muscle,True,,
 2536,Membre supérieur,context,fasciae membri superioris,fasciae of upper limb,True,,
 2537,Membre supérieur,context,fascia axillaris,axillary fascia,True,,
@@ -710,8 +710,8 @@ TA2,Région,Type documentaire,Latin,Anglais,Chapitre IV,Références POLY rappro
 2683,Membre inférieur,named,flexor brevis digitorum,flexor digitorum brevis,True,body:FJ1413;body:FJ1413M,Court fléchisseur des orteils · droit;Court fléchisseur des orteils · gauche
 2684,Membre inférieur,named,musculus quadratus plantae,quadratus plantae muscle,True,body:FJ1412;body:FJ1412M,Carré plantaire · droit;Carré plantaire · gauche
 2685,Membre inférieur,group,musculi lumbricales pedis,lumbrical muscles of foot,True,body:FJ1389;body:FJ1389M;body:FJ1387;body:FJ1387M;body:FJ1383;body:FJ1383M;body:FJ1385;body:FJ1385M,Quatrième lombrical du pied · droit;Quatrième lombrical du pied · gauche;Troisième lombrical du pied · droit;Troisième lombrical du pied · gauche;Premier lombrical du pied · droit;Premier lombrical du pied · gauche;Deuxième lombrical du pied · droit;Deuxième lombrical du pied · gauche
-2686,Membre inférieur,group,musculi interossei dorsales pedis,dorsal interossei muscles of foot,True,,
-2687,Membre inférieur,group,musculi interossei plantares,plantar interossei muscles,True,,
+2686,Membre inférieur,group,musculi interossei dorsales pedis,dorsal interossei muscles of foot,True,body:ZAN_CY_2686_L;body:ZAN_CY_2686_R,dorsal interossei muscles of foot · gauche · symétrie source;dorsal interossei muscles of foot · droit
+2687,Membre inférieur,group,musculi interossei plantares,plantar interossei muscles,True,body:ZAN_CY_2687_L;body:ZAN_CY_2687_R,plantar interossei muscles · gauche · symétrie source;plantar interossei muscles · droit
 2688,Membre inférieur,context,fasciae membri inferioris,fasciae of lower limb,True,,
 2689,Membre inférieur,context,fascia lata,fascia lata,True,,
 2690,Membre inférieur,context,tractus iliotibialis,iliotibial tract,True,,

@@ -1,5 +1,5 @@
 {
-  "version": "0.133.0",
+  "version": "0.134.0",
   "date": "2026-10-22",
   "status": "Corps animé et lecteur visuel canoniques ; schémas documentaires, validations scientifiques ouvertes.",
   "categories": [
@@ -427,8 +427,8 @@
   },
   "integrated_simulator": {
     "entry": "index.html",
-    "body_reference_surfaces": 396,
-    "reference_surfaces": 418,
+    "body_reference_surfaces": 458,
+    "reference_surfaces": 480,
     "regional_nerve_routes": 575,
     "regional_itineraries": 458,
     "physiological_validation": false

@@ -1,0 +1,9 @@
+{
+  "terms": [
+    2227,
+    2229
+  ],
+  "source_objects": 4,
+  "reason": "Source coordinates of superior/inferior parts conflict with official descending/ascending nomenclature; no relabeling or forced geometry import.",
+  "source": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.3.01%20TA98%20EN.htm"
+}

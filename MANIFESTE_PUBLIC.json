@@ -1,5 +1,5 @@
 {
-  "version": "0.133.0",
+  "version": "0.134.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -50,6 +50,11 @@
       "path": "accueil-v0.132.3.html",
       "bytes": 7718,
       "sha256": "ad19a7764509c4ca08c271aec68830679a7d584f840ac599d02ccb390cfab889"
+    },
+    {
+      "path": "accueil-v0.133.0.html",
+      "bytes": 7718,
+      "sha256": "65a84ae079de461355ccc47e35dabba4e93c33aea6a73655fd711f42a3e2b694"
     },
     {
       "path": "anatomie.html",
@@ -28904,7 +28909,7 @@
     {
       "path": "ETAT_CANONIQUE.json",
       "bytes": 12168,
-      "sha256": "70de211843818df91558afacc1774741adbf2cedb1874fd0aac6de007034d7eb"
+      "sha256": "242213662c6a3e1d845b81a40cddee9303fb5a6e75a25778d9ec08338f56fd4f"
     },
     {
       "path": "EXPLORATION_v0.93.json",
@@ -28953,8 +28958,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7718,
-      "sha256": "65a84ae079de461355ccc47e35dabba4e93c33aea6a73655fd711f42a3e2b694"
+      "bytes": 7574,
+      "sha256": "ddfc20d43fa0e54eaed1032bf4ad401f6ea5df057298660ce77934fa8fe59211"
     },
     {
       "path": "INTEGRITE_v0.94.json",
@@ -29259,7 +29264,7 @@
     {
       "path": "PUBLICATION_SCOPE.json",
       "bytes": 11619,
-      "sha256": "f52ba4476f35b91e88d42009a15902b231ef06ff82d29450b3c28e5fac9b374b"
+      "sha256": "adcaeffecfb8d162f5a14aa1968a7d05804cf0751d860f49e6f8d4c92f7c882c"
     },
     {
       "path": "raccord.html",
@@ -29268,8 +29273,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11720,
-      "sha256": "0f735d66c85db70242acc38f647dcf410598bcbc00b8b09cd34baa242f86a445"
+      "bytes": 11848,
+      "sha256": "fe536663056b5d6438d5b0bd70c141758639f515667a85135424693378f790cb"
     },
     {
       "path": "reference-heart.js",
@@ -29350,6 +29355,11 @@
       "path": "RELEASE_v0.133.0.md",
       "bytes": 1358,
       "sha256": "bfd5dc4038fb8966eeb8d25a5f01449129063b335044de902230462d46969b51"
+    },
+    {
+      "path": "RELEASE_v0.134.0.md",
+      "bytes": 1872,
+      "sha256": "f09366badbcd527e55ff011e86d52b81b989934d4d217d67c612fdd6297609f9"
     },
     {
       "path": "RESILIENCE_NEURONES_v0.99.json",
@@ -29463,8 +29473,8 @@
     },
     {
       "path": "simulateur/data/forearm-motor-reference.json.gz",
-      "bytes": 25497788,
-      "sha256": "d22243e5756721154f4032761ef98309b063c3af57b3b552ef0b25a31e6fdbe2"
+      "bytes": 30550831,
+      "sha256": "d619f1fcb6f85ec38b11cfe92d86a3460eb0454b35791c11128353b4c619bde4"
     },
     {
       "path": "simulateur/data/hand-muscles-reference.json.gz",
@@ -29473,8 +29483,8 @@
     },
     {
       "path": "simulateur/data/human-nerves.json.gz",
-      "bytes": 106869,
-      "sha256": "63d35330b4574963115dcdb95cc3fb23b43cb71bb98971656e692250757455f5"
+      "bytes": 106864,
+      "sha256": "e575aa71a5b77c3e25ca19f12e1596e89e05364268e6bf06cf5bf6e7c900d2ec"
     },
     {
       "path": "simulateur/data/inventaire-multiechelle.json",
@@ -29483,13 +29493,23 @@
     },
     {
       "path": "simulateur/data/muscle-catalogue.csv",
-      "bytes": 118682,
-      "sha256": "dc523d98732a9b4ecb7966d07ae189b25bc95773919d0ca5e8b437148a94bae8"
+      "bytes": 123467,
+      "sha256": "5fb16e4420f8c8a5abe0e911a7ea2d31e04e9961cbb7a7775ae6b98c62559fbd"
     },
     {
       "path": "simulateur/data/muscle-catalogue.json.gz",
-      "bytes": 46219,
-      "sha256": "19d5363c4b026d1cd8b6b2f861f8d6e23eef79796f6f77617cd3e30387c39080"
+      "bytes": 54279,
+      "sha256": "54343124851240066858c38890a44237f87cd529bc61547740dd532889085f17"
+    },
+    {
+      "path": "simulateur/data/muscle-integration-ledger.json",
+      "bytes": 356082,
+      "sha256": "0f94641800be43a0c73667261e39a67df71558971b70ba5d7f37c0606ba7fbb7"
+    },
+    {
+      "path": "simulateur/data/muscle-skeleton-interface.json",
+      "bytes": 448847,
+      "sha256": "7c45371632fdd48b0345e0d8a9ae5e1743dade776c1c26d93550cec18515adb0"
     },
     {
       "path": "simulateur/data/nerve-linked-pilot.json",
@@ -29500,6 +29520,21 @@
       "path": "simulateur/data/neuromuscular-guide.json",
       "bytes": 2901,
       "sha256": "43f48ec311d9a21a0f0d2ff4c014c2be306b7239e5bbe0d04df9d3491dea63d1"
+    },
+    {
+      "path": "simulateur/data/recherche/muscles-correspondances-osseuses.json",
+      "bytes": 25738,
+      "sha256": "4a2162debdd32aab09bf0865eb1f2f22adef8ee4a4c52da2b3e8e9e2424723ef"
+    },
+    {
+      "path": "simulateur/data/recherche/muscles-lacunes-85.json",
+      "bytes": 72532,
+      "sha256": "8f38729d3bd6bbc4366ccf61639c2dd6fd66b73fa4cc10ab0cfd9ddac3219036"
+    },
+    {
+      "path": "simulateur/data/recherche/muscles-trapeze-quarantaine.json",
+      "bytes": 330,
+      "sha256": "e983d0bce0b659b2d965c7fd8d9a7b381ee72fff65566edfd3c1f45835ee1b56"
     },
     {
       "path": "simulateur/data/recovered-inventory.json",
@@ -30309,7 +30344,7 @@
     {
       "path": "simulateur/public-assets.js",
       "bytes": 3099,
-      "sha256": "e63eee2645811be9974366d9be921c961ba8dd31d2a78850ee5513b86ab2e491"
+      "sha256": "359ee539cdca9ffc8cbdaf951b8ef70236edc86d4a1f24470084440126c0367e"
     },
     {
       "path": "simulateur/reports/JOURNEE_24H.md",
@@ -30378,8 +30413,8 @@
     },
     {
       "path": "simulateur/web/forearm-motor-reference.js",
-      "bytes": 21355,
-      "sha256": "cb04bc1475e7b365fbad133e0a9546fd49537069e23cf543f428f7cd1a024a90"
+      "bytes": 21975,
+      "sha256": "72a40578bda08846ee31959f9e317619b396edec51222af39ba796be008f0f7f"
     },
     {
       "path": "simulateur/web/hand-muscles-reference.js",
@@ -30393,8 +30428,8 @@
     },
     {
       "path": "simulateur/web/index.html",
-      "bytes": 7687,
-      "sha256": "55fd8fcddafb3152b41affe9bbbac3b8fc722811527c47da381ba979e5fe2330"
+      "bytes": 7543,
+      "sha256": "e9b356144506c81d3a489a46d2fe512b5a0512fcbe37151f5899092df9bf2017"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30418,13 +30453,13 @@
     },
     {
       "path": "simulateur/web/muscles.html",
-      "bytes": 3904,
-      "sha256": "3f358c593e3502a0f318f9eca4a578e5d27b274ff8ff985ab108837734928c21"
+      "bytes": 3888,
+      "sha256": "08947466fd56127655625a25b5117a56a83a925b5035bedb08fdeb16440b9b81"
     },
     {
       "path": "simulateur/web/muscles.js",
-      "bytes": 6254,
-      "sha256": "b3b67eee2968234bcc9eed1225069428ea88aa49076185735cad05af98bae82e"
+      "bytes": 7780,
+      "sha256": "b9d5580f2f46306937c7e7e663a52dadaad6db7a40dbe305ceb194e3266a1eaa"
     },
     {
       "path": "simulateur/web/nerve-excitability.js",
@@ -30754,8 +30789,8 @@
     {
       "path": "VERSION.json",
       "bytes": 274,
-      "sha256": "e5fa4515e79be3c810c087031be0c16f747538d17a151b69ec1ccc19d223d1fa"
+      "sha256": "5b685a93be4f996ee0f19a7411edc6c06512273f4a51cac0f2a4c0359a02da18"
     }
   ],
-  "total_bytes": 1039308767
+  "total_bytes": 1045289739
 }
