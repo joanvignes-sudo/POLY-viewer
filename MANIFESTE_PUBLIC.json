@@ -29465,7 +29465,7 @@
     {
       "path": "index.html",
       "bytes": 7723,
-      "sha256": "99b7beaf2f3dccf8a8be13f55b2352533533bf669fd840d965099534a46f6035"
+      "sha256": "97fe461df434e7d7ed51ca33da83bdcea1a032989791bc14a0502f5dbb5a3ada"
     },
     {
       "path": "micro.html",
@@ -30519,8 +30519,8 @@
     },
     {
       "path": "simulateur/web/app.js",
-      "bytes": 33929,
-      "sha256": "81d2115b1878f2a457daf997e12848685e68dc26a172b7188c9755cb8eec399b"
+      "bytes": 34108,
+      "sha256": "ade6fc4215817225ccb4a9c96590c7d66dc866dca4bebf142c726b9e1349b45b"
     },
     {
       "path": "simulateur/web/brain-atlas.js",
@@ -30580,7 +30580,7 @@
     {
       "path": "simulateur/web/index.html",
       "bytes": 7673,
-      "sha256": "2d8485170254bfba7ce123b367c7a63611f2a0c4e89e062f164433c36028df3b"
+      "sha256": "78fed05077b8e63c667919048dde61ba7387f28dd73a8b58df84919cace2162b"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30718,5 +30718,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1027988965
+  "total_bytes": 1027989144
 }
