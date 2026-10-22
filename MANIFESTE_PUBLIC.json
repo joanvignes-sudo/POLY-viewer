@@ -1,5 +1,5 @@
 {
-  "version": "0.132.1",
+  "version": "0.132.2",
   "hash_basis": "Exact Git blob bytes served by GitHub Pages; original line endings retained for hashed scientific sources.",
   "files": [
     {
@@ -295,7 +295,7 @@
     {
       "path": "ETAT_CANONIQUE.json",
       "bytes": 12156,
-      "sha256": "8c49fd9f4c6acac095a26170b2f0ff4aca0d8ad0319732008c47d002f66db775"
+      "sha256": "4a17f4f4a74e4574f3dfdbe02d0f78a9a5eed004dfb0671ce2f6c11d6125d1ec"
     },
     {
       "path": "EXPLORATION_v0.93.json",
@@ -545,12 +545,12 @@
     {
       "path": "PUBLICATION_SCOPE.json",
       "bytes": 11617,
-      "sha256": "2b1438f8b1c15bcaebf561a8b49b49c136c5e7fa75b681ed6bcb174da3f23662"
+      "sha256": "28ab4538a21dce42d9e835aa832b8abef43b12b8f4b576361dcc554d739ed1c4"
     },
     {
       "path": "README.md",
-      "bytes": 11462,
-      "sha256": "a9d41851bc18f54c084b5e991a8e9406f5e44cca1aa286011b7b83ae15ceffb8"
+      "bytes": 11591,
+      "sha256": "d53c095cd346cf287fca97e8471b73084ec616f61d6018bf6fecff9dff21e6ed"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -586,6 +586,11 @@
       "path": "RELEASE_v0.132.1.md",
       "bytes": 2103,
       "sha256": "bd4f3399881a1d04297119ee23cad4788049d33b5b6863745343f53af70be893"
+    },
+    {
+      "path": "RELEASE_v0.132.2.md",
+      "bytes": 2115,
+      "sha256": "b4e5592ccfc91c81140fe95f0acadbb3894fe4f382b5adf8fe638324d0e51cb4"
     },
     {
       "path": "RESILIENCE_NEURONES_v0.99.json",
@@ -830,7 +835,7 @@
     {
       "path": "VERSION.json",
       "bytes": 274,
-      "sha256": "7faca239dcbbc64f1cf3e10be2ce3879e4aaaa653871c2fa34779d5a7619bd04"
+      "sha256": "ab76f5e3116baf2c215a8a1fd4ea07bf630273013992da591fa5af2261f1bb43"
     },
     {
       "path": "accueil-v0.129.0.html",
@@ -851,6 +856,11 @@
       "path": "accueil-v0.132.0.html",
       "bytes": 7709,
       "sha256": "e1033f7e59b39a66fa486c6683a4e7d34d050e15dc4919596fec8c61e026fde3"
+    },
+    {
+      "path": "accueil-v0.132.1.html",
+      "bytes": 7709,
+      "sha256": "cdf9504b6a304e543b6eded0cb204ac849145cb74cc7301a3efe7d36b1def5fa"
     },
     {
       "path": "anatomie.html",
@@ -29454,8 +29464,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7728,
-      "sha256": "1e3bb1e82d338810aa40e54dcff8f397b3934794fdabd9db39b97a84a54ee0b1"
+      "bytes": 7723,
+      "sha256": "99b7beaf2f3dccf8a8be13f55b2352533533bf669fd840d965099534a46f6035"
     },
     {
       "path": "micro.html",
@@ -30378,6 +30388,11 @@
       "sha256": "ff05e599453f7a692f2fc5ca1b7e69ca3c6a3e93fde1482951690a7aac56ec98"
     },
     {
+      "path": "simulateur/membrane/reports/INDEPENDENT_REFERENCE.json",
+      "bytes": 9110,
+      "sha256": "52341c70c2b0e444986af746eb2bb8a7d8f388d4a97c8377896404cb951e17b9"
+    },
+    {
       "path": "simulateur/membrane/source/ORIGINALS_BEFORE.json",
       "bytes": 10793,
       "sha256": "e6bbe911d0c5573dbe318a8c86dc1bd7e2c645866735b971c04ca20199162439"
@@ -30504,8 +30519,8 @@
     },
     {
       "path": "simulateur/web/app.js",
-      "bytes": 32360,
-      "sha256": "22ff76cd626df411f624db61d06a05d0b077afc8d251144047ed2a5c59b1c856"
+      "bytes": 33929,
+      "sha256": "81d2115b1878f2a457daf997e12848685e68dc26a172b7188c9755cb8eec399b"
     },
     {
       "path": "simulateur/web/brain-atlas.js",
@@ -30549,13 +30564,13 @@
     },
     {
       "path": "simulateur/web/forearm-motor-reference.js",
-      "bytes": 20437,
-      "sha256": "96e5941e84343f4fb40b83cdca4158020ccb9a774c2a1967f8a71d661c902cd7"
+      "bytes": 20466,
+      "sha256": "9971e91d2a2b122c35996a495a97d1dc33bfde0c56f22920de04d076005fb9a9"
     },
     {
       "path": "simulateur/web/hand-muscles-reference.js",
-      "bytes": 18302,
-      "sha256": "6bfa806709b67809a5df52da46da0f24cfe4265c22aa8ac8f555347fdc8b9cbb"
+      "bytes": 18331,
+      "sha256": "525daf8b2e25cbc937d3c8903e5c61f51c390f2e0ae9e4318dce6b19a41d1525"
     },
     {
       "path": "simulateur/web/human-nerves.js",
@@ -30564,8 +30579,8 @@
     },
     {
       "path": "simulateur/web/index.html",
-      "bytes": 7678,
-      "sha256": "70ea58b1b9ef775ee49ca533f55a8e4a8c267521ecb5273dfecd17e63dd5d461"
+      "bytes": 7673,
+      "sha256": "2d8485170254bfba7ce123b367c7a63611f2a0c4e89e062f164433c36028df3b"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30609,13 +30624,13 @@
     },
     {
       "path": "simulateur/web/recovered-work.css",
-      "bytes": 7577,
-      "sha256": "6bb5ea56a6b282c7a456826a675d160edaa2aea92f8349c1d69a816ba6cdcdd7"
+      "bytes": 7704,
+      "sha256": "f0b345ace5c8187c6638260bb957d17d76d53d21e616518efeb1109910a85075"
     },
     {
       "path": "simulateur/web/recovered-work.js",
-      "bytes": 16862,
-      "sha256": "1ef8e9ace08328d3e31ea3996d68bbf6fb00e5224d7ed6bd5a564db37a15331d"
+      "bytes": 17552,
+      "sha256": "aabf73525bc274be86b440f3ca1dee07dd58422ac5c373d5d09e9d46f3fc7a49"
     },
     {
       "path": "simulateur/web/reference-appearance.js",
@@ -30703,5 +30718,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1027967468
+  "total_bytes": 1027988965
 }

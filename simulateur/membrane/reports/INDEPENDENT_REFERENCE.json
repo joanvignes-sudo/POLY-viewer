@@ -1,0 +1,330 @@
+{
+  "scope": "EXTERNAL_CELLML_EQUATION_REPRODUCTION_NOT_EXPERIMENTAL_VALIDATION",
+  "source_url": "https://models.physiomeproject.org/workspace/hodgkin_huxley_1952/rawfile/89286376ae60610a7015573ba460682d5f30ff57/hodgkin_huxley_1952_variant01.cellml",
+  "source_sha256": "6b7177be630dae00d8cce479d965fecc76d106ab6d12c9e82f9b6b37d4a06a30",
+  "method": "restricted MathML interpretation + SciPy DOP853; no local HH equations imported into reference",
+  "matching_changes": [
+    "V_POLY=-V_CellML-65 mV and I_POLY=-I_CellML",
+    "source initial gates replaced by source-equation equilibrium at 0 mV",
+    "source stimulus -20 uA/cm2 10-10.5 ms replaced by each declared local protocol",
+    "JS profile only: source leak -10.613 replaced by -10.7 mV to match NEURON rounding"
+  ],
+  "limits_declared_before_run": {
+    "voltage_max_abs_mV": 0.1,
+    "gates_max_abs": 0.001
+  },
+  "cases": [
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 0,
+      "dt_ms": 0.02,
+      "samples": 3001,
+      "voltage_max_abs_mV": 2.3177904040494468e-11,
+      "gates_max_abs": 1.3522447050995368e-12,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 0,
+      "dt_ms": 0.01,
+      "samples": 6001,
+      "voltage_max_abs_mV": 1.4921397450962104e-12,
+      "gates_max_abs": 8.763129111244439e-14,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 0,
+      "dt_ms": 0.005,
+      "samples": 12001,
+      "voltage_max_abs_mV": 2.4158453015843406e-13,
+      "gates_max_abs": 1.5210055437364645e-14,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 2,
+      "dt_ms": 0.02,
+      "samples": 3001,
+      "voltage_max_abs_mV": 1.5068067682477704e-08,
+      "gates_max_abs": 6.657490114747588e-10,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 2,
+      "dt_ms": 0.01,
+      "samples": 6001,
+      "voltage_max_abs_mV": 9.580674031894887e-10,
+      "gates_max_abs": 4.2452881487964333e-11,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 2,
+      "dt_ms": 0.005,
+      "samples": 12001,
+      "voltage_max_abs_mV": 1.3605472304334398e-10,
+      "gates_max_abs": 6.162459431635625e-12,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 6,
+      "dt_ms": 0.02,
+      "samples": 3001,
+      "voltage_max_abs_mV": 0.0020220456834323386,
+      "gates_max_abs": 6.063427205216243e-06,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 6,
+      "dt_ms": 0.01,
+      "samples": 6001,
+      "voltage_max_abs_mV": 0.0001083767564153959,
+      "gates_max_abs": 3.4877022991874895e-07,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 6,
+      "dt_ms": 0.005,
+      "samples": 12001,
+      "voltage_max_abs_mV": 6.25733023440489e-06,
+      "gates_max_abs": 2.0748386675428776e-08,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 10,
+      "dt_ms": 0.02,
+      "samples": 3001,
+      "voltage_max_abs_mV": 0.0022659944463967463,
+      "gates_max_abs": 2.2843644285064357e-06,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 10,
+      "dt_ms": 0.01,
+      "samples": 6001,
+      "voltage_max_abs_mV": 0.00011969842962145094,
+      "gates_max_abs": 1.4693262762044412e-07,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 10,
+      "dt_ms": 0.005,
+      "samples": 12001,
+      "voltage_max_abs_mV": 6.894053001360589e-06,
+      "gates_max_abs": 9.468785089339349e-09,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 20,
+      "dt_ms": 0.02,
+      "samples": 3001,
+      "voltage_max_abs_mV": 0.002517523332073779,
+      "gates_max_abs": 2.04642969447999e-06,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 20,
+      "dt_ms": 0.01,
+      "samples": 6001,
+      "voltage_max_abs_mV": 0.00013336568375876823,
+      "gates_max_abs": 1.3227853024044833e-07,
+      "passed": true
+    },
+    {
+      "profile": "D_PYTHON_EL_-54.387",
+      "amplitude_uA_cm2": 20,
+      "dt_ms": 0.005,
+      "samples": 12001,
+      "voltage_max_abs_mV": 7.655714384213752e-06,
+      "gates_max_abs": 8.547490160104587e-09,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 0,
+      "dt_ms": 0.025,
+      "samples": 1601,
+      "voltage_max_abs_mV": 4.1168846109940205e-10,
+      "gates_max_abs": 2.4035697043789384e-11,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 0,
+      "dt_ms": 0.0125,
+      "samples": 3201,
+      "voltage_max_abs_mV": 2.539479737606598e-11,
+      "gates_max_abs": 1.4819603877391785e-12,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 0,
+      "dt_ms": 0.00625,
+      "samples": 6401,
+      "voltage_max_abs_mV": 2.6432189770275727e-12,
+      "gates_max_abs": 1.5597939606593059e-13,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 2,
+      "dt_ms": 0.025,
+      "samples": 1601,
+      "voltage_max_abs_mV": 4.09471994089472e-08,
+      "gates_max_abs": 1.5581449186452545e-09,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 2,
+      "dt_ms": 0.0125,
+      "samples": 3201,
+      "voltage_max_abs_mV": 2.48385134682394e-09,
+      "gates_max_abs": 9.352758151282003e-11,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 2,
+      "dt_ms": 0.00625,
+      "samples": 6401,
+      "voltage_max_abs_mV": 2.1003643269068561e-10,
+      "gates_max_abs": 7.829653592139607e-12,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 6,
+      "dt_ms": 0.025,
+      "samples": 1601,
+      "voltage_max_abs_mV": 2.8607762203591847e-07,
+      "gates_max_abs": 4.5171889631601125e-09,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 6,
+      "dt_ms": 0.0125,
+      "samples": 3201,
+      "voltage_max_abs_mV": 1.705754471004184e-08,
+      "gates_max_abs": 2.727839759630868e-10,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 6,
+      "dt_ms": 0.00625,
+      "samples": 6401,
+      "voltage_max_abs_mV": 1.279090611205902e-09,
+      "gates_max_abs": 2.1142171346966165e-11,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 10,
+      "dt_ms": 0.025,
+      "samples": 1601,
+      "voltage_max_abs_mV": 0.005234875700423913,
+      "gates_max_abs": 2.0159888621806843e-06,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 10,
+      "dt_ms": 0.0125,
+      "samples": 3201,
+      "voltage_max_abs_mV": 0.00026713830217062196,
+      "gates_max_abs": 1.3049250235930288e-07,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 10,
+      "dt_ms": 0.00625,
+      "samples": 6401,
+      "voltage_max_abs_mV": 1.5111836695780312e-05,
+      "gates_max_abs": 8.267817985796455e-09,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 20,
+      "dt_ms": 0.025,
+      "samples": 1601,
+      "voltage_max_abs_mV": 0.006346179841408173,
+      "gates_max_abs": 2.0628579567860683e-06,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 20,
+      "dt_ms": 0.0125,
+      "samples": 3201,
+      "voltage_max_abs_mV": 0.00031961901473920307,
+      "gates_max_abs": 1.3274376242655705e-07,
+      "passed": true
+    },
+    {
+      "profile": "JS_EL_-54.3",
+      "amplitude_uA_cm2": 20,
+      "dt_ms": 0.00625,
+      "samples": 6401,
+      "voltage_max_abs_mV": 1.8029111870987435e-05,
+      "gates_max_abs": 8.505234960765051e-09,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "reference_tolerance_control_max_state_difference": 1.3307428048392467e-07,
+  "native_source_protocol_terminal_states": [
+    {
+      "start": 0,
+      "end": 10,
+      "terminal_state": [
+        -0.0830684980868775,
+        0.05341911639253163,
+        0.6010823382888489,
+        0.31722421033748666
+      ]
+    },
+    {
+      "start": 10,
+      "end": 10.5,
+      "terminal_state": [
+        -9.180051038054504,
+        0.09439405091159211,
+        0.5896799507701189,
+        0.3243749221903192
+      ]
+    },
+    {
+      "start": 10.5,
+      "end": 40,
+      "terminal_state": [
+        0.09145338388778008,
+        0.05235494939893999,
+        0.59582015500938,
+        0.3179646225481147
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "numpy": "2.5.4"
+  },
+  "human_transfer_validated": false,
+  "empirical_validation": false,
+  "neuron_runtime_executed": false
+}

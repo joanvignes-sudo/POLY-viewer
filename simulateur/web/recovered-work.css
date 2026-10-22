@@ -22,3 +22,6 @@
 @media(max-width:1100px){#stage:has(#mechanism-in-scene:not([hidden]) #mechanism-stage-content[hidden])>.caption{bottom:calc(var(--view-controls-height,100px) + 104px)}}
 
 #activity-panel,#brain-panel,#recovered-work,#heritage-panel,#cogitate-scene-panel,#chains-heading,#membrane-disclosure{scroll-margin-top:80px}
+
+.workbench-nav button[aria-current="page"]{background:#285a55;border-color:#91b8a7;color:#fff}
+#heritage-empty{color:#dfc6a1}
