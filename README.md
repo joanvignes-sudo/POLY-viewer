@@ -1,3 +1,7 @@
+# POLY v0.138.0
+
+[Ouvrir le corps et le recalage musculaire](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.138.0) · [Méthode, sources et limites](simulateur/reports/MUSCLE_BONE_DISPLAY_FIT_2026-10-25.md)
+
 # POLY v0.136.0
 
 [Voir POLY](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.136.0) · [Audit du sacrum](https://joanvignes-sudo.github.io/POLY-viewer/sacrum-recalage.html)
