@@ -1,0 +1,15 @@
+/* Layout of the existing atlas only inside the workbench. No materials or anatomy changed. */
+html[data-poly-embedded="atelier"],html[data-poly-embedded="atelier"] body{height:100%;overflow:hidden}
+html[data-poly-embedded="atelier"] body>header,html[data-poly-embedded="atelier"] body>.limits{display:none}
+html[data-poly-embedded="atelier"] body>main{display:grid;grid-template-columns:170px minmax(0,1fr);height:100vh;min-height:0;overflow:hidden}
+html[data-poly-embedded="atelier"] main>aside{padding:12px 10px;max-height:100vh;overflow:auto}
+html[data-poly-embedded="atelier"] main>aside.right{display:none}
+html[data-poly-embedded="atelier"] #stage{height:100%;min-height:0;overflow:hidden}
+html[data-poly-embedded="atelier"] #stage .top{top:8px;left:8px;right:8px}
+html[data-poly-embedded="atelier"] #stage .caption{bottom:104px;left:8px;right:8px;padding:4px}
+html[data-poly-embedded="atelier"] #stage .caption h2{font-size:16px}
+html[data-poly-embedded="atelier"] #stage .caption p{font-size:10px;max-height:42px;overflow:auto}
+html[data-poly-embedded="atelier"] #stage nav{bottom:8px;left:8px;right:8px;gap:4px}
+html[data-poly-embedded="atelier"] #stage nav button{font-size:10px;padding:5px}
+html[data-poly-embedded="atelier"] #stage .pill{font-size:8px;padding:4px}
+@media(max-width:480px){html[data-poly-embedded="atelier"] body>main{grid-template-columns:132px minmax(0,1fr)}html[data-poly-embedded="atelier"] main>aside{padding:8px 6px}html[data-poly-embedded="atelier"] #stage .caption{display:none}}

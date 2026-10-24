@@ -1,0 +1,535 @@
+{
+  "schema": "poly.project-followup.v1",
+  "updated_utc": "2026-10-24T22:52:12.080724+00:00",
+  "complete": false,
+  "inventory": {
+    "lots": 7,
+    "evidence_documents": 2,
+    "scope": "Étapes publiques de cette livraison ; preuves numériques détaillées conservées pour examen."
+  },
+  "timeline": [
+    {
+      "date": "2026-10-24",
+      "title": "A3 — recentrage Pellerin",
+      "result": "8 chaînes et 22 mécanismes documentaires ; états saisis, couleurs et interface stable. Cas spécifique non paramétré.",
+      "status": "reçu, périmètre documentaire"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "A4 — lactate humain régional",
+      "result": "Régressions publiées évaluées dans leur domaine ; unités et reprise reçues. Aucun flux MCT2 ni ATP déduit.",
+      "status": "reçu, périmètre régional"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "A5 — plusieurs hypothèses",
+      "result": "3 scénarios principaux × 4 hypothèses, 60 équilibres C4. Glu/Gln et faible contribution αKG restent difficiles à départager.",
+      "status": "reçu, stationnaire réduit"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "A6 — suivi et projet de cascades 3D",
+      "result": "Registre cumulatif, étapes, sources, inconnues et critères pour passer à une projection spatiale. Localisation virtuelle autorisée, distincte du recalage mesuré.",
+      "status": "dossier de suivi ; 3D à construire à ce stade"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A7 — première projection C4 et progression réduite",
+      "result": "Quatre hypothèses, montée/décroissance d’un traceur conditionnel en temps réduit, projection conservative sur 1 728 voxels virtuels. Solution vérifiée contre Decimal et RK4 indépendants ; aucune durée humaine, énergie ou anatomie cellulaire validée.",
+      "status": "modèle réduit vérifié ; validation expérimentale ouverte"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A8 — qualification d’une horloge humaine candidate",
+      "result": "Pool en quantité par gramme trouvé dans une étude humaine glucose distincte. Erratum identifié mais contenu non reçu ; mélange de profils refusé. Contrôle exécutable des unités et contextes ; A7 conserve son temps réduit.",
+      "status": "qualification reçue ; candidat non raccordé"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A9 — lecture comparée des cascades",
+      "result": "Courbes des quatre hypothèses, bilan instantané et commandes de lecture/pause/début/arrêt de la source/fin. Repère sauvegardé ; noyaux scientifiques inchangés.",
+      "status": "lecture reçue ; aucun nouveau modèle biologique"
+    }
+  ],
+  "decisions": [],
+  "unknowns": [
+    {
+      "id": "BIO-01",
+      "missing": "Validation biologique du transitoire C4",
+      "effect": "Les courbes restent conditionnelles au modèle réduit.",
+      "next": "Comparer à un protocole expérimental compatible."
+    },
+    {
+      "id": "SPACE-01",
+      "missing": "Localisation anatomique des réactions",
+      "effect": "Le volume utilise des voxels virtuels, sans localisation mesurée.",
+      "next": "Qualifier un repère anatomique et un modèle d’observation."
+    },
+    {
+      "id": "TIME-01",
+      "missing": "Pool neuronal compatible avec le protocole",
+      "effect": "Le temps réduit ne se convertit pas en minutes humaines.",
+      "next": "Qualifier les paramètres et les corrections de la source."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-REVUE",
+      "title": "Bordone et al. — revue énergétique cérébrale",
+      "url": "https://doi.org/10.1111/jnc.14829",
+      "role": "Orientation documentaire, espèces/préparations à distinguer ; original privé conservé hors web."
+    },
+    {
+      "id": "S-LACTATE",
+      "title": "Boumezbeur et al. 2010 — lactate humain",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996729/",
+      "role": "Ancrage régional A4, pas mesure de l’échange cellulaire."
+    },
+    {
+      "id": "S-C4",
+      "title": "Lebon et al. 2002 — traceur et compartiments",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2995528/",
+      "role": "Source des équilibres réduits A5, correction des observations dépendante du modèle."
+    },
+    {
+      "id": "S-FPET",
+      "title": "Villien et al. 2014 — imagerie fonctionnelle FDG",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4224310/",
+      "role": "Étude primaire humaine ; modèle traceur et observation, pas visualisation de chaque réaction ni mesure directe ATP."
+    },
+    {
+      "id": "S-PET",
+      "title": "Phelps et al. 1979 — mesure tomographique du glucose",
+      "url": "https://doi.org/10.1002/ana.410060502",
+      "role": "Étude primaire humaine ; distinction signal traceur et métabolisme estimé."
+    }
+  ],
+  "lots": [
+    {
+      "name": "A3 — recentrage Pellerin",
+      "date": "2026-10-24",
+      "domain": "Énergétique cérébrale",
+      "status": "reçu, périmètre documentaire",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A4 — lactate humain régional",
+      "date": "2026-10-24",
+      "domain": "Énergétique cérébrale",
+      "status": "reçu, périmètre régional",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A5 — plusieurs hypothèses",
+      "date": "2026-10-24",
+      "domain": "Énergétique cérébrale",
+      "status": "reçu, stationnaire réduit",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A6 — suivi et projet de cascades 3D",
+      "date": "2026-10-24",
+      "domain": "Énergétique cérébrale",
+      "status": "dossier de suivi ; 3D à construire à ce stade",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A7 — première projection C4 et progression réduite",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "modèle réduit vérifié ; validation expérimentale ouverte",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A8 — qualification d’une horloge humaine candidate",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "qualification reçue ; candidat non raccordé",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A9 — lecture comparée des cascades",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "lecture reçue ; aucun nouveau modèle biologique",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et cadre des cascades"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "CAU-01",
+      "text": "Une relation possède un type causal distinct de la proximité ou composition",
+      "acceptance": "Un lien de proximité ne déclenche aucun événement physiologique.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "CAU-02",
+      "text": "Plusieurs causes peuvent être nécessaires ou alternatives",
+      "acceptance": "Le test AND n’active la sortie que lorsque toutes ses préconditions sont satisfaites.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "CAU-03",
+      "text": "Les effets conservent leurs dépendances et leur historique",
+      "acceptance": "Une sortie peut être remontée à ses entrées et versions de mécanismes.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "TMP-01",
+      "text": "Tout délai définit événements de début et fin, unité et contexte",
+      "acceptance": "Une mesure sans définition des extrémités est refusée au paramétrage quantitatif.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "TMP-02",
+      "text": "Temps d’affichage et temps biologique sont séparés",
+      "acceptance": "Changer la vitesse visuelle ne change pas les résultats enregistrés.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "TMP-03",
+      "text": "Une inconnue reste distincte d’un zéro",
+      "acceptance": "Un temps inconnu est visible et ne devient pas un événement instantané.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "TMP-04",
+      "text": "Série, parallèle et rétroaction ont des sémantiques distinctes",
+      "acceptance": "La fin d’une branche parallèle ne résulte pas de la somme des durées de toutes les branches.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "TMP-05",
+      "text": "Délai et dynamique continue coexistent",
+      "acceptance": "Un modèle de relaxation peut être couplé à un déclenchement discret avec pas explicite.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "TMP-06",
+      "text": "Les événements conditionnels peuvent être invalidés",
+      "acceptance": "Une condition disparue empêche l’exécution prévue lorsque le contrat l’exige.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCI-01",
+      "text": "Chaque assertion est liée à une preuve et un domaine",
+      "acceptance": "Une source anatomique n’est pas acceptée comme observation de latence.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCI-02",
+      "text": "Paramétrage humain sans transfert animal implicite",
+      "acceptance": "Espèce et préparation incompatibles empêchent l’activation en mode humain quantitatif.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCI-03",
+      "text": "Calibration et validation utilisent des observations distinctes",
+      "acceptance": "Le rapport identifie chaque donnée utilisée pour ajuster ou tester le modèle.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCI-04",
+      "text": "Dispersion biologique, mesure et erreur numérique restent distinctes",
+      "acceptance": "Le rapport d’incertitude conserve les types et les dépendances connues.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "ANA-01",
+      "text": "Identités stables indépendantes des maillages",
+      "acceptance": "Remplacer un fichier de surface ne change pas les identifiants des chaînes.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "ANA-02",
+      "text": "Attaches et repères anatomiques qualifiés avant revendication",
+      "acceptance": "Un sommet le plus proche ne devient pas automatiquement une enthèse.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "ANA-03",
+      "text": "Tendons, aponévroses et ligaments distincts",
+      "acceptance": "Le tendon commun de plusieurs chefs n’est pas dupliqué ni traité comme un nerf.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "ANA-04",
+      "text": "Continuité dans toutes les postures",
+      "acceptance": "Six postures contrôlées sur la chaîne locale, limites du rig documentées.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "END-01",
+      "text": "Émission, compartiment, transport et cible définis",
+      "acceptance": "Un échange glandulaire sans voie ni compartiment reste documentaire.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "END-02",
+      "text": "Récepteur et effet séparés de la concentration",
+      "acceptance": "Une variation circulante n’est pas appliquée à toutes les cellules indistinctement.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "END-03",
+      "text": "Endocrine et exocrine distingués",
+      "acceptance": "Le pilote sépare circulation hormonale et sécrétion dans un canal/lumière.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "END-04",
+      "text": "Rétroaction et clairance explicites",
+      "acceptance": "Le modèle déclare élimination et réservoirs ou limite sa revendication.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "NUM-01",
+      "text": "Unités vérifiées aux interfaces",
+      "acceptance": "Un couplage volts/concentration ou seconde/milliseconde mal converti est rejeté.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "NUM-02",
+      "text": "Conservations contrôlées selon les modèles",
+      "acceptance": "Les tests détectent une création de matière dans un compartiment fermé déclaré.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "NUM-03",
+      "text": "Pas et couplages multirythmes évalués",
+      "acceptance": "Sensibilité au pas et aux tolérances mesurée dans le domaine de validation.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "REP-01",
+      "text": "Exécution et reprise reproductibles",
+      "acceptance": "Même manifeste et même graine éventuelle reproduisent les sorties dans la tolérance définie.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "REP-02",
+      "text": "Sources, empreintes et licences séparées",
+      "acceptance": "Données, modèle, illustration et géométrie ont leur propre attribution.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "UI-01",
+      "text": "Modes documentaire, illustratif et quantitatif visibles",
+      "acceptance": "L’utilisateur voit quelles portions d’une chaîne ont une durée mesurée ou inconnue.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "UI-02",
+      "text": "Anatomie, causalité et chronologie synchronisées",
+      "acceptance": "Sélectionner un événement retrouve les structures concernées et inversement.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "UI-03",
+      "text": "Accessibilité et lisibilité",
+      "acceptance": "Actions principales au clavier, animation réductible, activité identifiable sans couleur seule.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "DAY-01",
+      "text": "Journée scénarisée sans score de santé arbitraire",
+      "acceptance": "Toutes les sorties24h renvoient aux modules actifs et à leurs limites.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "ADP-01",
+      "text": "Adaptation et calibration tracées",
+      "acceptance": "Aucun paramètre n’est changé pour améliorer un score sans version et protocole.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "GOV-01",
+      "text": "Migrations réversibles et pas d’écrasement entre chats",
+      "acceptance": "Contrôle des empreintes avant mutation et rapport de conflit si source changée.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "FIN-01",
+      "text": "Fin définie par périmètre accepté",
+      "acceptance": "Tous les scénarios de la version annoncée passent, lacunes hors périmètre consultables.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-01",
+      "text": "vues naturelle et explicative distinctes, conservant sélection et navigation.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-02",
+      "text": "matériaux de tissus différenciés, sans émission lumineuse utilisée comme couleur anatomique normale.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-03",
+      "text": "structures profondes accessibles par coupe/isolation ou transparence locale.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-04",
+      "text": "aucun ajout esthétique ne modifie identité, géométrie source ou temps biologique.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-05",
+      "text": "déformations et interfaces contrôlées avant détails de surface.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-06",
+      "text": "comparaison avant/après sur scène fixe, six postures si le rig change, PC et mobile ciblés.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-07",
+      "text": "options de qualité adaptées au matériel, sans achat ni migration de moteur avant benchmark.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-08",
+      "text": "textures et fibres reconstruites pour l’aspect sont marquées illustratives et ne deviennent pas des mesures anatomiques.",
+      "acceptance": "Recette comparative V0–V5 suivant ECONOMIE_ET_REALISME.md, périmètre affecté seulement",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "PRO-01",
+      "text": "Priorité aux neurologues, physiciens et étudiants",
+      "acceptance": "Le dossier de recette comprend protocoles, sources, limites et exports reproductibles.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "BASE-01",
+      "text": "Avatar debout en premier, géométrie cohérente dans le périmètre affiché",
+      "acceptance": "Recette des couches et interfaces ; défauts et recalages non validés explicités.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "BASE-02",
+      "text": "Repos stable avec activités de fond représentées",
+      "acceptance": "Absence de dérive numérique inexpliquée sur le protocole déclaré ; variabilité physiologique distinguée.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "EXP-01",
+      "text": "Conditions lumineuses et thermiques modifiables",
+      "acceptance": "Grandeurs et unités définies ; températures ambiante et tissulaire distinctes.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "EXP-02",
+      "text": "Intervention sur un intervalle ou paramètre",
+      "acceptance": "Mode physique/contrefactuel identifié ; modification réversible et trace causale en aval.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "EXP-03",
+      "text": "Résultats humains moyens et extrêmes contextualisés",
+      "acceptance": "Statistique, population et protocole conservés ; pas de combinaison abusive des extrêmes.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "EMO-01",
+      "text": "Émotions via protocoles et preuves contextualisés",
+      "acceptance": "Observation, modèle et hypothèse séparés ; aucune chimie universelle de la joie.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "EMDR-01",
+      "text": "EMDR comme protocole d’étude à qualifier",
+      "acceptance": "Stimulation seule non assimilée au traitement complet ; aucune efficacité individuelle déduite.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCALE-01",
+      "text": "Monde commun, modules et vues spécialisés",
+      "acceptance": "Même scénario, temps et identifiants conservés entre échelles.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCALE-02",
+      "text": "Ponts d’échelle contractuels",
+      "acceptance": "Unités, réduction/reconstruction, synchronisation et bilans explicités et testés.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCALE-03",
+      "text": "Détail visuel borné par les preuves",
+      "acceptance": "Zoom ne crée pas un état microscopique prétendument observé.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "SCALE-04",
+      "text": "ARN représentés par processus précis",
+      "acceptance": "Transcrit, cellule, compartiment et cinétique définis ou déclarés inconnus.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-09",
+      "text": "Transparence des seuls éléments occultants utiles",
+      "acceptance": "Chaîne visible, contexte conservé et matériaux restaurés à la sortie.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "VIS-10",
+      "text": "Continuité de navigation multiéchelle",
+      "acceptance": "Temps, chaîne et sélection maintenus avec contexte spatial et niveau de résolution visibles.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "MOB-01",
+      "text": "PC complet, mobile adapté",
+      "acceptance": "Fonctions limitées et résultats précalculés identifiés ; aucune dégradation scientifique silencieuse.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "REPRO-03",
+      "text": "Reproduction et export pour examen professionnel",
+      "acceptance": "Manifest relie protocole, données, versions, paramètres et sorties.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "LIC-01",
+      "text": "Réutilisation gratuite et droits contrôlés",
+      "acceptance": "Publication/dépôt/version/licence vérifiés ; forum utilisé comme piste, pas comme validation.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    },
+    {
+      "id": "FIN-02",
+      "text": "Couverture de la symphonie explicite",
+      "acceptance": "Registre par instrument, échange, état, temps et niveau de validation ; lacunes non masquées.",
+      "status": "Référentiel spécifié ; réception actuelle à relier aux preuves"
+    }
+  ]
+}

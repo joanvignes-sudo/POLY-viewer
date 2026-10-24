@@ -1,0 +1,25 @@
+{
+  "schema": "poly.worksites.v1",
+  "active": "pellerin-neuroenergetics",
+  "items": [
+    {
+      "id": "pellerin-neuroenergetics",
+      "label": "Dossier Pellerin",
+      "status": "active",
+      "panel": "chains",
+      "catalog": "case-pellerin.json"
+    },
+    {
+      "id": "thermal",
+      "label": "Thermique",
+      "status": "parked",
+      "panel": "thermal"
+    },
+    {
+      "id": "light",
+      "label": "Lumière",
+      "status": "preserved",
+      "panel": "light"
+    }
+  ]
+}

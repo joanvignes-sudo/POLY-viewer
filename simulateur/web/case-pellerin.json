@@ -1,0 +1,435 @@
+{
+  "schema": "poly.case-catalog.v1",
+  "id": "pellerin-neuroenergetics",
+  "computational_adapters": [
+    "human-blood-lactate-regressions-v1",
+    "human-recycling-hypotheses-v1",
+    "conditional-c4-spatial-v1"
+  ],
+  "title": "Énergétique cérébrale · dossier Pellerin",
+  "objective": "Relier activité synaptique, interactions astrocytes–neurones, substrats et énergie disponible.",
+  "specific_problem_status": "Cas expérimental spécifique non paramétré ; chaînes documentaires et hypothèses explicites, sans approbation scientifique attribuée au professeur.",
+  "source": {
+    "doi": "10.1111/jnc.14829",
+    "title": "The energetic brain — A review from students to students",
+    "publication_year": 2020,
+    "accepted_year": 2019,
+    "type": "review",
+    "species_scope": "mixed; qualify primary evidence separately before a human quantitative model",
+    "license": "CC BY-NC-ND; original PDF retained outside the web root; no figures redistributed"
+  },
+  "zones": [
+    {
+      "id": "vascular",
+      "title": "Apports et vaisseaux"
+    },
+    {
+      "id": "astrocyte",
+      "title": "Astrocyte"
+    },
+    {
+      "id": "extracellular",
+      "title": "Milieu extracellulaire"
+    },
+    {
+      "id": "neuron",
+      "title": "Neurone"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "supply",
+      "title": "Apports sanguins",
+      "zone": "vascular",
+      "description": "Glucose, lactate et oxygène : décrire les concentrations, les échanges et la préparation.",
+      "source_pages": [
+        8,
+        10,
+        11
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "bbb",
+      "title": "Barrière et transport du glucose",
+      "zone": "vascular",
+      "description": "Séparer le passage de la barrière et les transports cellulaires ; identifier les GLUT et les compartiments.",
+      "source_pages": [
+        8,
+        9
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "glucose-a",
+      "title": "Glucose astrocytaire",
+      "zone": "astrocyte",
+      "description": "Entrée et utilisation du glucose astrocytaire ; glycogène à traiter comme réserve distincte.",
+      "source_pages": [
+        8,
+        9
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "glycolysis",
+      "title": "Glycolyse astrocytaire",
+      "zone": "astrocyte",
+      "description": "Suivre pyruvate, ATP et équilibre NADH/NAD+, sans taux fixé par défaut.",
+      "source_pages": [
+        8,
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "lactate-a",
+      "title": "Production de lactate",
+      "zone": "astrocyte",
+      "description": "Réaction LDH et gradients : ne pas assimiler une enzyme à un sens de flux invariable.",
+      "source_pages": [
+        8,
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "mct-a",
+      "title": "Transport astrocytaire MCT1/4",
+      "zone": "astrocyte",
+      "description": "Flux de monocarboxylates dépendant des gradients et des conditions ; hypothèse ANLS à comparer.",
+      "source_pages": [
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "lactate-e",
+      "title": "Lactate extracellulaire",
+      "zone": "extracellular",
+      "description": "Réservoir distinct ; les bilans doivent inclure les autres entrées et sorties.",
+      "source_pages": [
+        9,
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "mct-n",
+      "title": "Transport neuronal MCT2",
+      "zone": "neuron",
+      "description": "Séparer expression, capacité de transport et flux réellement établi.",
+      "source_pages": [
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "pyruvate",
+      "title": "Pyruvate neuronal",
+      "zone": "neuron",
+      "description": "LDH, pyruvate et état redox ; lactate et glucose restent des voies distinctes.",
+      "source_pages": [
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "glucose-n",
+      "title": "Voie directe du glucose neuronal",
+      "zone": "neuron",
+      "description": "Transport et métabolisme neuronal du glucose à conserver en parallèle de la branche ANLS.",
+      "source_pages": [
+        8,
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "mitochondria",
+      "title": "Mitochondries et ATP",
+      "zone": "neuron",
+      "description": "Cycle TCA, phosphorylation oxydative, oxygène, ADP et ATP : compartiments et capacités à qualifier.",
+      "source_pages": [
+        3,
+        4,
+        8,
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "presynapse",
+      "title": "Libération et recyclage vésiculaire",
+      "zone": "neuron",
+      "description": "Séparer libération, remplissage, endocytose et recyclage ; demandes énergétiques distinctes.",
+      "source_pages": [
+        3,
+        4,
+        5
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "glutamate",
+      "title": "Glutamate extracellulaire",
+      "zone": "extracellular",
+      "description": "Le glutamate libéré est capté et recyclé ; préciser concentrations et cinétique.",
+      "source_pages": [
+        8,
+        9
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "receptors",
+      "title": "Récepteurs et flux ioniques",
+      "zone": "neuron",
+      "description": "Récepteurs postsynaptiques et flux Na+/Ca2+ ; ne pas réduire la réponse à un bouton activé/inactivé.",
+      "source_pages": [
+        3,
+        4,
+        5
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "pumps",
+      "title": "Pompes et gradients ioniques",
+      "zone": "neuron",
+      "description": "Restitution des gradients, demande en ATP et entretien : rétroaction à expliciter.",
+      "source_pages": [
+        3,
+        4,
+        5
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "eaat",
+      "title": "Capture astrocytaire EAAT",
+      "zone": "astrocyte",
+      "description": "Capture du glutamate couplée aux ions ; distinguer transport, pompage et réponse métabolique.",
+      "source_pages": [
+        8,
+        9,
+        10
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "glutamine",
+      "title": "Cycle glutamate–glutamine",
+      "zone": "astrocyte",
+      "description": "GS, export, capture neuronale, GLS et reconstitution du pool : chaîne à compartimenter.",
+      "source_pages": [
+        8,
+        9
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "potassium",
+      "title": "Signal K+ et réponse gliale",
+      "zone": "extracellular",
+      "description": "Branche documentée à vérifier dans sa préparation ; aucune latence humaine attribuée.",
+      "source_pages": [
+        8
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "redox",
+      "title": "Voie des pentoses et défense redox",
+      "zone": "neuron",
+      "description": "Préserver NADPH/glutathion et les contraintes redox dans la répartition des substrats.",
+      "source_pages": [
+        8
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "maintenance",
+      "title": "Entretien et transport cellulaire",
+      "zone": "neuron",
+      "description": "Dépense au repos, transport axonal et distribution mitochondriale, distincts de la seule émission.",
+      "source_pages": [
+        3,
+        4,
+        6
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "vascular-response",
+      "title": "Réponse vasculaire",
+      "zone": "vascular",
+      "description": "Raccord neurovasculaire à étudier avant de convertir une demande métabolique en débit.",
+      "source_pages": [
+        2,
+        3
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    },
+    {
+      "id": "imaging",
+      "title": "Mesure d’imagerie",
+      "zone": "vascular",
+      "description": "Ne pas identifier un signal IRMf ou TEP à une concentration cellulaire ; contrat d’observation à créer.",
+      "source_pages": [
+        10,
+        11
+      ],
+      "status": "documentary",
+      "kinetic_model": null,
+      "human_parameters": null
+    }
+  ],
+  "chains": [
+    {
+      "id": "anls",
+      "title": "Lactate : hypothèse ANLS",
+      "kind": "hypothesis",
+      "nodes": [
+        "supply",
+        "bbb",
+        "glucose-a",
+        "glycolysis",
+        "lactate-a",
+        "mct-a",
+        "lactate-e",
+        "mct-n",
+        "pyruvate",
+        "mitochondria",
+        "pumps"
+      ]
+    },
+    {
+      "id": "direct",
+      "title": "Glucose neuronal : voie parallèle",
+      "kind": "documentary",
+      "nodes": [
+        "supply",
+        "bbb",
+        "glucose-n",
+        "mitochondria",
+        "pumps"
+      ]
+    },
+    {
+      "id": "synapse",
+      "title": "Activité synaptique et dépense",
+      "kind": "documentary",
+      "nodes": [
+        "mitochondria",
+        "presynapse",
+        "glutamate",
+        "receptors",
+        "pumps"
+      ]
+    },
+    {
+      "id": "glia",
+      "title": "Capture du glutamate et réponse gliale",
+      "kind": "documentary",
+      "nodes": [
+        "glutamate",
+        "eaat",
+        "glycolysis",
+        "lactate-a"
+      ]
+    },
+    {
+      "id": "recycling",
+      "title": "Recyclage glutamate–glutamine",
+      "kind": "documentary",
+      "nodes": [
+        "presynapse",
+        "glutamate",
+        "eaat",
+        "glutamine",
+        "presynapse"
+      ]
+    },
+    {
+      "id": "potassium",
+      "title": "Branche potassium",
+      "kind": "documentary",
+      "nodes": [
+        "receptors",
+        "potassium",
+        "glycolysis"
+      ]
+    },
+    {
+      "id": "redox",
+      "title": "Répartition énergétique et redox",
+      "kind": "documentary",
+      "nodes": [
+        "glucose-n",
+        "redox",
+        "mitochondria",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "imaging",
+      "title": "Métabolisme, vaisseaux et observation",
+      "kind": "contract_to_define",
+      "nodes": [
+        "mitochondria",
+        "vascular-response",
+        "imaging"
+      ]
+    }
+  ],
+  "solver": {
+    "status": "to_build",
+    "rates": null,
+    "quantitative_results": false,
+    "physiological_clock": null
+  },
+  "anatomical_registration": null
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,"><title>POLY · Atelier fonctionnel</title>
+<link rel="stylesheet" href="poly-atelier.css">
+</head>
+<body>
+<a class="skip" href="#atelier">Aller à l'atelier</a>
+<header>
+  <div><strong>POLY</strong><span class="slash"> / ATELIER FONCTIONNEL</span><small>Bêta · atelier de simulation</small></div>
+  <nav><a href="index.html">Avatar seul</a><button type="button" id="open-project-followup">Suivi du projet</button></nav>
+</header>
+<div class="intro"><div><h1>Un corps commun. Des chaînes à explorer.</h1><p>Chantier actif : énergétique cérébrale et interactions astrocytes–neurones. Les autres travaux restent disponibles dans Chantiers.</p></div><div class="session-tools"><span class="scope">Dossier actif · Pellerin</span><button id="session-export" type="button">Exporter la séance</button><label class="session-import">Importer une séance <input id="session-file" type="file" accept=".json,application/json"></label><span id="session-status" role="status"></span></div></div>
+<main id="atelier">
+ <section class="body-panel" aria-labelledby="body-title">
+  <div class="panel-head"><div><span class="eyebrow">01 / Corps de référence</span><h2 id="body-title">Avatar anatomique interactif</h2></div><a href="index.html" target="_blank" rel="noopener">Agrandir ↗</a></div>
+  <iframe id="body-frame" src="index.html" title="Vue 3D de POLY avec ses propres commandes anatomiques" loading="eager"></iframe>
+  <p class="frame-note">Rotation, zoom et sélection restent disponibles ici. La carte cellulaire du dossier se consulte à droite.</p>
+ </section>
+ <section class="lab-panel" aria-labelledby="lab-title">
+  <div class="panel-head"><div><span class="eyebrow">02 / Laboratoire</span><h2 id="lab-title">Chantier actif et travaux conservés</h2></div></div>
+  <div role="tablist" aria-label="Chantiers POLY" class="tabs">
+   <button type="button" role="tab" id="tab-chains" aria-controls="panel-chains" aria-selected="true" data-tab="chains">Dossier Pellerin</button>
+   <details id="worksite-menu"><summary>Chantiers conservés</summary><div class="worksite-items">
+   <button type="button" role="tab" id="tab-light" aria-controls="panel-light" aria-selected="false" data-tab="light">Lumière · conservé</button>
+   <button type="button" role="tab" id="tab-thermal" aria-controls="panel-thermal" aria-selected="false" data-tab="thermal">Thermique · en pause</button>
+
+   </div></details>
+  </div>
+  <div id="panel-thermal" role="tabpanel" aria-labelledby="tab-thermal" class="experiment" hidden>
+    <span class="evidence">Calcul de modèle reçu · JOS-3 · non validé sur ce scénario humain</span>
+    <h3>Changement de température ambiante</h3>
+    <p>Scénario fixe : air et rayonnement à 28 °C pendant 60 min, puis 20 °C pendant 60 min. Homme théorique 30 ans, 1,70 m, 60 kg, debout, PAR 1,2. Lecture des données existantes, pas nouveau calcul.</p>
+    <div class="settings">
+      <label for="thermal-step">Pas numérique <select id="thermal-step"><option value="60">60 s</option><option value="30">30 s</option><option value="15">15 s</option></select></label>
+      <label for="thermal-speed">Lecture <select id="thermal-speed"><option value="60">1 min/s</option><option value="300" selected>5 min/s</option><option value="600">10 min/s</option></select></label>
+    </div>
+    <div class="controls">
+      <button id="thermal-play" type="button" disabled>▶ Lire</button>
+      <button id="thermal-reset" type="button" disabled>↺ Début</button>
+      <button id="thermal-export" type="button" disabled>Exporter l'instant</button>
+    </div>
+    <label class="time-range" for="thermal-time">Temps propre au modèle <output id="thermal-clock">—</output><input type="range" id="thermal-time" min="60" max="7200" step="60" value="60" disabled></label>
+    <div class="metrics"><div><small>Peau moyenne calculée</small><strong id="thermal-skin">—</strong></div><div><small>Sang central du modèle</small><strong id="thermal-blood">—</strong></div><div><small>Air et rayonnement</small><strong id="thermal-air">—</strong></div></div>
+    <svg id="thermal-chart" viewBox="0 0 840 340" role="img" aria-label="Trajectoires pré-calculées peau moyenne et sang central en fonction du temps de modèle"></svg>
+    <p id="thermal-status" role="status">Chargement des calculs reçus…</p>
+    <p class="limit">Les lignes entre échantillons guident la lecture : aucune interpolation n'est utilisée pour produire de nouveaux états. Le sang central JOS-3 n'est pas une température rectale mesurée. Le changement d'environnement ne commande pas l'avatar.</p>
+
+    <details id="atelier-engine">
+      <summary>Créer une nouvelle expérience thermique</summary>
+      <p>Modifier l’air et le rayonnement entre 26 et 28 °C, choisir l’intervalle, puis calculer une intervention et son témoin. Les 85 états sont vérifiés avant réception. Le profil initial reste celui de T4, PAR 1,4 : il diffère de la lecture à PAR 1,2 ci-dessus.</p>
+      <p id="atelier-engine-status" role="status">Ouvrir ce panneau pour charger les commandes existantes.</p>
+      <iframe id="engine-frame" title="Calcul thermique local : conditions, témoin et registre vérifié" data-src="about:blank" hidden></iframe>
+      <p><a id="atelier-native-download" hidden>Télécharger le registre préparé</a></p>
+      <details id="atelier-native-copy" hidden><summary>Copier le registre si le navigateur bloque le téléchargement</summary><button id="atelier-native-copy-button" type="button">Copier le registre complet</button><p id="atelier-native-copy-status" role="status"></p><textarea id="atelier-native-text" readonly aria-label="Registre natif exporté" rows="6" style="width:100%"></textarea></details>
+      <p class="limit">Le registre complet et son instant consulté s’exportent dans ce panneau. « Exporter la séance » conserve seulement les réglages des lectures de l’atelier ; il n’exporte pas ce nouveau calcul. Aucune correspondance avec l’horloge de la lumière ou l’avatar n’est créée.</p>
+      <p>Le moteur thermique est conservé dans l’atelier local ; seuls les résultats reçus sont proposés ici.</p>
+    </details>
+    <div class="sources"><a href="temperature-recherche.html">Étude thermique originale ↗</a><a href="temperature-recherche.json" download>Données du modèle ↗</a></div>
+  </div>
+  <div id="panel-light" role="tabpanel" aria-labelledby="tab-light" class="experiment" hidden>
+    <span class="evidence">Contraste statistique pré-calculé · 15 variantes</span>
+    <h3>Modifier la lumière</h3><p>Choisir l'éclairement et la durée dans l'expérience ci-dessous. Les variations obtenues ne sont ni un diamètre observé ni une réponse causale humaine validée.</p>
+    <iframe id="light-frame" data-src="experience-lumiere.html" title="Expérience originale de variation de lumière" loading="lazy"></iframe>
+    <p class="limit">Cette expérience possède sa propre horloge issue d'un enregistrement. Aucun synchronisme avec la thermique ou le corps affiché.</p>
+    <div class="sources"><a href="observations-lumiere.html">Mesures pupillaires originales ↗</a><a href="experience-lumiere.html" target="_blank" rel="noopener">Ouvrir l'expérience séparément ↗</a></div>
+  </div>
+  <div id="panel-chains" role="tabpanel" aria-labelledby="tab-chains" class="experiment">
+    <div id="case-workspace"><p role="status">Chargement du dossier actif…</p></div>
+    <div id="project-followup-host"></div>
+    <details class="case-references"><summary>Anatomie, sources et autres chaînes</summary><div class="actions"><a href="inventory.html">Inventaire multi-échelle</a><a href="../cogitate/index.html">COGITATE</a><a href="https://doi.org/10.1111/jnc.14829" target="_blank" rel="noopener">Revue transmise par L. Pellerin</a></div></details>
+  </div>
+ </section>
+</main>
+<footer>POLY · Bêta de travail. États saisis, modèles et observations restent identifiés dans leurs dossiers. Sources et hypothèses accessibles depuis chaque chaîne.</footer>
+<script type="module" src="poly-atelier.mjs"></script>
+</body></html>

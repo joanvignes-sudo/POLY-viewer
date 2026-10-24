@@ -1,5 +1,5 @@
 {
-  "version": "0.136.0",
+  "version": "0.137.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -543,8 +543,8 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 12130,
-      "sha256": "473108268bfccc82dc35b0bbc3a9938eeadb7de19ed8fb1a6d45d3fd829beeda"
+      "bytes": 11960,
+      "sha256": "26b4e0d093b5a7313462f1ab890fc77af52d36add18d2fe023083bcb12dc9b59"
     },
     {
       "path": "README.md",
@@ -620,6 +620,11 @@
       "path": "RELEASE_v0.136.0.md",
       "bytes": 1626,
       "sha256": "298d390bcb96b902eb5a3f234ac52b8cdd9db89037639c559b18c14f460ad214"
+    },
+    {
+      "path": "RELEASE_v0.137.0.md",
+      "bytes": 2672,
+      "sha256": "59be39996e6902454670a6f8f63415d491f72635fb4754b7111e5d5ffefd35e2"
     },
     {
       "path": "RESILIENCE_NEURONES_v0.99.json",
@@ -863,8 +868,8 @@
     },
     {
       "path": "VERSION.json",
-      "bytes": 274,
-      "sha256": "dc9e91833a0c099d9c1a66fa0781aad123f22b56603f798b383b930136b3b2aa"
+      "bytes": 264,
+      "sha256": "18a3d18ad9bd2ed7c3dcc2cfd6b38f3a3b7bc4d5d21ccc94dcd6094fe203aa86"
     },
     {
       "path": "accueil-v0.129.0.html",
@@ -29508,8 +29513,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7692,
-      "sha256": "ec1a59636b25a5c5976f48613bc1f2d57eee2d81c1f071b2d353c67e26691335"
+      "bytes": 8089,
+      "sha256": "4514a9d5b370fe441f333d17a6a7d9d57658bcd53a79c4aba7bf9e77d0b1b05b"
     },
     {
       "path": "micro.html",
@@ -30672,6 +30677,16 @@
       "sha256": "7359b7156168c9d83e099d1b8a3195e593f7aab77384b0aef3c17e337ed9ee1a"
     },
     {
+      "path": "simulateur/reports/suivi/CADRE_CASCADES_3D.md",
+      "bytes": 902,
+      "sha256": "01168b97806ea7a658929376ec179c4892d8e4626859aea95321c33fc23fd396"
+    },
+    {
+      "path": "simulateur/reports/suivi/DOSSIER_SUIVI.md",
+      "bytes": 2672,
+      "sha256": "59be39996e6902454670a6f8f63415d491f72635fb4754b7111e5d5ffefd35e2"
+    },
+    {
       "path": "simulateur/web/activities.js",
       "bytes": 13919,
       "sha256": "3e09499d6014ecbc112e2914964082301ac0c7de35c250bffd1e4e550ba65be8"
@@ -30682,6 +30697,11 @@
       "sha256": "adcfc3a71bc67942b2bf4257a7ba349946f03ada079359f0c3c8222b86ee927e"
     },
     {
+      "path": "simulateur/web/atlas-embed.mjs",
+      "bytes": 524,
+      "sha256": "deda763600899e65a808c9bfb9f929508a9f7490aaf0f42bb641d07edaa2a7b0"
+    },
+    {
       "path": "simulateur/web/avatar-bones.js",
       "bytes": 12571,
       "sha256": "309a86a69cbb37e67ebceb95cc7d774a89f365d8c92e469f899be50c517b2eb6"
@@ -30690,6 +30710,41 @@
       "path": "simulateur/web/brain-atlas.js",
       "bytes": 8784,
       "sha256": "b7c837114d4949acb23de99639149c119f84ea356ffd551d34478f08c034bdc0"
+    },
+    {
+      "path": "simulateur/web/c4-reading.mjs",
+      "bytes": 1398,
+      "sha256": "defab21a3272da20e2956a9b388ab08d6b31fec247016d432054e21aa6083b93"
+    },
+    {
+      "path": "simulateur/web/c4-spatial-core.mjs",
+      "bytes": 3506,
+      "sha256": "f767638eb4c50b23c950c021ca845ef71345f444c3c0a2882e924e715f10d989"
+    },
+    {
+      "path": "simulateur/web/c4-spatial-view.mjs",
+      "bytes": 13075,
+      "sha256": "d1b571789a728a258447172fff35270c2d0d8a5198c4b650cdcf60e5c8376739"
+    },
+    {
+      "path": "simulateur/web/case-bundle-core.mjs",
+      "bytes": 3379,
+      "sha256": "f07e4ed7af91e22bc3e62674b35ed466978bd6f8d433ffd0774677c3055feb39"
+    },
+    {
+      "path": "simulateur/web/case-pellerin.json",
+      "bytes": 11592,
+      "sha256": "70e42aec388ebd8e76522f5004bd47a6f2f1a5446150dd2fe30bb81a779dc030"
+    },
+    {
+      "path": "simulateur/web/case-workspace-core.mjs",
+      "bytes": 4459,
+      "sha256": "ef50118f8eaebc290c664e5c8c510434c6a693f4946c2bc49f5e99abd11dd45d"
+    },
+    {
+      "path": "simulateur/web/case-workspace.mjs",
+      "bytes": 10962,
+      "sha256": "ee50f340cf913fdbcc83a2a3a49e74978f07838a74bb1694588f2d47a78fbe20"
     },
     {
       "path": "simulateur/web/cogitate-scene.css",
@@ -30722,6 +30777,21 @@
       "sha256": "ece15504434d8a228b96ec53734e2748173fa8730aed8e71b34e458267c61ef8"
     },
     {
+      "path": "simulateur/web/experience-lumiere.html",
+      "bytes": 4185,
+      "sha256": "b6c56aad37ddd0623da06e1d1bfc149dc2f110b49dc57844904f19d2aff5dad6"
+    },
+    {
+      "path": "simulateur/web/experience-lumiere.json",
+      "bytes": 190186,
+      "sha256": "4937612857def19fc1d7b93635597cbfd14269f8782a420a33462235835895ca"
+    },
+    {
+      "path": "simulateur/web/experience-lumiere.mjs",
+      "bytes": 4857,
+      "sha256": "c7e1808a9679bead0ec92bf138506bea0d39741a6813a63f12a7ea5c353dfd8e"
+    },
+    {
       "path": "simulateur/web/eye-light.js",
       "bytes": 3991,
       "sha256": "9076dd33a43c7206e581e6fa5bfab036bbbfcd361b7767e13927680bccd96fa6"
@@ -30737,14 +30807,24 @@
       "sha256": "525daf8b2e25cbc937d3c8903e5c61f51c390f2e0ae9e4318dce6b19a41d1525"
     },
     {
+      "path": "simulateur/web/human-lactate-core.mjs",
+      "bytes": 2839,
+      "sha256": "ce551669cff3563e5c88f668b4c285167ea0994a7e1769af241295132705bb31"
+    },
+    {
+      "path": "simulateur/web/human-lactate-view.mjs",
+      "bytes": 5048,
+      "sha256": "059c75402d6721291c315d8f8f54a25f9774c7d3da19c087210f77d46427b0cd"
+    },
+    {
       "path": "simulateur/web/human-nerves.js",
       "bytes": 22516,
       "sha256": "25cfb9eae38ff8c069b8c03c8d41ab57efeb13ca5fca279bd1e947fa644a7a51"
     },
     {
       "path": "simulateur/web/index.html",
-      "bytes": 7661,
-      "sha256": "983c1a351e38a1bea50a2b8f4ca41d1c423961579ad82c5ea7b890e1707fbde8"
+      "bytes": 8058,
+      "sha256": "945fef0a83f678a6c960a2c3f5aeff73c4210825fe31a6c4fe9c9f52c840cb0c"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30797,6 +30877,46 @@
       "sha256": "b505b23e29440cfcdc166768789ef4356538e7636700a15482f88b30d9c2a1e3"
     },
     {
+      "path": "simulateur/web/poly-atelier-avatar.css",
+      "bytes": 1517,
+      "sha256": "e327a80b368cba50025fc7fd3f8d01919cff5f143178251daaa862be9aa5d647"
+    },
+    {
+      "path": "simulateur/web/poly-atelier-core.mjs",
+      "bytes": 1709,
+      "sha256": "dcdc142abf1374f056d3ada577caa049a861d84fe103e2333cb0fe9fadf4928e"
+    },
+    {
+      "path": "simulateur/web/poly-atelier-session.mjs",
+      "bytes": 1379,
+      "sha256": "641f5e46bf6bb816030fc2650e54cc3506771c439ed9362772dbe66597da26a1"
+    },
+    {
+      "path": "simulateur/web/poly-atelier.css",
+      "bytes": 9229,
+      "sha256": "634ffecf1c1442a19c233d28fcc8e456c93ea147784137b31025ab20c140bba4"
+    },
+    {
+      "path": "simulateur/web/poly-atelier.html",
+      "bytes": 8279,
+      "sha256": "1213ef87188a9e4403948d5f17755e3c566d128269f870f081f914b36fb13d6d"
+    },
+    {
+      "path": "simulateur/web/poly-atelier.mjs",
+      "bytes": 11158,
+      "sha256": "c3fadbd71452729f99c56085d02d037243c7d9baa6af4d4700f991ef48732cd2"
+    },
+    {
+      "path": "simulateur/web/project-followup.json",
+      "bytes": 24912,
+      "sha256": "77609621e2be5f7247b172224f8bab883a1abc0fe8a09238a1bf0abefe5368c4"
+    },
+    {
+      "path": "simulateur/web/project-followup.mjs",
+      "bytes": 4922,
+      "sha256": "8046bef291ca3c8f98546f4ca34922a213e196c480727b8b4c92deccc1a079f1"
+    },
+    {
       "path": "simulateur/web/recovered-membrane.js",
       "bytes": 4998,
       "sha256": "f87057e3c9807e11de13843941b2d71ff1de46ee89a09c830c80c495e11d2ab8"
@@ -30810,6 +30930,16 @@
       "path": "simulateur/web/recovered-work.js",
       "bytes": 17552,
       "sha256": "aabf73525bc274be86b440f3ca1dee07dd58422ac5c373d5d09e9d46f3fc7a49"
+    },
+    {
+      "path": "simulateur/web/recycling-hypotheses-core.mjs",
+      "bytes": 3058,
+      "sha256": "78c5ca76e702fcabb078c6f0eda3adc8cfb73012bda75638531f26eba8acb0dd"
+    },
+    {
+      "path": "simulateur/web/recycling-hypotheses-view.mjs",
+      "bytes": 5778,
+      "sha256": "6ea6f2c0cf99a2c7ea0b48049aea0079d421dd460f8632fccde14d30affc87bd"
     },
     {
       "path": "simulateur/web/reference-appearance.js",
@@ -30897,6 +31027,11 @@
       "sha256": "514ead85df7a05f027c2b38d306711d26554dfe7c49873bf1e40102c08e34e40"
     },
     {
+      "path": "simulateur/web/worksites.json",
+      "bytes": 497,
+      "sha256": "945dbf5a631bc579dcf66846cce1187fb292b0aca267660f6de8f0cdb3a18ded"
+    },
+    {
       "path": "suite.html",
       "bytes": 31532,
       "sha256": "da39e8afabeeaf6d265ec52c81df1e3469562c2f0a956dec016b7a0672bb4b41"
@@ -30912,5 +31047,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1062446927
+  "total_bytes": 1062782235
 }

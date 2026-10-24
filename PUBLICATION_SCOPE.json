@@ -1,5 +1,5 @@
 {
-  "version": "0.136.0",
+  "version": "0.137.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -352,5 +352,8 @@
     "homologues_verified": 0,
     "new_skeletal_transform_applied": false,
     "independent_subject_validation": false
-  }
+  },
+  "atelier": "simulateur/web/poly-atelier.html#chains",
+  "c4_spatial_origin": "conditional model and hypothetical placement",
+  "thermal": "preserved results only; local engine paused"
 }
