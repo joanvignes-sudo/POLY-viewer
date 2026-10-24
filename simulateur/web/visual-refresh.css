@@ -437,3 +437,65 @@ body > .limits strong { color: #e5f5f2; }
   button, .inventory-link { transition: none !important; }
   .inventory-link:hover { transform: none; }
 }
+
+/* Atelier avatar: a focused interactive canvas instead of nested sidebars.
+   Full explorer remains unchanged unless ?embed=1 is present. */
+html.embedded-view body {
+  min-height: 0;
+  height: 100dvh;
+  overflow: hidden;
+  display: block;
+}
+html.embedded-view body > header,
+html.embedded-view body > .limits,
+html.embedded-view main > aside { display: none !important; }
+html.embedded-view body > main {
+  display: block !important;
+  width: 100%;
+  height: 100dvh !important;
+  min-height: 0;
+  overflow: hidden;
+}
+html.embedded-view #stage {
+  width: 100%;
+  height: 100dvh !important;
+  min-height: 0 !important;
+}
+html.embedded-view #stage > .top {
+  left: 12px;
+  right: 12px;
+  top: 10px;
+}
+html.embedded-view #stage > .top .pill:not(:first-child) { display: none; }
+html.embedded-view #stage > .caption {
+  left: 12px;
+  width: min(520px, calc(100% - 24px));
+  bottom: 90px !important;
+  padding: 11px 14px;
+}
+html.embedded-view #stage > .caption h2 { font-size: 17px; }
+html.embedded-view #stage > .caption p { display: none; }
+html.embedded-view #stage > nav {
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  gap: 6px;
+  justify-content: center;
+  padding: 8px;
+}
+html.embedded-view #stage > nav button:not(#play):not(#skin):not(#front):not(#reset),
+html.embedded-view #stage > nav label,
+html.embedded-view #stage > nav select { display: none !important; }
+html.embedded-view #stage > nav button {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 10px;
+}
+@media (max-width: 440px) {
+  html.embedded-view #stage > .caption { bottom: 105px !important; }
+  html.embedded-view #stage > nav button {
+    flex: 1 1 calc(50% - 6px);
+    font-size: 11px;
+  }
+}
