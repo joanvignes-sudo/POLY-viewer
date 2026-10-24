@@ -1,0 +1,509 @@
+/* POLY / visual refresh — presentation only. No scientific state or controls changed.
+   This file is loaded after the existing interface styles. */
+:root {
+  color-scheme: dark;
+  --pv-bg: #07111e;
+  --pv-panel: #0d1d2d;
+  --pv-panel-raised: #14293b;
+  --pv-line: #2b4658;
+  --pv-line-bright: #3b6170;
+  --pv-text: #edf6fb;
+  --pv-muted: #a9bfcb;
+  --pv-accent: #87ead5;
+  --pv-accent-light: #bffff0;
+  --pv-amber: #f2cd91;
+}
+
+body {
+  background: var(--pv-bg);
+  color: var(--pv-text);
+  font: 14px/1.55 "Segoe UI", Inter, ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: .005em;
+}
+
+body > header {
+  position: relative;
+  z-index: 12;
+  height: 72px;
+  flex-basis: 72px;
+  padding-inline: clamp(18px, 2.4vw, 40px);
+  gap: clamp(12px, 2vw, 30px);
+  background: linear-gradient(90deg, #091522 0%, #101f2e 60%, #102932 100%);
+  border-bottom: 1px solid #30505c;
+  box-shadow: 0 9px 26px #020b1547;
+}
+
+header b {
+  font-size: 25px;
+  font-weight: 780;
+  letter-spacing: .095em;
+  line-height: 1.1;
+  color: #f0fafb;
+}
+header b span {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  color: var(--pv-accent);
+}
+header small {
+  color: var(--pv-muted);
+  font-size: 12px;
+}
+#status {
+  color: var(--pv-accent-light);
+  font-size: 11px;
+  max-width: 25%;
+  text-align: right;
+}
+body > main {
+  grid-template-columns: clamp(265px, 21.5vw, 325px) minmax(0, 1fr) clamp(305px, 24vw, 390px);
+  background: #081521;
+}
+
+main > aside {
+  min-width: 0;
+  padding: 28px clamp(16px, 1.8vw, 30px) 36px;
+  background: linear-gradient(180deg, #102436, #0c1b2a 64%, #091825);
+  border-color: #294452;
+  scrollbar-color: #375b67 transparent;
+  scrollbar-width: thin;
+}
+main > aside.right {
+  background: linear-gradient(180deg, #101f30, #0d1b2a 70%);
+}
+main > aside > .eyebrow,
+main > aside > label.eyebrow {
+  display: block;
+  margin-top: 24px;
+}
+.eyebrow {
+  color: var(--pv-accent);
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+main > aside h1 {
+  margin: 10px 0 14px;
+  font-size: clamp(27px, 2.45vw, 37px);
+  font-weight: 720;
+  letter-spacing: -.045em;
+  line-height: 1.08;
+  color: #f2fbfd;
+}
+main > aside h2 {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.27;
+  color: #eaf4f7;
+}
+main > aside p,
+main > aside footer {
+  color: var(--pv-muted);
+  line-height: 1.6;
+}
+main > aside p { font-size: 12px; }
+main > aside a { color: #9cf1dc; }
+.inventory-link {
+  display: block;
+  padding: 11px 13px;
+  margin: 8px 0;
+  border: 1px solid #315362;
+  border-radius: 11px;
+  background: linear-gradient(110deg, #143345 0%, #102938 100%);
+  box-shadow: inset 0 1px 0 #ffffff0b;
+  color: var(--pv-accent-light);
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+.inventory-link:hover {
+  background: #1a4050;
+  border-color: #7bd9c6;
+  transform: translateY(-1px);
+}
+main > aside:first-child > .inventory-link:first-child {
+  margin-top: 0;
+  background: linear-gradient(120deg, #1b504f, #173a46);
+  border-color: #5fae9f;
+  color: #defff6;
+}
+main > aside input:not([type="range"]):not([type="checkbox"]):not([type="file"]),
+main > aside select {
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 10px 13px;
+  border: 1px solid #416373;
+  border-radius: 10px;
+  background: #0a1a28;
+  color: #f0f8fa;
+  font: inherit;
+  font-size: 13px;
+  box-shadow: inset 0 2px 7px #0000002e;
+}
+main > aside input::placeholder { color: #91aab8; opacity: 1; }
+#results { max-height: 260px; margin-bottom: 10px; }
+#results button,
+#organ-inspector .organ-parts button {
+  width: 100%;
+  text-align: left;
+  margin-block: 4px;
+}
+#systems {
+  display: grid;
+  gap: 5px;
+  margin-block: 12px 20px;
+}
+#systems label {
+  gap: 10px;
+  min-height: 34px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid #233e4d;
+  border-radius: 8px;
+  background: #142c3c85;
+  cursor: pointer;
+  font-size: 12px;
+}
+#systems label:hover { border-color: #648a90; background: #193848; }
+#systems label span { color: #a4bcc8; font-variant-numeric: tabular-nums; }
+#systems input[type="checkbox"] { accent-color: #76dfc8; }
+
+#stage {
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 53% 66% at 51% 42%, #254c5c 0%, #142b3d 48%, transparent 85%),
+    linear-gradient(155deg, #0e2134, #07111e 78%);
+  box-shadow: inset 1px 0 #ffffff09, inset -1px 0 #ffffff09;
+}
+#stage > .top {
+  z-index: 5;
+  top: 22px;
+  left: 22px;
+  right: 22px;
+  gap: 7px;
+}
+.pill {
+  padding: 7px 11px;
+  border: 1px solid #54827c8c;
+  border-radius: 999px;
+  background: #0a2330e9;
+  color: #c0ece7;
+  font-weight: 680;
+  font-size: 10px;
+  letter-spacing: .045em;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px #0003;
+}
+#stage > .caption {
+  z-index: 4;
+  width: min(650px, calc(100% - 40px));
+  right: auto;
+  left: 20px;
+  bottom: calc(var(--view-controls-height, 100px) + 28px);
+  padding: 16px 19px;
+  border: 1px solid #6c9c9738;
+  border-radius: 14px;
+  background: linear-gradient(100deg, #071822ee, #0b2436dc 78%, #122a390d);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 33px #0003;
+  text-shadow: none;
+}
+#stage > .caption h2 {
+  color: #f5ffff;
+  font-size: clamp(19px, 1.8vw, 25px);
+  font-weight: 730;
+  letter-spacing: -.025em;
+}
+#stage > .caption p {
+  color: #bfd1d9;
+  font-size: 12px;
+  margin: 7px 0 0;
+  line-height: 1.5;
+}
+#stage > nav {
+  z-index: 5;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  gap: 7px;
+  padding: 10px;
+  border: 1px solid #54797e67;
+  border-radius: 15px;
+  background: #091d2ce8;
+  box-shadow: 0 16px 42px #01091699;
+  backdrop-filter: blur(16px);
+}
+button {
+  min-height: 36px;
+  border: 1px solid #486b78;
+  border-radius: 9px;
+  background: #1b3747;
+  color: #e5f2f5;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+button:hover:not(:disabled) { background: #2a5361; border-color: #91c6c6; }
+button:disabled { opacity: .53; cursor: not-allowed; }
+#stage > nav button {
+  padding: 9px 12px;
+  min-height: 40px;
+  white-space: normal;
+}
+#stage > nav #play,
+#stage > nav #focus {
+  border-color: #80dcca;
+  background: #207263;
+  color: #f6fffc;
+  font-weight: 740;
+}
+#stage > nav #play:hover,
+#stage > nav #focus:hover { background: #2c8877; }
+#stage > nav label {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  padding-inline: 8px;
+  color: #d3e7eb;
+  white-space: nowrap;
+  font-size: 11px;
+}
+input[type="range"] { accent-color: var(--pv-accent); }
+
+#activity-panel,
+#brain-panel,
+#cogitate-scene-panel,
+#recovered-work,
+#heritage-panel,
+#membrane-disclosure,
+#documentary-controls {
+  border-color: #3b5c66;
+  border-radius: 12px;
+  background: #122c3acc;
+  box-shadow: inset 0 1px 0 #ffffff0c;
+}
+#activity-panel {
+  border: 1px solid #345863;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+#brain-panel { padding: 15px; }
+#recovered-work { background: linear-gradient(125deg, #1c4144, #15303b); }
+#recovered-work h2 { color: #eafff3; }
+#open-cogitate { border-radius: 10px; }
+.workbench-nav {
+  border-color: #456875;
+  border-radius: 8px;
+  background: #10283af2 !important;
+  backdrop-filter: blur(10px);
+}
+.workbench-nav button[aria-current="page"],
+.activity-buttons button[aria-pressed="true"],
+#chain button.active {
+  background: #24584f;
+  border-color: #88e3cc;
+  color: #f5fff9;
+}
+.network-route {
+  border-bottom-color: #324d58;
+  background: #122839;
+}
+.network-route:hover { background: #213d4b; }
+.network-route.focused { background: #285a57; }
+#network-routes { border-color: #355767; border-radius: 10px; }
+#network-info,
+#node {
+  padding: 15px;
+  border: 1px solid #325461;
+  border-radius: 11px;
+  background: #152f3e;
+}
+#chain button { border-radius: 8px; }
+#next {
+  width: 100%;
+  min-height: 44px;
+  background: #1d5751;
+  border-color: #7bcbb7;
+}
+#organ-inspector { border-bottom-color: #3c5c68; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--pv-amber);
+  outline-offset: 3px;
+}
+a:hover { text-underline-offset: 3px; }
+#day-dialog {
+  background: #0b1d2c;
+  border: 1px solid #5b8287;
+  border-radius: 18px;
+  box-shadow: 0 28px 90px #000b;
+}
+#day-dialog .day-layout aside { background: #112d3c; }
+body > .limits {
+  padding: 12px clamp(18px, 2vw, 36px);
+  background: #0a1825;
+  border-top: 1px solid #284553;
+  color: #abbeca;
+  font-size: 11px;
+  line-height: 1.55;
+}
+body > .limits strong { color: #e5f5f2; }
+
+@media (min-width: 760px) and (max-width: 1180px) {
+  body { height: auto; overflow: auto; }
+  body > header { flex: 0 0 auto; }
+  body > main {
+    display: grid;
+    grid-template-columns: minmax(245px, 31%) minmax(0, 1fr);
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+  main > aside:first-child { max-height: 76svh; overflow: auto; }
+  main > aside.right { grid-column: 1 / -1; max-height: none; overflow: visible; }
+  #stage { min-height: 630px; height: 76svh; }
+  #stage > .caption { width: min(560px, calc(100% - 30px)); }
+}
+@media (max-width: 759px) {
+  body { height: auto; overflow: auto; }
+  body > header {
+    min-height: 68px;
+    height: auto;
+    flex-basis: auto;
+    padding: 12px 16px;
+    gap: 5px 15px;
+  }
+  header b { font-size: 24px; }
+  header b span { display: block; margin-top: 4px; font-size: 9px; }
+  #status { max-width: none; margin: 0; text-align: left; }
+  body > main {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: auto;
+    overflow: visible;
+  }
+  #stage {
+    order: 1;
+    height: clamp(555px, 79svh, 760px);
+    min-height: 555px;
+  }
+  main > aside:first-child {
+    order: 0;
+    max-height: 310px;
+    overflow: auto;
+    border-top: 1px solid #355665;
+  }
+  main > aside.right {
+    order: 2;
+    max-height: none;
+    overflow: visible;
+  }
+  main > aside { padding: 24px 18px; }
+  #stage > .top { left: 12px; top: 12px; right: 12px; gap: 5px; }
+  #stage > .caption {
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
+    bottom: calc(var(--view-controls-height, 140px) + 22px);
+    padding: 11px 13px;
+  }
+  #stage > .caption h2 { font-size: 18px; }
+  #stage > .caption p { font-size: 11px; }
+  #stage > nav { left: 8px; right: 8px; bottom: 9px; padding: 8px; gap: 5px; }
+  #stage > nav button { min-height: 38px; padding: 7px 9px; font-size: 11px; }
+  #stage > nav label { font-size: 11px; padding: 4px 7px; }
+  .pill { font-size: 9px; padding: 5px 8px; }
+}
+@media (max-width: 420px) {
+  #stage > nav button { flex: 1 1 calc(33.333% - 6px); }
+  #stage > nav label { width: 100%; justify-content: center; }
+  #stage > nav label input { min-width: 95px; }
+  #stage > .caption p { line-height: 1.35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  button, .inventory-link { transition: none !important; }
+  .inventory-link:hover { transform: none; }
+}
+
+/* Atelier avatar: a focused interactive canvas instead of nested sidebars.
+   Full explorer remains unchanged unless ?embed=1 is present. */
+html.embedded-view body {
+  min-height: 0;
+  height: 100dvh;
+  overflow: hidden;
+  display: block;
+}
+html.embedded-view body > header,
+html.embedded-view body > .limits,
+html.embedded-view main > aside { display: none !important; }
+html.embedded-view body > main {
+  display: block !important;
+  width: 100%;
+  height: 100dvh !important;
+  min-height: 0;
+  overflow: hidden;
+}
+html.embedded-view #stage {
+  width: 100%;
+  height: 100dvh !important;
+  min-height: 0 !important;
+}
+html.embedded-view #stage > .top {
+  left: 12px;
+  right: 12px;
+  top: 10px;
+}
+html.embedded-view #stage > .top .pill:not(:first-child) { display: none; }
+html.embedded-view #stage > .caption {
+  left: 12px;
+  width: min(520px, calc(100% - 24px));
+  bottom: 90px !important;
+  padding: 11px 14px;
+}
+html.embedded-view #stage > .caption h2 { font-size: 17px; }
+html.embedded-view #stage > .caption p { display: none; }
+html.embedded-view #stage > nav {
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  gap: 6px;
+  justify-content: center;
+  padding: 8px;
+}
+html.embedded-view #stage > nav button:not(#play):not(#skin):not(#front):not(#reset),
+html.embedded-view #stage > nav label,
+html.embedded-view #stage > nav select { display: none !important; }
+html.embedded-view #stage > nav button {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 10px;
+}
+@media (max-width: 440px) {
+  html.embedded-view #stage > .caption { bottom: 105px !important; }
+  html.embedded-view #stage > nav button {
+    flex: 1 1 calc(50% - 6px);
+    font-size: 11px;
+  }
+}
+
+/* In the small atelier frame the laboratory panels carry the explanation;
+   keep the embedded anatomical object visually unobstructed. */
+html.embedded-view #muscle-overview-caption,
+html.embedded-view #stage .network-labels,
+html.embedded-view #mechanism-in-scene {
+  display: none !important;
+}
