@@ -499,3 +499,11 @@ html.embedded-view #stage > nav button {
     font-size: 11px;
   }
 }
+
+/* In the small atelier frame the laboratory panels carry the explanation;
+   keep the embedded anatomical object visually unobstructed. */
+html.embedded-view #muscle-overview-caption,
+html.embedded-view #stage .network-labels,
+html.embedded-view #mechanism-in-scene {
+  display: none !important;
+}
