@@ -25,6 +25,7 @@ body > header {
   position: relative;
   z-index: 12;
   height: 72px;
+  flex-basis: 72px;
   padding-inline: clamp(18px, 2.4vw, 40px);
   gap: clamp(12px, 2vw, 30px);
   background: linear-gradient(90deg, #091522 0%, #101f2e 60%, #102932 100%);
@@ -362,6 +363,7 @@ body > .limits strong { color: #e5f5f2; }
 
 @media (min-width: 760px) and (max-width: 1180px) {
   body { height: auto; overflow: auto; }
+  body > header { flex: 0 0 auto; }
   body > main {
     display: grid;
     grid-template-columns: minmax(245px, 31%) minmax(0, 1fr);
@@ -369,8 +371,8 @@ body > .limits strong { color: #e5f5f2; }
     min-height: 0;
     overflow: visible;
   }
-  main > aside { overflow: visible; max-height: none; }
-  main > aside.right { grid-column: 1 / -1; }
+  main > aside:first-child { max-height: 76svh; overflow: auto; }
+  main > aside.right { grid-column: 1 / -1; max-height: none; overflow: visible; }
   #stage { min-height: 630px; height: 76svh; }
   #stage > .caption { width: min(560px, calc(100% - 30px)); }
 }
@@ -379,6 +381,7 @@ body > .limits strong { color: #e5f5f2; }
   body > header {
     min-height: 68px;
     height: auto;
+    flex-basis: auto;
     padding: 12px 16px;
     gap: 5px 15px;
   }
