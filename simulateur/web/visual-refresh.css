@@ -396,14 +396,14 @@ body > .limits strong { color: #e5f5f2; }
     overflow: visible;
   }
   #stage {
-    order: 0;
+    order: 1;
     height: clamp(555px, 79svh, 760px);
     min-height: 555px;
   }
   main > aside:first-child {
-    order: 1;
-    max-height: none;
-    overflow: visible;
+    order: 0;
+    max-height: 310px;
+    overflow: auto;
     border-top: 1px solid #355665;
   }
   main > aside.right {
