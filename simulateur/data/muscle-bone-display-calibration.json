@@ -1,0 +1,600 @@
+{
+  "schema": "poly.muscle-bone-display-calibration/1",
+  "date": "2026-10-25",
+  "purpose": "Align display scales and centroids of muscle reference meshes to Z-Anatomy bone mesh proxies in a shared POLY viewer. Preserve isotropic shape and the existing presentation axes. No validated anatomical entheses or correspondences inferred.",
+  "provenance": {
+    "source_muscles": "BodyParts3D reference meshes; public local forearm-motor-reference and hand-muscles-reference",
+    "target_skeleton": "Z-Anatomy-derived skeleton-source-206",
+    "source_placement": "Existing POLY illustrative placement before corrective fit",
+    "skeleton_pose": "Static rest pose; graphicArmRest used for upper and forearm/hand bone meshes"
+  },
+  "groups": {
+    "R:arm_shoulder": {
+      "source_center": [
+        -0.3102925,
+        2.7156054,
+        -0.0047144
+      ],
+      "target_center": [
+        -0.2973159,
+        2.7572367,
+        -0.01423
+      ],
+      "scale": 1.1457325,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:clavicle_R",
+        "BONE:scapula_R",
+        "BONE:humerus_R"
+      ],
+      "n_bone_proxies": 3,
+      "rms_center_before": 0.07408,
+      "rms_center_after": 0.04386,
+      "source_extent_scale_ratios": [
+        1.2832,
+        1.0523,
+        1.1457
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "R:forearm": {
+      "source_center": [
+        -0.6720075,
+        2.1746233,
+        0.0053617
+      ],
+      "target_center": [
+        -0.7392831,
+        2.0882777,
+        0.028766
+      ],
+      "scale": 1.145182,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:radius_R",
+        "BONE:ulna_R"
+      ],
+      "n_bone_proxies": 2,
+      "rms_center_before": 0.11207,
+      "rms_center_after": 0.00261,
+      "source_extent_scale_ratios": [
+        1.1438,
+        1.1466
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "R:thigh": {
+      "source_center": [
+        -0.23488,
+        1.5255917,
+        0.0126907
+      ],
+      "target_center": [
+        -0.1782245,
+        1.3892542,
+        -0.02183
+      ],
+      "scale": 0.8820502,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:femur_R"
+      ],
+      "n_bone_proxies": 1,
+      "rms_center_before": 0.15162,
+      "rms_center_after": 0,
+      "source_extent_scale_ratios": [
+        0.8821
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "R:leg": {
+      "source_center": [
+        -0.2307369,
+        0.5671146,
+        -0.0065077
+      ],
+      "target_center": [
+        -0.1785276,
+        0.5496608,
+        -0.0609212
+      ],
+      "scale": 0.8533794,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:tibia_R",
+        "BONE:fibula_R"
+      ],
+      "n_bone_proxies": 2,
+      "rms_center_before": 0.07789,
+      "rms_center_after": 0.00437,
+      "source_extent_scale_ratios": [
+        0.8529,
+        0.8539
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "R:foot": {
+      "source_center": [
+        -0.3101035,
+        0.0562085,
+        0.1898326
+      ],
+      "target_center": [
+        -0.1967568,
+        0.1065045,
+        0.1306037
+      ],
+      "scale": 0.9538554,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:foot_talus_R",
+        "BONE:foot_calcaneus_R",
+        "BONE:foot_navicular_R",
+        "BONE:metatarsal1_R",
+        "BONE:metatarsal2_R",
+        "BONE:metatarsal3_R",
+        "BONE:metatarsal4_R",
+        "BONE:metatarsal5_R",
+        "BONE:foot_medial_cuneiform_R",
+        "BONE:foot_intermediate_cuneiform_R",
+        "BONE:foot_lateral_cuneiform_R",
+        "BONE:foot_cuboid_R",
+        "BONE:foot_2_proximal_R",
+        "BONE:foot_3_proximal_R",
+        "BONE:foot_4_proximal_R",
+        "BONE:foot_5_proximal_R",
+        "BONE:foot_2_middle_R",
+        "BONE:foot_3_middle_R",
+        "BONE:foot_4_middle_R",
+        "BONE:foot_1_distal_R",
+        "BONE:foot_2_distal_R",
+        "BONE:foot_3_distal_R",
+        "BONE:foot_4_distal_R",
+        "BONE:foot_5_distal_R",
+        "BONE:foot_1_proximal_R",
+        "BONE:foot_5_middle_R"
+      ],
+      "n_bone_proxies": 26,
+      "rms_center_before": 0.14077,
+      "rms_center_after": 0.0287,
+      "source_extent_scale_ratios": [
+        0.9422,
+        0.9794,
+        0.9573,
+        0.9234,
+        0.982,
+        0.9821,
+        0.9888,
+        1.0174,
+        0.9661,
+        0.9453,
+        0.9487,
+        0.9368,
+        0.9451,
+        0.9633,
+        0.9795,
+        0.9555,
+        0.9373,
+        0.9359,
+        0.9544,
+        0.9658,
+        0.947,
+        0.9533,
+        0.9466,
+        0.9548,
+        0.9412,
+        0.9031
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "R:hand": {
+      "source_center": [
+        -0.8039658,
+        1.8513578,
+        0.096543
+      ],
+      "target_center": [
+        -0.9208962,
+        1.7182317,
+        0.0797233
+      ],
+      "scale": 1.1787798,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:hand_trapezoid_R",
+        "BONE:hand_scaphoid_R",
+        "BONE:hand_lunate_R",
+        "BONE:hand_triquetrum_R",
+        "BONE:hand_pisiform_R",
+        "BONE:hand_trapezium_R",
+        "BONE:hand_capitate_R",
+        "BONE:hand_hamate_R",
+        "BONE:hand_1_proximal_R",
+        "BONE:hand_2_proximal_R",
+        "BONE:hand_3_proximal_R",
+        "BONE:hand_4_proximal_R",
+        "BONE:hand_5_proximal_R",
+        "BONE:hand_2_middle_R",
+        "BONE:hand_3_middle_R",
+        "BONE:hand_4_middle_R",
+        "BONE:hand_5_middle_R",
+        "BONE:hand_1_distal_R",
+        "BONE:hand_2_distal_R",
+        "BONE:hand_3_middle_R",
+        "BONE:hand_4_distal_R",
+        "BONE:hand_5_distal_R",
+        "BONE:metacarpal1_R",
+        "BONE:metacarpal2_R",
+        "BONE:metacarpal3_R",
+        "BONE:metacarpal4_R",
+        "BONE:metacarpal5_R"
+      ],
+      "n_bone_proxies": 27,
+      "rms_center_before": 0.17967,
+      "rms_center_after": 0.02146,
+      "source_extent_scale_ratios": [
+        1.2141,
+        1.2154,
+        1.2085,
+        1.1788,
+        1.1324,
+        1.2053,
+        1.1367,
+        1.1667,
+        1.1543,
+        1.1726,
+        1.1802,
+        1.1807,
+        1.1824,
+        1.1727,
+        1.1791,
+        1.2143,
+        1.1952,
+        1.1503,
+        1.0772,
+        1.7987,
+        1.1254,
+        1.2063,
+        1.2203,
+        1.1413,
+        1.1645,
+        1.1587,
+        1.1716
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "L:arm_shoulder": {
+      "source_center": [
+        0.3107828,
+        2.7161026,
+        -0.0029872
+      ],
+      "target_center": [
+        0.2962418,
+        2.7584791,
+        -0.0155523
+      ],
+      "scale": 1.1458232,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:clavicle_L",
+        "BONE:scapula_L",
+        "BONE:humerus_L"
+      ],
+      "n_bone_proxies": 3,
+      "rms_center_before": 0.07608,
+      "rms_center_after": 0.04512,
+      "source_extent_scale_ratios": [
+        1.2744,
+        1.0566,
+        1.1458
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "L:forearm": {
+      "source_center": [
+        0.6731324,
+        2.1751698,
+        0.0060128
+      ],
+      "target_center": [
+        0.739418,
+        2.0883324,
+        0.0287784
+      ],
+      "scale": 1.1439003,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:radius_L",
+        "BONE:ulna_L"
+      ],
+      "n_bone_proxies": 2,
+      "rms_center_before": 0.11174,
+      "rms_center_after": 0.00345,
+      "source_extent_scale_ratios": [
+        1.1429,
+        1.1449
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "L:thigh": {
+      "source_center": [
+        0.2331086,
+        1.5264315,
+        0.0106768
+      ],
+      "target_center": [
+        0.1898973,
+        1.390438,
+        -0.0233564
+      ],
+      "scale": 0.881624,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:femur_L"
+      ],
+      "n_bone_proxies": 1,
+      "rms_center_before": 0.1467,
+      "rms_center_after": 0,
+      "source_extent_scale_ratios": [
+        0.8816
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "L:leg": {
+      "source_center": [
+        0.228454,
+        0.5670553,
+        -0.007231
+      ],
+      "target_center": [
+        0.1953706,
+        0.5511861,
+        -0.0631144
+      ],
+      "scale": 0.8530492,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:tibia_L",
+        "BONE:fibula_L"
+      ],
+      "n_bone_proxies": 2,
+      "rms_center_before": 0.06729,
+      "rms_center_after": 0.00413,
+      "source_extent_scale_ratios": [
+        0.8527,
+        0.8534
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "L:foot": {
+      "source_center": [
+        0.3075007,
+        0.0562445,
+        0.1909599
+      ],
+      "target_center": [
+        0.2212099,
+        0.1083213,
+        0.1282243
+      ],
+      "scale": 0.9519867,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:foot_talus_L",
+        "BONE:foot_calcaneus_L",
+        "BONE:foot_navicular_L",
+        "BONE:metatarsal1_L",
+        "BONE:metatarsal2_L",
+        "BONE:metatarsal3_L",
+        "BONE:metatarsal4_L",
+        "BONE:metatarsal5_L",
+        "BONE:foot_medial_cuneiform_L",
+        "BONE:foot_intermediate_cuneiform_L",
+        "BONE:foot_lateral_cuneiform_L",
+        "BONE:foot_cuboid_L",
+        "BONE:foot_2_proximal_L",
+        "BONE:foot_3_proximal_L",
+        "BONE:foot_4_proximal_L",
+        "BONE:foot_5_proximal_L",
+        "BONE:foot_2_middle_L",
+        "BONE:foot_3_middle_L",
+        "BONE:foot_4_middle_L",
+        "BONE:foot_1_distal_L",
+        "BONE:foot_2_distal_L",
+        "BONE:foot_3_distal_L",
+        "BONE:foot_4_distal_L",
+        "BONE:foot_5_distal_L",
+        "BONE:foot_1_proximal_L",
+        "BONE:foot_5_middle_L"
+      ],
+      "n_bone_proxies": 26,
+      "rms_center_before": 0.12221,
+      "rms_center_after": 0.02708,
+      "source_extent_scale_ratios": [
+        0.9418,
+        0.9817,
+        0.9513,
+        0.9228,
+        0.9793,
+        0.9756,
+        0.9896,
+        1.0119,
+        0.9634,
+        0.9426,
+        0.9452,
+        0.9241,
+        0.9441,
+        0.9686,
+        0.9796,
+        0.9595,
+        0.9347,
+        0.9328,
+        0.9564,
+        0.9668,
+        0.9404,
+        0.9581,
+        0.9494,
+        0.9527,
+        0.9417,
+        0.9081
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    },
+    "L:hand": {
+      "source_center": [
+        0.8048603,
+        1.8514785,
+        0.0966124
+      ],
+      "target_center": [
+        0.9209793,
+        1.7182818,
+        0.0798542
+      ],
+      "scale": 1.1708617,
+      "rotation_quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "proxies": [
+        "BONE:hand_trapezoid_L",
+        "BONE:hand_scaphoid_L",
+        "BONE:hand_lunate_L",
+        "BONE:hand_triquetrum_L",
+        "BONE:hand_pisiform_L",
+        "BONE:hand_trapezium_L",
+        "BONE:hand_capitate_L",
+        "BONE:hand_hamate_L",
+        "BONE:hand_1_proximal_L",
+        "BONE:hand_2_proximal_L",
+        "BONE:hand_3_proximal_L",
+        "BONE:hand_4_proximal_L",
+        "BONE:hand_5_proximal_L",
+        "BONE:hand_2_middle_L",
+        "BONE:hand_3_middle_L",
+        "BONE:hand_4_middle_L",
+        "BONE:hand_5_middle_L",
+        "BONE:hand_1_distal_L",
+        "BONE:hand_2_distal_L",
+        "BONE:hand_3_middle_L",
+        "BONE:hand_4_distal_L",
+        "BONE:hand_5_distal_L",
+        "BONE:metacarpal1_L",
+        "BONE:metacarpal2_L",
+        "BONE:metacarpal3_L",
+        "BONE:metacarpal4_L",
+        "BONE:metacarpal5_L"
+      ],
+      "n_bone_proxies": 27,
+      "rms_center_before": 0.17918,
+      "rms_center_after": 0.02129,
+      "source_extent_scale_ratios": [
+        1.2127,
+        1.1999,
+        1.2226,
+        1.1521,
+        1.152,
+        1.2019,
+        1.1387,
+        1.1622,
+        1.1462,
+        1.1689,
+        1.1754,
+        1.1832,
+        1.183,
+        1.1709,
+        1.1725,
+        1.2067,
+        1.1892,
+        1.161,
+        1.0776,
+        1.8118,
+        1.1308,
+        1.1874,
+        1.2257,
+        1.1431,
+        1.1668,
+        1.1539,
+        1.1689
+      ],
+      "method": "bbox_centers_and_median_major_extent_isotropic_display_similarity",
+      "anatomical_registration_validated": false
+    }
+  },
+  "fallback": "Trunk and undefined laterality remain unchanged because no defensible skeleton landmark basis is available.",
+  "limitations": [
+    "Bounding-box centers and extents are geometric proxies, not manually annotated anatomical landmarks.",
+    "Different source subjects and atlas sources remain incompatible for precise insertion, volume and individual diagnosis.",
+    "No locally varying deformation, dynamics or force calculation is inferred.",
+    "Per-region scales can create discontinuities across joints; transition muscles need later validated retargeting."
+  ]
+}
