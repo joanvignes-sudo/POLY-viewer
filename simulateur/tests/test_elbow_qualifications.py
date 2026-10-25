@@ -8,6 +8,7 @@ import unittest
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 QUAL = ROOT / "data" / "elbow-anatomical-qualifications.json"
 AUDIT = ROOT / "data" / "elbow-surface-audit.json"
+MOTION = ROOT / "data" / "elbow-motion-display-audit.json"
 
 
 class ElbowQualificationTest(unittest.TestCase):
@@ -15,6 +16,7 @@ class ElbowQualificationTest(unittest.TestCase):
     def setUpClass(cls):
         cls.q = json.loads(QUAL.read_text(encoding="utf-8"))
         cls.a = json.loads(AUDIT.read_text(encoding="utf-8"))
+        cls.m = json.loads(MOTION.read_text(encoding="utf-8"))
         cls.cases = {c["id"]: c for c in cls.q["cases"]}
         cls.audit = {c["id"]: c for c in cls.a["cases"]}
 
@@ -53,6 +55,23 @@ class ElbowQualificationTest(unittest.TestCase):
         self.assertIn("muscle_landmark_source_xyz", contract)
         self.assertIn("bone_landmark_source_xyz", contract)
         self.assertIn("independent_validation_source", contract)
+
+    def test_motion_is_explicitly_non_biological(self):
+        self.assertFalse(self.m["segmentation_or_enthese_landmarks_present"])
+        self.assertTrue(self.m["right_only_in_existing_shader"])
+        self.assertEqual(len(self.m["results"]), 12)
+        left = [row for row in self.m["results"] if row["side"] == "L"]
+        right = [row for row in self.m["results"] if row["side"] == "R"]
+        self.assertEqual(len(left), 6)
+        self.assertEqual(len(right), 6)
+        for row in self.m["results"]:
+            with self.subTest(part=row["part_id"]):
+                self.assertFalse(row["source_fascicle_strain_measured"])
+                self.assertFalse(row["biomechanical_validation"])
+                self.assertGreater(row["edge_count"], 0)
+                self.assertGreaterEqual(row["rms_relative_mesh_edge_length_change"], 0)
+        self.assertTrue(any(row["rms_relative_mesh_edge_length_change"] > 0 for row in right))
+        self.assertTrue(all(row["rms_relative_mesh_edge_length_change"] == 0 for row in left))
 
     def test_source_hash_when_original_is_available(self):
         original = ROOT / "data" / "forearm-motor-reference.json.gz"
