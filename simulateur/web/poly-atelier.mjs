@@ -1,4 +1,4 @@
-import {mountCaseWorkspace} from './case-workspace.mjs';
+import {mountCaseWorkspace} from './case-workspace.mjs?v=0.139.0';
 import {mountProjectFollowup} from './project-followup.mjs';
 
 import {mountAtlasEmbed} from './atlas-embed.mjs';

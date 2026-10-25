@@ -1,9 +1,9 @@
 {
   "schema": "poly.project-followup.v1",
-  "updated_utc": "2026-10-24T22:52:12.080724+00:00",
+  "updated_utc": "2026-10-25T06:12:11.843742+00:00",
   "complete": false,
   "inventory": {
-    "lots": 7,
+    "lots": 11,
     "evidence_documents": 2,
     "scope": "Étapes publiques de cette livraison ; preuves numériques détaillées conservées pour examen."
   },
@@ -49,6 +49,30 @@
       "title": "A9 — lecture comparée des cascades",
       "result": "Courbes des quatre hypothèses, bilan instantané et commandes de lecture/pause/début/arrêt de la source/fin. Repère sauvegardé ; noyaux scientifiques inchangés.",
       "status": "lecture reçue ; aucun nouveau modèle biologique"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A11 — contrat d’horloge renforcé",
+      "result": "Refus des contextes absents et conversions non représentables ; régression synthétique A8 conservée. DOI candidat du corrigendum identifié, contenu non reçu ; aucune horloge humaine activée.",
+      "status": "garde prospectif reçu ; qualification biologique ouverte"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A12 — contrat des séries temporelles humaines",
+      "result": "Cohorte, protocole, unités, intervalles et transformation des fractions explicités ; moyennes agrégées refusées comme séries individuelles. Formulaire réel incomplet, aucune donnée inventée.",
+      "status": "contrat reçu ; séries originales non reçues"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A13 — filiation des bilans C4",
+      "result": "Inspecteur local pour remonter variation, marquage et écart à Glu/Gln vers leurs termes de bilan ; parents cliquables et journal exportable. Noyaux scientifiques inchangés, pas de réactions moléculaires dénombrées.",
+      "status": "interface et export reçus ; modèle conditionnel"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "A14 — voxel virtuel et filiation spatiale",
+      "result": "Part d’un voxel sélectionnable, repère jaune, poids et filiation vers les bilans des deux pools. Conservation contrôlée et journal exportable ; aucune concentration locale, cellule ou réaction déduite.",
+      "status": "lecture spatiale reçue ; placement hypothétique"
     }
   ],
   "decisions": [],
@@ -173,6 +197,46 @@
       "origin": "active",
       "evidence": [
         "Synthèse publique et cadre des cascades"
+      ]
+    },
+    {
+      "name": "A11 — contrat d’horloge renforcé",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "garde prospectif reçu ; qualification biologique ouverte",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et limites"
+      ]
+    },
+    {
+      "name": "A12 — contrat des séries temporelles humaines",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "contrat reçu ; séries originales non reçues",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et limites"
+      ]
+    },
+    {
+      "name": "A13 — filiation des bilans C4",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "interface et export reçus ; modèle conditionnel",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et limites"
+      ]
+    },
+    {
+      "name": "A14 — voxel virtuel et filiation spatiale",
+      "date": "2026-10-25",
+      "domain": "Énergétique cérébrale",
+      "status": "lecture spatiale reçue ; placement hypothétique",
+      "origin": "active",
+      "evidence": [
+        "Synthèse publique et limites"
       ]
     }
   ],
