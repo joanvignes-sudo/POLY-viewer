@@ -1,3 +1,11 @@
+# POLY v0.139.0 — coude : qualifications scientifiques
+
+[Ouvrir POLY](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.139.0) · [Rapport de qualification](simulateur/reports/ELBOW_QUALIFICATION_2026-10-25.md) · [Notice de version](RELEASE_v0.139.0.md)
+
+Le pilote du coude distingue les régions documentées d'insertion et d'origine, les surfaces ouvertes et leurs encombrements géométriques, et la déformation graphique non physiologique des mouvements illustratifs. **Aucune insertion 3D, volume tissulaire ou déformation biomécanique n'est validée dans ce lot.**
+
+---
+
 # POLY v0.138.0
 
 [Ouvrir le corps et le recalage musculaire](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.138.0) · [Méthode, sources et limites](simulateur/reports/MUSCLE_BONE_DISPLAY_FIT_2026-10-25.md)
