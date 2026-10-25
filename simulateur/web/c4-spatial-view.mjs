@@ -1,4 +1,4 @@
-import {mountC4Lineage} from './c4-lineage-view.mjs?v=0.139.0';
+import {mountC4Lineage} from './c4-lineage-view.mjs?v=0.139.1';
 import {c4Reading,c4ChartGeometry} from './c4-reading.mjs';
 import {runC4Spatial,restoreC4Spatial,virtualGrid} from './c4-spatial-core.mjs';
 import {HYPOTHESES} from './recycling-hypotheses-core.mjs';

@@ -1,4 +1,4 @@
-import {mountC4Spatial} from './c4-spatial-view.mjs?v=0.139.0';
+import {mountC4Spatial} from './c4-spatial-view.mjs?v=0.139.1';
 import {mountRecyclingHypotheses} from './recycling-hypotheses-view.mjs';
 import {mountHumanLactate} from './human-lactate-view.mjs';
 import {createCaseBundle,validateCaseBundle} from './case-bundle-core.mjs';

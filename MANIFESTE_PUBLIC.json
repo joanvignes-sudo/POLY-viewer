@@ -1,5 +1,5 @@
 {
-  "version": "0.139.0",
+  "version": "0.139.1",
   "files": [
     {
       "path": ".gitattributes",
@@ -544,7 +544,7 @@
     {
       "path": "PUBLICATION_SCOPE.json",
       "bytes": 12184,
-      "sha256": "a4cacc9ed9dc09befd7668bcda899b2fd7d70994079d68ca30ca3a2eb4d6f55c"
+      "sha256": "e57b6ddf4a1b0f21b6d1ef8e0a40fe218cdc962be068ba7decd8df7d476481f5"
     },
     {
       "path": "README.md",
@@ -635,6 +635,11 @@
       "path": "RELEASE_v0.139.0.md",
       "bytes": 1797,
       "sha256": "05c66c10137daae5450875b932fc3676ebebe763b9491466c6d5cabd13bbd188"
+    },
+    {
+      "path": "RELEASE_v0.139.1.md",
+      "bytes": 343,
+      "sha256": "a65ce12021fa34775eb2859df5ec2a045d79af1a3d4823ecf936389999c492d1"
     },
     {
       "path": "RESILIENCE_NEURONES_v0.99.json",
@@ -879,7 +884,7 @@
     {
       "path": "VERSION.json",
       "bytes": 264,
-      "sha256": "8363486edaf736ed7b3b0acb505ccb1084151c079d0f1a06267be15c271c3141"
+      "sha256": "21863b50f1720be76587609833806a39e1204291574e90e054b68664dbf8d996"
     },
     {
       "path": "accueil-v0.129.0.html",
@@ -29524,7 +29529,7 @@
     {
       "path": "index.html",
       "bytes": 8286,
-      "sha256": "9096d18d2d85416d164dd4a61aefa86f80d32e91040d4b53f3b23a388e646851"
+      "sha256": "8e19b36e7bad6a10e93116dd9b142a3867c7601131119817fae9306298eaee4d"
     },
     {
       "path": "micro.html",
@@ -30733,8 +30738,8 @@
     },
     {
       "path": "simulateur/web/c4-lineage-view.mjs",
-      "bytes": 5813,
-      "sha256": "a646e18fee1ed9facc979ecd97f47975edb654ab7720a03ce09a0612d672aa8f"
+      "bytes": 5847,
+      "sha256": "879a7d4f1c58400cc61be5275a9578549a46ccede4c6d5b28b3f48213ce25a14"
     },
     {
       "path": "simulateur/web/c4-lineage.mjs",
@@ -30754,7 +30759,7 @@
     {
       "path": "simulateur/web/c4-spatial-view.mjs",
       "bytes": 13555,
-      "sha256": "975679a793460f880d39001f798d1ac3fea34b17f8f733b60ad32361adf7a30c"
+      "sha256": "c6e04f04b58265990e06098f3e542243bbbc6b58dc32bf3efccc19a1443b3d3f"
     },
     {
       "path": "simulateur/web/c4-voxel-lineage.mjs",
@@ -30779,7 +30784,7 @@
     {
       "path": "simulateur/web/case-workspace.mjs",
       "bytes": 10972,
-      "sha256": "8cce5ec47f9b564c31b9fd0c46d34b97be1d58b59cae3de50e32ca99864dc80f"
+      "sha256": "d23c12b399cdf3917f8d12ecfb3bec819c254875689aeef80308c25528b49a12"
     },
     {
       "path": "simulateur/web/cogitate-scene.css",
@@ -30859,7 +30864,7 @@
     {
       "path": "simulateur/web/index.html",
       "bytes": 8255,
-      "sha256": "870e45c7bdf755f98fd7fda675d7a454450a9c482e8bc3a6c2d3c2af827241ae"
+      "sha256": "92cd5f754d114a40bed3ba47de67799a8b68c29e9054a654eb58199a050b23b1"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -31069,12 +31074,12 @@
     {
       "path": "simulateur/web/poly-atelier.html",
       "bytes": 8368,
-      "sha256": "bc61f1eaccae2772de9411408679e3ad7f1ce0d897a3dd255471a712523f07c8"
+      "sha256": "4ee936fa52c8eea1506be219d0591f2b5dd85353000cecf67075313b3b06ae1e"
     },
     {
       "path": "simulateur/web/poly-atelier.mjs",
       "bytes": 11168,
-      "sha256": "3e1a34769882a5d9222dd81adecc131547135a9231aa9da34a1c954174541789"
+      "sha256": "85aca7bd3dea2a0d4c976a37a6e2ebb56c69fea62e3ad23a769f340a180b7abf"
     },
     {
       "path": "simulateur/web/project-followup.json",
@@ -31237,5 +31242,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1071974239
+  "total_bytes": 1071974616
 }

@@ -32,7 +32,7 @@ export function mountC4Lineage(host,onVoxelChange){
   const rows=traceC4Parents(current,selection??root),list=$('c4-lineage-parents');list.replaceChildren();
   $('c4-lineage-status').textContent='τ '+current.tau.toFixed(2)+' · '+(current.phase==='input_on'?'source active':'source arrêtée')+' · liens de dépendance du calcul, sans durée humaine.';
   for(const n of rows){
-   const li=document.createElement('li'),b=document.createElement('button'),p=document.createElement('p');b.type='button';b.textContent=n.label+(n.value===null?'':' : '+Number(n.value.toPrecision(7))+' '+(units[n.unit]??n.unit));b.onclick=()=>{selection=n.id;paint();};
+   const li=document.createElement('li'),b=document.createElement('button'),p=document.createElement('p');b.type='button';b.textContent=n.label+(n.value===null?'':' : '+(n.unit==='seed'?String(n.value):Number(n.value.toPrecision(7)))+' '+(units[n.unit]??n.unit));b.onclick=()=>{selection=n.id;paint();};
    p.textContent=explanation(n)+' Origine : '+origins[n.origin]+'.';li.append(b,p);list.append(li);
   }
  }
