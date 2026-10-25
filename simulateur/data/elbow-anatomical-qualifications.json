@@ -1,0 +1,125 @@
+{
+  "schema": "poly.elbow-anatomy-qualification/1",
+  "created_date": "2026-10-25",
+  "scope": "Pilot qualification of biceps brachii distal tendon, triceps brachii distal tendon and pronator quadratus radius/ulna interfaces. Evidence is population-level and not transferred to 3D vertices.",
+  "evidence_rules": {
+    "anatomical_region": "Documentary origin/insertion with research or atlas reference, NOT an atlas-space point.",
+    "registered_enthesis": "Requires identifiable bony region on the actual target mesh, homologous local muscle/tendon endpoint and independent held-out error.",
+    "tissue_volume": "Requires closed properly oriented muscle segmentation and validation against volumetric imaging or dissection; AABB enclosure is not muscle volume.",
+    "muscle_deformation": "Requires explicit origin/tendon anchors, joint-specific kinematics, muscle fascicle/strain constraints and independent dynamic comparison.",
+    "accepted_registration_count": 0,
+    "validated_true_volume_count": 0,
+    "validated_dynamic_model_count": 0
+  },
+  "cases": [
+    {
+      "id": "biceps_radius",
+      "label": "Biceps brachial — insertion distale",
+      "relation_type": "distal_tendon_insertion",
+      "bone_family": "radius",
+      "bone_region": "Tubérosité radiale",
+      "source_surface_ids": [
+        "FJ1512",
+        "FJ1478",
+        "FJ1512M",
+        "FJ1478M"
+      ],
+      "target_bone_ids": [
+        "BONE:radius_R",
+        "BONE:radius_L"
+      ],
+      "anatomical_evidence": "Étude anatomique cadavérique de l'insertion du tendon distal du biceps sur la tubérosité radiale. Les chefs musculaires représentés dans POLY ne sont pas des empreintes tendineuses individuelles mesurées.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18325797/",
+      "study_scope": "30 radius cadavériques ; orientation et dimensions d'insertions mesurées sur des sujets différents de l'atlas POLY",
+      "evidence_type": "human_cadaver_measurement",
+      "attachment_location_xyz": null,
+      "registration_validated": false,
+      "muscle_tendon_continuity_registered": false,
+      "notes": "Les descriptions d'un ou plusieurs faisceaux/tendons distaux ne justifient pas une attache ponctuelle par chef sur cet avatar."
+    },
+    {
+      "id": "triceps_ulna",
+      "label": "Triceps brachial — insertion distale",
+      "relation_type": "distal_tendon_insertion",
+      "bone_family": "ulna",
+      "bone_region": "Olécrâne",
+      "source_surface_ids": [
+        "FJ1480",
+        "FJ1477",
+        "FJ1479",
+        "FJ1480M",
+        "FJ1477M",
+        "FJ1479M"
+      ],
+      "target_bone_ids": [
+        "BONE:ulna_R",
+        "BONE:ulna_L"
+      ],
+      "anatomical_evidence": "IRM et histologie de 12 coudes cadavériques : apparence bipartite en IRM, mais continuité tendineuse à l'enthèse sur l'olécrâne.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18985338/",
+      "study_scope": "12 coudes de cadavres ; la représentation 3D du modèle actuel ne segmente pas cette continuité",
+      "evidence_type": "human_cadaver_mri_histology",
+      "attachment_location_xyz": null,
+      "registration_validated": false,
+      "muscle_tendon_continuity_registered": false,
+      "notes": "Ne pas créer trois insertions géométriques indépendantes sous prétexte que POLY affiche trois chefs."
+    },
+    {
+      "id": "pronator_ulna",
+      "label": "Carré pronateur — origine",
+      "relation_type": "muscle_origin_region",
+      "bone_family": "ulna",
+      "bone_region": "Quart distal antérieur de l'ulna",
+      "source_surface_ids": [
+        "FJ1503",
+        "FJ1503M"
+      ],
+      "target_bone_ids": [
+        "BONE:ulna_R",
+        "BONE:ulna_L"
+      ],
+      "anatomical_evidence": "Le carré pronateur prend origine sur la face antérieure de l'ulna distal ; atlas anatomique publié avec description régionale.",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK536975/",
+      "study_scope": "Référence anatomique générale ; aucune coordonnée de la frontière musculotendineuse dans POLY",
+      "evidence_type": "anatomy_review",
+      "attachment_location_xyz": null,
+      "registration_validated": false,
+      "muscle_tendon_continuity_registered": false,
+      "notes": "Une origine documentée n'implique pas une contrainte de mouvement résolue."
+    },
+    {
+      "id": "pronator_radius",
+      "label": "Carré pronateur — insertion",
+      "relation_type": "muscle_insertion_region",
+      "bone_family": "radius",
+      "bone_region": "Quart distal antérieur du radius",
+      "source_surface_ids": [
+        "FJ1503",
+        "FJ1503M"
+      ],
+      "target_bone_ids": [
+        "BONE:radius_R",
+        "BONE:radius_L"
+      ],
+      "anatomical_evidence": "Le carré pronateur se termine sur la face antérieure du radius distal ; descriptions convergentes dans l'atlas anatomique et une étude morphométrique.",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12282155/",
+      "study_scope": "Données morphologiques de cadavres ; pas de co-registration avec les maillages POLY",
+      "evidence_type": "human_anatomic_morphometry",
+      "attachment_location_xyz": null,
+      "registration_validated": false,
+      "muscle_tendon_continuity_registered": false,
+      "notes": "Le volume et la déformation ne sont pas inférés de sa forme quadrangulaire."
+    }
+  ],
+  "future_attachment_contract": {
+    "muscle_identity": "TA2 ID + laterality + source mesh id",
+    "bone_identity": "bone source ID + laterality + source mesh id",
+    "muscle_landmark_source_xyz": "array[3] | null; must be sourced from annotated anatomy",
+    "bone_landmark_source_xyz": "array[3] | null; must be sourced from annotated anatomy",
+    "space_registration_id": "explicit validated transformation and error budget",
+    "independent_validation_source": "URI/DOI; required for validated claim",
+    "organ_intersection_reference": "only within a co-registered reference frame; no transfer from incidental overlaps",
+    "enthesis_patch_area_mm2": "nullable; only if measured in specified original physical units",
+    "dynamic_test": "fiber/tendon length change vs joint pose with physiological and geometric bounds"
+  }
+}

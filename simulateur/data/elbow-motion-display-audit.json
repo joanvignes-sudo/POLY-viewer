@@ -1,0 +1,130 @@
+{
+  "schema": "poly.elbow-motion-display-audit/1",
+  "motion": "Test rig.js deformPosition, 60 degrees of illustrated right elbow flexion from an identity pose, no load.",
+  "scope": "Visual mesh-edge distortion only. Triangle edges are not fascicles or tendon fibers; outputs are dimensionless, not biological strain or force.",
+  "right_only_in_existing_shader": true,
+  "left_forearm_flexion_not_modeled_in_current_eatForearm_quaternion": true,
+  "segmentation_or_enthese_landmarks_present": false,
+  "results": [
+    {
+      "part_id": "FJ1503",
+      "side": "R",
+      "edge_count": 3718,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1503M",
+      "side": "L",
+      "edge_count": 3717,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1512",
+      "side": "R",
+      "edge_count": 3431,
+      "rms_relative_mesh_edge_length_change": 0.0215796,
+      "p95_relative_mesh_edge_length_change": 0.0535998,
+      "max_relative_mesh_edge_length_change": 0.1580603,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1512M",
+      "side": "L",
+      "edge_count": 3435,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1478",
+      "side": "R",
+      "edge_count": 2458,
+      "rms_relative_mesh_edge_length_change": 0.0630931,
+      "p95_relative_mesh_edge_length_change": 0.1701235,
+      "max_relative_mesh_edge_length_change": 0.3400207,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1478M",
+      "side": "L",
+      "edge_count": 2449,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1480",
+      "side": "R",
+      "edge_count": 1437,
+      "rms_relative_mesh_edge_length_change": 0.0897584,
+      "p95_relative_mesh_edge_length_change": 0.2320752,
+      "max_relative_mesh_edge_length_change": 0.4414554,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1480M",
+      "side": "L",
+      "edge_count": 1435,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1477",
+      "side": "R",
+      "edge_count": 4322,
+      "rms_relative_mesh_edge_length_change": 0.061204,
+      "p95_relative_mesh_edge_length_change": 0.1289179,
+      "max_relative_mesh_edge_length_change": 0.4341786,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1477M",
+      "side": "L",
+      "edge_count": 4321,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1479",
+      "side": "R",
+      "edge_count": 2670,
+      "rms_relative_mesh_edge_length_change": 0.0491761,
+      "p95_relative_mesh_edge_length_change": 0.0950309,
+      "max_relative_mesh_edge_length_change": 0.4184499,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    },
+    {
+      "part_id": "FJ1479M",
+      "side": "L",
+      "edge_count": 2673,
+      "rms_relative_mesh_edge_length_change": 0,
+      "p95_relative_mesh_edge_length_change": 0,
+      "max_relative_mesh_edge_length_change": 0,
+      "source_fascicle_strain_measured": false,
+      "biomechanical_validation": false
+    }
+  ]
+}
