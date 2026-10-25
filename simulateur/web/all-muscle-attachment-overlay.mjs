@@ -19,7 +19,7 @@ export async function createFullMuscleAttachmentOverlay({scene,uniforms,avatarBo
     throw Error('Le lot 480/960 a changé : réaudit préalable obligatoire');
   const references=new Map([...forearmMotor.meshes.filter(m=>m.userData.kind!=='bone').map(m=>['body:'+m.userData.id,m]),
     ...handMuscles.bodyMeshes.filter(m=>m.userData.kind==='muscle').map(m=>['hand:'+m.userData.id,m])]);
-  const skeleton=new Map(avatarBones.meshes.map(m=>[m.userData.bone_id,m]));
+  const skeleton=new Map(avatarBones.meshes.map(m=>[m.userData.bone_id+"|"+m.userData.source_object,m]));
   const all=new Map(data.records.map(p=>[p.id,p]));
   const available=data.records.filter(r=>references.has(r.id));
   // No surface silently lost if another source revision changed the viewer.
@@ -123,7 +123,7 @@ export async function createFullMuscleAttachmentOverlay({scene,uniforms,avatarBo
       const base=mesh?.userData.base;
       for(const anchor of record.anchors){
         if(!base || !anchor.candidate_bone_id){skipped++;continue}
-        const bone=skeleton.get(anchor.candidate_bone_id);
+        const bone=skeleton.get(anchor.candidate_bone_id+"|"+anchor.bone_source_object);
         if(!bone){skipped++;continue}
         const j=anchor.muscle_vertex_index*3;
         if(j+2>=base.length){skipped++;continue}
