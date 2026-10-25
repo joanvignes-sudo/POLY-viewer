@@ -18,6 +18,10 @@ Dans le panneau gauche du visualiseur, nouveau bouton **Ancrages · 480**, puis 
 - 466 surfaces avec deux candidats, 10 avec un seul, 4 sans.
 - 208 maillages source pour 206 os, avec **identification des sous-surfaces osseuses** (ne pas confondre les trois composantes du sternum).
 
+## Anatomie documentaire conservée
+
+**12 relations sourcées** issues du registre POLY concernant **28 surfaces** (30 associations) sont présentées à côté des points de proximité et clairement distinguées de ceux-ci. Par exemple, la région de la tubérosité radiale est indiquée pour le tendon distal du biceps même si la surface musculaire est géométriquement plus proche d'autres os.
+
 ## Qualification
 
 La procédure relie **des sommets de surfaces**, pas des tendons ni des enthèses. Les limites et preuves de correspondance anatomique restent indépendantes. Les liaisons proposées ne contrôlent ni les muscles, ni les forces, ni le mouvement réel, ni la physiologie.
