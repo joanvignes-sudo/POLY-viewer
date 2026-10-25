@@ -1,3 +1,11 @@
+# POLY v0.140.1 — 480 surfaces musculaires et liens d'ancrage graphiques
+
+[Explorer la nouvelle version](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.140.1) · [Méthode et limites](simulateur/reports/ALL_MUSCLE_ANCHOR_GRAPH_2026-10-25.md) · [Notes de version](RELEASE_v0.140.1.md)
+
+Surfaces conservées : 458 corps + 22 main ; 960 extrémités étudiées et 942 candidates proches d'une surface osseuse. **Ce sont des proximités pour le visualiseur, pas des insertions biologiques ni des contraintes musculotendineuses validées.** Les 18 extrémités incertaines restent non résolues. Les 12 relations osseuses documentées déjà présentes sont conservées séparément des points d'ancrage graphiques.
+
+---
+
 # POLY v0.139.2 — coude : qualification anatomique
 
 [Explorer POLY](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.139.2) · [Rapport scientifique](simulateur/reports/ELBOW_QUALIFICATION_2026-10-25.md) · [Notice de version](RELEASE_v0.139.2.md)
