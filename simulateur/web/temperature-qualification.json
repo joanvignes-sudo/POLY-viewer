@@ -1,0 +1,41 @@
+{
+  "initial_state_sha256": "5ab2f59e9ddd12bd5fb16f1ff9632e7b9ac98e2e50d72c6f78381f1b75af5edf",
+  "source_files_sha256": {
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\__init__.py": "6f443b9ee3eafa5e0946cd24a596f6977ffddfe7ee7c6d05dc4d2e8fa411a9bc",
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\comfmod.py": "5e3fe4d5fe6237c8f60d1fb1943ad3a9b2042bf7baaa56b6d35bc3c4710cc786",
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\construction.py": "8cde48fd0ad5599a10adc664ddc95848b207e64ecc1b75cbbf7c3bf998f3c621",
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\jos3.py": "da1c7f8014958612735ab598988b5118011324b711b1267a51ec89dbb6f538e3",
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\matrix.py": "12fb52361d9db19feb460daca04dd095d1012b2da280182e5d9e59ea81409dc9",
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\params.py": "daa8b1c5ec3e7dbcb2ed1b1f20f6302fe2c04f3461e0833c40214a4704bac8c9",
+    "outputs\\POLY_TEMPERATURE_T1_2026-10-23\\source\\src\\jos3\\thermoregulation.py": "8672dcaea1d223938931503b12d5bae8d651c39801f9fe73a225149648a28e68"
+  },
+  "source_commit": "3c74ee2af2f79aa360093cc517e38bf465ec8c5b",
+  "profile": {
+    "sex": "male",
+    "age_years": 30,
+    "height_m": 1.7,
+    "weight_kg": 60,
+    "posture": "standing",
+    "PAR": 1.4
+  },
+  "fixed_boundaries": {
+    "RH_percent": 40,
+    "Va_m_s": 0.2,
+    "Icl_clo": 0
+  },
+  "columns": [
+    "elapsed_s",
+    "skin_mean_C",
+    "central_blood_C",
+    "air_C_previous_step",
+    "radiant_C_previous_step"
+  ],
+  "interval": "half-open; input at step start, temperature at step end",
+  "initial_row": [
+    0,
+    33.6795673098445,
+    36.45254399578864,
+    28,
+    28
+  ]
+}

@@ -1,0 +1,823 @@
+{
+  "schema": "poly.thermal-rest-regions.v1",
+  "scenario": "T4-male-standing-PAR1.4",
+  "source_commit": "3c74ee2af2f79aa360093cc517e38bf465ec8c5b",
+  "initial_state_sha256": "5ab2f59e9ddd12bd5fb16f1ff9632e7b9ac98e2e50d72c6f78381f1b75af5edf",
+  "time": {
+    "basis": "declared numerical fixed point",
+    "elapsed_s": 0,
+    "world_time_s": null
+  },
+  "temperature_unit": "degC",
+  "weight_definition": "Normalized construction._BSAst reference areas, used by JOS3.TskMean; not measured individual skin areas",
+  "skin_mean_C": 33.679567309844494,
+  "central_blood_C": 36.45254399578864,
+  "boundaries": {
+    "air_temperature_C": 28,
+    "mean_radiant_temperature_C": 28,
+    "relative_humidity_percent": 40,
+    "air_speed_m_s": 0.2,
+    "clothing_clo": 0
+  },
+  "profile": {
+    "sex": "male",
+    "age_years": 30,
+    "height_m": 1.7,
+    "weight_kg": 60,
+    "posture": "standing",
+    "PAR": 1.4
+  },
+  "numerical_criteria": {
+    "root_residual_K": 1e-09,
+    "seed_agreement_K": 1e-06,
+    "stationarity_600s_max_change_K": 0.001,
+    "stationarity_600s_abs_storage_W": 0.05,
+    "steps_s": [
+      60,
+      15
+    ],
+    "perturbation_K": [
+      0.1,
+      -0.1
+    ],
+    "contraction_3600s_max_distance_K": 0.1
+  },
+  "stationarity_received": true,
+  "one_hour_contraction_received": false,
+  "experimental_validation": false,
+  "avatar_coupled": false,
+  "coordinate_mapping": null,
+  "compartments": [
+    {
+      "id": "JOS3:CB",
+      "index": 0,
+      "region": "CB",
+      "layer": "central_blood",
+      "temperature_C": 36.45254399578864,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Head:artery",
+      "index": 1,
+      "region": "Head",
+      "layer": "artery",
+      "temperature_C": 36.452543995788645,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Head:vein",
+      "index": 2,
+      "region": "Head",
+      "layer": "vein",
+      "temperature_C": 36.681600550440486,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Head:core",
+      "index": 3,
+      "region": "Head",
+      "layer": "core",
+      "temperature_C": 36.814794528590916,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Head:muscle",
+      "index": 4,
+      "region": "Head",
+      "layer": "muscle",
+      "temperature_C": 35.14197321024149,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Head:fat",
+      "index": 5,
+      "region": "Head",
+      "layer": "fat",
+      "temperature_C": 34.81965716211194,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Head:skin",
+      "index": 6,
+      "region": "Head",
+      "layer": "skin",
+      "temperature_C": 34.517201845499585,
+      "skin_mean_weight": 0.0588865096359743,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Neck:artery",
+      "index": 7,
+      "region": "Neck",
+      "layer": "artery",
+      "temperature_C": 36.452543995788645,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Neck:vein",
+      "index": 8,
+      "region": "Neck",
+      "layer": "vein",
+      "temperature_C": 36.59429197110113,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Neck:core",
+      "index": 9,
+      "region": "Neck",
+      "layer": "core",
+      "temperature_C": 36.4124110277248,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Neck:skin",
+      "index": 10,
+      "region": "Neck",
+      "layer": "skin",
+      "temperature_C": 34.66698158870991,
+      "skin_mean_weight": 0.015524625267665952,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Chest:artery",
+      "index": 11,
+      "region": "Chest",
+      "layer": "artery",
+      "temperature_C": 36.45254399578865,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Chest:vein",
+      "index": 12,
+      "region": "Chest",
+      "layer": "vein",
+      "temperature_C": 36.54793975007538,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Chest:core",
+      "index": 13,
+      "region": "Chest",
+      "layer": "core",
+      "temperature_C": 36.578056961188814,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Chest:skin",
+      "index": 14,
+      "region": "Chest",
+      "layer": "skin",
+      "temperature_C": 33.85745100269947,
+      "skin_mean_weight": 0.09368308351177729,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Back:artery",
+      "index": 15,
+      "region": "Back",
+      "layer": "artery",
+      "temperature_C": 36.452543995788645,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Back:vein",
+      "index": 16,
+      "region": "Back",
+      "layer": "vein",
+      "temperature_C": 36.614947632232216,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Back:core",
+      "index": 17,
+      "region": "Back",
+      "layer": "core",
+      "temperature_C": 36.644009708719224,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Back:skin",
+      "index": 18,
+      "region": "Back",
+      "layer": "skin",
+      "temperature_C": 32.834554010658415,
+      "skin_mean_weight": 0.08618843683083512,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Pelvis:artery",
+      "index": 19,
+      "region": "Pelvis",
+      "layer": "artery",
+      "temperature_C": 36.45254399578867,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Pelvis:vein",
+      "index": 20,
+      "region": "Pelvis",
+      "layer": "vein",
+      "temperature_C": 36.26458461333241,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Pelvis:core",
+      "index": 21,
+      "region": "Pelvis",
+      "layer": "core",
+      "temperature_C": 36.813471537017676,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Pelvis:muscle",
+      "index": 22,
+      "region": "Pelvis",
+      "layer": "muscle",
+      "temperature_C": 36.495768980881266,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Pelvis:fat",
+      "index": 23,
+      "region": "Pelvis",
+      "layer": "fat",
+      "temperature_C": 35.59154839474678,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:Pelvis:skin",
+      "index": 24,
+      "region": "Pelvis",
+      "layer": "skin",
+      "temperature_C": 35.3048966312922,
+      "skin_mean_weight": 0.11830835117773018,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LShoulder:artery",
+      "index": 25,
+      "region": "LShoulder",
+      "layer": "artery",
+      "temperature_C": 36.33350425544453,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LShoulder:vein",
+      "index": 26,
+      "region": "LShoulder",
+      "layer": "vein",
+      "temperature_C": 35.41224646068206,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LShoulder:sfvein",
+      "index": 27,
+      "region": "LShoulder",
+      "layer": "sfvein",
+      "temperature_C": 33.50270557381855,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LShoulder:core",
+      "index": 28,
+      "region": "LShoulder",
+      "layer": "core",
+      "temperature_C": 35.834778111552254,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LShoulder:skin",
+      "index": 29,
+      "region": "LShoulder",
+      "layer": "skin",
+      "temperature_C": 33.50036984306902,
+      "skin_mean_weight": 0.05139186295503212,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LArm:artery",
+      "index": 30,
+      "region": "LArm",
+      "layer": "artery",
+      "temperature_C": 36.15859558618007,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LArm:vein",
+      "index": 31,
+      "region": "LArm",
+      "layer": "vein",
+      "temperature_C": 35.177324760341804,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LArm:sfvein",
+      "index": 32,
+      "region": "LArm",
+      "layer": "sfvein",
+      "temperature_C": 33.619150455686935,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LArm:core",
+      "index": 33,
+      "region": "LArm",
+      "layer": "core",
+      "temperature_C": 35.440670329100115,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LArm:skin",
+      "index": 34,
+      "region": "LArm",
+      "layer": "skin",
+      "temperature_C": 33.59921119388541,
+      "skin_mean_weight": 0.03372591006423983,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LHand:artery",
+      "index": 35,
+      "region": "LHand",
+      "layer": "artery",
+      "temperature_C": 35.45499217261416,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LHand:vein",
+      "index": 36,
+      "region": "LHand",
+      "layer": "vein",
+      "temperature_C": 34.918543994875535,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LHand:sfvein",
+      "index": 37,
+      "region": "LHand",
+      "layer": "sfvein",
+      "temperature_C": 34.2694171623578,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LHand:core",
+      "index": 38,
+      "region": "LHand",
+      "layer": "core",
+      "temperature_C": 34.85351772118908,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LHand:skin",
+      "index": 39,
+      "region": "LHand",
+      "layer": "skin",
+      "temperature_C": 34.186875372203914,
+      "skin_mean_weight": 0.02676659528907923,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RShoulder:artery",
+      "index": 40,
+      "region": "RShoulder",
+      "layer": "artery",
+      "temperature_C": 36.333504255444566,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RShoulder:vein",
+      "index": 41,
+      "region": "RShoulder",
+      "layer": "vein",
+      "temperature_C": 35.41224646068225,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RShoulder:sfvein",
+      "index": 42,
+      "region": "RShoulder",
+      "layer": "sfvein",
+      "temperature_C": 33.50270557381865,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RShoulder:core",
+      "index": 43,
+      "region": "RShoulder",
+      "layer": "core",
+      "temperature_C": 35.83477811155248,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RShoulder:skin",
+      "index": 44,
+      "region": "RShoulder",
+      "layer": "skin",
+      "temperature_C": 33.500369843069144,
+      "skin_mean_weight": 0.05139186295503212,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RArm:artery",
+      "index": 45,
+      "region": "RArm",
+      "layer": "artery",
+      "temperature_C": 36.15859558618014,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RArm:vein",
+      "index": 46,
+      "region": "RArm",
+      "layer": "vein",
+      "temperature_C": 35.17732476034197,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RArm:sfvein",
+      "index": 47,
+      "region": "RArm",
+      "layer": "sfvein",
+      "temperature_C": 33.61915045568699,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RArm:core",
+      "index": 48,
+      "region": "RArm",
+      "layer": "core",
+      "temperature_C": 35.44067032910038,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RArm:skin",
+      "index": 49,
+      "region": "RArm",
+      "layer": "skin",
+      "temperature_C": 33.599211193885466,
+      "skin_mean_weight": 0.03372591006423983,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RHand:artery",
+      "index": 50,
+      "region": "RHand",
+      "layer": "artery",
+      "temperature_C": 35.45499217261422,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RHand:vein",
+      "index": 51,
+      "region": "RHand",
+      "layer": "vein",
+      "temperature_C": 34.918543994875606,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RHand:sfvein",
+      "index": 52,
+      "region": "RHand",
+      "layer": "sfvein",
+      "temperature_C": 34.269417162357854,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RHand:core",
+      "index": 53,
+      "region": "RHand",
+      "layer": "core",
+      "temperature_C": 34.85351772118917,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RHand:skin",
+      "index": 54,
+      "region": "RHand",
+      "layer": "skin",
+      "temperature_C": 34.186875372203986,
+      "skin_mean_weight": 0.02676659528907923,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LThigh:artery",
+      "index": 55,
+      "region": "LThigh",
+      "layer": "artery",
+      "temperature_C": 36.40960890763049,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LThigh:vein",
+      "index": 56,
+      "region": "LThigh",
+      "layer": "vein",
+      "temperature_C": 35.86863101685615,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LThigh:sfvein",
+      "index": 57,
+      "region": "LThigh",
+      "layer": "sfvein",
+      "temperature_C": 33.350440125342,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LThigh:core",
+      "index": 58,
+      "region": "LThigh",
+      "layer": "core",
+      "temperature_C": 36.32901629765292,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LThigh:skin",
+      "index": 59,
+      "region": "LThigh",
+      "layer": "skin",
+      "temperature_C": 33.35147876176491,
+      "skin_mean_weight": 0.11188436830835116,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LLeg:artery",
+      "index": 60,
+      "region": "LLeg",
+      "layer": "artery",
+      "temperature_C": 36.293672589148464,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LLeg:vein",
+      "index": 61,
+      "region": "LLeg",
+      "layer": "vein",
+      "temperature_C": 35.49368295266074,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LLeg:sfvein",
+      "index": 62,
+      "region": "LLeg",
+      "layer": "sfvein",
+      "temperature_C": 33.03357931435498,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LLeg:core",
+      "index": 63,
+      "region": "LLeg",
+      "layer": "core",
+      "temperature_C": 36.011388322973154,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LLeg:skin",
+      "index": 64,
+      "region": "LLeg",
+      "layer": "skin",
+      "temperature_C": 33.034961991493084,
+      "skin_mean_weight": 0.05995717344753747,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LFoot:artery",
+      "index": 65,
+      "region": "LFoot",
+      "layer": "artery",
+      "temperature_C": 34.10374179424619,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LFoot:vein",
+      "index": 66,
+      "region": "LFoot",
+      "layer": "vein",
+      "temperature_C": 33.55770496763418,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LFoot:sfvein",
+      "index": 67,
+      "region": "LFoot",
+      "layer": "sfvein",
+      "temperature_C": 32.807048002875874,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LFoot:core",
+      "index": 68,
+      "region": "LFoot",
+      "layer": "core",
+      "temperature_C": 33.39859596906049,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:LFoot:skin",
+      "index": 69,
+      "region": "LFoot",
+      "layer": "skin",
+      "temperature_C": 32.789187705156024,
+      "skin_mean_weight": 0.029978586723768734,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RThigh:artery",
+      "index": 70,
+      "region": "RThigh",
+      "layer": "artery",
+      "temperature_C": 36.409608907630535,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RThigh:vein",
+      "index": 71,
+      "region": "RThigh",
+      "layer": "vein",
+      "temperature_C": 35.86863101685722,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RThigh:sfvein",
+      "index": 72,
+      "region": "RThigh",
+      "layer": "sfvein",
+      "temperature_C": 33.35044012533868,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RThigh:core",
+      "index": 73,
+      "region": "RThigh",
+      "layer": "core",
+      "temperature_C": 36.32901629765239,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RThigh:skin",
+      "index": 74,
+      "region": "RThigh",
+      "layer": "skin",
+      "temperature_C": 33.35147876176172,
+      "skin_mean_weight": 0.11188436830835116,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RLeg:artery",
+      "index": 75,
+      "region": "RLeg",
+      "layer": "artery",
+      "temperature_C": 36.29367258915015,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RLeg:vein",
+      "index": 76,
+      "region": "RLeg",
+      "layer": "vein",
+      "temperature_C": 35.493682952666624,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RLeg:sfvein",
+      "index": 77,
+      "region": "RLeg",
+      "layer": "sfvein",
+      "temperature_C": 33.033579314378926,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RLeg:core",
+      "index": 78,
+      "region": "RLeg",
+      "layer": "core",
+      "temperature_C": 36.01138832298127,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RLeg:skin",
+      "index": 79,
+      "region": "RLeg",
+      "layer": "skin",
+      "temperature_C": 33.03496199151623,
+      "skin_mean_weight": 0.05995717344753747,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RFoot:artery",
+      "index": 80,
+      "region": "RFoot",
+      "layer": "artery",
+      "temperature_C": 34.10374179418135,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RFoot:vein",
+      "index": 81,
+      "region": "RFoot",
+      "layer": "vein",
+      "temperature_C": 33.55770496757482,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RFoot:sfvein",
+      "index": 82,
+      "region": "RFoot",
+      "layer": "sfvein",
+      "temperature_C": 32.80704800282554,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RFoot:core",
+      "index": 83,
+      "region": "RFoot",
+      "layer": "core",
+      "temperature_C": 33.39859596900387,
+      "skin_mean_weight": 0,
+      "geometry_registration": null
+    },
+    {
+      "id": "JOS3:RFoot:skin",
+      "index": 84,
+      "region": "RFoot",
+      "layer": "skin",
+      "temperature_C": 32.78918770510578,
+      "skin_mean_weight": 0.029978586723768734,
+      "geometry_registration": null
+    }
+  ],
+  "unknowns": [
+    "Human validation",
+    "Global nonlinear stability",
+    "Geometric registration to HRA",
+    "Qualified coupling to other modules"
+  ]
+}

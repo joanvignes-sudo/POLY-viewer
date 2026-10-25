@@ -1,0 +1,103 @@
+{
+  "schema": "poly.protocol-reference-context.v1",
+  "id": "HASS-BODY:generic-heart-context",
+  "protocol": {
+    "group_id": "HASSANPOUR",
+    "node_id": "HASS-BODY",
+    "doi": "10.1038/npp.2017.154",
+    "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28726799/",
+    "meaning": "Cardiorespiratory physiological measurements; no sensor-site or tissue reconstruction",
+    "individual_data_imported": false
+  },
+  "relation": "curated_generic_reference_context",
+  "curation": "POLY explicit documentary curation; not an author-provided participant-to-atlas registration",
+  "ontology": {
+    "iri": "http://purl.obolibrary.org/obo/UBERON_0000948",
+    "obo_id": "UBERON:0000948",
+    "label": "heart",
+    "is_obsolete": false,
+    "ontology_name": "uberon",
+    "version_iri": "http://purl.obolibrary.org/obo/uberon/releases/2026-10-01/uberon.owl",
+    "retrieved_utc": "2026-10-23T23:57:10.739762+00:00",
+    "license": "CC BY 3.0",
+    "license_url": "https://github.com/obophenotype/uberon/blob/master/LICENSE",
+    "attribution": "Uberon contributors; term label accessed through EMBL-EBI OLS",
+    "definition_copied": false
+  },
+  "reference": {
+    "source": "HRA united male v1.10, Visible Human",
+    "source_group": "VH_M_heart",
+    "metadata_sha256": "cf140a39c11163508e91e12b0df9820e6e36ea2f2b50392f62cd9f404fea1573",
+    "parts": [
+      {
+        "node": 679,
+        "name": "VH_M_mitral_valve"
+      },
+      {
+        "node": 680,
+        "name": "VH_M_tricuspid_valve"
+      },
+      {
+        "node": 681,
+        "name": "VH_M_aortic_valve"
+      },
+      {
+        "node": 682,
+        "name": "VH_M_pulmonary_valve"
+      },
+      {
+        "node": 684,
+        "name": "VH_M_papillary_muscle_of_heart_anterior"
+      },
+      {
+        "node": 685,
+        "name": "VH_M_papillary_muscle_of_heart_anterolateral"
+      },
+      {
+        "node": 686,
+        "name": "VH_M_papillary_muscle_of_heart_medial"
+      },
+      {
+        "node": 687,
+        "name": "VH_M_papillary_muscle_of_heart_posterior"
+      },
+      {
+        "node": 688,
+        "name": "VH_M_papillary_muscle_of_heart_posteromedial"
+      },
+      {
+        "node": 690,
+        "name": "VH_M_left_cardiac_atrium"
+      },
+      {
+        "node": 691,
+        "name": "VH_M_right_cardiac_atrium"
+      },
+      {
+        "node": 692,
+        "name": "VH_M_heart_right_ventricle"
+      },
+      {
+        "node": 693,
+        "name": "VH_M_interventricular_septum"
+      },
+      {
+        "node": 694,
+        "name": "VH_M_heart_left_ventricle"
+      }
+    ],
+    "license": "CC BY 4.0",
+    "url": "https://humanatlas.io/3d-reference-library"
+  },
+  "participant_registration": false,
+  "sensor_localization": false,
+  "causal_path": false,
+  "physiological_time_s": null,
+  "individual_anatomy": false,
+  "limitations": [
+    "The semantic relation is curated by POLY, not validated as an anatomical transformation.",
+    "Heart rate or cardiorespiratory recording does not locate its sensor in these 14 meshes.",
+    "These loaded display surfaces do not establish anatomical completeness.",
+    "No primary human observations are copied onto the HRA donor."
+  ]
+}

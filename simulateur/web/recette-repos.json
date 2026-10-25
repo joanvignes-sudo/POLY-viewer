@@ -1,0 +1,20 @@
+{
+  "schema": "poly.rest-assembly-audit.v1",
+  "registry_sha256": "0c1f79d5fe74984e846ff80946069bc97ff542a2bdaebc4e3d7c5b55d62fbbf3",
+  "counts": {
+    "bones": 206,
+    "muscle_surfaces": 480,
+    "hra_structures": 918,
+    "nerve_routes": 575
+  },
+  "unique_identifiers": 2179,
+  "finite_display_anchors": 1699,
+  "explicitly_unlocated": 480,
+  "technical_issues": [],
+  "technical_checks_passed": true,
+  "validated_spatial_muscle_bone_attachments": 0,
+  "validated_inter_atlas_landmarks": 0,
+  "anatomical_registration_validated": false,
+  "physiological_rest_validated": false,
+  "scope": "registry consistency and native HRA identity/bounds only; no enthese, joint pivot, nerve trajectory or physiological validation"
+}

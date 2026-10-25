@@ -1,0 +1,115 @@
+{
+  "schema": "poly.attachment-evidence.v1",
+  "id": "POLY:ATTACHMENT_CANDIDATE:biceps_radius",
+  "registry_sha256": "0c1f79d5fe74984e846ff80946069bc97ff542a2bdaebc4e3d7c5b55d62fbbf3",
+  "relation_id": "legacy:biceps_radius",
+  "muscle_ids": [
+    "POLY:MUSCLE_REF:FJ1512",
+    "POLY:MUSCLE_REF:FJ1478",
+    "POLY:MUSCLE_REF:FJ1512M",
+    "POLY:MUSCLE_REF:FJ1478M"
+  ],
+  "destination_bone_family": "radius",
+  "evidence_level": "human cadaver regional description; not spatial registration",
+  "studies": [
+    {
+      "pmid": "18325797",
+      "doi": "10.1016/j.jse.2007.11.002",
+      "population": "30 radius cadavériques humains",
+      "protocol": "Tomographie axiale ; micromètre numérique ; sections et radiographie Faxitron pour orientation.",
+      "measurements": [
+        {
+          "observable": "largeur moyenne insertion",
+          "value": 7,
+          "unit": "mm",
+          "statistic": "mean"
+        },
+        {
+          "observable": "longueur moyenne insertion",
+          "value": 22,
+          "unit": "mm",
+          "statistic": "mean"
+        }
+      ],
+      "coordinate_definition": "Orientation par rapport au sommet de la tubérosité et à la direction antérieure ; repère du spécimen, pas repère POLY.",
+      "unknowns": [
+        "Données individuelles et repères 3D non récupérés",
+        "Méthodes complètes non examinées"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18325797/",
+      "evidence_access": "abstract only",
+      "reuse": "Faits reformulés et références seulement ; aucune figure, aucun tableau ou jeu de données reproduit ; licence de données ouverte non vérifiée."
+    },
+    {
+      "pmid": "17931901",
+      "doi": "10.1016/j.jse.2007.05.005",
+      "population": "20 bras cadavériques humains",
+      "protocol": "Mesures linéaires et angulaires de la tubérosité et de l’empreinte ; avant-bras en supination complète pour orientation.",
+      "measurements": [
+        {
+          "observable": "dimension axiale empreinte",
+          "value": 18.7,
+          "unit": "mm",
+          "statistic": "reported summary; dispersion unavailable in abstract"
+        },
+        {
+          "observable": "dimension transverse empreinte",
+          "value": 3.7,
+          "unit": "mm",
+          "statistic": "reported summary; dispersion unavailable in abstract"
+        }
+      ],
+      "coordinate_definition": "Rapport au plan latéral/coronal, supination complète ; pas de transformation vers le maillage POLY.",
+      "unknowns": [
+        "Correspondance des définitions avec la première étude non établie",
+        "Méthodes complètes et données individuelles non récupérées"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17931901/",
+      "evidence_access": "abstract only",
+      "reuse": "Faits reformulés et références seulement ; aucune figure, aucun tableau ou jeu de données reproduit ; licence de données ouverte non vérifiée."
+    },
+    {
+      "pmid": "21698491",
+      "doi": "10.1007/s00167-011-1586-x",
+      "population": "25 spécimens cadavériques humains embaumés",
+      "protocol": "Dissection ; morphologie et séparation des portions tendineuses ; mesures longueur, largeur et aire insertion.",
+      "measurements": [
+        {
+          "observable": "longueur empreinte",
+          "value": 20.5,
+          "reported_plus_minus": 2.0,
+          "dispersion_definition": "not verified from full methods",
+          "unit": "mm",
+          "statistic": "reported mean plus-minus"
+        },
+        {
+          "observable": "largeur empreinte",
+          "value": 9.7,
+          "reported_plus_minus": 1.3,
+          "dispersion_definition": "not verified from full methods",
+          "unit": "mm",
+          "statistic": "reported mean plus-minus"
+        }
+      ],
+      "coordinate_definition": "Tubérosité radiale : chef long postérosupérieur, chef court antéroinférieur ; description régionale, pas coordonnées maillage.",
+      "unknowns": [
+        "Pas de coordonnées individuelles accessibles dans le résumé",
+        "Licence des données non vérifiée"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21698491/",
+      "evidence_access": "abstract only",
+      "reuse": "Faits reformulés et références seulement ; aucune figure, aucun tableau ou jeu de données reproduit ; licence de données ouverte non vérifiée."
+    }
+  ],
+  "pooling_permitted": false,
+  "spatial_mapping": {
+    "coordinate_frame": null,
+    "insertion_xyz": null,
+    "transform_to_poly": null,
+    "landmark_correspondences": [],
+    "registration_validated": false
+  },
+  "mechanical_link_enabled": false,
+  "unknown_marker": "U-ATTACHE-BICEPS-RADIUS",
+  "decision": "Description régionale documentée ; aucune des quatre surfaces recalée. Ne pas moyenner les études ni dessiner une enthèse à partir de ces seules dimensions."
+}

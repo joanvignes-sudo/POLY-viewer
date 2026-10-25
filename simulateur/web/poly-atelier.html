@@ -9,7 +9,7 @@
 <a class="skip" href="#atelier">Aller à l'atelier</a>
 <header>
   <div><strong>POLY</strong><span class="slash"> / ATELIER FONCTIONNEL</span><small>Bêta · atelier de simulation</small></div>
-  <nav><a href="index.html">Avatar seul</a><button type="button" id="open-project-followup">Suivi du projet</button></nav>
+  <nav><a href="index.html">Avatar seul</a><a href="recherche.html">Travaux et expériences</a><a href="couverture.html">Couverture</a><button type="button" id="open-project-followup">Suivi du projet</button></nav>
 </header>
 <div class="intro"><div><h1>Un corps commun. Des chaînes à explorer.</h1><p>Chantier actif : énergétique cérébrale et interactions astrocytes–neurones. Les autres travaux restent disponibles dans Chantiers.</p></div><div class="session-tools"><span class="scope">Dossier actif · Pellerin</span><button id="session-export" type="button">Exporter la séance</button><label class="session-import">Importer une séance <input id="session-file" type="file" accept=".json,application/json"></label><span id="session-status" role="status"></span></div></div>
 <main id="atelier">
@@ -22,7 +22,7 @@
   <div class="panel-head"><div><span class="eyebrow">02 / Laboratoire</span><h2 id="lab-title">Chantier actif et travaux conservés</h2></div></div>
   <div role="tablist" aria-label="Chantiers POLY" class="tabs">
    <button type="button" role="tab" id="tab-chains" aria-controls="panel-chains" aria-selected="true" data-tab="chains">Dossier Pellerin</button>
-   <details id="worksite-menu"><summary>Chantiers conservés</summary><div class="worksite-items">
+   <details id="worksite-menu"><summary>Chantiers conservés</summary><div class="worksite-items"><a href="emotion-protocole.html">Émotion</a><a href="emdr-protocole.html">EMDR</a><a href="assemblage.html">Assemblage anatomique</a>
    <button type="button" role="tab" id="tab-light" aria-controls="panel-light" aria-selected="false" data-tab="light">Lumière · conservé</button>
    <button type="button" role="tab" id="tab-thermal" aria-controls="panel-thermal" aria-selected="false" data-tab="thermal">Thermique · en pause</button>
 
@@ -74,5 +74,5 @@
  </section>
 </main>
 <footer>POLY · Bêta de travail. États saisis, modèles et observations restent identifiés dans leurs dossiers. Sources et hypothèses accessibles depuis chaque chaîne.</footer>
-<script type="module" src="poly-atelier.mjs?v=0.139.1"></script>
+<script src="../public-assets.js?v=0.140.0&amp;pack=2"></script><script type="module" src="poly-atelier.mjs?v=0.139.1"></script>
 </body></html>

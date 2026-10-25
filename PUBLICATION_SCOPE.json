@@ -1,5 +1,5 @@
 {
-  "version": "0.139.1",
+  "version": "0.140.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -363,5 +363,9 @@
     "anatomical_registration": false,
     "human_clock": false,
     "molecular_events": false
-  }
+  },
+  "research_hub": "simulateur/web/recherche.html",
+  "preserved_worksites_public": true,
+  "thermal_server_published": false,
+  "private_correspondence_published": false
 }

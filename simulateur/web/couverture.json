@@ -1,0 +1,416 @@
+{
+  "schema": "poly.coverage.v1",
+  "complete": false,
+  "updated": "2026-10-24",
+  "items": [
+    {
+      "id": "avatar",
+      "title": "Avatar debout",
+      "status": "partiel",
+      "evidence": "A1/A2 : identités et sources contrôlées ; A4 : six surfaces du genou gauche en repère HRA commun, visibilité et sélection réversibles. Toujours 480 références sans recalage inter-atlas et zéro attache validée.",
+      "next": "Qualifier un raccord anatomique à partir de repères homologues documentés ; ne pas déduire une attache de la vue native.",
+      "uncertainties": [
+        "U-ANATOMIE"
+      ]
+    },
+    {
+      "id": "rest",
+      "title": "Repos physiologique",
+      "status": "partiel",
+      "evidence": "T2/T3 : démonstration thermique ; T4 : nouveau profil debout PAR 1,4, point fixe stationnaire aux pas 60/15 s. Perturbations : critère à une heure échoué, décroissance à six heures dans les quatre essais ; aucune validation humaine. R4 : périmètre du repos accessible depuis la scène, avec contrôle de la source T4 et export explicite des limites. T18 : fond thermique séparé en production, respiration, évaporation et perte sèche implicite ; 85 bilans locaux, 18 ensembles régionaux, énergie cumulée, référence/intervention et récupération sur 600 s. Vérification numérique seulement ; repos global et recalage anatomique restent ouverts.",
+      "next": "Qualifier un premier échange physiologique de fond avec variables, unités, bilan et temps propres ; le point fixe thermique ne qualifie pas le corps entier.",
+      "uncertainties": [
+        "U-REPOS",
+        "U-THERMIQUE"
+      ]
+    },
+    {
+      "id": "light",
+      "title": "Expérience lumière",
+      "status": "partiel",
+      "evidence": "Q9–Q13 : observations humaines ; X1 : quinze scénarios bornés ; M1/M2 : lecture P2 avec source, unités et horloge native. Aucun effet causal validé. L1 : lecture qualifiée par grandeur, catalogue et calibration épinglés ; entrée nominale en lux et contraste pupillaire statistique en mm distingués, sans latéralité ni recalage supposés. L2 : acquisition gauche/droite, moyenne binoculaire stricte et session sn2 qualifiées sur les 22 fichiers ; logiciel Eyelink documenté, modèle matériel et recalage individuel non établis. L3 : contrat de filiation observables–localisation reçu sur les 22 enregistrements ; canaux gauche/droit, moyenne stricte et contraste X1 séparés. Appareil décrit dans la publication distinct d’une identification par fichier ; groupe publié de 23 contrôles distinct des 22 exports disponibles. Distances 590/700 mm et correspondance sn2/cinq blocs maintenues inconnues. Export du contrat et reprise du lecteur vérifiés ; aucun raccord physiologique ou recalage d’œil.",
+      "next": "Évaluer le domaine causal d’un modèle avant commande physiologique ; préserver les observations et scénarios séparés.",
+      "uncertainties": [
+        "U-LUMIERE"
+      ]
+    },
+    {
+      "id": "thermal",
+      "title": "Expérience température",
+      "status": "partiel",
+      "evidence": "T4–T7 : état debout et expériences numériques ; dépôt humain de moyennes distinct. T8–T10 : moteur local isolé, recettes par calcul, comparaison intervention/témoin et contrôles stricts. T11 : six trajectoires à la borne et lecture T4 indépendante dans P2. Aucune validation humaine ni commande de l’avatar. T13 : contrat natif des 85 états et termes du bilan implicite ; deux calculs isolés courts, bilans nodaux/globaux reconstruits indépendamment. T14 : inspecteur T13 reçu visuellement et export exact ; huit états projetés dans des contrats P1 candidats, sans exécution physiologique. T15 : ports et permissions du calcul isolé appliqués avant envoi et à réception ; aller-retour intervention/témoin reçu, huit agrégats concordants avec T13. Le moteur compact ne fournit pas les 85 états vivants. T16 : outil d’audit paramétré, borné à 600 s/40 pas/2 Mo, avec export des 85 états et bilans ; lecture par fichier et candidat P1 reçus. Le service compact garde son périmètre antérieur. T18 : fond thermique séparé en production, respiration, évaporation et perte sèche implicite ; 85 bilans locaux, 18 ensembles régionaux, énergie cumulée, référence/intervention et récupération sur 600 s. Vérification numérique seulement ; repos global et recalage anatomique restent ouverts. T20 : dépôt humain Figshare v3 reçu en lecture, 72 IDs/64 personnes selon la publication ; températures cutanées et environnement horodatés, valeurs absentes et ambiguïtés conservées. Comparaison quantitative T4 non reçue. T25 : unités anthropométriques qualifiées par la table publiée et 24 moyennes de groupe ; dossier thoracique en proxy candidat avec deux rejeux utilisant les quatre entrées anthropométriques de l’ID0. Aucun score expérimental ni recalage point-région reçu. T27 : calcul JOS-3 complet en processus isolé pour une nouvelle condition, 85 états et transactions reçus dans le registre natif après contre-calcul ; export et reprise vérifiés. Domaine logiciel T16 borné, aucune commande physiologique P1 ni validation humaine. T28 : paire native référence/intervention, même T4/profil/grille, écarts locaux en K/W/J ; passé commun, bilans différentiels, reprise et annulation du second calcul reçus. Consultation à 30/60/90/120 s sans modifier l’état final ; aucune horloge globale ni validation humaine. T29 : six calculs natifs, pas 60/30/15 s, même T4 et protocole [60,120) sur 180 s ; comparaison sans interpolation des écarts intervention−témoin à 60/120/180 s sur 85 identités. Sensibilité maximale 60/15 : 0,017399 K à 120 s et 6,759831 J d’énergie totale à 180 s. Contrôle indépendant, sources et reprise au pas de 15 s reçus ; aucune borne générale d’erreur ou validation humaine.",
+      "next": "Qualifier une référence humaine avec temps, effectifs, sites/poids cutanés, capteur central et frontières ; ne pas noter JOS-3 contre les moyennes T7 sans ces informations.",
+      "uncertainties": [
+        "U-THERMIQUE",
+        "U-PAR"
+      ]
+    },
+    {
+      "id": "emotion",
+      "title": "Émotions",
+      "status": "documentaire",
+      "evidence": "E1 : frise humaine Hassanpour, sensations, physiologie, ASL et notes émotionnelles différées séparées ; sans données individuelles simulées.",
+      "next": "Qualifier les observations réutilisables et les associations avant tout effet mécanistique.",
+      "uncertainties": [
+        "U-EMOTION"
+      ]
+    },
+    {
+      "id": "emdr",
+      "title": "Dossier EMDR",
+      "status": "documentaire",
+      "evidence": "E2 : article primaire et XML vérifiés ; acquisition EEG, périodes sélectionnées/concaténées et estimation de sources distinguées ; cinq étapes consultables, aucun signal brut ni effet simulé.",
+      "next": "Qualifier EDF, événements et rejets, correspondance visites/participants et droits des données avant une reproduction quantitative.",
+      "uncertainties": [
+        "U-EMDR"
+      ]
+    },
+    {
+      "id": "time",
+      "title": "Chronologie et reprise",
+      "status": "partiel",
+      "evidence": "P2 synthétique avec rejeu ; M1–M3 : lectures lumière et démonstration thermique PAR 1,2. T11 : export T4 PAR 1,4 vérifié et lu avec temps natif ; import et progression indépendants des ticks P2. Aucun raccord d’horloges qualifié. T17 : composition réversible des deux lectures M3 et du module natif T4, sélection/retrait/reprise sans remplacement des autres modules ni réunion des horloges. T28 : paire native référence/intervention, même T4/profil/grille, écarts locaux en K/W/J ; passé commun, bilans différentiels, reprise et annulation du second calcul reçus. Consultation à 30/60/90/120 s sans modifier l’état final ; aucune horloge globale ni validation humaine.",
+      "next": "Qualifier une correspondance d’horloges avant toute réunion causale ; les horloges restent séparées jusque-là.",
+      "uncertainties": [
+        "U-COUPLAGE"
+      ]
+    },
+    {
+      "id": "scale",
+      "title": "Deux échelles, même identité",
+      "status": "partiel",
+      "evidence": "B1 : contrat vérifié sur 82 étapes et navigation documentaire reçue en navigateur sur CO₂/Hassanpour. A7/A8 : même étape entre référence cardiaque isolée et corps entier ; A9 : lien inconnu conservé, progression source bloquée à zéro.",
+      "next": "Étendre à un pont quantitatif qualifié entre échelles, sans fabriquer de mesures microscopiques.",
+      "uncertainties": [
+        "U-ECHELLES"
+      ]
+    },
+    {
+      "id": "occlusion",
+      "title": "Occultants et contexte",
+      "status": "partiel",
+      "evidence": "O1/C2 : sélection HRA debout en pause et visibilité hiérarchique. A5 : intersection réelle des surfaces creuses, arrière-plan préservé ; parcours de trois références HRA de l’œil droit avec retour de contexte. Aucun raccord des 82 étapes humaines à un participant HRA. A6–A8 : cœur HRA générique de 14 surfaces, vue isolée/corps entier et sept rayons vers le groupe ; trois occultants reçus, retour réversible. A9 : frontière HASSANPOUR-R10 conservée. O2 : invalidation des occultants après changement d’opacité, visibilité héritée ou transformation ; activation mettant aussi la lecture documentaire en pause. Identité/fraction graphique conservées entre région, corps et reprise ; libellé de la structure HRA conservé au retour. Cycle de restauration et refus de provenance ancienne reçus. Cela ne constitue pas un tracé anatomique de chaîne qualifié.",
+      "next": "Étendre uniquement à un contexte source explicitement qualifié ; autres atlas et mouvements restent ouverts. Ne pas transformer le contexte générique en trajet mesuré.",
+      "uncertainties": [
+        "U-OCCLUSION"
+      ]
+    },
+    {
+      "id": "replay",
+      "title": "Sources et reproductibilité",
+      "status": "partiel",
+      "evidence": "R1–R3/M3 : reprises de consultation. T8–T11 : profil, sources, état initial, requête, grille et recettes thermiques vérifiés ; écarts recalculés à l’import depuis les deux résultats. Lecture T4 distincte du checkpoint synthétique ; T12 : voie fichier T11 reçue, refus atomique et fichier de relevé exporté contrôlés. L1 : export de lecture lumière qualifiée et reconstruction stricte ; les anciens exports doubles restent compatibles. T12 : une sélection récente invalide immédiatement les lectures de fichiers plus anciennes. T14 : reprise stricte et retour d’instantané thermique P1 candidat, avec provenance canonique et refus des altérations. T26 : 85 états recalculés depuis les opérateurs par pas de deux trajectoires T13 épinglées ; registre de recherche avec transactions énergétiques, deux lectures conservées et reprise par recalcul. Pas de nouvelle résolution non linéaire, de réunion d’horloges ou de commande physiologique P1. T27 : calcul JOS-3 complet en processus isolé pour une nouvelle condition, 85 états et transactions reçus dans le registre natif après contre-calcul ; export et reprise vérifiés. Domaine logiciel T16 borné, aucune commande physiologique P1 ni validation humaine. T28 : paire native référence/intervention, même T4/profil/grille, écarts locaux en K/W/J ; passé commun, bilans différentiels, reprise et annulation du second calcul reçus. Consultation à 30/60/90/120 s sans modifier l’état final ; aucune horloge globale ni validation humaine.",
+      "next": "Privilégier la qualification scientifique d’un raccord utile ; les manifestes des lectures reçues sont désormais réutilisables.",
+      "uncertainties": [
+        "U-COUPLAGE"
+      ]
+    }
+  ],
+  "markers": [
+    {
+      "id": "U-ANATOMIE",
+      "question": "Cohérence des atlas et attaches",
+      "impact": "Un assemblage visuel ne devient pas un individu anatomique validé.",
+      "resolution": "Recette anatomique définie et reçue sur le périmètre montré.",
+      "branch": "avatar",
+      "status": "open"
+    },
+    {
+      "id": "U-REPOS",
+      "question": "Repos du monde humain couplé",
+      "impact": "Le point fixe thermique ne couvre pas tous les organes.",
+      "resolution": "Variables, tolérances et interactions de chaque module déclarées et testées.",
+      "branch": "rest",
+      "status": "open"
+    },
+    {
+      "id": "U-THERMIQUE",
+      "question": "Référence humaine thermique incomplète",
+      "impact": "Aucun score de validation humaine calculé.",
+      "resolution": "Méthodes, observations, frontières et licence qualifiées.",
+      "branch": "thermal",
+      "status": "open"
+    },
+    {
+      "id": "U-PAR",
+      "question": "Profils thermiques distincts, sans sujet humain commun",
+      "impact": "La démonstration PAR 1,2 est conservée ; T4 utilise PAR 1,4 justifié pour le scénario masculin debout. Ni leur différence ni la stationnarité ne constituent une mesure humaine.",
+      "resolution": "Conserver le profil de chaque résultat ; qualifier l’activité et les conditions d’une référence humaine avant rapprochement.",
+      "branch": "thermal",
+      "status": "open"
+    },
+    {
+      "id": "U-LUMIERE",
+      "question": "Portée de la pupillométrie",
+      "impact": "Les mesures ne valident pas une chimie ou une activité neuronale intracellulaire.",
+      "resolution": "Raccord et domaine explicitement évalués.",
+      "branch": "light",
+      "status": "open"
+    },
+    {
+      "id": "U-EMOTION",
+      "question": "Passage du ressenti aux mécanismes",
+      "impact": "Aucun état chimique universel généré.",
+      "resolution": "Protocole humain, observables et mécanisme évalué séparément.",
+      "branch": "emotion",
+      "status": "open"
+    },
+    {
+      "id": "U-EMDR",
+      "question": "Mesures EEG et portée causale",
+      "impact": "Dossier documentaire ; aucune séance ou efficacité individuelle simulée.",
+      "resolution": "Accès et licence des données, préparation EEG et hypothèses causales qualifiés.",
+      "branch": "emdr",
+      "status": "open"
+    },
+    {
+      "id": "U-COUPLAGE",
+      "question": "Raccord quantitatif au monde partagé",
+      "impact": "Les vues de résultats restent distinctes de la commande physiologique.",
+      "resolution": "Contrat unités, temps, compartiments et bilans reçu sur un module.",
+      "branch": "time",
+      "status": "open"
+    },
+    {
+      "id": "U-ECHELLES",
+      "question": "Pont entre représentations",
+      "impact": "Navigation documentaire B1 reçue ; pont quantitatif entre échelles non reçu.",
+      "resolution": "Même identité et temps vérifiés entre deux vues ; précision spatiale déclarée.",
+      "branch": "scale",
+      "status": "open"
+    },
+    {
+      "id": "U-OCCLUSION",
+      "question": "Atténuation sélective",
+      "impact": "Mode local reçu pour une sélection HRA debout en pause ; couverture des chaînes, autres atlas et mouvements encore ouverte.",
+      "resolution": "Recette visuelle avec restauration et sélection vérifiées.",
+      "branch": "occlusion",
+      "status": "open"
+    }
+  ],
+  "emdr": {
+    "title": "Pagani 2012 · protocole EEG exploratoire",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3458957/",
+    "doi": "10.1371/journal.pone.0045753",
+    "license": "CC BY annoncée par l’article ; version non établie ici",
+    "participants": "10 patients et 10 témoins",
+    "comparison": "Patients à T0 puis à la dernière séance après traitement du souvenir index (T1) ; témoins enregistrés une fois à T0.",
+    "stages": [
+      "Repos, yeux ouverts puis fermés",
+      "Écoute du récit autobiographique, yeux fermés",
+      "Deuxième période yeux fermés",
+      "EMDR avec stimulation oculaire bilatérale",
+      "Repos final"
+    ],
+    "observations": "EEG et questionnaires ; associations rapportées avec des estimations de sources et de connectivité.",
+    "limits": "Étude exploratoire ; absence de diagnostic catégoriel DSM-IV-TR dans cet échantillon. Les durées individuelles, signaux EEG et trajectoires oculaires ne sont pas importés. Aucune inférence sur des neurotransmetteurs ou une efficacité individuelle.",
+    "model_effects": false,
+    "raw_data_imported": false
+  },
+  "first_delivery": {
+    "schema": "poly.first-delivery-recipe.v1",
+    "complete": false,
+    "basis": "DECISIONS_JOAN_V2.md, section 9, 23 octobre 2026",
+    "reviewed": "2026-10-24",
+    "criteria": [
+      {
+        "id": "standing-rest",
+        "title": "Avatar debout cohérent et repos stable",
+        "status": "à recevoir",
+        "evidence": "A1–A4 et R4 : identités natives, contexte réversible et portée du repos. T18 : production, pertes, transferts et stockage thermique décomposés, bilan régional reçu. T23 : la préparation assise réduit la sensibilité numérique mais ne reçoit pas la stationnarité à 30 minutes. T30 : quatre perturbations initiales non uniformes, témoins séparés et pas 60/15 s sur six heures ; 9 000 pas, bilans et opérateurs échantillonnés contrôlés. Ces cas passent la borne de 0,1 K à une heure ; l’échec uniforme T4 est conservé. Aucune stabilité globale ou validation humaine reçue.",
+        "remaining": "Le point fixe T4 reste partiel ; contraction à une heure échouée. Échanges de fond du corps commun et attaches inter-atlas non reçus ; un bilan de modèle ne valide pas le repos humain global.",
+        "links": [
+          {
+            "href": "assemblage.html",
+            "label": "Anatomie et contexte"
+          },
+          {
+            "href": "temperature-debout.html",
+            "label": "État thermique et stabilité"
+          },
+          {
+            "href": "repos-debout.html",
+            "label": "Périmètre du repos commun"
+          }
+        ],
+        "items": [
+          "avatar",
+          "rest"
+        ]
+      },
+      {
+        "id": "chain-context",
+        "title": "Chaîne suivie, occultants et contexte",
+        "status": "à recevoir",
+        "evidence": "B1 : repère documentaire conservé ; O1/C2 : occultants sur sélection HRA. A5 : correctif des surfaces creuses et parcours source cornée–cristallin–rétine, distinct des études humaines. A6–A9 : contexte cardiaque générique qualifié, 14 surfaces conservées et occultants groupés reçus ; frontière documentaire respectée. O2 : invalidation des occultants après changement d’opacité, visibilité héritée ou transformation ; activation mettant aussi la lecture documentaire en pause. Identité/fraction graphique conservées entre région, corps et reprise ; libellé de la structure HRA conservé au retour. Cycle de restauration et refus de provenance ancienne reçus. Cela ne constitue pas un tracé anatomique de chaîne qualifié.",
+        "remaining": "Contexte de référence générique reçu sur HASS-BODY ; aucun trajet biologique mesuré ni registration des participants. Suivi physiologique de chaîne et autres contextes non reçus.",
+        "links": [
+          {
+            "href": "index.html",
+            "label": "Chaînes et sélection"
+          },
+          {
+            "href": "protocol-heart-reference.html",
+            "label": "Portée du cœur de référence"
+          }
+        ],
+        "items": [
+          "occlusion",
+          "scale"
+        ]
+      },
+      {
+        "id": "human-experiment",
+        "title": "Expérience humaine et référence/intervention",
+        "status": "partiel",
+        "evidence": "Q9–Q12/X1 : observations pupillaires et contrastes exploratoires. T20 : séries thermiques humaines, 72 IDs/64 personnes selon la publication, données traitées et ambiguïtés conservées. T24 : ambiance ID0 rejouée sans ajustement. T25 : entrées anthropométriques qualifiées, dossier thoracique en proxy candidat. L3 : contrat de filiation observables–localisation reçu sur les 22 enregistrements ; canaux gauche/droit, moyenne stricte et contraste X1 séparés. Appareil décrit dans la publication distinct d’une identification par fichier ; groupe publié de 23 contrôles distinct des 22 exports disponibles. Distances 590/700 mm et correspondance sn2/cinq blocs maintenues inconnues. Export du contrat et reprise du lecteur vérifiés ; aucun raccord physiologique ou recalage d’œil.",
+        "remaining": "T7 reste agrégé sans chronologie suffisante. Les séries T20 apportent des temps, mais T25 ne reçoit ni équivalence point-région ni créneau de mesure ; aucun score de validation thermique humaine.",
+        "links": [
+          {
+            "href": "observations-lumiere.html",
+            "label": "Mesures lumière"
+          },
+          {
+            "href": "experience-lumiere.html",
+            "label": "Contrastes lumière"
+          },
+          {
+            "href": "observations-temperature.html",
+            "label": "Mesures thermiques"
+          },
+          {
+            "href": "observations-thermiques.html",
+            "label": "Séries thermiques et dossiers numériques"
+          }
+        ],
+        "items": [
+          "light",
+          "thermal"
+        ]
+      },
+      {
+        "id": "interval",
+        "title": "Intervalle, paramétrage et contrefactuel",
+        "status": "partiel",
+        "evidence": "X1 : intervalle lumineux borné et décalage artificiel annoncé. T9/T10/T18 : paramètres air/rayonnement sur grille sans arrondi. T24 : quatre entrées d’ambiance observées maintenues par minute, intervalles demi-ouverts et entrées de début de pas distinctes des états de fin de pas. T28 : paire native référence/intervention, même T4/profil/grille, écarts locaux en K/W/J ; passé commun, bilans différentiels, reprise et annulation du second calcul reçus. Consultation à 30/60/90/120 s sans modifier l’état final ; aucune horloge globale ni validation humaine. T29 : six calculs natifs, pas 60/30/15 s, même T4 et protocole [60,120) sur 180 s ; comparaison sans interpolation des écarts intervention−témoin à 60/120/180 s sur 85 identités. Sensibilité maximale 60/15 : 0,017399 K à 120 s et 6,759831 J d’énergie totale à 180 s. Contrôle indépendant, sources et reprise au pas de 15 s reçus ; aucune borne générale d’erreur ou validation humaine. T31 : matrice finie de 24 trajectoires natives, 18 paires et 560 pas sur 600 s aux coins air/rayonnement, avec réception et reprise exactes. Consultation native sauvegardée séparément de l’état final, anciens exports conservés ; aucune réunion des horloges ni validation humaine.",
+        "remaining": "Le rejeu T24 est un paramétrage physique de modèle, pas une intervention causale humaine démontrée. Propagation limitée aux mécanismes couverts ; aucune horloge biologique commune ou latence neuronale déduite.",
+        "links": [
+          {
+            "href": "experience-lumiere.html",
+            "label": "Intervalles lumière"
+          },
+          {
+            "href": "temperature-calcul.html",
+            "label": "Calcul thermique local optionnel"
+          },
+          {
+            "href": "temperature-calcul.html#thermal-step-study",
+            "label": "Sensibilité du pas numérique"
+          }
+        ],
+        "items": [
+          "light",
+          "thermal",
+          "time"
+        ]
+      },
+      {
+        "id": "two-scales",
+        "title": "Deux échelles et identité causale",
+        "status": "à recevoir",
+        "evidence": "B1 : repère et progression documentaire conservés entre cadrages. A7–A9 : référence générique isolée/corps entier et retour documentaire ; lien HASSANPOUR-R10 bloqué conservé.",
+        "remaining": "Pont quantitatif entre échelles non reçu ; aucun état microscopique observé reconstruit depuis une moyenne.",
+        "links": [
+          {
+            "href": "index.html",
+            "label": "Navigation documentaire"
+          }
+        ],
+        "items": [
+          "scale"
+        ]
+      },
+      {
+        "id": "protocols",
+        "title": "Dossiers émotions et EMDR selon leurs preuves",
+        "status": "documentaire reçu",
+        "evidence": "E1 et E2 : lecteurs de protocoles humains, observables et préparations séparés ; aucune chimie universelle ni efficacité individuelle simulée.",
+        "remaining": "Réception limitée à l’accès documentaire ; données individuelles et reproduction mécanistique restent ouvertes.",
+        "links": [
+          {
+            "href": "emotion-protocole.html",
+            "label": "Corps, sensations et émotions"
+          },
+          {
+            "href": "emdr-protocole.html",
+            "label": "EEG et EMDR"
+          }
+        ],
+        "items": [
+          "emotion",
+          "emdr"
+        ]
+      },
+      {
+        "id": "statistics",
+        "title": "Moyennes, extrêmes et dépendances",
+        "status": "partiel",
+        "evidence": "Q10–Q12 : unités, manquants et sélection conservés. T7 : moyennes agrégées. T20/T25 : 72 enregistrements issus de 64 personnes, huit répétitions saisonnières non appariées ; 24 moyennes de groupe contrôlées pour les unités, sans nouvelle inférence de population. L3 : contrat de filiation observables–localisation reçu sur les 22 enregistrements ; canaux gauche/droit, moyenne stricte et contraste X1 séparés. Appareil décrit dans la publication distinct d’une identification par fichier ; groupe publié de 23 contrôles distinct des 22 exports disponibles. Distances 590/700 mm et correspondance sn2/cinq blocs maintenues inconnues. Export du contrat et reprise du lecteur vérifiés ; aucun raccord physiologique ou recalage d’œil.",
+        "remaining": "Aucun extrême individuel inventé. Ne pas traiter les 72 IDs comme 72 personnes indépendantes ; attribution instrumentale par ID et définition temporelle des valeurs traitées restent ouvertes.",
+        "links": [
+          {
+            "href": "observations-lumiere.html",
+            "label": "Pupillométrie"
+          },
+          {
+            "href": "observations-temperature.html",
+            "label": "Moyennes et limites"
+          },
+          {
+            "href": "observations-thermiques.html",
+            "label": "Séries thermiques et dossiers numériques"
+          }
+        ],
+        "items": [
+          "light",
+          "thermal"
+        ]
+      },
+      {
+        "id": "reproduction",
+        "title": "Versions, exports et reproduction critique",
+        "status": "partiel",
+        "evidence": "P2 par rejeu, T10–T17 : contrôles de provenance et reprises. T18–T19 : bilans régionaux et exports reçus. T22 : référence exponentielle contre-vérifiée par Radau. T23 : reprise préparée identique à la continuation. T24/T25 : replays, observations séparées et téléchargements vérifiés octet par octet. T26 : 85 états recalculés depuis les opérateurs par pas de deux trajectoires T13 épinglées ; registre de recherche avec transactions énergétiques, deux lectures conservées et reprise par recalcul. Pas de nouvelle résolution non linéaire, de réunion d’horloges ou de commande physiologique P1. T27 : calcul JOS-3 complet en processus isolé pour une nouvelle condition, 85 états et transactions reçus dans le registre natif après contre-calcul ; export et reprise vérifiés. Domaine logiciel T16 borné, aucune commande physiologique P1 ni validation humaine. T28 : paire native référence/intervention, même T4/profil/grille, écarts locaux en K/W/J ; passé commun, bilans différentiels, reprise et annulation du second calcul reçus. Consultation à 30/60/90/120 s sans modifier l’état final ; aucune horloge globale ni validation humaine. T29 : six calculs natifs, pas 60/30/15 s, même T4 et protocole [60,120) sur 180 s ; comparaison sans interpolation des écarts intervention−témoin à 60/120/180 s sur 85 identités. Sensibilité maximale 60/15 : 0,017399 K à 120 s et 6,759831 J d’énergie totale à 180 s. Contrôle indépendant, sources et reprise au pas de 15 s reçus ; aucune borne générale d’erreur ou validation humaine. O2 : invalidation des occultants après changement d’opacité, visibilité héritée ou transformation ; activation mettant aussi la lecture documentaire en pause. Identité/fraction graphique conservées entre région, corps et reprise ; libellé de la structure HRA conservé au retour. Cycle de restauration et refus de provenance ancienne reçus. Cela ne constitue pas un tracé anatomique de chaîne qualifié. L3 : contrat de filiation observables–localisation reçu sur les 22 enregistrements ; canaux gauche/droit, moyenne stricte et contraste X1 séparés. Appareil décrit dans la publication distinct d’une identification par fichier ; groupe publié de 23 contrôles distinct des 22 exports disponibles. Distances 590/700 mm et correspondance sn2/cinq blocs maintenues inconnues. Export du contrat et reprise du lecteur vérifiés ; aucun raccord physiologique ou recalage d’œil. T31 : matrice finie de 24 trajectoires natives, 18 paires et 560 pas sur 600 s aux coins air/rayonnement, avec réception et reprise exactes. Consultation native sauvegardée séparément de l’état final, anciens exports conservés ; aucune réunion des horloges ni validation humaine.",
+        "remaining": "Réceptions limitées aux périmètres documentés. Aucune reprise physiologique du monde commun ni validation globale ; les échecs de stationnarité et les inconnues du comparateur sont conservés.",
+        "links": [
+          {
+            "href": "p2-laboratoire.html",
+            "label": "P2 et lectures indépendantes"
+          },
+          {
+            "href": "temperature-calcul.html",
+            "label": "Requêtes thermiques"
+          },
+          {
+            "href": "observations-thermiques.html",
+            "label": "Séries thermiques et dossiers numériques"
+          },
+          {
+            "href": "temperature-calcul.html#thermal-step-study",
+            "label": "Sensibilité du pas numérique"
+          }
+        ],
+        "items": [
+          "replay",
+          "time"
+        ]
+      }
+    ],
+    "next_connection": {
+      "title": "Recevoir un premier scénario physiologique limité",
+      "reason": "Les lectures et états peuvent être composés sans perte ; le repos global et le raccord physiologique restent les critères scientifiques principaux ouverts.",
+      "gate": "Choisir le périmètre physiologique minimal à partir des modèles humains reçus, définir son état de fond et ses interactions, puis rechercher la référence humaine appropriée. Ne pas multiplier les seuls formats de projection.",
+      "success": "Une variable et son échange sont reçus dans ce périmètre, avec bilan, temps, source et limites ; les manquants hors périmètre restent visibles."
+    }
+  }
+}

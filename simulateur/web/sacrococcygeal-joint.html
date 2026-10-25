@@ -1,0 +1,59 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>POLY — Repères réels de la jonction sacro-coccygienne</title>
+<style>
+:root{background:#091620;color:#e5edf0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0}main{max-width:1480px;margin:auto;padding:20px}h1{font-size:clamp(1.55rem,3.5vw,2.5rem);margin:5px 0 10px}a{color:#85d9d2}
+p{line-height:1.55}small,.muted{color:#abbfc9}h2{font-size:1.1rem}header{border-bottom:1px solid #375063;margin-bottom:16px;padding-bottom:14px}
+.warn{padding:12px 16px;border-left:4px solid #e2b65f;background:#24313a;border-radius:5px;margin:12px 0}
+.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:16px 0;padding:12px;background:#172a37;border:1px solid #3b5261;border-radius:8px}
+.controls select,textarea,input{background:#111f29;border:1px solid #557382;color:#f4fbfb;border-radius:5px;padding:7px;max-width:100%}
+.controls label{font-size:.88rem}.controls select{min-width:0}
+button{cursor:pointer;color:#e8f2f3;background:#21505c;border:1px solid #6b8b92;border-radius:7px;padding:9px 12px}
+button:hover{background:#316878}button:focus-visible{outline:3px solid #77dfd1}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.panel{border:1px solid #38505e;background:#152835;border-radius:9px;padding:12px;min-width:0}
+.viewport{position:relative;height:min(57vh,520px);min-height:300px;background:#071925;border-radius:7px;overflow:hidden}
+.viewport canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.overlay{position:absolute;bottom:9px;left:10px;pointer-events:none;font-size:.82rem;background:#15262aca;padding:5px;border-radius:5px}
+.details{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,1fr);gap:12px;margin-top:12px}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:8px;border-bottom:1px solid #365360;font-size:.83rem}tr[data-selected=true]{background:#28505b}
+pre{white-space:pre-wrap;word-break:break-word;background:#081722;padding:10px;border-radius:7px;font-size:.77rem;max-height:190px;overflow:auto}
+textarea{width:100%;min-height:100px}
+#status{padding:9px;background:#213a46;border-radius:7px;min-height:40px}
+.legend span{display:inline-block;width:11px;height:11px;margin:0 6px 0 12px;border-radius:50%}
+@media(max-width:800px){.two,.details{grid-template-columns:1fr}.viewport{height:380px}main{padding:12px}}
+</style><script src="../public-assets.js?v=0.140.0&amp;pack=2"></script></head><body><main><header><a href="./index.html">← POLY — corps intégré</a><h1>Jonction sacrum–coccyx : pointage sur les os</h1>
+<p class="muted">Étude locale DK · origine BodyParts3D 4.3 et Z-Anatomy · points géométriques proposés, aucun repère homologue anatomiquement certifié.</p></header>
+<div class="warn"><b>Ce que montrent les sources :</b> BodyParts3D nomme FJ3393 et FJ6484 « Sacrum » sous le même FMA16202. Z-Anatomy possède deux maillages distincts. L’articulation réelle est entre la <b>facette de l’apex S5</b> et la <b>base Co1</b> ; les cornes et le hiatus sont d’autres structures. La proximité des sommets ne permet pas de les confondre. Aucune donnée ici ne vaut diagnostic ou mesure clinique.</div>
+<div class="controls">
+<label for="landmark">Structure recherchée</label><select id="landmark"></select>
+<label for="bpmodel">Objet BodyParts3D</label><select id="bpmodel"><option value="FJ3393">FJ3393</option><option value="FJ6484">FJ6484</option></select>
+<label><input id="hide-sacrum" type="checkbox"/> Masquer sacrum Z</label>
+<label><input id="hide-coccyx" type="checkbox"/> Masquer coccyx Z</label>
+<label><input id="bisector" type="checkbox" checked/> Contour géométrique BP</label><label><input id="geometry-seeds" type="checkbox" checked/> Paire de points proches Z (indices géométriques uniquement)</label>
+<button id="focus">Zoom jonction</button><button id="all">Vue d'ensemble</button><button id="clear">Effacer point choisi</button>
+</div>
+<div class="two">
+<section class="panel"><h2>BodyParts3D — sacrum référencé, limite inférieure non qualifiée</h2>
+<p class="muted">Cliquer sur la surface pressentie. Le contour cyan indique une égalité de proximité, <em>pas</em> l’articulation.</p>
+<div class="viewport"><canvas id="canvas-bp" aria-label="Sacrum BodyParts3D 3D"></canvas><div class="overlay" id="picked-bp">Aucun point</div></div></section>
+<section class="panel"><h2>Z-Anatomy — sacrum et coccyx séparés</h2>
+<p class="muted legend"><span style="background:#d9a76a"></span> Sacrum <span style="background:#7bdccf"></span> Coccyx. Une annotation Co1 est refusée sur le sacrum et inversement.</p>
+<div class="viewport"><canvas id="canvas-z" aria-label="Sacrum et coccyx Z-Anatomy 3D"></canvas><div class="overlay" id="picked-z">Aucun point</div></div></section>
+</div>
+<div class="details">
+<section class="panel">
+<h2>Sept sites anatomiques à vérifier par pointage</h2>
+<table><thead><tr><th>Structure</th><th>Os Z cible</th><th>BP</th><th>Z</th><th></th></tr></thead><tbody id="sites"></tbody></table>
+<p class="muted">Pour chaque site, l'utilisateur identifie d'abord la morphologie dans les deux os. L'application enregistre le triangle visé et la précision numérique du clic ; elle ne peut pas valider seule son nom anatomique.</p>
+<h2>Coordonnées et référence géométrique</h2><pre id="measures">Cliquer sur les os pour obtenir des coordonnées.</pre>
+</section>
+<aside class="panel">
+<h2>Exporter pour revue indépendante</h2><p id="status">Chargement…</p>
+<label for="observer">Identifiant du réviseur</label><input id="observer" placeholder="Ex. revue A" style="display:block;width:100%;margin:7px 0"/>
+<label for="notes">Justification anatomique et réserves</label><textarea id="notes" placeholder="À quelle caractéristique de S5 ou Co1 correspond le point ? L'orientation anatomique est-elle établie ?"></textarea>
+<p><button id="export">Exporter les sept observations en JSON</button></p>
+<p class="muted">L'export conserve les coordonnées de la source et les empreintes des modèles. Par défaut, toutes les annotations restent « à vérifier », y compris si les sept points sont placés.</p>
+<h2>Sources</h2>
+<p class="muted"><a href="https://www.kenhub.com/en/library/anatomy/sacrococcygeal-joint">Kenhub — articulation</a> · <a href="https://teachmeanatomy.info/pelvis/bones/coccyx/">TeachMeAnatomy — coccyx</a> · <a href="https://www.kenhub.com/fr/library/anatomie/sacrum-anatomie">Kenhub — sacrum</a>.</p>
+</aside>
+</div></main><script type="module" src="./sacrococcygeal-joint.js"></script></body></html>

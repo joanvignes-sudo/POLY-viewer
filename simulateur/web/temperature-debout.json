@@ -1,0 +1,766 @@
+{
+  "receipt": {
+    "schema": "poly.standing-thermal-receipt.v1",
+    "contract": {
+      "schema": "poly.standing-thermal-scenario.v1",
+      "source_commit": "3c74ee2af2f79aa360093cc517e38bf465ec8c5b",
+      "source_license": "MIT",
+      "paper_doi": "10.1016/j.enbuild.2020.110575",
+      "activity_source": "Table 5, male standing PAR 1.4; paper based on FAO",
+      "profile": {
+        "sex": "male",
+        "age_years": 30,
+        "height_m": 1.7,
+        "weight_kg": 60,
+        "posture": "standing",
+        "PAR": 1.4
+      },
+      "boundaries": {
+        "air_temperature_C": 28,
+        "mean_radiant_temperature_C": 28,
+        "relative_humidity_percent": 40,
+        "air_speed_m_s": 0.2,
+        "clothing_clo": 0
+      },
+      "assumptions": "Software reference profile reused, not an observed participant. Boundaries chosen for this model scenario; not a qualified human experiment. No parameter fitting. Neutral initialization of authors retained.",
+      "criteria_before_calculation": {
+        "root_residual_K": 1e-09,
+        "seed_agreement_K": 1e-06,
+        "stationarity_600s_max_change_K": 0.001,
+        "stationarity_600s_abs_storage_W": 0.05,
+        "steps_s": [
+          60,
+          15
+        ],
+        "perturbation_K": [
+          0.1,
+          -0.1
+        ],
+        "contraction_3600s_max_distance_K": 0.1
+      },
+      "experimental_validation": false,
+      "avatar_coupled": false,
+      "old_T1_T2_unchanged": true
+    },
+    "root_checks": [
+      {
+        "residual_K": 1.7777779248717707e-11,
+        "success": true,
+        "evaluations": 100
+      },
+      {
+        "residual_K": 2.2453150450019166e-12,
+        "success": true,
+        "evaluations": 96
+      }
+    ],
+    "seed_agreement_K": 6.94981849846954e-11,
+    "seed_agreement_received": true,
+    "stationarity_received": true,
+    "uniform_perturbation_contraction_received": false,
+    "checks": [
+      {
+        "step_s": 60,
+        "perturbation_K": 0,
+        "max_change_600s_K": 4.5496051370719215e-11,
+        "mean_storage_600s_W": 1.3204926415901347e-10,
+        "distance_3600s_K": 6.912870276210015e-11
+      },
+      {
+        "step_s": 60,
+        "perturbation_K": 0.1,
+        "max_change_600s_K": 0.37404815543747816,
+        "mean_storage_600s_W": -3.9756573439581984,
+        "distance_3600s_K": 0.3666741693448401
+      },
+      {
+        "step_s": 60,
+        "perturbation_K": -0.1,
+        "max_change_600s_K": 0.46513313836472747,
+        "mean_storage_600s_W": 4.406150209360808,
+        "distance_3600s_K": 0.42699612944149834
+      },
+      {
+        "step_s": 15,
+        "perturbation_K": 0,
+        "max_change_600s_K": 4.615685611497611e-11,
+        "mean_storage_600s_W": 1.0794703645224174e-10,
+        "distance_3600s_K": 6.73452404953423e-11
+      },
+      {
+        "step_s": 15,
+        "perturbation_K": 0.1,
+        "max_change_600s_K": 0.3779907534307654,
+        "mean_storage_600s_W": -3.965221303505976,
+        "distance_3600s_K": 0.36341980537700636
+      },
+      {
+        "step_s": 15,
+        "perturbation_K": -0.1,
+        "max_change_600s_K": 0.46731668338252774,
+        "mean_storage_600s_W": 4.403553870453047,
+        "distance_3600s_K": 0.42284698754509265
+      }
+    ],
+    "skin_mean_C": 33.6795673098445,
+    "central_blood_C": 36.45254399578864,
+    "nodes": 85,
+    "experimental_validation": false,
+    "avatar_coupled": false,
+    "scope": "Numerical fixed point in a declared male standing model scenario; no global stability or human physiological validation."
+  },
+  "local_analysis": {
+    "rows": [
+      {
+        "step_s": 60,
+        "epsilon_K": 0.0001,
+        "spectral_radius": 0.9851951537345316,
+        "linear_max_norm_1h": 3.877114714553693
+      },
+      {
+        "step_s": 60,
+        "epsilon_K": 1e-05,
+        "spectral_radius": 0.9851951491917221,
+        "linear_max_norm_1h": 3.877114172601854
+      },
+      {
+        "step_s": 15,
+        "epsilon_K": 0.0001,
+        "spectral_radius": 0.9962868953037366,
+        "linear_max_norm_1h": 3.8363114376228924
+      },
+      {
+        "step_s": 15,
+        "epsilon_K": 1e-05,
+        "spectral_radius": 0.9962868918542134,
+        "linear_max_norm_1h": 3.8363089240995403
+      }
+    ],
+    "derivative_sensitivity": [
+      {
+        "step_s": 60,
+        "max_derivative_difference": 4.298783551348606e-09
+      },
+      {
+        "step_s": 15,
+        "max_derivative_difference": 2.2737367543239004e-09
+      }
+    ],
+    "all_spectral_radii_below_one": true,
+    "scope": "Local linearization of declared T4 only; no global nonlinear stability or human validation."
+  },
+  "extended_diagnostic": {
+    "purpose": "Diagnostic extension after failed one-hour contraction; original criterion and failure unchanged",
+    "rows": [
+      {
+        "step_s": 60,
+        "perturbation_K": 0.1,
+        "samples": [
+          {
+            "elapsed_s": 600,
+            "max_distance_K": 0.4740481554374796
+          },
+          {
+            "elapsed_s": 1200,
+            "max_distance_K": 0.529354691991081
+          },
+          {
+            "elapsed_s": 1800,
+            "max_distance_K": 0.521622912386043
+          },
+          {
+            "elapsed_s": 2400,
+            "max_distance_K": 0.4768471526857212
+          },
+          {
+            "elapsed_s": 3000,
+            "max_distance_K": 0.42151070024655013
+          },
+          {
+            "elapsed_s": 3600,
+            "max_distance_K": 0.3666741693448401
+          },
+          {
+            "elapsed_s": 4200,
+            "max_distance_K": 0.31646787507868623
+          },
+          {
+            "elapsed_s": 4800,
+            "max_distance_K": 0.27202432199124615
+          },
+          {
+            "elapsed_s": 5400,
+            "max_distance_K": 0.23333725969965968
+          },
+          {
+            "elapsed_s": 6000,
+            "max_distance_K": 0.20006967440341583
+          },
+          {
+            "elapsed_s": 6600,
+            "max_distance_K": 0.17168239484578862
+          },
+          {
+            "elapsed_s": 7200,
+            "max_distance_K": 0.147391268639403
+          },
+          {
+            "elapsed_s": 7800,
+            "max_distance_K": 0.12661360075743744
+          },
+          {
+            "elapsed_s": 8400,
+            "max_distance_K": 0.10883044557512278
+          },
+          {
+            "elapsed_s": 9000,
+            "max_distance_K": 0.09359490539198134
+          },
+          {
+            "elapsed_s": 9600,
+            "max_distance_K": 0.08052786615627383
+          },
+          {
+            "elapsed_s": 10200,
+            "max_distance_K": 0.06930945922093912
+          },
+          {
+            "elapsed_s": 10800,
+            "max_distance_K": 0.05966992739935506
+          },
+          {
+            "elapsed_s": 11400,
+            "max_distance_K": 0.05138132794933625
+          },
+          {
+            "elapsed_s": 12000,
+            "max_distance_K": 0.04425048342225324
+          },
+          {
+            "elapsed_s": 12600,
+            "max_distance_K": 0.038113166209789995
+          },
+          {
+            "elapsed_s": 13200,
+            "max_distance_K": 0.03282935364147477
+          },
+          {
+            "elapsed_s": 13800,
+            "max_distance_K": 0.028279361160450378
+          },
+          {
+            "elapsed_s": 14400,
+            "max_distance_K": 0.024360678040437733
+          },
+          {
+            "elapsed_s": 15000,
+            "max_distance_K": 0.020985360554277577
+          },
+          {
+            "elapsed_s": 15600,
+            "max_distance_K": 0.018077868031141975
+          },
+          {
+            "elapsed_s": 16200,
+            "max_distance_K": 0.01557325318333369
+          },
+          {
+            "elapsed_s": 16800,
+            "max_distance_K": 0.013415638575189348
+          },
+          {
+            "elapsed_s": 17400,
+            "max_distance_K": 0.011556926701864256
+          },
+          {
+            "elapsed_s": 18000,
+            "max_distance_K": 0.009955702809179456
+          },
+          {
+            "elapsed_s": 18600,
+            "max_distance_K": 0.00857629826403894
+          },
+          {
+            "elapsed_s": 19200,
+            "max_distance_K": 0.007387988762225461
+          },
+          {
+            "elapsed_s": 19800,
+            "max_distance_K": 0.0063643065412648525
+          },
+          {
+            "elapsed_s": 20400,
+            "max_distance_K": 0.0054824495031127185
+          },
+          {
+            "elapsed_s": 21000,
+            "max_distance_K": 0.0047227730468932805
+          },
+          {
+            "elapsed_s": 21600,
+            "max_distance_K": 0.004068352712494061
+          }
+        ],
+        "distance_21600s_K": 0.004068352712494061,
+        "max_sampled_distance_K": 0.529354691991081
+      },
+      {
+        "step_s": 60,
+        "perturbation_K": -0.1,
+        "samples": [
+          {
+            "elapsed_s": 600,
+            "max_distance_K": 0.5651331383647289
+          },
+          {
+            "elapsed_s": 1200,
+            "max_distance_K": 0.6557377005236731
+          },
+          {
+            "elapsed_s": 1800,
+            "max_distance_K": 0.6389327905584352
+          },
+          {
+            "elapsed_s": 2400,
+            "max_distance_K": 0.574238382038061
+          },
+          {
+            "elapsed_s": 3000,
+            "max_distance_K": 0.5026017409001184
+          },
+          {
+            "elapsed_s": 3600,
+            "max_distance_K": 0.42699612944149834
+          },
+          {
+            "elapsed_s": 4200,
+            "max_distance_K": 0.3573107248123222
+          },
+          {
+            "elapsed_s": 4800,
+            "max_distance_K": 0.2970966028277573
+          },
+          {
+            "elapsed_s": 5400,
+            "max_distance_K": 0.24675620178068414
+          },
+          {
+            "elapsed_s": 6000,
+            "max_distance_K": 0.20533904235454514
+          },
+          {
+            "elapsed_s": 6600,
+            "max_distance_K": 0.17146751661276483
+          },
+          {
+            "elapsed_s": 7200,
+            "max_distance_K": 0.14376720599062054
+          },
+          {
+            "elapsed_s": 7800,
+            "max_distance_K": 0.1210358057156995
+          },
+          {
+            "elapsed_s": 8400,
+            "max_distance_K": 0.10228505362901785
+          },
+          {
+            "elapsed_s": 9000,
+            "max_distance_K": 0.08672769849314221
+          },
+          {
+            "elapsed_s": 9600,
+            "max_distance_K": 0.07374552458065153
+          },
+          {
+            "elapsed_s": 10200,
+            "max_distance_K": 0.06285491786621833
+          },
+          {
+            "elapsed_s": 10800,
+            "max_distance_K": 0.0536764922396884
+          },
+          {
+            "elapsed_s": 11400,
+            "max_distance_K": 0.045910560779525156
+          },
+          {
+            "elapsed_s": 12000,
+            "max_distance_K": 0.03931821603345753
+          },
+          {
+            "elapsed_s": 12600,
+            "max_distance_K": 0.033707084833075385
+          },
+          {
+            "elapsed_s": 13200,
+            "max_distance_K": 0.028920718328329542
+          },
+          {
+            "elapsed_s": 13800,
+            "max_distance_K": 0.024830703883139904
+          },
+          {
+            "elapsed_s": 14400,
+            "max_distance_K": 0.021330773560613636
+          },
+          {
+            "elapsed_s": 15000,
+            "max_distance_K": 0.01833236365694546
+          },
+          {
+            "elapsed_s": 15600,
+            "max_distance_K": 0.015761227488660268
+          },
+          {
+            "elapsed_s": 16200,
+            "max_distance_K": 0.01355481634915634
+          },
+          {
+            "elapsed_s": 16800,
+            "max_distance_K": 0.01166022593642424
+          },
+          {
+            "elapsed_s": 17400,
+            "max_distance_K": 0.01003256426442789
+          },
+          {
+            "elapsed_s": 18000,
+            "max_distance_K": 0.008633638300075575
+          },
+          {
+            "elapsed_s": 18600,
+            "max_distance_K": 0.0074308853296614075
+          },
+          {
+            "elapsed_s": 19200,
+            "max_distance_K": 0.006396495109896705
+          },
+          {
+            "elapsed_s": 19800,
+            "max_distance_K": 0.005506682898847259
+          },
+          {
+            "elapsed_s": 20400,
+            "max_distance_K": 0.004741083371200716
+          },
+          {
+            "elapsed_s": 21000,
+            "max_distance_K": 0.004082242506122213
+          },
+          {
+            "elapsed_s": 21600,
+            "max_distance_K": 0.00351518966677844
+          }
+        ],
+        "distance_21600s_K": 0.00351518966677844,
+        "max_sampled_distance_K": 0.6557377005236731
+      },
+      {
+        "step_s": 15,
+        "perturbation_K": 0.1,
+        "samples": [
+          {
+            "elapsed_s": 600,
+            "max_distance_K": 0.4779907534307668
+          },
+          {
+            "elapsed_s": 1200,
+            "max_distance_K": 0.5320315487203402
+          },
+          {
+            "elapsed_s": 1800,
+            "max_distance_K": 0.5208575124491333
+          },
+          {
+            "elapsed_s": 2400,
+            "max_distance_K": 0.4741613878208426
+          },
+          {
+            "elapsed_s": 3000,
+            "max_distance_K": 0.4181740153982787
+          },
+          {
+            "elapsed_s": 3600,
+            "max_distance_K": 0.36341980537700636
+          },
+          {
+            "elapsed_s": 4200,
+            "max_distance_K": 0.3136259861630464
+          },
+          {
+            "elapsed_s": 4800,
+            "max_distance_K": 0.2696923051963225
+          },
+          {
+            "elapsed_s": 5400,
+            "max_distance_K": 0.23151567489777136
+          },
+          {
+            "elapsed_s": 6000,
+            "max_distance_K": 0.19868979948471832
+          },
+          {
+            "elapsed_s": 6600,
+            "max_distance_K": 0.17067929414624672
+          },
+          {
+            "elapsed_s": 7200,
+            "max_distance_K": 0.14668817505861398
+          },
+          {
+            "elapsed_s": 7800,
+            "max_distance_K": 0.12614097672537383
+          },
+          {
+            "elapsed_s": 8400,
+            "max_distance_K": 0.10853029166902672
+          },
+          {
+            "elapsed_s": 9000,
+            "max_distance_K": 0.09342114858572614
+          },
+          {
+            "elapsed_s": 9600,
+            "max_distance_K": 0.08044502273090615
+          },
+          {
+            "elapsed_s": 10200,
+            "max_distance_K": 0.06929075770884197
+          },
+          {
+            "elapsed_s": 10800,
+            "max_distance_K": 0.05969545665544018
+          },
+          {
+            "elapsed_s": 11400,
+            "max_distance_K": 0.051436435634251154
+          },
+          {
+            "elapsed_s": 12000,
+            "max_distance_K": 0.044324480974722746
+          },
+          {
+            "elapsed_s": 12600,
+            "max_distance_K": 0.03819832137358503
+          },
+          {
+            "elapsed_s": 13200,
+            "max_distance_K": 0.032920124796532946
+          },
+          {
+            "elapsed_s": 13800,
+            "max_distance_K": 0.028371823569976584
+          },
+          {
+            "elapsed_s": 14400,
+            "max_distance_K": 0.024452097356721936
+          },
+          {
+            "elapsed_s": 15000,
+            "max_distance_K": 0.02107387704331387
+          },
+          {
+            "elapsed_s": 15600,
+            "max_distance_K": 0.01816226304835311
+          },
+          {
+            "elapsed_s": 16200,
+            "max_distance_K": 0.01565277637039486
+          },
+          {
+            "elapsed_s": 16800,
+            "max_distance_K": 0.013489879779648106
+          },
+          {
+            "elapsed_s": 17400,
+            "max_distance_K": 0.01162572085691238
+          },
+          {
+            "elapsed_s": 18000,
+            "max_distance_K": 0.010019059167021283
+          },
+          {
+            "elapsed_s": 18600,
+            "max_distance_K": 0.008634347693963207
+          },
+          {
+            "elapsed_s": 19200,
+            "max_distance_K": 0.0074409445093621684
+          },
+          {
+            "elapsed_s": 19800,
+            "max_distance_K": 0.0064124350638152805
+          },
+          {
+            "elapsed_s": 20400,
+            "max_distance_K": 0.005526048886267176
+          },
+          {
+            "elapsed_s": 21000,
+            "max_distance_K": 0.004762157136454448
+          },
+          {
+            "elapsed_s": 21600,
+            "max_distance_K": 0.004103839576430346
+          }
+        ],
+        "distance_21600s_K": 0.004103839576430346,
+        "max_sampled_distance_K": 0.5320315487203402
+      },
+      {
+        "step_s": 15,
+        "perturbation_K": -0.1,
+        "samples": [
+          {
+            "elapsed_s": 600,
+            "max_distance_K": 0.5673166833825292
+          },
+          {
+            "elapsed_s": 1200,
+            "max_distance_K": 0.6555310408358963
+          },
+          {
+            "elapsed_s": 1800,
+            "max_distance_K": 0.6362148809972936
+          },
+          {
+            "elapsed_s": 2400,
+            "max_distance_K": 0.5712306840968324
+          },
+          {
+            "elapsed_s": 3000,
+            "max_distance_K": 0.4985312724623583
+          },
+          {
+            "elapsed_s": 3600,
+            "max_distance_K": 0.42284698754509265
+          },
+          {
+            "elapsed_s": 4200,
+            "max_distance_K": 0.35364165631633426
+          },
+          {
+            "elapsed_s": 4800,
+            "max_distance_K": 0.2941343065691484
+          },
+          {
+            "elapsed_s": 5400,
+            "max_distance_K": 0.24452149247130706
+          },
+          {
+            "elapsed_s": 6000,
+            "max_distance_K": 0.20374818905313674
+          },
+          {
+            "elapsed_s": 6600,
+            "max_distance_K": 0.17039832847891034
+          },
+          {
+            "elapsed_s": 7200,
+            "max_distance_K": 0.14309596905589217
+          },
+          {
+            "elapsed_s": 7800,
+            "max_distance_K": 0.12065450840489689
+          },
+          {
+            "elapsed_s": 8400,
+            "max_distance_K": 0.10210696049403367
+          },
+          {
+            "elapsed_s": 9000,
+            "max_distance_K": 0.08668688939982161
+          },
+          {
+            "elapsed_s": 9600,
+            "max_distance_K": 0.07379385164551167
+          },
+          {
+            "elapsed_s": 10200,
+            "max_distance_K": 0.06295828099862888
+          },
+          {
+            "elapsed_s": 10800,
+            "max_distance_K": 0.05381135119119307
+          },
+          {
+            "elapsed_s": 11400,
+            "max_distance_K": 0.04606103732753297
+          },
+          {
+            "elapsed_s": 12000,
+            "max_distance_K": 0.039473847877793844
+          },
+          {
+            "elapsed_s": 12600,
+            "max_distance_K": 0.033861162006701306
+          },
+          {
+            "elapsed_s": 13200,
+            "max_distance_K": 0.029069089571081008
+          },
+          {
+            "elapsed_s": 13800,
+            "max_distance_K": 0.02497093960603536
+          },
+          {
+            "elapsed_s": 14400,
+            "max_distance_K": 0.021461588560974576
+          },
+          {
+            "elapsed_s": 15000,
+            "max_distance_K": 0.018453223712860733
+          },
+          {
+            "elapsed_s": 15600,
+            "max_distance_K": 0.0158720834941235
+          },
+          {
+            "elapsed_s": 16200,
+            "max_distance_K": 0.01365592565150564
+          },
+          {
+            "elapsed_s": 16800,
+            "max_distance_K": 0.011752032727606831
+          },
+          {
+            "elapsed_s": 17400,
+            "max_distance_K": 0.010115619741071669
+          },
+          {
+            "elapsed_s": 18000,
+            "max_distance_K": 0.008708547546945056
+          },
+          {
+            "elapsed_s": 18600,
+            "max_distance_K": 0.007498272172654197
+          },
+          {
+            "elapsed_s": 19200,
+            "max_distance_K": 0.006456979088291348
+          },
+          {
+            "elapsed_s": 19800,
+            "max_distance_K": 0.005560864446316316
+          },
+          {
+            "elapsed_s": 20400,
+            "max_distance_K": 0.004789534586095101
+          },
+          {
+            "elapsed_s": 21000,
+            "max_distance_K": 0.004125501743708071
+          },
+          {
+            "elapsed_s": 21600,
+            "max_distance_K": 0.003553758751976943
+          }
+        ],
+        "distance_21600s_K": 0.003553758751976943,
+        "max_sampled_distance_K": 0.6555310408358963
+      }
+    ],
+    "scope": "Two uniform perturbations of one model profile only; no global stability proof or human validation"
+  }
+}

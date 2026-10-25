@@ -1,0 +1,28 @@
+{
+  "schema": "poly.native-eye-context.v1",
+  "id": "HRA-NATIVE-EYE-R",
+  "source_reference": "HRA united male v1.10, Visible Human",
+  "display_sha256": "41fb852fb1c3d00dd8be90150226f92e5adf1d1fc783cb1223945f3a4ba229c4",
+  "metadata_sha256": "cf140a39c11163508e91e12b0df9820e6e36ea2f2b50392f62cd9f404fea1573",
+  "steps": [
+    {
+      "node": 358,
+      "name": "VH_M_cornea_R",
+      "label": "Cornée droite"
+    },
+    {
+      "node": 350,
+      "name": "VH_M_lens_R",
+      "label": "Cristallin droit"
+    },
+    {
+      "node": 336,
+      "name": "VH_M_retina_R",
+      "label": "Rétine droite"
+    }
+  ],
+  "order_kind": "anatomical browsing order; not propagation or physiological time",
+  "study_participant_mapping": false,
+  "physiological_model": false,
+  "human_observation": false
+}

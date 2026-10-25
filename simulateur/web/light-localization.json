@@ -1,0 +1,395 @@
+{
+  "schema": "poly.light-observable-localization.v1",
+  "id": "L3:PsPM-AOB_UW:1.0.0",
+  "scope": "metadata_and_observable_lineage_only",
+  "dataset": {
+    "doi": "10.5281/zenodo.8239465",
+    "version": "1.0.0",
+    "readme_version": "2023.08.16",
+    "license": "CC-BY-4.0",
+    "available_luminance_people": 22,
+    "recruited_control_people_in_publication": 23,
+    "available_subset_age_summary": null,
+    "patient_data_included": false,
+    "reported_control_population": {
+      "sex": "female",
+      "n": 23,
+      "age_mean_years": 41.87,
+      "age_sd_years": 3.9,
+      "scope": "reported recruited control group, not recomputed for available luminance subset"
+    }
+  },
+  "sources": [
+    {
+      "id": "repository_readme",
+      "url": "https://zenodo.org/records/8239465/files/README.txt",
+      "sha256": "c7e3c0f953773e18f140dbcd90a77d79a6907380699df6daefc942bf5528fcff"
+    },
+    {
+      "id": "Q9_qualified_records",
+      "artifact": "POLY_LUMIERE_Q9_DONNEES_HUMAINES_2026-10-23/QUALIFICATION.json",
+      "sha256": "c301ad5e0482139b7c6cd7a9d15e05618d963223c2e17cb47813295354ed0e58"
+    },
+    {
+      "id": "publication",
+      "doi": "10.1038/s41598-023-41357-1",
+      "pmcid": "PMC10477323",
+      "url": "https://www.nature.com/articles/s41598-023-41357-1",
+      "archive_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10477323/fullTextXML",
+      "archive_sha256": "1bd7e696a047efa4990c76a581132f44be6d4188d0f6ce7cfbaf4684b98bc026",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "Q10_preparation",
+      "artifact": "POLY_LUMIERE_Q10_PREPARATION_2026-10-23/signal_quality.py",
+      "sha256": "823ae700a6f060b897ff40c72862a09fdb81246952f8f48f916c64227ec6b53e"
+    },
+    {
+      "id": "X1_generator",
+      "artifact": "POLY_EXPERIENCE_X1_2026-10-23/source/build_light_x1.py",
+      "sha256": "0388758bd98269bf43124be35b8d5f9bc7cf4e9fb205c523c155f95b26b4b099"
+    }
+  ],
+  "raw_channels": [
+    {
+      "channel": 1,
+      "identity": "pupil_l",
+      "laterality": "left",
+      "unit": "mm"
+    },
+    {
+      "channel": 2,
+      "identity": "pupil_r",
+      "laterality": "right",
+      "unit": "mm"
+    }
+  ],
+  "observed_preparation": {
+    "quantity": "observed_pupil_diameter",
+    "support": "strict_binocular_mean",
+    "sample_rate_Hz": 500,
+    "display_bin_s": 0.1,
+    "single_eye_substitution": false,
+    "interpolation_shown": false,
+    "gaze_geometry_filter_applied": false,
+    "independent_diameter_recalibration": false,
+    "binocular_mean_invertible_to_individual_eyes": false
+  },
+  "acquisition": {
+    "recording_software_from_readme": "Eyelink",
+    "hardware_model_reported_in_publication": "EyeLink 1000",
+    "hardware_instance_per_file": null,
+    "hardware_evidence_level": "publication_protocol_not_serial_verified_per_file",
+    "sample_rate_reported_Hz": 500,
+    "gaze_calibration_points_reported": 9,
+    "illuminance_meter_reported": "Voltcraft MS-1300",
+    "photometry_location_reported": "participant eye position at chin rest",
+    "samplewise_photometry_available": false
+  },
+  "stimulus": {
+    "quantity": "nominal_illuminance",
+    "unit": "lux",
+    "location": "protocol eye level",
+    "separate_eye_exposure": null,
+    "nominal_levels": [
+      5.3,
+      5.8,
+      7.3,
+      9.6,
+      13.3
+    ],
+    "spectral_power_distribution": null,
+    "retinal_irradiance": null
+  },
+  "session": {
+    "file_label": "sn2",
+    "task": "luminance",
+    "label_is_second_of_five_publication_blocks": false,
+    "publication_blocks": 5,
+    "publication_disc_trials_per_block": 24,
+    "export_disc_presentations_per_file": 24,
+    "export_events_per_file": 49,
+    "export_to_publication_blocks_mapping": null,
+    "native_clock": "file recording seconds; no world-time mapping"
+  },
+  "geometry": {
+    "screen_distance_file_mm": 590,
+    "screen_distance_publication_mm": 700,
+    "distance_conflict_resolved": false,
+    "participant_to_HRA_registration": null,
+    "spatial_coordinates": null,
+    "coordinate_conversion_allowed": false
+  },
+  "model_catalog": {
+    "sha256": "4937612857def19fc1d7b93635597cbfd14269f8782a420a33462235835895ca",
+    "calibration_sha256": "e1e3e4edcfc1610908722ff01dacf001821c80ffc90a3232b9e8e8e53bf7cb87",
+    "reference_subject": "01",
+    "session": "sn2",
+    "training_people": [
+      "02",
+      "03",
+      "04",
+      "05",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "rate_Hz": 20,
+    "quantity": "conditional_pupil_diameter_contrast",
+    "unit": "mm",
+    "support": "contrast_of_model_for_strict_binocular_mean_target",
+    "observed_absolute_diameter": false,
+    "per_eye_values_reconstructible": false,
+    "experimental_causal_effect_validated": false,
+    "event_convention": "source diff uses the last old sample; possible onset one 0.05 s model step before replacement boundary"
+  },
+  "observed_records": [
+    {
+      "subject": "01",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_01_sn2.mat",
+      "pupil_member_sha256": "a4ea673a702f6349cea3408d47df7971c4703a48a815d1f1535d8582201e669a",
+      "cogent_member_sha256": "efcc562a5eac171ef03131295c5fa11b4805a411ede255a2302fa3bc9c3e0316",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "02",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_02_sn2.mat",
+      "pupil_member_sha256": "383fbedb63f5c87c722f81ade99244fc6291e5a5a6378b8b29549595d562674c",
+      "cogent_member_sha256": "4a20ce32fd0576fb0699506d7afb5d01e24f44c2ce0d841b90d54e9bb8f52460",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "03",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_03_sn2.mat",
+      "pupil_member_sha256": "addb2c52b62aa4c6c0a5d4b1d715692a7f0ff4bea822f1ad044e335abe39afea",
+      "cogent_member_sha256": "7032ffaff566b6b23c78090849e8876f69fcdc9ca0cf613566676edbfc44b136",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "04",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_04_sn2.mat",
+      "pupil_member_sha256": "81bf60951e453f26dcc41e7cafabc0a08a9397612a48301cf354320dc28594ed",
+      "cogent_member_sha256": "bdc2ba3cf53555c0a272c5c2dec5b95565869cc5cd7f835bcda85cd09790c90e",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "05",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_05_sn2.mat",
+      "pupil_member_sha256": "3bfa72b276a9d73ddc6abd03b73e229bf27827761309a2fa0a576f746c0c9993",
+      "cogent_member_sha256": "f14b9bcc251af7aac85da89c64ed8427f2b63acb44296859985c78b9aceaad03",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "07",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_07_sn2.mat",
+      "pupil_member_sha256": "d3d6b02228d780ab8b580b097ff7e7645eb40f1f621795d77bd6722cc63a96b1",
+      "cogent_member_sha256": "4f8860df8435cc3d0bfa0ede8e420ceaebe9cdce5eb57527b3bc0735bdd0bae3",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "08",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_08_sn2.mat",
+      "pupil_member_sha256": "6697f5a6f1a464b6f0694742d32ce50c92c77d2430bc02a1e480d74482fbf6ea",
+      "cogent_member_sha256": "2ca1dcd0bf0e166d7553a8ef1196b13fcf4056da7a84c2e9cbc13fbcd5fd48b2",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "09",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_09_sn2.mat",
+      "pupil_member_sha256": "1cf0ea23cfcca55046a27c08b3fe7ff45714833af85c453b01f7f275f7540bb2",
+      "cogent_member_sha256": "5edbc9bb62569edbc15887cb4d29bae1201ee316f21aefaaec3d2206e6a0424e",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "10",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_10_sn2.mat",
+      "pupil_member_sha256": "0369a23b463fb66c552eba065b147d4463127f9cfe2679e4f29f93de721db589",
+      "cogent_member_sha256": "9799e52fad522ec617fe4c48b0282207e46c644bab45f95967cc5645e9d27023",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "11",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_11_sn2.mat",
+      "pupil_member_sha256": "ae35cf7d47a4c4240c102d827e28b653e177384fcd68f55c8113ae7e6691197e",
+      "cogent_member_sha256": "1bb5e4605c361254658585882fb77f84e2fef4e24bb09e94200d69a943f5b5de",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "12",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_12_sn2.mat",
+      "pupil_member_sha256": "80e59030d2b52c4bac3a889ecdf7f5e2803e70fc8ca59cd0db01a8df4d7b45d5",
+      "cogent_member_sha256": "eb2a67f4c5da8be1842ee12b3196c9fa0fd860a19e6765ea036701b5f8f0f00b",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "13",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_13_sn2.mat",
+      "pupil_member_sha256": "5884596fedbafbf1108a8eda2cd4d4215acb34126b1f7d46cbc588effbcebf65",
+      "cogent_member_sha256": "82f1fa719659bd035775e4621c43f799c23c3518829b06f35f23513a3074779c",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "14",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_14_sn2.mat",
+      "pupil_member_sha256": "3314e291c832faa7d8adc6a6e479cbb4384afebe3ffba5b8b8a6e6a497bc04ac",
+      "cogent_member_sha256": "533366dedc14c485ea1f81494ec47a1b5c21e793a5d0d25942a7bc492a502e32",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "15",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_15_sn2.mat",
+      "pupil_member_sha256": "b7f7ab04d1b28b28c94d852ac29b4f21712518dcdae1f2fbf105edbde620fa25",
+      "cogent_member_sha256": "89a7e0503928042aad7ef76be1ed72c0ccaf8701847f85c675f49f1b98e5b371",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "16",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_16_sn2.mat",
+      "pupil_member_sha256": "b3a7c57e2306d6073f16de06e20f9b8aa1a999f0cea3b6f8cbbaaf4474144681",
+      "cogent_member_sha256": "e9c979f3f18aae44e750710c6537cf40531087711d8cacc8d23c2c4f64fb5be3",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "17",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_17_sn2.mat",
+      "pupil_member_sha256": "3de29c260543b6d980630340091b2685e593a24e0662ecae871a2a27df31b882",
+      "cogent_member_sha256": "859b84ca1124e8887f6bbe39c935b2b046392b2a239c438d8d70946eb51f3a8f",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "18",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_18_sn2.mat",
+      "pupil_member_sha256": "5d2e698b955d70ba562fc3eff6ebb803c2a36331f432d974748bf6e4dc4947dc",
+      "cogent_member_sha256": "eb2292a7ea0fcac02f2dc0f1e71a03b127cc5bb41f3fb09b5c47b8f2acab790f",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "19",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_19_sn2.mat",
+      "pupil_member_sha256": "6cd95578344494048d28fd5365d81dfed068c91cbd27686adb600b53ace35098",
+      "cogent_member_sha256": "559d8391a42c40be50fae8c3bdf3fa7626ffa14c9d18da30b9702d7e8f0d48b8",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "20",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_20_sn2.mat",
+      "pupil_member_sha256": "27e7bb1936d96d0945ab7d54e3959b2663cbddbd59a0f6fb3cb8feb1a15f462d",
+      "cogent_member_sha256": "806d06bdf3cdf2005ee51eac2bacbe66e32342b28e53cb4f8178e520fc61b880",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "21",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_21_sn2.mat",
+      "pupil_member_sha256": "1686d67263bed24002f2f307443ed22c1d10a9538f782b4dcb0f96a450852ca3",
+      "cogent_member_sha256": "5ae16bb2b086d5d7eb5dfa8bc284991bd369a607893046ae963bb5822bac10e0",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "22",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_22_sn2.mat",
+      "pupil_member_sha256": "15e2217bd2f75619c3aca80b0f5f7ec7253f4beb44cb9611b093afca70b54078",
+      "cogent_member_sha256": "ac1516f0a340cdb23544b6efc35b4e90ba59679af3db4c73810a0e0b78be005b",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    },
+    {
+      "subject": "23",
+      "session": "sn2",
+      "pupil_file": "Data/AOB_UW_pupil_23_sn2.mat",
+      "pupil_member_sha256": "47762de8d523eb9557f6880fae6d045ab9624646a5ba9c08c63923815a6ec559",
+      "cogent_member_sha256": "e78978d68718a628600a1daabce911593f654a5cb076b6844e9aa5a1a7ed4f1b",
+      "events": 49,
+      "disc_presentations": 24,
+      "screen_distance_file_mm": 590
+    }
+  ],
+  "world_time_s": null,
+  "avatar_write": false,
+  "physiological_execution": false,
+  "retinal_activity": false,
+  "neural_activity": false,
+  "unresolved": [
+    "publication apparatus is not a verified hardware serial for each file",
+    "590/700 mm discrepancy",
+    "mapping of exported sn2 task files to five published blocks",
+    "eye-specific exposure, spectrum and retinal irradiance",
+    "individual anatomical registration and world-time alignment",
+    "model contrast does not recover absolute or separate-eye measurements"
+  ]
+}

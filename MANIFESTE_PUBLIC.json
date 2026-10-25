@@ -1,5 +1,5 @@
 {
-  "version": "0.139.1",
+  "version": "0.140.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -543,13 +543,13 @@
     },
     {
       "path": "PUBLICATION_SCOPE.json",
-      "bytes": 12184,
-      "sha256": "e57b6ddf4a1b0f21b6d1ef8e0a40fe218cdc962be068ba7decd8df7d476481f5"
+      "bytes": 12355,
+      "sha256": "40c34161e30363677a903a00976b64259242ae0e466c64640b9eb1dee3ddef48"
     },
     {
       "path": "README.md",
-      "bytes": 12386,
-      "sha256": "1bbdd2ea146e0420cdc7e7ef89323129606307bb35a92f7d97d236c8527d4eb9"
+      "bytes": 12975,
+      "sha256": "3da30e9a2cfe2b1bdcbde372b8f2051c5d3077b9ada87cccd66152a46c4e5338"
     },
     {
       "path": "REGRESSION_CANAUX_v0.104.json",
@@ -640,6 +640,16 @@
       "path": "RELEASE_v0.139.1.md",
       "bytes": 343,
       "sha256": "a65ce12021fa34775eb2859df5ec2a045d79af1a3d4823ecf936389999c492d1"
+    },
+    {
+      "path": "RELEASE_v0.139.2.md",
+      "bytes": 1645,
+      "sha256": "4ef4b41c17caa90d5adc050c435bf8e2cbe42b29e44c8cbdc4f250880ab0c77c"
+    },
+    {
+      "path": "RELEASE_v0.140.0.md",
+      "bytes": 1270,
+      "sha256": "57fd4cc8a9f071a3d8855cc4b1610ee6214e3bc04449dcdcb8e549225e237f69"
     },
     {
       "path": "RESILIENCE_NEURONES_v0.99.json",
@@ -884,7 +894,7 @@
     {
       "path": "VERSION.json",
       "bytes": 264,
-      "sha256": "21863b50f1720be76587609833806a39e1204291574e90e054b68664dbf8d996"
+      "sha256": "c80a87f022853cb566b25a6e305711053e45183180ad425ea2804d90c6a87529"
     },
     {
       "path": "accueil-v0.129.0.html",
@@ -29528,8 +29538,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 8286,
-      "sha256": "8e19b36e7bad6a10e93116dd9b142a3867c7601131119817fae9306298eaee4d"
+      "bytes": 8393,
+      "sha256": "39322d118f4f7e45d601fb701a4e4c0bc5509fee02c436689d3c4a539c8f8075"
     },
     {
       "path": "micro.html",
@@ -29757,6 +29767,21 @@
       "sha256": "37d4abecf91802ff238b8aff21d1b6f46df2c11822754bed82cf4625edbebd92"
     },
     {
+      "path": "simulateur/data/elbow-anatomical-qualifications.json",
+      "bytes": 6253,
+      "sha256": "cb75ec582c3b6134e6eb53e483a8886edf712f9cca54f1d950dba3a77e27683a"
+    },
+    {
+      "path": "simulateur/data/elbow-motion-display-audit.json",
+      "bytes": 4487,
+      "sha256": "7f0eb41c92c7bf1adc322d9aca5272686d2eea609a8563a47a736024a83091d8"
+    },
+    {
+      "path": "simulateur/data/elbow-surface-audit.json",
+      "bytes": 13260,
+      "sha256": "613affc24d5d89ed41ecb9219f17d487c677f34eeead35c41edc10dd97acd963"
+    },
+    {
       "path": "simulateur/data/forearm-motor-reference.json.gz",
       "bytes": 30550831,
       "sha256": "d619f1fcb6f85ec38b11cfe92d86a3460eb0454b35791c11128353b4c619bde4"
@@ -29812,6 +29837,11 @@
       "sha256": "b19350a0330e9518ad085c1857c1a1b5865a13f0394deecffb8f6b03fea05850"
     },
     {
+      "path": "simulateur/data/poly-canonical-scaffold-v1.json.gz",
+      "bytes": 141051,
+      "sha256": "45ff6177e9ac36942b9d1553487ae8bd7d2eb17497746e7a5aa0156ab2a89157"
+    },
+    {
       "path": "simulateur/data/recherche/muscles-correspondances-osseuses.json",
       "bytes": 25215,
       "sha256": "9dd75b52ca408a691f7555a8f0f23f9c035535efacea02ba747225951813477d"
@@ -29835,6 +29865,21 @@
       "path": "simulateur/data/recovered-resources.json",
       "bytes": 18510,
       "sha256": "fce8d49ec1ff777dfb03e141650cd76fa4df3b313b8a90844f3a12bc1aa831cc"
+    },
+    {
+      "path": "simulateur/data/sacrococcygeal-boundary-candidate-dj.json",
+      "bytes": 13017,
+      "sha256": "841f0fd64c3736a47744c3cd30f9b7631e96b0e0c95f8045bc7c3316ad44f363"
+    },
+    {
+      "path": "simulateur/data/sacrococcygeal-inspection-dk.json.gz",
+      "bytes": 144627,
+      "sha256": "fd2f04847399ab6662bce7d139c3bb945a2fa2f9b4a5e59cc77d756fbf8ed05a"
+    },
+    {
+      "path": "simulateur/data/sacrum-annotation-meshes-di.json.gz",
+      "bytes": 275326,
+      "sha256": "434a448fed07715d13c8de610aadbc746824ae5272aca13d845eed9f851b01cb"
     },
     {
       "path": "simulateur/data/skeleton-source-206.json.gz",
@@ -30648,13 +30693,18 @@
     },
     {
       "path": "simulateur/public-assets.js",
-      "bytes": 3862,
-      "sha256": "70219d580cd48d3af8ac6acf9df097ad4c6d478621c45bf67781f6285df221b2"
+      "bytes": 20964,
+      "sha256": "52b2cf836e6f87181074b47f81533e0048724c98949c66d13a1a27ce4ef13d05"
     },
     {
       "path": "simulateur/reports/BILAN_OS_DE.md",
       "bytes": 3964,
       "sha256": "d3239fc80f6a59b8ac3096de7a6eb49969ea7e3f10a01e7cd222a093d9699b12"
+    },
+    {
+      "path": "simulateur/reports/ELBOW_QUALIFICATION_2026-10-25.md",
+      "bytes": 7807,
+      "sha256": "4997f166d874a340a4d11cead15aa407eba2db9d638cd02eed1481e66d127075"
     },
     {
       "path": "simulateur/reports/ETUDE_OS_DE.md",
@@ -30682,7 +30732,7 @@
       "sha256": "31cda67d058e1dfbb9b5c46b79b18547c84c63a023beced3ae34785b39853c2f"
     },
     {
-      "path": "\"simulateur/reports/PORT\\303\\211E.md\"",
+      "path": "simulateur/reports/PORTÉE.md",
       "bytes": 3052,
       "sha256": "85ccd8d870c57c8cebafd33c380696cb479962b7f49d4982ea7a9da824ba8911"
     },
@@ -30702,6 +30752,16 @@
       "sha256": "7359b7156168c9d83e099d1b8a3195e593f7aab77384b0aef3c17e337ed9ee1a"
     },
     {
+      "path": "simulateur/reports/SACROCOCCYGEAL_BOUNDARY_DJ.png",
+      "bytes": 416202,
+      "sha256": "05797d19c77146a16453247fa96d893de8ec931a071e1bb1cdd4ca932a307163"
+    },
+    {
+      "path": "simulateur/reports/SACROCOCCYX_CONTROLE_INDEPENDANT_2026-10-23.md",
+      "bytes": 8424,
+      "sha256": "c48e44089f2040a44052b4add0d95afcb4986cb8532bdb7b3f254601cbc214f8"
+    },
+    {
       "path": "simulateur/reports/suivi/CADRE_CASCADES_3D.md",
       "bytes": 902,
       "sha256": "01168b97806ea7a658929376ec179c4892d8e4626859aea95321c33fc23fd396"
@@ -30712,24 +30772,64 @@
       "sha256": "b8e821fe08eba2463fa914bb22da56e2bf71475f32c0f2bf67e56460c1dac29b"
     },
     {
+      "path": "simulateur/scripts/audit_elbow_display_motion.mjs",
+      "bytes": 4260,
+      "sha256": "cbbb9439c136c41987c4600804bfea9b64335eea7d78b6e34fd1403638eab104"
+    },
+    {
+      "path": "simulateur/scripts/qualify_elbow_surfaces.py",
+      "bytes": 4867,
+      "sha256": "4ce165bd50f368a66bca4f46066bcbad3ffff90c80b629f33697686aee316eaa"
+    },
+    {
+      "path": "simulateur/tests/test_elbow_qualifications.py",
+      "bytes": 4359,
+      "sha256": "6a38783ca4e0658d418091fecc34fd5614e4da879d9c30a2334841eed5d13030"
+    },
+    {
       "path": "simulateur/tests/test_muscle_display_fit.py",
       "bytes": 2175,
       "sha256": "20474c8c5d2f1a08987dfaec9738a17d1db31cf7faf0f9553d650951b9831704"
     },
     {
       "path": "simulateur/web/activities.js",
-      "bytes": 13919,
-      "sha256": "3e09499d6014ecbc112e2914964082301ac0c7de35c250bffd1e4e550ba65be8"
+      "bytes": 13929,
+      "sha256": "978642d361c6a7bab2e1c5254abb97443a068e93f711f76f8d9c75505748d4bd"
     },
     {
       "path": "simulateur/web/app.js",
-      "bytes": 39493,
-      "sha256": "fd6324cf9ecea9a15b2a2820e0b97fd23c82da996cb98bc0b44a23bd5b8b8909"
+      "bytes": 50552,
+      "sha256": "5bc02c192900a78eb5f9672e8e1475810c06ef0d2461470abbf789725c9be603"
+    },
+    {
+      "path": "simulateur/web/assemblage.html",
+      "bytes": 7657,
+      "sha256": "7288c762df8694e067d5c4dccc758b94c2c17538bf35df44f257b3d68d4a4d7b"
+    },
+    {
+      "path": "simulateur/web/assemblage.js",
+      "bytes": 17947,
+      "sha256": "cf48b56d6e583beaa1385ab905c75096f265260f7abdf50937d7d6105d15cbb1"
     },
     {
       "path": "simulateur/web/atlas-embed.mjs",
       "bytes": 524,
       "sha256": "deda763600899e65a808c9bfb9f929508a9f7490aaf0f42bb641d07edaa2a7b0"
+    },
+    {
+      "path": "simulateur/web/attache-biceps.html",
+      "bytes": 3472,
+      "sha256": "aa47ed23db7552af7bc2b6ff74878868f7398610c06bd42e0ff2d677e758c66a"
+    },
+    {
+      "path": "simulateur/web/attache-biceps.json",
+      "bytes": 5017,
+      "sha256": "d11630f1e20e60fd1c744ae27f6e4a84aa20adfdf99edf585e57d5e129c2cf23"
+    },
+    {
+      "path": "simulateur/web/audit-thermique.html",
+      "bytes": 3385,
+      "sha256": "d6e21431d64d999b2ffaafaf116257edceb128c56229c8e30f61919ed112edba"
     },
     {
       "path": "simulateur/web/avatar-bones.js",
@@ -30772,6 +30872,11 @@
       "sha256": "a74bc407d278e87b782c10077e3395e994f17f93e7b4b6a139d04c35cfb599f5"
     },
     {
+      "path": "simulateur/web/calculation-register-t31.json",
+      "bytes": 24622,
+      "sha256": "28a7da0e7e4c34404adb9fea6c8dbd52af6787cc5ad289485beb5f3b6d2efdb0"
+    },
+    {
       "path": "simulateur/web/case-bundle-core.mjs",
       "bytes": 3379,
       "sha256": "f07e4ed7af91e22bc3e62674b35ed466978bd6f8d433ffd0774677c3055feb39"
@@ -30792,6 +30897,11 @@
       "sha256": "d23c12b399cdf3917f8d12ecfb3bec819c254875689aeef80308c25528b49a12"
     },
     {
+      "path": "simulateur/web/chain-bridge.mjs",
+      "bytes": 8235,
+      "sha256": "ed606f55c78fdf2b360ebe12a5f23560c502c26de5d840284a24279799195e24"
+    },
+    {
       "path": "simulateur/web/cogitate-scene.css",
       "bytes": 1763,
       "sha256": "e964a7ec73f341c9c1859aa83fa1a1e6eecfaf33b9edc9415a102e1b3f8f11b5"
@@ -30800,6 +30910,21 @@
       "path": "simulateur/web/cogitate-scene.js",
       "bytes": 6024,
       "sha256": "d21ea253f1b40d14353c853e90807438058734edc434392c8d1bf5f908c3ab42"
+    },
+    {
+      "path": "simulateur/web/couverture.html",
+      "bytes": 2727,
+      "sha256": "467925a12e087a08c6d39a4595c8da0144500bda6326e5f7762866df41df16cc"
+    },
+    {
+      "path": "simulateur/web/couverture.json",
+      "bytes": 31499,
+      "sha256": "46c25a77cc585eb7e1c9c4c18352c646e20edb3555f18089b2a84021234d8f7f"
+    },
+    {
+      "path": "simulateur/web/couverture.mjs",
+      "bytes": 5816,
+      "sha256": "408402dc223f07de5475da31da1960655981230fc73e5e91ec8e83ea9e2c7c98"
     },
     {
       "path": "simulateur/web/day-model.js",
@@ -30812,9 +30937,54 @@
       "sha256": "768ed1e5dcd9ecdcef078d7639a8c7376a070ed596f6a07e30a6defcd333f1fe"
     },
     {
+      "path": "simulateur/web/documentary-manifest.mjs",
+      "bytes": 2419,
+      "sha256": "175c32bcdd2f3cfc389d3ef6f377f6ebbec53c6b1c9f6533458cfa56f5846ea1"
+    },
+    {
       "path": "simulateur/web/documentary-network.js",
       "bytes": 8899,
       "sha256": "24d2a28ec4661721ba211919b13e5b67ae4c2b21d5c86e5a94e7b77699b1a29a"
+    },
+    {
+      "path": "simulateur/web/echange-thermique.html",
+      "bytes": 3897,
+      "sha256": "3463603a12d860814e7c4f420baea3cf66eef0dceb6aad264c6eff19ff299613"
+    },
+    {
+      "path": "simulateur/web/elbow-qualification.mjs",
+      "bytes": 5006,
+      "sha256": "708fc17cacefa321c28a58befa05d202b2c2d0b0c93865012abad7c8a19f15e9"
+    },
+    {
+      "path": "simulateur/web/emdr-protocole.html",
+      "bytes": 3895,
+      "sha256": "093df0f178d50baef88031c80d91ee37b786885a8cf39e53d39318ccd4f7604d"
+    },
+    {
+      "path": "simulateur/web/emdr-protocole.json",
+      "bytes": 2832,
+      "sha256": "56777befa8f03c29a786617a09b7a08ebcf155f9857488cd3e49a35cd6e127a1"
+    },
+    {
+      "path": "simulateur/web/emdr-protocole.mjs",
+      "bytes": 2349,
+      "sha256": "67eda7d0c74726ebb393bef47557a30d713b194708c3ed1325816df771950f31"
+    },
+    {
+      "path": "simulateur/web/emotion-protocole.html",
+      "bytes": 3232,
+      "sha256": "ad5fe73e3a4ac8469f5b72f15e3e151d163ddbdc8dc25748cd3fcf206c5003e1"
+    },
+    {
+      "path": "simulateur/web/emotion-protocole.json",
+      "bytes": 2357,
+      "sha256": "d39a7b91aa32e966ae3d7aa10130beede8e1577d3d0643ff2d397b254d5ef6c3"
+    },
+    {
+      "path": "simulateur/web/emotion-protocole.mjs",
+      "bytes": 2197,
+      "sha256": "1d6201f8d389b14f59ac94eb5298f7741fed2e301b2b8c1c1020eb7f29d4afa5"
     },
     {
       "path": "simulateur/web/enteric-inhibition.js",
@@ -30838,13 +31008,13 @@
     },
     {
       "path": "simulateur/web/eye-light.js",
-      "bytes": 3991,
-      "sha256": "9076dd33a43c7206e581e6fa5bfab036bbbfcd361b7767e13927680bccd96fa6"
+      "bytes": 4930,
+      "sha256": "8ca5334911f5460b55fbc4261e6695ea607c60e921359479081f4ad421b1cea0"
     },
     {
       "path": "simulateur/web/forearm-motor-reference.js",
-      "bytes": 22737,
-      "sha256": "8ee4914c3794d1f6a266e29151daac544d3dfcd62a86c3608c64eeff6ff6e63a"
+      "bytes": 22919,
+      "sha256": "f9aaeb4627fc989357d730c18bf0b299284dbf53145716d43324d4af53a1e0cf"
     },
     {
       "path": "simulateur/web/hand-muscles-reference.js",
@@ -30867,9 +31037,379 @@
       "sha256": "25cfb9eae38ff8c069b8c03c8d41ab57efeb13ca5fca279bd1e947fa644a7a51"
     },
     {
+      "path": "simulateur/web/human-thermal-observations.mjs",
+      "bytes": 8040,
+      "sha256": "6c56debfb2008143b3f1e1b75322f04a61b6d1ebb27c2d5418d0cbc425264b47"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/00.json.gz",
+      "bytes": 20646,
+      "sha256": "48a2d60fe308ff70e6e1521c729a1f210bd31140d632b341488af6966ab70cf8"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/01.json.gz",
+      "bytes": 20351,
+      "sha256": "c5c29a0cbbf62ca342099654cba6699ce314f3309926afd1ef9aea50d69d192c"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/02.json.gz",
+      "bytes": 16743,
+      "sha256": "bb2e1f6b320ab3cd98d51a664da7a01bd44078f1a1b4a82d6f47050c570c385a"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/03.json.gz",
+      "bytes": 18080,
+      "sha256": "a8f031dbefb11a9fccdfe3edf2effb9d956d3f8b7d0e0ed1abf936f26b400d63"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/04.json.gz",
+      "bytes": 22808,
+      "sha256": "7e3b705f4d5365bff8b3dcc076fb2804f549e43f60c1f7440861ea14f30f960a"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/05.json.gz",
+      "bytes": 22716,
+      "sha256": "54666ae4a91a7d1474c6699d4d37ac8c903756e01211eb7f66ab28ea1f5d114c"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/06.json.gz",
+      "bytes": 19102,
+      "sha256": "3ef675d4a741afd6ad2c2c414e6699a9ac30e60d6b7a1591067f8a0bcbc5e74b"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/07.json.gz",
+      "bytes": 19112,
+      "sha256": "7f0e8072904d9d351b0a1ce879dd344bb222451445479eceb90dac8a51e593ae"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/08.json.gz",
+      "bytes": 22971,
+      "sha256": "5d6de72c59c0c4a30285987d570ae0b2a944b1cd7402b12fc9ad365fc84c1aff"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/09.json.gz",
+      "bytes": 21502,
+      "sha256": "7b00994772d8429061876e0c6ff5202dc1fbee33349e551b9dc20fd75c88643c"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/10.json.gz",
+      "bytes": 19119,
+      "sha256": "89b1113f549e2450d3781dd6beecd5ee96dab7ef99a9c1b8a3a5eaee5f85362c"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/11.json.gz",
+      "bytes": 19082,
+      "sha256": "ea3a61208a19f64cf29733ac9b9081f271b2c95c73c1efa628fbcd8c78492e1f"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/12.json.gz",
+      "bytes": 22639,
+      "sha256": "9cb1b6c56c1a0276ca9d7ebb523f1accb41fe32135035057279e50eafbf793e6"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/13.json.gz",
+      "bytes": 22579,
+      "sha256": "2cbcf8c87347643dc0779ddbd8d3a76cd3e4d6c17b736f6983ea26c17ac647e0"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/14.json.gz",
+      "bytes": 18822,
+      "sha256": "a09c673e8f3d585db0a0bb40a346f0e88fae37a1713ff9421629f9735d48b422"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/15.json.gz",
+      "bytes": 18805,
+      "sha256": "0ef593ba01e28907781d75a4d616e310091d6a4557eafc6dddeb38bcc79bbea8"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/16.json.gz",
+      "bytes": 22758,
+      "sha256": "95485733d829ec4e8b4115153cfbf8d00555377041ba5cb15adec5d348d2d178"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/17.json.gz",
+      "bytes": 22704,
+      "sha256": "24ced63c18c537747f487acb547eddca40189d49be7771a9ea22bcf141ba10c0"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/18.json.gz",
+      "bytes": 18851,
+      "sha256": "3480e7c5361372d90670d32a218ac67329ae1adb63dd10f823cdd1e76efb12ae"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/19.json.gz",
+      "bytes": 18681,
+      "sha256": "14aa37df639c4556e917009fad323c2401ff38e1a27eb6d1766eee7bf62c91bb"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/20.json.gz",
+      "bytes": 23015,
+      "sha256": "d78a0598ffec59a0c45d15a48ab7f7dcc1d696befea433535a68fe40d68f3d6a"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/21.json.gz",
+      "bytes": 22997,
+      "sha256": "a2bdd47ef7bad574dde9e73a05276afa1513004c97ac7ca82460ec14896286b5"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/22.json.gz",
+      "bytes": 19087,
+      "sha256": "478441bfd709c489ebe5f064222dbc2bb87a3310ab5d4763d49df23391577c84"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/23.json.gz",
+      "bytes": 19145,
+      "sha256": "4d40cb8c39318fd0b31a74deee2b7d432c54be11af918c79d1ac87d884bba526"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/24.json.gz",
+      "bytes": 22979,
+      "sha256": "83a90b3ed0e6fb9cd8f339419fcbe352bd121f276cd14e09ea55e47356975779"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/25.json.gz",
+      "bytes": 21662,
+      "sha256": "3bc35b84d2f07edc762f8a83c4a394e4057d1915a1b785422e51afe1c4c137d5"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/26.json.gz",
+      "bytes": 18427,
+      "sha256": "b04d72eac65f2f743b3d465065e3e78983c7b4814e1c9736d201f3d15ecc7b56"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/27.json.gz",
+      "bytes": 18256,
+      "sha256": "3bb93be2a7a77a6f87e1c079b0cc79a4e1f14219e5888209e80e2abff6ebe833"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/28.json.gz",
+      "bytes": 22827,
+      "sha256": "9e1e47c6cb5d0d1342852a905e92db9a61aefb5fd50e9225b54b6442440b05a1"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/29.json.gz",
+      "bytes": 22574,
+      "sha256": "9b05c62b1f9c9b014a8e40d38607ef1678022bde06406ef538031a429f88c0be"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/30.json.gz",
+      "bytes": 18938,
+      "sha256": "1c27d873bd090ddad694891748128c79a4f61178bd1aabba4763b17ccf9b7974"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/31.json.gz",
+      "bytes": 18858,
+      "sha256": "4bd4b44bc30e0bdc4a8ac2b8bc239da63779e0ef86b747c6878d0a2015321578"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/32.json.gz",
+      "bytes": 22968,
+      "sha256": "3fcb5e7ae0c1b839c2e0a80f07687a01d9def1312b65b3ebb94e02bf064af15e"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/33.json.gz",
+      "bytes": 22859,
+      "sha256": "f7231f7acdbc6b44776cd464bc00eeb39fe54077f210cd8c647eb814f74c1d29"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/34.json.gz",
+      "bytes": 27717,
+      "sha256": "e6a46393ac6f977befdcc1d1d63a3e01642e4130a263330e0a29743ddfaddb4e"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/35.json.gz",
+      "bytes": 27670,
+      "sha256": "d7419e7103a263d488f4011863bc8a9978e7b85f76e57a4f80db5a85dd29db57"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/36.json.gz",
+      "bytes": 21735,
+      "sha256": "db6a7fde6675c90cb9cce8773c69404b8731e0722d42b0de9a15fafc7522307d"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/37.json.gz",
+      "bytes": 22126,
+      "sha256": "09859a4473aff184c30197524224a37c007a156f593105cfceb8fe18c0b3f5cb"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/38.json.gz",
+      "bytes": 22966,
+      "sha256": "269decfeb4bbb1c12ab53c0073f729c3b457540817facb7a302d181a872d5d9a"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/39.json.gz",
+      "bytes": 26622,
+      "sha256": "6df50b723584e2b7acdf257ba29b9733d381e3a5951908949ad0478429a4a48f"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/40.json.gz",
+      "bytes": 23029,
+      "sha256": "7dc8a1d9585d128a848ddf5b210443ece100f06e858216e730a4efab28db95c7"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/41.json.gz",
+      "bytes": 22993,
+      "sha256": "50bcf8dd9c66e7a80b6f38352277e73861e120d3f953ce82c2e5ccb47d305c47"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/42.json.gz",
+      "bytes": 27587,
+      "sha256": "21455b2049ad012654bf8723916ea77d998b4bb556652e36d1747b14a1797c06"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/43.json.gz",
+      "bytes": 27511,
+      "sha256": "eb0e02775c0478b5b354ce7c9fc1c8e1bbf6577c465f5b107840e40cbcc45955"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/44.json.gz",
+      "bytes": 23033,
+      "sha256": "b54614c4689102542f6b3aa1d40221cd054d88a6d29d72bf0af406e28103f023"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/45.json.gz",
+      "bytes": 23153,
+      "sha256": "acb46bd068670062ce04ec794172efefc94f0b432af2fe65dd4dd53437e48022"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/46.json.gz",
+      "bytes": 26724,
+      "sha256": "d3c6d2c6cb4976cdcbbaa38534cb71b62a5fb18db77a9a01ca920c25486360a6"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/47.json.gz",
+      "bytes": 27744,
+      "sha256": "035c0643ad31bf112330b53bb7108f722b517ccae30053ed906dba4cfe698c8d"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/48.json.gz",
+      "bytes": 21485,
+      "sha256": "0c14608c944ab7c7dc024f7b1aa61f3f914df537f7f0825c061ecfa8ca6e7196"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/49.json.gz",
+      "bytes": 21429,
+      "sha256": "3ac0588e1d21034c0ff1d5a940938978aa5fdc2b6ec9043d3b14021ce6ae00b3"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/50.json.gz",
+      "bytes": 27464,
+      "sha256": "985c09a022f074e148e42a5c9ad03c6cee1ee486af97cff83cc1e2c682116b1c"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/51.json.gz",
+      "bytes": 27440,
+      "sha256": "c59c9cc0b00222dfe7389bbe411cc77050599d2d4d9e270660e054b4c8aecdb0"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/52.json.gz",
+      "bytes": 21026,
+      "sha256": "e872484c96bc796467b239de46825997d9f6082c67526a4194f76a46429bcb60"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/53.json.gz",
+      "bytes": 21691,
+      "sha256": "142e71581256ebac617421f84b5f2fa1a4b3eed00dc88749572de03e30347dba"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/54.json.gz",
+      "bytes": 26259,
+      "sha256": "9ee5a2cf6c35a970be3072526a6e48cdd300a1649eb8ceb2ff7221ec24e334d0"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/55.json.gz",
+      "bytes": 27488,
+      "sha256": "c14a26f0c59acd90b7d66c728b3f52762dfb814a3803023773791292e9179591"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/56.json.gz",
+      "bytes": 23077,
+      "sha256": "e119770975431ff372637131baf7df68d3c9fade74f100036b946744598e3abb"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/57.json.gz",
+      "bytes": 22936,
+      "sha256": "44a351c9186a6284fba25e540588736e91259f7455f3690ce540bb1ae98f0634"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/58.json.gz",
+      "bytes": 26810,
+      "sha256": "b25d507bf8fa2ef79f024eb0edc0d6b5895a0d86d562e9e8f3d3f36bc591f20e"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/59.json.gz",
+      "bytes": 26719,
+      "sha256": "be4edae3776c96bb3216c4e2feeb77a43f70daa47cf90cb4ede24dc3b3b3e7d8"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/60.json.gz",
+      "bytes": 23103,
+      "sha256": "6aec3e4eb3b6374c961095fe1386c3f952b0615109a4cece6282847bc6bd669f"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/61.json.gz",
+      "bytes": 23113,
+      "sha256": "f1cbbfa6cbaee67cf24a3f2980ef66ec68e63e55050fc99089cafe43b51e581c"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/62.json.gz",
+      "bytes": 27593,
+      "sha256": "507cec1c0b1f8e865de449d96fa56fd7cc8e4fefeb79bb178a64cbc6db635984"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/63.json.gz",
+      "bytes": 27687,
+      "sha256": "eecbcb079bbac01d6a9e0ff2e3d658a7fecbaf5045841892065a6f4776f8f5f8"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/64.json.gz",
+      "bytes": 22981,
+      "sha256": "c615a6d577601495e0be6a21174121c563c74fe305ff84e1ed86e6e82a8f0d73"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/65.json.gz",
+      "bytes": 23127,
+      "sha256": "d464a2919675f519538b87e31759883ef673c0df78e5bdb3ef25ade7adb2742b"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/66.json.gz",
+      "bytes": 27622,
+      "sha256": "e12282013c368d9f3d57e5e2f076746f0a5bc77962735c4940359235b419dcf3"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/67.json.gz",
+      "bytes": 27600,
+      "sha256": "f20b36ca9307fbf5ea4ca85d91b4812dd23721828bcd3a786658b72873cd770d"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/68.json.gz",
+      "bytes": 21749,
+      "sha256": "0d47bfe6deaf10a8dcd920d6ef3ed7a6dd210030041512681ae3560249b28b27"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/69.json.gz",
+      "bytes": 23031,
+      "sha256": "5e33c2793f587feff14d871c3e19e691be0d20292c252db81b6af39016ba8cb5"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/70.json.gz",
+      "bytes": 25430,
+      "sha256": "dfd732e058dc984df89926cee994dc86dfa383b53727c3dcf2f11241e7597938"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/71.json.gz",
+      "bytes": 27554,
+      "sha256": "2e5bb966bb993dad37ca91aceab4c709557d9adf4c4295c38e4b43fe2e2e1df7"
+    },
+    {
+      "path": "simulateur/web/human-thermal-t20/catalog.json",
+      "bytes": 40381,
+      "sha256": "faa6e3d724df757b317820669b25e35e84bd289315b94bb37dd68d2d76500206"
+    },
+    {
       "path": "simulateur/web/index.html",
-      "bytes": 8255,
-      "sha256": "92cd5f754d114a40bed3ba47de67799a8b68c29e9054a654eb58199a050b23b1"
+      "bytes": 8362,
+      "sha256": "28f3595f6b9d3714f0a50309d1ef2465c0f7aa5eb62c9daa5456634fb6868675"
     },
     {
       "path": "simulateur/web/inventory.css",
@@ -30885,6 +31425,21 @@
       "path": "simulateur/web/inventory.js",
       "bytes": 6197,
       "sha256": "e64004dbca6a27885a471ace525de7cee87deae89071b48a77a721e3a65c2f3a"
+    },
+    {
+      "path": "simulateur/web/light-localization.json",
+      "bytes": 14292,
+      "sha256": "b2eff70e7d98e7c6f626f191f68abac78cbd6e9943c6d41e8f6b44df50802a72"
+    },
+    {
+      "path": "simulateur/web/light-localization.mjs",
+      "bytes": 6372,
+      "sha256": "e789c79e36975f312ab875932e2a8e2373a94d36bf87078925e2d834e1fec108"
+    },
+    {
+      "path": "simulateur/web/median-recovery-scope.mjs",
+      "bytes": 1592,
+      "sha256": "85dd7314a9d8331ffc6da81f400b047b855df141f5d5dd558ec012676739a754"
     },
     {
       "path": "simulateur/web/muscle-display-fit.mjs",
@@ -30907,9 +31462,39 @@
       "sha256": "be2dbc0adca0e4d209d44a8d84d9aca2e486b63e8637e9a5b36877ae22db5af1"
     },
     {
+      "path": "simulateur/web/native-eye-context.json",
+      "bytes": 824,
+      "sha256": "745800cd16659de9db16dc46eaa085dea66787cd85a35c44bd42f4a8ccad92de"
+    },
+    {
+      "path": "simulateur/web/native-eye-context.mjs",
+      "bytes": 4701,
+      "sha256": "3db633f9de284356d6ebc978b61985779d5241624107836d744a799ef2dc76d1"
+    },
+    {
+      "path": "simulateur/web/native-knee-context.mjs",
+      "bytes": 1123,
+      "sha256": "bdd029c67d25060f376e466e255f9f61f6bb3b45fe76a04a4f3cf842b1809b08"
+    },
+    {
+      "path": "simulateur/web/native-thermal-execution.mjs",
+      "bytes": 13029,
+      "sha256": "f9f727dd5173ea2d122f86b1317164c9aeb1a5f8288d8b36fd80d277602463b5"
+    },
+    {
+      "path": "simulateur/web/native-thermal-pair.mjs",
+      "bytes": 9623,
+      "sha256": "bc5e9e66c85d7eaceca32769a1b3a4b18b5de71f05d4bc62a3f026c7b6bff9e7"
+    },
+    {
+      "path": "simulateur/web/native-thermal-world.mjs",
+      "bytes": 8137,
+      "sha256": "08fc9d582c262def98ddd51a95e71d85bdf4a4b010c6d4aa194e8d710a8149ee"
+    },
+    {
       "path": "simulateur/web/nerve-excitability.js",
-      "bytes": 4425,
-      "sha256": "a082e3775880859b3a6e9e8c06ff5bc71649374bb3d742e5ebb4416eef3edbd4"
+      "bytes": 6022,
+      "sha256": "9041a25b3687a9124ad7734138d8820a05ea7c9efc1fec8f277db497f2c02118"
     },
     {
       "path": "simulateur/web/nerve-linked-pilot.js",
@@ -30922,119 +31507,119 @@
       "sha256": "42b25c12dd23bf2a4c8490b52802d48359507a2647c259a8d00235d1cf98fff5"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/01.json",
-      "bytes": 338097,
-      "sha256": "d787d9c4254d4d6d358cd2e37151a2e133738f62993f7776adba303198130cc3"
+      "path": "simulateur/web/observations-lumiere-data/01.json.gz",
+      "bytes": 79480,
+      "sha256": "876accc3ba7a8117909d04eff69a1894b29899868eb86bcf27069fdbb1ade3d3"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/02.json",
-      "bytes": 353943,
-      "sha256": "dd7ed4d17297502d71a535fa2adc2b50c89be492b2878f089f64a403699ea6a9"
+      "path": "simulateur/web/observations-lumiere-data/02.json.gz",
+      "bytes": 85775,
+      "sha256": "fb7fb067618bac0eea9c388d7e9af097fd11a7bae7a738e0909f1d5e7018006b"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/03.json",
-      "bytes": 337027,
-      "sha256": "9c0a3bcc5b49adba9e7c5c930759d6b32fdae36bcfedc673d7e59cd0cf0a6a7b"
+      "path": "simulateur/web/observations-lumiere-data/03.json.gz",
+      "bytes": 78402,
+      "sha256": "95126cb4913d0e54d6aa2ea7d43c2ac42a00166a084cfa65e1ca3ec6b16c8ed1"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/04.json",
-      "bytes": 353400,
-      "sha256": "b414b36d1a827ba46b3b861edce15023f7b7f278e00845059b3f69a4f699a992"
+      "path": "simulateur/web/observations-lumiere-data/04.json.gz",
+      "bytes": 87231,
+      "sha256": "dbe0831c77a3c3fbcdfcc380d17033b5a2fa66eed3412156429190f026c8b5a1"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/05.json",
-      "bytes": 348599,
-      "sha256": "9a8262e519f9311f92f69468f32304eea63bc7efbbad2602cd2baa97a9fbe3ca"
+      "path": "simulateur/web/observations-lumiere-data/05.json.gz",
+      "bytes": 84604,
+      "sha256": "9d0d34d1f4c8c0b7ae9d39df1f3c6652696f9889daa87a8375f884fe081fa679"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/07.json",
-      "bytes": 346103,
-      "sha256": "c31503271f7688e0781329831e195849f46352a335b3b2316ce34a151524ccf0"
+      "path": "simulateur/web/observations-lumiere-data/07.json.gz",
+      "bytes": 83968,
+      "sha256": "b9c815af151b139808b5d2311105f0e06186c7f78eb464290edd49d85ff31d12"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/08.json",
-      "bytes": 347170,
-      "sha256": "1b355abe27d44ff705caad43bbb70bf530db9442dc8144251d58fad9e7503e3a"
+      "path": "simulateur/web/observations-lumiere-data/08.json.gz",
+      "bytes": 84129,
+      "sha256": "41877a4973da7d2367e0c0a091fc3bc10053cfb57ef3a111bac6a7822892401d"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/09.json",
-      "bytes": 344358,
-      "sha256": "b2e201dcf308990cc2b3b736d5eea5ad86c69bc9a8dda7559e77c0b315fc2c60"
+      "path": "simulateur/web/observations-lumiere-data/09.json.gz",
+      "bytes": 82089,
+      "sha256": "178f0f284d317533ccdb060055d8755abf995f434690c825e0d5844f5ff27dd6"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/10.json",
-      "bytes": 350404,
-      "sha256": "98cb218fcb11bc5b2752893184874736ddece49256d54fd4b4f348e3849f7754"
+      "path": "simulateur/web/observations-lumiere-data/10.json.gz",
+      "bytes": 83362,
+      "sha256": "0525c365c784177f37848ffe8c97783815d7543ce853bfc28cff58f4cc75eba4"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/11.json",
-      "bytes": 341527,
-      "sha256": "b06f07afd23450c196805c4077a06ade6bb2ecaf3c58cf7f6156fa64cc4ad213"
+      "path": "simulateur/web/observations-lumiere-data/11.json.gz",
+      "bytes": 81378,
+      "sha256": "20684ba830f40bd2422b0df9973fcebc924a93eb41533f6dbb3e6b6f4e463ed0"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/12.json",
-      "bytes": 352327,
-      "sha256": "549902ce8e8e0e759e309aec1c5dd4312259d7d71f296b84d4a49c360c16cf67"
+      "path": "simulateur/web/observations-lumiere-data/12.json.gz",
+      "bytes": 85556,
+      "sha256": "76211d0a221ccd310ddd587c01fe0dbb5e60ec41a736da06062a2b85c0b5cfcd"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/13.json",
-      "bytes": 344617,
-      "sha256": "6d12d9d05cf50e8b9e8346a308a2f73847ce2a91e81bc86f7592f671ff44be06"
+      "path": "simulateur/web/observations-lumiere-data/13.json.gz",
+      "bytes": 85011,
+      "sha256": "5b08dcd618337b10bfa0bd6917e0795c146667b8e0c2b1c48bb8b6a275763f5b"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/14.json",
-      "bytes": 329712,
-      "sha256": "118447ed045c61535ddaf63fb4000d622a1a42c0222bc4498b2e2c582a5ce65b"
+      "path": "simulateur/web/observations-lumiere-data/14.json.gz",
+      "bytes": 74208,
+      "sha256": "a04654705953490d3affd9900fbe14b7566681257272fc86c523e50510e8a68c"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/15.json",
-      "bytes": 346857,
-      "sha256": "5a2edbecbe27fdd3edece2fc0d8eacf88cba8f6efd8a0acb6c6b2913e4e7d8de"
+      "path": "simulateur/web/observations-lumiere-data/15.json.gz",
+      "bytes": 85368,
+      "sha256": "863334de0a3b3726e5dbfe41f3fbadef06322f96233f7814fc29fdc2dc9d1de3"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/16.json",
-      "bytes": 353141,
-      "sha256": "0dca9c12e42bab20ece21fc0d9994ac562ae73915014ecb18658418a8baf47aa"
+      "path": "simulateur/web/observations-lumiere-data/16.json.gz",
+      "bytes": 86318,
+      "sha256": "2f55820f53190540dc3f147c2f3e3d14cad856c1f6d31baa32d57135bd021cdc"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/17.json",
-      "bytes": 348874,
-      "sha256": "66647306f702b94d61dbb213a72014a05b056de01549d0fc479c82515135aef0"
+      "path": "simulateur/web/observations-lumiere-data/17.json.gz",
+      "bytes": 86351,
+      "sha256": "23e656e55fdcbf4594fa041d3c8f325fbe7efcf59ca003af33b87542f8bd741f"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/18.json",
-      "bytes": 351850,
-      "sha256": "692448e47fd8e747a2df9281a61407334ac7bc4bbcd7531c4d24602e0f016cd6"
+      "path": "simulateur/web/observations-lumiere-data/18.json.gz",
+      "bytes": 84710,
+      "sha256": "4ef29c35d44e0bea728b024a6f0edc74f69566e20138cfc0e6dad667cc722e5b"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/19.json",
-      "bytes": 349902,
-      "sha256": "b12f7203464f19e284bff73f3c1c695f5efb1a3f176e7621492dc63624cc6ae0"
+      "path": "simulateur/web/observations-lumiere-data/19.json.gz",
+      "bytes": 86005,
+      "sha256": "b86db013b86a06e59f269549c800a88787ab97383fded9f37ad138718b7561dd"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/20.json",
-      "bytes": 349826,
-      "sha256": "5ba60e192c24813065ee8a51a1ce0fc363ec892b13f8f233d8cbe40dbe44f8a0"
+      "path": "simulateur/web/observations-lumiere-data/20.json.gz",
+      "bytes": 86027,
+      "sha256": "b09c99ea13b15e97ea3654bb0cf920f50c17c8268279b84953a1cb8918789bbf"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/21.json",
-      "bytes": 340675,
-      "sha256": "8eec70c6ecccd6079686e76e6c66d66195e92e9bd24317c323f6ddd668c76e4b"
+      "path": "simulateur/web/observations-lumiere-data/21.json.gz",
+      "bytes": 80048,
+      "sha256": "16b3044210f01c68ee60ae0ea61abae5d43b8d2666aeb8388c3db404a49da645"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/22.json",
-      "bytes": 347482,
-      "sha256": "fbf5502c4c4d592fa85731f9779adea83b7a0cae7da3f84b9900f4ba442bb30a"
+      "path": "simulateur/web/observations-lumiere-data/22.json.gz",
+      "bytes": 84450,
+      "sha256": "0013136b2f3ad54e84f1855bd5aa39ff92fe312669b26baa4c90f9ca8b9938a0"
     },
     {
-      "path": "simulateur/web/observations-lumiere-data/23.json",
-      "bytes": 346722,
-      "sha256": "6d270487cde3f25d4cb8d40289d332bc2f532210557275001519c825daac04cc"
+      "path": "simulateur/web/observations-lumiere-data/23.json.gz",
+      "bytes": 83379,
+      "sha256": "f8775a48e694b597f26dc3b8decf2733d3e08a0507c388f97b397d1954993444"
     },
     {
       "path": "simulateur/web/observations-lumiere.html",
-      "bytes": 3059,
-      "sha256": "ffae25ebc58a8c663ece2f95aef84483edbdfb0293da27d7205328295397ff9e"
+      "bytes": 3479,
+      "sha256": "cc64ac66643b079fcdbdf3fb0caa7422ba0abad3498340c4fa631ddd73a5cbdb"
     },
     {
       "path": "simulateur/web/observations-lumiere.json",
@@ -31043,13 +31628,93 @@
     },
     {
       "path": "simulateur/web/observations-lumiere.mjs",
-      "bytes": 7268,
-      "sha256": "a741bf22c449cb95f7abbd516d6bef2b2079de11de1fd674e72e8287a9529851"
+      "bytes": 11043,
+      "sha256": "530da67f23da0b8c1371dbb0e43a5796560d17d9f97f119a476982461e1bc66f"
+    },
+    {
+      "path": "simulateur/web/observations-temperature.html",
+      "bytes": 3509,
+      "sha256": "32c8f66227bf1e3bcaf8206a9fa05f41f6bc5c7151c53f07483a00f5f5b09df9"
+    },
+    {
+      "path": "simulateur/web/observations-temperature.json.gz",
+      "bytes": 44957,
+      "sha256": "edcd7baec2ed44921047cf318f7e2d51aa6b71c53368f697271d679c0ad7acfe"
+    },
+    {
+      "path": "simulateur/web/observations-temperature.mjs",
+      "bytes": 1815,
+      "sha256": "c2c074a47e3cd3c3f2514f9b1a795a86ba17617a9a9eaa08ac8e5157625e1820"
+    },
+    {
+      "path": "simulateur/web/observations-thermiques.html",
+      "bytes": 8461,
+      "sha256": "033b7678b7b20910c6d5d1b12b7a14655140e668c17da988d42705873b534780"
+    },
+    {
+      "path": "simulateur/web/observed-acquisition.mjs",
+      "bytes": 3334,
+      "sha256": "d072745132136911090ea2fa16d914cea1d550a76975200d76e7a1bf0802af28"
+    },
+    {
+      "path": "simulateur/web/observed-manifest.mjs",
+      "bytes": 2053,
+      "sha256": "c1c56a70524f4994004330b6d2c3f7a0e98b4ba5659d882a646788b4fead054e"
     },
     {
       "path": "simulateur/web/organ-inspector.js",
       "bytes": 7241,
       "sha256": "b505b23e29440cfcdc166768789ef4356538e7636700a15482f88b30d9c2a1e3"
+    },
+    {
+      "path": "simulateur/web/p1-eye-controls.mjs",
+      "bytes": 3704,
+      "sha256": "7168ccfe18bdc19557c1f569d8bf11b2eb21c66f4b3456045587bed8a314fde8"
+    },
+    {
+      "path": "simulateur/web/p1-eye-light.json",
+      "bytes": 4772,
+      "sha256": "07b956ff5ade02d0800707c4d96e2bbd91018037c54b1ae8ccd125a3a6ae2ce3"
+    },
+    {
+      "path": "simulateur/web/p1-eye-reader.mjs",
+      "bytes": 2038,
+      "sha256": "b8e6ff93874d3e93a61d5b8f84cb716675c3459a95579e2556dee2b718d80835"
+    },
+    {
+      "path": "simulateur/web/p2-core/causal-kernel.mjs",
+      "bytes": 5613,
+      "sha256": "58b312dd564538bf350c3d3f345a1310213d034f8c5a393806750d8f76f9bff2"
+    },
+    {
+      "path": "simulateur/web/p2-core/kernel.mjs",
+      "bytes": 3637,
+      "sha256": "9f44befc39a4c1701b8f71d51487e437bc5af7001c8f8e051297639632906de1"
+    },
+    {
+      "path": "simulateur/web/p2-kernel.mjs",
+      "bytes": 3637,
+      "sha256": "9f44befc39a4c1701b8f71d51487e437bc5af7001c8f8e051297639632906de1"
+    },
+    {
+      "path": "simulateur/web/p2-laboratoire.html",
+      "bytes": 2229,
+      "sha256": "ace5816419622d5847f2080c0212ada3f694c639f6b404be6512e3525a34f4d8"
+    },
+    {
+      "path": "simulateur/web/p2-reader.mjs",
+      "bytes": 4013,
+      "sha256": "984f34198effc9e0f51c33fe5926a7a9294aa52a9814e6b91c3fca5ae9bd0ae0"
+    },
+    {
+      "path": "simulateur/web/p2-research-channels.mjs",
+      "bytes": 12314,
+      "sha256": "334c40c7b642b95d6c9e4058049ff814deace0b7426174dec8b5e1de454162c0"
+    },
+    {
+      "path": "simulateur/web/p2-thermal-runtime.mjs",
+      "bytes": 6896,
+      "sha256": "d015f61ce19a4a6b38e33431c39f6c19c2442a1fbb4014e3c30343a5e966b7d5"
     },
     {
       "path": "simulateur/web/poly-atelier-avatar.css",
@@ -31078,13 +31743,18 @@
     },
     {
       "path": "simulateur/web/poly-atelier.html",
-      "bytes": 8368,
-      "sha256": "4ee936fa52c8eea1506be219d0591f2b5dd85353000cecf67075313b3b06ae1e"
+      "bytes": 8658,
+      "sha256": "48e7bf5c000b3dfdd4e92783d1141c3905e287173181910ce8b5fdbd25bf77f7"
     },
     {
       "path": "simulateur/web/poly-atelier.mjs",
       "bytes": 11168,
       "sha256": "85aca7bd3dea2a0d4c976a37a6e2ebb56c69fea62e3ad23a769f340a180b7abf"
+    },
+    {
+      "path": "simulateur/web/precomputed-reader-manifest.mjs",
+      "bytes": 5421,
+      "sha256": "8b14856ced2c22f6531de8e0fcc52e53d313ca7354320b555737ec8dae10e77b"
     },
     {
       "path": "simulateur/web/project-followup.json",
@@ -31095,6 +31765,51 @@
       "path": "simulateur/web/project-followup.mjs",
       "bytes": 4922,
       "sha256": "8046bef291ca3c8f98546f4ca34922a213e196c480727b8b4c92deccc1a079f1"
+    },
+    {
+      "path": "simulateur/web/protocol-heart-reference.html",
+      "bytes": 3702,
+      "sha256": "3379a23ac1fc7b85723b84c63995a5232541b02a9c2714c46c3ae667f5b6c4bc"
+    },
+    {
+      "path": "simulateur/web/protocol-heart-reference.json",
+      "bytes": 3270,
+      "sha256": "a4474aca29e8378c85933d0812367b6d67802d517d6870ba4e121ed9774d806f"
+    },
+    {
+      "path": "simulateur/web/protocol-heart-reference.mjs",
+      "bytes": 2861,
+      "sha256": "f39229e711f7dd6d43ffd5a801660d1afe479600db431ab86be82d7d3c31d508"
+    },
+    {
+      "path": "simulateur/web/protocol-heart-view.mjs",
+      "bytes": 4795,
+      "sha256": "9467c03e8bbd836d6ad0aa160a0d027273126147acf33990a2f6785bb6eb21c9"
+    },
+    {
+      "path": "simulateur/web/qualified-light-reading.mjs",
+      "bytes": 2478,
+      "sha256": "9f7501af9e993c59e3995de816fbbcf82ea2736bdec73153d2910e7fbc44c3d8"
+    },
+    {
+      "path": "simulateur/web/recette-repos.html",
+      "bytes": 1806,
+      "sha256": "bd2a8943838ca99f96e2574a68dc1e7e530336fc55aa036df131cdf52f49ce78"
+    },
+    {
+      "path": "simulateur/web/recette-repos.json",
+      "bytes": 744,
+      "sha256": "4fd8f5423a483c2807638e1c994b314f5406e25fcbd982a1f3eee66f245df08c"
+    },
+    {
+      "path": "simulateur/web/recette-repos.mjs",
+      "bytes": 1464,
+      "sha256": "05b256f9c62e68ae132f5ff6d07800a89716edc0c5ee530ad4e8cac09f399948"
+    },
+    {
+      "path": "simulateur/web/recherche.html",
+      "bytes": 8168,
+      "sha256": "ca19cd7d1cb3e2ea1457c3a212224d5692df7921dc9e5878f08fa1ddc50c238a"
     },
     {
       "path": "simulateur/web/recovered-membrane.js",
@@ -31162,9 +31877,44 @@
       "sha256": "6e01c5051fa4ae2b4d57f261aa6ae828fce1462c1f071df62b92a677f41b09ad"
     },
     {
+      "path": "simulateur/web/repos-debout.html",
+      "bytes": 8179,
+      "sha256": "7cfa69e021504bb34eb7dd5858b9ba6fa2129741dafd892492f8f6fd84023275"
+    },
+    {
+      "path": "simulateur/web/research-exchange.mjs",
+      "bytes": 4468,
+      "sha256": "53eddf92fc8fedcbabed457cd340c06e8bd6a25c207ad7603f11920b92b4dfe1"
+    },
+    {
       "path": "simulateur/web/rig.js",
       "bytes": 2676,
       "sha256": "e928caf400f480c6a74ed5e35cf007b08d4bfa843448c7db7a00985ddd2a19f3"
+    },
+    {
+      "path": "simulateur/web/sacrococcygeal-joint.html",
+      "bytes": 6749,
+      "sha256": "fab659be86d838b260a343a0c167cf24ee01ce4f2a5a6feee62cd140e7ff0493"
+    },
+    {
+      "path": "simulateur/web/sacrococcygeal-joint.js",
+      "bytes": 11478,
+      "sha256": "dc5b71b0f3d8af6e4830f407cdafa9e7135db7129761f0f9797f6cf3ca56235f"
+    },
+    {
+      "path": "simulateur/web/sacrum-annotation.html",
+      "bytes": 8280,
+      "sha256": "eb89c0f0faed3a2c10d9c5cc6d0e5e1af28274cc47719ea10ba2f3c4f197dc13"
+    },
+    {
+      "path": "simulateur/web/sacrum-annotation.js",
+      "bytes": 14251,
+      "sha256": "15f2cdc73b25f01814fadddec5aa20603725f9f73bd867849b3ee6ef4a1d5305"
+    },
+    {
+      "path": "simulateur/web/selective-occlusion.js",
+      "bytes": 3491,
+      "sha256": "0f7a8db6af257894b10b50caf1e050bc45d29bfd5dd64e945e298d04511ddd4c"
     },
     {
       "path": "simulateur/web/skeleton-worksite-206.js",
@@ -31172,14 +31922,99 @@
       "sha256": "e1bda7fadadd893f273c04611e624f4f23041cd8b6a964dcff31e05cc14ba439"
     },
     {
+      "path": "simulateur/web/standing-nonuniform-t30-contract.json",
+      "bytes": 25896,
+      "sha256": "e7a0270332a85e729444ba5e4f3bd3248ac40eb47cda44800b5e339defa092ac"
+    },
+    {
+      "path": "simulateur/web/standing-nonuniform-t30-receipt.json",
+      "bytes": 7494,
+      "sha256": "5e77cfbaae1a6fa725c25d40f8c9d0409a1c7c4a20a46e2456705891c3178bb4"
+    },
+    {
+      "path": "simulateur/web/standing-nonuniform-t30.json",
+      "bytes": 22025,
+      "sha256": "533b5aab0b42a30d4921dc099b5714b973ee1c990c50d38ddbdc4a9b05e764a8"
+    },
+    {
+      "path": "simulateur/web/standing-nonuniform-t30.mjs",
+      "bytes": 1595,
+      "sha256": "4ffdd9960da6ee721949f6690689b6153f3e83dc2acfaafa6225d1c1c0a4b4e3"
+    },
+    {
+      "path": "simulateur/web/standing-nonuniform-t30.png",
+      "bytes": 187311,
+      "sha256": "371bf664d25d6fd677823b616f37efcdebb6f5ab9378c6d430dc31e405591ded"
+    },
+    {
+      "path": "simulateur/web/standing-rest-scope.mjs",
+      "bytes": 3854,
+      "sha256": "75b3d70227ae82252308ebac01017d235c749728bede843cfa4b6d069d4ce2c3"
+    },
+    {
       "path": "simulateur/web/style.css",
       "bytes": 9978,
       "sha256": "7b4c1583f02fddb508ebb9c4332239586a08b06f764970ad67270174d6deb8da"
     },
     {
+      "path": "simulateur/web/temperature-calcul.html",
+      "bytes": 12278,
+      "sha256": "8e501a4be1ad77e2cb23381a8730b1ae5bdb655e15f79a00e2a300fb5449a648"
+    },
+    {
+      "path": "simulateur/web/temperature-calcul.mjs",
+      "bytes": 6253,
+      "sha256": "d4c6e582dacea3d920eaec82c6f3b01664555a56d0e244bd3da453199daa90e0"
+    },
+    {
+      "path": "simulateur/web/temperature-debout-diagnostic.png",
+      "bytes": 96382,
+      "sha256": "7141458651bdadd7c88d82afe7b3ca4301df801d3d40e78b1b4d0cd006321ee8"
+    },
+    {
+      "path": "simulateur/web/temperature-debout.html",
+      "bytes": 7813,
+      "sha256": "ab4d5b6b1aff161237de2e8add6405152b2f11c7e37d2220c56742c65d4d8d65"
+    },
+    {
+      "path": "simulateur/web/temperature-debout.json",
+      "bytes": 21875,
+      "sha256": "bfee0e38a0e0c46d1fe647f411c75874d95a85f12f7da5b286227fbe82f4d50d"
+    },
+    {
+      "path": "simulateur/web/temperature-frontieres.html",
+      "bytes": 3209,
+      "sha256": "ab5207873b885420d2a69b51a9e6445b354b6ca27e22352ecea101ff295b7240"
+    },
+    {
+      "path": "simulateur/web/temperature-frontieres.json.gz",
+      "bytes": 23597,
+      "sha256": "a32e966fbabe90419bdd2f952482542673c714f5241eaf9dde76ecd8672c4319"
+    },
+    {
+      "path": "simulateur/web/temperature-frontieres.mjs",
+      "bytes": 4259,
+      "sha256": "26b27c56c46ddaa2506b151a455989c36b6df96ac6b0792330e2365ba3578dc4"
+    },
+    {
+      "path": "simulateur/web/temperature-frontieres.png",
+      "bytes": 148663,
+      "sha256": "c2e493c10d4903190028ec3d4523767ab89527fef1e5e3a6854a07d2fe3b5e8a"
+    },
+    {
+      "path": "simulateur/web/temperature-qualification.json",
+      "bytes": 1793,
+      "sha256": "c757d04da31bd0bcb28978b35980332b0099fa14b20325535ae3fba42f124d54"
+    },
+    {
+      "path": "simulateur/web/temperature-reception.mjs",
+      "bytes": 3551,
+      "sha256": "865451307257925e5fed33e9db1c2bb1818269552528299dd4ed4b4fb1b648bb"
+    },
+    {
       "path": "simulateur/web/temperature-recherche.html",
-      "bytes": 3466,
-      "sha256": "65320421367a0c5191467e279b82ee05762505bf8af9f5f076cb979cff6ea988"
+      "bytes": 4040,
+      "sha256": "65a3875709d11c6cc59cb59cfb1e42e0c34e4ecb29aa49cbc67a47ea2038ca7c"
     },
     {
       "path": "simulateur/web/temperature-recherche.json",
@@ -31188,8 +32023,138 @@
     },
     {
       "path": "simulateur/web/temperature-recherche.mjs",
-      "bytes": 2220,
-      "sha256": "e74cc9ffd9b55b5b889f8d0a7ead6c9075f3e7fcfd8b1ba48ec303f568a07999"
+      "bytes": 2449,
+      "sha256": "3395f60fa07bc58ef7c7e969d021858f348a45f3cd00e84ed255f45466207fb5"
+    },
+    {
+      "path": "simulateur/web/temperature-regions.json",
+      "bytes": 21421,
+      "sha256": "fc9c9c2c41ef253bc4a6a828973ceffd71024ddc06c6e37e7c5578b27943a20c"
+    },
+    {
+      "path": "simulateur/web/temperature-regions.mjs",
+      "bytes": 3614,
+      "sha256": "29829b090e772e456f546c07c3ea767f58f5c553c031e607a0d43a55290402df"
+    },
+    {
+      "path": "simulateur/web/thermal-audit-reader.mjs",
+      "bytes": 4673,
+      "sha256": "1b6f0c40e39ed991d6e4abe9236699e7e4619378f04fa0172f568f2e866bb452"
+    },
+    {
+      "path": "simulateur/web/thermal-background-response.png",
+      "bytes": 127132,
+      "sha256": "38c13f8fda98f921b91f03653e2e0fa18b099fc94a2f907c62c1c8a0aa21b562"
+    },
+    {
+      "path": "simulateur/web/thermal-background.json.gz",
+      "bytes": 175492,
+      "sha256": "d44e6350c6a6616c528cd37f40b2e0760c01f260c581fe157fb55d89b601aa4a"
+    },
+    {
+      "path": "simulateur/web/thermal-background.mjs",
+      "bytes": 9493,
+      "sha256": "e630ffe833c3135a67578899db071beaf9b77338091ba5b38135f621a8004981"
+    },
+    {
+      "path": "simulateur/web/thermal-environment-replay-t24.json.gz",
+      "bytes": 229337,
+      "sha256": "9f1a8fe198d9828191c232a50559dbbfd1bb76bc1439e69d8754abd91fc62a78"
+    },
+    {
+      "path": "simulateur/web/thermal-environment-replay-t24.png",
+      "bytes": 204629,
+      "sha256": "2e1eff961c58c0e748b41569752e12183c686dd92097ec2d4ebc4052f62bcb11"
+    },
+    {
+      "path": "simulateur/web/thermal-exchange-air.json.gz",
+      "bytes": 21575,
+      "sha256": "5af7871f340b809abc0e9b5e817b4f56f9819e986eb9d381ad48d67aa3afa34a"
+    },
+    {
+      "path": "simulateur/web/thermal-exchange-control.json.gz",
+      "bytes": 18838,
+      "sha256": "abca63d9a54f18aa6f83cd79b499b84e5a087db967f2dd11a5cae63a8ad765b8"
+    },
+    {
+      "path": "simulateur/web/thermal-exchange-qualification.json",
+      "bytes": 19703,
+      "sha256": "5592ef752821ccdb0b9679745a03592bad1e17e24f4fe0ace37ff630d9756843"
+    },
+    {
+      "path": "simulateur/web/thermal-exchange.mjs",
+      "bytes": 7204,
+      "sha256": "184c5f33b4e914cac54e5dc2936a41c70a2f0a4aa6270e3e628ec0151d4ee3da"
+    },
+    {
+      "path": "simulateur/web/thermal-execution-ports.mjs",
+      "bytes": 5203,
+      "sha256": "eeea265da0f8cad00a6ce8dbf1995eab15190aac23668a9c8b8adbb88a80aa6a"
+    },
+    {
+      "path": "simulateur/web/thermal-initialization-t23.png",
+      "bytes": 134639,
+      "sha256": "963288ce52101dad0cb11509c02f49f32ec8ad12946b63db0980738649c452dd"
+    },
+    {
+      "path": "simulateur/web/thermal-matrix-downloads.mjs",
+      "bytes": 1696,
+      "sha256": "10f40ca2494f1df592ab261760bf4f867a4b892d9e2e33d9c1df0eef8b9562a6"
+    },
+    {
+      "path": "simulateur/web/thermal-matrix-pair-t31.json.gz",
+      "bytes": 135743,
+      "sha256": "02753e66e2e61e1ba34db863b5e93d4b4fa6ce790cd5fff6ad32fa82d6d8bcda"
+    },
+    {
+      "path": "simulateur/web/thermal-matrix-t31.json",
+      "bytes": 42091,
+      "sha256": "fe6c23e2534835fc72ff1d3a5809a672e46cb401fd0ef5daceca29930c3a7c19"
+    },
+    {
+      "path": "simulateur/web/thermal-model-state.mjs",
+      "bytes": 14584,
+      "sha256": "f2726a52ffc3827b61929dfc6f24dc01396deffa8c3066596d795eb702136d41"
+    },
+    {
+      "path": "simulateur/web/thermal-module-composition.mjs",
+      "bytes": 6872,
+      "sha256": "baf66415a6cf01b0aa424d8ae3fbe210dd027db9230fffebc80d2fdabdc1e43f"
+    },
+    {
+      "path": "simulateur/web/thermal-preparation-t23.json",
+      "bytes": 2576,
+      "sha256": "9bad91e7c7c8bd1a539dbd38f7da1f97620249dde349d48ef2be9b657c78587c"
+    },
+    {
+      "path": "simulateur/web/thermal-step-pair-15-t29.json.gz",
+      "bytes": 141037,
+      "sha256": "dfe55b19ed802f6f696b2c7fe2c81e426eb33b5ae692f6b4db53ee12128ba0bc"
+    },
+    {
+      "path": "simulateur/web/thermal-step-study-t29.json",
+      "bytes": 25392,
+      "sha256": "e12ba9e62835d8c0c25a61aedf45a57a19bfabd28635c16c8952630c6424385d"
+    },
+    {
+      "path": "simulateur/web/thermal-step-study-t29.svg",
+      "bytes": 35840,
+      "sha256": "8ede96c88ddf3391f2db5ef4991b03bc8d8a71014bff54234ebfbb8aa097073b"
+    },
+    {
+      "path": "simulateur/web/thermal-step-study.mjs",
+      "bytes": 1476,
+      "sha256": "cebfd45856acc4d76122ecae6560fc49bdfabf54f9b642b39f3c3515e8d04563"
+    },
+    {
+      "path": "simulateur/web/thermal-world-preview.mjs",
+      "bytes": 7690,
+      "sha256": "73f52c9523a40db76097948b3d27bd055063402004a0c86e8985a5518980d112"
+    },
+    {
+      "path": "simulateur/web/thoracic-proxy-t25.json.gz",
+      "bytes": 233221,
+      "sha256": "130e8610426751c2e32d3b81f2ec9a7b3077e876577eb7b49f251d4c529c9ee9"
     },
     {
       "path": "simulateur/web/vendor/THREE_LICENSE.txt",
@@ -31247,5 +32212,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1070865276
+  "total_bytes": 1070472486
 }

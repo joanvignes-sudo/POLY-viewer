@@ -1,0 +1,762 @@
+{
+  "schema": "poly.native-timestep-study.v1",
+  "lot": "T29",
+  "scenario": {
+    "schema": "poly.thermal-request.v1",
+    "air_C": 26.8,
+    "radiant_C": 27.2,
+    "start_s": 60,
+    "end_s": 120,
+    "duration_s": 180,
+    "step_s": 60
+  },
+  "control_request": {
+    "schema": "poly.thermal-request.v1",
+    "air_C": 28,
+    "radiant_C": 28,
+    "start_s": 60,
+    "end_s": 120,
+    "duration_s": 180,
+    "step_s": 60
+  },
+  "source_commit": "3c74ee2af2f79aa360093cc517e38bf465ec8c5b",
+  "initial_state_sha256": "5ab2f59e9ddd12bd5fb16f1ff9632e7b9ac98e2e50d72c6f78381f1b75af5edf",
+  "profile": {
+    "sex": "male",
+    "age_years": 30,
+    "height_m": 1.7,
+    "weight_kg": 60,
+    "posture": "standing",
+    "PAR": 1.4
+  },
+  "common_native_times_s": [
+    60,
+    120,
+    180
+  ],
+  "nodes": 85,
+  "steps_s": [
+    60,
+    30,
+    15
+  ],
+  "comparisons": [
+    {
+      "coarse_step_s": 60,
+      "fine_step_s": 30,
+      "frames": [
+        {
+          "native_time_s": 60,
+          "difference_temperature": {
+            "absolute": 0,
+            "signed_coarse_minus_fine": 0,
+            "node_id": "JOS3:CB",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 1.7550405573274475e-12,
+            "signed_coarse_minus_fine": -1.7550405573274475e-12,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 1.7550405573274475e-12,
+            "signed_coarse_minus_fine": -1.7550405573274475e-12,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 0,
+            "signed_coarse_minus_fine": 0,
+            "node_id": "JOS3:CB",
+            "native_time_s": 60,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": 0,
+            "fine": 0
+          },
+          "difference_total_energy_J": {
+            "coarse": 0,
+            "fine": 0,
+            "signed_coarse_minus_fine": 0
+          }
+        },
+        {
+          "native_time_s": 120,
+          "difference_temperature": {
+            "absolute": 0.010961083476871636,
+            "signed_coarse_minus_fine": 0.010961083476871636,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 0.010961083476246358,
+            "signed_coarse_minus_fine": 0.010961083476246358,
+            "node_id": "JOS3:LFoot:artery",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 1.8474111129762605e-12,
+            "signed_coarse_minus_fine": 1.8474111129762605e-12,
+            "node_id": "JOS3:RArm:skin",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 5.7152108473702805,
+            "signed_coarse_minus_fine": -5.7152108473702805,
+            "node_id": "JOS3:Back:core",
+            "native_time_s": 120,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": -0.001513205158843789,
+            "fine": -0.0007734762148885466
+          },
+          "difference_total_energy_J": {
+            "coarse": -842.5252250578206,
+            "fine": -842.1166889876649,
+            "signed_coarse_minus_fine": -0.40853607015571924
+          }
+        },
+        {
+          "native_time_s": 180,
+          "difference_temperature": {
+            "absolute": 0.0032087520329611152,
+            "signed_coarse_minus_fine": 0.0032087520329611152,
+            "node_id": "JOS3:RArm:sfvein",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 0.0032087520345314147,
+            "signed_coarse_minus_fine": 0.0032087520345314147,
+            "node_id": "JOS3:RArm:sfvein",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 1.5987211554602254e-12,
+            "signed_coarse_minus_fine": 1.5987211554602254e-12,
+            "node_id": "JOS3:RArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 5.85507721333185,
+            "signed_coarse_minus_fine": -5.85507721333185,
+            "node_id": "JOS3:Back:core",
+            "native_time_s": 180,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": -0.0006180562080189134,
+            "fine": -0.00018925075518438916
+          },
+          "difference_total_energy_J": {
+            "coarse": -773.845039216769,
+            "fine": -769.4217250462749,
+            "signed_coarse_minus_fine": -4.423314170494109
+          }
+        }
+      ],
+      "maxima": {
+        "difference_temperature": {
+          "absolute": 0.010961083476871636,
+          "signed_coarse_minus_fine": 0.010961083476871636,
+          "node_id": "JOS3:RFoot:artery",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "intervention_temperature": {
+          "absolute": 0.010961083476246358,
+          "signed_coarse_minus_fine": 0.010961083476246358,
+          "node_id": "JOS3:LFoot:artery",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "control_temperature": {
+          "absolute": 1.8474111129762605e-12,
+          "signed_coarse_minus_fine": 1.8474111129762605e-12,
+          "node_id": "JOS3:RArm:skin",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "difference_local_energy": {
+          "absolute": 5.85507721333185,
+          "signed_coarse_minus_fine": -5.85507721333185,
+          "node_id": "JOS3:Back:core",
+          "native_time_s": 180,
+          "unit": "J"
+        },
+        "difference_total_energy": {
+          "absolute": 4.423314170494109,
+          "signed_coarse_minus_fine": -4.423314170494109,
+          "native_time_s": 180,
+          "unit": "J"
+        }
+      }
+    },
+    {
+      "coarse_step_s": 30,
+      "fine_step_s": 15,
+      "frames": [
+        {
+          "native_time_s": 60,
+          "difference_temperature": {
+            "absolute": 0,
+            "signed_coarse_minus_fine": 0,
+            "node_id": "JOS3:CB",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 9.094947017729282e-13,
+            "signed_coarse_minus_fine": 9.094947017729282e-13,
+            "node_id": "JOS3:LArm:skin",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 9.094947017729282e-13,
+            "signed_coarse_minus_fine": 9.094947017729282e-13,
+            "node_id": "JOS3:LArm:skin",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 0,
+            "signed_coarse_minus_fine": 0,
+            "node_id": "JOS3:CB",
+            "native_time_s": 60,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": 0,
+            "fine": 0
+          },
+          "difference_total_energy_J": {
+            "coarse": 0,
+            "fine": 0,
+            "signed_coarse_minus_fine": 0
+          }
+        },
+        {
+          "native_time_s": 120,
+          "difference_temperature": {
+            "absolute": 0.006437875159456041,
+            "signed_coarse_minus_fine": 0.006437875159456041,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 0.006437875159114981,
+            "signed_coarse_minus_fine": 0.006437875159114981,
+            "node_id": "JOS3:LFoot:artery",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 1.0089706847793423e-12,
+            "signed_coarse_minus_fine": 1.0089706847793423e-12,
+            "node_id": "JOS3:LArm:skin",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 2.9404594810676232,
+            "signed_coarse_minus_fine": -2.9404594810676232,
+            "node_id": "JOS3:CB",
+            "native_time_s": 120,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": -0.0007734762148885466,
+            "fine": -0.0003236631029324144
+          },
+          "difference_total_energy_J": {
+            "coarse": -842.1166889876649,
+            "fine": -841.9985986235422,
+            "signed_coarse_minus_fine": -0.11809036412273599
+          }
+        },
+        {
+          "native_time_s": 180,
+          "difference_temperature": {
+            "absolute": 0.0017070788828377204,
+            "signed_coarse_minus_fine": 0.0017070788828377204,
+            "node_id": "JOS3:LArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 0.0017070788836761608,
+            "signed_coarse_minus_fine": 0.0017070788836761608,
+            "node_id": "JOS3:LArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 8.384404281969182e-13,
+            "signed_coarse_minus_fine": 8.384404281969182e-13,
+            "node_id": "JOS3:LArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 3.233338517895659,
+            "signed_coarse_minus_fine": -3.233338517895659,
+            "node_id": "JOS3:Back:core",
+            "native_time_s": 180,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": -0.00018925075518438916,
+            "fine": 0.000016109668685260203
+          },
+          "difference_total_energy_J": {
+            "coarse": -769.4217250462749,
+            "fine": -767.0852077982893,
+            "signed_coarse_minus_fine": -2.3365172479856255
+          }
+        }
+      ],
+      "maxima": {
+        "difference_temperature": {
+          "absolute": 0.006437875159456041,
+          "signed_coarse_minus_fine": 0.006437875159456041,
+          "node_id": "JOS3:RFoot:artery",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "intervention_temperature": {
+          "absolute": 0.006437875159114981,
+          "signed_coarse_minus_fine": 0.006437875159114981,
+          "node_id": "JOS3:LFoot:artery",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "control_temperature": {
+          "absolute": 1.0089706847793423e-12,
+          "signed_coarse_minus_fine": 1.0089706847793423e-12,
+          "node_id": "JOS3:LArm:skin",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "difference_local_energy": {
+          "absolute": 3.233338517895659,
+          "signed_coarse_minus_fine": -3.233338517895659,
+          "node_id": "JOS3:Back:core",
+          "native_time_s": 180,
+          "unit": "J"
+        },
+        "difference_total_energy": {
+          "absolute": 2.3365172479856255,
+          "signed_coarse_minus_fine": -2.3365172479856255,
+          "native_time_s": 180,
+          "unit": "J"
+        }
+      }
+    },
+    {
+      "coarse_step_s": 60,
+      "fine_step_s": 15,
+      "frames": [
+        {
+          "native_time_s": 60,
+          "difference_temperature": {
+            "absolute": 0,
+            "signed_coarse_minus_fine": 0,
+            "node_id": "JOS3:CB",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 2.6503244043851737e-12,
+            "signed_coarse_minus_fine": -2.6503244043851737e-12,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 2.6503244043851737e-12,
+            "signed_coarse_minus_fine": -2.6503244043851737e-12,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 60,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 0,
+            "signed_coarse_minus_fine": 0,
+            "node_id": "JOS3:CB",
+            "native_time_s": 60,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": 0,
+            "fine": 0
+          },
+          "difference_total_energy_J": {
+            "coarse": 0,
+            "fine": 0,
+            "signed_coarse_minus_fine": 0
+          }
+        },
+        {
+          "native_time_s": 120,
+          "difference_temperature": {
+            "absolute": 0.017398958636327677,
+            "signed_coarse_minus_fine": 0.017398958636327677,
+            "node_id": "JOS3:RFoot:artery",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 0.01739895863536134,
+            "signed_coarse_minus_fine": 0.01739895863536134,
+            "node_id": "JOS3:LFoot:artery",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 2.8208546609675977e-12,
+            "signed_coarse_minus_fine": 2.8208546609675977e-12,
+            "node_id": "JOS3:RArm:skin",
+            "native_time_s": 120,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 8.644182203181588,
+            "signed_coarse_minus_fine": -8.644182203181588,
+            "node_id": "JOS3:Back:core",
+            "native_time_s": 120,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": -0.001513205158843789,
+            "fine": -0.0003236631029324144
+          },
+          "difference_total_energy_J": {
+            "coarse": -842.5252250578206,
+            "fine": -841.9985986235422,
+            "signed_coarse_minus_fine": -0.5266264342784552
+          }
+        },
+        {
+          "native_time_s": 180,
+          "difference_temperature": {
+            "absolute": 0.004903771205974294,
+            "signed_coarse_minus_fine": 0.004903771205974294,
+            "node_id": "JOS3:RArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "intervention_temperature": {
+            "absolute": 0.0049037712084043505,
+            "signed_coarse_minus_fine": 0.0049037712084043505,
+            "node_id": "JOS3:RArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "control_temperature": {
+            "absolute": 2.4300561562995426e-12,
+            "signed_coarse_minus_fine": 2.4300561562995426e-12,
+            "node_id": "JOS3:RArm:skin",
+            "native_time_s": 180,
+            "unit": "K"
+          },
+          "difference_local_energy": {
+            "absolute": 9.088415731227508,
+            "signed_coarse_minus_fine": -9.088415731227508,
+            "node_id": "JOS3:Back:core",
+            "native_time_s": 180,
+            "unit": "J"
+          },
+          "central_blood_difference_K": {
+            "coarse": -0.0006180562080189134,
+            "fine": 0.000016109668685260203
+          },
+          "difference_total_energy_J": {
+            "coarse": -773.845039216769,
+            "fine": -767.0852077982893,
+            "signed_coarse_minus_fine": -6.759831418479735
+          }
+        }
+      ],
+      "maxima": {
+        "difference_temperature": {
+          "absolute": 0.017398958636327677,
+          "signed_coarse_minus_fine": 0.017398958636327677,
+          "node_id": "JOS3:RFoot:artery",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "intervention_temperature": {
+          "absolute": 0.01739895863536134,
+          "signed_coarse_minus_fine": 0.01739895863536134,
+          "node_id": "JOS3:LFoot:artery",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "control_temperature": {
+          "absolute": 2.8208546609675977e-12,
+          "signed_coarse_minus_fine": 2.8208546609675977e-12,
+          "node_id": "JOS3:RArm:skin",
+          "native_time_s": 120,
+          "unit": "K"
+        },
+        "difference_local_energy": {
+          "absolute": 9.088415731227508,
+          "signed_coarse_minus_fine": -9.088415731227508,
+          "node_id": "JOS3:Back:core",
+          "native_time_s": 180,
+          "unit": "J"
+        },
+        "difference_total_energy": {
+          "absolute": 6.759831418479735,
+          "signed_coarse_minus_fine": -6.759831418479735,
+          "native_time_s": 180,
+          "unit": "J"
+        }
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "step_s": 60,
+      "pair_sha256": "f63e39dd5127fa49731980a1736db8866077596a95611949dc6667f4b03f5a06",
+      "numerical_receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 7.363435168805864e-12,
+            "max_global_residual_W": 7.61679539770323e-12,
+            "max_internal_sum_W": 3.1086244689504383e-15,
+            "steps": 3,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 3,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.1368683772161603e-13,
+          "max_nodal_residual_W": 7.641887123099877e-12,
+          "max_global_residual_W": 1.6254997348141842e-11,
+          "max_energy_error_J": 1.5802470443304628e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 7.005951374594588e-12,
+            "max_global_residual_W": 9.945130327988689e-12,
+            "max_internal_sum_W": 7.549516567451064e-15,
+            "steps": 3,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 3,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 8.526512829121202e-14,
+          "max_nodal_residual_W": 9.904965736495797e-12,
+          "max_global_residual_W": 1.5923680689313037e-11,
+          "max_energy_error_J": 6.099114153697653e-10
+        },
+        "max_difference_nodal_residual_W": 1.4494384859009557e-11,
+        "max_difference_energy_error_J": 1.9854269339703023e-9,
+        "max_common_past_temperature_difference_K": 0
+      }
+    },
+    {
+      "step_s": 30,
+      "pair_sha256": "99e56a5f2df848f3467b6dc7ee5ac14888af71d1d281ef8a5c803df7991e6a23",
+      "numerical_receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.2449597736340365e-11,
+            "max_global_residual_W": 1.9420335671268947e-11,
+            "max_internal_sum_W": 2.042810365310288e-14,
+            "steps": 6,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 6,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 7.815970093361102e-14,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 3.175593121795828e-11,
+          "max_energy_error_J": 2.4224391381721944e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.0458784404673915e-11,
+            "max_internal_sum_W": 1.687538997430238e-14,
+            "steps": 6,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 6,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.2079226507921703e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 4.720817051791015e-11,
+          "max_energy_error_J": 3.187237773661491e-9
+        },
+        "max_difference_nodal_residual_W": 1.848532438231132e-11,
+        "max_difference_energy_error_J": 1.2587406672537327e-9,
+        "max_common_past_temperature_difference_K": 0
+      }
+    },
+    {
+      "step_s": 15,
+      "pair_sha256": "daedeaf0bd80386448f22bf9eb5b2cebab2b26fe3a1e13afea6e1e1108291483",
+      "numerical_receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 4.589040258906607e-11,
+            "max_global_residual_W": 1.0220047030884416e-10,
+            "max_internal_sum_W": 2.398081733190338e-14,
+            "steps": 12,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 12,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 9.947598300641403e-14,
+          "max_nodal_residual_W": 3.9243275296030333e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 3.13548298436217e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.5987211554602254e-14,
+            "steps": 12,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 12,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.7763568394002505e-13,
+          "max_nodal_residual_W": 3.1182167958831997e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 5.980774264314864e-9
+        },
+        "max_difference_nodal_residual_W": 5.2971946273849824e-11,
+        "max_difference_energy_error_J": 3.4214053812320344e-9,
+        "max_common_past_temperature_difference_K": 0
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "file": "NATIVE_60_intervention.json",
+      "sha256": "8c55c63ac7f8d2f693cde7c1a5d3115cf21788825159eafa3da2bdbf7a5a5690",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26.8,
+        "radiant_C": 27.2,
+        "start_s": 60,
+        "end_s": 120,
+        "duration_s": 180,
+        "step_s": 60
+      },
+      "job_id": "c1b9892fc77a432ab702a2cf893ceb0b"
+    },
+    {
+      "file": "NATIVE_60_control.json",
+      "sha256": "9fc0d44f8ac3ce78ea965d3fa0326da414352d3409a9b51f7e2b7513c0775b67",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 28,
+        "start_s": 60,
+        "end_s": 120,
+        "duration_s": 180,
+        "step_s": 60
+      },
+      "job_id": "4be2b802da0f42309677fa8e4a0a33cc"
+    },
+    {
+      "file": "NATIVE_30_intervention.json",
+      "sha256": "1f40687dabb777a0221613fb06abd21c2d2905fc8c15d871e34189907f4a905e",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26.8,
+        "radiant_C": 27.2,
+        "start_s": 60,
+        "end_s": 120,
+        "duration_s": 180,
+        "step_s": 30
+      },
+      "job_id": "4f6ce165d35e4e99b87eee7546f0e2ff"
+    },
+    {
+      "file": "NATIVE_30_control.json",
+      "sha256": "80f1d5c767ee58bf3a3348404ad54fdd1d2a34e8faa2a99548e251a92ca0b7c2",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 28,
+        "start_s": 60,
+        "end_s": 120,
+        "duration_s": 180,
+        "step_s": 30
+      },
+      "job_id": "09a1e9614d9245c985bc948035bd1e09"
+    },
+    {
+      "file": "NATIVE_15_intervention.json",
+      "sha256": "d89d3c3c1242f5b8ebb85edcb11f2bd3190bcfcf7352e8056a548ca52c88c2ad",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26.8,
+        "radiant_C": 27.2,
+        "start_s": 60,
+        "end_s": 120,
+        "duration_s": 180,
+        "step_s": 15
+      },
+      "job_id": "c2eb9e354e1c4a82a4881197a191fcdc"
+    },
+    {
+      "file": "NATIVE_15_control.json",
+      "sha256": "290cfe383ce009493f036c279f5bc418d54614ea945f9866775eaa0948d467c2",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 28,
+        "start_s": 60,
+        "end_s": 120,
+        "duration_s": 180,
+        "step_s": 15
+      },
+      "job_id": "ff6624d2938e4f96bd1d841dc086a9fd"
+    }
+  ],
+  "comparison_sign": "coarse grid minus fine grid, applied to intervention minus control",
+  "clock": {
+    "basis": "native_model_elapsed",
+    "unit": "s",
+    "world_time_s": null
+  },
+  "interpolation": false,
+  "parameters_fitted": false,
+  "experimental_validation": false,
+  "global_rest_received": false,
+  "limits": [
+    "Fixed T4 theoretical standing profile; one air/radiant protocol only.",
+    "Differences between grids are measured sensitivity, not an error bound or proof of convergence.",
+    "The 15 s trajectory is not an exact solution.",
+    "Per-step powers average over different intervals; they are not compared as instantaneous observations.",
+    "Common-time temperatures and cumulative energies are compared without interpolation.",
+    "Node identities are native JOS-3 compartments, without observed anatomical registration.",
+    "Conservation and operator reconstruction do not establish biological validity.",
+    "Failed global stability and human-validation gates remain open."
+  ]
+}

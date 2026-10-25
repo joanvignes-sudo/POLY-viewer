@@ -1,0 +1,240 @@
+{
+  "scope": "Independent saved-vector, power, energy and sampled-operator audit",
+  "runs": [
+    {
+      "file": "control_60s.npz",
+      "steps": 360,
+      "max_global_power_residual_W": 2.7198467492664528e-11,
+      "max_cumulative_energy_residual_J": 6.95792232757942e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 3.552713678800501e-14,
+          "nodal_residual_W": 1.0505374348213081e-11
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 5.336523011168149e-12
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 5.7269744502264075e-12
+        }
+      ]
+    },
+    {
+      "file": "left_foot_skin_plus_60s.npz",
+      "steps": 360,
+      "max_global_power_residual_W": 3.0819205999353064e-11,
+      "max_cumulative_energy_residual_J": 5.920072965182044e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 6.966871524127782e-12
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 1.474501025292875e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 1.162803187071404e-11
+        }
+      ]
+    },
+    {
+      "file": "chest_compensated_plus_60s.npz",
+      "steps": 360,
+      "max_global_power_residual_W": 3.5700381995247554e-11,
+      "max_cumulative_energy_residual_J": 5.4218883216439195e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 4.263256414560601e-14,
+          "nodal_residual_W": 4.2685447190771164e-12
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 4.263256414560601e-14,
+          "nodal_residual_W": 1.467626020712487e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 3.552713678800501e-14,
+          "nodal_residual_W": 3.602451670303708e-12
+        }
+      ]
+    },
+    {
+      "file": "left_foot_skin_minus_60s.npz",
+      "steps": 360,
+      "max_global_power_residual_W": 3.311832099252114e-11,
+      "max_cumulative_energy_residual_J": 4.54188473497652e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 5.684341886080802e-14,
+          "nodal_residual_W": 5.049294315995212e-12
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.800083344915323e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 4.263256414560601e-14,
+          "nodal_residual_W": 6.537464166904259e-12
+        }
+      ]
+    },
+    {
+      "file": "chest_compensated_minus_60s.npz",
+      "steps": 360,
+      "max_global_power_residual_W": 2.965544444125806e-11,
+      "max_cumulative_energy_residual_J": 4.3300369234611225e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 6.124878382252064e-12
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 3.552713678800501e-14,
+          "nodal_residual_W": 7.204903340607416e-12
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 4.263256414560601e-14,
+          "nodal_residual_W": 4.128253294766182e-12
+        }
+      ]
+    },
+    {
+      "file": "control_15s.npz",
+      "steps": 1440,
+      "max_global_power_residual_W": 7.88904727531136e-11,
+      "max_cumulative_energy_residual_J": 8.968724243792853e-07,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.1167955449309375e-11
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 2.0190071836623247e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 9.560352509652148e-12
+        }
+      ]
+    },
+    {
+      "file": "left_foot_skin_plus_15s.npz",
+      "steps": 1440,
+      "max_global_power_residual_W": 1.0956600080339052e-10,
+      "max_cumulative_energy_residual_J": 4.984462620427621e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.7074341940315207e-11
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.5840527196555763e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.574562702444382e-11
+        }
+      ]
+    },
+    {
+      "file": "chest_compensated_plus_15s.npz",
+      "steps": 1440,
+      "max_global_power_residual_W": 1.2950909615561113e-10,
+      "max_cumulative_energy_residual_J": 3.3508620989053384e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 4.035172196381609e-11
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 1.4210854715202004e-14,
+          "nodal_residual_W": 1.602629140506906e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 2.2964741219766438e-11
+        }
+      ]
+    },
+    {
+      "file": "left_foot_skin_minus_15s.npz",
+      "steps": 1440,
+      "max_global_power_residual_W": 1.8782122038207838e-10,
+      "max_cumulative_energy_residual_J": 4.2452914073010106e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 1.907451974147989e-11
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.3393730569077889e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.1316282072803006e-14,
+          "nodal_residual_W": 1.3411494137471891e-11
+        }
+      ]
+    },
+    {
+      "file": "chest_compensated_minus_15s.npz",
+      "steps": 1440,
+      "max_global_power_residual_W": 1.3158833771969095e-10,
+      "max_cumulative_energy_residual_J": 5.9156589626851996e-08,
+      "operator_receipts": [
+        {
+          "end_s": 600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 2.1100454716815875e-11
+        },
+        {
+          "end_s": 3600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 3.815614491031738e-11
+        },
+        {
+          "end_s": 21600,
+          "solve_vs_saved_K": 2.842170943040401e-14,
+          "nodal_residual_W": 3.3946179200938786e-11
+        }
+      ]
+    }
+  ],
+  "all_numeric_checks_passed": true,
+  "temporal_interpolation": false,
+  "new_parameter_fit": false,
+  "max_power_residual_W": 1.8782122038207838e-10,
+  "max_energy_residual_J": 8.968724243792853e-07
+}

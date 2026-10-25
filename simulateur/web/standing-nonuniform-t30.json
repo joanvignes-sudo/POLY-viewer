@@ -1,0 +1,592 @@
+{
+  "lot": "T30",
+  "contract_sha256": "e7a0270332a85e729444ba5e4f3bd3248ac40eb47cda44800b5e339defa092ac",
+  "rows": [
+    {
+      "case_id": "left_foot_skin_plus",
+      "step_s": 60,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": 31.05199516324107,
+      "frozen_requested_energy_difference_J": 31.05199516324063,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:LFoot:skin",
+      "distance_to_control_3600s_K": 0.0006788379437381309,
+      "distance_to_control_21600s_K": 2.072720953094631e-06,
+      "distance_to_fixed_point_3600s_K": 0.0006788379518241072,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:LFoot:core",
+      "signed_energy_difference_21600s_J": 0.04677974405695363,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": 31.05199516324107
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.014958174831100735,
+          "signed_energy_difference_J": 17.274311879793764
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.008028660210889882,
+          "signed_energy_difference_J": 10.728785560292868
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.004300894092608587,
+          "signed_energy_difference_J": 7.045966999159395
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0006788379437381309,
+          "signed_energy_difference_J": 3.13626582530695
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 6.767269539409426e-05,
+          "signed_energy_difference_J": 1.4401953925067066
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 2.7423503212276046e-05,
+          "signed_energy_difference_J": 0.6492552142421016
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 1.2060847041084344e-05,
+          "signed_energy_difference_J": 0.2749255703070882
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 5.040226525920843e-06,
+          "signed_energy_difference_J": 0.11386335528569838
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 2.072720953094631e-06,
+          "signed_energy_difference_J": 0.04677974405695363
+        }
+      ]
+    },
+    {
+      "case_id": "chest_compensated_plus",
+      "step_s": 60,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": -1.460875864722766e-11,
+      "frozen_requested_energy_difference_J": 0.0,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:Chest:skin",
+      "distance_to_control_3600s_K": 0.002421036964136647,
+      "distance_to_control_21600s_K": 2.1152566802129513e-05,
+      "distance_to_fixed_point_3600s_K": 0.0024210369524269026,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:RFoot:core",
+      "signed_energy_difference_21600s_J": -0.47851130263844416,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": -1.460875864722766e-11
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.020888149527138467,
+          "signed_energy_difference_J": -76.6361278420729
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.003993542261525818,
+          "signed_energy_difference_J": -85.9044097537087
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.0021522320400322315,
+          "signed_energy_difference_J": -78.39486887307685
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.002421036964136647,
+          "signed_energy_difference_J": -48.30690173024761
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 0.0008775002538001786,
+          "signed_energy_difference_J": -17.963207332865448
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 0.00032354620606867,
+          "signed_energy_difference_J": -7.116390178580593
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 0.00012828432492995034,
+          "signed_energy_difference_J": -2.8797470058714665
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 5.193748381060459e-05,
+          "signed_energy_difference_J": -1.1726250894759516
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 2.1152566802129513e-05,
+          "signed_energy_difference_J": -0.47851130263844416
+        }
+      ]
+    },
+    {
+      "case_id": "left_foot_skin_minus",
+      "step_s": 60,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": -31.05199516324107,
+      "frozen_requested_energy_difference_J": -31.05199516324063,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:LFoot:skin",
+      "distance_to_control_3600s_K": 0.0006799229940384066,
+      "distance_to_control_21600s_K": 2.0682546733041818e-06,
+      "distance_to_fixed_point_3600s_K": 0.0006799229859524303,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:LFoot:core",
+      "signed_energy_difference_21600s_J": -0.04667873561256959,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": -31.05199516324107
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.014977988821087251,
+          "signed_energy_difference_J": -17.274834139009176
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.00804318225909384,
+          "signed_energy_difference_J": -10.725454676279595
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.004309526022730381,
+          "signed_energy_difference_J": -7.039188426993278
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0006799229940384066,
+          "signed_energy_difference_J": -3.127761637187039
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 6.763130474496393e-05,
+          "signed_energy_difference_J": -1.436399227777171
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 2.7354996767314788e-05,
+          "signed_energy_difference_J": -0.6477477843639621
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 1.2033677499800888e-05,
+          "signed_energy_difference_J": -0.2743170800104996
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 5.029252363897285e-06,
+          "signed_energy_difference_J": -0.11361578969573312
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 2.0682546733041818e-06,
+          "signed_energy_difference_J": -0.04667873561256959
+        }
+      ]
+    },
+    {
+      "case_id": "chest_compensated_minus",
+      "step_s": 60,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": 1.460875864722766e-11,
+      "frozen_requested_energy_difference_J": 0.0,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:Chest:skin",
+      "distance_to_control_3600s_K": 0.0024209531197527667,
+      "distance_to_control_21600s_K": 2.1191861087288544e-05,
+      "distance_to_fixed_point_3600s_K": 0.0024209531810370777,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:LFoot:core",
+      "signed_energy_difference_21600s_J": 0.47940590989694276,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": 1.460875864722766e-11
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.021009018414773095,
+          "signed_energy_difference_J": 76.64605817876655
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.004024784523664948,
+          "signed_energy_difference_J": 85.96701533265505
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.0021502195775084942,
+          "signed_energy_difference_J": 78.47794757323894
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0024209531197527667,
+          "signed_energy_difference_J": 48.37616359093345
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 0.0008783756075487759,
+          "signed_energy_difference_J": 17.994545168350182
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 0.0003240643825037637,
+          "signed_energy_difference_J": 7.129455762466214
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 0.00012851261897850463,
+          "signed_energy_difference_J": 2.885102774545749
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 5.2032877796648336e-05,
+          "signed_energy_difference_J": 1.1748145306648965
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 2.1191861087288544e-05,
+          "signed_energy_difference_J": 0.47940590989694276
+        }
+      ]
+    },
+    {
+      "case_id": "left_foot_skin_plus",
+      "step_s": 15,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": 31.05199516324107,
+      "frozen_requested_energy_difference_J": 31.05199516324063,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:LFoot:skin",
+      "distance_to_control_3600s_K": 0.0006459946009229611,
+      "distance_to_control_21600s_K": 2.357489961468673e-06,
+      "distance_to_fixed_point_3600s_K": 0.0006459946073675837,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:LFoot:core",
+      "signed_energy_difference_21600s_J": 0.0537255399420198,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": 31.05199516324107
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.014554363836978723,
+          "signed_energy_difference_J": 18.060356823469593
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.0076915204031990925,
+          "signed_energy_difference_J": 11.580419483259668
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.00407400579775441,
+          "signed_energy_difference_J": 7.902468287883448
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0006459946009229611,
+          "signed_energy_difference_J": 3.7969017376116723
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 7.295471110779772e-05,
+          "signed_energy_difference_J": 1.7012384040265875
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 3.188487090710623e-05,
+          "signed_energy_difference_J": 0.750479126813354
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 1.3775091353807056e-05,
+          "signed_energy_difference_J": 0.3158042296218638
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 5.732067577923772e-06,
+          "signed_energy_difference_J": 0.13066021392980237
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 2.357489961468673e-06,
+          "signed_energy_difference_J": 0.0537255399420198
+        }
+      ]
+    },
+    {
+      "case_id": "chest_compensated_plus",
+      "step_s": 15,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": -1.460875864722766e-11,
+      "frozen_requested_energy_difference_J": 0.0,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:Chest:skin",
+      "distance_to_control_3600s_K": 0.0021833337141217157,
+      "distance_to_control_21600s_K": 1.9336087021315507e-05,
+      "distance_to_fixed_point_3600s_K": 0.0021833337040604306,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:LFoot:core",
+      "signed_energy_difference_21600s_J": -0.44157698429079073,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": -1.460875864722766e-11
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.01864618615702085,
+          "signed_energy_difference_J": -72.06707744135991
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.003119039186749717,
+          "signed_energy_difference_J": -78.82559456169028
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.002110384051043468,
+          "signed_energy_difference_J": -71.10776104655184
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0021833337141217157,
+          "signed_energy_difference_J": -43.601972233202254
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 0.0007839228160335665,
+          "signed_energy_difference_J": -16.36255192548693
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 0.00029249521163166037,
+          "signed_energy_difference_J": -6.516049840871167
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 0.0001166159302243841,
+          "signed_energy_difference_J": -2.644901746706941
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 4.7360008800012565e-05,
+          "signed_energy_difference_J": -1.0796576403937013
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 1.9336087021315507e-05,
+          "signed_energy_difference_J": -0.44157698429079073
+        }
+      ]
+    },
+    {
+      "case_id": "left_foot_skin_minus",
+      "step_s": 15,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": -31.05199516324107,
+      "frozen_requested_energy_difference_J": -31.05199516324063,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:LFoot:skin",
+      "distance_to_control_3600s_K": 0.0006469111157727525,
+      "distance_to_control_21600s_K": 2.353265131205262e-06,
+      "distance_to_fixed_point_3600s_K": 0.0006469111093281299,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:LFoot:core",
+      "signed_energy_difference_21600s_J": -0.05362905294692714,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": -31.05199516324107
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.01457234856187739,
+          "signed_energy_difference_J": -18.059884388583715
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.007704802171815572,
+          "signed_energy_difference_J": -11.576472242564883
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.004081829809024384,
+          "signed_energy_difference_J": -7.8954949699749495
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0006469111157727525,
+          "signed_energy_difference_J": -3.7887745846625567
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 7.28094836119908e-05,
+          "signed_energy_difference_J": -1.697666496108222
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 3.182112975252949e-05,
+          "signed_energy_difference_J": -0.749056186294225
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 1.3749668433149509e-05,
+          "signed_energy_difference_J": -0.3152278618109723
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 5.721745090170316e-06,
+          "signed_energy_difference_J": -0.13042488870644658
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 2.353265131205262e-06,
+          "signed_energy_difference_J": -0.05362905294692714
+        }
+      ]
+    },
+    {
+      "case_id": "chest_compensated_minus",
+      "step_s": 15,
+      "initial_max_distance_K": 0.10000000000000142,
+      "initial_signed_energy_difference_J": 1.460875864722766e-11,
+      "frozen_requested_energy_difference_J": 0.0,
+      "max_distance_to_control_K": 0.10000000000000142,
+      "peak_time_s": 0,
+      "peak_node_id": "JOS3:Chest:skin",
+      "distance_to_control_3600s_K": 0.0021841239854794026,
+      "distance_to_control_21600s_K": 1.9376680832294824e-05,
+      "distance_to_fixed_point_3600s_K": 0.002184124045172098,
+      "original_1h_bound_satisfied_for_this_case": true,
+      "final_largest_difference_node_id": "JOS3:RFoot:core",
+      "signed_energy_difference_21600s_J": 0.44250885064084433,
+      "samples": [
+        {
+          "time_s": 0,
+          "max_distance_to_control_K": 0.10000000000000142,
+          "signed_energy_difference_J": 1.460875864722766e-11
+        },
+        {
+          "time_s": 600,
+          "max_distance_to_control_K": 0.018761476538927013,
+          "signed_energy_difference_J": 72.0963961645681
+        },
+        {
+          "time_s": 1200,
+          "max_distance_to_control_K": 0.0031450640804493446,
+          "signed_energy_difference_J": 78.91104116025929
+        },
+        {
+          "time_s": 1800,
+          "max_distance_to_control_K": 0.002109340297657525,
+          "signed_energy_difference_J": 71.20683821174154
+        },
+        {
+          "time_s": 3600,
+          "max_distance_to_control_K": 0.0021841239854794026,
+          "signed_energy_difference_J": 43.67714066541324
+        },
+        {
+          "time_s": 7200,
+          "max_distance_to_control_K": 0.0007849775883741472,
+          "signed_energy_difference_J": 16.395267691867794
+        },
+        {
+          "time_s": 10800,
+          "max_distance_to_control_K": 0.00029304294103127404,
+          "signed_energy_difference_J": 6.5295948638672305
+        },
+        {
+          "time_s": 14400,
+          "max_distance_to_control_K": 0.00011685242574799304,
+          "signed_energy_difference_J": 2.6504568080923856
+        },
+        {
+          "time_s": 18000,
+          "max_distance_to_control_K": 4.7458500560537686e-05,
+          "signed_energy_difference_J": 1.0819329240195201
+        },
+        {
+          "time_s": 21600,
+          "max_distance_to_control_K": 1.9376680832294824e-05,
+          "signed_energy_difference_J": 0.44250885064084433
+        }
+      ]
+    }
+  ],
+  "grid_comparisons": [
+    {
+      "case_id": "left_foot_skin_plus",
+      "max_difference_in_control_referenced_delta_K": 0.005933504688613311,
+      "time_s": 60,
+      "node_id": "JOS3:LFoot:skin",
+      "scope": "Common 60-second grid across all 85 nodes, without interpolation; grid sensitivity, not an error bound"
+    },
+    {
+      "case_id": "chest_compensated_plus",
+      "max_difference_in_control_referenced_delta_K": 0.002565656298784802,
+      "time_s": 360,
+      "node_id": "JOS3:Chest:skin",
+      "scope": "Common 60-second grid across all 85 nodes, without interpolation; grid sensitivity, not an error bound"
+    },
+    {
+      "case_id": "left_foot_skin_minus",
+      "max_difference_in_control_referenced_delta_K": 0.005934378089733627,
+      "time_s": 60,
+      "node_id": "JOS3:LFoot:skin",
+      "scope": "Common 60-second grid across all 85 nodes, without interpolation; grid sensitivity, not an error bound"
+    },
+    {
+      "case_id": "chest_compensated_minus",
+      "max_difference_in_control_referenced_delta_K": 0.002563636868195829,
+      "time_s": 360,
+      "node_id": "JOS3:Chest:skin",
+      "scope": "Common 60-second grid across all 85 nodes, without interpolation; grid sensitivity, not an error bound"
+    }
+  ],
+  "control_max_drift_over_6h_K": {
+    "60": 7.65894014875812e-11,
+    "15": 6.73807676321303e-11
+  },
+  "runs": 10,
+  "total_native_steps": 9000,
+  "native_temperature_values_including_initial": 765850,
+  "scope": "Four nonuniform perturbations of one fixed model profile, two time steps; numeric verification only",
+  "original_uniform_T4_1h_failure_preserved": true,
+  "experimental_validation": false,
+  "global_nonlinear_stability_proven": false,
+  "avatar_coupled": false
+}

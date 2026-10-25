@@ -1,0 +1,1134 @@
+{
+  "lot": "T31",
+  "contract_sha256": "92abf946bf38bd41ff0cc29193fe183b9af12190f96e3f7665feee0a63c488b0",
+  "amendment_sha256": "63d94707c9800c4bd3a1c6c34e4b66f87849ee71735f884fdc5cf6ab1b37c6b1",
+  "native_runs": 24,
+  "native_steps": 560,
+  "native_temperatures": 47600,
+  "admitted_pairs": 18,
+  "paired_native_cells": 35700,
+  "rows": [
+    {
+      "id": "air26_radiant28_full_60",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 28,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 60
+      },
+      "steps": 10,
+      "source_sha256": "40e141602cd8a4b9033bf3da6c0f052362e39bb85849a24354638de512b86afe",
+      "control_sha256": "0b5b100f046fcb6dbd2a1754278f3252918dacd0ad796fb103c2cd50dabc7a2e",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 1.785089409869834e-11,
+            "max_global_residual_W": 3.894484734701109e-11,
+            "max_internal_sum_W": 2.1760371282653068e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.8474111129762605e-13,
+          "max_nodal_residual_W": 7.581490990560269e-12,
+          "max_global_residual_W": 2.8542501695483224e-11,
+          "max_energy_error_J": 5.180481821298599e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.3173462320992257e-11,
+            "max_global_residual_W": 1.459205614733875e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 1.0899725566559937e-11,
+          "max_global_residual_W": 1.5937376244587545e-11,
+          "max_energy_error_J": 3.089924071334983e-9
+        },
+        "max_difference_nodal_residual_W": 1.2461476295300145e-11,
+        "max_difference_energy_error_J": 2.940396370831877e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.40142132175805045,
+        "time_s": 600,
+        "node_id": "JOS3:Back:skin"
+      },
+      "final_difference_energy_J": -6038.329348867795,
+      "final_skin_difference_max_K": 0.40142132175805045,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant28_middle_60",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 28,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 60
+      },
+      "steps": 10,
+      "source_sha256": "6d0171925fe5c5cef731a747393e55d0530a2905b80af9651c85cd69ca8f766d",
+      "control_sha256": "4385d0951d194c4860fe552da14f18c02be6193075b3d26a615719ff03fba635",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 1.0814460438268725e-11,
+            "max_global_residual_W": 1.4376055901266227e-11,
+            "max_internal_sum_W": 1.687538997430238e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.7053025658242404e-13,
+          "max_nodal_residual_W": 1.1173284519827575e-11,
+          "max_global_residual_W": 1.3802292642139946e-11,
+          "max_energy_error_J": 3.6716301110573113e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.3173462320992257e-11,
+            "max_global_residual_W": 1.459205614733875e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 1.0899725566559937e-11,
+          "max_global_residual_W": 1.5937376244587545e-11,
+          "max_energy_error_J": 3.089924071334983e-9
+        },
+        "max_difference_nodal_residual_W": 1.1970313629205975e-11,
+        "max_difference_energy_error_J": 2.314209268661216e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.3013835549615109,
+        "time_s": 480,
+        "node_id": "JOS3:Back:skin"
+      },
+      "final_difference_energy_J": -3541.840847847048,
+      "final_skin_difference_max_K": 0.2292523596281839,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air28_radiant26_full_60",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 26,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 60
+      },
+      "steps": 10,
+      "source_sha256": "70f2c7e06455a00bbbd1848a406053aea1ae7caf1077708a2ee8f950d88eee3c",
+      "control_sha256": "0b5b100f046fcb6dbd2a1754278f3252918dacd0ad796fb103c2cd50dabc7a2e",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 8.834893550795954e-12,
+            "max_global_residual_W": 2.5085711286010337e-11,
+            "max_internal_sum_W": 1.9095836023552692e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.2737367544323206e-13,
+          "max_nodal_residual_W": 1.0299316954842652e-11,
+          "max_global_residual_W": 1.169908614429005e-11,
+          "max_energy_error_J": 1.4479155652225018e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.3173462320992257e-11,
+            "max_global_residual_W": 1.459205614733875e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 1.0899725566559937e-11,
+          "max_global_residual_W": 1.5937376244587545e-11,
+          "max_energy_error_J": 3.089924071334983e-9
+        },
+        "max_difference_nodal_residual_W": 1.2852607866875587e-11,
+        "max_difference_energy_error_J": 2.130946086253971e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.48986004205194433,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -6796.579141205679,
+      "final_skin_difference_max_K": 0.48360498747771175,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air28_radiant26_middle_60",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 26,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 60
+      },
+      "steps": 10,
+      "source_sha256": "8c4875e355b9d7571fe44533ea7e32c440b0a4a4f73b4f980acb52a8398fcd5b",
+      "control_sha256": "4385d0951d194c4860fe552da14f18c02be6193075b3d26a615719ff03fba635",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.0040422590704032e-11,
+            "max_global_residual_W": 2.1546320283505338e-11,
+            "max_internal_sum_W": 2.7533531010703882e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.1316282072803006e-13,
+          "max_nodal_residual_W": 8.768097359279636e-12,
+          "max_global_residual_W": 1.6468604258079722e-11,
+          "max_energy_error_J": 4.135472408961505e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.3173462320992257e-11,
+            "max_global_residual_W": 1.459205614733875e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 1.0899725566559937e-11,
+          "max_global_residual_W": 1.5937376244587545e-11,
+          "max_energy_error_J": 3.089924071334983e-9
+        },
+        "max_difference_nodal_residual_W": 1.250322068102605e-11,
+        "max_difference_energy_error_J": 2.3824213712941855e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.30900139869450527,
+        "time_s": 480,
+        "node_id": "JOS3:LLeg:skin"
+      },
+      "final_difference_energy_J": -3986.333111274824,
+      "final_skin_difference_max_K": 0.2768348646494232,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant26_full_60",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 26,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 60
+      },
+      "steps": 10,
+      "source_sha256": "b9d108fb1778511ab8a71b1b612e39bae9e63bed384366792a33561a1db74413",
+      "control_sha256": "0b5b100f046fcb6dbd2a1754278f3252918dacd0ad796fb103c2cd50dabc7a2e",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.2468655408447447e-11,
+            "max_global_residual_W": 3.3431035717512714e-11,
+            "max_internal_sum_W": 2.1316282072803006e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.6342482922482304e-13,
+          "max_nodal_residual_W": 7.759126674500294e-12,
+          "max_global_residual_W": 1.7742252111929702e-11,
+          "max_energy_error_J": 1.6261765267699957e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.3173462320992257e-11,
+            "max_global_residual_W": 1.459205614733875e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 1.0899725566559937e-11,
+          "max_global_residual_W": 1.5937376244587545e-11,
+          "max_energy_error_J": 3.089924071334983e-9
+        },
+        "max_difference_nodal_residual_W": 1.2438272634085479e-11,
+        "max_difference_energy_error_J": 3.983586793765426e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.8666274847569433,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -12811.533778595254,
+      "final_skin_difference_max_K": 0.8541969672889458,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant26_middle_60",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 26,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 60
+      },
+      "steps": 10,
+      "source_sha256": "a3bd681286d825adeb68bb2fb2a88cbb96480a51506d275feb115a5de4f8eac6",
+      "control_sha256": "4385d0951d194c4860fe552da14f18c02be6193075b3d26a615719ff03fba635",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 1.3212542171459063e-11,
+            "max_global_residual_W": 1.7479351299698465e-11,
+            "max_internal_sum_W": 2.220446049250313e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.7763568394002505e-13,
+          "max_nodal_residual_W": 7.151612635425408e-12,
+          "max_global_residual_W": 1.7468693158662063e-11,
+          "max_energy_error_J": 1.9945218809880316e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.3173462320992257e-11,
+            "max_global_residual_W": 1.459205614733875e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 10,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 10,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 1.0899725566559937e-11,
+          "max_global_residual_W": 1.5937376244587545e-11,
+          "max_energy_error_J": 3.089924071334983e-9
+        },
+        "max_difference_nodal_residual_W": 1.7508383631792412e-11,
+        "max_difference_energy_error_J": 2.0033894543303177e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.5488805723244923,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:artery"
+      },
+      "final_difference_energy_J": -7515.922789191876,
+      "final_skin_difference_max_K": 0.49091781389615363,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant28_full_30",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 28,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 30
+      },
+      "steps": 20,
+      "source_sha256": "515cb6e6785267fffedf8fcc6e0274d41fd1873467feb9a2665f3ae0d6ddb35b",
+      "control_sha256": "bf4c6c45e1c1ee7010958911c1311f76f3e2538196d7981eba8a51dc37bd211e",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.3309354446610087e-11,
+            "max_global_residual_W": 3.979216955940501e-11,
+            "max_internal_sum_W": 2.4868995751603507e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.7053025658242404e-13,
+          "max_nodal_residual_W": 2.5558222205290804e-11,
+          "max_global_residual_W": 3.7209346714917046e-11,
+          "max_energy_error_J": 5.7734723668545485e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.7142108160037604e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 6.168319582713476e-11,
+          "max_energy_error_J": 1.5229003609068723e-8
+        },
+        "max_difference_nodal_residual_W": 3.064004605590753e-11,
+        "max_difference_energy_error_J": 1.0511939763091505e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.4097655401516036,
+        "time_s": 600,
+        "node_id": "JOS3:Back:skin"
+      },
+      "final_difference_energy_J": -5980.412470237474,
+      "final_skin_difference_max_K": 0.4097655401516036,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant28_middle_30",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 28,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 30
+      },
+      "steps": 20,
+      "source_sha256": "d617bf62b028e0be23125ed041e341591305d83943a84fdfba7db640d6681b2f",
+      "control_sha256": "bb41d23d91e5a72690916242fa8bdd4173679b3a4d9ec7c686f224087000abb8",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.12736495086574e-11,
+            "max_global_residual_W": 4.9260151513408346e-11,
+            "max_internal_sum_W": 1.6431300764452317e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.8474111129762605e-13,
+          "max_nodal_residual_W": 1.5690559962422412e-11,
+          "max_global_residual_W": 2.956923594865657e-11,
+          "max_energy_error_J": 7.022208592388779e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.7142108160037604e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 6.168319582713476e-11,
+          "max_energy_error_J": 1.5229003609068723e-8
+        },
+        "max_difference_nodal_residual_W": 1.9884038859885322e-11,
+        "max_difference_energy_error_J": 8.75434125191532e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.3107030408902176,
+        "time_s": 480,
+        "node_id": "JOS3:Back:skin"
+      },
+      "final_difference_energy_J": -3500.8449740645374,
+      "final_skin_difference_max_K": 0.23271795823290375,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air28_radiant26_full_30",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 26,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 30
+      },
+      "steps": 20,
+      "source_sha256": "1fe557a9ee9f45e1d953aee15716103c9f7ef729e78c819e7655111ff22a9e62",
+      "control_sha256": "bf4c6c45e1c1ee7010958911c1311f76f3e2538196d7981eba8a51dc37bd211e",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.2929214082978433e-11,
+            "max_global_residual_W": 4.391509378365299e-11,
+            "max_internal_sum_W": 1.687538997430238e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.5631940186722204e-13,
+          "max_nodal_residual_W": 1.581668129801983e-11,
+          "max_global_residual_W": 3.363709311088314e-11,
+          "max_energy_error_J": 4.0627128328196704e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.7142108160037604e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 6.168319582713476e-11,
+          "max_energy_error_J": 1.5229003609068723e-8
+        },
+        "max_difference_nodal_residual_W": 2.401633059090358e-11,
+        "max_difference_energy_error_J": 1.3153112377040088e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.5063165198371848,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -6733.78104597587,
+      "final_skin_difference_max_K": 0.49976455072399517,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air28_radiant26_middle_30",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 26,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 30
+      },
+      "steps": 20,
+      "source_sha256": "6e95ceb06b1df84c3c436831afc4c6c92fb5964120cdc9735028225e5aee9fa7",
+      "control_sha256": "bb41d23d91e5a72690916242fa8bdd4173679b3a4d9ec7c686f224087000abb8",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.9050539751551696e-11,
+            "max_global_residual_W": 5.5138116294983774e-11,
+            "max_internal_sum_W": 2.5757174171303632e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.7763568394002505e-13,
+          "max_nodal_residual_W": 2.093258899549255e-11,
+          "max_global_residual_W": 2.886046956973587e-11,
+          "max_energy_error_J": 1.709850039333105e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.7142108160037604e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 6.168319582713476e-11,
+          "max_energy_error_J": 1.5229003609068723e-8
+        },
+        "max_difference_nodal_residual_W": 3.208458498882294e-11,
+        "max_difference_energy_error_J": 1.3847511581843719e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.3202379348631226,
+        "time_s": 480,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -3941.1660067810144,
+      "final_skin_difference_max_K": 0.2828369899266292,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant26_full_30",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 26,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 30
+      },
+      "steps": 20,
+      "source_sha256": "55d86e30d9574618977a3f91186d6ca1553f72326f9d8526a8b9b86a9c739cf3",
+      "control_sha256": "bf4c6c45e1c1ee7010958911c1311f76f3e2538196d7981eba8a51dc37bd211e",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.6989965817847406e-11,
+            "max_global_residual_W": 4.2529535448920797e-11,
+            "max_internal_sum_W": 2.6645352591003757e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.6342482922482304e-13,
+          "max_nodal_residual_W": 2.142641619684582e-11,
+          "max_global_residual_W": 4.035882739117369e-11,
+          "max_energy_error_J": 4.827597877010703e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.7142108160037604e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 6.168319582713476e-11,
+          "max_energy_error_J": 1.5229003609068723e-8
+        },
+        "max_difference_nodal_residual_W": 2.429756396082894e-11,
+        "max_difference_energy_error_J": 1.1372321750968695e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.8971937116832542,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -12693.93190531721,
+      "final_skin_difference_max_K": 0.8842558835989003,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant26_middle_30",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 26,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 30
+      },
+      "steps": 20,
+      "source_sha256": "acdde4ed73c5a813c174cdde984b71c07c0cbf5e7d6ae2a2aa47f51338d49ab8",
+      "control_sha256": "bb41d23d91e5a72690916242fa8bdd4173679b3a4d9ec7c686f224087000abb8",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 2.5082158572331537e-11,
+            "max_global_residual_W": 4.491340632739593e-11,
+            "max_internal_sum_W": 1.2434497875801753e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9895196601282805e-13,
+          "max_nodal_residual_W": 2.084732386720134e-11,
+          "max_global_residual_W": 5.070432962384075e-11,
+          "max_energy_error_J": 4.6838977141305804e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 1.7116568613804085e-11,
+            "max_global_residual_W": 2.7142108160037604e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 20,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 20,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 1.568523089190421e-11,
+          "max_global_residual_W": 6.168319582713476e-11,
+          "max_energy_error_J": 1.5229003609068723e-8
+        },
+        "max_difference_nodal_residual_W": 3.2001179484097975e-11,
+        "max_difference_energy_error_J": 1.0729308996815234e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.5564728528647862,
+        "time_s": 540,
+        "node_id": "JOS3:RFoot:artery"
+      },
+      "final_difference_energy_J": -7431.130849511341,
+      "final_skin_difference_max_K": 0.5031666032452407,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant28_full_15",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 28,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 15
+      },
+      "steps": 40,
+      "source_sha256": "550d5457686ada1f2a674de74a6b65f87e26427443e58bc68bdd1e32c06d5bbd",
+      "control_sha256": "43af7884e94fda9843646c53faed1396bcfd7d04a5de002d865fd34ca26331bf",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 6.446754241551389e-11,
+            "max_global_residual_W": 9.57118828637249e-11,
+            "max_internal_sum_W": 2.4424906541753444e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.2737367544323206e-13,
+          "max_nodal_residual_W": 4.921218987874454e-11,
+          "max_global_residual_W": 1.0063061495202419e-10,
+          "max_energy_error_J": 1.106946001527831e-8
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 5.400124791776761e-13,
+          "max_nodal_residual_W": 3.3516300845803926e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 1.1901563794358059e-8
+        },
+        "max_difference_nodal_residual_W": 5.4534043947285227e-11,
+        "max_difference_energy_error_J": 4.731646185973659e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.4140429655357991,
+        "time_s": 600,
+        "node_id": "JOS3:Back:skin"
+      },
+      "final_difference_energy_J": -5950.869009505724,
+      "final_skin_difference_max_K": 0.4140429655357991,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant28_middle_15",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 28,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 15
+      },
+      "steps": 40,
+      "source_sha256": "05c2e2477dbc54b4b91ba9bbbf4e1accafc66d1636a686a0056ff890dd28c87d",
+      "control_sha256": "b1b659a40062a72f31ce5e57869441ada9c850f28c4a9a088df530a659ab99dc",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 6.424372145374946e-11,
+            "max_global_residual_W": 1.0793677063247742e-10,
+            "max_internal_sum_W": 2.5757174171303632e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.5579538487363607e-13,
+          "max_nodal_residual_W": 4.787636953551555e-11,
+          "max_global_residual_W": 1.0460610155860195e-10,
+          "max_energy_error_J": 1.499847712693736e-8
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 5.400124791776761e-13,
+          "max_nodal_residual_W": 3.3516300845803926e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 1.1901563794358059e-8
+        },
+        "max_difference_nodal_residual_W": 6.442424371755351e-11,
+        "max_difference_energy_error_J": 3.095010470133275e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.31560074873728894,
+        "time_s": 480,
+        "node_id": "JOS3:Back:skin"
+      },
+      "final_difference_energy_J": -3479.805681214336,
+      "final_skin_difference_max_K": 0.23438062731550247,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air28_radiant26_full_15",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 26,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 15
+      },
+      "steps": 40,
+      "source_sha256": "5bdc1e4581c1047d8ab5b4240c532effb85d7663f41cfcb893e5fb4beb4b8b20",
+      "control_sha256": "43af7884e94fda9843646c53faed1396bcfd7d04a5de002d865fd34ca26331bf",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 5.593747687271389e-11,
+            "max_global_residual_W": 8.784439842202119e-11,
+            "max_internal_sum_W": 1.9095836023552692e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.9184653865522705e-13,
+          "max_nodal_residual_W": 5.509903644451697e-11,
+          "max_global_residual_W": 1.1302070390684094e-10,
+          "max_energy_error_J": 3.999957698397338e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 5.400124791776761e-13,
+          "max_nodal_residual_W": 3.3516300845803926e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 1.1901563794358059e-8
+        },
+        "max_difference_nodal_residual_W": 6.177336420165602e-11,
+        "max_difference_energy_error_J": 8.26821633381769e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.5146558928095715,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -6701.757922226888,
+      "final_skin_difference_max_K": 0.5079678081332304,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air28_radiant26_middle_15",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 28,
+        "radiant_C": 26,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 15
+      },
+      "steps": 40,
+      "source_sha256": "e908dcfe33e6c2c7b8e617860c3a8e6c438909647dba655d0814590131328e9a",
+      "control_sha256": "b1b659a40062a72f31ce5e57869441ada9c850f28c4a9a088df530a659ab99dc",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 4.118660967833421e-11,
+            "max_global_residual_W": 1.0105161152296205e-10,
+            "max_internal_sum_W": 2.4868995751603507e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.3447910280083306e-13,
+          "max_nodal_residual_W": 3.991473818132363e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 7.388734957203269e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 5.400124791776761e-13,
+          "max_nodal_residual_W": 3.3516300845803926e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 1.1901563794358059e-8
+        },
+        "max_difference_nodal_residual_W": 6.912281858006963e-11,
+        "max_difference_energy_error_J": 6.942173058632761e-9,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.3274679894799277,
+        "time_s": 480,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -3917.95626469982,
+      "final_skin_difference_max_K": 0.2855055297448814,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant26_full_15",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 26,
+        "start_s": 0,
+        "end_s": 600,
+        "duration_s": 600,
+        "step_s": 15
+      },
+      "steps": 40,
+      "source_sha256": "499f7d0a09b2feec71f43c1ae0d89223f71f87b139979a3632fd8d59bd935152",
+      "control_sha256": "43af7884e94fda9843646c53faed1396bcfd7d04a5de002d865fd34ca26331bf",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 4.9610093810770195e-11,
+            "max_global_residual_W": 9.279332857659028e-11,
+            "max_internal_sum_W": 3.019806626980426e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 1.7763568394002505e-13,
+          "max_nodal_residual_W": 4.845901457883883e-11,
+          "max_global_residual_W": 1.1519318832142744e-10,
+          "max_energy_error_J": 5.1641109166666865e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 5.400124791776761e-13,
+          "max_nodal_residual_W": 3.3516300845803926e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 1.1901563794358059e-8
+        },
+        "max_difference_nodal_residual_W": 5.4652615766315193e-11,
+        "max_difference_energy_error_J": 1.0181793186347932e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.9126509784861767,
+        "time_s": 600,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -12634.391487272498,
+      "final_skin_difference_max_K": 0.8994828533767745,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    },
+    {
+      "id": "air26_radiant26_middle_15",
+      "request": {
+        "schema": "poly.thermal-request.v1",
+        "air_C": 26,
+        "radiant_C": 26,
+        "start_s": 120,
+        "end_s": 480,
+        "duration_s": 600,
+        "step_s": 15
+      },
+      "steps": 40,
+      "source_sha256": "418e3a3d4c9cbf9da829d7e9702b9eafa331e14dedaeadbeb4114df94f2d2f0a",
+      "control_sha256": "b1b659a40062a72f31ce5e57869441ada9c850f28c4a9a088df530a659ab99dc",
+      "receipt": {
+        "intervention": {
+          "original": {
+            "max_node_residual_W": 5.483613563228573e-11,
+            "max_global_residual_W": 1.1440093317105493e-10,
+            "max_internal_sum_W": 2.9753977059954195e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 2.2026824808563106e-13,
+          "max_nodal_residual_W": 4.425615429681784e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 4.683712677674869e-9
+        },
+        "control": {
+          "original": {
+            "max_node_residual_W": 3.177547114319168e-11,
+            "max_global_residual_W": 5.433376459876995e-11,
+            "max_internal_sum_W": 1.865174681370263e-14,
+            "steps": 40,
+            "nodes": 85,
+            "physiological_validation": false
+          },
+          "steps": 40,
+          "nodes": 85,
+          "max_independent_temperature_difference_K": 5.400124791776761e-13,
+          "max_nodal_residual_W": 3.3516300845803926e-11,
+          "max_global_residual_W": 8.111518156408057e-11,
+          "max_energy_error_J": 1.1901563794358059e-8
+        },
+        "max_difference_nodal_residual_W": 4.0877579099429795e-11,
+        "max_difference_energy_error_J": 1.149510353570804e-8,
+        "max_common_past_temperature_difference_K": 0
+      },
+      "peak_difference": {
+        "magnitude_K": 0.5675618432513829,
+        "time_s": 480,
+        "node_id": "JOS3:RFoot:sfvein"
+      },
+      "final_difference_energy_J": -7387.837669834165,
+      "final_skin_difference_max_K": 0.508740393275211,
+      "preserved_other_readings": true,
+      "restore_byte_exact": true,
+      "world_time_s": null
+    }
+  ],
+  "invalid_requests_refused": 12,
+  "all_pairs_restore_byte_exact": true,
+  "other_modules_unchanged": true,
+  "new_model_fit": false,
+  "experimental_validation": false,
+  "exhaustive_continuous_domain_claim": false
+}

@@ -1,0 +1,179 @@
+{
+  "schema": "poly.world-contract/1",
+  "version": "1.0.0",
+  "id": "pilot:eye-light",
+  "title": "Lumière vers rétine — adaptation descriptive du module existant",
+  "mode": "documentary",
+  "context": {
+    "species": "human",
+    "posture": "stand",
+    "scope": "Contrat documentaire de préparation ; aucune simulation biologique exécutée."
+  },
+  "entities": [
+    {
+      "id": "eye:cornea:R",
+      "label": "Cornée de référence droite",
+      "kind": "anatomical_structure",
+      "scale": "organ",
+      "side": "R",
+      "source_identity": "VH_M_cornea_R",
+      "location": {
+        "status": "schematic_region",
+        "frame": "legacy_eye_light_scene",
+        "point": [
+          -0.068,
+          3.308,
+          0.245
+        ],
+        "unit": "poly_normalized"
+      }
+    },
+    {
+      "id": "eye:retina:R",
+      "label": "Rétine de référence droite",
+      "kind": "anatomical_structure",
+      "scale": "organ",
+      "side": "R",
+      "source_identity": "VH_M_retina",
+      "location": {
+        "status": "schematic_region",
+        "frame": "legacy_eye_light_scene",
+        "point": [
+          -0.068,
+          3.307,
+          0.149
+        ],
+        "unit": "poly_normalized"
+      }
+    },
+    {
+      "id": "eye:photoreceptor-population:R",
+      "label": "Population conceptuelle de photorécepteurs",
+      "kind": "population",
+      "scale": "cell",
+      "side": "R",
+      "source_identity": null,
+      "location": {
+        "status": "unknown",
+        "frame": null,
+        "point": null,
+        "unit": "unknown"
+      }
+    }
+  ],
+  "variables": [
+    {
+      "id": "retina:response",
+      "owner": "eye:retina:R",
+      "unit": "dimensionless",
+      "status": "unknown",
+      "value": null,
+      "evidence_refs": []
+    },
+    {
+      "id": "cell:response",
+      "owner": "eye:photoreceptor-population:R",
+      "unit": "dimensionless",
+      "status": "unknown",
+      "value": null,
+      "evidence_refs": []
+    }
+  ],
+  "events": [
+    {
+      "id": "light:arrival",
+      "entity": "eye:cornea:R",
+      "definition": "Arrivée lumineuse sur la cornée ; instant biologique non mesuré ici."
+    },
+    {
+      "id": "light:absorption",
+      "entity": "eye:retina:R",
+      "definition": "Absorption rétinienne représentée ; photorécepteur individuel non localisé."
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "eye:light-path",
+      "kind": "documentary",
+      "participants": [
+        "eye:cornea:R",
+        "eye:retina:R"
+      ],
+      "inputs": [],
+      "outputs": [
+        "retina:response"
+      ],
+      "trigger_events": [
+        "light:arrival"
+      ],
+      "effect_events": [
+        "light:absorption"
+      ],
+      "evidence_refs": [
+        "nei:eye"
+      ],
+      "time": {
+        "kind": "unknown",
+        "start_event": "light:arrival",
+        "end_event": "light:absorption",
+        "value": null,
+        "unit": null,
+        "status": "unknown",
+        "evidence_refs": []
+      },
+      "law": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "nei:eye",
+      "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/how-eyes-work",
+      "kind": "documentation",
+      "scope": "Source éducative héritée du module ; aucun délai ni paramètre quantitatif.",
+      "population": null,
+      "measured_endpoints": []
+    }
+  ],
+  "scale_bridges": [
+    {
+      "id": "eye:organ-cell",
+      "from_entity": "eye:retina:R",
+      "to_entity": "eye:photoreceptor-population:R",
+      "from_scale": "organ",
+      "to_scale": "cell",
+      "direction": "refine",
+      "source_variables": [
+        "retina:response"
+      ],
+      "target_variables": [
+        "cell:response"
+      ],
+      "mappings": [
+        {
+          "source": "retina:response",
+          "target": "cell:response",
+          "transform": "unavailable"
+        }
+      ],
+      "status": "unresolved",
+      "conservation_claimed": false,
+      "limits": "La scène ne permet pas de reconstruire des cellules ou leur réponse."
+    }
+  ],
+  "presentation": {
+    "clock": "display_only",
+    "period_seconds": 8,
+    "no_biological_time": true
+  },
+  "provenance": [
+    {
+      "path": "web/eye-light.js",
+      "sha256": "fd7b571fefb7869a2bb10ca66233f8eef6cc00b666dabc17089af479029ebd94"
+    }
+  ],
+  "limits": [
+    "La validité du contrat ne valide ni la physiologie ni les localisations.",
+    "Cycle affiché de8s uniquement pédagogique ; aucun délai biologique déduit.",
+    "Points copiés du schéma source ; réfraction et réponse électrique non calculées."
+  ]
+}

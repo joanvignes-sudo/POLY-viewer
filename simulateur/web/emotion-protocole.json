@@ -1,0 +1,66 @@
+{
+  "schema": "poly.emotion-protocol.v1",
+  "source": "https://www.nature.com/articles/npp2017154",
+  "doi": "10.1038/npp.2017.154",
+  "preexisting_qualification_sha256": "1a8670f2aca5979842a964fa774c592594b17ca52290d144b290626f77cbf89e",
+  "participants": 23,
+  "raw_data_imported": false,
+  "physiological_model": false,
+  "clock": "scan seconds; documentary protocol windows only",
+  "windows": [
+    {
+      "id": "baseline",
+      "label": "Référence",
+      "start_s": 0,
+      "end_s": 60
+    },
+    {
+      "id": "peak",
+      "label": "Fenêtre de pic",
+      "start_s": 80,
+      "end_s": 140
+    },
+    {
+      "id": "recovery",
+      "label": "Récupération",
+      "start_s": 160,
+      "end_s": 240
+    }
+  ],
+  "boundary_convention": "half-open display windows, final 240 s included; not a claim about author sample inclusion",
+  "intervention_start_s": 60,
+  "channels": [
+    {
+      "id": "physiology",
+      "label": "Physiologie cardiorespiratoire",
+      "sampling": "40 Hz",
+      "meaning": "mesures périphériques ; aucune courbe individuelle importée"
+    },
+    {
+      "id": "dial",
+      "label": "Molette des sensations",
+      "sampling": "fréquence exacte non qualifiée ici",
+      "meaning": "intensité globale des sensations cardiaques et respiratoires ; pas une note continue d’émotion"
+    },
+    {
+      "id": "asl",
+      "label": "ASL",
+      "sampling": "TR 4 s, alternance label/contrôle",
+      "meaning": "signal hémodynamique indirect ; pas une mesure neuronale à 40 Hz"
+    },
+    {
+      "id": "emotion",
+      "label": "Émotion rapportée",
+      "sampling": "après acquisition ; instant exact non importé",
+      "meaning": "évaluation différée ; aucune interpolation sur la frise"
+    }
+  ],
+  "limits": [
+    "Comparaison avec contrôle salin, répétitions et contexte d’attente à conserver.",
+    "Ces fenêtres ne sont pas des délais de propagation nerveuse.",
+    "Les associations régionales ne révèlent pas un trajet afférent complet.",
+    "Aucune variation chimique universelle ou émotion individuelle prédite.",
+    "Absences de résultats et analyses exploratoires sont détaillées dans la qualification existante."
+  ],
+  "qualification": "../heritage/documentation/etudes-humaines/02_HASSANPOUR.md"
+}

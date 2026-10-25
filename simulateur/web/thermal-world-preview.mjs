@@ -1,0 +1,38 @@
+const canonical=x=>JSON.stringify(sort(x));const sort=x=>Array.isArray(x)?x.map(sort):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,sort(x[k])])):x;
+const TOKEN=Symbol();
+export class ThermalWorldPreview{
+ #entries;#history=[];
+ constructor(entries,token){if(token!==TOKEN)throw Error('Utiliser la qualification des sources.');this.#entries=entries;}
+ static async create(runs,qualification,verify){
+  if(typeof verify!=='function')throw Error('Vérificateur natif requis.');const entries={};
+  for(const [key,data]of Object.entries(runs)){const copy=structuredClone(data),receipt=verify(copy,qualification),bytes=new TextEncoder().encode(canonical(copy)),hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');entries[key]={data:copy,receipt,hash};}
+  return new ThermalWorldPreview(entries,TOKEN);
+ }
+ #build(key,index){
+  const e=this.#entries[key];if(!e||!Number.isInteger(index)||index<0||index>=e.data.steps.length)throw Error('État natif inconnu.');const d=e.data,s=d.steps[index],ev='T14:JOS3:model-documentation',environment='T14:environment';
+  const location=()=>({status:'unknown',frame:null,point:null,unit:'unknown'});
+  const world={schema:'poly.world-contract/1',version:'1.0.0',id:d.world_id,title:'Candidat thermique natif · '+d.run_id,mode:'quantitative_candidate',context:{species:'human',posture:'stand',scope:'Human thermoregulation model reference profile; not an observed participant, geometry registration or global physiological rest.'},
+   entities:[...d.nodes.map(n=>({id:n.id,label:n.id,kind:'compartment',scale:'body',side:'U',source_identity:n.id,location:location()})),{id:environment,label:'Frontières imposées pendant l’intervalle précédent',kind:'concept',scale:'body',side:'not_applicable',source_identity:null,location:location()}],
+   variables:[...d.nodes.map((n,i)=>({id:n.id+':temperature',owner:n.id,unit:'degC',status:'modelled',value:s.temperature_after_C[i],evidence_refs:[ev]})),...['air_C','radiant_C'].map(k=>({id:'T14:'+k+'_previous_step',owner:environment,unit:'degC',status:'imposed',value:s[k],evidence_refs:[ev]}))],events:[],mechanisms:[],scale_bridges:[],
+   evidence:[{id:ev,url:'https://doi.org/10.1016/j.enbuild.2020.110575',kind:'documentation',scope:'JOS-3 model and pinned source code; not timing or temperatures measured in this participant.',population:null,measured_endpoints:[]}],presentation:{clock:'display_only',period_seconds:8,no_biological_time:true},provenance:[{path:'canonical:T13:'+d.run_id,sha256:e.hash},{path:'T4:initial-state',sha256:d.initial_state_sha256}],
+   limits:['Quantitative candidate only; no physiological execution or avatar write.','Thermal module projection only; not a replacement for the complete shared world.','All compartments remain at whole-body model scale; unknown atlas coordinates and side are preserved.','Native modeled step ['+s.start_s+','+s.end_s+') s; no global or biological clock mapping.','Capacities J/K and powers W remain in the exact T13 sidecar; P1 units are not extended or relabelled.','Environmental inputs describe the preceding native interval, not a new current-world boundary command.','No events, anatomical trajectories, delays or executable mechanisms are generated.']};
+  return {schema:'poly.thermal-world-preview.v1',source_key:key,source:{run_id:d.run_id,canonical_sha256:e.hash},step_index:index,native_clock:{basis:'native_model_elapsed',state_at_s:s.end_s,interval_start_s:s.start_s,world_time_s:null},p1_world:world,numerical_receipt:structuredClone(e.receipt),ledger_reference:{schema:d.schema,canonical_sha256:e.hash,step_index:index,capacities_unit:'J/K',power_unit:'W'},physiological_write:false,avatar_write:false,global_rest_received:false};
+ }
+ prepare(key,index){const next=this.#build(key,index),last=this.#history.at(-1);if(!last||last.key!==key||last.index!==index){this.#history.push({key,index});if(this.#history.length>32)this.#history.shift();}return next;}
+ read(){const s=this.#history.at(-1);return s?this.#build(s.key,s.index):null;}
+ undo(){if(this.#history.length>1)this.#history.pop();return this.read();}
+ get canUndo(){return this.#history.length>1;}
+ save(){const r=this.read();if(!r)throw Error('Aucun instantané préparé.');return JSON.stringify(r,null,2);}
+ restore(text){if(typeof text!=='string'||text.length>250000)throw Error('Instantané trop volumineux ou invalide.');const d=JSON.parse(text),expected=this.#build(d?.source_key,d?.step_index);if(canonical(d)!==canonical(expected))throw Error('Instantané altéré ou source différente.');return this.prepare(d.source_key,d.step_index);}
+ commit(){throw Error('P1 ne dispose pas d’un adaptateur d’exécution physiologique reçu. Le candidat reste un aperçu réversible.');}
+}
+export async function mountThermalWorldPreview(host,runs,qualification,verify,getSelection){
+ const panel=document.createElement('section');panel.id='thermal-world-preview';panel.innerHTML='<h2>Raccord P1 · instantané candidat</h2><p>Préparer les 85 températures de modèle dans le contrat P1 existant. Aucun lancement de mécanisme, aucune écriture physiologique ou anatomique. Les bilans T13 restent conservés à côté.</p><button id="preview-prepare">Préparer cet état natif dans P1</button><button id="preview-undo" disabled>Revenir au candidat précédent</button><button id="preview-export" disabled>Exporter le candidat P1</button><button id="preview-commit">Vérifier le droit d’exécution</button><details><summary>Reprendre un candidat vérifié</summary><textarea id="preview-input" aria-label="Instantané candidat P1 JSON" maxlength="250000" style="width:100%;min-height:100px"></textarea><button id="preview-restore">Vérifier et reprendre le candidat</button></details><p id="preview-status" role="status">Aucun candidat préparé.</p><p id="preview-summary"></p>';
+ host.append(panel);const $=id=>panel.querySelector('#'+id),preview=await ThermalWorldPreview.create(runs,qualification,verify);
+ const draw=()=>{const r=preview.read();$('preview-undo').disabled=!preview.canUndo;$('preview-export').disabled=!r;if(r)$('preview-summary').textContent=`${r.p1_world.id} · ${r.p1_world.entities.length} entités, ${r.p1_world.variables.length} variables ; état thermique natif à ${r.native_clock.state_at_s} s, temps global inconnu. Source ${r.source.run_id} · empreinte canonique ${r.source.canonical_sha256}. Localisation anatomique inconnue ; statut quantitative_candidate.`;};
+ $('preview-prepare').onclick=()=>{try{const {key,index}=getSelection();preview.prepare(key,index);draw();$('preview-status').textContent='Candidat préparé ; les lecteurs, la scène et le noyau P2 ne sont pas modifiés.';}catch(e){$('preview-status').textContent='Préparation refusée : '+e.message;}};
+ $('preview-undo').onclick=()=>{preview.undo();draw();$('preview-status').textContent='Candidat précédent restauré ; état natif et provenance conservés.';};
+ $('preview-export').onclick=()=>{const url=URL.createObjectURL(new Blob([preview.save()],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='POLY_T14_candidat_thermique_P1.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+ $('preview-restore').onclick=()=>{try{preview.restore($('preview-input').value);draw();$('preview-status').textContent='Candidat régénéré et repris depuis les sources exactes ; aucune exécution.';}catch(e){$('preview-status').textContent='Reprise refusée : '+e.message+' Le candidat précédent est conservé.';}};
+ $('preview-commit').onclick=()=>{try{preview.commit();}catch(e){$('preview-status').textContent=e.message;}};
+}

@@ -1,0 +1,102 @@
+{
+  "schema": "poly.emdr-protocol.v1",
+  "source": {
+    "doi": "10.1371/journal.pone.0045753",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0045753",
+    "xml_sha256": "1e2ff5790e934a1e53be898a556286b177ae740431c652aac50746d9e8762403",
+    "copyright": "Pagani et al. 2012",
+    "license": "Creative Commons Attribution; version not established in inspected XML"
+  },
+  "groups": [
+    {
+      "id": "patients",
+      "n": 10,
+      "visits": [
+        "T0",
+        "T1"
+      ],
+      "repeated_people": true
+    },
+    {
+      "id": "controls",
+      "n": 10,
+      "visits": [
+        "T0"
+      ],
+      "repeated_people": false
+    }
+  ],
+  "stages": [
+    {
+      "id": "rest-start",
+      "title": "Repos initial",
+      "observable": "EEG, yeux ouverts puis fermés",
+      "duration_s": null
+    },
+    {
+      "id": "script",
+      "title": "Récit autobiographique",
+      "observable": "EEG pendant l’écoute, yeux fermés",
+      "duration_s": null
+    },
+    {
+      "id": "rest-second",
+      "title": "Deuxième repos",
+      "observable": "EEG, yeux fermés",
+      "duration_s": null
+    },
+    {
+      "id": "emdr",
+      "title": "Périodes EMDR",
+      "observable": "EEG et suivi oculaire horizontal ; périodes de stimulation sélectionnées",
+      "duration_s": null
+    },
+    {
+      "id": "rest-final",
+      "title": "Repos final",
+      "observable": "EEG",
+      "duration_s": null
+    }
+  ],
+  "acquisition": {
+    "eeg_channels": 37,
+    "sample_rate_Hz": 256,
+    "horizontal_eog": true,
+    "hardware_highpass_Hz": 0.099,
+    "hardware_lowpass_Hz": 115.2
+  },
+  "preparation": {
+    "format": "EDF",
+    "retained_condition": "bilateral stimulation periods",
+    "removed_eye_movements_per_set": {
+      "first": 4,
+      "last": 2
+    },
+    "concatenated_duration_s": 180,
+    "continuous_session": false,
+    "artifact_handling": "visual/manual exclusion and ICA-based non-cerebral component rejection",
+    "observed_sample_count": null
+  },
+  "source_estimation": {
+    "method": "eLORETA",
+    "template": "MNI152",
+    "grid_voxel_size_mm": 5,
+    "direct_cell_observation": false
+  },
+  "availability": {
+    "xml_supplement_count": 0,
+    "data_availability_section_found": false,
+    "raw_eeg_imported": false,
+    "raw_eeg_license_qualified": false
+  },
+  "physiological_model": false,
+  "avatar_coupled": false,
+  "individual_therapeutic_prediction": false,
+  "unknowns": [
+    "Individual stage durations and event timestamps",
+    "EDF recordings and channel metadata",
+    "Artifact rejection decisions and components",
+    "Raw data reuse conditions",
+    "Clinical and source-estimation results reproducibility without original signals"
+  ]
+}
