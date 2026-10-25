@@ -1,0 +1,8 @@
+import {createAttachmentEngine,STATUS_LABELS} from './attachment-engine.mjs';
+let promise;
+function load(){return promise ||= fetch('../data/attachment-catalogue.json').then(r=>{if(!r.ok)throw Error('catalogue');return r.json()}).then(createAttachmentEngine)}
+export function createAttachmentPanel(card,layer){
+  const host=document.createElement('section');host.className='attachment-qualification';host.style.cssText='margin:12px 0;padding:12px;border:1px solid #6b9a95;border-radius:8px';card.append(host);
+  let current=0;
+  return {async show(id){const sequence=++current;host.textContent='Qualification des attaches…';try{const engine=await load();if(sequence!==current)return;const key=layer+':'+id,s=engine.surface(key);host.replaceChildren();const p=document.createElement('p');p.textContent=s?`${engine.relationsFor(key).filter(r=>r.status==='documented_region').length} relations régionales documentées · insertion 3D non localisée · placement estimé.`:'Surface absente du registre ; attache non qualifiée.';host.append(p);for(const r of engine.relationsFor(key).filter(r=>r.status!=='unreviewed_description')){const p=document.createElement('p');p.textContent=STATUS_LABELS[r.status]+' · '+r.target.label;host.append(p)}const a=document.createElement('a');a.textContent='Rattachements · preuves, graphe et audit du maillage →';a.href='attachments.html#surface='+encodeURIComponent(key);host.append(a)}catch{if(sequence===current)host.textContent='Registre des attaches indisponible ; aucune qualification supplémentaire affichée.'}}};
+}

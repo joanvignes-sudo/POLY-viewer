@@ -1,0 +1,29 @@
+name: Attachment qualification gates
+on:
+  push:
+    branches: [main, feat/whole-body-attachments]
+  pull_request:
+jobs:
+  attachments:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy
+      - run: python -m unittest discover -s simulateur/tests -p 'test_*.py'
+      - run: python simulateur/scripts/build_attachment_catalogue.py
+      - run: git diff --exit-code -- simulateur/data/attachment-catalogue.json
+      - run: node --test simulateur/tests/attachment-engine.test.mjs
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - name: Desktop and mobile browser checks
+        env:
+          POLY_BROWSER_CHANNEL: chromium
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/poly-http.log 2>&1 &
+          node simulateur/tests/attachments-browser.cjs
