@@ -153,7 +153,7 @@ def main():
                 m=disp[vidx]
                 obj={"role":tip_name,"muscle_vertex_index":vidx,
                      "muscle_display_xyz":[round(float(x),6) for x in m],
-                     "candidate_bone_id":None,"bone_vertex_index":None,
+                     "candidate_bone_id":None,"bone_source_object":None,"bone_vertex_index":None,
                      "bone_source_xyz":None,"rest_distance":None,
                      "status":"unresolved_no_qualified_bone_target"}
                 if pool:
@@ -163,7 +163,7 @@ def main():
                     obj["rest_distance"]=round(float(gap),6)
                     if gap<=LIMIT:
                         k=int(vertex_ids[j])
-                        obj.update(candidate_bone_id=b["bone_id"],
+                        obj.update(candidate_bone_id=b["bone_id"],bone_source_object=b.get("source_object"),
                                    bone_vertex_index=k,
                                    bone_source_xyz=[round(float(x),7) for x in np.asarray(b["positions"]).reshape(-1,3)[k]],
                                    status="illustrative_bone_surface_proxy_unvalidated")
