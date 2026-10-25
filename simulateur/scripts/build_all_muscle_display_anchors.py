@@ -118,6 +118,17 @@ def main():
     hand,h1=read_gz(args.input/FILE_NAMES[1])
     skeleton,h2=read_gz(args.input/FILE_NAMES[2])
     fit=json.loads((args.input/"muscle-bone-display-calibration.json").read_text(encoding="utf-8"))
+    iface_path=args.input/"muscle-skeleton-interface.json"
+    iface=json.loads(iface_path.read_text(encoding="utf-8"))
+    documented=defaultdict(list)
+    for rel in iface["relations"]["legacy_documented_bone_regions"]:
+        for surface_id in rel["source_surface_ids"]:
+            documented[surface_id].append({
+                "bone_family":rel["bone_family"],
+                "evidence_source":rel["source"],
+                "anatomical_region_description":rel["anatomical_note"],
+                "status":"documented_region_not_3d_enthesis"
+            })
     raw_bones=[]
     rest=arm_rest(skeleton)
     for b in skeleton["meshes"]:
@@ -171,7 +182,8 @@ def main():
             records.append({"id":layer+":"+part["id"],"source_atlas":layer,
                             "source_part_id":part["id"],"side":part.get("side"),
                             "name":part.get("name"),"region":region,
-                            "anchors":entries,"anatomical_origin_xyz":None,
+                            "anchors":entries,"documented_bone_regions":documented.get(layer+":"+part["id"],[]),
+                            "anatomical_origin_xyz":None,
                             "anatomical_insertion_xyz":None,
                             "tendon_segments_measured":False,
                             "anatomical_registration_validated":False})
@@ -180,7 +192,8 @@ def main():
          "provenance":{"input_files":dict(zip(FILE_NAMES,[h0,h1,h2])),
             "placement":"Existing source display transforms and 0.138 regional visual fit",
             "skeletal_rest":"Existing Z-Anatomy rest presentation adaptation for upper arms",
-            "code":"simulateur/scripts/build_all_muscle_display_anchors.py"},
+            "code":"simulateur/scripts/build_all_muscle_display_anchors.py",
+            "documentary_interface_sha256":hashlib.sha256(iface_path.read_bytes()).hexdigest()},
          "meaning":"Two PCA endpoint candidates per source muscle; nearest display bone vertex in a broad regional pool is a graphical tether, NOT an anatomical attachment or tendon.",
          "distance_unit":BOUNDS_MM_NOTE,"distance_limit_display_units":LIMIT,
          "documented_insertion_count":0,"validated_attachment_count":0,
