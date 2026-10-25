@@ -1,0 +1,376 @@
+{
+  "schema": "poly.elbow-surface-audit/1",
+  "method": "source BodyParts3D vertex and triangle topology with AABB enclosure ratios only",
+  "source_file": "forearm-motor-reference.json.gz",
+  "source_gzip_sha256": "d619f1fcb6f85ec38b11cfe92d86a3460eb0454b35791c11128353b4c619bde4",
+  "units": "Original BodyParts3D mesh coordinate units; not transferred to an individual HRA body",
+  "scope_warning": "Bounding-box enclosure ratios are NOT true anatomical muscle/bone volume ratios; open meshes cannot be integrated as closed physical tissue volumes.",
+  "anatomical_registration_validated": false,
+  "dynamic_deformation_validated": false,
+  "cases": [
+    {
+      "id": "biceps_radius",
+      "side_count": 2,
+      "surfaces": [
+        {
+          "source_part_id": "FJ1512",
+          "source_name": "Biceps brachial · chef court · droit",
+          "side": "R",
+          "vertex_count": 1739,
+          "triangle_count": 1856,
+          "boundary_edge_count": 1294,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            77.153,
+            33.1429,
+            262.54
+          ],
+          "bbox_occupancy_source_units_cubed": 671334.25094,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3349",
+          "context_bone_family": "radius",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.745496,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1478",
+          "source_name": "Biceps brachial · chef long · droit",
+          "side": "R",
+          "vertex_count": 1053,
+          "triangle_count": 1426,
+          "boundary_edge_count": 638,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            94.592,
+            41.4831,
+            345.348
+          ],
+          "bbox_occupancy_source_units_cubed": 1355134.98269,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3349",
+          "context_bone_family": "radius",
+          "bbox_muscle_to_bone_enclosure_ratio": 1.504836,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1512M",
+          "source_name": "Biceps brachial · chef court · gauche",
+          "side": "L",
+          "vertex_count": 1743,
+          "triangle_count": 1856,
+          "boundary_edge_count": 1302,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            77.153,
+            33.1439,
+            262.54
+          ],
+          "bbox_occupancy_source_units_cubed": 671354.50669,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3277",
+          "context_bone_family": "radius",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.75195,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1478M",
+          "source_name": "Biceps brachial · chef long · gauche",
+          "side": "L",
+          "vertex_count": 1039,
+          "triangle_count": 1426,
+          "boundary_edge_count": 620,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            94.592,
+            41.4841,
+            345.348
+          ],
+          "bbox_occupancy_source_units_cubed": 1355167.64985,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3277",
+          "context_bone_family": "radius",
+          "bbox_muscle_to_bone_enclosure_ratio": 1.517855,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        }
+      ],
+      "all_surface_volumes_blocked": true
+    },
+    {
+      "id": "triceps_ulna",
+      "side_count": 2,
+      "surfaces": [
+        {
+          "source_part_id": "FJ1480",
+          "source_name": "Triceps brachial · chef médial · droit",
+          "side": "R",
+          "vertex_count": 620,
+          "triangle_count": 832,
+          "boundary_edge_count": 378,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            59.59,
+            25.5627,
+            226.69
+          ],
+          "bbox_occupancy_source_units_cubed": 345312.63631,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3391",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.352803,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1477",
+          "source_name": "Triceps brachial · chef latéral · droit",
+          "side": "R",
+          "vertex_count": 1678,
+          "triangle_count": 2606,
+          "boundary_edge_count": 826,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            53.549,
+            48.7126,
+            256.16
+          ],
+          "bbox_occupancy_source_units_cubed": 668196.18222,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3391",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.68269,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1479",
+          "source_name": "Triceps brachial · chef long · droit",
+          "side": "R",
+          "vertex_count": 1105,
+          "triangle_count": 1588,
+          "boundary_edge_count": 576,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            81.771,
+            45.3426,
+            265.51
+          ],
+          "bbox_occupancy_source_units_cubed": 984434.01429,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3391",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 1.005787,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1480M",
+          "source_name": "Triceps brachial · chef médial · gauche",
+          "side": "L",
+          "vertex_count": 617,
+          "triangle_count": 832,
+          "boundary_edge_count": 374,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            59.589,
+            25.5627,
+            226.69
+          ],
+          "bbox_occupancy_source_units_cubed": 345306.8415,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3286",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.352893,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1477M",
+          "source_name": "Triceps brachial · chef latéral · gauche",
+          "side": "L",
+          "vertex_count": 1676,
+          "triangle_count": 2606,
+          "boundary_edge_count": 824,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            53.549,
+            48.7126,
+            256.16
+          ],
+          "bbox_occupancy_source_units_cubed": 668196.18222,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3286",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.682876,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1479M",
+          "source_name": "Triceps brachial · chef long · gauche",
+          "side": "L",
+          "vertex_count": 1109,
+          "triangle_count": 1588,
+          "boundary_edge_count": 582,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            81.771,
+            45.3425,
+            265.51
+          ],
+          "bbox_occupancy_source_units_cubed": 984431.84319,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3286",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 1.006059,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        }
+      ],
+      "all_surface_volumes_blocked": true
+    },
+    {
+      "id": "pronator_radius",
+      "side_count": 2,
+      "surfaces": [
+        {
+          "source_part_id": "FJ1503",
+          "source_name": "Carré pronateur droit",
+          "side": "R",
+          "vertex_count": 2257,
+          "triangle_count": 1838,
+          "boundary_edge_count": 1922,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            45.673,
+            23.629,
+            50.116
+          ],
+          "bbox_occupancy_source_units_cubed": 54085.5539,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3349",
+          "context_bone_family": "radius",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.06006,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1503M",
+          "source_name": "Carré pronateur gauche",
+          "side": "L",
+          "vertex_count": 2259,
+          "triangle_count": 1838,
+          "boundary_edge_count": 1920,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            45.673,
+            23.63,
+            50.116
+          ],
+          "bbox_occupancy_source_units_cubed": 54087.84285,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3277",
+          "context_bone_family": "radius",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.060581,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        }
+      ],
+      "all_surface_volumes_blocked": true
+    },
+    {
+      "id": "pronator_ulna",
+      "side_count": 2,
+      "surfaces": [
+        {
+          "source_part_id": "FJ1503",
+          "source_name": "Carré pronateur droit",
+          "side": "R",
+          "vertex_count": 2257,
+          "triangle_count": 1838,
+          "boundary_edge_count": 1922,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            45.673,
+            23.629,
+            50.116
+          ],
+          "bbox_occupancy_source_units_cubed": 54085.5539,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3391",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.055259,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        },
+        {
+          "source_part_id": "FJ1503M",
+          "source_name": "Carré pronateur gauche",
+          "side": "L",
+          "vertex_count": 2259,
+          "triangle_count": 1838,
+          "boundary_edge_count": 1920,
+          "nonmanifold_edge_count": 0,
+          "watertight_candidate": false,
+          "bbox_extent_source_units": [
+            45.673,
+            23.63,
+            50.116
+          ],
+          "bbox_occupancy_source_units_cubed": 54087.84285,
+          "actual_muscle_volume": null,
+          "validated_enthesis_xyz": null,
+          "validated_dynamic_strain": null,
+          "context_bone_id": "FJ3286",
+          "context_bone_family": "ulna",
+          "bbox_muscle_to_bone_enclosure_ratio": 0.055276,
+          "volume_ratio_biological": null,
+          "bone_is_separately_registered": false
+        }
+      ],
+      "all_surface_volumes_blocked": true
+    }
+  ]
+}
