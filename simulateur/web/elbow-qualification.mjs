@@ -27,17 +27,19 @@ export async function createElbowQualificationPanel(card){
     #elbow-anatomy-qualification a{color:#a1f1df;text-underline-offset:2px}
   `;
   document.head.append(style);
-  let qualifications=null,audit=null;
+  let qualifications=null,audit=null,motion=null;
   try{
-    const [q,a]=await Promise.all([
+    const [q,a,m]=await Promise.all([
       fetch('../data/elbow-anatomical-qualifications.json').then(r=>{if(!r.ok)throw Error('qualification');return r.json()}),
-      fetch('../data/elbow-surface-audit.json').then(r=>{if(!r.ok)throw Error('mesh audit');return r.json()})
+      fetch('../data/elbow-surface-audit.json').then(r=>{if(!r.ok)throw Error('mesh audit');return r.json()}),
+      fetch('../data/elbow-motion-display-audit.json').then(r=>{if(!r.ok)throw Error('motion audit');return r.json()})
     ]);
-    qualifications=q;audit=a;
+    qualifications=q;audit=a;motion=m;
   }catch(e){
     console.warn('POLY elbow qualification unavailable; no unsupported claims displayed',e);
   }
   const auditByCase=new Map((audit?.cases||[]).map(c=>[c.id,c]));
+  const motionByPart=new Map((motion?.results||[]).map(x=>[x.part_id,x]));
   const byPart=new Map();
   for(const c of qualifications?.cases||[]){
     for(const partId of c.source_surface_ids){
@@ -62,6 +64,11 @@ export async function createElbowQualificationPanel(card){
         if(Number.isFinite(row.bbox_muscle_to_bone_enclosure_ratio))
           article.append(node('p','Indice géométrique boîte muscle/os : '+row.bbox_muscle_to_bone_enclosure_ratio.toFixed(3)+' (encombrement AABB uniquement, pas un rapport de volumes tissulaires).'));
       }
+      const deformation=motionByPart.get(partId);
+      if(deformation){
+        const pct=(100*deformation.rms_relative_mesh_edge_length_change).toFixed(2);
+        article.append(node('p',partId.endsWith('M')?'Animation locale du coude gauche non pilotée par ce test ; variation des arêtes : 0 % (absence de flexion, pas rigidité biologique).':'Flexion illustrative du coude droit à 60° : variation quadratique moyenne des longueurs d’arêtes '+pct+' % (effet graphique, pas déformation des fibres ou des tendons).'));
+      }
       article.append(node('p',c.notes));
       const a=node('a','Étude ou référence anatomique');
       a.href=c.source_url;a.target='_blank';a.rel='noopener noreferrer';
@@ -76,5 +83,5 @@ export async function createElbowQualificationPanel(card){
       dynamic_constraints_validated:0
     };
   }
-  return {show,available:!!qualifications&&!!audit};
+  return {show,available:!!qualifications&&!!audit&&!!motion};
 }
