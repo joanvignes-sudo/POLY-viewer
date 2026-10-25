@@ -1,3 +1,11 @@
+# POLY v0.139.2 — coude : qualification anatomique
+
+[Explorer POLY](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.139.2) · [Rapport scientifique](simulateur/reports/ELBOW_QUALIFICATION_2026-10-25.md) · [Notice de version](RELEASE_v0.139.2.md)
+
+Étape expérimentale : insertions décrites dans la littérature, géométries ouvertes et diagnostic de déformation illustrative du biceps, triceps et carré pronateur. **Aucune enthèse 3D, aucun volume musculaire physiologique ni déformation biomécanique n'est validé.** Le chantier C4 de la version 0.139.1 reste intact.
+
+---
+
 # POLY v0.138.0
 
 [Ouvrir le corps et le recalage musculaire](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.138.0) · [Méthode, sources et limites](simulateur/reports/MUSCLE_BONE_DISPLAY_FIT_2026-10-25.md)
