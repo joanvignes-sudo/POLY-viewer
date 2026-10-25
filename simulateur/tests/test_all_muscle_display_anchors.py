@@ -47,6 +47,7 @@ class WholeBodyAnchoringTest(unittest.TestCase):
                     good+=1
                     self.assertTrue(a["candidate_bone_id"].startswith("BONE:"))
                     self.assertIsInstance(a["bone_vertex_index"],int)
+                    self.assertIsInstance(a["bone_source_object"],str)
                     self.assertGreaterEqual(a["bone_vertex_index"],0)
                     self.assertEqual(len(a["bone_source_xyz"]),3)
                     self.assertLessEqual(a["rest_distance"],.26+0.000002)
@@ -72,14 +73,14 @@ class WholeBodyAnchoringTest(unittest.TestCase):
         for part in src["forearm-motor-reference.json.gz"]["parts"]:muscles["body:"+part["id"]]=part
         for part in src["hand-muscles-reference.json.gz"]["parts"]:
             if part.get("kind")=="muscle":muscles["hand:"+part["id"]]=part
-        bones={part["bone_id"]:part for part in src["skeleton-source-206.json.gz"]["meshes"]}
+        bones={(part["bone_id"],part["source_object"]):part for part in src["skeleton-source-206.json.gz"]["meshes"]}
         for rec in self.records:
             raw=muscles[rec["id"]]
             n=len(raw["positions"])//3
             for a in rec["anchors"]:
                 self.assertLess(a["muscle_vertex_index"],n)
                 if not a["candidate_bone_id"]:continue
-                bone=bones[a["candidate_bone_id"]]
+                bone=bones[(a["candidate_bone_id"],a["bone_source_object"])]
                 k=a["bone_vertex_index"]
                 self.assertLess(k,len(bone["positions"])//3)
                 for v,u in zip(a["bone_source_xyz"],bone["positions"][3*k:3*k+3]):
