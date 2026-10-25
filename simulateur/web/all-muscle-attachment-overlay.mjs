@@ -91,7 +91,7 @@ export async function createFullMuscleAttachmentOverlay({scene,uniforms,avatarBo
       (i===0?'Extrémité A':'Extrémité B')+' : '+a.candidate_bone_id+' (écart '+a.rest_distance.toFixed(3)+' unité POLY, simple proximité)' :
       (i===0?'Extrémité A':'Extrémité B')+' : non résolue (distance '+(a.rest_distance===null?'inconnue':a.rest_distance.toFixed(3))+').'
     );
-    explanation.textContent=rec.name+' — '+rec.region+'. '+lines.join(' ')+' Aucun tendon ni point d’enthèse attesté.';
+    explanation.textContent=rec.name+' — '+rec.region+'. '+lines.join(' ')+' Aucun point d’insertion ni trajet tendineux localisé dans cet avatar.';
   }
   let dirty=true,lastPose='',lastSelected='',lastActiveCount=0;
   function renderSelection(){
