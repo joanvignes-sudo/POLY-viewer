@@ -34,6 +34,10 @@ Les 942 candidats ne sont **pas** des attaches anatomiques identifiées : certai
 
 Le système de visualisation permet d'inspecter une seule surface, une région ou toute la collection. Ses traits orange et ses points turquoise sont exclusivement des aides visuelles. Cette visualisation n'est pas une chaîne biomécanique fonctionnelle.
 
+## Conservation des informations anatomiques déjà sourcées
+
+Le registre historique de POLY contient **12 relations muscles → régions osseuses** citées, touchant **28 surfaces** de cette collection (30 associations surface/relation, puisque certains muscles possèdent deux relations). Elles sont reprises dans les enregistrements sous `documented_bone_regions` avec leur source, séparément des deux liens de proximité. Exemple : l'insertion distale du biceps sur la tubérosité radiale peut être documentée, alors que le sommet musculaire le plus proche des os du visualiseur est situé auprès de l'humérus. **Le système n'assimile jamais cet humérus à l'insertion du biceps.**
+
 ## Distinction essentielle
 
 - **Relation documentée :** connaissance d'une région d'origine, d'insertion ou d'une continuité tendineuse par des sources anatomiques ; registre historique conservé et séparé.
