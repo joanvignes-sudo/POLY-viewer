@@ -67,7 +67,14 @@ export async function createFullMuscleAttachmentOverlay({scene,uniforms,avatarBo
   const status=txt('p','');status.id=PREFIX+'status';status.setAttribute('aria-live','polite');status.style.cssText='font-size:12px;color:#a8ebd7';box.append(status);
   const parent=document.querySelector('main > aside:first-child') || document.querySelector('main aside');
   if(!parent)throw Error('Volet explorateur manquant');
-  parent.append(box);
+  const nav=parent.querySelector('.workbench-nav');
+  if(nav){
+    const jump=txt('button','Ancrages · 480');
+    jump.id=PREFIX+'jump';
+    jump.onclick=()=>{toggle.checked=true;dirty=true;box.scrollIntoView({block:'nearest'});};
+    nav.append(jump);
+    nav.after(box);
+  }else parent.append(box);
   const chosen={id:all.has('body:FJ1512')?'body:FJ1512':data.records[0].id};
   function refreshOptions(){
     const phrase=search.value.trim().toLocaleLowerCase('fr');
