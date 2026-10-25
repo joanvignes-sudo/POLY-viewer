@@ -52,7 +52,7 @@ export async function createElbowQualificationPanel(card){
     const cases=byPart.get(partId)||[];
     host.hidden=cases.length===0;
     if(!cases.length)return;
-    host.append(node('h4','Coude — qualification anatomique'));
+    host.append(node('h4','Bras et avant-bras — qualification anatomique'));
     host.append(node('p','Données humaines publiées et maillages de référence : aucune enthèse localisée en 3D, aucun volume musculaire réel, aucune déformation validée.','elbow-status'));
     for(const c of cases){
       const article=node('article');
