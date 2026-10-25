@@ -62,6 +62,16 @@ class WholeBodyAnchoringTest(unittest.TestCase):
         self.assertEqual(self.data["summary"]["two_visual_bone_proxies"],466)
         self.assertEqual(self.data["summary"]["at_least_one_visual_bone_proxy"],476)
 
+    def test_documentary_region_evidence_separate_from_surface_proximity(self):
+        known=[r for r in self.records if r["documented_bone_regions"]]
+        self.assertEqual(len(known),28)
+        self.assertEqual(sum(len(r["documented_bone_regions"]) for r in known),30)
+        for r in known:
+            for relation in r["documented_bone_regions"]:
+                self.assertEqual(relation["status"],"documented_region_not_3d_enthesis")
+                self.assertTrue(relation["evidence_source"].startswith("https://"))
+                self.assertIsNone(r["anatomical_insertion_xyz"])
+
     def test_source_hashes_and_indices_when_sources_available(self):
         src={}
         for p,sha in self.data["provenance"]["input_files"].items():
