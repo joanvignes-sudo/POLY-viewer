@@ -10,6 +10,7 @@ import {createSession,validateSession} from './poly-atelier-session.mjs';
 const $=id=>document.getElementById(id);
 
 mountAtlasEmbed($('body-frame'));
+$('load-body-reference').onclick=()=>{document.body.classList.remove('avatar-deferred');const frame=$('body-frame');frame.hidden=false;if(!frame.getAttribute('src'))frame.src=frame.dataset.src;$('load-body-reference').hidden=true;};
 
 let data=null,run=false,raf=0,lastStamp=null,clock=60,fractional=0;
 

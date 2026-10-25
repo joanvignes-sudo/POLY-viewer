@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="data:,"><title>POLY · Atelier fonctionnel</title>
-<link rel="stylesheet" href="poly-atelier.css"><link rel="stylesheet" href="poly-atelier-theme.css?v=design-20261025">
+<link rel="stylesheet" href="poly-atelier.css?v=0.141.0"><link rel="stylesheet" href="poly-atelier-theme.css?v=design-20261025">
 </head>
-<body>
+<body class="avatar-deferred">
 <a class="skip" href="#atelier">Aller à l'atelier</a>
 <header>
   <div><strong>POLY</strong><span class="slash"> / ATELIER FONCTIONNEL</span><small>Bêta · atelier de simulation</small></div>
-  <nav><a href="index.html">Avatar seul</a><a href="recherche.html">Travaux et expériences</a><a href="couverture.html">Couverture</a><button type="button" id="open-project-followup">Suivi du projet</button></nav>
+  <nav><a href="cerveau.html">Cerveau & conscience</a><a href="index.html">Corps entier</a><a href="recherche.html">Travaux et expériences</a><a href="couverture.html">Couverture</a><button type="button" id="open-project-followup">Suivi du projet</button></nav>
 </header>
 <div class="intro"><div><h1>Un corps commun. Des chaînes à explorer.</h1><p>Chantier actif : énergétique cérébrale et interactions astrocytes–neurones. Les autres travaux restent disponibles dans Chantiers.</p></div><div class="session-tools"><span class="scope">Dossier actif · Pellerin</span><button id="session-export" type="button">Exporter la séance</button><label class="session-import">Importer une séance <input id="session-file" type="file" accept=".json,application/json"></label><span id="session-status" role="status"></span></div></div>
 <main id="atelier">
  <section class="body-panel" aria-labelledby="body-title">
   <div class="panel-head"><div><span class="eyebrow">01 / Corps de référence</span><h2 id="body-title">Avatar anatomique interactif</h2></div><a href="index.html" target="_blank" rel="noopener">Agrandir ↗</a></div>
-  <iframe id="body-frame" src="index.html?embed=1" title="Vue 3D de POLY avec ses propres commandes anatomiques" loading="eager"></iframe>
-  <p class="frame-note">Rotation, zoom et sélection restent disponibles ici. La carte cellulaire du dossier se consulte à droite.</p>
+  <button id="load-body-reference" type="button">Ouvrir le corps de référence</button><iframe id="body-frame" data-src="index.html?embed=1" hidden title="Vue 3D de POLY avec ses propres commandes anatomiques" loading="lazy"></iframe>
+  <p class="frame-note">Ouvrir la référence seulement si elle est utile : rotation, zoom et sélection restent disponibles. La carte cellulaire du dossier se consulte à droite.</p>
  </section>
  <section class="lab-panel" aria-labelledby="lab-title">
   <div class="panel-head"><div><span class="eyebrow">02 / Laboratoire</span><h2 id="lab-title">Chantier actif et travaux conservés</h2></div></div>
@@ -74,5 +74,5 @@
  </section>
 </main>
 <footer>POLY · Bêta de travail. États saisis, modèles et observations restent identifiés dans leurs dossiers. Sources et hypothèses accessibles depuis chaque chaîne.</footer>
-<script src="../public-assets.js?v=0.140.0&amp;pack=2"></script><script type="module" src="poly-atelier.mjs?v=0.139.1"></script>
+<script src="../public-assets.js?v=0.140.0&amp;pack=2"></script><script type="module" src="poly-atelier.mjs?v=0.141.0"></script>
 </body></html>

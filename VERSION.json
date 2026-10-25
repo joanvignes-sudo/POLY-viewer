@@ -1,9 +1,9 @@
 {
-  "version": "0.140.0",
+  "version": "0.141.0",
   "date": "2026-10-25",
   "entry": "index.html",
-  "release": "RELEASE_v0.140.0.md",
-  "previous_public_version": "0.139.2",
-  "previous_public_commit": "63553a3be1451cef6a13f2c08eee121174136995",
+  "release": "RELEASE_v0.141.0.md",
+  "previous_public_version": "0.140.0",
+  "previous_public_commit": "34afbcdef748aff174bf411969f2b32e5a15b14f",
   "review_version_preserved": "0.128.1"
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.140.0",
+  "version": "0.141.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -652,6 +652,11 @@
       "sha256": "57fd4cc8a9f071a3d8855cc4b1610ee6214e3bc04449dcdcb8e549225e237f69"
     },
     {
+      "path": "RELEASE_v0.141.0.md",
+      "bytes": 652,
+      "sha256": "3a3de5f3ef91b762810dcd583f8f75896059d6ce3dd9e025ce76760eb00095e8"
+    },
+    {
       "path": "RESILIENCE_NEURONES_v0.99.json",
       "bytes": 315,
       "sha256": "03e01fb04ace708dd42d86cee52713ec373936ec3d2d8e2f1f7e743f3978d5c3"
@@ -893,8 +898,8 @@
     },
     {
       "path": "VERSION.json",
-      "bytes": 264,
-      "sha256": "c80a87f022853cb566b25a6e305711053e45183180ad425ea2804d90c6a87529"
+      "bytes": 265,
+      "sha256": "b3b551911f0e45e3f228605f97e976e9f9a134b4781d86c5535d78e13b93575e"
     },
     {
       "path": "accueil-v0.129.0.html",
@@ -29538,8 +29543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 8393,
-      "sha256": "39322d118f4f7e45d601fb701a4e4c0bc5509fee02c436689d3c4a539c8f8075"
+      "bytes": 8457,
+      "sha256": "a14a7341d2addc2a9faa4e5f738cd7d801d4d72f776cb1af8df4d89e19a3d7db"
     },
     {
       "path": "micro.html",
@@ -29733,8 +29738,8 @@
     },
     {
       "path": "simulateur/cogitate/index.html",
-      "bytes": 11380,
-      "sha256": "56e59aa412209c326f21effd7afe4ef623af2382b60c3c32e29a802949ef2e1e"
+      "bytes": 11406,
+      "sha256": "f2a7fc3b531757a8aa68a4441bfc09993048d8d47157fd2966429508797aa90b"
     },
     {
       "path": "simulateur/cogitate/preuves.json",
@@ -30897,6 +30902,26 @@
       "sha256": "d23c12b399cdf3917f8d12ecfb3bec819c254875689aeef80308c25528b49a12"
     },
     {
+      "path": "simulateur/web/cerveau-view.mjs",
+      "bytes": 5946,
+      "sha256": "18387e1eec9dad74d0625bea04dbf95b304f60144d643d56e4abb2eeead707b5"
+    },
+    {
+      "path": "simulateur/web/cerveau.css",
+      "bytes": 4722,
+      "sha256": "259a0f615e92c073ffd6355c4b4c1c78b93e14e5ca148dceed578d0743d90153"
+    },
+    {
+      "path": "simulateur/web/cerveau.html",
+      "bytes": 8200,
+      "sha256": "f1c6150bdadfd2d6e45243a2931b2d4a9ee069020bfa4211f4a380adfdbf8704"
+    },
+    {
+      "path": "simulateur/web/cerveau.mjs",
+      "bytes": 2304,
+      "sha256": "3b494732e297e57c7976b96e0954065cdfb2b03e18fde6dc2e31127cb09c84cd"
+    },
+    {
       "path": "simulateur/web/chain-bridge.mjs",
       "bytes": 8235,
       "sha256": "ed606f55c78fdf2b360ebe12a5f23560c502c26de5d840284a24279799195e24"
@@ -31738,18 +31763,18 @@
     },
     {
       "path": "simulateur/web/poly-atelier.css",
-      "bytes": 9229,
-      "sha256": "634ffecf1c1442a19c233d28fcc8e456c93ea147784137b31025ab20c140bba4"
+      "bytes": 9504,
+      "sha256": "c8ad1019b62889fca5c0790c6c0ac3e83dccbac64376fe3d70a1845b82f5fcce"
     },
     {
       "path": "simulateur/web/poly-atelier.html",
-      "bytes": 8658,
-      "sha256": "48e7bf5c000b3dfdd4e92783d1141c3905e287173181910ce8b5fdbd25bf77f7"
+      "bytes": 8885,
+      "sha256": "91017dae8674de38a85b4ddd352a484bcde1e2e68a3345ea2a3a9b966951dec5"
     },
     {
       "path": "simulateur/web/poly-atelier.mjs",
-      "bytes": 11168,
-      "sha256": "85aca7bd3dea2a0d4c976a37a6e2ebb56c69fea62e3ad23a769f340a180b7abf"
+      "bytes": 11401,
+      "sha256": "9c6d1d0e3c2cde5cbb64f255f8e8b4480a5cef07c1b40f84d4db0557c2bbf0fd"
     },
     {
       "path": "simulateur/web/precomputed-reader-manifest.mjs",
@@ -31808,8 +31833,8 @@
     },
     {
       "path": "simulateur/web/recherche.html",
-      "bytes": 8168,
-      "sha256": "ca19cd7d1cb3e2ea1457c3a212224d5692df7921dc9e5878f08fa1ddc50c238a"
+      "bytes": 8296,
+      "sha256": "baf0df8ff82f9d2d6001a98118193ec668cc537107b40b13e4e08b2015136730"
     },
     {
       "path": "simulateur/web/recovered-membrane.js",
@@ -32212,5 +32237,5 @@
       "sha256": "011e5414701e07131fdee968ce213e1fb52bc488551ef33ab07b6ebb253a1aa8"
     }
   ],
-  "total_bytes": 1070472486
+  "total_bytes": 1070495264
 }
