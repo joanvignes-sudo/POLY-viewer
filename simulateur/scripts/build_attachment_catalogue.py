@@ -24,10 +24,11 @@ def build():
     inputs = ['muscle-catalogue.json.gz', 'muscle-skeleton-interface.json',
               'muscle-integration-ledger.json', 'forearm-motor-reference.json.gz',
               'hand-muscles-reference.json.gz', 'elbow-anatomical-qualifications.json',
-              'recherche/muscles-correspondances-osseuses.json', 'attachment-reviewed-regions.json']
+              'recherche/muscles-correspondances-osseuses.json', 'attachment-reviewed-regions.json',
+              'attachment-reviewed-trunk-pelvis.json']
     provenance = {name: hashlib.sha256((DATA / name).read_bytes() if name.endswith('.gz') else
                   (DATA / name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() for name in inputs}
-    cat, interface, ledger, body, hand, elbow, candidates, reviewed = [read(n) for n in inputs]
+    cat, interface, ledger, body, hand, elbow, candidates, reviewed, trunk_pelvis = [read(n) for n in inputs]
     terms = {str(t['id']): t for t in cat['terms']}
     identities = {s['id']: s for s in interface['entities']['muscle_surface_references']}
     meshes = {**{'body:' + p['id']: p for p in body['parts']},
@@ -51,11 +52,15 @@ def build():
     known = {s['id'] for s in surfaces}
     relations = []
 
-    def add(id, refs, target, role, status, evidence, provenance_path, note='', via=None, group=None):
+    def add(id, refs, target, role, status, evidence, provenance_path, note='', via=None, group=None,
+            term_ids=None, applicability=None):
         # Fail closed: dangling surface IDs must never silently disappear.
-        if not refs or any(r not in known for r in refs):
+        term_ids = list(map(str, term_ids or []))
+        if (not refs and not term_ids) or any(r not in known for r in refs) or any(t not in terms for t in term_ids):
             raise ValueError(f'Unresolved surface(s) in {id}: {refs}')
-        relations.append({'id': id, 'source_surface_ids': sorted(set(refs)), 'target': target,
+        relations.append({'id': id, 'source_surface_ids': sorted(set(refs)), 'source_term_ids': term_ids,
+                          'source_binding': 'surface_name_correspondence' if refs else 'terminology_only',
+                          'applicability': applicability, 'target': target,
                           'via': via, 'role': role, 'documentary_group': group,
                           'status': status, 'confidence': 'regional_source_reviewed' if status == 'documented_region' else 'unverified',
                           'evidence': evidence, 'provenance': {'path': provenance_path, 'sha256': provenance[provenance_path]},
@@ -68,7 +73,17 @@ def build():
             record['role'], 'documented_region',
             [{'url': reviewed['sources'][record['source']], 'locator': record['row'], 'type': 'university_anatomy_table',
               'review_date': reviewed['review_date'], 'species': 'Homo sapiens', 'scope': 'Population-level regional description; atlas identity is a name correspondence'}],
-            inputs[-1], reviewed['scope'], record.get('via'), record.get('group'))
+            inputs[7], reviewed['scope'], record.get('via'), record.get('group'), record['term_ids'])
+    for record in trunk_pelvis['records']:
+        refs = [s['id'] for s in surfaces if set(map(str, record['term_ids'])) & set(s['term_ids'])] if record.get('bind_to_surfaces', True) else []
+        add('trunk-pelvis:' + record['id'], refs,
+            {'kind': record['kind'], 'label': record['target'], 'mesh_ids': []},
+            record['role'], 'documented_region',
+            [{'url': trunk_pelvis['sources'][record['source']], 'locator': record['row'],
+              'type': 'university_anatomy_table', 'review_date': trunk_pelvis['review_date'],
+              'species': 'Homo sapiens', 'scope': 'Description régionale humaine ; identité des surfaces rapprochée par nomenclature, sans validation individuelle.'}],
+            inputs[8], trunk_pelvis['scope'] + ' ' + record.get('note', ''), record.get('via'),
+            record.get('group'), record['term_ids'], record.get('applicability'))
     candidate_refs = {c['muscle_ref'] for c in candidates['relationships']}
     # Latest qualified elbow cases supersede earlier duplicates, preserving their original file.
     for c in elbow['cases']:
@@ -127,25 +142,32 @@ def build():
             for i, v in enumerate(value): collect(v, path + '/' + str(i))
         elif isinstance(value, str) and value.startswith(('https://', 'http://')) and ' ' not in value:
             references.setdefault(value, []).append(path)
-    for name, source in zip(inputs, [cat, interface, ledger, body, hand, elbow, candidates, reviewed]):
+    for name, source in zip(inputs, [cat, interface, ledger, body, hand, elbow, candidates, reviewed, trunk_pelvis]):
         collect(source, name)
-    result = {'schema': 'poly.attachment-catalogue/1', 'release': '0.140.1', 'date': '2026-10-25',
+    term_rows = [{'id': str(t['id']), 'name': t['english'], 'region': t['region'], 'kind': t['kind'],
+                  'surface_ids': [s['id'] for s in surfaces if str(t['id']) in s['term_ids']],
+                  'direct_relation_ids': [r['id'] for r in relations if str(t['id']) in r['source_term_ids']]} for t in cat['terms']]
+    documented_terms = [t for t in term_rows if any(r['status'] == 'documented_region' and r['id'] in t['direct_relation_ids'] for r in relations)]
+    result = {'schema': 'poly.attachment-catalogue/2', 'release': '0.141.1', 'date': '2026-10-28',
               'scope': 'Operational inventory of all known surfaces; selective regional documentary coverage, no physical binding or mechanical constraint.',
               'hash_convention': 'SHA256: gzip exact bytes; UTF-8 JSON with CRLF normalized to LF for cross-platform reproduction.',
               'source_reference_inventory': [{'url': url, 'occurrences': paths, 'qualification': 'inventory_only_not_attachment_evidence'} for url, paths in sorted(references.items())],
               'provenance': provenance, 'surfaces': surfaces, 'relations': relations,
-              'terms': [{'id': str(t['id']), 'name': t['english'], 'region': t['region'], 'kind': t['kind'],
-                         'surface_ids': [s['id'] for s in surfaces if str(t['id']) in s['term_ids']]} for t in cat['terms']],
+              'terms': term_rows,
               'summary': {'surfaces': len(surfaces), 'reference_surfaces': len(cat['surfaces']), 'native_context': len(cat['native']),
                           'audited_meshes': len(meshes), 'relations_by_status': dict(Counter(r['status'] for r in relations)),
                           'documented_surfaces': sum(s['attachment_status'] == 'documented_region' for s in surfaces),
                           'hypothetical_points': 0, 'validated_insertions': 0, 'validated_dynamic_constraints': 0,
-                          'by_region': regions},
+                          'by_region': regions,
+                          'directly_documented_terms': len(documented_terms),
+                          'documented_terms_without_geometry': len([t for t in documented_terms if not t['surface_ids']]),
+                          'terminology_only_relations': len([r for r in relations if not r['source_surface_ids']])},
               'limitations': ['Le nombre de surfaces n’est pas un nombre de muscles individuels.',
                               'Les groupes et chefs partagent des descriptions ; aucune empreinte individuelle n’en est déduite.',
                               'Les géométries natives HRA restent contextuelles ; leur topologie n’est pas auditée ici.',
                               'Les cibles documentaires sans mesh_ids ne désignent aucun maillage ni point 3D.',
-                              'Les origines, terminaisons et continuités sont partielles ; bassin, périnée et muscles viscéraux nécessitent une revue dédiée.',
+                              'Les relations sans surface restent documentaires ; elles ne sont jamais propagées automatiquement aux descendants ou à un groupe global.',
+                              'Tronc et bassin : revue régionale sélective. Faisceaux, variantes périnéales, continuités tendineuses et muscles viscéraux restent incomplets.',
                               'Aucune fermeture topologique ne vaut validation d’un volume biologique ou d’une déformation.']}
     (DATA / 'attachment-catalogue.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(result['summary'], ensure_ascii=False))

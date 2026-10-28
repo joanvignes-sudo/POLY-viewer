@@ -1,6 +1,6 @@
-import {createAttachmentEngine,STATUS_LABELS} from './attachment-engine.mjs';
+import {createAttachmentEngine,STATUS_LABELS} from './attachment-engine.mjs?v=141-1';
 let promise;
-function load(){return promise ||= fetch('../data/attachment-catalogue.json').then(r=>{if(!r.ok)throw Error('catalogue');return r.json()}).then(createAttachmentEngine)}
+function load(){return promise ||= fetch('../data/attachment-catalogue.json?v=141-1').then(r=>{if(!r.ok)throw Error('catalogue');return r.json()}).then(createAttachmentEngine)}
 export function createAttachmentPanel(card,layer){
   const host=document.createElement('section');host.className='attachment-qualification';host.style.cssText='margin:12px 0;padding:12px;border:1px solid #6b9a95;border-radius:8px';card.append(host);
   let current=0;
