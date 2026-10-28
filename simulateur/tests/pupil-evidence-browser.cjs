@@ -25,7 +25,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
    assert.ok(await page.locator('#pupil-plot circle').count()>0);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'No horizontal overflow');
    assert.match(await page.locator('#chain-title').innerText(),/circuit/);
-   assert.match(await page.locator('.warning').innerText(),/aucune des mesures/i);
+   assert.match(await page.locator('.warning').innerText(),/données ne contiennent/i);
    assert.equal(await page.locator('a[href="https://www.ncbi.nlm.nih.gov/books/NBK553169/"]').count(),1);
    await page.locator('#event').selectOption('2');
    assert.match(await page.locator('#event-label').innerText(),/48,008 s.*13,3 lx/);
