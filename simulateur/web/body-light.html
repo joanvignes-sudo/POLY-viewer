@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="POLY : retrouver les structures anatomiques dans un atlas de référence, sans téléchargement du maillage du corps entier ni WebGL.">
+<title>POLY · Corps léger, recherche anatomique</title>
+<link rel="stylesheet" href="body-light.css">
+<script src="../public-assets.js?v=0.140.0&amp;pack=2"></script>
+<script type="module" src="body-light.mjs"></script>
+</head><body>
+<a class="skip" href="#main">Aller aux structures</a>
+<header class="header"><a class="logo" href="../../index.html">POLY <small>/ EXPLORATEUR LÉGER</small></a>
+<nav><a href="cerveau.html">Cerveau</a><a href="recherche.html">Dossiers</a><a href="index.html">Corps 3D complet</a></nav></header>
+<main id="main">
+<section class="hero"><p class="kicker">ATLAS ANATOMIQUE · REPÈRES 2D</p><h1>Explorer le corps, sans charger tout le corps.</h1>
+<p class="lead">Recherchez une structure parmi les références de POLY. Les points et cadres indiquent la position et l'étendue approximatives de son <strong>volume englobant</strong> dans l'atlas : ce ne sont ni des formes anatomiques ni des attaches musculaires.</p>
+<div class="chips"><span>Inventaire HRA / Visible Human</span><span>Sans moteur 3D</span><span>Métadonnées seulement</span><span>Coordonnées inter-atlas non validées individuellement</span></div>
+</section>
+<div id="loading" role="status">Chargement de l'inventaire léger et contrôle des bornes…</div>
+<div id="app" hidden>
+<section class="layout">
+<aside class="finder" aria-labelledby="finder-title">
+<p class="kicker">01 / RETROUVER</p><h2 id="finder-title">Les structures</h2>
+<label for="system">Système</label><select id="system"><option value="skeletal">Squelette</option><option value="all">Tout l'atlas</option><option value="muscular">Muscles</option><option value="nervous">Système nerveux</option><option value="circulatory">Cœur et vaisseaux</option><option value="respiratory">Poumons et voies aériennes</option><option value="digestive">Système digestif</option><option value="urinary">Appareil urinaire</option><option value="integumentary">Peau</option><option value="lymphatic">Système lymphatique</option><option value="male_reproductive">Reproduction</option></select>
+<label for="search">Rechercher par nom ou référence</label><input id="search" type="search" autocomplete="off" placeholder="Ex. : tibia, coeur, cerveau…">
+<p class="count" id="count" role="status"></p>
+<div class="result-list" id="results" aria-label="Résultats anatomiques"></div>
+<button id="more" type="button" hidden>Afficher plus de résultats</button>
+</aside>
+<section class="viewer" aria-labelledby="locator-title">
+<div class="viewer-head"><div><p class="kicker">02 / LOCALISER</p><h2 id="locator-title">Repères de l'atlas</h2></div>
+<label class="view-control" for="view">Projection <select id="view"><option value="front">Face</option><option value="side">Profil</option></select></label></div>
+<p class="hint">Les points représentent les centres des volumes englobants des structures filtrées. Le cadre orange correspond à la structure sélectionnée. Les échelles sont propres au repère du maillage de référence.</p>
+<svg id="map" viewBox="0 0 600 680" role="img" aria-label="Projection schématique des centres et volumes englobants des structures anatomiques"></svg>
+<article class="selected" id="selected" aria-live="polite"><p>Choisissez une structure dans la liste pour voir sa position et sa provenance.</p></article>
+</section></section>
+<section class="limits"><p class="kicker">03 / LIMITES ET CHOIX</p><h2>Un repère léger, pas une reconstruction</h2>
+<p>Ce mode charge seulement l'inventaire compressé des structures, pas les ~30,7 Mo de données géométriques décompressées ni les centaines de géométries WebGL. Il fournit une navigation anatomique de référence et non une mesure individuelle, une surface, une position de neurone ou une insertion musculaire validée.</p>
+<div class="actions"><a href="index.html">Ouvrir le corps 3D complet, plus exigeant en mémoire →</a><a href="observations-lumiere.html">Explorer les observations humaines →</a></div>
+</section>
+</div></main>
+<footer><span>POLY · Inventaire de référence · Aucune prédiction clinique</span><a href="../../index.html">Retour à l'accueil</a></footer>
+</body></html>
