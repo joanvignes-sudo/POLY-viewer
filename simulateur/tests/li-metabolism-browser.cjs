@@ -17,6 +17,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
    await page.locator('#tissue').selectOption('WM');
    await page.locator('#subject').selectOption('02');
    assert.equal(await page.locator('#p-total').innerText(),'0,1200');
+   assert.match(await page.locator('#ag-ratio').innerText(),/27,3 %/);
    await page.locator('#alpha').evaluate(el=>{el.value='60';el.dispatchEvent(new Event('input',{bubbles:true}));});
    await page.locator('#beta').evaluate(el=>{el.value='50';el.dispatchEvent(new Event('input',{bubbles:true}));});
    assert.equal(await page.locator('#j-transfer').innerText(),'0,0360');
