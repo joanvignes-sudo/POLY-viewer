@@ -1,0 +1,277 @@
+{
+  "schema": "poly.pupil-evidence-chain.v1",
+  "id": "pupil-reflex-documentary-2026-10-28",
+  "version": "1.0.0",
+  "status": "documentary_mechanistic_reference_not_individual_reconstruction",
+  "title": "De la lumière à la constriction pupillaire — chaîne anatomique documentée",
+  "kind": "evidence_graph",
+  "species": "human",
+  "experiment": {
+    "dataset_doi": "10.5281/zenodo.8239465",
+    "publication_doi": "10.1038/s41598-023-41357-1",
+    "subject": "01",
+    "session": "sn2",
+    "source_member_sha256": "a4ea673a702f6349cea3408d47df7971c4703a48a815d1f1535d8582201e669a",
+    "sample_rate_Hz": 500,
+    "measurement": "strict_binocular_pupil_diameter_mean",
+    "measurement_unit": "mm",
+    "stimulus_variable": "nominal_illuminance",
+    "stimulus_unit": "lux",
+    "nominal_photometry_per_sample": false,
+    "clock": "recording seconds, not calibrated physiological travel time"
+  },
+  "sources": [
+    {
+      "id": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.8239465",
+      "kind": "human_recordings",
+      "license": "CC BY 4.0",
+      "scope": "nominal protocol lux markers and EyeLink recorded pupil diameters; not a neuron recording"
+    },
+    {
+      "id": "primary_paper",
+      "url": "https://doi.org/10.1038/s41598-023-41357-1",
+      "kind": "human_study",
+      "scope": "recording protocol; export-vs-paper apparatus discrepancy unresolved"
+    },
+    {
+      "id": "anatomy1",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK553169/",
+      "kind": "review",
+      "scope": "established anatomical afferent and efferent pupillary light reflex pathway"
+    },
+    {
+      "id": "anatomy2",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/16-3-the-cranial-nerve-exam",
+      "kind": "textbook",
+      "scope": "bilateral pretectal–Edinger-Westphal projections, CN III/ciliary ganglion, iris sphincter"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "protocol",
+      "label": "Marqueur lumineux",
+      "scale": "experimental_protocol",
+      "source_kind": "observed_protocol_metadata",
+      "detail": "Niveau d'éclairement nominal du protocole, en lux ; pas une photométrie instantanée."
+    },
+    {
+      "id": "retina",
+      "label": "Rétine / photoréception",
+      "scale": "organ_cell_type",
+      "source_kind": "literature_mechanism",
+      "detail": "Étape physiologique connue ; phototransduction non enregistrée chez le sujet 01."
+    },
+    {
+      "id": "optic_nerve",
+      "label": "Nerf optique (II)",
+      "scale": "nerve",
+      "source_kind": "literature_anatomy",
+      "detail": "Voie afférente ; aucune activité nerveuse enregistrée."
+    },
+    {
+      "id": "optic_chiasm",
+      "label": "Chiasma et tractus optiques",
+      "scale": "neural_tract",
+      "source_kind": "literature_anatomy",
+      "detail": "Décussation des fibres nasales ; pas de localisation 3D dans le cerveau du sujet."
+    },
+    {
+      "id": "pretectal",
+      "label": "Région prétectale",
+      "scale": "brain_nucleus",
+      "source_kind": "literature_anatomy",
+      "detail": "Relais du réflexe photomoteur ; activité non enregistrée."
+    },
+    {
+      "id": "edinger_westphal",
+      "label": "Noyaux d'Edinger–Westphal (bilatéraux)",
+      "scale": "brain_nucleus",
+      "source_kind": "literature_anatomy",
+      "detail": "Projections bilatérales rendant possible la réponse consensuelle ; pas de latence mesurée."
+    },
+    {
+      "id": "oculomotor",
+      "label": "Nerfs oculomoteurs (III)",
+      "scale": "nerve",
+      "source_kind": "literature_anatomy",
+      "detail": "Voie parasympathique préganglionnaire ; pas de flux nerveux mesuré."
+    },
+    {
+      "id": "ciliary_ganglion",
+      "label": "Ganglions ciliaires",
+      "scale": "peripheral_ganglion",
+      "source_kind": "literature_anatomy",
+      "detail": "Relais ganglionnaire, non identifié dans l'atlas du sujet."
+    },
+    {
+      "id": "short_ciliary",
+      "label": "Nerfs ciliaires courts",
+      "scale": "nerve",
+      "source_kind": "literature_anatomy",
+      "detail": "Voie postganglionnaire vers l'iris."
+    },
+    {
+      "id": "iris_sphincter",
+      "label": "Sphincter de l'iris",
+      "scale": "muscle",
+      "source_kind": "literature_anatomy",
+      "detail": "Contraction normalement associée à un diamètre pupillaire réduit ; pas de mesure musculaire directe."
+    },
+    {
+      "id": "pupil_diameter",
+      "label": "Diamètre pupillaire enregistré",
+      "scale": "observed_quantity",
+      "source_kind": "human_recording",
+      "detail": "Mesure millimétrique, moyenne binoculaire stricte, bacs de 0,1 s, lacunes conservées."
+    }
+  ],
+  "edges": [
+    {
+      "from": "protocol",
+      "to": "retina",
+      "status": "cross_level_hypothesis_not_subject_verified",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "dataset",
+        "anatomy1"
+      ]
+    },
+    {
+      "from": "retina",
+      "to": "optic_nerve",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "optic_nerve",
+      "to": "optic_chiasm",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "optic_chiasm",
+      "to": "pretectal",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "pretectal",
+      "to": "edinger_westphal",
+      "status": "documented_anatomical_pathway_bilateral",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "edinger_westphal",
+      "to": "oculomotor",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "oculomotor",
+      "to": "ciliary_ganglion",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "ciliary_ganglion",
+      "to": "short_ciliary",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "short_ciliary",
+      "to": "iris_sphincter",
+      "status": "documented_anatomical_pathway",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "anatomy1",
+        "anatomy2"
+      ]
+    },
+    {
+      "from": "iris_sphincter",
+      "to": "pupil_diameter",
+      "status": "cross_level_hypothesis_not_subject_verified",
+      "latency_s": null,
+      "individual_activity_measured": false,
+      "anatomical_registration_to_subject": false,
+      "evidence": [
+        "dataset",
+        "anatomy1"
+      ]
+    }
+  ],
+  "constraints": {
+    "measured_neural_latencies": false,
+    "individual_retinal_activity": false,
+    "individual_neural_activity": false,
+    "subject_anatomical_registration": false,
+    "causal_identification": false,
+    "world_time_alignment": false,
+    "quantitative_photon_to_retina_conversion": false,
+    "model_diameter_prediction": false,
+    "diagnostic_use": false,
+    "screen_distance_file_mm": 590,
+    "screen_distance_publication_mm": 700,
+    "screen_distance_discrepancy_resolved": false,
+    "session_to_publication_blocks_mapping": null,
+    "pre_event_s": 1,
+    "post_event_s": 2,
+    "min_coverage_fraction": 0.75,
+    "stats_scope": "only full display bins within specified local windows; sample-count-weighted mean of observed samples; no interpolation; no onset or propagation latency"
+  },
+  "annotations": [
+    "All known anatomical relays are literature-based, not reconstructed from this subject's actual brain or nerves.",
+    "An event marker and pupil diameter values can be shown in the same recording clock without asserting a measured synapse-by-synapse causal path.",
+    "An observed pre/post difference is a descriptive window statistic; no causal intervention, effect size, uncertainty interval, or response latency is inferred.",
+    "All node positions and time delays are unknown in the subject; no placement on avatar is authorized.",
+    "Bilateral averaged pupil diameter cannot be inverted into separate-eye traces."
+  ]
+}
