@@ -28,6 +28,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
    assert.ok(await page.locator('#event option').count()>24);
    assert.ok(await page.locator('#chart circle').count()>20);
    assert.equal(await page.locator('a[href="https://doi.org/10.5281/zenodo.8239465"]').count(),1);
+   await page.getByText('Qualité des 22 personnes et provenance',{exact:true}).click();
    assert.match(await page.locator('#identity').innerText(),/SHA256 [a-f0-9]{64}/);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false,'mobile horizontal overflow');
    // Select a published stimulus event; no neuronal latency is inferred.
