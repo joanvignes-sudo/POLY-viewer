@@ -1,4 +1,4 @@
-import {createAttachmentPanel} from './attachment-panel.mjs';
+import {createAttachmentPanel} from './attachment-panel.mjs?v=141-1';
 import {referenceMaterial,muscleAppearance} from './reference-appearance.js?v=bv-1';
 import {loadMuscleDisplayFit,lookupMuscleFit,applyMuscleFitPoint} from './muscle-display-fit.mjs';
 import {installReferenceRig} from './reference-gpu-rig.js?v=aa-final-2';

@@ -1,7 +1,7 @@
 name: Attachment qualification gates
 on:
   push:
-    branches: [main, feat/whole-body-attachments]
+    branches: [main, 'feat/**']
   pull_request:
 jobs:
   attachments:

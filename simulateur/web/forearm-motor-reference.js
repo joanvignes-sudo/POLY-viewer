@@ -1,4 +1,4 @@
-import {createAttachmentPanel} from './attachment-panel.mjs';
+import {createAttachmentPanel} from './attachment-panel.mjs?v=141-1';
 import {referenceMaterial,referenceOpacity,muscleAppearance} from './reference-appearance.js?v=bv-1';
 import {createElbowQualificationPanel} from './elbow-qualification.mjs';
 import {loadMuscleDisplayFit,lookupMuscleFit,applyMuscleFitPoint,refitSelectionFocus,publicFitSummary} from './muscle-display-fit.mjs';

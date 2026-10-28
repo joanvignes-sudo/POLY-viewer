@@ -1,7 +1,8 @@
-import {createAttachmentEngine,STATUS_LABELS,KIND_LABELS,REGION_LABELS,ROLE_LABELS} from './attachment-engine.mjs';
+import {createAttachmentEngine,STATUS_LABELS,KIND_LABELS,REGION_LABELS,ROLE_LABELS} from './attachment-engine.mjs?v=141-1';
+import {createTermExplorer} from './attachment-terms.mjs?v=141-1';
 const $=id=>document.getElementById(id), el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 try {
-  const response=await fetch('../data/attachment-catalogue.json');
+  const response=await fetch('../data/attachment-catalogue.json?v=141-1');
   if(!response.ok)throw Error('Catalogue indisponible');
   const data=await response.json(),engine=createAttachmentEngine(data);
   for(const [count,label] of [[data.summary.surfaces,'surfaces inventoriées'],[engine.summary().documented_surfaces,'avec région documentée'],[data.summary.audited_meshes,'maillages audités'],[engine.summary().validated_insertions,'insertions 3D validées']]){
@@ -33,7 +34,9 @@ try {
     window.POLY_ATTACHMENTS={selected:s.id,summary:engine.summary(),relation_count:rs.length};
     history.replaceState(null,'','#surface='+encodeURIComponent(s.id));
   }
-  function filter(preferred){const prior=typeof preferred==='string'?preferred:$('surface').value;const rows=engine.filter({query:$('query').value,region:$('region').value,side:$('side').value,status:$('qualification').value});$('surface').replaceChildren();for(const s of rows){const o=el('option',`${s.name} · ${s.side||'?'} · ${s.id}`);o.value=s.id;$('surface').append(o)}if(rows.some(s=>s.id===prior))$('surface').value=prior;$('status').textContent=`${rows.length} surfaces · ${rows.filter(s=>s.attachment_status==='documented_region').length} avec région documentée dans ce filtre`;$('detail').textContent=rows.length?'':'Aucune surface pour ces filtres.';show()}
+  function filter(preferred){const prior=typeof preferred==='string'?preferred:$('surface').value;const rows=engine.filter({query:$('query').value,region:$('region').value,side:$('side').value,status:$('qualification').value});$('surface').replaceChildren();for(const s of rows){const o=el('option',`${s.name} · ${s.side||'?'} · ${s.id}`);o.value=s.id;$('surface').append(o)}$('surface').value=rows.some(s=>s.id===prior)?prior:(rows[0]?.id||'');$('status').textContent=`${rows.length} surfaces · ${rows.filter(s=>s.attachment_status==='documented_region').length} avec région documentée dans ce filtre`;$('detail').textContent=rows.length?'':'Aucune surface pour ces filtres.';show()}
   for(const id of ['query','region','qualification','side'])$(id).addEventListener('input',filter);$('surface').addEventListener('change',show);
-  filter(new URLSearchParams(location.hash.slice(1)).get('surface'));
+  const initialHash=new URLSearchParams(location.hash.slice(1));
+  filter(initialHash.get('surface'));
+  createTermExplorer(engine,data,initialHash.get('term'));
 } catch(error) {$('status').textContent='Catalogue non chargé ou qualification invalide : '+error.message;console.error(error)}
