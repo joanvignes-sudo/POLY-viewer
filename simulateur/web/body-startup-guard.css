@@ -1,0 +1,10 @@
+/* The recovery panel is placed OUTSIDE the initially inert <main>. */
+#body-startup-fallback{margin:16px auto 24px;max-width:860px;padding:24px;border:2px solid #d6a86a;border-radius:12px;background:#24313d;color:#f7e6c8;font:16px/1.55 system-ui,sans-serif}
+#body-startup-fallback h2{font-size:22px;line-height:1.25;margin:0 0 8px}
+#body-startup-fallback p{margin:7px 0 18px;color:#f3e9d8}
+#body-startup-fallback .body-recovery-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+#body-startup-fallback a,#body-startup-fallback button{display:inline-block;border-radius:7px;padding:11px 14px;background:#315162;border:1px solid #81b4bf;color:#f3fcfb;text-decoration:none;font:inherit;cursor:pointer}
+#body-startup-fallback a:hover,#body-startup-fallback button:hover{background:#45677b}
+#body-startup-fallback a:focus-visible,#body-startup-fallback button:focus-visible{outline:3px solid #ffdca4;outline-offset:3px}
+#body-startup-fallback[hidden]{display:none!important}
+@media(max-width:600px){#body-startup-fallback{margin:12px;padding:18px}#body-startup-fallback a,#body-startup-fallback button{width:100%;text-align:center}}
