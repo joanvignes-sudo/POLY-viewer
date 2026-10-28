@@ -21,6 +21,7 @@ jobs:
       - run: node --test simulateur/tests/attachment-engine.test.mjs
       - run: node --test simulateur/tests/body-startup-guard.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
+      - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
         run: python simulateur/scripts/build_body_source_chunks.py --output-root "${{ runner.temp }}/poly-body-chunks" --verify
       - name: Verify on-demand anatomical block reader against real generated chunks
