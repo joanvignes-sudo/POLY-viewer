@@ -20,7 +20,7 @@ jobs:
       - run: git diff --exit-code -- simulateur/data/attachment-catalogue.json
       - run: node --test simulateur/tests/attachment-engine.test.mjs
       - run: node --test simulateur/tests/body-startup-guard.test.mjs
-      - run: node --test simulateur/tests/body-source-contract.test.mjs
+      - run: node --test simulateur/tests/body-source-contract.test.mjs simulateur/tests/body-source-material-session.test.mjs simulateur/tests/brain-atlas-source.test.mjs simulateur/tests/hand-reference-source.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
       - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
@@ -33,12 +33,19 @@ jobs:
         env:
           POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
         run: node --test simulateur/tests/body-region-three.test.mjs simulateur/tests/body-regional-features.test.mjs
+      - name: Build unpublished exact-value limbs and trunk reference blocks
+        run: python simulateur/scripts/build_reference_source_chunks.py --output-root "${{ runner.temp }}/poly-reference-chunks" --verify
+      - name: Verify all original reference numbers and metadata from candidate blocks
+        env:
+          POLY_REFERENCE_CHUNKS_ROOT: ${{ runner.temp }}/poly-reference-chunks
+        run: node --test simulateur/tests/reference-source-reader.test.mjs
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks
         env:
           POLY_BROWSER_CHANNEL: chromium
           POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
+          POLY_REFERENCE_CHUNKS_ROOT: ${{ runner.temp }}/poly-reference-chunks
         run: |
           python -m http.server 8123 --bind 127.0.0.1 > /tmp/poly-http.log 2>&1 &
           node simulateur/tests/attachments-browser.cjs
@@ -47,3 +54,7 @@ jobs:
           node simulateur/tests/body-region-browser.cjs
           node simulateur/tests/body-regional-features-browser.cjs
           node simulateur/tests/body-regional-specialists-browser.cjs
+          node simulateur/tests/body-regional-optics-browser.cjs
+          node simulateur/tests/body-regional-brain-browser.cjs
+          node simulateur/tests/body-regional-hand-browser.cjs
+          node simulateur/tests/reference-region-browser.cjs

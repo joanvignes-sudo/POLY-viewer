@@ -64,3 +64,24 @@ class PreviewTest(unittest.TestCase):
         (self.chunks / 'MANIFEST.json').write_text(json.dumps(self.manifest))
         with self.assertRaises(ValueError):
             preview.make_handler(self.chunks, self.site)
+
+
+    def test_reference_assets_have_an_independent_local_root(self):
+        reference = Path(self.temp.name) / 'reference'
+        (reference / 'chunks').mkdir(parents=True)
+        manifest = {'schema': 'poly.reference-source-manifest.v1', 'published': False,
+                    'status': 'experimental_not_deployed', 'source_value_verification': 'PASS'}
+        (reference / 'MANIFEST.json').write_text(json.dumps(manifest))
+        (reference / 'chunks/reference-000.bin.gz').write_bytes(b'reference-fixture')
+        server = ThreadingHTTPServer(('127.0.0.1', 0), preview.make_handler(self.chunks, self.site, reference))
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        try:
+            with urlopen(f'http://127.0.0.1:{server.server_port}/simulateur/data/reference-chunks-preview/chunks/reference-000.bin.gz') as response:
+                self.assertEqual(response.read(), b'reference-fixture')
+                self.assertIsNone(response.headers['Content-Encoding'])
+            self.assertEqual(list(self.site.iterdir()), [self.site / 'index.html'])
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()

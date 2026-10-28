@@ -1,0 +1,20 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>POLY · Référence membres et tronc par blocs</title><link rel="stylesheet" href="body-region-lab.css"><script type="module" src="reference-region-lab.mjs"></script></head><body>
+<header><a class="logo" href="body-region-lab.html">POLY / RÉFÉRENCES DISTINCTES</a><nav><a href="body-region-lab.html">Corps HRA régional</a><a href="attachments.html">Preuves des rattachements</a></nav></header>
+<main><section class="hero"><p class="kicker">PROTOTYPE LOCAL · NON PUBLIÉ</p><h1>Une pièce source. Son bloc vérifié.</h1>
+<p>458 surfaces musculaires et 68 os du fichier de référence des membres et du tronc. Le catalogue se consulte séparément des maillages. Une sélection charge son bloc entier, puis affiche une seule pièce ; le fichier JSON complet d’environ 93 Mo n’est pas téléchargé.</p>
+<p>Référence distincte du corps HRA. Les coordonnées numériques source sont conservées en float64 ; une copie float32 sert à l’affichage WebGL. Aucun recalage individuel, insertion validée, délai ni activité physiologique n’est déduit de cette vue.</p></section>
+<p id="loading" role="status">Vérification du manifeste et du catalogue local…</p>
+<div id="app" hidden><div class="layout"><aside class="panel controls">
+<label for="reference-search">Nom ou identifiant source</label><input id="reference-search" type="search" placeholder="Biceps, humérus, FJ…">
+<label for="reference-collection">Collection source</label><select id="reference-collection"><option value="parts">Surfaces musculaires</option><option value="bones">Os</option><option value="all">Les deux collections</option></select>
+<label for="reference-side">Côté déclaré par la source</label><select id="reference-side"><option value="all">Tous</option><option value="R">Droit</option><option value="L">Gauche</option></select>
+<p id="reference-count" class="hint"></p><div id="reference-results"></div><button id="reference-more" class="secondary" type="button">Afficher davantage</button>
+<div class="buttons"><button id="reference-release" class="secondary" type="button">Libérer le bloc et la pièce</button><button id="reference-reset" class="secondary" type="button">Recadrer la pièce</button></div>
+<p id="reference-status" role="status">Aucun bloc chargé ; aucun contexte WebGL créé.</p><p id="reference-memory" class="hint"></p>
+<div id="reference-selected" class="selected" aria-live="polite">Choisir une pièce du catalogue.</div><section id="reference-qualification" hidden></section>
+</aside><section class="panel stage"><h2>Surface de la référence source</h2><p class="hint">Glisser pour tourner · pincer ou utiliser la molette pour zoomer. Le cadrage est calculé pour l’affichage ; aucun repère de corps individuel n’est créé.</p>
+<canvas id="reference-canvas" aria-label="Pièce source de la référence distincte" tabindex="0"></canvas><p id="reference-stat" class="readout">0 pièce affichée.</p>
+<p class="hint">Un seul bloc décompressé résident, de 4 Mio au maximum. Cette limite exclut le catalogue, les copies d’affichage, les temporaires et la mémoire GPU physique.</p>
+</section></div><section class="limits"><h2>Sources et limites conservées</h2><p id="reference-credit"></p><p>Les informations documentaires et observations humaines du catalogue sont conservées. Elles ne deviennent pas des mesures du maillage : aucune latence individuelle, activation ni insertion anatomique n’est affectée à cette pièce. Le rendu réussi et les empreintes ne constituent pas une validation biologique.</p></section></div></main>
+</body></html>

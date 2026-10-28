@@ -62,6 +62,18 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     }
     await page.locator('#native-eye-close').click();
     assert.deepEqual(await page.evaluate(()=>window.POLY.view),nativeBefore);
+    await page.locator('#eye-light-open').click();
+    await page.locator('#eye-light-panel').waitFor({state:'visible'});
+    await page.locator('#p1-eye-reader summary').click();
+    await page.waitForFunction(()=>!document.querySelector('#p1-eye-absorption').disabled);
+    await page.locator('#p1-eye-absorption').click();
+    assert.equal(await page.evaluate(()=>window.POLY.eyeLight.phase),5);
+    await page.locator('#p1-eye-save').click();
+    await page.locator('#eye-light-close').click({timeout:15000}).catch(async error=>{await page.screenshot({path:'../classic-eye-blocked.png'});throw error;});
+    assert.equal(await page.evaluate(()=>window.POLY.eyeLight.savedMaterialCount),0);
+    await page.locator('#eye-light-open').click();await page.locator('#p1-eye-reader summary').click();
+    await page.locator('#p1-eye-restore').click();assert.equal(await page.evaluate(()=>window.POLY.eyeLight.phase),5);
+    await page.locator('#eye-light-close').click({timeout:15000}).catch(async error=>{await page.screenshot({path:'../classic-eye-blocked.png'});throw error;});
     await page.locator('#forearm-motor-open').click();
     await page.waitForFunction(()=>document.querySelector('#forearm-motor-card .attachment-qualification')?.textContent.includes('preuves'));
     assert.match(await page.locator('#forearm-motor-card .attachment-qualification').innerText(),/insertion 3D non localisée/);
@@ -70,7 +82,7 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     await page.waitForFunction(()=>document.querySelector('#hand-muscles-reference .attachment-qualification')?.textContent.includes('preuves'));
     await page.locator('#hand-ref-side').selectOption('L');
     if(process.env.POLY_SCREENSHOTS)await page.screenshot({path:process.env.POLY_SCREENSHOTS+`/avatar-${mobile?'mobile':'desktop'}.png`,fullPage:false});
-    assert.deepEqual(errors,[]);results.push({viewport:mobile?'390x844 touch':'1440x1000',catalogue:true,filters:true,left_and_right:true,avatar_and_panels:true,shared_search_and_organ_inspection:true,native_eye_source_session:true,terms_without_geometry:true,variant_separation:true,term_deep_links:true,page_errors:errors});
+    assert.deepEqual(errors,[]);results.push({viewport:mobile?'390x844 touch':'1440x1000',catalogue:true,filters:true,left_and_right:true,avatar_and_panels:true,shared_search_and_organ_inspection:true,native_eye_source_session:true,eye_light_and_p1_checkpoint:true,terms_without_geometry:true,variant_separation:true,term_deep_links:true,page_errors:errors});
     await context.close();
   }
   const context=await browser.newContext(),page=await context.newPage();

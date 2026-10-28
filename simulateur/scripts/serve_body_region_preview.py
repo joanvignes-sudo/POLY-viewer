@@ -13,13 +13,22 @@ REPO = Path(__file__).resolve().parents[2]
 PREFIX = '/simulateur/data/body-chunks-preview/'
 
 
-def make_handler(chunks_root, repo_root=REPO):
+def make_handler(chunks_root, repo_root=REPO, reference_root=None):
     chunks_root = Path(chunks_root).resolve(strict=True)
     manifest = json.loads((chunks_root / 'MANIFEST.json').read_text(encoding='utf-8'))
     if (manifest.get('schema') != 'poly.body-source-chunks.v1'
             or manifest.get('status') != 'experimental_not_deployed'
             or manifest.get('published') is not False):
         raise ValueError('Only unpublished experimental source chunks may be previewed')
+
+    if reference_root is not None:
+        reference_root = Path(reference_root).resolve(strict=True)
+        reference_manifest = json.loads((reference_root / 'MANIFEST.json').read_text(encoding='utf-8'))
+        if (reference_manifest.get('schema') != 'poly.reference-source-manifest.v1'
+                or reference_manifest.get('published') is not False
+                or reference_manifest.get('status') != 'experimental_not_deployed'
+                or reference_manifest.get('source_value_verification') != 'PASS'):
+            raise ValueError('Only verified unpublished reference chunks may be previewed')
 
     class Handler(SimpleHTTPRequestHandler):
         def list_directory(self, path):
@@ -28,14 +37,23 @@ def make_handler(chunks_root, repo_root=REPO):
 
         def preview(self, head=False):
             request_path = unquote(urlsplit(self.path).path)
-            if not request_path.startswith(PREFIX):
+            asset_root, prefix = chunks_root, PREFIX
+            pattern = r'MANIFEST\.json|chunks/[a-z][a-z0-9_-]{1,64}\.(?:json|bin\.gz)'
+            reference_prefix = '/simulateur/data/reference-chunks-preview/'
+            if request_path.startswith(reference_prefix):
+                if reference_root is None:
+                    self.send_error(404, 'Reference preview not configured')
+                    return True
+                asset_root, prefix = reference_root, reference_prefix
+                pattern = r'MANIFEST\.json|CATALOGUE\.json\.gz|chunks/reference-\d{3}\.(?:json|bin\.gz)'
+            elif not request_path.startswith(PREFIX):
                 return False
-            relative = request_path[len(PREFIX):]
-            if not re.fullmatch(r'MANIFEST\.json|chunks/[a-z][a-z0-9_-]{1,64}\.(?:json|bin\.gz)', relative):
+            relative = request_path[len(prefix):]
+            if not re.fullmatch(pattern, relative):
                 self.send_error(403, 'Invalid preview resource')
                 return True
-            target = (chunks_root / relative).resolve()
-            if not target.is_relative_to(chunks_root) or not target.is_file():
+            target = (asset_root / relative).resolve()
+            if not target.is_relative_to(asset_root) or not target.is_file():
                 self.send_error(404)
                 return True
             with target.open('rb') as source:
@@ -66,9 +84,10 @@ def make_handler(chunks_root, repo_root=REPO):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--chunks-root', type=Path, required=True)
+    parser.add_argument('--reference-chunks-root', type=Path)
     parser.add_argument('--port', type=int, default=8124)
     args = parser.parse_args()
-    with ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root)) as server:
+    with ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root)) as server:
         print(f'Local preview only: http://127.0.0.1:{server.server_port}/simulateur/web/body-region-lab.html', flush=True)
         try:
             server.serve_forever()

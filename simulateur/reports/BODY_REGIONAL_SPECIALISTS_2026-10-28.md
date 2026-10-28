@@ -1,5 +1,7 @@
 # POLY — Vues spécialisées raccordées au chargement régional
 
+État de cette étape ; suite et bilan actualisé dans `BODY_REGIONAL_REFERENCES_2026-10-28.md`.
+
 28 octobre 2026. Suite de la branche locale `feat/regional-body-bridge-20261028`, après `c1133a3`. Base historique préservée : PR #21, commit `59d7571ca780f74dcfa9b261b13515f5f49ffb59`.
 
 ## Avancée concrète
