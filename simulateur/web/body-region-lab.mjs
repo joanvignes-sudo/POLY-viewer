@@ -222,6 +222,8 @@ async function start(){
   structure.onchange=()=>{if(structure.value)selectSource(Number(structure.value))};
   $('focus').onclick=focusSelected;$('reset').onclick=resetCamera;
   newStore();bindPointer();resetCamera();
+  // Read-only diagnostics for source/provenance regression tests in this isolated lab.
+  Object.defineProperty(window,'__polyRegionLabDiagnostics',{value:()=>({cache:store.info(),scene:adapter.diagnostics()}),configurable:false});
   window.addEventListener('resize',scheduleRender);
   document.addEventListener('visibilitychange',scheduleRender);
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
