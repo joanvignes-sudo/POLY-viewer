@@ -88,8 +88,8 @@ def read_sources(source_root: Path) -> tuple[dict, bytes, dict]:
 
 def plan_chunks(items: list[dict], blob: bytes, max_bytes: int) -> list[dict]:
     """Do not split one original mesh across files; record oversize objects explicitly."""
-    if max_bytes < 1024:
-        raise ValueError("Chunk budget must be at least 1024 bytes")
+    if max_bytes < 16:
+        raise ValueError("Chunk budget must be at least 16 bytes")
     groups = defaultdict(list)
     for index, item in enumerate(items):
         groups[system_of(item)].append((index, item))
