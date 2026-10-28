@@ -31,7 +31,10 @@ const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});rende
 const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(35,1,.01,100);camera.position.set(4,2.2,7.6);const target=new THREE.Vector3(0,1.75,0);camera.lookAt(target);
 scene.add(new THREE.HemisphereLight(0xc5e5ff,0x1c2835,2));const light=new THREE.DirectionalLight(0xffe3cf,3);light.position.set(3,5,5);scene.add(light);const rim=new THREE.DirectionalLight(0xc0c5c2,.5);rim.position.set(-4,3,-2);scene.add(rim);
 const root=new THREE.Group();scene.add(root);const grid=new THREE.GridHelper(12,40,0x376675,0x19303d);scene.add(grid);
-const [meta,buffer,motion,docs]=await Promise.all([fetch('../models/body-display.json').then(r=>r.json()),fetch('../models/body-display.bin').then(r=>r.arrayBuffer()),fetch('../data/walk.json').then(r=>r.json()),fetch('../data/documentary-chains.json').then(r=>r.json())]);
+let meta,buffer,motion,docs;
+try{
+ [meta,buffer,motion,docs]=await Promise.all([fetch('../models/body-display.json').then(r=>{if(!r.ok)throw Error('Body metadata unavailable');return r.json()}),fetch('../models/body-display.bin').then(r=>{if(!r.ok)throw Error('Body geometry unavailable');return r.arrayBuffer()}),fetch('../data/walk.json').then(r=>{if(!r.ok)throw Error('Motion source unavailable');return r.json()}),fetch('../data/documentary-chains.json').then(r=>{if(!r.ok)throw Error('Documentary source unavailable');return r.json()})]);
+}catch(error){window.dispatchEvent(new CustomEvent('poly-body-init-failed',{detail:{reason:'resource-load'}}));throw error;}
 const systems={integumentary:['Peau et enveloppes','#b7b5ac'],nervous:['Système nerveux','#dfbc83'],muscular:['Muscles','#b76c69'],male_reproductive:['Appareil reproducteur','#d08bc8'],digestive:['Appareil digestif','#e3ad73'],urinary:['Appareil urinaire','#c799d8'],circulatory:['Cœur et vaisseaux','#e66f7b'],respiratory:['Poumons et voies aériennes','#78c9d5'],lymphatic:['Système lymphatique','#81c897'],skeletal:['Squelette','#e4ddc8']};
 const uniforms={rootTilt:{value:0},rootShift:{value:new THREE.Vector3()},armSwingR:{value:0},armSwingL:{value:0},eatShoulder:{value:new THREE.Quaternion()},eatForearm:{value:new THREE.Quaternion()},hipR:{value:0},hipL:{value:0},kneeR:{value:0},kneeL:{value:0},ankR:{value:0},ankL:{value:0},bob:{value:0}};
 const shaderHead=rigGLSL;
