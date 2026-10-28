@@ -8,7 +8,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
 const root=process.env.POLY_CHUNKS_ROOT;
 if(!root)throw Error('POLY_CHUNKS_ROOT required');
 let manifest,a,b;
-async function routePreview(page,{failManifest=false,corruptId=null}={}){
+async function routePreview(page,{failManifest=false,corruptId=null,delayId=null,delayGate=null,onDelay=()=>{}}={}){
  await page.route('**/simulateur/data/body-chunks-preview/**',async route=>{
   const rel=decodeURIComponent(new URL(route.request().url()).pathname.split('/body-chunks-preview/')[1]||'');
   if(!rel||rel.includes('..')||rel.startsWith('/')||!(/^(MANIFEST\.json|chunks\/[a-z][a-z0-9_-]{1,64}\.(?:json|bin\.gz))$/.test(rel))){
@@ -16,6 +16,7 @@ async function routePreview(page,{failManifest=false,corruptId=null}={}){
   }
   if(failManifest&&rel==='MANIFEST.json'){await route.abort('failed');return;}
   try{
+   if(rel==='chunks/'+delayId+'.bin.gz'&&delayGate){onDelay();await delayGate;}
    const bytes=await fs.readFile(path.join(root,rel));
    if(rel==='chunks/'+corruptId+'.bin.gz')bytes[9]^=1;
    await route.fulfill({status:200,body:bytes,contentType:rel.endsWith('.json')?'application/json':'application/octet-stream'});
@@ -80,6 +81,35 @@ async function launch(){
      no_full_body_download:true,errors});
    await context.close();
   }
+  // Start a real gzip transfer, abandon it by changing regions, and prove the
+  // late response cannot install meshes or override the new selection.
+  const raceContext=await browser.newContext(),racePage=await raceContext.newPage();
+  let releaseOld,signalOld;
+  const holdOld=new Promise(resolve=>{releaseOld=resolve});
+  const oldRequested=new Promise(resolve=>{signalOld=resolve});
+  await routePreview(racePage,{delayId:a.id,delayGate:holdOld,onDelay:signalOld});
+  await racePage.goto(base+'/simulateur/web/body-region-lab.html');
+  await racePage.locator('#app').waitFor({state:'visible'});
+  await racePage.locator('#budget').selectOption('4194304');
+  await chooseBlock(racePage,a);
+  await racePage.locator('#load').click();
+  await oldRequested;
+  assert.equal(await racePage.evaluate(id=>window.__polyRegionLabDiagnostics().cache.pending.includes(id),a.id),true);
+  await chooseBlock(racePage,b);
+  await racePage.locator('#load').click();
+  await expectLoaded(racePage,b);
+  releaseOld();
+  await racePage.waitForFunction(id=>{
+    const stats=window.__polyRegionLabDiagnostics?.();
+    return stats && !stats.cache.pending.includes(id);
+  },a.id,{timeout:45000});
+  const raceStats=await racePage.evaluate(()=>window.__polyRegionLabDiagnostics());
+  assert.deepEqual(raceStats.cache.ids,[b.id]);
+  assert.equal(raceStats.scene.meshes,b.part_count);
+  assert.equal(raceStats.scene.selected_source_index,b.original_indices[0]);
+  assert.equal(await racePage.locator('#structure option[value="'+a.original_indices[0]+'"]').count(),0);
+  results.push({late_source_response:'cancelled_before_install',new_selection_kept:true});
+  await raceContext.close();
   const ctx=await browser.newContext(),page=await ctx.newPage();
   await routePreview(page,{failManifest:true});
   await page.goto(base+'/simulateur/web/body-region-lab.html');
