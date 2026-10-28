@@ -35,3 +35,12 @@ test('every pinned documentary route remains finite in rest and walking presenta
   for(const route of nerves.routes)for(const point of route.points){const before=[...point],result=deformReferenceRoute(point,route,posture.rig.uniforms);assert.ok(result.every(Number.isFinite),route.id);assert.deepEqual(point,before);}
  }
 });
+test('bulk trunk writer is float32-bit-identical to the historical scalar path on full large surfaces',async()=>{
+ const posture=await loadReferencePosture({fetcher});
+ const largest=data.parts.filter(p=>p.region==='trunk').sort((a,b)=>b.positions.length-a.positions.length).slice(0,4);
+ for(const part of largest){const entry={positions:new Float64Array(part.positions),metadata:part},base=makeReferencePostureBase(entry,data,posture.fit),actual=new Float32Array(base.length),expected=new Float32Array(base.length);
+  for(const phase of [null,.4]){if(phase===null)posture.rig.reset();else posture.sampler.apply(phase,posture.rig.uniforms);
+   writeReferencePosture(base,actual,part,posture.rig.uniforms);for(let i=0;i<base.length;i+=3)expected.set(deformReferencePoint(Array.from(base.subarray(i,i+3)),part,posture.rig.uniforms),i);
+   assert.deepEqual(Buffer.from(actual.buffer),Buffer.from(expected.buffer),part.id);assert.deepEqual(entry.positions,new Float64Array(part.positions));}
+ }
+});

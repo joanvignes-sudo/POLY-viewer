@@ -6,7 +6,7 @@ import {alignReferencePoint} from './reference-placement.js?v=aa-final-2';
 import {lookupMuscleFit,applyMuscleFitPoint} from './muscle-display-fit.mjs';
 import {deformPosition} from './rig.js?v=audit-o-1';
 import {deformReferenceLeg} from './reference-leg-rig.js?v=ac-1';
-import {deformReferenceTrunk} from './reference-trunk-rig.js?v=bl-1';
+import {deformReferenceTrunk,writeReferenceTrunkPositions} from './reference-trunk-rig.js?v=bl-1';
 import {deformReferenceBone} from './reference-bone-rig.js?v=bv-1';
 export async function loadReferencePosture({signal,fetcher=fetch}={}){
  const read=(path,maxBytes)=>fetchBoundedBytes(new URL(path,import.meta.url),{signal,fetcher,maxBytes});
@@ -34,7 +34,8 @@ export function makeReferencePostureBase(entry,data,fit){
  if(!base.every(Number.isFinite))throw Error('Non-finite illustrative placement');return base;
 }
 export function writeReferencePosture(base,target,part,uniforms){
- for(let i=0;i<base.length;i+=3)target.set(deformReferencePoint([base[i],base[i+1],base[i+2]],part,uniforms),i);
+ if(part.region==='trunk')writeReferenceTrunkPositions(base,target,uniforms);
+ else for(let i=0;i<base.length;i+=3)target.set(deformReferencePoint([base[i],base[i+1],base[i+2]],part,uniforms),i);
  if(!target.every(Number.isFinite))throw Error('Non-finite illustrative deformation');
 }
 export function deformReferenceRoute(point,route,uniforms){

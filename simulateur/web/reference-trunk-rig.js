@@ -4,4 +4,9 @@ export function deformReferenceTrunk(point,u){
  const value=k=>u[k]?.value||0,[x,baseY,z]=point,y=baseY+value('bob'),a=value('rootTilt'),shift=u.rootShift?.value||{x:0,y:0,z:0};
  return[x+shift.x,Math.cos(a)*y-Math.sin(a)*z+shift.y,Math.sin(a)*y+Math.cos(a)*z+shift.z];
 }
+// Same scalar operation order as deformReferenceTrunk, with pose constants read once.
+export function writeReferenceTrunkPositions(base,target,u){
+ const bob=u.bob?.value||0,a=u.rootTilt?.value||0,c=Math.cos(a),s=Math.sin(a),shift=u.rootShift?.value||{x:0,y:0,z:0};
+ for(let i=0;i<base.length;i+=3){const x=base[i],y=base[i+1]+bob,z=base[i+2];target[i]=x+shift.x;target[i+1]=c*y-s*z+shift.y;target[i+2]=s*y+c*z+shift.z;}
+}
 export const trunkGLSL=`vec3 polyReferenceTrunk(vec3 p){p.y+=bob;p=polyRX(p,0.0,rootTilt);return p+rootShift;}`;

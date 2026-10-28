@@ -7,6 +7,7 @@ import {referenceRelations} from './reference-catalogue-relations.mjs';
 import {planReferenceSelection,loadReferenceSelection} from './reference-selection.mjs';
 import {createReferenceNervePanel} from './reference-nerve-documentation.mjs';
 import {loadReferencePosture,makeReferencePostureBase,writeReferencePosture,deformReferenceRoute} from './reference-posture.mjs';
+import {startLoadDeadline} from './load-deadline.mjs';
 import {REFERENCE_BOOKMARK_KEY,validateReferenceBookmark} from './reference-view-bookmark.mjs';
 const $=id=>document.getElementById(id),root=new URL('../data/reference-chunks-preview/',import.meta.url),readBytes=browserReferenceBytes(root);
 const canvas=$('reference-canvas'),scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(42,1,.001,100000);
@@ -15,6 +16,7 @@ const light=new THREE.DirectionalLight(0xffe5d1,2.6);light.position.set(5,8,6);s
 let manifest,catalogue,records=[],visibleRows=35,chunk=null,mesh=null,selectedKey=null,renderer=null,pending=null,serial=0,failedContext=false,renderPending=false,qualification=null,startup=null,metadataSerial=0;
 let center=new THREE.Vector3(),radius=1,distance=3,azimuth=1.25,elevation=.15;
 let documentationGeneration=0,displayGeneration=0,residentBlocks=[],contextMeshes=[],nerveDocumentation=null;
+let metadataState={attempt:0,stage:'not_started',trace:[],error:null,failed_stage:null,elapsed_ms:0},metadataStarted=0;
 let inspectedKey=null,savedCamera=null,tap=null;const raycaster=new THREE.Raycaster();
 let posture=null,postureController=null,postureGeneration=0,playing=false,lastFrame=null,elapsed=0,posePhase=null,routeLine=null,activeRoute=null;
 function allMeshes(){return [mesh,...contextMeshes].filter(Boolean);}
@@ -71,6 +73,7 @@ function draw(){
  });
 }
 function diagnostics(){return {schema:'poly.reference-part-preview.v1',selected_key:selectedKey,block:chunk?.id??null,
+ metadata:{...metadataState,trace:metadataState.trace.map(item=>({...item})),elapsed_ms:startup?performance.now()-metadataStarted:metadataState.elapsed_ms},
  resident_raw_bytes:residentBlocks.reduce((n,b)=>n+b.rawBytes,0),resident_blocks:residentBlocks.map(b=>b.id),context_keys:contextMeshes.map(m=>m.userData.referenceKey),capacity_raw_bytes:4194304,metadata_raw_bytes:manifest?.catalogue.raw_bytes??null,
  display_buffer_bytes:allMeshes().reduce((n,m)=>n+m.geometry.attributes.position.array.byteLength+m.geometry.attributes.normal.array.byteLength+(m.userData.postureBase?.byteLength??0),0),
  posture:{mode:$('reference-space').value,playing,elapsed,source_sample:mesh?Array.from(mesh.userData.entry.positions.subarray(0,3)):null,display_sample:mesh?Array.from(mesh.geometry.attributes.position.array.subarray(0,3)):null,route:activeRoute?.id??null},
@@ -183,16 +186,23 @@ function list(resetRows=true){
 async function start(){
  startup?.abort();$('loading').setAttribute('role','status');$('loading').textContent='Vérification du manifeste local…';$('reference-retry').hidden=false;
  const generation=++metadataSerial,controller=new AbortController();startup=controller;
+ const deadline=startLoadDeadline(controller);metadataStarted=performance.now();metadataState={attempt:metadataState.attempt+1,stage:'manifest_fetch',trace:[{stage:'manifest_fetch',at_ms:0}],error:null,failed_stage:null,elapsed_ms:0,timeout_ms:30000};
+ const mark=stage=>{if(generation!==metadataSerial)return;metadataState.stage=stage;metadataState.elapsed_ms=performance.now()-metadataStarted;metadataState.trace.push({stage,at_ms:metadataState.elapsed_ms});};
  try{
   const bytes=await fetchBoundedBytes(new URL('MANIFEST.json',root),{maxBytes:512*1024,signal:controller.signal});
-  const candidate=validateReferenceManifest(JSON.parse(new TextDecoder().decode(bytes)));if(generation!==metadataSerial)return;$('loading').textContent='Manifeste vérifié. Lecture et contrôle du catalogue…';const inventory=await readReferenceCatalogue(candidate,{readBytes,signal:controller.signal});
+  mark('manifest_validate');const candidate=validateReferenceManifest(JSON.parse(new TextDecoder().decode(bytes)));if(generation!==metadataSerial)return;$('loading').textContent='Manifeste vérifié. Lecture et contrôle du catalogue…';const inventory=await readReferenceCatalogue(candidate,{readBytes,signal:controller.signal,onStage:mark});
   if(generation!==metadataSerial)return;manifest=candidate;catalogue=inventory;records=[];
   for(const collection of ['parts','bones'])catalogue.data[collection].forEach((metadata,i)=>records.push({key:collection+'/'+i,collection,metadata}));
-  for(const value of [...new Set(records.map(r=>r.metadata.region).filter(v=>typeof v==='string'))].sort()){const option=document.createElement('option');option.value=value;option.textContent=value+' · champ source';$('reference-region').append(option);}
+  for(const option of $('reference-region').querySelectorAll('option[data-source-region]'))option.remove();
+  for(const value of [...new Set(records.map(r=>r.metadata.region).filter(v=>typeof v==='string'))].sort()){const option=document.createElement('option');option.dataset.sourceRegion='true';option.value=value;option.textContent=value+' · champ source';$('reference-region').append(option);}
   $('reference-credit').textContent=(typeof catalogue.data.attribution==='string'?catalogue.data.attribution:JSON.stringify(catalogue.data.attribution))+' · Licence déclarée par la source : '+(typeof catalogue.data.license==='string'?catalogue.data.license:JSON.stringify(catalogue.data.license));
-  $('loading').hidden=true;$('reference-retry').hidden=true;$('app').hidden=false;list();refreshBookmark();
- }catch(error){if(controller.signal.aborted||generation!==metadataSerial)return;$('loading').setAttribute('role','alert');$('loading').textContent='Référence locale indisponible : '+error.message+'. Aucun maillage ne sera créé sans bloc vérifié.';}
- finally{if(generation===metadataSerial)startup=null;}
+  $('loading').hidden=true;$('reference-retry').hidden=true;$('app').hidden=false;list();refreshBookmark();mark('ready');
+ }catch(error){
+  if(generation!==metadataSerial||controller.signal.aborted&&!deadline.expired())return;
+  metadataState.failed_stage=metadataState.stage;metadataState.error=error.message;mark(deadline.expired()?'timeout':'error');
+  $('loading').setAttribute('role','alert');$('loading').textContent=deadline.expired()?'Le chargement a dépassé 30 secondes ; la demande a été interrompue. Vous pouvez relancer le catalogue. Aucun maillage créé.':'Référence locale indisponible : '+error.message+'. Aucun maillage ne sera créé sans bloc vérifié.';
+ }
+ finally{deadline.dispose();if(generation===metadataSerial)startup=null;}
 }
 $('reference-search').oninput=()=>list();$('reference-collection').onchange=()=>list();$('reference-side').onchange=()=>list();$('reference-region').onchange=()=>list();$('reference-more').onclick=()=>{visibleRows+=35;list(false)};
 $('reference-retry').onclick=start;

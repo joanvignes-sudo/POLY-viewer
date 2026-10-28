@@ -23,19 +23,24 @@ export function validateReferenceManifest(m){
  check(m.catalogue?.path==='CATALOGUE.json.gz'&&integer(m.catalogue.raw_bytes)&&m.catalogue.raw_bytes>0&&m.catalogue.raw_bytes<=2*1024*1024&&integer(m.catalogue.compressed_bytes)&&m.catalogue.compressed_bytes>0&&m.catalogue.compressed_bytes<=2*1024*1024&&hex(m.catalogue.raw_sha256)&&hex(m.catalogue.compressed_sha256),'Invalid reference catalogue proof');
  return m;
 }
-export async function readReferenceCatalogue(manifest,{readBytes,hash=sha256Bytes,unzip=readGzipBounded,signal}={}){
+export async function readReferenceCatalogue(manifest,{readBytes,hash=sha256Bytes,unzip=readGzipBounded,signal,onStage=()=>{}}={}){
  validateReferenceManifest(manifest);signal?.throwIfAborted();const c=manifest.catalogue;
+ onStage('catalogue_fetch');
  const packed=await readBytes(c.path,{signal,maxBytes:c.compressed_bytes});signal?.throwIfAborted();
+ onStage('catalogue_compressed_hash');
  check(packed.byteLength===c.compressed_bytes&&await hash(packed)===c.compressed_sha256,'Reference catalogue compressed data altered');
+ signal?.throwIfAborted();onStage('catalogue_decompress');
  const raw=await unzip(packed,c.raw_bytes);signal?.throwIfAborted();
+ onStage('catalogue_raw_hash');
  check(raw.byteLength===c.raw_bytes&&await hash(raw)===c.raw_sha256,'Reference catalogue altered');
+ signal?.throwIfAborted();onStage('catalogue_parse');
  const catalogue=JSON.parse(new TextDecoder().decode(raw));
  check(catalogue.schema==='poly.reference-source-catalogue.v1'&&catalogue.source_raw_sha256===RAW_SOURCE&&catalogue.data?.schema==='poly.forearm.motor.reference/1','Wrong reference catalogue');
  for(const name of ['parts','bones']){
   check(catalogue.data[name]?.length===manifest.source_counts[name],'Reference catalogue entries missing');
   const ids=new Set();for(const r of catalogue.data[name]){check(typeof r.id==='string'&&!ids.has(r.id)&&!Object.hasOwn(r,'positions')&&!Object.hasOwn(r,'indices'),'Invalid metadata-only reference entry');ids.add(r.id);}
  }
- return catalogue;
+ signal?.throwIfAborted();onStage('catalogue_validated');return catalogue;
 }
 export async function readReferenceChunk(manifest,id,{catalogue,readBytes,maxRawBytes=4*1024*1024,hash=sha256Bytes,unzip=readGzipBounded,signal}={}){
  validateReferenceManifest(manifest);signal?.throwIfAborted();const c=manifest.chunks.find(c=>c.id===id);

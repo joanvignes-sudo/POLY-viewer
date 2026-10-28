@@ -214,3 +214,8 @@ Un essai serveur réel sans interception affiche biceps/radius et une étape ner
 À la demande de l'utilisateur, une relance horaire de ce chat est active pour la nuit du 28 au 29 octobre, jusqu'à 08:00 Europe/Paris. Elle continue seulement les travaux locaux autorisés, avec checkpoint court et bilan à l'échéance. Aucun push, merge, déploiement, message externe ou sous-agent n'est autorisé. La qualification sur téléphone physique et la publication restent absentes.
 
 Une autre passe de la suite de référence a été interrompue alors qu’elle ne produisait plus de résultat. Les attentes des requêtes de test détenues par une fixture sont maintenant bornées à 15 secondes avec diagnostic ; la passe suivante a réussi. Cette interruption ne sert pas de preuve de réussite ni de preuve de correction du démarrage.
+
+
+## Reprise nocturne 1 — démarrage et CPU
+
+Garde de chargement de 30 secondes avec annulation réelle, diagnostic par étape et relance volontaire ; la cause du délai intermittent historique reste non établie. Huit rechargements bureau/mobile émulé sont passés. Écriture des positions du tronc optimisée avec résultats float32 identiques octet par octet : médiane CPU locale 46.354 → 10.217 ms, soit 4.54× sur cette seule opération. Les normales, le rendu complet et le téléphone ne sont pas mesurés par ce benchmark. 106 tests Node et les trois suites navigateur ciblées passent ; les autres résultats antérieurs ne sont pas déclarés réexécutés. Détails et reproduction dans `BODY_NIGHT_01_2026-10-28.md`.

@@ -46,3 +46,8 @@ Relances horaires de ce chat actives jusqu'au **29 octobre 2026 à 08:00 Europe/
 Les mesures sur téléphone physique, les insertions individuelles et les validations expérimentales absentes ne peuvent pas être déclarées acquises par ces tests. La diffusion et la publication exigent toujours l'accord explicite de l'utilisateur.
 
 Une autre passe de la suite de référence a été interrompue alors qu’elle ne produisait plus de résultat. Les attentes des requêtes de test détenues par une fixture sont maintenant bornées à 15 secondes avec diagnostic ; la passe suivante a réussi. Cette interruption ne sert pas de preuve de réussite ni de preuve de correction du démarrage.
+
+
+## Reprise nocturne 1 — démarrage et CPU
+
+Garde de chargement de 30 secondes avec annulation réelle, diagnostic par étape et relance volontaire ; la cause du délai intermittent historique reste non établie. Huit rechargements bureau/mobile émulé sont passés. Écriture des positions du tronc optimisée avec résultats float32 identiques octet par octet : médiane CPU locale 46.354 → 10.217 ms, soit 4.54× sur cette seule opération. Les normales, le rendu complet et le téléphone ne sont pas mesurés par ce benchmark. 106 tests Node et les trois suites navigateur ciblées passent ; les autres résultats antérieurs ne sont pas déclarés réexécutés. Détails et reproduction dans `BODY_NIGHT_01_2026-10-28.md`.

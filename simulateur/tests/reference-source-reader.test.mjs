@@ -31,6 +31,12 @@ test('metadata-only inventory does not read any geometry block',async()=>{
  const requests=[];await readReferenceCatalogue(manifest,{hash,unzip,readBytes:async filename=>{requests.push(filename);return readBytes(filename)}});
  assert.deepEqual(requests,['CATALOGUE.json.gz']);assert.equal(catalogue.data.parts.length,458);assert.equal(catalogue.data.bones.length,68);
 });
+test('catalogue stages expose a bounded diagnostic trace; cancellation during hash stops decompression',async()=>{
+ const stages=[];await readReferenceCatalogue(manifest,{readBytes,hash,unzip,onStage:stage=>stages.push(stage)});
+ assert.deepEqual(stages,['catalogue_fetch','catalogue_compressed_hash','catalogue_decompress','catalogue_raw_hash','catalogue_parse','catalogue_validated']);
+ const controller=new AbortController();let decompressed=false;
+ await assert.rejects(readReferenceCatalogue(manifest,{readBytes,signal:controller.signal,hash:bytes=>{controller.abort(Error('deadline'));return hash(bytes)},unzip:async()=>{decompressed=true;throw Error('must not decompress')}}),/deadline/);assert.equal(decompressed,false);
+});
 test('caller budget rejects before block download and altered block bytes cannot be accepted',async()=>{
  let requested=false;
  await assert.rejects(readReferenceChunk(manifest,manifest.chunks[0].id,{catalogue,maxRawBytes:1,readBytes:async()=>{requested=true;throw Error('Must not read')}}),/budget/);assert.equal(requested,false);
