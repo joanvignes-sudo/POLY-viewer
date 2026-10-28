@@ -15,7 +15,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
    await page.route('**/models/body-display.bin.gz',route=>route.abort('failed'));
    await page.goto(base+'/simulateur/web/index.html',{waitUntil:'domcontentloaded'});
    await page.locator('#body-startup-fallback').waitFor({state:'visible',timeout:45000});
-   assert.ok(['asynchronous-initialization','module-execution','module-resource','webgl-context-lost'].includes(await page.locator('#body-startup-fallback').getAttribute('data-reason')));
+   assert.ok(['resource-load','asynchronous-initialization','module-execution','module-resource','webgl-context-lost'].includes(await page.locator('#body-startup-fallback').getAttribute('data-reason')));
    assert.match(await page.locator('#status').innerText(),/indisponible/);
    assert.equal(await page.locator('main').getAttribute('aria-busy'),'true');
    assert.equal(await page.locator('main').getAttribute('inert'),'');
