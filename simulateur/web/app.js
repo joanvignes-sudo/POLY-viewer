@@ -21,6 +21,7 @@ import {createRecoveredWork} from './recovered-work.js?v=bw-1';
 import {createDocumentaryNetwork} from './documentary-network.js?v=audit-o-1';
 import {createBrainAtlas} from './brain-atlas.js?v=audit-o-1';
 import {createCogitateScene} from './cogitate-scene.js?v=audit-o-1';
+import {buildInBudget} from './body-batch-loader.mjs';
 import * as THREE from './vendor/three.module.js?v=audit-o-1';
 import {rigGLSL,deformPosition} from './rig.js?v=audit-o-1';
 import {createWalkingNetwork} from './walking-network.js?v=bx-1';
@@ -41,9 +42,22 @@ const shaderHead=rigGLSL;
 const shaderBody='transformed=polyDeform(position);';
 const meshes=[],bySystem={};let skinMode=true,selected=null,playing=false,elapsed=0,networkElapsed=0,angle=.25,pitch=.04,zoom=7.7,step=0,chainElapsed=0;
 function label(n){return n.replace(/^(VH_M_|Allen_)/,'').replaceAll('_',' ')}
-for(const item of meta.structures){const system=Object.keys(systems).find(s=>item.path.includes('VH_M_'+s+'_system'))||'nervous';const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(buffer,item.position_offset,item.vertex_count*3),3));g.setAttribute('normal',new THREE.BufferAttribute(new Float32Array(buffer,item.normal_offset,item.vertex_count*3),3));g.setIndex(new THREE.BufferAttribute(new Uint32Array(buffer,item.index_offset,item.triangle_count*3),1));
-const material=new THREE.MeshStandardMaterial({color:systems[system][1],roughness:.62,metalness:.08,side:THREE.DoubleSide,transparent:system==='integumentary',opacity:system==='integumentary'?.035:1,depthWrite:system!=='integumentary'});material.onBeforeCompile=s=>{Object.assign(s.uniforms,uniforms);s.vertexShader=shaderHead+'\n'+s.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\n'+shaderBody+'\n')};
-const mesh=new THREE.Mesh(g,material);mesh.userData={...item,system};mesh.frustumCulled=false;root.add(mesh);meshes.push(mesh);(bySystem[system]??=[]).push(mesh);}
+try{
+ await buildInBudget(meta.structures,item=>{
+  const system=Object.keys(systems).find(s=>item.path.includes('VH_M_'+s+'_system'))||'nervous';
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(buffer,item.position_offset,item.vertex_count*3),3));
+  g.setAttribute('normal',new THREE.BufferAttribute(new Float32Array(buffer,item.normal_offset,item.vertex_count*3),3));
+  g.setIndex(new THREE.BufferAttribute(new Uint32Array(buffer,item.index_offset,item.triangle_count*3),1));
+  const material=new THREE.MeshStandardMaterial({color:systems[system][1],roughness:.62,metalness:.08,side:THREE.DoubleSide,transparent:system==='integumentary',opacity:system==='integumentary'?.035:1,depthWrite:system!=='integumentary'});
+  material.onBeforeCompile=s=>{Object.assign(s.uniforms,uniforms);s.vertexShader=shaderHead+'\n'+s.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\n'+shaderBody+'\n')};
+  const mesh=new THREE.Mesh(g,material);mesh.userData={...item,system};mesh.frustumCulled=false;
+  root.add(mesh);meshes.push(mesh);(bySystem[system]??=[]).push(mesh);
+ },{budgetMs:7,onProgress:(done,total)=>{$('status').textContent='Préparation anatomique · '+done+' / '+total+' structures';}});
+}catch(error){
+ window.dispatchEvent(new CustomEvent('poly-body-init-failed',{detail:{reason:'geometry-creation'}}));
+ throw error;
+}
 for(const [id,[title]] of Object.entries(systems)){const row=document.createElement('label');row.innerHTML=`<input type="checkbox" checked data-system="${id}">${title}<span>${bySystem[id]?.length||0}</span>`;row.querySelector('input').onchange=e=>{for(const m of bySystem[id]||[])m.visible=e.target.checked};$('systems').append(row)}
 let organView=null;let recovered=null;
 function select(mesh,open=true){if(selected)selected.material.emissive.setHex(0);selected=mesh;mesh.material.emissive.setHex(0x285851);$('selected').textContent=label(mesh.userData.name);$('detail').textContent=systems[mesh.userData.system][0]+' · structure anatomique de référence · '+mesh.userData.triangle_count.toLocaleString('fr')+' triangles d’affichage';organView?.inspect(mesh,open);recovered?.suggest(mesh);}
@@ -154,7 +168,7 @@ let last=performance.now();function render(now){requestAnimationFrame(render);re
 
 
 
-document.querySelector('main').inert=false;document.querySelector('main').setAttribute('aria-busy','false');
+document.querySelector('main').inert=false;document.querySelector('main').setAttribute('aria-busy','false');$('status').textContent='Corps 3D prêt · '+meshes.length+' structures de référence';
 function openRequestedOrgan(){const id=new URLSearchParams(location.hash.slice(1)).get('organ');if(id&&organView.groups.has(id))organView.openGroup(id,organView.groups.get(id)[0])}window.addEventListener('hashchange',openRequestedOrgan);openRequestedOrgan();
 
 if(location.hash==="#cogitate")cogitate.open();
