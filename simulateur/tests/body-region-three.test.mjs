@@ -152,3 +152,71 @@ test('selection identity and bounding box remain documentary, even with multiple
  assert.equal(selected.path.length>0,true);
  adapter.dispose();assert.equal(scene.children.length,0);
 });
+
+
+test('clearing while a source block is downloading prevents late geometry from entering the scene',async()=>{
+ const c=manifest.chunks[0];
+ const {THREE,created,scene}=fakeThree();
+ const adapter=createRegionSceneAdapter({THREE,scene});
+ let unlock,notify;
+ const gate=new Promise(resolve=>{unlock=resolve});
+ const started=new Promise(resolve=>{notify=resolve});
+ const delayed=async filename=>{
+  if(filename===c.geometry){notify();await gate}
+  return readBytes(filename);
+ };
+ const store=createBoundedChunkStore(manifest,{readBytes:delayed,unzip,hash,
+  onInstall:adapter.install,onDispose:adapter.uninstall});
+ const pending=store.load(c.id);
+ await started;
+ assert.deepEqual(store.info().pending,[c.id]);
+ store.clear();
+ unlock();
+ await assert.rejects(pending,/annulé/);
+ assert.equal(store.info().residentRawBytes,0);
+ assert.equal(scene.children.length,0);
+ assert.equal(created.geometries,0);
+});
+
+test('releasing a specific region during download invalidates that pending request',async()=>{
+ const c=manifest.chunks[0];
+ const {THREE,scene}=fakeThree();
+ const adapter=createRegionSceneAdapter({THREE,scene});
+ let continueLoad,started;
+ const gate=new Promise(resolve=>{continueLoad=resolve});
+ const entered=new Promise(resolve=>{started=resolve});
+ const delayed=async filename=>{
+  if(filename===c.geometry){started();await gate}
+  return readBytes(filename);
+ };
+ const store=createBoundedChunkStore(manifest,{readBytes:delayed,unzip,hash,
+  onInstall:adapter.install,onDispose:adapter.uninstall});
+ const pending=store.load(c.id);
+ await entered;
+ assert.equal(store.release(c.id),false,'No resident block yet, but pending load is invalidated');
+ continueLoad();
+ await assert.rejects(pending,/annulé/);
+ assert.equal(adapter.diagnostics().meshes,0);
+});
+
+test('a slow asynchronous GPU installer is disposed if the user clears the scene mid-install',async()=>{
+ const c=manifest.chunks[0],{THREE,created,scene}=fakeThree();
+ const adapter=createRegionSceneAdapter({THREE,scene});
+ let finish,notify;
+ const gate=new Promise(resolve=>{finish=resolve});
+ const started=new Promise(resolve=>{notify=resolve});
+ const store=createBoundedChunkStore(manifest,{readBytes,unzip,hash,
+  onInstall:async chunk=>{const installed=adapter.install(chunk);notify();await gate;return installed},
+  onDispose:adapter.uninstall});
+ const pending=store.load(c.id);
+ await started;
+ assert.ok(scene.children.length>0);
+ store.clear();
+ finish();
+ await assert.rejects(pending,/annulé/);
+ assert.equal(scene.children.length,0);
+ assert.equal(adapter.diagnostics().meshes,0);
+ assert.equal(created.geometryDisposals,created.geometries);
+ assert.equal(created.materialDisposals,created.materials);
+ assert.equal(store.info().residentRawBytes,0);
+});
