@@ -79,14 +79,23 @@ function selectSource(id){
  return record;
 }
 function fillBlocks(){
- const key=system.value;
+ const key=system.value,previous=block.value;
+ const choices=manifest.chunks.filter(c=>c.system===key);
  block.replaceChildren();
- for(const c of manifest.chunks.filter(c=>c.system===key)){
+ for(const c of choices){
   const o=document.createElement('option');o.value=c.id;
   o.textContent=c.id+' · '+fmt(c.part_count)+' structures · '+(c.compressed_bytes/1048576).toFixed(2)+' Mio gzip';
   block.append(o);
  }
+ if(choices.some(c=>c.id===previous))block.value=previous;
  $('release').disabled=!store?.info().ids.includes(block.value);
+}
+let loadSerial=0,pendingBlock=null;
+function invalidatePending(){
+ loadSerial++;
+ if(pendingBlock&&store)store.release(pendingBlock);
+ pendingBlock=null;
+ $('load').disabled=false;
 }
 function newStore(){
  if(store)store.clear();
@@ -101,19 +110,22 @@ function newStore(){
  refreshStructures();fillBlocks();scheduleRender();
 }
 async function loadSelected(){
- $('load').disabled=true;
- const id=block.value;
+ const id=block.value,requestedStore=store,serial=++loadSerial;
+ pendingBlock=id;$('load').disabled=true;
  status('Lecture, vérification des empreintes et préparation des maillages : '+id+'…');
  try{
-  const chunk=await store.load(id);
+  const chunk=await requestedStore.load(id);
+  if(serial!==loadSerial)return; // Never select an obsolete or cancelled region.
   const candidate=chunk.metadata.geometries[0];
   if(candidate)selectSource(candidate.source_index);
   status('Bloc vérifié et affiché : '+id+' ('+chunk.metadata.geometries.length+' structures de référence).');
  }catch(e){
-  status('Bloc refusé ou indisponible : '+e.message,true);
+  if(serial===loadSerial)status('Bloc refusé ou indisponible : '+e.message,true);
  }finally{
-  $('load').disabled=false;
-  fillBlocks();refreshStructures();scheduleRender();
+  if(serial===loadSerial){
+   pendingBlock=null;$('load').disabled=false;
+   fillBlocks();refreshStructures();scheduleRender();
+  }
  }
 }
 function releaseSelected(){
@@ -202,10 +214,11 @@ async function start(){
   const systems=[...new Set(manifest.chunks.map(c=>c.system))].sort();
   for(const k of systems){const o=document.createElement('option');o.value=k;o.textContent=k;system.append(o)}
   if(systems.includes('skeletal'))system.value='skeletal';
-  system.onchange=fillBlocks;block.onchange=fillBlocks;
-  $('budget').onchange=()=>{newStore();status('Budget modifié. Anciens blocs et ressources GPU libérés.')};
-  $('load').onclick=loadSelected;$('release').onclick=releaseSelected;
-  $('clear').onclick=()=>{store.clear();selectedIndex=null;selectedUI(null);refreshStructures();fillBlocks();status('Tous les blocs libérés.');scheduleRender()};
+  system.onchange=()=>{invalidatePending();fillBlocks()};
+  block.onchange=()=>{invalidatePending();fillBlocks()};
+  $('budget').onchange=()=>{invalidatePending();newStore();status('Budget modifié. Anciens blocs et ressources GPU libérés.')};
+  $('load').onclick=loadSelected;$('release').onclick=()=>{invalidatePending();releaseSelected()};
+  $('clear').onclick=()=>{invalidatePending();store.clear();selectedIndex=null;selectedUI(null);refreshStructures();fillBlocks();status('Tous les blocs libérés.');scheduleRender()};
   structure.onchange=()=>{if(structure.value)selectSource(Number(structure.value))};
   $('focus').onclick=focusSelected;$('reset').onclick=resetCamera;
   newStore();bindPointer();resetCamera();
