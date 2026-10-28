@@ -1,3 +1,19 @@
+# POLY — état public actuel v0.141.1
+
+**État vérifié au 28 octobre 2026.** [Explorer le site public](https://joanvignes-sudo.github.io/POLY-viewer/) · [Notice de version v0.141.1](RELEASE_v0.141.1.md) · [État opérationnel et limites](docs/ETAT_PUBLIC_COURANT.md) · [État structuré](docs/ETAT_PUBLIC_COURANT.json)
+
+POLY propose un atlas anatomique et documentaire interactif, des chaînes de mécanismes et des expérimentations de modélisation. **Ce n'est pas un modèle clinique humain validé ni un simulateur capable de prédire l'ensemble des processus physiologiques.**
+
+Version actuellement publiée : entrée « Cerveau & conscience », exploration anatomique à la demande, anatomie musculaire et documentation des relations régionales. Sur **507 pièces anatomiques**, **143** ont au moins une relation régionale documentée ; **364** restent sans relation qualifiée. **Aucune insertion musculaire 3D n'est validée.**
+
+Les travaux sur les interactions avancées du cerveau et la démonstration Li 2025 sont, à cette date, proposés en branches non fusionnées : [PR #12](https://github.com/joanvignes-sudo/POLY-viewer/pull/12) et [PR #13](https://github.com/joanvignes-sudo/POLY-viewer/pull/13). Ne pas les confondre avec le contenu du site public.
+
+Les anciens fichiers `ETAT_CANONIQUE.json` (v0.136.0) et `PUBLICATION_SCOPE.json` (v0.140.0) restent des **instantanés historiques**. Leur contenu scientifique ne change pas de version avec l'interface.
+
+---
+
+## Historique des notices conservées
+
 # POLY v0.139.2 — coude : qualification anatomique
 
 [Explorer POLY](https://joanvignes-sudo.github.io/POLY-viewer/?v=0.139.2) · [Rapport scientifique](simulateur/reports/ELBOW_QUALIFICATION_2026-10-25.md) · [Notice de version](RELEASE_v0.139.2.md)

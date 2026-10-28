@@ -1,0 +1,66 @@
+{
+  "schema": "poly.current-public-release.v1",
+  "audited_on": "2026-10-28",
+  "public_release": "0.141.1",
+  "public_url": "https://joanvignes-sudo.github.io/POLY-viewer/",
+  "publication_branch": "main",
+  "release_notes": "RELEASE_v0.141.1.md",
+  "title": "POLY — état public vérifiable",
+  "purpose": "Expose what the published viewer actually contains; never promotes scientific hypotheses or archival documents automatically.",
+  "front_end": {
+    "entry_point": "index.html",
+    "intro": "Cerveau & conscience",
+    "brain_3d": "Atlas CerebrA chargé sur demande (17 surfaces); coloration anatomique, pas de signal individuel"
+  },
+  "anatomy": {
+    "inventory_pieces": 507,
+    "pieces_with_documented_regional_relation": 143,
+    "pieces_without_qualified_relation": 364,
+    "validated_3d_insertions": 0,
+    "source": "simulateur/reports/ATTACHMENTS_2026-10-28.md",
+    "scope": "relations régionales documentées sans enthèses 3D ni validation biomécanique"
+  },
+  "models": {
+    "cerebral_lactate": "Régressions publiées de lactate sanguin et cérébral régional, sans flux astrocyte-neurone mesuré",
+    "thermal": "Résultats conservés, calcul en ligne suspendu",
+    "whole_body": "Animation illustrative; pas de simulation physiologique humaine globale validée"
+  },
+  "separate_historical_documents": [
+    {
+      "path": "ETAT_CANONIQUE.json",
+      "snapshot_version": "0.136.0",
+      "classification": "état scientifique historique, ne pas renuméroter"
+    },
+    {
+      "path": "PUBLICATION_SCOPE.json",
+      "snapshot_version": "0.140.0",
+      "classification": "inventaire de portée antérieur, à conserver sans falsifier son historique"
+    }
+  ],
+  "work_not_yet_public_as_of_audit": [
+    {
+      "pr": 12,
+      "branch": "codex/brain-interactions",
+      "scope": "commande et interaction cerveau 3D",
+      "status": "draft_on_2026-10-28"
+    },
+    {
+      "pr": 13,
+      "branch": "feat/human-metabolism-evidence-demo",
+      "scope": "reproduction arithmétique Li et modèle cellulaire synthétique",
+      "status": "draft_on_2026-10-28"
+    }
+  ],
+  "scientific_guards": {
+    "brain_atlas_is_individual_subject": false,
+    "astrocyte_neuron_transfer_measured": false,
+    "exact_muscle_entheses_validated": false,
+    "global_body_physiology_validated": false,
+    "clinical_use": false
+  },
+  "notes": [
+    "Cette fiche est un inventaire opérationnel daté, pas un état biologique individuel.",
+    "Le statut d'une PR peut changer après cet audit ; consulter GitHub pour sa disponibilité effective.",
+    "Les contrôles logiciels ne remplacent ni relecture indépendante ni validation humaine des mécanismes."
+  ]
+}
