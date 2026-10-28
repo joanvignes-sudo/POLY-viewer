@@ -1,6 +1,6 @@
 const routes=['cerveau','conscience','chaines'];
 const aliases={cogitate:'conscience',brain:'cerveau',chains:'chaines'};
-function route(){const requested=location.hash.slice(1);const active=routes.includes(requested)?requested:aliases[requested]||'cerveau';for(const name of routes)document.getElementById(name).hidden=name!==active;for(const a of document.querySelectorAll('[data-route]')){if(a.dataset.route===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}document.dispatchEvent(new CustomEvent('poly-brain-visibility',{detail:active==='cerveau'}));}
+function route(){const requested=location.hash.slice(1);const active=routes.includes(requested)?requested:aliases[requested]||'cerveau';if(document.documentElement.hasAttribute('data-poly-env'))document.documentElement.dataset.polyEnv={cerveau:'atlas',conscience:'preuves',chaines:'atelier'}[active];for(const name of routes)document.getElementById(name).hidden=name!==active;for(const a of document.querySelectorAll('[data-route]')){if(a.dataset.route===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}document.dispatchEvent(new CustomEvent('poly-brain-visibility',{detail:active==='cerveau'}));}
 window.addEventListener('hashchange',route);route();
 const button=document.getElementById('load-brain'),status=document.getElementById('brain-status');
 let loader;
