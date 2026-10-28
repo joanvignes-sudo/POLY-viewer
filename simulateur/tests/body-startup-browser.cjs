@@ -11,7 +11,8 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
     isMobile:mobile,hasTouch:mobile,deviceScaleFactor:mobile?2:1
    });
    const page=await context.newPage();
-   await page.route('**/models/body-display.bin',route=>route.abort('failed'));
+   // public-assets.js maps the logical .bin request onto its .bin.gz payload.
+   await page.route('**/models/body-display.bin.gz',route=>route.abort('failed'));
    await page.goto(base+'/simulateur/web/index.html',{waitUntil:'domcontentloaded'});
    await page.locator('#body-startup-fallback').waitFor({state:'visible',timeout:45000});
    assert.ok(['asynchronous-initialization','module-execution','module-resource','webgl-context-lost'].includes(await page.locator('#body-startup-fallback').getAttribute('data-reason')));
