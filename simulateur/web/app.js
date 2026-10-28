@@ -27,7 +27,7 @@ import {createWalkingNetwork} from './walking-network.js?v=bx-1';
 import {createOrganInspector,organName} from './organ-inspector.js?v=audit-o-1';
 import {createActivities} from './activities.js?v=0.140.0';
 const $=id=>document.getElementById(id), canvas=$('body');
-const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,window.matchMedia('(pointer:coarse)').matches?1:1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;
 const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(35,1,.01,100);camera.position.set(4,2.2,7.6);const target=new THREE.Vector3(0,1.75,0);camera.lookAt(target);
 scene.add(new THREE.HemisphereLight(0xc5e5ff,0x1c2835,2));const light=new THREE.DirectionalLight(0xffe3cf,3);light.position.set(3,5,5);scene.add(light);const rim=new THREE.DirectionalLight(0xc0c5c2,.5);rim.position.set(-4,3,-2);scene.add(rim);
 const root=new THREE.Group();scene.add(root);const grid=new THREE.GridHelper(12,40,0x376675,0x19303d);scene.add(grid);
