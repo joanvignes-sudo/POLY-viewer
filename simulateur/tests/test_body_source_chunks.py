@@ -89,7 +89,7 @@ class BodySourceChunkTests(unittest.TestCase):
 
     def test_oversized_single_mesh_is_flagged_instead_of_silently_truncated(self):
         items, blob = make_synthetic()
-        plans = builder.plan_chunks(items, blob, max_bytes=64)
+        plans = builder.plan_chunks(items, blob, max_bytes=48)
         self.assertTrue(any(p["over_budget"] for p in plans))
         self.assertEqual(sorted(i for p in plans for i, _ in p["members"]), list(range(4)))
         with self.assertRaisesRegex(ValueError, "at least"):
