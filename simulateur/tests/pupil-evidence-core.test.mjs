@@ -52,6 +52,20 @@ test('no value invented for empty or partly missing windows and no interpolation
  assert.equal(e.after.weighted_mean_mm,null);
  assert.equal(e.descriptive_delta_mm,null);
 });
+test('event 4 has under 75% pre-event coverage so delta is deliberately withheld',()=>{
+ const e=descriptiveEventWindow(observed,chain,4);
+ assert.ok(e.before.coverage_fraction<.75);
+ assert.ok(e.after.coverage_fraction>.75);
+ assert.equal(e.before.weighted_mean_mm,null);
+ assert.equal(e.descriptive_delta_mm,null);
+});
+test('event 2 has sufficient coverage; its pre/post difference is descriptive only',()=>{
+ const e=descriptiveEventWindow(observed,chain,2);
+ assert.ok(e.before.coverage_fraction>.75);
+ assert.ok(e.after.coverage_fraction>.75);
+ assert.ok(Math.abs(e.descriptive_delta_mm-(-0.49008280884928945))<1e-9);
+ assert.equal(e.neural_delay_s,null);
+});
 test('bin-level means are weighted by actually observed sample counts',()=>{
  const e=descriptiveEventWindow(observed,chain,4);
  const t=e.event.recording_time_s;
