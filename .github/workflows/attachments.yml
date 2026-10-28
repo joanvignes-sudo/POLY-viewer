@@ -22,6 +22,7 @@ jobs:
       - run: node --test simulateur/tests/body-startup-guard.test.mjs
       - run: node --test simulateur/tests/body-source-contract.test.mjs simulateur/tests/body-source-material-session.test.mjs simulateur/tests/brain-atlas-source.test.mjs simulateur/tests/hand-reference-source.test.mjs simulateur/tests/camera-navigation.test.mjs simulateur/tests/resident-occlusion.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
+      - run: node --test simulateur/tests/day-journal-store.test.mjs
       - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
         run: python simulateur/scripts/build_body_source_chunks.py --output-root "${{ runner.temp }}/poly-body-chunks" --verify
@@ -61,3 +62,4 @@ jobs:
           node simulateur/tests/reference-region-browser.cjs
           node simulateur/tests/reference-interactions-browser.cjs
           node simulateur/tests/reference-startup-browser.cjs
+          node simulateur/tests/day-journal-browser.cjs

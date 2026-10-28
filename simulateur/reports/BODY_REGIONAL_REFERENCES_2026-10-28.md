@@ -224,3 +224,8 @@ Garde de chargement de 30 secondes avec annulation réelle, diagnostic par étap
 ## Reprise nocturne 2 — navigation HRA et matrice des écarts
 
 Six orientations, retour de cadrage borné et atténuation graphique volontaire au repos HRA sont raccordés. Les matériaux sont restaurés après chaque rendu ; cache et historique ne gardent pas de ressources de scène. 111 tests Node et sept suites navigateur HRA passent. La matrice `BODY_FEATURE_PARITY_2026-10-28.md` explicite les fonctions encore partielles ou historiques (activités/journal, chaînes génériques, pilotes et ateliers distincts). Le détail et les limites figurent dans `BODY_NIGHT_02_2026-10-28.md`. Aucun progrès de qualification physique ou de résolution de la cause du délai intermittent n’est revendiqué.
+
+
+## Reprise nocturne 3 — journal déclaré autonome
+
+Le journal 24 h dispose d’un parcours sans maillage, compatible avec la clé et le schéma historiques. Brouillons explicites, copies précédentes avant remplacement, refus des versions concurrentes détectées, imports/exports et conservation des champs inconnus et heures fractionnaires sont testés. Le résumé connu est reconstruit à l’export ; aucun effet biologique ni mouvement d’avatar n’est déduit. Les vérifications de stockage ne constituent pas une transaction entre pages. 121 tests Node et les suites navigateur journal/régional/références passent. Détails et limites dans `BODY_NIGHT_03_2026-10-28.md` ; les autres postures et modèles restent distincts.
