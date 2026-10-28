@@ -1,13 +1,13 @@
-# POLY — Environnements carmin et or
+# POLY — Environnements bleus et or
 
 La couche commune `assets/poly-environments.css` est chargée dans 67 pages de la publication courante. Chaque document choisit son environnement avec `data-poly-env` sur `html`.
 
 | Environnement | Usage | Matière et lumière |
 | --- | --- | --- |
-| atlas | Structures anatomiques et exploration | Carmin profond, graphite, repères champagne |
-| preuves | Observations et dossiers expérimentaux | Graphite calme, surfaces mates, or discret |
-| atelier | Mécanismes, modèles et commandes | Trame technique, panneaux carmin, commandes laiton |
-| sources | Protocoles, sources et suivi documentaire | Papier chaud, titres sang-de-bœuf, filets bronze |
+| atlas | Structures anatomiques et exploration | Bleu roi profond, graphite, repères bleu ciel et champagne |
+| preuves | Observations et dossiers expérimentaux | Graphite bleuté, surfaces mates, repères bleu ciel et or discret |
+| atelier | Mécanismes, modèles et commandes | Trame technique, panneaux bleu roi, commandes électriques et accents laiton |
+| sources | Protocoles, sources et suivi documentaire | Papier clair bleuté, titres bleu roi, filets bronze |
 
 L’accueil et `simulateur/web/cerveau.html` choisissent leur ambiance selon le parcours actif (cerveau, conscience ou chaînes). Les liens, contrôles et figures des lecteurs gardent leur rôle d’origine.
 
@@ -17,7 +17,7 @@ Les anciennes versions d’accueil, les archives, les copies historiques dans `b
 
 ## Illustration d’accueil
 
-`assets/poly-brain-concept.webp` est une illustration d’ambiance générée par IA (224 270 octets), sans donnée mesurée et sans fonction de référence anatomique. Sa légende le précise. Elle ne remplace aucune surface CerebrA ni aucune figure scientifique.
+`assets/poly-brain-royal.webp` est une illustration d’ambiance générée par IA (274 116 octets), sans donnée mesurée et sans fonction de référence anatomique. Sa légende le précise. Elle ne remplace aucune surface CerebrA ni aucune figure scientifique.
 
 Les couleurs des figures et des scènes ne sont pas filtrées. La couche visuelle ne modifie pas les calculs, les données, les imports ou les exports.
 
