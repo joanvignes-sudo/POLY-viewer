@@ -20,7 +20,7 @@ async function routePreview(page,{failManifest=false,corruptId=null,delayId=null
    const bytes=await fs.readFile(path.join(root,rel));
    if(rel==='chunks/'+corruptId+'.bin.gz')bytes[9]^=1;
    await route.fulfill({status:200,body:bytes,contentType:rel.endsWith('.json')?'application/json':'application/octet-stream'});
-  }catch(e){await route.fulfill({status:404,body:'Fixture not found'});}
+  }catch(e){if(route.request().failure())return;await route.fulfill({status:404,body:'Fixture not found'});}
  });
 }
 async function chooseBlock(page,c){
@@ -157,4 +157,5 @@ async function launch(){
   console.log(JSON.stringify({schema:'poly.regional-three-browser.v1',results},null,2));
  }finally{await browser.close();}
 }
-launch().catch(e=>{console.error(e);process.exitCode=1;});
+module.exports={routePreview,chooseBlock,expectLoaded};
+if(require.main===module)launch().catch(e=>{console.error(e);process.exitCode=1;});

@@ -26,16 +26,24 @@
 <p id="status" role="status">Aucun bloc chargé.</p>
 <p class="readout" id="memory" aria-live="polite"></p>
 <hr>
-<label for="source-search">Rechercher dans les structures en mémoire</label><input id="source-search" type="search" placeholder="Cœur, rein, nerf…"><div id="source-results" aria-live="polite"></div>
-<p class="hint">Même recherche que le corps classique. Les structures des blocs absents ne sont pas recherchées.</p>
+<label for="source-search">Rechercher dans les structures en mémoire</label><input id="source-search" type="search" placeholder="Cœur, rein, nerf…"><label for="search-scope">Portée de la recherche</label><select id="search-scope"><option value="resident">Blocs en mémoire</option><option value="catalogue">Catalogue complet · charger le bloc nécessaire</option></select><div id="source-results" aria-live="polite"></div>
+<p class="hint">Même recherche que le corps classique. Le catalogue complet permet de charger le bloc contenant une pièce absente, sans charger tout son système. Le téléchargement reste celui du bloc entier.</p>
 <label for="structure">Structure d'origine en mémoire</label><select id="structure"><option value="">Aucune structure chargée</option></select>
+<div class="buttons"><button id="inspect" class="secondary" type="button">Inspecter cet ensemble</button><button id="isolate-source" class="secondary" type="button">Isoler cette structure</button><button id="close-inspection" class="secondary" type="button">Revenir aux blocs</button></div>
+<button id="load-inspection" class="secondary" type="button" hidden>Charger les blocs manquants de cet ensemble</button>
+<div id="inspection" class="selected" aria-live="polite"></div>
 <div class="buttons"><button id="focus" class="secondary" type="button">Centrer la caméra</button><button id="reset" class="secondary" type="button">Vue générale</button></div>
 <div id="selected" class="selected" aria-live="polite"><p>Sélectionnez une structure chargée pour consulter son nom, son indice d'origine et la provenance.</p></div>
 </aside>
 <section class="panel stage" aria-labelledby="view-heading"><p class="kicker">02 / RENDU VÉRIFIÉ</p><h2 id="view-heading">Surface anatomique source</h2>
-<p class="hint">Glisser pour tourner · molette pour zoomer · toucher une surface pour la sélectionner. Les blocs sont indépendants : les parties absentes ne sont pas estimées.</p>
+<p class="hint">Glisser pour tourner · molette ou pincement à deux doigts pour zoomer · toucher une surface pour la sélectionner. Les blocs sont indépendants : les parties absentes ne sont pas estimées.</p>
 <canvas id="region-canvas" aria-label="Rendu Three.js des seules structures anatomiques déjà vérifiées"></canvas>
+<label for="motion-phase">Marche de référence · phase graphique</label><input id="motion-phase" type="range" min="0" max="1.079" step="0.001" value="0" disabled>
+<div class="buttons"><button id="motion-play" type="button" disabled>Lire la marche</button><button id="motion-rest" class="secondary" type="button">Revenir au repos</button></div>
+<p id="motion-status" class="hint">Repos. La marche OpenSim sera transférée graphiquement sur cet atlas distinct : aucune activation musculaire, force, contact au sol ou précision biomécanique validée.</p>
 <p id="scene-stat" class="readout" aria-live="polite">0 structure en mémoire.</p>
+<button id="export-diagnostics" class="secondary" type="button">Exporter les mesures locales</button>
+<p class="hint">Le reçu décrit les chargements et le temps CPU de soumission du rendu. Il ne mesure ni mémoire GPU physique, ni batterie, ni température.</p>
 <p class="hint">La limite en Mio porte sur les octets décompressés du cache, et ne mesure pas la mémoire GPU, le réseau ou les copies temporaires.</p>
 </section>
 </div>

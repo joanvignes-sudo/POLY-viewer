@@ -39,3 +39,15 @@ export function createSourceAccess(getMeshes) {
     },
   });
 }
+
+// A structure request maps to whole verified blocks; no fictitious per-organ byte savings.
+export function planSourceBlocks(manifest,sourceIndices,maxRawBytes){
+  const wanted=new Set(sourceIndices);
+  if(!wanted.size||[...wanted].some(i=>!Number.isInteger(i)||i<0||i>=manifest.source_count))
+    throw Error('Invalid source selection');
+  const chunks=manifest.chunks.filter(c=>c.original_indices.some(i=>wanted.has(i)));
+  if([...wanted].some(i=>!chunks.some(c=>c.original_indices.includes(i))))throw Error('Source not covered');
+  const rawBytes=chunks.reduce((n,c)=>n+c.raw_bytes,0);
+  return {ids:chunks.map(c=>c.id),rawBytes,
+    compressedBytes:chunks.reduce((n,c)=>n+c.compressed_bytes,0),fitsBudget:rawBytes<=maxRawBytes};
+}

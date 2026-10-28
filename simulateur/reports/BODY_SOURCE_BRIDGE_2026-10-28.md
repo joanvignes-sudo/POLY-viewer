@@ -1,6 +1,6 @@
 # POLY — Interface commune corps historique / régions
 
-28 octobre 2026 — lot local expérimental, sans publication.
+28 octobre 2026 — état du premier raccord local. La suite et le bilan à jour sont dans `BODY_REGIONAL_CONVERGENCE_2026-10-28.md`.
 
 ## Point de reprise vérifié
 

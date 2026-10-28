@@ -32,7 +32,7 @@ jobs:
       - name: Mount original geometry source chunks in experimental Three.js adapter
         env:
           POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
-        run: node --test simulateur/tests/body-region-three.test.mjs
+        run: node --test simulateur/tests/body-region-three.test.mjs simulateur/tests/body-regional-features.test.mjs
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks
@@ -45,3 +45,4 @@ jobs:
           node simulateur/tests/body-startup-browser.cjs
           node simulateur/tests/body-light-browser.cjs
           node simulateur/tests/body-region-browser.cjs
+          node simulateur/tests/body-regional-features-browser.cjs

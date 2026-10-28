@@ -57,12 +57,15 @@ export async function readGzipBounded(packed,maxBytes){
  for(const part of parts){out.set(part,offset);offset+=part.byteLength;}
  return out;
 }
-export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBounded,hash=sha256Bytes}={}){
+export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBounded,hash=sha256Bytes,signal}={}){
  validateChunkManifest(manifest);
  const c=manifest.chunks.find(x=>x.id===id);
  check(c,'Bloc anatomique absent du manifeste');
  check(typeof readBytes==='function','Lecture de fichiers non fournie');
- const [metaBytes,compressed]=await Promise.all([readBytes(c.metadata),readBytes(c.geometry)]);
+ const abort=()=>{if(signal?.aborted)throw signal.reason??Error('Chargement anatomique annulé')};
+ abort();
+ const [metaBytes,compressed]=await Promise.all([readBytes(c.metadata,{signal}),readBytes(c.geometry,{signal})]);
+ abort();
  check(metaBytes instanceof Uint8Array&&metaBytes.byteLength<=5*1024*1024,'Métadonnées de bloc trop volumineuses');
  check(compressed instanceof Uint8Array&&compressed.byteLength===c.compressed_bytes,'Fichier gzip de taille incohérente');
  check(await hash(metaBytes)===c.metadata_sha256,'Métadonnées de bloc altérées');
@@ -70,7 +73,9 @@ export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBo
  const meta=JSON.parse(new TextDecoder().decode(metaBytes));
  check(meta.schema==='poly.body-source-chunk-metadata.v1'&&meta.id===id&&meta.source_metadata_sha256===SOURCE_META&&meta.source_geometry_sha256===SOURCE_BIN&&meta.coordinate_policy==='byte_exact_no_transform','Identité ou repère de bloc incorrect');
  check(Array.isArray(meta.geometries)&&meta.geometries.length===c.part_count,'Pièces du bloc absentes');
+ abort();
  const data=await unzip(compressed,c.raw_bytes);
+ abort();
  check(data instanceof Uint8Array&&data.byteLength===c.raw_bytes&&await hash(data)===c.geometry_sha256,'Octets géométriques de bloc altérés');
  for(let i=0;i<meta.geometries.length;i++){
   const g=meta.geometries[i];
@@ -87,7 +92,7 @@ export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBo
 export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounded,hash=sha256Bytes,maxRawBytes=8*1024*1024,onInstall=()=>null,onDispose=()=>{}}={}){
  validateChunkManifest(manifest);
  check(Number.isInteger(maxRawBytes)&&maxRawBytes>0&&maxRawBytes<=128*1024*1024,'Budget RAM de store invalide');
- const entries=new Map(),inflight=new Map(),pins=new Set(),revisions=new Map();
+ const entries=new Map(),inflight=new Map(),controllers=new Map(),pins=new Set(),revisions=new Map();
  let occupied=0,commitGate=Promise.resolve(),epoch=0;
  const revision=id=>revisions.get(id)||0;
  const invalidate=id=>revisions.set(id,revision(id)+1);
@@ -101,11 +106,13 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
  function release(id){
   // Also invalidates a pending request that has not yet reached onInstall.
   invalidate(id);
+  controllers.get(id)?.abort(Error('Chargement anatomique annulé'));
   return remove(id);
  }
  function clear(){
   // Invalidate *all* pending reads even if there are no resident entries.
   epoch++;
+  for(const controller of controllers.values())controller.abort(Error('Chargement anatomique annulé'));
   for(const id of [...entries.keys()])remove(id);
  }
  async function load(id,{pin=false}={}){
@@ -118,8 +125,9 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
   }
   const requestedEpoch=epoch,requestedRevision=revision(id);
   const stillCurrent=()=>epoch===requestedEpoch&&revision(id)===requestedRevision;
+  const controller=new AbortController();controllers.set(id,controller);
   const task=(async()=>{
-   const chunk=await readValidatedChunk(manifest,id,{readBytes,unzip,hash});
+   const chunk=await readValidatedChunk(manifest,id,{readBytes,unzip,hash,signal:controller.signal});
    check(chunk.rawBytes<=maxRawBytes,'Bloc excède la limite RAM du lecteur');
    check(stillCurrent(),'Chargement anatomique annulé avant installation');
    // Network reads may run concurrently; reserve and commit cache RAM serially.
@@ -144,7 +152,7 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
    }finally{releaseGate()}
   })();
   inflight.set(id,task);
-  try{return await task}finally{if(inflight.get(id)===task)inflight.delete(id)}
+  try{return await task}catch(error){controller.abort(error);throw error}finally{if(inflight.get(id)===task)inflight.delete(id);if(controllers.get(id)===controller)controllers.delete(id)}
  }
  return {
   load,release,unpin:id=>pins.delete(id),clear,
@@ -153,11 +161,11 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
 }
 export function browserChunkReader(baseUrl,fetcher=fetch){
  const url=new URL(baseUrl,location.href);
- return async path=>{
+ return async (path,{signal}={})=>{
   check(/^chunks\/[a-z][a-z0-9_-]{1,64}\.(?:json|bin\.gz)$/.test(path),'Chemin de ressource non autorisé');
   const u=new URL(path,url);
   check(u.origin===url.origin,'Ressource externe non autorisée');
-  const r=await fetcher(u.toString(),{cache:'no-store'});
+  const r=await fetcher(u.toString(),{cache:'no-store',signal});
   check(r.ok,'Chargement du bloc échoué');
   return new Uint8Array(await r.arrayBuffer());
  };

@@ -20,7 +20,7 @@ function typedData(bytes, offset, n, Type) {
   return new Type(bytes.buffer,start,n);
 }
 
-export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelectionLost=()=>{}}) {
+export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelectionLost=()=>{}, rig=null}) {
   ensure(THREE?.BufferGeometry && THREE?.BufferAttribute && THREE?.Mesh && THREE?.Group,
     'Three.js geometric primitives missing');
   ensure(scene?.add && scene?.remove, 'Three.js scene missing');
@@ -50,6 +50,7 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
       failSafeDispose(mesh.geometry);
       failSafeDispose(mesh.material);
     }
+    state.meshes.length=0;
     installed.delete(state.id);
     onChange();
     return true;
@@ -86,6 +87,7 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
             side:THREE.DoubleSide,transparent:integument,
             opacity:integument?.18:1,depthWrite:!integument
           });
+          rig?.bind(material);
           const mesh=new THREE.Mesh(geometry,material);
           mesh.name=record.name;
           mesh.userData={...sourceMeshData(record,{system:chunk.system,chunkId:chunk.id}),source_name:record.name,
@@ -94,7 +96,7 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
             bounds:record.bounds,system:chunk.system,chunk_id:chunk.id,
             triangle_count:record.triangle_count,vertex_count:record.vertex_count,
             provenance:'byte_exact_SOURCE_BIN_sha256'};
-          mesh.frustumCulled=true;
+          mesh.frustumCulled=!rig;
           group.add(mesh);
           state.meshes.push(mesh);
           state.triangles+=record.triangle_count;
@@ -111,7 +113,9 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
       onChange();
       return state;
     } catch(error) {
-      // Atomic failure: no partial source block should remain visible or allocated.
+      // Atomic failure also removes registry entries if a consumer callback failed.
+      installed.delete(chunk.id);
+      for(const mesh of state.meshes)if(sourceMeshes.get(mesh.userData.source_index)===mesh)sourceMeshes.delete(mesh.userData.source_index);
       scene.remove(group);
       for(const mesh of state.meshes){
         group.remove(mesh);
@@ -124,6 +128,7 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
 
   function uninstall(installedToken,chunk) {
     const state=installed.get(chunk?.id??installedToken?.id);
+    if(installedToken&&state!==installedToken)return false;
     return removeState(state);
   }
 
@@ -144,9 +149,25 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
     };
   }
   function pick(raycaster){
-    const hits=raycaster.intersectObjects([...sourceMeshes.values()],false);
+    const meshes=[...sourceMeshes.values()].filter(m=>m.visible!==false);
+    let hits=[];
+    if(!rig)hits=raycaster.intersectObjects(meshes,false);
+    else for(const mesh of meshes){
+      // Only one temporary CPU proxy at a time; never mutate source buffers.
+      const geometry=new THREE.BufferGeometry();
+      try{
+        const source=mesh.geometry.attributes.position.array,points=new Float32Array(source.length);
+        for(let i=0;i<source.length;i+=3)points.set(rig.deform([source[i],source[i+1],source[i+2]]),i);
+        geometry.setAttribute('position',new THREE.BufferAttribute(points,3));
+        geometry.setIndex(mesh.geometry.index);
+        const proxy=new THREE.Mesh(geometry,mesh.material);
+        for(const hit of raycaster.intersectObject(proxy,false))hits.push({...hit,object:mesh});
+      }finally{geometry.dispose()}
+    }
+    hits.sort((a,b)=>a.distance-b.distance);
     return hits.length?select(hits[0].object.userData.source_index):null;
   }
+
   function diagnostics(){
     const blocks=[...installed.values()];
     return {blocks:blocks.map(b=>b.id),meshes:sourceMeshes.size,
