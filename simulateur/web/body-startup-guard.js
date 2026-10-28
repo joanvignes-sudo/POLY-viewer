@@ -14,6 +14,8 @@
   label.textContent='Corps 3D indisponible : autres explorateurs accessibles';
   // If main is still inert, the fallback is outside it and remains keyboard accessible.
  }
+ // The heavy body module explicitly reports its resource-preflight failures.
+ window.addEventListener('poly-body-init-failed',event=>show(event.detail?.reason||'resource-load'));
  // Top-level module await failures, e.g. downloading the 30 MB body mesh.
  window.addEventListener('unhandledrejection',()=>show('asynchronous-initialization'));
  // Execution failures, including missing WebGL support, plus failure to fetch the entry module.
