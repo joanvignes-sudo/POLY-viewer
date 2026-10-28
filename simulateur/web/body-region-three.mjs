@@ -158,5 +158,6 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
     unhighlight();
   }
   return {install,uninstall,select,pick,dispose,diagnostics,
+    sourceInfo:index=>{const m=sourceMeshes.get(index);return m?{name:m.userData.source_name,source_index:index,chunk_id:m.userData.chunk_id,bounds:m.userData.bounds}:null},
     listSourceIndices:()=>[...sourceMeshes.keys()].sort((a,b)=>a-b)};
 }
