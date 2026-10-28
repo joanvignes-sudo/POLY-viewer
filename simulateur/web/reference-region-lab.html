@@ -11,8 +11,9 @@
 <label for="reference-side">Côté déclaré par la source</label><select id="reference-side"><option value="all">Tous</option><option value="R">Droit</option><option value="L">Gauche</option></select>
 <p id="reference-count" class="hint"></p><div id="reference-results"></div><button id="reference-more" class="secondary" type="button">Afficher davantage</button>
 <div class="buttons"><button id="reference-release" class="secondary" type="button">Libérer le bloc et la pièce</button><button id="reference-reset" class="secondary" type="button">Recadrer la pièce</button></div>
+<div class="buttons"><button id="reference-save" type="button">Mémoriser cette vue localement</button><button id="reference-restore" type="button" disabled>Reprendre la vue mémorisée</button><button id="reference-forget" class="secondary" type="button">Effacer la vue mémorisée</button></div><p class="hint">La reprise est volontaire et vérifie la même source. Seuls l’identifiant et la caméra sont mémorisés ; aucun maillage n’est conservé.</p>
 <p id="reference-status" role="status">Aucun bloc chargé ; aucun contexte WebGL créé.</p><p id="reference-memory" class="hint"></p>
-<div id="reference-selected" class="selected" aria-live="polite">Choisir une pièce du catalogue.</div><section id="reference-qualification" hidden></section>
+<div id="reference-selected" class="selected" aria-live="polite">Choisir une pièce du catalogue.</div><section id="reference-documentation" hidden></section><section id="reference-qualification" hidden></section>
 </aside><section class="panel stage"><h2>Surface de la référence source</h2><p class="hint">Glisser pour tourner · pincer ou utiliser la molette pour zoomer. Le cadrage est calculé pour l’affichage ; aucun repère de corps individuel n’est créé.</p>
 <canvas id="reference-canvas" aria-label="Pièce source de la référence distincte" tabindex="0"></canvas><p id="reference-stat" class="readout">0 pièce affichée.</p>
 <p class="hint">Un seul bloc décompressé résident, de 4 Mio au maximum. Cette limite exclut le catalogue, les copies d’affichage, les temporaires et la mémoire GPU physique.</p>

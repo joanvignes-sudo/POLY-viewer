@@ -30,9 +30,26 @@ async function main(){
    await fixtures(page);await ready(page);
    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
    assert.ok(!requests.some(url=>url.includes('.bin.gz')));
+   await page.locator('[data-reference-info="parts/0"]').click();assert.ok((await page.locator('#reference-documentation').innerText()).includes(catalogue.data.parts[0].name));
+   assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);assert.ok(!requests.some(url=>url.includes('.bin.gz')));
    await choose(page,'parts/0');await selected(page,'parts/0');
    let stats=await page.evaluate(()=>window.__polyReferencePartDiagnostics());assert.ok(stats.resident_raw_bytes<=4194304);assert.equal(stats.meshes,1);if(mobile)assert.equal(stats.pixel_ratio,1);
    assert.match(await page.locator('#reference-selected').innerText(),/\/parts\/0/);
+   const relation=catalogue.data.bone_relations.find(r=>catalogue.data.parts.some(p=>r.parts.includes(p.id)&&catalogue.data.bones.some(b=>b.side===p.side&&b.bone_family===r.bone_family)));
+   const relatedPart=catalogue.data.parts.findIndex(p=>relation.parts.includes(p.id)&&catalogue.data.bones.some(b=>b.side===p.side&&b.bone_family===relation.bone_family));
+   await choose(page,'parts/'+relatedPart);await selected(page,'parts/'+relatedPart);
+   assert.ok((await page.locator('#reference-documentation').innerText()).includes(relation.scope));
+   const related=page.locator('[data-related-reference-key]').first(),relatedKey=await related.getAttribute('data-related-reference-key');
+   await related.click();await selected(page,relatedKey);assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),1);
+   const reverse=page.locator('[data-related-reference-key="parts/'+relatedPart+'"]').first();await reverse.click();await selected(page,'parts/'+relatedPart);
+   await page.locator('#reference-canvas').focus();await page.keyboard.press('ArrowLeft');
+   const savedAngle=await page.evaluate(()=>window.__polyReferencePartDiagnostics().view.azimuth);
+   await page.locator('#reference-save').click();const requestCount=requests.length;await ready(page);
+   assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
+   assert.ok(!requests.slice(requestCount).some(url=>url.includes('.bin.gz')));
+   await page.locator('#reference-restore').click();await selected(page,'parts/'+relatedPart);
+   assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().view.azimuth),savedAngle);
+   await page.locator('#reference-forget').click();assert.equal(await page.locator('#reference-restore').isDisabled(),true);
    await choose(page,'bones/0');await selected(page,'bones/0');assert.match(await page.locator('#reference-selected').innerText(),/\/bones\/0/);
    const canvas=page.locator('#reference-canvas');await canvas.scrollIntoViewIfNeeded();await canvas.focus();const before=await page.evaluate(()=>window.__polyReferencePartDiagnostics().view.azimuth);await page.keyboard.press('ArrowRight');assert.notEqual(await page.evaluate(()=>window.__polyReferencePartDiagnostics().view.azimuth),before);
    await page.locator('#reference-release').click();await page.waitForFunction(()=>window.__polyReferencePartDiagnostics().geometries===0);assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().resident_raw_bytes),0);
@@ -51,7 +68,7 @@ async function main(){
    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().geometry_ids.consistent),true);
    assert.ok(!requests.some(url=>/forearm-motor-reference\.json|body-display\.bin/.test(url)));assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(errors,[]);
    results.push({mobile,metadata_without_webgl:true,one_verified_block:true,one_source_piece:true,muscle_and_bone_identity:true,
-    keyboard_camera:true,abandoned_transfer_aborted:true,webgl_recovery:true,page_return:true,no_monolithic_reference_download:true,errors});await ctx.close();
+    explicit_bookmark_resume:true,no_automatic_geometry_resume:true,documentary_bone_navigation:true,keyboard_camera:true,abandoned_transfer_aborted:true,webgl_recovery:true,page_return:true,no_monolithic_reference_download:true,errors});await ctx.close();
   }
   for(const missing of [false,true]){
    const ctx=await browser.newContext(),page=await ctx.newPage();await fixtures(page,{missing,corruptId:missing?null:a.id});

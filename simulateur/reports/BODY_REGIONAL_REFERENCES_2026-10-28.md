@@ -168,3 +168,13 @@ git fetch CHEMIN/POLY-suite-regionale-20261028.bundle feat/regional-body-bridge-
 ```
 
 Ces commandes ne fusionnent et ne publient rien.
+
+## Suite — fiches, relations osseuses et reprise volontaire
+
+Le lecteur par pièces propose maintenant la fiche documentaire sans créer de contexte WebGL ni demander un bloc géométrique. Tous les champs source de la pièce sont consultables, ainsi que les observations humaines dont l'itinéraire est explicitement lié. Les valeurs nulles et les limites restent visibles.
+
+Les relations osseuses permettent la navigation muscle → os et os → muscle en remplaçant la pièce affichée. La résolution exige la famille osseuse explicitement déclarée et le même côté connu ; aucune correspondance de côté absent ni de nom ressemblant n'est inventée. Le passage controlatéral n'est proposé que par un identifiant source explicite. Les anciennes commandes documentaires deviennent inertes après changement de fiche ou libération.
+
+La mémorisation locale conserve uniquement l'identifiant source, l'empreinte du JSON et trois paramètres bornés de caméra. Après rechargement de la page, aucun bloc et aucun contexte WebGL ne sont restaurés automatiquement. Le bouton de reprise valide la même source et une pièce existante ; l'effacement est disponible. Un stockage indisponible n'empêche pas la consultation.
+
+Validation de cette suite : **86 tests Node réussis**, puis suite navigateur de référence répétée après la dernière modification sur bureau et mobile tactile émulé. Elle couvre aussi les fiches sans géométrie, navigation osseuse aller/retour, reprise de caméra après rechargement sans transfert automatique et effacement. Les 21 tests Python et les neuf autres suites navigateur restent ceux de la passe précédente ; leurs sources ne sont pas modifiées par cette suite. Aucun nouveau run distant, push, merge ou déploiement.
