@@ -1,0 +1,69 @@
+{
+  "schema": "poly.body-source-attribution.v1",
+  "audited_on": "2026-10-28",
+  "status": "candidate_attribution_review_not_distribution_approval",
+  "original_3d_reference": {
+    "name": "Human Reference Atlas / HuBMAP — United Male reference body",
+    "release": "v1.10",
+    "publisher": "Human Reference Atlas / HuBMAP Consortium",
+    "underlying_anatomical_imaging": "Visible Human Male dataset, US National Library of Medicine",
+    "official_reference_library": "https://humanatlas.io/3d-reference-library",
+    "source_glb": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-male/v1.10/assets/3d-vh-m-united.glb",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_statement": "Human Reference Atlas official 3D Reference Object Library: all reference objects released under Attribution 4.0 International.",
+    "suggested_credit": "Human Reference Atlas (HuBMAP), United Male v1.10, based on the Visible Human Male dataset (US National Library of Medicine).",
+    "individual_creator_citation_for_exact_release_verified": false,
+    "citation_review_note": "Verify the named creators and precise citation metadata of the exact united-male/v1.10 digital object before distributing derived chunks."
+  },
+  "poly_derivative": {
+    "original_repository_sources": [
+      "simulateur/models/body-display.json.gz",
+      "simulateur/models/body-display.bin.gz"
+    ],
+    "original_metadata_sha256_uncompressed": "cf140a39c11163508e91e12b0df9820e6e36ea2f2b50392f62cd9f404fea1573",
+    "original_geometry_sha256_uncompressed": "41fb852fb1c3d00dd8be90150226f92e5adf1d1fc783cb1223945f3a4ba229c4",
+    "existing_poly_processing": [
+      "Selection and reduction of the HRA reference geometry for the web viewer; this is an adapted model, not raw unaltered HRA files.",
+      "Packing the selected/processed structures into 918 reference meshes within compressed binary and metadata files."
+    ],
+    "new_chunk_processing": [
+      "Lossless byte-exact repacking of existing POLY geometry, preserving original mesh identities and source offset metadata.",
+      "New gzip chunk files, independent SHA256 checks and explicit per-chunk manifest."
+    ],
+    "derivative_scope": "modified_reference_geometry_not_original_full_HRA_GLb",
+    "scientific_non_claims": [
+      "No individual anatomical registration",
+      "No validated muscle attachment points",
+      "No clinical or physiological simulation certified",
+      "No human-subject-specific neural or tissue state inferred"
+    ]
+  },
+  "distribution_policy": {
+    "chunk_files_committed_to_repository": false,
+    "chunk_files_published_on_pages": false,
+    "software_tests_in_temporary_runner": true,
+    "public_distribution_approved": false,
+    "required_before_distribution": [
+      "Verify exact United Male v1.10 creator names, recommended citation and source attribution metadata.",
+      "Show original source link, CC BY 4.0 link and a change notice in the published viewer and each export of the resulting model.",
+      "Review licence scope for any other model layers bundled with the source dataset, if separately governed.",
+      "Pin the verified source license/citation manifest to the release and review owner approval.",
+      "Ensure no misleading inference of HRA or NLM endorsement."
+    ]
+  },
+  "references": [
+    {
+      "url": "https://humanatlas.io/3d-reference-library",
+      "kind": "official_HRA_license"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "kind": "license_terms"
+    },
+    {
+      "path": "simulateur/reports/PORTÉE.md",
+      "kind": "POLY_existing_source_scope"
+    }
+  ]
+}
