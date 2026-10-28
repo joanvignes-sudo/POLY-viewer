@@ -22,6 +22,7 @@ function render(){
  $('alpha-value').textContent=alpha.value+' %';
  $('beta-value').textContent=beta.value+' %';
  current=conditionalLactateScenario(data,{tissue:t,subject:s,alpha:Number(alpha.value)/100,beta:Number(beta.value)/100});
+ $('ag-ratio').textContent='Ratio dérivé CMRLac / (2 × CMRGlc) : '+format(100*current.observables.AG_ratio,1)+' % ('+(s==='mean'?'ratio des moyennes transcrites':'participant '+Number(s))+'). Ce ratio ne mesure pas une navette cellulaire.';
  const o=current.model_only;
  $('a-produced').textContent=format(o.astrocyte_production,4);
  $('n-produced').textContent=format(o.neuronal_production,4);
