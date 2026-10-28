@@ -7,10 +7,7 @@ const assert=require('node:assert/strict');
 const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
 const root=process.env.POLY_CHUNKS_ROOT;
 if(!root)throw Error('POLY_CHUNKS_ROOT required');
-const manifest=JSON.parse(await fs.readFile(path.join(root,'MANIFEST.json'),'utf8'));
-const candidates=[...manifest.chunks].sort((a,b)=>b.raw_bytes-a.raw_bytes);
-const [a,b]=candidates;
-assert.ok(a.raw_bytes+b.raw_bytes>4194304,'Fixture needs two blocks that exceed one 4 MiB budget');
+let manifest,a,b;
 async function routePreview(page,{failManifest=false,corruptId=null}={}){
  await page.route('**/simulateur/data/body-chunks-preview/**',async route=>{
   const rel=decodeURIComponent(new URL(route.request().url()).pathname.split('/body-chunks-preview/')[1]||'');
@@ -33,7 +30,11 @@ async function expectLoaded(page,c){
  await page.waitForFunction(id=>document.querySelector('#status')?.textContent?.includes('Bloc vérifié et affiché : '+id),c.id,{timeout:45000});
  await page.waitForFunction(count=>(document.querySelector('#scene-stat')?.textContent||'').startsWith(count.toLocaleString('fr-FR')+' structures'),c.part_count,{timeout:30000});
 }
-(async()=>{
+async function launch(){
+ manifest=JSON.parse(await fs.readFile(path.join(root,'MANIFEST.json'),'utf8'));
+ const candidates=[...manifest.chunks].sort((x,y)=>y.raw_bytes-x.raw_bytes);
+ [a,b]=candidates;
+ assert.ok(a.raw_bytes+b.raw_bytes>4194304,'Fixture needs two blocks that exceed one 4 MiB budget');
  const browser=await chromium.launch({headless:true,channel:process.env.POLY_BROWSER_CHANNEL||'chromium',
    args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader']});
  const results=[];
@@ -99,4 +100,5 @@ async function expectLoaded(page,c){
   await cx.close();
   console.log(JSON.stringify({schema:'poly.regional-three-browser.v1',results},null,2));
  }finally{await browser.close();}
-})().catch(e=>{console.error(e);process.exitCode=1;});
+}
+launch().catch(e=>{console.error(e);process.exitCode=1;});
