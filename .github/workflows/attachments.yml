@@ -21,6 +21,8 @@ jobs:
       - run: node --test simulateur/tests/attachment-engine.test.mjs
       - run: node --test simulateur/tests/body-startup-guard.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
+      - name: Repackage original anatomical geometry into temporary source-verified chunks
+        run: python simulateur/scripts/build_body_source_chunks.py --output-root "${{ runner.temp }}/poly-body-chunks" --verify
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks
