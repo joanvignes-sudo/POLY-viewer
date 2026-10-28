@@ -35,7 +35,7 @@ async function expectLoaded(page,c){
 }
 (async()=>{
  const browser=await chromium.launch({headless:true,channel:process.env.POLY_BROWSER_CHANNEL||'chromium',
-   args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--disable-web-security']});
+   args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader']});
  const results=[];
  try{
   for(const mobile of [false,true]){
