@@ -51,3 +51,8 @@ Une autre passe de la suite de référence a été interrompue alors qu’elle n
 ## Reprise nocturne 1 — démarrage et CPU
 
 Garde de chargement de 30 secondes avec annulation réelle, diagnostic par étape et relance volontaire ; la cause du délai intermittent historique reste non établie. Huit rechargements bureau/mobile émulé sont passés. Écriture des positions du tronc optimisée avec résultats float32 identiques octet par octet : médiane CPU locale 46.354 → 10.217 ms, soit 4.54× sur cette seule opération. Les normales, le rendu complet et le téléphone ne sont pas mesurés par ce benchmark. 106 tests Node et les trois suites navigateur ciblées passent ; les autres résultats antérieurs ne sont pas déclarés réexécutés. Détails et reproduction dans `BODY_NIGHT_01_2026-10-28.md`.
+
+
+## Reprise nocturne 2 — navigation HRA et matrice des écarts
+
+Six orientations, retour de cadrage borné et atténuation graphique volontaire au repos HRA sont raccordés. Les matériaux sont restaurés après chaque rendu ; cache et historique ne gardent pas de ressources de scène. 111 tests Node et sept suites navigateur HRA passent. La matrice `BODY_FEATURE_PARITY_2026-10-28.md` explicite les fonctions encore partielles ou historiques (activités/journal, chaînes génériques, pilotes et ateliers distincts). Le détail et les limites figurent dans `BODY_NIGHT_02_2026-10-28.md`. Aucun progrès de qualification physique ou de résolution de la cause du délai intermittent n’est revendiqué.
