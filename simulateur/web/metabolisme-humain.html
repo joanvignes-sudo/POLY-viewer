@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="POLY — démonstration de reproductibilité des estimations humaines de Li et al. (2025) et d'identifiabilité d'un échange astrocyte-neurone hypothétique.">
+<title>POLY · Métabolisme humain et échanges cellulaires</title>
+<link rel="stylesheet" href="metabolisme-humain.css">
+<script type="module" src="metabolisme-humain.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller à la démonstration</a>
+<header class="top">
+ <a class="logo" href="../../index.html">POLY <small>/ ATELIER DES PREUVES</small></a>
+ <nav aria-label="Navigation"><a href="cerveau.html">Cerveau</a><a href="poly-atelier.html#chains">Chaînes</a><a href="recherche.html">Recherche</a></nav>
+</header>
+<main id="contenu">
+ <section class="hero">
+  <p class="kicker">REPRODUCTION ARITHMÉTIQUE · MODÈLE CONDITIONNEL</p>
+  <h1>Du signal humain à l'hypothèse cellulaire.</h1>
+  <p class="lead">Un résultat de tissu cérébral peut être précis sans révéler comment le lactate circule entre astrocytes et neurones. Ici, les données et les hypothèses restent séparées.</p>
+  <div class="tags"><span>5 volontaires sains</span><span>7 T · DMRSI au deutérium</span><span>12 moyennes et écarts-types</span><span class="tag-outline">Aucun flux astrocyte–neurone mesuré</span></div>
+ </section>
+ <div id="loading" role="status">Lecture du tableau scientifique et vérification des calculs…</div>
+ <div id="app" hidden>
+ <section class="section" aria-labelledby="section-evidence">
+  <div class="section-title"><div><p class="kicker">01 / SOURCE HUMAINE</p><h2 id="section-evidence">Ce que l'étude permet d'estimer</h2></div><span class="pill">Estimations issues du modèle des auteurs</span></div>
+  <p>Li, Zhu et collaborateurs (2025) ont estimé quatre paramètres du métabolisme cérébral à partir d'acquisitions dynamiques à 7 T. Les valeurs de substance grise et de substance blanche « pures » sont issues d'une régression selon la fraction de tissu gris, et non de mesures isolées d'une cellule.</p>
+  <div class="controls">
+   <label>Type de tissu <select id="tissue"><option value="GM">Substance grise</option><option value="WM">Substance blanche</option><option value="WB">Cerveau moyen</option></select></label>
+   <label>Valeurs affichées <select id="subject"><option value="mean">Moyenne des cinq participants</option><option value="01">Participant 1</option><option value="02">Participant 2</option><option value="03">Participant 3</option><option value="04">Participant 4</option><option value="05">Participant 5</option></select></label>
+  </div>
+  <div class="metrics" id="metrics" aria-live="polite"></div>
+  <p class="unit">Toutes les valeurs : µmol/g/min. Il s'agit de flux différents ; ne pas les additionner sans équations stœchiométriques.</p>
+  <div class="audit"><div><strong id="audit-status"></strong><p>Recalcul des 12 moyennes et écarts-types de l'article, à partir des 60 nombres arrondis du tableau 1.</p></div><a href="https://doi.org/10.1093/pnasnexus/pgaf072" target="_blank" rel="noopener noreferrer">Lire la publication ↗</a></div>
+ </section>
+ <section class="section section-dark" aria-labelledby="section-model">
+  <p class="kicker">02 / MODÈLE EXPLORATOIRE — PAS UNE MESURE HUMAINE</p>
+  <h2 id="section-model">Où va le lactate ? Les données seules ne le disent pas.</h2>
+  <p>Nous fixons la production totale de lactate <strong>CMRLac</strong> à la valeur humaine estimée ci-dessus, puis nous choisissons artificiellement une répartition de production et un transfert interne. Change ces hypothèses : le total reste identique.</p>
+  <div class="sliders">
+   <label for="alpha">Part de production attribuée aux astrocytes <output id="alpha-value" for="alpha">50 %</output></label>
+   <input id="alpha" type="range" min="0" max="100" step="5" value="50">
+   <label for="beta">Part de cette production transférée aux neurones <output id="beta-value" for="beta">50 %</output></label>
+   <input id="beta" type="range" min="0" max="100" step="5" value="50">
+  </div>
+  <div class="diagram" role="img" aria-label="Schéma de contributions de lactate : production astrocytaire et neuronale, transfert interne éventuel ; le total tissulaire est conservé.">
+   <div class="node"><strong>Astrocyte</strong><span id="a-produced">–</span><small>Production supposée</small></div>
+   <div class="arrow"><span>Transfert supposé</span><strong id="j-transfer">–</strong><span aria-hidden="true">→</span></div>
+   <div class="node"><strong>Neurone</strong><span id="n-produced">–</span><small>Production propre supposée</small></div>
+  </div>
+  <div class="scenario-results">
+   <div><small>Reste du compartiment astrocytaire</small><strong id="a-remain">–</strong></div>
+   <div><small>Contribution au compartiment neuronal</small><strong id="n-total">–</strong></div>
+   <div><small>Production totale de départ</small><strong id="p-total">–</strong></div>
+   <div><small>Résidu du bilan algébrique</small><strong id="balance">–</strong></div>
+  </div>
+  <p class="disclaimer"><strong>Attention :</strong> les proportions choisies ne sont pas estimées par Li et al. Ce schéma ne prédit ni consommation du lactate par le neurone, ni concentration intracellulaire, ni transporteur MCT, ni besoin physiologique de navette.</p>
+  <div class="btn-row"><button id="compare" type="button">Comparer zéro transfert et transfert maximal</button><button id="reset" type="button" class="secondary">Réinitialiser</button><button id="export" type="button" class="secondary">Exporter le reçu JSON</button></div>
+  <p id="comparison" class="result-note" aria-live="polite"></p>
+ </section>
+ <section class="section" aria-labelledby="section-limits">
+  <p class="kicker">03 / CONTRÔLE ET LIMITES</p><h2 id="section-limits">Qu'est-ce qui est établi ?</h2>
+  <div class="explain-grid">
+   <article><p class="label-blue">Recalcul vérifié</p><h3>Le tableau publié</h3><p>Nous reproduisons les statistiques à deux décimales des cinq personnes. Nous n'avons pas réajusté les spectres bruts ni leur modèle cinétique.</p></article>
+   <article><p class="label-amber">Hypothèse non identifiable</p><h3>L'échange intracérébral</h3><p>Si P = P<sub>A</sub> + P<sub>N</sub>, la variable J<sub>A→N</sub> n'apparaît pas dans la somme. Sans nouvelles observations, plusieurs valeurs de J donnent le même P.</p></article>
+   <article><p class="label-blue">Autre observation</p><h3>Lactate du sang</h3><p>Le module Boumezbeur (2010) de POLY décrit des régressions entre plasma et volume cérébral régional. Ce n'est pas une mesure de la navette astrocyte–neurone.</p></article>
+  </div>
+  <p class="sources">Sources : <a href="https://doi.org/10.1093/pnasnexus/pgaf072" target="_blank" rel="noopener noreferrer">Li et al., PNAS Nexus, 2025</a> · <a href="https://github.com/CMRRChenLab/DynamicDMRSI" target="_blank" rel="noopener noreferrer">Dépôt des auteurs</a> · <a href="https://doi.org/10.1523/JNEUROSCI.2040-10.2010" target="_blank" rel="noopener noreferrer">Boumezbeur et al., 2010</a>. Les chiffres ci-dessus sont transcrits du Tableau 1, sans images ni données personnelles.</p>
+ </section>
+ </div>
+</main>
+<footer><span>POLY — Atlas documentaire et simulateur exploratoire</span><a href="../../index.html">Retour à POLY</a><span>Sans diagnostic · Sans validation clinique</span></footer>
+</body>
+</html>
