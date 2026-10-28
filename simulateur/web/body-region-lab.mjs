@@ -18,6 +18,7 @@ import {validateChunkManifest,createBoundedChunkStore,browserChunkReader,sha256B
 import {createRegionSceneAdapter} from './body-region-three.mjs';
 import {createResidentOcclusion,isNeutralRig} from './resident-occlusion.mjs';
 import {createCameraHistory,orientedCamera,CAMERA_POLE_LIMIT} from './camera-navigation.mjs';
+import {createHistoricalPosture} from './historical-posture.mjs';
 
 const $=id=>document.getElementById(id);
 const fmt=n=>Number(n).toLocaleString('fr-FR');
@@ -26,6 +27,7 @@ const manifestURL=new URL('MANIFEST.json',ROOT_URL);
 let manifest=null,store=null,adapter=null,renderer=null,scene=null,camera=null;
 let inspector=null,records=[],catalogueAccess=null,sampler=null,playing=false,elapsed=0,lastFrame=null;
 const rig=createRegionalRig();
+const historicalPosture=createHistoricalPosture(rig.uniforms);let manualMode='stand',manualTime=0,manualPlaying=false,manualView=null;
 let detailedInspector=null,nativeEye=null,eyeLight=null,sourceMeta=null,brain=null,brainSerial=0,brainController=null,hand=null,handSerial=0,handController=null;
 const eyeMask=createMaterialMask();
 const cameraHistory=createCameraHistory(),residentMask=createResidentOcclusion(()=>adapter?adapter.listSourceIndices().map(id=>adapter.sources.resolve(id)):[]);
@@ -35,6 +37,32 @@ function navigationUI(){
  $('region-view-back').disabled=!cameraHistory.size||failedContext||specialView();$('region-orientation').disabled=failedContext||specialView();
  const requested=$('region-occlusion').checked,available=maskAvailable();$('region-occlusion').disabled=!available;
  $('region-occlusion-status').textContent=requested?(available?'Atténuation graphique des obstacles échantillonnés ; les matériaux sont restaurés après chaque image.':'Atténuation suspendue : sélectionner une surface HRA au repos, hors des vues spécialisées.'):'Sept rayons de présentation sur les blocs HRA chargés, au repos. Les régions absentes et la visibilité anatomique complète ne sont pas déduites.';
+ postureUI();
+}
+function postureBlocked(){return failedContext||specialView()||Boolean(hand?.state.enabled);}
+function postureUI(){
+ const available=Boolean(adapter?.listSourceIndices().length)&&!postureBlocked(),dynamic=['run','eat'].includes(manualMode);
+ $('regional-activity').disabled=!available;$('regional-pose-time').disabled=!available||!dynamic;$('regional-pose-play').disabled=!available||!dynamic;$('regional-pose-focus').disabled=!available||manualMode==='stand'||selectedIndex===null;
+ $('motion-phase').disabled=!sampler||!available||manualMode!=='stand';$('motion-play').disabled=!sampler||!available||manualMode!=='stand';
+ $('regional-pose-clock').textContent=manualTime.toFixed(2)+' s';$('regional-pose-time').value=String(manualTime);
+}
+function pauseManual(){manualPlaying=false;$('regional-pose-play').textContent='Lire le geste illustratif';}
+function endManual(restore=true){
+ pauseManual();manualMode='stand';manualTime=0;$('regional-activity').value='stand';historicalPosture.reset();cameraHistory.clear();
+ if(manualView&&restore&&target){target.fromArray(manualView.target);({distance,azimuth,elevation}=manualView);updateCamera();}manualView=null;
+}
+function chooseManual(mode){
+ if(!['stand','run','sit','lie','eat'].includes(mode)||postureBlocked()||!adapter.listSourceIndices().length)return;
+ if(mode==='stand'){restPose();scheduleRender();return;}
+ pauseMotion();pauseManual();if(!manualView)manualView={target:target.toArray(),distance,azimuth,elevation};cameraHistory.clear();manualMode=mode;manualTime=0;historicalPosture.apply(mode,0);
+ if(mode==='lie'){target.set(0,.45,0);distance=7.2;elevation=.8;azimuth=.35;}else if(['sit','eat'].includes(mode)){target.set(0,1.32,.25);distance=6.5;elevation=.12;azimuth=.35;}else{target.set(0,1.75,0);distance=7.7;elevation=.04;azimuth=.25;}
+ $('regional-pose-status').textContent='Posture / geste historique illustratif, sans mobilier ni ustensile ajouté. Temps de présentation uniquement ; aucun contact, force, activation, sommeil ou digestion calculé. Réseau documentaire de marche suspendu dans ces postures.';updateCamera();
+}
+function focusPosedSelection(){
+ if(selectedIndex===null||manualMode==='stand'||postureBlocked())return;pauseManual();const record=adapter.sourceInfo(selectedIndex);if(!record)return;
+ cameraHistory.push({target:target.toArray(),distance,azimuth,elevation});const box=new THREE.Box3(),[lo,hi]=record.bounds;
+ for(let x=0;x<2;x++)for(let y=0;y<2;y++)for(let z=0;z<2;z++)box.expandByPoint(new THREE.Vector3(...rig.deform([x?hi[0]:lo[0],y?hi[1]:lo[1],z?hi[2]:lo[2]])));
+ target.copy(box.getCenter(new THREE.Vector3()));distance=Math.max(.55,box.getSize(new THREE.Vector3()).length()*2.8);elevation=.08;updateCamera();
 }
 let network=null,networkElapsed=0,networkSerial=0,networkLoading=false,networkPreferences=null;
 let inspectionView=null;
@@ -56,6 +84,8 @@ function scheduleRender(){
   if(!renderer||failedContext||renderer.getContext().isContextLost())return;
   nativeEye?.update();
   const dt=lastFrame!==null?Math.min((now-lastFrame)/1000,.05):0;
+  if(manualMode!=='stand'&&postureBlocked())restPose();
+  if(manualMode!=='stand'){if(manualPlaying){manualTime=Math.min(6,manualTime+dt);if(manualTime>=6)pauseManual();}historicalPosture.apply(manualMode,manualTime);}
   if(playing&&sampler){
    elapsed+=dt;
    sampler.apply(elapsed,rig.uniforms);$('motion-phase').value=String(elapsed%sampler.duration);
@@ -72,8 +102,8 @@ function scheduleRender(){
   if(canvas.width!==Math.floor(width*dpr)||canvas.height!==Math.floor(height*dpr))renderer.setSize(width,height,false);
   if(camera.aspect!==width/height){camera.aspect=width/height;camera.updateProjectionMatrix();}
   if(network){
-   if(network.state.reading&&network.state.enabled)networkElapsed+=dt;
-   network.update(networkElapsed,!inspector.info().scope&&!detailedInspector?.active&&!nativeEye?.active&&!eyeLight?.active&&!brain?.group.visible,selectedIndex===null?null:adapter.sources.resolve(selectedIndex),playing?'walk':'stand');
+   if(network.state.reading&&network.state.enabled&&manualMode==='stand')networkElapsed+=dt;
+   network.update(networkElapsed,manualMode==='stand'&&!inspector.info().scope&&!detailedInspector?.active&&!nativeEye?.active&&!eyeLight?.active&&!brain?.group.visible,selectedIndex===null?null:adapter.sources.resolve(selectedIndex),playing?'walk':'stand');
    const coverage=network.coverage;
    $('regional-network-coverage').textContent=Object.entries(coverage).map(([id,c])=>network.data.nodes[id].title+' : '+(c.kind==='documentary_marker'?'repère documentaire sans surface':c.visible.length+' visibles / '+c.expected+' surfaces du catalogue')).join(' · ');
   }
@@ -88,7 +118,7 @@ function scheduleRender(){
   }catch(error){if(!renderer.getContext().isContextLost())throw error;}finally{eyeMask.restore()}
   renderSamples.push(performance.now()-renderStart);if(renderSamples.length>120)renderSamples.shift();renderedFrames++;
   updateStats();
-  if(playing||eyeLight?.playing||(network?.state.enabled&&network.state.reading&&network.group.visible&&adapter.listSourceIndices().length))scheduleRender();
+  if(playing||manualPlaying||eyeLight?.playing||(network?.state.enabled&&network.state.reading&&network.group.visible&&adapter.listSourceIndices().length))scheduleRender();
  });
 }
 function updateStats(){
@@ -114,7 +144,7 @@ function refreshStructures(){
  else if(ids.includes(Number(current)) && current!=='')sel.value=current;
  else sel.value='';
  detailedInspector?.sync();inspector?.refresh();refreshInspection();refreshSearch();updateStats();
- if(!ids.length){pauseMotion();releaseNetwork();}
+ if(!ids.length){pauseMotion();endManual(false);releaseNetwork();}
  else if(!network&&!networkLoading)loadNetwork();
 }
 function refreshSearch(){
@@ -395,7 +425,7 @@ function performanceReceipt(){
   viewport:[innerWidth,innerHeight],dpr:renderer.getPixelRatio(),coarse_pointer:matchMedia('(pointer:coarse)').matches},
   source_metadata_sha256:manifest.source.metadata_sha256,source_geometry_sha256:manifest.source.geometry_sha256,
   hand_reference:hand?{namespace:'hand',parts:hand.meshes.length,preview:hand.previewDiagnostics,buffer_bytes:hand.bufferBytes,planned_buffer_upper_bound:hand.plan.bufferUpperBound,side:hand.state.side,filter:hand.state.filter,selected:'hand:'+hand.state.selected,overlay:hand.bodyGroup.visible}:null,cerebra:brain?{regions:brain.meshes.length,buffer_bytes:brain.bufferBytes,planned_buffer_bytes:brain.plan.bufferBytes,focused:brain.focused,source:brain.source,split:brain.split,selection:brain.selection,saved_native_materials:brain.savedMaterialCount}:null,runtime_geometry_audit:auditSceneGeometryIds(scene),cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),selected_material:selectedIndex===null?null:(()=>{const m=adapter.sources.resolve(selectedIndex)?.material;return m?{uuid:m.uuid,opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite}:null})(),graphic_eye:eyeLight?{active:eyeLight.active,playing:eyeLight.playing,phase:eyeLight.phase,last_stop_reason:eyeLight.lastStopReason,saved_materials:eyeLight.savedMaterialCount}:null,native_eye_active:nativeEye?.active??false,eye_mask_size:eyeMask.size,detailed_inspection:{active:detailedInspector?.active??false,group_id:detailedInspector?.groupId??null},
-  view:{distance,azimuth,elevation,target:target.toArray(),camera:camera.position.toArray()},view_history_size:cameraHistory.size,selective_occlusion:{requested:$('region-occlusion').checked,available:maskAvailable(),...residentMask.info()},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
+  view:{distance,azimuth,elevation,target:target.toArray(),camera:camera.position.toArray()},view_history_size:cameraHistory.size,manual_posture:{mode:manualMode,playing:manualPlaying,graphic_time_s:manualTime,saved_view:Boolean(manualView),root_shift:{...rig.uniforms.rootShift.value},shoulder:{...rig.uniforms.eatShoulder.value},forearm:{...rig.uniforms.eatForearm.value}},selective_occlusion:{requested:$('region-occlusion').checked,available:maskAvailable(),...residentMask.info()},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
   cpu_render_submission_ms:{count:sorted.length,p50:sorted.length?sorted[Math.floor((sorted.length-1)*.5)]:null,
    p95:sorted.length?sorted[Math.floor((sorted.length-1)*.95)]:null},
   recent_cpu_pick_ms:[...pickSamples],recent_loads:loadSamples.map(x=>({...x})),three_geometries:renderer.info.memory.geometries,
@@ -434,7 +464,7 @@ async function loadNetwork(){
 let motionScale=null;
 function motionText(mode){if(sampler)$('motion-status').textContent=mode+' · Transfert graphique de la marche OpenSim sur un atlas distinct. Aucune force, activation, contact au sol ni précision biomécanique validée.';}
 function pauseMotion(){playing=false;lastFrame=null;$('motion-play').textContent='Lire la marche';motionText('Lecture en pause');}
-function restPose(){pauseMotion();rig.reset();elapsed=0;$('motion-phase').value='0';motionText('Repos');}
+function restPose(){pauseMotion();endManual();rig.reset();elapsed=0;$('motion-phase').value='0';motionText('Repos');}
 async function loadMotion(){
  try{
   const response=await fetch('../data/walk.json');
@@ -442,7 +472,7 @@ async function loadMotion(){
   const bytes=new Uint8Array(await response.arrayBuffer());
   if(await sha256Bytes(bytes)!=='b22455ced299545f9fe2aa95e14153952b02db864eef218a208604db44eff5fb')throw Error('Cinématique source altérée');
   sampler=createWalkSampler(JSON.parse(new TextDecoder().decode(bytes)),motionScale);
-  $('motion-phase').disabled=false;$('motion-play').disabled=false;
+  postureUI();
  }catch(e){$('motion-status').textContent='Marche désactivée : '+e.message+'. Inspection statique disponible.';}
 }
 async function loadInspection(){
@@ -534,7 +564,11 @@ async function start(){
   $('clear').onclick=()=>{unloadHand();unloadBrain();restPose();invalidatePending();store.clear();selectedIndex=null;selectedUI(null);refreshStructures();fillBlocks();status('Tous les blocs libérés.');scheduleRender()};
   structure.onchange=()=>{if(structure.value)selectSource(Number(structure.value))};
   $('source-search').oninput=refreshSearch;
-  $('focus').onclick=()=>{restPose();focusSelected()};$('reset').onclick=resetCamera;
+  $('focus').onclick=()=>{restPose();focusSelected()};$('reset').onclick=()=>{restPose();resetCamera()};
+  $('regional-activity').onchange=()=>chooseManual($('regional-activity').value);
+  $('regional-pose-time').oninput=()=>{if(!['run','eat'].includes(manualMode)||postureBlocked())return;pauseManual();manualTime=Number($('regional-pose-time').value);historicalPosture.apply(manualMode,manualTime);scheduleRender();};
+  $('regional-pose-play').onclick=()=>{if(manualPlaying){pauseManual();return;}if(!['run','eat'].includes(manualMode)||postureBlocked()||!adapter.listSourceIndices().length)return;if(manualTime>=6)manualTime=0;manualPlaying=true;lastFrame=null;$('regional-pose-play').textContent='Pause du geste';scheduleRender();};
+  $('regional-pose-focus').onclick=focusPosedSelection;
   $('region-orientation').onchange=()=>{if(specialView()||failedContext||!$('region-orientation').value)return;const current={target:target.toArray(),distance,azimuth,elevation},next=orientedCamera(current,$('region-orientation').value);cameraHistory.push(current);({distance,azimuth,elevation}=next);$('region-orientation').value='';updateCamera();};
   $('region-view-back').onclick=()=>{if(specialView()||failedContext)return;const previous=cameraHistory.pop();if(!previous)return;target.fromArray(previous.target);({distance,azimuth,elevation}=previous);updateCamera();};
   $('region-occlusion').onchange=()=>{residentMask.clear();scheduleRender();};
@@ -547,9 +581,9 @@ async function start(){
   $('isolate-source').onclick=()=>openInspection(true);
   $('load-inspection').onclick=loadInspection;$('brain-load').onclick=loadBrain;$('brain-unload').onclick=unloadBrain;$('brain-budget').onchange=unloadBrain;$('hand-load').onclick=loadHand;$('hand-unload').onclick=unloadHand;
   $('close-inspection').onclick=()=>{inspector.close();refreshStructures();scheduleRender()};
-  $('motion-phase').oninput=()=>{pauseMotion();sampler.apply(elapsed=Number($('motion-phase').value),rig.uniforms);scheduleRender()};
+  $('motion-phase').oninput=()=>{endManual();pauseMotion();sampler.apply(elapsed=Number($('motion-phase').value),rig.uniforms);scheduleRender()};
   $('motion-rest').onclick=()=>{restPose();scheduleRender()};
-  $('motion-play').onclick=()=>{if(playing)pauseMotion();else if(!failedContext&&adapter.listSourceIndices().length){playing=true;lastFrame=null;$('motion-play').textContent='Pause';motionText('Lecture de la marche');scheduleRender()}};
+  $('motion-play').onclick=()=>{if(playing)pauseMotion();else if(!failedContext&&adapter.listSourceIndices().length){endManual();playing=true;lastFrame=null;$('motion-play').textContent='Pause';motionText('Lecture de la marche');scheduleRender()}};
   newStore();bindPointer();resetCamera();
   loadMotion();loadNetwork();
   $('network-panel').addEventListener('click',scheduleRender);$('network-panel').addEventListener('change',scheduleRender);
@@ -561,13 +595,13 @@ async function start(){
   // Read-only diagnostics for source/provenance regression tests in this isolated lab.
   Object.defineProperty(window,'__polyRegionLabDiagnostics',{value:()=>({cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),motion:{playing,elapsed,pose:Object.fromEntries(Object.entries(rig.uniforms).filter(([k,u])=>typeof u.value==='number').map(([k,u])=>[k,u.value]))}}),configurable:false});
   window.addEventListener('resize',scheduleRender);
-  window.addEventListener('pagehide',()=>{cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
+  window.addEventListener('pagehide',()=>{endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
   window.addEventListener('pageshow',e=>{if(e.persisted){
    renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});renderer.outputColorSpace=THREE.SRGBColorSpace;
    failedContext=false;createDetailedInspector();createNativeEye();createGraphicEye();refreshStructures();fillBlocks();loadNetwork();scheduleRender();
   }});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){pauseMotion();eyeLight?.pause();}else scheduleRender()});
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){pauseMotion();pauseManual();eyeLight?.pause();}else scheduleRender()});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
   canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte WebGL rétabli. Vérifier le rendu.');scheduleRender()});
   $('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
   status('Manifeste vérifié : '+manifest.chunk_count+' blocs disponibles. Aucun bloc chargé.');

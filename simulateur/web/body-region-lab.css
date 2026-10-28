@@ -6,3 +6,4 @@ input{max-width:100%;width:100%;font:inherit}#source-results{display:grid;gap:6p
 #reference-results{display:grid;gap:6px}#reference-results button{text-align:left;font-size:12px;overflow-wrap:anywhere;max-width:100%}#reference-credit{overflow-wrap:anywhere}
 
 header nav{flex-wrap:wrap}#reference-space{max-width:100%;width:100%}
+#regional-activity{width:100%;max-width:100%;min-width:0;font:inherit;color:var(--ink);background:#082131;border:1px solid #64869a;border-radius:8px;padding:10px}label[for=regional-activity],label[for=regional-pose-time]{display:block;margin:14px 0 6px}

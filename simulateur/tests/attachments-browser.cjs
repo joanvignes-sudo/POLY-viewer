@@ -42,6 +42,7 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     await page.goto(base+'/simulateur/web/index.html');
     await page.waitForFunction(()=>!document.querySelector('main').inert,null,{timeout:120000});
     assert.equal(await page.evaluate(()=>window.POLY.meshes.length),918);
+    for(const mode of ['sit','lie','eat','run','stand']){await page.locator('[data-activity="'+mode+'"]').click();await page.waitForFunction(mode=>window.POLY.activity.mode===mode&&(mode==='sit'||mode==='eat'?window.POLY.uniforms.hipR.value===-Math.PI/2:mode==='lie'?window.POLY.uniforms.rootTilt.value===-Math.PI/2:mode==='stand'?window.POLY.uniforms.rootTilt.value===0:window.POLY.uniforms.kneeR.value>=.25),mode);}
     await page.locator('#search').fill('cœur');
     assert.ok(await page.locator('#results button').count()>0);
     await page.locator('#results button').first().click();
