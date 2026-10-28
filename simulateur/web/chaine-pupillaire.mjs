@@ -85,7 +85,7 @@ async function start(){
    opt.textContent=String(e.event_index).padStart(2,'0')+' · '+num(e.time_recording_s,3)+' s · '+num(e.illuminance_nominal_lux,1)+' lx nominaux';
    select.append(opt);
   }
-  select.value=data.events.some(x=>x.event_index===4)?'4':String(data.events[0].event_index);
+  select.value=data.events.some(x=>x.event_index===2)?'2':String(data.events[0].event_index);
   renderGraph();select.addEventListener('change',showEvent);$('export').onclick=exportCurrent;
   $('loading').hidden=true;$('app').hidden=false;showEvent();
  }catch(error){$('loading').setAttribute('role','alert');$('loading').textContent='Lecture suspendue : '+error.message+'. Aucun bilan physiologique affiché lorsque les sources ne sont pas qualifiées.';}
