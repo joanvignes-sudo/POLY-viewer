@@ -26,6 +26,8 @@
 <p id="status" role="status">Aucun bloc chargé.</p>
 <p class="readout" id="memory" aria-live="polite"></p>
 <hr>
+<label for="source-search">Rechercher dans les structures en mémoire</label><input id="source-search" type="search" placeholder="Cœur, rein, nerf…"><div id="source-results" aria-live="polite"></div>
+<p class="hint">Même recherche que le corps classique. Les structures des blocs absents ne sont pas recherchées.</p>
 <label for="structure">Structure d'origine en mémoire</label><select id="structure"><option value="">Aucune structure chargée</option></select>
 <div class="buttons"><button id="focus" class="secondary" type="button">Centrer la caméra</button><button id="reset" class="secondary" type="button">Vue générale</button></div>
 <div id="selected" class="selected" aria-live="polite"><p>Sélectionnez une structure chargée pour consulter son nom, son indice d'origine et la provenance.</p></div>

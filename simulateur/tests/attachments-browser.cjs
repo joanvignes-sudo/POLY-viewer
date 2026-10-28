@@ -41,6 +41,18 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     await page.locator('#term-query').fill('nonexistent-term-xyz');assert.equal(await page.locator('#term-select option').count(),0);assert.match(await page.locator('#term-detail').innerText(),/Aucun terme/);
     await page.goto(base+'/simulateur/web/index.html');
     await page.waitForFunction(()=>!document.querySelector('main').inert,null,{timeout:120000});
+    assert.equal(await page.evaluate(()=>window.POLY.meshes.length),918);
+    await page.locator('#search').fill('cœur');
+    assert.ok(await page.locator('#results button').count()>0);
+    await page.locator('#results button').first().click();
+    await page.locator('#organ-back').waitFor({state:'visible'});
+    const inspection=await page.evaluate(()=>window.POLY.organView.parts.map(m=>({
+      source_index:m.userData.source_index,name:m.userData.name,node:m.userData.node,
+      offset:m.userData.position_offset,original:m.userData.source_offsets.position_offset})));
+    assert.ok(inspection.length>0);
+    assert.ok(inspection.every(r=>Number.isInteger(r.source_index)&&r.offset===r.original));
+    await page.locator('#organ-back').click();
+    await page.locator('#search').fill('');
     await page.locator('#forearm-motor-open').click();
     await page.waitForFunction(()=>document.querySelector('#forearm-motor-card .attachment-qualification')?.textContent.includes('preuves'));
     assert.match(await page.locator('#forearm-motor-card .attachment-qualification').innerText(),/insertion 3D non localisée/);
@@ -49,7 +61,7 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     await page.waitForFunction(()=>document.querySelector('#hand-muscles-reference .attachment-qualification')?.textContent.includes('preuves'));
     await page.locator('#hand-ref-side').selectOption('L');
     if(process.env.POLY_SCREENSHOTS)await page.screenshot({path:process.env.POLY_SCREENSHOTS+`/avatar-${mobile?'mobile':'desktop'}.png`,fullPage:false});
-    assert.deepEqual(errors,[]);results.push({viewport:mobile?'390x844 touch':'1440x1000',catalogue:true,filters:true,left_and_right:true,avatar_and_panels:true,terms_without_geometry:true,variant_separation:true,term_deep_links:true,page_errors:errors});
+    assert.deepEqual(errors,[]);results.push({viewport:mobile?'390x844 touch':'1440x1000',catalogue:true,filters:true,left_and_right:true,avatar_and_panels:true,shared_search_and_organ_inspection:true,terms_without_geometry:true,variant_separation:true,term_deep_links:true,page_errors:errors});
     await context.close();
   }
   const context=await browser.newContext(),page=await context.newPage();

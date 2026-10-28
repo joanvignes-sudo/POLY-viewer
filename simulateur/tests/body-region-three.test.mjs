@@ -5,6 +5,7 @@ import path from 'node:path';
 import {gunzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {readValidatedChunk,createBoundedChunkStore} from '../web/body-chunk-reader.mjs';
+import {sourceMeshData} from '../web/body-source-contract.mjs';
 import {createRegionSceneAdapter} from '../web/body-region-three.mjs';
 
 const root=process.env.POLY_CHUNKS_ROOT;
@@ -219,4 +220,29 @@ test('a slow asynchronous GPU installer is disposed if the user clears the scene
  assert.equal(created.geometryDisposals,created.geometries);
  assert.equal(created.materialDisposals,created.materials);
  assert.equal(store.info().residentRawBytes,0);
+});
+
+
+test('all 918 regional meshes expose the historical inspection contract with ORIGINAL offsets',async()=>{
+ const original=JSON.parse(gunzipSync(await fs.readFile(new URL('../models/body-display.json.gz',import.meta.url))));
+ let count=0;
+ for(const c of manifest.chunks){
+  const chunk=await readValidatedChunk(manifest,c.id,{readBytes,unzip,hash});
+  const {THREE,scene}=fakeThree(),adapter=createRegionSceneAdapter({THREE,scene});
+  adapter.install(chunk);
+  for(const i of c.original_indices){
+   const mesh=adapter.sources.resolve(i);
+   const expected=sourceMeshData(original.structures[i],{sourceIndex:i,system:c.system,chunkId:c.id});
+   for(const [key,value] of Object.entries(expected))assert.deepEqual(mesh.userData[key],value,`${i}: ${key}`);
+   assert.equal(adapter.select(i).source_index,i);
+   count++;
+  }
+  const old=adapter.sources.resolve(c.original_indices[0]);
+  adapter.dispose();
+  assert.equal(adapter.sources.resolve(c.original_indices[0]),null);
+  adapter.install(chunk);
+  assert.notEqual(adapter.sources.resolve(c.original_indices[0]),old);
+  adapter.dispose();
+ }
+ assert.equal(count,918);
 });

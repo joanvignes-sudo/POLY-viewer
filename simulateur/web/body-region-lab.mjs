@@ -54,7 +54,22 @@ function refreshStructures(){
  if(ids.includes(selectedIndex))sel.value=String(selectedIndex);
  else if(ids.includes(Number(current)) && current!=='')sel.value=current;
  else sel.value='';
- updateStats();
+ refreshSearch();updateStats();
+}
+function refreshSearch(){
+ const host=$('source-results');host.replaceChildren();
+ const query=$('source-search').value;
+ if(!adapter||!query.trim())return;
+ const matches=adapter.sources.search(query);
+ for(const mesh of matches){
+  const id=mesh.userData.source_index;
+  const button=document.createElement('button');
+  button.dataset.sourceIndex=String(id);
+  button.textContent=mesh.userData.name.replaceAll('_',' ');
+  button.onclick=()=>{if(adapter.sources.resolve(id))selectSource(id)};
+  host.append(button);
+ }
+ if(!matches.length)host.textContent='Aucun résultat dans les blocs actuellement en mémoire.';
 }
 function selectedUI(record){
  const out=$('selected');out.replaceChildren();
@@ -220,6 +235,7 @@ async function start(){
   $('load').onclick=loadSelected;$('release').onclick=()=>{invalidatePending();releaseSelected()};
   $('clear').onclick=()=>{invalidatePending();store.clear();selectedIndex=null;selectedUI(null);refreshStructures();fillBlocks();status('Tous les blocs libérés.');scheduleRender()};
   structure.onchange=()=>{if(structure.value)selectSource(Number(structure.value))};
+  $('source-search').oninput=refreshSearch;
   $('focus').onclick=focusSelected;$('reset').onclick=resetCamera;
   newStore();bindPointer();resetCamera();
   // Read-only diagnostics for source/provenance regression tests in this isolated lab.

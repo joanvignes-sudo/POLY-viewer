@@ -64,6 +64,29 @@ async function launch(){
    const firstIndex=a.original_indices[0];
    assert.equal(await page.locator('#structure').inputValue(),String(firstIndex));
    await page.locator('#focus').click();
+   const metadata=JSON.parse(await fs.readFile(path.join(root,a.metadata),'utf8'));
+   const query=metadata.geometries[0].name;
+   await page.locator('#source-search').fill(query);
+   // Every result is resolved by a stable source ID in the currently resident block.
+   const searchIds=await page.locator('#source-results button').evaluateAll(bs=>bs.map(b=>Number(b.dataset.sourceIndex)));
+   assert.ok(searchIds.length>0,'Search must return a genuine resident structure');
+   await page.locator('#source-results button').first().click();
+   assert.equal(await page.locator('#structure').inputValue(),String(searchIds[0]));
+   assert.ok(searchIds.every(id=>a.original_indices.includes(id)));
+   await page.locator('#source-search').fill('');
+   const beforeLoss=await page.evaluate(()=>window.__polyRegionLabDiagnostics());
+   await page.evaluate(()=>{
+    const canvas=document.querySelector('#region-canvas');
+    const gl=canvas.getContext('webgl2');
+    const extension=gl.getExtension('WEBGL_lose_context');
+    if(!extension)throw Error('WEBGL_lose_context required for recovery test');
+    window.__restoreRegionContext=()=>extension.restoreContext();
+    extension.loseContext();
+   });
+   await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Contexte WebGL perdu'));
+   await page.evaluate(()=>window.__restoreRegionContext());
+   await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Contexte WebGL rétabli'));
+   assert.deepEqual(await page.evaluate(()=>window.__polyRegionLabDiagnostics()),beforeLoss);
    await chooseBlock(page,b);
    await page.locator('#load').click();await expectLoaded(page,b);
    assert.equal(await page.locator('#structure').inputValue(),String(b.original_indices[0]));
@@ -75,10 +98,13 @@ async function launch(){
    await page.waitForFunction(()=>document.querySelector('#scene-stat')?.textContent?.startsWith('0 structures'));
    await page.waitForFunction(()=>document.querySelector('#scene-stat')?.textContent?.includes('0 géométries GPU'));
    assert.equal(await page.locator('#structure option').count(),1);
+   await page.locator('#source-search').fill('heart');
+   assert.equal(await page.locator('#source-results button').count(),0);
+   assert.match(await page.locator('#source-results').innerText(),/actuellement en mémoire/);
    assert.deepEqual(errors,[]);
    results.push({view:mobile?'390x844 touch':'1440x900 desktop',actual_triangle_buffers:true,
      first:a.id,second:b.id,memory_eviction:true,source_selection:true,gpu_disposal:true,
-     no_full_body_download:true,errors});
+     no_full_body_download:true,shared_source_search:true,webgl_context_restore:true,errors});
    await context.close();
   }
   // Start a real gzip transfer, abandon it by changing regions, and prove the

@@ -1,3 +1,4 @@
+import {sourceMeshData,createSourceAccess} from './body-source-contract.mjs';
 // Experimental Three.js adapter for SHA256-verified, bit-exact POLY source chunks.
 // No new anatomical geometry, muscle insertions, personalized coordinates or physiology.
 export const REGION_COLORS = Object.freeze({
@@ -87,7 +88,7 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
           });
           const mesh=new THREE.Mesh(geometry,material);
           mesh.name=record.name;
-          mesh.userData={source_index:record.source_index,source_name:record.name,
+          mesh.userData={...sourceMeshData(record,{system:chunk.system,chunkId:chunk.id}),source_name:record.name,
             source_node:record.node??null,source_path:[...record.path],
             source_offsets:{...record.source_offsets},
             bounds:record.bounds,system:chunk.system,chunk_id:chunk.id,
@@ -158,6 +159,7 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
     unhighlight();
   }
   return {install,uninstall,select,pick,dispose,diagnostics,
+    sources:createSourceAccess(()=>[...sourceMeshes.values()]),
     sourceInfo:index=>{const m=sourceMeshes.get(index);return m?{name:m.userData.source_name,source_index:index,chunk_id:m.userData.chunk_id,bounds:m.userData.bounds}:null},
     listSourceIndices:()=>[...sourceMeshes.keys()].sort((a,b)=>a-b)};
 }
