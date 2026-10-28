@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>POLY · Laboratoire 3D régional non publié</title>
+<meta name="description" content="Prototype interne de lecture des maillages anatomiques d'origine par blocs avec provenance, sélection et libération GPU.">
+<link rel="stylesheet" href="body-region-lab.css">
+<script type="module" src="body-region-lab.mjs"></script>
+</head><body>
+<a class="skip" href="#main">Aller à la démonstration</a>
+<header><a href="../../index.html" class="logo">POLY <small>/ LABORATOIRE ANATOMIQUE</small></a><nav><a href="body-light.html">Mode léger</a><a href="index.html">Corps 3D classique</a></nav></header>
+<main id="main">
+<section class="hero"><p class="kicker">PROTOTYPE INTERNE · NON DÉPLOYÉ</p>
+<h1>Charger une région. Conserver sa preuve.</h1>
+<p>Ce banc d'essai affiche les véritables triangles du maillage de référence, par blocs indépendants. Chaque bloc doit passer les contrôles SHA256 avant d'entrer dans la scène. Lorsque le bloc est libéré, ses géométries et matériaux Three.js sont détruits.</p>
+<div class="chips"><span>918 identités de source</span><span>13 blocs candidats</span><span>Aucun maillage créé de toutes pièces</span><span>Aucune insertion musculaire validée</span></div>
+</section>
+<p id="loading" role="status">Vérification du manifeste de construction locale…</p>
+<div id="app" hidden>
+<div class="layout">
+<aside class="panel controls" aria-labelledby="control-heading"><p class="kicker">01 / SÉLECTION</p><h2 id="control-heading">Choisir le bloc source</h2>
+<label for="system">Système anatomique</label>
+<select id="system"></select>
+<label for="block">Bloc géométrique</label><select id="block"></select>
+<label for="budget">Budget de géométrie décompressée conservée</label>
+<select id="budget"><option value="4194304">4 Mio</option><option value="8388608" selected>8 Mio</option><option value="16777216">16 Mio</option></select>
+<div class="buttons"><button id="load" type="button">Charger et vérifier ce bloc</button><button id="release" class="secondary" type="button">Libérer le bloc sélectionné</button><button id="clear" class="secondary" type="button">Tout libérer</button></div>
+<p id="status" role="status">Aucun bloc chargé.</p>
+<p class="readout" id="memory" aria-live="polite"></p>
+<hr>
+<label for="structure">Structure d'origine en mémoire</label><select id="structure"><option value="">Aucune structure chargée</option></select>
+<div class="buttons"><button id="focus" class="secondary" type="button">Centrer la caméra</button><button id="reset" class="secondary" type="button">Vue générale</button></div>
+<div id="selected" class="selected" aria-live="polite"><p>Sélectionnez une structure chargée pour consulter son nom, son indice d'origine et la provenance.</p></div>
+</aside>
+<section class="panel stage" aria-labelledby="view-heading"><p class="kicker">02 / RENDU VÉRIFIÉ</p><h2 id="view-heading">Surface anatomique source</h2>
+<p class="hint">Glisser pour tourner · molette pour zoomer · toucher une surface pour la sélectionner. Les blocs sont indépendants : les parties absentes ne sont pas estimées.</p>
+<canvas id="region-canvas" aria-label="Rendu Three.js des seules structures anatomiques déjà vérifiées"></canvas>
+<p id="scene-stat" class="readout" aria-live="polite">0 structure en mémoire.</p>
+<p class="hint">La limite en Mio porte sur les octets décompressés du cache, et ne mesure pas la mémoire GPU, le réseau ou les copies temporaires.</p>
+</section>
+</div>
+<section class="limits"><p class="kicker">03 / GARDES SCIENTIFIQUES</p><h2>Ce que cette scène ne démontre pas</h2>
+<p>Les noms, surfaces et coordonnées sont ceux de l'atlas anatomique de référence de POLY. Ce n'est pas un sujet vivant identifié ; aucune insertion anatomique n'est validée par le seul affichage. La sélection restitue l'indice et les décalages du fichier original. Une empreinte SHA256 valide prouve l'intégrité des fichiers par rapport au manifeste contrôlé, pas l'exactitude d'une hypothèse physiologique.</p>
+<p><strong>Distribution :</strong> les blocs ne sont actuellement générés que dans un dossier temporaire de tests. Pour fonctionner, cette page nécessite une mise à disposition locale autorisée du manifeste et des blocs ; elle n'embarque aucune copie des maillages.</p>
+</section></div></main>
+<footer><span>POLY · Recherche technique, non clinique · Aucune publication automatique</span><a href="body-light.html">Retour à l'explorateur léger</a></footer>
+</body></html>

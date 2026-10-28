@@ -21,19 +21,26 @@ jobs:
       - run: node --test simulateur/tests/attachment-engine.test.mjs
       - run: node --test simulateur/tests/body-startup-guard.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
+      - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
         run: python simulateur/scripts/build_body_source_chunks.py --output-root "${{ runner.temp }}/poly-body-chunks" --verify
       - name: Verify on-demand anatomical block reader against real generated chunks
         env:
           POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
         run: node --test simulateur/tests/body-chunk-reader.test.mjs
+      - name: Mount original geometry source chunks in experimental Three.js adapter
+        env:
+          POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
+        run: node --test simulateur/tests/body-region-three.test.mjs
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks
         env:
           POLY_BROWSER_CHANNEL: chromium
+          POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
         run: |
           python -m http.server 8123 --bind 127.0.0.1 > /tmp/poly-http.log 2>&1 &
           node simulateur/tests/attachments-browser.cjs
           node simulateur/tests/body-startup-browser.cjs
           node simulateur/tests/body-light-browser.cjs
+          node simulateur/tests/body-region-browser.cjs
