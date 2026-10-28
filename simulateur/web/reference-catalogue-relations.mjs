@@ -14,5 +14,6 @@ export function referenceRelations(data,key){
  const opposite=item.contralateral_id?rows.find(r=>r.collection===match[1]&&r.metadata.id===item.contralateral_id):null;
  const itineraries=new Set([item.itinerary,...(item.itineraries??[]).map(p=>p.id)].filter(Boolean));
  return {item,relations,links:[...links.values()],opposite:opposite??null,
-  observations:(data.human_latency_observations??[]).filter(o=>itineraries.has(o.itinerary))};
+  observations:(data.human_latency_observations??[]).filter(o=>o.part_ids?o.part_ids.includes(item.id)&&(o.allowed_paths??[]).some(id=>itineraries.has(id)):itineraries.has(o.itinerary)),
+  interactions:(data.human_interaction_observations??[]).filter(o=>item.side&&(o['parts_'+item.side]??[]).includes(item.id))};
 }

@@ -30,7 +30,14 @@ async function main(){
    await fixtures(page);await ready(page);
    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
    assert.ok(!requests.some(url=>url.includes('.bin.gz')));
+   await page.locator('#reference-region').selectOption('__missing__');assert.match(await page.locator('#reference-count').innerText(),/^26 pièces/);await page.locator('#reference-region').selectOption('all');
+   await page.locator('#reference-collection').selectOption('all');await page.locator('#reference-side').selectOption('U');assert.match(await page.locator('#reference-count').innerText(),/^11 pièces/);await page.locator('#reference-side').selectOption('all');await page.locator('#reference-collection').selectOption('parts');
    await page.locator('[data-reference-info="parts/0"]').click();assert.ok((await page.locator('#reference-documentation').innerText()).includes(catalogue.data.parts[0].name));
+   assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);assert.ok(!requests.some(url=>url.includes('.bin.gz')));
+   await page.getByRole('button',{name:'Charger les étapes documentées',exact:true}).click();await page.getByRole('button',{name:'Étape suivante',exact:true}).waitFor();
+   assert.ok((await page.locator('#reference-documentation').innerText()).includes('ain_pq_R'));
+   await page.getByRole('button',{name:'Étape suivante',exact:true}).click();assert.ok((await page.locator('#reference-documentation').innerText()).includes('Étape documentaire 2 / 2'));
+   assert.equal(await page.getByRole('button',{name:'Étape suivante',exact:true}).isDisabled(),true);
    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);assert.ok(!requests.some(url=>url.includes('.bin.gz')));
    await choose(page,'parts/0');await selected(page,'parts/0');
    let stats=await page.evaluate(()=>window.__polyReferencePartDiagnostics());assert.ok(stats.resident_raw_bytes<=4194304);assert.equal(stats.meshes,1);if(mobile)assert.equal(stats.pixel_ratio,1);
@@ -42,6 +49,22 @@ async function main(){
    const related=page.locator('[data-related-reference-key]').first(),relatedKey=await related.getAttribute('data-related-reference-key');
    await related.click();await selected(page,relatedKey);assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),1);
    const reverse=page.locator('[data-related-reference-key="parts/'+relatedPart+'"]').first();await reverse.click();await selected(page,'parts/'+relatedPart);
+   await page.locator('[data-reference-group="parts/'+relatedPart+'"]').click();
+   await page.waitForFunction(()=>window.__polyReferencePartDiagnostics().meshes>1&&window.__polyReferencePartDiagnostics().geometries===window.__polyReferencePartDiagnostics().meshes);
+   const groupStats=await page.evaluate(()=>window.__polyReferencePartDiagnostics());assert.ok(groupStats.resident_raw_bytes<=4194304);assert.ok(groupStats.context_keys.every(k=>k.startsWith('bones/')));assert.equal(groupStats.geometry_ids.consistent,true);
+   await page.locator('#reference-context').uncheck();assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().visible_meshes),1);assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().resident_raw_bytes),groupStats.resident_raw_bytes);await page.locator('#reference-context').check();
+   await page.locator('[data-loaded-reference-key="'+relatedKey+'"]').click();assert.ok((await page.locator('#reference-documentation').innerText()).includes(relatedKey));assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),groupStats.meshes);
+   await page.locator('#reference-save').click();await ready(page);assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),0);await page.locator('#reference-restore').click();
+   await page.waitForFunction(count=>window.__polyReferencePartDiagnostics().meshes===count&&window.__polyReferencePartDiagnostics().geometries===count,groupStats.meshes);assert.deepEqual(await page.evaluate(()=>window.__polyReferencePartDiagnostics().context_keys),groupStats.context_keys);
+   // A new selection must dispose every context mesh from the previous group.
+   await choose(page,'parts/'+relatedPart);await selected(page,'parts/'+relatedPart);assert.deepEqual(await page.evaluate(()=>window.__polyReferencePartDiagnostics().context_keys),[]);
+   const boneBlock=manifest.chunks.find(c=>c.keys.includes(relatedKey));
+   const primaryBlock=manifest.chunks.find(c=>c.keys.includes('parts/'+relatedPart));
+   if(boneBlock.id!==primaryBlock.id){await page.unroute('**/reference-chunks-preview/**');await fixtures(page,{corruptId:boneBlock.id});
+    await page.locator('[data-reference-group="parts/'+relatedPart+'"]').click();await page.waitForFunction(()=>document.querySelector('#reference-status').dataset.error==='true');
+    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().selected_key),'parts/'+relatedPart);assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),1);
+    await page.unroute('**/reference-chunks-preview/**');await fixtures(page);
+   }
    await page.locator('#reference-canvas').focus();await page.keyboard.press('ArrowLeft');
    const savedAngle=await page.evaluate(()=>window.__polyReferencePartDiagnostics().view.azimuth);
    await page.locator('#reference-save').click();const requestCount=requests.length;await ready(page);
@@ -68,7 +91,7 @@ async function main(){
    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().geometry_ids.consistent),true);
    assert.ok(!requests.some(url=>/forearm-motor-reference\.json|body-display\.bin/.test(url)));assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(errors,[]);
    results.push({mobile,metadata_without_webgl:true,one_verified_block:true,one_source_piece:true,muscle_and_bone_identity:true,
-    explicit_bookmark_resume:true,no_automatic_geometry_resume:true,documentary_bone_navigation:true,keyboard_camera:true,abandoned_transfer_aborted:true,webgl_recovery:true,page_return:true,no_monolithic_reference_download:true,errors});await ctx.close();
+    nerve_documentary_steps_without_webgl:true,bounded_source_group:true,group_disposal:true,group_failure_preserves_previous:true,explicit_bookmark_resume:true,no_automatic_geometry_resume:true,documentary_bone_navigation:true,keyboard_camera:true,abandoned_transfer_aborted:true,webgl_recovery:true,page_return:true,no_monolithic_reference_download:true,errors});await ctx.close();
   }
   for(const missing of [false,true]){
    const ctx=await browser.newContext(),page=await ctx.newPage();await fixtures(page,{missing,corruptId:missing?null:a.id});
@@ -77,6 +100,16 @@ async function main(){
    else{await page.locator('#app').waitFor({state:'visible'});await choose(page,'parts/0');await page.waitForFunction(()=>document.querySelector('#reference-status').dataset.error==='true');assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),0);}
    results.push({failure:missing?'missing_manifest':'corrupted_block',refused_without_mesh:true});await ctx.close();
   }
+  const ctx=await browser.newContext(),page=await ctx.newPage();await fixtures(page);const corruptedNerve=await fs.readFile(path.join(__dirname,'../data/human-nerves.json.gz'));corruptedNerve[9]^=1;
+  await page.route('**/human-nerves.json.gz',route=>route.fulfill({status:200,body:corruptedNerve}));await ready(page);await page.locator('[data-reference-info="parts/0"]').click();await page.getByRole('button',{name:'Charger les étapes documentées',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('#reference-documentation').textContent.includes('Lecture refusée'));assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
+  results.push({failure:'corrupted_nerve_documentation',refused_without_mesh:true});await ctx.close();
+  const lateContext=await browser.newContext(),latePage=await lateContext.newPage();await fixtures(latePage);let releaseNerve,notifyNerve;const nerveGate=new Promise(r=>releaseNerve=r),nerveStarted=new Promise(r=>notifyNerve=r);const failedNerve=[];
+  latePage.on('requestfailed',r=>failedNerve.push(r.url()));await latePage.route('**/human-nerves.json.gz',async route=>{notifyNerve();await nerveGate;if(!route.request().failure())await route.fulfill({status:200,body:await fs.readFile(path.join(__dirname,'../data/human-nerves.json.gz'))});});
+  await ready(latePage);await latePage.locator('[data-reference-info="parts/0"]').click();await latePage.getByRole('button',{name:'Charger les étapes documentées',exact:true}).click();await nerveStarted;
+  await latePage.locator('#reference-collection').selectOption('bones');await latePage.locator('[data-reference-info="bones/0"]').click();releaseNerve();await latePage.waitForFunction(()=>document.querySelector('#reference-documentation').textContent.includes('bones/0'));
+  assert.ok(failedNerve.some(url=>url.includes('human-nerves.json.gz')));assert.equal(await latePage.getByRole('button',{name:'Étape suivante',exact:true}).count(),0);assert.equal(await latePage.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
+  results.push({nerve_transfer_cancelled_on_new_document:true,late_nerve_result_not_installed:true});await lateContext.close();
   const receipt={schema:'poly.reference-region-browser.v1',results};if(process.env.POLY_REFERENCE_RESULTS)await fs.writeFile(process.env.POLY_REFERENCE_RESULTS,JSON.stringify(receipt,null,2));console.log(JSON.stringify(receipt,null,2));
  }finally{await browser.close();}
 }

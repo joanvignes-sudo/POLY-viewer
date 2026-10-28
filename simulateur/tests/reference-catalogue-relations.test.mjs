@@ -10,5 +10,9 @@ test('bone reverse links preserve side and do not infer a contralateral identifi
 });
 test('invalid identities and absent optional metadata are safe',()=>{
  for(const key of ['parts/99','other/0','parts/-1','parts/0x'])assert.equal(referenceRelations(data,key),null);
- assert.deepEqual(referenceRelations({parts:[{id:'bare'}]},'parts/0'),{item:{id:'bare'},relations:[],links:[],opposite:null,observations:[]});
+ assert.deepEqual(referenceRelations({parts:[{id:'bare'}]},'parts/0'),{item:{id:'bare'},relations:[],links:[],opposite:null,observations:[],interactions:[]});
+});
+test('head-specific observations require explicit part and allowed path; interaction side is never inferred',()=>{
+ const specific={...data,human_latency_observations:[{part_ids:['muscle'],allowed_paths:['path']},{part_ids:['muscle'],allowed_paths:['other']},{part_ids:['other'],allowed_paths:['path']}],human_interaction_observations:[{parts_R:['muscle']},{parts_L:['muscle']}]};
+ assert.equal(referenceRelations(specific,'parts/0').observations.length,1);assert.equal(referenceRelations(specific,'parts/0').interactions.length,1);assert.equal(referenceRelations(specific,'bones/2').interactions.length,0);
 });
