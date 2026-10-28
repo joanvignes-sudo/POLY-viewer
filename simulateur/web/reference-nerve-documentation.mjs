@@ -19,31 +19,33 @@ export function resolveReferenceNervePath(data,id){
  if([...sources].some(id=>!data.sources?.[id]))throw Error('Documentary nerve source missing');
  return {path,routes,sources:[...sources].map(id=>({id,...data.sources[id]}))};
 }
-export function createReferenceNervePanel(host,item,{load=loadReferenceNerveDocumentation}={}){
- let disposed=false,controller=null,model=null,index=0,generation=0;
+export function createReferenceNervePanel(host,item,{load=loadReferenceNerveDocumentation,onRoute=null}={}){
+ let disposed=false,controller=null,model=null,index=0,generation=0,showing=false;
  const choices=item.itineraries??(item.itinerary?[{id:item.itinerary,label:item.itinerary}]:[]);
  const section=document.createElement('section'),title=document.createElement('h4'),select=document.createElement('select'),open=document.createElement('button'),output=document.createElement('div');
  title.textContent='Parcours nerveux documentaire';open.type='button';open.textContent='Charger les étapes documentées';
  select.setAttribute('aria-label','Parcours nerveux documentaire de la fiche');
  for(const choice of choices){const option=document.createElement('option');option.value=choice.id;option.textContent=choice.label??choice.id;select.append(option);}
- const notice=document.createElement('p');notice.textContent='Lecture manuelle, sans durée biologique. Les courbes HRA ne sont pas superposées aux coordonnées de cette référence BodyParts3D. Aucun influx, entrée intramusculaire ni contraction n’est calculé.';
+ const notice=document.createElement('p');notice.textContent='Lecture manuelle, sans durée biologique. Aucune courbe HRA superposée aux coordonnées source BodyParts3D. Une courbe peut être consultée dans le repère de présentation historique, sans recalage anatomique validé. Aucun influx, entrée intramusculaire ni contraction n’est calculé.';
  section.append(title,notice,select,open,output);host.append(section);
  function render(){
   output.replaceChildren();const text=value=>{if(value==null)return;const p=document.createElement('p');p.textContent=String(value);output.append(p);};
   text(model.path.name);text('Étape documentaire '+(index+1)+' / '+model.routes.length+' · '+model.path.id);
   const route=model.routes[index];text(route.name);text(route.function);text((model.path.reverse&&route.direction==='mixed'?[...route.landmarks].reverse():route.landmarks).join(' → '));text(route.geometry_provenance);text(route.response_annotation);text(route.variant_warning);
+  if(showing)showing=Boolean(onRoute?.(route,item.id));
   const junction=(model.path.junctions??[]).find(j=>j.from_route===route.id);if(junction)text(junction.scope);
   text(model.path.limit);
   for(const source of model.sources){text(source.scope);try{const url=new URL(source.url);if(!['https:','http:'].includes(url.protocol))continue;const a=document.createElement('a');a.href=url.href;a.target='_blank';a.rel='noopener';a.textContent=source.title;output.append(a);}catch{}}
   const previous=document.createElement('button'),next=document.createElement('button');previous.type=next.type='button';previous.textContent='Étape précédente';next.textContent='Étape suivante';previous.disabled=index===0;next.disabled=index===model.routes.length-1;
   const current=generation;previous.onclick=()=>{if(!disposed&&current===generation&&index>0){index--;generation++;render()}};next.onclick=()=>{if(!disposed&&current===generation&&index<model.routes.length-1){index++;generation++;render()}};output.append(previous,next);
+  if(onRoute){const show=document.createElement('button');show.type='button';show.textContent=showing?'Retirer la courbe illustrative':'Afficher cette étape dans le repère illustratif';show.onclick=()=>{if(disposed||current!==generation)return;if(showing){onRoute(null);showing=false;}else showing=Boolean(onRoute(route,item.id));generation++;render();};output.append(show);}
  }
  open.onclick=async()=>{
   if(disposed||!choices.length)return;controller?.abort();controller=new AbortController();const current=++generation,id=select.value;output.textContent='Vérification de la source nerveuse…';
   try{const data=await load({signal:controller.signal});if(disposed||current!==generation)return;model=resolveReferenceNervePath(data,id);if(!model)throw Error('Parcours absent de la source vérifiée');index=0;render();}
   catch(error){if(!disposed&&current===generation)output.textContent='Lecture refusée : '+error.message;}
  };
- select.onchange=()=>{generation++;controller?.abort();model=null;output.textContent='Choisir de charger le parcours sélectionné.';};
+ select.onchange=()=>{generation++;controller?.abort();model=null;showing=false;onRoute?.(null);output.textContent='Choisir de charger le parcours sélectionné.';};
  if(!choices.length){open.disabled=true;select.hidden=true;output.textContent='Aucun itinéraire explicitement lié à cette pièce.';}
- return {dispose(){if(disposed)return;disposed=true;generation++;controller?.abort();controller=null;model=null;open.onclick=null;select.onchange=null;section.remove();}};
+ return {hideRoute(){if(disposed)return;showing=false;onRoute?.(null);generation++;if(model)render();},dispose(){if(disposed)return;disposed=true;generation++;controller?.abort();controller=null;model=null;onRoute?.(null);open.onclick=null;select.onchange=null;section.remove();}};
 }

@@ -10,3 +10,9 @@ test('group bookmarks preserve ordered keys and reject unknown, duplicate or wro
  const group={...valid,keys:['parts/0','bones/0']};assert.deepEqual(validateReferenceBookmark(group,'trusted',group.keys),group);
  for(const keys of [[],['bones/0'],['parts/0','parts/0'],['parts/0','missing']])assert.equal(check({...valid,keys}),null);
 });
+test('focus and illustrative phase bookmarks remain bounded and preserve backward compatibility',()=>{
+ const value={...valid,keys:['parts/0','bones/0'],focus_key:'bones/0',display:{space:'illustrative',phase:.4}};
+ assert.deepEqual(validateReferenceBookmark(value,'trusted',value.keys),value);
+ for(const change of [{focus_key:'missing'},{display:{space:'physiological',phase:0}},{display:{space:'illustrative',phase:2}},{display:{space:'illustrative',phase:NaN}}])assert.equal(validateReferenceBookmark({...value,...change},'trusted',value.keys),null);
+ assert.deepEqual(check(valid),valid);
+});

@@ -1,39 +1,48 @@
-# POLY — Liste de convergence au 28 octobre 2026
+# POLY — Convergence et reprise nocturne, 28 octobre 2026
 
-Le développement reste local et expérimental. Aucun push, merge, déploiement ou remplacement du site public.
+Développement local sur `feat/regional-body-bridge-20261028`. Aucun push, fusion ou déploiement. Les données source restent préservées.
 
-| Priorité initiale | État vérifiable | Reste à faire |
+## Les quatre raccordements logiciels annoncés
+
+| Travail | Résultat exécuté et testé |
+|---|---|
+| Sélection spatiale, cadrage et retour | Toucher/clic sur les triangles visibles ; identité source exacte ; cadrage de la surface inspectée et retour au cadrage précédent ; les glissements/pincements ne sélectionnent pas volontairement une nouvelle pièce |
+| Déformations des résidents musculaires/osseux | Mode source distinct du placement illustratif ; recette historique de placement, calibration par proxies et déformations de tronc, membres et os réutilisées ; phase et lecture de marche, repos et restauration des coordonnées source |
+| Parcours nerveux dans un repère compatible | Lecture manuelle et courbe de l'étape choisie uniquement avec la pièce chargée et le mode illustratif ; déformation commune aux surfaces et courbes ; retrait/libération au changement de fiche, de mode ou de contexte |
+| Accès commun conservant l'existant | `anatomy.html` propose léger, HRA régional, références par pièces et corps historique ; aucune géométrie au chargement de cette page ; liens ajoutés aux parcours concernés |
+
+Les sauvegardes locales reprennent maintenant groupes, focus et phase illustrative après contrôle de source ; aucun maillage ni tracé nerveux n'est rechargé automatiquement à l'ouverture. Les commandes d'anciens groupes deviennent inertes et ne capturent plus les tableaux géométriques des anciennes pièces.
+
+## Liste initiale : état réel
+
+| Priorité | État logiciel | Qualification ou périmètre restant |
 |---|---|---|
-| Audit architecture/rendu/sélection/mémoire | Réalisé pour les parcours raccordés ; conflit de double instance Three.js corrigé | Étendre l'audit lors de chaque raccordement restant |
-| Interface stable lecteur 13 blocs ↔ fonctionnalités historiques | Adaptateur régional, résidents et sessions de matériaux en place | Remplacer progressivement le chemin monolithique du corps historique |
-| Identités, noms, coordonnées et références pendant les changements | Préservés et testés ; références HRA, main, CerebrA et membres distinctes | Qualifier les relations entre bibliothèques avant tout affichage présenté comme aligné |
-| Libération et récupération WebGL | Testées pour corps, vues raccordées et lecteur de pièces/groupes | Mesurer les effets physiques du pilote sur de vrais appareils |
-| Recherche, inspection et tactile | Corps régional, inspecteur, œil, P1, CerebrA, main ; fiches et filtres de membres ; groupes muscle–os | Interactions restantes de l'atelier historique complet et sélection spatiale détaillée des groupes |
-| Marche et déformations | Rig/sampler de marche du corps régional raccordé et testé dans les passes précédentes | Toutes les déformations des références musculaires/osseuses et leurs interactions ne sont pas portées |
-| Une structure ou groupe local | HRA régional ; lecteur vérifié de 526 pièces ; groupes muscle–os bornés et réutilisation de blocs | Autres groupes justifiés et qualification de leurs dépendances |
-| Performance et limites | Compteurs logiciels, budgets, essais navigateur et serveur réels documentés | Téléphone physique : CPU/GPU, fréquence d'images, batterie, température |
+| Audit rendu/sélection/mémoire | Réalisé et étendu sur les parcours raccordés | Compléter la matrice des fonctions historiques encore distinctes pendant les reprises nocturnes |
+| Interface lecteur 13 blocs / fonctions historiques | Adaptateur et parcours régional fonctionnels | Le corps historique demeure un parcours disponible ; son remplacement automatique n'est pas effectué |
+| Identités, coordonnées, références | Conservation et contrôles source en place | Aucun recalage individuel entre bibliothèques n'est établi |
+| Libération/récupération WebGL | Corps, atlas, références, groupes et courbes testés | Restitution de mémoire physique et comportement du pilote à mesurer sur appareils |
+| Recherche, inspection, tactile | Raccordés aux parcours régionaux et par pièces | Étendre les interactions selon les écarts concrets relevés, sans déplacer arbitrairement les modèles indépendants |
+| Marche et déformations | Rig historique, sampler et transformations de référence raccordés | Illustration graphique ; aucune validation biomécanique individuelle |
+| Une structure / groupe local | HRA et groupes muscle–os vérifiés, budget combiné 4 Mio, maximum 16 pièces | Ajouter d'autres groupes seulement avec dépendances explicites et budget qualifié |
+| Performance et limites | Budgets, compteurs et essais serveur documentés | Téléphone physique : CPU/GPU, fréquence d'images, batterie, température |
 
-## Avancées de la dernière passe
+## Tests et preuve
 
-- Affichage simultané d'un muscle et de ses os documentés, dans les coordonnées de la référence source.
-- Planification avant téléchargement : maximum 4 Mio de blocs source et 16 pièces ; pas d'installation partielle en cas de corruption.
-- Identification et fiches de toutes les pièces chargées ; masquage explicite du contexte ; libération lors du remplacement.
-- Sauvegarde et reprise volontaire de groupes, compatible avec les anciennes sauvegardes d'une pièce.
-- Lecture nerveuse documentaire à la demande : source vérifiée, étapes et limites terminales ; transfert annulé au changement de fiche.
-- Observations humaines spécifiques filtrées par pièce et chemin explicites ; protocoles d'interaction consultables sans les affecter au maillage.
-- Régions absentes et côtés non annotés/bilatéraux consultables sans inférence.
+- **101 tests Node : PASS ; 21 tests Python : PASS.**
+- **11 suites navigateur disposent de résultats réussis** sur les composants actuels. Les neuf suites historiques/HRA sont passées lors de la passe séquentielle ; les deux suites de référence ont été répétées après les dernières modifications de leur parcours.
+- Le nouveau parcours d'interactions a réussi trois exécutions consécutives après ajout du diagnostic de disponibilité. Un échec intermédiaire de rechargement a été conservé : voir limite ci-dessous.
+- Tests nouveaux : vrais triangles sélectionnés au pointeur/toucher, focus/retour et sauvegarde de focus, phase/restauration source, courbe illustrative compatible, sauvegarde de phase, pause d'animation en page masquée, perte de contexte d'un groupe, données de marche altérées refusées.
+- Tests du catalogue : manifeste absent puis reprise, transfert de métadonnées volontairement bloqué puis réellement annulé et relancé sans WebGL.
+- Essai du vrai serveur sans interception : biceps et radius, deux surfaces, une courbe, 726 000 octets de blocs source et 76 572 octets de buffers d'affichage des surfaces en mode posture. Le compteur d'affichage des surfaces exclut les petits buffers de la courbe, les métadonnées, les temporaires, les objets et la mémoire GPU physique.
 
-## Validation
+## Limite de démarrage à investiguer
 
-95 tests Node : PASS. Suite navigateur du lecteur de référence : PASS sur bureau/mobile émulé après dernière modification. Les résultats antérieurs de 21 tests Python et des neuf autres suites navigateur sont conservés ; ces suites ne sont pas présentées comme réexécutées dans cette passe.
+Une exécution consolidée a dépassé 45 secondes en attendant l'affichage du catalogue après un rechargement. La cause n'a pas été établie. Les passages suivants réussis ne prouvent pas sa correction. Le diagnostic du test identifie maintenant l'étape de démarrage et les refus explicites. L'interface permet d'annuler et relancer le catalogue ; cette relance est testée contre un transfert délibérément bloqué. Les reprises nocturnes doivent rechercher une reproduction et la cause, plutôt que masquer le problème par des retries silencieux.
 
-Essai supplémentaire sans interception via le serveur réel : biceps droit + radius droit, 726 000 octets de blocs source résidents, 51 048 octets de copies d'affichage, deux géométries, aucune erreur JavaScript. Cela ne mesure ni RAM totale ni mémoire GPU physique.
+## Travail nocturne autorisé
 
-## Prochains travaux logiciels
+Relances horaires de ce chat actives jusqu'au **29 octobre 2026 à 08:00 Europe/Paris**. Checkpoint court : `work/POLY_NUIT_REPRISE.json` dans le dossier du chat. À poursuivre sans refaire les opérations closes : diagnostic du délai intermittent, audit des écarts historiques, performances et allocations des groupes les plus lourds permis, interactions/états encore manquants et tests pertinents.
 
-1. Porter davantage d'interactions historiques sur les résidents : sélection spatiale des groupes et commandes de focus/retour.
-2. Porter les déformations musculaires/osseuses en réutilisant les transformations illustratives existantes, avec qualification de leur portée et de leurs ressources.
-3. Étendre le raccordement du pilote nerveux seulement dans des repères compatibles et avec un cycle de vie libérable.
-4. Préparer un parcours d'entrée commun, en conservant le corps historique tant que la couverture de non-régression est incomplète.
+Les mesures sur téléphone physique, les insertions individuelles et les validations expérimentales absentes ne peuvent pas être déclarées acquises par ces tests. La diffusion et la publication exigent toujours l'accord explicite de l'utilisateur.
 
-La distribution des blocs et la publication restent soumises à l'accord explicite de l'utilisateur. Les insertions individuelles, latences, forces, activations et recalages non établis ne sont pas des tâches à remplir avec des valeurs inventées.
+Une autre passe de la suite de référence a été interrompue alors qu’elle ne produisait plus de résultat. Les attentes des requêtes de test détenues par une fixture sont maintenant bornées à 15 secondes avec diagnostic ; la passe suivante a réussi. Cette interruption ne sert pas de preuve de réussite ni de preuve de correction du démarrage.

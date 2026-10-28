@@ -3,6 +3,7 @@ const fs=require('node:fs/promises'),path=require('node:path'),assert=require('n
 const {gunzipSync}=require('node:zlib');
 const root=process.env.POLY_REFERENCE_CHUNKS_ROOT,base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
 if(!root)throw Error('POLY_REFERENCE_CHUNKS_ROOT required');
+async function waitStarted(promise,page,label){let timer;try{return await Promise.race([promise,new Promise((resolve,reject)=>{timer=setTimeout(async()=>reject(Error(label+' request not observed: '+JSON.stringify(await page.evaluate(()=>({loading:document.querySelector('#loading')?.textContent,diagnostics:window.__polyReferencePartDiagnostics?.()}))))),15000);})]);}finally{clearTimeout(timer);}}
 async function fixtures(page,{holdId=null,gate=null,onHold=()=>{},corruptId=null,missing=false}={}){
  await page.route('**/reference-chunks-preview/**',async route=>{
   const rel=decodeURIComponent(new URL(route.request().url()).pathname.split('/reference-chunks-preview/')[1]);
@@ -79,7 +80,7 @@ async function main(){
    // Hold one block, select another, and verify the old transfer is really aborted.
    let release,notify;const gate=new Promise(r=>release=r),started=new Promise(r=>notify=r);
    await page.unroute('**/reference-chunks-preview/**');await fixtures(page,{holdId:a.id,gate,onHold:notify});
-   await choose(page,'parts/0');await started;await choose(page,second);await selected(page,second);release();
+   await choose(page,'parts/0');await waitStarted(started,page,'held source block');await choose(page,second);await selected(page,second);release();
    assert.ok(failed.some(url=>url.endsWith(a.id+'.bin.gz')));
    assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().block),b.id);
    await page.evaluate(()=>{const ext=document.querySelector('#reference-canvas').getContext('webgl2').getExtension('WEBGL_lose_context');window.__restoreReference=()=>ext.restoreContext();ext.loseContext();});
@@ -96,7 +97,7 @@ async function main(){
   for(const missing of [false,true]){
    const ctx=await browser.newContext(),page=await ctx.newPage();await fixtures(page,{missing,corruptId:missing?null:a.id});
    await page.goto(base+'/simulateur/web/reference-region-lab.html');
-   if(missing){await page.locator('#loading[role="alert"]').waitFor({state:'visible'});assert.equal(await page.locator('#app').isVisible(),false);}
+   if(missing){await page.locator('#loading[role="alert"]').waitFor({state:'visible'});assert.equal(await page.locator('#app').isVisible(),false);await page.unroute('**/reference-chunks-preview/**');await fixtures(page);await page.locator('#reference-retry').click();await page.locator('#app').waitFor({state:'visible'});assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);}
    else{await page.locator('#app').waitFor({state:'visible'});await choose(page,'parts/0');await page.waitForFunction(()=>document.querySelector('#reference-status').dataset.error==='true');assert.equal(await page.evaluate(()=>window.__polyReferencePartDiagnostics().meshes),0);}
    results.push({failure:missing?'missing_manifest':'corrupted_block',refused_without_mesh:true});await ctx.close();
   }
@@ -106,10 +107,14 @@ async function main(){
   results.push({failure:'corrupted_nerve_documentation',refused_without_mesh:true});await ctx.close();
   const lateContext=await browser.newContext(),latePage=await lateContext.newPage();await fixtures(latePage);let releaseNerve,notifyNerve;const nerveGate=new Promise(r=>releaseNerve=r),nerveStarted=new Promise(r=>notifyNerve=r);const failedNerve=[];
   latePage.on('requestfailed',r=>failedNerve.push(r.url()));await latePage.route('**/human-nerves.json.gz',async route=>{notifyNerve();await nerveGate;if(!route.request().failure())await route.fulfill({status:200,body:await fs.readFile(path.join(__dirname,'../data/human-nerves.json.gz'))});});
-  await ready(latePage);await latePage.locator('[data-reference-info="parts/0"]').click();await latePage.getByRole('button',{name:'Charger les étapes documentées',exact:true}).click();await nerveStarted;
+  await ready(latePage);await latePage.locator('[data-reference-info="parts/0"]').click();await latePage.getByRole('button',{name:'Charger les étapes documentées',exact:true}).click();await waitStarted(nerveStarted,latePage,'held nerve source');
   await latePage.locator('#reference-collection').selectOption('bones');await latePage.locator('[data-reference-info="bones/0"]').click();releaseNerve();await latePage.waitForFunction(()=>document.querySelector('#reference-documentation').textContent.includes('bones/0'));
   assert.ok(failedNerve.some(url=>url.includes('human-nerves.json.gz')));assert.equal(await latePage.getByRole('button',{name:'Étape suivante',exact:true}).count(),0);assert.equal(await latePage.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
   results.push({nerve_transfer_cancelled_on_new_document:true,late_nerve_result_not_installed:true});await lateContext.close();
+  const retryContext=await browser.newContext(),retryPage=await retryContext.newPage();await fixtures(retryPage);let firstManifest=true,releaseManifest,notifyManifest;const manifestGate=new Promise(r=>releaseManifest=r),manifestStarted=new Promise(r=>notifyManifest=r),retryFailures=[];
+  retryPage.on('requestfailed',r=>retryFailures.push(r.url()));await retryPage.route('**/reference-chunks-preview/MANIFEST.json',async route=>{if(firstManifest){firstManifest=false;notifyManifest();await manifestGate;if(route.request().failure())return;}await route.fulfill({status:200,body:await fs.readFile(path.join(root,'MANIFEST.json'))});});
+  await retryPage.goto(base+'/simulateur/web/reference-region-lab.html');await waitStarted(manifestStarted,retryPage,'held catalogue manifest');await retryPage.locator('#reference-retry').click();await retryPage.locator('#app').waitFor({state:'visible'});releaseManifest();assert.ok(retryFailures.some(url=>url.endsWith('MANIFEST.json')));assert.equal(await retryPage.evaluate(()=>window.__polyReferencePartDiagnostics().webgl_initialized),false);
+  results.push({stalled_metadata_transfer_cancelled:true,explicit_metadata_retry_without_webgl:true});await retryContext.close();
   const receipt={schema:'poly.reference-region-browser.v1',results};if(process.env.POLY_REFERENCE_RESULTS)await fs.writeFile(process.env.POLY_REFERENCE_RESULTS,JSON.stringify(receipt,null,2));console.log(JSON.stringify(receipt,null,2));
  }finally{await browser.close();}
 }
