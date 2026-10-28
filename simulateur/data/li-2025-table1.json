@@ -1,0 +1,213 @@
+{
+  "schema": "poly.human-metabolism.li2025-table1.v1",
+  "source": {
+    "article": "Li X, Zhu X-H et al. (2025), Quantitative mapping of key glucose metabolic rates in the human brain using dynamic deuterium magnetic resonance spectroscopic imaging",
+    "journal": "PNAS Nexus 4(3) pgaf072",
+    "doi": "10.1093/pnasnexus/pgaf072",
+    "pmid": "40109558",
+    "table": "Table 1",
+    "article_url": "https://doi.org/10.1093/pnasnexus/pgaf072",
+    "authors_data_repository": "https://github.com/CMRRChenLab/DynamicDMRSI",
+    "unit": "µmol/g/min",
+    "n_participants": 5,
+    "provenance": "Published two-decimal participant-level Table 1 estimates, transcribed for an independent arithmetic consistency check. Not raw isotope spectra or an independent kinetic fit.",
+    "estimation": "Dynamic 7T deuterium MRSI model-derived rates; pure gray/white estimates via regression against gray-matter fraction. Whole brain is a reported average.",
+    "revision": "2026-10-28"
+  },
+  "variables": {
+    "CMRGlc": {
+      "label": "Glucose consommé",
+      "detail": "Glucose metabolic consumption, model-derived",
+      "symbol": "CMRGlc"
+    },
+    "CMRLac": {
+      "label": "Lactate produit",
+      "detail": "Lactate production, model-derived; not lactate export or astrocyte-neuron shuttle",
+      "symbol": "CMRLac"
+    },
+    "VTCA": {
+      "label": "Cycle TCA",
+      "detail": "TCA-cycle flux, model-derived; not directly additive to glucose consumption",
+      "symbol": "VTCA"
+    },
+    "Tmax": {
+      "label": "Transport maximal apparent du glucose",
+      "detail": "Apparent forward glucose transport parameter, model-derived",
+      "symbol": "Tmax"
+    }
+  },
+  "tissues": {
+    "WM": "Substance blanche (extrapolation)",
+    "GM": "Substance grise (extrapolation)",
+    "WB": "Cerveau moyen (estimation)"
+  },
+  "subjects": [
+    {
+      "id": "01",
+      "WM": {
+        "CMRGlc": 0.17,
+        "VTCA": 0.33,
+        "CMRLac": 0.13,
+        "Tmax": 0.89
+      },
+      "GM": {
+        "CMRGlc": 0.45,
+        "VTCA": 0.71,
+        "CMRLac": 0.13,
+        "Tmax": 1.5
+      },
+      "WB": {
+        "CMRGlc": 0.29,
+        "VTCA": 0.5,
+        "CMRLac": 0.13,
+        "Tmax": 1.17
+      }
+    },
+    {
+      "id": "02",
+      "WM": {
+        "CMRGlc": 0.22,
+        "VTCA": 0.58,
+        "CMRLac": 0.12,
+        "Tmax": 0.81
+      },
+      "GM": {
+        "CMRGlc": 0.6,
+        "VTCA": 0.99,
+        "CMRLac": 0.19,
+        "Tmax": 2.19
+      },
+      "WB": {
+        "CMRGlc": 0.38,
+        "VTCA": 0.75,
+        "CMRLac": 0.15,
+        "Tmax": 1.39
+      }
+    },
+    {
+      "id": "03",
+      "WM": {
+        "CMRGlc": 0.19,
+        "VTCA": 0.58,
+        "CMRLac": 0.09,
+        "Tmax": 0.93
+      },
+      "GM": {
+        "CMRGlc": 0.44,
+        "VTCA": 0.83,
+        "CMRLac": 0.12,
+        "Tmax": 2.08
+      },
+      "WB": {
+        "CMRGlc": 0.3,
+        "VTCA": 0.69,
+        "CMRLac": 0.1,
+        "Tmax": 1.42
+      }
+    },
+    {
+      "id": "04",
+      "WM": {
+        "CMRGlc": 0.21,
+        "VTCA": 0.54,
+        "CMRLac": 0.1,
+        "Tmax": 0.83
+      },
+      "GM": {
+        "CMRGlc": 0.37,
+        "VTCA": 0.69,
+        "CMRLac": 0.12,
+        "Tmax": 1.42
+      },
+      "WB": {
+        "CMRGlc": 0.28,
+        "VTCA": 0.61,
+        "CMRLac": 0.11,
+        "Tmax": 1.08
+      }
+    },
+    {
+      "id": "05",
+      "WM": {
+        "CMRGlc": 0.18,
+        "VTCA": 0.28,
+        "CMRLac": 0.16,
+        "Tmax": 0.96
+      },
+      "GM": {
+        "CMRGlc": 0.48,
+        "VTCA": 0.74,
+        "CMRLac": 0.18,
+        "Tmax": 1.72
+      },
+      "WB": {
+        "CMRGlc": 0.29,
+        "VTCA": 0.44,
+        "CMRLac": 0.17,
+        "Tmax": 1.24
+      }
+    }
+  ],
+  "published_group": {
+    "WM": {
+      "CMRGlc": [
+        0.19,
+        0.02
+      ],
+      "VTCA": [
+        0.46,
+        0.15
+      ],
+      "CMRLac": [
+        0.12,
+        0.03
+      ],
+      "Tmax": [
+        0.88,
+        0.06
+      ]
+    },
+    "GM": {
+      "CMRGlc": [
+        0.47,
+        0.08
+      ],
+      "VTCA": [
+        0.79,
+        0.12
+      ],
+      "CMRLac": [
+        0.15,
+        0.03
+      ],
+      "Tmax": [
+        1.78,
+        0.34
+      ]
+    },
+    "WB": {
+      "CMRGlc": [
+        0.31,
+        0.04
+      ],
+      "VTCA": [
+        0.6,
+        0.13
+      ],
+      "CMRLac": [
+        0.13,
+        0.03
+      ],
+      "Tmax": [
+        1.26,
+        0.14
+      ]
+    }
+  },
+  "boundaries": [
+    "Rates are estimates from the authors' fitted kinetic model, not independently measured cellular fluxes.",
+    "Cohort of 5 healthy participants; no individual clinical prediction.",
+    "Do not mix distinct populations as if simultaneous measurements.",
+    "No measurement of internal astrocyte-to-neuron lactate shuttle is contained in Table 1."
+  ]
+}
