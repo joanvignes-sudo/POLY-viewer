@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="POLY : lire un marqueur de lumière et une réponse pupillaire humaine sans inventer les états ni les délais du circuit nerveux.">
+<title>POLY · De la lumière à la pupille — chaîne des preuves</title>
+<link rel="stylesheet" href="chaine-pupillaire.css"><script type="module" src="chaine-pupillaire.mjs"></script></head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="nav"><a class="brand" href="../../index.html">POLY <small>/ CHAÎNES DE PREUVES</small></a><nav aria-label="Navigation"><a href="../../index.html#chaines">Explorer</a><a href="observations-lumiere.html">Données humaines</a><a href="poly-atelier.html#chains">Atelier</a></nav></header>
+<main id="contenu">
+<section class="intro"><p class="kicker">DÉMONSTRATEUR SCIENTIFIQUE · CAS PUPILLAIRE</p><h1>De la lumière à la pupille.</h1>
+<p class="lede">Une chaîne anatomique connue. Un enregistrement humain. Et, entre les deux, les maillons qu'aucune des mesures disponibles n'a encore reliés individuellement.</p>
+<div class="chips"><span>11 étapes documentaires</span><span>22 personnes dans les fichiers disponibles</span><span>500 Hz dans l'acquisition</span><span>Horloge du fichier · pas de temps neuronal</span></div>
+</section>
+<div id="loading" role="status">Vérification des sources, de l'identité expérimentale et des limites…</div>
+<div id="app" hidden>
+<section class="section" aria-labelledby="stimulus-title">
+<div class="heading"><div><p class="kicker">01 / OBSERVATION HUMAINE</p><h2 id="stimulus-title">Voir ce qui est réellement enregistré</h2></div><span class="qualifier">Mesures humaines, sujet 01 uniquement</span></div>
+<p>Les marqueurs décrivent des niveaux lumineux <strong>nominaux</strong> pendant la tâche sn2. Le diamètre pupillaire est une moyenne binoculaire stricte : lorsque les deux yeux ne sont pas disponibles, POLY conserve un manque de données.</p>
+<div class="selector"><label for="event">Choisir le marqueur de stimulation</label><select id="event"></select><p id="event-label" class="small"></p></div>
+<div class="metrics"><article><span>Une seconde avant le marqueur</span><strong id="pre-val">—</strong><small id="pre-coverage"></small></article><article><span>Deux secondes après le marqueur</span><strong id="post-val">—</strong><small id="post-coverage"></small></article><article><span>Différence descriptive après − avant</span><strong id="delta-val">—</strong><small>mm · pas un effet causal isolé</small></article></div>
+<svg id="pupil-plot" viewBox="0 0 900 315" role="img" aria-label="Valeurs mesurées, sans interpolation, dans les fenêtres avant et après le marqueur"></svg>
+<p class="small">Chaque point correspond à la moyenne disponible dans un groupe de 0,1 seconde. <strong>Les points ne sont pas reliés entre eux.</strong> Les statistiques ci-dessus sont pondérées par le nombre d'échantillons disponibles dans chaque groupe intégralement inclus dans la fenêtre. Si moins de 75 % des échantillons d'une fenêtre sont présents, la moyenne n'est pas affichée.</p>
+<div class="actions"><a href="observations-lumiere.html">Ouvrir le lecteur complet et ses empreintes →</a><button id="export" type="button">Exporter cette lecture avec ses limites</button></div><p id="export-status" role="status"></p>
+</section>
+<section class="section" aria-labelledby="chain-title">
+<p class="kicker">02 / RÉFÉRENTIEL ANATOMIQUE INDÉPENDANT</p><h2 id="chain-title">Le circuit que la littérature décrit</h2>
+<p>Les relais ci-dessous décrivent le <strong>réflexe photomoteur humain connu</strong>. Ce n'est pas une reconstruction des impulsions réelles chez la personne de l'enregistrement. Les connexions renseignées par la littérature sont anatomiques, pas des délais mesurés chez ce sujet.</p>
+<div class="legend"><span><i class="dot protocol"></i> Protocole ou mesure</span><span><i class="dot known"></i> Anatomie documentée</span><span><i class="dot unknown"></i> Raccord individuel non établi</span></div>
+<ol id="chain" class="chain"></ol>
+<div class="warning"><strong>Frontière expérimentale :</strong> les données ne contiennent ni activité de la rétine, ni impulsions dans les nerfs II/III, ni mesures prétectales, ni activation du muscle irien. Le trajet anatomique est connu, mais nous ne pouvons pas attribuer de durées à ses maillons dans ce cerveau.</div>
+</section>
+<section class="section" aria-labelledby="limits-title">
+<p class="kicker">03 / LACUNES ET VÉRIFICATION</p><h2 id="limits-title">Ce qu'il reste à mesurer</h2>
+<div class="limits"><article><h3>Photométrie rétinienne</h3><p>Les valeurs en lux sont nominales au protocole. Pas de spectre lumineux, d'irradiance rétinienne individuelle ou de mesure temporelle au niveau de l'œil.</p></article><article><h3>Recalage anatomique</h3><p>Le sujet n'a pas été recalé sur les maillages 3D de POLY. Les relais n'ont pas de coordonnées individuelles validées.</p></article><article><h3>Synchronisation et délais</h3><p>L'horloge du fichier en secondes est disponible, pas l'horloge d'un avatar ni les temps de transmission entre chaque relais.</p></article><article><h3>Conflit entre sources</h3><p>Distance écran : 590 mm dans les exports, 700 mm dans l'article. La correspondance entre fichiers sn2 et cinq blocs décrits reste non établie.</p></article></div>
+<div class="sources"><p><strong>Sources :</strong> <a href="https://doi.org/10.5281/zenodo.8239465" target="_blank" rel="noopener noreferrer">Données humaines PsPM-AOB_UW (CC BY 4.0)</a> · <a href="https://doi.org/10.1038/s41598-023-41357-1" target="_blank" rel="noopener noreferrer">Étude de référence</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK553169/" target="_blank" rel="noopener noreferrer">Neuroanatomie du réflexe pupillaire</a> · <a href="https://openstax.org/books/anatomy-and-physiology-2e/pages/16-3-the-cranial-nerve-exam" target="_blank" rel="noopener noreferrer">OpenStax, nerfs crâniens</a>.</p></div>
+</section>
+</div>
+</main>
+<footer><span>POLY · Chaîne documentaire non clinique · Aucune inférence de latence</span><a href="../../index.html">Retour à l'atlas</a></footer>
+</body></html>
