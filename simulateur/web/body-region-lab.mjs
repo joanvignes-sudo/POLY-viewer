@@ -46,7 +46,7 @@ function refreshStructures(){
  const sel=structure;sel.replaceChildren();
  const placeholder=document.createElement('option');placeholder.value='';placeholder.textContent='Choisir une structure chargée';sel.append(placeholder);
  for(const id of ids){
-  const rec=metadata.get(id);
+  const rec=adapter.sourceInfo(id);
   const o=document.createElement('option');o.value=String(id);
   o.textContent='#'+id+' · '+rec.name.replaceAll('_',' ');
   sel.append(o);
@@ -56,7 +56,6 @@ function refreshStructures(){
  else sel.value='';
  updateStats();
 }
-const metadata=new Map();
 function selectedUI(record){
  const out=$('selected');out.replaceChildren();
  if(!record){out.textContent='Aucune structure sélectionnée. Les parties non chargées ne sont pas reconstruites.';return;}
@@ -137,7 +136,7 @@ function updateCamera(){
 function focusSelected(){
  const id=selectedIndex;
  if(id===null)return;
- const record=metadata.get(id);
+ const record=adapter.sourceInfo(id);
  if(!record)return;
  const b=record.bounds;
  target.set((b[0][0]+b[1][0])/2,(b[0][1]+b[1][1])/2,(b[0][2]+b[1][2])/2);
@@ -203,7 +202,6 @@ async function start(){
   const systems=[...new Set(manifest.chunks.map(c=>c.system))].sort();
   for(const k of systems){const o=document.createElement('option');o.value=k;o.textContent=k;system.append(o)}
   if(systems.includes('skeletal'))system.value='skeletal';
-  for(const ch of manifest.chunks)metadata.set(ch.id,ch);
   system.onchange=fillBlocks;block.onchange=fillBlocks;
   $('budget').onchange=()=>{newStore();status('Budget modifié. Anciens blocs et ressources GPU libérés.')};
   $('load').onclick=loadSelected;$('release').onclick=releaseSelected;
