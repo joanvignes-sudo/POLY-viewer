@@ -87,45 +87,68 @@ export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBo
 export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounded,hash=sha256Bytes,maxRawBytes=8*1024*1024,onInstall=()=>null,onDispose=()=>{}}={}){
  validateChunkManifest(manifest);
  check(Number.isInteger(maxRawBytes)&&maxRawBytes>0&&maxRawBytes<=128*1024*1024,'Budget RAM de store invalide');
- const entries=new Map(),inflight=new Map(),pins=new Set();
- let occupied=0,commitGate=Promise.resolve();
+ const entries=new Map(),inflight=new Map(),pins=new Set(),revisions=new Map();
+ let occupied=0,commitGate=Promise.resolve(),epoch=0;
+ const revision=id=>revisions.get(id)||0;
+ const invalidate=id=>revisions.set(id,revision(id)+1);
  function remove(id){
   const e=entries.get(id);
   if(!e)return false;
-  onDispose(e.installed,e.chunk);
   entries.delete(id);pins.delete(id);occupied-=e.chunk.rawBytes;
+  onDispose(e.installed,e.chunk);
   return true;
+ }
+ function release(id){
+  // Also invalidates a pending request that has not yet reached onInstall.
+  invalidate(id);
+  return remove(id);
+ }
+ function clear(){
+  // Invalidate *all* pending reads even if there are no resident entries.
+  epoch++;
+  for(const id of [...entries.keys()])remove(id);
  }
  async function load(id,{pin=false}={}){
   const present=entries.get(id);
   if(present){entries.delete(id);entries.set(id,present);if(pin)pins.add(id);return present.chunk}
-  if(inflight.has(id)){const chunk=await inflight.get(id);if(pin)pins.add(id);return chunk;}
+  if(inflight.has(id)){
+   const chunk=await inflight.get(id);
+   if(pin&&entries.has(id))pins.add(id);
+   return chunk;
+  }
+  const requestedEpoch=epoch,requestedRevision=revision(id);
+  const stillCurrent=()=>epoch===requestedEpoch&&revision(id)===requestedRevision;
   const task=(async()=>{
    const chunk=await readValidatedChunk(manifest,id,{readBytes,unzip,hash});
    check(chunk.rawBytes<=maxRawBytes,'Bloc excède la limite RAM du lecteur');
-   // Different chunks may download concurrently, but budget accounting and mounting
-   // must be serialized so their decoded buffers cannot both bypass the same limit.
+   check(stillCurrent(),'Chargement anatomique annulé avant installation');
+   // Network reads may run concurrently; reserve and commit cache RAM serially.
    const preceding=commitGate;let releaseGate;
    commitGate=new Promise(resolve=>{releaseGate=resolve});
    await preceding;
    try{
+    check(stillCurrent(),'Chargement anatomique annulé après changement de région');
     const removable=[...entries.keys()].filter(x=>!pins.has(x));
     const reclaimable=removable.reduce((n,x)=>n+entries.get(x).chunk.rawBytes,0);
     check(occupied-reclaimable+chunk.rawBytes<=maxRawBytes,'Budget RAM indisponible : éléments fixés en mémoire');
-    while(occupied+chunk.rawBytes>maxRawBytes){check(remove(removable.shift()),'Éviction impossible');}
+    while(occupied+chunk.rawBytes>maxRawBytes){check(remove(removable.shift()),'Éviction impossible')}
     const installed=await onInstall(chunk);
+    // An async installer may finish after the user has cleared the scene.
+    if(!stillCurrent()){
+     onDispose(installed,chunk);
+     throw Error('Chargement anatomique annulé pendant installation');
+    }
     entries.set(id,{chunk,installed});occupied+=chunk.rawBytes;
     if(pin)pins.add(id);
     return chunk;
    }finally{releaseGate()}
   })();
   inflight.set(id,task);
-  try{return await task}finally{inflight.delete(id)}
+  try{return await task}finally{if(inflight.get(id)===task)inflight.delete(id)}
  }
  return {
-  load,release:remove,unpin:id=>pins.delete(id),
-  clear:()=>{for(const id of [...entries.keys()])remove(id)},
-  info:()=>({ids:[...entries.keys()],residentRawBytes:occupied,capacityRawBytes:maxRawBytes,pinned:[...pins]}),
+  load,release,unpin:id=>pins.delete(id),clear,
+  info:()=>({ids:[...entries.keys()],residentRawBytes:occupied,capacityRawBytes:maxRawBytes,pinned:[...pins],pending:[...inflight.keys()]}),
  };
 }
 export function browserChunkReader(baseUrl,fetcher=fetch){
