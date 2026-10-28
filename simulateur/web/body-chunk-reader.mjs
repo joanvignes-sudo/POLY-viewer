@@ -88,7 +88,7 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
  validateChunkManifest(manifest);
  check(Number.isInteger(maxRawBytes)&&maxRawBytes>0&&maxRawBytes<=128*1024*1024,'Budget RAM de store invalide');
  const entries=new Map(),inflight=new Map(),pins=new Set();
- let occupied=0;
+ let occupied=0,commitGate=Promise.resolve();
  function remove(id){
   const e=entries.get(id);
   if(!e)return false;
@@ -99,18 +99,25 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
  async function load(id,{pin=false}={}){
   const present=entries.get(id);
   if(present){entries.delete(id);entries.set(id,present);if(pin)pins.add(id);return present.chunk}
-  if(inflight.has(id))return inflight.get(id);
+  if(inflight.has(id)){const chunk=await inflight.get(id);if(pin)pins.add(id);return chunk;}
   const task=(async()=>{
    const chunk=await readValidatedChunk(manifest,id,{readBytes,unzip,hash});
    check(chunk.rawBytes<=maxRawBytes,'Bloc excède la limite RAM du lecteur');
-   const removable=[...entries.keys()].filter(x=>!pins.has(x));
-   const reclaimable=removable.reduce((n,x)=>n+entries.get(x).chunk.rawBytes,0);
-   check(occupied-reclaimable+chunk.rawBytes<=maxRawBytes,'Budget RAM indisponible : éléments fixés en mémoire');
-   while(occupied+chunk.rawBytes>maxRawBytes){check(remove(removable.shift()),'Éviction impossible');}
-   const installed=await onInstall(chunk);
-   entries.set(id,{chunk,installed});occupied+=chunk.rawBytes;
-   if(pin)pins.add(id);
-   return chunk;
+   // Different chunks may download concurrently, but budget accounting and mounting
+   // must be serialized so their decoded buffers cannot both bypass the same limit.
+   const preceding=commitGate;let releaseGate;
+   commitGate=new Promise(resolve=>{releaseGate=resolve});
+   await preceding;
+   try{
+    const removable=[...entries.keys()].filter(x=>!pins.has(x));
+    const reclaimable=removable.reduce((n,x)=>n+entries.get(x).chunk.rawBytes,0);
+    check(occupied-reclaimable+chunk.rawBytes<=maxRawBytes,'Budget RAM indisponible : éléments fixés en mémoire');
+    while(occupied+chunk.rawBytes>maxRawBytes){check(remove(removable.shift()),'Éviction impossible');}
+    const installed=await onInstall(chunk);
+    entries.set(id,{chunk,installed});occupied+=chunk.rawBytes;
+    if(pin)pins.add(id);
+    return chunk;
+   }finally{releaseGate()}
   })();
   inflight.set(id,task);
   try{return await task}finally{inflight.delete(id)}
