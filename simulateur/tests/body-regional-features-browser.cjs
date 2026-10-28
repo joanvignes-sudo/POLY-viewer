@@ -126,10 +126,11 @@ async function main(){
   results.push({context_loss_during_transfer:'cancelled_then_retry_passed',actual_network_abort:true});await ctx.close();
   for(const broken of ['catalogue','motion']){
    const ctx=await browser.newContext(),page=await ctx.newPage();await routePreview(page);
+   const startupErrors=[],pendingRequests=new Set();page.on('pageerror',e=>startupErrors.push(e.message));page.on('request',r=>pendingRequests.add(r.url()));page.on('requestfinished',r=>pendingRequests.delete(r.url()));page.on('requestfailed',r=>pendingRequests.delete(r.url()));
    await page.route(broken==='catalogue'?'**/models/body-display.json.gz':'**/data/walk.json',route=>route.fulfill({status:200,body:'corrupted fixture'}));
    await page.goto(base+'/simulateur/web/body-region-lab.html');
    if(broken==='catalogue'){
-    await page.locator('#loading[role="alert"]').waitFor({state:'visible'});assert.equal(await page.locator('#app').isVisible(),false);
+    try{await page.locator('#loading[role="alert"]').waitFor({state:'visible'});}catch(error){throw Error(error.message+' · startup evidence '+JSON.stringify({loading:await page.locator('#loading').textContent(),errors:startupErrors,pending:[...pendingRequests]}));}assert.equal(await page.locator('#app').isVisible(),false);
    }else{
     await page.locator('#app').waitFor({state:'visible'});
     await page.waitForFunction(()=>document.querySelector('#motion-status').textContent.includes('Marche désactivée'));

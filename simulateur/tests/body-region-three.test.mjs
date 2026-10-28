@@ -246,3 +246,16 @@ test('all 918 regional meshes expose the historical inspection contract with ORI
  }
  assert.equal(count,918);
 });
+
+test('posed picking reuses one workspace with exact per-surface ranges and fresh bounds',async()=>{
+ const chunk=await readValidatedChunk(manifest,manifest.chunks.find(c=>c.system==='skeletal').id,{readBytes,unzip,hash}),beforeHash=await hash(chunk.bytes);
+ const {THREE,scene,created}=fakeThree(),rig={bind(){},deform:p=>p.map((v,i)=>v+[.1,-.2,.3][i])},adapter=createRegionSceneAdapter({THREE,scene,rig}),installed=adapter.install(chunk),buffers=new Set();let calls=0;
+ const geometryStart=created.geometries,disposeStart=created.geometryDisposals;
+ const result=adapter.pick({intersectObject(proxy){const source=installed.meshes[calls],values=source.geometry.attributes.position.array,actual=proxy.geometry.attributes.position.array;assert.equal(actual.length,values.length);assert.equal(proxy.material,source.material);assert.equal(proxy.geometry.boundingSphere,null);assert.equal(proxy.geometry.boundingBox,null);assert.deepEqual(actual,values.map((v,i)=>v+[.1,-.2,.3][i%3]));buffers.add(actual.buffer);proxy.geometry.boundingSphere={old:true};proxy.geometry.boundingBox={old:true};calls++;return [{distance:1000-calls,object:proxy}];}});
+ assert.equal(calls,installed.meshes.length);assert.equal(result.source_index,chunk.metadata.geometries.at(-1).source_index);assert.equal(buffers.size,1);assert.equal([...buffers][0].byteLength,Math.max(...installed.meshes.map(m=>m.geometry.attributes.position.array.byteLength)));assert.equal(created.geometries-geometryStart,1);assert.equal(created.geometryDisposals-disposeStart,1);assert.equal(await hash(chunk.bytes),beforeHash);adapter.dispose();
+});
+
+test('a failed posed pick disposes its workspace without changing selection; empty scenes allocate nothing',async()=>{
+ const chunk=await readValidatedChunk(manifest,manifest.chunks[0].id,{readBytes,unzip,hash}),{THREE,scene,created}=fakeThree(),adapter=createRegionSceneAdapter({THREE,scene,rig:{bind(){},deform(){throw Error('injected pose failure')}}});adapter.install(chunk);const id=chunk.metadata.geometries[0].source_index;adapter.select(id);const before=created.geometryDisposals;
+ assert.throws(()=>adapter.pick({intersectObject(){throw Error('must not raycast')}}),/injected pose/);assert.equal(created.geometryDisposals-before,1);assert.equal(adapter.diagnostics().selected_source_index,id);adapter.dispose();const geometries=created.geometries;assert.equal(adapter.pick({}),null);assert.equal(created.geometries,geometries);
+});

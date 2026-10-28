@@ -150,18 +150,23 @@ export function createRegionSceneAdapter({THREE, scene, onChange=()=>{}, onSelec
   }
   function pick(raycaster){
     const meshes=[...sourceMeshes.values()].filter(m=>m.visible!==false);
+    if(!meshes.length)return null;
     let hits=[];
     if(!rig)hits=raycaster.intersectObjects(meshes,false);
-    else for(const mesh of meshes){
-      // Only one temporary CPU proxy at a time; never mutate source buffers.
+    else{
+      // One workspace per pick, bounded by the largest resident surface. No retained proxy.
       const geometry=new THREE.BufferGeometry();
       try{
-        const source=mesh.geometry.attributes.position.array,points=new Float32Array(source.length);
+       const workspace=new Float32Array(Math.max(...meshes.map(m=>m.geometry.attributes.position.array.length)));
+       const proxy=new THREE.Mesh(geometry,meshes[0].material);
+       for(const mesh of meshes){
+        const source=mesh.geometry.attributes.position.array,points=new Float32Array(workspace.buffer,0,source.length);
         for(let i=0;i<source.length;i+=3)points.set(rig.deform([source[i],source[i+1],source[i+2]]),i);
         geometry.setAttribute('position',new THREE.BufferAttribute(points,3));
         geometry.setIndex(mesh.geometry.index);
-        const proxy=new THREE.Mesh(geometry,mesh.material);
+        geometry.boundingSphere=null;geometry.boundingBox=null;proxy.material=mesh.material;
         for(const hit of raycaster.intersectObject(proxy,false))hits.push({...hit,object:mesh});
+       }
       }finally{geometry.dispose()}
     }
     hits.sort((a,b)=>a.distance-b.distance);

@@ -234,3 +234,8 @@ Le journal 24 h dispose d’un parcours sans maillage, compatible avec la clé e
 ## Reprise nocturne 4 — postures historiques communes
 
 Course, assis, allongé et geste de repas sont disponibles manuellement dans le HRA régional. Un évaluateur commun remplace les formules privées du corps classique, avec 28 sorties de référence capturées dans son ancien commit. La fenêtre 0–6 s reste graphique ; aucun lien implicite avec le journal ou une horloge biologique. Picking déformé, cadrage/retour, pause et récupération WebGL sont testés. 124 tests Node et neuf suites navigateur passent. Détails dans `BODY_NIGHT_04_2026-10-29.md` ; le pont générique de chaînes et les autres limites ne sont pas déclarés clos.
+
+
+## Demande utilisateur — méthode de sélection 3D
+
+La méthode `pick` réutilise un espace de travail par clic. Sur le bloc squelettique comparé : 134 géométries temporaires → 1 ; 1277316 → 42864 octets de buffers de positions alloués, soit 96.64 % de moins. Les 36 sélections comparées restent identiques et le bloc source inchangé. 126 tests Node et quatre suites navigateur disposent de résultats réussis ; un délai de démarrage dans un cas de catalogue corrompu est conservé comme limite non résolue. Détails dans `BODY_PICK_METHOD_2026-10-29.md`. Aucune mesure de RAM totale, GPU ou téléphone physique n'est déduite.
