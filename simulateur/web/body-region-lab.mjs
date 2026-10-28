@@ -1,3 +1,7 @@
+import {mountNativeEyeContext} from './native-eye-context.mjs';
+import {findOccluders,createMaterialMask} from './selective-occlusion.js';
+import {createOrganInspector} from './organ-inspector.js';
+import {createWalkingNetwork} from './walking-network.js';
 import {createResidentInspector} from './body-resident-inspector.mjs';
 import {createRegionalRig,createWalkSampler} from './body-region-motion.mjs';
 import {sourceMeshData,createSourceAccess,planSourceBlocks} from './body-source-contract.mjs';
@@ -13,6 +17,9 @@ const manifestURL=new URL('MANIFEST.json',ROOT_URL);
 let manifest=null,store=null,adapter=null,renderer=null,scene=null,camera=null;
 let inspector=null,records=[],catalogueAccess=null,sampler=null,playing=false,elapsed=0,lastFrame=null;
 const rig=createRegionalRig();
+let detailedInspector=null,nativeEye=null,sourceMeta=null;
+const eyeMask=createMaterialMask();
+let network=null,networkElapsed=0,networkSerial=0,networkLoading=false,networkPreferences=null;
 let inspectionView=null;
 const renderSamples=[],loadSamples=[],pickSamples=[];let renderedFrames=0;
 let selectedIndex=null,renderPending=false,failedContext=false;
@@ -30,8 +37,10 @@ function scheduleRender(){
  requestAnimationFrame(now=>{
   renderPending=false;
   if(!renderer||failedContext)return;
+  nativeEye?.update();
+  const dt=lastFrame!==null?Math.min((now-lastFrame)/1000,.05):0;
   if(playing&&sampler){
-   if(lastFrame!==null)elapsed+=Math.min((now-lastFrame)/1000,.05);
+   elapsed+=dt;
    sampler.apply(elapsed,rig.uniforms);$('motion-phase').value=String(elapsed%sampler.duration);
   }
   lastFrame=now;
@@ -42,11 +51,23 @@ function scheduleRender(){
   const width=Math.max(1,Math.round(rect.width)),height=Math.max(1,Math.round(rect.height));
   if(canvas.width!==Math.floor(width*dpr)||canvas.height!==Math.floor(height*dpr))renderer.setSize(width,height,false);
   if(camera.aspect!==width/height){camera.aspect=width/height;camera.updateProjectionMatrix();}
+  if(network){
+   if(network.state.reading&&network.state.enabled)networkElapsed+=dt;
+   network.update(networkElapsed,!inspector.info().scope&&!detailedInspector?.active&&!nativeEye?.active,selectedIndex===null?null:adapter.sources.resolve(selectedIndex),playing?'walk':'stand');
+   const coverage=network.coverage;
+   $('regional-network-coverage').textContent=Object.entries(coverage).map(([id,c])=>network.data.nodes[id].title+' : '+(c.kind==='documentary_marker'?'repère documentaire sans surface':c.visible.length+' visibles / '+c.expected+' surfaces du catalogue')).join(' · ');
+  }
   const renderStart=performance.now();
-  renderer.render(scene,camera);
+  try{
+   if(nativeEye?.active&&selectedIndex!==null){
+    const mesh=adapter.sources.resolve(selectedIndex);
+    if(mesh)eyeMask.apply(findOccluders(camera,mesh,adapter.listSourceIndices().map(id=>adapter.sources.resolve(id))),.12);
+   }
+   renderer.render(scene,camera);
+  }finally{eyeMask.restore()}
   renderSamples.push(performance.now()-renderStart);if(renderSamples.length>120)renderSamples.shift();renderedFrames++;
   updateStats();
-  if(playing)scheduleRender();
+  if(playing||(network?.state.enabled&&network.state.reading&&network.group.visible&&adapter.listSourceIndices().length))scheduleRender();
  });
 }
 function updateStats(){
@@ -70,8 +91,9 @@ function refreshStructures(){
  if(ids.includes(selectedIndex))sel.value=String(selectedIndex);
  else if(ids.includes(Number(current)) && current!=='')sel.value=current;
  else sel.value='';
- inspector?.refresh();refreshInspection();refreshSearch();updateStats();
- if(!ids.length)pauseMotion();
+ detailedInspector?.sync();inspector?.refresh();refreshInspection();refreshSearch();updateStats();
+ if(!ids.length){pauseMotion();releaseNetwork();}
+ else if(!network&&!networkLoading)loadNetwork();
 }
 function refreshSearch(){
  const host=$('source-results');host.replaceChildren();
@@ -104,6 +126,7 @@ function selectedUI(record){
  }
 }
 function selectSource(id){
+ if(detailedInspector?.active&&!detailedInspector.parts.some(m=>m.userData.source_index===id))detailedInspector.close();
  if(inspector?.info().scope&&!inspector.info().resident.includes(id))inspector.close();
  const record=adapter.select(id);
  selectedIndex=record?.source_index??null;
@@ -245,13 +268,45 @@ function bindPointer(){
  });
 }
 
+function createNativeEye(){
+ const required=[[358,'VH_M_cornea_R'],[350,'VH_M_lens_R'],[336,'VH_M_retina_R']];
+ const sourceIds=required.map(([node,name])=>records.find(r=>r.node===node&&r.name===name)?.source_index);
+ nativeEye=mountNativeEyeContext({host:$('native-eye-host'),meta:sourceMeta,regional:true,
+  getMeshes:()=>adapter.listSourceIndices().map(id=>adapter.sources.resolve(id)),
+  allowed:inProgress=>!failedContext&&!playing&&!inspector.info().scope&&!detailedInspector?.active&&
+   sourceIds.every(id=>adapter.sources.resolve(id)?.visible)&&(!inProgress||sourceIds.includes(selectedIndex)),
+  begin:()=>{
+   restPose();const saved={selectedIndex,target:target.toArray(),distance,azimuth,elevation,networkReading:network?.state.reading??false};
+   if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}return saved;
+  },
+  choose:(mesh,mode,saved)=>{
+   selectSource(mesh.userData.source_index);
+   if(mode==='body'){target.set(...saved.target);({distance,azimuth,elevation}=saved);updateCamera();}
+   else{const b=mesh.userData.bounds;target.set(...[0,1,2].map(k=>(b[0][k]+b[1][k])/2));distance=Math.max(.08,...[0,1,2].map(k=>(b[1][k]-b[0][k])*3.2));updateCamera();}
+  },
+  end:(saved,restore)=>{
+   eyeMask.restore();
+   if(network){network.state.reading=saved.networkReading;$('network-reading').textContent=network.state.reading?'Figer les chaînes':'Lire les chaînes';}
+   if(restore){target.set(...saved.target);({distance,azimuth,elevation}=saved);if(saved.selectedIndex!==null&&adapter.sources.resolve(saved.selectedIndex))selectSource(saved.selectedIndex);updateCamera();}
+   scheduleRender();
+  }});
+}
+function createDetailedInspector(){
+ detailedInspector=createOrganInspector({records,getMeshes:()=>adapter.listSourceIndices().map(id=>adapter.sources.resolve(id)),
+  network:{get data(){return network?.data??{routes:[]}},get matches(){return network?.matches??{}}},
+  getView:()=>({visibleSourceIndices:new Set(adapter.listSourceIndices().filter(id=>adapter.sources.resolve(id).visible)),knownSourceIndices:new Set(adapter.listSourceIndices()),target:target.toArray(),zoom:distance,pitch:elevation,angle:azimuth,playing:false}),
+  setView:view=>{
+   for(const id of adapter.listSourceIndices())adapter.sources.resolve(id).visible=!view.knownSourceIndices||view.knownSourceIndices.has(id)?view.visibleSourceIndices.has(id):true;
+   target.set(...view.target);distance=view.zoom;elevation=view.pitch;azimuth=view.angle;pauseMotion();updateCamera();
+  },selectLeaf:mesh=>selectSource(mesh.userData.source_index),onMode:()=>scheduleRender()});
+}
 function performanceReceipt(){
  const sorted=[...renderSamples].sort((a,b)=>a-b);
  return {schema:'poly.regional-local-diagnostics.v1',environment:{user_agent:navigator.userAgent,
   viewport:[innerWidth,innerHeight],dpr:renderer.getPixelRatio(),coarse_pointer:matchMedia('(pointer:coarse)').matches},
   source_metadata_sha256:manifest.source.metadata_sha256,source_geometry_sha256:manifest.source.geometry_sha256,
-  cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),
-  view:{distance,azimuth,elevation},context_lost:failedContext,rendered_frames:renderedFrames,
+  cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),native_eye_active:nativeEye?.active??false,eye_mask_size:eyeMask.size,detailed_inspection:{active:detailedInspector?.active??false,group_id:detailedInspector?.groupId??null},
+  view:{distance,azimuth,elevation},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
   cpu_render_submission_ms:{count:sorted.length,p50:sorted.length?sorted[Math.floor((sorted.length-1)*.5)]:null,
    p95:sorted.length?sorted[Math.floor((sorted.length-1)*.95)]:null},
   recent_cpu_pick_ms:[...pickSamples],recent_loads:loadSamples.map(x=>({...x})),three_geometries:renderer.info.memory.geometries,
@@ -259,6 +314,33 @@ function performanceReceipt(){
   limits:['CPU submission duration only; no GPU timing or physical GPU memory',
    'Cache bytes exclude transient buffers, metadata, CPU proxies and renderer resources',
    'No battery, thermal or biomechanical measurement; emulation is not a physical phone']};
+}
+function releaseNetwork(){
+ if(network){networkPreferences={enabled:network.state.enabled,reading:network.state.reading,active:[...network.active],focus:network.state.focus};network.dispose();network=null;}
+ networkSerial++;networkLoading=false;
+ $('regional-network-coverage').textContent='Aucune surface : réseaux graphiques suspendus.';
+}
+async function loadNetwork(){
+ if(networkLoading||network)return;
+ networkLoading=true;const serial=++networkSerial;
+ try{
+  const response=await fetch('../data/walking-network.json');if(!response.ok)throw Error('Réseau documentaire indisponible');
+  const bytes=new Uint8Array(await response.arrayBuffer());
+  if(await sha256Bytes(bytes)!=='8448312aafdd9e921cea80b04e798cd2a3ce33b8f9ee15ce7b0aaf7be9b0c95b')throw Error('Réseau documentaire altéré');
+  if(serial!==networkSerial)return;
+  const candidate=await createWalkingNetwork({scene,camera,getMeshes:()=>adapter.listSourceIndices().map(id=>adapter.sources.resolve(id)),
+   records,residentOnly:true,sourceData:JSON.parse(new TextDecoder().decode(bytes)),uniforms:rig.uniforms,stage:$('regional-stage')});
+  if(serial!==networkSerial){candidate.dispose();return;}network=candidate;
+  network.state.enabled=networkPreferences?.enabled??false;network.state.reading=networkPreferences?.reading??true;
+  if(networkPreferences){network.active.clear();for(const id of networkPreferences.active)network.active.add(id);network.state.focus=networkPreferences.focus;}
+  $('network-enabled').checked=network.state.enabled;
+  $('network-reading').textContent=network.state.reading?'Figer les chaînes':'Lire les chaînes';
+  for(const input of $('network-panel').querySelectorAll('[data-route]'))input.checked=network.active.has(input.dataset.route);
+  // The complete brain dossier remains accessible through the existing separate page.
+  $('network-brain-doc').onclick=()=>{location.href='cerveau.html'};
+  scheduleRender();
+ }catch(e){if(serial===networkSerial)$('regional-network-coverage').textContent=e.message+' ; les surfaces restent consultables.';}
+ finally{if(serial===networkSerial)networkLoading=false;}
 }
 let motionScale=null;
 function motionText(mode){if(sampler)$('motion-status').textContent=mode+' · Transfert graphique de la marche OpenSim sur un atlas distinct. Aucune force, activation, contact au sol ni précision biomécanique validée.';}
@@ -301,7 +383,8 @@ async function loadSource(index){
  await loadSelected(index);
 }
 function openInspection(single){
- if(selectedIndex===null)return;
+ if(selectedIndex===null)return;nativeEye?.close(false);
+ if(detailedInspector?.active)detailedInspector.close();
  restPose();
  if(!inspector.info().scope)inspectionView={target:target.toArray(),distance,azimuth,elevation};
  if(inspector.open(selectedIndex,{single})){
@@ -337,7 +420,7 @@ async function start(){
   if(!packed.ok)throw Error('Catalogue source indisponible');
   const bytes=await readGzipBounded(new Uint8Array(await packed.arrayBuffer()),427196);
   if(await sha256Bytes(bytes)!==manifest.source.metadata_sha256)throw Error('Catalogue source altéré');
-  const meta=JSON.parse(new TextDecoder().decode(bytes));
+  const meta=JSON.parse(new TextDecoder().decode(bytes));sourceMeta=meta;
   records=meta.structures.map((r,i)=>sourceMeshData(r,{sourceIndex:i,system:atlasSystem(r)}));
   catalogueAccess=createSourceAccess(()=>records.map(userData=>({userData})));
   motionScale=meta.normalization.scale;
@@ -364,6 +447,9 @@ async function start(){
   $('source-search').oninput=refreshSearch;
   $('focus').onclick=()=>{restPose();focusSelected()};$('reset').onclick=resetCamera;
   inspector=createResidentInspector({records,getMeshes:()=>adapter.listSourceIndices().map(id=>adapter.sources.resolve(id))});
+  createDetailedInspector();createNativeEye();
+  $('detailed-inspect').onclick=()=>{if(selectedIndex!==null){nativeEye?.close(false);inspector.close();refreshStructures();restPose();detailedInspector.inspect(adapter.sources.resolve(selectedIndex));}};
+  $('organ-catalog').addEventListener('change',()=>{nativeEye?.close(false);inspector.close();refreshStructures();restPose();},{capture:true});
   $('search-scope').onchange=refreshSearch;
   $('inspect').onclick=()=>openInspection(false);
   $('isolate-source').onclick=()=>openInspection(true);
@@ -373,7 +459,8 @@ async function start(){
   $('motion-rest').onclick=()=>{restPose();scheduleRender()};
   $('motion-play').onclick=()=>{if(playing)pauseMotion();else if(!failedContext&&adapter.listSourceIndices().length){playing=true;lastFrame=null;$('motion-play').textContent='Pause';motionText('Lecture de la marche');scheduleRender()}};
   newStore();bindPointer();resetCamera();
-  loadMotion();
+  loadMotion();loadNetwork();
+  $('network-panel').addEventListener('click',scheduleRender);$('network-panel').addEventListener('change',scheduleRender);
   $('export-diagnostics').onclick=()=>{
    const url=URL.createObjectURL(new Blob([JSON.stringify(performanceReceipt(),null,2)],{type:'application/json'}));
    const a=document.createElement('a');a.href=url;a.download='poly-regional-local-diagnostics.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
@@ -382,13 +469,13 @@ async function start(){
   // Read-only diagnostics for source/provenance regression tests in this isolated lab.
   Object.defineProperty(window,'__polyRegionLabDiagnostics',{value:()=>({cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),motion:{playing,elapsed,pose:Object.fromEntries(Object.entries(rig.uniforms).filter(([k,u])=>typeof u.value==='number').map(([k,u])=>[k,u.value]))}}),configurable:false});
   window.addEventListener('resize',scheduleRender);
-  window.addEventListener('pagehide',()=>{pauseMotion();invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
+  window.addEventListener('pagehide',()=>{pauseMotion();nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
   window.addEventListener('pageshow',e=>{if(e.persisted){
    renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});renderer.outputColorSpace=THREE.SRGBColorSpace;
-   failedContext=false;refreshStructures();fillBlocks();scheduleRender();
+   failedContext=false;createDetailedInspector();createNativeEye();refreshStructures();fillBlocks();loadNetwork();scheduleRender();
   }});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseMotion();else scheduleRender()});
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;pauseMotion();invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;pauseMotion();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
   canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte WebGL rétabli. Vérifier le rendu.');scheduleRender()});
   $('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
   status('Manifeste vérifié : '+manifest.chunk_count+' blocs disponibles. Aucun bloc chargé.');

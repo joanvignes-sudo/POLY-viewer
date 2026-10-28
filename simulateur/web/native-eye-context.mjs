@@ -13,24 +13,25 @@ export function requireStudyHRAIdentity(node){
  if(!node||!Number.isInteger(node.hra_node))throw Error('U-ANATOMIE : identifiant HRA explicite absent ; aucun rapprochement par nom.');
  throw Error('U-ANATOMIE : correspondance entre participant et atlas non qualifiée.');
 }
-export function mountNativeEyeContext({host,meta,meshes,allowed,begin,choose,end}){
- const section=document.createElement('section');section.className='small';section.innerHTML='<h3>Parcours source · œil droit HRA</h3><p>Trois structures du même atlas, dans un ordre de consultation. Aucun trajet lumineux, délai, événement cellulaire ou participant d’étude déduit. La couche osseuse Z-Anatomy est suspendue pendant ce parcours HRA puis restaurée.</p><p>Les 82 étapes des protocoles humains n’ont pas de correspondance HRA explicite : leur raccord reste refusé.</p><button id="native-eye-open" disabled>Ouvrir le parcours source</button><div id="native-eye-steps" hidden><button id="native-eye-prev">Étape précédente</button><button id="native-eye-next">Étape suivante</button><button id="native-eye-body">Corps et contexte</button><button id="native-eye-focus">Cadrer la même structure</button><button id="native-eye-close">Quitter et restaurer le contexte</button></div><p id="native-eye-status" role="status">Vérification des identités source…</p>';
- host.after(section);const $=id=>section.querySelector('#'+id);let contract,active=false,index=0,saved;
+export function mountNativeEyeContext({host,meta,meshes,getMeshes=()=>meshes,regional=false,allowed,begin,choose,end}){
+ const section=document.createElement('section');section.className='small';section.id='native-eye-context';section.innerHTML='<h3>Parcours source · œil droit HRA</h3><p>Trois structures du même atlas, dans un ordre de consultation. Aucun trajet lumineux, délai, événement cellulaire ou participant d’étude déduit. La couche osseuse Z-Anatomy est suspendue pendant ce parcours HRA puis restaurée.</p><p>Les 82 étapes des protocoles humains n’ont pas de correspondance HRA explicite : leur raccord reste refusé.</p><button id="native-eye-open" disabled>Ouvrir le parcours source</button><div id="native-eye-steps" hidden><button id="native-eye-prev">Étape précédente</button><button id="native-eye-next">Étape suivante</button><button id="native-eye-body">Corps et contexte</button><button id="native-eye-focus">Cadrer la même structure</button><button id="native-eye-close">Quitter et restaurer le contexte</button></div><p id="native-eye-status" role="status">Vérification des identités source…</p>';
+ if(regional)section.querySelector('p').textContent='Trois structures du même atlas, dans un ordre de consultation. Aucun trajet lumineux, délai, événement cellulaire ou participant d’étude déduit. Seules les surfaces présentes sont consultées ; aucune couche anatomique externe n’est ajoutée.';
+ host.after(section);const $=id=>section.querySelector('#'+id);let contract,active=false,index=0,saved,disposed=false;const controller=new AbortController();
  function status(message){$('native-eye-status').textContent=message;}
  function paint(mode='focus'){
-  const s=nativeEyeStep(contract,index),mesh=meshes.find(m=>m.userData.node===s.source_node&&m.userData.name===s.source_name);
+  const s=nativeEyeStep(contract,index),mesh=getMeshes().find(m=>m.userData.node===s.source_node&&m.userData.name===s.source_name);
   if(!mesh)throw Error('Surface source indisponible.');
   choose(mesh,mode,saved);$('native-eye-prev').disabled=index===0;$('native-eye-next').disabled=index===2;
   status(`${index+1}/3 · ${contract.steps[index].label} · ${s.step_id} · même identité en vue corps ou cadrée ; temps physiologique inconnu. Occultants HRA échantillonnés sur sept rayons.`);
  }
  function close(restore=true){if(!active)return;active=false;end(saved,restore);saved=null;$('native-eye-steps').hidden=true;status(restore?'Contexte et sélection restaurés ; aucun modèle physiologique modifié.':'Parcours quitté après changement de vue ; navigation conservée et mode d’occultants libéré.');}
- const act=fn=>()=>{try{fn();}catch(e){status(e.message);}};
+ const act=fn=>()=>{if(disposed)return;try{fn();}catch(e){if(active)close(false);status(e.message);}};
  $('native-eye-open').onclick=act(()=>{if(active){paint();return;}if(!allowed())throw Error('Passer d’abord à Anatomie HRA, debout en pause, hors vue spécialisée et hors protocole humain. Les trois surfaces HRA doivent être visibles.');saved=begin();active=true;index=0;$('native-eye-steps').hidden=false;paint();});
  $('native-eye-prev').onclick=act(()=>{if(active&&index>0){index--;paint();}});
  $('native-eye-next').onclick=act(()=>{if(active&&index<2){index++;paint();}});
  $('native-eye-body').onclick=act(()=>{if(active)paint('body');});
  $('native-eye-focus').onclick=act(()=>{if(active)paint('focus');});
  $('native-eye-close').onclick=()=>close(true);
- fetch('native-eye-context.json').then(r=>{if(!r.ok)throw Error('Contrat indisponible');return r.json();}).then(c=>{contract=validateNativeEye(c,meta);$('native-eye-open').disabled=false;status('Identités natives reçues. Utiliser Anatomie HRA, debout en pause. Le parcours reste distinct des études humaines.');}).catch(e=>status(e.message));
- return {update(){if(active&&!allowed(true))close(false);},get active(){return active;}};
+ fetch('native-eye-context.json',{signal:controller.signal}).then(r=>{if(!r.ok)throw Error('Contrat indisponible');return r.json();}).then(c=>{if(disposed)return;contract=validateNativeEye(c,meta);$('native-eye-open').disabled=false;status('Identités natives reçues. Utiliser Anatomie HRA, debout en pause. Le parcours reste distinct des études humaines.');}).catch(e=>{if(!disposed)status(e.message)});
+ return {update(){if(!disposed&&active&&!allowed(true))close(false);},close,dispose(){if(disposed)return;close(false);disposed=true;controller.abort();section.remove();},get active(){return active;}};
 }

@@ -33,11 +33,14 @@
 <button id="load-inspection" class="secondary" type="button" hidden>Charger les blocs manquants de cet ensemble</button>
 <div id="inspection" class="selected" aria-live="polite"></div>
 <div class="buttons"><button id="focus" class="secondary" type="button">Centrer la caméra</button><button id="reset" class="secondary" type="button">Vue générale</button></div>
+<button id="detailed-inspect" class="secondary" type="button">Inspecteur détaillé du corps classique</button><label for="organ-catalog">Ensembles anatomiques en mémoire</label><select id="organ-catalog"></select><section id="organ-inspector" class="selected" hidden></section>
+<div id="native-eye-host"></div>
+<section id="network-panel" aria-label="Relations fonctionnelles documentaires"></section><p id="regional-network-coverage" class="hint"></p>
 <div id="selected" class="selected" aria-live="polite"><p>Sélectionnez une structure chargée pour consulter son nom, son indice d'origine et la provenance.</p></div>
 </aside>
 <section class="panel stage" aria-labelledby="view-heading"><p class="kicker">02 / RENDU VÉRIFIÉ</p><h2 id="view-heading">Surface anatomique source</h2>
 <p class="hint">Glisser pour tourner · molette ou pincement à deux doigts pour zoomer · toucher une surface pour la sélectionner. Les blocs sont indépendants : les parties absentes ne sont pas estimées.</p>
-<canvas id="region-canvas" aria-label="Rendu Three.js des seules structures anatomiques déjà vérifiées"></canvas>
+<div id="regional-stage" class="regional-viewport"><canvas id="region-canvas" aria-label="Rendu Three.js des seules structures anatomiques déjà vérifiées"></canvas></div>
 <label for="motion-phase">Marche de référence · phase graphique</label><input id="motion-phase" type="range" min="0" max="1.079" step="0.001" value="0" disabled>
 <div class="buttons"><button id="motion-play" type="button" disabled>Lire la marche</button><button id="motion-rest" class="secondary" type="button">Revenir au repos</button></div>
 <p id="motion-status" class="hint">Repos. La marche OpenSim sera transférée graphiquement sur cet atlas distinct : aucune activation musculaire, force, contact au sol ou précision biomécanique validée.</p>

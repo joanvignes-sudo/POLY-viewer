@@ -1,3 +1,5 @@
+import {validateNativeEye,nativeEyeStep,requireStudyHRAIdentity} from '../web/native-eye-context.mjs';
+import {createFunctionalBindings} from '../web/body-functional-bindings.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
@@ -174,4 +176,33 @@ test('release and clear abort both outstanding network reads before installation
   if(action==='release')store.release(manifest.chunks[0].id);else store.clear();
   await assert.rejects(pending,/annulé/);assert.equal(aborted,2);assert.deepEqual(store.info().pending,[]);
  }
+});
+
+
+test('functional bindings resolve reloaded meshes and distinguish absent sources from documentary markers',()=>{
+ const heart=records.find(r=>r.path.includes('VH_M_heart'));
+ const nodes={heart:{match:'VH_M_heart'},ground:{match:null},unknown:{match:'not_in_source'}};
+ let meshes=[{userData:heart,visible:true}];
+ const bindings=createFunctionalBindings(nodes,records,()=>meshes);
+ assert.equal(bindings.snapshot().matches.heart[0],meshes[0]);
+ assert.equal(bindings.snapshot().coverage.ground.kind,'documentary_marker');
+ assert.equal(bindings.snapshot().coverage.unknown.expected,0);
+ meshes=[];
+ assert.deepEqual(bindings.snapshot().matches.heart,[]);
+ assert.ok(bindings.snapshot().coverage.heart.missing.includes(heart.source_index));
+ const replacement={userData:heart,visible:false};meshes=[replacement];
+ assert.equal(bindings.snapshot().matches.heart[0],replacement);
+ assert.equal(bindings.snapshot().coverage.heart.visible.length,0);
+});
+
+
+test('native eye browsing retains exact source identities and never invents physiological time or study registration',async()=>{
+ const contract=JSON.parse(await fs.readFile(new URL('../web/native-eye-context.json',import.meta.url)));
+ validateNativeEye(contract,original);
+ for(const [i,node]of [358,350,336].entries()){
+  const step=nativeEyeStep(contract,i);assert.equal(step.source_node,node);assert.equal(step.physiological_time_s,null);
+  assert.equal(step.study_participant_mapping,false);
+ }
+ assert.throws(()=>requireStudyHRAIdentity({hra_node:358}),/non qualifiée/);
+ assert.throws(()=>validateNativeEye({...contract,study_participant_mapping:true},original));
 });

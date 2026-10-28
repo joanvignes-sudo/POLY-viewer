@@ -46,3 +46,4 @@ jobs:
           node simulateur/tests/body-light-browser.cjs
           node simulateur/tests/body-region-browser.cjs
           node simulateur/tests/body-regional-features-browser.cjs
+          node simulateur/tests/body-regional-specialists-browser.cjs

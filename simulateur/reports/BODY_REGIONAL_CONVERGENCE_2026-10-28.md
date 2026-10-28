@@ -1,5 +1,7 @@
 # POLY — Convergence régionale, inspection, mouvement et récupération
 
+État du premier raccord avancé ; suite et bilan actualisé dans `BODY_REGIONAL_SPECIALISTS_2026-10-28.md`.
+
 28 octobre 2026. Branche locale `feat/regional-body-bridge-20261028`, issue du commit vérifié de la PR #21 : `59d7571ca780f74dcfa9b261b13515f5f49ffb59`. Cette suite inclut le premier raccord `7103e6a`.
 
 ## Résultat livré

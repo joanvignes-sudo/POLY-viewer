@@ -53,6 +53,15 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     assert.ok(inspection.every(r=>Number.isInteger(r.source_index)&&r.offset===r.original));
     await page.locator('#organ-back').click();
     await page.locator('#search').fill('');
+    await page.waitForFunction(()=>!document.querySelector('#native-eye-open').disabled);
+    const nativeBefore=await page.evaluate(()=>window.POLY.view);
+    await page.locator('#native-eye-open').click();
+    for(const [i,node]of [358,350,336].entries()){
+     if(i)await page.locator('#native-eye-next').click();
+     assert.match(await page.locator('#native-eye-status').innerText(),new RegExp('HRA-NATIVE-EYE-R:'+node));
+    }
+    await page.locator('#native-eye-close').click();
+    assert.deepEqual(await page.evaluate(()=>window.POLY.view),nativeBefore);
     await page.locator('#forearm-motor-open').click();
     await page.waitForFunction(()=>document.querySelector('#forearm-motor-card .attachment-qualification')?.textContent.includes('preuves'));
     assert.match(await page.locator('#forearm-motor-card .attachment-qualification').innerText(),/insertion 3D non localisée/);
@@ -61,7 +70,7 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     await page.waitForFunction(()=>document.querySelector('#hand-muscles-reference .attachment-qualification')?.textContent.includes('preuves'));
     await page.locator('#hand-ref-side').selectOption('L');
     if(process.env.POLY_SCREENSHOTS)await page.screenshot({path:process.env.POLY_SCREENSHOTS+`/avatar-${mobile?'mobile':'desktop'}.png`,fullPage:false});
-    assert.deepEqual(errors,[]);results.push({viewport:mobile?'390x844 touch':'1440x1000',catalogue:true,filters:true,left_and_right:true,avatar_and_panels:true,shared_search_and_organ_inspection:true,terms_without_geometry:true,variant_separation:true,term_deep_links:true,page_errors:errors});
+    assert.deepEqual(errors,[]);results.push({viewport:mobile?'390x844 touch':'1440x1000',catalogue:true,filters:true,left_and_right:true,avatar_and_panels:true,shared_search_and_organ_inspection:true,native_eye_source_session:true,terms_without_geometry:true,variant_separation:true,term_deep_links:true,page_errors:errors});
     await context.close();
   }
   const context=await browser.newContext(),page=await context.newPage();
