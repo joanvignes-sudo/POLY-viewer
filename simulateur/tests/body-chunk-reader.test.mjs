@@ -119,3 +119,34 @@ test('a pinned chunk cannot be silently evicted or overwritten by another region
  store.clear();
  assert.equal(store.info().residentRawBytes,0);
 });
+
+
+test('two different concurrent downloads cannot exceed the bounded cache after installation',async()=>{
+ const [a,b]=fixture.chunks,cap=Math.max(a.raw_bytes,b.raw_bytes);
+ const disposed=[];
+ const store=createBoundedChunkStore(fixture,{readBytes,unzip,hash:sha,maxRawBytes:cap,
+  onInstall:async chunk=>{await Promise.resolve();return {id:chunk.id}},
+  onDispose:(token)=>disposed.push(token.id)
+ });
+ await Promise.all([store.load(a.id),store.load(b.id)]);
+ const info=store.info();
+ assert.ok(info.residentRawBytes<=cap);
+ assert.equal(info.ids.length,1);
+ assert.equal(disposed.length,1);
+ store.clear();
+ assert.equal(store.info().residentRawBytes,0);
+});
+
+test('a concurrent duplicate request can add a pin without downloading or installing twice',async()=>{
+ const a=fixture.chunks[0];
+ let installs=0;
+ const store=createBoundedChunkStore(fixture,{readBytes,unzip,hash:sha,maxRawBytes:a.raw_bytes,
+  onInstall:async chunk=>{installs++;await Promise.resolve();return {id:chunk.id}}
+ });
+ const [one,two]=await Promise.all([store.load(a.id),store.load(a.id,{pin:true})]);
+ assert.equal(one.id,two.id);
+ assert.equal(installs,1);
+ assert.deepEqual(store.info().pinned,[a.id]);
+ store.unpin(a.id);
+ store.clear();
+});
