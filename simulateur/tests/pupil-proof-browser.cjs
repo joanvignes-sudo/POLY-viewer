@@ -57,6 +57,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8123';
    const tampered={...receipt,source_sha256:'0'.repeat(64)};
    await page.locator('#observed-manifest-text').fill(JSON.stringify(tampered));
    await page.locator('#observed-restore').click();
+   await page.waitForFunction(()=>document.querySelector('#observed-transfer-status')?.textContent?.startsWith('Reprise refusée'));
    assert.match(await page.locator('#observed-transfer-status').innerText(),/Reprise refusée/);
    assert.equal(await page.locator('#event').inputValue(),event);
    await page.locator('#observed-manifest-text').fill(JSON.stringify(receipt));
