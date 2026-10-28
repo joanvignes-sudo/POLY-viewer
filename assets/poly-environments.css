@@ -298,3 +298,30 @@ html[data-poly-page="accueil"] .poly-hero-art figcaption{
  }
  html[data-poly-page="accueil"] .poly-hero-art figcaption{font-size:9px;margin-top:5px}
 }
+
+/* Loaded evidence content originally used a light reader palette. */
+html[data-poly-env="preuves"] .explore-layout,
+html[data-poly-env="preuves"] #steps{
+ background:var(--poly-panel);border-color:var(--poly-line);
+}
+html[data-poly-env="preuves"] #evidence p{
+ color:var(--poly-muted);
+}
+html[data-poly-env="preuves"] #evidence .status-tag{
+ background:var(--poly-raised);color:var(--poly-gold);
+}
+html[data-poly-env="preuves"] #evidence .limit{
+ background:var(--poly-raised);color:var(--poly-muted);border-color:var(--poly-gold);
+}
+html[data-poly-env="preuves"] #steps button[aria-pressed="true"]{
+ background:var(--poly-soft);color:var(--poly-ink);box-shadow:inset 3px 0 var(--poly-gold);
+}
+html[data-poly-env="preuves"] #steps button[aria-pressed="true"] .step-no{
+ background:var(--poly-gold);color:#2d1513;border-color:var(--poly-gold);
+}
+html[data-poly-env="preuves"] :is(.notice,.workspace-section .notice){
+ color:var(--poly-muted)!important;
+}
+html[data-poly-env="preuves"] :is(.figure-preview figcaption,.protocol){
+ background:var(--poly-raised);color:var(--poly-muted);border-color:var(--poly-line);
+}
