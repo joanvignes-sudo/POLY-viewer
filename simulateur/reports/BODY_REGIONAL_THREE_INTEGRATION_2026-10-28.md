@@ -56,3 +56,20 @@ Ces tests logiciels ne prouvent ni performances acceptables sur un Android physi
 6. **Téléphone physique** : relever durée, octets transférés, consommation de mémoire, FPS, pertes de contexte, batterie/température et capacité de reprise ; sans ces mesures, la performance reste un objectif, pas un résultat démontré.
 
 **Aucune fusion ni publication ne doit avoir lieu sans approbation explicite.**
+
+
+## Protection contre les demandes obsolètes
+
+Le cache de régions possède maintenant deux générations logiques : une génération globale invalidée lors d'un `clear()` et une révision par bloc invalidée lors d'un `release(id)`. Un ancien téléchargement ne peut plus installer sa géométrie après une annulation, même si sa réponse réseau arrive tard. Si l'installation GPU asynchrone a déjà créé des objets lors de l'annulation, son résultat est immédiatement détruit avant tout enregistrement dans le cache.
+
+L'interface de laboratoire invalide également ses demandes lorsqu'un utilisateur change de région ou de budget. Un résultat ancien ne peut plus remplacer la sélection courante. Les tests unitaires et Playwright forcent volontairement ces intercalages.
+
+**Limite :** il s'agit d'une annulation de l'installation et de l'affichage. Le code ne garantit pas encore l'arrêt du transfert HTTP au niveau du réseau ; un `AbortController` devra être ajouté avec des tests de charge avant intégration à l'application principale.
+
+## Droit de redistribution et attribution
+
+La bibliothèque officielle du Human Reference Atlas annonce la licence **CC BY 4.0** pour ses objets de référence 3D : https://humanatlas.io/3d-reference-library. Les termes officiels, https://creativecommons.org/licenses/by/4.0/, permettent l'utilisation et la création d'adaptations avec attribution, lien vers la licence et indication des modifications.
+
+Le nouveau manifeste `simulateur/data/body-source-attribution.json` conserve la source `united-male/v1.10`, son fichier GLB d'origine, la nature de la réduction/conversion existante, le nouveau repack exact, les empreintes des deux fichiers binaires de POLY et les crédits suggérés.
+
+**La licence ne remplace pas une vérification d'attribution complète.** Le détail des auteurs/créateurs du fichier numérique exact v1.10 reste à revoir ; il faut aussi mettre les crédits dans la future interface de diffusion et obtenir l'accord explicite du propriétaire avant toute mise en ligne des fragments. Le manifeste garde donc `public_distribution_approved:false`. La CI teste cette barrière sans demander de publication.
