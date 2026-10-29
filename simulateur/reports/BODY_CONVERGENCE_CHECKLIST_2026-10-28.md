@@ -121,3 +121,8 @@ Page indépendante raccordée à l’entrée commune, catalogue sans WebGL et ch
 ## Squelette distinct — filtres et picking
 
 Filtres région/concept sans téléchargement, identités d’objet inchangées et picking réel des triangles sont raccordés. 141 tests Node et deux suites navigateur ordinateur/mobile passent ; annulation réseau et reprise explicite vérifiées. Détails dans `BODY_SKELETON_INTERACTIONS_2026-10-29.md`.
+
+
+## Squelette source complet — budget explicite
+
+Les 208 objets / 206 concepts peuvent être chargés explicitement avec un budget de 16 Mio ; refus préalable sans transfert à 4 Mio. Installation après vérification de tous les blocs, conservation de la scène après corruption et libération lors de réduction de budget testées. 143 tests Node et suites navigateur ordinateur/mobile passent. Détails dans `BODY_SKELETON_WHOLE_2026-10-29.md`.

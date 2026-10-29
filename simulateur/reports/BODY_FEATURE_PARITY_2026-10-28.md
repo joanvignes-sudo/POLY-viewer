@@ -34,3 +34,5 @@ Audit du 28 octobre 2026, reprise nocturne 2. Sources examinées : imports et in
 Les mesures sur téléphone physique et l'autorisation de diffusion/publication restent extérieures à cette matrice logicielle. Aucun modèle, point d'insertion, délai ou recalage absent n'est inventé pour remplir une case.
 
 Le squelette Z-Anatomy 206 dispose désormais d’un lecteur indépendant par blocs, filtres région/concept et picking source. Le chargement complet et les 80 surfaces de revue DB restent distincts ; aucune fusion/recalage individuel.
+
+Le chargement complet du squelette Z-Anatomy est désormais disponible sous budget brut explicite de 16 Mio (208 objets, 206 concepts). La revue DB, ses rapprochements et les recalages individuels ne sont pas assimilés à cette référence source.
