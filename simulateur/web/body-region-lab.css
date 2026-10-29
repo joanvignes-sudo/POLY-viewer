@@ -7,3 +7,5 @@ input{max-width:100%;width:100%;font:inherit}#source-results{display:grid;gap:6p
 
 header nav{flex-wrap:wrap}#reference-space{max-width:100%;width:100%}
 #regional-activity{width:100%;max-width:100%;min-width:0;font:inherit;color:var(--ink);background:#082131;border:1px solid #64869a;border-radius:8px;padding:10px}label[for=regional-activity],label[for=regional-pose-time]{display:block;margin:14px 0 6px}
+
+#regional-documentary-tools{border-top:1px solid var(--border);margin-top:18px;padding-top:14px}#regional-documentary-host{font-size:12px;overflow-wrap:anywhere;min-width:0}#regional-documentary-host select,#regional-documentary-host textarea{width:100%;max-width:100%;min-width:0;background:#082131;color:var(--ink);border:1px solid #64869a;border-radius:6px;padding:8px;font:inherit}#regional-doc-paste{min-height:110px}#regional-doc-edges button{max-width:100%;text-align:left;margin-top:6px}#regional-doc-sources a{display:block;margin:5px 0}#regional-doc-content label{display:block;margin-top:12px}

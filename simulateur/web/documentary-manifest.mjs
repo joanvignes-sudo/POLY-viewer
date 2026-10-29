@@ -1,16 +1,9 @@
-import {snapshotChain} from './documentary-context.mjs';
-import {create} from './documentary-engine.js';
+import {validateDocumentaryContext} from './documentary-context.mjs';
 export const RESOURCE_PATHS=['../data/documentary-chains.json','chain-bridge.mjs','documentary-manifest.mjs','documentary-context.mjs','documentary-engine.js','app.js'];
 export async function resourceDigests(){return Promise.all(RESOURCE_PATHS.map(async path=>{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error('Ressource de provenance indisponible');const bytes=await r.arrayBuffer(),digest=await crypto.subtle.digest('SHA-256',bytes);return {path,sha256:[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('')};}));}
 export function validateManifest(record,groups){
  if(!record||record.schema!=='poly.documentary-manifest.v1'||record.scope!=='documentary-view-only'||record.physiological_replay!==false||!['body','region'].includes(record.representation))throw Error('Manifeste incompatible');
- const s=record.context,g=groups.find(g=>g.id===s?.group_id),n=g?.nodes[s?.index];if(!n||!Number.isInteger(s.index)||s.index<0||g.id==='WALK'||s.node_id!==(n.id??String(s.index))||s.identity!==`documentary:${g.id}:${n.id??s.index}`||!Number.isFinite(s.reading_progress)||s.reading_progress<0||s.reading_progress>1||s.time_kind!=='graphical reading fraction, not physiological seconds'||s.microscopic_observations!==false||s.anatomical_registration!==false)throw Error('Contexte incohérent');
- if(s.edge_id!==null&&!g.edges?.some(e=>e.id===s.edge_id&&e.fromId===n.id))throw Error('Relation incohérente');
- if(s.edge_id===null&&s.reading_progress!==0)throw Error('Progression sans relation');
- const canonical=snapshotChain(g,s.index,s.reading_progress,s.edge_id);
- for(const key of Object.keys(canonical))if(JSON.stringify(s[key])!==JSON.stringify(canonical[key]))throw Error('Contexte source modifié : '+key);
- if(s.edge_id!==null&&s.reading_progress>0){const model=create(g);model.select(n.id);if(model.assess(g.edges.find(e=>e.id===s.edge_id))!=='VISIBLE')throw Error('Progression au-delà d’une frontière documentaire');}
- if(JSON.stringify(s.source_ids)!==JSON.stringify(n.sources??[]))throw Error('Sources incohérentes');
+ const s=validateDocumentaryContext(record.context,groups),g=groups.find(g=>g.id===s.group_id),n=g.nodes[s.index];
  if(record.representation==='region'&&(n.kind==='gap'||!n.region))throw Error('Région inconnue');
  for(const v of [record.view,record.body_view])if(!v||!Array.isArray(v.target)||v.target.length!==3||!v.target.every(x=>Number.isFinite(x)&&Math.abs(x)<100)||![v.zoom,v.pitch,v.angle].every(Number.isFinite)||v.zoom<.08||v.zoom>12||Math.abs(v.pitch)>1.5)throw Error('Cadrage invalide');
  if(!Array.isArray(record.resources)||record.resources.length!==RESOURCE_PATHS.length||record.resources.some((r,i)=>r.path!==RESOURCE_PATHS[i]||!/^[a-f0-9]{64}$/.test(r.sha256)))throw Error('Provenance incomplète');return record;

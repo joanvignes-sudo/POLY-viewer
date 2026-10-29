@@ -76,3 +76,8 @@ La méthode `pick` réutilise un espace de travail par clic. Sur le bloc squelet
 ## Reprise nocturne 5 — cohérence des manifestes documentaires
 
 Le pont refuse les champs de contexte source altérés et les progressions positives sur une frontière du moteur. Contrat extrait sans rupture de l’API ; empreintes du contrat et du moteur ajoutées. 129 tests Node et une nouvelle suite navigateur ordinateur/mobile passent. Les anciens manifestes incomplets sont explicitement refusés. Le raccordement régional générique reste ouvert ; détails dans `BODY_NIGHT_05_2026-10-29.md`.
+
+
+## Dossiers génériques régionaux — 29 octobre
+
+Sélection de dossier/étape, branches/frontières du moteur historique, lecture/pause/retour, sources, cadrage des limites résidentes et reprise régionale vérifiable sont raccordés. Aucune correspondance cérébrale fine, ligne 3D ou horloge biologique n’est inventée. 131 tests Node et quatre suites navigateur pertinentes passent. Le format régional exige les mêmes sources chargées et refuse les changements pendant la vérification. Détails dans `BODY_REGIONAL_DOCUMENTARY_2026-10-29.md`.
