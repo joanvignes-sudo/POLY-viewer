@@ -309,3 +309,8 @@ Bilan dans `BODY_NIGHT_FINAL_2026-10-29.md` : 146 tests Node, 23 Python et résu
 ## Reprise explicite — revue DB indépendante
 
 80 surfaces de revue accessibles séparément : source vérifiée, deux placements enregistrés, filtres, comparaisons de mains et libération. Pas de cible HRA reconstruite ni registration validée. 148 tests Node et suites navigateur ordinateur/mobile DB/squelette passent. Détails dans `BODY_DB_REVIEW_2026-10-29.md`.
+
+
+## Contrôleurs nerveux historiques régionaux
+
+575 courbes, 458 itinéraires, vrais pilotes médian/ulnaire, excitabilité du médian et inhibition entérique raccordés à la demande, avec sources vérifiées, vrais inspecteur/rig et destruction explicite. 148 tests Node, suites navigateur régionales ordinateur/mobile et régression classique réussis. Un premier délai classique reste consigné, cause inconnue. Détails dans `BODY_REGIONAL_NERVES_2026-10-29.md`.

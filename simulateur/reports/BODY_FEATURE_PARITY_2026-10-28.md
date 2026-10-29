@@ -14,13 +14,13 @@ Audit du 28 octobre 2026, reprise nocturne 2. Sources examinées : imports et in
 | `brain-atlas.js` | CerebrA vérifié à la demande, libération et générations des matériaux | Référence MNI distincte, sans recalage individuel |
 | `hand-muscles-reference.js` | Main à la demande, contrôles indépendants du pilote | Le pilote nerveux complet ne devient pas une dépendance fictive |
 | `forearm-motor-reference.js` | Parcours alternatif par pièces/groupes, sources, attaches qualifiées, postures et courbes de lecture | Le workbench historique complet et son mode tout-réunir restent monolithiques ; toutes ses interactions ne sont pas reprises |
-| `human-nerves.js` | Itinéraires vérifiés liés aux pièces et courbe d'étape dans un repère illustratif compatible | L'ensemble du pilote de 575 routes et ses états globaux n'est pas raccordé au HRA régional |
+| `human-nerves.js` | Vrai contrôleur régional à la demande : 575 courbes, 458 itinéraires, sens/états/lecture et cibles résidentes | Courbes schématiques, pas nerfs segmentés ni localisation individuelle |
 | `activities.js`, `day-model.js` | Repos/marche ; course, assis, allongé et geste de repas manuels régionaux par recette commune ; journal déclaré autonome | Mobilier/ustensiles restent dans le corps historique ; le journal autonome ne pilote pas les postures régionales ni les horloges biologiques |
 | `chain-bridge.mjs`, `documentary-network.js` | Dossiers génériques : étapes, branches/frontières, lecture/pause/retour, sources, cadrage résident et sauvegarde régionale vérifiée | Carte et lignes 3D historiques non superposées ; correspondances cérébrales fines non établies ; formats classique/régional explicitement distincts |
 | `protocol-heart-view.mjs` | Session historique réutilisée pour HASS-BODY : contrat vérifié, 14 surfaces exactes exigées, isolation/contexte/retour régionaux | Région source inconnue conservée ; aucun capteur/participant recalé ; contexte limité aux résidents, sans atténuation générale des occultants |
 | `avatar-bones.js`, `skeleton-worksite-206.js`, `registration-da.js` | Ateliers historiques disponibles | Références/proxies et revue de recalage distincts ; aucune fusion avec HRA ni recalage inventé |
-| `neuromuscular-guide.js`, `nerve-linked-pilot.js` | Guide qualitatif raccordé à la main réelle : trois conditions, horloge séparée, source vérifiée et libération | Pilote nerveux global encore historique ; itinéraires et états complets à raccorder sans faux adaptateur |
-| `nerve-excitability.js`, `enteric-inhibition.js` | Modèles et protocoles historiques conservés | Leur calcul et leurs horloges ne sont pas déduits du mouvement régional |
+| `neuromuscular-guide.js`, `nerve-linked-pilot.js` | Guide de main réel et vrais pilotes médian/ulnaire raccordés ; source, frontière et cycle de vie conservés | Aucun point d’entrée, jonction ou contraction calculé |
+| `nerve-excitability.js`, `enteric-inhibition.js` | Modules historiques raccordés au vrai contrôleur régional, phases et protocoles conservés | Horloges pédagogiques, pas délais biologiques ni effets de l’avatar |
 | `cogitate-scene.js`, `recovered-work.js` | Accès historique et pages de travaux conservés | Aucune localisation individuelle libre sur le nouvel atlas |
 | `body-batch-loader.mjs` / rendu classique | Parcours historique conservé ; lecteur par blocs comme alternative | L'entrée publique classique n'est pas remplacée automatiquement |
 
@@ -38,3 +38,5 @@ Le squelette Z-Anatomy 206 dispose désormais d’un lecteur indépendant par bl
 Le chargement complet du squelette Z-Anatomy est désormais disponible sous budget brut explicite de 16 Mio (208 objets, 206 concepts). La revue DB, ses rapprochements et les recalages individuels ne sont pas assimilés à cette référence source.
 
 Les pilotes médian/ulnaire disposent d’une lecture documentaire indépendante sans WebGL et sans temps biologique. Leur contrôleur 3D global reste dans l’atelier classique ; aucune équivalence de marqueurs/animation globale n’est revendiquée.
+
+Reprise explicite du 29 octobre : le contrôleur nerveux 3D global et ses deux protocoles sont désormais raccordés ; les mentions antérieures de limite historique décrivent l’état des reprises précédentes. La revue DB dispose aussi d’un accès indépendant aux deux placements enregistrés, sans reconstruction de cibles HRA absentes.

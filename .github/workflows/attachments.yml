@@ -68,6 +68,8 @@ jobs:
           node simulateur/tests/body-regional-optics-browser.cjs
           node simulateur/tests/body-regional-brain-browser.cjs
           node simulateur/tests/body-regional-hand-browser.cjs
+          node simulateur/tests/body-regional-nerves-browser.cjs
+          node simulateur/tests/body-regional-nerve-protocols-browser.cjs
           node simulateur/tests/body-regional-navigation-browser.cjs
           node simulateur/tests/body-regional-posture-browser.cjs
           node simulateur/tests/reference-region-browser.cjs
