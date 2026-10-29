@@ -64,6 +64,7 @@ jobs:
         run: |
           python simulateur/scripts/serve_body_region_preview.py --port 8123 --chunks-root "$POLY_CHUNKS_ROOT" --reference-chunks-root "$POLY_REFERENCE_CHUNKS_ROOT" --skeleton-chunks-root "$POLY_SKELETON_CHUNKS_ROOT" > /tmp/poly-http.log 2>&1 &
           node simulateur/tests/attachments-browser.cjs
+          node simulateur/tests/classic-controls-parity-browser.cjs
           node simulateur/tests/body-startup-browser.cjs
           node simulateur/tests/body-light-browser.cjs
           node simulateur/tests/body-region-browser.cjs

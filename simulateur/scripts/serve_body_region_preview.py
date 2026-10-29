@@ -13,6 +13,12 @@ REPO = Path(__file__).resolve().parents[2]
 PREFIX = '/simulateur/data/body-chunks-preview/'
 
 
+class PreviewHTTPServer(ThreadingHTTPServer):
+    # The standard backlog of five can queue imports behind concurrent browser requests.
+    # This is capacity hardening, not proof of the cause of historical startup failures.
+    request_queue_size = 128
+
+
 def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root=None):
     chunks_root = Path(chunks_root).resolve(strict=True)
     manifest = json.loads((chunks_root / 'MANIFEST.json').read_text(encoding='utf-8'))
@@ -107,7 +113,7 @@ def main():
     parser.add_argument('--skeleton-chunks-root', type=Path)
     parser.add_argument('--port', type=int, default=8124)
     args = parser.parse_args()
-    with ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root, skeleton_root=args.skeleton_chunks_root)) as server:
+    with PreviewHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root, skeleton_root=args.skeleton_chunks_root)) as server:
         print(f'Local preview only: http://127.0.0.1:{server.server_port}/simulateur/web/body-region-lab.html', flush=True)
         try:
             server.serve_forever()

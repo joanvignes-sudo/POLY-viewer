@@ -197,3 +197,12 @@ Squelette et revue DB : pincement sans rotation, clavier et annulation complète
 - [ ] Mesures physiques téléphone, parité monolithique exhaustive et qualification biologique encore ouvertes.
 
 Voir `BODY_REFERENCE_WHOLE_2026-10-29.md`. Aucun push, fusion ou déploiement.
+
+## Reprise ciblée — serveur et commandes classiques, 29 octobre
+
+- [x] Serveur de qualification : file TCP explicite de 128 au lieu de cinq ; banc local 48 requêtes et 25 tests Python réussis. Cette atténuation ne prouve pas la cause des refus précédents.
+- [x] Nouvelle instance isolée 8130 : cinq suites navigateur existantes réussies, sans toucher aux ports 8124/8128.
+- [x] Parité : test navigateur du classique sur ordinateur/mobile émulé (10 systèmes, peau, vitesse, 11 scénarios, 38 boutons de tissu, navigation et retour) réussi.
+- [ ] Distinguer intention et régression pour les surfaces osseuses 74 visibles au départ / 134 après interrupteur « squelette » ; tracer les masques de couches avant correction.
+- [ ] Identifier la cause des échecs intermittents d'import et des refus de connexion, indépendamment des suites devenues vertes.
+- [ ] Tests physiques et validation scientifique restent ouverts. Voir `BODY_STARTUP_PARITY_2026-10-29.md`.

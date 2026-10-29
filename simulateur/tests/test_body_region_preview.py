@@ -4,7 +4,6 @@ import json
 import tempfile
 import threading
 import unittest
-from http.server import ThreadingHTTPServer
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -38,6 +37,10 @@ class PreviewTest(unittest.TestCase):
             handler.copyfile(BrokenSource(), io.BytesIO())
         self.assertEqual(len(events), 3)
 
+    def test_preview_listener_has_explicit_burst_accept_capacity(self):
+        self.assertEqual(preview.PreviewHTTPServer.request_queue_size, 128)
+        self.assertIsInstance(self.server, preview.PreviewHTTPServer)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         root = Path(self.temp.name)
@@ -50,7 +53,7 @@ class PreviewTest(unittest.TestCase):
         self.site = root / 'site'
         self.site.mkdir()
         (self.site / 'index.html').write_text('fixture site')
-        self.server = ThreadingHTTPServer(('127.0.0.1', 0), preview.make_handler(self.chunks, self.site))
+        self.server = preview.PreviewHTTPServer(('127.0.0.1', 0), preview.make_handler(self.chunks, self.site))
         self.thread = threading.Thread(target=self.server.serve_forever, daemon=True)
         self.thread.start()
         self.base = f'http://127.0.0.1:{self.server.server_port}'
@@ -97,7 +100,7 @@ class PreviewTest(unittest.TestCase):
                     'status': 'experimental_not_deployed', 'source_value_verification': 'PASS'}
         (reference / 'MANIFEST.json').write_text(json.dumps(manifest))
         (reference / 'chunks/reference-000.bin.gz').write_bytes(b'reference-fixture')
-        server = ThreadingHTTPServer(('127.0.0.1', 0), preview.make_handler(self.chunks, self.site, reference))
+        server = preview.PreviewHTTPServer(('127.0.0.1', 0), preview.make_handler(self.chunks, self.site, reference))
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         try:
