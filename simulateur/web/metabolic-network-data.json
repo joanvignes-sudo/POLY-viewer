@@ -1,0 +1,1601 @@
+{
+  "schema": "poly.metabolic-network.v1",
+  "layout": {
+    "kind": "hypothetical_documentary",
+    "units": "abstract",
+    "anatomical_registration": null,
+    "width": 1740,
+    "height": 1060
+  },
+  "case_sha256": "19d35b5ad98b36ecde9f484113dc978da853afb8603b06dc45c0e785758bd3ea",
+  "sources": {
+    "bordone": {
+      "title": "Bordone et coll. · The energetic brain",
+      "doi": "10.1111/jnc.14829",
+      "kind": "review",
+      "context": "documentary",
+      "license": "CC BY-NC-ND ; texte/figures non redistribués"
+    },
+    "pellerin1994": {
+      "title": "Pellerin–Magistretti · capture du glutamate",
+      "doi": "10.1073/pnas.91.22.10625",
+      "kind": "primary",
+      "context": "astrocyte_culture",
+      "license": "Référence bibliographique seulement"
+    },
+    "diaz2017": {
+      "title": "Díaz-García · glycolyse neuronale",
+      "doi": "10.1016/j.cmet.2017.06.021",
+      "kind": "primary",
+      "context": "mouse_tissue",
+      "license": "Référence bibliographique seulement"
+    },
+    "ashrafi": {
+      "title": "Ashrafi · apport de glucose aux synapses",
+      "doi": "10.1016/j.neuron.2016.12.020",
+      "kind": "primary",
+      "context": "neuronal_culture",
+      "license": "Référence bibliographique seulement"
+    },
+    "herrero": {
+      "title": "Herrero-Mendez · glucose et protection redox",
+      "doi": "10.1038/ncb1881",
+      "kind": "primary",
+      "context": "neuronal_culture",
+      "license": "Référence bibliographique seulement"
+    },
+    "fernandez": {
+      "title": "Fernández-Moncada · lactate–HCAR1–sérine",
+      "doi": "10.1038/s41467-024-51008-2",
+      "kind": "primary",
+      "context": "mouse_synaptic",
+      "license": "Article CC BY 4.0 ; valeurs agrégées locales C9"
+    },
+    "fiumelli": {
+      "title": "Fiumelli · lactate, redox et NMDA",
+      "doi": "10.1113/JP288960",
+      "kind": "primary",
+      "context": "neuronal_culture",
+      "license": "Référence bibliographique seulement"
+    },
+    "nasu": {
+      "title": "Nasu · capteurs de lactate",
+      "doi": "10.1038/s41467-023-42230-5",
+      "kind": "primary",
+      "context": "rat_separate_cultures",
+      "license": "Article CC BY 4.0 ; sélection C12 locale"
+    },
+    "koep": {
+      "title": "Koep · échanges sang–cerveau humains",
+      "doi": "10.1113/JP289216",
+      "kind": "primary",
+      "context": "human_blood_region",
+      "license": "Article ouvert ; tableau A1, sélection locale C14"
+    },
+    "vandoorne": {
+      "title": "Vandoorne · motoneurones humains iPSC",
+      "doi": "10.1038/s41467-019-12099-4",
+      "kind": "primary",
+      "context": "human_motor_culture",
+      "license": "Original privé inchangé ; aucune réponse réservée importée"
+    },
+    "li": {
+      "title": "Li · astrocytes humains et murins",
+      "doi": "10.1038/s41467-021-24232-3",
+      "kind": "primary",
+      "context": "human_mouse_astrocytes",
+      "license": "Original privé inchangé ; aucune amplitude importée"
+    },
+    "coupling-tarczyluk2013": {
+      "title": "Le réseau actif mobilise ses réserves",
+      "url": "https://journals.sagepub.com/doi/10.1038/jcbfm.2013.81",
+      "kind": "primary",
+      "context": "human_culture",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    },
+    "coupling-hasel2017": {
+      "title": "L’activité prépare la cellule d’aide à fournir du carburant",
+      "url": "https://www.nature.com/articles/ncomms15132",
+      "kind": "primary",
+      "context": "mixed_species",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    },
+    "coupling-gandhi2009": {
+      "title": "Le lactate peut aussi rejoindre les autres cellules d’aide",
+      "url": "https://doi.org/10.1111/j.1471-4159.2009.06333.x",
+      "kind": "primary",
+      "context": "animal",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    },
+    "coupling-wang2022": {
+      "title": "Recevoir du lactate ne garantit pas de fabriquer davantage d’énergie",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35366540/",
+      "kind": "primary",
+      "context": "animal",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    },
+    "coupling-vandoorne2019": {
+      "title": "Le neurone utilise le carbone du lactate",
+      "url": "https://www.nature.com/articles/s41467-019-12099-4",
+      "kind": "primary",
+      "context": "human_culture",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    },
+    "coupling-stavrou2026": {
+      "title": "Les cellules d’aide influencent les mitochondries du neurone",
+      "url": "https://www.nature.com/articles/s41593-026-02464-0",
+      "kind": "primary",
+      "context": "human_culture",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    },
+    "coupling-fernandez2024": {
+      "title": "Le lactate peut aussi transmettre un message",
+      "url": "https://www.nature.com/articles/s41467-024-51008-2",
+      "kind": "primary",
+      "context": "animal",
+      "license": "Fiche documentaire existante, aucune figure redistribuée"
+    }
+  },
+  "nodes": [
+    {
+      "id": "supply",
+      "title": "Apports sanguins",
+      "compartment": "vascular",
+      "position": [
+        150,
+        100
+      ],
+      "detail": "Glucose, lactate et oxygène : décrire les concentrations, les échanges et la préparation.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "bbb",
+      "title": "Barrière et transport du glucose",
+      "compartment": "vascular",
+      "position": [
+        400,
+        100
+      ],
+      "detail": "Séparer le passage de la barrière et les transports cellulaires ; identifier les GLUT et les compartiments.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "glucose-a",
+      "title": "Glucose astrocytaire",
+      "compartment": "astrocyte",
+      "position": [
+        160,
+        300
+      ],
+      "detail": "Entrée et utilisation du glucose astrocytaire ; glycogène à traiter comme réserve distincte.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013",
+        "coupling-hasel2017"
+      ]
+    },
+    {
+      "id": "glycolysis",
+      "title": "Glycolyse astrocytaire",
+      "compartment": "astrocyte",
+      "position": [
+        380,
+        300
+      ],
+      "detail": "Suivre pyruvate, ATP et équilibre NADH/NAD+, sans taux fixé par défaut.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013",
+        "coupling-hasel2017",
+        "coupling-fernandez2024"
+      ]
+    },
+    {
+      "id": "lactate-a",
+      "title": "Production de lactate",
+      "compartment": "astrocyte",
+      "position": [
+        600,
+        300
+      ],
+      "detail": "Réaction LDH et gradients : ne pas assimiler une enzyme à un sens de flux invariable.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013",
+        "coupling-hasel2017",
+        "coupling-gandhi2009",
+        "coupling-wang2022",
+        "coupling-stavrou2026",
+        "coupling-fernandez2024"
+      ]
+    },
+    {
+      "id": "mct-a",
+      "title": "Transport astrocytaire MCT1/4",
+      "compartment": "astrocyte",
+      "position": [
+        800,
+        300
+      ],
+      "detail": "Flux de monocarboxylates dépendant des gradients et des conditions ; hypothèse ANLS à comparer.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-hasel2017",
+        "coupling-gandhi2009",
+        "coupling-wang2022"
+      ]
+    },
+    {
+      "id": "lactate-e",
+      "title": "Lactate extracellulaire",
+      "compartment": "extracellular",
+      "position": [
+        700,
+        505
+      ],
+      "detail": "Réservoir distinct ; les bilans doivent inclure les autres entrées et sorties.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013",
+        "coupling-gandhi2009",
+        "coupling-wang2022",
+        "coupling-fernandez2024"
+      ]
+    },
+    {
+      "id": "mct-n",
+      "title": "Transport neuronal MCT2",
+      "compartment": "neuron",
+      "position": [
+        800,
+        650
+      ],
+      "detail": "Séparer expression, capacité de transport et flux réellement établi.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-gandhi2009",
+        "coupling-wang2022",
+        "coupling-vandoorne2019",
+        "coupling-stavrou2026"
+      ]
+    },
+    {
+      "id": "pyruvate",
+      "title": "Pyruvate neuronal",
+      "compartment": "neuron",
+      "position": [
+        600,
+        750
+      ],
+      "detail": "LDH, pyruvate et état redox ; lactate et glucose restent des voies distinctes.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-wang2022",
+        "coupling-vandoorne2019"
+      ]
+    },
+    {
+      "id": "glucose-n",
+      "title": "Voie directe du glucose neuronal",
+      "compartment": "neuron",
+      "position": [
+        150,
+        650
+      ],
+      "detail": "Transport et métabolisme neuronal du glucose à conserver en parallèle de la branche ANLS.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "mitochondria",
+      "title": "Mitochondries et ATP",
+      "compartment": "neuron",
+      "position": [
+        800,
+        750
+      ],
+      "detail": "Cycle TCA, phosphorylation oxydative, oxygène, ADP et ATP : compartiments et capacités à qualifier.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-wang2022",
+        "coupling-vandoorne2019",
+        "coupling-stavrou2026"
+      ]
+    },
+    {
+      "id": "presynapse",
+      "title": "Libération et recyclage vésiculaire",
+      "compartment": "neuron",
+      "position": [
+        1460,
+        750
+      ],
+      "detail": "Séparer libération, remplissage, endocytose et recyclage ; demandes énergétiques distinctes.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013",
+        "coupling-hasel2017",
+        "coupling-fernandez2024"
+      ]
+    },
+    {
+      "id": "glutamate",
+      "title": "Glutamate extracellulaire",
+      "compartment": "extracellular",
+      "position": [
+        130,
+        505
+      ],
+      "detail": "Le glutamate libéré est capté et recyclé ; préciser concentrations et cinétique.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013",
+        "coupling-hasel2017"
+      ]
+    },
+    {
+      "id": "receptors",
+      "title": "Récepteurs et flux ioniques",
+      "compartment": "neuron",
+      "position": [
+        1040,
+        850
+      ],
+      "detail": "Récepteurs postsynaptiques et flux Na+/Ca2+ ; ne pas réduire la réponse à un bouton activé/inactivé.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-fernandez2024"
+      ]
+    },
+    {
+      "id": "pumps",
+      "title": "Pompes et gradients ioniques",
+      "compartment": "neuron",
+      "position": [
+        1240,
+        650
+      ],
+      "detail": "Restitution des gradients, demande en ATP et entretien : rétroaction à expliciter.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "eaat",
+      "title": "Capture astrocytaire EAAT",
+      "compartment": "astrocyte",
+      "position": [
+        150,
+        405
+      ],
+      "detail": "Capture du glutamate couplée aux ions ; distinguer transport, pompage et réponse métabolique.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-tarczyluk2013"
+      ]
+    },
+    {
+      "id": "glutamine",
+      "title": "Cycle glutamate–glutamine",
+      "compartment": "astrocyte",
+      "position": [
+        380,
+        405
+      ],
+      "detail": "GS, export, capture neuronale, GLS et reconstitution du pool : chaîne à compartimenter.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "potassium",
+      "title": "Signal K+ et réponse gliale",
+      "compartment": "extracellular",
+      "position": [
+        400,
+        505
+      ],
+      "detail": "Branche documentée à vérifier dans sa préparation ; aucune latence humaine attribuée.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "redox",
+      "title": "Voie des pentoses et défense redox",
+      "compartment": "neuron",
+      "position": [
+        180,
+        850
+      ],
+      "detail": "Préserver NADPH/glutathion et les contraintes redox dans la répartition des substrats.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "title": "Entretien et transport cellulaire",
+      "compartment": "neuron",
+      "position": [
+        1460,
+        650
+      ],
+      "detail": "Dépense au repos, transport axonal et distribution mitochondriale, distincts de la seule émission.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone",
+        "coupling-wang2022",
+        "coupling-stavrou2026"
+      ]
+    },
+    {
+      "id": "vascular-response",
+      "title": "Réponse vasculaire",
+      "compartment": "vascular",
+      "position": [
+        800,
+        100
+      ],
+      "detail": "Raccord neurovasculaire à étudier avant de convertir une demande métabolique en débit.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "imaging",
+      "title": "Mesure d’imagerie",
+      "compartment": "vascular",
+      "position": [
+        1050,
+        100
+      ],
+      "detail": "Ne pas identifier un signal IRMf ou TEP à une concentration cellulaire ; contrat d’observation à créer.",
+      "origin": "case-pellerin",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "regional",
+      "title": "Mesure régionale",
+      "compartment": "vascular",
+      "position": [
+        1300,
+        100
+      ],
+      "detail": "Volume/indice cérébral global : pas un neurone ni un flux astrocyte–neurone.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "koep"
+      ]
+    },
+    {
+      "id": "oxygen",
+      "title": "Oxygène",
+      "compartment": "vascular",
+      "position": [
+        1580,
+        100
+      ],
+      "detail": "Disponibilité d’oxygène à qualifier dans chaque préparation.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "bordone"
+      ]
+    },
+    {
+      "id": "hcar1",
+      "title": "Récepteur HCAR1",
+      "compartment": "astrocyte",
+      "position": [
+        1000,
+        300
+      ],
+      "detail": "Signal extracellulaire ; ne transforme pas le carbone du lactate en sérine.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "fernandez"
+      ]
+    },
+    {
+      "id": "serine",
+      "title": "Synthèse de L-sérine",
+      "compartment": "astrocyte",
+      "position": [
+        1230,
+        300
+      ],
+      "detail": "Branche issue d’intermédiaires glycolytiques ; liens moléculaires HCAR1–enzymes encore partiellement inconnus.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "fernandez"
+      ]
+    },
+    {
+      "id": "d-serine",
+      "title": "D-sérine disponible",
+      "compartment": "extracellular",
+      "position": [
+        1230,
+        505
+      ],
+      "detail": "Disponibilité synaptique/coagoniste NMDA ; pas de concentration locale humaine calculée.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "fernandez"
+      ]
+    },
+    {
+      "id": "glycolysis-n",
+      "title": "Glycolyse neuronale",
+      "compartment": "neuron",
+      "position": [
+        380,
+        650
+      ],
+      "detail": "Utilisation directe du glucose, à distinguer de la voie des pentoses.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "diaz2017",
+        "ashrafi"
+      ]
+    },
+    {
+      "id": "lactate-n",
+      "title": "Pool lactate neuronal",
+      "compartment": "neuron",
+      "position": [
+        600,
+        650
+      ],
+      "detail": "Transport et LDH réversibles ; signaux optiques non inversés en concentrations.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "nasu",
+        "fiumelli"
+      ]
+    },
+    {
+      "id": "nadh",
+      "title": "Équilibre NADH/NAD+",
+      "compartment": "neuron",
+      "position": [
+        600,
+        850
+      ],
+      "detail": "Équilibre redox associé à LDH ; distinct du NADPH de la défense antioxydante.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "fiumelli"
+      ]
+    },
+    {
+      "id": "atp",
+      "title": "ATP disponible",
+      "compartment": "neuron",
+      "position": [
+        1040,
+        750
+      ],
+      "detail": "Énergie utilisable ; aucune concentration, force ou consommation déduite du dessin.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "ashrafi"
+      ]
+    },
+    {
+      "id": "protection",
+      "title": "Défense antioxydante",
+      "compartment": "neuron",
+      "position": [
+        370,
+        850
+      ],
+      "detail": "NADPH et glutathion ; pas un flux NADH ni un diagnostic de maladie.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "herrero"
+      ]
+    },
+    {
+      "id": "optical",
+      "title": "Lecture des capteurs",
+      "compartment": "observation",
+      "position": [
+        790,
+        965
+      ],
+      "detail": "Observation relative des cultures séparées de rat ; pas de transfert apparié mesuré.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "nasu"
+      ]
+    },
+    {
+      "id": "synaptic",
+      "title": "Réponse synaptique",
+      "compartment": "observation",
+      "position": [
+        1230,
+        965
+      ],
+      "detail": "Pente NMDAR-fEPSP relative, souris ; pas une mesure de débit de lactate.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "fernandez"
+      ]
+    },
+    {
+      "id": "plasticity",
+      "title": "Plasticité / mémoire",
+      "compartment": "outcome",
+      "position": [
+        1480,
+        965
+      ],
+      "detail": "Sorties de protocoles spécifiques ; aucun effet individuel humain prédit.",
+      "origin": "qualified_extension",
+      "source_ids": [
+        "fernandez"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "blood-glucose",
+      "from": "supply",
+      "to": "bbb",
+      "label": "Accès au glucose",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "glut-a",
+      "from": "bbb",
+      "to": "glucose-a",
+      "label": "Transport astrocytaire",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "glut-n",
+      "from": "bbb",
+      "to": "glucose-n",
+      "label": "Transport neuronal",
+      "kind": "matter",
+      "source_ids": [
+        "ashrafi"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "glyco-a",
+      "from": "glucose-a",
+      "to": "glycolysis",
+      "label": "Utilisation astrocytaire",
+      "kind": "reaction",
+      "source_ids": [
+        "pellerin1994"
+      ],
+      "context": "astrocyte_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "ldh-a",
+      "from": "glycolysis",
+      "to": "lactate-a",
+      "label": "Branche LDH",
+      "kind": "reaction",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": true
+    },
+    {
+      "id": "export-a",
+      "from": "lactate-a",
+      "to": "mct-a",
+      "label": "Accès au transporteur",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": true
+    },
+    {
+      "id": "mct-release",
+      "from": "mct-a",
+      "to": "lactate-e",
+      "label": "Passage membranaire",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": true
+    },
+    {
+      "id": "anls-gap",
+      "from": "lactate-e",
+      "to": "mct-n",
+      "label": "Origine astrocytaire → neurone ?",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "hypothesis",
+      "detail": "La continuité de ce transfert dans une préparation donnée n’est pas mesurée par nos cultures séparées.",
+      "reversible": true
+    },
+    {
+      "id": "mct-neuron",
+      "from": "mct-n",
+      "to": "lactate-n",
+      "label": "Passage neuronal",
+      "kind": "matter",
+      "source_ids": [
+        "fiumelli"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": true
+    },
+    {
+      "id": "ldh-n",
+      "from": "lactate-n",
+      "to": "pyruvate",
+      "label": "LDH réversible",
+      "kind": "reaction",
+      "source_ids": [
+        "fiumelli"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": true
+    },
+    {
+      "id": "glyco-n",
+      "from": "glucose-n",
+      "to": "glycolysis-n",
+      "label": "Utilisation directe",
+      "kind": "reaction",
+      "source_ids": [
+        "diaz2017"
+      ],
+      "context": "mouse_tissue",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "n-pyruvate",
+      "from": "glycolysis-n",
+      "to": "pyruvate",
+      "label": "Production de pyruvate",
+      "kind": "reaction",
+      "source_ids": [
+        "diaz2017"
+      ],
+      "context": "mouse_tissue",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "oxidation",
+      "from": "pyruvate",
+      "to": "mitochondria",
+      "label": "Métabolisme oxydatif",
+      "kind": "reaction",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "oxygen-use",
+      "from": "oxygen",
+      "to": "mitochondria",
+      "label": "Oxygène requis",
+      "kind": "environment",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "energy",
+      "from": "mitochondria",
+      "to": "atp",
+      "label": "Fourniture énergétique",
+      "kind": "energy",
+      "source_ids": [
+        "ashrafi"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "pump-energy",
+      "from": "atp",
+      "to": "pumps",
+      "label": "Dépense des pompes",
+      "kind": "energy",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "synapse-energy",
+      "from": "atp",
+      "to": "presynapse",
+      "label": "Dépense synaptique",
+      "kind": "energy",
+      "source_ids": [
+        "ashrafi"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "maint-energy",
+      "from": "atp",
+      "to": "maintenance",
+      "label": "Entretien et transport",
+      "kind": "energy",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "release",
+      "from": "presynapse",
+      "to": "glutamate",
+      "label": "Libération de glutamate",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "excitation",
+      "from": "glutamate",
+      "to": "receptors",
+      "label": "Activation des récepteurs",
+      "kind": "signal",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "uptake",
+      "from": "glutamate",
+      "to": "eaat",
+      "label": "Capture du glutamate",
+      "kind": "matter",
+      "source_ids": [
+        "pellerin1994"
+      ],
+      "context": "astrocyte_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "astro-cost",
+      "from": "eaat",
+      "to": "glycolysis",
+      "label": "Coût et recrutement métabolique",
+      "kind": "regulation",
+      "source_ids": [
+        "pellerin1994"
+      ],
+      "context": "astrocyte_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "recycle-a",
+      "from": "eaat",
+      "to": "glutamine",
+      "label": "Recyclage glial",
+      "kind": "reaction",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "recycle-n",
+      "from": "glutamine",
+      "to": "presynapse",
+      "label": "Retour de précurseur",
+      "kind": "matter",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "k-activity",
+      "from": "receptors",
+      "to": "potassium",
+      "label": "Contexte ionique",
+      "kind": "regulation",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "k-glyco",
+      "from": "potassium",
+      "to": "glycolysis",
+      "label": "Recrutement métabolique",
+      "kind": "regulation",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "pentose",
+      "from": "glucose-n",
+      "to": "redox",
+      "label": "Branche des pentoses",
+      "kind": "reaction",
+      "source_ids": [
+        "herrero"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "antioxidants",
+      "from": "redox",
+      "to": "protection",
+      "label": "Soutien NADPH/glutathion",
+      "kind": "regulation",
+      "source_ids": [
+        "herrero"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "lactate-signal",
+      "from": "lactate-e",
+      "to": "hcar1",
+      "label": "Signal lactate / HCAR1",
+      "kind": "signal",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "hcar-serine",
+      "from": "hcar1",
+      "to": "serine",
+      "label": "Orientation vers la sérine",
+      "kind": "regulation",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Résultats d’interventions ; détails moléculaires intermédiaires non entièrement résolus.",
+      "reversible": false
+    },
+    {
+      "id": "glyco-serine",
+      "from": "glycolysis",
+      "to": "serine",
+      "label": "Carbone d’intermédiaires du glucose",
+      "kind": "reaction",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "serine-availability",
+      "from": "serine",
+      "to": "d-serine",
+      "label": "Voie L-/D-sérine",
+      "kind": "reaction",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Étapes de synthèse/conversion et disponibilité regroupées ; pas de transport direct unique mesuré.",
+      "reversible": false
+    },
+    {
+      "id": "coagonist",
+      "from": "d-serine",
+      "to": "receptors",
+      "label": "Coagoniste NMDA",
+      "kind": "signal",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "ldh-redox",
+      "from": "pyruvate",
+      "to": "nadh",
+      "label": "Couplage LDH / redox",
+      "kind": "regulation",
+      "source_ids": [
+        "fiumelli"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": true
+    },
+    {
+      "id": "redox-nmda",
+      "from": "nadh",
+      "to": "receptors",
+      "label": "Modulation de NMDA",
+      "kind": "regulation",
+      "source_ids": [
+        "fiumelli"
+      ],
+      "context": "neuronal_culture",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "plasticity",
+      "from": "receptors",
+      "to": "plasticity",
+      "label": "Fonction et plasticité",
+      "kind": "regulation",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "blood-observe",
+      "from": "supply",
+      "to": "regional",
+      "label": "Indice net sang–cerveau",
+      "kind": "observation",
+      "source_ids": [
+        "koep"
+      ],
+      "context": "human_blood_region",
+      "status": "documented",
+      "detail": "Valeur arterioveineuse régionale ; taille et sens du marqueur illustrent seulement cet indice.",
+      "reversible": true
+    },
+    {
+      "id": "astro-optical",
+      "from": "lactate-a",
+      "to": "optical",
+      "label": "Capteur astrocytaire",
+      "kind": "observation",
+      "source_ids": [
+        "nasu"
+      ],
+      "context": "rat_astrocyte_separate",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "neuron-optical",
+      "from": "lactate-n",
+      "to": "optical",
+      "label": "Capteur neuronal",
+      "kind": "observation",
+      "source_ids": [
+        "nasu"
+      ],
+      "context": "rat_neuron_separate",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "synaptic-observe",
+      "from": "receptors",
+      "to": "synaptic",
+      "label": "Mesure NMDAR-fEPSP",
+      "kind": "observation",
+      "source_ids": [
+        "fernandez"
+      ],
+      "context": "mouse_synaptic",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "vascular-demand",
+      "from": "mitochondria",
+      "to": "vascular-response",
+      "label": "Relation activité / apport",
+      "kind": "regulation",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "documented",
+      "detail": "Relation documentaire ; paramètres et temps biologiques non renseignés.",
+      "reversible": false
+    },
+    {
+      "id": "imaging-contract",
+      "from": "vascular-response",
+      "to": "imaging",
+      "label": "Opérateur à qualifier",
+      "kind": "observation",
+      "source_ids": [
+        "bordone"
+      ],
+      "context": "documentary",
+      "status": "unknown",
+      "detail": "Pas de conversion du métabolisme cellulaire en signal d’imagerie calibré.",
+      "reversible": false
+    }
+  ],
+  "routes": [
+    {
+      "id": "anls",
+      "title": "Lactate : hypothèse ANLS",
+      "legacy_nodes": [
+        "supply",
+        "bbb",
+        "glucose-a",
+        "glycolysis",
+        "lactate-a",
+        "mct-a",
+        "lactate-e",
+        "mct-n",
+        "pyruvate",
+        "mitochondria",
+        "pumps"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "blood-glucose",
+        "glut-a",
+        "glyco-a",
+        "ldh-a",
+        "export-a",
+        "mct-release",
+        "anls-gap",
+        "mct-neuron",
+        "ldh-n",
+        "oxidation",
+        "energy",
+        "pump-energy"
+      ]
+    },
+    {
+      "id": "direct",
+      "title": "Glucose neuronal : voie parallèle",
+      "legacy_nodes": [
+        "supply",
+        "bbb",
+        "glucose-n",
+        "mitochondria",
+        "pumps"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "blood-glucose",
+        "glut-n",
+        "glyco-n",
+        "n-pyruvate",
+        "oxidation",
+        "energy",
+        "synapse-energy"
+      ]
+    },
+    {
+      "id": "synapse",
+      "title": "Activité synaptique et dépense",
+      "legacy_nodes": [
+        "mitochondria",
+        "presynapse",
+        "glutamate",
+        "receptors",
+        "pumps"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "synapse-energy",
+        "release",
+        "excitation",
+        "plasticity"
+      ]
+    },
+    {
+      "id": "glia",
+      "title": "Capture du glutamate et réponse gliale",
+      "legacy_nodes": [
+        "glutamate",
+        "eaat",
+        "glycolysis",
+        "lactate-a"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "uptake",
+        "astro-cost",
+        "ldh-a"
+      ]
+    },
+    {
+      "id": "recycling",
+      "title": "Recyclage glutamate–glutamine",
+      "legacy_nodes": [
+        "presynapse",
+        "glutamate",
+        "eaat",
+        "glutamine",
+        "presynapse"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "release",
+        "uptake",
+        "recycle-a",
+        "recycle-n"
+      ]
+    },
+    {
+      "id": "potassium",
+      "title": "Branche potassium",
+      "legacy_nodes": [
+        "receptors",
+        "potassium",
+        "glycolysis"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "k-activity",
+        "k-glyco",
+        "ldh-a"
+      ]
+    },
+    {
+      "id": "redox",
+      "title": "Répartition énergétique et redox",
+      "legacy_nodes": [
+        "glucose-n",
+        "redox",
+        "mitochondria",
+        "maintenance"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "pentose",
+        "antioxidants"
+      ]
+    },
+    {
+      "id": "imaging",
+      "title": "Métabolisme, vaisseaux et observation",
+      "legacy_nodes": [
+        "mitochondria",
+        "vascular-response",
+        "imaging"
+      ],
+      "origin": "case-pellerin",
+      "edges": [
+        "vascular-demand",
+        "imaging-contract"
+      ]
+    },
+    {
+      "id": "serine",
+      "title": "Lactate → HCAR1 → sérine → NMDA",
+      "origin": "qualified_extension",
+      "edges": [
+        "lactate-signal",
+        "hcar-serine",
+        "serine-availability",
+        "coagonist",
+        "plasticity"
+      ]
+    },
+    {
+      "id": "redox-nmda",
+      "title": "Lactate → LDH / redox → NMDA",
+      "origin": "qualified_extension",
+      "edges": [
+        "mct-neuron",
+        "ldh-n",
+        "ldh-redox",
+        "redox-nmda"
+      ]
+    },
+    {
+      "id": "human",
+      "title": "Mesures humaines sang–cerveau",
+      "origin": "qualified_extension",
+      "edges": [
+        "blood-observe"
+      ]
+    },
+    {
+      "id": "optical",
+      "title": "Capteurs de cultures séparées",
+      "origin": "qualified_extension",
+      "edges": [
+        "astro-optical",
+        "neuron-optical"
+      ]
+    },
+    {
+      "id": "synaptic-data",
+      "title": "Réponses synaptiques observées",
+      "origin": "qualified_extension",
+      "edges": [
+        "synaptic-observe"
+      ]
+    }
+  ],
+  "quantitative_propagation": false,
+  "biological_clock": null,
+  "evidence_cards": [
+    {
+      "id": "tarczyluk2013",
+      "title": "Le réseau actif mobilise ses réserves",
+      "preparation": "Culture humaine NT2 : neurones et astrocytes issus d’une lignée d’embryocarcinome, pas cerveau adulte",
+      "origin": "human_culture",
+      "nodes": [
+        "presynapse",
+        "glutamate",
+        "eaat",
+        "glucose-a",
+        "glycolysis",
+        "lactate-a",
+        "lactate-e"
+      ],
+      "finding": "Dans cette même culture, stimulation électrique, réserve de glycogène et lactate du milieu sont étudiés ensemble ; le blocage de la capture du glutamate modifie la réponse.",
+      "limit": "Le dosage du milieu mélange les contributions des cellules. Il ne suit pas directement un lactate fabriqué par un astrocyte jusque dans un neurone.",
+      "evidence": "Mesures de culture et intervention ; transfert cellulaire inféré",
+      "url": "https://journals.sagepub.com/doi/10.1038/jcbfm.2013.81",
+      "numerical_source_received": false
+    },
+    {
+      "id": "hasel2017",
+      "title": "L’activité prépare la cellule d’aide à fournir du carburant",
+      "preparation": "Neurones de rat et astrocytes de souris ; expériences complémentaires avec astrocytes humains fœtaux et neurones de rat",
+      "origin": "mixed_species",
+      "nodes": [
+        "presynapse",
+        "glutamate",
+        "glucose-a",
+        "glycolysis",
+        "lactate-a",
+        "mct-a"
+      ],
+      "finding": "L’activité antérieure du réseau modifie le métabolisme des astrocytes ; les sondes suivent glucose, pyruvate et lactate, avec blocage des transporteurs.",
+      "limit": "L’export est déduit de la réponse au blocage, pas directement compté. La partie avec cellules humaines ne rend pas toute la coculture humaine.",
+      "evidence": "Interventions et capteurs ; taux apparent conditionnel",
+      "url": "https://www.nature.com/articles/ncomms15132",
+      "numerical_source_received": false
+    },
+    {
+      "id": "gandhi2009",
+      "title": "Le lactate peut aussi rejoindre les autres cellules d’aide",
+      "preparation": "Tranches de cerveau de rat adulte, région du colliculus inférieur",
+      "origin": "animal",
+      "nodes": [
+        "mct-a",
+        "lactate-e",
+        "mct-n",
+        "lactate-a"
+      ],
+      "finding": "Un apport contrôlé dans un astrocyte et un capteur dans une cellule voisine testent les passages vers un autre astrocyte ou un neurone.",
+      "limit": "Dans cette préparation, la redistribution entre astrocytes dépasse le transfert au neurone voisin. Pipettes et capteur enzymatique perturbent le système ; pas de constantes humaines.",
+      "evidence": "Essai direct de transfert sous apport imposé",
+      "url": "https://doi.org/10.1111/j.1471-4159.2009.06333.x",
+      "numerical_source_received": false
+    },
+    {
+      "id": "wang2022",
+      "title": "Recevoir du lactate ne garantit pas de fabriquer davantage d’énergie",
+      "preparation": "Cocultures primaires de rat exposées au milieu de microglies stimulées par LPS",
+      "origin": "animal",
+      "nodes": [
+        "lactate-a",
+        "mct-a",
+        "lactate-e",
+        "mct-n",
+        "pyruvate",
+        "mitochondria",
+        "maintenance"
+      ],
+      "finding": "Sous inflammation, les auteurs rapportent plus de lactate neuronal dans les cocultures mais une baisse de l’ATP ; ils testent aussi le blocage des transporteurs.",
+      "limit": "Couplage rapporté dans le résumé primaire ; méthodes complètes et tables non reçues. Une concentration n’est pas un flux mesuré, et l’ATP ne mesure pas à lui seul l’oxydation du lactate.",
+      "evidence": "Résumé primaire : observations et interprétation à distinguer",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35366540/",
+      "numerical_source_received": false
+    },
+    {
+      "id": "vandoorne2019",
+      "title": "Le neurone utilise le carbone du lactate",
+      "preparation": "Motoneurones humains issus d’iPSC ; lignées témoins, corrigées et malades séparées",
+      "origin": "human_culture",
+      "nodes": [
+        "mct-n",
+        "pyruvate",
+        "mitochondria"
+      ],
+      "finding": "Marquage du lactate vers les métabolites et dosage séparé de son oxydation en CO2. Le classeur numérique original est reçu.",
+      "limit": "Pas d’astrocytes dans cet essai ; exposition directe au lactate, protocoles 13C et 14C distincts. Aucun raccord de taux aux cultures d’autres équipes.",
+      "evidence": "Traceur et oxydation ; essais humains distincts",
+      "url": "https://www.nature.com/articles/s41467-019-12099-4",
+      "numerical_source_received": true
+    },
+    {
+      "id": "stavrou2026",
+      "title": "Les cellules d’aide influencent les mitochondries du neurone",
+      "preparation": "Cocultures humaines issues d’iPSC, modèle C9ORF72 de SLA et témoins corrigés",
+      "origin": "human_culture",
+      "nodes": [
+        "lactate-a",
+        "mct-n",
+        "mitochondria",
+        "maintenance"
+      ],
+      "finding": "L’état des astrocytes influence les mitochondries neuronales. Le lactate neuronal stationnaire ne diffère pas significativement entre les conditions comparées.",
+      "limit": "Ce résultat ne prouve ni l’absence de transfert ni son égalité ; il ne permet pas d’attribuer tout le défaut mitochondrial au lactate.",
+      "evidence": "Interaction humaine et résultat négatif sur le lactate stationnaire",
+      "url": "https://www.nature.com/articles/s41593-026-02464-0",
+      "numerical_source_received": false
+    },
+    {
+      "id": "fernandez2024",
+      "title": "Le lactate peut aussi transmettre un message",
+      "preparation": "Cultures et tranches de souris ; réactions biochimiques humaines de référence séparées des expériences fonctionnelles animales",
+      "origin": "animal",
+      "nodes": [
+        "glycolysis",
+        "lactate-a",
+        "lactate-e",
+        "receptors",
+        "presynapse"
+      ],
+      "finding": "Une voie proposée relie le lactate à un récepteur HCAR1, puis à la disponibilité de sérine qui aide certains récepteurs du neurone à fonctionner. Les expériences comparent activation, blocage et apport de sérine.",
+      "limit": "Le lien moléculaire HCAR1–fabrication de sérine reste incomplet. Un plafond de réponse peut imiter un blocage de voie. Le lactate ne devient pas directement de la D-sérine dans ce schéma ; la matière vient du glucose. Aucun taux humain ni vitesse de réaction calculé.",
+      "evidence": "Couplage fonctionnel animal ; six contrastes avec limites explicites",
+      "url": "https://www.nature.com/articles/s41467-024-51008-2",
+      "numerical_source_received": true,
+      "contract_url": "../reports/pellerin/mecanisme-serine-c8.html"
+    }
+  ],
+  "coupling_source_sha256": "076e607ae6a245d1f0880374ca0498ec559605251d3ec315b69e194b788e5439",
+  "kernel_sources": [
+    {
+      "path": "reversible-lactate-core.mjs",
+      "sha256": "4d44bba88c22221a02ec4059b0cf2cde1d33620ad6b5fc6c88c33f3f1e3f5343"
+    },
+    {
+      "path": "reversible-lactate-contract.mjs",
+      "sha256": "332f429f7a3ca7414ba4c044aa0f5c69ac6eab373541e3ac1b8fda82bd05fccb"
+    }
+  ]
+}

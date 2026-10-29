@@ -65,3 +65,8 @@ Réception locale A13 : 331 contrôles ; A14 : 495 contrôles et conservation de
 Limites : dépendances mathématiques conditionnelles, pas démonstration de causalité expérimentale. Voxels hypothétiques, pas cellules observées ni concentrations locales. Aucun comptage de réactions moléculaires, temps humain, ATP, puissance ou acquisition PET ajouté. Les séries temporelles humaines originales et certaines corrections de source restent à qualifier. POLY reste une bêta et son périmètre global n’est pas achevé.
 
 Les améliorations publiques v0.138.0 de présentation et de placement musculaire sont conservées. La thermique reste en pause et son moteur local n’est pas publié.
+
+
+## Réseau métabolique contraint — 29 octobre
+
+35 maillons, 42 relations et 13 parcours ; 16 croisements, relations entrantes/sortantes et sept fiches de couplage historiques. Noyau P7/P8 repris sans modification et réellement vérifié sur 243 états synthétiques. Douze séries locales sont rattachées à leurs opérateurs et contextes, sans paramètres à régler ni propagation quantitative inventée. 192 tests Node, 27 Python et suite navigateur ordinateur/mobile émulé passent. Chaîne biologique complète non calibrée et direction cellulaire non identifiée ; extension mécanistique et mesures discriminantes restent ouvertes. Rapport : `BODY_METABOLIC_NETWORK_2026-10-29.md`.

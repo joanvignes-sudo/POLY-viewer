@@ -14,6 +14,45 @@ spec.loader.exec_module(preview)
 
 
 class PreviewTest(unittest.TestCase):
+    def test_optional_metabolic_mount_is_closed_by_default(self):
+        with self.assertRaises(HTTPError) as caught:
+            urlopen(self.base + '/simulateur/data/metabolic-observations-preview/OBSERVATIONS.json')
+        self.assertEqual(caught.exception.code, 404)
+        caught.exception.close()
+
+    def test_metabolic_mount_only_serves_declared_unpublished_resources(self):
+        observations = Path(self.temp.name) / 'observations'
+        observations.mkdir()
+        manifest = {'schema': 'poly.metabolic-preview.v1', 'published': False, 'resource': 'OBSERVATIONS.json'}
+        (observations / 'MANIFEST.json').write_text(json.dumps(manifest))
+        (observations / 'OBSERVATIONS.json').write_bytes(b'{"series":[]}')
+        (observations / 'private.txt').write_text('must remain private')
+        server = preview.PreviewHTTPServer(('127.0.0.1', 0), preview.make_handler(self.chunks, self.site, observations_root=observations))
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        base = f'http://127.0.0.1:{server.server_port}/simulateur/data/metabolic-observations-preview/'
+        try:
+            with urlopen(base + 'OBSERVATIONS.json') as response:
+                self.assertEqual(response.read(), b'{"series":[]}')
+                self.assertEqual(response.headers['Cache-Control'], 'no-store')
+            with urlopen(Request(base + 'OBSERVATIONS.json', method='HEAD')) as response:
+                self.assertEqual(response.read(), b'')
+                self.assertEqual(response.headers['Content-Length'], '13')
+            for path in ['private.txt', '../index.html', '%2e%2e/private.txt', '']:
+                with self.assertRaises(HTTPError) as caught:
+                    urlopen(base + path)
+                self.assertEqual(caught.exception.code, 403)
+                caught.exception.close()
+            self.assertEqual(list(self.site.iterdir()), [self.site / 'index.html'])
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()
+        manifest['published'] = True
+        (observations / 'MANIFEST.json').write_text(json.dumps(manifest))
+        with self.assertRaises(ValueError):
+            preview.make_handler(self.chunks, self.site, observations_root=observations)
+
     def test_transfer_interruptions_record_the_resource_without_guessing_a_cause(self):
         handler_type = preview.make_handler(self.chunks, self.site).func
         handler = object.__new__(handler_type)

@@ -217,3 +217,8 @@ Voir `BODY_CLASSIC_STATE_PARITY_2026-10-29.md`. Les causes intermittentes, la pa
 
 ## Chargement classique sans erreur explicite
 Secours après 30 secondes si l’entrée classique reste occupée : alternatives accessibles, aucun retry automatique et retrait du seul avertissement de délai à la réussite tardive. Quatre tests de comportement et blocage/libération réel d’un import sur ordinateur/mobile émulé réussis ; 182 tests Node passent. La cause des incidents historiques reste inconnue. Voir `BODY_CLASSIC_STARTUP_DEADLINE_2026-10-29.md`.
+
+
+## Réseau métabolique contraint — 29 octobre
+
+35 maillons, 42 relations et 13 parcours ; 16 croisements, relations entrantes/sortantes et sept fiches de couplage historiques. Noyau P7/P8 repris sans modification et réellement vérifié sur 243 états synthétiques. Douze séries locales sont rattachées à leurs opérateurs et contextes, sans paramètres à régler ni propagation quantitative inventée. 192 tests Node, 27 Python et suite navigateur ordinateur/mobile émulé passent. Chaîne biologique complète non calibrée et direction cellulaire non identifiée ; extension mécanistique et mesures discriminantes restent ouvertes. Rapport : `BODY_METABOLIC_NETWORK_2026-10-29.md`.

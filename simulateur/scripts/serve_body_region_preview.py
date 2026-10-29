@@ -19,7 +19,7 @@ class PreviewHTTPServer(ThreadingHTTPServer):
     request_queue_size = 128
 
 
-def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root=None):
+def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root=None, observations_root=None):
     chunks_root = Path(chunks_root).resolve(strict=True)
     manifest = json.loads((chunks_root / 'MANIFEST.json').read_text(encoding='utf-8'))
     if (manifest.get('schema') != 'poly.body-source-chunks.v1'
@@ -41,6 +41,14 @@ def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root
         skeleton_manifest = json.loads((skeleton_root / 'MANIFEST.json').read_text(encoding='utf-8'))
         if skeleton_manifest.get('schema') != 'poly.skeleton-source-manifest.v1' or skeleton_manifest.get('published') is not False or skeleton_manifest.get('source_value_verification') != 'PASS':
             raise ValueError('Only verified unpublished skeleton blocks allowed')
+
+    if observations_root is not None:
+        observations_root = Path(observations_root).resolve(strict=True)
+        observation_manifest = json.loads((observations_root / 'MANIFEST.json').read_text(encoding='utf-8'))
+        if (observation_manifest.get('schema') != 'poly.metabolic-preview.v1'
+                or observation_manifest.get('published') is not False
+                or observation_manifest.get('resource') != 'OBSERVATIONS.json'):
+            raise ValueError('Only unpublished local metabolic observations allowed')
 
     class Handler(SimpleHTTPRequestHandler):
         def copyfile(self, source, outputfile):
@@ -74,6 +82,12 @@ def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root
                     return True
                 asset_root, prefix = skeleton_root, '/simulateur/data/skeleton-chunks-preview/'
                 pattern = r'MANIFEST\.json|CATALOGUE\.json\.gz|chunks/skeleton-\d{3}\.(?:json|bin\.gz)'
+            elif request_path.startswith('/simulateur/data/metabolic-observations-preview/'):
+                if observations_root is None:
+                    self.send_error(404, 'Metabolic observations not configured')
+                    return True
+                asset_root, prefix = observations_root, '/simulateur/data/metabolic-observations-preview/'
+                pattern = r'MANIFEST\.json|OBSERVATIONS\.json'
             elif not request_path.startswith(PREFIX):
                 return False
             relative = request_path[len(prefix):]
@@ -111,9 +125,10 @@ def main():
     parser.add_argument('--chunks-root', type=Path, required=True)
     parser.add_argument('--reference-chunks-root', type=Path)
     parser.add_argument('--skeleton-chunks-root', type=Path)
+    parser.add_argument('--metabolic-observations-root', type=Path)
     parser.add_argument('--port', type=int, default=8124)
     args = parser.parse_args()
-    with PreviewHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root, skeleton_root=args.skeleton_chunks_root)) as server:
+    with PreviewHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root, skeleton_root=args.skeleton_chunks_root, observations_root=args.metabolic_observations_root)) as server:
         print(f'Local preview only: http://127.0.0.1:{server.server_port}/simulateur/web/body-region-lab.html', flush=True)
         try:
             server.serve_forever()
