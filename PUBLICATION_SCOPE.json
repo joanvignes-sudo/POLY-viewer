@@ -1,5 +1,5 @@
 {
-  "version": "0.140.0",
+  "version": "0.142.0",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -333,7 +333,7 @@
     "scientific_or_human_validation": false,
     "documentation": "publication/v0.130.0/GUIDE.md"
   },
-  "previous_public_version": "0.129.0",
+  "previous_public_version": "0.141.1",
   "technical_review_preserved": "0.128.1",
   "human_prediction_validated": false,
   "integrated_simulator": "index.html",
@@ -364,8 +364,29 @@
     "human_clock": false,
     "molecular_events": false
   },
-  "research_hub": "simulateur/web/recherche.html",
+  "research_hub": "simulateur/web/travaux.html",
   "preserved_worksites_public": true,
   "thermal_server_published": false,
-  "private_correspondence_published": false
+  "private_correspondence_published": false,
+  "metabolic_inquiry": {
+    "nodes": 35,
+    "relations": 42,
+    "routes": 13,
+    "crossings": 16,
+    "public_documentary_view": true,
+    "local_research_series_published": false,
+    "reserved_data_published": false,
+    "quantitative_nmda_prediction": false,
+    "biological_validation": false
+  },
+  "regional_readers": {
+    "source_code_published": true,
+    "generated_blocks_published": false,
+    "local_only": [
+      "body-region-lab",
+      "reference-region-lab",
+      "skeleton-region-lab"
+    ],
+    "physical_phone_tested": false
+  }
 }
