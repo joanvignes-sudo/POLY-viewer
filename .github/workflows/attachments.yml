@@ -23,7 +23,7 @@ jobs:
       - run: node --test simulateur/tests/body-source-contract.test.mjs simulateur/tests/body-source-material-session.test.mjs simulateur/tests/brain-atlas-source.test.mjs simulateur/tests/hand-reference-source.test.mjs simulateur/tests/camera-navigation.test.mjs simulateur/tests/resident-occlusion.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
       - run: node --test simulateur/tests/historical-posture.test.mjs simulateur/tests/indexed-display-normals.test.mjs
-      - run: node --test simulateur/tests/day-journal-store.test.mjs simulateur/tests/nerve-pilot-documentation.test.mjs simulateur/tests/bone-review-source.test.mjs
+      - run: node --test simulateur/tests/day-journal-store.test.mjs simulateur/tests/nerve-pilot-documentation.test.mjs simulateur/tests/bone-review-source.test.mjs simulateur/tests/cogitate-source.test.mjs simulateur/tests/recovered-source.test.mjs
       - run: node --test simulateur/tests/documentary-manifest.test.mjs simulateur/tests/regional-documentary.test.mjs simulateur/tests/regional-generic-heart.test.mjs simulateur/tests/neuromuscular-source.test.mjs
       - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
@@ -70,6 +70,8 @@ jobs:
           node simulateur/tests/body-regional-hand-browser.cjs
           node simulateur/tests/body-regional-nerves-browser.cjs
           node simulateur/tests/body-regional-nerve-protocols-browser.cjs
+          node simulateur/tests/body-regional-cogitate-browser.cjs
+          node simulateur/tests/body-regional-recovered-browser.cjs
           node simulateur/tests/body-regional-navigation-browser.cjs
           node simulateur/tests/body-regional-posture-browser.cjs
           node simulateur/tests/reference-region-browser.cjs

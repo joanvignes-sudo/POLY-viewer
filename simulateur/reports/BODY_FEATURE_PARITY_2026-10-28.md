@@ -21,7 +21,7 @@ Audit du 28 octobre 2026, reprise nocturne 2. Sources examinées : imports et in
 | `avatar-bones.js`, `skeleton-worksite-206.js`, `registration-da.js` | Ateliers historiques disponibles | Références/proxies et revue de recalage distincts ; aucune fusion avec HRA ni recalage inventé |
 | `neuromuscular-guide.js`, `nerve-linked-pilot.js` | Guide de main réel et vrais pilotes médian/ulnaire raccordés ; source, frontière et cycle de vie conservés | Aucun point d’entrée, jonction ou contraction calculé |
 | `nerve-excitability.js`, `enteric-inhibition.js` | Modules historiques raccordés au vrai contrôleur régional, phases et protocoles conservés | Horloges pédagogiques, pas délais biologiques ni effets de l’avatar |
-| `cogitate-scene.js`, `recovered-work.js` | Accès historique et pages de travaux conservés | Aucune localisation individuelle libre sur le nouvel atlas |
+| `cogitate-scene.js`, `recovered-work.js` | Fabriques régionales à la demande : figures locales vérifiées, quatre étapes, 78 dossiers/544 intervalles et véritable atlas CerebrA | Aucune localisation individuelle ; dossiers complets, préparations et horloges séparés |
 | `body-batch-loader.mjs` / rendu classique | Parcours historique conservé ; lecteur par blocs comme alternative | L'entrée publique classique n'est pas remplacée automatiquement |
 
 ## Priorités justifiées pour les reprises suivantes

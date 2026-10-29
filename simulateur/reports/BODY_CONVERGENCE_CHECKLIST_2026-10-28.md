@@ -146,3 +146,8 @@ Bilan dans `BODY_NIGHT_FINAL_2026-10-29.md` : 146 tests Node, 23 Python et résu
 ## Contrôleurs nerveux historiques régionaux
 
 575 courbes, 458 itinéraires, vrais pilotes médian/ulnaire, excitabilité du médian et inhibition entérique raccordés à la demande, avec sources vérifiées, vrais inspecteur/rig et destruction explicite. 148 tests Node, suites navigateur régionales ordinateur/mobile et régression classique réussis. Un premier délai classique reste consigné, cause inconnue. Détails dans `BODY_REGIONAL_NERVES_2026-10-29.md`.
+
+
+## COGITATE et travaux retrouvés régionaux
+
+Vraies fabriques réutilisées avec sources/figures vérifiées, quatre étapes COGITATE et catalogue de 78 dossiers/544 intervalles. Dépendance CerebrA réelle, horloge pédagogique, preuves et nettoyage préservés. 152 tests Node, suites régionales et test classique combiné passent. Détails dans `BODY_DOCUMENTARY_WORKSPACES_2026-10-29.md`.
