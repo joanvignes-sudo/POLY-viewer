@@ -24,7 +24,7 @@ jobs:
       - run: node --test simulateur/tests/body-light.test.mjs
       - run: node --test simulateur/tests/historical-posture.test.mjs simulateur/tests/activity-props.test.mjs simulateur/tests/indexed-display-normals.test.mjs
       - run: node --test simulateur/tests/day-journal-store.test.mjs simulateur/tests/nerve-pilot-documentation.test.mjs simulateur/tests/bone-review-source.test.mjs simulateur/tests/cogitate-source.test.mjs simulateur/tests/recovered-source.test.mjs
-      - run: node --test simulateur/tests/documentary-manifest.test.mjs simulateur/tests/regional-documentary.test.mjs simulateur/tests/regional-generic-heart.test.mjs simulateur/tests/neuromuscular-source.test.mjs
+      - run: node --test simulateur/tests/documentary-manifest.test.mjs simulateur/tests/regional-documentary.test.mjs simulateur/tests/regional-generic-heart.test.mjs simulateur/tests/regional-occlusion-targets.test.mjs simulateur/tests/neuromuscular-source.test.mjs
       - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
         run: python simulateur/scripts/build_body_source_chunks.py --output-root "${{ runner.temp }}/poly-body-chunks" --verify
@@ -41,7 +41,7 @@ jobs:
       - name: Verify all original reference numbers and metadata from candidate blocks
         env:
           POLY_REFERENCE_CHUNKS_ROOT: ${{ runner.temp }}/poly-reference-chunks
-        run: node --test simulateur/tests/reference-source-reader.test.mjs simulateur/tests/reference-catalogue-relations.test.mjs simulateur/tests/reference-view-bookmark.test.mjs simulateur/tests/reference-selection.test.mjs simulateur/tests/reference-nerve-documentation.test.mjs simulateur/tests/reference-posture.test.mjs simulateur/tests/load-deadline.test.mjs
+        run: node --test simulateur/tests/reference-source-reader.test.mjs simulateur/tests/reference-catalogue-relations.test.mjs simulateur/tests/reference-view-bookmark.test.mjs simulateur/tests/reference-selection.test.mjs simulateur/tests/reference-nerve-documentation.test.mjs simulateur/tests/reference-posture.test.mjs simulateur/tests/display-line-distances.test.mjs simulateur/tests/load-deadline.test.mjs
       - name: Build and independently verify separate skeleton source blocks
         run: |
           python simulateur/scripts/build_skeleton_source_chunks.py --output-root "${{ runner.temp }}/poly-skeleton-chunks" --verify
@@ -78,6 +78,7 @@ jobs:
           node simulateur/tests/body-regional-posture-browser.cjs
           node simulateur/tests/reference-region-browser.cjs
           node simulateur/tests/reference-interactions-browser.cjs
+          node simulateur/tests/reference-workbench-browser.cjs
           node simulateur/tests/reference-startup-browser.cjs
           node simulateur/tests/day-journal-browser.cjs
           node simulateur/tests/nerve-pilot-documentation-browser.cjs
@@ -87,3 +88,4 @@ jobs:
           node simulateur/tests/regional-generic-heart-browser.cjs
           node simulateur/tests/regional-neuromuscular-browser.cjs
           node simulateur/tests/body-regional-startup-trace-browser.cjs
+          node simulateur/tests/module-startup-browser.cjs

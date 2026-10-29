@@ -17,3 +17,11 @@ export function referenceRelations(data,key){
   observations:(data.human_latency_observations??[]).filter(o=>o.part_ids?o.part_ids.includes(item.id)&&(o.allowed_paths??[]).some(id=>itineraries.has(id)):itineraries.has(o.itinerary)),
   interactions:(data.human_interaction_observations??[]).filter(o=>item.side&&(o['parts_'+item.side]??[]).includes(item.id))};
 }
+
+// Match the exact study membership and side; no antagonist is inferred from names.
+export function referenceInteractionSelection(data,key,observationId){
+ const model=referenceRelations(data,key),observation=model?.interactions.find(o=>o.id===observationId);if(!observation||!['L','R'].includes(model.item.side))return null;
+ const ids=observation['parts_'+model.item.side];if(!Array.isArray(ids)||ids.length<2||new Set(ids).size!==ids.length||!ids.includes(model.item.id))return null;
+ const keys=[];for(const id of ids){const matches=data.parts.map((part,index)=>({part,index})).filter(row=>row.part.id===id&&row.part.side===model.item.side);if(matches.length!==1)return null;keys.push('parts/'+matches[0].index);}
+ return {observation,keys:[key,...keys.filter(other=>other!==key)]};
+}

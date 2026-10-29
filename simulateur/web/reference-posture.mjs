@@ -1,3 +1,4 @@
+import {createHistoricalPosture} from './historical-posture.mjs';
 import {fetchBoundedBytes} from './bounded-fetch.mjs';
 import {sha256Bytes,readGzipBounded} from './body-chunk-reader.mjs';
 import {verifySourceText} from './source-text-integrity.mjs';
@@ -16,7 +17,7 @@ export async function loadReferencePosture({signal,fetcher=fetch}={}){
  const meta=await readGzipBounded(metaPacked,427196);
  if(await sha256Bytes(meta)!=='cf140a39c11163508e91e12b0df9820e6e36ea2f2b50392f62cd9f404fea1573')throw Error('Display coordinate frame altered');
  signal?.throwIfAborted();const scale=JSON.parse(new TextDecoder().decode(meta)).normalization.scale;
- return {fit,rig:createRegionalRig(),sampler:createWalkSampler(JSON.parse(new TextDecoder().decode(walkBytes)),scale)};
+ const rig=createRegionalRig();return {fit,rig,sampler:createWalkSampler(JSON.parse(new TextDecoder().decode(walkBytes)),scale),activity:createHistoricalPosture(rig.uniforms)};
 }
 // Identical to the historical workbench's display recipe; never source registration.
 export function placeReferencePoint(point,part,data,fit){
@@ -45,4 +46,15 @@ export function deformReferenceRoute(point,route,uniforms){
   return leg.map((v,i)=>v*(1-w)+foot[i]*w);
  }
  return route.reference_deformation==='trunk'?deformReferenceTrunk(point,uniforms):route.reference_deformation==='rigid_foot'?deformReferenceBone(point,{bone_family:'foot',side:route.reference_side},uniforms):route.reference_deformation==='leg'?deformReferenceLeg(point,uniforms):deformPosition(point,uniforms);
+}
+
+export const REFERENCE_ACTIVITY_MODES=Object.freeze(['walk','stand','run','sit','lie','eat']);
+export function applyReferenceActivity(posture,mode,time){
+ const max=mode==='walk'?posture.sampler.duration:6;if(!REFERENCE_ACTIVITY_MODES.includes(mode)||!Number.isFinite(time)||time<0||time>max||mode==='walk'&&time===max||['stand','sit','lie'].includes(mode)&&time!==0)throw Error('Invalid reference graphical activity or time');
+ if(mode==='walk')posture.sampler.apply(time,posture.rig.uniforms);else posture.activity.apply(mode,time);
+}
+
+export function referenceFocusPoint(part,fit,uniforms){
+ if(!Array.isArray(part?.illustrative_center)||part.illustrative_center.length!==3||!part.illustrative_center.every(Number.isFinite))return null;
+ const point=applyMuscleFitPoint([...part.illustrative_center],lookupMuscleFit(part,fit)),result=deformReferencePoint(point,part,uniforms);return result.every(Number.isFinite)?result:null;
 }

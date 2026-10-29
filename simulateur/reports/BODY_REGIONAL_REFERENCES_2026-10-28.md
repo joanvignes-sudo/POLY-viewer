@@ -327,3 +327,8 @@ Couche osseuse historique sur les 208 objets vérifiés, budget explicite et pos
 
 
 Accessoires des postures partagés et facultatifs (22 objets graphiques d’origine) ; rendu documentaire réellement arrêté en pause après correction de son callback. 156 tests Node et tests ciblés ordinateur/mobile passent. Voir `BODY_ACTIVITY_PROPS_IDLE_2026-10-29.md`. Cause du délai de démarrage toujours inconnue.
+
+
+## Groupes, postures et atelier borné — 29 octobre
+
+Occultation des 14 surfaces cardiaques et régions documentaires qualifiées ; comparaisons de paires source, cinq poses manuelles partagées, marque-pages de pose et suivi du centre de présentation historique dans le lecteur par pièces. Budget 4 Mio préservé, buffers de courbes stables et diagnostic pré-module sans relance automatique. 165 tests Node et parcours ciblés passent. Voir `BODY_GROUPS_WORKBENCH_2026-10-29.md`. Cause intermittente et vue globale monolithique demeurent distinctes.
