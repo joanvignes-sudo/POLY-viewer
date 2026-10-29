@@ -48,11 +48,14 @@ export async function readReferenceChunk(manifest,id,{catalogue,readBytes,maxRaw
  check(catalogue?.source_raw_sha256===RAW_SOURCE,'Verified reference catalogue required');
  const [metaBytes,packed]=await Promise.all([readBytes(c.metadata,{signal,maxBytes:2*1024*1024}),readBytes(c.geometry,{signal,maxBytes:c.compressed_bytes})]);signal?.throwIfAborted();
  check(metaBytes.byteLength<=2*1024*1024&&await hash(metaBytes)===c.metadata_sha256,'Reference block metadata altered');
+ signal?.throwIfAborted();
  check(packed.byteLength===c.compressed_bytes&&await hash(packed)===c.compressed_sha256,'Reference block gzip altered');
+ signal?.throwIfAborted();
  const metadata=JSON.parse(new TextDecoder().decode(metaBytes));
  check(metadata.schema==='poly.reference-source-chunk.v1'&&metadata.id===id&&metadata.coordinate_policy===POLICY&&metadata.source_raw_sha256===RAW_SOURCE&&metadata.entries?.length===c.keys.length,'Invalid reference block metadata');
  let bytes=await unzip(packed,c.raw_bytes);signal?.throwIfAborted();
  check(bytes.byteLength===c.raw_bytes&&await hash(bytes)===c.raw_sha256,'Reference numeric bytes altered');
+ signal?.throwIfAborted();
  check(new Uint8Array(new Uint32Array([1]).buffer)[0]===1,'Little-endian reference runtime required');
  if(bytes.byteOffset%8)bytes=new Uint8Array(bytes);
  const entries=metadata.entries.map((r,i)=>{

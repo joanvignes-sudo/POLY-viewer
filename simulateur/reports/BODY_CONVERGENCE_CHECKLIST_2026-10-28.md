@@ -174,3 +174,7 @@ Vraies fabriques réutilisées avec sources/figures vérifiées, quatre étapes 
 ## Groupes HRA et atelier par pièces
 
 Les 14 surfaces cardiaques et les régions documentaires HRA qualifiées sont raccordées au masque échantillonné. Comparaisons source droite/gauche, poses manuelles, reprise explicite et suivi du repère de présentation historique complètent l’atelier par pièces sous 4 Mio. Buffers des courbes conservés en place ; diagnostic de module absent ou tardif sans retry automatique. 165 tests Node et suites ciblées passent ; les inconnues physiques, la cause intermittente et la vue globale monolithique restent distinctes. Voir `BODY_GROUPS_WORKBENCH_2026-10-29.md`.
+
+## Annulation pendant les digests
+
+Deux défauts reproduits et corrigés dans les lecteurs HRA/références : une annulation pendant SHA256 arrête maintenant toute continuation après le digest, y compris avant le retour du bloc. Six frontières couvertes sur les véritables sources ; 167 tests Node et parcours navigateur ciblés passent. Aucun changement des données source ; aucune correction de cause du délai intermittent revendiquée. Voir `BODY_DIGEST_CANCELLATION_2026-10-29.md`.

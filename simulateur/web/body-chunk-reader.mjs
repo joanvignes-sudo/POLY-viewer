@@ -69,7 +69,9 @@ export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBo
  check(metaBytes instanceof Uint8Array&&metaBytes.byteLength<=5*1024*1024,'Métadonnées de bloc trop volumineuses');
  check(compressed instanceof Uint8Array&&compressed.byteLength===c.compressed_bytes,'Fichier gzip de taille incohérente');
  check(await hash(metaBytes)===c.metadata_sha256,'Métadonnées de bloc altérées');
+ abort();
  check(await hash(compressed)===c.compressed_sha256,'Fichier gzip de bloc altéré');
+ abort();
  const meta=JSON.parse(new TextDecoder().decode(metaBytes));
  check(meta.schema==='poly.body-source-chunk-metadata.v1'&&meta.id===id&&meta.source_metadata_sha256===SOURCE_META&&meta.source_geometry_sha256===SOURCE_BIN&&meta.coordinate_policy==='byte_exact_no_transform','Identité ou repère de bloc incorrect');
  check(Array.isArray(meta.geometries)&&meta.geometries.length===c.part_count,'Pièces du bloc absentes');
@@ -77,6 +79,7 @@ export async function readValidatedChunk(manifest,id,{readBytes,unzip=readGzipBo
  const data=await unzip(compressed,c.raw_bytes);
  abort();
  check(data instanceof Uint8Array&&data.byteLength===c.raw_bytes&&await hash(data)===c.geometry_sha256,'Octets géométriques de bloc altérés');
+ abort();
  for(let i=0;i<meta.geometries.length;i++){
   const g=meta.geometries[i];
   check(g.source_index===c.original_indices[i],'Identifiant source différent');

@@ -15,6 +15,17 @@ const sha=async b=>createHash('sha256').update(b).digest('hex');
 const readBytes=async name=>new Uint8Array(await fs.readFile(path.join(dir,name)));
 const unzip=async bytes=>new Uint8Array(gunzipSync(bytes));
 
+test('HRA cancellation at each digest stops later hashes, decompression and chunk return',async()=>{
+ for(const abortAt of [1,2,3]){
+  const controller=new AbortController(),reason=Error('HRA digest cancellation '+abortAt);let calls=0,decompressions=0;
+  await assert.rejects(readValidatedChunk(fixture,fixture.chunks[0].id,{readBytes,signal:controller.signal,
+   hash:async bytes=>{const value=await sha(bytes);if(++calls===abortAt)controller.abort(reason);return value;},
+   unzip:async bytes=>{decompressions++;return unzip(bytes);}
+  }),error=>error===reason);
+  assert.equal(calls,abortAt);assert.equal(decompressions,abortAt===3?1:0);
+ }
+});
+
 test('CI provides temporary source-verified chunks, not repository or published artefacts',()=>{
  assert.ok(dir,'POLY_CHUNKS_ROOT must reference the temporary CI generation');
  assert.ok(fixture,'MANIFEST.json missing');

@@ -48,3 +48,16 @@ test('published, unverified, traversal and duplicate-entity manifests fail close
   const m=structuredClone(manifest);mutate(m);assert.throws(()=>validateReferenceManifest(m));
  }
 });
+test('cancellation during each asynchronous chunk digest prevents further work and returning geometry',async()=>{
+ const chunk=manifest.chunks[0];
+ for(const abortAt of [1,2,3]){
+  const controller=new AbortController();let calls=0,decompressions=0;
+  const reason=Error('cancelled during digest '+abortAt);
+  await assert.rejects(readReferenceChunk(manifest,chunk.id,{catalogue,readBytes,signal:controller.signal,
+   hash:async bytes=>{const digest=hash(bytes);if(++calls===abortAt){await Promise.resolve();controller.abort(reason);}return digest;},
+   unzip:async bytes=>{decompressions++;return unzip(bytes);}
+  }),error=>error===reason);
+  assert.equal(calls,abortAt,'no later digest after cancellation');
+  assert.equal(decompressions,abortAt===3?1:0,'no decompression after cancelled metadata/compressed digest');
+ }
+});
