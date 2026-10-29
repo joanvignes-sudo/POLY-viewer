@@ -1,3 +1,4 @@
+import {mountRegionalGenericHeart} from './regional-generic-heart.mjs';
 import {mountRegionalDocumentary} from './regional-documentary-view.mjs';
 import {createHandMusclesReference} from './hand-muscles-reference.js';
 import {readHandReference} from './hand-reference-source.mjs';
@@ -32,7 +33,7 @@ const historicalPosture=createHistoricalPosture(rig.uniforms);let manualMode='st
 let detailedInspector=null,nativeEye=null,eyeLight=null,sourceMeta=null,brain=null,brainSerial=0,brainController=null,hand=null,handSerial=0,handController=null;
 const eyeMask=createMaterialMask();
 const cameraHistory=createCameraHistory(),residentMask=createResidentOcclusion(()=>adapter?adapter.listSourceIndices().map(id=>adapter.sources.resolve(id)):[]);
-function specialView(){return Boolean(inspector?.info().scope||detailedInspector?.active||nativeEye?.active||eyeLight?.active||brain?.group.visible||hand?.bodyGroup.visible);}
+function specialView(){return Boolean(genericHeart?.active||inspector?.info().scope||detailedInspector?.active||nativeEye?.active||eyeLight?.active||brain?.group.visible||hand?.bodyGroup.visible);}
 function maskAvailable(){return !failedContext&&!playing&&isNeutralRig(rig.uniforms)&&!specialView()&&selectedIndex!==null&&Boolean(adapter?.sources.resolve(selectedIndex)?.visible);}
 function navigationUI(){
  $('region-view-back').disabled=!cameraHistory.size||failedContext||specialView();$('region-orientation').disabled=failedContext||specialView();
@@ -65,7 +66,7 @@ function focusPosedSelection(){
  for(let x=0;x<2;x++)for(let y=0;y<2;y++)for(let z=0;z<2;z++)box.expandByPoint(new THREE.Vector3(...rig.deform([x?hi[0]:lo[0],y?hi[1]:lo[1],z?hi[2]:lo[2]])));
  target.copy(box.getCenter(new THREE.Vector3()));distance=Math.max(.55,box.getSize(new THREE.Vector3()).length()*2.8);elevation=.08;updateCamera();
 }
-let documentary=null;
+let documentary=null,genericHeart=null;
 let network=null,networkElapsed=0,networkSerial=0,networkLoading=false,networkPreferences=null;
 let inspectionView=null;
 const renderSamples=[],loadSamples=[],pickSamples=[];let renderedFrames=0;
@@ -427,7 +428,7 @@ function performanceReceipt(){
   viewport:[innerWidth,innerHeight],dpr:renderer.getPixelRatio(),coarse_pointer:matchMedia('(pointer:coarse)').matches},
   source_metadata_sha256:manifest.source.metadata_sha256,source_geometry_sha256:manifest.source.geometry_sha256,
   hand_reference:hand?{namespace:'hand',parts:hand.meshes.length,preview:hand.previewDiagnostics,buffer_bytes:hand.bufferBytes,planned_buffer_upper_bound:hand.plan.bufferUpperBound,side:hand.state.side,filter:hand.state.filter,selected:'hand:'+hand.state.selected,overlay:hand.bodyGroup.visible}:null,cerebra:brain?{regions:brain.meshes.length,buffer_bytes:brain.bufferBytes,planned_buffer_bytes:brain.plan.bufferBytes,focused:brain.focused,source:brain.source,split:brain.split,selection:brain.selection,saved_native_materials:brain.savedMaterialCount}:null,runtime_geometry_audit:auditSceneGeometryIds(scene),cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),selected_material:selectedIndex===null?null:(()=>{const m=adapter.sources.resolve(selectedIndex)?.material;return m?{uuid:m.uuid,opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite}:null})(),graphic_eye:eyeLight?{active:eyeLight.active,playing:eyeLight.playing,phase:eyeLight.phase,last_stop_reason:eyeLight.lastStopReason,saved_materials:eyeLight.savedMaterialCount}:null,native_eye_active:nativeEye?.active??false,eye_mask_size:eyeMask.size,detailed_inspection:{active:detailedInspector?.active??false,group_id:detailedInspector?.groupId??null},
-  documentary:documentary?.info()??null,view:{distance,azimuth,elevation,target:target.toArray(),camera:camera.position.toArray()},view_history_size:cameraHistory.size,manual_posture:{mode:manualMode,playing:manualPlaying,graphic_time_s:manualTime,saved_view:Boolean(manualView),root_shift:{...rig.uniforms.rootShift.value},shoulder:{...rig.uniforms.eatShoulder.value},forearm:{...rig.uniforms.eatForearm.value}},selective_occlusion:{requested:$('region-occlusion').checked,available:maskAvailable(),...residentMask.info()},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
+  generic_heart:genericHeart?.info()??null,documentary:documentary?.info()??null,view:{distance,azimuth,elevation,target:target.toArray(),camera:camera.position.toArray()},view_history_size:cameraHistory.size,manual_posture:{mode:manualMode,playing:manualPlaying,graphic_time_s:manualTime,saved_view:Boolean(manualView),root_shift:{...rig.uniforms.rootShift.value},shoulder:{...rig.uniforms.eatShoulder.value},forearm:{...rig.uniforms.eatForearm.value}},selective_occlusion:{requested:$('region-occlusion').checked,available:maskAvailable(),...residentMask.info()},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
   cpu_render_submission_ms:{count:sorted.length,p50:sorted.length?sorted[Math.floor((sorted.length-1)*.5)]:null,
    p95:sorted.length?sorted[Math.floor((sorted.length-1)*.95)]:null},
   recent_cpu_pick_ms:[...pickSamples],recent_loads:loadSamples.map(x=>({...x})),three_geometries:renderer.info.memory.geometries,
@@ -437,12 +438,21 @@ function performanceReceipt(){
    'No battery, thermal or biomechanical measurement; emulation is not a physical phone']};
 }
 function createDocumentary(){
- documentary?.dispose();
+ genericHeart?.dispose();genericHeart=null;documentary?.dispose();
  documentary=mountRegionalDocumentary({host:$('regional-documentary-host'),records,source:manifest.source,
   getResidents:()=>adapter?.listSourceIndices()??[],getView:()=>({target:target.toArray(),distance,azimuth,elevation}),
   setView:view=>{target.fromArray(view.target);({distance,azimuth,elevation}=view);cameraHistory.clear();updateCamera();},
   pauseScene:()=>{restPose();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}},
-  canFocus:()=>!failedContext&&!specialView()});
+  canFocus:()=>!failedContext&&!specialView(),onContextChange:()=>genericHeart?.refresh()});
+ genericHeart=mountRegionalGenericHeart({host:$('regional-generic-heart-host'),meta:sourceMeta,
+  getContext:()=>documentary?.info().context,getResidents:()=>adapter.listSourceIndices(),pauseReading:()=>documentary.pause(),
+  allowed:()=>!failedContext&&!playing&&manualMode==='stand'&&isNeutralRig(rig.uniforms)&&!specialView(),
+  begin:ids=>{documentary.pause();restPose();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}
+   const saved={selectedIndex,target:target.toArray(),distance,azimuth,elevation};
+   selectSource(ids[0]);inspector.open(ids[0],{group:'VH_M_heart'});refreshStructures();const bounds=new THREE.Box3();for(const id of ids){const [lo,hi]=adapter.sourceInfo(id).bounds;bounds.expandByPoint(new THREE.Vector3(...lo));bounds.expandByPoint(new THREE.Vector3(...hi));}target.copy(bounds.getCenter(new THREE.Vector3()));distance=Math.max(.55,bounds.getSize(new THREE.Vector3()).length()*2.8);elevation=.08;azimuth=0;cameraHistory.clear();updateCamera();return saved;},
+  setMode:(mode,ids)=>{if(mode==='body')inspector.close();else inspector.open(ids[0],{group:'VH_M_heart'});refreshStructures();scheduleRender();},
+  end:(saved,restore)=>{inspector.close();if(restore&&saved){selectSource(saved.selectedIndex);target.fromArray(saved.target);({distance,azimuth,elevation}=saved);updateCamera();}refreshStructures();scheduleRender();}
+ });
 }
 function releaseNetwork(){
  if(network){networkPreferences={enabled:network.state.enabled,reading:network.state.reading,active:[...network.active],focus:network.state.focus};network.dispose();network=null;}
@@ -605,13 +615,13 @@ async function start(){
   // Read-only diagnostics for source/provenance regression tests in this isolated lab.
   Object.defineProperty(window,'__polyRegionLabDiagnostics',{value:()=>({cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),motion:{playing,elapsed,pose:Object.fromEntries(Object.entries(rig.uniforms).filter(([k,u])=>typeof u.value==='number').map(([k,u])=>[k,u.value]))}}),configurable:false});
   window.addEventListener('resize',scheduleRender);
-  window.addEventListener('pagehide',()=>{documentary?.dispose();documentary=null;endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
+  window.addEventListener('pagehide',()=>{genericHeart?.dispose();genericHeart=null;documentary?.dispose();documentary=null;endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
   window.addEventListener('pageshow',e=>{if(e.persisted){
    renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});renderer.outputColorSpace=THREE.SRGBColorSpace;
    failedContext=false;createDocumentary();createDetailedInspector();createNativeEye();createGraphicEye();refreshStructures();fillBlocks();loadNetwork();scheduleRender();
   }});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){documentary?.suspend();pauseMotion();pauseManual();eyeLight?.pause();}else scheduleRender()});
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){genericHeart?.suspend();documentary?.suspend();pauseMotion();pauseManual();eyeLight?.pause();}else scheduleRender()});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;genericHeart?.suspend();documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
   canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte WebGL rétabli. Vérifier le rendu.');scheduleRender()});
   $('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
   status('Manifeste vérifié : '+manifest.chunk_count+' blocs disponibles. Aucun bloc chargé.');
