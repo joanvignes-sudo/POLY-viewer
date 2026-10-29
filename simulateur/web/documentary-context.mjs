@@ -1,0 +1,5 @@
+export function snapshotChain(group,index,progress=0,edge=null){
+ if(!group||typeof group.id!=='string'||!Array.isArray(group.nodes)||!Number.isInteger(index)||!group.nodes[index]||!Number.isFinite(progress)||progress<0||progress>1)throw Error('Contexte documentaire invalide');
+ const n=group.nodes[index];return {schema:'poly.documentary-view-bridge.v1',identity:`documentary:${group.id}:${n.id??index}`,group_id:group.id,node_id:n.id??String(index),index,title:n.title,region:n.kind==='gap'?null:n.region??null,kind:n.kind??'documentary',edge_id:edge,reading_progress:progress,time_kind:'graphical reading fraction, not physiological seconds',source_ids:[...(n.sources??[])],coordinate_system:'POLY display scene units; not millimetres',localization_kind:'regional documentary anchor, not measured individual coordinates',microscopic_observations:false,anatomical_registration:false};
+}
+export function sameContext(a,b){return ['identity','edge_id','reading_progress','time_kind'].every(k=>a[k]===b[k]);}

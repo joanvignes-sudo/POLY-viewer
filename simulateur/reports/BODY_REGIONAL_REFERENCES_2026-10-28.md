@@ -239,3 +239,8 @@ Course, assis, allongé et geste de repas sont disponibles manuellement dans le 
 ## Demande utilisateur — méthode de sélection 3D
 
 La méthode `pick` réutilise un espace de travail par clic. Sur le bloc squelettique comparé : 134 géométries temporaires → 1 ; 1277316 → 42864 octets de buffers de positions alloués, soit 96.64 % de moins. Les 36 sélections comparées restent identiques et le bloc source inchangé. 126 tests Node et quatre suites navigateur disposent de résultats réussis ; un délai de démarrage dans un cas de catalogue corrompu est conservé comme limite non résolue. Détails dans `BODY_PICK_METHOD_2026-10-29.md`. Aucune mesure de RAM totale, GPU ou téléphone physique n'est déduite.
+
+
+## Reprise nocturne 5 — cohérence des manifestes documentaires
+
+Le pont refuse les champs de contexte source altérés et les progressions positives sur une frontière du moteur. Contrat extrait sans rupture de l’API ; empreintes du contrat et du moteur ajoutées. 129 tests Node et une nouvelle suite navigateur ordinateur/mobile passent. Les anciens manifestes incomplets sont explicitement refusés. Le raccordement régional générique reste ouvert ; détails dans `BODY_NIGHT_05_2026-10-29.md`.
