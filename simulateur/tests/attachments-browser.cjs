@@ -10,6 +10,11 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     const context=await browser.newContext({viewport:mobile?{width:390,height:844}:{width:1440,height:1000},isMobile:mobile,hasTouch:mobile,deviceScaleFactor:1});
     context.setDefaultTimeout(120000);
     const page=await context.newPage(),errors=[],pending=new Set();page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>pending.add(r.url()));page.on('requestfinished',r=>pending.delete(r.url()));page.on('requestfailed',r=>pending.delete(r.url()));
+    const failedRequests=[],failedResponses=[],consoleErrors=[];
+    page.on('requestfailed',r=>failedRequests.push({url:r.url(),error:r.failure()?.errorText}));
+    page.on('response',r=>{if(r.status()>=400)failedResponses.push({url:r.url(),status:r.status()})});
+    page.on('console',m=>{if(m.type()==='error')consoleErrors.push({text:m.text(),location:m.location()})});
+    if(process.env.POLY_BROWSER_TRACE){const interval=setInterval(()=>console.log(JSON.stringify({case:'classic-suite-progress',mobile,url:page.url(),pending:[...pending].slice(0,30),page_errors:errors})),15000);page.once('close',()=>clearInterval(interval));}
     await page.goto(base+'/simulateur/web/attachments.html#surface=body:FJ1503');
     await page.waitForFunction(()=>window.POLY_ATTACHMENTS?.selected==='body:FJ1503');
     assert.equal(await page.locator('#surface option').count(),507);
@@ -40,7 +45,7 @@ const base=process.env.POLY_BASE_URL || 'http://127.0.0.1:8123';
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
     await page.locator('#term-query').fill('nonexistent-term-xyz');assert.equal(await page.locator('#term-select option').count(),0);assert.match(await page.locator('#term-detail').innerText(),/Aucun terme/);
     await page.goto(base+'/simulateur/web/index.html');
-    try{await page.waitForFunction(()=>!document.querySelector('main').inert,null,{timeout:120000});}catch(error){console.error(JSON.stringify({case:'classic-body-startup',mobile,pending:[...pending],page_errors:errors,status:await page.locator('#status').textContent(),fallback_reason:await page.locator('#body-startup-fallback').getAttribute('data-reason')}));throw error;}
+    try{await page.waitForFunction(()=>!document.querySelector('main').inert,null,{timeout:120000});}catch(error){console.error(JSON.stringify({case:'classic-body-startup',mobile,pending:[...pending],failed_requests:failedRequests,failed_responses:failedResponses,console_errors:consoleErrors,page_errors:errors,status:await page.locator('#status').textContent(),fallback_reason:await page.locator('#body-startup-fallback').getAttribute('data-reason')}));throw error;}
     assert.equal(await page.evaluate(()=>window.POLY.meshes.length),918);
     for(const mode of ['sit','lie','eat','run','stand']){await page.locator('[data-activity="'+mode+'"]').click();await page.waitForFunction(mode=>window.POLY.activity.mode===mode&&(mode==='sit'||mode==='eat'?window.POLY.uniforms.hipR.value===-Math.PI/2:mode==='lie'?window.POLY.uniforms.rootTilt.value===-Math.PI/2:mode==='stand'?window.POLY.uniforms.rootTilt.value===0:window.POLY.uniforms.kneeR.value>=.25),mode);}
     await page.locator('#search').fill('cœur');

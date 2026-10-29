@@ -104,7 +104,7 @@ let humanNerves=null,nervePilot=null,nerveExcitability=null,entericInhibition=nu
 let network=null,networkElapsed=0,networkSerial=0,networkLoading=false,networkPreferences=null;
 let inspectionView=null;
 const renderSamples=[],loadSamples=[],pickSamples=[];let renderedFrames=0;
-let selectedIndex=null,renderPending=false,failedContext=false;
+let selectedIndex=null,renderPending=null,failedContext=false;
 const canvas=$('region-canvas');
 const system=$('system'),block=$('block'),structure=$('structure');
 
@@ -113,12 +113,12 @@ function status(message,error=false){
  node.dataset.error=String(error);
  node.style.color=error?'#f3c987':'';
 }
+function cancelRender(){if(renderPending!==null)cancelAnimationFrame(renderPending);renderPending=null;}
 function scheduleRender(){
- if(!renderer||!scene||!camera||renderPending||document.hidden||failedContext)return;
- renderPending=true;
- requestAnimationFrame(now=>{
-  renderPending=false;
-  if(!renderer||failedContext||renderer.getContext().isContextLost())return;
+ if(!renderer||!scene||!camera||renderPending!==null||document.hidden||failedContext)return;
+ renderPending=requestAnimationFrame(now=>{
+  renderPending=null;
+  if(!renderer||failedContext||document.hidden||renderer.getContext().isContextLost())return;
   nativeEye?.update();cogitate?.update();
   const dt=lastFrame!==null?Math.min((now-lastFrame)/1000,.05):0;
   const recoveredBlocked=Boolean(inspector?.info().scope||detailedInspector?.active||nativeEye?.active||eyeLight?.active||cogitate?.active);if(recoveredBlocked&&recovered?.playing)recovered.pause();recovered?.update(dt,{organ:recoveredBlocked});
@@ -712,13 +712,13 @@ async function start(){
   // Read-only diagnostics for source/provenance regression tests in this isolated lab.
   Object.defineProperty(window,'__polyRegionLabDiagnostics',{value:()=>({cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),motion:{playing,elapsed,pose:Object.fromEntries(Object.entries(rig.uniforms).filter(([k,u])=>typeof u.value==='number').map(([k,u])=>[k,u.value]))}}),configurable:false});
   window.addEventListener('resize',scheduleRender);
-  window.addEventListener('pagehide',()=>{releaseActivityProps();releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.dispose();genericHeart=null;documentary?.dispose();documentary=null;endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
+  window.addEventListener('pagehide',()=>{releaseActivityProps();releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.dispose();genericHeart=null;documentary?.dispose();documentary=null;endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();cancelRender();renderer.dispose();});
   window.addEventListener('pageshow',e=>{if(e.persisted){
    renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});renderer.outputColorSpace=THREE.SRGBColorSpace;
    failedContext=false;createDocumentary();createDetailedInspector();createNativeEye();createGraphicEye();refreshStructures();fillBlocks();loadNetwork();scheduleRender();
   }});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(avatarController)unloadAvatarBones();recovered?.pause();if(recoveredController)unloadRecovered();if(cogitateController)unloadCogitate();humanNerves?.pause();nerveExcitability?.pause();entericInhibition?.pause();if(nervesController)unloadNerves();neuromuscular?.pause();nmjSerial++;nmjController?.abort();nmjController=null;genericHeart?.suspend();documentary?.suspend();pauseMotion();pauseManual();eyeLight?.pause();}else{$('regional-nmj-load').disabled=!hand||Boolean(neuromuscular);scheduleRender()}});
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;releaseActivityProps();releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.suspend();documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(avatarController)unloadAvatarBones();recovered?.pause();if(recoveredController)unloadRecovered();if(cogitateController)unloadCogitate();humanNerves?.pause();nerveExcitability?.pause();entericInhibition?.pause();if(nervesController)unloadNerves();neuromuscular?.pause();nmjSerial++;nmjController?.abort();nmjController=null;genericHeart?.suspend();documentary?.suspend();pauseMotion();pauseManual();eyeLight?.pause();cancelRender();}else{$('regional-nmj-load').disabled=!hand||Boolean(neuromuscular);scheduleRender()}});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;releaseActivityProps();releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.suspend();documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();cancelRender();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
   canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte WebGL rétabli. Vérifier le rendu.');scheduleRender()});
   startupMark('ready');$('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
   status('Manifeste vérifié : '+manifest.chunk_count+' blocs disponibles. Aucun bloc chargé.');

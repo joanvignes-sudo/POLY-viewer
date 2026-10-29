@@ -16,7 +16,7 @@ const $=id=>document.getElementById(id),root=new URL('../data/reference-chunks-p
 const canvas=$('reference-canvas'),scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(42,1,.001,100000);
 scene.background=new THREE.Color(0x092231);scene.add(new THREE.HemisphereLight(0xd3e8ef,0x273346,2.2));
 const light=new THREE.DirectionalLight(0xffe5d1,2.6);light.position.set(5,8,6);scene.add(light);
-let manifest,catalogue,records=[],visibleRows=35,chunk=null,mesh=null,selectedKey=null,renderer=null,pending=null,serial=0,failedContext=false,renderPending=false,qualification=null,startup=null,metadataSerial=0;
+let manifest,catalogue,records=[],visibleRows=35,chunk=null,mesh=null,selectedKey=null,renderer=null,pending=null,serial=0,failedContext=false,renderPending=null,qualification=null,startup=null,metadataSerial=0;
 let center=new THREE.Vector3(),radius=1,distance=3,azimuth=1.25,elevation=.15;
 let documentationGeneration=0,displayGeneration=0,residentBlocks=[],contextMeshes=[],nerveDocumentation=null;
 let metadataState={attempt:0,stage:'not_started',trace:[],error:null,failed_stage:null,elapsed_ms:0},metadataStarted=0;
@@ -67,9 +67,10 @@ $('reference-play').onclick=()=>{if(playing){pausePosture();return;}if(!posture|
 $('reference-rest').onclick=()=>{if(!posture)return;pausePosture();posture.rig.reset();activityMode='walk';elapsed=0;posePhase=null;postureControls();updatePostureGeometry();draw();};
 const fmt=n=>Number(n).toLocaleString('fr-FR');
 function status(text,error=false){$('reference-status').textContent=text;$('reference-status').dataset.error=String(error);}
+function cancelRender(){if(renderPending!==null)cancelAnimationFrame(renderPending);renderPending=null;}
 function draw(){
- if(!renderer||failedContext||document.hidden||renderPending)return;renderPending=true;
- requestAnimationFrame(now=>{renderPending=false;if(!renderer||failedContext||renderer.getContext().isContextLost())return;
+ if(!renderer||failedContext||document.hidden||renderPending!==null)return;
+ renderPending=requestAnimationFrame(now=>{renderPending=null;if(!renderer||failedContext||document.hidden||renderer.getContext().isContextLost())return;
   if(playing&&posture&&mesh){elapsed+=lastFrame===null?0:Math.min(.05,(now-lastFrame)/1000);lastFrame=now;posePhase=activityMode==='walk'?elapsed%posture.sampler.duration:Math.min(6,elapsed);if(activityMode!=='walk'&&elapsed>=6){elapsed=6;pausePosture();}applyReferenceActivity(posture,activityMode,posePhase);$('reference-phase').value=String(posePhase);updatePostureGeometry();}
   const rect=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,matchMedia('(pointer:coarse)').matches?1:1.5);
   if(renderer.getPixelRatio()!==dpr)renderer.setPixelRatio(dpr);
@@ -87,7 +88,7 @@ function diagnostics(){return {schema:'poly.reference-part-preview.v1',selected_
  resident_raw_bytes:residentBlocks.reduce((n,b)=>n+b.rawBytes,0),resident_blocks:residentBlocks.map(b=>b.id),context_keys:contextMeshes.map(m=>m.userData.referenceKey),visible_keys:allMeshes().filter(m=>m.visible).map(m=>m.userData.referenceKey),capacity_raw_bytes:4194304,metadata_raw_bytes:manifest?.catalogue.raw_bytes??null,
  display_buffer_bytes:allMeshes().reduce((n,m)=>n+m.geometry.attributes.position.array.byteLength+m.geometry.attributes.normal.array.byteLength+(m.userData.postureBase?.byteLength??0),0),
  posture:{mode:$('reference-space').value,activity:activityMode,phase:posePhase,playing,elapsed,source_sample:mesh?Array.from(mesh.userData.entry.positions.subarray(0,3)):null,display_sample:mesh?Array.from(mesh.geometry.attributes.position.array.subarray(0,3)):null,route:activeRoute?.id??null},
- meshes:mesh?1+contextMeshes.length:0,visible_meshes:[mesh,...contextMeshes].filter(m=>m?.visible).length,webgl_initialized:Boolean(renderer),geometries:renderer?.info.memory.geometries??0,context_lost:failedContext,
+ meshes:mesh?1+contextMeshes.length:0,visible_meshes:[mesh,...contextMeshes].filter(m=>m?.visible).length,webgl_initialized:Boolean(renderer),pending_frame:renderPending!==null,geometries:renderer?.info.memory.geometries??0,context_lost:failedContext,
  following:following?{key:following.key,point:[...following.point]}:null,inspected_key:inspectedKey,view:{distance,azimuth,elevation,target:center.toArray()},pixel_ratio:renderer?.getPixelRatio()??null,source_raw_sha256:manifest?.source_raw_sha256??null,geometry_ids:auditSceneGeometryIds(scene)};}
 function release(){
  pausePosture();clearRoute();postureGeneration++;postureController?.abort();postureController=null;posture=null;activityMode='walk';elapsed=0;$('reference-space').value='source';postureControls();for(const id of ['reference-phase','reference-play','reference-rest'])$(id).disabled=true;
@@ -249,8 +250,8 @@ canvas.onpointerup=e=>{const hit=tap?.id===e.pointerId&&Math.hypot(e.clientX-tap
 canvas.onpointercancel=()=>{pointers.clear();drag=null;pinch=null;tap=null;};
 canvas.addEventListener('wheel',e=>{e.preventDefault();distance=Math.max(radius*.2,Math.min(radius*40,distance*Math.exp(e.deltaY*.001)));draw();},{passive:false});
 canvas.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();azimuth+=e.key==='ArrowLeft'?-.1:e.key==='ArrowRight'?.1:0;elevation=Math.max(-1.3,Math.min(1.3,elevation+(e.key==='ArrowUp'?.1:e.key==='ArrowDown'?-.1:0)));draw();}});
-canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;release();status('Contexte WebGL perdu ; bloc et pièce libérés.',true)});
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;release();cancelRender();status('Contexte WebGL perdu ; bloc et pièce libérés.',true)});
 canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte rétabli. Choisir une pièce pour la recharger.');draw();});
-document.addEventListener('visibilitychange',()=>{if(document.hidden)pausePosture();else draw();});
-window.addEventListener('resize',draw);window.addEventListener('pagehide',()=>{metadataSerial++;startup?.abort();startup=null;release();renderer?.dispose();renderer=null;});window.addEventListener('pageshow',e=>{if(e.persisted){failedContext=false;if(!catalogue)start();else status('Catalogue conservé ; aucune pièce rechargée automatiquement.')}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){pausePosture();cancelRender();}else draw();});
+window.addEventListener('resize',draw);window.addEventListener('pagehide',()=>{metadataSerial++;startup?.abort();startup=null;release();cancelRender();renderer?.dispose();renderer=null;});window.addEventListener('pageshow',e=>{if(e.persisted){failedContext=false;if(!catalogue)start();else status('Catalogue conservé ; aucune pièce rechargée automatiquement.')}});
 Object.defineProperty(window,'__polyReferencePartDiagnostics',{value:diagnostics});start();

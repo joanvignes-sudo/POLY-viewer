@@ -55,11 +55,12 @@ jobs:
       - name: Desktop and mobile browser checks
         env:
           POLY_BROWSER_CHANNEL: chromium
+          POLY_BASE_URL: http://127.0.0.1:8123
           POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
           POLY_REFERENCE_CHUNKS_ROOT: ${{ runner.temp }}/poly-reference-chunks
           POLY_SKELETON_CHUNKS_ROOT: ${{ runner.temp }}/poly-skeleton-chunks
         run: |
-          python -m http.server 8123 --bind 127.0.0.1 > /tmp/poly-http.log 2>&1 &
+          python simulateur/scripts/serve_body_region_preview.py --port 8123 --chunks-root "$POLY_CHUNKS_ROOT" --reference-chunks-root "$POLY_REFERENCE_CHUNKS_ROOT" --skeleton-chunks-root "$POLY_SKELETON_CHUNKS_ROOT" > /tmp/poly-http.log 2>&1 &
           node simulateur/tests/attachments-browser.cjs
           node simulateur/tests/body-startup-browser.cjs
           node simulateur/tests/body-light-browser.cjs
@@ -89,3 +90,9 @@ jobs:
           node simulateur/tests/regional-neuromuscular-browser.cjs
           node simulateur/tests/body-regional-startup-trace-browser.cjs
           node simulateur/tests/module-startup-browser.cjs
+          node simulateur/tests/skeleton-region-browser.cjs
+          node simulateur/tests/skeleton-interactions-browser.cjs
+          node simulateur/tests/skeleton-whole-browser.cjs
+          node simulateur/tests/skeleton-startup-browser.cjs
+          node simulateur/tests/bone-review-browser.cjs
+          node simulateur/tests/anatomy-page-return-browser.cjs
