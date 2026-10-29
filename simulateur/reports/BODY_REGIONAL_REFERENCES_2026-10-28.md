@@ -284,3 +284,8 @@ Lecteur borné et annulable `skeleton206` validé sur les 208 objets réels, tou
 ## Squelette source — vue par blocs
 
 Page indépendante raccordée à l’entrée commune, catalogue sans WebGL et chargement explicite borné ; objet seul ou résidents du bloc, provenance et libération CPU/GPU. Navigateur ordinateur/mobile et 23 tests Python passent. Pas de squelette complet ni recalage individuel annoncé. Détails dans `BODY_SKELETON_VIEW_2026-10-29.md`.
+
+
+## Squelette distinct — filtres et picking
+
+Filtres région/concept sans téléchargement, identités d’objet inchangées et picking réel des triangles sont raccordés. 141 tests Node et deux suites navigateur ordinateur/mobile passent ; annulation réseau et reprise explicite vérifiées. Détails dans `BODY_SKELETON_INTERACTIONS_2026-10-29.md`.

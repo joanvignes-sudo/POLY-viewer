@@ -32,3 +32,5 @@ Audit du 28 octobre 2026, reprise nocturne 2. Sources examinées : imports et in
 4. Utiliser les traces de démarrage en cas de nouvel incident. La cause du délai historique reste inconnue ; ne pas effacer ce constat.
 
 Les mesures sur téléphone physique et l'autorisation de diffusion/publication restent extérieures à cette matrice logicielle. Aucun modèle, point d'insertion, délai ou recalage absent n'est inventé pour remplir une case.
+
+Le squelette Z-Anatomy 206 dispose désormais d’un lecteur indépendant par blocs, filtres région/concept et picking source. Le chargement complet et les 80 surfaces de revue DB restent distincts ; aucune fusion/recalage individuel.
