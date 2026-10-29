@@ -42,6 +42,10 @@ jobs:
         env:
           POLY_REFERENCE_CHUNKS_ROOT: ${{ runner.temp }}/poly-reference-chunks
         run: node --test simulateur/tests/reference-source-reader.test.mjs simulateur/tests/reference-catalogue-relations.test.mjs simulateur/tests/reference-view-bookmark.test.mjs simulateur/tests/reference-selection.test.mjs simulateur/tests/reference-nerve-documentation.test.mjs simulateur/tests/reference-posture.test.mjs simulateur/tests/load-deadline.test.mjs
+      - name: Build and independently verify separate skeleton source blocks
+        run: |
+          python simulateur/scripts/build_skeleton_source_chunks.py --output-root "${{ runner.temp }}/poly-skeleton-chunks" --verify
+          node simulateur/scripts/verify_skeleton_source_chunks.mjs "${{ runner.temp }}/poly-skeleton-chunks"
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks

@@ -269,3 +269,8 @@ Le guide qualitatif historique est raccordé à la véritable référence de mai
 ## Démarrage HRA — diagnostic sans clôture de cause
 
 Trace des étapes et diagnostic des requêtes en attente ajoutés après deux nouveaux délais. Suite main complète et cas démarrage normal/catalogue altéré passent ; aucune cause intermittente déclarée corrigée. Détails dans `BODY_STARTUP_TRACE_2026-10-29.md`.
+
+
+## Squelette distinct — blocs exacts
+
+208 objets / 206 concepts conservés dans quatre blocs bornés, métadonnées et registre intégral inchangés. Vérification indépendante Python/JavaScript réussie sur toutes les valeurs ; deux nouveaux tests Python passent. Le lecteur et le rendu restent à raccorder. Détails dans `BODY_SKELETON_CHUNKS_2026-10-29.md`.
