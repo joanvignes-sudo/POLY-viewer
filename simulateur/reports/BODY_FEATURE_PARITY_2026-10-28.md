@@ -36,3 +36,5 @@ Les mesures sur téléphone physique et l'autorisation de diffusion/publication 
 Le squelette Z-Anatomy 206 dispose désormais d’un lecteur indépendant par blocs, filtres région/concept et picking source. Le chargement complet et les 80 surfaces de revue DB restent distincts ; aucune fusion/recalage individuel.
 
 Le chargement complet du squelette Z-Anatomy est désormais disponible sous budget brut explicite de 16 Mio (208 objets, 206 concepts). La revue DB, ses rapprochements et les recalages individuels ne sont pas assimilés à cette référence source.
+
+Les pilotes médian/ulnaire disposent d’une lecture documentaire indépendante sans WebGL et sans temps biologique. Leur contrôleur 3D global reste dans l’atelier classique ; aucune équivalence de marqueurs/animation globale n’est revendiquée.

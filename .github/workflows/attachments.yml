@@ -23,7 +23,7 @@ jobs:
       - run: node --test simulateur/tests/body-source-contract.test.mjs simulateur/tests/body-source-material-session.test.mjs simulateur/tests/brain-atlas-source.test.mjs simulateur/tests/hand-reference-source.test.mjs simulateur/tests/camera-navigation.test.mjs simulateur/tests/resident-occlusion.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
       - run: node --test simulateur/tests/historical-posture.test.mjs simulateur/tests/indexed-display-normals.test.mjs
-      - run: node --test simulateur/tests/day-journal-store.test.mjs
+      - run: node --test simulateur/tests/day-journal-store.test.mjs simulateur/tests/nerve-pilot-documentation.test.mjs
       - run: node --test simulateur/tests/documentary-manifest.test.mjs simulateur/tests/regional-documentary.test.mjs simulateur/tests/regional-generic-heart.test.mjs simulateur/tests/neuromuscular-source.test.mjs
       - run: node --test simulateur/tests/body-source-attribution.test.mjs
       - name: Repackage original anatomical geometry into temporary source-verified chunks
@@ -74,6 +74,7 @@ jobs:
           node simulateur/tests/reference-interactions-browser.cjs
           node simulateur/tests/reference-startup-browser.cjs
           node simulateur/tests/day-journal-browser.cjs
+          node simulateur/tests/nerve-pilot-documentation-browser.cjs
           node simulateur/tests/documentary-manifest-browser.cjs
           node simulateur/tests/regional-documentary-browser.cjs
           node simulateur/tests/regional-generic-heart-browser.cjs

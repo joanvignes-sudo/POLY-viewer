@@ -126,3 +126,8 @@ Filtres région/concept sans téléchargement, identités d’objet inchangées 
 ## Squelette source complet — budget explicite
 
 Les 208 objets / 206 concepts peuvent être chargés explicitement avec un budget de 16 Mio ; refus préalable sans transfert à 4 Mio. Installation après vérification de tous les blocs, conservation de la scène après corruption et libération lors de réduction de budget testées. 143 tests Node et suites navigateur ordinateur/mobile passent. Détails dans `BODY_SKELETON_WHOLE_2026-10-29.md`.
+
+
+## Pilotes médian/ulnaire — accès documentaire indépendant
+
+Lecture sans WebGL des deux itinéraires réels, branches et frontière terminale ; sources vérifiées, délais inconnus et mesures humaines séparées. 146 tests Node et suite navigateur ordinateur/mobile passent. Le pilote 3D global reste historique, sans faux adaptateur. Détails dans `BODY_NERVE_PILOT_DOCUMENTATION_2026-10-29.md`.

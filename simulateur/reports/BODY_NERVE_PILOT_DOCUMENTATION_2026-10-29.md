@@ -1,0 +1,11 @@
+# POLY — Parcours médian/ulnaire documentaire indépendant
+
+29 octobre 2026. L’audit réel du pilote révèle deux itinéraires source de deux routes chacun, une continuité régionale du dessin et une limite terminale de représentation. Son module 3D dépend des états/commandes de human-nerves.js, de la vue d’organe et de marqueurs de présentation ; aucun faux objet humanNerves n’a été créé pour simuler ce raccordement.
+
+Un accès indépendant sans WebGL est maintenant disponible depuis anatomy.html. Il charge explicitement le contrat pilote et les données nerveuses existantes après vérification des empreintes, sous limites de taille, annulation et délai de 30 s. La lecture manuelle parcourt tronc, branche puis frontière terminale. Elle permet retour, remise à zéro et choix médian/ulnaire ; elle s’arrête avant une jonction ou contraction qui ne sont pas simulées. Aucune horloge biologique ni propagation automatique.
+
+Les itinéraires, sources, liens, territoires associés, références BodyParts3D et limites sont conservés. Les points d’entrée et délais restent inconnus. Les mesures humaines de vitesse restent rattachées aux seules routes référencées ; l’ulnaire n’hérite d’aucune valeur du médian. Les préparations/conditions de la mesure sont affichées avec les données source. Le contrôle de continuité utilise la même tolérance que l’atelier historique sur les extrémités du dessin ; il ne valide pas une fibre ni une connexion anatomique individuelle.
+
+Validation : 146 tests Node passent, dont résolution des deux véritables itinéraires et de tous leurs identifiants associés dans le fichier de main, limites des étapes, absence de temps biologique, refus d’altération de source et pré-annulation. Suite navigateur ordinateur/mobile réussie : chargement explicite, arrêt terminal, changement de pilote, absence de mesure héritée et absence de WebGL ou de téléchargement de maillages. Aucun dépassement de largeur ni erreur de page.
+
+La page ne remplace pas les marqueurs 3D du pilote historique, son animation globale ou la commande des 575 routes. La revue des 80 surfaces DB et certains autres ateliers restent distincts et accessibles dans l’atelier classique. La cause du délai intermittent de démarrage reste inconnue. Aucune acquisition externe, publication, activation, force, point d’insertion ou validation biologique ajouté.
