@@ -136,3 +136,8 @@ Lecture sans WebGL des deux itinéraires réels, branches et frontière terminal
 ## Clôture de la fenêtre nocturne
 
 Bilan dans `BODY_NIGHT_FINAL_2026-10-29.md` : 146 tests Node, 23 Python et résultats réussis de 24 suites navigateur au fil des reprises. Liste de convergence encore partielle ; contrôleur nerveux global, revue DB et ateliers spécialisés restent distincts. Cause du délai intermittent inconnue. Aucun nouveau chantier après 08:00 Europe/Paris ; sauvegarde locale et bilan final conservés.
+
+
+## Reprise explicite — revue DB indépendante
+
+80 surfaces de revue accessibles séparément : source vérifiée, deux placements enregistrés, filtres, comparaisons de mains et libération. Pas de cible HRA reconstruite ni registration validée. 148 tests Node et suites navigateur ordinateur/mobile DB/squelette passent. Détails dans `BODY_DB_REVIEW_2026-10-29.md`.
