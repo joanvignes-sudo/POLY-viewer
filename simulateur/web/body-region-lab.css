@@ -9,3 +9,7 @@ header nav{flex-wrap:wrap}#reference-space{max-width:100%;width:100%}
 #regional-activity{width:100%;max-width:100%;min-width:0;font:inherit;color:var(--ink);background:#082131;border:1px solid #64869a;border-radius:8px;padding:10px}label[for=regional-activity],label[for=regional-pose-time]{display:block;margin:14px 0 6px}
 
 #regional-documentary-tools{border-top:1px solid var(--border);margin-top:18px;padding-top:14px}#regional-documentary-host{font-size:12px;overflow-wrap:anywhere;min-width:0}#regional-documentary-host select,#regional-documentary-host textarea{width:100%;max-width:100%;min-width:0;background:#082131;color:var(--ink);border:1px solid #64869a;border-radius:6px;padding:8px;font:inherit}#regional-doc-paste{min-height:110px}#regional-doc-edges button{max-width:100%;text-align:left;margin-top:6px}#regional-doc-sources a{display:block;margin:5px 0}#regional-doc-content label{display:block;margin-top:12px}
+
+#avatar-bones-badge{position:absolute;top:12px;left:12px;z-index:3;background:#102b36ee;color:#e3d8b4;padding:7px;border:1px solid #8e9c83;border-radius:6px;font-size:11px;max-width:calc(100% - 24px)}#avatar-bones-panel select{width:100%;max-width:100%}#regional-avatar-budget{width:100%;max-width:100%}
+
+#documentary-controls{font-size:12px;overflow-wrap:anywhere}#doc-map svg{display:block;width:100%;height:auto;max-width:100%}#doc-branches{display:grid;gap:6px}#doc-branches button{text-align:left;max-width:100%;overflow-wrap:anywhere}.doc-toolbar{display:flex;flex-wrap:wrap;gap:6px}#regional-doc-graph{width:auto}

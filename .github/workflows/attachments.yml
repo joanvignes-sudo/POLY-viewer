@@ -49,7 +49,7 @@ jobs:
       - name: Verify bounded independent skeleton reader
         env:
           POLY_SKELETON_CHUNKS_ROOT: ${{ runner.temp }}/poly-skeleton-chunks
-        run: node --test simulateur/tests/skeleton-source-reader.test.mjs simulateur/tests/skeleton-selection.test.mjs simulateur/tests/skeleton-selection-loader.test.mjs
+        run: node --test simulateur/tests/skeleton-source-reader.test.mjs simulateur/tests/skeleton-selection.test.mjs simulateur/tests/skeleton-selection-loader.test.mjs simulateur/tests/avatar-skeleton-source.test.mjs
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks
@@ -57,6 +57,7 @@ jobs:
           POLY_BROWSER_CHANNEL: chromium
           POLY_CHUNKS_ROOT: ${{ runner.temp }}/poly-body-chunks
           POLY_REFERENCE_CHUNKS_ROOT: ${{ runner.temp }}/poly-reference-chunks
+          POLY_SKELETON_CHUNKS_ROOT: ${{ runner.temp }}/poly-skeleton-chunks
         run: |
           python -m http.server 8123 --bind 127.0.0.1 > /tmp/poly-http.log 2>&1 &
           node simulateur/tests/attachments-browser.cjs
@@ -72,6 +73,7 @@ jobs:
           node simulateur/tests/body-regional-nerve-protocols-browser.cjs
           node simulateur/tests/body-regional-cogitate-browser.cjs
           node simulateur/tests/body-regional-recovered-browser.cjs
+          node simulateur/tests/body-regional-avatar-browser.cjs
           node simulateur/tests/body-regional-navigation-browser.cjs
           node simulateur/tests/body-regional-posture-browser.cjs
           node simulateur/tests/reference-region-browser.cjs
@@ -81,6 +83,7 @@ jobs:
           node simulateur/tests/nerve-pilot-documentation-browser.cjs
           node simulateur/tests/documentary-manifest-browser.cjs
           node simulateur/tests/regional-documentary-browser.cjs
+          node simulateur/tests/body-regional-documentary-graph-browser.cjs
           node simulateur/tests/regional-generic-heart-browser.cjs
           node simulateur/tests/regional-neuromuscular-browser.cjs
           node simulateur/tests/body-regional-startup-trace-browser.cjs

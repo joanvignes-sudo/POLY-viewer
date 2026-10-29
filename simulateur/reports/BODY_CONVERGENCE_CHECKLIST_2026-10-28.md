@@ -2,6 +2,14 @@
 
 Développement local sur `feat/regional-body-bridge-20261028`. Aucun push, fusion ou déploiement. Les données source restent préservées.
 
+## État actuel — 29 octobre, poursuite après la nuit
+
+La couche osseuse d’avatar (208 objets / 206 concepts) et la carte documentaire 3D sont désormais raccordées, en plus des contrôleurs nerveux, de COGITATE, des travaux retrouvés et de la revue DB indépendante. Horloge documentaire unique ; points limités aux surfaces résidentes qualifiées ; recette osseuse graphique explicitement non validée anatomiquement.
+
+**154 tests Node passent.** Les 23 tests Python déjà réussis restent la référence pour les blocs, sans nouvelle exécution pour ce changement JavaScript. 32 suites navigateur possèdent des résultats réussis au fil du travail ; elles ne sont pas déclarées toutes réexécutées sur ce dernier commit. Dernière passe ciblée ordinateur/mobile : os d’avatar, carte 3D, manifestes régionaux et parcours classique combiné. Les deux délais de démarrage de la passe concurrente sont conservés ; cause toujours inconnue.
+
+La liste initiale dispose de ses raccordements logiciels documentés ci-dessous. La parité exhaustive de toutes les interactions du monolithe reste partielle : atelier membres/tronc, accessoires d’activités et groupes d’occultation non encore qualifiés. Mesures physiques et recalages individuels ne sont pas acquis. État fonctionnel actuel détaillé dans `BODY_FEATURE_PARITY_2026-10-28.md` ; dernier rapport : `BODY_AVATAR_DOCUMENTARY_GRAPH_2026-10-29.md`. Les sections de reprises suivantes constituent l’historique chronologique, avec leurs comptes de tests à leur date.
+
 ## Les quatre raccordements logiciels annoncés
 
 | Travail | Résultat exécuté et testé |
@@ -17,7 +25,7 @@ Les sauvegardes locales reprennent maintenant groupes, focus et phase illustrati
 
 | Priorité | État logiciel | Qualification ou périmètre restant |
 |---|---|---|
-| Audit rendu/sélection/mémoire | Réalisé et étendu sur les parcours raccordés | Compléter la matrice des fonctions historiques encore distinctes pendant les reprises nocturnes |
+| Audit rendu/sélection/mémoire | Réalisé et étendu sur les parcours raccordés | Matrice actuelle tenue à jour ; interactions monolithiques restantes explicitement séparées |
 | Interface lecteur 13 blocs / fonctions historiques | Adaptateur et parcours régional fonctionnels | Le corps historique demeure un parcours disponible ; son remplacement automatique n'est pas effectué |
 | Identités, coordonnées, références | Conservation et contrôles source en place | Aucun recalage individuel entre bibliothèques n'est établi |
 | Libération/récupération WebGL | Corps, atlas, références, groupes et courbes testés | Restitution de mémoire physique et comportement du pilote à mesurer sur appareils |
@@ -41,7 +49,7 @@ Une exécution consolidée a dépassé 45 secondes en attendant l'affichage du c
 
 ## Travail nocturne autorisé
 
-Relances horaires de ce chat actives jusqu'au **29 octobre 2026 à 08:00 Europe/Paris**. Checkpoint court : `work/POLY_NUIT_REPRISE.json` dans le dossier du chat. À poursuivre sans refaire les opérations closes : diagnostic du délai intermittent, audit des écarts historiques, performances et allocations des groupes les plus lourds permis, interactions/états encore manquants et tests pertinents.
+La fenêtre de relances s’est terminée le **29 octobre 2026 à 08:00 Europe/Paris** ; cette automation a été supprimée. Le travail après cette heure répond aux nouvelles demandes explicites de l’utilisateur. Checkpoint court : `work/POLY_NUIT_REPRISE.json` dans le dossier du chat. À poursuivre sans refaire les opérations closes : diagnostic du délai intermittent, audit des écarts historiques, performances et allocations des groupes les plus lourds permis, interactions/états encore manquants et tests pertinents.
 
 Les mesures sur téléphone physique, les insertions individuelles et les validations expérimentales absentes ne peuvent pas être déclarées acquises par ces tests. La diffusion et la publication exigent toujours l'accord explicite de l'utilisateur.
 
@@ -151,3 +159,8 @@ Bilan dans `BODY_NIGHT_FINAL_2026-10-29.md` : 146 tests Node, 23 Python et résu
 ## COGITATE et travaux retrouvés régionaux
 
 Vraies fabriques réutilisées avec sources/figures vérifiées, quatre étapes COGITATE et catalogue de 78 dossiers/544 intervalles. Dépendance CerebrA réelle, horloge pédagogique, preuves et nettoyage préservés. 152 tests Node, suites régionales et test classique combiné passent. Détails dans `BODY_DOCUMENTARY_WORKSPACES_2026-10-29.md`.
+
+
+## Os d’avatar et carte documentaire régionale
+
+208 objets vérifiés, recette graphique historique et poses compatibles, chargement budgété, rendu/restauration et destruction. Carte 2D/3D et fiches sur le même moteur : repères résidents qualifiés, frontières conservées, buffers de ligne stables et libération. 154 tests Node ; suites ciblées ordinateur/mobile et classique passent après vérification isolée. Délais précédents conservés sans correction de cause revendiquée. Détails dans `BODY_AVATAR_DOCUMENTARY_GRAPH_2026-10-29.md`.

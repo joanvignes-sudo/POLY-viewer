@@ -1,6 +1,6 @@
 // Documentary context uses existing HRA display bounds, never individual measurements.
 import {validateDocumentaryContext} from './documentary-context.mjs';
-export const REGIONAL_DOCUMENTARY_RESOURCES=Object.freeze(['../data/documentary-chains.json','documentary-context.mjs','documentary-engine.js','regional-documentary.mjs','regional-documentary-view.mjs','body-region-lab.mjs']);
+export const REGIONAL_DOCUMENTARY_RESOURCES=Object.freeze(['../data/documentary-chains.json','documentary-context.mjs','documentary-engine.js','regional-documentary.mjs','regional-documentary-view.mjs','body-region-lab.mjs','documentary-network.js']);
 const paths=Object.freeze({heart:'VH_M_heart',lungs:'VH_M_lungs',skin:'VH_M_skin',eye:'VH_M_eyes',brain:'Allen_brain'});
 export function regionalDocumentaryCoverage(region,records,residentIds){
  const path=paths[region]??null,ids=new Set(residentIds);
