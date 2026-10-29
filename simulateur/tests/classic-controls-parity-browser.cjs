@@ -13,12 +13,15 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8128';
    catch(error){console.error(JSON.stringify({mobile,stage:'classic-start',failures,errors,status:await page.locator('#status').textContent(),fallback:await page.locator('#body-startup-fallback').getAttribute('data-reason')}));throw error;}
    const systems=page.locator('#systems [data-system]'),count=await systems.count();assert(count>3);
    const skeletal=page.locator('[data-system="skeletal"]');assert(await skeletal.isChecked());
-   const before=await page.evaluate(()=>window.POLY.meshes.filter(m=>m.userData.system==='skeletal'&&m.visible).length);assert(before>0);
+   const settle=()=>page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+   await settle();const visibleBoneIds=()=>page.evaluate(()=>window.POLY.meshes.filter(m=>m.userData.system==='skeletal'&&m.visible).map(m=>m.userData.node).sort((a,b)=>a-b));const beforeIds=await visibleBoneIds(),before=beforeIds.length;assert(before>0);
    await skeletal.uncheck();assert.equal(await page.evaluate(()=>window.POLY.meshes.filter(m=>m.userData.system==='skeletal'&&m.visible).length),0);
-   await skeletal.check();const restored=await page.evaluate(()=>window.POLY.meshes.filter(m=>m.userData.system==='skeletal'&&m.visible).length);assert(restored>=before);
+   await skeletal.check();const transient=await visibleBoneIds();await settle();const restoredIds=await visibleBoneIds(),restored=restoredIds.length;assert.deepEqual(restoredIds,beforeIds,'same native IDs after contextual render settles');
    const skin=page.locator('#skin'),initial=await skin.textContent();
+   const skinState=()=>page.evaluate(()=>window.POLY.meshes.filter(m=>m.userData.system==='integumentary').map(m=>({opacity:m.material.opacity,transparent:m.material.transparent,depthWrite:m.material.depthWrite})));
+   const initialSkin=await skinState();assert(initialSkin.length>0);
    await skin.click();assert.notEqual(await skin.textContent(),initial);
-   await skin.click();assert.equal(await skin.textContent(),initial);
+   await skin.click();assert.equal(await skin.textContent(),initial);assert.deepEqual(await skinState(),initialSkin,'skin round trip must restore its original material state');
    const speed=page.locator('#speed');assert.equal(await speed.getAttribute('type'),'range');assert.equal(await speed.getAttribute('max'),'1.5');
    const scenarios=await page.locator('#scenario option').count();assert(scenarios>0);
    assert(scenarios>1);await page.locator('#scenario').selectOption({index:1});await page.locator('#next').waitFor({state:'visible'});const stepBefore=await page.locator('#node').innerText();await page.locator('#next').click();assert.notEqual(await page.locator('#node').innerText(),stepBefore);
@@ -26,9 +29,9 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8128';
    await page.locator('#tissue-reference summary').click();const tissue=await page.locator('#tissue-reference-list button').first().textContent();await page.locator('#tissue-reference-list button').first().click();const openedTissueSelection=await page.locator('#selected').innerText();assert(openedTissueSelection.length>0);
    await page.locator('#native-anatomy').click();
    assert.deepEqual(errors,[]);
-   results.push({mobile,original_918:true,system_filters:count,system_toggle_and_restore:true,initial_visible_bones:before,visible_after_reenable:restored,skin_toggle_and_restore:true,speed_range:true,scenario_options:scenarios,source_tissue_buttons:tissueCount,opened_tissue:tissue.trim(),selection_text_after_tissue:openedTissueSelection,legacy_native_reset:true});
+   results.push({mobile,original_918:true,system_filters:count,system_toggle_and_restore:true,initial_visible_bones:before,visible_immediately_after_reenable:transient.length,visible_after_reenable:restored,exact_bone_ids_restored_after_render:true,skin_toggle_and_restore:true,skin_materials_restored:true,speed_range:true,scenario_options:scenarios,source_tissue_buttons:tissueCount,opened_tissue:tissue.trim(),selection_text_after_tissue:openedTissueSelection,legacy_native_reset:true});
    await page.close();
   }
  }finally{await browser.close();}
- console.log(JSON.stringify({schema:'poly.classic-controls-parity.v1',results},null,2));
+ const receipt={schema:'poly.classic-controls-parity.v1',results};if(process.env.POLY_CLASSIC_PARITY_RESULTS)await require('node:fs/promises').writeFile(process.env.POLY_CLASSIC_PARITY_RESULTS,JSON.stringify(receipt,null,2));console.log(JSON.stringify(receipt,null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});

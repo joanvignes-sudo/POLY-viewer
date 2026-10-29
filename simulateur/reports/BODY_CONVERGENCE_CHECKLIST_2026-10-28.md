@@ -203,6 +203,14 @@ Voir `BODY_REFERENCE_WHOLE_2026-10-29.md`. Aucun push, fusion ou déploiement.
 - [x] Serveur de qualification : file TCP explicite de 128 au lieu de cinq ; banc local 48 requêtes et 25 tests Python réussis. Cette atténuation ne prouve pas la cause des refus précédents.
 - [x] Nouvelle instance isolée 8130 : cinq suites navigateur existantes réussies, sans toucher aux ports 8124/8128.
 - [x] Parité : test navigateur du classique sur ordinateur/mobile émulé (10 systèmes, peau, vitesse, 11 scénarios, 38 boutons de tissu, navigation et retour) réussi.
-- [ ] Distinguer intention et régression pour les surfaces osseuses 74 visibles au départ / 134 après interrupteur « squelette » ; tracer les masques de couches avant correction.
+- [x] Trace des masques : 134 est transitoire avant coherentLayers ; les mêmes 74 identités sont rétablies après rendu dans le contexte enrichi. Masques préservés.
 - [ ] Identifier la cause des échecs intermittents d'import et des refus de connexion, indépendamment des suites devenues vertes.
 - [ ] Tests physiques et validation scientifique restent ouverts. Voir `BODY_STARTUP_PARITY_2026-10-29.md`.
+
+## États matériels classiques — reprise après comparaison des chats
+
+- [x] Opacité de peau non restaurée reproduite puis corrigée : retour exact à 0,035, assertion sur les matériaux.
+- [x] Test des identités osseuses après stabilisation du rendu, ordinateur et mobile émulé.
+- [x] 178 tests Node réussis ; reçu Python précédent de 25 tests conservé séparément.
+
+Voir `BODY_CLASSIC_STATE_PARITY_2026-10-29.md`. Les causes intermittentes, la parité exhaustive, le téléphone physique et la qualification biologique restent ouverts.

@@ -25,3 +25,6 @@ Aucune mesure sur téléphone Android physique ; ni FPS réel appareil, ni mémo
 `work/POLY_SERVER_BACKLOG_DIAG_20261029.json`, `work/POLY_PYTHON_BURST_HARDENING_20261029.log`, `work/POLY_STARTUP_REGRESSIONS_8130_20261029.log`, `work/POLY_CLASSIC_PARITY_BROWSER_20261029.log`. Bilan des quatre points : `outputs/POLY_CONTROLE_QUATRE_POINTS_20261029.md`.
 
 Aucun push, fusion, publication, email ou automatisation.
+
+## Qualification ultérieure des états classiques
+La différence 74/134 est désormais tracée : réactivation transitoire suivie du masque contextuel coherentLayers ; les mêmes 74 identités sont restaurées après rendu. Aucun masque modifié. Le contrôle du libellé de peau a été complété par un contrôle matériel, révélant puis corrigeant un retour à 0,09 au lieu de 0,035. Voir `BODY_CLASSIC_STATE_PARITY_2026-10-29.md`.
