@@ -91,3 +91,8 @@ Profil séparé effectué : les normales dominent le coût mesuré. Une écritur
 ## Contexte cardiaque générique régional — 29 octobre
 
 L’étape HASS-BODY propose la curation HRA existante, sans modifier sa région source inconnue. Contrat vérifié, exigence des 14 identités résidentes exactes, isolation/contexte/retour et fermetures de cycle de vie sont raccordés, sans nouvelle géométrie ni observation individuelle. 135 tests Node et la nouvelle suite navigateur ordinateur/mobile passent. Détails dans `BODY_REGIONAL_GENERIC_HEART_2026-10-29.md`.
+
+
+## Guide nerf–muscle régional — 29 octobre
+
+Le guide qualitatif historique est raccordé à la véritable référence de main, à la demande, avec source vérifiée, trois conditions conservées, horloge pédagogique indépendante et cycle de vie explicite. Aucun faux pilote nerveux ni emplacement de jonction ajouté. 136 tests Node, nouvelle suite navigateur ordinateur/mobile et parcours classique passent. Un nouvel échec d’attente au démarrage est conservé comme limite, malgré une exécution isolée réussie. Détails dans `BODY_REGIONAL_NEUROMUSCULAR_2026-10-29.md`.
