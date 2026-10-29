@@ -46,6 +46,10 @@ jobs:
         run: |
           python simulateur/scripts/build_skeleton_source_chunks.py --output-root "${{ runner.temp }}/poly-skeleton-chunks" --verify
           node simulateur/scripts/verify_skeleton_source_chunks.mjs "${{ runner.temp }}/poly-skeleton-chunks"
+      - name: Verify bounded independent skeleton reader
+        env:
+          POLY_SKELETON_CHUNKS_ROOT: ${{ runner.temp }}/poly-skeleton-chunks
+        run: node --test simulateur/tests/skeleton-source-reader.test.mjs
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
       - name: Desktop and mobile browser checks

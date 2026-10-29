@@ -106,3 +106,8 @@ Trace des étapes et diagnostic des requêtes en attente ajoutés après deux no
 ## Squelette distinct — blocs exacts
 
 208 objets / 206 concepts conservés dans quatre blocs bornés, métadonnées et registre intégral inchangés. Vérification indépendante Python/JavaScript réussie sur toutes les valeurs ; deux nouveaux tests Python passent. Le lecteur et le rendu restent à raccorder. Détails dans `BODY_SKELETON_CHUNKS_2026-10-29.md`.
+
+
+## Lecteur du squelette distinct
+
+Lecteur borné et annulable `skeleton206` validé sur les 208 objets réels, toutes valeurs et métadonnées conservées. Refus des corruptions, mutations et plages chevauchantes ; 140 tests Node passent. Le rendu reste à raccorder. Détails dans `BODY_SKELETON_READER_2026-10-29.md`.
