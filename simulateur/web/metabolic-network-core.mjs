@@ -5,7 +5,7 @@ function requireValue(ok,message){if(!ok)throw Error(message);}
 function ids(items,label){const out=new Map();for(const x of items){requireValue(x&&typeof x.id==='string'&&!out.has(x.id),label+' : identifiant dupliqué');out.set(x.id,x);}return out;}
 export function validateGraph(g,original){
  requireValue(g?.schema==='poly.metabolic-network.v1'&&g.layout?.kind==='hypothetical_documentary'&&g.layout.units==='abstract'&&g.layout.anatomical_registration===null&&g.quantitative_propagation===false&&g.biological_clock===null,'Repère ou portée incompatible');
- requireValue(/^[a-f0-9]{64}$/.test(g.case_sha256),'Empreinte source absente');
+ requireValue(g.case_digest_format==='lf-utf8'&&/^[a-f0-9]{64}$/.test(g.case_sha256),'Empreinte source absente');
  for(const size of [g.layout.width,g.layout.height])requireValue(Number.isFinite(size)&&size>0&&size<5000,'Dimensions invalides');
  requireValue(g.kernel_sources?.length===2&&g.kernel_sources.every((r,i)=>r.path===['reversible-lactate-core.mjs','reversible-lactate-contract.mjs'][i]&&/^[a-f0-9]{64}$/.test(r.sha256)),'Noyau sans provenance');
  const nodes=ids(g.nodes,'Maillons'),edges=ids(g.edges,'Relations'),routes=ids(g.routes,'Parcours');
@@ -69,3 +69,5 @@ export async function loadLocalObservations(g,{signal,fetcher=fetch}={}){
  const o=JSON.parse(new TextDecoder().decode(bytes));requireValue(o.graph_digest_format==='json-stringify-utf8'&&o.graph_sha256===await digestHex(new TextEncoder().encode(JSON.stringify(g))),'Graphe et observations de versions différentes');if(signal?.aborted)throw new DOMException('Lecture annulée','AbortError');
  return validateObservations(o,g);
 }
+
+export function catalogueDigest(bytes){return digestHex(new TextEncoder().encode(new TextDecoder().decode(bytes).replace(/\r\n/g,'\n')));}

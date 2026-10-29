@@ -2,3 +2,7 @@
 # Scientific source hashes require exact bytes, including original line endings.
 simulateur/membrane/core/hh.js -text
 simulateur/membrane/source/hh_variant01.cellml -text
+
+# Existing P7/P8 kernels are fingerprinted byte-for-byte on all hosts.
+simulateur/web/reversible-lactate-core.mjs -text
+simulateur/web/reversible-lactate-contract.mjs -text

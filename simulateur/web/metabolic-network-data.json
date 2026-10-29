@@ -7,7 +7,8 @@
     "width": 1740,
     "height": 1060
   },
-  "case_sha256": "19d35b5ad98b36ecde9f484113dc978da853afb8603b06dc45c0e785758bd3ea",
+  "case_digest_format": "lf-utf8",
+  "case_sha256": "70e42aec388ebd8e76522f5004bd47a6f2f1a5446150dd2fe30bb81a779dc030",
   "sources": {
     "bordone": {
       "title": "Bordone et coll. · The energetic brain",
