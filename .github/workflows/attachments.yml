@@ -70,6 +70,7 @@ jobs:
           node simulateur/tests/classic-startup-deadline-browser.cjs
           node simulateur/tests/body-light-browser.cjs
           node simulateur/tests/body-region-browser.cjs
+          node simulateur/tests/body-all-chunks-browser.cjs
           node simulateur/tests/body-regional-features-browser.cjs
           node simulateur/tests/body-regional-specialists-browser.cjs
           node simulateur/tests/body-regional-optics-browser.cjs
