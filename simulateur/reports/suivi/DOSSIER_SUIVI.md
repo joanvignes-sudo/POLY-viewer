@@ -70,3 +70,8 @@ Les améliorations publiques v0.138.0 de présentation et de placement musculair
 ## Réseau métabolique contraint — 29 octobre
 
 35 maillons, 42 relations et 13 parcours ; 16 croisements, relations entrantes/sortantes et sept fiches de couplage historiques. Noyau P7/P8 repris sans modification et réellement vérifié sur 243 états synthétiques. Douze séries locales sont rattachées à leurs opérateurs et contextes, sans paramètres à régler ni propagation quantitative inventée. 193 tests Node, 27 Python et suite navigateur ordinateur/mobile émulé passent. Chaîne biologique complète non calibrée et direction cellulaire non identifiée ; extension mécanistique et mesures discriminantes restent ouvertes. Rapport : `BODY_METABOLIC_NETWORK_2026-10-29.md`.
+
+
+## Enquête scientifique explicite — 29 octobre
+
+Question et préparation pilotes, deux mécanismes non exclusifs, trois épreuves conditionnelles avec contrôles, styles distincts pour mesure/relation/hypothèse/inconnue et incertitude HCAR1 sur la carte. Sept séries C9 accessibles après vérification, sans contraste statistique ni verdict automatique ; cinq qualifications nécessaires restent ouvertes. 197 tests Node et navigateur ordinateur/mobile émulé passent. Noyau, graphe et observations inchangés. Voir `BODY_METABOLIC_INQUIRY_2026-10-29.md`.
