@@ -12,10 +12,12 @@ Les types, dimensions, chevauchements de buffers, valeurs non finies et indices 
 
 ## Vérification et mesure
 
-- 1374 comparaisons octet par octet : les 458 pièces source réelles à trois phases graphiques 0, 0,4 et 0,9. Normales identiques à `computeVertexNormals`, positions et indices d’affichage inchangés, empreinte source conservée.
+- 1578 comparaisons octet par octet : les 526 pièces source réelles à trois phases graphiques 0, 0,4 et 0,9. Normales identiques à `computeVertexNormals`, positions et indices d’affichage inchangés, empreinte source conservée.
 - Cas déterministes supplémentaires : sommets inutilisés, triangles dégénérés et répétés, zéros signés, cas aléatoires reproductibles, tableaux vides et entrées invalides.
-- Sur les quatre surfaces du profil, 8 échauffements puis 25 essais alternés : médiane Three.js 41.668 ms, méthode scalaire 9.399 ms ; rapport local 4.43× pour les seules normales CPU.
+- Sur les quatre surfaces du profil, 8 échauffements puis 25 essais alternés : médiane Three.js 38.019 ms, méthode scalaire 9.597 ms ; rapport local 3.96× pour les seules normales CPU.
 - 133 tests Node passent ; suites `reference-interactions-browser` et `reference-region-browser` réussies sur ordinateur et émulation mobile, avec postures, courbes, retour aux sources et libérations.
 - Scripts reproductibles `profile_reference_cpu_stages.mjs` et `profile_indexed_display_normals.mjs` ; résultats détaillés dans les JSON livrés.
 
 Aucune fréquence d’images, mémoire physique, consommation, mesure GPU ou performance de téléphone physique n’est déduite de ce profil Node. Les limites et la sphère restent calculées par Three.js ; aucune approximation de visibilité n’est introduite. La cause du délai intermittent de démarrage reste inconnue.
+
+Vérification étendue explicitement aux 68 os stockés séparément des 458 muscles : 526 pièces × 3 phases = 1578 comparaisons réussies.

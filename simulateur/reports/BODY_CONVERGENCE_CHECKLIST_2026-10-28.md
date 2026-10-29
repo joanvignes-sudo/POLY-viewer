@@ -85,4 +85,4 @@ Sélection de dossier/étape, branches/frontières du moteur historique, lecture
 
 ## Normales CPU — 29 octobre
 
-Profil séparé effectué : les normales dominent le coût mesuré. Une écriture scalaire des normales d’affichage reproduit les octets Three.js pour les 526 pièces à trois phases (1578 comparaisons), sans modifier positions/indices/source. Sur quatre grandes surfaces : 41.67 → 9.40 ms CPU médian pour les seules normales (4.43× local). 133 tests Node et deux suites navigateur références passent. Aucun gain de fluidité globale ou sur téléphone n’est déduit. Détails dans `BODY_NORMALS_CPU_2026-10-29.md`.
+Profil séparé effectué : les normales dominent le coût mesuré. Une écriture scalaire des normales d’affichage reproduit les octets Three.js pour les 526 pièces à trois phases (1578 comparaisons), sans modifier positions/indices/source. Sur quatre grandes surfaces : 38.02 → 9.60 ms CPU médian pour les seules normales (3.96× local). 133 tests Node et deux suites navigateur références passent. Aucun gain de fluidité globale ou sur téléphone n’est déduit. Détails dans `BODY_NORMALS_CPU_2026-10-29.md`.
