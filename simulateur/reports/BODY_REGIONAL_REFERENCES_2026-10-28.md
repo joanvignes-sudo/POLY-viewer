@@ -324,3 +324,6 @@ Vraies fabriques réutilisées avec sources/figures vérifiées, quatre étapes 
 ## Couche d’avatar et carte documentaire — 29 octobre
 
 Couche osseuse historique sur les 208 objets vérifiés, budget explicite et poses graphiques ; carte documentaire 3D et fiches sur le même moteur, points limités aux surfaces résidentes qualifiées et buffers de ligne stables. 154 tests Node et régressions ciblées passent sur ordinateur/mobile. Détails dans `BODY_AVATAR_DOCUMENTARY_GRAPH_2026-10-29.md` ; délais intermittents conservés.
+
+
+Accessoires des postures partagés et facultatifs (22 objets graphiques d’origine) ; rendu documentaire réellement arrêté en pause après correction de son callback. 156 tests Node et tests ciblés ordinateur/mobile passent. Voir `BODY_ACTIVITY_PROPS_IDLE_2026-10-29.md`. Cause du délai de démarrage toujours inconnue.

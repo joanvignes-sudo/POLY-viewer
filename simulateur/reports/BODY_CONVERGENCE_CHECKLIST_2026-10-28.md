@@ -6,9 +6,9 @@ Développement local sur `feat/regional-body-bridge-20261028`. Aucun push, fusio
 
 La couche osseuse d’avatar (208 objets / 206 concepts) et la carte documentaire 3D sont désormais raccordées, en plus des contrôleurs nerveux, de COGITATE, des travaux retrouvés et de la revue DB indépendante. Horloge documentaire unique ; points limités aux surfaces résidentes qualifiées ; recette osseuse graphique explicitement non validée anatomiquement.
 
-**154 tests Node passent.** Les 23 tests Python déjà réussis restent la référence pour les blocs, sans nouvelle exécution pour ce changement JavaScript. 32 suites navigateur possèdent des résultats réussis au fil du travail ; elles ne sont pas déclarées toutes réexécutées sur ce dernier commit. Dernière passe ciblée ordinateur/mobile : os d’avatar, carte 3D, manifestes régionaux et parcours classique combiné. Les deux délais de démarrage de la passe concurrente sont conservés ; cause toujours inconnue.
+**156 tests Node passent.** Les 23 tests Python déjà réussis restent la référence pour les blocs, sans nouvelle exécution pour ce changement JavaScript. 32 suites navigateur possèdent des résultats réussis au fil du travail ; elles ne sont pas déclarées toutes réexécutées sur ce dernier commit. Dernière passe ciblée ordinateur/mobile : os d’avatar, carte 3D, manifestes régionaux et parcours classique combiné. Les deux délais de démarrage de la passe concurrente sont conservés ; cause toujours inconnue.
 
-La liste initiale dispose de ses raccordements logiciels documentés ci-dessous. La parité exhaustive de toutes les interactions du monolithe reste partielle : atelier membres/tronc, accessoires d’activités et groupes d’occultation non encore qualifiés. Mesures physiques et recalages individuels ne sont pas acquis. État fonctionnel actuel détaillé dans `BODY_FEATURE_PARITY_2026-10-28.md` ; dernier rapport : `BODY_AVATAR_DOCUMENTARY_GRAPH_2026-10-29.md`. Les sections de reprises suivantes constituent l’historique chronologique, avec leurs comptes de tests à leur date.
+La liste initiale dispose de ses raccordements logiciels documentés ci-dessous. La parité exhaustive de toutes les interactions du monolithe reste partielle : atelier membres/tronc et groupes d’occultation non encore qualifiés. Mesures physiques et recalages individuels ne sont pas acquis. État fonctionnel actuel détaillé dans `BODY_FEATURE_PARITY_2026-10-28.md` ; derniers rapports : `BODY_AVATAR_DOCUMENTARY_GRAPH_2026-10-29.md` et `BODY_ACTIVITY_PROPS_IDLE_2026-10-29.md`. Les sections de reprises suivantes constituent l’historique chronologique, avec leurs comptes de tests à leur date.
 
 ## Les quatre raccordements logiciels annoncés
 
@@ -164,3 +164,8 @@ Vraies fabriques réutilisées avec sources/figures vérifiées, quatre étapes 
 ## Os d’avatar et carte documentaire régionale
 
 208 objets vérifiés, recette graphique historique et poses compatibles, chargement budgété, rendu/restauration et destruction. Carte 2D/3D et fiches sur le même moteur : repères résidents qualifiés, frontières conservées, buffers de ligne stables et libération. 154 tests Node ; suites ciblées ordinateur/mobile et classique passent après vérification isolée. Délais précédents conservés sans correction de cause revendiquée. Détails dans `BODY_AVATAR_DOCUMENTARY_GRAPH_2026-10-29.md`.
+
+
+## Accessoires partagés et repos réel du rendu
+
+22 objets graphiques historiques réutilisés, option explicite sans horloge ni lien biologique ; empreinte géométrique inchangée et destruction unique testées. Boucle de demande d’images découverte dans le callback documentaire corrigée, arrêt réel vérifié au repos. 156 tests Node et parcours ciblés ordinateur/mobile passent. Détails dans `BODY_ACTIVITY_PROPS_IDLE_2026-10-29.md` ; cette correction ne prouve pas la résolution des délais de démarrage.

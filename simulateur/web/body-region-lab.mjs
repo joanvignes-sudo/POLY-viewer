@@ -1,3 +1,4 @@
+import {createActivityProps} from './activity-props.mjs';
 import {createDocumentaryNetwork} from './documentary-network.js';
 import {regionalDocumentaryCoverage} from './regional-documentary.mjs';
 import {createAvatarBones} from './avatar-bones.js';
@@ -86,6 +87,8 @@ function focusPosedSelection(){
  for(let x=0;x<2;x++)for(let y=0;y<2;y++)for(let z=0;z<2;z++)box.expandByPoint(new THREE.Vector3(...rig.deform([x?hi[0]:lo[0],y?hi[1]:lo[1],z?hi[2]:lo[2]])));
  target.copy(box.getCenter(new THREE.Vector3()));distance=Math.max(.55,box.getSize(new THREE.Vector3()).length()*2.8);elevation=.08;updateCamera();
 }
+let activityProps=null;
+let documentaryRenderModel=null,documentaryRenderKey="";
 let documentaryGraph=null,documentaryPoints=new Map(),documentarySourceKey="";
 let documentary=null,genericHeart=null,neuromuscular=null,nmjController=null,nmjSerial=0;
 let avatarBones=null,avatarController=null,avatarSerial=0;
@@ -114,7 +117,8 @@ function scheduleRender(){
   const dt=lastFrame!==null?Math.min((now-lastFrame)/1000,.05):0;
   const recoveredBlocked=Boolean(inspector?.info().scope||detailedInspector?.active||nativeEye?.active||eyeLight?.active||cogitate?.active);if(recoveredBlocked&&recovered?.playing)recovered.pause();recovered?.update(dt,{organ:recoveredBlocked});
   if(manualMode!=='stand'&&postureBlocked())restPose();
-  if(manualMode!=='stand'){if(manualPlaying){manualTime=Math.min(6,manualTime+dt);if(manualTime>=6)pauseManual();}historicalPosture.apply(manualMode,manualTime);}
+  let activityWrist=null;
+  if(manualMode!=='stand'){if(manualPlaying){manualTime=Math.min(6,manualTime+dt);if(manualTime>=6)pauseManual();}activityWrist=historicalPosture.apply(manualMode,manualTime);}
   if(playing&&sampler){
    elapsed+=dt;
    sampler.apply(elapsed,rig.uniforms);$('motion-phase').value=String(elapsed%sampler.duration);
@@ -137,6 +141,7 @@ function scheduleRender(){
    const coverage=network.coverage;
    $('regional-network-coverage').textContent=Object.entries(coverage).map(([id,c])=>network.data.nodes[id].title+' : '+(c.kind==='documentary_marker'?'repère documentaire sans surface':c.visible.length+' visibles / '+c.expected+' surfaces du catalogue')).join(' · ');
   }
+  activityProps?.update(manualMode,activityWrist,!specialView()&&!(avatarBones?.state.enabled&&avatarBones.state.solo));
   updateDocumentaryGraph();
   avatarBones?.update();
   const renderStart=performance.now();
@@ -495,7 +500,7 @@ function performanceReceipt(){
   viewport:[innerWidth,innerHeight],dpr:renderer.getPixelRatio(),coarse_pointer:matchMedia('(pointer:coarse)').matches},
   source_metadata_sha256:manifest.source.metadata_sha256,source_geometry_sha256:manifest.source.geometry_sha256,
   hand_reference:hand?{namespace:'hand',parts:hand.meshes.length,preview:hand.previewDiagnostics,buffer_bytes:hand.bufferBytes,planned_buffer_upper_bound:hand.plan.bufferUpperBound,side:hand.state.side,filter:hand.state.filter,selected:'hand:'+hand.state.selected,overlay:hand.bodyGroup.visible}:null,cerebra:brain?{regions:brain.meshes.length,buffer_bytes:brain.bufferBytes,planned_buffer_bytes:brain.plan.bufferBytes,focused:brain.focused,source:brain.source,split:brain.split,selection:brain.selection,saved_native_materials:brain.savedMaterialCount}:null,runtime_geometry_audit:auditSceneGeometryIds(scene),cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),selected_material:selectedIndex===null?null:(()=>{const m=adapter.sources.resolve(selectedIndex)?.material;return m?{uuid:m.uuid,opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite}:null})(),graphic_eye:eyeLight?{active:eyeLight.active,playing:eyeLight.playing,phase:eyeLight.phase,last_stop_reason:eyeLight.lastStopReason,saved_materials:eyeLight.savedMaterialCount}:null,native_eye_active:nativeEye?.active??false,eye_mask_size:eyeMask.size,detailed_inspection:{active:detailedInspector?.active??false,group_id:detailedInspector?.groupId??null},
-  avatar_bones:avatarBones?{objects:avatarBones.meshes.length,concepts:avatarBones.registry.bones.length,raw_bytes:avatarBones.rawBytes,enabled:avatarBones.state.enabled,solo:avatarBones.state.solo,region:avatarBones.state.region,bone:avatarBones.state.bone,graphic_rest:avatarBones.rest.records,finite_matrices:avatarBones.meshes.every(m=>m.matrix.elements.every(Number.isFinite))}:null,recovered:recovered?{active:recovered.active,playing:recovered.playing,progress:recovered.progress,group:recovered.current?.id??null,interval:recovered.action?.id??null,point:recovered.point,groups:recovered.catalog.groups.length,intervals:recovered.inventory.intervals}:null,cogitate:cogitate?{active:cogitate.active,index:cogitate.index,boards:cogitate.group.children.length}:null,human_nerves:humanNerves?{routes:humanNerves.data.routes.length,itineraries:humanNerves.itineraries.length,buffer_bytes:humanNerves.bufferBytes,current_route:humanNerves.current?.id,mode:humanNerves.state.mode,playing:humanNerves.state.playing,time:humanNerves.state.time,index:humanNerves.state.index,finished:humanNerves.state.finished,visible_routes:humanNerves.state.visibleRoutes,itinerary:humanNerves.state.itinerary?.id??null,pilot:nervePilot?.state.pilot,pilot_enabled:nervePilot?.state.enabled,electrical:nerveExcitability?{...nerveExcitability.state}:null,enteric:entericInhibition?{...entericInhibition.state}:null}:null,neuromuscular:neuromuscular?{playing:neuromuscular.state.playing,graphic_time_s:neuromuscular.state.time,step:neuromuscular.state.step,mode:neuromuscular.state.mode,finished:neuromuscular.state.finished,halo_visible:neuromuscular.halo.visible,biological_timing:neuromuscular.data.biological_timing}:null,generic_heart:genericHeart?.info()??null,documentary_graph:documentaryGraph?{nodes:[...documentaryGraph.nodeViews.keys()],anchors:Object.fromEntries(documentaryPoints),edges:documentaryGraph.edgeViews.map(v=>v.edge.id),visible:documentaryGraph.root.visible,external_clock:true}:null,documentary:documentary?.info()??null,view:{distance,azimuth,elevation,target:target.toArray(),camera:camera.position.toArray()},view_history_size:cameraHistory.size,manual_posture:{mode:manualMode,playing:manualPlaying,graphic_time_s:manualTime,saved_view:Boolean(manualView),root_shift:{...rig.uniforms.rootShift.value},shoulder:{...rig.uniforms.eatShoulder.value},forearm:{...rig.uniforms.eatForearm.value}},selective_occlusion:{requested:$('region-occlusion').checked,available:maskAvailable(),...residentMask.info()},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
+  avatar_bones:avatarBones?{objects:avatarBones.meshes.length,concepts:avatarBones.registry.bones.length,raw_bytes:avatarBones.rawBytes,enabled:avatarBones.state.enabled,solo:avatarBones.state.solo,region:avatarBones.state.region,bone:avatarBones.state.bone,graphic_rest:avatarBones.rest.records,finite_matrices:avatarBones.meshes.every(m=>m.matrix.elements.every(Number.isFinite))}:null,recovered:recovered?{active:recovered.active,playing:recovered.playing,progress:recovered.progress,group:recovered.current?.id??null,interval:recovered.action?.id??null,point:recovered.point,groups:recovered.catalog.groups.length,intervals:recovered.inventory.intervals}:null,cogitate:cogitate?{active:cogitate.active,index:cogitate.index,boards:cogitate.group.children.length}:null,human_nerves:humanNerves?{routes:humanNerves.data.routes.length,itineraries:humanNerves.itineraries.length,buffer_bytes:humanNerves.bufferBytes,current_route:humanNerves.current?.id,mode:humanNerves.state.mode,playing:humanNerves.state.playing,time:humanNerves.state.time,index:humanNerves.state.index,finished:humanNerves.state.finished,visible_routes:humanNerves.state.visibleRoutes,itinerary:humanNerves.state.itinerary?.id??null,pilot:nervePilot?.state.pilot,pilot_enabled:nervePilot?.state.enabled,electrical:nerveExcitability?{...nerveExcitability.state}:null,enteric:entericInhibition?{...entericInhibition.state}:null}:null,neuromuscular:neuromuscular?{playing:neuromuscular.state.playing,graphic_time_s:neuromuscular.state.time,step:neuromuscular.state.step,mode:neuromuscular.state.mode,finished:neuromuscular.state.finished,halo_visible:neuromuscular.halo.visible,biological_timing:neuromuscular.data.biological_timing}:null,generic_heart:genericHeart?.info()??null,activity_props:activityProps?{visible:activityProps.props.visible,chair:activityProps.chair.visible,table:activityProps.table.visible,mat:activityProps.mat.visible,spoon:activityProps.spoon.visible,wrist:activityProps.spoon.position.toArray(),meshes:activityProps.props.children.reduce((sum,node)=>sum+node.children.length,0)}:null,documentary_graph:documentaryGraph?{nodes:[...documentaryGraph.nodeViews.keys()],anchors:Object.fromEntries(documentaryPoints),edges:documentaryGraph.edgeViews.map(v=>v.edge.id),visible:documentaryGraph.root.visible,external_clock:true}:null,documentary:documentary?.info()??null,view:{distance,azimuth,elevation,target:target.toArray(),camera:camera.position.toArray()},view_history_size:cameraHistory.size,manual_posture:{mode:manualMode,playing:manualPlaying,graphic_time_s:manualTime,saved_view:Boolean(manualView),root_shift:{...rig.uniforms.rootShift.value},shoulder:{...rig.uniforms.eatShoulder.value},forearm:{...rig.uniforms.eatForearm.value}},selective_occlusion:{requested:$('region-occlusion').checked,available:maskAvailable(),...residentMask.info()},functional_network:network?{coverage:network.coverage,enabled:network.state.enabled,active:[...network.active],visible_segments:network.routeViews.filter(v=>network.group.visible&&v.line.visible||network.group.visible&&v.beam?.visible).length}:null,context_lost:failedContext,rendered_frames:renderedFrames,
   cpu_render_submission_ms:{count:sorted.length,p50:sorted.length?sorted[Math.floor((sorted.length-1)*.5)]:null,
    p95:sorted.length?sorted[Math.floor((sorted.length-1)*.95)]:null},
   recent_cpu_pick_ms:[...pickSamples],recent_loads:loadSamples.map(x=>({...x})),three_geometries:renderer.info.memory.geometries,
@@ -504,6 +509,8 @@ function performanceReceipt(){
    'Cache bytes exclude transient buffers, metadata, CPU proxies and renderer resources',
    'No battery, thermal or biomechanical measurement; emulation is not a physical phone']};
 }
+function releaseActivityProps(){activityProps?.dispose();activityProps=null;$('regional-activity-props').checked=false;renderer?.renderLists.dispose();}
+function toggleActivityProps(){if(!$('regional-activity-props').checked){releaseActivityProps();scheduleRender();return;}if(failedContext){$('regional-activity-props').checked=false;return;}activityProps=createActivityProps({scene});scheduleRender();}
 function releaseDocumentaryGraph(){documentaryGraph?.dispose();documentaryGraph=null;documentaryPoints.clear();documentarySourceKey='';$('regional-doc-graph').checked=false;renderer?.renderLists.dispose();}
 function updateDocumentaryGraph(){
  if(!documentaryGraph||!documentary?.model)return;
@@ -519,13 +526,13 @@ function toggleDocumentaryGraph(){
  updateDocumentaryGraph();scheduleRender();
 }
 function createDocumentary(){
- releaseDocumentaryGraph();
+ releaseDocumentaryGraph();documentaryRenderModel=null;documentaryRenderKey="";
  genericHeart?.dispose();genericHeart=null;documentary?.dispose();
  documentary=mountRegionalDocumentary({host:$('regional-documentary-host'),records,source:manifest.source,
   getResidents:()=>adapter?.listSourceIndices()??[],getView:()=>({target:target.toArray(),distance,azimuth,elevation}),
   setView:view=>{target.fromArray(view.target);({distance,azimuth,elevation}=view);cameraHistory.clear();updateCamera();},
   pauseScene:()=>{restPose();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}},
-  canFocus:()=>!failedContext&&!specialView(),onContextChange:()=>{genericHeart?.refresh();$('regional-doc-graph').disabled=!documentary?.model;scheduleRender();}});
+  canFocus:()=>!failedContext&&!specialView(),onContextChange:()=>{genericHeart?.refresh();const model=documentary?.model;$('regional-doc-graph').disabled=!model;const key=model?[model.group.id,model.state.node,model.state.edge,model.state.status,model.state.progress].join('|'):'';if(model!==documentaryRenderModel||key!==documentaryRenderKey){documentaryRenderModel=model;documentaryRenderKey=key;scheduleRender();}}});
  genericHeart=mountRegionalGenericHeart({host:$('regional-generic-heart-host'),meta:sourceMeta,
   getContext:()=>documentary?.info().context,getResidents:()=>adapter.listSourceIndices(),pauseReading:()=>documentary.pause(),
   allowed:()=>!failedContext&&!playing&&manualMode==='stand'&&isNeutralRig(rig.uniforms)&&!specialView(),
@@ -688,6 +695,7 @@ async function start(){
   $('motion-play').onclick=()=>{if(playing)pauseMotion();else if(!failedContext&&(adapter.listSourceIndices().length||avatarBones)){endManual();playing=true;lastFrame=null;$('motion-play').textContent='Pause';motionText('Lecture de la marche');scheduleRender()}};
   startupMark('controls:create');newStore();bindPointer();resetCamera();createDocumentary();
   loadMotion();loadNetwork();
+  $('regional-activity-props').onchange=toggleActivityProps;
   $('regional-doc-graph').onchange=toggleDocumentaryGraph;
   $('network-panel').addEventListener('click',scheduleRender);$('network-panel').addEventListener('change',scheduleRender);
   $('export-diagnostics').onclick=()=>{
@@ -698,13 +706,13 @@ async function start(){
   // Read-only diagnostics for source/provenance regression tests in this isolated lab.
   Object.defineProperty(window,'__polyRegionLabDiagnostics',{value:()=>({cache:store.info(),scene:adapter.diagnostics(),inspection:inspector.info(),motion:{playing,elapsed,pose:Object.fromEntries(Object.entries(rig.uniforms).filter(([k,u])=>typeof u.value==='number').map(([k,u])=>[k,u.value]))}}),configurable:false});
   window.addEventListener('resize',scheduleRender);
-  window.addEventListener('pagehide',()=>{releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.dispose();genericHeart=null;documentary?.dispose();documentary=null;endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
+  window.addEventListener('pagehide',()=>{releaseActivityProps();releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.dispose();genericHeart=null;documentary?.dispose();documentary=null;endManual(false);cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();pauseMotion();eyeLight?.dispose();eyeLight=null;nativeEye?.dispose();nativeEye=null;releaseNetwork();detailedInspector?.dispose();detailedInspector=null;invalidatePending();inspector.close();store.clear();adapter.dispose();renderer.dispose();});
   window.addEventListener('pageshow',e=>{if(e.persisted){
    renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});renderer.outputColorSpace=THREE.SRGBColorSpace;
    failedContext=false;createDocumentary();createDetailedInspector();createNativeEye();createGraphicEye();refreshStructures();fillBlocks();loadNetwork();scheduleRender();
   }});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){if(avatarController)unloadAvatarBones();recovered?.pause();if(recoveredController)unloadRecovered();if(cogitateController)unloadCogitate();humanNerves?.pause();nerveExcitability?.pause();entericInhibition?.pause();if(nervesController)unloadNerves();neuromuscular?.pause();nmjSerial++;nmjController?.abort();nmjController=null;genericHeart?.suspend();documentary?.suspend();pauseMotion();pauseManual();eyeLight?.pause();}else{$('regional-nmj-load').disabled=!hand||Boolean(neuromuscular);scheduleRender()}});
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.suspend();documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;releaseActivityProps();releaseDocumentaryGraph();unloadAvatarBones();unloadCogitate();unloadNerves();genericHeart?.suspend();documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
   canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte WebGL rétabli. Vérifier le rendu.');scheduleRender()});
   startupMark('ready');$('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
   status('Manifeste vérifié : '+manifest.chunk_count+' blocs disponibles. Aucun bloc chargé.');
