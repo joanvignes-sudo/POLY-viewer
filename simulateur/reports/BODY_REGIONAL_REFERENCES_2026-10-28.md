@@ -279,3 +279,8 @@ Trace des étapes et diagnostic des requêtes en attente ajoutés après deux no
 ## Lecteur du squelette distinct
 
 Lecteur borné et annulable `skeleton206` validé sur les 208 objets réels, toutes valeurs et métadonnées conservées. Refus des corruptions, mutations et plages chevauchantes ; 140 tests Node passent. Le rendu reste à raccorder. Détails dans `BODY_SKELETON_READER_2026-10-29.md`.
+
+
+## Squelette source — vue par blocs
+
+Page indépendante raccordée à l’entrée commune, catalogue sans WebGL et chargement explicite borné ; objet seul ou résidents du bloc, provenance et libération CPU/GPU. Navigateur ordinateur/mobile et 23 tests Python passent. Pas de squelette complet ni recalage individuel annoncé. Détails dans `BODY_SKELETON_VIEW_2026-10-29.md`.

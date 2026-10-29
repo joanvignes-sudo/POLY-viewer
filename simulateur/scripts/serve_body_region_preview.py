@@ -13,7 +13,7 @@ REPO = Path(__file__).resolve().parents[2]
 PREFIX = '/simulateur/data/body-chunks-preview/'
 
 
-def make_handler(chunks_root, repo_root=REPO, reference_root=None):
+def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root=None):
     chunks_root = Path(chunks_root).resolve(strict=True)
     manifest = json.loads((chunks_root / 'MANIFEST.json').read_text(encoding='utf-8'))
     if (manifest.get('schema') != 'poly.body-source-chunks.v1'
@@ -29,6 +29,12 @@ def make_handler(chunks_root, repo_root=REPO, reference_root=None):
                 or reference_manifest.get('status') != 'experimental_not_deployed'
                 or reference_manifest.get('source_value_verification') != 'PASS'):
             raise ValueError('Only verified unpublished reference chunks may be previewed')
+
+    if skeleton_root is not None:
+        skeleton_root = Path(skeleton_root).resolve(strict=True)
+        skeleton_manifest = json.loads((skeleton_root / 'MANIFEST.json').read_text(encoding='utf-8'))
+        if skeleton_manifest.get('schema') != 'poly.skeleton-source-manifest.v1' or skeleton_manifest.get('published') is not False or skeleton_manifest.get('source_value_verification') != 'PASS':
+            raise ValueError('Only verified unpublished skeleton blocks allowed')
 
     class Handler(SimpleHTTPRequestHandler):
         def list_directory(self, path):
@@ -46,6 +52,12 @@ def make_handler(chunks_root, repo_root=REPO, reference_root=None):
                     return True
                 asset_root, prefix = reference_root, reference_prefix
                 pattern = r'MANIFEST\.json|CATALOGUE\.json\.gz|chunks/reference-\d{3}\.(?:json|bin\.gz)'
+            elif request_path.startswith('/simulateur/data/skeleton-chunks-preview/'):
+                if skeleton_root is None:
+                    self.send_error(404, 'Skeleton preview not configured')
+                    return True
+                asset_root, prefix = skeleton_root, '/simulateur/data/skeleton-chunks-preview/'
+                pattern = r'MANIFEST\.json|CATALOGUE\.json\.gz|chunks/skeleton-\d{3}\.(?:json|bin\.gz)'
             elif not request_path.startswith(PREFIX):
                 return False
             relative = request_path[len(prefix):]
@@ -85,9 +97,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--chunks-root', type=Path, required=True)
     parser.add_argument('--reference-chunks-root', type=Path)
+    parser.add_argument('--skeleton-chunks-root', type=Path)
     parser.add_argument('--port', type=int, default=8124)
     args = parser.parse_args()
-    with ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root)) as server:
+    with ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(args.chunks_root, reference_root=args.reference_chunks_root, skeleton_root=args.skeleton_chunks_root)) as server:
         print(f'Local preview only: http://127.0.0.1:{server.server_port}/simulateur/web/body-region-lab.html', flush=True)
         try:
             server.serve_forever()
