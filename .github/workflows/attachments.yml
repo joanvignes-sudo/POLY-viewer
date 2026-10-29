@@ -19,7 +19,7 @@ jobs:
       - run: python simulateur/scripts/build_attachment_catalogue.py
       - run: git diff --exit-code -- simulateur/data/attachment-catalogue.json
       - run: node --test simulateur/tests/attachment-engine.test.mjs
-      - run: node --test simulateur/tests/body-startup-guard.test.mjs
+      - run: node --test simulateur/tests/body-startup-guard.test.mjs simulateur/tests/classic-startup-deadline.test.mjs
       - run: node --test simulateur/tests/body-source-contract.test.mjs simulateur/tests/body-source-material-session.test.mjs simulateur/tests/brain-atlas-source.test.mjs simulateur/tests/hand-reference-source.test.mjs simulateur/tests/camera-navigation.test.mjs simulateur/tests/resident-occlusion.test.mjs
       - run: node --test simulateur/tests/body-light.test.mjs
       - run: node --test simulateur/tests/orbit-pointer-input.test.mjs
@@ -66,6 +66,7 @@ jobs:
           node simulateur/tests/attachments-browser.cjs
           node simulateur/tests/classic-controls-parity-browser.cjs
           node simulateur/tests/body-startup-browser.cjs
+          node simulateur/tests/classic-startup-deadline-browser.cjs
           node simulateur/tests/body-light-browser.cjs
           node simulateur/tests/body-region-browser.cjs
           node simulateur/tests/body-regional-features-browser.cjs

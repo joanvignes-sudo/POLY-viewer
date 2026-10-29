@@ -214,3 +214,6 @@ Voir `BODY_REFERENCE_WHOLE_2026-10-29.md`. Aucun push, fusion ou déploiement.
 - [x] 178 tests Node réussis ; reçu Python précédent de 25 tests conservé séparément.
 
 Voir `BODY_CLASSIC_STATE_PARITY_2026-10-29.md`. Les causes intermittentes, la parité exhaustive, le téléphone physique et la qualification biologique restent ouverts.
+
+## Chargement classique sans erreur explicite
+Secours après 30 secondes si l’entrée classique reste occupée : alternatives accessibles, aucun retry automatique et retrait du seul avertissement de délai à la réussite tardive. Quatre tests de comportement et blocage/libération réel d’un import sur ordinateur/mobile émulé réussis ; 182 tests Node passent. La cause des incidents historiques reste inconnue. Voir `BODY_CLASSIC_STARTUP_DEADLINE_2026-10-29.md`.

@@ -13,7 +13,7 @@ test('full-body status starts busy and fallback stays outside inert main',()=>{
  assert.match(html,/href="recherche\.html"/);
 });
 test('recovery guard initializes before body module and keeps scientific fallback available',()=>{
- assert.ok(html.indexOf('src="body-startup-guard.js?v=1"')<html.indexOf('src="app.js?v=0.141.1"'));
+ assert.ok(html.indexOf('src="body-startup-guard.js?v=2"')<html.indexOf('src="app.js?v=0.141.1"'));
  assert.match(guard,/unhandledrejection/);
  assert.match(guard,/webglcontextlost/);
  assert.match(guard,/aria-busy/);

@@ -62,3 +62,6 @@ Le régional propose recherche/systèmes par blocs et occultation d'obstacles r�
 
 ## États classiques reçus et contrôles renforcés
 Le retour du bouton de peau restaure désormais ses matériaux initiaux (opacité 0,035) ; une régression matérielle a été reproduite avant correction. Le changement osseux 74/134 est transitoire : coherentLayers rétablit les mêmes 74 identités dans le contexte enrichi. Les masques ne changent pas. Contrôle ordinateur/mobile émulé réussi ; aucune parité exhaustive supplémentaire revendiquée. Voir `BODY_CLASSIC_STATE_PARITY_2026-10-29.md`.
+
+## Chargement classique sans erreur explicite
+Secours après 30 secondes si l’entrée classique reste occupée : alternatives accessibles, aucun retry automatique et retrait du seul avertissement de délai à la réussite tardive. Quatre tests de comportement et blocage/libération réel d’un import sur ordinateur/mobile émulé réussis ; 182 tests Node passent. La cause des incidents historiques reste inconnue. Voir `BODY_CLASSIC_STARTUP_DEADLINE_2026-10-29.md`.
