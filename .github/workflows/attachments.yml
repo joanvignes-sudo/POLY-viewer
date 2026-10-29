@@ -70,3 +70,4 @@ jobs:
           node simulateur/tests/regional-documentary-browser.cjs
           node simulateur/tests/regional-generic-heart-browser.cjs
           node simulateur/tests/regional-neuromuscular-browser.cjs
+          node simulateur/tests/body-regional-startup-trace-browser.cjs

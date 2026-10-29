@@ -96,3 +96,8 @@ L’étape HASS-BODY propose la curation HRA existante, sans modifier sa région
 ## Guide nerf–muscle régional — 29 octobre
 
 Le guide qualitatif historique est raccordé à la véritable référence de main, à la demande, avec source vérifiée, trois conditions conservées, horloge pédagogique indépendante et cycle de vie explicite. Aucun faux pilote nerveux ni emplacement de jonction ajouté. 136 tests Node, nouvelle suite navigateur ordinateur/mobile et parcours classique passent. Un nouvel échec d’attente au démarrage est conservé comme limite, malgré une exécution isolée réussie. Détails dans `BODY_REGIONAL_NEUROMUSCULAR_2026-10-29.md`.
+
+
+## Démarrage HRA — diagnostic sans clôture de cause
+
+Trace des étapes et diagnostic des requêtes en attente ajoutés après deux nouveaux délais. Suite main complète et cas démarrage normal/catalogue altéré passent ; aucune cause intermittente déclarée corrigée. Détails dans `BODY_STARTUP_TRACE_2026-10-29.md`.

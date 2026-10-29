@@ -8,7 +8,7 @@ async function main(){
  const initial=original.parts.find(p=>p.id==='FJ1483'),other=original.parts.find(p=>p.kind==='muscle'&&p.side==='L'&&p.id!==initial.counterpart);
  const browser=await chromium.launch({headless:true,channel:process.env.POLY_BROWSER_CHANNEL||'chromium',args:['--enable-webgl','--use-angle=swiftshader']});
  const results=[];
- async function ready(page){await page.goto(base+'/simulateur/web/body-region-lab.html');await page.locator('#app').waitFor({state:'visible'});await page.locator('#regional-hand-tools summary').click();}
+ async function ready(page){const pending=new Set(),failures=[];const started=r=>pending.add(r.url()),finished=r=>pending.delete(r.url()),failed=r=>{pending.delete(r.url());failures.push({url:r.url(),error:r.failure()?.errorText});};page.on('request',started);page.on('requestfinished',finished);page.on('requestfailed',failed);try{await page.goto(base+'/simulateur/web/body-region-lab.html');await page.locator('#app').waitFor({state:'visible'});}catch(error){console.error(JSON.stringify({case:'regional-hand-startup',pending:[...pending],failures,loading:await page.locator('#loading').textContent(),startup:await page.evaluate(()=>window.__polyRegionLabStartup?.()??null)}));throw error;}finally{page.off('request',started);page.off('requestfinished',finished);page.off('requestfailed',failed);}await page.locator('#regional-hand-tools summary').click();}
  async function loaded(page){await page.waitForFunction(()=>window.__polyRegionLabPerformance().hand_reference?.preview?.triangles>0);}
  try{
   for(const mobile of [false,true]){

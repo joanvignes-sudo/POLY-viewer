@@ -26,6 +26,10 @@ import {createHistoricalPosture} from './historical-posture.mjs';
 
 const $=id=>document.getElementById(id);
 const fmt=n=>Number(n).toLocaleString('fr-FR');
+const startupStarted=performance.now(),startupTrace=[];let startupStage='module_ready',startupError=null;
+function startupMark(stage){startupStage=stage;startupTrace.push({stage,elapsed_ms:performance.now()-startupStarted});if(startupTrace.length>32)startupTrace.shift();$('loading').dataset.stage=stage;}
+Object.defineProperty(window,'__polyRegionLabStartup',{value:()=>({stage:startupStage,error:startupError,trace:startupTrace.map(item=>({...item})),elapsed_ms:startupStage==='ready'||startupError?startupTrace.at(-1).elapsed_ms:performance.now()-startupStarted}),configurable:false});
+startupMark('module_ready');
 const ROOT_URL=new URL('../data/body-chunks-preview/',import.meta.url);
 const manifestURL=new URL('MANIFEST.json',ROOT_URL);
 let manifest=null,store=null,adapter=null,renderer=null,scene=null,camera=null;
@@ -564,23 +568,23 @@ function refreshInspection(){
 
 async function start(){
  try{
-  const res=await fetch(manifestURL,{cache:'no-store'});
+  startupMark('manifest:fetch');const res=await fetch(manifestURL,{cache:'no-store'});
   if(!res.ok)throw Error('Manifeste expérimental indisponible (HTTP '+res.status+')');
-  manifest=validateChunkManifest(await res.json());
-  const packed=await fetch('../models/body-display.json.gz');
+  startupMark('manifest:parse');manifest=validateChunkManifest(await res.json());
+  startupMark('catalogue:fetch');const packed=await fetch('../models/body-display.json.gz');
   if(!packed.ok)throw Error('Catalogue source indisponible');
-  const bytes=await readGzipBounded(new Uint8Array(await packed.arrayBuffer()),427196);
+  startupMark('catalogue:body');const packedBytes=new Uint8Array(await packed.arrayBuffer());startupMark('catalogue:decompress');const bytes=await readGzipBounded(packedBytes,427196);startupMark('catalogue:digest');
   if(await sha256Bytes(bytes)!==manifest.source.metadata_sha256)throw Error('Catalogue source altéré');
-  const meta=JSON.parse(new TextDecoder().decode(bytes));sourceMeta=meta;
+  startupMark('catalogue:parse');const meta=JSON.parse(new TextDecoder().decode(bytes));sourceMeta=meta;
   records=meta.structures.map((r,i)=>sourceMeshData(r,{sourceIndex:i,system:atlasSystem(r)}));
   catalogueAccess=createSourceAccess(()=>records.map(userData=>({userData})));
   motionScale=meta.normalization.scale;
-  scene=new THREE.Scene();scene.background=new THREE.Color(0x092231);
+  startupMark('scene:create');scene=new THREE.Scene();scene.background=new THREE.Color(0x092231);
   camera=new THREE.PerspectiveCamera(42,1,.01,120);
   target=new THREE.Vector3(0,1.75,0);
   scene.add(new THREE.HemisphereLight(0xc6e4ed,0x26354b,2.2));
   const light=new THREE.DirectionalLight(0xffe5c8,2.7);light.position.set(5,8,6);scene.add(light);
-  renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});
+  startupMark('renderer:create');renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'low-power'});
   renderer.outputColorSpace=THREE.SRGBColorSpace;
   adapter=createRegionSceneAdapter({THREE,scene,rig,
     onChange:()=>{refreshStructures();scheduleRender()},
@@ -616,7 +620,7 @@ async function start(){
   $('motion-phase').oninput=()=>{endManual();pauseMotion();sampler.apply(elapsed=Number($('motion-phase').value),rig.uniforms);scheduleRender()};
   $('motion-rest').onclick=()=>{restPose();scheduleRender()};
   $('motion-play').onclick=()=>{if(playing)pauseMotion();else if(!failedContext&&adapter.listSourceIndices().length){endManual();playing=true;lastFrame=null;$('motion-play').textContent='Pause';motionText('Lecture de la marche');scheduleRender()}};
-  newStore();bindPointer();resetCamera();createDocumentary();
+  startupMark('controls:create');newStore();bindPointer();resetCamera();createDocumentary();
   loadMotion();loadNetwork();
   $('network-panel').addEventListener('click',scheduleRender);$('network-panel').addEventListener('change',scheduleRender);
   $('export-diagnostics').onclick=()=>{
@@ -635,10 +639,10 @@ async function start(){
   document.addEventListener('visibilitychange',()=>{if(document.hidden){neuromuscular?.pause();nmjSerial++;nmjController?.abort();nmjController=null;genericHeart?.suspend();documentary?.suspend();pauseMotion();pauseManual();eyeLight?.pause();}else{$('regional-nmj-load').disabled=!hand||Boolean(neuromuscular);scheduleRender()}});
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;genericHeart?.suspend();documentary?.suspend();cameraHistory.clear();residentMask.clear();unloadHand();unloadBrain();eyeLight?.close(false);pauseMotion();pauseManual();navigationUI();if(network){network.state.reading=false;$('network-reading').textContent='Lire les chaînes';}invalidatePending();status('Contexte WebGL perdu. Rendu suspendu ; les données restent séparées.',true)});
   canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte WebGL rétabli. Vérifier le rendu.');scheduleRender()});
-  $('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
+  startupMark('ready');$('loading').hidden=true;$('app').hidden=false;fillBlocks();scheduleRender();
   status('Manifeste vérifié : '+manifest.chunk_count+' blocs disponibles. Aucun bloc chargé.');
  }catch(e){
-  $('loading').setAttribute('role','alert');
+  startupError=e.message;startupTrace.push({stage:'failed',failed_stage:startupStage,elapsed_ms:performance.now()-startupStarted});$('loading').setAttribute('role','alert');
   $('loading').textContent='Laboratoire non disponible : '+e.message+'. Aucun maillage ne sera affiché sans source contrôlée. Utiliser le mode léger.';
  }
 }
