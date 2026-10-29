@@ -1,4 +1,5 @@
 import importlib.util
+import io
 import json
 import tempfile
 import threading
@@ -14,6 +15,29 @@ spec.loader.exec_module(preview)
 
 
 class PreviewTest(unittest.TestCase):
+    def test_transfer_interruptions_record_the_resource_without_guessing_a_cause(self):
+        handler_type = preview.make_handler(self.chunks, self.site).func
+        handler = object.__new__(handler_type)
+        handler.path = '/simulateur/web/module.mjs?unrelated-query=private'
+        events = []
+        handler.log_error = lambda fmt, *args: events.append(fmt % args)
+        for error_type in (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
+            class DisconnectedWriter:
+                def write(self, data):
+                    raise error_type('connection interrupted')
+            handler.copyfile(io.BytesIO(b'original source bytes'), DisconnectedWriter())
+            self.assertIn('/simulateur/web/module.mjs', events[-1])
+            self.assertIn(error_type.__name__, events[-1])
+            self.assertIn('cause=unknown', events[-1])
+            self.assertNotIn('private', events[-1])
+        self.assertEqual(len(events), 3)
+        class BrokenSource:
+            def read(self, length):
+                raise OSError('disk read failure')
+        with self.assertRaisesRegex(OSError, 'disk read failure'):
+            handler.copyfile(BrokenSource(), io.BytesIO())
+        self.assertEqual(len(events), 3)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         root = Path(self.temp.name)

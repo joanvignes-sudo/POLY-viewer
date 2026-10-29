@@ -37,6 +37,16 @@ def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root
             raise ValueError('Only verified unpublished skeleton blocks allowed')
 
     class Handler(SimpleHTTPRequestHandler):
+        def copyfile(self, source, outputfile):
+            try:
+                shutil.copyfileobj(source, outputfile)
+            except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError) as error:
+                # The headers may already be sent. Record interruption, never a successful retry.
+                # A client cancellation and a host/network failure cannot be distinguished here.
+                self.log_error('resource-transfer-interrupted path=%s exception=%s code=%s cause=unknown',
+                               urlsplit(self.path).path, type(error).__name__,
+                               getattr(error, 'winerror', None) or error.errno)
+
         def list_directory(self, path):
             self.send_error(403, 'Directory listing disabled')
             return None
@@ -76,10 +86,7 @@ def make_handler(chunks_root, repo_root=REPO, reference_root=None, skeleton_root
                 self.send_header('X-Content-Type-Options', 'nosniff')
                 self.end_headers()
                 if not head:
-                    try:
-                        shutil.copyfileobj(source, self.wfile)
-                    except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
-                        pass  # Expected when the viewer cancels an obsolete download.
+                    self.copyfile(source, self.wfile)
             return True
 
         def do_GET(self):
