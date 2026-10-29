@@ -299,3 +299,8 @@ Les 208 objets / 206 concepts peuvent être chargés explicitement avec un budge
 ## Pilotes médian/ulnaire — accès documentaire indépendant
 
 Lecture sans WebGL des deux itinéraires réels, branches et frontière terminale ; sources vérifiées, délais inconnus et mesures humaines séparées. 146 tests Node et suite navigateur ordinateur/mobile passent. Le pilote 3D global reste historique, sans faux adaptateur. Détails dans `BODY_NERVE_PILOT_DOCUMENTATION_2026-10-29.md`.
+
+
+## Clôture de la fenêtre nocturne
+
+Bilan dans `BODY_NIGHT_FINAL_2026-10-29.md` : 146 tests Node, 23 Python et résultats réussis de 24 suites navigateur au fil des reprises. Liste de convergence encore partielle ; contrôleur nerveux global, revue DB et ateliers spécialisés restent distincts. Cause du délai intermittent inconnue. Aucun nouveau chantier après 08:00 Europe/Paris ; sauvegarde locale et bilan final conservés.
