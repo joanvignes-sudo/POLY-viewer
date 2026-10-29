@@ -107,15 +107,23 @@ export function createBoundedChunkStore(manifest,{readBytes,unzip=readGzipBounde
   return true;
  }
  function release(id){
-  // Also invalidates a pending request that has not yet reached onInstall.
+  // Detach the obsolete promise immediately: a retry of the same block must not
+  // join a cancelled fetch whose server or fixture may never finish.
   invalidate(id);
-  controllers.get(id)?.abort(Error('Chargement anatomique annulé'));
+  const controller=controllers.get(id);
+  inflight.delete(id);
+  controllers.delete(id);
+  controller?.abort(Error('Chargement anatomique annulé'));
   return remove(id);
  }
  function clear(){
-  // Invalidate *all* pending reads even if there are no resident entries.
+  // A new load may start immediately even if the aborted requests are still
+  // settling. Old finally blocks only remove their own promise/controller.
   epoch++;
-  for(const controller of controllers.values())controller.abort(Error('Chargement anatomique annulé'));
+  const obsolete=[...controllers.values()];
+  inflight.clear();
+  controllers.clear();
+  for(const controller of obsolete)controller.abort(Error('Chargement anatomique annulé'));
   for(const id of [...entries.keys()])remove(id);
  }
  async function load(id,{pin=false}={}){

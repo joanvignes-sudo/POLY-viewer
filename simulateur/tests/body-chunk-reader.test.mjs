@@ -161,3 +161,75 @@ test('a concurrent duplicate request can add a pin without downloading or instal
  store.unpin(a.id);
  store.clear();
 });
+
+
+test('release and clear allow immediate same-block retry even when cancelled network reads ignore abort',async t=>{
+ for(const action of ['release','clear']){
+  await t.test(action,async()=>{
+   const c=fixture.chunks[0];
+   let unlockOld,notifyOld,geometryReads=0,installs=0;
+   const holdOld=new Promise(resolve=>{unlockOld=resolve});
+   const entered=new Promise(resolve=>{notifyOld=resolve});
+   const delayedRead=async name=>{
+    if(name===c.geometry&&++geometryReads===1){notifyOld();await holdOld}
+    // Deliberately ignore AbortSignal: even a stuck transport must not block retry.
+    return readBytes(name);
+   };
+   const store=createBoundedChunkStore(fixture,{readBytes:delayedRead,unzip,hash:sha,
+    onInstall:chunk=>{installs++;return {id:chunk.id}}
+   });
+   const old=store.load(c.id).then(()=>null,error=>error);
+   await entered;
+   if(action==='release')store.release(c.id);
+   else store.clear();
+   let timeout;
+   try{
+    const fresh=await Promise.race([
+     store.load(c.id),
+     new Promise((_,reject)=>{timeout=setTimeout(()=>reject(Error('Same-ID retry blocked by cancelled request')),3000)})
+    ]);
+    assert.equal(fresh.id,c.id);
+    assert.equal(installs,1);
+    assert.deepEqual(store.info().ids,[c.id]);
+   }finally{
+    clearTimeout(timeout);
+    unlockOld();
+   }
+   const staleError=await old;
+   assert.match(staleError?.message||'',/annulé/);
+   assert.deepEqual(store.info().ids,[c.id],'Old request must not remove the new resident');
+   assert.equal(installs,1,'Cancelled request must not reinstall');
+   assert.equal(geometryReads,2,'Retry must use a fresh transfer');
+   store.clear();
+  });
+ }
+});
+
+test('late cancelled GPU installation is disposed before a same-ID retry installs',async()=>{
+ const c=fixture.chunks[0];
+ let unlockOld,notifyOld,installs=0;
+ const holdOld=new Promise(resolve=>{unlockOld=resolve});
+ const entered=new Promise(resolve=>{notifyOld=resolve});
+ const disposed=[];
+ const store=createBoundedChunkStore(fixture,{readBytes,unzip,hash:sha,
+  onInstall:async chunk=>{
+   const token={id:chunk.id,sequence:++installs};
+   if(token.sequence===1){notifyOld();await holdOld}
+   return token;
+  },
+  onDispose:token=>disposed.push(token.sequence)
+ });
+ const old=store.load(c.id).then(()=>null,error=>error);
+ await entered;
+ store.release(c.id);
+ const fresh=store.load(c.id);
+ unlockOld();
+ const oldError=await old;
+ assert.match(oldError?.message||'',/annulé/);
+ assert.equal((await fresh).id,c.id);
+ assert.deepEqual(disposed,[1],'The cancelled GPU allocation is the one released');
+ assert.equal(installs,2);
+ assert.deepEqual(store.info().ids,[c.id]);
+ store.clear();
+ assert.deepEqual(disposed,[1,2]);
+});
