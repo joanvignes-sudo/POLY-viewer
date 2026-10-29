@@ -49,3 +49,7 @@ Accessoires historiques raccordés, construction exacte et destruction testées 
 
 
 État actuel après raccordement des groupes HRA et de l’atelier : `BODY_GROUPS_WORKBENCH_2026-10-29.md`. Comparaisons, poses, suivi et cibles groupées qualifiées sont raccordés ; 165 tests Node et parcours ciblés ordinateur/mobile réussis. Le diagnostic couvre maintenant aussi les imports avant le démarrage du module, sans correction de cause intermittente revendiquée.
+
+## Profil global explicite des références — complément du 29 octobre
+
+Le parcours `reference-region-lab.html?scope=whole` permet l'affichage volontaire des 526 références et des 46 blocs sous un budget source de 96 Mio explicitement choisi, sans augmenter le parcours par pièces à 4 Mio / 16 pièces. Les identités, métadonnées et nombres restent ceux des blocs vérifiés ; le mode illustratif n'est pas un recalage humain. Le catalogue ne charge pas automatiquement de géométrie. Sauvegarde globale séparée, refus avant I/O, annulation, corruption, budget réduit et perte de contexte ont des essais navigateur réussis. Parité exhaustive des interactions du monolithe non établie ; téléphone physique non testé. Voir `BODY_REFERENCE_WHOLE_2026-10-29.md`. Un incident de démarrage en test et un refus ponctuel de connexion classique mobile demeurent consignés, cause inconnue.

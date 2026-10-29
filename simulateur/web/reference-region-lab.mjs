@@ -1,3 +1,4 @@
+import {referenceSelectionProfile,REFERENCE_LOCAL_BUDGET} from './reference-selection-profile.mjs';
 window.dispatchEvent(new Event('poly-module-ready'));
 import {writeDisplayLineDistances} from './display-line-distances.mjs';
 import {writeIndexedDisplayNormals} from './indexed-display-normals.mjs';
@@ -11,8 +12,13 @@ import {planReferenceSelection,loadReferenceSelection} from './reference-selecti
 import {createReferenceNervePanel} from './reference-nerve-documentation.mjs';
 import {loadReferencePosture,applyReferenceActivity,referenceFocusPoint,REFERENCE_ACTIVITY_MODES,makeReferencePostureBase,writeReferencePosture,deformReferenceRoute} from './reference-posture.mjs';
 import {startLoadDeadline} from './load-deadline.mjs';
-import {REFERENCE_BOOKMARK_KEY,validateReferenceBookmark} from './reference-view-bookmark.mjs';
+import {REFERENCE_BOOKMARK_KEY,REFERENCE_WHOLE_BOOKMARK_KEY,validateReferenceBookmark} from './reference-view-bookmark.mjs';
 const $=id=>document.getElementById(id),root=new URL('../data/reference-chunks-preview/',import.meta.url),readBytes=browserReferenceBytes(root);
+const wholeMode=new URLSearchParams(location.search).get('scope')==='whole',bookmarkKey=wholeMode?REFERENCE_WHOLE_BOOKMARK_KEY:REFERENCE_BOOKMARK_KEY;
+const limits=()=>referenceSelectionProfile(wholeMode,wholeMode?Number($('reference-budget').value):REFERENCE_LOCAL_BUDGET);
+$('reference-whole-controls').hidden=!wholeMode;
+if(wholeMode){document.title='POLY · Inventaire global des références';document.querySelector('h1').textContent='526 pièces vérifiées. Budget explicite.';$('reference-budget-limit').textContent='Profil global distinct : 4 Mio par défaut ; jusqu’à 96 Mio de sources et 526 pièces seulement après choix explicite. Catalogue, copies d’affichage, temporaires et GPU exclus.';}
+function selectionUI(){$('reference-whole-load').disabled=!catalogue||failedContext||Boolean(pending);$('reference-cancel-load').disabled=!pending;}
 const canvas=$('reference-canvas'),scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(42,1,.001,100000);
 scene.background=new THREE.Color(0x092231);scene.add(new THREE.HemisphereLight(0xd3e8ef,0x273346,2.2));
 const light=new THREE.DirectionalLight(0xffe5d1,2.6);light.position.set(5,8,6);scene.add(light);
@@ -85,7 +91,7 @@ function draw(){
 }
 function diagnostics(){return {schema:'poly.reference-part-preview.v1',selected_key:selectedKey,block:chunk?.id??null,
  metadata:{...metadataState,trace:metadataState.trace.map(item=>({...item})),elapsed_ms:startup?performance.now()-metadataStarted:metadataState.elapsed_ms},
- resident_raw_bytes:residentBlocks.reduce((n,b)=>n+b.rawBytes,0),resident_blocks:residentBlocks.map(b=>b.id),context_keys:contextMeshes.map(m=>m.userData.referenceKey),visible_keys:allMeshes().filter(m=>m.visible).map(m=>m.userData.referenceKey),capacity_raw_bytes:4194304,metadata_raw_bytes:manifest?.catalogue.raw_bytes??null,
+ resident_raw_bytes:residentBlocks.reduce((n,b)=>n+b.rawBytes,0),resident_blocks:residentBlocks.map(b=>b.id),context_keys:contextMeshes.map(m=>m.userData.referenceKey),visible_keys:allMeshes().filter(m=>m.visible).map(m=>m.userData.referenceKey),capacity_raw_bytes:limits().maxRawBytes,selection_profile:wholeMode?'whole':'local',pending_selection:Boolean(pending),metadata_raw_bytes:manifest?.catalogue.raw_bytes??null,
  display_buffer_bytes:allMeshes().reduce((n,m)=>n+m.geometry.attributes.position.array.byteLength+m.geometry.attributes.normal.array.byteLength+(m.userData.postureBase?.byteLength??0),0),
  posture:{mode:$('reference-space').value,activity:activityMode,phase:posePhase,playing,elapsed,source_sample:mesh?Array.from(mesh.userData.entry.positions.subarray(0,3)):null,display_sample:mesh?Array.from(mesh.geometry.attributes.position.array.subarray(0,3)):null,route:activeRoute?.id??null},
  meshes:mesh?1+contextMeshes.length:0,visible_meshes:[mesh,...contextMeshes].filter(m=>m?.visible).length,webgl_initialized:Boolean(renderer),pending_frame:renderPending!==null,geometries:renderer?.info.memory.geometries??0,context_lost:failedContext,
@@ -99,7 +105,7 @@ function release(){
  serial++;pending?.abort(Error('Reference selection cancelled'));pending=null;
  for(const m of [mesh,...contextMeshes].filter(Boolean)){scene.remove(m);m.geometry.dispose();m.material.dispose();}mesh=null;contextMeshes=[];residentBlocks=[];
  chunk=null;selectedKey=null;pointers.clear();drag=null;pinch=null;renderer?.renderLists.dispose();qualification?.dispose();qualification=null;$('reference-qualification').hidden=true;
- $('reference-selected').textContent='Aucune pièce chargée.';$('reference-loaded-pieces').replaceChildren();$('reference-documentation').replaceChildren();$('reference-documentation').hidden=true;$('reference-memory').textContent='0 octet géométrique résident ; le catalogue reste disponible.';draw();
+ $('reference-selected').textContent='Aucune pièce chargée.';$('reference-loaded-pieces').replaceChildren();$('reference-documentation').replaceChildren();$('reference-documentation').hidden=true;$('reference-memory').textContent='0 octet géométrique résident ; le catalogue reste disponible.';selectionUI();draw();
 }
 function reset(){stopFollowing();if(!mesh)return;const box=new THREE.Box3();for(const m of [mesh,...contextMeshes])box.expandByObject(m);const b=box.getBoundingSphere(new THREE.Sphere());center.copy(b.center);radius=Math.max(b.radius,.00001);distance=radius*3.2;azimuth=1.25;elevation=.15;draw();}
 function followPoint(){const item=allMeshes().find(m=>m.visible&&m.userData.referenceKey===inspectedKey);return item&&posture&&$('reference-space').value==='illustrative'?referenceFocusPoint(item.userData.entry.metadata,posture.fit,posture.rig.uniforms):null;}
@@ -140,15 +146,15 @@ function show(selection){
  [mesh,...contextMeshes]=candidates;for(const m of candidates)scene.add(m);residentBlocks=selection.blocks;
  clearInspection();
  const entry=selection.entries[0];chunk=selection.blocks.find(b=>b.entries.some(e=>e.key===entry.key));selectedKey=entry.key;renderer.renderLists.dispose();
- $('reference-context').checked=true;$('reference-context-caption').textContent=contextMeshes.every(m=>m.userData.referenceKey.startsWith('bones/'))?'Voir les os documentés du groupe':'Voir les autres surfaces explicitement citées du groupe';$('reference-context-label').hidden=!contextMeshes.length;
+ $('reference-context').checked=true;$('reference-context-caption').textContent=selection.entries.length===526?'Voir les 525 autres pièces de l’inventaire':contextMeshes.every(m=>m.userData.referenceKey.startsWith('bones/'))?'Voir les os documentés du groupe':'Voir les autres surfaces explicitement citées du groupe';$('reference-context-label').hidden=!contextMeshes.length;
  const generation=++displayGeneration,loaded=$('reference-loaded-pieces');loaded.replaceChildren();
- for(const piece of selection.entries){const key=piece.key;const button=document.createElement('button');button.type='button';button.className='secondary';button.dataset.loadedReferenceKey=piece.key;button.textContent='Fiche de la pièce chargée : '+piece.metadata.name+' · '+piece.source_id;button.onclick=()=>{if(displayGeneration===generation)inspectLoaded(key)};loaded.append(button);}
+ const loadedIds=selection.entries.map(e=>e.key);let loadedLimit=35;const paintLoaded=()=>{if(displayGeneration!==generation)return;loaded.replaceChildren();const count=document.createElement('p');count.textContent=Math.min(loadedLimit,loadedIds.length)+' / '+loadedIds.length+' fiches de pièces résidentes présentées.';loaded.append(count);for(const key of loadedIds.slice(0,loadedLimit)){const [collection,index]=key.split('/'),info=catalogue.data[collection][Number(index)],button=document.createElement('button');button.type='button';button.className='secondary';button.dataset.loadedReferenceKey=key;button.textContent='Fiche de la pièce chargée : '+info.name+' · '+info.id;button.onclick=()=>{if(displayGeneration===generation)inspectLoaded(key)};loaded.append(button);}if(loadedLimit<loadedIds.length){const more=document.createElement('button');more.type='button';more.textContent='Afficher les 35 fiches résidentes suivantes';more.onclick=()=>{loadedLimit+=35;paintLoaded();};loaded.append(more);}};paintLoaded();
  const host=$('reference-selected');host.replaceChildren();for(const text of [entry.metadata.name,'Source : '+entry.source_id+' · '+entry.json_pointer,
   'Positions float64 source : '+fmt(entry.positions.length/3)+' sommets · indices uint32 : '+fmt(entry.indices.length/3)+' triangles.',
   'Empreinte du fichier JSON source : '+manifest.source_raw_sha256,'Coordonnées numériques source ; unité et recalage individuels non inférés.']){const p=document.createElement('p');p.textContent=text;host.append(p);}
  qualification?.dispose();qualification=null;$('reference-qualification').hidden=!entry.key.startsWith('parts/');
  if(entry.key.startsWith('parts/')){qualification=createAttachmentPanel($('reference-qualification'),'body');qualification.show(entry.source_id);}
- showDocumentation(entry.key);$('reference-memory').textContent=fmt(selection.plan.rawBytes)+' / '+fmt(4194304)+' octets de blocs source résidents. '+fmt(selection.entries.length)+' pièce(s) affichée(s) ; les autres pièces des blocs ne sont pas affichées.';reset();
+ showDocumentation(entry.key);$('reference-memory').textContent=fmt(selection.plan.rawBytes)+' / '+fmt(limits().maxRawBytes)+' octets de blocs source résidents. '+fmt(selection.entries.length)+(selection.entries.length===526?' pièce(s) affichée(s) ; inventaire source complet.':' pièce(s) affichée(s) ; les autres pièces des blocs ne sont pas affichées.');reset();
 }
 function showDocumentation(key){
  nerveDocumentation?.dispose();nerveDocumentation=null;
@@ -164,31 +170,32 @@ function showDocumentation(key){
  for(const row of model.links){const b=document.createElement('button');b.type='button';b.dataset.relatedReferenceKey=row.key;b.textContent='Consulter séparément : '+row.metadata.name;b.onclick=()=>{if(documentationGeneration===generation)select(row.key)};host.append(b);}
  if(!model.links.length)text('Aucune autre pièce résolue par une relation osseuse explicite et un côté source commun.');
  if(key.startsWith('parts/')&&model.links.length){const keys=[key,...model.links.map(r=>r.key)],b=document.createElement('button');b.type='button';b.dataset.referenceGroup=key;
-  try{const plan=planReferenceSelection(manifest,keys);b.textContent='Afficher ensemble : muscle et os documentés · '+fmt(plan.rawBytes)+' octets source';b.onclick=()=>{if(documentationGeneration===generation)select(key,null,keys)};}
+  try{const plan=planReferenceSelection(manifest,keys,limits());b.textContent='Afficher ensemble : muscle et os documentés · '+fmt(plan.rawBytes)+' octets source';b.onclick=()=>{if(documentationGeneration===generation)select(key,null,keys)};}
   catch{b.disabled=true;b.textContent='Groupe indisponible dans le budget de 4 Mio.';}host.append(b);
   text('Assemblage dans les coordonnées de cette référence source uniquement. Les régions d’attache documentaires ne deviennent pas des points d’insertion mesurés.');}
 
  if(model.opposite){const b=document.createElement('button');b.type='button';b.textContent='Pièce controlatérale explicitement liée : '+model.opposite.metadata.name;b.onclick=()=>{if(documentationGeneration===generation)select(model.opposite.key)};host.append(b);}
  if(model.observations.length){const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent='Observations humaines sources · sans application au maillage';details.append(summary);
   for(const observation of model.observations){const pre=document.createElement('pre');pre.style.whiteSpace='pre-wrap';pre.style.overflowWrap='anywhere';pre.textContent=JSON.stringify(observation,null,2);details.append(pre);}host.append(details);}
- for(const observation of model.interactions){const comparison=referenceInteractionSelection(catalogue.data,key,observation.id);if(!comparison)continue;const button=document.createElement('button');button.type='button';button.dataset.referenceComparison=observation.id;try{const plan=planReferenceSelection(manifest,comparison.keys);button.textContent='Comparer les surfaces explicitement citées · '+observation.title+' · '+fmt(plan.rawBytes)+' octets source';button.onclick=()=>{if(documentationGeneration===generation)select(key,null,comparison.keys)};}catch{button.disabled=true;button.textContent='Comparaison hors budget de 4 Mio · '+observation.title;}host.append(button);text('Comparaison documentaire dans ce seul référentiel. Aucun effet d’inhibition, activation, trajet spinal ou force n’est simulé.');}
+ for(const observation of model.interactions){const comparison=referenceInteractionSelection(catalogue.data,key,observation.id);if(!comparison)continue;const button=document.createElement('button');button.type='button';button.dataset.referenceComparison=observation.id;try{const plan=planReferenceSelection(manifest,comparison.keys,limits());button.textContent='Comparer les surfaces explicitement citées · '+observation.title+' · '+fmt(plan.rawBytes)+' octets source';button.onclick=()=>{if(documentationGeneration===generation)select(key,null,comparison.keys)};}catch{button.disabled=true;button.textContent='Comparaison hors budget choisi · '+observation.title;}host.append(button);text('Comparaison documentaire dans ce seul référentiel. Aucun effet d’inhibition, activation, trajet spinal ou force n’est simulé.');}
  if(model.interactions.length){const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent='Interactions humaines documentées · protocole distinct de la posture affichée';details.append(summary);for(const observation of model.interactions){const pre=document.createElement('pre');pre.style.whiteSpace='pre-wrap';pre.style.overflowWrap='anywhere';pre.textContent=JSON.stringify(observation,null,2);details.append(pre);}host.append(details);}
  const raw=document.createElement('details'),summary=document.createElement('summary'),pre=document.createElement('pre');summary.textContent='Tous les champs documentaires source de cette pièce';pre.style.whiteSpace='pre-wrap';pre.style.overflowWrap='anywhere';pre.textContent=JSON.stringify(model.item,null,2);raw.append(summary,pre);host.append(raw);
  if(key.startsWith('parts/'))nerveDocumentation=createReferenceNervePanel(host,model.item,{onRoute:showRoute});
 }
 async function select(key,savedView=null,keys=[key],focusKey=null){
  if(failedContext){status('Rendu suspendu : attendre la restauration du contexte.',true);return;}
+ let profile;try{profile=limits();planReferenceSelection(manifest,keys,profile);}catch(error){status('Sélection refusée avant transfert : '+error.message,true);return;}
  pausePosture();
- const request=++serial;pending?.abort(Error('Reference selection changed'));const controller=new AbortController();pending=controller;
+ const request=++serial;pending?.abort(Error('Reference selection changed'));const controller=new AbortController();pending=controller;const deadline=startLoadDeadline(controller,{timeoutMs:profile.timeoutMs});selectionUI();
  status('Vérification des blocs de la sélection…');
  try{
-  const selection=await loadReferenceSelection(manifest,keys,{catalogue,readBytes,signal:controller.signal,resident:residentBlocks});
+  const selection=await loadReferenceSelection(manifest,keys,{catalogue,readBytes,signal:controller.signal,resident:residentBlocks,...profile});
   if(request!==serial||failedContext)return;show(selection);
   if(focusKey){inspectLoaded(focusKey);$('reference-focus-hit').onclick();}
   if(savedView){distance=radius*savedView.zoom_ratio;azimuth=savedView.azimuth;elevation=savedView.elevation;draw();}
   status('Sélection vérifiée : '+fmt(selection.entries.length)+' pièce(s), '+fmt(selection.blocks.length)+' bloc(s).');
  }catch(error){if(request===serial)status('Pièce refusée : '+error.message,true);}
- finally{if(request===serial)pending=null;}
+ finally{deadline.dispose();if(request===serial){pending=null;selectionUI();}}
 }
 function selectButton(key){return ()=>select(key);}
 function list(resetRows=true){
@@ -212,7 +219,7 @@ async function start(){
   for(const option of $('reference-region').querySelectorAll('option[data-source-region]'))option.remove();
   for(const value of [...new Set(records.map(r=>r.metadata.region).filter(v=>typeof v==='string'))].sort()){const option=document.createElement('option');option.dataset.sourceRegion='true';option.value=value;option.textContent=value+' · champ source';$('reference-region').append(option);}
   $('reference-credit').textContent=(typeof catalogue.data.attribution==='string'?catalogue.data.attribution:JSON.stringify(catalogue.data.attribution))+' · Licence déclarée par la source : '+(typeof catalogue.data.license==='string'?catalogue.data.license:JSON.stringify(catalogue.data.license));
-  $('loading').hidden=true;$('reference-retry').hidden=true;$('app').hidden=false;list();refreshBookmark();mark('ready');
+  $('loading').hidden=true;$('reference-retry').hidden=true;$('app').hidden=false;list();refreshBookmark();selectionUI();mark('ready');
  }catch(error){
   if(generation!==metadataSerial||controller.signal.aborted&&!deadline.expired())return;
   metadataState.failed_stage=metadataState.stage;metadataState.error=error.message;mark(deadline.expired()?'timeout':'error');
@@ -223,25 +230,31 @@ async function start(){
 $('reference-search').oninput=()=>list();$('reference-collection').onchange=()=>list();$('reference-side').onchange=()=>list();$('reference-region').onchange=()=>list();$('reference-more').onclick=()=>{visibleRows+=35;list(false)};
 $('reference-retry').onclick=start;
 $('reference-context').onchange=()=>{for(const m of contextMeshes)m.visible=$('reference-context').checked;if(!followPoint())stopFollowing();postureControls();draw();};
+function cancelSelection(){serial++;pending?.abort(Error('Reference load cancelled'));pending=null;selectionUI();}
+$('reference-whole-load').onclick=()=>{const keys=records.map(r=>r.key);select(keys[0],null,keys);};
+$('reference-cancel-load').onclick=()=>{cancelSelection();status('Chargement annulé ; sélection précédente conservée.');};
+$('reference-budget').onchange=()=>{cancelSelection();if(residentBlocks.reduce((sum,b)=>sum+b.rawBytes,0)>limits().maxRawBytes){release();status('Sélection libérée pour respecter le budget réduit.');}else{if(selectedKey)showDocumentation(inspectedKey??selectedKey);status('Budget choisi ; aucun chargement automatique.');}};
 $('reference-release').onclick=()=>{release();status('Bloc et ressources de la pièce libérés.')};$('reference-reset').onclick=reset;
-function bookmark(){try{return validateReferenceBookmark(JSON.parse(localStorage.getItem(REFERENCE_BOOKMARK_KEY)),manifest?.source_raw_sha256,records.map(r=>r.key));}catch{return null;}}
+function validateSaved(value){return validateReferenceBookmark(value,manifest?.source_raw_sha256,records.map(r=>r.key),{whole:wholeMode});}
+function bookmark(){try{return validateSaved(JSON.parse(localStorage.getItem(bookmarkKey)));}catch{return null;}}
 function refreshBookmark(){$('reference-restore').disabled=!bookmark();}
 $('reference-save').onclick=()=>{
  if(!mesh){status('Choisir une pièce avant de mémoriser sa vue.',true);return;}
- const value=validateReferenceBookmark({schema:REFERENCE_BOOKMARK_KEY,source_raw_sha256:manifest.source_raw_sha256,key:selectedKey,keys:[selectedKey,...contextMeshes.map(m=>m.userData.referenceKey)],...(savedCamera&&inspectedKey?{focus_key:inspectedKey}:{}),display:{space:$('reference-space').value,activity:activityMode,phase:posePhase},view:{zoom_ratio:distance/radius,azimuth,elevation}},manifest.source_raw_sha256,records.map(r=>r.key));
+ const value=validateSaved({schema:bookmarkKey,source_raw_sha256:manifest.source_raw_sha256,key:selectedKey,keys:[selectedKey,...contextMeshes.map(m=>m.userData.referenceKey)],...(savedCamera&&inspectedKey?{focus_key:inspectedKey}:{}),display:{space:$('reference-space').value,activity:activityMode,phase:posePhase},view:{zoom_ratio:distance/radius,azimuth,elevation}});
  if(!value){status('Cette caméra ne peut pas être mémorisée.',true);return;}
- try{localStorage.setItem(REFERENCE_BOOKMARK_KEY,JSON.stringify(value));refreshBookmark();status('Identifiant et caméra mémorisés sur cet appareil.');}catch{status('Stockage local indisponible ; la vue reste consultable.',true);}
+ try{localStorage.setItem(bookmarkKey,JSON.stringify(value));refreshBookmark();status('Identifiant et caméra mémorisés sur cet appareil.');}catch{status('Stockage local indisponible ; la vue reste consultable.',true);}
 };
 $('reference-restore').onclick=async()=>{
  const saved=bookmark();refreshBookmark();if(!saved){status('Vue absente, invalide ou issue d’une autre source.',true);return;}
+ try{planReferenceSelection(manifest,saved.keys??[saved.key],limits());}catch(error){status('Reprise refusée avant transfert : choisir un budget suffisant.',true);return;}
  const request=++serial;pending?.abort();pending=null;
  if(!await changeSpace(saved.display?.space??'source'))return;
  if(request!==serial)return;
  if(posture&&saved.display?.space==='illustrative'){activityMode=saved.display.activity??'walk';if(saved.display.phase!==null){posePhase=elapsed=saved.display.phase;applyReferenceActivity(posture,activityMode,elapsed);}postureControls();}
  select(saved.key,saved.view,saved.keys??[saved.key],saved.focus_key??null);
 };
-$('reference-forget').onclick=()=>{try{localStorage.removeItem(REFERENCE_BOOKMARK_KEY);refreshBookmark();status('Vue mémorisée effacée.');}catch{status('Stockage local indisponible.',true);}};
-window.addEventListener('storage',event=>{if(event.key===REFERENCE_BOOKMARK_KEY||event.key===null)refreshBookmark();});
+$('reference-forget').onclick=()=>{try{localStorage.removeItem(bookmarkKey);refreshBookmark();status('Vue mémorisée effacée.');}catch{status('Stockage local indisponible.',true);}};
+window.addEventListener('storage',event=>{if(event.key===bookmarkKey||event.key===null)refreshBookmark();});
 const pointers=new Map();let drag=null,pinch=null;const span=()=>{const [a,b]=[...pointers.values()];return Math.hypot(a.x-b.x,a.y-b.y)};
 canvas.onpointerdown=e=>{pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});canvas.setPointerCapture(e.pointerId);if(pointers.size===1){tap={id:e.pointerId,x:e.clientX,y:e.clientY};drag={x:e.clientX,y:e.clientY,azimuth,elevation};}else{tap=null;drag=null;if(pointers.size===2)pinch={span:Math.max(1,span()),distance}}};
 canvas.onpointermove=e=>{if(!pointers.has(e.pointerId))return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});if(pinch&&pointers.size===2)distance=Math.max(radius*.2,Math.min(radius*40,pinch.distance*pinch.span/Math.max(1,span())));else if(drag){azimuth=drag.azimuth-(e.clientX-drag.x)*.006;elevation=Math.max(-1.3,Math.min(1.3,drag.elevation+(e.clientY-drag.y)*.006));}draw();};
@@ -251,7 +264,7 @@ canvas.onpointercancel=()=>{pointers.clear();drag=null;pinch=null;tap=null;};
 canvas.addEventListener('wheel',e=>{e.preventDefault();distance=Math.max(radius*.2,Math.min(radius*40,distance*Math.exp(e.deltaY*.001)));draw();},{passive:false});
 canvas.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();azimuth+=e.key==='ArrowLeft'?-.1:e.key==='ArrowRight'?.1:0;elevation=Math.max(-1.3,Math.min(1.3,elevation+(e.key==='ArrowUp'?.1:e.key==='ArrowDown'?-.1:0)));draw();}});
 canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();failedContext=true;release();cancelRender();status('Contexte WebGL perdu ; bloc et pièce libérés.',true)});
-canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;status('Contexte rétabli. Choisir une pièce pour la recharger.');draw();});
+canvas.addEventListener('webglcontextrestored',()=>{failedContext=false;selectionUI();status('Contexte rétabli. Choisir une pièce pour la recharger.');draw();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){pausePosture();cancelRender();}else draw();});
 window.addEventListener('resize',draw);window.addEventListener('pagehide',()=>{metadataSerial++;startup?.abort();startup=null;release();cancelRender();renderer?.dispose();renderer=null;});window.addEventListener('pageshow',e=>{if(e.persisted){failedContext=false;if(!catalogue)start();else status('Catalogue conservé ; aucune pièce rechargée automatiquement.')}});
 Object.defineProperty(window,'__polyReferencePartDiagnostics',{value:diagnostics});start();

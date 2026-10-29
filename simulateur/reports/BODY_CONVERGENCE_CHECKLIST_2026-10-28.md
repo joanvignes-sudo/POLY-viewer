@@ -186,3 +186,14 @@ Catalogue du squelette : annulation, délai, erreur réseau et départ avant ré
 ## Gestes des vues statiques et transferts interrompus
 
 Squelette et revue DB : pincement sans rotation, clavier et annulation complète du geste ; sélection multiple accidentelle reproduite puis corrigée sur un triangle source. Journal des copies interrompues avec chemin et exception, sans supposer une cause. 174 tests Node, 24 Python et neuf suites navigateur ciblées passent. Les données source et les anciens reçus restent intacts. Voir `BODY_STATIC_INPUT_2026-10-29.md`.
+
+## Profil global de références — réception distincte, 29 octobre
+
+- [x] Profil global opt-in, plafond 96 Mio uniquement sur demande ; le 4 Mio local reste invariant.
+- [x] 526 pièces, 46 blocs, provenance et coordonnées sources préservées ; 178 Node et 24 Python validés.
+- [x] Scène globalement rendue sur ordinateur, conservation après annulation/corruption, sauvegarde distincte et budget réduit ; suite navigateur globale réussie.
+- [x] Interactions locales, atelier, démarrage instrumenté et catalogue léger testés ; une première panne de catalogue a été conservée, réépreuve instrumentée réussie.
+- [ ] Cause du délai intermittent et du refus ponctuel de connexion classique mobile non déterminée ; ne pas interpréter une réexécution réussie comme correction.
+- [ ] Mesures physiques téléphone, parité monolithique exhaustive et qualification biologique encore ouvertes.
+
+Voir `BODY_REFERENCE_WHOLE_2026-10-29.md`. Aucun push, fusion ou déploiement.
