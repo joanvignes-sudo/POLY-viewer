@@ -1,3 +1,4 @@
+import {writeIndexedDisplayNormals} from './indexed-display-normals.mjs';
 import * as THREE from './vendor/three.module.js?v=audit-o-1';
 import {fetchBoundedBytes} from './bounded-fetch.mjs';
 import {validateReferenceManifest,readReferenceCatalogue,browserReferenceBytes} from './reference-source-reader.mjs';
@@ -28,12 +29,17 @@ function showRoute(route,sourceId){
  if($('reference-space').value!=='illustrative'||!posture||!allMeshes().some(m=>m.userData.entry.source_id===sourceId)){status('La courbe exige le repère illustratif et la pièce de cette fiche déjà chargée.',true);return false;}
  activeRoute=route;const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(new Float32Array(65*3),3));routeLine=new THREE.Line(geometry,new THREE.LineDashedMaterial({color:0xf4ce8b,depthTest:false,dashSize:.022,gapSize:.012}));routeLine.renderOrder=31;scene.add(routeLine);updateRoute();draw();return true;
 }
+function updateDisplayNormals(geometry){
+ const positions=geometry.attributes.position.array;
+ if(!geometry.attributes.normal)geometry.setAttribute('normal',new THREE.BufferAttribute(new Float32Array(positions.length),3));
+ writeIndexedDisplayNormals(positions,geometry.index.array,geometry.attributes.normal.array);geometry.attributes.normal.needsUpdate=true;
+}
 function updatePostureGeometry(){
  for(const m of allMeshes()){
   const entry=m.userData.entry,target=m.geometry.attributes.position.array;
   if(posture&&$('reference-space').value==='illustrative'){m.userData.postureBase??=makeReferencePostureBase(entry,catalogue.data,posture.fit);writeReferencePosture(m.userData.postureBase,target,entry.metadata,posture.rig.uniforms);}
   else{target.set(entry.positions);m.userData.postureBase=null;}
-  m.geometry.attributes.position.needsUpdate=true;m.geometry.computeVertexNormals();m.geometry.computeBoundingSphere();m.geometry.computeBoundingBox();
+  m.geometry.attributes.position.needsUpdate=true;updateDisplayNormals(m.geometry);m.geometry.computeBoundingSphere();m.geometry.computeBoundingBox();
  }
  updateRoute();
 }
@@ -109,11 +115,11 @@ $('reference-focus-hit').onclick=()=>{
 $('reference-back-view').onclick=()=>{if(!savedCamera)return;center.fromArray(savedCamera.target);({radius,distance,azimuth,elevation}=savedCamera);savedCamera=null;$('reference-back-view').disabled=true;draw();};
 function makeMesh(entry){
  const geometry=new THREE.BufferGeometry();let material,candidate;
- try{const positions=new Float32Array(entry.positions);if(!positions.every(Number.isFinite))throw Error('Coordinate outside float32 display range');geometry.setAttribute('position',new THREE.BufferAttribute(positions,3));geometry.setIndex(new THREE.BufferAttribute(entry.indices,1));geometry.computeVertexNormals();
+ try{const positions=new Float32Array(entry.positions);if(!positions.every(Number.isFinite))throw Error('Coordinate outside float32 display range');geometry.setAttribute('position',new THREE.BufferAttribute(positions,3));geometry.setIndex(new THREE.BufferAttribute(entry.indices,1));updateDisplayNormals(geometry);
   material=new THREE.MeshStandardMaterial({color:entry.key.startsWith('bones/')?0xe4ddc8:0xb76c69,roughness:.65,side:THREE.DoubleSide});candidate=new THREE.Mesh(geometry,material);
  }catch(error){geometry.dispose();material?.dispose();throw error;}
  candidate.userData.referenceKey=entry.key;candidate.userData.sourceName=entry.metadata.name;candidate.userData.entry=entry;
- try{if(posture&&$('reference-space').value==='illustrative'){candidate.userData.postureBase=makeReferencePostureBase(entry,catalogue.data,posture.fit);writeReferencePosture(candidate.userData.postureBase,geometry.attributes.position.array,entry.metadata,posture.rig.uniforms);geometry.computeVertexNormals();}}
+ try{if(posture&&$('reference-space').value==='illustrative'){candidate.userData.postureBase=makeReferencePostureBase(entry,catalogue.data,posture.fit);writeReferencePosture(candidate.userData.postureBase,geometry.attributes.position.array,entry.metadata,posture.rig.uniforms);updateDisplayNormals(geometry);}}
  catch(error){geometry.dispose();material.dispose();throw error;}
  return candidate;
 }
