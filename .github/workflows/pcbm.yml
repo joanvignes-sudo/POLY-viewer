@@ -1,0 +1,36 @@
+name: PCBM scientific transition gates
+on:
+  push:
+    branches: ['feat/pcbm-*']
+  pull_request:
+    paths:
+      - 'simulateur/web/pcbm-*'
+      - 'simulateur/tests/pcbm-*'
+      - 'simulateur/reports/PCBM_*'
+      - '.github/workflows/pcbm.yml'
+jobs:
+  proof-and-browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate PCBM scientific transition contracts
+        run: node --test simulateur/tests/pcbm-core.test.mjs
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Test PCBM desktop and mobile emulation
+        env:
+          POLY_BASE_URL: http://127.0.0.1:8125
+          POLY_BROWSER_CHANNEL: chromium
+        run: |
+          python -m http.server 8125 --bind 127.0.0.1 > /tmp/pcbm-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid' EXIT
+          node simulateur/tests/pcbm-browser.cjs

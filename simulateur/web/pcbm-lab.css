@@ -37,3 +37,5 @@ footer{padding:24px 16px;text-align:center;color:#849ca6;font-size:.75rem}
 @media(max-width:820px){.site-header{flex-wrap:wrap}.selectors{grid-template-columns:1fr}.workspace{grid-template-columns:1fr}.steps{max-height:none}.facts{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){.facts{grid-template-columns:1fr}.action-bar{flex-direction:column}.site-header{gap:.4rem}.step-button{grid-template-columns:48px 1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+[hidden]{display:none!important}
