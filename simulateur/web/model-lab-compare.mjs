@@ -1,7 +1,8 @@
 // POLY ModelLab: same-observable comparisons with explicit refusals and boundaries.
 import {validateModelRegistry,checkComparisonCompatibility} from './model-lab-contract.mjs';
 import {runP8Profile} from './model-lab-p8-adapter.mjs';
-const adapters=Object.freeze({p8:runP8Profile});
+import {runLinearModel} from './model-lab-linear-adapter.mjs';
+const adapters=Object.freeze({p8:runP8Profile,'linear-mass-balance':runLinearModel});
 function finitePoints(s){
  if(s?.schema!=='poly.model-lab.series.v1'||!Array.isArray(s.points)||s.points.length<2||s.points.length>10001||s.points.some(p=>!Number.isFinite(p.t)||!Number.isFinite(p.value)))throw Error('ModelLab: invalid or missing trajectory');
  for(let i=1;i<s.points.length;i++)if(s.points[i].t<=s.points[i-1].t)throw Error('ModelLab: unordered time axis');
