@@ -69,3 +69,35 @@ export async function parseLocalC1RCandidate(file,{maxBytes=1000000}={}){
  const obj=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(bytes));
  return auditC1RCandidate(obj);
 }
+
+// Optional byte-level check of the TWO small source artifacts selected by the user.
+// A digest match proves agreement with the locally supplied manifest, NOT origin,
+// identity, provenance from SPARC, or correctness of anatomical correspondences.
+export async function checkC1RSourceFingerprints(candidate,xmlFile,lpsFile,{maxBytes=32*1024*1024}={}){
+ const audit=auditC1RCandidate(candidate);
+ demand(audit.anatomical_registration_validated===false,'scientific status was unexpectedly elevated');
+ demand(xmlFile&&lpsFile&&xmlFile!==lpsFile,'two different local files must be selected');
+ demand(globalThis.crypto?.subtle?.digest,'SHA-256 implementation unavailable');
+ const verify=async(file,expected)=>{
+  demand(Number.isSafeInteger(file.size)&&file.size>0&&file.size<=maxBytes,'source artifact outside local verification size budget');
+  const bytes=await file.arrayBuffer();
+  demand(bytes.byteLength===file.size,'incomplete source artifact');
+  const digest=await globalThis.crypto.subtle.digest('SHA-256',bytes);
+  const hex=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
+  demand(hex===expected,'source bytes differ from declared SHA-256');
+  return {size:bytes.byteLength,sha256:hex};
+ };
+ const xml=await verify(xmlFile,candidate.source.xml_sha256);
+ const lps=await verify(lpsFile,candidate.source.lps_markups_sha256);
+ return Object.freeze({
+  schema:'poly.pcbm.c1r-source-byte-check.v1',
+  status:'local_byte_fingerprints_match_declared_manifest',
+  xml_sha256:xml.sha256,xml_bytes:xml.size,
+  lps_sha256:lps.sha256,lps_bytes:lps.size,
+  original_source_authenticity_verified:false,
+  point_correspondences_independently_verified:false,
+  anatomical_registration_validated:false,
+  large_microct_volumes_verified:false,
+  caution:'Only SHA-256 equality to local manifest checked; no SPARC authenticity, coordinate semantics or anatomical registration inferred.'
+ });
+}
