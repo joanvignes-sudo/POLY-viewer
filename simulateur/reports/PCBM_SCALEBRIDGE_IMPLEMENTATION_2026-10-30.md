@@ -62,3 +62,20 @@ La collecte horaire existante a livré un rapport C1R (`POLY_VAGUE_RUN10_C1R_CRO
 Sous l'hypothèse **non établie** d'un origine XML nulle et de coupes espacées de 9 unités, 2021 coupes couvriraient 18 180 unités, alors qu'une coordonnée −32 436 est mentionnée (rapport d'amplitude 1,784). Cela requiert de vérifier l'origine, l'axe, l'unité et les conventions avant de recaler. Le diagnostic PCBM n'attribue pas d'origine ou de transformation par défaut.
 
 L'import SSV v0.5 lit uniquement un petit JSON local de repères f002 gauche/droit sur l'axe normalisé 0–1, sans téléversement, sans conversion en mm ni intégration de faux points biologiques. Le modèle `pcbm-ssv-template.json` reste volontairement vide. Les contrôles sont testés sur données **synthétiques**. Un manifeste f002 réel nécessite l'extraction contrôlée des fichiers du run et de leurs SHA256 avant revue.
+
+
+## PCBM v0.7 — Contrôle candidat XML → LPS C1R, sans recalage validé
+
+L'évolution répond à la discordance XML-Z, sans la résoudre par supposition.
+
+- Nouveau moteur numérique isolé `pcbm-crosswalk-candidate.mjs` : accepte uniquement un **candidat local explicitement non approuvé** f002/C1R/droit, une matrice affine 4×4 déclarée, un axe XML dont l'unité reste **inconnue**, et au moins quatre correspondances XML brutes → LPS mm réservées. Les paramètres et les coordonnées doivent provenir des fichiers sources ; le modèle `pcbm-crosswalk-template.json` est volontairement vide.
+- Calcule le résidu 3D, l'erreur RMS et le maximum des **paires déclarées**. Refuse les matrices singulières, coordonnées invalides, doublons, paires dégénérées, approbations fabriquées, faux millimètres XML et substitutions entre côté gauche/droit. La sélection fit et la sélection test portent des empreintes distinctes, mais le programme **ne prouve pas leur indépendance réelle**.
+- Vérification facultative de l'égalité des empreintes SHA-256 à deux fichiers locaux sélectionnés (XML et annotations LPS, limite 32 Mio par fichier). Cette vérification examine des **octets** contre les empreintes déclarées ; elle ne garantit ni l'origine SPARC, ni l'identité du spécimen, ni la pertinence des repères. Aucun volume microCT lourd n'est importé.
+- Interface de lecture seule et tests navigateur bureau/mobile émulé ajoutés au laboratoire local PCBM. Aucune matrice candidate n'est appliquée aux maillages ou ajoutée au registre spatial ; aucune source publique ni donnée antérieure n'a été modifiée.
+- Statut scientifique imposé : `candidate_residuals_only`, `anatomical_registration_validated=false`, `xml_axis_origin_resolved=false`, `c1r_to_ssv_validated=false`, `c1r_to_hra_validated=false`.
+
+### Verrou persistant
+Le document `POLY_VAGUE_RUN10_C1R_CROSSWALK_20261030.json` et les volumes source n'ont pas été retrouvés dans le dépôt ou les fichiers précédemment indexés accessibles lors de cette passe. Aucune paire homologue réelle n'a donc été introduite. Les seules entrées de test sont **synthétiques**. Le calcul réel nécessite des repères XML/LPS avec leurs véritables unités et coordonnées, des ensembles de réglage et de vérification disjoints, et une évaluation indépendante de la transformation candidate. Le décalage XML-Z n'est pas résolu.
+
+### Règle de publication
+Pas de fusion, diffusion, recalage volumique ou attribution anatomique avant vérification des fichiers sources, revue des droits, contrôle humain des homologues et test Android physique.
