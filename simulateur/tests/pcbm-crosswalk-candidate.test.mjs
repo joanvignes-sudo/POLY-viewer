@@ -20,6 +20,7 @@ test('candidate computes heldout error but never claims registration or XML unit
  assert.equal(r.held_out_max_mm,0);
  assert.equal(r.held_out_rms_mm,0);
  assert.equal(r.holdout_count,5);
+ assert.equal(r.holdout_geometry,'volumetric_3d');
  assert.equal(r.status,'candidate_residuals_only');
  assert.equal(r.source_point_unit,'unknown');
  assert.equal(r.anatomical_registration_validated,false);
@@ -80,4 +81,12 @@ test('small local source bytes can match declared SHA256 without implying anatom
  assert.equal(rec.large_microct_volumes_verified,false);
  await assert.rejects(()=>checkC1RSourceFingerprints(c,file(b),file(a)),/source bytes differ/);
  await assert.rejects(()=>checkC1RSourceFingerprints(c,file(a),file(b),{maxBytes:3}),/size budget/);
+});
+
+test('coplanar heldout marks 3D coverage missing even when residuals are zero',()=>{
+ const f=fixture();f.holdout_pairs.forEach((p,i)=>{p.xml_xyz_raw=[i,i%2,0];p.lps_xyz_mm=[i,i%2,0];});
+ const r=auditC1RCandidate(f);
+ assert.equal(r.heldout_max_mm,0);
+ assert.equal(r.holdout_geometry,'planar_only_no_3d_constraint');
+ assert.equal(r.anatomical_registration_validated,false);
 });
