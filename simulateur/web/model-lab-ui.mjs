@@ -45,6 +45,11 @@ function explain(result,left,right){
  }
  element('h3',panel,'Ce que les modèles ont réellement changé');
  for(const m of [left,right])element('p',panel,m.title+' : '+m.driver.description);
+ const details=result.interpretation.computed_changes;
+ element('h3',panel,'Différences détectées directement dans les équations');
+ if(details.changes.length===0)element('p',panel,'Aucune différence structurelle qualifiée par les adaptateurs.');
+ else for(const change of details.changes)element('p',panel,change.detail);
+ element('p',panel,details.limitation);
  element('h3',panel,'Interprétation permise');
  element('p',panel,result.interpretation.conclusion);
  element('p',panel,'Il s’agit de '+(result.interpretation.kind==='distinct_model_families'?'deux structures mécanistiques différentes.':'deux configurations d’une même famille de calcul.'));
