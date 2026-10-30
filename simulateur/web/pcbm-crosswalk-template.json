@@ -1,0 +1,28 @@
+{
+  "schema": "poly.pcbm.c1r-crosswalk-candidate.v1",
+  "publication_status": "local_candidate_only",
+  "approved": false,
+  "anatomical_registration": null,
+  "specimen_id": "f002",
+  "side": "right",
+  "segment_id": "C1R",
+  "source": {
+    "source_dataset_doi": "10.26275/imas-52lf",
+    "xml_coordinate_unit": "unknown",
+    "xml_frame": "C1R_XML_unresolved",
+    "target_frame": "C1R_LPS_mm",
+    "xml_sha256": null,
+    "lps_markups_sha256": null,
+    "fit_selection_sha256": null,
+    "holdout_selection_sha256": null,
+    "bytes_independently_verified": false
+  },
+  "hypothesis": {
+    "kind": "declared_affine_not_estimated",
+    "matrix_convention": "row_major_column_vector",
+    "matrix4x4": null,
+    "estimated_from_holdouts": false
+  },
+  "holdout_pairs": [],
+  "instruction": "Template intentionally contains no invented coordinates or matrix. Fill from existing XML/LPS source files, preserve their hashes, define an independently reviewed candidate matrix and a genuinely held-out selection. This preliminary audit never validates a registration."
+}
