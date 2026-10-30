@@ -67,10 +67,27 @@
     </article>
    </section>
   </div>
+  <section class="card coverage-card" aria-labelledby="coverage-heading">
+   <p class="eyebrow">COUVERTURE SCIENTIFIQUE · CANDIDATS</p>
+   <h2 id="coverage-heading">Les domaines de recherche encore à documenter</h2>
+   <p class="notice">Cet inventaire n'est pas une collection de mécanismes vérifiés : chaque sujet doit encore être qualifié.</p>
+   <button id="coverage-load" type="button" class="secondary">Explorer l'inventaire multi-échelles</button>
+   <p id="coverage-status" role="status" aria-live="polite"></p>
+   <div id="coverage-panel" hidden>
+    <div class="coverage-controls">
+     <label>Famille scientifique<select id="coverage-family" aria-label="Filtrer par famille"><option value="all">Toutes les familles</option></select></label>
+     <label>Rechercher un sujet<input id="coverage-query" type="search" autocomplete="off" placeholder="Cellules, métabolisme, environnement…"></label>
+    </div>
+    <p id="coverage-count" aria-live="polite"></p>
+    <ul id="coverage-list" class="coverage-list"></ul>
+    <p class="notice">Les statuts d'origine sont conservés.
+    <a href="https://github.com/joanvignes-sudo/POLY-viewer/blob/main/simulateur/data/inventaire-multiechelle.json" target="_blank" rel="noopener">Inventaire original dans GitHub</a>.</p>
+   </div>
+  </section>
  </div>
  <aside id="error" role="alert" hidden></aside>
 </main>
-<footer>PCBM v0.1 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<footer>PCBM v0.2 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
 <script type="module" src="./pcbm-lab.mjs"></script>
 </body>
 </html>

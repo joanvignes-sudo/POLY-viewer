@@ -1,9 +1,10 @@
+import {fetchPCBMCoverage,filterPCBMCoverage} from './pcbm-coverage.mjs';
 import {validatePCBM,planPCBM,classifyPCBM,PCBMReceipt} from './pcbm-core.mjs';
 const $=id=>document.getElementById(id);
 const labels={spatial:'Spatial · recalage validé',structural:'Structurel · sans superposition',documentary:'Documentaire · rupture explicite'};
 const verification={source_read:'Fichier de référence inspecté',documentary_only:'Rapport documentaire, non validation biologique',not_mounted:'Non monté, non revérifié ici'};
 const status={viewer:'Visualiseur existant',external:'Données externes non montées',not_mounted:'Données non montées'};
-let model=null,route=null,index=0,previewNode=null;
+let model=null,route=null,index=0,previewNode=null,coverage=null;
 function closePreview(){ $('viewer-frame').removeAttribute('src');$('viewer-panel').hidden=true;previewNode=null }
 function text(id,value){$(id).textContent=String(value)}
 function empty(node){node.replaceChildren()}
@@ -71,6 +72,38 @@ function build(){
  }
  closePreview();route=proposal;index=0;render();
 }
+function renderCoverage(){
+ if(!coverage)return;
+ const found=filterPCBMCoverage(coverage,{family:$('coverage-family').value,query:$('coverage-query').value});
+ text('coverage-count',found.length+' sujets sur '+coverage.topic_count+' · preuves et modèles à qualifier');
+ const list=$('coverage-list');empty(list);
+ for(const e of found.slice(0,30)){
+  const li=document.createElement('li'),strong=document.createElement('strong'),meta=document.createElement('span'),details=document.createElement('details'),summary=document.createElement('summary'),missing=document.createElement('ul');
+  strong.textContent=e.topic;meta.textContent=e.family+' · candidat documentaire · aucune preuve attachée';
+  summary.textContent='Qualifications manquantes ('+e.missing.length+')';
+  for(const gap of e.missing){const item=document.createElement('li');item.textContent=gap;missing.append(item)}
+  details.append(summary,missing);li.append(strong,meta,details);list.append(li);
+ }
+ if(found.length>30){const li=document.createElement('li');li.textContent='30 sujets affichés ; utilisez le filtre pour voir les autres.';list.append(li)}
+}
+async function loadCoverage(){
+ $('coverage-load').disabled=true;
+ text('coverage-status','Lecture du registre de recherche, sans promotion scientifique…');
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),10000);
+ try{
+  const checked=await fetchPCBMCoverage({signal:controller.signal});
+  coverage=checked;
+  const select=$('coverage-family');select.replaceChildren(new Option('Toutes les familles','all'));
+  for(const f of coverage.families)select.add(new Option(f,f));
+  $('coverage-query').value='';
+  $('coverage-panel').hidden=false;
+  text('coverage-status',coverage.topic_count+' sujets, '+coverage.family_count+' familles · non validés dans cet inventaire');
+  renderCoverage();
+ }catch(error){
+  coverage=null;$('coverage-panel').hidden=true;
+  text('coverage-status','Inventaire indisponible ou incompatible : '+(error?.message??error));
+ }finally{clearTimeout(timeout);$('coverage-load').disabled=false}
+}
 function init(reg){
  model=validatePCBM(reg);
  const ordered=model.registry.nodes;
@@ -81,6 +114,9 @@ function init(reg){
  $('from').value=model.registry.entry_id;
  $('to').value=model.registry.goal_id;
  $('build').onclick=build;
+ $('coverage-load').onclick=loadCoverage;
+ $('coverage-family').onchange=renderCoverage;
+ $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};
  $('close-viewer').onclick=closePreview;
  $('previous').onclick=()=>{if(index>0){index--;render()}};
