@@ -10,6 +10,8 @@ const requiredFields=new Map([
  ['ssv-vagus','normalized_material']
 ]);
 const groupIds=['sympathetic','muscular','vascular','cardiac','pulmonary','esophageal'];
+const publishedIQR=[[3.0,3.9,6.6],[3.4,6.2,17.0],[5.5,9.6,15.1],[16.9,20.1,22.5],[22.8,25.0,27.6],[24.3,26.5,29.1]];
+const verifiedURLs=new Map([['sparc-ssv-methods','https://docs.sparc.science/docs/subject-specific-vagus-ssv-scaffolds'],['vagus-microct-literature','https://pubmed.ncbi.nlm.nih.gov/41788551/'],['human-vagus-branch-map','https://pubmed.ncbi.nlm.nih.gov/42595102/']]);
 const expectedDOIs=new Map([['vagus-microct-literature','10.3389/fnins.2026.1731234'],['human-vagus-branch-map','10.1016/j.brs.2026.103182']]);
 function uniques(list,what){
  check(Array.isArray(list)&&list.length>0&&list.length<=20,what+' invalid collection');
@@ -31,20 +33,22 @@ export function validateVagusEvidence(data,{registry=null}={}){
  check(sources.size===3&&[...verifiedSources].every(id=>sources.has(id)),'independent literature catalog incomplete');
  for(const s of sources.values()){
   check(verifiedSources.has(s.id)&&idOk(s.study_id)&&idOk(s.cohort_id)&&s.geometries_mounted===false,'source or data-mount status invalid');
+  check(s.url===verifiedURLs.get(s.id),'source URL not a verified primary reference');
   check(s.n_nerves===undefined||Number.isInteger(s.n_nerves)&&s.n_nerves>0,'invalid nerve sample count');
   if(expectedDOIs.has(s.id))check(s.doi===expectedDOIs.get(s.id),'DOI mismatch');
   if(s.id==='human-vagus-branch-map')check(s.n_donors===29&&s.n_nerves===58&&s.left_nerves===29&&s.right_nerves===29,'dissection cohort identity changed');
   if(s.id==='vagus-microct-literature')check(s.n_nerves===10&&s.n_traced_microct===5&&s.left_nerves===5&&s.right_nerves===5,'microCT cohort identity changed');
   if(s.id==='sparc-ssv-methods')check(s.measured_branched_distances===false&&s.data_scope==='method_description_not_f002_coordinates','SPARC methods misread as patient measurements');
-  if(registry)check(registry.sources?.has(s.id),'PCBM registry lacks source '+s.id);
+  if(registry){const ref=registry.sources?.get(s.id);check(ref&&ref.url===s.url,'PCBM registry lacks matching primary source '+s.id)}
  }
  const b=data.branch_summary;
  check(b?.study_id==='bahadir-2026'&&b.source_id==='human-vagus-branch-map'&&b.measurement==='Distance from jugular foramen to vagus branch emergence'&&b.unit==='cm'&&b.statistic==='median_and_interquartile_range'&&b.sampling_unit==='nerve','branch statistics operator missing');
  check(b.cohorts_independent_between_rows===false&&b.individual_subject_measurements_available===false,'cohort observations falsely upgraded to independent specimens');
  check(Array.isArray(b.categories)&&b.categories.length===6&&b.categories.every((c,i)=>c.id===groupIds[i]),'vagus branch groups missing');
- for(const c of b.categories){
+ for(const [index,c] of b.categories.entries()){
   check(typeof c.label==='string'&&c.label.length>3&&[c.q1,c.median,c.q3].every(Number.isFinite),'branch group statistics missing');
   check(c.q1>=0&&c.q1<=c.median&&c.median<=c.q3&&c.q3<=50,'invalid order of IQR and median');
+  check([c.q1,c.median,c.q3].every((value,i)=>Math.abs(value-publishedIQR[index][i])<1e-9),'published primary statistics modified without review');
  }
  const links=uniques(data.scale_links.map((e,i)=>({id:'link-'+i,...e})),'cross-study link');
  check(links.size===3,'missing cross-study boundaries');

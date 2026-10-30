@@ -58,3 +58,10 @@ test('registry source lineage is required',()=>{
  const raw=fresh();raw.sources[1].id='fabricated-study';
  assert.throws(()=>validateVagusEvidence(raw,{registry}),/catalog incomplete|registry lacks source/);
 });
+
+test('reject statistically plausible but silently altered published numbers and external links',()=>{
+ const x=fresh();x.branch_summary.categories[1].median=6.3;
+ assert.throws(()=>validateVagusEvidence(x,{registry}),/published primary statistics modified/);
+ const y=fresh();y.sources[1].url='javascript:alert(1)';
+ assert.throws(()=>validateVagusEvidence(y,{registry}),/source URL not a verified primary reference/);
+});

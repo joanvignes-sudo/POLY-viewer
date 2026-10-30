@@ -52,3 +52,19 @@ footer{padding:24px 16px;text-align:center;color:#849ca6;font-size:.75rem}
 .coverage-list details{font-size:.8rem;color:#b9d2db}.coverage-list summary{cursor:pointer}
 .coverage-list details ul{padding-left:18px}.coverage-list details li{padding-top:5px}
 @media(max-width:720px){.coverage-controls,.coverage-list{grid-template-columns:1fr}}
+
+.vagus-evidence-card{margin-top:18px}.vagus-evidence-card h3{font-size:1.02rem;margin:20px 0 9px}
+.vagus-study-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.vagus-study-summary>div{border:1px solid #365968;background:#0d2330;padding:12px;border-radius:10px}
+.vagus-study-summary strong{font-size:.88rem}.vagus-study-summary p{font-size:.78rem;color:#b3cbd3}
+.vagus-frames{display:grid;grid-template-columns:minmax(150px,.4fr) 1fr;gap:8px 12px}
+.vagus-frames dt{font-weight:700}.vagus-frames dd{margin:0;color:#a9c5d0;font-size:.85rem}
+.vagus-axis{margin-left:135px;margin-right:165px;display:flex;justify-content:space-between;font-size:.71rem;color:#a4bfc9}
+.vagus-branch-chart{display:grid;gap:7px;margin:8px 0 18px}
+.vagus-branch-row{display:grid;grid-template-columns:125px minmax(120px,1fr) 155px;gap:10px;align-items:center}
+.vagus-branch-row strong{font-size:.8rem}.vagus-branch-row>span:last-child{font-size:.77rem;font-variant-numeric:tabular-nums;text-align:right}
+.vagus-plot{height:30px;position:relative;background:repeating-linear-gradient(to right,transparent 0,transparent calc(33.333% - 1px),#395765 calc(33.333% - 1px),#395765 33.333%);border-bottom:1px solid #5d7d87}
+.vagus-iqr{position:absolute;top:9px;height:13px;border-radius:4px;background:#77b9cf}
+.vagus-median{position:absolute;top:4px;height:24px;width:3px;background:#f4d39b;transform:translateX(-50%)}
+.vagus-study-sources{display:flex;flex-wrap:wrap;gap:9px 22px;padding-left:18px;font-size:.82rem}
+@media(max-width:740px){.vagus-study-summary{grid-template-columns:1fr}.vagus-axis{margin-left:0;margin-right:0}.vagus-branch-row{grid-template-columns:1fr;gap:3px;padding-bottom:11px}.vagus-branch-row>span:last-child{text-align:left}.vagus-frames{grid-template-columns:1fr}.vagus-frames dt{margin-top:5px}}

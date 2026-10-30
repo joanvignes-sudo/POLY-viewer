@@ -67,6 +67,24 @@
     </article>
    </section>
   </div>
+  <section class="card vagus-evidence-card" aria-labelledby="vagus-study-title">
+   <p class="eyebrow">COMPARAISON MULTI-ÉCHELLES · PREUVES HUMAINES</p>
+   <h2 id="vagus-study-title">Du nerf individuel aux statistiques de population</h2>
+   <p class="notice">Trois sources distinctes. Les distances publiées décrivent des groupes de branches : elles ne localisent ni les fascicules du spécimen f002 ni un axone précis.</p>
+   <button type="button" id="vagus-study-load" class="secondary">Afficher les mesures publiées et leurs limites</button>
+   <p id="vagus-study-status" role="status" aria-live="polite"></p>
+   <div id="vagus-study-panel" hidden>
+    <div class="vagus-study-summary" id="vagus-cohorts"></div>
+    <h3>SPARC : trois coordonnées pour un même spécimen</h3>
+    <dl class="vagus-frames" id="vagus-coordinate-fields"></dl>
+    <h3>Émergence des branches depuis le foramen jugulaire</h3>
+    <p class="notice">Bahadir et coll., 2026 · 29 donneurs, 58 nerfs · distances en cm, médiane et intervalle interquartile · groupes issus d'une même cohorte, non six expériences indépendantes.</p>
+    <div class="vagus-axis" aria-hidden="true"><span>0 cm</span><span>10</span><span>20</span><span>30 cm</span></div>
+    <div id="vagus-branch-chart" class="vagus-branch-chart" role="list" aria-label="Distances publiées des branches vagales"></div>
+    <p class="limits">Raccordement interdit : ce graphique ne permet pas de positionner les branches sur f002, HRA, CerebrA ou le microCT d'une autre étude. Les unités cm de cette cohorte et les unités normalisées SSV ne sont pas interchangeables.</p>
+    <ul id="vagus-study-sources" class="vagus-study-sources"></ul>
+   </div>
+  </section>
   <section class="card coverage-card" aria-labelledby="coverage-heading">
    <p class="eyebrow">COUVERTURE SCIENTIFIQUE · CANDIDATS</p>
    <h2 id="coverage-heading">Les domaines de recherche encore à documenter</h2>
@@ -87,7 +105,7 @@
  </div>
  <aside id="error" role="alert" hidden></aside>
 </main>
-<footer>PCBM v0.2 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<footer>PCBM v0.3 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
 <script type="module" src="./pcbm-lab.mjs"></script>
 </body>
 </html>

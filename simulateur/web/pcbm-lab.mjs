@@ -1,10 +1,11 @@
+import {readVagusEvidence,compareVagusStudyToPCBM} from './pcbm-vagus-evidence.mjs';
 import {fetchPCBMCoverage,filterPCBMCoverage} from './pcbm-coverage.mjs';
 import {validatePCBM,planPCBM,classifyPCBM,PCBMReceipt} from './pcbm-core.mjs';
 const $=id=>document.getElementById(id);
 const labels={spatial:'Spatial · recalage validé',structural:'Structurel · sans superposition',documentary:'Documentaire · rupture explicite'};
 const verification={source_read:'Fichier de référence inspecté',documentary_only:'Rapport documentaire, non validation biologique',not_mounted:'Non monté, non revérifié ici'};
 const status={viewer:'Visualiseur existant',external:'Données externes non montées',not_mounted:'Données non montées'};
-let model=null,route=null,index=0,previewNode=null,coverage=null;
+let model=null,route=null,index=0,previewNode=null,coverage=null,vagusEvidence=null;
 function closePreview(){ $('viewer-frame').removeAttribute('src');$('viewer-panel').hidden=true;previewNode=null }
 function text(id,value){$(id).textContent=String(value)}
 function empty(node){node.replaceChildren()}
@@ -104,6 +105,58 @@ async function loadCoverage(){
   text('coverage-status','Inventaire indisponible ou incompatible : '+(error?.message??error));
  }finally{clearTimeout(timeout);$('coverage-load').disabled=false}
 }
+function renderVagusEvidence(validated){
+ const panel=$('vagus-study-panel'),cohorts=$('vagus-cohorts');empty(cohorts);
+ const names=new Map([['sparc-ssv','SPARC · référence méthodologique'],['thompson-2026','Thompson et coll. · microCT et histologie'],['bahadir-2026','Bahadir et coll. · branches anatomiques']]);
+ for(const study of validated.studies){
+  const div=document.createElement('div'),strong=document.createElement('strong'),detail=document.createElement('p');
+  strong.textContent=names.get(study.study_id);
+  detail.textContent=study.study_id==='thompson-2026'?'10 nerfs examinés, 5 suivis en microCT.':
+   study.study_id==='bahadir-2026'?'58 nerfs issus de 29 donneurs, 29 à gauche et 29 à droite.':
+   'Méthode de comparaison normalisée de spécimens ; aucune coordonnée individuelle f002 importée.';
+  div.append(strong,detail);cohorts.append(div);
+ }
+ const frames=$('vagus-coordinate-fields');empty(frames);
+ for(const field of validated.source_data.coordinate_fields){
+  const dt=document.createElement('dt'),dd=document.createElement('dd');
+  dt.textContent=field.name;dd.textContent=field.notes;frames.append(dt,dd);
+ }
+ const chart=$('vagus-branch-chart');empty(chart);
+ const max=30;
+ for(const b of validated.branches){
+  const row=document.createElement('div'),label=document.createElement('strong'),plot=document.createElement('div'),iqr=document.createElement('span'),median=document.createElement('span'),values=document.createElement('span');
+  row.className='vagus-branch-row';row.setAttribute('role','listitem');
+  row.setAttribute('aria-label',b.label+' : médiane '+b.median+' cm, IQR '+b.q1+' à '+b.q3+' cm');
+  label.textContent=b.label;plot.className='vagus-plot';plot.setAttribute('aria-hidden','true');
+  iqr.className='vagus-iqr';iqr.style.left=(b.q1/max*100)+'%';iqr.style.width=((b.q3-b.q1)/max*100)+'%';
+  median.className='vagus-median';median.style.left=(b.median/max*100)+'%';
+  plot.append(iqr,median);
+  values.textContent=b.median.toFixed(1)+' cm ['+b.q1.toFixed(1)+' – '+b.q3.toFixed(1)+']';
+  row.append(label,plot,values);chart.append(row);
+ }
+ const sources=$('vagus-study-sources');empty(sources);
+ for(const study of validated.studies){
+  const li=document.createElement('li'),a=document.createElement('a');
+  a.href=study.url;a.rel='noopener';a.target='_blank';a.textContent=names.get(study.study_id);
+  li.append(a);sources.append(li);
+ }
+ const boundary=compareVagusStudyToPCBM(model,validated,'bahadir-2026','vagus-f002');
+ if(boundary.spatial_overlay_allowed||boundary.individual_measurement_transferred)throw Error('Incompatible cross-study overlay');
+ panel.hidden=false;
+}
+async function loadVagusEvidence(){
+ $('vagus-study-load').disabled=true;
+ text('vagus-study-status','Vérification des références et des unités…');
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),10000);
+ try{
+  const verified=await readVagusEvidence({signal:controller.signal,registry:model});
+  vagusEvidence=verified;renderVagusEvidence(verified);
+  text('vagus-study-status','3 références distinctes · 6 groupes publiés · aucun recalage entre spécimens');
+ }catch(error){
+  vagusEvidence=null;$('vagus-study-panel').hidden=true;
+  text('vagus-study-status','Comparaison refusée ou indisponible : '+(error?.message??error));
+ }finally{clearTimeout(timer);$('vagus-study-load').disabled=false}
+}
 function init(reg){
  model=validatePCBM(reg);
  const ordered=model.registry.nodes;
@@ -115,6 +168,7 @@ function init(reg){
  $('to').value=model.registry.goal_id;
  $('build').onclick=build;
  $('coverage-load').onclick=loadCoverage;
+ $('vagus-study-load').onclick=loadVagusEvidence;
  $('coverage-family').onchange=renderCoverage;
  $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};
