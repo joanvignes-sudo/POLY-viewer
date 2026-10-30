@@ -3,7 +3,8 @@ const $=id=>document.getElementById(id);
 const labels={spatial:'Spatial · recalage validé',structural:'Structurel · sans superposition',documentary:'Documentaire · rupture explicite'};
 const verification={source_read:'Fichier de référence inspecté',documentary_only:'Rapport documentaire, non validation biologique',not_mounted:'Non monté, non revérifié ici'};
 const status={viewer:'Visualiseur existant',external:'Données externes non montées',not_mounted:'Données non montées'};
-let model=null,route=null,index=0;
+let model=null,route=null,index=0,previewNode=null;
+function closePreview(){ $('viewer-frame').removeAttribute('src');$('viewer-panel').hidden=true;previewNode=null }
 function text(id,value){$(id).textContent=String(value)}
 function empty(node){node.replaceChildren()}
 function setError(message){
@@ -29,6 +30,7 @@ function order(node){
 }
 function render(){
  if(!model||!route)return;
+ if(previewNode!==route.ids[index])closePreview();
  const ul=$('steps');empty(ul);
  route.ids.forEach((id,j)=>{
   const node=model.nodes.get(id),li=document.createElement('li'),b=document.createElement('button');
@@ -46,7 +48,7 @@ function render(){
  text('scale',order(node));text('frame',frame.id+' · '+frame.description);
  text('specimen',node.specimen_id??'Indéterminée / référence générique');
  text('availability',status[node.availability]);
- $('open-viewer').hidden=node.availability!=='viewer';
+ $('open-viewer').hidden=node.availability!=='viewer';$('embed-viewer').hidden=node.availability!=='viewer';
  if(node.availability==='viewer')$('open-viewer').href=node.href;
  else $('open-viewer').removeAttribute('href');
  $('unavailable').hidden=node.availability==='viewer';
@@ -66,7 +68,7 @@ function build(){
   $('route-notice').textContent='Aucun itinéraire documenté dans ce sens ; PCBM ne fabrique pas de relation.';
   return;
  }
- route=proposal;index=0;render();
+ closePreview();route=proposal;index=0;render();
 }
 function init(reg){
  model=validatePCBM(reg);
@@ -78,6 +80,8 @@ function init(reg){
  $('from').value=model.registry.entry_id;
  $('to').value=model.registry.goal_id;
  $('build').onclick=build;
+ $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};
+ $('close-viewer').onclick=closePreview;
  $('previous').onclick=()=>{if(index>0){index--;render()}};
  $('next').onclick=()=>{if(route&&index<route.ids.length-1){index++;render()}};
  $('export').onclick=()=>{

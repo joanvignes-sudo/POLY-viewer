@@ -39,3 +39,6 @@ footer{padding:24px 16px;text-align:center;color:#849ca6;font-size:.75rem}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
 [hidden]{display:none!important}
+
+#embed-viewer{margin-top:9px;margin-left:8px}#viewer-panel{margin-top:16px;border:1px solid #527482;border-radius:10px;padding:10px;background:#081b28}#viewer-panel iframe{margin-top:10px;width:100%;height:min(62vh,520px);min-height:290px;border:1px solid #3f6875;border-radius:7px;background:#fff}#close-viewer{margin-bottom:5px}
+@media(max-width:420px){#embed-viewer{margin-left:0;width:100%}}
