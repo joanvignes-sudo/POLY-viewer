@@ -18,6 +18,9 @@ export function compareModels(registry,leftId,rightId,{dt=0.02}={}){
  if(!adapters[left.engine]||!adapters[right.engine])return {status:'not_executable',reasons:['Aucun adaptateur de solveur contrôlé pour au moins un modèle.'],experimental_claim:false};
  const a=adapters[left.engine](left,{dt}),b=adapters[right.engine](right,{dt});
  finitePoints(a);finitePoints(b);
+ for(const [m,s] of [[left,a],[right,b]]){
+  if(s.model_id!==m.id||s.observable_id!==m.observable.id||s.unit!==m.observable.unit||s.time_basis!==m.scope.time_basis||s.scope?.synthetic!==true||s.scope?.human_validation!==false)throw Error('ModelLab: solver output contradicts declared model');
+ }
  if(a.observable_id!==b.observable_id||a.unit!==b.unit||a.time_basis!==b.time_basis||a.points.length!==b.points.length)throw Error('ModelLab: different solver output contracts');
  const differences=[];
  for(let i=0;i<a.points.length;i++){
