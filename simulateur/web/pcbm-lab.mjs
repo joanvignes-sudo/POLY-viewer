@@ -250,6 +250,7 @@ async function examineC1RCandidate(file){
   text('c1r-candidate-count',result.holdout_count);
   text('c1r-candidate-rms',result.heldout_rms_mm.toPrecision(6));
   text('c1r-candidate-max',result.heldout_max_mm.toPrecision(6));
+  text('c1r-candidate-geometry',result.holdout_geometry==='volumetric_3d'?'Volume 3D échantillonné (non validé)':'Points coplanaires : aucun contrôle volumique 3D');
   text('c1r-candidate-status','Calcul local accepté · transformation candidate uniquement · aucun recalage validé.');
   $('c1r-candidate-result').hidden=false;
  }catch(error){
