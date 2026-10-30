@@ -83,3 +83,10 @@ footer{padding:24px 16px;text-align:center;color:#849ca6;font-size:.75rem}
 .ssv-marker{position:absolute;height:20px;width:8px;background:#e0d9a4;transform:translateX(-50%);border-radius:4px}
 .ssv-segments li{font-size:.8rem;border-bottom:1px solid #365564;padding:4px 0}
 @media(max-width:590px){.ssv-landmark-row{grid-template-columns:65px minmax(80px,1fr)}.ssv-landmark-row strong{grid-column:1/-1}}
+
+.c1r-audit{margin-top:20px;padding-top:16px;border-top:1px solid #3d5967}
+.c1r-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:15px 0}
+.c1r-grid>div{display:grid;gap:5px;background:#0b2130;border:1px solid #3e5867;padding:12px;border-radius:10px}
+.c1r-grid strong{font-size:1.45rem;font-variant-numeric:tabular-nums;color:#c6e9ef}
+.c1r-grid span{font-size:.78rem;color:#a1bcc9}
+@media(max-width:650px){.c1r-grid{grid-template-columns:1fr}}

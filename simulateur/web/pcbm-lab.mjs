@@ -1,3 +1,4 @@
+import {readC1RAudit} from './pcbm-c1r-audit.mjs';
 import {parseLocalSSVFile} from './pcbm-ssv-preview.mjs';
 import {readPCBMLineage,lineageComparison} from './pcbm-lineage.mjs';
 import {readVagusEvidence,compareVagusStudyToPCBM} from './pcbm-vagus-evidence.mjs';
@@ -211,6 +212,20 @@ async function loadLocalSSVFile(file){
  try{renderSSVPreview(await parseLocalSSVFile(file))}
  catch(error){text('ssv-status','Fichier incompatible : '+(error?.message??error));$('ssv-upload').value=''}
 }
+async function loadC1RAudit(){
+ $('c1r-load').disabled=true;text('c1r-status','Vérification des informations rapportées…');
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),10000);
+ try{
+  const result=await readC1RAudit({signal:controller.signal});
+  text('c1r-direct','54 / 55');text('c1r-near','55 / 55');text('c1r-epin','42 / 54');
+  text('c1r-resolution',result.derived_voxel_spacing_um+' µm');
+  $('c1r-panel').hidden=false;
+  text('c1r-status','Rapprochement candidat · transformation 3D non validée · données originales absentes du laboratoire');
+ }catch(error){
+  $('c1r-panel').hidden=true;
+  text('c1r-status','Rapport non qualifié : '+(error?.message??error));
+ }finally{clearTimeout(timer);$('c1r-load').disabled=false}
+}
 function init(reg){
  model=validatePCBM(reg);
  const ordered=model.registry.nodes;
@@ -226,6 +241,7 @@ function init(reg){
  $('lineage-load').onclick=loadLineage;
  $('ssv-upload').onchange=()=>loadLocalSSVFile($('ssv-upload').files?.[0]??null);
  $('ssv-clear').onclick=clearSSVPreview;
+ $('c1r-load').onclick=loadC1RAudit;
  $('coverage-family').onchange=renderCoverage;
  $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};

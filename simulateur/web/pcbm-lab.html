@@ -109,6 +109,22 @@
       <button type="button" id="ssv-clear" class="secondary">Effacer cet aperçu local</button>
      </div>
     </div>
+    <div class="c1r-audit">
+     <h3>C1 droit · examen critique du recalage microCT</h3>
+     <p class="notice">Chiffres retranscrits du rapport de collecte POLY, dont les fichiers bruts ne sont pas montés ici. L'orientation du fichier XML est candidate : la discordance de l'axe Z demeure ouverte.</p>
+     <button type="button" id="c1r-load" class="secondary">Consulter le bilan C1R et les blocages</button>
+     <p id="c1r-status" role="status" aria-live="polite"></p>
+     <div id="c1r-panel" hidden>
+      <div class="c1r-grid">
+       <div><strong id="c1r-direct">—</strong><span>Points avec voxel non nul au centre</span></div>
+       <div><strong id="c1r-near">—</strong><span>Points avec voxel non nul à proximité</span></div>
+       <div><strong id="c1r-epin">—</strong><span>Points situés dans un contour d'épineurium candidat</span></div>
+       <div><strong id="c1r-resolution">—</strong><span>Échantillonnage indiqué pour l'image dérivée</span></div>
+      </div>
+      <p class="limits">Conclusion provisoire : 42/54 correspondances aux contours ne constituent pas un recalage 3D validé. Le sens des étiquettes de segmentation et l'origine de la discordance axiale XML doivent être revérifiés sur les fichiers originaux.</p>
+      <p class="notice">Rapport de référence local non monté : <code>POLY_VAGUE_RUN10_C1R_CROSSWALK_20261030.json</code>. Aucune transformation n'est appliquée à la scène PCBM.</p>
+     </div>
+    </div>
    </div>
   </section>
   <section class="card coverage-card" aria-labelledby="coverage-heading">
@@ -131,7 +147,7 @@
  </div>
  <aside id="error" role="alert" hidden></aside>
 </main>
-<footer>PCBM v0.5 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<footer>PCBM v0.6 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
 <script type="module" src="./pcbm-lab.mjs"></script>
 </body>
 </html>
