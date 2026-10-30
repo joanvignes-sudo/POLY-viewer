@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {auditC1RCandidate,parseLocalC1RCandidate} from '../web/pcbm-crosswalk-candidate.mjs';
+import {auditC1RCandidate,parseLocalC1RCandidate,checkC1RSourceFingerprints} from '../web/pcbm-crosswalk-candidate.mjs';
+import {createHash} from 'node:crypto';
 const id=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1];
 const points=[[0,0,0],[1,0,0],[0,1,0],[0,0,1],[2,3,4]];
 const fixture=()=>({
@@ -65,4 +66,18 @@ test('local import bounds and truncation are enforced',async()=>{
  assert.equal((await parseLocalC1RCandidate(file)).status,'candidate_residuals_only');
  await assert.rejects(()=>parseLocalC1RCandidate({...file,size:1000001}),/candidate/);
  await assert.rejects(()=>parseLocalC1RCandidate({...file,size:bytes.length+3}),/candidate/);
+});
+
+test('small local source bytes can match declared SHA256 without implying anatomical authenticity',async()=>{
+ const c=fixture(),a=new TextEncoder().encode('XML_SYNTHETIC_ONLY'),b=new TextEncoder().encode('LPS_SYNTHETIC_ONLY');
+ const hex=bytes=>createHash('sha256').update(bytes).digest('hex');
+ c.source.xml_sha256=hex(a);c.source.lps_markups_sha256=hex(b);
+ const file=bytes=>({size:bytes.byteLength,arrayBuffer:async()=>bytes.buffer});
+ const rec=await checkC1RSourceFingerprints(c,file(a),file(b));
+ assert.equal(rec.status,'local_byte_fingerprints_match_declared_manifest');
+ assert.equal(rec.original_source_authenticity_verified,false);
+ assert.equal(rec.anatomical_registration_validated,false);
+ assert.equal(rec.large_microct_volumes_verified,false);
+ await assert.rejects(()=>checkC1RSourceFingerprints(c,file(b),file(a)),/source bytes differ/);
+ await assert.rejects(()=>checkC1RSourceFingerprints(c,file(a),file(b),{maxBytes:3}),/size budget/);
 });
