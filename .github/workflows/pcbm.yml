@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate PCBM scientific transition contracts
-        run: node --test simulateur/tests/pcbm-core.test.mjs
+        run: node --test simulateur/tests/pcbm-core.test.mjs simulateur/tests/pcbm-registration.test.mjs
       - name: Install Playwright
         run: |
           npm install --no-save playwright

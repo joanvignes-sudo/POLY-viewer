@@ -1,3 +1,4 @@
+import {auditPCBMRegistration} from './pcbm-registration.mjs';
 // PCBM — isolated, deterministic multi-scale transition contract.
 // No anatomical registration, biological time, or physiological flux is inferred here.
 export const REGISTRY_SCHEMA='poly.pcbm.registry.v1';
@@ -61,6 +62,7 @@ export function validatePCBM(reg){
    assert(from.specimen_id!==null&&from.specimen_id===to.specimen_id,'spatial edge crosses distinct or unknown specimens');
    assert(t.from_frame===from.frame_id&&t.to_frame===to.frame_id&&Array.isArray(t.matrix4x4)&&t.matrix4x4.length===16&&t.matrix4x4.every(Number.isFinite),'spatial frame mapping invalid');
    assert(typeof t.method==='string'&&t.method.length>8&&Number.isFinite(t.error_bound)&&t.error_bound>=0&&units.has(t.error_unit)&&t.error_unit!=='none'&&t.error_unit!=='unitless','spatial transform lacks quantified error');
+   auditPCBMRegistration({registration:t,from:byFrame.get(from.frame_id),to:byFrame.get(to.frame_id),sources:bySource});
   }else{
    assert(l.registration===null,'non-spatial link includes fabricated registration');
    if(l.mode==='structural')assert(l.relationship==='contains'&&l.evidence_status==='documented','unsupported structural connection');
@@ -123,7 +125,14 @@ export function createPCBMNavigator(model,initial=model.registry.entry_id){
  };
 }
 export function PCBMReceipt(model,route){
- assert(route?.ids?.length>0,'missing route');
+ assert(Array.isArray(route?.ids)&&route.ids.length>0&&route.ids.length<=2000&&Array.isArray(route.links)&&route.links.length===route.ids.length-1,'invalid route cardinality');
+ for(let i=0;i<route.ids.length;i++){
+  assert(model.nodes.has(route.ids[i]),'receipt representation missing');
+  if(i>0){
+   const l=route.links[i-1];
+   assert(l&&model.links.get(l.id)===l&&l.from===route.ids[i-1]&&l.to===route.ids[i],'receipt route connection inconsistent');
+  }
+ }
  return {
   schema:'poly.pcbm.navigation-receipt.v1',engine:'documentation_only',
   spatial_transformations_applied:0,biological_time_inferred:false,
