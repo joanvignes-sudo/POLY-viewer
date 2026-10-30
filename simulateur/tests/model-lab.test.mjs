@@ -7,6 +7,7 @@ import {runLinearModel,validateLinearSystem} from '../web/model-lab-linear-adapt
 import {runP8Profile} from '../web/model-lab-p8-adapter.mjs';
 import {validateEvidenceSet,compareToEvidence} from '../web/model-lab-evidence.mjs';
 import {auditLinearIdentifiability} from '../web/model-lab-identifiability.mjs';
+import {explainModelChange} from '../web/model-lab-explain.mjs';
 const registry=JSON.parse(fs.readFileSync(new URL('../web/model-lab-registry.json',import.meta.url),'utf8'));
 const get=id=>registry.models.find(m=>m.id===id);
 const copy=v=>structuredClone(v);
@@ -159,4 +160,20 @@ test('UI contains clear local-import affordances and separate interpretation out
  const html=fs.readFileSync(new URL('../web/model-lab.html',import.meta.url),'utf8');
  for(const id of ['registry-file','evidence-file','compare-evidence','identifiability','explanation'])assert(html.includes('id="'+id+'"'));
  assert(html.includes('branche non publiée'));
+});
+
+test('mechanism changes are calculated from matrices, not merely copied from labels',()=>{
+ const r=explainModelChange(get('linear-two-pools'),get('linear-three-pools'));
+ assert.equal(r.status,'compared_topology_and_rates');
+ assert(r.changes.some(x=>x.kind==='added_compartment'&&x.detail.includes('N')));
+ assert(r.changes.some(x=>x.kind==='added_transport'&&x.detail.includes('E→N')));
+ const report=compareModels(registry,'linear-two-pools','linear-three-pools');
+ assert.equal(report.interpretation.computed_changes.status,'compared_topology_and_rates');
+});
+test('P8 boundaries and capacities are compared from the existing scenario program',()=>{
+ const r=explainModelChange(get('p8-control'),get('p8-mct-reduced'));
+ assert.equal(r.status,'compared_boundaries');
+ assert(r.changes.some(x=>x.detail.includes('0.25')));
+ const ph=explainModelChange(get('p8-control'),get('p8-ph-lowered'));
+ assert(ph.changes.some(x=>x.kind==='changed_boundary'&&x.detail.includes('6')));
 });
