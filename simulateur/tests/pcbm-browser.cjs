@@ -1,5 +1,6 @@
 const {chromium}=require(process.env.POLY_PLAYWRIGHT||'playwright');
 const assert=require('node:assert/strict');
+const {createHash}=require('node:crypto');
 const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8125';
 (async()=>{
  const browser=await chromium.launch({headless:true,channel:process.env.POLY_BROWSER_CHANNEL||'chromium',args:['--disable-dev-shm-usage']});
@@ -90,6 +91,19 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8125';
    await page.locator('#c1r-candidate-result').waitFor({state:'visible'});
    assert.equal(await page.locator('#c1r-candidate-count').innerText(),'5');
    assert.match(await page.locator('#c1r-candidate-status').innerText(),/aucun recalage validé/);
+   const xml=Buffer.from('synthetic-local-xml-source'),lps=Buffer.from('synthetic-local-lps-markups');
+   const sha=buffer=>createHash('sha256').update(buffer).digest('hex');
+   crosswalk.source.xml_sha256=sha(xml);crosswalk.source.lps_markups_sha256=sha(lps);
+   await page.locator('#c1r-candidate-file').setInputFiles({
+    name:'synthetic-c1r-with-hashes.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(crosswalk))
+   });
+   await page.locator('.c1r-candidate details summary').click();
+   await page.locator('#c1r-source-xml').setInputFiles({name:'source.xml',mimeType:'application/xml',buffer:xml});
+   await page.locator('#c1r-source-lps').setInputFiles({name:'markups.json',mimeType:'application/json',buffer:lps});
+   await page.locator('#c1r-check-digests').click();
+   await page.waitForFunction(()=>document.getElementById('c1r-digest-status').textContent.includes('concordants localement'));
+   assert.match(await page.locator('#c1r-digest-status').innerText(),/aucune origine SPARC/);
+
    await page.locator('#c1r-candidate-clear').click();
    assert.equal(await page.locator('#c1r-candidate-result').isVisible(),false);
    crosswalk.source.xml_coordinate_unit='mm';
