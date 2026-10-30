@@ -7,14 +7,14 @@
       "id": "p8-core",
       "title": "POLY — noyau réversible P8 (octets de travail Git)",
       "kind": "repository_file",
-      "verification": "verified_repository_bytes",
+      "verification": "repository_path",
       "path": "simulateur/web/reversible-lactate-core.mjs"
     },
     {
       "id": "p7-contract",
       "title": "POLY — contrat stœchiométrique et thermodynamique P7",
       "kind": "repository_file",
-      "verification": "verified_repository_bytes",
+      "verification": "repository_path",
       "path": "simulateur/web/reversible-lactate-contract.mjs"
     },
     {
@@ -22,7 +22,7 @@
       "title": "Aubert et al. (2005) Brain lactate kinetics",
       "kind": "article_reference",
       "verification": "bibliography_only",
-      "doi": "10.1073/pnas.0505762102"
+      "doi": "10.1073/pnas.0505427102"
     },
     {
       "id": "adler-2026",
@@ -30,6 +30,13 @@
       "kind": "article_reference",
       "verification": "bibliography_only",
       "doi": "10.1016/j.cmet.2026.05.006"
+    },
+    {
+      "id": "modellab-linear",
+      "title": "POLY ModelLab — moteur déclaratif de bilans synthétiques",
+      "kind": "repository_file",
+      "verification": "repository_path",
+      "path": "simulateur/web/model-lab-linear-adapter.mjs"
     }
   ],
   "models": [
@@ -199,6 +206,139 @@
       ],
       "source_ids": [
         "adler-2026"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "linear-two-pools",
+      "title": "Deux réservoirs — transport A↔E",
+      "version": "poly.model-lab.linear-system.v1",
+      "family": "two-pool-linear",
+      "status": "runnable_synthetic",
+      "engine": "linear-mass-balance",
+      "scenario": "declared-model",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_synthetic_lactate_reservoirs",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "amount-E-over-volume-L"
+      },
+      "driver": {
+        "id": "two-pool-linear",
+        "description": "Échanges bidirectionnels A↔E, deux compartiments et conservation totale."
+      },
+      "system": {
+        "schema": "poly.model-lab.linear-system.v1",
+        "states": [
+          "A",
+          "E"
+        ],
+        "initial_mmol": [
+          4,
+          1
+        ],
+        "rate_matrix": [
+          [
+            -0.2,
+            0.05
+          ],
+          [
+            0.2,
+            -0.05
+          ]
+        ],
+        "observed_state": "E",
+        "observed_volume_L": 1,
+        "time_basis": "synthetic_time",
+        "time_end": 8,
+        "dt": 0.02,
+        "sample_every": 5
+      },
+      "assumptions": [
+        "Toutes les quantités, capacités et durées sont synthétiques.",
+        "Modèle linéaire fermé, sans glucose, ATP, pH ni paramètres physiologiques."
+      ],
+      "source_ids": [
+        "modellab-linear"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "linear-three-pools",
+      "title": "Trois réservoirs — transport A↔E↔N",
+      "version": "poly.model-lab.linear-system.v1",
+      "family": "three-pool-linear",
+      "status": "runnable_synthetic",
+      "engine": "linear-mass-balance",
+      "scenario": "declared-model",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_synthetic_lactate_reservoirs",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "amount-E-over-volume-L"
+      },
+      "driver": {
+        "id": "three-pool-linear",
+        "description": "Ajout d'un compartiment N connecté à E ; les taux sont des choix synthétiques."
+      },
+      "system": {
+        "schema": "poly.model-lab.linear-system.v1",
+        "states": [
+          "A",
+          "E",
+          "N"
+        ],
+        "initial_mmol": [
+          4,
+          1,
+          0
+        ],
+        "rate_matrix": [
+          [
+            -0.2,
+            0.05,
+            0
+          ],
+          [
+            0.2,
+            -0.2,
+            0.05
+          ],
+          [
+            0,
+            0.15,
+            -0.05
+          ]
+        ],
+        "observed_state": "E",
+        "observed_volume_L": 1,
+        "time_basis": "synthetic_time",
+        "time_end": 8,
+        "dt": 0.02,
+        "sample_every": 5
+      },
+      "assumptions": [
+        "Toutes les quantités, capacités et durées sont synthétiques.",
+        "Modèle linéaire fermé, sans glucose, ATP, pH ni paramètres physiologiques."
+      ],
+      "source_ids": [
+        "modellab-linear"
       ],
       "validation": {
         "independent": false,
