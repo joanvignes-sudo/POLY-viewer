@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><link rel="icon" href="data:,">
+<title>PCBM · Passages d'échelle scientifiques · POLY</title>
+<link rel="stylesheet" href="./pcbm-lab.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="back-link" href="anatomy.html">POLY / Anatomie</a>
+ <span class="site-title">PCBM <span>ScaleBridge</span></span>
+ <span class="experimental">Laboratoire isolé · non publié</span>
+</header>
+<main>
+ <section class="intro" aria-labelledby="title">
+  <p class="eyebrow">POLY · NAVIGATION MULTI-ÉCHELLES</p>
+  <h1 id="title">Changer de représentation.<br>Conserver les preuves.</h1>
+  <p>Ce parcours montre comment passer du corps aux représentations microscopiques sans confondre un zoom, une relation anatomique et une comparaison documentaire. Aucune géométrie nouvelle, latence biologique ou connexion individuelle n'est inventée.</p>
+ </section>
+ <p id="loading" role="status">Vérification du registre scientifique…</p>
+ <div id="app" hidden>
+  <section class="card route-controls" aria-labelledby="route-title">
+   <h2 id="route-title">Construire un itinéraire</h2>
+   <div class="selectors">
+    <label>Depuis<select id="from" aria-label="Représentation de départ"></select></label>
+    <label>Vers<select id="to" aria-label="Représentation d'arrivée"></select></label>
+    <button type="button" id="build">Afficher le parcours documenté</button>
+   </div>
+   <p class="notice">Les ordres de grandeur sont pédagogiques. Les repères propres aux études restent distincts.</p>
+   <div id="route-notice" role="status" aria-live="polite"></div>
+  </section>
+  <div class="workspace">
+   <section class="card ladder" aria-labelledby="ladder-title">
+    <div class="section-head"><h2 id="ladder-title">Chemin entre les échelles</h2><span id="count"></span></div>
+    <ol id="steps" class="steps" aria-label="Représentations successives"></ol>
+    <nav class="action-bar" aria-label="Navigation PCBM">
+      <button id="previous" type="button" class="secondary">Étape précédente</button>
+      <button id="next" type="button">Étape suivante</button>
+    </nav>
+   </section>
+   <section class="details" aria-live="polite" aria-label="Détails de la représentation actuelle">
+    <article class="card focus">
+     <p class="eyebrow" id="position">ÉTAPE</p>
+     <h2 id="node-title"></h2><p id="node-detail"></p>
+     <dl class="facts">
+       <div><dt>Échelle indicative</dt><dd id="scale"></dd></div>
+       <div><dt>Repère source</dt><dd id="frame"></dd></div>
+       <div><dt>Identité du spécimen</dt><dd id="specimen"></dd></div>
+       <div><dt>Représentation</dt><dd id="availability"></dd></div>
+     </dl>
+     <a id="open-viewer" class="view-link" hidden target="_blank" rel="noopener">Ouvrir la représentation existante</a>
+     <p id="unavailable" class="limits" hidden>Cette représentation n'est pas chargée dans PCBM. Le dossier documentaire reste consultable, sans surface 3D simulée.</p>
+    </article>
+    <article class="card transition">
+     <p class="eyebrow">QUALIFICATION DU PASSAGE</p>
+     <h2 id="transition-title">Point de départ</h2>
+     <p id="transition-text"></p><p class="boundary" id="transition-boundary"></p>
+    </article>
+    <article class="card evidence">
+     <h2>Provenance vérifiable</h2>
+     <p class="notice">La présence d'une référence ne constitue pas à elle seule une validation expérimentale indépendante.</p>
+     <ul id="sources"></ul>
+     <button type="button" class="secondary" id="export">Exporter le reçu documentaire JSON</button>
+    </article>
+   </section>
+  </div>
+ </div>
+ <aside id="error" role="alert" hidden></aside>
+</main>
+<footer>PCBM v0.1 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<script type="module" src="./pcbm-lab.mjs"></script>
+</body>
+</html>
