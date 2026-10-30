@@ -125,6 +125,23 @@
       <p class="limits">Conclusion provisoire : 42/54 correspondances aux contours ne constituent pas un recalage 3D validé. Le sens des étiquettes de segmentation et l'origine de la discordance axiale XML doivent être revérifiés sur les fichiers originaux.</p>
       <p class="notice">Rapport de référence local non monté : <code>POLY_VAGUE_RUN10_C1R_CROSSWALK_20261030.json</code>. Aucune transformation n'est appliquée à la scène PCBM.</p>
      </div>
+     <div class="c1r-candidate">
+      <h4>Vérifier une transformation candidate sur des repères réservés</h4>
+      <p class="notice">Optionnel : charger un fichier JSON local de paires XML/LPS, avec une transformation candidate et des empreintes déclarées. Les unités XML restent non résolues, même lorsque l'erreur calculée est faible. Aucun fichier n'est envoyé à un serveur.</p>
+      <p><a href="pcbm-crosswalk-template.json" target="_blank" rel="noopener">Contrat JSON vierge (aucune coordonnée inventée)</a></p>
+      <label for="c1r-candidate-file">Fichier de correspondances local (1 Mo maximum)</label>
+      <input type="file" id="c1r-candidate-file" accept=".json,application/json" aria-label="Vérifier des correspondances C1 droit sans recalage">
+      <p id="c1r-candidate-status" role="status" aria-live="polite">Aucune transformation candidate chargée.</p>
+      <div id="c1r-candidate-result" hidden>
+       <dl class="facts">
+        <div><dt>Repères réservés</dt><dd id="c1r-candidate-count"></dd></div>
+        <div><dt>Erreur RMS (mm LPS)</dt><dd id="c1r-candidate-rms"></dd></div>
+        <div><dt>Écart maximal (mm LPS)</dt><dd id="c1r-candidate-max"></dd></div>
+       </dl>
+       <p class="limits">Ce contrôle examine uniquement la matrice et les paires fournies. L'authenticité des fichiers, l'indépendance du jeu de validation, le repère XML et l'identité biologique des points ne sont pas démontrés.</p>
+      </div>
+      <button id="c1r-candidate-clear" type="button" class="secondary">Effacer la vérification locale</button>
+     </div>
     </div>
    </div>
   </section>
@@ -148,7 +165,7 @@
  </div>
  <aside id="error" role="alert" hidden></aside>
 </main>
-<footer>PCBM v0.6 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<footer>PCBM v0.7 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
 <script type="module" src="./pcbm-lab.mjs"></script>
 </body>
 </html>
