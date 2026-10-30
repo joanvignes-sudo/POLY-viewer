@@ -58,13 +58,18 @@ export function validatePCBMLineage(raw){
 export function lineageComparison(model,a,b){
  fail(model?.resources instanceof Map&&model.resources.has(a)&&model.resources.has(b),'unknown comparison resources');
  const root=k=>{let x=k;while(model.parent.has(x))x=model.parent.get(x);return x};
- const sameOrigin=root(a)===root(b);
+ const left=model.resources.get(a),right=model.resources.get(b);
+ const singleSpecimen=left.sample_id==='f002'&&right.sample_id==='f002';
+ const sameOrigin=singleSpecimen&&root(a)===root(b);
  return Object.freeze({
   left_id:a,right_id:b,same_provenance_root:sameOrigin,
   independent_evidence:sameOrigin?false:null,
-  subject_identity_resolved:sameOrigin&&a===b,
+  // Matching resource IDs or specimen tags do not identify an individual axon, side, or human donor.
+  subject_identity_resolved:false,
+  same_declared_sample_tag:singleSpecimen,
   spatial_registration_allowed:false,
-  conclusion:sameOrigin?'Données liées par dérivation : ne pas compter comme preuves indépendantes.':'Origines distinctes dans le registre ; chevauchement des donneurs non déterminé.'
+  conclusion:sameOrigin?'Données f002 reliées par dérivation : une seule origine expérimentale, pas deux confirmations indépendantes.':
+   'Collection ou études comparées : nombre de spécimens et chevauchement de donneurs non déterminés par cette comparaison.'
  });
 }
 export async function readPCBMLineage({fetcher=fetch,signal}={}){

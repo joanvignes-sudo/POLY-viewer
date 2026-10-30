@@ -41,3 +41,18 @@ test('tampering with original DOI, specimen or evidence status is rejected',()=>
   assert.throws(()=>validatePCBMLineage(x),/unverified DOI|population falsely identified|unverified files|unwarranted cohort/);
  }
 });
+
+test('same multi-specimen container is not proof of a single anatomical specimen',()=>{
+ const m=validatePCBMLineage(clone());
+ const c=lineageComparison(m,'ssv-collection','ssv-collection');
+ assert.equal(c.same_provenance_root,false);
+ assert.equal(c.independent_evidence,null);
+ assert.equal(c.subject_identity_resolved,false);
+ assert.equal(c.spatial_registration_allowed,false);
+ const population=lineageComparison(m,'bahadir-population','bahadir-population');
+ assert.equal(population.subject_identity_resolved,false);
+ assert.equal(population.independent_evidence,null);
+ const primary=lineageComparison(m,'f002-primary','f002-primary');
+ assert.equal(primary.same_provenance_root,true);
+ assert.equal(primary.subject_identity_resolved,false);
+});
