@@ -26,7 +26,7 @@ export function compareToEvidence(model,trajectory,raw){
  const o=validateEvidenceSet(raw),reasons=[];
  if(model.scope.species!==o.scope.species||model.scope.preparation!==o.scope.preparation||model.scope.region!==o.scope.region||model.scope.time_basis!==o.scope.time_basis)reasons.push('Espèce, préparation, région ou horloge incompatibles.');
  if(model.observable.id!==o.observable.id||model.observable.unit!==o.observable.unit||model.observable.operator!==o.observable.operator)reasons.push('Observable ou opérateur de mesure non équivalent.');
- if(trajectory.model_id!==model.id||trajectory.unit!==o.observable.unit||trajectory.time_basis!==o.scope.time_basis)reasons.push('La trajectoire provient d’un autre modèle ou d’une autre unité.');
+ if(trajectory.model_id!==model.id||trajectory.observable_id!==o.observable.id||trajectory.unit!==o.observable.unit||trajectory.time_basis!==o.scope.time_basis)reasons.push('La trajectoire provient d’un autre modèle ou d’une autre unité.');
  const grid=new Map(trajectory.points.map(p=>[p.t,p.value]));
  if(o.points.some(p=>!grid.has(p.t)))reasons.push('L’horloge des mesures ne correspond pas aux sorties ; aucune interpolation implicite.');
  if(reasons.length)return {status:'not_comparable',reasons,validated:false};
