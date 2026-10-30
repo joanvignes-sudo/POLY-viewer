@@ -6,11 +6,13 @@ on:
     paths:
       - 'simulateur/web/model-lab*'
       - 'simulateur/tests/model-lab.test.mjs'
+      - 'simulateur/tests/model-lab-browser.cjs'
       - '.github/workflows/model-lab.yml'
   pull_request:
     paths:
       - 'simulateur/web/model-lab*'
       - 'simulateur/tests/model-lab.test.mjs'
+      - 'simulateur/tests/model-lab-browser.cjs'
       - '.github/workflows/model-lab.yml'
   workflow_dispatch:
 jobs:
@@ -29,7 +31,27 @@ jobs:
         run: |
           git diff --name-only origin/main...HEAD | while IFS= read -r file; do
             case "$file" in
-              simulateur/web/model-lab*|simulateur/tests/model-lab.test.mjs|simulateur/reports/MODEL_LAB_2026-10-30.md|.github/workflows/model-lab.yml) ;;
+              simulateur/web/model-lab*|simulateur/tests/model-lab.test.mjs|simulateur/tests/model-lab-browser.cjs|simulateur/reports/MODEL_LAB_2026-10-30.md|.github/workflows/model-lab.yml) ;;
               *) echo "Unexpected pre-existing file changed: $file"; exit 1 ;;
             esac
           done
+
+  browser:
+    needs: model-lab
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install headless browser tools
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Desktop and mobile-emulated ModelLab interactions
+        run: |
+          python3 -m http.server 8131 --bind 127.0.0.1 >/tmp/model-lab-http.log 2>&1 &
+          sleep 2
+          node simulateur/tests/model-lab-browser.cjs
