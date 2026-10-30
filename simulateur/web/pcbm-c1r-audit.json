@@ -1,0 +1,60 @@
+{
+  "schema": "poly.pcbm.c1r-audit.v1",
+  "publication_status": "unreviewed_automation_summary",
+  "anatomical_registration": null,
+  "specimen_id": "f002",
+  "side": "right",
+  "segment_id": "C1R",
+  "source_dataset_doi": "10.26275/imas-52lf",
+  "source_run_report_filename": "POLY_VAGUE_RUN10_C1R_CROSSWALK_20261030.json",
+  "run_report_mounted": false,
+  "raw_primary_volume_mounted": false,
+  "derived_volume_mounted": false,
+  "point_coordinates_mounted": false,
+  "file_checksums_available_in_pcbm": false,
+  "acquisition": {
+    "primary_microct_dimensions": [
+      806,
+      1256,
+      4042
+    ],
+    "primary_physical_voxel_spacing_um": null,
+    "derived_image_dimensions": [
+      403,
+      628,
+      2021
+    ],
+    "derived_reported_voxel_spacing_um": 18,
+    "derived_lps_affine_read_in_original_report": true,
+    "derived_lps_affine_mounted_in_pcbm": false
+  },
+  "anatomical_annotations": {
+    "lps_point_count": 55,
+    "points_inside_derived_bounds": 55,
+    "direct_nonzero_voxel_count": 54,
+    "nearby_nonzero_voxel_count": 55,
+    "nonzero_voxel_neighborhood_radius_defined_in_pcbm": false,
+    "semantic_segmentation_values_reviewed": false
+  },
+  "xml_contours": {
+    "observed_contours": 824,
+    "observed_points": 103995,
+    "candidate_orientation_status": "hypothesis",
+    "candidate_points_evaluable": 54,
+    "candidate_inside_epineurium": 42,
+    "four_other_orientations_inside_epineurium": 0,
+    "xml_axial_spacing_reported": -9,
+    "xml_number_of_sections": 2021,
+    "xml_coordinate_min_reported": -32436,
+    "xml_coordinate_unit": "unresolved",
+    "mismatch_explained": false,
+    "transform_xml_to_lps": null
+  },
+  "forbidden_inferences": [
+    "No voxel-to-XYZ conversion without exact validated affine and image",
+    "No conclusion about fascicle or axon identity from nonzero voxels",
+    "No confirmed XML-to-LPS mapping while axial spacing mismatch is unresolved",
+    "No transfer of C1L 9 um calibration to C1R 18 um derived volume",
+    "No link from C1R to full-body HRA/CerebrA or SSV until homologous landmarks independently verified"
+  ]
+}
