@@ -1,0 +1,35 @@
+name: POLY ModelLab independent checks
+on:
+  push:
+    branches:
+      - 'feat/model-lab-*'
+    paths:
+      - 'simulateur/web/model-lab*'
+      - 'simulateur/tests/model-lab.test.mjs'
+      - '.github/workflows/model-lab.yml'
+  pull_request:
+    paths:
+      - 'simulateur/web/model-lab*'
+      - 'simulateur/tests/model-lab.test.mjs'
+      - '.github/workflows/model-lab.yml'
+  workflow_dispatch:
+jobs:
+  model-lab:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Scientific contracts and deterministic synthetic comparisons
+        run: node --test simulateur/tests/model-lab.test.mjs
+      - name: Verify no historical files changed in this branch
+        run: |
+          git diff --name-only origin/main...HEAD | while IFS= read -r file; do
+            case "$file" in
+              simulateur/web/model-lab*|simulateur/tests/model-lab.test.mjs|simulateur/reports/MODEL_LAB_2026-10-30.md|.github/workflows/model-lab.yml) ;;
+              *) echo "Unexpected pre-existing file changed: $file"; exit 1 ;;
+            esac
+          done
