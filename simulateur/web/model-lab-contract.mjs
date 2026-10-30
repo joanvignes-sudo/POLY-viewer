@@ -1,3 +1,4 @@
+import {validateLinearSystem} from './model-lab-linear-adapter.mjs';
 // POLY ModelLab v0.1 — validated metadata, not a universal model interpreter.
 // No expressions from imported JSON are evaluated as code.
 export const REGISTRY_SCHEMA='poly.model-lab.registry.v1';
@@ -19,7 +20,7 @@ export function validateModelRegistry(input){
  const sources=unique(input.sources,'sources',1,100);
  for(const s of sources.values()){
   ensure(nonEmpty(s.title)&&['repository_file','article_reference'].includes(s.kind),'source qualification');
-  ensure(['verified_repository_bytes','bibliography_only'].includes(s.verification),'source verification');
+  ensure(['repository_path','bibliography_only'].includes(s.verification),'source verification');
   if(s.kind==='repository_file')ensure(/^simulateur\/web\/[a-zA-Z0-9._/-]+$/.test(s.path)&&!s.path.includes('..'),'source path');
   else ensure(/^10\.\d{4,9}\/\S{2,120}$/.test(s.doi),'source DOI');
  }
@@ -36,6 +37,9 @@ export function validateModelRegistry(input){
    ensure(idOk(m.engine)&&nonEmpty(m.scenario),'runnable model engine');
    ensure(m.scope.species==='synthetic'&&m.scope.time_basis==='synthetic_time','synthetic scope');
    ensure(m.driver&&idOk(m.driver.id)&&nonEmpty(m.driver.description),'driver attribution');
+   ensure(['p8','linear-mass-balance'].includes(m.engine),'unsupported engine identifier');
+   if(m.engine==='linear-mass-balance')validateLinearSystem(m.system);
+   else ensure(m.system===undefined,'unexpected P8 dynamics');
   }else{
    ensure(m.engine===null&&m.scenario===null&&m.driver===null,'documentary model masquerading as executable');
   }
