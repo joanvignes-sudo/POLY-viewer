@@ -1,0 +1,100 @@
+{
+  "schema": "poly.pcbm.lineage.v1",
+  "experimental": true,
+  "published": false,
+  "data_assets_mounted": false,
+  "independent_subject_claims": false,
+  "resources": [
+    {
+      "id": "f002-primary",
+      "name": "Données primaires SPARC — nerf vague f002",
+      "role": "primary_dataset",
+      "doi": "10.26275/imas-52lf",
+      "url": "https://discover.pennsieve.io/datasets/674",
+      "sample_id": "f002",
+      "side": "unspecified",
+      "status": "remote_metadata_verified",
+      "notes": "MicroCT et immunohistochimie ; présence d'un DOI public ne signifie pas fichiers locaux montés"
+    },
+    {
+      "id": "ssv-collection",
+      "name": "Collection SPARC — Scaffold map Human Vagus Nerve, version 7",
+      "role": "multi_specimen_container",
+      "doi": "10.26275/tjzi-muqm",
+      "url": "https://discover.pennsieve.io/datasets/426",
+      "sample_id": null,
+      "side": null,
+      "status": "remote_metadata_verified",
+      "notes": "Collection dérivée de nombreux échantillons ; ne pas la compter comme un nouvel individu ni comme un unique spécimen"
+    },
+    {
+      "id": "f002-scaffold-reference",
+      "name": "Entrée f002 dans le catalogue des scaffolds SPARC",
+      "role": "derived_record",
+      "doi": null,
+      "url": "https://docs.sparc.science/docs/subject-specific-vagus-ssv-scaffolds",
+      "sample_id": "f002",
+      "side": "unresolved",
+      "status": "catalog_lineage_only",
+      "notes": "Lien de catalogue : fichier exact, côté et représentation tridimensionnelle non récupérés ici"
+    },
+    {
+      "id": "bahadir-population",
+      "name": "Bahadir 2026 — origines de branches, cohorte de 29 donneurs",
+      "role": "population_study",
+      "doi": "10.1016/j.brs.2026.103182",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595102/",
+      "sample_id": null,
+      "side": null,
+      "status": "published_summary_only",
+      "notes": "Médianes/IQR de groupes et liens anatomiques, pas mesures de f002"
+    },
+    {
+      "id": "thompson-microct",
+      "name": "Thompson 2026 — suivi microCT sur 5 nerfs humains",
+      "role": "population_study",
+      "doi": "10.3389/fnins.2026.1731234",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41788551/",
+      "sample_id": null,
+      "side": null,
+      "status": "published_summary_only",
+      "notes": "Échantillon différent non apparié à f002 ; chevauchement de donneurs non démontré"
+    }
+  ],
+  "links": [
+    {
+      "from": "f002-scaffold-reference",
+      "to": "f002-primary",
+      "relationship": "derived_from",
+      "qualification": "catalog_documented",
+      "files_verified": false
+    },
+    {
+      "from": "f002-scaffold-reference",
+      "to": "ssv-collection",
+      "relationship": "distributed_in",
+      "qualification": "catalog_documented",
+      "files_verified": false
+    }
+  ],
+  "possible_cohort_overlap": [
+    {
+      "a": "f002-primary",
+      "b": "bahadir-population",
+      "status": "unknown",
+      "reason": "Les cohortes peuvent avoir des sources communes ; aucune correspondance d'identité individuelle vérifiée"
+    },
+    {
+      "a": "f002-primary",
+      "b": "thompson-microct",
+      "status": "unknown",
+      "reason": "Aucune preuve d'appariement ou d'indépendance des donneurs consultée"
+    },
+    {
+      "a": "bahadir-population",
+      "b": "thompson-microct",
+      "status": "unknown",
+      "reason": "Les identifiants individuels ne sont pas comparables dans les résumés"
+    }
+  ]
+}
