@@ -110,7 +110,7 @@ async function onImportEvidence(){
 function assessEvidence(){
  if(!evidence||!lastResult||lastResult.status!=='compared_synthetic'){get('evidence-status').textContent='Aucune trajectoire calculée et comparable.';return;}
  const model=registry.models.find(m=>m.id===lastResult.left);
- const trajectory={schema:'poly.model-lab.series.v1',model_id:model.id,unit:lastResult.unit,time_basis:lastResult.time_basis,points:lastResult.series.left};
+ const trajectory={schema:'poly.model-lab.series.v1',model_id:model.id,observable_id:model.observable.id,unit:lastResult.unit,time_basis:lastResult.time_basis,points:lastResult.series.left};
  const check=compareToEvidence(model,trajectory,evidence);
  if(check.status==='descriptive_fit_only')get('evidence-status').textContent='Écarts descriptifs : RMSE '+check.rmse.toPrecision(5)+' '+lastResult.unit+', MAE '+check.mae.toPrecision(5)+' '+lastResult.unit+' sur '+check.observations+' points. Aucune validation scientifique automatique.';
  else get('evidence-status').textContent='Confrontation refusée : '+check.reasons.join(' ');
