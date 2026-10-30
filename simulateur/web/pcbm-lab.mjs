@@ -1,4 +1,5 @@
 import {readC1RAudit} from './pcbm-c1r-audit.mjs';
+import {parseLocalC1RCandidate} from './pcbm-crosswalk-candidate.mjs';
 import {parseLocalSSVFile} from './pcbm-ssv-preview.mjs';
 import {readPCBMLineage,lineageComparison} from './pcbm-lineage.mjs';
 import {readVagusEvidence,compareVagusStudyToPCBM} from './pcbm-vagus-evidence.mjs';
@@ -230,6 +231,26 @@ async function loadC1RAudit(){
   text('c1r-status','Rapport non qualifié : '+(error?.message??error));
  }finally{clearTimeout(timer);$('c1r-load').disabled=false}
 }
+function clearC1RCandidate(){
+ $('c1r-candidate-file').value='';
+ $('c1r-candidate-result').hidden=true;
+ text('c1r-candidate-status','Aucune transformation candidate chargée.');
+}
+async function examineC1RCandidate(file){
+ $('c1r-candidate-result').hidden=true;
+ if(!file){text('c1r-candidate-status','Aucun fichier sélectionné.');return;}
+ try{
+  const result=await parseLocalC1RCandidate(file);
+  text('c1r-candidate-count',result.holdout_count);
+  text('c1r-candidate-rms',result.heldout_rms_mm.toPrecision(6));
+  text('c1r-candidate-max',result.heldout_max_mm.toPrecision(6));
+  text('c1r-candidate-status','Calcul local accepté · transformation candidate uniquement · aucun recalage validé.');
+  $('c1r-candidate-result').hidden=false;
+ }catch(error){
+  $('c1r-candidate-file').value='';
+  text('c1r-candidate-status','Fichier candidat refusé : '+(error?.message??error));
+ }
+}
 function init(reg){
  model=validatePCBM(reg);
  const ordered=model.registry.nodes;
@@ -246,6 +267,8 @@ function init(reg){
  $('ssv-upload').onchange=()=>loadLocalSSVFile($('ssv-upload').files?.[0]??null);
  $('ssv-clear').onclick=clearSSVPreview;
  $('c1r-load').onclick=loadC1RAudit;
+ $('c1r-candidate-file').onchange=()=>examineC1RCandidate($('c1r-candidate-file').files?.[0]??null);
+ $('c1r-candidate-clear').onclick=clearC1RCandidate;
  $('coverage-family').onchange=renderCoverage;
  $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};
