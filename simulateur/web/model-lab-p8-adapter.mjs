@@ -3,7 +3,7 @@ import {runP8,P8_MODEL} from './reversible-lactate-core.mjs';
 export const P8_ENGINE='p8';
 const allowed=new Set(P8_MODEL.cases);
 export function runP8Profile(model,options={}){
- if(model.engine!==P8_ENGINE||!allowed.has(model.scenario))throw Error('ModelLab: unsupported P8 profile');
+ if(model.engine!==P8_ENGINE||!allowed.has(model.scenario)||model.version!==P8_MODEL.version||model.observable?.id!=='extracellular-lactate'||model.observable?.unit!=='mM'||model.observable?.operator!=='lactate-E-mmol-over-volume-L')throw Error('ModelLab: unsupported or relabeled P8 profile');
  const dt=options.dt??0.02;
  if(![0.02,0.01,0.005].includes(dt))throw Error('ModelLab: unsupported P8 step');
  const result=runP8({schema:'poly.p8.request.v1',dt});
