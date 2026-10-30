@@ -1,3 +1,4 @@
+import {readPCBMLineage,lineageComparison} from './pcbm-lineage.mjs';
 import {readVagusEvidence,compareVagusStudyToPCBM} from './pcbm-vagus-evidence.mjs';
 import {fetchPCBMCoverage,filterPCBMCoverage} from './pcbm-coverage.mjs';
 import {validatePCBM,planPCBM,classifyPCBM,PCBMReceipt} from './pcbm-core.mjs';
@@ -157,6 +158,28 @@ async function loadVagusEvidence(){
   text('vagus-study-status','Comparaison refusée ou indisponible : '+(error?.message??error));
  }finally{clearTimeout(timer);$('vagus-study-load').disabled=false}
 }
+async function loadLineage(){
+ $('lineage-load').disabled=true;text('lineage-status','Vérification des filiations de sources…');
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),10000);
+ try{
+  const modelLineage=await readPCBMLineage({signal:controller.signal});
+  const derived=lineageComparison(modelLineage,'f002-primary','f002-scaffold-reference');
+  const other=lineageComparison(modelLineage,'f002-primary','bahadir-population');
+  if(derived.independent_evidence!==false||other.independent_evidence!==null)throw Error('Evidence lineage independence assertion failed');
+  const list=$('lineage-resources');empty(list);
+  for(const resource of modelLineage.resources.values()){
+   const li=document.createElement('li'),name=document.createElement('strong'),a=document.createElement('a'),small=document.createElement('small');
+   name.textContent=resource.name;a.textContent=resource.doi??'Documentation méthodologique';a.href=resource.url;a.target='_blank';a.rel='noopener';
+   small.textContent=resource.role+' · '+resource.status;
+   li.append(name,small,a);list.append(li);
+  }
+  text('lineage-interpretation','f002 primaire et scaffold dérivé : une seule origine expérimentale. Correspondance entre donneurs des études : inconnue. Aucun fichier primaire lourd importé ni recalage humain validé.');
+  $('lineage-panel').hidden=false;
+  text('lineage-status','5 ressources reliées · 1 origine f002 · indépendance inter-études non démontrée');
+ }catch(error){
+  $('lineage-panel').hidden=true;text('lineage-status','Filiation non qualifiée : '+(error?.message??error));
+ }finally{clearTimeout(timer);$('lineage-load').disabled=false}
+}
 function init(reg){
  model=validatePCBM(reg);
  const ordered=model.registry.nodes;
@@ -169,6 +192,7 @@ function init(reg){
  $('build').onclick=build;
  $('coverage-load').onclick=loadCoverage;
  $('vagus-study-load').onclick=loadVagusEvidence;
+ $('lineage-load').onclick=loadLineage;
  $('coverage-family').onchange=renderCoverage;
  $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};

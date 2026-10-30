@@ -83,6 +83,16 @@
     <div id="vagus-branch-chart" class="vagus-branch-chart" role="list" aria-label="Distances publiées des branches vagales"></div>
     <p class="limits">Raccordement interdit : ce graphique ne permet pas de positionner les branches sur f002, HRA, CerebrA ou le microCT d'une autre étude. Les unités cm de cette cohorte et les unités normalisées SSV ne sont pas interchangeables.</p>
     <ul id="vagus-study-sources" class="vagus-study-sources"></ul>
+    <div class="vagus-lineage">
+     <h3>Origine du spécimen f002 et de ses reconstructions</h3>
+     <p class="notice">Distinguer le jeu primaire, les dérivés scientifiques et leur collection de diffusion. Une copie dérivée ne constitue pas une deuxième expérience indépendante.</p>
+     <button id="lineage-load" type="button" class="secondary">Contrôler les filiations des jeux de données</button>
+     <p id="lineage-status" role="status" aria-live="polite"></p>
+     <div id="lineage-panel" hidden>
+      <ul id="lineage-resources" class="lineage-resources"></ul>
+      <p id="lineage-interpretation" class="limits"></p>
+     </div>
+    </div>
    </div>
   </section>
   <section class="card coverage-card" aria-labelledby="coverage-heading">
@@ -105,7 +115,7 @@
  </div>
  <aside id="error" role="alert" hidden></aside>
 </main>
-<footer>PCBM v0.3 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<footer>PCBM v0.4 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
 <script type="module" src="./pcbm-lab.mjs"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ const representations=new Set(['measured_atlas','reference_atlas','documentary',
 const availability=new Set(['viewer','external','not_mounted']);
 const frames=new Set(['atlas','normalized','illustrative','abstract','unregistered_image']);
 const units=new Set(['mm','display_unit','unitless','none','voxel']);
-const officialHosts=new Set(['pubmed.ncbi.nlm.nih.gov','docs.sparc.science']);
+const officialHosts=new Set(['pubmed.ncbi.nlm.nih.gov','docs.sparc.science','discover.pennsieve.io']);
 const idOk=s=>typeof s==='string'&&/^[a-z][a-z0-9-]{1,80}$/.test(s);
 const assert=(yes,message)=>{if(!yes)throw Error('PCBM: '+message)};
 function unique(items,what){
@@ -27,7 +27,7 @@ export function validatePCBM(reg){
  assert(reg?.schema===REGISTRY_SCHEMA&&reg.experimental===true&&reg.published===false&&reg.claims_spatial_registration===false,'registry publication or spatial scope');
  const bySource=unique(reg.sources,'sources');
  for(const s of bySource.values()){
-  assert(typeof s.title==='string'&&s.title.length>5&&['repository_file','research_note','study_reference'].includes(s.kind),'unqualified source');
+  assert(typeof s.title==='string'&&s.title.length>5&&['repository_file','research_note','study_reference','dataset_reference'].includes(s.kind),'unqualified source');
   assert(['source_read','documentary_only','not_mounted'].includes(s.verification),'source verification status absent');
   assert(s.path===null||typeof s.path==='string'&&/^simulateur\/(?:web|data|reports)\/[a-zA-Z0-9._/-]+$/.test(s.path)&&!s.path.includes('..'),'unsafe source path');
   if(s.url!==undefined&&s.url!==null){let u;try{u=new URL(s.url)}catch{throw Error('PCBM: invalid source URL')};assert(u.protocol==='https:'&&officialHosts.has(u.hostname)&&!u.username&&!u.password,'unapproved source URL')}

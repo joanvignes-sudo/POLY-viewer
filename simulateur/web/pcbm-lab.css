@@ -68,3 +68,6 @@ footer{padding:24px 16px;text-align:center;color:#849ca6;font-size:.75rem}
 .vagus-median{position:absolute;top:4px;height:24px;width:3px;background:#f4d39b;transform:translateX(-50%)}
 .vagus-study-sources{display:flex;flex-wrap:wrap;gap:9px 22px;padding-left:18px;font-size:.82rem}
 @media(max-width:740px){.vagus-study-summary{grid-template-columns:1fr}.vagus-axis{margin-left:0;margin-right:0}.vagus-branch-row{grid-template-columns:1fr;gap:3px;padding-bottom:11px}.vagus-branch-row>span:last-child{text-align:left}.vagus-frames{grid-template-columns:1fr}.vagus-frames dt{margin-top:5px}}
+
+.vagus-lineage{margin-top:20px;border-top:1px solid #345260;padding-top:15px}.lineage-resources{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:0}.lineage-resources li{border:1px solid #365566;background:#0b2030;padding:10px;border-radius:9px;overflow-wrap:anywhere}.lineage-resources strong,.lineage-resources small,.lineage-resources a{display:block}.lineage-resources small{color:#9eafc6;margin:4px 0}
+@media(max-width:720px){.lineage-resources{grid-template-columns:1fr}}

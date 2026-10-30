@@ -90,6 +90,28 @@
       "pmid": "42595102",
       "species": "Homo sapiens",
       "license_status": "not_reviewed"
+    },
+    {
+      "id": "sparc-f002-primary",
+      "title": "SPARC f002 — primary human vagus nerve microCT and immunohistochemistry dataset",
+      "kind": "dataset_reference",
+      "verification": "documentary_only",
+      "path": null,
+      "url": "https://discover.pennsieve.io/datasets/674",
+      "doi": "10.26275/imas-52lf",
+      "species": "Homo sapiens",
+      "license_status": "not_reviewed"
+    },
+    {
+      "id": "sparc-ssv-collection",
+      "title": "SPARC Scaffold map - Human vagus nerve, version 7 derivative collection",
+      "kind": "dataset_reference",
+      "verification": "documentary_only",
+      "path": null,
+      "url": "https://discover.pennsieve.io/datasets/426",
+      "doi": "10.26275/tjzi-muqm",
+      "species": "Homo sapiens",
+      "license_status": "not_reviewed"
     }
   ],
   "frames": [
@@ -221,7 +243,9 @@
       "specimen_id": "sparc-f002",
       "source_ids": [
         "vagus-f002-local",
-        "sparc-ssv-methods"
+        "sparc-ssv-methods",
+        "sparc-f002-primary",
+        "sparc-ssv-collection"
       ]
     },
     {
@@ -339,7 +363,9 @@
       "registration": null,
       "source_ids": [
         "vagus-f002-local",
-        "sparc-ssv-methods"
+        "sparc-ssv-methods",
+        "sparc-f002-primary",
+        "sparc-ssv-collection"
       ],
       "note": "Ouverture documentaire du scaffold f002, actuellement non monté. Les SSV sont des niveaux normalisés, pas des XYZ corporels."
     },
