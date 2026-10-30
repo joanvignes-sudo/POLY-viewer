@@ -1,7 +1,9 @@
 import {validateModelRegistry} from './model-lab-contract.mjs';
 import {compareModels} from './model-lab-compare.mjs';
+import {validateEvidenceSet,compareToEvidence} from './model-lab-evidence.mjs';
+import {auditLinearIdentifiability} from './model-lab-identifiability.mjs';
 const get=id=>document.getElementById(id);
-let registry;
+let registry,evidence=null,lastResult=null;
 function element(tag,parent,text,className){
  const e=document.createElement(tag);if(className)e.className=className;if(text!==undefined)e.textContent=String(text);if(parent)parent.appendChild(e);return e;
 }
@@ -50,10 +52,12 @@ function explain(result,left,right){
  element('p',panel,'Aucune observation indépendante n’a été confrontée à ces courbes. Les flux réels entre cellules, les constantes humaines et la validation d’une hypothèse restent inconnus.');
 }
 function execute(){
+ lastResult=null;
  const left=registry.models.find(m=>m.id===get('left').value),right=registry.models.find(m=>m.id===get('right').value);
  showModels(left,right);get('figure').hidden=true;clear('metrics');clear('explanation');
  try{
   const result=compareModels(registry,left.id,right.id);
+  lastResult=result;
   if(result.status==='compared_synthetic'){
    get('verdict').textContent='Comparaison numérique synthétique réussie — aucune validation biologique.';
    renderChart(result.series.left,result.series.right);
@@ -66,19 +70,61 @@ function execute(){
   explain(result,left,right);
  }catch(e){get('verdict').textContent='Calcul interrompu : '+e.message;}
 }
+async function importJsonFile(file,maxSize=300000){
+ if(!file||file.size>maxSize)throw Error('Fichier vide ou trop volumineux (maximum 300 Ko).');
+ return JSON.parse(await file.text());
+}
+function populateModels(){
+ for(const id of ['left','right']){
+  get(id).replaceChildren();
+  for(const m of registry.models){const opt=document.createElement('option');opt.value=m.id;opt.textContent=m.title+(m.status==='documentary_only'?' [sans solveur]':'');get(id).appendChild(opt);}
+  get(id).disabled=false;
+ }
+ get('left').value=registry.models.some(m=>m.id==='p8-control')?'p8-control':registry.models[0].id;
+ get('right').value=registry.models.some(m=>m.id==='p8-mct-reduced')?'p8-mct-reduced':registry.models[1].id;
+ get('compare').disabled=false;
+ get('status').textContent=registry.models.length+' modèles et configurations enregistrés ; calcul uniquement après demande.';
+ execute();
+}
+async function onImportRegistry(){
+ try{
+  const imported=await importJsonFile(get('registry-file').files[0]);
+  const accepted=validateModelRegistry(imported);
+  registry=accepted;evidence=null;get('compare-evidence').disabled=true;
+  populateModels();
+  get('registry-import-status').textContent='Registre local accepté ; il reste uniquement dans cette session, sans diffusion.';
+ }catch(e){get('registry-import-status').textContent='Registre refusé : '+e.message;}
+}
+async function onImportEvidence(){
+ try{
+  const imported=await importJsonFile(get('evidence-file').files[0]);
+  evidence=validateEvidenceSet(imported);get('compare-evidence').disabled=false;
+  get('evidence-status').textContent='Données chargées localement ('+evidence.points.length+' points, '+evidence.origin+'). Pas de validation implicite.';
+ }catch(e){evidence=null;get('compare-evidence').disabled=true;get('evidence-status').textContent='Observations refusées : '+e.message;}
+}
+function assessEvidence(){
+ if(!evidence||!lastResult||lastResult.status!=='compared_synthetic'){get('evidence-status').textContent='Aucune trajectoire calculée et comparable.';return;}
+ const model=registry.models.find(m=>m.id===lastResult.left);
+ const trajectory={schema:'poly.model-lab.series.v1',model_id:model.id,unit:lastResult.unit,time_basis:lastResult.time_basis,points:lastResult.series.left};
+ const check=compareToEvidence(model,trajectory,evidence);
+ if(check.status==='descriptive_fit_only')get('evidence-status').textContent='Écarts descriptifs : RMSE '+check.rmse.toPrecision(5)+' '+lastResult.unit+', MAE '+check.mae.toPrecision(5)+' '+lastResult.unit+' sur '+check.observations+' points. Aucune validation scientifique automatique.';
+ else get('evidence-status').textContent='Confrontation refusée : '+check.reasons.join(' ');
+}
+function showIdentifiability(){
+ const result=auditLinearIdentifiability(['P_A','P_N','q'],[[1,1,0]]);
+ get('identifiability').textContent='Bilan lactate total seul : rang '+result.independent_observations+' pour '+result.parameters+' inconnues ; '+result.nullity+' degrés de liberté non observables. '+result.explanation;
+}
 async function load(){
  try{
   const response=await fetch('./model-lab-registry.json',{cache:'no-store'});
   if(!response.ok)throw Error('Registre introuvable : HTTP '+response.status);
   registry=validateModelRegistry(await response.json());
-  for(const id of ['left','right']){
-   for(const m of registry.models){const opt=document.createElement('option');opt.value=m.id;opt.textContent=m.title+(m.status==='documentary_only'?' [sans solveur]':'');get(id).appendChild(opt);}
-   get(id).disabled=false;
-  }
-  get('left').value='p8-control';get('right').value='p8-mct-reduced';
-  get('compare').disabled=false;get('compare').addEventListener('click',execute);
-  get('status').textContent=registry.models.length+' modèles et configurations enregistrés ; exécution uniquement après demande.';
-  execute();
+  get('compare').addEventListener('click',execute);
+  get('registry-file').addEventListener('change',onImportRegistry);
+  get('evidence-file').addEventListener('change',onImportEvidence);
+  get('compare-evidence').addEventListener('click',assessEvidence);
+  showIdentifiability();
+  populateModels();
  }catch(e){get('status').textContent='Erreur de réception : '+e.message;}
 }
 load();
