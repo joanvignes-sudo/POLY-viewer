@@ -43,3 +43,12 @@ test('source status cannot falsely claim local 3D bytes or peer review',()=>{
   x=>x.file_checksums_available_in_pcbm=true
  ]){const x=fresh();alter(x);assert.throws(()=>validateC1RAudit(x),/false registration|unverified source/)}
 });
+
+test('quantify conditional XML axial discrepancy without declaring a validated mapping',()=>{
+ const r=validateC1RAudit(fresh());
+ assert.equal(r.axial_diagnostic.expected_absolute_span_XML_units,18180);
+ assert.equal(r.axial_diagnostic.reported_absolute_min_XML_units,32436);
+ assert.ok(Math.abs(r.axial_diagnostic.ratio_observed_to_expected-32436/18180)<1e-12);
+ assert.equal(r.axial_diagnostic.inferred_origin_offset_XML_units,null);
+ assert.equal(r.XML_to_LPS_verified,false);
+});

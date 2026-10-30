@@ -17,7 +17,19 @@ export function validateC1RAudit(raw){
  assertion(xml.candidate_orientation_status==='hypothesis'&&xml.candidate_points_evaluable===54&&xml.candidate_inside_epineurium===42&&xml.four_other_orientations_inside_epineurium===0,'candidate orientation promoted or counts altered');
  assertion(xml.xml_axial_spacing_reported===-9&&xml.xml_number_of_sections===2021&&xml.xml_coordinate_min_reported===-32436&&xml.xml_coordinate_unit==='unresolved'&&xml.mismatch_explained===false&&xml.transform_xml_to_lps===null,'unresolved XML axis discrepancy suppressed');
  assertion(Array.isArray(raw.forbidden_inferences)&&raw.forbidden_inferences.length>=5,'scientific boundaries missing');
+ // This is a conditional arithmetic diagnostic, NOT an anatomical or coordinate-system proof.
+ const hypotheticalZeroOriginSpan=Math.abs(xml.xml_axial_spacing_reported)*(xml.xml_number_of_sections-1);
+ const reportedCoordinateExtent=Math.abs(xml.xml_coordinate_min_reported);
+ const observedToHypotheticalSpanRatio=reportedCoordinateExtent/hypotheticalZeroOriginSpan;
  return Object.freeze({
+  axial_diagnostic:{
+   assuming_zero_origin_and_same_XML_axis:true,
+   expected_absolute_span_XML_units:hypotheticalZeroOriginSpan,
+   reported_absolute_min_XML_units:reportedCoordinateExtent,
+   ratio_observed_to_expected:observedToHypotheticalSpanRatio,
+   inferred_origin_offset_XML_units:null,
+   interpretation:'Conditional mismatch only; unknown XML coordinate origin and axis may explain the discrepancy.'
+  },
   specimen_id:'f002',side:'right',segment_id:'C1R',
   reported_points_total:55,
   reported_direct_nonzero_ratio:54/55,

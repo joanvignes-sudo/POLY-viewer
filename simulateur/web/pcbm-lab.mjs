@@ -219,6 +219,10 @@ async function loadC1RAudit(){
   const result=await readC1RAudit({signal:controller.signal});
   text('c1r-direct','54 / 55');text('c1r-near','55 / 55');text('c1r-epin','42 / 54');
   text('c1r-resolution',result.derived_voxel_spacing_um+' µm');
+  const d=result.axial_diagnostic;
+  text('c1r-axial-check','Axe XML : amplitude attendue '+d.expected_absolute_span_XML_units+
+   ' contre coordonnée extrême déclarée '+d.reported_absolute_min_XML_units+
+   ' (rapport '+d.ratio_observed_to_expected.toFixed(2)+'). Comparaison conditionnelle : elle suppose une origine nulle et un axe identique, conditions non établies.');
   $('c1r-panel').hidden=false;
   text('c1r-status','Rapprochement candidat · transformation 3D non validée · données originales absentes du laboratoire');
  }catch(error){

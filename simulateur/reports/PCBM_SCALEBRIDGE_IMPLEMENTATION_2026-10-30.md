@@ -53,3 +53,12 @@ La version candidate référence explicitement la documentation officielle SPARC
 - Vérification CI du commit `9624d521804a2596ee244a0ba535c8f2b0d6d138` : 24 tests Node réussis, suite Playwright bureau et tactile émulé réussie, y compris consultation des 100 sujets et refus d'un registre PCBM corrompu. Exécution : https://github.com/joanvignes-sudo/POLY-viewer/actions/runs/41042294086.
 
 **Toujours en dehors du périmètre validé** : recalage des atlas de spécimens différents, acquisition/alignement du microCT vers SPARC f002, validation indépendante de données anatomiques, intégration de mesures moléculaires à l'individu, suivi temporel physiologique, performances sur Samsung A14 physique. Le site public reste inchangé ; cette PR demeure brouillon.
+
+
+## PCBM v0.6 — Lacunes C1 droit et coordonnées SSV
+
+La collecte horaire existante a livré un rapport C1R (`POLY_VAGUE_RUN10_C1R_CROSSWALK_20261030.json`) encore absent du dépôt. PCBM conserve en zone non validée : dimensions primaire 806×1256×4042 ; dérivé 403×628×2021, 18 µm déclarés ; 55 points dans les limites, 54 centres non nuls, 55 voisinages non nuls ; 824 contours XML, 103 995 points, 42 des 54 repères évaluables dans un contour candidat. Ces chiffres sont **transcrits du résultat d'automatisation** et non revérifiés sur les volumes bruts dans PCBM. Aucune transformation spatiale XML→LPS ni C1R→SSV n'est déclarée validée.
+
+Sous l'hypothèse **non établie** d'un origine XML nulle et de coupes espacées de 9 unités, 2021 coupes couvriraient 18 180 unités, alors qu'une coordonnée −32 436 est mentionnée (rapport d'amplitude 1,784). Cela requiert de vérifier l'origine, l'axe, l'unité et les conventions avant de recaler. Le diagnostic PCBM n'attribue pas d'origine ou de transformation par défaut.
+
+L'import SSV v0.5 lit uniquement un petit JSON local de repères f002 gauche/droit sur l'axe normalisé 0–1, sans téléversement, sans conversion en mm ni intégration de faux points biologiques. Le modèle `pcbm-ssv-template.json` reste volontairement vide. Les contrôles sont testés sur données **synthétiques**. Un manifeste f002 réel nécessite l'extraction contrôlée des fichiers du run et de leurs SHA256 avant revue.
