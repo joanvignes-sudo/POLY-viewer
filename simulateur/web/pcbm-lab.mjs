@@ -1,5 +1,5 @@
 import {readC1RAudit} from './pcbm-c1r-audit.mjs';
-import {parseLocalC1RCandidate} from './pcbm-crosswalk-candidate.mjs';
+import {parseLocalC1RCandidate,checkC1RSourceFingerprints} from './pcbm-crosswalk-candidate.mjs';
 import {parseLocalSSVFile} from './pcbm-ssv-preview.mjs';
 import {readPCBMLineage,lineageComparison} from './pcbm-lineage.mjs';
 import {readVagusEvidence,compareVagusStudyToPCBM} from './pcbm-vagus-evidence.mjs';
@@ -9,7 +9,7 @@ const $=id=>document.getElementById(id);
 const labels={spatial:'Spatial · recalage validé',structural:'Structurel · sans superposition',documentary:'Documentaire · rupture explicite'};
 const verification={source_read:'Fichier de référence inspecté',documentary_only:'Rapport documentaire, non validation biologique',not_mounted:'Non monté, non revérifié ici'};
 const status={viewer:'Visualiseur existant',external:'Données externes non montées',not_mounted:'Données non montées'};
-let model=null,route=null,index=0,previewNode=null,coverage=null,vagusEvidence=null;
+let model=null,route=null,index=0,previewNode=null,coverage=null,vagusEvidence=null,c1rCandidateFile=null;
 function closePreview(){ $('viewer-frame').removeAttribute('src');$('viewer-panel').hidden=true;previewNode=null }
 function text(id,value){$(id).textContent=String(value)}
 function empty(node){node.replaceChildren()}
@@ -232,15 +232,21 @@ async function loadC1RAudit(){
  }finally{clearTimeout(timer);$('c1r-load').disabled=false}
 }
 function clearC1RCandidate(){
+ c1rCandidateFile=null;
  $('c1r-candidate-file').value='';
+ $('c1r-source-xml').value='';$('c1r-source-lps').value='';
+ text('c1r-digest-status','Empreintes sources non vérifiées.');
  $('c1r-candidate-result').hidden=true;
  text('c1r-candidate-status','Aucune transformation candidate chargée.');
 }
 async function examineC1RCandidate(file){
+ c1rCandidateFile=null;
  $('c1r-candidate-result').hidden=true;
+ text('c1r-digest-status','Empreintes sources non vérifiées.');
  if(!file){text('c1r-candidate-status','Aucun fichier sélectionné.');return;}
  try{
   const result=await parseLocalC1RCandidate(file);
+  c1rCandidateFile=file;
   text('c1r-candidate-count',result.holdout_count);
   text('c1r-candidate-rms',result.heldout_rms_mm.toPrecision(6));
   text('c1r-candidate-max',result.heldout_max_mm.toPrecision(6));
@@ -250,6 +256,16 @@ async function examineC1RCandidate(file){
   $('c1r-candidate-file').value='';
   text('c1r-candidate-status','Fichier candidat refusé : '+(error?.message??error));
  }
+}
+async function checkC1RLocalSources(){
+ text('c1r-digest-status','Calcul des empreintes SHA-256 sans téléversement…');
+ if(!c1rCandidateFile){text('c1r-digest-status','Charger d’abord un modèle candidat accepté.');return;}
+ const xml=$('c1r-source-xml').files?.[0],lps=$('c1r-source-lps').files?.[0];
+ try{
+  const raw=JSON.parse(await c1rCandidateFile.text());
+  const receipt=await checkC1RSourceFingerprints(raw,xml,lps);
+  text('c1r-digest-status','SHA-256 concordants localement pour 2 fichiers ('+receipt.xml_bytes+' et '+receipt.lps_bytes+' octets) ; aucune origine SPARC ni transformation anatomique validée.');
+ }catch(error){text('c1r-digest-status','Empreintes non confirmées : '+(error?.message??error));}
 }
 function init(reg){
  model=validatePCBM(reg);
@@ -269,6 +285,7 @@ function init(reg){
  $('c1r-load').onclick=loadC1RAudit;
  $('c1r-candidate-file').onchange=()=>examineC1RCandidate($('c1r-candidate-file').files?.[0]??null);
  $('c1r-candidate-clear').onclick=clearC1RCandidate;
+ $('c1r-check-digests').onclick=checkC1RLocalSources;
  $('coverage-family').onchange=renderCoverage;
  $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};
