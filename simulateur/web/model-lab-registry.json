@@ -1,0 +1,349 @@
+{
+  "schema": "poly.model-lab.registry.v1",
+  "version": "0.1.0",
+  "published": false,
+  "sources": [
+    {
+      "id": "p8-core",
+      "title": "POLY — noyau réversible P8 (octets de travail Git)",
+      "kind": "repository_file",
+      "verification": "repository_path",
+      "path": "simulateur/web/reversible-lactate-core.mjs"
+    },
+    {
+      "id": "p7-contract",
+      "title": "POLY — contrat stœchiométrique et thermodynamique P7",
+      "kind": "repository_file",
+      "verification": "repository_path",
+      "path": "simulateur/web/reversible-lactate-contract.mjs"
+    },
+    {
+      "id": "aubert-2005",
+      "title": "Aubert et al. (2005) Brain lactate kinetics",
+      "kind": "article_reference",
+      "verification": "bibliography_only",
+      "doi": "10.1073/pnas.0505427102"
+    },
+    {
+      "id": "adler-2026",
+      "title": "Adler et al. (2026) Activity-dependent protein synthesis",
+      "kind": "article_reference",
+      "verification": "bibliography_only",
+      "doi": "10.1016/j.cmet.2026.05.006"
+    },
+    {
+      "id": "modellab-linear",
+      "title": "POLY ModelLab — moteur déclaratif de bilans synthétiques",
+      "kind": "repository_file",
+      "verification": "repository_path",
+      "path": "simulateur/web/model-lab-linear-adapter.mjs"
+    }
+  ],
+  "models": [
+    {
+      "id": "p8-control",
+      "title": "P8 — état témoin",
+      "version": "poly.reversible-lactate.p8.v1",
+      "family": "p8-reversible",
+      "status": "runnable_synthetic",
+      "engine": "p8",
+      "scenario": "control",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_three_compartment",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "lactate-E-mmol-over-volume-L"
+      },
+      "driver": {
+        "id": "no-perturbation",
+        "description": "Capacités et pH du programme de référence, sans intervention."
+      },
+      "assumptions": [
+        "Volumes de 1 L par compartiment et constantes arbitraires.",
+        "Temps artificiel sans correspondance physiologique."
+      ],
+      "source_ids": [
+        "p8-core",
+        "p7-contract"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "p8-mct-reduced",
+      "title": "P8 — capacité MCT astrocyte/extracellulaire réduite",
+      "version": "poly.reversible-lactate.p8.v1",
+      "family": "p8-reversible",
+      "status": "runnable_synthetic",
+      "engine": "p8",
+      "scenario": "capacity_AE",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_three_compartment",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "lactate-E-mmol-over-volume-L"
+      },
+      "driver": {
+        "id": "mct-ae-capacity",
+        "description": "Capacité MCT_AE multipliée par 0,25 entre t=2 et t=6 (temps synthétique)."
+      },
+      "assumptions": [
+        "Autres conditions inchangées au sein de P8.",
+        "Paramètre numérique de démonstration, non mesuré chez l'humain."
+      ],
+      "source_ids": [
+        "p8-core",
+        "p7-contract"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "p8-ph-lowered",
+      "title": "P8 — pH extracellulaire modifié",
+      "version": "poly.reversible-lactate.p8.v1",
+      "family": "p8-reversible",
+      "status": "runnable_synthetic",
+      "engine": "p8",
+      "scenario": "extracellular_pH",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_three_compartment",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "lactate-E-mmol-over-volume-L"
+      },
+      "driver": {
+        "id": "extracellular-ph",
+        "description": "pH extracellulaire imposé à 6 au lieu de 7 entre t=2 et t=6 (temps synthétique)."
+      },
+      "assumptions": [
+        "Le pH est une condition externe imposée, sans fermeture ionique.",
+        "Ce scénario n'est pas une acidose cérébrale calibrée."
+      ],
+      "source_ids": [
+        "p8-core",
+        "p7-contract"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "aubert-2005",
+      "title": "Aubert et al. (2005) — cinétique cérébrale du lactate",
+      "version": "publication-2005",
+      "family": "aubert-lactate",
+      "status": "documentary_only",
+      "engine": null,
+      "scenario": null,
+      "scope": {
+        "species": "literature_mixed",
+        "preparation": "published_lactate_kinetics",
+        "region": "brain_extracellular",
+        "time_basis": "published_experimental_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "published-extracellular-lactate"
+      },
+      "driver": null,
+      "assumptions": [
+        "Les équations et paramètres de l'article n'ont pas été reconstruits et validés ici.",
+        "La lecture bibliographique ne fournit pas de solveur opérationnel."
+      ],
+      "source_ids": [
+        "aubert-2005"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "microglia-2026",
+      "title": "Adler et al. (2026) — couplage microglial",
+      "version": "publication-2026",
+      "family": "microglial-metabolic",
+      "status": "documentary_only",
+      "engine": null,
+      "scenario": null,
+      "scope": {
+        "species": "mouse",
+        "preparation": "motor_cortex_study",
+        "region": "mouse_motor_cortex",
+        "time_basis": "study_specific_time"
+      },
+      "observable": {
+        "id": "neuronal-atp",
+        "unit": "sensor_signal",
+        "operator": "study-specific-neuronal-atp-sensor"
+      },
+      "driver": null,
+      "assumptions": [
+        "Aucune équation de régulation CYR61–GLUT1 calibrée ici.",
+        "La publication ne constitue pas un modèle quantitatif directement importable."
+      ],
+      "source_ids": [
+        "adler-2026"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "linear-two-pools",
+      "title": "Deux réservoirs — transport A↔E",
+      "version": "poly.model-lab.linear-system.v1",
+      "family": "two-pool-linear",
+      "status": "runnable_synthetic",
+      "engine": "linear-mass-balance",
+      "scenario": "declared-model",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_synthetic_lactate_reservoirs",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "amount-E-over-volume-L"
+      },
+      "driver": {
+        "id": "two-pool-linear",
+        "description": "Échanges bidirectionnels A↔E, deux compartiments et conservation totale."
+      },
+      "system": {
+        "schema": "poly.model-lab.linear-system.v1",
+        "states": [
+          "A",
+          "E"
+        ],
+        "initial_mmol": [
+          4,
+          1
+        ],
+        "rate_matrix": [
+          [
+            -0.2,
+            0.05
+          ],
+          [
+            0.2,
+            -0.05
+          ]
+        ],
+        "observed_state": "E",
+        "observed_volume_L": 1,
+        "time_basis": "synthetic_time",
+        "time_end": 8,
+        "dt": 0.02,
+        "sample_every": 5
+      },
+      "assumptions": [
+        "Toutes les quantités, capacités et durées sont synthétiques.",
+        "Modèle linéaire fermé, sans glucose, ATP, pH ni paramètres physiologiques."
+      ],
+      "source_ids": [
+        "modellab-linear"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    },
+    {
+      "id": "linear-three-pools",
+      "title": "Trois réservoirs — transport A↔E↔N",
+      "version": "poly.model-lab.linear-system.v1",
+      "family": "three-pool-linear",
+      "status": "runnable_synthetic",
+      "engine": "linear-mass-balance",
+      "scenario": "declared-model",
+      "scope": {
+        "species": "synthetic",
+        "preparation": "closed_synthetic_lactate_reservoirs",
+        "region": "abstract",
+        "time_basis": "synthetic_time"
+      },
+      "observable": {
+        "id": "extracellular-lactate",
+        "unit": "mM",
+        "operator": "amount-E-over-volume-L"
+      },
+      "driver": {
+        "id": "three-pool-linear",
+        "description": "Ajout d'un compartiment N connecté à E ; les taux sont des choix synthétiques."
+      },
+      "system": {
+        "schema": "poly.model-lab.linear-system.v1",
+        "states": [
+          "A",
+          "E",
+          "N"
+        ],
+        "initial_mmol": [
+          4,
+          1,
+          0
+        ],
+        "rate_matrix": [
+          [
+            -0.2,
+            0.05,
+            0
+          ],
+          [
+            0.2,
+            -0.2,
+            0.05
+          ],
+          [
+            0,
+            0.15,
+            -0.05
+          ]
+        ],
+        "observed_state": "E",
+        "observed_volume_L": 1,
+        "time_basis": "synthetic_time",
+        "time_end": 8,
+        "dt": 0.02,
+        "sample_every": 5
+      },
+      "assumptions": [
+        "Toutes les quantités, capacités et durées sont synthétiques.",
+        "Modèle linéaire fermé, sans glucose, ATP, pH ni paramètres physiologiques."
+      ],
+      "source_ids": [
+        "modellab-linear"
+      ],
+      "validation": {
+        "independent": false,
+        "human": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark"><link rel="icon" href="data:,">
+<title>POLY · ModelLab expérimental</title>
+<link rel="stylesheet" href="model-lab.css">
+<script type="module" src="model-lab-ui.mjs"></script>
+</head>
+<body>
+<header><a href="../../index.html">POLY</a><span>MODELLAB / RECHERCHE</span><strong>Laboratoire expérimental — branche non publiée</strong></header>
+<main>
+ <section class="intro">
+  <p class="eyebrow">UN MÊME ENVIRONNEMENT · PLUSIEURS EXPLICATIONS</p>
+  <h1>Comparer les modèles. <em>Comprendre leurs différences.</em></h1>
+  <p>Choisir deux modèles ou deux scénarios. POLY vérifie les contextes, exécute les moteurs disponibles et explique précisément ce qui est comparable. Aucun résultat synthétique n'est une mesure humaine.</p>
+ </section>
+ <div class="layout">
+  <section class="panel controls" aria-labelledby="question">
+   <h2 id="question">Quelle comparaison ?</h2>
+   <label>Modèle ou scénario A<select id="left" disabled></select></label>
+   <label>Modèle ou scénario B<select id="right" disabled></select></label>
+   <button id="compare" disabled>Examiner les différences</button>
+   <p id="status" role="status" aria-live="polite">Chargement du registre scientifique…</p>
+   <div class="import-controls"><h3>Importer un modèle sans modifier POLY</h3>
+    <label>Registre ModelLab JSON (local et temporaire)<input id="registry-file" type="file" accept=".json,application/json"></label>
+    <p id="registry-import-status" class="muted" role="status">Seuls les moteurs déclaratifs ou adaptateurs connus sont acceptés.</p>
+    <label>Jeu d'observations JSON (optionnel)<input id="evidence-file" type="file" accept=".json,application/json"></label>
+    <button type="button" id="compare-evidence" disabled>Confronter le modèle A à ces observations</button>
+    <p id="evidence-status" class="muted" role="status"></p>
+   </div>
+   <section aria-labelledby="models-title"><h3 id="models-title">Fiches scientifiques</h3><div id="model-details"></div></section>
+  </section>
+  <section class="panel results" aria-labelledby="result-title">
+   <h2 id="result-title">Résultat de la comparaison</h2>
+   <p id="verdict" role="status" aria-live="polite">Sélectionne deux modèles.</p>
+   <div id="figure" hidden><svg id="chart" viewBox="0 0 900 370" role="img" aria-label="Deux trajectoires calculées dans le temps synthétique"></svg>
+    <p class="legend"><span class="line-a">—</span> <span id="label-a"></span> <span class="line-b">—</span> <span id="label-b"></span></p>
+   </div>
+   <dl id="metrics"></dl>
+   <section id="explanation" aria-label="Interprétation des différences"></section>
+   <section class="caution"><h3>Frontière de validité</h3><p>Les résultats de ce laboratoire sont uniquement synthétiques. Sans données indépendantes, ils ne valident ni une hypothèse physiologique ni le sens réel des échanges de lactate.</p></section>
+  </section>
+ </div>
+ <section class="panel method" aria-labelledby="id-title">
+  <h2 id="id-title">Un mécanisme peut-il être identifié par les mesures ?</h2>
+  <p id="identifiability"></p>
+  <p>Exemple : si la seule grandeur observée est P<sub>total</sub> = P<sub>A</sub> + P<sub>N</sub>, alors le flux interne q n'est pas déterminable par cette mesure. Ceci est un résultat d'algèbre linéaire sur un opérateur hypothétique, pas une identification du lactate dans le cerveau.</p>
+ </section>
+ <section class="panel method"><h2>Ce que le laboratoire sait faire</h2>
+ <p>Le système accepte de nouveaux modèles déclaratifs à bilans linéaires fermés avec des coefficients contrôlés. Le noyau réversible P8 reste intact et s'exécute au moyen d'un adaptateur séparé. Les autres publications sont référencées mais non simulées tant que leurs équations, opérateurs et paramètres n'ont pas été reproduits.</p>
+ <p>Les trajectoires peuvent être comparées seulement si l'observable, son unité, sa méthode de conversion et les conditions expérimentales sont compatibles. Le logiciel ne convertit jamais un temps synthétique en secondes biologiques.</p></section>
+</main>
+<footer>POLY · ModelLab v0.1 · Sources, mécanismes et calculs distingués · Aucune publication ni validation biologique</footer>
+</body>
+</html>
