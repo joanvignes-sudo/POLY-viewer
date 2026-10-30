@@ -33,4 +33,9 @@ jobs:
           python -m http.server 8125 --bind 127.0.0.1 > /tmp/pcbm-http.log 2>&1 &
           server_pid=$!
           trap 'kill $server_pid' EXIT
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8125/simulateur/web/pcbm-lab.html -o /dev/null; then break; fi
+            sleep 0.5
+          done
+          curl -fsS http://127.0.0.1:8125/simulateur/web/pcbm-lab.html -o /dev/null
           node simulateur/tests/pcbm-browser.cjs
