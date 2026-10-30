@@ -38,8 +38,15 @@ export function validateModelRegistry(input){
    ensure(m.scope.species==='synthetic'&&m.scope.time_basis==='synthetic_time','synthetic scope');
    ensure(m.driver&&idOk(m.driver.id)&&nonEmpty(m.driver.description),'driver attribution');
    ensure(['p8','linear-mass-balance'].includes(m.engine),'unsupported engine identifier');
-   if(m.engine==='linear-mass-balance')validateLinearSystem(m.system);
-   else ensure(m.system===undefined,'unexpected P8 dynamics');
+   if(m.engine==='linear-mass-balance'){
+    validateLinearSystem(m.system);
+    ensure(m.observable.unit==='mM'&&m.observable.operator==='amount-'+m.system.observed_state+'-over-volume-L','linear observation operator');
+   }else{
+    ensure(m.system===undefined,'unexpected P8 dynamics');
+    ensure(['control','capacity_AE','extracellular_pH'].includes(m.scenario)&&m.family==='p8-reversible','P8 scenario identity');
+    ensure(m.version==='poly.reversible-lactate.p8.v1'&&m.observable.id==='extracellular-lactate'&&m.observable.unit==='mM'&&m.observable.operator==='lactate-E-mmol-over-volume-L','P8 observed quantity');
+    ensure(m.scope.species==='synthetic'&&m.scope.preparation==='closed_three_compartment'&&m.scope.region==='abstract','P8 simulated context');
+   }
   }else{
    ensure(m.engine===null&&m.scenario===null&&m.driver===null,'documentary model masquerading as executable');
   }
