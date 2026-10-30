@@ -5,6 +5,8 @@ import {validateModelRegistry,checkComparisonCompatibility} from '../web/model-l
 import {compareModels} from '../web/model-lab-compare.mjs';
 import {runLinearModel,validateLinearSystem} from '../web/model-lab-linear-adapter.mjs';
 import {runP8Profile} from '../web/model-lab-p8-adapter.mjs';
+import {validateEvidenceSet,compareToEvidence} from '../web/model-lab-evidence.mjs';
+import {auditLinearIdentifiability} from '../web/model-lab-identifiability.mjs';
 const registry=JSON.parse(fs.readFileSync(new URL('../web/model-lab-registry.json',import.meta.url),'utf8'));
 const get=id=>registry.models.find(m=>m.id===id);
 const copy=v=>structuredClone(v);
@@ -102,4 +104,59 @@ test('compatibility requires actual operator equality, not only equal labels',()
  const left=get('linear-two-pools'),right=copy(get('linear-three-pools'));
  right.observable.operator='invented-normalization';
  assert.equal(checkComparisonCompatibility(left,right).compatible,false);
+});
+
+test('single total lactate observation cannot distinguish production sources and internal transfer',()=>{
+ const r=auditLinearIdentifiability(['P_A','P_N','q'],[[1,1,0]]);
+ assert.equal(r.independent_observations,1);
+ assert.equal(r.nullity,2);
+ assert.equal(r.locally_identifiable_from_operator,false);
+ const full=auditLinearIdentifiability(['P_A','P_N','q'],[[1,0,0],[0,1,0],[0,0,1]]);
+ assert.equal(full.nullity,0);
+});
+test('identifiability rejects malformed and non-finite observation operators',()=>{
+ assert.throws(()=>auditLinearIdentifiability(['A','A'],[[1,1]]),/parameter/);
+ assert.throws(()=>auditLinearIdentifiability(['A','B'],[[1,Infinity]]),/observation/);
+ assert.throws(()=>auditLinearIdentifiability(['A'],[[1]],{tolerance:0}),/tolerance/);
+});
+test('a self-derived fixture may match exactly but is not independent validation',()=>{
+ const m=get('p8-control'),traj=runP8Profile(m);
+ const points=traj.points.slice(0,5).map(p=>({t:p.t,value:p.value,uncertainty:null}));
+ const evidence={schema:'poly.model-lab.evidence.v1',id:'fixture-self-derived',origin:'synthetic_fixture',
+  scope:copy(m.scope),observable:copy(m.observable),provenance:{doi:null,fixture:true},independence_status:'reused_for_fitting',points};
+ const fit=compareToEvidence(m,traj,evidence);
+ assert.equal(fit.status,'descriptive_fit_only');
+ assert.equal(fit.rmse,0);
+ assert.equal(fit.validated,false);
+ assert.equal(fit.independence_status,'reused_for_fitting');
+ assert.equal(fit.claims.independent_biological_validation,false);
+});
+test('real observations with incompatible scope are refused even if numeric values match',()=>{
+ const m=get('p8-control'),traj=runP8Profile(m);
+ const e={schema:'poly.model-lab.evidence.v1',id:'fictional-study',origin:'published_extracted',
+  scope:{...copy(m.scope),species:'mouse'},observable:copy(m.observable),
+  provenance:{doi:'10.1234/demo-model',file_sha256:'a'.repeat(64),extraction_method:'manual'},independence_status:'unknown',
+  points:traj.points.slice(0,3).map(p=>({t:p.t,value:p.value,uncertainty:null}))};
+ assert.equal(validateEvidenceSet(e),e);
+ const result=compareToEvidence(m,traj,e);
+ assert.equal(result.status,'not_comparable');
+ assert(result.reasons.some(x=>x.includes('Espèce')));
+ assert.equal(result.validated,false);
+});
+test('evidence parser refuses missing provenance, unordered times and illegal uncertainty',()=>{
+ const m=get('p8-control'),traj=runP8Profile(m);
+ const e={schema:'poly.model-lab.evidence.v1',id:'synthetic-trial',origin:'synthetic_fixture',
+  scope:copy(m.scope),observable:copy(m.observable),provenance:{doi:null,fixture:true},
+  independence_status:'not_tested',points:traj.points.slice(0,3).map(p=>({t:p.t,value:p.value,uncertainty:null}))};
+ const x=copy(e);x.points[1].t=x.points[0].t;
+ assert.throws(()=>validateEvidenceSet(x),/ordered time/);
+ const y=copy(e);y.points[0].uncertainty=-1;
+ assert.throws(()=>validateEvidenceSet(y),/uncertainty/);
+ const z=copy(e);z.origin='published_extracted';
+ assert.throws(()=>validateEvidenceSet(z),/source DOI/);
+});
+test('UI contains clear local-import affordances and separate interpretation output',()=>{
+ const html=fs.readFileSync(new URL('../web/model-lab.html',import.meta.url),'utf8');
+ for(const id of ['registry-file','evidence-file','compare-evidence','identifiability','explanation'])assert(html.includes('id="'+id+'"'));
+ assert(html.includes('branche non publiée'));
 });
