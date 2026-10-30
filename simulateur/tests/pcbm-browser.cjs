@@ -32,6 +32,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8125';
    assert.equal(await page.locator('#open-viewer').getAttribute('href'),'metabolic-network-lab.html');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    await page.locator('#coverage-load').click();
+   await page.locator('#coverage-panel').waitFor({state:'visible',timeout:12000});
    assert.match(await page.locator('#coverage-status').innerText(),/100 sujets, 16 familles/);
    assert.match(await page.locator('#coverage-count').innerText(),/100 sujets sur 100/);
    assert.equal(await page.locator('#coverage-list>li').count(),31);
