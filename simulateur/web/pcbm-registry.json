@@ -50,10 +50,15 @@
     },
     {
       "id": "vagus-microct-literature",
-      "title": "MicroCT human vagus fascicle reports — distinct specimen identity not verified here",
+      "title": "Thompson et al., 2026 — human vagus fascicular microCT and histology (10 nerves, 5 traced)",
       "kind": "study_reference",
       "verification": "documentary_only",
-      "path": null
+      "path": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41788551/",
+      "doi": "10.3389/fnins.2026.1731234",
+      "pmid": "41788551",
+      "species": "Homo sapiens",
+      "license_status": "not_reviewed"
     },
     {
       "id": "metabolic-audit",
@@ -61,6 +66,30 @@
       "kind": "repository_file",
       "verification": "source_read",
       "path": "simulateur/reports/BODY_METABOLIC_NETWORK_2026-10-29.md"
+    },
+    {
+      "id": "sparc-ssv-methods",
+      "title": "SPARC official methods — subject-specific human vagus (SSV) scaffold construction",
+      "kind": "study_reference",
+      "verification": "documentary_only",
+      "path": null,
+      "url": "https://docs.sparc.science/docs/subject-specific-vagus-ssv-scaffolds",
+      "doi": null,
+      "pmid": null,
+      "species": "Homo sapiens",
+      "license_status": "not_reviewed"
+    },
+    {
+      "id": "human-vagus-branch-map",
+      "title": "Published human vagus branch-emergence distances indexed in PubMed (independent anatomical reference)",
+      "kind": "study_reference",
+      "verification": "documentary_only",
+      "path": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595102/",
+      "doi": null,
+      "pmid": "42595102",
+      "species": "Homo sapiens",
+      "license_status": "not_reviewed"
     }
   ],
   "frames": [
@@ -175,7 +204,8 @@
       "source_ids": [
         "nerve-contract",
         "nerve-audit",
-        "vagus-f002-local"
+        "vagus-f002-local",
+        "human-vagus-branch-map"
       ]
     },
     {
@@ -190,7 +220,8 @@
       "scale_basis": "illustrative_only",
       "specimen_id": "sparc-f002",
       "source_ids": [
-        "vagus-f002-local"
+        "vagus-f002-local",
+        "sparc-ssv-methods"
       ]
     },
     {
@@ -307,7 +338,8 @@
       "evidence_status": "candidate",
       "registration": null,
       "source_ids": [
-        "vagus-f002-local"
+        "vagus-f002-local",
+        "sparc-ssv-methods"
       ],
       "note": "Ouverture documentaire du scaffold f002, actuellement non monté. Les SSV sont des niveaux normalisés, pas des XYZ corporels."
     },
@@ -321,7 +353,8 @@
       "registration": null,
       "source_ids": [
         "vagus-f002-local",
-        "vagus-microct-literature"
+        "vagus-microct-literature",
+        "sparc-ssv-methods"
       ],
       "note": "Ce passage compare des protocoles : aucune identité de spécimen ni recalage spatial SPARC–microCT n'est établi."
     },

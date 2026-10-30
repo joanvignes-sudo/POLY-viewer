@@ -22,6 +22,7 @@ function collectSources(node,incoming){
    a.href='https://github.com/joanvignes-sudo/POLY-viewer/blob/main/'+source.path;
    a.target='_blank';a.rel='noopener';a.textContent='Voir le fichier d’origine';li.append(a);
   }
+  if(source.url){const link=document.createElement('a');link.href=source.url;link.target='_blank';link.rel='noopener';link.textContent='Consulter la référence externe officielle';li.append(link)}
   list.append(li);
  }
 }

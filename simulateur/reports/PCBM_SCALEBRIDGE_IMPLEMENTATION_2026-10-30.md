@@ -39,3 +39,6 @@ Date : 30 octobre 2026. Branche expérimentale non fusionnée ; site public inch
 - Préparer un adaptateur en lecture seule pour la base SQLite multi-échelles existante, sans la promouvoir comme canon.
 - Raccorder à l'interface principale seulement après validation, avec tests complets et revue des licences.
 - Profiler réseau, GPU, CPU, mémoire et température sur téléphone physique, avec échantillonnage reproductible.
+
+## Complément de vérification primaire
+La version candidate référence explicitement la documentation officielle SPARC SSV, l'étude humaine microCT et histologie de Thompson et coll. (PMID 41788551, DOI 10.3389/fnins.2026.1731234), et l'étude de distances de branches indexée PubMed PMID 42595102. Ces travaux restent des références distinctes : ils ne valident pas le passage spatial entre SPARC f002 et les autres spécimens. Les licences de réutilisation des actifs bruts restent à contrôler.

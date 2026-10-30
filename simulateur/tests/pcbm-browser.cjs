@@ -26,6 +26,7 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8125';
    assert.equal((await page.evaluate(()=>window.__pcbmDiagnostics())).node,'vagus-f002');
    assert.match(await page.locator('#frame').innerText(),/unitless|normalis|SSV/i);
    assert.equal(await page.locator('#open-viewer').isVisible(),false);
+   assert.equal(await page.locator('#sources a[href="https://docs.sparc.science/docs/subject-specific-vagus-ssv-scaffolds"]').count(),1);
    await page.locator('.step-button').last().click();
    assert.equal((await page.evaluate(()=>window.__pcbmDiagnostics())).node,'metabolic-network');
    assert.equal(await page.locator('#open-viewer').getAttribute('href'),'metabolic-network-lab.html');

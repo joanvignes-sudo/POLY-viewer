@@ -39,6 +39,8 @@ test('do not expose unmounted or hostile viewer links',()=>{
  invalid(r=>{r.nodes.find(n=>n.id==='vagus-f002').href='cerveau.html'},'presented as local viewer');
  invalid(r=>{r.nodes.find(n=>n.id==='body-hra').href='https://example.com'},'viewer route not local');
  invalid(r=>{r.sources[0].path='../private.txt'},'unsafe source path');
+ invalid(r=>{r.sources[0].url='javascript:alert(1)'},'unapproved source URL');
+ invalid(r=>{r.sources[0].doi='bogus'},'invalid DOI');
 });
 test('structural evidence cannot become an unsupported assumption',()=>{
  invalid(r=>{r.links[0].evidence_status='unknown'},'unsupported structural');
@@ -66,4 +68,12 @@ test('export receipt preserves provenance and never claims alignment or physiolo
  assert.equal(receipt.steps[4].scale_basis,'illustrative_only');
  assert.equal(receipt.steps[4].incoming.spatially_continuous,false);
  assert.ok(receipt.steps.every(s=>s.source_ids.length&&s.incoming?.elapsed_biological_seconds===null||s.incoming===null));
+});
+
+test('primary and SPARC external evidence is linked but not treated as spatial validation',()=>{
+ const m=validatePCBM(fresh());
+ assert.equal(m.sources.get('vagus-microct-literature').doi,'10.3389/fnins.2026.1731234');
+ assert.equal(m.sources.get('sparc-ssv-methods').verification,'documentary_only');
+ assert.equal(m.sources.get('human-vagus-branch-map').pmid,'42595102');
+ assert.equal(planPCBM(m,'vagus-f002','fascicles-microct').links[0].registration,null);
 });
