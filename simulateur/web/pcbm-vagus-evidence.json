@@ -1,0 +1,162 @@
+{
+  "schema": "poly.pcbm.human-vagus-evidence.v1",
+  "experimental": true,
+  "published": false,
+  "anatomical_registration": null,
+  "scope": "Documentary comparison of published human vagus studies; does not assign cohort measurements to individual f002 scaffolds",
+  "coordinate_fields": [
+    {
+      "id": "ssv-coordinates",
+      "name": "coordinates",
+      "coordinate_kind": "reconstructed_geometry",
+      "units": "dataset_defined",
+      "notes": "Source geometry derived from stitched segments; no frame mapping to HRA or UCL specimens"
+    },
+    {
+      "id": "ssv-straight",
+      "name": "straight coordinates",
+      "coordinate_kind": "straightened_geometry",
+      "units": "dataset_defined",
+      "notes": "Straightened representation of same sample nerve, not body XYZ"
+    },
+    {
+      "id": "ssv-vagus",
+      "name": "vagus coordinates",
+      "coordinate_kind": "normalized_material",
+      "units": "unitless",
+      "range": [
+        0,
+        1
+      ],
+      "notes": "Relative position from near brainstem to scaffold end, not physical mm or a measured axon path"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sparc-ssv-methods",
+      "kind": "official_methods",
+      "study_id": "sparc-ssv",
+      "population": "human cadaveric scaffold reference",
+      "doi": null,
+      "url": "https://docs.sparc.science/docs/subject-specific-vagus-ssv-scaffolds",
+      "sampling_unit": "individual_nerve",
+      "n_subjects_reported": 29,
+      "data_scope": "method_description_not_f002_coordinates",
+      "measured_branched_distances": false,
+      "cohort_id": "sparc-feinstein-collection",
+      "geometries_mounted": false
+    },
+    {
+      "id": "vagus-microct-literature",
+      "kind": "primary_microct",
+      "study_id": "thompson-2026",
+      "population": "human cadaveric vagus nerves",
+      "doi": "10.3389/fnins.2026.1731234",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41788551/",
+      "sampling_unit": "nerve",
+      "n_nerves": 10,
+      "n_traced_microct": 5,
+      "left_nerves": 5,
+      "right_nerves": 5,
+      "cohort_id": "ucl-thompson-study",
+      "geometries_mounted": false,
+      "notes": "Tracing and staining study; fascicular fusion observed, not proof of individual axon trajectories"
+    },
+    {
+      "id": "human-vagus-branch-map",
+      "kind": "primary_dissection",
+      "study_id": "bahadir-2026",
+      "population": "29 embalmed human cadaver donors, bilateral vagus",
+      "doi": "10.1016/j.brs.2026.103182",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595102/",
+      "sampling_unit": "nerve",
+      "n_donors": 29,
+      "n_nerves": 58,
+      "left_nerves": 29,
+      "right_nerves": 29,
+      "cohort_id": "feinstein-bahadir-study",
+      "geometries_mounted": false,
+      "notes": "Branch origins normalized to anatomical landmarks; medians and IQR below are pooled population summaries"
+    }
+  ],
+  "branch_summary": {
+    "study_id": "bahadir-2026",
+    "measurement": "Distance from jugular foramen to vagus branch emergence",
+    "unit": "cm",
+    "statistic": "median_and_interquartile_range",
+    "sampling_unit": "nerve",
+    "source_id": "human-vagus-branch-map",
+    "cohorts_independent_between_rows": false,
+    "individual_subject_measurements_available": false,
+    "categories": [
+      {
+        "id": "sympathetic",
+        "label": "Sympathique",
+        "median": 3.9,
+        "q1": 3,
+        "q3": 6.6
+      },
+      {
+        "id": "muscular",
+        "label": "Musculaire",
+        "median": 6.2,
+        "q1": 3.4,
+        "q3": 17
+      },
+      {
+        "id": "vascular",
+        "label": "Vasculaire",
+        "median": 9.6,
+        "q1": 5.5,
+        "q3": 15.1
+      },
+      {
+        "id": "cardiac",
+        "label": "Cardiaque",
+        "median": 20.1,
+        "q1": 16.9,
+        "q3": 22.5
+      },
+      {
+        "id": "pulmonary",
+        "label": "Pulmonaire",
+        "median": 25,
+        "q1": 22.8,
+        "q3": 27.6
+      },
+      {
+        "id": "esophageal",
+        "label": "Œsophagien",
+        "median": 26.5,
+        "q1": 24.3,
+        "q3": 29.1
+      }
+    ]
+  },
+  "scale_links": [
+    {
+      "from": "sparc-ssv",
+      "to": "bahadir-2026",
+      "kind": "cross_cohort_documentary",
+      "same_specimen_confirmed": false,
+      "cohort_overlap": "unknown",
+      "metric_transform": null
+    },
+    {
+      "from": "sparc-ssv",
+      "to": "thompson-2026",
+      "kind": "cross_study_documentary",
+      "same_specimen_confirmed": false,
+      "cohort_overlap": "unknown",
+      "metric_transform": null
+    },
+    {
+      "from": "thompson-2026",
+      "to": "bahadir-2026",
+      "kind": "cross_study_documentary",
+      "same_specimen_confirmed": false,
+      "cohort_overlap": "unknown",
+      "metric_transform": null
+    }
+  ]
+}

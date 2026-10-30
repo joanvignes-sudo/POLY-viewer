@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><link rel="icon" href="data:,">
+<title>PCBM · Passages d'échelle scientifiques · POLY</title>
+<link rel="stylesheet" href="./pcbm-lab.css">
+</head>
+<body>
+<header class="site-header">
+ <a class="back-link" href="anatomy.html">POLY / Anatomie</a>
+ <span class="site-title">PCBM <span>ScaleBridge</span></span>
+ <span class="experimental">Laboratoire isolé · non publié</span>
+</header>
+<main>
+ <section class="intro" aria-labelledby="title">
+  <p class="eyebrow">POLY · NAVIGATION MULTI-ÉCHELLES</p>
+  <h1 id="title">Changer de représentation.<br>Conserver les preuves.</h1>
+  <p>Ce parcours montre comment passer du corps aux représentations microscopiques sans confondre un zoom, une relation anatomique et une comparaison documentaire. Aucune géométrie nouvelle, latence biologique ou connexion individuelle n'est inventée.</p>
+ </section>
+ <p id="loading" role="status">Vérification du registre scientifique…</p>
+ <div id="app" hidden>
+  <section class="card route-controls" aria-labelledby="route-title">
+   <h2 id="route-title">Construire un itinéraire</h2>
+   <div class="selectors">
+    <label>Depuis<select id="from" aria-label="Représentation de départ"></select></label>
+    <label>Vers<select id="to" aria-label="Représentation d'arrivée"></select></label>
+    <button type="button" id="build">Afficher le parcours documenté</button>
+   </div>
+   <p class="notice">Les ordres de grandeur sont pédagogiques. Les repères propres aux études restent distincts.</p>
+   <div id="route-notice" role="status" aria-live="polite"></div>
+  </section>
+  <div class="workspace">
+   <section class="card ladder" aria-labelledby="ladder-title">
+    <div class="section-head"><h2 id="ladder-title">Chemin entre les échelles</h2><span id="count"></span></div>
+    <ol id="steps" class="steps" aria-label="Représentations successives"></ol>
+    <nav class="action-bar" aria-label="Navigation PCBM">
+      <button id="previous" type="button" class="secondary">Étape précédente</button>
+      <button id="next" type="button">Étape suivante</button>
+    </nav>
+   </section>
+   <section class="details" aria-live="polite" aria-label="Détails de la représentation actuelle">
+    <article class="card focus">
+     <p class="eyebrow" id="position">ÉTAPE</p>
+     <h2 id="node-title"></h2><p id="node-detail"></p>
+     <dl class="facts">
+       <div><dt>Échelle indicative</dt><dd id="scale"></dd></div>
+       <div><dt>Repère source</dt><dd id="frame"></dd></div>
+       <div><dt>Identité du spécimen</dt><dd id="specimen"></dd></div>
+       <div><dt>Représentation</dt><dd id="availability"></dd></div>
+     </dl>
+     <a id="open-viewer" class="view-link" hidden target="_blank" rel="noopener">Ouvrir la représentation existante</a>
+     <button id="embed-viewer" type="button" class="secondary" hidden>Afficher ici (chargement volontaire)</button>
+     <section id="viewer-panel" hidden aria-label="Visualiseur intégré indépendant"><p class="notice">Représentation indépendante : aucun recalage spatial n’est transmis à cette fenêtre.</p><button id="close-viewer" type="button" class="secondary">Fermer et libérer</button><iframe id="viewer-frame" loading="lazy" title="Visualiseur indépendant POLY"></iframe></section>
+     <p id="unavailable" class="limits" hidden>Cette représentation n'est pas chargée dans PCBM. Le dossier documentaire reste consultable, sans surface 3D simulée.</p>
+    </article>
+    <article class="card transition">
+     <p class="eyebrow">QUALIFICATION DU PASSAGE</p>
+     <h2 id="transition-title">Point de départ</h2>
+     <p id="transition-text"></p><p class="boundary" id="transition-boundary"></p>
+    </article>
+    <article class="card evidence">
+     <h2>Provenance vérifiable</h2>
+     <p class="notice">La présence d'une référence ne constitue pas à elle seule une validation expérimentale indépendante.</p>
+     <ul id="sources"></ul>
+     <button type="button" class="secondary" id="export">Exporter le reçu documentaire JSON</button>
+    </article>
+   </section>
+  </div>
+  <section class="card vagus-evidence-card" aria-labelledby="vagus-study-title">
+   <p class="eyebrow">COMPARAISON MULTI-ÉCHELLES · PREUVES HUMAINES</p>
+   <h2 id="vagus-study-title">Du nerf individuel aux statistiques de population</h2>
+   <p class="notice">Trois sources distinctes. Les distances publiées décrivent des groupes de branches : elles ne localisent ni les fascicules du spécimen f002 ni un axone précis.</p>
+   <button type="button" id="vagus-study-load" class="secondary">Afficher les mesures publiées et leurs limites</button>
+   <p id="vagus-study-status" role="status" aria-live="polite"></p>
+   <div id="vagus-study-panel" hidden>
+    <div class="vagus-study-summary" id="vagus-cohorts"></div>
+    <h3>SPARC : trois coordonnées pour un même spécimen</h3>
+    <dl class="vagus-frames" id="vagus-coordinate-fields"></dl>
+    <h3>Émergence des branches depuis le foramen jugulaire</h3>
+    <p class="notice">Bahadir et coll., 2026 · 29 donneurs, 58 nerfs · distances en cm, médiane et intervalle interquartile · groupes issus d'une même cohorte, non six expériences indépendantes.</p>
+    <div class="vagus-axis" aria-hidden="true"><span>0 cm</span><span>10</span><span>20</span><span>30 cm</span></div>
+    <div id="vagus-branch-chart" class="vagus-branch-chart" role="list" aria-label="Distances publiées des branches vagales"></div>
+    <p class="limits">Raccordement interdit : ce graphique ne permet pas de positionner les branches sur f002, HRA, CerebrA ou le microCT d'une autre étude. Les unités cm de cette cohorte et les unités normalisées SSV ne sont pas interchangeables.</p>
+    <ul id="vagus-study-sources" class="vagus-study-sources"></ul>
+    <div class="vagus-lineage">
+     <h3>Origine du spécimen f002 et de ses reconstructions</h3>
+     <p class="notice">Distinguer le jeu primaire, les dérivés scientifiques et leur collection de diffusion. Une copie dérivée ne constitue pas une deuxième expérience indépendante.</p>
+     <button id="lineage-load" type="button" class="secondary">Contrôler les filiations des jeux de données</button>
+     <p id="lineage-status" role="status" aria-live="polite"></p>
+     <div id="lineage-panel" hidden>
+      <ul id="lineage-resources" class="lineage-resources"></ul>
+      <p id="lineage-interpretation" class="limits"></p>
+     </div>
+    </div>
+    <div class="ssv-import">
+     <h3>Repères f002 · coordonnées normalisées</h3>
+     <p class="notice">Importer un extrait JSON local, sans téléversement. Aperçu scientifique non vérifié : ni millimètres, ni XYZ, ni trajet axonal inférés.</p>
+     <p><a href="pcbm-ssv-template.json" target="_blank" rel="noopener">Voir le contrat JSON à renseigner</a></p>
+     <label for="ssv-upload">Fichier local (200 Ko max)</label>
+     <input type="file" id="ssv-upload" accept=".json,application/json" aria-label="Importer des repères f002 normalisés">
+     <p id="ssv-status" role="status" aria-live="polite">Aucun fichier chargé.</p>
+     <div id="ssv-panel" hidden>
+      <p id="ssv-summary" class="limits"></p>
+      <p class="notice">Axe de matériel 0 à 1 · aucune distance physique mesurée</p>
+      <ol id="ssv-landmarks" class="ssv-landmarks" aria-label="Repères normalisés"></ol>
+      <h4>Intervalles normalisés</h4>
+      <ul id="ssv-segments" class="ssv-segments"></ul>
+      <button type="button" id="ssv-clear" class="secondary">Effacer cet aperçu local</button>
+     </div>
+    </div>
+    <div class="c1r-audit">
+     <h3>C1 droit · examen critique du recalage microCT</h3>
+     <p class="notice">Chiffres retranscrits du rapport de collecte POLY, dont les fichiers bruts ne sont pas montés ici. L'orientation du fichier XML est candidate : la discordance de l'axe Z demeure ouverte.</p>
+     <button type="button" id="c1r-load" class="secondary">Consulter le bilan C1R et les blocages</button>
+     <p id="c1r-status" role="status" aria-live="polite"></p>
+     <div id="c1r-panel" hidden>
+      <div class="c1r-grid">
+       <div><strong id="c1r-direct">—</strong><span>Points avec voxel non nul au centre</span></div>
+       <div><strong id="c1r-near">—</strong><span>Points avec voxel non nul à proximité</span></div>
+       <div><strong id="c1r-epin">—</strong><span>Points situés dans un contour d'épineurium candidat</span></div>
+       <div><strong id="c1r-resolution">—</strong><span>Échantillonnage indiqué pour l'image dérivée</span></div>
+      </div>
+      <p id="c1r-axial-check" class="notice"></p>
+      <p class="limits">Conclusion provisoire : 42/54 correspondances aux contours ne constituent pas un recalage 3D validé. Le sens des étiquettes de segmentation et l'origine de la discordance axiale XML doivent être revérifiés sur les fichiers originaux.</p>
+      <p class="notice">Rapport de référence local non monté : <code>POLY_VAGUE_RUN10_C1R_CROSSWALK_20261030.json</code>. Aucune transformation n'est appliquée à la scène PCBM.</p>
+     </div>
+     <div class="c1r-candidate">
+      <h4>Vérifier une transformation candidate sur des repères réservés</h4>
+      <p class="notice">Optionnel : charger un fichier JSON local de paires XML/LPS, avec une transformation candidate et des empreintes déclarées. Les unités XML restent non résolues, même lorsque l'erreur calculée est faible. Aucun fichier n'est envoyé à un serveur.</p>
+      <p><a href="pcbm-crosswalk-template.json" target="_blank" rel="noopener">Contrat JSON vierge (aucune coordonnée inventée)</a></p>
+      <label for="c1r-candidate-file">Fichier de correspondances local (1 Mo maximum)</label>
+      <input type="file" id="c1r-candidate-file" accept=".json,application/json" aria-label="Vérifier des correspondances C1 droit sans recalage">
+      <p id="c1r-candidate-status" role="status" aria-live="polite">Aucune transformation candidate chargée.</p>
+      <div id="c1r-candidate-result" hidden>
+       <dl class="facts">
+        <div><dt>Repères réservés</dt><dd id="c1r-candidate-count"></dd></div>
+        <div><dt>Erreur RMS (mm LPS)</dt><dd id="c1r-candidate-rms"></dd></div>
+        <div><dt>Écart maximal (mm LPS)</dt><dd id="c1r-candidate-max"></dd></div>
+        <div><dt>Couverture géométrique</dt><dd id="c1r-candidate-geometry"></dd></div>
+       </dl>
+       <p class="limits">Ce contrôle examine uniquement la matrice et les paires fournies. L'authenticité des fichiers, l'indépendance du jeu de validation, le repère XML et l'identité biologique des points ne sont pas démontrés.</p>
+      </div>
+      <details>
+       <summary>Option : vérifier les empreintes des deux fichiers sources</summary>
+       <p class="notice">Sélectionner le fichier XML et les annotations LPS correspondant exactement aux empreintes déclarées dans le JSON candidat. Maximum 32 Mio par fichier ; les volumes microCT ne sont pas chargés. Une concordance SHA-256 n'authentifie pas la provenance SPARC ni le sens des coordonnées.</p>
+       <label for="c1r-source-xml">Fichier source XML local</label>
+       <input type="file" id="c1r-source-xml" aria-label="Fichier source XML C1R">
+       <label for="c1r-source-lps">Annotations LPS locales</label>
+       <input type="file" id="c1r-source-lps" aria-label="Annotations LPS C1R">
+       <button id="c1r-check-digests" type="button" class="secondary">Vérifier SHA-256 localement</button>
+       <p id="c1r-digest-status" role="status" aria-live="polite">Empreintes sources non vérifiées.</p>
+      </details>
+      <button id="c1r-candidate-clear" type="button" class="secondary">Effacer la vérification locale</button>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="card coverage-card" aria-labelledby="coverage-heading">
+   <p class="eyebrow">COUVERTURE SCIENTIFIQUE · CANDIDATS</p>
+   <h2 id="coverage-heading">Les domaines de recherche encore à documenter</h2>
+   <p class="notice">Cet inventaire n'est pas une collection de mécanismes vérifiés : chaque sujet doit encore être qualifié.</p>
+   <button id="coverage-load" type="button" class="secondary">Explorer l'inventaire multi-échelles</button>
+   <p id="coverage-status" role="status" aria-live="polite"></p>
+   <div id="coverage-panel" hidden>
+    <div class="coverage-controls">
+     <label>Famille scientifique<select id="coverage-family" aria-label="Filtrer par famille"><option value="all">Toutes les familles</option></select></label>
+     <label>Rechercher un sujet<input id="coverage-query" type="search" autocomplete="off" placeholder="Cellules, métabolisme, environnement…"></label>
+    </div>
+    <p id="coverage-count" aria-live="polite"></p>
+    <ul id="coverage-list" class="coverage-list"></ul>
+    <p class="notice">Les statuts d'origine sont conservés.
+    <a href="https://github.com/joanvignes-sudo/POLY-viewer/blob/main/simulateur/data/inventaire-multiechelle.json" target="_blank" rel="noopener">Inventaire original dans GitHub</a>.</p>
+   </div>
+  </section>
+ </div>
+ <aside id="error" role="alert" hidden></aside>
+</main>
+<footer>PCBM v0.7 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<script type="module" src="./pcbm-lab.mjs"></script>
+</body>
+</html>

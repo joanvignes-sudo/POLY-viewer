@@ -1,0 +1,19 @@
+{
+  "schema": "poly.pcbm.ssv-level-preview.v1",
+  "published": false,
+  "review_status": "unreviewed_local_import",
+  "specimen_id": "f002",
+  "side": null,
+  "source_dataset_doi": "10.26275/imas-52lf",
+  "scaffold_collection_doi": "10.26275/tjzi-muqm",
+  "coordinate_field": "vagus coordinates",
+  "unit": "unitless",
+  "physical_length_mm": null,
+  "xyz_coordinates": null,
+  "anatomical_registration": null,
+  "source_digest_status": "declared_not_verified",
+  "source_artifact_sha256": null,
+  "landmarks": [],
+  "segments": [],
+  "instruction": "TEMPLATE ONLY: fill side, exact upstream artifact SHA256, measured material coordinates, original level labels and segments. Never place invented positions. Preview is never a scientific validation."
+}
