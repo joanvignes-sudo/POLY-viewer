@@ -70,6 +70,35 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8125';
    assert.match(await page.locator('#c1r-direct').innerText(),/54 \/ 55/);
    assert.match(await page.locator('#c1r-epin').innerText(),/42 \/ 54/);
    assert.match(await page.locator('#c1r-status').innerText(),/transformation 3D non validée/);
+   const crosswalk={
+    schema:'poly.pcbm.c1r-crosswalk-candidate.v1',
+    publication_status:'local_candidate_only',approved:false,anatomical_registration:null,
+    specimen_id:'f002',side:'right',segment_id:'C1R',
+    source:{source_dataset_doi:'10.26275/imas-52lf',xml_coordinate_unit:'unknown',
+      xml_frame:'C1R_XML_unresolved',target_frame:'C1R_LPS_mm',
+      xml_sha256:'a'.repeat(64),lps_markups_sha256:'b'.repeat(64),
+      fit_selection_sha256:'c'.repeat(64),holdout_selection_sha256:'d'.repeat(64),
+      bytes_independently_verified:false},
+    hypothesis:{kind:'declared_affine_not_estimated',matrix_convention:'row_major_column_vector',
+      matrix4x4:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],estimated_from_holdouts:false},
+    holdout_pairs:[[0,0,0],[1,0,0],[0,1,0],[0,0,1],[2,3,4]].map((p,i)=>
+      ({id:'test-'+i,xml_xyz_raw:p,lps_xyz_mm:p}))
+   };
+   await page.locator('#c1r-candidate-file').setInputFiles({
+    name:'synthetic-c1r.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(crosswalk))
+   });
+   await page.locator('#c1r-candidate-result').waitFor({state:'visible'});
+   assert.equal(await page.locator('#c1r-candidate-count').innerText(),'5');
+   assert.match(await page.locator('#c1r-candidate-status').innerText(),/aucun recalage validé/);
+   await page.locator('#c1r-candidate-clear').click();
+   assert.equal(await page.locator('#c1r-candidate-result').isVisible(),false);
+   crosswalk.source.xml_coordinate_unit='mm';
+   await page.locator('#c1r-candidate-file').setInputFiles({
+    name:'invalid-c1r.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(crosswalk))
+   });
+   await page.waitForFunction(()=>document.getElementById('c1r-candidate-status').textContent.includes('refusé'));
+   assert.equal(await page.locator('#c1r-candidate-result').isVisible(),false);
+
    await page.locator('#coverage-load').click();
    await page.locator('#coverage-panel').waitFor({state:'visible',timeout:12000});
    assert.match(await page.locator('#coverage-status').innerText(),/100 sujets, 16 familles/);
