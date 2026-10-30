@@ -23,6 +23,19 @@ function isGeometricallyIndependent(points){
  }
  return largest>diameter*diameter*1e-8; // planar landmarks accepted as 2D coverage only
 }
+function hasVolumetricCoverage(points){
+ let diameter=0;
+ for(let i=0;i<points.length;i++)for(let j=i+1;j<points.length;j++)
+  diameter=Math.max(diameter,Math.hypot(...points[i].map((v,k)=>v-points[j][k])));
+ if(diameter<=1e-8)return false;
+ for(let a=0;a<points.length-3;a++)for(let b=a+1;b<points.length-2;b++)
+ for(let c=b+1;c<points.length-1;c++)for(let d=c+1;d<points.length;d++){
+  const p=points,u=points[b].map((v,k)=>v-p[a][k]),v=points[c].map((x,k)=>x-p[a][k]),w=points[d].map((x,k)=>x-p[a][k]);
+  const triple=u[0]*(v[1]*w[2]-v[2]*w[1])-u[1]*(v[0]*w[2]-v[2]*w[0])+u[2]*(v[0]*w[1]-v[1]*w[0]);
+  if(Math.abs(triple)>1e-7*diameter**3)return true;
+ }
+ return false;
+}
 export function auditC1RCandidate(raw){
  demand(raw?.schema===CROSSWALK_CANDIDATE_SCHEMA&&raw.publication_status==='local_candidate_only'&&raw.approved===false&&raw.anatomical_registration===null,'must remain an unapproved local candidate');
  demand(raw.specimen_id==='f002'&&raw.side==='right'&&raw.segment_id==='C1R','specimen, side or section mismatch');
@@ -50,14 +63,18 @@ export function auditC1RCandidate(raw){
  }
  demand(isGeometricallyIndependent(src)&&isGeometricallyIndependent(dst),'held-out points insufficiently distinct');
  const max=Math.max(...dist),rms=Math.sqrt(dist.reduce((sum,r)=>sum+r*r,0)/dist.length);
+ const threeDimensionalSource=hasVolumetricCoverage(src),threeDimensionalTarget=hasVolumetricCoverage(dst);
+ const holdoutCoverage=threeDimensionalSource&&threeDimensionalTarget?'volumetric_3d':'planar_only_no_3d_constraint';
  return Object.freeze({
   schema:'poly.pcbm.c1r-crosswalk-audit.v1',status:'candidate_residuals_only',
   specimen_id:'f002',side:'right',source_frame:'C1R_XML_unresolved',target_frame:'C1R_LPS_mm',
   source_point_unit:'unknown',target_point_unit:'mm',candidate_matrix_determinant:det,
   holdout_count:pairs.length,heldout_rms_mm:rms,heldout_max_mm:max,
+  holdout_geometry:holdoutCoverage,
   fit_selection_sha256:raw.source.fit_selection_sha256,holdout_selection_sha256:raw.source.holdout_selection_sha256,
   fingerprint_format:'declared_not_independently_verified',observations_independent_of_fit_unproven:true,
   xml_axis_origin_resolved:false,xml_axis_unit_resolved:false,
+  xml_axis_orientation_validated:false,
   biological_landmark_identity_verified:false,anatomical_registration_validated:false,
   c1r_to_ssv_validated:false,c1r_to_hra_validated:false,
   limitation:'Erreur calculée seulement pour la matrice et les paires déclarées. Le fichier XML, le volume microCT et la correspondance biologique des repères ne sont pas authentifiés ici.'
