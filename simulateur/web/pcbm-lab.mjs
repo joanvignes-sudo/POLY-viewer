@@ -1,3 +1,4 @@
+import {parseLocalSSVFile} from './pcbm-ssv-preview.mjs';
 import {readPCBMLineage,lineageComparison} from './pcbm-lineage.mjs';
 import {readVagusEvidence,compareVagusStudyToPCBM} from './pcbm-vagus-evidence.mjs';
 import {fetchPCBMCoverage,filterPCBMCoverage} from './pcbm-coverage.mjs';
@@ -180,6 +181,36 @@ async function loadLineage(){
   $('lineage-panel').hidden=true;text('lineage-status','Filiation non qualifiée : '+(error?.message??error));
  }finally{clearTimeout(timer);$('lineage-load').disabled=false}
 }
+function clearSSVPreview(){
+ $('ssv-upload').value='';$('ssv-panel').hidden=true;
+ empty($('ssv-landmarks'));empty($('ssv-segments'));
+ text('ssv-status','Aucun fichier chargé.');
+}
+function renderSSVPreview(data){
+ const list=$('ssv-landmarks');empty(list);
+ for(const l of data.landmarks){
+  const li=document.createElement('li'),p=document.createElement('span'),track=document.createElement('span'),marker=document.createElement('span'),label=document.createElement('strong');
+  li.className='ssv-landmark-row';p.textContent=l.ssv.toFixed(6);label.textContent=l.label;
+  track.className='ssv-track';track.setAttribute('aria-hidden','true');
+  marker.className='ssv-marker';marker.style.left=(l.ssv*100)+'%';track.append(marker);
+  li.append(p,track,label);list.append(li);
+ }
+ const ul=$('ssv-segments');empty(ul);
+ for(const s of data.segments){
+  const li=document.createElement('li');
+  li.textContent=s.id+' · '+s.start_ssv.toFixed(6)+' – '+s.end_ssv.toFixed(6)+' (sans unité)';ul.append(li);
+ }
+ if(!data.segments.length){const li=document.createElement('li');li.textContent='Aucun intervalle renseigné';ul.append(li)}
+ text('ssv-summary','SPARC f002 · côté '+(data.side==='left'?'gauche':'droit')+' · '+data.landmarks.length+' repères · '+data.segments.length+' segments · SHA-256 amont déclaré '+data.source_artifact_sha256+' (non recalculé, non authentifié).');
+ text('ssv-status','Aperçu local non qualifié · axe normalisé sans unité');
+ $('ssv-panel').hidden=false;
+}
+async function loadLocalSSVFile(file){
+ $('ssv-panel').hidden=true;empty($('ssv-landmarks'));empty($('ssv-segments'));
+ if(!file){text('ssv-status','Aucun fichier sélectionné.');return}
+ try{renderSSVPreview(await parseLocalSSVFile(file))}
+ catch(error){text('ssv-status','Fichier incompatible : '+(error?.message??error));$('ssv-upload').value=''}
+}
 function init(reg){
  model=validatePCBM(reg);
  const ordered=model.registry.nodes;
@@ -193,6 +224,8 @@ function init(reg){
  $('coverage-load').onclick=loadCoverage;
  $('vagus-study-load').onclick=loadVagusEvidence;
  $('lineage-load').onclick=loadLineage;
+ $('ssv-upload').onchange=()=>loadLocalSSVFile($('ssv-upload').files?.[0]??null);
+ $('ssv-clear').onclick=clearSSVPreview;
  $('coverage-family').onchange=renderCoverage;
  $('coverage-query').oninput=renderCoverage;
  $('embed-viewer').onclick=()=>{const current=model.nodes.get(route.ids[index]);if(current.availability!=='viewer')return;closePreview();$('viewer-frame').title='POLY · '+current.label;$('viewer-frame').src=current.href;$('viewer-panel').hidden=false;previewNode=current.id;};

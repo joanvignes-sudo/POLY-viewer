@@ -93,6 +93,22 @@
       <p id="lineage-interpretation" class="limits"></p>
      </div>
     </div>
+    <div class="ssv-import">
+     <h3>Repères f002 · coordonnées normalisées</h3>
+     <p class="notice">Importer un extrait JSON local, sans téléversement. Aperçu scientifique non vérifié : ni millimètres, ni XYZ, ni trajet axonal inférés.</p>
+     <p><a href="pcbm-ssv-template.json" target="_blank" rel="noopener">Voir le contrat JSON à renseigner</a></p>
+     <label for="ssv-upload">Fichier local (200 Ko max)</label>
+     <input type="file" id="ssv-upload" accept=".json,application/json" aria-label="Importer des repères f002 normalisés">
+     <p id="ssv-status" role="status" aria-live="polite">Aucun fichier chargé.</p>
+     <div id="ssv-panel" hidden>
+      <p id="ssv-summary" class="limits"></p>
+      <p class="notice">Axe de matériel 0 à 1 · aucune distance physique mesurée</p>
+      <ol id="ssv-landmarks" class="ssv-landmarks" aria-label="Repères normalisés"></ol>
+      <h4>Intervalles normalisés</h4>
+      <ul id="ssv-segments" class="ssv-segments"></ul>
+      <button type="button" id="ssv-clear" class="secondary">Effacer cet aperçu local</button>
+     </div>
+    </div>
    </div>
   </section>
   <section class="card coverage-card" aria-labelledby="coverage-heading">
@@ -115,7 +131,7 @@
  </div>
  <aside id="error" role="alert" hidden></aside>
 </main>
-<footer>PCBM v0.4 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
+<footer>PCBM v0.5 · Référentiels non fusionnés · Pas de chronologie physiologique déduite · Aucune publication scientifique automatique</footer>
 <script type="module" src="./pcbm-lab.mjs"></script>
 </body>
 </html>
