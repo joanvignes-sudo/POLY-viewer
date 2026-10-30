@@ -177,3 +177,19 @@ test('P8 boundaries and capacities are compared from the existing scenario progr
  const ph=explainModelChange(get('p8-control'),get('p8-ph-lowered'));
  assert(ph.changes.some(x=>x.kind==='changed_boundary'&&x.detail.includes('6')));
 });
+
+test('model contract forbids falsely calling P8 ATP or recasting a linear observed unit',()=>{
+ const x=copy(registry);x.models.find(m=>m.id==='p8-control').observable={id:'neuronal-atp',unit:'mM',operator:'lactate-E-mmol-over-volume-L'};
+ assert.throws(()=>validateModelRegistry(x),/P8 observed quantity/);
+ const y=copy(registry);y.models.find(m=>m.id==='linear-two-pools').observable.unit='a.u.';
+ assert.throws(()=>validateModelRegistry(y),/linear observation operator/);
+});
+test('evidence comparison refuses a trajectory with a relabeled observed quantity',()=>{
+ const m=get('p8-control'),traj=runP8Profile(m);
+ const o={schema:'poly.model-lab.evidence.v1',id:'invalid-quantity',origin:'synthetic_fixture',scope:copy(m.scope),observable:copy(m.observable),
+ provenance:{doi:null,fixture:true},independence_status:'unknown',points:traj.points.slice(0,3).map(p=>({t:p.t,value:p.value,uncertainty:null}))};
+ traj.observable_id='neuronal-atp';
+ const result=compareToEvidence(m,traj,o);
+ assert.equal(result.status,'not_comparable');
+ assert(result.reasons.some(x=>x.includes('trajec')));
+});
