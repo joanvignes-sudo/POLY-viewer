@@ -2,6 +2,7 @@
 import {validateModelRegistry,checkComparisonCompatibility} from './model-lab-contract.mjs';
 import {runP8Profile} from './model-lab-p8-adapter.mjs';
 import {runLinearModel} from './model-lab-linear-adapter.mjs';
+import {explainModelChange} from './model-lab-explain.mjs';
 const adapters=Object.freeze({p8:runP8Profile,'linear-mass-balance':runLinearModel});
 function finitePoints(s){
  if(s?.schema!=='poly.model-lab.series.v1'||!Array.isArray(s.points)||s.points.length<2||s.points.length>10001||s.points.some(p=>!Number.isFinite(p.t)||!Number.isFinite(p.value)))throw Error('ModelLab: invalid or missing trajectory');
@@ -30,9 +31,11 @@ export function compareModels(registry,leftId,rightId,{dt=0.02}={}){
   const p=differences[i-1],q=differences[i];absoluteArea+=(q.t-p.t)*(Math.abs(q.delta)+Math.abs(p.delta))/2;
  }
  const sameFamily=left.family===right.family;
+ const mechanismDiff=explainModelChange(left,right);
  const interpret={
   kind:sameFamily?'parameter_or_boundary_scenario':'distinct_model_families',
   differs_in:[left.driver.description,right.driver.description],
+  computed_changes:mechanismDiff,
   conclusion:'La différence de courbe est une conséquence des conditions déclarées dans les équations du solveur ; elle ne démontre pas un mécanisme biologique.',
   identifiability:'not_evaluated',
   calibration:'none',
