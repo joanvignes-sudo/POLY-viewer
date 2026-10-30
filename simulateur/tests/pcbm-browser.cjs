@@ -43,6 +43,28 @@ const base=process.env.POLY_BASE_URL||'http://127.0.0.1:8125';
    assert.equal(await page.locator('#lineage-resources>li').count(),5);
    assert.match(await page.locator('#lineage-status').innerText(),/1 origine f002/);
    assert.equal(await page.locator('#lineage-resources a[href="https://discover.pennsieve.io/datasets/674"]').count(),1);
+   const synthetic={
+    schema:'poly.pcbm.ssv-level-preview.v1',published:false,review_status:'unreviewed_local_import',
+    specimen_id:'f002',side:'left',source_dataset_doi:'10.26275/imas-52lf',
+    scaffold_collection_doi:'10.26275/tjzi-muqm',coordinate_field:'vagus coordinates',
+    unit:'unitless',physical_length_mm:null,xyz_coordinates:null,anatomical_registration:null,
+    source_digest_status:'declared_not_verified',source_artifact_sha256:'a'.repeat(64),
+    landmarks:[{id:'level-a',label:'Synthetic level A',ssv:.07,physical_mm:null,xyz:null},
+     {id:'level-b',label:'Synthetic level B',ssv:.22,physical_mm:null,xyz:null}],
+    segments:[{id:'segment-a',start_ssv:.08,end_ssv:.11,length_mm:null,xyz:null,source_label:'SYNTHETIC_TEST_ONLY'}]
+   };
+   await page.locator('#ssv-upload').setInputFiles({name:'synthetic-local-ssv.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(synthetic))});
+   await page.locator('#ssv-panel').waitFor({state:'visible',timeout:12000});
+   assert.equal(await page.locator('#ssv-landmarks>li').count(),2);
+   assert.equal(await page.locator('#ssv-segments>li').count(),1);
+   assert.match(await page.locator('#ssv-summary').innerText(),/non authentifié/);
+   assert.match(await page.locator('#ssv-status').innerText(),/sans unité/);
+   await page.locator('#ssv-clear').click();
+   assert.equal(await page.locator('#ssv-panel').isVisible(),false);
+   synthetic.unit='mm';
+   await page.locator('#ssv-upload').setInputFiles({name:'invalid-ssv.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(synthetic))});
+   await page.waitForFunction(()=>document.getElementById('ssv-status').textContent.includes('Fichier incompatible'));
+   assert.equal(await page.locator('#ssv-panel').isVisible(),false);
    await page.locator('#coverage-load').click();
    await page.locator('#coverage-panel').waitFor({state:'visible',timeout:12000});
    assert.match(await page.locator('#coverage-status').innerText(),/100 sujets, 16 familles/);
