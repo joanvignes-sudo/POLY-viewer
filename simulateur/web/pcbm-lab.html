@@ -140,6 +140,16 @@
        </dl>
        <p class="limits">Ce contrôle examine uniquement la matrice et les paires fournies. L'authenticité des fichiers, l'indépendance du jeu de validation, le repère XML et l'identité biologique des points ne sont pas démontrés.</p>
       </div>
+      <details>
+       <summary>Option : vérifier les empreintes des deux fichiers sources</summary>
+       <p class="notice">Sélectionner le fichier XML et les annotations LPS correspondant exactement aux empreintes déclarées dans le JSON candidat. Maximum 32 Mio par fichier ; les volumes microCT ne sont pas chargés. Une concordance SHA-256 n'authentifie pas la provenance SPARC ni le sens des coordonnées.</p>
+       <label for="c1r-source-xml">Fichier source XML local</label>
+       <input type="file" id="c1r-source-xml" aria-label="Fichier source XML C1R">
+       <label for="c1r-source-lps">Annotations LPS locales</label>
+       <input type="file" id="c1r-source-lps" aria-label="Annotations LPS C1R">
+       <button id="c1r-check-digests" type="button" class="secondary">Vérifier SHA-256 localement</button>
+       <p id="c1r-digest-status" role="status" aria-live="polite">Empreintes sources non vérifiées.</p>
+      </details>
       <button id="c1r-candidate-clear" type="button" class="secondary">Effacer la vérification locale</button>
      </div>
     </div>
