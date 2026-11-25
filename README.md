@@ -1,10 +1,12 @@
-# POLY 0.142.0 — Enquêtes, anatomie et preuves
+# POLY 0.142.1 — Une anatomie du vivant dans le temps
 
-[Ouvrir POLY](https://joanvignes-sudo.github.io/POLY-viewer/) · [Tous les travaux](https://joanvignes-sudo.github.io/POLY-viewer/simulateur/web/travaux.html) · [Notice de version](RELEASE_v0.142.0.md)
+[Ouvrir POLY](https://joanvignes-sudo.github.io/POLY-viewer/) · [Tous les travaux](https://joanvignes-sudo.github.io/POLY-viewer/simulateur/web/travaux.html) · [Notice de version](RELEASE_v0.142.1.md)
 
-POLY relie structures anatomiques, observations et mécanismes dans un environnement de recherche. Les simulations synthétiques, les preuves expérimentales et les inconnues sont distinguées ; aucune validation clinique individuelle n’est revendiquée.
+POLY rend visibles les événements biologiques, leurs intervalles, leurs interactions et rétroactions à plusieurs échelles. Les structures anatomiques en sont le support spatial. La proposition d’une organisation distribuée contribuant à la conscience reste à éprouver, sans chef d’orchestre présupposé. [Vision et partition pédagogique](https://joanvignes-sudo.github.io/POLY-viewer/anatomie-evenements.html). Les simulations synthétiques, les preuves expérimentales et les inconnues sont distinguées ; aucune validation clinique individuelle n’est revendiquée.
 
 ## Parcours
+
+- [Le vivant dans le temps](anatomie-evenements.html) : cap fondateur, frise pédagogique fictive et accès aux parcours existants.
 
 - [Enquête glucose–lactate / NMDA](simulateur/web/metabolic-network-lab.html) : 35 maillons, 42 relations, 13 parcours ; hypothèses, sources et épreuves conditionnelles.
 - [Anatomie](simulateur/web/anatomy.html) : catalogue léger, atelier classique, rattachements, journal et lecteurs documentaires.
