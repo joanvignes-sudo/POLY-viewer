@@ -1,5 +1,5 @@
 {
-  "version": "0.142.0",
+  "version": "0.142.1",
   "canonical_direction": "Canon v0.92 conservé ; stabilité et première référence anatomique humaine",
   "chains": 14,
   "canonical_nodes": 172,
@@ -250,7 +250,7 @@
     "opposed_normals_root": 0,
     "nonpositive_sampled_determinants": 0,
     "maximum_unmatched_coarse_edge_gap_mm": 0.5108374174437044,
-    "maximum_boundary_storage_rounding_mm": 2.0635721753394354e-07,
+    "maximum_boundary_storage_rounding_mm": 2.0635721753394354e-7,
     "source_geometry_modified": false,
     "global_replacement": false,
     "provenance": "assets/bigbrain-neighbors-v0125/PROVENANCE.json"
@@ -291,7 +291,7 @@
     "maximum_source_faces": 10,
     "nonpositive_sampled_determinants": 0,
     "maximum_sampled_gap_mm": 0.3877473794973773,
-    "maximum_boundary_storage_rounding_mm": 2.2164924775697018e-07,
+    "maximum_boundary_storage_rounding_mm": 2.2164924775697018e-7,
     "old_vertices_changed": false,
     "source_geometry_modified": false,
     "global_replacement": false,
@@ -388,5 +388,16 @@
       "skeleton-region-lab"
     ],
     "physical_phone_tested": false
+  },
+  "event_orientation": {
+    "date": "2026-11-25",
+    "page": "anatomie-evenements.html",
+    "scope": "Editorial and illustrative temporal interface only; no measured or simulated new series",
+    "timeline": "arbitrary unitless teaching example",
+    "new_biological_validation": false,
+    "private_data_published": false,
+    "canonical_direction_unchanged": true,
+    "baseline_manifest_version": "0.142.0",
+    "manifest_status": "Historical full inventory not regenerated in this editorial update; see RELEASE_v0.142.1.md"
   }
 }
