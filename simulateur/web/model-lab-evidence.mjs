@@ -24,9 +24,18 @@ export function validateEvidenceSet(o){
 }
 export function compareToEvidence(model,trajectory,raw){
  const o=validateEvidenceSet(raw),reasons=[];
+ // Only synthetic trajectories are executable in v0.2. Declared publication metadata cannot qualify them.
+ if(model.status!=='runnable_synthetic'||o.origin!=='synthetic_fixture')reasons.push('Comparaison réservée aux fixtures synthétiques ; aucune observation publiée ne peut être évaluée par ce moteur.');
+ if(o.scope.species!=='synthetic'||o.scope.time_basis!=='synthetic_time')reasons.push('Une fixture doit conserver son contexte et son horloge synthétiques.');
  if(model.scope.species!==o.scope.species||model.scope.preparation!==o.scope.preparation||model.scope.region!==o.scope.region||model.scope.time_basis!==o.scope.time_basis)reasons.push('Espèce, préparation, région ou horloge incompatibles.');
  if(model.observable.id!==o.observable.id||model.observable.unit!==o.observable.unit||model.observable.operator!==o.observable.operator)reasons.push('Observable ou opérateur de mesure non équivalent.');
  if(trajectory.model_id!==model.id||trajectory.observable_id!==o.observable.id||trajectory.unit!==o.observable.unit||trajectory.time_basis!==o.scope.time_basis)reasons.push('La trajectoire provient d’un autre modèle ou d’une autre unité.');
+ let previous=-Infinity;
+ const validTrajectory=Array.isArray(trajectory.points)&&trajectory.points.length>=2&&trajectory.points.length<=10000&&trajectory.points.every(p=>{
+  if(!p||typeof p.t!=='number'||!Number.isFinite(p.t)||p.t<=previous||typeof p.value!=='number'||!Number.isFinite(p.value))return false;
+  previous=p.t;return true;
+ });
+ if(!validTrajectory)return {status:'not_comparable',reasons:[...reasons,'Trajectoire invalide : dates strictement croissantes et valeurs finies requises.'],validated:false};
  const grid=new Map(trajectory.points.map(p=>[p.t,p.value]));
  if(o.points.some(p=>!grid.has(p.t)))reasons.push('L’horloge des mesures ne correspond pas aux sorties ; aucune interpolation implicite.');
  if(reasons.length)return {status:'not_comparable',reasons,validated:false};
@@ -35,6 +44,7 @@ export function compareToEvidence(model,trajectory,raw){
  const residuals=pairs.map(p=>({...p,residual:p.predicted-p.observed}));
  const rmse=Math.sqrt(residuals.reduce((sum,p)=>sum+p.residual*p.residual,0)/residuals.length);
  const mae=residuals.reduce((sum,p)=>sum+Math.abs(p.residual),0)/residuals.length;
+ if(!Number.isFinite(rmse)||!Number.isFinite(mae))return {status:'not_comparable',reasons:['Écart numérique non représentable.'],validated:false};
  return {status:'descriptive_fit_only',evidence_id:o.id,observations:residuals.length,missing:o.points.length-residuals.length,rmse,mae,
   origin:o.origin,independence_status:o.independence_status,uncertainty_coverage:residuals.filter(p=>p.uncertainty!==null).length,
   validated:false,claims:{causal_inference:false,statistical_significance:false,independent_biological_validation:false},
