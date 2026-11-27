@@ -32,6 +32,11 @@ const url=(process.env.POLY_BASE_URL||'http://127.0.0.1:8131')+'/simulateur/web/
    await page.waitForFunction(()=>document.querySelector('#evidence-status').textContent.includes('Données chargées'));
    await page.locator('#compare-evidence').click();
    assert.match(await page.locator('#evidence-status').textContent(),/Écarts descriptifs/);
+   const disguised={...evidence,origin:'published_extracted',provenance:{doi:'10.1234/fake-fixture',file_sha256:'a'.repeat(64),extraction_method:'test only'},independence_status:'declared_independent'};
+   await page.locator('#evidence-file').setInputFiles({name:'fictional-published.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(disguised))});
+   await page.waitForFunction(()=>document.querySelector('#evidence-status').textContent.includes('published_extracted'));
+   await page.locator('#compare-evidence').click();
+   assert.match(await page.locator('#evidence-status').textContent(),/Confrontation refusée.*fixtures synthétiques/);
    assert.deepEqual(errors,[],'unhandled browser errors');
    await page.close();
   }
