@@ -193,3 +193,23 @@ test('evidence comparison refuses a trajectory with a relabeled observed quantit
  assert.equal(result.status,'not_comparable');
  assert(result.reasons.some(x=>x.includes('trajec')));
 });
+
+test('published provenance cannot admit a synthetic trajectory, even with matching context',()=>{
+ const m=get('p8-control'),traj=runP8Profile(m);
+ const e={schema:'poly.model-lab.evidence.v1',id:'fictional-published',origin:'published_extracted',scope:copy(m.scope),observable:copy(m.observable),
+ provenance:{doi:'10.1234/demo-model',file_sha256:'a'.repeat(64),extraction_method:'manual'},independence_status:'declared_independent',
+ points:traj.points.slice(0,3).map(p=>({t:p.t,value:p.value,uncertainty:null}))};
+ const r=compareToEvidence(m,traj,e);
+ assert.equal(r.status,'not_comparable');assert.match(r.reasons.join(' '),/fixtures synthétiques/);assert.equal(r.validated,false);assert.equal(r.rmse,undefined);
+});
+test('nonfinite or duplicate trajectory samples cannot produce a descriptive fit',()=>{
+ const m=get('p8-control'),traj=runP8Profile(m);
+ const e={schema:'poly.model-lab.evidence.v1',id:'invalid-series',origin:'synthetic_fixture',scope:copy(m.scope),observable:copy(m.observable),
+ provenance:{doi:null,fixture:true},independence_status:'unknown',points:traj.points.slice(0,3).map(p=>({t:p.t,value:p.value,uncertainty:null}))};
+ for(const mutate of [t=>t.points[0].value=NaN,t=>t.points[1].t=t.points[0].t,t=>t.points[0].value=Infinity]){
+  const bad=copy(traj);mutate(bad);
+  assert.equal(compareToEvidence(m,bad,e).status,'not_comparable');
+ }
+ const huge=copy(traj);huge.points[0].value=Number.MAX_VALUE;
+ assert.equal(compareToEvidence(m,huge,e).status,'not_comparable');
+});
